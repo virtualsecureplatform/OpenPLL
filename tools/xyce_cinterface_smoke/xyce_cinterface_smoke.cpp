@@ -120,8 +120,8 @@ int main(int argc, char **argv) {
 
   std::vector<char> program_name = mutable_string("xyce_cinterface_smoke");
   std::vector<char> deck_name = mutable_string(argv[1]);
-  std::array<char *, 2> xyce_argv = {program_name.data(), deck_name.data()};
-  if (xyce_initialize(&xyce, static_cast<int>(xyce_argv.size()), xyce_argv.data()) !=
+  std::array<char *, 3> xyce_argv = {program_name.data(), deck_name.data(), nullptr};
+  if (xyce_initialize(&xyce, 2, xyce_argv.data()) !=
       1) {
     std::cerr << "xyce_initialize failed for " << argv[1] << "\n";
     xyce_close(&xyce);

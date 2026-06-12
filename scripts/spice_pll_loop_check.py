@@ -31,16 +31,24 @@ CASES = {
 
 
 def dco_points_mhz(args):
+    coarse_offset_mhz = args.coarse_code * args.dco_coarse_step_mhz
     if args.dco_model == "linear":
-        return [(0.0, args.fmin_mhz), (255.0, args.fmax_mhz)]
+        return [
+            (0.0, args.fmin_mhz + coarse_offset_mhz),
+            (255.0, args.fmax_mhz + coarse_offset_mhz),
+        ]
     if args.dco_model == "piecewise3":
-        return [(0.0, args.f0_mhz), (128.0, args.f128_mhz), (255.0, args.f255_mhz)]
+        return [
+            (0.0, args.f0_mhz + coarse_offset_mhz),
+            (128.0, args.f128_mhz + coarse_offset_mhz),
+            (255.0, args.f255_mhz + coarse_offset_mhz),
+        ]
     return [
-        (0.0, args.f0_mhz),
-        (64.0, args.f64_mhz),
-        (128.0, args.f128_mhz),
-        (192.0, args.f192_mhz),
-        (255.0, args.f255_mhz),
+        (0.0, args.f0_mhz + coarse_offset_mhz),
+        (64.0, args.f64_mhz + coarse_offset_mhz),
+        (128.0, args.f128_mhz + coarse_offset_mhz),
+        (192.0, args.f192_mhz + coarse_offset_mhz),
+        (255.0, args.f255_mhz + coarse_offset_mhz),
     ]
 
 
@@ -68,6 +76,14 @@ def dco_target_code(args, target_mhz):
             f"{points[0][1]:.6g}..{points[-1][1]:.6g} MHz"
         )
     return target_code
+
+
+def case_initial_dco_phase_cycles(case_name, args):
+    if case_name == "low_start" and args.low_start_initial_dco_phase_cycles is not None:
+        return args.low_start_initial_dco_phase_cycles
+    if case_name == "high_start" and args.high_start_initial_dco_phase_cycles is not None:
+        return args.high_start_initial_dco_phase_cycles
+    return args.initial_dco_phase_cycles
 
 
 def normalize_dco_model(args):
@@ -110,7 +126,9 @@ def normalize_dco_model(args):
 def dco_model_lines(args):
     lines = ["BCODE CODE 0 V={min(255,max(0,v(CODE_DRIVE)))}"]
     if args.dco_model == "linear":
-        lines.append("BDCO_FREQ_HZ DCO_FREQ_HZ 0 V={FMIN + (FMAX-FMIN)*v(CODE)/255}")
+        lines.append(
+            "BDCO_FREQ_HZ DCO_FREQ_HZ 0 V={FMIN + (FMAX-FMIN)*v(CODE)/255 + DCO_COARSE_STEP*COARSE_CODE}"
+        )
         return lines
 
     if args.dco_model == "piecewise3":
@@ -118,7 +136,7 @@ def dco_model_lines(args):
             [
                 "* Smooth blend across the measured midpoint; both segments equal DCO_F128 at code 128.",
                 "BDCO_BLEND DCO_BLEND 0 V={0.5*(1+tanh(10*(v(CODE)-128)))}",
-                "BDCO_FREQ_HZ DCO_FREQ_HZ 0 V={(1-v(DCO_BLEND))*(DCO_F0 + (DCO_F128-DCO_F0)*v(CODE)/128) + v(DCO_BLEND)*(DCO_F128 + (DCO_F255-DCO_F128)*(v(CODE)-128)/127)}",
+                "BDCO_FREQ_HZ DCO_FREQ_HZ 0 V={(1-v(DCO_BLEND))*(DCO_F0 + (DCO_F128-DCO_F0)*v(CODE)/128) + v(DCO_BLEND)*(DCO_F128 + (DCO_F255-DCO_F128)*(v(CODE)-128)/127) + DCO_COARSE_STEP*COARSE_CODE}",
             ]
         )
         return lines
@@ -129,7 +147,7 @@ def dco_model_lines(args):
             "BDCO_BLEND64 DCO_BLEND64 0 V={0.5*(1+tanh(10*(v(CODE)-64)))}",
             "BDCO_BLEND128 DCO_BLEND128 0 V={0.5*(1+tanh(10*(v(CODE)-128)))}",
             "BDCO_BLEND192 DCO_BLEND192 0 V={0.5*(1+tanh(10*(v(CODE)-192)))}",
-            "BDCO_FREQ_HZ DCO_FREQ_HZ 0 V={(1-v(DCO_BLEND64))*(DCO_F0 + (DCO_F64-DCO_F0)*v(CODE)/64) + v(DCO_BLEND64)*(1-v(DCO_BLEND128))*(DCO_F64 + (DCO_F128-DCO_F64)*(v(CODE)-64)/64) + v(DCO_BLEND128)*(1-v(DCO_BLEND192))*(DCO_F128 + (DCO_F192-DCO_F128)*(v(CODE)-128)/64) + v(DCO_BLEND192)*(DCO_F192 + (DCO_F255-DCO_F192)*(v(CODE)-192)/63)}",
+            "BDCO_FREQ_HZ DCO_FREQ_HZ 0 V={(1-v(DCO_BLEND64))*(DCO_F0 + (DCO_F64-DCO_F0)*v(CODE)/64) + v(DCO_BLEND64)*(1-v(DCO_BLEND128))*(DCO_F64 + (DCO_F128-DCO_F64)*(v(CODE)-64)/64) + v(DCO_BLEND128)*(1-v(DCO_BLEND192))*(DCO_F128 + (DCO_F192-DCO_F128)*(v(CODE)-128)/64) + v(DCO_BLEND192)*(DCO_F192 + (DCO_F255-DCO_F192)*(v(CODE)-192)/63) + DCO_COARSE_STEP*COARSE_CODE}",
         ]
     )
     return lines
@@ -425,9 +443,10 @@ def pll_loop_netlist(case_name, args):
             + (f" num_threads={args.ngspice_threads}" if args.ngspice_threads > 0 else "")
         )
 
+    initial_dco_phase_cycles = case_initial_dco_phase_cycles(case_name, args)
     ic_nodes = [
         f"v(CODE_RAW)={init_code}",
-        f"v(DCO_PHASE)={args.initial_dco_phase_cycles:.12g}",
+        f"v(DCO_PHASE)={initial_dco_phase_cycles:.12g}",
     ]
     if args.loop_model in ("sampled", "sampled_latched"):
         ic_nodes.append("v(DEC_HELD)=0")
@@ -453,6 +472,8 @@ def pll_loop_netlist(case_name, args):
         f".param DCO_F128={args.f128_mhz}e6",
         f".param DCO_F192={args.f192_mhz}e6",
         f".param DCO_F255={args.f255_mhz}e6",
+        f".param COARSE_CODE={args.coarse_code:.12g}",
+        f".param DCO_COARSE_STEP={args.dco_coarse_step_mhz:.12g}e6",
         f".param CLK_SHARPNESS={args.clock_sharpness:.12g}",
         *loop_params,
         f".param INIT_CODE={init_code}",
@@ -648,7 +669,7 @@ def run_one(case_name, args, build_dir):
         "edge_sigma_rad": args.edge_sigma_rad,
         "decision_track_rate_per_s": args.decision_track_rate_per_s,
         "clock_sharpness": args.clock_sharpness,
-        "initial_dco_phase_cycles": args.initial_dco_phase_cycles,
+        "initial_dco_phase_cycles": case_initial_dco_phase_cycles(case_name, args),
         "fmin_mhz": args.fmin_mhz,
         "fmax_mhz": args.fmax_mhz,
         "f0_mhz": args.f0_mhz,
@@ -656,6 +677,8 @@ def run_one(case_name, args, build_dir):
         "f128_mhz": args.f128_mhz,
         "f192_mhz": args.f192_mhz,
         "f255_mhz": args.f255_mhz,
+        "coarse_code": args.coarse_code,
+        "dco_coarse_step_mhz": args.dco_coarse_step_mhz,
         "ref_mhz": args.ref_mhz,
         "ndiv": args.ndiv,
         "target_mhz": target_mhz,
@@ -762,6 +785,18 @@ def main():
     parser.add_argument("--f128-mhz", type=float, default=None)
     parser.add_argument("--f192-mhz", type=float, default=None)
     parser.add_argument("--f255-mhz", type=float, default=None)
+    parser.add_argument(
+        "--coarse-code",
+        type=float,
+        default=0.0,
+        help="Static independent DCO coarse-band code added to the analog DCO model.",
+    )
+    parser.add_argument(
+        "--dco-coarse-step-mhz",
+        type=float,
+        default=0.0,
+        help="Frequency offset per independent coarse-band code step.",
+    )
     parser.add_argument("--ref-mhz", type=float, default=11.2)
     parser.add_argument("--ndiv", type=int, default=5)
     parser.add_argument("--target-code", type=float, default=128.0)
@@ -832,6 +867,18 @@ def main():
         default=0.0,
         help="Initial DCO phase in output cycles; useful for phase-aperture sensitivity checks.",
     )
+    parser.add_argument(
+        "--low-start-initial-dco-phase-cycles",
+        type=float,
+        default=None,
+        help="Override --initial-dco-phase-cycles for the low_start case.",
+    )
+    parser.add_argument(
+        "--high-start-initial-dco-phase-cycles",
+        type=float,
+        default=None,
+        help="Override --initial-dco-phase-cycles for the high_start case.",
+    )
     parser.add_argument("--sim-time-us", type=float, default=8.0)
     parser.add_argument("--step-ps", type=float, default=200.0)
     parser.add_argument(
@@ -888,6 +935,10 @@ def main():
         raise ValueError("--max-step-ps must be non-negative")
     if args.dlf_prop_lsb < 0:
         raise ValueError("--dlf-prop-lsb must be non-negative")
+    if args.coarse_code < 0 or args.coarse_code > 15:
+        raise ValueError("--coarse-code must be in 0..15")
+    if args.dco_coarse_step_mhz < 0:
+        raise ValueError("--dco-coarse-step-mhz must be non-negative")
     if args.decision_track_rate_per_s <= 0:
         raise ValueError("--decision-track-rate-per-s must be positive")
     args = normalize_dco_model(args)

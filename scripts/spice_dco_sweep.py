@@ -126,6 +126,7 @@ def dco_netlist(
     therm_invert,
     ngspice_threads,
     load_style,
+    ring_stages,
 ):
     pdk_dir = pdk_root / pdk
     model_path = pdk_dir / "libs.tech" / "ngspice" / "sky130.lib.spice"
@@ -146,6 +147,7 @@ def dco_netlist(
         f"* OpenPLL Sky130 8-bit DCO transient validation, code={code}",
         f"* therm_invert={int(therm_invert)}, enabled_loads={enabled_load_count(code, therm_invert)}",
         f"* load_style={load_style}",
+        f"* ring_stages={ring_stages}",
         f'.lib "{model_path}" {corner}',
         f'.include "{cell_path}"',
         ".option method=gear reltol=1e-3 abstol=1e-15 chgtol=1e-16"
@@ -157,12 +159,12 @@ def dco_netlist(
         "VVNB VNB 0 0",
         "VEN EN 0 {VDD}",
         "",
-        "* 17-stage enabled ring. Active-low reset behavior is represented",
+        f"* {ring_stages}-stage enabled ring. Active-low reset behavior is represented",
         "* by the NAND gate enable input held high during this free-run test.",
-        "XOSC N16 EN VGND VNB VPB VPWR N0 sky130_fd_sc_hd__nand2_1",
+        f"XOSC N{ring_stages - 1} EN VGND VNB VPB VPWR N0 sky130_fd_sc_hd__nand2_1",
     ]
 
-    for idx in range(1, 17):
+    for idx in range(1, ring_stages):
         lines.append(
             f"XINV{idx:02d} N{idx - 1} VGND VNB VPB VPWR N{idx} "
             "sky130_fd_sc_hd__inv_1"
@@ -180,7 +182,7 @@ def dco_netlist(
         active = idx < code
         if therm_invert:
             active = not active
-        ring_node = f"N{idx % 17}"
+        ring_node = f"N{idx % ring_stages}"
         lines.extend(load_cell_lines(idx, active, ring_node, load_style))
 
     lines.extend(
@@ -190,7 +192,7 @@ def dco_netlist(
         ]
     )
 
-    for idx in range(17):
+    for idx in range(ring_stages):
         value = "VDD" if idx % 2 else "0"
         lines.append(f".ic v(N{idx})={{{value}}}")
 
@@ -198,8 +200,8 @@ def dco_netlist(
         [
             "",
             f".tran {step_ps}p {sim_time_ns}n uic",
-            ".meas tran two_cycle_s TRIG v(N16) VAL=0.9 RISE=2 "
-            "TARG v(N16) VAL=0.9 RISE=4",
+            f".meas tran two_cycle_s TRIG v(N{ring_stages - 1}) VAL=0.9 RISE=2 "
+            f"TARG v(N{ring_stages - 1}) VAL=0.9 RISE=4",
             ".meas tran period_s PARAM='two_cycle_s/2'",
             ".meas tran freq_hz PARAM='1/period_s'",
             ".end",
@@ -219,6 +221,7 @@ def dco_result_from_log(code, corner, args, netlist_path, log_path):
         "code": code,
         "therm_invert": int(args.therm_invert),
         "enabled_loads": enabled_load_count(code, args.therm_invert),
+        "ring_stages": args.ring_stages,
         "status": status,
         "period_s": period or "",
         "freq_hz": freq or "",
@@ -236,6 +239,7 @@ def existing_result_matches_request(netlist_path, code, corner, args):
         f"code={code}",
         f"therm_invert={int(args.therm_invert)}",
         f"load_style={args.load_style}",
+        f"ring_stages={args.ring_stages}",
         f".lib \"{Path(args.pdk_root).expanduser().resolve() / args.pdk / 'libs.tech' / 'ngspice' / 'sky130.lib.spice'}\" {corner}",
         f".tran {args.step_ps}p {args.sim_time_ns}n uic",
     ]
@@ -268,6 +272,7 @@ def run_one(code, corner, args, build_dir):
             therm_invert=args.therm_invert,
             ngspice_threads=args.ngspice_threads,
             load_style=args.load_style,
+            ring_stages=args.ring_stages,
         ),
         encoding="ascii",
     )
@@ -294,6 +299,7 @@ def run_one(code, corner, args, build_dir):
         "code": code,
         "therm_invert": int(args.therm_invert),
         "enabled_loads": enabled_load_count(code, args.therm_invert),
+        "ring_stages": args.ring_stages,
         "status": status,
         "period_s": period or "",
         "freq_hz": freq or "",
@@ -342,6 +348,12 @@ def main():
         default="nand2",
         help="Standard-cell topology used for each thermometer-controlled DCO dummy load.",
     )
+    parser.add_argument(
+        "--ring-stages",
+        type=int,
+        default=17,
+        help="Odd number of enabled ring stages including the NAND enable gate.",
+    )
     parser.add_argument("--ngspice", default=shutil.which("ngspice") or "ngspice")
     parser.add_argument(
         "--ngspice-threads",
@@ -372,6 +384,8 @@ def main():
         raise ValueError("--jobs must be at least 1")
     if args.ngspice_threads < 0:
         raise ValueError("--ngspice-threads must be non-negative")
+    if args.ring_stages < 3 or (args.ring_stages % 2) == 0:
+        raise ValueError("--ring-stages must be an odd integer >= 3")
 
     results = []
     work_items = [(corner, code) for corner in corners for code in codes]
@@ -403,6 +417,7 @@ def main():
                 "code",
                 "therm_invert",
                 "enabled_loads",
+                "ring_stages",
                 "status",
                 "period_s",
                 "freq_hz",

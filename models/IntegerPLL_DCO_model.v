@@ -6,6 +6,9 @@ module IntegerPLL_DCO #(
     parameter THERM_INVERT = 1
 ) (
     input wire RESET_N,
+`ifdef OPENPLL_DCO_MODEL_COARSE
+    input wire [3:0] COARSEBINARY_CODE,
+`endif
     input wire [254:0] DCO_THERM,
     output reg PLLOUT
 );
@@ -17,9 +20,16 @@ module IntegerPLL_DCO #(
     real f128_mhz;
     real f192_mhz;
     real f255_mhz;
+    real coarse_step_mhz;
+    real fine_freq_mhz;
     integer tune_count;
     integer dco_code;
     integer use_piecewise5;
+`ifdef OPENPLL_DCO_MODEL_COARSE
+    wire [3:0] coarse_code = COARSEBINARY_CODE;
+`else
+    wire [3:0] coarse_code = 4'd0;
+`endif
 
     function integer count255;
         input [254:0] value;
@@ -61,6 +71,7 @@ module IntegerPLL_DCO #(
         f128_mhz = 49.762117807733404;
         f192_mhz = 51.61843654151962;
         f255_mhz = 52.34983089216307;
+        coarse_step_mhz = 0.0;
         use_piecewise5 = 0;
         if (!$value$plusargs("DCO_USE_PIECEWISE5=%d", use_piecewise5))
             use_piecewise5 = 0;
@@ -74,17 +85,22 @@ module IntegerPLL_DCO #(
             f192_mhz = 51.61843654151962;
         if (!$value$plusargs("DCO_F255_MHZ=%f", f255_mhz))
             f255_mhz = 52.34983089216307;
+        if (!$value$plusargs("DCO_COARSE_STEP_MHZ=%f", coarse_step_mhz))
+            coarse_step_mhz = 0.0;
     end
 
     always @* begin
         tune_count = count255(DCO_THERM);
         dco_code = therm_to_code(tune_count);
         if (use_piecewise5) begin
-            freq_mhz = piecewise5_freq_mhz(dco_code);
+            fine_freq_mhz = piecewise5_freq_mhz(dco_code);
+            freq_mhz = fine_freq_mhz + (coarse_code * coarse_step_mhz);
             half_period_ns = 500.0 / freq_mhz;
         end else begin
             half_period_ns = 3.0 + (0.015 * tune_count);
-            freq_mhz = 500.0 / half_period_ns;
+            fine_freq_mhz = 500.0 / half_period_ns;
+            freq_mhz = fine_freq_mhz + (coarse_code * coarse_step_mhz);
+            half_period_ns = 500.0 / freq_mhz;
         end
     end
 

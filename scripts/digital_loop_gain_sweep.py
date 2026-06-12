@@ -47,6 +47,7 @@ def compile_testbench(root, build_dir, args):
         f"-Ptb_digital_loop_acq.DLF_ACQ_FORCE_RAIL_CODE={args.dlf_acq_force_rail_code}",
         f"-Ptb_digital_loop_acq.DLF_UPDATE_ON_PLLOUT={int(args.dlf_update_on_pllout)}",
         f"-Ptb_digital_loop_acq.DLF_PROP_RAIL_GUARD={int(args.dlf_prop_rail_guard)}",
+        f"-Ptb_digital_loop_acq.DCO_COARSE_BITS={args.dco_coarse_bits}",
         "-o",
         str(output),
         str(root / "rtl" / "IntegerPLL_B2TH.v"),
@@ -71,6 +72,7 @@ def run_combo(vvp_path, args, ki, kp):
         f"+RUN_NS={args.run_ns}",
         f"+LOW_INIT={args.low_init}",
         f"+HIGH_INIT={args.high_init}",
+        f"+COARSE_CODE={args.coarse_code}",
         "+ALLOW_FAIL=1",
     ]
     timed_out = False
@@ -110,6 +112,8 @@ def run_combo(vvp_path, args, ki, kp):
                 "dlf_acq_force_rail_code": args.dlf_acq_force_rail_code,
                 "dlf_update_on_pllout": int(args.dlf_update_on_pllout),
                 "dlf_prop_rail_guard": int(args.dlf_prop_rail_guard),
+                "dco_coarse_bits": args.dco_coarse_bits,
+                "coarse_code": args.coarse_code,
                 "pass": int(row["pass"]),
                 "init_dlf": int(row["init_dlf"]),
                 "start_code": int(row["start_code"]),
@@ -143,6 +147,8 @@ def run_combo(vvp_path, args, ki, kp):
                         "dlf_acq_force_rail_code": args.dlf_acq_force_rail_code,
                         "dlf_update_on_pllout": int(args.dlf_update_on_pllout),
                         "dlf_prop_rail_guard": int(args.dlf_prop_rail_guard),
+                        "dco_coarse_bits": args.dco_coarse_bits,
+                        "coarse_code": args.coarse_code,
                         "init_dlf": "",
                         "start_code": "",
                         "final_code": "",
@@ -169,6 +175,8 @@ def summarize(rows):
             row["dlf_acq_force_rail_code"],
             row["dlf_update_on_pllout"],
             row["dlf_prop_rail_guard"],
+            row["dco_coarse_bits"],
+            row["coarse_code"],
             row["ki"],
             row["kp"],
         )
@@ -182,6 +190,8 @@ def summarize(rows):
                 "dlf_acq_force_rail_code": row["dlf_acq_force_rail_code"],
                 "dlf_update_on_pllout": row["dlf_update_on_pllout"],
                 "dlf_prop_rail_guard": row["dlf_prop_rail_guard"],
+                "dco_coarse_bits": row["dco_coarse_bits"],
+                "coarse_code": row["coarse_code"],
                 "ki": row["ki"],
                 "kp": row["kp"],
                 "low_pass": 0,
@@ -258,6 +268,18 @@ def main():
         action="store_true",
         help="Invert outward BBPD decisions when the proportional term would drive the exported DCO code to rail.",
     )
+    parser.add_argument(
+        "--dco-coarse-bits",
+        type=int,
+        default=0,
+        help="Legacy packed mode: number of high DCO_CODE bits supplied by COARSEBINARY_CODE; use 0 for full-width fine control.",
+    )
+    parser.add_argument(
+        "--coarse-code",
+        type=int,
+        default=5,
+        help="Static COARSEBINARY_CODE value used by coarse/band digital-loop runs.",
+    )
     parser.add_argument("--target-code", type=int, default=128)
     parser.add_argument("--tol-code", type=int, default=32)
     parser.add_argument("--run-ns", type=int, default=200000)
@@ -281,6 +303,10 @@ def main():
         raise ValueError("--dlf-acq-boost-after must be in 1..15")
     if args.dlf_acq_force_rail_code < 0 or args.dlf_acq_force_rail_code > 127:
         raise ValueError("--dlf-acq-force-rail-code must be in 0..127")
+    if args.dco_coarse_bits < 0 or args.dco_coarse_bits > 4:
+        raise ValueError("--dco-coarse-bits must be in 0..4")
+    if args.coarse_code < 0 or args.coarse_code > 15:
+        raise ValueError("--coarse-code must be in 0..15")
 
     vvp_path = compile_testbench(root, build_dir, args)
 
@@ -311,6 +337,8 @@ def main():
             "dlf_acq_force_rail_code",
             "dlf_update_on_pllout",
             "dlf_prop_rail_guard",
+            "dco_coarse_bits",
+            "coarse_code",
             "init_dlf",
             "start_code",
             "final_code",
@@ -338,6 +366,8 @@ def main():
             "dlf_acq_force_rail_code",
             "dlf_update_on_pllout",
             "dlf_prop_rail_guard",
+            "dco_coarse_bits",
+            "coarse_code",
             "low_pass",
             "high_pass",
             "pass_both",

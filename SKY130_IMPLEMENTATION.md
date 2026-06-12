@@ -97,6 +97,15 @@ MHz at FF, 51.688142-70.763937 MHz at FS, 44.076396-64.579620 MHz at SF, and
 current TT lock-window target is 58.573518 MHz near code 128, using `NDIV=2`
 and `REF=29.286759 MHz`.
 
+That promoted DCO range is below the requested 100 MHz-order output range at
+TT. The repo therefore includes two non-promoted additions for the next range
+step: independent coarse-band DCO modeling with full 8-bit DLF fine-code
+control, and `sky130/IntegerPLL_DCO_einvp_fast_sky130.v`, a 9-stage EINVP DCO
+candidate with the same 255-bit thermometer interface. The 9-stage candidate
+has pre-layout TT fine-code range evidence of 102.518-229.054 MHz across the
+five codes 0/64/128/192/255, but it has not yet been hardened,
+RCX-characterized, or integrated into a signed-off hard top.
+
 The promoted post-layout convergence evidence is the hard-top-loaded
 extracted-DCO lock-window set. From low rail, the loop reaches codes 122..128
 with a 58.485654 MHz tail and 0.087865 MHz target error. From high rail, it
@@ -124,11 +133,14 @@ make -C OpenPLL validate-sky130-pll
 ```
 
 The heavier `validate-sky130-pll` flow now regenerates the Xyce C-interface
-mixed-signal gain sweep before the artifact audit. The artifact audit currently
-passes 69 evidence groups and writes
+mixed-signal gain sweep before the artifact audit. The v1 artifact set passed
+69 evidence groups and wrote
 `build/sky130_pll_validation/sky130_pll_validation_summary.csv` plus
-`sky130_pll_validation_summary.json`. It deliberately excludes diagnostic
-targets that are known not to pass from both rails.
+`sky130_pll_validation_summary.json`. This fast-path development tree changes
+RTL/scripts after those artifacts, so the audit intentionally reports stale
+physical/SPICE evidence until the matching LibreLane and long Xyce artifacts
+are regenerated. It deliberately excludes diagnostic targets that are known not
+to pass from both rails.
 
 Run the digital smoke test:
 
@@ -152,10 +164,72 @@ STD_CELL_LIBRARY=sky130_fd_sc_hd
 
 Override those environment variables if you want another Volare PDK target.
 
-Current Yosys/Liberty estimate for `IntegerPLL_DigitalCore` with the 8-bit DCO
-thermometer decoder, BBPD event-capture/reset logic, and DLF rail-escape logic
-is 910 mapped Sky130 cells and 5998.252800 square microns at
-`sky130_fd_sc_hd__tt_025C_1v80`.
+For the independent coarse-band fast-path checks intended to pair with a
+wide-range DCO, run:
+
+```sh
+make -C OpenPLL synth-coarse4
+make -C OpenPLL digital-loop-gain-sweep-coarse4
+make -C OpenPLL pll-top-fast100-coarse4-acq
+make -C OpenPLL xyce-pll-mixed-signal-fast100-coarse4-smoke
+make -C OpenPLL xyce-pll-analog-dco-mixed-fast100-coarse4-acq
+make -C OpenPLL spice-pll-mapped-loop-fast100-coarse4-motion
+```
+
+`synth-coarse4` keeps `DCO_COARSE_BITS=0`, sets `DLF_FRAC_WIDTH=2`, and enables
+`DLF_PROP_RAIL_GUARD=1`. In that mode the loop filter still drives the full
+8-bit `DCO_CODE`; `COARSEBINARY_CODE` is an independent band input consumed by
+the behavioral DCO model for fast-path acquisition and mixed-signal checks. The
+current target uses `COARSEBINARY_CODE=1`, a 16 MHz coarse-band step,
+`MMDCLKDIV_RATIO=2`, `REF=63.443725 MHz`, and a 126.88745 MHz output target
+near fine code 32. The companion LibreLane config is
+`openlane/IntegerPLL_DigitalCore/config_coarse4.json`; use:
+
+```sh
+make -C OpenPLL librelane-signoff-coarse4
+make -C OpenPLL check-librelane-signoff-coarse4
+```
+
+before using the coarse-enabled digital core as a physical macro. The generic
+`sky130/IntegerPLL_DCO_sky130.v` wrapper keeps the existing signed-off physical
+DCO pin list and does not consume `COARSEBINARY_CODE`. The independent coarse
+band is currently enabled only in behavioral/mapped-loop DCO models; a physical
+fast DCO with real coarse-band control remains future work.
+
+The 220 ns fast-path mapped-loop motion check uses the synthesized coarse-band
+digital core, filled BBPD RCX, and behavioral five-point DCO table with the
+independent 16 MHz coarse offset. It passes the intended two-rail motion check:
+low-start code 0 moves to 62 and high-start code 255 moves to 183. This is
+direction and integration evidence for the 126.88745 MHz target, not a full
+settling or post-layout fast-DCO signoff result.
+
+`xyce-pll-mixed-signal-fast100-coarse4-smoke` is a faster bounded mixed-signal
+check using the Xyce C-interface: Xyce owns the filled BBPD RCX, while the
+compiled driver owns the DLF/divider and the five-point fast DCO table plus the
+independent coarse offset. The current low case moves fine code 0 to 36 in 24
+cycles; the bounded high-side case moves code 64 to 38 in 15 cycles. Both have
+a closest target error of 4 codes around fine code 32. The full 255-to-32 rail
+case is not promoted for this C-interface driver because its one-edge-per-cycle
+phase model is not robust to large cycle slips.
+
+`xyce-pll-analog-dco-mixed-fast100-coarse4-acq` keeps the fast DCO phase and
+feedback divider inside Xyce instead of the compiled driver. The deck uses the
+filled BBPD RCX, a behavioral analog DCO phase integrator with the same
+five-point fast table, and an independent 16 MHz coarse offset. The external
+C++ driver only performs the fixed-point DLF update and drives the DCO code
+YDAC. With `KI=128`, `KP=8`, `FRAC=2`, and target fine code 32, the bounded
+four-update cases pass from both sides: 0 to 34 with measured `PLLOUT` at
+127.389 MHz, and 64 to 30 with measured `PLLOUT` at 126.316 MHz. Both are
+within the 2 MHz frequency tolerance around the 126.88745 MHz multiply target.
+This is the preferred fast mixed-signal polarity/gain/frequency check, but it
+is still not physical fast-DCO signoff or full rail-start settling.
+
+Current Yosys/Liberty estimate for the default `IntegerPLL_DigitalCore` with
+the 8-bit DCO thermometer decoder, registered DCO controls, BBPD event capture,
+and independent coarse interface is 1159 mapped Sky130 cells and
+12833.558400 square microns at `sky130_fd_sc_hd__tt_025C_1v80`. The FRAC=2
+guard-enabled `synth-coarse4` fast-path configuration maps to 1226 cells and
+13028.745600 square microns.
 
 Run LibreLane synthesis for the digital core:
 
@@ -245,10 +319,11 @@ DLF rail-escape RTL updates, and again after adding the default-off
 same-direction acquisition-boost parameters and the default-off PLLOUT-update
 mode, force-to-mid acquisition, and registered DCO control outputs.
 `make -C OpenPLL check-librelane-signoff` and
-`make -C OpenPLL check-librelane-signoff-force127-s4a2` pass against their
-current final views and zero-violation metrics. The signoff checker also
-compares final metrics timestamps against the digital-core RTL, config, and SDC
-sources so stale signoff artifacts are rejected.
+`make -C OpenPLL check-librelane-signoff-force127-s4a2` passed in the v1
+artifact set against their final views and zero-violation metrics. The signoff
+checker also compares final metrics timestamps against the digital-core RTL,
+config, and SDC sources, so this fast-path development tree reports those
+physical artifacts as stale until they are regenerated.
 
 The final signoff DEF, GDS, Magic/KLayout GDS, LEF, ODB, netlists, SDC,
 metrics, extracted LVS SPICE, corner SPEF, corner SDF, and corner Liberty files
@@ -352,6 +427,34 @@ make -C OpenPLL check-dco-einvp-librelane-signoff
 make -C OpenPLL dco-einvp-magic-rcx
 make -C OpenPLL check-dco-einvp-postlayout
 ```
+
+The 100 MHz-order fast DCO candidate keeps the same EINVP load style and
+thermometer interface, but uses a 9-stage enabled ring instead of the promoted
+17-stage ring:
+
+```sh
+make -C OpenPLL check-dco-einvp-fast-9stage-5pt
+make -C OpenPLL dco-einvp-fast-librelane-signoff
+make -C OpenPLL check-dco-einvp-fast-librelane-signoff
+make -C OpenPLL dco-einvp-fast-magic-rcx
+```
+
+The pre-layout check currently measures 102.518 MHz at code 0, 119.260 MHz at
+code 64, 142.355 MHz at code 128, 176.267 MHz at code 192, and 229.054 MHz at
+code 255. These numbers are useful for first-pass loop targeting and gain
+sweeps, but the physical range can shift substantially after fill, routing, RCX,
+and hard-top loading.
+
+After both the coarse digital-core macro and fast DCO macro are signed off, the
+future hard-top integration entry point is:
+
+```sh
+make -C OpenPLL hardtop-einvp-fast-librelane-signoff
+make -C OpenPLL check-hard-macro-top-einvp-fast-spice
+```
+
+That hard top is intentionally separate from the promoted
+`IntegerPLL_HardMacroTop_EINVP` path.
 
 The filled local-gain check is:
 
@@ -552,6 +655,12 @@ The RTL keeps DCO load polarity separate from the other thermometer decoders.
 dummy loads and `DCO_CODE=255` enables none. This makes increasing
 `DCO_CODE` increase oscillator frequency, matching the loop filter's
 increase-frequency command.
+For the independent coarse-band fast path, the DLF polarity above still applies
+to the full 8-bit fine code. Raising `COARSEBINARY_CODE` selects a faster
+behavioral DCO band when `DCO_COARSE_STEP_MHZ` is nonzero, while the DLF trims
+with the full fine-code span. A legacy packed diagnostic mode can still be built
+with `DCO_COARSE_BITS>0`; in that mode raising `COARSEBINARY_CODE` replaces the
+high fine-code bits and the DLF trims only the remaining low bits.
 
 Check the structural Sky130 top integration path:
 

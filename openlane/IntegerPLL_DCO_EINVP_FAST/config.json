@@ -1,0 +1,49 @@
+{
+  "DESIGN_NAME": "IntegerPLL_DCO_EINVP_FAST",
+  "VERILOG_FILES": [
+    "dir::../../sky130/IntegerPLL_DCO_einvp_fast_sky130.v"
+  ],
+  "VERILOG_DEFINES": [
+    "USE_POWER_PINS"
+  ],
+  "PNR_SDC_FILE": "dir::no_clock.sdc",
+  "SIGNOFF_SDC_FILE": "dir::no_clock.sdc",
+  "LINTER_DISABLE_WARNINGS_BLACKBOX": [
+    "UNDRIVEN",
+    "UNUSEDSIGNAL",
+    "PINMISSING",
+    "TIMESCALEMOD"
+  ],
+  "CLOCK_PORT": null,
+  "SYNTH_ELABORATE_ONLY": true,
+  "SYNTH_HIERARCHY_MODE": "flatten",
+  "SYNTH_WRITE_NOATTR": true,
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [
+    0,
+    0,
+    450,
+    450
+  ],
+  "FP_CORE_UTIL": 5,
+  "PL_TARGET_DENSITY_PCT": 20,
+  "MAX_FANOUT_CONSTRAINT": 4,
+  "RT_MAX_LAYER": "met5",
+  "RUN_CTS": false,
+  "RUN_POST_GPL_DESIGN_REPAIR": false,
+  "RUN_POST_CTS_RESIZER_TIMING": false,
+  "RUN_POST_GRT_DESIGN_REPAIR": false,
+  "RUN_POST_GRT_RESIZER_TIMING": false,
+  "RUN_MCSTA": false,
+  "RUN_IRDROP_REPORT": false,
+  "RUN_EQY": false,
+  "VDD_NETS": [
+    "VPWR"
+  ],
+  "GND_NETS": [
+    "VGND"
+  ],
+  "meta": {
+    "flow": "Classic"
+  }
+}

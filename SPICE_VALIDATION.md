@@ -5,13 +5,16 @@ OpenPLL Sky130 DCO, BBPD, and synthesized digital-control candidates.
 
 ## Validated Circuit
 
-The DCO validation script generates a Sky130 standard-cell SPICE netlist for
-the 8-bit DCO macro candidate:
+The DCO validation script generates Sky130 standard-cell SPICE netlists for
+8-bit DCO macro candidates:
 
 - Ring core: one `sky130_fd_sc_hd__nand2_1` enable gate plus 16
-  `sky130_fd_sc_hd__inv_1` delay stages.
-- Tuning network: 255 `sky130_fd_sc_hd__nand2_1` dummy-load cells distributed
-  across the 17 ring nodes.
+  `sky130_fd_sc_hd__inv_1` delay stages by default. The `--ring-stages`
+  option also supports shorter odd-stage rings such as the 9-stage fast-DCO
+  range probe.
+- Tuning network: 255 dummy-load cells distributed across the ring nodes. The
+  original baseline uses `sky130_fd_sc_hd__nand2_1`; load-style probes also
+  support `einvp`, `einvn`, and `dlclkp` cells.
 - Control: 8-bit binary `DCO_CODE` decoded to a 255-line thermometer bus.
 - PDK model: `sky130A`, `sky130_fd_sc_hd`; the representative sweep uses
   `tt`, and the endpoint PVT sweep uses `tt`, `ff`, `ss`, `sf`, and `fs`.
@@ -61,6 +64,48 @@ RCX, and hard-top SPEF where each diagnostic requires it. Its standalone filled
 EINVP DCO TT range is 50.955942-72.479371 MHz across the 8-bit code endpoints;
 the hard-top-loaded mid-code target used by the present loop diagnostics is
 58.573518 MHz, with `NDIV=2` and `REF=29.286759 MHz`.
+
+For 100 MHz-order output exploration, the pre-layout DCO generator can shorten
+the EINVP ring with `--ring-stages 9`. The current five-point TT run for that
+9-stage candidate measures 102.518/119.260/142.355/176.267/229.054 MHz at
+codes 0/64/128/192/255 and passes monotonicity. This is not promoted
+post-layout evidence; the fast DCO still needs LibreLane signoff, Magic RCX,
+post-layout transient characterization, and hard-top loading checks.
+The fast-path loop checks keep the fine DCO word at the full 8-bit resolution
+and model `COARSEBINARY_CODE` as an independent band offset. The current
+126.88745 MHz target uses `COARSEBINARY_CODE=1`, `DCO_COARSE_STEP_MHZ=16`,
+`MMDCLKDIV_RATIO=2`, and `REF=63.443725 MHz`; this is behavioral/mixed-signal
+range exploration, not post-layout DCO signoff.
+`make -C OpenPLL spice-pll-mapped-loop-fast100-coarse4-motion` runs the mapped
+digital core with filled BBPD RCX and a behavioral five-point DCO table in Xyce
+MPI/KLU. The current 220 ns check passes the motion criterion with low-start
+code 0 moving to 62 and high-start code 255 moving to 183. It is two-sided
+direction evidence for the 100 MHz-order multiplier setup, not a lock-window
+or settled-frequency signoff.
+
+`make -C OpenPLL xyce-pll-mixed-signal-fast100-coarse4-smoke` adds a bounded
+Xyce C-interface mixed-signal check for the same independent-coarse fast band.
+The filled BBPD RCX remains in Xyce and the compiled driver uses the
+102.518/119.260/142.355/176.267/229.054 MHz DCO table plus
+`COARSEBINARY_CODE=1` at 16 MHz/step. The low case moves code 0 to 36 in 24
+cycles; the bounded high-side case moves code 64 to 38 in 15 cycles. Both pass
+with 4-code closest error to the target code 32. This target deliberately does
+not claim full 255-to-32 rail-start lock because the current C-interface driver
+uses a simplified one-feedback-edge-per-cycle phase model.
+
+`make -C OpenPLL xyce-pll-analog-dco-mixed-fast100-coarse4-acq` is the stricter
+fast-band C-interface check. Xyce owns the filled BBPD RCX, analog behavioral
+DCO phase integrator, reference source, and divided feedback source; the C++
+driver only reads `UP`/`DN` YADCs and drives the DCO code YDAC from a fixed-point
+DLF model. With `COARSEBINARY_CODE=1`, 16 MHz coarse-band offset, `REF=63.443725
+MHz`, `NDIV=2`, `KI=128`, `KP=8`, and `FRAC=2`, the current short acquisition
+passes from both sides around target fine code 32: low start moves 0 to 34 in
+four updates and measures 127.389 MHz at `PLLOUT`; bounded high start moves
+64 to 30 in four updates and measures 126.316 MHz. Both finish within 2
+fine-code LSB of the target and within 0.572 MHz of the 126.88745 MHz output
+target. This is better mixed-signal boundary evidence than the older driver-DCO
+smoke, but it is still a bounded acquisition check, not full 255-to-32
+rail-start settling or physical fast-DCO signoff.
 
 The strongest post-layout convergence evidence is the extracted-DCO lock-window
 set, not the short mixed-signal driver smoke. The TT low-rail run reaches codes
@@ -179,7 +224,7 @@ gain signoff.
 The promoted artifact checker now includes this mixed C-interface evidence as
 `xyce_cinterface_mixed_signal_gain_sweep` and a direct
 `objective_deliverable_evidence` row for the Sky130 top, 8-bit control,
-frequency range, and extracted lock-window evidence; after adding those checks,
+frequency range, and extracted lock-window evidence. In the v1 artifact set,
 the full artifact audit passed 69 checks. Longer diagnostic probes were also
 tried but are not promoted: `KI=160`, `KP=8`, `boost_shift=4`, `boost_after=2` crosses
 the target but drifts to codes 156/90 after 20 cycles, and `KI=192`, `KP=8`,
@@ -188,6 +233,24 @@ the target but drifts to codes 156/90 after 20 cycles, and `KI=192`, `KP=8`,
 C-interface loop is useful for fast polarity/gain evidence, while final
 settling claims should stay with the extracted-DCO lock-window SPICE artifacts
 for now.
+
+The mixed-signal driver is also parameterized for non-promoted fast-band
+experiments: it accepts five DCO calibration points, `--coarse-code`,
+`--dco-coarse-step-mhz`, and `--phase-wrap-cycles`. The default arguments keep
+the promoted filled-EINVP DCO table. The fast100 coarse4 target passes only the
+bounded 0->36 and 64->38 smoke cases described above; full rail-start fast-DCO
+settling still belongs in the mapped-loop or future event-driven mixed-signal
+flow.
+
+The stricter analog-DCO fast100 target uses
+`scripts/xyce_pll_analog_dco_cinterface_deck.py` and
+`tools/xyce_cinterface_smoke/xyce_pll_analog_dco_mixed_signal_smoke.cpp`.
+That path leaves the DCO phase and divider waveforms in Xyce rather than in the
+compiled driver, and uses a quarter-cycle startup phase offset with no transient
+`uic` so the extracted BBPD sees clean first post-reset clock edges. The driver
+also reads the `PLLOUT` YADC after acquisition and checks the measured output
+frequency against `REF * NDIV`, so this target verifies the intended multiply
+frequency directly rather than relying only on final fine-code proximity.
 
 Run the status probe:
 
@@ -209,6 +272,7 @@ make -C OpenPLL xyce-cinterface-smoke
 make -C OpenPLL xyce-bbpd-cinterface-smoke
 make -C OpenPLL xyce-pll-mixed-signal-smoke
 make -C OpenPLL xyce-pll-mixed-signal-gain-sweep
+make -C OpenPLL xyce-pll-analog-dco-mixed-fast100-coarse4-acq
 python3 OpenPLL/scripts/check_sky130_pll_validation.py
 ```
 
@@ -2260,6 +2324,11 @@ Validated so far:
   `einvp` is monotonic from code 192 to 255 and spans 44.101 MHz, compared with
   9.756 MHz for the NAND load. The `einvp` representative 5-point sweep is
   also monotonic and spans 99.974-210.869 MHz. This is not post-layout evidence.
+- A pre-layout 9-stage `einvp` DCO range check passes at TT for codes
+  0/64/128/192/255, measuring
+  102.518/119.260/142.355/176.267/229.054 MHz. This supports the
+  100 MHz-order range target before layout, but the fast candidate is still not
+  post-layout RCX evidence.
 - A separate filled signoff `IntegerPLL_DCO_EINVP` candidate now passes
   LibreLane signoff and Magic RCX post-layout SPICE checks. TT filled-RCX smoke
   at codes 0, 128, and 255 measures 50.955942 MHz, 60.174879 MHz, and
@@ -2382,9 +2451,11 @@ Validated so far:
   Filled-BBPD-RCX to mapped-DLF Xyce integration checks pass KP32 REF-leading
   and feedback-leading cases for the synthesized cone, the full 906-cell mapped
   digital core, and the final 540-cell DLF cone with distributed SPEF RC.
-- `make -C OpenPLL validate-sky130-pll-artifacts` passes 69 promoted evidence
-  groups and writes consolidated CSV/JSON under
-  `build/sky130_pll_validation/`. The gate covers digital-core, DCO, and BBPD
+- `make -C OpenPLL validate-sky130-pll-artifacts` passed 69 promoted evidence
+  groups in the v1 artifact set and wrote consolidated CSV/JSON under
+  `build/sky130_pll_validation/`. In this fast-path development tree it
+  intentionally reports stale physical/SPICE artifacts until regenerated. The
+  gate covers digital-core, DCO, and BBPD
   signoff metrics; the separate `IntegerPLL_DCO_EINVP` candidate signoff;
   Sky130 structural top compile/control smoke; signed-off
   macro view/interface assembly; routed hard-macro top integration through

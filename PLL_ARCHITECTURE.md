@@ -26,15 +26,38 @@ interconnect loading, the promoted lock-window target is 58.573518 MHz at the
 nominal mid-code point; the current loop diagnostics use `NDIV=2` and
 `REF=29.286759 MHz` for that target.
 
+This promoted physical path does not reach a 100 MHz TT output. For
+100 MHz-order work, the fast-path model keeps the DLF-controlled fine DCO word
+at the full 8-bit resolution and treats `COARSEBINARY_CODE[3:0]` as an
+independent DCO band input. The current fast behavioral target uses
+`COARSEBINARY_CODE=1`, a 16 MHz coarse-band step, `MMDCLKDIV_RATIO=2`, and
+`REF=63.443725 MHz`, giving a 126.88745 MHz output target near fine code 32.
+The separate `IntegerPLL_DCO_EINVP_FAST` candidate shortens the EINVP ring from
+17 enabled stages to 9 enabled stages. Its pre-layout TT five-point fine-code
+sweep measures 102.518/119.260/142.355/176.267/229.054 MHz at codes
+0/64/128/192/255 before the coarse offset. That is range evidence only;
+post-layout RCX and hard-top integration are still required before treating it
+as a promoted DCO.
+
+In other words, the current fast-path architecture does not require coarse and
+fine tuning to sum to 8 bits. `DCO_COARSE_BITS=0` keeps all 8 exported DCO bits
+as fine control; coarse tuning is a separate band-select input in the
+behavioral/mixed DCO model. Nonzero `DCO_COARSE_BITS` remains only as a legacy
+packed-code diagnostic mode.
+
 The strongest convergence evidence is not the short mixed-signal smoke. It is
 the hard-top-loaded extracted-DCO lock-window evidence: low rail start reaches
 codes 122..128 with 58.485654 MHz tail frequency and 0.087865 MHz target error,
 while high rail start reaches codes 126..132 with 58.804895 MHz tail frequency
 and 0.231377 MHz target error. The Xyce C-interface mixed-signal path uses the
-filled extracted BBPD in Xyce with a compiled digital driver and behavioral
-DLF/DCO table; it is promoted as polarity and gain evidence, especially showing
-that nonzero `KP` improves acquisition versus `KP=0`, but it is not yet the
-full post-layout PLL lock signoff path.
+filled extracted BBPD in Xyce with a compiled digital driver. The stricter
+fast100 variant also keeps the behavioral DCO phase integrator and divider in
+Xyce, leaving only the DLF update in C++. In the current bounded fast100 check,
+the low-side case reaches fine code 34 and measures 127.389 MHz, while the
+bounded high-side case reaches fine code 30 and measures 126.316 MHz against the
+126.88745 MHz target. These runs are polarity, gain, and multiplier-frequency
+evidence, especially showing that nonzero `KP` improves acquisition versus
+`KP=0`, but they are not yet the full post-layout PLL lock signoff path.
 
 ## 1. Architecture Summary
 
@@ -267,15 +290,28 @@ resolution.
 | Medium | 5 bits | 31 bits | DLF upper field | Main closed-loop correction. |
 | Fine | 5 bits | 31 bits | DLF next field | Fine closed-loop correction. |
 
-For the current 8-bit Sky130 DCO macro path, the DLF control word also drives
-`DCO_CODE = DLF_CODE[9:2]`. With the default `DCO_THERM_INVERT=1`, code 0
-enables all 255 dummy loads and code 255 enables none, so the intended top-level
-polarity is that increasing code reduces load and increases oscillator
-frequency. The filled Sky130 RCX characterization is positive-gain through the
-code-240 tail peak, but the current layout rolls off by 0.654 MHz from code 240
-to code 255 at TT. Treat the high-code tail as non-monotonic until the DCO layout
-or load-bank sizing is retuned; the promoted loop settings target the midrange
-instead of relying on the all-off endpoint. A separate `IntegerPLL_DCO_EINVP`
+For the current 8-bit Sky130 DCO macro path, the default mode drives
+`DCO_CODE = DLF_CODE[9:2]`, so the loop filter owns the complete 8-bit
+fine-code span. The 100 MHz-order behavioral fast path keeps this mode
+(`DCO_COARSE_BITS=0`) and applies `COARSEBINARY_CODE[3:0]` as a separate DCO
+band offset in the analog DCO model. This avoids spending fine-code resolution
+on the coarse selector while still allowing a coarse band to choose the
+multiplication range.
+
+A legacy diagnostic mode remains available when `DCO_COARSE_BITS>0`: the
+coarse input replaces the high bits of `DCO_CODE`, and the DLF tunes only the
+remaining lower bits inside that packed page. Because that mode reduces the
+DLF-visible code width, `DLF_KI`, `DLF_KP`, and `DLF_FRAC_WIDTH` must be
+retuned for page-local convergence; it is not the primary 100 MHz-order target.
+
+With the default `DCO_THERM_INVERT=1`, code 0 enables all 255 dummy loads and
+code 255 enables none, so the intended top-level polarity is that increasing
+code reduces load and increases oscillator frequency. The filled Sky130 RCX
+characterization is positive-gain through the code-240 tail peak, but the
+current layout rolls off by 0.654 MHz from code 240 to code 255 at TT. Treat
+the high-code tail as non-monotonic until the DCO layout or load-bank sizing is
+retuned; the promoted loop settings target the midrange instead of relying on
+the all-off endpoint. A separate `IntegerPLL_DCO_EINVP`
 candidate using tri-state inverter loads has now been hardened and passes sparse
 TT filled-RCX monotonic checks from code 0 to 255 and across the high-code tail,
 plus FF/FS/SF/SS endpoint smoke, and a parallel

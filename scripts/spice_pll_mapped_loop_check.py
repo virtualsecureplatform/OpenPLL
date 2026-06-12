@@ -270,6 +270,22 @@ def dco_units_from_integrator_code(value):
     return value / 4.0
 
 
+def effective_dco_code_from_dlf(dlf_code, args):
+    raw_code = int(dlf_code) >> (args.dlf_code_width - 8)
+    if args.dco_coarse_bits == 0:
+        return max(0, min(255, raw_code))
+
+    fine_bits = 8 - args.dco_coarse_bits
+    fine_mask = (1 << fine_bits) - 1
+    fine_code = (raw_code >> args.dco_coarse_bits) & fine_mask
+    coarse_code = (args.coarse_code << fine_bits) & (~fine_mask & 0xff)
+    return max(0, min(255, coarse_code | fine_code))
+
+
+def case_expected_start_code(case_name, args):
+    return effective_dco_code_from_dlf(CASES[case_name]["start_dlf"], args)
+
+
 def xyce_rising_crossings(rows, key, threshold, start_s, end_s):
     key = key.lower()
     crossings = []
@@ -367,9 +383,24 @@ def dco_code_observer_lines(args):
     ]
 
 
+def coarse_code_observer_lines(args):
+    terms = [
+        (
+            f"{1 << index}*0.5*"
+            f"(1+tanh({args.code_sharpness:g}*"
+            f"(v({bit_net('COARSEBINARY_CODE', index)})-{args.threshold:g})))"
+        )
+        for index in range(4)
+    ]
+    return [
+        "BCOARSE_CODE COARSE_CODE 0 V={" + "+".join(terms) + "}",
+    ]
+
+
 def dco_model_lines(args):
     return [
         *dco_code_observer_lines(args),
+        *coarse_code_observer_lines(args),
         "* Smooth blends across measured filled-RCX DCO calibration points.",
         "BDCO_BLEND64 DCO_BLEND64 0 V={0.5*(1+tanh(10*(v(CODE)-64)))}",
         "BDCO_BLEND128 DCO_BLEND128 0 V={0.5*(1+tanh(10*(v(CODE)-128)))}",
@@ -381,6 +412,7 @@ def dco_model_lines(args):
         " + v(DCO_BLEND128)*(1-v(DCO_BLEND192))"
         "*(DCO_F128 + (DCO_F192-DCO_F128)*(v(CODE)-128)/64)"
         " + v(DCO_BLEND192)*(DCO_F192 + (DCO_F255-DCO_F192)*(v(CODE)-192)/63)"
+        " + DCO_COARSE_STEP*v(COARSE_CODE)"
         "}",
         "BFREQ FREQ_MHZ 0 V={v(DCO_FREQ_HZ)/1e6}",
         "BTARGET TARGET_MHZ 0 V={FREF*NDIV/1e6}",
@@ -408,7 +440,7 @@ def wrapped_directive(keyword, tokens, width=6):
 def dco_therm_ic_lines(case, args):
     if not args.init_dco_therm:
         return []
-    start_code = case["expected_start_code"]
+    start_code = effective_dco_code_from_dlf(case["start_dlf"], args)
     tokens = []
     for index in range(255):
         value = "1.8" if index >= start_code else "0"
@@ -1063,6 +1095,7 @@ def mapped_loop_netlist(case_name, args, instances, subckt_ports):
         f".param DCO_F128={args.f128_mhz:.12g}e6",
         f".param DCO_F192={args.f192_mhz:.12g}e6",
         f".param DCO_F255={args.f255_mhz:.12g}e6",
+        f".param DCO_COARSE_STEP={args.dco_coarse_step_mhz:.12g}e6",
         f".param CLK_SHARPNESS={args.clock_sharpness:.12g}",
         *supply_source_lines(args),
         "VRESET RESET_N 0 "
@@ -1083,7 +1116,7 @@ def mapped_loop_netlist(case_name, args, instances, subckt_ports):
         *source_bit_lines("DLF_Ext_Data", 10, case["start_dlf"]),
         *source_bit_lines("DLF_KI", 8, args.ki),
         *source_bit_lines("DLF_KP", 8, args.kp),
-        *source_bit_lines("COARSEBINARY_CODE", 4, 5),
+        *source_bit_lines("COARSEBINARY_CODE", 4, args.coarse_code),
         *source_bit_lines("MMDCLKDIV_RATIO", 8, args.ndiv),
         "",
         "* Reference source.",
@@ -1252,7 +1285,7 @@ def run_one(case_name, args, build_dir, instances, subckt_ports):
         None if tail_freq_mhz is None else abs(tail_freq_mhz - target_freq)
     )
     expected = CASES[case_name]["expected"]
-    expected_start_code = CASES[case_name]["expected_start_code"]
+    expected_start_code = case_expected_start_code(case_name, args)
     start_ok = (
         start_code is not None
         and abs(start_code - expected_start_code) <= args.start_code_tolerance
@@ -1351,6 +1384,9 @@ def run_one(case_name, args, build_dir, instances, subckt_ports):
         "kp": args.kp,
         "dlf_code_width": args.dlf_code_width,
         "dlf_frac_width": args.dlf_frac_width,
+        "dco_coarse_bits": args.dco_coarse_bits,
+        "coarse_code": args.coarse_code,
+        "dco_coarse_step_mhz": args.dco_coarse_step_mhz,
         "ndiv": args.ndiv,
         "ref_mhz": ref_mhz,
         "target_freq_mhz": target_freq,
@@ -1525,6 +1561,18 @@ def main():
     parser.add_argument("--kp", type=int, default=32)
     parser.add_argument("--dlf-code-width", type=int, default=10)
     parser.add_argument("--dlf-frac-width", type=int, default=8)
+    parser.add_argument(
+        "--dco-coarse-bits",
+        type=int,
+        default=0,
+        help="Legacy packed mode: number of high DCO_CODE bits supplied by COARSEBINARY_CODE; use 0 for full-width fine control.",
+    )
+    parser.add_argument(
+        "--coarse-code",
+        type=int,
+        default=5,
+        help="Static COARSEBINARY_CODE value driven into the mapped loop deck.",
+    )
     parser.add_argument("--ndiv", type=int, default=2)
     parser.add_argument("--ref-mhz", type=float, default=None)
     parser.add_argument("--f0-mhz", type=float, default=FILLED_DCO_DEFAULTS["f0_mhz"])
@@ -1532,6 +1580,12 @@ def main():
     parser.add_argument("--f128-mhz", type=float, default=FILLED_DCO_DEFAULTS["f128_mhz"])
     parser.add_argument("--f192-mhz", type=float, default=FILLED_DCO_DEFAULTS["f192_mhz"])
     parser.add_argument("--f255-mhz", type=float, default=FILLED_DCO_DEFAULTS["f255_mhz"])
+    parser.add_argument(
+        "--dco-coarse-step-mhz",
+        type=float,
+        default=0.0,
+        help="Frequency offset per independent COARSEBINARY_CODE step in the behavioral DCO model.",
+    )
     parser.add_argument("--threshold", type=float, default=0.9)
     parser.add_argument("--code-sharpness", type=float, default=20.0)
     parser.add_argument("--clock-sharpness", type=float, default=500.0)
@@ -1633,6 +1687,12 @@ def main():
         raise ValueError("--dlf-code-width must remain 10 for the current mapped loop deck")
     if args.dlf_frac_width < 0 or args.dlf_frac_width > 12:
         raise ValueError("--dlf-frac-width must be in 0..12")
+    if args.dco_coarse_bits < 0 or args.dco_coarse_bits > 4:
+        raise ValueError("--dco-coarse-bits must be in 0..4")
+    if args.coarse_code < 0 or args.coarse_code > 15:
+        raise ValueError("--coarse-code must be in 0..15")
+    if args.dco_coarse_step_mhz < 0.0:
+        raise ValueError("--dco-coarse-step-mhz must be non-negative")
     if args.ndiv < 2 or args.ndiv > 255:
         raise ValueError("--ndiv must be in 2..255")
     if args.jobs < 1:

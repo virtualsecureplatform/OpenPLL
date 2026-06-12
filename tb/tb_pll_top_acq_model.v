@@ -9,7 +9,8 @@ module tb_pll_top_acq_model #(
     parameter DLF_ACQ_RAIL_BOOST = 0,
     parameter DLF_ACQ_FORCE_RAIL_CODE = 0,
     parameter DLF_UPDATE_ON_PLLOUT = 0,
-    parameter DLF_PROP_RAIL_GUARD = 0
+    parameter DLF_PROP_RAIL_GUARD = 0,
+    parameter DCO_COARSE_BITS = 0
 );
 
     localparam integer DEFAULT_TARGET_DCO_CODE = 128;
@@ -46,6 +47,7 @@ module tb_pll_top_acq_model #(
     integer cfg_mmd_ratio;
     integer cfg_ref_half_ps;
     integer cfg_allow_fail;
+    integer cfg_coarse_code;
 
     integer start_code;
     integer final_code;
@@ -83,7 +85,8 @@ module tb_pll_top_acq_model #(
         .DLF_ACQ_RAIL_BOOST(DLF_ACQ_RAIL_BOOST),
         .DLF_ACQ_FORCE_RAIL_CODE(DLF_ACQ_FORCE_RAIL_CODE),
         .DLF_UPDATE_ON_PLLOUT(DLF_UPDATE_ON_PLLOUT),
-        .DLF_PROP_RAIL_GUARD(DLF_PROP_RAIL_GUARD)
+        .DLF_PROP_RAIL_GUARD(DLF_PROP_RAIL_GUARD),
+        .DCO_COARSE_BITS(DCO_COARSE_BITS)
     ) dut (
         .REF(ref_clk),
         .RESET_N(reset_n),
@@ -130,7 +133,7 @@ module tb_pll_top_acq_model #(
             dlf_ext_data = init_code;
             dlf_ki = cfg_ki[7:0];
             dlf_kp = cfg_kp[7:0];
-            coarse_code = 4'd5;
+            coarse_code = cfg_coarse_code[3:0];
             mmd_ratio = cfg_mmd_ratio[7:0];
 
             repeat (6) @(posedge ref_clk);
@@ -226,6 +229,7 @@ module tb_pll_top_acq_model #(
         cfg_mmd_ratio = DEFAULT_MMD_RATIO;
         cfg_ref_half_ps = DEFAULT_REF_HALF_PS;
         cfg_allow_fail = 0;
+        cfg_coarse_code = 5;
         pllo_edges = 0;
         clkdiv_edges = 0;
 
@@ -249,12 +253,14 @@ module tb_pll_top_acq_model #(
             cfg_ref_half_ps = DEFAULT_REF_HALF_PS;
         if (!$value$plusargs("ALLOW_FAIL=%d", cfg_allow_fail))
             cfg_allow_fail = 0;
+        if (!$value$plusargs("COARSE_CODE=%d", cfg_coarse_code))
+            cfg_coarse_code = 5;
 
         ref_half_ns = cfg_ref_half_ps / 1000.0;
         ref_mhz = 1000000.0 / (2.0 * cfg_ref_half_ps);
         dlf_ki = cfg_ki[7:0];
         dlf_kp = cfg_kp[7:0];
-        coarse_code = 4'd5;
+        coarse_code = cfg_coarse_code[3:0];
         mmd_ratio = cfg_mmd_ratio[7:0];
 
         run_case("low-start", cfg_low_init[9:0], 1);

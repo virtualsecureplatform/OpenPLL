@@ -18,6 +18,17 @@ iverilog -g2012 -Wall \
 vvp "$BUILD_DIR/tb_digital_core.vvp"
 
 iverilog -g2012 -Wall \
+    -o "$BUILD_DIR/tb_digital_core_coarse.vvp" \
+    "$ROOT_DIR/rtl/IntegerPLL_B2TH.v" \
+    "$ROOT_DIR/rtl/IntegerPLL_MMD_Retimer.v" \
+    "$ROOT_DIR/rtl/IntegerPLL_Divider.v" \
+    "$ROOT_DIR/rtl/IntegerPLL_DLF.v" \
+    "$ROOT_DIR/rtl/IntegerPLL_DigitalCore.v" \
+    "$ROOT_DIR/tb/tb_digital_core_coarse.v"
+
+vvp "$BUILD_DIR/tb_digital_core_coarse.vvp"
+
+iverilog -g2012 -DOPENPLL_DCO_MODEL_COARSE -Wall \
     -o "$BUILD_DIR/tb_pll_top_model.vvp" \
     "$ROOT_DIR/rtl/IntegerPLL_B2TH.v" \
     "$ROOT_DIR/rtl/IntegerPLL_MMD_Retimer.v" \

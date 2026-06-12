@@ -27,3 +27,7 @@ target_link_libraries(xyce_bbpd_cinterface_smoke PRIVATE "${XYCE_CINTERFACE_LIB}
 add_executable(xyce_pll_mixed_signal_smoke xyce_pll_mixed_signal_smoke.cpp)
 target_include_directories(xyce_pll_mixed_signal_smoke PRIVATE "${XYCE_INSTALL_DIR}/include")
 target_link_libraries(xyce_pll_mixed_signal_smoke PRIVATE "${XYCE_CINTERFACE_LIB}" Xyce::XyceLib)
+
+add_executable(xyce_pll_analog_dco_mixed_signal_smoke xyce_pll_analog_dco_mixed_signal_smoke.cpp)
+target_include_directories(xyce_pll_analog_dco_mixed_signal_smoke PRIVATE "${XYCE_INSTALL_DIR}/include")
+target_link_libraries(xyce_pll_analog_dco_mixed_signal_smoke PRIVATE "${XYCE_CINTERFACE_LIB}" Xyce::XyceLib)

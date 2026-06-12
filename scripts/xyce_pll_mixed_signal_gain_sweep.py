@@ -106,6 +106,22 @@ def run_case(args, deck: Path, ki: int, kp: int, init_code: int) -> tuple[dict[s
         str(args.min_motion),
         "--tol-code",
         str(args.tol_code),
+        "--f0-mhz",
+        f"{args.f0_mhz:g}",
+        "--f64-mhz",
+        f"{args.f64_mhz:g}",
+        "--f128-mhz",
+        f"{args.f128_mhz:g}",
+        "--f192-mhz",
+        f"{args.f192_mhz:g}",
+        "--f255-mhz",
+        f"{args.f255_mhz:g}",
+        "--coarse-code",
+        str(args.coarse_code),
+        "--dco-coarse-step-mhz",
+        f"{args.dco_coarse_step_mhz:g}",
+        "--phase-wrap-cycles",
+        f"{args.phase_wrap_cycles:g}",
     ]
 
     try:
@@ -157,6 +173,14 @@ def run_case(args, deck: Path, ki: int, kp: int, init_code: int) -> tuple[dict[s
         "frac": str(args.frac),
         "boost_shift": str(args.boost_shift),
         "boost_after": str(args.boost_after),
+        "f0_mhz": f"{args.f0_mhz:g}",
+        "f64_mhz": f"{args.f64_mhz:g}",
+        "f128_mhz": f"{args.f128_mhz:g}",
+        "f192_mhz": f"{args.f192_mhz:g}",
+        "f255_mhz": f"{args.f255_mhz:g}",
+        "coarse_code": str(args.coarse_code),
+        "dco_coarse_step_mhz": f"{args.dco_coarse_step_mhz:g}",
+        "phase_wrap_cycles": f"{args.phase_wrap_cycles:g}",
         "returncode": str(returncode),
         "driver_pass": bool_text(returncode == 0 and driver_pass),
         "final_code": str(final_code),
@@ -231,6 +255,29 @@ def main() -> int:
     parser.add_argument("--ndiv", type=int, default=2)
     parser.add_argument("--min-motion", type=int, default=4)
     parser.add_argument("--tol-code", type=int, default=24)
+    parser.add_argument("--f0-mhz", type=float, default=50.955942)
+    parser.add_argument("--f64-mhz", type=float, default=55.205750)
+    parser.add_argument("--f128-mhz", type=float, default=60.174879)
+    parser.add_argument("--f192-mhz", type=float, default=66.031451)
+    parser.add_argument("--f255-mhz", type=float, default=72.479371)
+    parser.add_argument(
+        "--coarse-code",
+        type=int,
+        default=0,
+        help="Static independent DCO coarse-band code for the driver DCO model.",
+    )
+    parser.add_argument(
+        "--dco-coarse-step-mhz",
+        type=float,
+        default=0.0,
+        help="Frequency offset per independent coarse-band code step.",
+    )
+    parser.add_argument(
+        "--phase-wrap-cycles",
+        type=float,
+        default=0.45,
+        help="Driver phase wrap threshold in reference cycles; 0 disables wrapping.",
+    )
     parser.add_argument("--step-ps", type=float, default=5.0)
     parser.add_argument("--sim-time-ns", type=float, default=400.0)
     parser.add_argument("--timeout-s", type=float, default=90.0)
@@ -286,6 +333,14 @@ def main() -> int:
         "frac",
         "boost_shift",
         "boost_after",
+        "f0_mhz",
+        "f64_mhz",
+        "f128_mhz",
+        "f192_mhz",
+        "f255_mhz",
+        "coarse_code",
+        "dco_coarse_step_mhz",
+        "phase_wrap_cycles",
         "returncode",
         "driver_pass",
         "final_code",

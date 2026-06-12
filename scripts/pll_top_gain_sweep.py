@@ -65,6 +65,7 @@ def compile_testbench(root, build_dir, args):
         f"-Ptb_pll_top_acq_model.DLF_ACQ_FORCE_RAIL_CODE={args.dlf_acq_force_rail_code}",
         f"-Ptb_pll_top_acq_model.DLF_UPDATE_ON_PLLOUT={int(args.dlf_update_on_pllout)}",
         f"-Ptb_pll_top_acq_model.DLF_PROP_RAIL_GUARD={int(args.dlf_prop_rail_guard)}",
+        f"-Ptb_pll_top_acq_model.DCO_COARSE_BITS={args.dco_coarse_bits}",
         "-o",
         str(output),
         str(root / "rtl" / "IntegerPLL_B2TH.v"),
@@ -94,12 +95,14 @@ def run_combo(vvp_path, args, ki, kp):
         f"+HIGH_INIT={args.high_init}",
         f"+MMD_RATIO={args.mmd_ratio}",
         f"+REF_HALF_PS={args.ref_half_ps}",
+        f"+COARSE_CODE={args.coarse_code}",
         "+DCO_USE_PIECEWISE5=1",
         f"+DCO_F0_MHZ={args.f0_mhz}",
         f"+DCO_F64_MHZ={args.f64_mhz}",
         f"+DCO_F128_MHZ={args.f128_mhz}",
         f"+DCO_F192_MHZ={args.f192_mhz}",
         f"+DCO_F255_MHZ={args.f255_mhz}",
+        f"+DCO_COARSE_STEP_MHZ={args.dco_coarse_step_mhz}",
         "+ALLOW_FAIL=1",
     ]
     timed_out = False
@@ -156,6 +159,9 @@ def run_combo(vvp_path, args, ki, kp):
         row["dlf_acq_force_rail_code"] = args.dlf_acq_force_rail_code
         row["dlf_update_on_pllout"] = int(args.dlf_update_on_pllout)
         row["dlf_prop_rail_guard"] = int(args.dlf_prop_rail_guard)
+        row["dco_coarse_bits"] = args.dco_coarse_bits
+        row["coarse_code"] = args.coarse_code
+        row["dco_coarse_step_mhz"] = args.dco_coarse_step_mhz
         row["ref_mhz"] = float(row["ref_mhz"])
         row["abs_error_code"] = abs(row["final_code"] - row["target_code"])
         row["returncode"] = returncode
@@ -178,6 +184,9 @@ def run_combo(vvp_path, args, ki, kp):
                         "dlf_acq_force_rail_code": args.dlf_acq_force_rail_code,
                         "dlf_update_on_pllout": int(args.dlf_update_on_pllout),
                         "dlf_prop_rail_guard": int(args.dlf_prop_rail_guard),
+                        "dco_coarse_bits": args.dco_coarse_bits,
+                        "coarse_code": args.coarse_code,
+                        "dco_coarse_step_mhz": args.dco_coarse_step_mhz,
                         "init_dlf": "",
                         "start_code": "",
                         "final_code": "",
@@ -210,6 +219,9 @@ def summarize(rows):
             row["dlf_acq_force_rail_code"],
             row["dlf_update_on_pllout"],
             row["dlf_prop_rail_guard"],
+            row["dco_coarse_bits"],
+            row["coarse_code"],
+            row["dco_coarse_step_mhz"],
             row["ki"],
             row["kp"],
         )
@@ -223,6 +235,9 @@ def summarize(rows):
                 "dlf_acq_force_rail_code": row["dlf_acq_force_rail_code"],
                 "dlf_update_on_pllout": row["dlf_update_on_pllout"],
                 "dlf_prop_rail_guard": row["dlf_prop_rail_guard"],
+                "dco_coarse_bits": row["dco_coarse_bits"],
+                "coarse_code": row["coarse_code"],
+                "dco_coarse_step_mhz": row["dco_coarse_step_mhz"],
                 "ki": row["ki"],
                 "kp": row["kp"],
                 "low_pass": 0,
@@ -320,6 +335,24 @@ def main():
         action="store_true",
         help="Invert outward BBPD decisions when the proportional term would drive the exported DCO code to rail.",
     )
+    parser.add_argument(
+        "--dco-coarse-bits",
+        type=int,
+        default=0,
+        help="Legacy packed mode: number of high DCO_CODE bits supplied by COARSEBINARY_CODE; use 0 for full-width fine control.",
+    )
+    parser.add_argument(
+        "--coarse-code",
+        type=int,
+        default=5,
+        help="Independent COARSEBINARY_CODE value used by coarse-band behavioral runs.",
+    )
+    parser.add_argument(
+        "--dco-coarse-step-mhz",
+        type=float,
+        default=0.0,
+        help="Frequency offset per independent COARSEBINARY_CODE step in the behavioral DCO model.",
+    )
     parser.add_argument("--target-code", type=int, default=FILLED_DCO_DEFAULTS["target_code"])
     parser.add_argument("--tol-code", type=int, default=FILLED_DCO_DEFAULTS["tol_code"])
     parser.add_argument("--run-ns", type=int, default=FILLED_DCO_DEFAULTS["run_ns"])
@@ -346,6 +379,12 @@ def main():
         raise ValueError("--dlf-acq-boost-after must be in 1..15")
     if args.dlf_acq_force_rail_code < 0 or args.dlf_acq_force_rail_code > 127:
         raise ValueError("--dlf-acq-force-rail-code must be in 0..127")
+    if args.dco_coarse_bits < 0 or args.dco_coarse_bits > 4:
+        raise ValueError("--dco-coarse-bits must be in 0..4")
+    if args.coarse_code < 0 or args.coarse_code > 15:
+        raise ValueError("--coarse-code must be in 0..15")
+    if args.dco_coarse_step_mhz < 0.0:
+        raise ValueError("--dco-coarse-step-mhz must be non-negative")
 
     root = Path(__file__).resolve().parents[1]
     build_dir = Path(args.build_dir).expanduser().resolve()
@@ -379,6 +418,9 @@ def main():
             "dlf_acq_force_rail_code",
             "dlf_update_on_pllout",
             "dlf_prop_rail_guard",
+            "dco_coarse_bits",
+            "coarse_code",
+            "dco_coarse_step_mhz",
             "init_dlf",
             "start_code",
             "final_code",
@@ -412,6 +454,9 @@ def main():
             "dlf_acq_force_rail_code",
             "dlf_update_on_pllout",
             "dlf_prop_rail_guard",
+            "dco_coarse_bits",
+            "coarse_code",
+            "dco_coarse_step_mhz",
             "low_pass",
             "high_pass",
             "pass_both",

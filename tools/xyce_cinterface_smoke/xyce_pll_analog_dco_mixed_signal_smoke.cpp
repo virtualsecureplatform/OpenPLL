@@ -3,14 +3,13 @@
 #include <algorithm>
 #include <array>
 #include <cmath>
-#include <cstdint>
 #include <cctype>
+#include <cstdint>
 #include <cstdlib>
 #include <cstring>
 #include <iomanip>
 #include <iostream>
 #include <limits>
-#include <sstream>
 #include <string>
 #include <utility>
 #include <vector>
@@ -18,8 +17,6 @@
 namespace {
 
 constexpr double kVdd = 1.8;
-constexpr double kEdge = 20.0e-12;
-constexpr double kPulseWidth = 2.0e-9;
 constexpr double kDecisionThreshold = 40.0e-12;
 
 struct StatePoint {
@@ -109,7 +106,7 @@ bool update_dac(void **xyce, const std::string &name,
 std::vector<StatePoint> get_adc_points(void **xyce, const std::string &token) {
   constexpr int max_adcs = 16;
   constexpr int max_name = 256;
-  constexpr int max_points = 4096;
+  constexpr int max_points = 8192;
 
   std::array<std::array<char, max_name>, max_adcs> names{};
   std::array<char *, max_adcs> name_ptrs{};
@@ -199,40 +196,59 @@ double high_time_in_window(std::vector<StatePoint> points, double start_s,
   return high_time;
 }
 
-std::vector<std::pair<double, double>> pulse_points(double now_s,
-                                                    double rise_s) {
-  return {{now_s, 0.0},
-          {rise_s, 0.0},
-          {rise_s + kEdge, kVdd},
-          {rise_s + kPulseWidth, kVdd},
-          {rise_s + kPulseWidth + kEdge, 0.0},
-          {rise_s + kPulseWidth + 2.0e-9, 0.0}};
+std::vector<std::pair<double, double>> code_points(double now_s, int code) {
+  const double volt = kVdd * static_cast<double>(std::clamp(code, 0, 255)) / 255.0;
+  return {{now_s, volt}, {now_s + 1.0e-12, volt}};
 }
 
-double wrap_phase(double phase_s, double period_s, double wrap_cycles) {
-  if (wrap_cycles <= 0.0) {
-    return phase_s;
+std::vector<double> rising_edges_in_window(std::vector<StatePoint> points,
+                                           double start_s, double end_s) {
+  std::vector<double> edges;
+  if (points.empty() || end_s <= start_s) {
+    return edges;
   }
-  const double limit_s = wrap_cycles * period_s;
-  while (phase_s > limit_s) {
-    phase_s -= period_s;
+  std::sort(points.begin(), points.end(),
+            [](const StatePoint &lhs, const StatePoint &rhs) {
+              return lhs.time_s < rhs.time_s;
+            });
+
+  int state = points.front().state;
+  for (const StatePoint &point : points) {
+    if (point.time_s <= start_s) {
+      state = point.state;
+      continue;
+    }
+    if (point.time_s > end_s) {
+      break;
+    }
+    if (state == 0 && point.state == 1) {
+      edges.push_back(point.time_s);
+    }
+    state = point.state;
   }
-  while (phase_s < -limit_s) {
-    phase_s += period_s;
+  return edges;
+}
+
+double frequency_mhz_from_edges(const std::vector<double> &edges) {
+  if (edges.size() < 2) {
+    return 0.0;
   }
-  return phase_s;
+  const double span_s = edges.back() - edges.front();
+  if (span_s <= 0.0) {
+    return 0.0;
+  }
+  return (static_cast<double>(edges.size() - 1) / span_s) / 1.0e6;
 }
 
 [[noreturn]] void usage(const char *name) {
   std::cerr
       << "usage: " << name
       << " DECK [--init-code N] [--target-code N] [--cycles N]\n"
-      << "       [--ki N] [--kp N] [--frac N] [--boost-shift N]\n"
-      << "       [--boost-after N] [--ndiv N] [--expect increase|decrease]\n"
-      << "       [--phase-ps PS] [--min-motion N] [--tol-code N]\n"
-      << "       [--f0-mhz F] [--f64-mhz F] [--f128-mhz F]\n"
-      << "       [--f192-mhz F] [--f255-mhz F] [--coarse-code N]\n"
-      << "       [--dco-coarse-step-mhz F] [--phase-wrap-cycles F]\n";
+      << "       [--ki N] [--kp N] [--frac N] [--ref-mhz F]\n"
+      << "       [--expect increase|decrease] [--min-motion N] [--tol-code N]\n"
+      << "       [--target-mhz F] [--freq-tol-mhz F] [--measure-cycles N]\n"
+      << "       [--measure-settle-ns NS] [--min-pllout-rises N]\n"
+      << "       [--start-ns NS] [--prop-rail-guard]\n";
   std::exit(EXIT_FAILURE);
 }
 
@@ -252,57 +268,27 @@ double parse_double_arg(int argc, char **argv, int &index) {
 
 struct Args {
   std::string deck;
-  int init_code = 96;
-  int target_code = 128;
-  int cycles = 8;
-  int ki = 255;
+  int init_code = 0;
+  int target_code = 32;
+  int cycles = 4;
+  int ki = 128;
   int kp = 8;
-  int frac = 6;
-  int boost_shift = 4;
+  int frac = 2;
+  int boost_shift = 0;
   int boost_after = 1;
   int ndiv = 2;
+  double ref_mhz = 63.443725;
   std::string expect = "increase";
-  double phase_ps = std::numeric_limits<double>::quiet_NaN();
-  int min_motion = 8;
-  int tol_code = 24;
-  double f0_mhz = 50.955942;
-  double f64_mhz = 55.205750;
-  double f128_mhz = 60.174879;
-  double f192_mhz = 66.031451;
-  double f255_mhz = 72.479371;
-  int coarse_code = 0;
-  double dco_coarse_step_mhz = 0.0;
-  double phase_wrap_cycles = 0.45;
+  int min_motion = 20;
+  int tol_code = 8;
+  int measure_cycles = 2;
+  int min_pllout_rises = 3;
+  double target_mhz = 0.0;
+  double freq_tol_mhz = 2.0;
+  double measure_settle_ns = 1.0;
+  double start_ns = 20.0;
+  bool prop_rail_guard = false;
 };
-
-double dco_freq_hz(int code, const Args &args) {
-  struct Point {
-    int code;
-    double mhz;
-  };
-
-  const double coarse_offset_mhz =
-      static_cast<double>(args.coarse_code) * args.dco_coarse_step_mhz;
-  const Point table[] = {
-      {0, args.f0_mhz + coarse_offset_mhz},
-      {64, args.f64_mhz + coarse_offset_mhz},
-      {128, args.f128_mhz + coarse_offset_mhz},
-      {192, args.f192_mhz + coarse_offset_mhz},
-      {255, args.f255_mhz + coarse_offset_mhz},
-  };
-
-  code = std::clamp(code, 0, 255);
-  for (size_t i = 1; i < sizeof(table) / sizeof(table[0]); ++i) {
-    if (code <= table[i].code) {
-      const Point &lo = table[i - 1];
-      const Point &hi = table[i];
-      const double t = static_cast<double>(code - lo.code) /
-                       static_cast<double>(hi.code - lo.code);
-      return (lo.mhz + t * (hi.mhz - lo.mhz)) * 1.0e6;
-    }
-  }
-  return table[sizeof(table) / sizeof(table[0]) - 1].mhz * 1.0e6;
-}
 
 Args parse_args(int argc, char **argv) {
   if (argc < 2) {
@@ -331,33 +317,31 @@ Args parse_args(int argc, char **argv) {
       args.boost_after = parse_int_arg(argc, argv, index);
     } else if (opt == "--ndiv") {
       args.ndiv = parse_int_arg(argc, argv, index);
+    } else if (opt == "--ref-mhz") {
+      args.ref_mhz = parse_double_arg(argc, argv, index);
     } else if (opt == "--expect") {
       if (index + 1 >= argc) {
         usage(argv[0]);
       }
       args.expect = argv[++index];
-    } else if (opt == "--phase-ps") {
-      args.phase_ps = parse_double_arg(argc, argv, index);
     } else if (opt == "--min-motion") {
       args.min_motion = parse_int_arg(argc, argv, index);
     } else if (opt == "--tol-code") {
       args.tol_code = parse_int_arg(argc, argv, index);
-    } else if (opt == "--f0-mhz") {
-      args.f0_mhz = parse_double_arg(argc, argv, index);
-    } else if (opt == "--f64-mhz") {
-      args.f64_mhz = parse_double_arg(argc, argv, index);
-    } else if (opt == "--f128-mhz") {
-      args.f128_mhz = parse_double_arg(argc, argv, index);
-    } else if (opt == "--f192-mhz") {
-      args.f192_mhz = parse_double_arg(argc, argv, index);
-    } else if (opt == "--f255-mhz") {
-      args.f255_mhz = parse_double_arg(argc, argv, index);
-    } else if (opt == "--coarse-code") {
-      args.coarse_code = parse_int_arg(argc, argv, index);
-    } else if (opt == "--dco-coarse-step-mhz") {
-      args.dco_coarse_step_mhz = parse_double_arg(argc, argv, index);
-    } else if (opt == "--phase-wrap-cycles") {
-      args.phase_wrap_cycles = parse_double_arg(argc, argv, index);
+    } else if (opt == "--measure-cycles") {
+      args.measure_cycles = parse_int_arg(argc, argv, index);
+    } else if (opt == "--min-pllout-rises") {
+      args.min_pllout_rises = parse_int_arg(argc, argv, index);
+    } else if (opt == "--target-mhz") {
+      args.target_mhz = parse_double_arg(argc, argv, index);
+    } else if (opt == "--freq-tol-mhz") {
+      args.freq_tol_mhz = parse_double_arg(argc, argv, index);
+    } else if (opt == "--measure-settle-ns") {
+      args.measure_settle_ns = parse_double_arg(argc, argv, index);
+    } else if (opt == "--start-ns") {
+      args.start_ns = parse_double_arg(argc, argv, index);
+    } else if (opt == "--prop-rail-guard") {
+      args.prop_rail_guard = true;
     } else {
       usage(argv[0]);
     }
@@ -367,17 +351,16 @@ Args parse_args(int argc, char **argv) {
       args.target_code > 255 || args.cycles <= 0 || args.ki < 0 ||
       args.kp < 0 || args.frac < 0 || args.frac > 20 ||
       args.boost_shift < 0 || args.boost_shift > 20 ||
-      args.boost_after < 1 || args.ndiv <= 0 ||
-      args.coarse_code < 0 || args.coarse_code > 15 ||
-      args.dco_coarse_step_mhz < 0.0 ||
-      args.phase_wrap_cycles < 0.0 ||
-      args.f0_mhz <= 0.0 || args.f64_mhz <= args.f0_mhz ||
-      args.f128_mhz <= args.f64_mhz || args.f192_mhz <= args.f128_mhz ||
-      args.f255_mhz <= args.f192_mhz ||
+      args.boost_after < 1 || args.ndiv <= 0 || args.ref_mhz <= 0.0 ||
+      args.measure_cycles < 0 || args.min_pllout_rises < 2 ||
+      args.target_mhz < 0.0 || args.freq_tol_mhz <= 0.0 ||
+      args.measure_settle_ns < 0.0 || args.start_ns < 0.0 ||
       (args.expect != "increase" && args.expect != "decrease")) {
     usage(argv[0]);
   }
-
+  if (args.target_mhz == 0.0) {
+    args.target_mhz = args.ref_mhz * static_cast<double>(args.ndiv);
+  }
   return args;
 }
 
@@ -389,16 +372,48 @@ struct DlfModel {
         dco_code(args.init_code) {}
 
   void update(int decision) {
-    if (decision == 0) {
-      code10 = static_cast<int>(acc >> cfg.frac);
+    const int64_t max_code10 = 1023;
+    const int64_t max_acc = max_code10 << cfg.frac;
+    const int64_t high_rail_code10 = 255 << 2;
+    const int64_t low_visible_next_code10 = 1 << 2;
+    const int64_t kp_acc = static_cast<int64_t>(cfg.kp) << cfg.frac;
+    const int64_t integ_code = std::clamp<int64_t>(acc >> cfg.frac, 0, max_code10);
+
+    bool inc = decision > 0;
+    bool dec = decision < 0;
+    bool prop_low_guard = false;
+    bool prop_high_guard = false;
+    if (cfg.prop_rail_guard) {
+      prop_low_guard = (acc - kp_acc) < (low_visible_next_code10 << cfg.frac);
+      prop_high_guard = (acc + kp_acc) >= (high_rail_code10 << cfg.frac);
+    }
+
+    const bool inc_eff =
+        (inc && !prop_high_guard && integ_code < high_rail_code10) ||
+        (((integ_code == 0) || prop_low_guard) && dec);
+    const bool dec_eff =
+        (dec && !prop_low_guard && integ_code != 0) ||
+        (((integ_code >= high_rail_code10) || prop_high_guard) && inc);
+
+    int dir = 0;
+    if (inc_eff) {
+      dir = 1;
+    } else if (dec_eff) {
+      dir = -1;
+    }
+
+    if (dir == 0) {
+      code10 = static_cast<int>(integ_code);
       dco_code = std::clamp(code10 >> 2, 0, 255);
+      last_dir = 0;
+      same_dir_count = 0;
       return;
     }
 
-    if (decision == last_dir) {
+    if (dir == last_dir) {
       ++same_dir_count;
     } else {
-      last_dir = decision;
+      last_dir = dir;
       same_dir_count = 1;
     }
 
@@ -407,12 +422,10 @@ struct DlfModel {
       ki_eff <<= cfg.boost_shift;
     }
 
-    acc += static_cast<int64_t>(decision) * ki_eff;
-    const int64_t max_acc = static_cast<int64_t>(1023) << cfg.frac;
-    acc = std::clamp<int64_t>(acc, 0, max_acc);
-
-    const int base10 = static_cast<int>(acc >> cfg.frac);
-    code10 = std::clamp(base10 + decision * cfg.kp, 0, 1023);
+    acc = std::clamp<int64_t>(acc + static_cast<int64_t>(dir) * ki_eff, 0, max_acc);
+    const int64_t prop_acc =
+        std::clamp<int64_t>(acc + static_cast<int64_t>(dir) * kp_acc, 0, max_acc);
+    code10 = static_cast<int>(prop_acc >> cfg.frac);
     dco_code = std::clamp(code10 >> 2, 0, 255);
   }
 
@@ -443,81 +456,68 @@ int main(int argc, char **argv) {
   void *xyce = nullptr;
   xyce_open(&xyce);
   if (xyce == nullptr) {
-    std::cerr << "xyce_pll_mixed_signal_smoke=fail error=\"xyce_open returned null\"\n";
+    std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"xyce_open returned null\"\n";
     return EXIT_FAILURE;
   }
 
-  std::vector<char> program_name = mutable_string("xyce_pll_mixed_signal_smoke");
+  std::vector<char> program_name =
+      mutable_string("xyce_pll_analog_dco_mixed_signal_smoke");
   std::vector<char> deck_name = mutable_string(args.deck);
   std::array<char *, 3> xyce_argv = {program_name.data(), deck_name.data(),
                                      nullptr};
   if (xyce_initialize(&xyce, 2, xyce_argv.data()) != 1) {
-    std::cerr << "xyce_pll_mixed_signal_smoke=fail error=\"xyce_initialize failed\"\n";
+    std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"xyce_initialize failed\"\n";
     xyce_close(&xyce);
     return EXIT_FAILURE;
   }
 
   const std::vector<std::string> dac_names = get_device_names(&xyce, "YDAC");
-  const std::string ref_dac = find_device(dac_names, "REF");
-  const std::string div_dac = find_device(dac_names, "DIV");
-  if (ref_dac.empty() || div_dac.empty()) {
-    std::cerr << "xyce_pll_mixed_signal_smoke=fail error=\"missing REF/DIV YDAC\"\n";
-    xyce_close(&xyce);
-    return EXIT_FAILURE;
-  }
-
-  const auto seed_low =
-      std::vector<std::pair<double, double>>{{0.0, 0.0}, {1.0e-12, 0.0}};
-  if (!update_dac(&xyce, ref_dac, seed_low) ||
-      !update_dac(&xyce, div_dac, seed_low)) {
-    std::cerr << "xyce_pll_mixed_signal_smoke=fail error=\"failed to seed DACs\"\n";
-    xyce_close(&xyce);
-    return EXIT_FAILURE;
-  }
-
-  double actual_time = 0.0;
-  if (xyce_simulateUntil(&xyce, 1.0e-12, &actual_time) != 1) {
-    std::cerr << "xyce_pll_mixed_signal_smoke=fail error=\"initial simulateUntil failed\"\n";
+  const std::string code_dac = find_device(dac_names, "CODE");
+  if (code_dac.empty()) {
+    std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"missing CODE YDAC\"\n";
     xyce_close(&xyce);
     return EXIT_FAILURE;
   }
 
   DlfModel dlf(args);
-  const double target_hz = dco_freq_hz(args.target_code, args);
-  const double tref = static_cast<double>(args.ndiv) / target_hz;
-  const double base_time = 20.0e-9;
-  double phase = std::isnan(args.phase_ps)
-                     ? (expected_dir > 0 ? 0.20e-9 : -0.20e-9)
-                     : args.phase_ps * 1.0e-12;
-  phase = wrap_phase(phase, tref, args.phase_wrap_cycles);
+  double actual_time = 0.0;
+  if (!update_dac(&xyce, code_dac, code_points(0.0, dlf.dco_code))) {
+    std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"failed to seed DCO code DAC\"\n";
+    xyce_close(&xyce);
+    return EXIT_FAILURE;
+  }
+  if (xyce_simulateUntil(&xyce, args.start_ns * 1.0e-9, &actual_time) != 1) {
+    std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"initial simulateUntil failed\"\n";
+    xyce_close(&xyce);
+    return EXIT_FAILURE;
+  }
 
+  const double tref = 1.0 / (args.ref_mhz * 1.0e6);
+  const double start_s = args.start_ns * 1.0e-9;
   const int start_code = dlf.dco_code;
   int min_abs_error = std::abs(start_code - args.target_code);
   int expected_decisions = 0;
 
   std::cout << std::fixed << std::setprecision(3);
-  std::cout << "cycle,ref_ns,div_ns,phase_ps,up_ps,dn_ps,decision,dco_code,"
-               "fdco_mhz\n";
+  std::cout << "cycle,start_ns,end_ns,up_ps,dn_ps,decision,dco_code,code10\n";
 
   for (int cycle = 0; cycle < args.cycles; ++cycle) {
-    const int code_before = dlf.dco_code;
-    const double fdco = dco_freq_hz(code_before, args);
-    const double ref_rise = base_time + static_cast<double>(cycle) * tref;
-    const double div_rise = ref_rise + phase;
-    const double window_start =
-        std::max(actual_time, std::min(ref_rise, div_rise) - 0.5e-9);
-    const double window_end =
-        std::max(ref_rise, div_rise) + kPulseWidth + 2.0e-9;
+    const double window_start = start_s + static_cast<double>(cycle) * tref;
+    const double window_end = start_s + static_cast<double>(cycle + 1) * tref;
 
-    if (!update_dac(&xyce, ref_dac, pulse_points(actual_time, ref_rise)) ||
-        !update_dac(&xyce, div_dac, pulse_points(actual_time, div_rise))) {
-      std::cerr << "xyce_pll_mixed_signal_smoke=fail error=\"failed to update DAC waveforms\"\n";
+    if (window_start > actual_time &&
+        xyce_simulateUntil(&xyce, window_start, &actual_time) != 1) {
+      std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"simulateUntil window start failed\"\n";
       xyce_close(&xyce);
       return EXIT_FAILURE;
     }
-
+    if (!update_dac(&xyce, code_dac, code_points(actual_time, dlf.dco_code))) {
+      std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"failed to update DCO code DAC\"\n";
+      xyce_close(&xyce);
+      return EXIT_FAILURE;
+    }
     if (xyce_simulateUntil(&xyce, window_end, &actual_time) != 1) {
-      std::cerr << "xyce_pll_mixed_signal_smoke=fail error=\"simulateUntil failed\"\n";
+      std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"simulateUntil failed\"\n";
       xyce_close(&xyce);
       return EXIT_FAILURE;
     }
@@ -525,7 +525,7 @@ int main(int argc, char **argv) {
     const std::vector<StatePoint> up = get_adc_points(&xyce, "UP_ADC");
     const std::vector<StatePoint> dn = get_adc_points(&xyce, "DN_ADC");
     if (up.empty() || dn.empty()) {
-      std::cerr << "xyce_pll_mixed_signal_smoke=fail error=\"missing UP/DN ADC states\"\n";
+      std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"missing UP/DN ADC states\"\n";
       xyce_close(&xyce);
       return EXIT_FAILURE;
     }
@@ -546,15 +546,50 @@ int main(int argc, char **argv) {
     min_abs_error =
         std::min(min_abs_error, std::abs(dlf.dco_code - args.target_code));
 
-    std::cout << cycle << ',' << ref_rise * 1.0e9 << ','
-              << div_rise * 1.0e9 << ',' << phase * 1.0e12 << ','
-              << up_time * 1.0e12 << ',' << dn_time * 1.0e12 << ','
-              << decision_name(decision) << ',' << dlf.dco_code << ','
-              << fdco * 1.0e-6 << '\n';
+    std::cout << cycle << ',' << window_start * 1.0e9 << ','
+              << window_end * 1.0e9 << ',' << up_time * 1.0e12 << ','
+              << dn_time * 1.0e12 << ',' << decision_name(decision) << ','
+              << dlf.dco_code << ',' << dlf.code10 << '\n';
+  }
 
-    phase =
-        wrap_phase(phase + static_cast<double>(args.ndiv) / fdco - tref, tref,
-                   args.phase_wrap_cycles);
+  double measured_mhz = 0.0;
+  int pllout_rises = 0;
+  double measure_start_s = actual_time;
+  double measure_end_s = actual_time;
+  if (args.measure_cycles > 0) {
+    if (!update_dac(&xyce, code_dac, code_points(actual_time, dlf.dco_code))) {
+      std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"failed to update final DCO code DAC\"\n";
+      xyce_close(&xyce);
+      return EXIT_FAILURE;
+    }
+    measure_start_s = actual_time + args.measure_settle_ns * 1.0e-9;
+    measure_end_s = actual_time + static_cast<double>(args.measure_cycles) * tref;
+    if (measure_end_s <= measure_start_s) {
+      std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"invalid measurement window\"\n";
+      xyce_close(&xyce);
+      return EXIT_FAILURE;
+    }
+    if (xyce_simulateUntil(&xyce, measure_end_s, &actual_time) != 1) {
+      std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"measurement simulateUntil failed\"\n";
+      xyce_close(&xyce);
+      return EXIT_FAILURE;
+    }
+
+    const std::vector<StatePoint> pllout = get_adc_points(&xyce, "PLLOUT_ADC");
+    if (pllout.empty()) {
+      std::cerr << "xyce_pll_analog_dco_mixed_signal_smoke=fail error=\"missing PLLOUT ADC states\"\n";
+      xyce_close(&xyce);
+      return EXIT_FAILURE;
+    }
+    const std::vector<double> rises =
+        rising_edges_in_window(pllout, measure_start_s, measure_end_s);
+    pllout_rises = static_cast<int>(rises.size());
+    measured_mhz = frequency_mhz_from_edges(rises);
+    std::cout << "measure,start_ns,end_ns,pllout_rises,measured_mhz,target_mhz,freq_abs_error_mhz\n";
+    std::cout << "measure," << measure_start_s * 1.0e9 << ','
+              << measure_end_s * 1.0e9 << ',' << pllout_rises << ','
+              << measured_mhz << ',' << args.target_mhz << ','
+              << std::abs(measured_mhz - args.target_mhz) << '\n';
   }
 
   xyce_close(&xyce);
@@ -565,16 +600,30 @@ int main(int argc, char **argv) {
                          : (final_code <= start_code - args.min_motion);
   const bool improved =
       min_abs_error < std::abs(start_code - args.target_code);
+  const bool close_enough = std::abs(final_code - args.target_code) <= args.tol_code;
   const bool has_expected_decision = expected_decisions > 0;
-  const bool pass = moved && improved && has_expected_decision;
+  const bool freq_checked = args.measure_cycles > 0;
+  const bool has_frequency = !freq_checked || pllout_rises >= args.min_pllout_rises;
+  const bool freq_close =
+      !freq_checked || std::abs(measured_mhz - args.target_mhz) <= args.freq_tol_mhz;
+  const bool pass =
+      moved && improved && close_enough && has_expected_decision &&
+      has_frequency && freq_close;
 
-  std::cout << "xyce_pll_mixed_signal_smoke=" << (pass ? "pass" : "fail")
-            << " expect=" << args.expect << " start_code=" << start_code
-            << " final_code=" << final_code
+  std::cout << "xyce_pll_analog_dco_mixed_signal_smoke="
+            << (pass ? "pass" : "fail") << " expect=" << args.expect
+            << " start_code=" << start_code << " final_code=" << final_code
             << " target_code=" << args.target_code
             << " min_abs_error=" << min_abs_error
+            << " final_abs_error=" << std::abs(final_code - args.target_code)
             << " tol_code=" << args.tol_code
-            << " expected_decisions=" << expected_decisions << '\n';
+            << " expected_decisions=" << expected_decisions
+            << " measured_mhz=" << measured_mhz
+            << " target_mhz=" << args.target_mhz
+            << " freq_abs_error_mhz="
+            << std::abs(measured_mhz - args.target_mhz)
+            << " freq_tol_mhz=" << args.freq_tol_mhz
+            << " pllout_rises=" << pllout_rises << '\n';
 
   return pass ? EXIT_SUCCESS : EXIT_FAILURE;
 }

@@ -9,7 +9,8 @@ module tb_digital_loop_acq #(
     parameter DLF_ACQ_RAIL_BOOST = 0,
     parameter DLF_ACQ_FORCE_RAIL_CODE = 0,
     parameter DLF_UPDATE_ON_PLLOUT = 0,
-    parameter DLF_PROP_RAIL_GUARD = 0
+    parameter DLF_PROP_RAIL_GUARD = 0,
+    parameter DCO_COARSE_BITS = 0
 );
 
     localparam real TARGET_DCO_MHZ = 101.9368;
@@ -55,6 +56,7 @@ module tb_digital_loop_acq #(
     integer cfg_low_init;
     integer cfg_high_init;
     integer cfg_allow_fail;
+    integer cfg_coarse_code;
     integer case_passed;
     integer run_start_ns;
     integer run_deadline_ns;
@@ -100,7 +102,8 @@ module tb_digital_loop_acq #(
         .DLF_ACQ_RAIL_BOOST(DLF_ACQ_RAIL_BOOST),
         .DLF_ACQ_FORCE_RAIL_CODE(DLF_ACQ_FORCE_RAIL_CODE),
         .DLF_UPDATE_ON_PLLOUT(DLF_UPDATE_ON_PLLOUT),
-        .DLF_PROP_RAIL_GUARD(DLF_PROP_RAIL_GUARD)
+        .DLF_PROP_RAIL_GUARD(DLF_PROP_RAIL_GUARD),
+        .DCO_COARSE_BITS(DCO_COARSE_BITS)
     ) dut (
         .PLLOUT(pllo),
         .RESET_N(reset_n),
@@ -169,7 +172,7 @@ module tb_digital_loop_acq #(
             dlf_ext_data = init_code;
             dlf_ki = cfg_ki[7:0];
             dlf_kp = cfg_kp[7:0];
-            coarse_code = 4'd5;
+            coarse_code = cfg_coarse_code[3:0];
             mmd_ratio = MMD_RATIO[7:0];
 
             repeat (6) @(posedge ref_clk);
@@ -246,6 +249,7 @@ module tb_digital_loop_acq #(
         cfg_low_init = 0;
         cfg_high_init = 1020;
         cfg_allow_fail = 0;
+        cfg_coarse_code = 5;
         if (!$value$plusargs("KI=%d", cfg_ki))
             cfg_ki = 255;
         if (!$value$plusargs("KP=%d", cfg_kp))
@@ -262,10 +266,12 @@ module tb_digital_loop_acq #(
             cfg_high_init = 1020;
         if (!$value$plusargs("ALLOW_FAIL=%d", cfg_allow_fail))
             cfg_allow_fail = 0;
+        if (!$value$plusargs("COARSE_CODE=%d", cfg_coarse_code))
+            cfg_coarse_code = 5;
 
         dlf_ki = cfg_ki[7:0];
         dlf_kp = cfg_kp[7:0];
-        coarse_code = 4'd5;
+        coarse_code = cfg_coarse_code[3:0];
         mmd_ratio = MMD_RATIO[7:0];
 
         run_case("low-start", cfg_low_init[9:0], 1);

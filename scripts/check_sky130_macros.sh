@@ -10,6 +10,7 @@ STD_CELL_VERILOG="$PDK_ROOT/$PDK/libs.ref/$STD_CELL_LIBRARY/verilog/$STD_CELL_LI
 STD_CELL_PRIMITIVES="$PDK_ROOT/$PDK/libs.ref/$STD_CELL_LIBRARY/verilog/primitives.v"
 COMPILE_OUT="$BUILD_DIR/sky130_macro_compile.vvp"
 EINVP_COMPILE_OUT="$BUILD_DIR/sky130_dco_einvp_compile.vvp"
+EINVP_FAST_COMPILE_OUT="$BUILD_DIR/sky130_dco_einvp_fast_compile.vvp"
 SMOKE_OUT="$BUILD_DIR/sky130_macro_top_smoke.vvp"
 LOG="$BUILD_DIR/sky130_macro_top_smoke.log"
 
@@ -46,6 +47,13 @@ iverilog -g2012 -DUSE_POWER_PINS -DUSE_CELL_POWER_PINS -Wall \
     "$STD_CELL_VERILOG" \
     "$ROOT_DIR/sky130/IntegerPLL_DCO_einvp_sky130.v"
 
+iverilog -g2012 -DUSE_POWER_PINS -DUSE_CELL_POWER_PINS -Wall \
+    -s IntegerPLL_DCO_EINVP_FAST \
+    -o "$EINVP_FAST_COMPILE_OUT" \
+    "$STD_CELL_PRIMITIVES" \
+    "$STD_CELL_VERILOG" \
+    "$ROOT_DIR/sky130/IntegerPLL_DCO_einvp_fast_sky130.v"
+
 iverilog -g2012 -DUSE_POWER_PINS -Wall \
     -s tb_sky130_top_smoke \
     -o "$SMOKE_OUT" \
@@ -61,5 +69,6 @@ vvp "$SMOKE_OUT" | tee "$LOG"
 
 echo "Wrote $COMPILE_OUT"
 echo "Wrote $EINVP_COMPILE_OUT"
+echo "Wrote $EINVP_FAST_COMPILE_OUT"
 echo "Wrote $SMOKE_OUT"
 echo "Wrote $LOG"

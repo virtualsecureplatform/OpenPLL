@@ -14,7 +14,8 @@ module IntegerPLL_DigitalCore #(
     parameter DLF_PROP_RAIL_GUARD = 0,
     parameter THERM_INVERT = 0,
     parameter DCO_THERM_INVERT = 1,
-    parameter DCO_CONTROL_REGISTERED = 1
+    parameter DCO_CONTROL_REGISTERED = 1,
+    parameter DCO_COARSE_BITS = 0
 ) (
     input wire PLLOUT,
     input wire RESET_N,
@@ -40,6 +41,9 @@ module IntegerPLL_DigitalCore #(
     output wire [DLF_CODE_WIDTH-1:0] DLF_CODE
 );
 
+    localparam integer DCO_CODE_WIDTH = 8;
+    localparam integer DCO_FINE_BITS = DCO_CODE_WIDTH - DCO_COARSE_BITS;
+
     reg clkdiv_sampled;
     reg clkdiv_sampled_d;
     reg bbpd_up_event_toggle;
@@ -62,6 +66,10 @@ module IntegerPLL_DigitalCore #(
     wire [1:0] bbpd_event_decision;
     wire [1:0] bbpd_seen_next;
     wire [7:0] dco_code_raw;
+    wire [7:0] dco_fine_mask;
+    wire [7:0] dco_fine_code;
+    wire [7:0] dco_coarse_code;
+    wire [7:0] dco_code_effective;
     wire [254:0] dco_therm_raw;
     reg [7:0] dco_code_reg;
     reg [254:0] dco_therm_reg;
@@ -92,7 +100,7 @@ module IntegerPLL_DigitalCore #(
         .CODE_WIDTH(DLF_CODE_WIDTH),
         .FRAC_WIDTH(DLF_FRAC_WIDTH),
         .GAIN_WIDTH(DLF_GAIN_WIDTH),
-        .DCO_CODE_WIDTH(8),
+        .DCO_CODE_WIDTH(DCO_FINE_BITS),
         .ACQ_BOOST_SHIFT(DLF_ACQ_BOOST_SHIFT),
         .ACQ_BOOST_AFTER(DLF_ACQ_BOOST_AFTER),
         .ACQ_RAIL_BOOST(DLF_ACQ_RAIL_BOOST),
@@ -128,13 +136,19 @@ module IntegerPLL_DigitalCore #(
     );
 
     assign dco_code_raw = DLF_CODE[DLF_CODE_WIDTH-1:DLF_CODE_WIDTH-8];
+    assign dco_fine_mask = 8'hff >> DCO_COARSE_BITS;
+    assign dco_fine_code = (dco_code_raw >> DCO_COARSE_BITS) & dco_fine_mask;
+    assign dco_coarse_code =
+        ({4'b0000, COARSEBINARY_CODE} << DCO_FINE_BITS) &
+        ~dco_fine_mask;
+    assign dco_code_effective = dco_coarse_code | dco_fine_code;
 
     IntegerPLL_B2TH #(
         .BIN_WIDTH(8),
         .THERM_WIDTH(255),
         .INVERT_OUTPUT(DCO_THERM_INVERT)
     ) dco_decoder (
-        .binary_code(dco_code_raw),
+        .binary_code(dco_code_effective),
         .thermal_code(dco_therm_raw)
     );
 
@@ -149,12 +163,12 @@ module IntegerPLL_DigitalCore #(
                     dco_therm_reg <= (DCO_THERM_INVERT != 0) ?
                         {255{1'b1}} : {255{1'b0}};
                 end else begin
-                    dco_code_reg <= dco_code_raw;
+                    dco_code_reg <= dco_code_effective;
                     dco_therm_reg <= dco_therm_raw;
                 end
             end
         end else begin : gen_comb_dco_control
-            assign DCO_CODE = dco_code_raw;
+            assign DCO_CODE = dco_code_effective;
             assign DCO_THERM = dco_therm_raw;
         end
     endgenerate
