@@ -1,0 +1,55 @@
+{
+  "DESIGN_NAME": "IntegerPLL_DigitalCore",
+  "VERILOG_FILES": [
+    "dir::../../rtl/IntegerPLL_B2TH.v",
+    "dir::../../rtl/IntegerPLL_MMD_Retimer.v",
+    "dir::../../rtl/IntegerPLL_Divider.v",
+    "dir::../../rtl/IntegerPLL_DLF.v",
+    "dir::../../rtl/IntegerPLL_DigitalCore.v"
+  ],
+  "SYNTH_PARAMETERS": [
+    "DLF_FRAC_WIDTH=6",
+    "DLF_ACQ_BOOST_SHIFT=4",
+    "DLF_ACQ_BOOST_AFTER=2",
+    "DLF_ACQ_RAIL_BOOST=1",
+    "DLF_ACQ_FORCE_RAIL_CODE=127",
+    "DLF_UPDATE_ON_PLLOUT=0",
+    "DLF_PROP_RAIL_GUARD=1",
+    "DCO_CONTROL_REGISTERED=1"
+  ],
+  "PNR_SDC_FILE": "dir::pnr.sdc",
+  "SIGNOFF_SDC_FILE": "dir::pnr.sdc",
+  "LINTER_DISABLE_WARNINGS_BLACKBOX": [
+    "UNDRIVEN",
+    "UNUSEDSIGNAL",
+    "TIMESCALEMOD"
+  ],
+  "CLOCK_PORT": "PLLOUT",
+  "CLOCK_PERIOD": 8.0,
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [
+    0,
+    0,
+    300,
+    300
+  ],
+  "FP_CORE_UTIL": 25,
+  "PL_TARGET_DENSITY_PCT": 50,
+  "MAX_FANOUT_CONSTRAINT": 4,
+  "MAX_TRANSITION_CONSTRAINT": 0.75,
+  "MAX_CAPACITANCE_CONSTRAINT": 0.2,
+  "RUN_POST_GRT_DESIGN_REPAIR": true,
+  "GRT_DESIGN_REPAIR_MAX_WIRE_LENGTH": 100,
+  "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 0,
+  "GRT_DESIGN_REPAIR_MAX_CAP_PCT": 0,
+  "SYNTH_STRATEGY": "AREA 0",
+  "VDD_NETS": [
+    "VPWR"
+  ],
+  "GND_NETS": [
+    "VGND"
+  ],
+  "meta": {
+    "flow": "Classic"
+  }
+}

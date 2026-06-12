@@ -1,0 +1,9 @@
+* OpenPLL Xyce C-interface YADC/YDAC smoke deck.
+YDAC dac_driver1 in 0 dacmod
+Rload in 0 1k
+YADC adc1 in 0 adcmod R=1T WIDTH=1
+.model dacmod DAC(tr=100p tf=100p)
+.model adcmod ADC(settlingtime=100p uppervoltagelimit=1.8 lowervoltagelimit=0)
+.print tran v(in) N(YADC!ADC1_STATE)
+.tran 1p 20n
+.end

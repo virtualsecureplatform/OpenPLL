@@ -1,0 +1,7 @@
+build/
+__pycache__/
+*.pyc
+*.prn
+*.raw
+*.mt0
+openlane/*/runs/
