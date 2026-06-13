@@ -9,6 +9,7 @@ import subprocess
 import sys
 from pathlib import Path
 
+from sky130_pdk import default_pdk_root
 from xyce_utils import add_xyce_arguments, validate_xyce_arguments
 
 
@@ -283,7 +284,7 @@ def main():
         "--mapped-verilog",
         default=str(root / "build" / "synth" / "IntegerPLL_DigitalCore_sky130.v"),
     )
-    parser.add_argument("--pdk-root", default=os.environ.get("PDK_ROOT", "~/.volare"))
+    parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default=os.environ.get("PDK", "sky130A"))
     parser.add_argument(
         "--std-cell-library",

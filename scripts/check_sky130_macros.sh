@@ -3,8 +3,21 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 BUILD_DIR="$ROOT_DIR/build/check"
-PDK_ROOT="${PDK_ROOT:-$HOME/.volare}"
 PDK="${PDK:-sky130A}"
+CIEL_SKY130_ROOT="${CIEL_SKY130_ROOT:-$HOME/.volare/ciel/sky130}"
+LEGACY_VOLARE_ROOT="${LEGACY_VOLARE_ROOT:-$HOME/.volare}"
+NORMALIZED_PDK_ROOT="${PDK_ROOT:-}"
+if [[ "$NORMALIZED_PDK_ROOT" == "~/"* ]]; then
+    NORMALIZED_PDK_ROOT="$HOME/${NORMALIZED_PDK_ROOT#~/}"
+fi
+if [[ -z "${PDK_ROOT:-}" || "${NORMALIZED_PDK_ROOT%/}" == "${LEGACY_VOLARE_ROOT%/}" || ( "${NORMALIZED_PDK_ROOT%/}" == "${CIEL_SKY130_ROOT%/}" && ! -d "$NORMALIZED_PDK_ROOT/$PDK" ) ]]; then
+    if [[ -d "$CIEL_SKY130_ROOT/$PDK" ]]; then
+        PDK_ROOT="$CIEL_SKY130_ROOT"
+    else
+        CIEL_SKY130_VERSION_ROOT="$(find "$CIEL_SKY130_ROOT/versions" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | sort | tail -n 1 || true)"
+        PDK_ROOT="${CIEL_SKY130_VERSION_ROOT:-$LEGACY_VOLARE_ROOT}"
+    fi
+fi
 STD_CELL_LIBRARY="${STD_CELL_LIBRARY:-sky130_fd_sc_hd}"
 STD_CELL_VERILOG="$PDK_ROOT/$PDK/libs.ref/$STD_CELL_LIBRARY/verilog/$STD_CELL_LIBRARY.v"
 STD_CELL_PRIMITIVES="$PDK_ROOT/$PDK/libs.ref/$STD_CELL_LIBRARY/verilog/primitives.v"

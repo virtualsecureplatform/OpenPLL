@@ -12,6 +12,7 @@ import time
 import re
 from pathlib import Path
 
+from sky130_pdk import default_pdk_root
 from xyce_utils import add_xyce_arguments, validate_xyce_arguments, xyce_simulator_command
 
 
@@ -348,7 +349,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run DCO post-layout RCX transient SPICE.")
     parser.add_argument("--codes", default="0,128,255")
     parser.add_argument("--corner", default="tt")
-    parser.add_argument("--pdk-root", default="~/.volare")
+    parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default="sky130A")
     parser.add_argument(
         "--rcx-netlist",

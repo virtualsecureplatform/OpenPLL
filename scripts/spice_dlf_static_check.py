@@ -10,6 +10,7 @@ import sys
 import time
 from pathlib import Path
 
+from sky130_pdk import default_pdk_root
 from spice_dlf_update_check import (
     bit_net,
     extract_cone,
@@ -307,7 +308,7 @@ def main():
         "--mapped-verilog",
         default=str(root_dir / "build" / "synth" / "IntegerPLL_DigitalCore_sky130.v"),
     )
-    parser.add_argument("--pdk-root", default=os.environ.get("PDK_ROOT", "~/.volare"))
+    parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default=os.environ.get("PDK", "sky130A"))
     parser.add_argument(
         "--std-cell-library",

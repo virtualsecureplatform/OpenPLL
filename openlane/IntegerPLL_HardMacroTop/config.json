@@ -49,6 +49,7 @@
     "oscillator VPWR VGND VPWR VGND"
   ],
   "ERROR_ON_PDN_VIOLATIONS": false,
+  "PAD_LIBS": null,
   "VDD_NETS": [
     "VPWR"
   ],
@@ -132,6 +133,22 @@
       ],
       "spice": [
         "dir::../IntegerPLL_DigitalCore/runs/librelane_signoff_force127_s4a2/final/spice/IntegerPLL_DigitalCore.spice"
+      ]
+    }
+  },
+  "scl::sky130_fd_sc_hd": {
+    "LIB": {
+      "nom_": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+      ],
+      "*_tt_025C_1v80": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+      ],
+      "*_ff_n40C_1v95": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+      ],
+      "*_ss_100C_1v60": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
       ]
     }
   },

@@ -11,6 +11,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from sky130_pdk import default_pdk_root
+
 
 RE_FLOAT = r"([-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?)"
 INSTANCE_RE = re.compile(
@@ -536,7 +538,7 @@ def main():
         "--mapped-verilog",
         default=str(root_dir / "build" / "synth" / "IntegerPLL_DigitalCore_sky130.v"),
     )
-    parser.add_argument("--pdk-root", default=os.environ.get("PDK_ROOT", "~/.volare"))
+    parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default=os.environ.get("PDK", "sky130A"))
     parser.add_argument(
         "--std-cell-library",

@@ -65,12 +65,55 @@ EINVP DCO TT range is 50.955942-72.479371 MHz across the 8-bit code endpoints;
 the hard-top-loaded mid-code target used by the present loop diagnostics is
 58.573518 MHz, with `NDIV=2` and `REF=29.286759 MHz`.
 
-For 100 MHz-order output exploration, the pre-layout DCO generator can shorten
-the EINVP ring with `--ring-stages 9`. The current five-point TT run for that
-9-stage candidate measures 102.518/119.260/142.355/176.267/229.054 MHz at
-codes 0/64/128/192/255 and passes monotonicity. This is not promoted
-post-layout evidence; the fast DCO still needs LibreLane signoff, Magic RCX,
-post-layout transient characterization, and hard-top loading checks.
+For 100 MHz- to 200 MHz-order output exploration, the DCO generator can shorten
+the EINVP ring and reduce the enabled load range. The `IntegerPLL_DCO_EINVP`
+fast candidates are separate from the promoted v1 PLL path. The
+`IntegerPLL_DCO_EINVP_SPARSE72` macro has Ciel-PDK LibreLane signoff, Magic
+RCX, and a bounded extracted-DCO transient probe around the 200 MHz target:
+194.469 MHz at fine code 184, 195.968 MHz at code 190, 196.676 MHz at code
+191, and 202.264 MHz at code 192. This is post-layout DCO range evidence; the
+nearest measured fine codes bracket the 200 MHz target.
+
+The practical 25 MHz reference / 200 MHz output mixed-signal lock target is:
+
+```sh
+make -C OpenPLL xyce-pll-postlayout-calibrated-dco-mixed-fast200-sparse72-lock
+```
+
+It keeps the filled BBPD RCX transistor deck in Xyce and uses a behavioral DCO
+phase model calibrated from the sparse72 post-layout RCX frequency points. The
+current run passes from both rails within the configured 4 MHz target window:
+code 0 moves to 192 with measured `PLLOUT` at 202.314 MHz, and code 255 moves
+to 191 with measured `PLLOUT` at 196.767 MHz. A separate full extracted-DCO
+mixed-step smoke, using the actual sparse72 RCX DCO deck, covers fixed-code
+near-target frequency and both near-target BBPD/DLF correction directions with
+post-decision DCO-code updates applied through Xyce's mixed-step API:
+
+```sh
+make -C OpenPLL xyce-pll-postlayout-dco-mixed-fast200-sparse72-near-lock-motion
+```
+
+The fixed-code row starts and stays at code 196 and measures `PLLOUT` at
+199.734 MHz. The low-side row starts at code 184 with divider count 0 and
+`KI=32`, `KP=4`; it records six UP-dominant windows, moves 184 -> 187 -> 189
+-> 191 -> 193 -> 195 -> 197, and measures `PLLOUT` at 200.000 MHz. The
+high-side row starts at code 220 with divider count 7 and `KI=96`, `KP=8`; it records four
+DN-dominant windows, moves 220 -> 212 -> 206 -> 200 -> 194, and measures
+`PLLOUT` at 200.000 MHz. These rows use the 19303-unknown direct RCX Xyce deck with the
+filled BBPD and extracted sparse72 DCO, a 5 ns reset release, a 25 MHz pulse
+REF source, and `NDIV=8`. This is direct-RCX near-lock evidence with real
+post-decision control updates; a complete rail-to-rail lock simulation with the
+full extracted DCO in every loop cycle remains too slow for routine regression
+in the current serial driver.
+
+The full-RCX C-interface driver now advances the feedback divider during
+warmup by default and also accepts `--initial-divider-count` for explicit
+phase-selected BBPD checks. It is not currently accelerated by launching the
+compiled executable with `mpirun`: a two-rank YADC/YDAC smoke test reached Xyce
+completion and printed a two-processor timing summary, but the two driver ranks
+did not exit cleanly and had to be terminated. Treat C-interface MPI as
+unqualified until the driver is made MPI-rank-aware.
+
 The fast-path loop checks keep the fine DCO word at the full 8-bit resolution
 and model `COARSEBINARY_CODE` as an independent band offset. The current
 126.88745 MHz target uses `COARSEBINARY_CODE=1`, `DCO_COARSE_STEP_MHZ=16`,

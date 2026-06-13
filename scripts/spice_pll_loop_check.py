@@ -12,6 +12,7 @@ import time
 from argparse import Namespace
 from pathlib import Path
 
+from sky130_pdk import default_pdk_root
 from xyce_utils import add_xyce_arguments, validate_xyce_arguments, xyce_simulator_command
 
 
@@ -769,7 +770,7 @@ def parse_timeout(value):
 def main():
     parser = argparse.ArgumentParser(description="Run a closed-loop PLL acquisition SPICE check.")
     parser.add_argument("--cases", default="low_start,high_start")
-    parser.add_argument("--pdk-root", default=os.environ.get("PDK_ROOT", "~/.volare"))
+    parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default=os.environ.get("PDK", "sky130A"))
     parser.add_argument("--corner", default="tt")
     parser.add_argument("--fmin-mhz", type=float, default=50.94408409075311)

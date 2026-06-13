@@ -3,10 +3,23 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 BUILD_DIR="${BUILD_DIR:-$ROOT_DIR/build/synth}"
-PDK_ROOT="${PDK_ROOT:-$HOME/.volare}"
 PDK="${PDK:-sky130A}"
+CIEL_SKY130_ROOT="${CIEL_SKY130_ROOT:-$HOME/.volare/ciel/sky130}"
+LEGACY_VOLARE_ROOT="${LEGACY_VOLARE_ROOT:-$HOME/.volare}"
+NORMALIZED_PDK_ROOT="${PDK_ROOT:-}"
+if [[ "$NORMALIZED_PDK_ROOT" == "~/"* ]]; then
+    NORMALIZED_PDK_ROOT="$HOME/${NORMALIZED_PDK_ROOT#~/}"
+fi
+if [[ -z "${PDK_ROOT:-}" || "${NORMALIZED_PDK_ROOT%/}" == "${LEGACY_VOLARE_ROOT%/}" || ( "${NORMALIZED_PDK_ROOT%/}" == "${CIEL_SKY130_ROOT%/}" && ! -d "$NORMALIZED_PDK_ROOT/$PDK" ) ]]; then
+    if [[ -d "$CIEL_SKY130_ROOT/$PDK" ]]; then
+        PDK_ROOT="$CIEL_SKY130_ROOT"
+    else
+        CIEL_SKY130_VERSION_ROOT="$(find "$CIEL_SKY130_ROOT/versions" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | sort | tail -n 1 || true)"
+        PDK_ROOT="${CIEL_SKY130_VERSION_ROOT:-$LEGACY_VOLARE_ROOT}"
+    fi
+fi
 STD_CELL_LIBRARY="${STD_CELL_LIBRARY:-sky130_fd_sc_hd}"
-STD_CELL_LIB="$PDK_ROOT/$PDK/libs.ref/$STD_CELL_LIBRARY/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+STD_CELL_LIB="$PDK_ROOT/$PDK/libs.ref/$STD_CELL_LIBRARY/lib/${STD_CELL_LIBRARY}__tt_025C_1v80.lib"
 DLF_FRAC_WIDTH="${DLF_FRAC_WIDTH:-8}"
 DLF_ACQ_BOOST_SHIFT="${DLF_ACQ_BOOST_SHIFT:-0}"
 DLF_ACQ_BOOST_AFTER="${DLF_ACQ_BOOST_AFTER:-3}"
@@ -18,8 +31,15 @@ DCO_CONTROL_REGISTERED="${DCO_CONTROL_REGISTERED:-1}"
 DCO_COARSE_BITS="${DCO_COARSE_BITS:-0}"
 
 if [[ ! -f "$STD_CELL_LIB" ]]; then
-    echo "Missing liberty file: $STD_CELL_LIB" >&2
-    exit 1
+    LIB_DIR="$PDK_ROOT/$PDK/libs.ref/$STD_CELL_LIBRARY/lib"
+    mapfile -t STD_CELL_LIB_CANDIDATES < <(find "$LIB_DIR" -maxdepth 1 -type f -name "${STD_CELL_LIBRARY}__tt_025C_*.lib" 2>/dev/null | sort)
+    if (( ${#STD_CELL_LIB_CANDIDATES[@]} > 0 )); then
+        STD_CELL_LIB="${STD_CELL_LIB_CANDIDATES[0]}"
+    else
+        echo "Missing liberty file under: $LIB_DIR" >&2
+        echo "Expected ${STD_CELL_LIBRARY}__tt_025C_1v80.lib or another tt_025C liberty view." >&2
+        exit 1
+    fi
 fi
 
 if (( DCO_COARSE_BITS < 0 || DCO_COARSE_BITS > 4 )); then

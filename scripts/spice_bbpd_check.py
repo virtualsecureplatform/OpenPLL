@@ -10,6 +10,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from sky130_pdk import default_pdk_root
+
 
 RE_FLOAT = r"([-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?)"
 
@@ -172,7 +174,7 @@ def run_one(case_name, args, build_dir):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--cases", default="ref_leads,fb_leads")
-    parser.add_argument("--pdk-root", default=os.environ.get("PDK_ROOT", "~/.volare"))
+    parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default=os.environ.get("PDK", "sky130A"))
     parser.add_argument("--corner", default="tt")
     parser.add_argument("--sim-time-ns", type=float, default=30.0)

@@ -7,6 +7,8 @@ import argparse
 from pathlib import Path
 import re
 
+from sky130_pdk import default_pdk_root
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -28,7 +30,22 @@ def wrapped_instance(name: str, ports: list[str], subckt: str, width: int = 8) -
     return lines
 
 
-def dco_model_lines() -> list[str]:
+def dco_model_lines(args) -> list[str]:
+    if args.dco_model == "sparse72-postlayout":
+        return [
+            "BCODE CODE 0 V={min(255,max(0,255*v(DCO_CODE_V)/VDD))}",
+            "BCODE_EFF CODE_EFF 0 V={min(255,max(184,v(CODE)))}",
+            "BDCO_BLEND190 DCO_BLEND190 0 V={0.5*(1+tanh(10*(v(CODE_EFF)-190)))}",
+            "BDCO_BLEND191 DCO_BLEND191 0 V={0.5*(1+tanh(10*(v(CODE_EFF)-191)))}",
+            "BDCO_BLEND192 DCO_BLEND192 0 V={0.5*(1+tanh(10*(v(CODE_EFF)-192)))}",
+            "BDCO_BLEND220 DCO_BLEND220 0 V={0.5*(1+tanh(10*(v(CODE_EFF)-220)))}",
+            "BDCO_FREQ_HZ DCO_FREQ_HZ 0 V={(1-v(DCO_BLEND190))*(DCO_F184 + (DCO_F190-DCO_F184)*(v(CODE_EFF)-184)/6) + v(DCO_BLEND190)*(1-v(DCO_BLEND191))*(DCO_F190 + (DCO_F191-DCO_F190)*(v(CODE_EFF)-190)) + v(DCO_BLEND191)*(1-v(DCO_BLEND192))*(DCO_F191 + (DCO_F192-DCO_F191)*(v(CODE_EFF)-191)) + v(DCO_BLEND192)*(1-v(DCO_BLEND220))*(DCO_F192 + (DCO_F220-DCO_F192)*(v(CODE_EFF)-192)/28) + v(DCO_BLEND220)*(DCO_F220 + (DCO_F255-DCO_F220)*(v(CODE_EFF)-220)/35)}",
+            "BFREQ FREQ_MHZ 0 V={v(DCO_FREQ_HZ)/1e6}",
+            "CPHASE DCO_PHASE 0 1",
+            "BPHASE DCO_PHASE 0 I={v(DCO_FREQ_HZ)}",
+            "BPLLOUT PLLOUT 0 V={0.9 + 0.9*tanh(CLK_SHARPNESS*sin(2*3.141592653589793*(v(DCO_PHASE)+CLOCK_PHASE_OFFSET)))}",
+            "BFBDIV CLKDIVR 0 V={0.9 + 0.9*tanh(CLK_SHARPNESS*sin(2*3.141592653589793*(v(DCO_PHASE)/NDIV+CLOCK_PHASE_OFFSET)))}",
+        ]
     return [
         "BCODE CODE 0 V={min(255,max(0,255*v(DCO_CODE_V)/VDD))}",
         "BDCO_BLEND64 DCO_BLEND64 0 V={0.5*(1+tanh(10*(v(CODE)-64)))}",
@@ -88,6 +105,10 @@ def build_deck(args) -> str:
         f".param DCO_F128={args.f128_mhz:.12g}e6",
         f".param DCO_F192={args.f192_mhz:.12g}e6",
         f".param DCO_F255={args.f255_mhz:.12g}e6",
+        f".param DCO_F184={args.f184_mhz:.12g}e6",
+        f".param DCO_F190={args.f190_mhz:.12g}e6",
+        f".param DCO_F191={args.f191_mhz:.12g}e6",
+        f".param DCO_F220={args.f220_mhz:.12g}e6",
         f".param COARSE_CODE={args.coarse_code}",
         f".param DCO_COARSE_STEP={args.dco_coarse_step_mhz:.12g}e6",
         f".param CLK_SHARPNESS={args.clock_sharpness:.12g}",
@@ -105,7 +126,7 @@ def build_deck(args) -> str:
         ".model logic_adc ADC(settlingtime=5p uppervoltagelimit=1.8 lowervoltagelimit=0)",
         "",
         "BREF REF 0 V={0.9 + 0.9*tanh(CLK_SHARPNESS*sin(2*3.141592653589793*(FREF*time+CLOCK_PHASE_OFFSET)))}",
-        *dco_model_lines(),
+        *dco_model_lines(args),
         "",
         *wrapped_instance("XBBPD", [port_nets[port] for port in ports], args.bbpd_subckt),
         "",
@@ -120,7 +141,7 @@ def build_deck(args) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pdk-root", default="~/.volare")
+    parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default="sky130A")
     parser.add_argument("--corner", default="tt")
     parser.add_argument("--bbpd-subckt", default="IntegerPLL_BBPD")
@@ -141,8 +162,17 @@ def main() -> int:
     parser.add_argument("--f0-mhz", type=float, default=102.518)
     parser.add_argument("--f64-mhz", type=float, default=119.260)
     parser.add_argument("--f128-mhz", type=float, default=142.355)
+    parser.add_argument("--f184-mhz", type=float, default=194.46898415754885)
+    parser.add_argument("--f190-mhz", type=float, default=195.9684798596022)
+    parser.add_argument("--f191-mhz", type=float, default=196.67618891873252)
     parser.add_argument("--f192-mhz", type=float, default=176.267)
+    parser.add_argument("--f220-mhz", type=float, default=236.81624939278817)
     parser.add_argument("--f255-mhz", type=float, default=229.054)
+    parser.add_argument(
+        "--dco-model",
+        choices=("five-point", "sparse72-postlayout"),
+        default="five-point",
+    )
     parser.add_argument("--coarse-code", type=int, default=1)
     parser.add_argument("--dco-coarse-step-mhz", type=float, default=16.0)
     parser.add_argument("--initial-dco-phase-cycles", type=float, default=0.0)
@@ -168,9 +198,21 @@ def main() -> int:
         raise ValueError("--coarse-code must be in 0..15")
     if args.dco_coarse_step_mhz < 0:
         raise ValueError("--dco-coarse-step-mhz must be non-negative")
-    points = [args.f0_mhz, args.f64_mhz, args.f128_mhz, args.f192_mhz, args.f255_mhz]
-    if any(hi <= lo for lo, hi in zip(points, points[1:])):
-        raise ValueError("DCO calibration points must be monotonic increasing")
+    if args.dco_model == "five-point":
+        points = [args.f0_mhz, args.f64_mhz, args.f128_mhz, args.f192_mhz, args.f255_mhz]
+        if any(hi <= lo for lo, hi in zip(points, points[1:])):
+            raise ValueError("DCO calibration points must be monotonic increasing")
+    else:
+        points = [
+            args.f184_mhz,
+            args.f190_mhz,
+            args.f191_mhz,
+            args.f192_mhz,
+            args.f220_mhz,
+            args.f255_mhz,
+        ]
+        if any(hi <= lo for lo, hi in zip(points, points[1:])):
+            raise ValueError("Sparse72 post-layout DCO calibration points must be monotonic increasing")
     if args.max_step_ps <= 0 or args.step_ps <= 0 or args.sim_time_ns <= 0:
         raise ValueError("transient step and time arguments must be positive")
 

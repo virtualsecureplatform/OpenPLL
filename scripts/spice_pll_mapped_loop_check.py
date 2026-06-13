@@ -11,6 +11,7 @@ import sys
 import time
 from pathlib import Path
 
+from sky130_pdk import default_pdk_root
 from spice_dlf_update_check import (
     bit_net,
     decode_spef_name,
@@ -1480,7 +1481,7 @@ def main():
         action="store_true",
         help="Drop tap/fill/decap/antenna-diode cells from final signoff netlists.",
     )
-    parser.add_argument("--pdk-root", default=os.environ.get("PDK_ROOT", "~/.volare"))
+    parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default=os.environ.get("PDK", "sky130A"))
     parser.add_argument(
         "--std-cell-library",

@@ -157,12 +157,22 @@ make -C OpenPLL synth
 The synthesis script uses:
 
 ```text
-PDK_ROOT=$HOME/.volare
+CIEL_SKY130_ROOT=$HOME/.volare/ciel/sky130
+PDK_ROOT=$HOME/.volare/ciel/sky130
 PDK=sky130A
 STD_CELL_LIBRARY=sky130_fd_sc_hd
 ```
 
-Override those environment variables if you want another Volare PDK target.
+Run `make -C OpenPLL check-pdk-stdcell` to print and validate the selected PDK.
+If the shell exports either the legacy default `PDK_ROOT=$HOME/.volare` or the
+Ciel registry root `PDK_ROOT=$HOME/.volare/ciel/sky130`, the Makefile and
+direct script defaults resolve it to the usable Ciel PDK root. Pass
+`PDK_ROOT=...` on the `make` command line or export a non-default root if you
+want another Volare PDK target. The current local Ciel tree has usable
+`sky130_fd_sc_hd` reference views. It does not have
+`libs.ref/sky130_fd_sc_hs`, so selecting `STD_CELL_LIBRARY=sky130_fd_sc_hs`
+intentionally fails early until the HS Liberty/LEF/Verilog/SPICE views are
+installed.
 
 For the independent coarse-band fast-path checks intended to pair with a
 wide-range DCO, run:
@@ -230,6 +240,43 @@ and independent coarse interface is 1159 mapped Sky130 cells and
 12833.558400 square microns at `sky130_fd_sc_hd__tt_025C_1v80`. The FRAC=2
 guard-enabled `synth-coarse4` fast-path configuration maps to 1226 cells and
 13028.745600 square microns.
+
+For the 25 MHz reference / 200 MHz output exploration, the current physically
+checked fast DCO is `IntegerPLL_DCO_EINVP_SPARSE72`. Regenerate and check that
+macro with:
+
+```sh
+make -C OpenPLL dco-einvp-sparse72-librelane-signoff
+make -C OpenPLL check-dco-einvp-sparse72-librelane-signoff
+make -C OpenPLL dco-einvp-sparse72-magic-rcx
+make -C OpenPLL spice-dco-postlayout-einvp-sparse72-200-probe
+make -C OpenPLL xyce-pll-postlayout-calibrated-dco-mixed-fast200-sparse72-lock
+make -C OpenPLL xyce-pll-postlayout-dco-mixed-fast200-sparse72-near-lock-motion
+```
+
+The Ciel-PDK run is DRC/LVS/XOR clean and the extracted DCO probe measures
+194.469 MHz at fine code 184, 195.968 MHz at code 190, 196.676 MHz at code
+191, and 202.264 MHz at code 192. The calibrated mixed-signal lock target keeps
+the filled BBPD RCX in Xyce and uses a DCO phase model fitted to the sparse72
+post-layout RCX points, including the flat lower range below code 184. With
+`REF=25 MHz`, `NDIV=8`, `KI=76`, `KP=8`, and `FRAC=2`, it passes from both
+rails within a 4 MHz target window: code 0 moves to 192 and measures
+202.314 MHz; code 255 moves to 191 and measures 196.767 MHz.
+
+The full extracted-DCO mixed-step transient is still too slow for a complete
+rail-start regression, but the bounded direct-RCX companion now performs real
+post-decision DCO-code updates through Xyce's mixed-step API. It keeps both the
+filled BBPD and sparse72 DCO RCX decks in Xyce, releases reset at 5 ns, drives
+REF as a 25 MHz pulse source, and uses `NDIV=8`. The fixed-code row starts and
+stays at code 196 and measures `PLLOUT` at 199.734 MHz. The low-side row starts
+from code 184 with divider count 0 and `KI=32`, `KP=4`, records six
+UP-dominant windows, moves 184 -> 187 -> 189 -> 191 -> 193 -> 195 -> 197, and
+measures 200.000 MHz. The high-side row starts from code 220 with divider count 7 and
+`KI=96`, `KP=8`, records four DN-dominant windows, moves 220 -> 212 -> 206 ->
+200 -> 194, and measures 200.000 MHz. The evidence therefore proves post-layout DCO
+range, direct-RCX near-target mixed-step correction, and
+post-layout-calibrated mixed lock; it is not yet a full rail-to-rail lock
+simulation with the 19k-unknown extracted DCO in every loop cycle.
 
 Run LibreLane synthesis for the digital core:
 
@@ -952,6 +999,11 @@ diagnostics confirmed the remaining damping issue: the original `KI=160`,
 cycles, and the milder `KI=192`, `KP=8`, `boost_shift=3`, `boost_after=2` point
 ends low/high at 132/85 after 20 cycles. Treat those as negative settling
 evidence, not as final gain signoff.
+
+Do not assume the C-interface targets can be made faster by wrapping the
+compiled driver with `mpirun`. In the current environment, a two-rank YADC/YDAC
+smoke reaches Xyce completion but leaves both driver ranks stuck, so
+C-interface MPI is not promoted as a usable distributed mixed-signal flow.
 
 Filled post-layout BBPD in-loop continuous-mode diagnostics are not yet practical
 validation targets. The ngspice 18 us acquisition deck times out with the filled

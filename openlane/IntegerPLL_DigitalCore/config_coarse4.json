@@ -44,12 +44,29 @@
   "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 0,
   "GRT_DESIGN_REPAIR_MAX_CAP_PCT": 0,
   "SYNTH_STRATEGY": "AREA 0",
+  "PAD_LIBS": null,
   "VDD_NETS": [
     "VPWR"
   ],
   "GND_NETS": [
     "VGND"
   ],
+  "scl::sky130_fd_sc_hd": {
+    "LIB": {
+      "nom_": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+      ],
+      "*_tt_025C_1v80": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+      ],
+      "*_ff_n40C_1v95": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+      ],
+      "*_ss_100C_1v60": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+      ]
+    }
+  },
   "meta": {
     "flow": "Classic"
   }

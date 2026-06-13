@@ -7,6 +7,8 @@ import argparse
 from pathlib import Path
 import re
 
+from sky130_pdk import default_pdk_root
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -84,7 +86,7 @@ def build_deck(args) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pdk-root", default="~/.volare")
+    parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default="sky130A")
     parser.add_argument("--corner", default="tt")
     parser.add_argument("--subckt", default="IntegerPLL_BBPD")

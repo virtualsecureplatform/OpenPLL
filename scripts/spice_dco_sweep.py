@@ -11,6 +11,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from sky130_pdk import default_pdk_root
+
 
 RE_FLOAT = r"([-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?)"
 
@@ -42,9 +44,9 @@ def measure_value(log_text, name):
     return None
 
 
-def enabled_load_count(code, therm_invert):
+def enabled_load_count(code, therm_invert, load_index_min=0, load_index_max=254):
     count = 0
-    for idx in range(255):
+    for idx in range(load_index_min, load_index_max + 1):
         active = idx < code
         if therm_invert:
             active = not active
@@ -127,6 +129,8 @@ def dco_netlist(
     ngspice_threads,
     load_style,
     ring_stages,
+    load_index_min,
+    load_index_max,
 ):
     pdk_dir = pdk_root / pdk
     model_path = pdk_dir / "libs.tech" / "ngspice" / "sky130.lib.spice"
@@ -145,9 +149,11 @@ def dco_netlist(
 
     lines = [
         f"* OpenPLL Sky130 8-bit DCO transient validation, code={code}",
-        f"* therm_invert={int(therm_invert)}, enabled_loads={enabled_load_count(code, therm_invert)}",
+        f"* therm_invert={int(therm_invert)}, enabled_loads={enabled_load_count(code, therm_invert, load_index_min, load_index_max)}",
         f"* load_style={load_style}",
         f"* ring_stages={ring_stages}",
+        f"* load_index_min={load_index_min}",
+        f"* load_index_max={load_index_max}",
         f'.lib "{model_path}" {corner}',
         f'.include "{cell_path}"',
         ".option method=gear reltol=1e-3 abstol=1e-15 chgtol=1e-16"
@@ -173,12 +179,14 @@ def dco_netlist(
     lines.extend(
         [
             "",
-            f"* 255 {load_style} varactor/load cells. A high thermometer control",
+            f"* {load_index_max - load_index_min + 1} {load_style} varactor/load cells.",
+            f"* Instantiated thermometer index range: {load_index_min}..{load_index_max}.",
+            "* A high thermometer control",
             "* enables dummy output switching for the active load styles.",
         ]
     )
 
-    for idx in range(255):
+    for idx in range(load_index_min, load_index_max + 1):
         active = idx < code
         if therm_invert:
             active = not active
@@ -220,8 +228,12 @@ def dco_result_from_log(code, corner, args, netlist_path, log_path):
         "corner": corner,
         "code": code,
         "therm_invert": int(args.therm_invert),
-        "enabled_loads": enabled_load_count(code, args.therm_invert),
+        "enabled_loads": enabled_load_count(
+            code, args.therm_invert, args.load_index_min, args.load_index_max
+        ),
         "ring_stages": args.ring_stages,
+        "load_index_min": args.load_index_min,
+        "load_index_max": args.load_index_max,
         "status": status,
         "period_s": period or "",
         "freq_hz": freq or "",
@@ -240,6 +252,8 @@ def existing_result_matches_request(netlist_path, code, corner, args):
         f"therm_invert={int(args.therm_invert)}",
         f"load_style={args.load_style}",
         f"ring_stages={args.ring_stages}",
+        f"load_index_min={args.load_index_min}",
+        f"load_index_max={args.load_index_max}",
         f".lib \"{Path(args.pdk_root).expanduser().resolve() / args.pdk / 'libs.tech' / 'ngspice' / 'sky130.lib.spice'}\" {corner}",
         f".tran {args.step_ps}p {args.sim_time_ns}n uic",
     ]
@@ -273,6 +287,8 @@ def run_one(code, corner, args, build_dir):
             ngspice_threads=args.ngspice_threads,
             load_style=args.load_style,
             ring_stages=args.ring_stages,
+            load_index_min=args.load_index_min,
+            load_index_max=args.load_index_max,
         ),
         encoding="ascii",
     )
@@ -298,8 +314,12 @@ def run_one(code, corner, args, build_dir):
         "corner": corner,
         "code": code,
         "therm_invert": int(args.therm_invert),
-        "enabled_loads": enabled_load_count(code, args.therm_invert),
+        "enabled_loads": enabled_load_count(
+            code, args.therm_invert, args.load_index_min, args.load_index_max
+        ),
         "ring_stages": args.ring_stages,
+        "load_index_min": args.load_index_min,
+        "load_index_max": args.load_index_max,
         "status": status,
         "period_s": period or "",
         "freq_hz": freq or "",
@@ -317,7 +337,7 @@ def main():
         default="0,64,128,192,255",
         help='Comma-separated DCO codes or "all". Default is a representative sweep.',
     )
-    parser.add_argument("--pdk-root", default=os.environ.get("PDK_ROOT", "~/.volare"))
+    parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default=os.environ.get("PDK", "sky130A"))
     parser.add_argument("--corner", default="tt")
     parser.add_argument(
@@ -354,6 +374,18 @@ def main():
         default=17,
         help="Odd number of enabled ring stages including the NAND enable gate.",
     )
+    parser.add_argument(
+        "--load-index-min",
+        type=int,
+        default=0,
+        help="Lowest thermometer-load index physically instantiated in the DCO probe.",
+    )
+    parser.add_argument(
+        "--load-index-max",
+        type=int,
+        default=254,
+        help="Highest thermometer-load index physically instantiated in the DCO probe.",
+    )
     parser.add_argument("--ngspice", default=shutil.which("ngspice") or "ngspice")
     parser.add_argument(
         "--ngspice-threads",
@@ -386,6 +418,12 @@ def main():
         raise ValueError("--ngspice-threads must be non-negative")
     if args.ring_stages < 3 or (args.ring_stages % 2) == 0:
         raise ValueError("--ring-stages must be an odd integer >= 3")
+    if (
+        args.load_index_min < 0
+        or args.load_index_max > 254
+        or args.load_index_min > args.load_index_max
+    ):
+        raise ValueError("--load-index-min/max must define a valid range within 0..254")
 
     results = []
     work_items = [(corner, code) for corner in corners for code in codes]
@@ -418,6 +456,8 @@ def main():
                 "therm_invert",
                 "enabled_loads",
                 "ring_stages",
+                "load_index_min",
+                "load_index_max",
                 "status",
                 "period_s",
                 "freq_hz",

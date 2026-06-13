@@ -1,7 +1,7 @@
 {
-  "DESIGN_NAME": "IntegerPLL_BBPD",
+  "DESIGN_NAME": "IntegerPLL_DCO_EINVP_SPARSE64",
   "VERILOG_FILES": [
-    "dir::../../sky130/IntegerPLL_BBPD_sky130.v"
+    "dir::../../sky130/IntegerPLL_DCO_einvp_sparse64_sky130.v"
   ],
   "VERILOG_DEFINES": [
     "USE_POWER_PINS"
@@ -9,8 +9,8 @@
   "EXTRA_VERILOG_MODELS": [
     "dir::../../sky130/sky130_fd_sc_hd_pll_blackbox.v"
   ],
-  "PNR_SDC_FILE": "dir::async_false_paths.sdc",
-  "SIGNOFF_SDC_FILE": "dir::async_false_paths.sdc",
+  "PNR_SDC_FILE": "dir::no_clock.sdc",
+  "SIGNOFF_SDC_FILE": "dir::no_clock.sdc",
   "LINTER_DISABLE_WARNINGS_BLACKBOX": [
     "UNDRIVEN",
     "UNUSEDSIGNAL",
@@ -25,8 +25,8 @@
   "DIE_AREA": [
     0,
     0,
-    120,
-    120
+    180,
+    180
   ],
   "FP_CORE_UTIL": 5,
   "PL_TARGET_DENSITY_PCT": 20,

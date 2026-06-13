@@ -1,4 +1,21 @@
 LIBRELANE_ROOT ?= $(or $(firstword $(wildcard ../librelane ../../librelane $(HOME)/sources/librelane)),../librelane)
+CIEL_SKY130_ROOT ?= $(HOME)/.volare/ciel/sky130
+CIEL_SKY130_VERSION_ROOT ?= $(lastword $(sort $(wildcard $(CIEL_SKY130_ROOT)/versions/*)))
+LEGACY_VOLARE_ROOT ?= $(HOME)/.volare
+PDK ?= sky130A
+STD_CELL_LIBRARY ?= sky130_fd_sc_hd
+DETECTED_PDK_ROOT ?= $(if $(wildcard $(CIEL_SKY130_ROOT)/$(PDK)),$(CIEL_SKY130_ROOT),$(if $(CIEL_SKY130_VERSION_ROOT),$(CIEL_SKY130_VERSION_ROOT),$(LEGACY_VOLARE_ROOT)))
+ifeq ($(origin PDK_ROOT),undefined)
+PDK_ROOT := $(DETECTED_PDK_ROOT)
+else ifneq ($(filter environment command line,$(origin PDK_ROOT)),)
+ifeq ($(patsubst %/,%,$(PDK_ROOT)),$(LEGACY_VOLARE_ROOT))
+override PDK_ROOT := $(DETECTED_PDK_ROOT)
+else ifeq ($(patsubst %/,%,$(PDK_ROOT)),$(patsubst %/,%,$(CIEL_SKY130_ROOT)))
+ifeq ($(wildcard $(PDK_ROOT)/$(PDK)),)
+override PDK_ROOT := $(DETECTED_PDK_ROOT)
+endif
+endif
+endif
 LIBRELANE_CONFIG ?= openlane/IntegerPLL_DigitalCore/config.json
 LIBRELANE_FORCE127_S4A2_CONFIG ?= openlane/IntegerPLL_DigitalCore/config_force127_s4a2.json
 LIBRELANE_COARSE4_CONFIG ?= openlane/IntegerPLL_DigitalCore/config_coarse4.json
@@ -13,6 +30,10 @@ DCO_EINVP_LIBRELANE_CONFIG ?= openlane/IntegerPLL_DCO_EINVP/config.json
 DCO_EINVP_POSTLAYOUT_SIGNOFF_RCX ?= openlane/IntegerPLL_DCO_EINVP/runs/librelane_signoff/rcx-magic/IntegerPLL_DCO_EINVP.rcx.spice
 DCO_EINVP_FAST_LIBRELANE_CONFIG ?= openlane/IntegerPLL_DCO_EINVP_FAST/config.json
 DCO_EINVP_FAST_POSTLAYOUT_SIGNOFF_RCX ?= openlane/IntegerPLL_DCO_EINVP_FAST/runs/librelane_signoff/rcx-magic/IntegerPLL_DCO_EINVP_FAST.rcx.spice
+DCO_EINVP_SPARSE64_LIBRELANE_CONFIG ?= openlane/IntegerPLL_DCO_EINVP_SPARSE64/config.json
+DCO_EINVP_SPARSE64_POSTLAYOUT_SIGNOFF_RCX ?= openlane/IntegerPLL_DCO_EINVP_SPARSE64/runs/librelane_signoff/rcx-magic/IntegerPLL_DCO_EINVP_SPARSE64.rcx.spice
+DCO_EINVP_SPARSE72_LIBRELANE_CONFIG ?= openlane/IntegerPLL_DCO_EINVP_SPARSE72/config.json
+DCO_EINVP_SPARSE72_POSTLAYOUT_SIGNOFF_RCX ?= openlane/IntegerPLL_DCO_EINVP_SPARSE72/runs/librelane_signoff/rcx-magic/IntegerPLL_DCO_EINVP_SPARSE72.rcx.spice
 BBPD_LIBRELANE_CONFIG ?= openlane/IntegerPLL_BBPD/config.json
 BBPD_POSTLAYOUT_RCX ?= openlane/IntegerPLL_BBPD/runs/librelane_signoff/rcx-magic/IntegerPLL_BBPD.rcx.spice
 HARDMACRO_TOP_LIBRELANE_CONFIG ?= openlane/IntegerPLL_HardMacroTop/config.json
@@ -26,7 +47,7 @@ HARDMACRO_TOP_EINVP_SIGNOFF_SPEF_MAX ?= openlane/IntegerPLL_HardMacroTop_EINVP/r
 HARDMACRO_TOP_EINVP_FAST_LIBRELANE_CONFIG ?= openlane/IntegerPLL_HardMacroTop_EINVP_FAST/config.json
 HARDMACRO_TOP_EINVP_FAST_SIGNOFF_SPICE ?= openlane/IntegerPLL_HardMacroTop_EINVP_FAST/runs/librelane_signoff/final/spice/IntegerPLL_HardMacroTop_EINVP_FAST.spice
 HARDMACRO_TOP_EINVP_FAST_SIGNOFF_SPEF ?= openlane/IntegerPLL_HardMacroTop_EINVP_FAST/runs/librelane_signoff/final/spef/nom/IntegerPLL_HardMacroTop_EINVP_FAST.nom.spef
-LIBRELANE_COMMON_ARGS = --manual-pdk --pdk-root $(HOME)/.volare -p sky130A -s sky130_fd_sc_hd --condensed --hide-progress-bar
+LIBRELANE_COMMON_ARGS = --manual-pdk --pdk-root $(PDK_ROOT) -p $(PDK) -s $(STD_CELL_LIBRARY) --condensed --hide-progress-bar
 NGSPICE_THREADS ?= 4
 XYCE ?= $(shell command -v Xyce 2>/dev/null || echo Xyce)
 XYCE_MPI_ROOT ?= $(HOME)/.local/xyce-mpi
@@ -51,8 +72,12 @@ DCO_POSTLAYOUT_FILLED_JOBS ?= 5
 SPICE_PLL_SWEEP_JOBS ?= 3
 export XYCE_MPI_PROCS
 export XYCE_MPI_LAUNCHER
+export PDK_ROOT
+export PDK
+export STD_CELL_LIBRARY
 
 .PHONY: sim digital-loop-gain-sweep pll-top-model-acq pll-top-filled-dco-acq pll-top-filled-dco-gain-sweep synth synth-frac6 check-sky130-macros check-top-macro-assembly hardtop-librelane-route hardtop-librelane-signoff check-hard-macro-top check-hard-macro-top-signoff check-hard-macro-top-spice validate-sky130-pll validate-sky130-pll-artifacts librelane-synth librelane-route librelane-signoff check-librelane-signoff dco-librelane-signoff dco-librelane-nofill dco-magic-rcx dco-magic-rcx-nofill bbpd-librelane-signoff bbpd-magic-rcx spice spice-dco spice-dco-all check-dco-all spice-dco-pvt spice-dco-pvt-all check-dco-pvt-all spice-dco-postlayout spice-dco-postlayout-filled spice-dco-postlayout-filled-code000 spice-dco-postlayout-filled-code064 spice-dco-postlayout-filled-code128 spice-dco-postlayout-filled-code192 spice-dco-postlayout-filled-code255 spice-dco-postlayout-filled-tt-9pt check-dco-postlayout-filled check-dco-postlayout-filled-tt-9pt spice-dco-postlayout-filled-highcode-probe spice-dco-postlayout-filled-tail-probe check-dco-postlayout-filled-highcode-tail spice-dco-postlayout-filled-local-gain check-dco-postlayout-filled-local-gain spice-dco-postlayout-filled-pvt-endpoints spice-dco-postlayout-filled-ff-endpoints spice-dco-postlayout-filled-ff-code000 spice-dco-postlayout-filled-ff-code255 spice-dco-postlayout-filled-fs-endpoints spice-dco-postlayout-filled-sf-endpoints spice-dco-postlayout-filled-ss-endpoints spice-dco-postlayout-filled-ss-code000 spice-dco-postlayout-filled-ss-code255 check-dco-postlayout-filled-pvt-endpoints check-dco-postlayout-filled-ff-endpoints spice-dco-postlayout-filled-ngspice spice-bbpd spice-bbpd-postlayout spice-bbpd-postlayout-pvt spice-bbpd-postlayout-deadzone spice-bbpd-postlayout-deadzone-pvt spice-pll-loop spice-pll-loop-filled-dco spice-pll-loop-filled-dco-sampled spice-pll-loop-filled-dco-sampled-diagnostic spice-pll-loop-filled-bbpd-xyce-sweep spice-pll-loop-filled-bbpd-sampled-xyce-aperture-sweep spice-pll-loop-filled-bbpd-sampled-xyce-lock spice-pll-loop-filled-bbpd-sampled-xyce-phase-robustness spice-pll-loop-filled-bbpd-sampled-xyce-phase-robustness-4us spice-pll-loop-filled-bbpd-sampled-xyce-prop8-phase-probe spice-pll-loop-sampled-gain-sweep spice-pll-loop-sampled-pi-sweep spice-pll-loop-pvt spice-dlf-static spice-dlf-static-kp16 spice-dlf-static-kp32 spice-dlf-update spice-dlf-update-kp16 spice-dlf-update-kp32 spice-dlf-update-full-kp32-overlap spice-dlf-update-signoff-nl-kp32 spice-dlf-update-signoff-spef-kp32 spice-dlf-update-signoff-spef-rc-kp32 spice-bbpd-dlf-integration spice-bbpd-dlf-integration-full spice-bbpd-dlf-integration-signoff-spef-rc spice-pll-mapped-loop-smoke spice-pll-mapped-loop-gain-sweep spice-pll-mapped-loop-signoff-nl-smoke spice-pll-mapped-loop-extracted-dco-startup spice-pll-mapped-loop-extracted-dco-startup-mpi4-klu spice-pll-mapped-loop-extracted-dco-motion spice-pll-mapped-loop-extracted-dco-motion-mpi4-klu spice-pll-mapped-loop-extracted-dco-low-trend-mpi4-klu spice-pll-mapped-loop-extracted-dco-high-trend-mpi4-klu spice-pll-mapped-loop-extracted-dco-midcode-inc-mpi4-klu spice-pll-mapped-loop-extracted-dco-midcode-kp0-hold-mpi4-klu spice-pll-mapped-loop-phase-sweep spice-dco-decoder spice-dco-decoder-all spice-dco-decoder-full-taps spice-dco-decoder-all-taps clean
+.PHONY: check-pdk-stdcell
 .PHONY: spice-pll-mapped-loop-progress-1us
 .PHONY: spice-pll-mapped-loop-signoff-nl-hardtop-spef-smoke spice-pll-mapped-loop-signoff-nl-hardtop-spef-rc-startup-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-spef-rc-extracted-dco-startup-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-spef-rc-extracted-dco-motion-low-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-spef-rc-extracted-dco-motion-high-diagnostic
 .PHONY: spice-pll-mapped-loop-signoff-nl-hardtop-einvp-spef-rc-extracted-dco-startup-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-einvp-spef-rc-extracted-dco-motion-low-early-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-einvp-spef-rc-extracted-dco-motion-high-early-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-einvp-spef-rc-extracted-dco-midcode-lock-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-einvp-spef-rc-extracted-dco-low-progress-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-einvp-spef-rc-extracted-dco-high-progress-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-einvp-spef-rc-extracted-dco-low-lock-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-einvp-spef-rc-extracted-dco-high-lock-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-einvp-spef-rc-extracted-dco-pvt-midcode-hold-diagnostic
@@ -67,17 +92,26 @@ export XYCE_MPI_LAUNCHER
 .PHONY: spice-pll-mapped-loop-frac6-extracted-dco-low-trend-mpi16-klu spice-pll-mapped-loop-frac6-extracted-dco-high-trend-mpi16-klu spice-pll-mapped-loop-frac6-extracted-dco-progress-500ns-mpi16-klu spice-pll-mapped-loop-frac6-extracted-dco-progress-en85-probe-mpi16-klu spice-pll-mapped-loop-frac6-acqboost-s2a3-extracted-dco-progress-300ns-probe-mpi16-klu spice-pll-mapped-loop-frac6-extracted-dco-midcode-lock-mpi16-klu spice-pll-mapped-loop-frac6-extracted-dco-midcode-lock-ki192-kp8-probe-mpi16-klu spice-pll-mapped-loop-frac6-extracted-dco-near-high-lock-en85-mpi16-klu spice-pll-mapped-loop-frac6-extracted-dco-near-high-lock-probe-mpi16-klu
 .PHONY: digital-loop-gain-sweep-frac5 pll-top-filled-dco-gain-sweep-frac5 synth-frac5 spice-pll-mapped-loop-frac5-progress-1us spice-pll-mapped-loop-frac5-extracted-dco-progress-300ns-probe-mpi16-klu
 .PHONY: digital-loop-gain-sweep-frac4 pll-top-filled-dco-gain-sweep-frac4 synth-frac4 spice-pll-mapped-loop-frac4-progress-500ns
-.PHONY: digital-loop-gain-sweep-coarse4 pll-top-fast100-coarse4-acq pll-top-fast100-coarse4-gain-sweep synth-coarse4 librelane-signoff-coarse4 check-librelane-signoff-coarse4 spice-pll-mapped-loop-fast100-coarse4-motion
+.PHONY: digital-loop-gain-sweep-coarse4 pll-top-fast100-coarse4-acq pll-top-fast100-coarse4-gain-sweep pll-top-fast200-acq pll-top-fast200-gain-sweep synth-coarse4 librelane-signoff-coarse4 check-librelane-signoff-coarse4 spice-pll-mapped-loop-fast100-coarse4-motion
 .PHONY: spice-dco-tail-loadstyle-nand2 spice-dco-tail-loadstyle-einvp spice-dco-loadstyle-einvp-5pt check-dco-tail-loadstyle-candidates
 .PHONY: dco-einvp-librelane-signoff check-dco-einvp-librelane-signoff dco-einvp-magic-rcx spice-dco-postlayout-einvp-smoke spice-dco-postlayout-einvp-code064 spice-dco-postlayout-einvp-highcode-tail spice-dco-postlayout-einvp-pvt-endpoints check-dco-einvp-postlayout
-.PHONY: dco-einvp-fast-librelane-signoff check-dco-einvp-fast-librelane-signoff dco-einvp-fast-magic-rcx spice-dco-einvp-fast-9stage-5pt check-dco-einvp-fast-9stage-5pt
+.PHONY: dco-einvp-fast-librelane-signoff check-dco-einvp-fast-librelane-signoff dco-einvp-fast-magic-rcx spice-dco-einvp-fast-9stage-5pt check-dco-einvp-fast-9stage-5pt dco-einvp-sparse64-librelane-signoff check-dco-einvp-sparse64-librelane-signoff dco-einvp-sparse64-magic-rcx spice-dco-einvp-sparse64-prelayout-4pt spice-dco-postlayout-einvp-sparse64-200-probe dco-einvp-sparse72-librelane-signoff check-dco-einvp-sparse72-librelane-signoff dco-einvp-sparse72-magic-rcx spice-dco-einvp-sparse72-prelayout-4pt spice-dco-postlayout-einvp-sparse72-200-probe
 .PHONY: hardtop-einvp-librelane-signoff check-hard-macro-top-einvp check-hard-macro-top-einvp-signoff check-hard-macro-top-einvp-spice
 .PHONY: hardtop-einvp-fast-librelane-signoff check-hard-macro-top-einvp-fast-spice
 .PHONY: spice-pll-mapped-loop-signoff-nl-hardtop-einvp-spef-lock-low-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-einvp-spef-lock-high-diagnostic
-.PHONY: xyce-mixed-signal-status check-xyce-mixed-signal xyce-cinterface-static xyce-cinterface-smoke xyce-bbpd-cinterface-smoke xyce-pll-mixed-signal-smoke xyce-pll-mixed-signal-gain-sweep xyce-pll-mixed-signal-fast100-coarse4-smoke xyce-pll-analog-dco-mixed-fast100-coarse4-acq
+.PHONY: xyce-mixed-signal-status check-xyce-mixed-signal xyce-cinterface-static xyce-cinterface-smoke xyce-bbpd-cinterface-smoke xyce-pll-mixed-signal-smoke xyce-pll-mixed-signal-gain-sweep xyce-pll-mixed-signal-fast100-coarse4-smoke xyce-pll-analog-dco-mixed-fast100-coarse4-acq xyce-pll-analog-dco-mixed-fast200-acq xyce-pll-postlayout-calibrated-dco-mixed-fast200-sparse72-lock xyce-pll-postlayout-dco-mixed-fast200-sparse72-near-lock-motion xyce-pll-postlayout-dco-mixed-fast200-sparse72-acq
 
 sim:
 	./scripts/sim_digital.sh
+
+check-pdk-stdcell:
+	@echo "PDK_ROOT=$(PDK_ROOT)"
+	@echo "PDK=$(PDK)"
+	@echo "STD_CELL_LIBRARY=$(STD_CELL_LIBRARY)"
+	@test -d "$(PDK_ROOT)/$(PDK)" || { echo "missing PDK directory: $(PDK_ROOT)/$(PDK)" >&2; exit 1; }
+	@test -d "$(PDK_ROOT)/$(PDK)/libs.tech/librelane/$(STD_CELL_LIBRARY)" || { echo "missing LibreLane std-cell setup: $(PDK_ROOT)/$(PDK)/libs.tech/librelane/$(STD_CELL_LIBRARY)" >&2; exit 1; }
+	@test -d "$(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)" || { echo "missing std-cell reference views: $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)" >&2; exit 1; }
+	@echo "std-cell reference views are present"
 
 xyce-mixed-signal-status:
 	./scripts/check_xyce_mixed_signal.py --allow-missing-shared --xyce "$(XYCE_MIXED_XYCE)" --xyce-lib-dir "$(XYCE_MIXED_LIB_DIR)" --xyce-share "$(XYCE_MIXED_SHARE)" --xyce-build-dir "$(XYCE_MIXED_BUILD_DIR)"
@@ -123,13 +157,44 @@ xyce-pll-mixed-signal-fast100-coarse4-smoke: xyce-cinterface-static
 	grep -E '^(cycle,|[0-9]+,|xyce_pll_mixed_signal_smoke=)' build/xyce_pll_mixed_signal_fast100_coarse4_smoke/high.log
 
 xyce-pll-analog-dco-mixed-fast100-coarse4-acq: xyce-cinterface-static
-	./scripts/xyce_pll_analog_dco_cinterface_deck.py --out build/xyce_pll_analog_dco_mixed_fast100_coarse4/pll_analog_dco_bbpd.cir --sim-time-ns 1500 --step-ps 5 --max-step-ps 50 --clock-sharpness 50 --clock-phase-offset -0.25
+	./scripts/xyce_pll_analog_dco_cinterface_deck.py --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --out build/xyce_pll_analog_dco_mixed_fast100_coarse4/pll_analog_dco_bbpd.cir --sim-time-ns 1500 --step-ps 5 --max-step-ps 50 --clock-sharpness 50 --clock-phase-offset -0.25
 	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
 	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_analog_dco_mixed_signal_smoke build/xyce_pll_analog_dco_mixed_fast100_coarse4/pll_analog_dco_bbpd.cir --init-code 0 --target-code 32 --cycles 4 --ki 128 --kp 8 --frac 2 --ref-mhz 63.443725 --target-mhz 126.88745 --freq-tol-mhz 2 --measure-cycles 2 --measure-settle-ns 1 --min-pllout-rises 3 --expect increase --min-motion 20 --tol-code 8 --prop-rail-guard > build/xyce_pll_analog_dco_mixed_fast100_coarse4/low.log 2>&1 || { tail -n 100 build/xyce_pll_analog_dco_mixed_fast100_coarse4/low.log; false; }
 	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_analog_dco_mixed_signal_smoke=)' build/xyce_pll_analog_dco_mixed_fast100_coarse4/low.log
 	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_analog_dco_mixed_signal_smoke build/xyce_pll_analog_dco_mixed_fast100_coarse4/pll_analog_dco_bbpd.cir --init-code 64 --target-code 32 --cycles 4 --ki 128 --kp 8 --frac 2 --ref-mhz 63.443725 --target-mhz 126.88745 --freq-tol-mhz 2 --measure-cycles 2 --measure-settle-ns 1 --min-pllout-rises 3 --expect decrease --min-motion 20 --tol-code 8 --prop-rail-guard > build/xyce_pll_analog_dco_mixed_fast100_coarse4/high64.log 2>&1 || { tail -n 100 build/xyce_pll_analog_dco_mixed_fast100_coarse4/high64.log; false; }
 	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_analog_dco_mixed_signal_smoke=)' build/xyce_pll_analog_dco_mixed_fast100_coarse4/high64.log
+
+xyce-pll-analog-dco-mixed-fast200-acq: xyce-cinterface-static
+	./scripts/xyce_pll_analog_dco_cinterface_deck.py --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --out build/xyce_pll_analog_dco_mixed_fast200/pll_analog_dco_bbpd.cir --ref-mhz 25 --ndiv 8 --coarse-code 0 --dco-coarse-step-mhz 16 --sim-time-ns 2500 --step-ps 5 --max-step-ps 50 --clock-sharpness 50 --clock-phase-offset -0.25
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
+	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_analog_dco_mixed_signal_smoke build/xyce_pll_analog_dco_mixed_fast200/pll_analog_dco_bbpd.cir --init-code 0 --target-code 220 --cycles 27 --ki 128 --kp 8 --frac 2 --ref-mhz 25 --ndiv 8 --target-mhz 200 --freq-tol-mhz 3 --measure-cycles 2 --measure-settle-ns 1 --min-pllout-rises 5 --expect increase --min-motion 160 --tol-code 8 --prop-rail-guard > build/xyce_pll_analog_dco_mixed_fast200/low.log 2>&1 || { tail -n 100 build/xyce_pll_analog_dco_mixed_fast200/low.log; false; }
+	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_analog_dco_mixed_signal_smoke=)' build/xyce_pll_analog_dco_mixed_fast200/low.log
+	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_analog_dco_mixed_signal_smoke build/xyce_pll_analog_dco_mixed_fast200/pll_analog_dco_bbpd.cir --init-code 255 --target-code 220 --cycles 4 --ki 128 --kp 8 --frac 2 --ref-mhz 25 --ndiv 8 --target-mhz 200 --freq-tol-mhz 3 --measure-cycles 2 --measure-settle-ns 1 --min-pllout-rises 5 --expect decrease --min-motion 20 --tol-code 8 --prop-rail-guard > build/xyce_pll_analog_dco_mixed_fast200/high255.log 2>&1 || { tail -n 100 build/xyce_pll_analog_dco_mixed_fast200/high255.log; false; }
+	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_analog_dco_mixed_signal_smoke=)' build/xyce_pll_analog_dco_mixed_fast200/high255.log
+
+xyce-pll-postlayout-calibrated-dco-mixed-fast200-sparse72-lock: xyce-cinterface-static
+	./scripts/xyce_pll_analog_dco_cinterface_deck.py --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --out build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/pll_postlayout_calibrated_dco_bbpd.cir --dco-model sparse72-postlayout --ref-mhz 25 --ndiv 8 --coarse-code 0 --dco-coarse-step-mhz 0 --f184-mhz 194.46898415754885 --f190-mhz 195.9684798596022 --f191-mhz 196.67618891873252 --f192-mhz 202.26421728014336 --f220-mhz 236.81624939278817 --f255-mhz 296.9920407006145 --sim-time-ns 1800 --step-ps 5 --max-step-ps 50 --clock-sharpness 50 --clock-phase-offset -0.25
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
+	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_analog_dco_mixed_signal_smoke build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/pll_postlayout_calibrated_dco_bbpd.cir --init-code 0 --target-code 192 --cycles 40 --ki 76 --kp 8 --frac 2 --ref-mhz 25 --ndiv 8 --target-mhz 200 --freq-tol-mhz 4 --measure-cycles 2 --measure-settle-ns 1 --min-pllout-rises 5 --expect increase --min-motion 188 --tol-code 1 --prop-rail-guard > build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/low.log 2>&1 || { tail -n 120 build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/low.log; false; }
+	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_analog_dco_mixed_signal_smoke=)' build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/low.log
+	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_analog_dco_mixed_signal_smoke build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/pll_postlayout_calibrated_dco_bbpd.cir --init-code 255 --target-code 192 --cycles 13 --ki 76 --kp 8 --frac 2 --ref-mhz 25 --ndiv 8 --target-mhz 200 --freq-tol-mhz 4 --measure-cycles 2 --measure-settle-ns 1 --min-pllout-rises 5 --expect decrease --min-motion 60 --tol-code 1 --prop-rail-guard > build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/high255.log 2>&1 || { tail -n 120 build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/high255.log; false; }
+	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_analog_dco_mixed_signal_smoke=)' build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/high255.log
+
+xyce-pll-postlayout-dco-mixed-fast200-sparse72-near-lock-motion: xyce-cinterface-static
+	./scripts/xyce_pll_postlayout_dco_cinterface_deck.py --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --out build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/pll_postlayout_dco_bbpd_near_meas.cir --ref-mhz 25 --dco-subckt IntegerPLL_DCO_EINVP_SPARSE72 --dco-rcx-netlist "$(DCO_EINVP_SPARSE72_POSTLAYOUT_SIGNOFF_RCX)" --sim-time-ns 320 --step-ps 20 --max-step-ps 200 --clock-sharpness 80 --clock-phase-offset -0.25 --reset-release-ns 5 --ref-source pulse
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
+	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_postlayout_dco_mixed_signal_smoke build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/pll_postlayout_dco_bbpd_near_meas.cir --init-code 196 --target-code 196 --cycles 1 --ki 0 --kp 0 --frac 2 --ref-mhz 25 --ndiv 8 --target-mhz 200 --freq-tol-mhz 8 --measure-cycles 1 --measure-settle-ns 20 --min-pllout-rises 3 --expect increase --min-motion 0 --tol-code 0 --start-ns 8 --cosim-step-ns 0.25 --divider-latency-ps 50 --initial-divider-count 7 --no-warmup-divider --prop-rail-guard > build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/near_code196_hold_meas.log 2>&1 || { tail -n 120 build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/near_code196_hold_meas.log; false; }
+	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_postlayout_dco_mixed_signal_smoke=)' build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/near_code196_hold_meas.log
+	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_postlayout_dco_mixed_signal_smoke build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/pll_postlayout_dco_bbpd_near_meas.cir --init-code 184 --target-code 196 --cycles 6 --ki 32 --kp 4 --frac 2 --ref-mhz 25 --ndiv 8 --target-mhz 200 --freq-tol-mhz 8 --measure-cycles 1 --measure-settle-ns 20 --min-pllout-rises 3 --expect increase --min-motion 8 --tol-code 8 --start-ns 8 --cosim-step-ns 0.25 --divider-latency-ps 50 --initial-divider-count 0 --no-warmup-divider --prop-rail-guard > build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/lock_low184_to196.log 2>&1 || { tail -n 120 build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/lock_low184_to196.log; false; }
+	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_postlayout_dco_mixed_signal_smoke=)' build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/lock_low184_to196.log
+	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_postlayout_dco_mixed_signal_smoke build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/pll_postlayout_dco_bbpd_near_meas.cir --init-code 220 --target-code 196 --cycles 4 --ki 96 --kp 8 --frac 2 --ref-mhz 25 --ndiv 8 --target-mhz 200 --freq-tol-mhz 8 --measure-cycles 1 --measure-settle-ns 20 --min-pllout-rises 3 --expect decrease --min-motion 16 --tol-code 8 --start-ns 8 --cosim-step-ns 0.25 --divider-latency-ps 50 --initial-divider-count 7 --no-warmup-divider --prop-rail-guard > build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/lock_high220_to196.log 2>&1 || { tail -n 120 build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/lock_high220_to196.log; false; }
+	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_postlayout_dco_mixed_signal_smoke=)' build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/lock_high220_to196.log
+
+xyce-pll-postlayout-dco-mixed-fast200-sparse72-acq: xyce-pll-postlayout-dco-mixed-fast200-sparse72-near-lock-motion
 
 digital-loop-gain-sweep:
 	./scripts/digital_loop_gain_sweep.py --build-dir "$$(pwd)/build/digital_loop_gain_sweep"
@@ -166,6 +231,12 @@ pll-top-fast100-coarse4-acq:
 
 pll-top-fast100-coarse4-gain-sweep:
 	./scripts/pll_top_gain_sweep.py --dco-coarse-bits 0 --coarse-code 1 --dco-coarse-step-mhz 16 --dlf-frac-width 2 --dlf-prop-rail-guard --ki-values 16,32,64,96,128,192 --kp-values 0,4,8,16,32 --target-code 32 --tol-code 8 --low-init 0 --high-init 1020 --run-ns 80000 --mmd-ratio 2 --ref-half-ps 7881 --f0-mhz 102.518 --f64-mhz 119.260 --f128-mhz 142.355 --f192-mhz 176.267 --f255-mhz 229.054 --build-dir "$$(pwd)/build/pll_top_fast100_coarse4_gain_sweep"
+
+pll-top-fast200-acq:
+	DCO_COARSE_BITS=0 COARSE_CODE=0 DLF_FRAC_WIDTH=2 DLF_PROP_RAIL_GUARD=1 DCO_USE_PIECEWISE5=1 DCO_F0_MHZ=102.518 DCO_F64_MHZ=119.260 DCO_F128_MHZ=142.355 DCO_F192_MHZ=176.267 DCO_F255_MHZ=229.054 DCO_COARSE_STEP_MHZ=16 REF_HALF_PS=20000 MMD_RATIO=8 TARGET_CODE=220 TOL_CODE=8 LOW_INIT=0 HIGH_INIT=1020 RUN_NS=200000 KI=128 KP=8 ./scripts/sim_pll_top_acq_model.sh
+
+pll-top-fast200-gain-sweep:
+	./scripts/pll_top_gain_sweep.py --dco-coarse-bits 0 --coarse-code 0 --dco-coarse-step-mhz 16 --dlf-frac-width 2 --dlf-prop-rail-guard --ki-values 16,32,64,96,128,192 --kp-values 0,4,8,16,32 --target-code 220 --tol-code 8 --low-init 0 --high-init 1020 --run-ns 200000 --mmd-ratio 8 --ref-half-ps 20000 --f0-mhz 102.518 --f64-mhz 119.260 --f128-mhz 142.355 --f192-mhz 176.267 --f255-mhz 229.054 --build-dir "$$(pwd)/build/pll_top_fast200_gain_sweep"
 
 pll-top-filled-dco-gain-sweep-frac6:
 	./scripts/pll_top_gain_sweep.py --dlf-frac-width 6 --ki-values 128,192,255 --kp-values 4,8,16,32 --tol-code 16 --run-ns 80000 --build-dir "$$(pwd)/build/pll_top_filled_dco_gain_sweep_frac6_probe"
@@ -327,10 +398,10 @@ dco-librelane-nofill:
 	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_nofill --overwrite "$(DCO_NOFILL_LIBRELANE_CONFIG)"'
 
 dco-magic-rcx:
-	LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(HOME)/.volare" ./scripts/dco_magic_rcx.sh
+	LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
 
 dco-magic-rcx-nofill:
-	RUN_TAG="librelane_nofill" OUT_DIR="$$(pwd)/openlane/IntegerPLL_DCO/runs/librelane_nofill/rcx-magic" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(HOME)/.volare" ./scripts/dco_magic_rcx.sh
+	RUN_TAG="librelane_nofill" OUT_DIR="$$(pwd)/openlane/IntegerPLL_DCO/runs/librelane_nofill/rcx-magic" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
 
 dco-einvp-librelane-signoff:
 	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_LIBRELANE_CONFIG)"'
@@ -339,7 +410,7 @@ check-dco-einvp-librelane-signoff:
 	./scripts/check_librelane_signoff.py --design-name IntegerPLL_DCO_EINVP --final-dir openlane/IntegerPLL_DCO_EINVP/runs/librelane_signoff/final --source-file sky130/IntegerPLL_DCO_einvp_sky130.v --source-file "$(DCO_EINVP_LIBRELANE_CONFIG)" --source-file openlane/IntegerPLL_DCO_EINVP/no_clock.sdc
 
 dco-einvp-magic-rcx:
-	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(HOME)/.volare" ./scripts/dco_magic_rcx.sh
+	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
 
 dco-einvp-fast-librelane-signoff:
 	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_FAST_LIBRELANE_CONFIG)"'
@@ -348,13 +419,31 @@ check-dco-einvp-fast-librelane-signoff:
 	./scripts/check_librelane_signoff.py --design-name IntegerPLL_DCO_EINVP_FAST --final-dir openlane/IntegerPLL_DCO_EINVP_FAST/runs/librelane_signoff/final --source-file sky130/IntegerPLL_DCO_einvp_fast_sky130.v --source-file "$(DCO_EINVP_FAST_LIBRELANE_CONFIG)" --source-file openlane/IntegerPLL_DCO_EINVP_FAST/no_clock.sdc
 
 dco-einvp-fast-magic-rcx:
-	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP_FAST" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(HOME)/.volare" ./scripts/dco_magic_rcx.sh
+	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP_FAST" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
+
+dco-einvp-sparse64-librelane-signoff:
+	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_SPARSE64_LIBRELANE_CONFIG)"'
+
+check-dco-einvp-sparse64-librelane-signoff:
+	./scripts/check_librelane_signoff.py --design-name IntegerPLL_DCO_EINVP_SPARSE64 --final-dir openlane/IntegerPLL_DCO_EINVP_SPARSE64/runs/librelane_signoff/final --source-file sky130/IntegerPLL_DCO_einvp_sparse64_sky130.v --source-file "$(DCO_EINVP_SPARSE64_LIBRELANE_CONFIG)" --source-file openlane/IntegerPLL_DCO_EINVP_SPARSE64/no_clock.sdc
+
+dco-einvp-sparse64-magic-rcx:
+	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP_SPARSE64" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
+
+dco-einvp-sparse72-librelane-signoff:
+	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_SPARSE72_LIBRELANE_CONFIG)"'
+
+check-dco-einvp-sparse72-librelane-signoff:
+	./scripts/check_librelane_signoff.py --design-name IntegerPLL_DCO_EINVP_SPARSE72 --final-dir openlane/IntegerPLL_DCO_EINVP_SPARSE72/runs/librelane_signoff/final --source-file sky130/IntegerPLL_DCO_einvp_sparse72_sky130.v --source-file "$(DCO_EINVP_SPARSE72_LIBRELANE_CONFIG)" --source-file openlane/IntegerPLL_DCO_EINVP_SPARSE72/no_clock.sdc
+
+dco-einvp-sparse72-magic-rcx:
+	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP_SPARSE72" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
 
 bbpd-librelane-signoff:
 	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(BBPD_LIBRELANE_CONFIG)"'
 
 bbpd-magic-rcx:
-	LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(HOME)/.volare" ./scripts/bbpd_magic_rcx.sh
+	LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/bbpd_magic_rcx.sh
 
 spice: spice-dco spice-bbpd spice-dco-decoder
 
@@ -390,6 +479,18 @@ spice-dco-einvp-fast-9stage-5pt:
 
 check-dco-einvp-fast-9stage-5pt: spice-dco-einvp-fast-9stage-5pt
 	./scripts/check_dco_sweep.py --csv "$$(pwd)/build/spice_dco_einvp_fast_9stage_5pt/dco_sweep.csv" --expected-codes 0,64,128,192,255 --expected-corners tt --min-span-mhz 100 --min-step-mhz 1.0 --out-dir "$$(pwd)/build/spice_dco_einvp_fast_9stage_5pt_check"
+
+spice-dco-einvp-sparse64-prelayout-4pt:
+	HOME=/tmp ./scripts/spice_dco_sweep.py --pdk-root "$(PDK_ROOT)" --load-style einvp --ring-stages 3 --load-index-min 192 --load-index-max 254 --codes 192,220,240,255 --corner tt --sim-time-ns 25 --step-ps 1 --jobs 4 --resume --build-dir "$$(pwd)/build/spice_dco_einvp_sparse64_prelayout_4pt"
+
+spice-dco-postlayout-einvp-sparse64-200-probe:
+	./scripts/spice_dco_postlayout.sh --simulator xyce --xyce "$(DCO_POSTLAYOUT_PVT_XYCE)" --xyce-mpi-procs "$(DCO_POSTLAYOUT_PVT_XYCE_MPI_PROCS)" --codes 192,220,240,255 --subckt-name IntegerPLL_DCO_EINVP_SPARSE64 --rcx-netlist "$(DCO_EINVP_SPARSE64_POSTLAYOUT_SIGNOFF_RCX)" --sim-time-ns 50 --meas-start-ns 10 --step-ps 25 --timeout-s 1200 --jobs 4 --resume --build-dir "$$(pwd)/build/spice_dco_postlayout_einvp_sparse64_200_probe_mpi4"
+
+spice-dco-einvp-sparse72-prelayout-4pt:
+	HOME=/tmp ./scripts/spice_dco_sweep.py --pdk-root "$(PDK_ROOT)" --load-style einvp --ring-stages 3 --load-index-min 184 --load-index-max 254 --codes 184,192,220,255 --corner tt --sim-time-ns 25 --step-ps 1 --jobs 4 --resume --build-dir "$$(pwd)/build/spice_dco_einvp_sparse72_prelayout_4pt"
+
+spice-dco-postlayout-einvp-sparse72-200-probe:
+	./scripts/spice_dco_postlayout.sh --simulator xyce --xyce "$(DCO_POSTLAYOUT_PVT_XYCE)" --xyce-mpi-procs "$(DCO_POSTLAYOUT_PVT_XYCE_MPI_PROCS)" --codes 184,192,220,255 --subckt-name IntegerPLL_DCO_EINVP_SPARSE72 --rcx-netlist "$(DCO_EINVP_SPARSE72_POSTLAYOUT_SIGNOFF_RCX)" --sim-time-ns 50 --meas-start-ns 10 --step-ps 25 --timeout-s 1200 --jobs 4 --resume --build-dir "$$(pwd)/build/spice_dco_postlayout_einvp_sparse72_200_probe_mpi4"
 
 check-dco-tail-loadstyle-candidates: spice-dco-tail-loadstyle-nand2 spice-dco-tail-loadstyle-einvp spice-dco-loadstyle-einvp-5pt
 	./scripts/check_dco_loadstyle_candidates.py --out-dir "$$(pwd)/build/dco_loadstyle_candidates"

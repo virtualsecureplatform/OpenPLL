@@ -10,6 +10,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from sky130_pdk import default_pdk_root
+
 
 RE_FLOAT = r"([-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?)"
 
@@ -457,7 +459,7 @@ def write_deadzone_summary(results, build_dir):
 def main():
     parser = argparse.ArgumentParser(description="Run BBPD post-layout RCX transient SPICE.")
     parser.add_argument("--cases", default="ref_leads,fb_leads")
-    parser.add_argument("--pdk-root", default="~/.volare")
+    parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default="sky130A")
     parser.add_argument("--corner", default="tt")
     parser.add_argument(
