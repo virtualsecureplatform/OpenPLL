@@ -14,17 +14,18 @@ The ring-facing output buffer intentionally stays
 post-layout RCX target map uses 90 local NAND2 fine loads split between
 `osc_node` and `mirror_ret[0]`; the earlier C19/C20 deep-node slow-load banks
 are not part of the shipping candidate. TT Xyce target-code probes cover 100,
-250, 300, and 400 MHz from a 25 MHz reference with duty and edge-rate checks
-enabled. The configured-mode settings are /4 C20/code93, /10 C06/code234,
-/12 C04/code90, and /16 C02/code76. Full extracted-DCO-in-loop PLL lock
-evidence is still pending for that coarse-DCO path.
+250, 300, 400, and 500 MHz from a 25 MHz reference with duty and edge-rate
+checks enabled. The configured-mode settings are /4 C20/code93, /10
+C06/code234, /12 C04/code90, /16 C02/code76, and /20 C01/code121. Full
+extracted-DCO-in-loop PLL lock evidence is still pending for that coarse-DCO
+path.
 If more oscillator speed margin is needed, adjust the ring/mirror gate drive,
 effective loop length, or fine-load topology; do not upsize the ring-facing
 output buffer as a speed fix because that directly increases oscillator load.
 
 Older `IntegerPLL_DCO_EINVP` and `IntegerPLL_DCO_EINVP_SPARSE72` artifacts are
 retained as low-frequency and 200 MHz diagnostic history, not as the current
-100/250/300/400 MHz hardtop target.
+100/250/300/400/500 MHz hardtop target.
 
 ## What to Read
 
@@ -53,8 +54,9 @@ make -C OpenPLL check-configured-hard-macro-top-einvp-signoff
 `rtl/IntegerPLL_25MHzModeConfig.v` is the reusable preset table for a 25 MHz
 reference. It maps the 5-bit `FEEDBACK_DIVIDER` input to characterized
 settings: divider /4 gives 100 MHz with C20/code93; /10 gives 250 MHz with
-C06/code234; /12 gives 300 MHz with C04/code90; and /16 gives 400 MHz with
-C02/code76. It also emits the promoted `KI=16`, `KP=4` gains, a 10-bit
+C06/code234; /12 gives 300 MHz with C04/code90; /16 gives 400 MHz with
+C02/code76; and /20 gives 500 MHz with C01/code121. It also emits the promoted
+`KI=16`, `KP=4` gains, a 10-bit
 `DLF_Ext_Data` seed equal to `target_code << 2`, and `CONFIG_VALID`. Unsupported
 divider values are passed to the lower divider bus for observability but hold
 `CONFIG_VALID=0` and do not enter tracking.
@@ -83,7 +85,7 @@ for robust acquisition from arbitrary phase and code, rather than on packaging
 the configured interface.
 
 `make -C OpenPLL check-pll-25mhz-configured-behavioral` runs a reset-to-tracking
-behavioral PLL regression for the same four divider values. It uses the real controller,
+behavioral PLL regression for the same five divider values. It uses the real controller,
 digital core, divider, and BBPD with a behavioral DCO table fitted to the
 post-layout coarse-band measurements, and checks measured output frequency plus
 non-rail DCO control after the preset load.
@@ -96,7 +98,7 @@ make -C OpenPLL xyce-pll-mixed-signal-25mhz-targets
 
 It aliases to the direct extracted-DCO mixed-step hold smoke after refreshing
 the post-layout RCX DCO target probes. The selected coarse/fine settings are
-C20/code93, C06/code234, C04/code90, and C02/code76. This is configured-mode
+C20/code93, C06/code234, C04/code90, C02/code76, and C01/code121. This is configured-mode
 near-seed tracking evidence with `KI=16` and `KP=4`, not frequency acquisition
 from arbitrary phase or code. Each row must hit the target-code neighborhood,
 observe at least one BBPD decision in the expected initial direction, finish
@@ -110,21 +112,21 @@ make -C OpenPLL check-sky130-pll-25mhz-release
 ```
 
 It checks the coarse-DCO RTL shape, including the `buf_1` output-buffer
-constraint, the divider preset table, the divider controller/wrapper, the four
+constraint, the divider preset table, the divider controller/wrapper, the five
 waveform-qualified target-code rows, the configured tracking summaries, the
 configured behavioral PLL reset-to-tracking regression, the fresh
 `IntegerPLL_HardMacroTop_EINVP` signoff/SPICE-interface summaries, the signed
-`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured` wrapper summary, the four
-direct-RCX hold smokes, and the eight low/high near-seed direct-RCX code-update
+`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured` wrapper summary, the five
+direct-RCX hold smokes, and the ten low/high near-seed direct-RCX code-update
 rows.
 
 An optional slow direct-RCX integration smoke for the hardest divider target is:
 
 ```sh
-make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-400m-hold-smoke
+make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-500m-hold-smoke
 ```
 
-It runs the extracted coarse DCO and extracted BBPD in Xyce at C02/code76 with
+It runs the extracted coarse DCO and extracted BBPD in Xyce at C01/code121 with
 the digital divider/filter in the mixed-signal driver. Its short ADC-sampled
 frequency estimate is intentionally loose; the standalone RCX DCO rows remain
 the precise frequency evidence.
@@ -135,14 +137,13 @@ An even slower all-mode direct-RCX near-seed code-update diagnostic is:
 make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-nearseed-smokes
 ```
 
-The current TT run checks +/-4 fine-code starts for all four divider targets. Low-side
-cases use REF phase offset -0.25 and divider seed 0; high-side cases use REF
-phase offset 0.25 and divider seed `NDIV-1`. All eight rows pass with two
-expected BBPD decisions and end one code from the target: 100 MHz 89->92 and
-97->94 around code93, 250 MHz 230->233 and 238->235 around code234, 300 MHz
-86->89 and 94->91 around code90, and 400 MHz 72->75 and 80->77 around code76.
-This is still near-seed configured-control evidence, not blind rail-start
-extracted-loop acquisition.
+The current TT run checks +/-4 fine-code starts for all five divider targets.
+Low-side cases use REF phase offset -0.25 and divider seed 0; high-side cases
+use REF phase offset 0.25 and divider seed `NDIV-1`. All ten rows pass with the
+expected two BBPD decisions: 100 MHz moves 89->92 and 97->94, 250 MHz moves
+230->233 and 238->235, 300 MHz moves 86->89 and 94->91, 400 MHz moves 72->75
+and 80->77, and 500 MHz moves 117->120 and 125->122. This is still near-seed
+configured-control evidence, not blind rail-start extracted-loop acquisition.
 
 The legacy low-frequency v1 artifact audit remains available:
 
@@ -164,7 +165,7 @@ make -C OpenPLL check-dco-einvp-coarse-mirror-targets
 
 It uses the same small `output-buffer-drives 1` assumption and checks the
 sampled 100/300 MHz pre-layout brackets plus waveform quality. The shipping
-100/250/300/400 MHz claim comes from the post-layout RCX target probes and the
+100/250/300/400/500 MHz claim comes from the post-layout RCX target probes and the
 `xyce-pll-mixed-signal-25mhz-targets` gate above.
 
 ## Environment

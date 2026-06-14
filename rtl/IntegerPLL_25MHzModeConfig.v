@@ -25,6 +25,7 @@ module IntegerPLL_25MHzModeConfig #(
     localparam [FEEDBACK_DIVIDER_WIDTH-1:0] DIV_250MHZ = 5'd10;
     localparam [FEEDBACK_DIVIDER_WIDTH-1:0] DIV_300MHZ = 5'd12;
     localparam [FEEDBACK_DIVIDER_WIDTH-1:0] DIV_400MHZ = 5'd16;
+    localparam [FEEDBACK_DIVIDER_WIDTH-1:0] DIV_500MHZ = 5'd20;
 
     function [CODE_WIDTH-1:0] seed_word;
         input [DCO_CODE_WIDTH-1:0] dco_code;
@@ -67,6 +68,13 @@ module IntegerPLL_25MHzModeConfig #(
                 COARSEBINARY_CODE = 6'd2;
                 TARGET_DCO_CODE = 8'd76;
                 DLF_Ext_Data = seed_word(8'd76);
+            end
+            DIV_500MHZ: begin
+                TARGET_MHZ = 16'd500;
+                MMDCLKDIV_RATIO = 8'd20;
+                COARSEBINARY_CODE = 6'd1;
+                TARGET_DCO_CODE = 8'd121;
+                DLF_Ext_Data = seed_word(8'd121);
             end
             default: begin
                 TARGET_MHZ = 16'd0;

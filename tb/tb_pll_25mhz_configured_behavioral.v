@@ -203,6 +203,7 @@ module tb_pll_25mhz_configured_behavioral;
         run_divider(5'd10, 16'd250, 8'd10, 6'd6, 8'd234);
         run_divider(5'd12, 16'd300, 8'd12, 6'd4, 8'd90);
         run_divider(5'd16, 16'd400, 8'd16, 6'd2, 8'd76);
+        run_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121);
 
         $display("PASS: 25 MHz configured behavioral PLL tracking");
         $finish;

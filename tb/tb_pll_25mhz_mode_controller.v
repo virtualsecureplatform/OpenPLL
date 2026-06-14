@@ -187,10 +187,17 @@ module tb_pll_25mhz_mode_controller;
 
         load_and_track_divider(5'd16, 16'd400, 8'd16, 6'd2, 8'd76);
 
+        feedback_divider = 5'd20;
+        #1;
+        check_controls("before 500 MHz divider change clock", 1'b1, 1'b0, 1'b0, 1'b1);
+        check_mode_outputs("before 500 MHz divider change clock", 16'd400, 8'd16, 6'd2, 8'd76, 1'b1);
+
+        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121);
+
         pll_enable = 1'b0;
         tick();
         check_controls("disabled", 1'b0, 1'b0, 1'b0, 1'b0);
-        check_mode_outputs("disabled", 16'd400, 8'd16, 6'd2, 8'd76, 1'b1);
+        check_mode_outputs("disabled", 16'd500, 8'd20, 6'd1, 8'd121, 1'b1);
 
         load_invalid_divider(5'd5);
         load_and_track_divider(5'd4, 16'd100, 8'd4, 6'd20, 8'd93);

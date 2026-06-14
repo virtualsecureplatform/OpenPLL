@@ -17,6 +17,7 @@ EXPECTED_TARGETS = {
     250: {"multiplier": 10, "coarse_code": 6, "target_code": 234},
     300: {"multiplier": 12, "coarse_code": 4, "target_code": 90},
     400: {"multiplier": 16, "coarse_code": 2, "target_code": 76},
+    500: {"multiplier": 20, "coarse_code": 1, "target_code": 121},
 }
 
 NEARSEED_MIN_RISES = {
@@ -24,6 +25,7 @@ NEARSEED_MIN_RISES = {
     250: 6,
     300: 8,
     400: 8,
+    500: 10,
 }
 
 def repo_path(path: str | Path) -> Path:
@@ -159,6 +161,10 @@ def check_mode_config(root: Path) -> dict[str, object]:
         "COARSEBINARY_CODE = 6'd2",
         "TARGET_DCO_CODE = 8'd76",
         "DLF_Ext_Data = seed_word(8'd76)",
+        "MMDCLKDIV_RATIO = 8'd20",
+        "COARSEBINARY_CODE = 6'd1",
+        "TARGET_DCO_CODE = 8'd121",
+        "DLF_Ext_Data = seed_word(8'd121)",
         "CONFIG_VALID = 1'b0",
         "DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16}",
         "DLF_KP = {{(GAIN_WIDTH-3){1'b0}}, 3'd4}",
@@ -174,6 +180,7 @@ def check_mode_config(root: Path) -> dict[str, object]:
             {"feedback_divider": 10, "target_mhz": 250, "coarse_code": 6, "target_code": 234},
             {"feedback_divider": 12, "target_mhz": 300, "coarse_code": 4, "target_code": 90},
             {"feedback_divider": 16, "target_mhz": 400, "coarse_code": 2, "target_code": 76},
+            {"feedback_divider": 20, "target_mhz": 500, "coarse_code": 1, "target_code": 121},
         ],
         "invalid_divider_behavior": "CONFIG_VALID=0 and tracking disabled",
         "ki": 16,
@@ -243,10 +250,12 @@ def check_mode_controller(root: Path) -> dict[str, str]:
         "c06_freq_mhz",
         "c04_freq_mhz",
         "c02_freq_mhz",
+        "c01_freq_mhz",
         "6'd20",
         "6'd6",
         "6'd4",
         "6'd2",
+        "6'd1",
     ):
         if fragment not in behavioral_model_text:
             raise ValueError(
@@ -366,13 +375,13 @@ def check_configured_hardtop_summary(summary_path: Path) -> dict[str, object]:
         raise ValueError(f"{artifact_text(summary_path)} macro count is {config.get('macro_count')}")
     if signoff.get("status") != "pass":
         raise ValueError(f"{artifact_text(summary_path)} signoff status is {signoff.get('status')}")
-    if signoff.get("stdcells") != 39808:
+    if signoff.get("stdcells") != 39786:
         raise ValueError(
             f"{artifact_text(summary_path)} stdcell count changed: {signoff.get('stdcells')}"
         )
-    if signoff.get("vias") != 1316:
+    if signoff.get("vias") != 1336:
         raise ValueError(f"{artifact_text(summary_path)} via count changed: {signoff.get('vias')}")
-    if signoff.get("wirelength") != 44417:
+    if signoff.get("wirelength") != 47081:
         raise ValueError(
             f"{artifact_text(summary_path)} wirelength changed: {signoff.get('wirelength')}"
         )

@@ -194,12 +194,18 @@ module tb_pll_25mhz_configured_wrapper;
                                 16'd300, 8'd12, 6'd4, 8'd90, 1'b1);
         load_and_track_divider(5'd16, 16'd400, 8'd16, 6'd2, 8'd76);
 
+        feedback_divider = 5'd20;
+        #1;
+        check_hard_macro_inputs("before 500 MHz reload", 1'b1, 1'b0,
+                                16'd400, 8'd16, 6'd2, 8'd76, 1'b1);
+        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121);
+
         pll_enable = 1'b0;
         tick();
         if (config_busy !== 1'b0 || tracking !== 1'b0)
             $fatal(1, "disabled status mismatch busy=%0b tracking=%0b",
                    config_busy, tracking);
-        check_hard_macro_inputs("disabled", 1'b0, 1'b0, 16'd400, 8'd16, 6'd2, 8'd76, 1'b1);
+        check_hard_macro_inputs("disabled", 1'b0, 1'b0, 16'd500, 8'd20, 6'd1, 8'd121, 1'b1);
 
         load_invalid_divider(5'd5);
 

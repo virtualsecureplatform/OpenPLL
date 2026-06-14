@@ -35,9 +35,10 @@ mirror nodes.
 Post-layout TT Xyce RCX endpoint and local target-code probes now cover the
 requested 25 MHz-reference modes in one macro. The selected configured-mode
 settings are C20/code93 for 100 MHz, C06/code234 for 250 MHz, C04/code90 for
-300 MHz, and C02/code76 for 400 MHz. The direct mixed-step hold smoke uses
-those settings with the extracted DCO and extracted BBPD. This is post-layout
-DCO range and configured-mode integration evidence, not yet full
+300 MHz, C02/code76 for 400 MHz, and C01/code121 for 500 MHz. The direct
+mixed-step hold smoke uses those settings with the extracted DCO and extracted
+BBPD. This is post-layout DCO range and configured-mode integration evidence,
+not yet full
 extracted-DCO-in-loop PLL lock signoff.
 
 In other words, the current fast-path architecture does not require coarse and
@@ -54,7 +55,7 @@ is configured acquisition: select the characterized coarse mirror-delay path,
 seed the fine code near the measured target, then enable the DLF for phase
 tracking. Older low-frequency EINVP extracted-DCO lock-window results remain
 useful historical evidence for loop polarity and methodology, but they are not
-the signoff claim for the 100/250/300/400 MHz coarse-DCO target.
+the signoff claim for the 100/250/300/400/500 MHz coarse-DCO target.
 
 ## 1. Architecture Summary
 
@@ -313,22 +314,25 @@ path, then enable the DLF for phase tracking. The pre-layout mirror check,
 `make check-dco-einvp-coarse-mirror-targets`, remains a topology diagnostic
 with the minimum output buffer; it currently checks sampled 100/300 MHz
 pre-layout brackets and waveform quality. The current post-layout RCX DCO
-target map is the full 25 MHz-reference range claim and covers all four target
+target map is the full 25 MHz-reference range claim and covers all five target
 frequencies while keeping the ring-facing output buffer at `buf_1`: C20/code93
 is interpolated from 98.609 MHz at code0 and 100.515 MHz at code128,
 C06/code234 measures 249.813 MHz directly, C04/code90 is interpolated between
 295.760 MHz at code64 and 301.054 MHz at code96, and C02/code76 is
-interpolated between 397.373 MHz at code64 and 404.357 MHz at code96. The
+interpolated between 397.373 MHz at code64 and 404.357 MHz at code96.
+C01/code121 is interpolated between 468.489 MHz at code0 and 501.912 MHz at
+code128. The
 C06/code255 endpoint is numerically closer to 250 MHz than code224 but has
 weaker duty and rail behavior, so the 250 MHz mode uses the measured code234
 near-target row instead of relying on the rail.
 `IntegerPLL_25MHzModeConfig` captures these settings as reusable RTL keyed by
 the external 5-bit `FEEDBACK_DIVIDER` value: /4 emits C20/code93 for 100 MHz,
 /10 emits C06/code234 for 250 MHz, /12 emits C04/code90 for 300 MHz, and /16
-emits C02/code76 for 400 MHz. The helper also emits `KI=16`, `KP=4`, a DLF seed
-word of `target_code << 2` for the default 10-bit DLF / 8-bit DCO-code split,
-and `CONFIG_VALID`; unsupported divider values hold `CONFIG_VALID=0` and do not
-enter tracking. `IntegerPLL_25MHzModeController` turns that table into the
+emits C02/code76 for 400 MHz, and /20 emits C01/code121 for 500 MHz. The helper
+also emits `KI=16`, `KP=4`, a DLF seed word of `target_code << 2` for the
+default 10-bit DLF / 8-bit DCO-code split, and `CONFIG_VALID`; unsupported
+divider values hold `CONFIG_VALID=0` and do not enter tracking.
+`IntegerPLL_25MHzModeController` turns that table into the
 configured bring-up sequence: it latches `FEEDBACK_DIVIDER`, drives the preset
 divider/coarse/gain/seed values, asserts `DLF_Clear` for a small number of
 `CLKDIV_RETIMED` edges when the divider is valid, and then asserts `DLF_En` for
@@ -349,7 +353,7 @@ path length, or fine-load topology, not from upsizing the ring-facing output
 buffer, since that buffer is still an oscillator load.
 The paired configured-mode Xyce check,
 `make xyce-pll-mixed-signal-25mhz-targets`, aliases to the direct extracted-DCO
-configured-tracking gate plus the direct extracted-DCO hold smoke for the four
+configured-tracking gate plus the direct extracted-DCO hold smoke for the five
 25 MHz-reference multiplier targets.
 The configured-tracking gate uses `KI=16`, `KP=4`, starts each target at
 +/-4 fine codes, requires a target-code-neighborhood hit and at least one BBPD
@@ -360,14 +364,17 @@ The current fast release artifact check is
 `make check-sky130-pll-25mhz-release`; it validates the coarse-DCO structure,
 the `buf_1` output-buffer constraint, the RTL divider preset table, the signed
 low-level hardtop, the signed configured physical wrapper, the target rows,
-configured tracking rows, direct-RCX hold rows, and all eight low/high near-seed
-direct-RCX update rows. The near-seed update rows intentionally use different
-REF phase/divider seeds for low-side and high-side starts, because BBPD
-direction is phase dependent.
+configured tracking rows, direct-RCX hold rows, and all ten low/high near-seed
+direct-RCX update rows. The near-seed rows pass with two expected BBPD
+decisions from +/-4 fine-code starts: 100 MHz moves 89->92 and 97->94, 250 MHz
+moves 230->233 and 238->235, 300 MHz moves 86->89 and 94->91, 400 MHz moves
+72->75 and 80->77, and 500 MHz moves 117->120 and 125->122. The low-side and
+high-side rows intentionally use different REF phase/divider seeds, because
+BBPD direction is phase dependent.
 The optional
-`make xyce-pll-postlayout-dco-mixed-25mhz-400m-hold-smoke` diagnostic runs the
+`make xyce-pll-postlayout-dco-mixed-25mhz-500m-hold-smoke` diagnostic runs the
 extracted coarse DCO and extracted BBPD together at the hardest requested mode,
-C02/code76 with `NDIV=16`. It is a direct mixed-step integration smoke; the
+C01/code121 with `NDIV=20`. It is a direct mixed-step integration smoke; the
 short ADC-sampled frequency estimate is not used as the precise DCO frequency
 measurement.
 A wrapped BBPD by itself is not treated as a wide-range frequency detector from

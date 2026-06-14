@@ -172,7 +172,7 @@ def main():
         help="Input dco_sweep.csv. Pass multiple times to combine probe runs.",
     )
     parser.add_argument("--ref-mhz", type=float, default=25.0)
-    parser.add_argument("--targets-mhz", default="100,250,300,400")
+    parser.add_argument("--targets-mhz", default="100,250,300,400,500")
     parser.add_argument(
         "--require-waveform-quality",
         action="store_true",

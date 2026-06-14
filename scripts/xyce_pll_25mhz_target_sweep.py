@@ -580,7 +580,7 @@ def main() -> int:
     )
     parser.add_argument("--build-dir", type=Path, default=ROOT / "build" / "xyce_pll_25mhz_target_sweep")
     parser.add_argument("--ref-mhz", type=float, default=25.0)
-    parser.add_argument("--targets-mhz", type=parse_float_list, default=parse_float_list("100,250,300,400"))
+    parser.add_argument("--targets-mhz", type=parse_float_list, default=parse_float_list("100,250,300,400,500"))
     parser.add_argument("--ki-values", type=parse_int_list, default=parse_int_list("192"))
     parser.add_argument("--kp-values", type=parse_int_list, default=parse_int_list("8"))
     parser.add_argument("--init-codes", type=parse_int_list, default=parse_int_list("0,255"))

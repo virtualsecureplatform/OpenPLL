@@ -53,6 +53,14 @@ TARGETS = {
         "min_pllout_rises": 8,
         "cosim_step_ns": 0.1,
     },
+    500: {
+        "coarse_code": 1,
+        "target_code": 121,
+        "ndiv": 20,
+        "freq_tol_mhz": 25.0,
+        "min_pllout_rises": 10,
+        "cosim_step_ns": 0.1,
+    },
 }
 
 
@@ -464,7 +472,7 @@ def main() -> int:
     )
     parser.add_argument("--pdk-root", type=Path, default=Path(default_pdk_root()))
     parser.add_argument("--pdk", default="sky130A")
-    parser.add_argument("--targets-mhz", type=parse_targets, default=parse_targets("100,250,300,400"))
+    parser.add_argument("--targets-mhz", type=parse_targets, default=parse_targets("100,250,300,400,500"))
     parser.add_argument("--sides", type=parse_sides, default=parse_sides("low,high"))
     parser.add_argument("--ref-mhz", type=float, default=25.0)
     parser.add_argument("--dco-subckt", default="IntegerPLL_DCO_EINVP_COARSE")

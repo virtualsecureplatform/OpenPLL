@@ -73,7 +73,7 @@ oscillator-node capacitance.
 
 The older filled `IntegerPLL_DCO_EINVP` path measured 50.955942-72.479371 MHz
 across the 8-bit code endpoints and remains useful low-frequency diagnostic
-history. It is not the current 100/250/300/400 MHz target path.
+history. It is not the current 100/250/300/400/500 MHz target path.
 
 The historical 200 MHz sparse72 exploration shortened the EINVP ring and
 reduced the enabled load range. The `IntegerPLL_DCO_EINVP_SPARSE72` macro has
@@ -112,13 +112,15 @@ target-code probes:
 | 250 MHz | 10 | C06/code234 | 249.813 MHz measured directly; C06/code255 is numerically closer than code224 but has weaker duty, so the rail is avoided. |
 | 300 MHz | 12 | C04/code90 | Interpolated from 295.760 MHz at code64 to 301.054 MHz at code96. |
 | 400 MHz | 16 | C02/code76 | Interpolated from 397.373 MHz at code64 to 404.357 MHz at code96. |
+| 500 MHz | 20 | C01/code121 | Interpolated from 468.489 MHz at code0 to 501.912 MHz at code128. |
 
 The target-band context remains: C20 spans 98.609/100.515/101.817 MHz at fine
 0/128/255, C06 measures 243.384/249.187/249.756/249.813/250.488 MHz at codes
 128/192/224/234/255, C04 measures 295.760/301.054/304.371/308.390 MHz at codes
 64/96/128/160, and C02 spans
 385.207/390.628/397.373/404.357/411.194/425.984/438.705 MHz at codes
-0/32/64/96/128/192/255. Full PLL acquisition checks remain required before
+0/32/64/96/128/192/255. The 500 MHz C01 target context is
+468.489/501.912/546.363 MHz at fine codes 0/128/255. Full PLL acquisition checks remain required before
 using this coarse-DCO path for PLL signoff claims.
 If the oscillator needs more speed margin, the validated direction is to change
 ring/mirror drive strength, effective coarse path length, or fine-load topology.
@@ -133,9 +135,9 @@ make -C OpenPLL xyce-pll-mixed-signal-25mhz-targets
 
 It aliases to the direct extracted-DCO mixed-step hold smoke after refreshing
 the post-layout RCX, waveform-qualified DCO tables above. The selected target
-codes are code93, code234, code90, and code76. The calibrated configured
+codes are code93, code234, code90, code76, and code121. The calibrated configured
 tracking row uses `KI=16`, `KP=4`, starts each target at +/-4 fine codes, and
-passes the bounded configured tracking gate for all four multipliers. The gate
+passes the bounded configured tracking gate for all five multipliers. The gate
 requires a target-code-neighborhood hit, at least one BBPD decision in the
 expected initial direction, final modeled frequency error within 2 MHz, and the
 last eight modeled DCO updates also inside the 2 MHz frequency window with no
@@ -144,7 +146,7 @@ integration around measured target settings, not rail-to-rail frequency
 acquisition or a full extracted-DCO-in-loop PLL lock signoff.
 Short BBPD motion checks are also phase dependent; they are useful only when
 the initial divider phase is explicitly controlled and are not promoted as
-frequency-acquisition evidence for the 100/250/300/400 MHz coarse-DCO target
+frequency-acquisition evidence for the 100/250/300/400/500 MHz coarse-DCO target
 set.
 
 The fast artifact gate for this current 25 MHz-reference release evidence is:
@@ -157,20 +159,20 @@ It validates the coarse-DCO RTL topology and `buf_1` output-buffer constraint,
 the 25 MHz RTL divider preset table and configured divider-controller/wrapper, the
 refreshed `IntegerPLL_HardMacroTop_EINVP` signoff and extracted SPICE/SPEF
 interface summaries, the configured behavioral PLL reset-to-tracking regression,
-the waveform-qualified target-code rows, the configured tracking rows, the four
+the waveform-qualified target-code rows, the configured tracking rows, the five
 direct-RCX hold rows, and the recorded low/high near-seed direct-RCX update
-summary for all four divider targets.
+summary for all five divider targets.
 
 The optional direct extracted-DCO mixed-step diagnostic for the highest target
 mode is:
 
 ```sh
-make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-400m-hold-smoke
+make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-500m-hold-smoke
 ```
 
 This deck keeps the `IntegerPLL_DCO_EINVP_COARSE` RCX and filled BBPD RCX in
 Xyce, with the divider and DLF model in the C-interface driver. The current
-Ciel-PDK run fixes C02/code76 and uses `NDIV=16`. Because that short
+Ciel-PDK run fixes C01/code121 and uses `NDIV=20`. Because that short
 ADC-sampled window is approximate, the standalone post-layout DCO target rows
 remain the precise frequency evidence.
 
@@ -180,15 +182,15 @@ The companion direct-RCX near-seed diagnostic is:
 make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-nearseed-smokes
 ```
 
-It checks +/-4 fine-code starts for 100, 250, 300, and 400 MHz with `KI=16`,
+It checks +/-4 fine-code starts for 100, 250, 300, 400, and 500 MHz with `KI=16`,
 `KP=4`, and `FRAC=2`. Low-side rows use REF phase offset -0.25 and divider seed
 0; high-side rows use REF phase offset 0.25 and divider seed `NDIV-1`. The
-current Ciel-PDK TT summary passes all eight rows with two expected BBPD
-decisions and final error of one code: 100 MHz 89->92 and 97->94 around code93,
-250 MHz 230->233 and 238->235 around code234, 300 MHz 86->89 and 94->91 around
-code90, and 400 MHz 72->75 and 80->77 around code76. This confirms extracted
-DCO/BBPD code-update behavior on both sides of each configured target, but it
-is still near-seed configured-control evidence rather than full extracted-loop
+current Ciel-PDK TT summary passes all ten rows with the expected two BBPD
+decisions: 100 MHz moves 89->92 and 97->94, 250 MHz moves 230->233 and
+238->235, 300 MHz moves 86->89 and 94->91, 400 MHz moves 72->75 and 80->77,
+and 500 MHz moves 117->120 and 125->122. This confirms extracted DCO/BBPD
+code-update behavior on both sides of each configured target, but it is still
+near-seed configured-control evidence rather than full extracted-loop
 rail-start acquisition evidence.
 
 The practical 25 MHz reference / 200 MHz output mixed-signal lock target is:
@@ -2678,7 +2680,7 @@ Not yet complete:
 - Full coarse-DCO RCX tuning-curve and PVT transient coverage. The current
   `IntegerPLL_DCO_EINVP_COARSE` evidence includes clean standalone signoff/RCX,
   clean hardtop signoff/SPICE-interface checks, and post-layout TT endpoint
-  plus near-target probes for the 100, 250, 300, and 400 MHz targets. It still
+  plus near-target probes for the 100, 250, 300, 400, and 500 MHz targets. It still
   needs broader all-band PVT DCO coverage and full extracted-DCO-in-loop
   lock/acquisition evidence before the 25 MHz-reference multiplier targets can be
   treated as final PLL signoff.

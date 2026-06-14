@@ -111,6 +111,16 @@ module IntegerPLL_DCO #(
         end
     endfunction
 
+    function real c01_freq_mhz;
+        input integer code;
+        begin
+            if (code <= 128)
+                c01_freq_mhz = interp(code, 0, 468.489, 128, 501.912);
+            else
+                c01_freq_mhz = interp(code, 128, 501.912, 255, 546.363);
+        end
+    endfunction
+
     function real coarse_freq_mhz;
         input [5:0] coarse;
         input integer code;
@@ -120,6 +130,7 @@ module IntegerPLL_DCO #(
                 6'd6: coarse_freq_mhz = c06_freq_mhz(code);
                 6'd4: coarse_freq_mhz = c04_freq_mhz(code);
                 6'd2: coarse_freq_mhz = c02_freq_mhz(code);
+                6'd1: coarse_freq_mhz = c01_freq_mhz(code);
                 default: coarse_freq_mhz = c20_freq_mhz(code);
             endcase
         end

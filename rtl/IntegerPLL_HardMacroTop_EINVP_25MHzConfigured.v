@@ -38,8 +38,28 @@ module IntegerPLL_HardMacroTop_EINVP_25MHzConfigured #(
     wire [5:0] coarse_code;
     wire [7:0] mmd_ratio;
     wire pllo_internal;
+    (* keep = "true" *) wire [15:0] target_mhz_raw;
 
     assign PLLOUT = pllo_internal;
+    assign TARGET_MHZ[7:0] = target_mhz_raw[7:0];
+    assign TARGET_MHZ[15:9] = target_mhz_raw[15:9];
+
+    /*
+     * TARGET_MHZ[8] has the longest status-output route in this wrapper. The
+     * explicit physical buffer keeps its decode net local while preserving the
+     * generic RTL simulation path.
+     */
+`ifdef USE_POWER_PINS
+    /* verilator lint_off PINMISSING */
+    (* keep = "true", dont_touch = "true" *)
+    sky130_fd_sc_hd__buf_8 target_mhz8_status_buf (
+        .X(TARGET_MHZ[8]),
+        .A(target_mhz_raw[8])
+    );
+    /* verilator lint_on PINMISSING */
+`else
+    assign TARGET_MHZ[8] = target_mhz_raw[8];
+`endif
 
     IntegerPLL_25MHzModeController #(
         .CLEAR_CYCLES(MODE_CLEAR_CYCLES)
@@ -59,7 +79,7 @@ module IntegerPLL_HardMacroTop_EINVP_25MHzConfigured #(
         .MMDCLKDIV_RATIO(mmd_ratio),
         .CONFIG_BUSY(CONFIG_BUSY),
         .TRACKING(TRACKING),
-        .TARGET_MHZ(TARGET_MHZ),
+        .TARGET_MHZ(target_mhz_raw),
         .TARGET_DCO_CODE(TARGET_DCO_CODE),
         .CONFIG_VALID(CONFIG_VALID)
     );
