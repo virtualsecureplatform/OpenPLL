@@ -759,24 +759,20 @@ int main(int argc, char **argv) {
   int pllout_rises = 0;
   if (args.measure_cycles > 0) {
     const double loop_end_s = start_s + static_cast<double>(args.cycles) * tref;
+    double measure_base_s = loop_end_s;
     if (dlf.dco_code != start_code) {
-      if (xyce.getTime() > loop_end_s + 1.0e-15) {
-        std::cerr << "xyce_pll_postlayout_dco_mixed_signal_smoke=fail error=\"cannot measure post-update DCO code after Xyce advanced past loop end\"\n";
-        xyce.finalize();
-        return EXIT_FAILURE;
-      }
       if (!update_code(xyce, code_dac, therm_dacs,
-                       std::max(loop_end_s, xyce.getTime()),
-                       dlf.dco_code)) {
+                       std::max(loop_end_s, xyce.getTime()), dlf.dco_code)) {
         std::cerr << "xyce_pll_postlayout_dco_mixed_signal_smoke=fail error=\"failed to update final DCO code DAC\"\n";
         xyce.finalize();
         return EXIT_FAILURE;
       }
+      measure_base_s = xyce.getTime();
     }
     const double measure_start_s =
-        loop_end_s + args.measure_settle_ns * 1.0e-9;
+        measure_base_s + args.measure_settle_ns * 1.0e-9;
     const double measure_end_s =
-        loop_end_s + static_cast<double>(args.measure_cycles) * tref;
+        measure_base_s + static_cast<double>(args.measure_cycles) * tref;
     if (measure_end_s <= measure_start_s) {
       std::cerr << "xyce_pll_postlayout_dco_mixed_signal_smoke=fail error=\"measurement window ends before settle time\"\n";
       xyce.finalize();

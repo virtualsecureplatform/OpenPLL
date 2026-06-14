@@ -13,31 +13,32 @@ load and increases DCO frequency.
 
 ## Current Sky130 Deliverable
 
-The current promoted implementation track is the `IntegerPLL_HardMacroTop_EINVP`
-path: a signed-off Sky130 digital core, filled BBPD macro, filled
-`IntegerPLL_DCO_EINVP` macro, and hard-top interconnect. It is still an
-integer-N bang-bang digital PLL, with an 8-bit exported `DCO_CODE`, 255 physical
-thermometer load controls, and an 8-bit programmable `MMDCLKDIV_RATIO`.
+The current high-frequency implementation track is
+`IntegerPLL_HardMacroTop_EINVP`: a signed-off Sky130 digital core, filled BBPD
+macro, physical `IntegerPLL_DCO_EINVP_COARSE` macro, and hard-top interconnect.
+It is still an integer-N bang-bang digital PLL, with an 8-bit exported
+`DCO_CODE`, 255 physical fine thermometer load controls, a separate 6-bit
+coarse band input decoded to 47 thermometer controls, and an 8-bit programmable
+`MMDCLKDIV_RATIO`.
 
-The selected TT operating point is the hard-top-loaded EINVP DCO near code 128.
-The standalone filled EINVP RCX DCO measures 50.955942 MHz at code 0,
-60.174879 MHz at code 128, and 72.479371 MHz at code 255. After hard-top
-interconnect loading, the promoted lock-window target is 58.573518 MHz at the
-nominal mid-code point; the current loop diagnostics use `NDIV=2` and
-`REF=29.286759 MHz` for that target.
+`IntegerPLL_DCO_EINVP_COARSE` keeps one macro and one oscillator loop. Coarse
+selection is a 48-position HS NAND/NAND2B turn/pass mirror-delay network; the
+terminal mirror turn supplies the 48th position after the 47 decoded coarse
+thermometer controls. Fine tuning uses 90 HS NAND2 loads sampled from the
+existing 255-bit fine thermometer bus and placed locally on `osc_node` and
+`mirror_ret[0]`. The active loop gates use HS `_4` cells, but the first output
+buffer remains `sky130_fd_sc_hs__buf_1` so the measurement/output path does not
+unnecessarily load the oscillator node. The earlier C19/C20 deep-node slow-load
+banks were removed; they made target coverage fragile by burdening internal
+mirror nodes.
 
-This promoted physical path does not reach a 100 MHz TT output. For
-100 MHz-order work, the fast-path model keeps the DLF-controlled fine DCO word
-at the full 8-bit resolution and treats `COARSEBINARY_CODE[3:0]` as an
-independent DCO band input. The current fast behavioral target uses
-`COARSEBINARY_CODE=1`, a 16 MHz coarse-band step, `MMDCLKDIV_RATIO=2`, and
-`REF=63.443725 MHz`, giving a 126.88745 MHz output target near fine code 32.
-The separate `IntegerPLL_DCO_EINVP_FAST` candidate shortens the EINVP ring from
-17 enabled stages to 9 enabled stages. Its pre-layout TT five-point fine-code
-sweep measures 102.518/119.260/142.355/176.267/229.054 MHz at codes
-0/64/128/192/255 before the coarse offset. That is range evidence only;
-post-layout RCX and hard-top integration are still required before treating it
-as a promoted DCO.
+Post-layout TT Xyce RCX endpoint and local target-code probes now cover the
+requested 25 MHz-reference modes in one macro. The selected configured-mode
+settings are C20/code93 for 100 MHz, C06/code234 for 250 MHz, C04/code90 for
+300 MHz, and C02/code76 for 400 MHz. The direct mixed-step hold smoke uses
+those settings with the extracted DCO and extracted BBPD. This is post-layout
+DCO range and configured-mode integration evidence, not yet full
+extracted-DCO-in-loop PLL lock signoff.
 
 In other words, the current fast-path architecture does not require coarse and
 fine tuning to sum to 8 bits. `DCO_COARSE_BITS=0` keeps all 8 exported DCO bits
@@ -45,19 +46,15 @@ as fine control; coarse tuning is a separate band-select input in the
 behavioral/mixed DCO model. Nonzero `DCO_COARSE_BITS` remains only as a legacy
 packed-code diagnostic mode.
 
-The strongest convergence evidence is not the short mixed-signal smoke. It is
-the hard-top-loaded extracted-DCO lock-window evidence: low rail start reaches
-codes 122..128 with 58.485654 MHz tail frequency and 0.087865 MHz target error,
-while high rail start reaches codes 126..132 with 58.804895 MHz tail frequency
-and 0.231377 MHz target error. The Xyce C-interface mixed-signal path uses the
-filled extracted BBPD in Xyce with a compiled digital driver. The stricter
-fast100 variant also keeps the behavioral DCO phase integrator and divider in
-Xyce, leaving only the DLF update in C++. In the current bounded fast100 check,
-the low-side case reaches fine code 34 and measures 127.389 MHz, while the
-bounded high-side case reaches fine code 30 and measures 126.316 MHz against the
-126.88745 MHz target. These runs are polarity, gain, and multiplier-frequency
-evidence, especially showing that nonzero `KP` improves acquisition versus
-`KP=0`, but they are not yet the full post-layout PLL lock signoff path.
+The strongest evidence for the current coarse-DCO path is the combination of
+clean physical signoff/RCX, waveform-qualified post-layout DCO endpoint plus
+near-target rows, and the configured-mode 25 MHz-reference mixed-signal check.
+It should not be read as a blind rail-start acquisition claim. The intended use
+is configured acquisition: select the characterized coarse mirror-delay path,
+seed the fine code near the measured target, then enable the DLF for phase
+tracking. Older low-frequency EINVP extracted-DCO lock-window results remain
+useful historical evidence for loop polarity and methodology, but they are not
+the signoff claim for the 100/250/300/400 MHz coarse-DCO target.
 
 ## 1. Architecture Summary
 
@@ -73,7 +70,7 @@ flowchart LR
     BBPD -->|2-bit early/late code| DLF[Digital loop filter]
     DLF -->|5-bit medium code| B2TH_M[5b to 31b thermometer]
     DLF -->|5-bit fine code| B2TH_F[5b to 31b thermometer]
-    SPI[SPI/config] -->|4-bit coarse code| B2TH_C[4b to 15b thermometer]
+    SPI[SPI/config] -->|6-bit coarse code| B2TH_C[6b to 47b thermometer]
     B2TH_C --> DCO[DCO]
     B2TH_M --> DCO
     B2TH_F --> DCO
@@ -103,7 +100,7 @@ Main design points:
 | `IntegerPLL_Top` | RTL integration | Top-level digital interconnect and control routing. |
 | `BBPD` | Gate-level standard-cell circuit | Bang-bang phase detector. Produces a 2-bit early/late code. |
 | `IntegerPLL_DLF` | Synthesizable RTL | Digital loop filter with proportional and integral paths. |
-| `IntegerPLL_4B2TH` | Synthesizable RTL | Converts 4-bit coarse binary code to a 15-bit thermometer code. |
+| `IntegerPLL_4B2TH` | Synthesizable RTL | Converts the 6-bit coarse binary code to a 47-bit thermometer code for the coarse DCO macro. |
 | 5b-to-31b B2TH decoders | Synthesizable RTL | Convert medium/fine binary control fields to thermometer banks. |
 | `IntegerPLL_MMD_Retimer` | Synthesizable RTL, placed close to DCO | Programmable divider plus retiming for loop feedback. |
 | `IntegerPLL_Divider` | Synthesizable RTL, placed close to DCO | Divide-by-32 observation output for PLL testing. |
@@ -120,8 +117,8 @@ The reference report shows these major top-level signals.
 | `PLLOUT_DIV` | output | 1 | Divide-by-32 test output from `PLLOUT`. |
 | `BBPD` | internal | 2 | Bang-bang phase detector result. |
 | `MMDCLKDIV_RATIO` | input | 8 | Programmable integer feedback division ratio. |
-| `COARSEBINARY_CODE` | input | 4 | External coarse DCO control, normally from SPI/config. |
-| `COARSETHERMAL_CODE` | internal | 15 | Coarse DCO thermometer control. |
+| `COARSEBINARY_CODE` | input | 6 | External coarse DCO control, normally from SPI/config. |
+| `COARSETHERMAL_CODE` | internal | 47 | Coarse DCO thermometer control for the 48-position mirror path. |
 | `Medium_CAPS_CTRL` | internal | 31 | Medium DCO thermometer control from DLF MSBs. |
 | `Fine_CAPS_CTRL` | internal | 31 | Fine DCO thermometer control from the next DLF bits. |
 | `CLKDIV_RETIMED` | internal | 1 | Retimed divided feedback clock for BBPD comparison and DLF updates. |
@@ -286,17 +283,92 @@ resolution.
 
 | Tuning bank | Binary input | Thermometer output | Source | Role |
 | --- | ---: | ---: | --- | --- |
-| Coarse | 4 bits | 15 bits | SPI/config | Wide delay/frequency range. |
+| Coarse | 6 bits | 47 bits | SPI/config | Wide delay/frequency range through the mirror path. |
 | Medium | 5 bits | 31 bits | DLF upper field | Main closed-loop correction. |
 | Fine | 5 bits | 31 bits | DLF next field | Fine closed-loop correction. |
 
 For the current 8-bit Sky130 DCO macro path, the default mode drives
 `DCO_CODE = DLF_CODE[9:2]`, so the loop filter owns the complete 8-bit
 fine-code span. The 100 MHz-order behavioral fast path keeps this mode
-(`DCO_COARSE_BITS=0`) and applies `COARSEBINARY_CODE[3:0]` as a separate DCO
+(`DCO_COARSE_BITS=0`) and applies `COARSEBINARY_CODE[5:0]` as a separate DCO
 band offset in the analog DCO model. This avoids spending fine-code resolution
 on the coarse selector while still allowing a coarse band to choose the
 multiplication range.
+
+The physical coarse-DCO candidate follows the same control split. Its
+`COARSEBINARY_CODE` is decoded by the digital core into
+`COARSETHERMAL_CODE[46:0]`; those thermometer bits drive the turn/pass controls
+in a single 48-position HS NAND/NAND2B mirror-delay loop. Higher coarse codes
+pass through more mirror cells before turning back, so the code changes
+effective path length rather than selecting a muxed feedback tap. The 255-bit
+`DCO_THERM` bank remains the fine control path driven by the loop filter; the
+current physical candidate samples that bus with 90 evenly mapped HS NAND2
+fine loads split between `osc_node` and `mirror_ret[0]`.
+
+For fixed 25 MHz-reference multiplier modes, the intended operating sequence is
+configured acquisition rather than blind bang-bang rail acquisition: select a
+characterized coarse mirror-delay path for the requested multiplier, seed the
+fine code near the measured target code through the existing DLF override/config
+path, then enable the DLF for phase tracking. The pre-layout mirror check,
+`make check-dco-einvp-coarse-mirror-targets`, remains a topology diagnostic
+with the minimum output buffer; it currently checks sampled 100/300 MHz
+pre-layout brackets and waveform quality. The current post-layout RCX DCO
+target map is the full 25 MHz-reference range claim and covers all four target
+frequencies while keeping the ring-facing output buffer at `buf_1`: C20/code93
+is interpolated from 98.609 MHz at code0 and 100.515 MHz at code128,
+C06/code234 measures 249.813 MHz directly, C04/code90 is interpolated between
+295.760 MHz at code64 and 301.054 MHz at code96, and C02/code76 is
+interpolated between 397.373 MHz at code64 and 404.357 MHz at code96. The
+C06/code255 endpoint is numerically closer to 250 MHz than code224 but has
+weaker duty and rail behavior, so the 250 MHz mode uses the measured code234
+near-target row instead of relying on the rail.
+`IntegerPLL_25MHzModeConfig` captures these settings as reusable RTL: mode 0
+emits /4, C20, code93 for 100 MHz; mode 1 emits /10, C06, code234 for 250 MHz;
+mode 2 emits /12, C04, code90 for 300 MHz; and mode 3 emits /16, C02, code76
+for 400 MHz. The helper also emits `KI=16`, `KP=4`, and a DLF seed word of
+`target_code << 2` for the default 10-bit DLF / 8-bit DCO-code split.
+`IntegerPLL_25MHzModeController` turns that table into the fixed-mode bring-up
+sequence: it latches `MODE_SELECT`, drives the preset divider/coarse/gain/seed
+values, asserts `DLF_Clear` for a small number of `CLKDIV_RETIMED` edges, and
+then asserts `DLF_En` for normal tracking. `IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`
+wraps that controller around the low-level hard macro so the shipped fixed
+25 MHz-reference interface is `PLL_ENABLE` plus `MODE_SELECT`. That wrapper is
+also hardened as `IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`, which embeds
+the signed low-level hard macro and signs off the mode controller plus wrapper
+routing as one physical macro. The promoted 25 MHz hard-macro modes use the
+default divider-clocked DLF update path. The generic digital core can be
+rebuilt with `DLF_UPDATE_ON_PLLOUT=1` for diagnostic experiments, but the
+placed hard macro does not expose that as a runtime-selectable mode.
+The next version should extend the BBPLL/control architecture for robust
+acquisition from arbitrary phase/code starts.
+Additional speed margin should come from ring/mirror drive strength, coarse
+path length, or fine-load topology, not from upsizing the ring-facing output
+buffer, since that buffer is still an oscillator load.
+The paired configured-mode Xyce check,
+`make xyce-pll-mixed-signal-25mhz-targets`, aliases to the direct extracted-DCO
+configured-tracking gate plus the direct extracted-DCO hold smoke for the four
+25 MHz-reference multiplier modes.
+The configured-tracking gate uses `KI=16`, `KP=4`, starts each target at
++/-4 fine codes, requires a target-code-neighborhood hit and at least one BBPD
+decision in the expected initial direction, then checks that the final modeled
+frequency and the last eight modeled DCO updates stay within 2 MHz of the
+requested target with no more than 16 fine-code span.
+The current fast release artifact check is
+`make check-sky130-pll-25mhz-release`; it validates the coarse-DCO structure,
+the `buf_1` output-buffer constraint, the RTL mode preset table, the signed
+low-level hardtop, the signed configured physical wrapper, the target rows,
+configured tracking rows, direct-RCX hold rows, and all eight low/high near-seed
+direct-RCX update rows. The near-seed update rows intentionally use different
+REF phase/divider seeds for low-side and high-side starts, because BBPD
+direction is phase dependent.
+The optional
+`make xyce-pll-postlayout-dco-mixed-25mhz-400m-hold-smoke` diagnostic runs the
+extracted coarse DCO and extracted BBPD together at the hardest requested mode,
+C02/code76 with `NDIV=16`. It is a direct mixed-step integration smoke; the
+short ADC-sampled frequency estimate is not used as the precise DCO frequency
+measurement.
+A wrapped BBPD by itself is not treated as a wide-range frequency detector from
+arbitrary fine-code rails.
 
 A legacy diagnostic mode remains available when `DCO_COARSE_BITS>0`: the
 coarse input replaces the high bits of `DCO_CODE`, and the DLF tunes only the
@@ -363,16 +435,17 @@ layout parasitics, and target output range.
 
 ## 8. Binary-to-Thermometer Decoders
 
-The DCO banks are thermometer driven. The 4-bit coarse decoder maps an external
-binary code to 15 coarse control lines. The medium and fine decoders map 5-bit
-DLF fields to 31 control lines each.
+The DCO banks are thermometer driven. The current coarse-DCO path maps a 6-bit
+external binary code to 47 coarse control lines for the 48-position mirror
+network. The older tutorial example used a 4-bit/15-line coarse bank. The medium
+and fine examples map 5-bit DLF fields to 31 control lines each.
 
 Decoder requirements:
 
 - Monotonic output sequence for increasing binary input.
 - No glitches at the DCO control boundary if the decoder output is sampled or
   changed while the oscillator is active.
-- Parameterized implementation is preferred so 4b-to-15b and 5b-to-31b variants
+- Parameterized implementation is preferred so 6b-to-47b and 5b-to-31b variants
   share the same logic pattern.
 - Output polarity must match the selected DCO cell convention. Some NAND
   varactor examples use active-low or inverted loading behavior.
@@ -407,6 +480,10 @@ A practical integer-BBPLL bring-up sequence is:
 7. Adjust `DLF_KP` and `DLF_KI` to trade lock speed, jitter, and stability.
 8. If the medium/fine controls rail, update the coarse code and restart or
    reload the DLF state.
+
+For the shipped 25 MHz-reference modes, the configured wrapper automates steps
+1 through 5. Use the low-level sequence directly only for characterization,
+new target frequencies, or nonstandard gain/seed experiments.
 
 ## 11. Verification Checklist
 

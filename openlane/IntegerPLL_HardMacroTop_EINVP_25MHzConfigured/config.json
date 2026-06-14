@@ -1,0 +1,112 @@
+{
+  "DESIGN_NAME": "IntegerPLL_HardMacroTop_EINVP_25MHzConfigured",
+  "VERILOG_FILES": [
+    "dir::../../rtl/IntegerPLL_25MHzModeConfig.v",
+    "dir::../../rtl/IntegerPLL_25MHzModeController.v",
+    "dir::../../rtl/IntegerPLL_HardMacroTop_EINVP_25MHzConfigured.v"
+  ],
+  "VERILOG_DEFINES": [
+    "USE_POWER_PINS"
+  ],
+  "PNR_SDC_FILE": "dir::async_configured_top.sdc",
+  "SIGNOFF_SDC_FILE": "dir::async_configured_top.sdc",
+  "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
+  "ERRORS_ON_UNMATCHED_IO": "both",
+  "LINTER_DISABLE_WARNINGS_BLACKBOX": [
+    "UNDRIVEN",
+    "UNUSEDSIGNAL",
+    "PINMISSING",
+    "TIMESCALEMOD"
+  ],
+  "CLOCK_PORT": null,
+  "CLOCK_PERIOD": 8.0,
+  "EXTRA_EXCLUDED_CELLS": [
+    "sky130_fd_sc_hd__o21ai_0"
+  ],
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [
+    0,
+    0,
+    1100,
+    1400
+  ],
+  "CORE_AREA": [
+    20,
+    20,
+    1080,
+    1380
+  ],
+  "FP_CORE_UTIL": 5,
+  "PL_TARGET_DENSITY_PCT": 20,
+  "FP_MACRO_HORIZONTAL_HALO": 10,
+  "FP_MACRO_VERTICAL_HALO": 10,
+  "RT_MAX_LAYER": "met5",
+  "RUN_CTS": false,
+  "RUN_POST_GPL_DESIGN_REPAIR": true,
+  "RUN_POST_CTS_RESIZER_TIMING": false,
+  "RUN_POST_GRT_DESIGN_REPAIR": false,
+  "RUN_POST_GRT_RESIZER_TIMING": false,
+  "RUN_MCSTA": false,
+  "RUN_IRDROP_REPORT": false,
+  "RUN_EQY": false,
+  "MAGIC_CAPTURE_ERRORS": false,
+  "PDN_CONNECT_MACROS_TO_GRID": true,
+  "PDN_MACRO_CONNECTIONS": [
+    "hard_macro VPWR VGND VPWR VGND"
+  ],
+  "ERROR_ON_PDN_VIOLATIONS": false,
+  "PAD_LIBS": null,
+  "VDD_NETS": [
+    "VPWR"
+  ],
+  "GND_NETS": [
+    "VGND"
+  ],
+  "MACROS": {
+    "IntegerPLL_HardMacroTop_EINVP": {
+      "instances": {
+        "hard_macro": {
+          "location": [
+            120,
+            120
+          ],
+          "orientation": "N"
+        }
+      },
+      "gds": [
+        "dir::../IntegerPLL_HardMacroTop_EINVP/runs/librelane_signoff/final/gds/IntegerPLL_HardMacroTop_EINVP.gds"
+      ],
+      "lef": [
+        "dir::../IntegerPLL_HardMacroTop_EINVP/runs/librelane_signoff/final/lef/IntegerPLL_HardMacroTop_EINVP.lef"
+      ],
+      "vh": [
+        "dir::../IntegerPLL_HardMacroTop_EINVP/runs/librelane_signoff/final/vh/IntegerPLL_HardMacroTop_EINVP.vh"
+      ],
+      "pnl": [
+        "dir::../IntegerPLL_HardMacroTop_EINVP/runs/librelane_signoff/final/pnl/IntegerPLL_HardMacroTop_EINVP.pnl.v"
+      ],
+      "spice": [
+        "dir::../IntegerPLL_HardMacroTop_EINVP/runs/librelane_signoff/final/spice/IntegerPLL_HardMacroTop_EINVP.spice"
+      ]
+    }
+  },
+  "scl::sky130_fd_sc_hd": {
+    "LIB": {
+      "nom_": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+      ],
+      "*_tt_025C_1v80": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+      ],
+      "*_ff_n40C_1v95": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+      ],
+      "*_ss_100C_1v60": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+      ]
+    }
+  },
+  "meta": {
+    "flow": "Classic"
+  }
+}

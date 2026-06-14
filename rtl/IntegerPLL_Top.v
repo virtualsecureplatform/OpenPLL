@@ -32,7 +32,7 @@ module IntegerPLL_Top #(
     input wire [DLF_CODE_WIDTH-1:0] DLF_Ext_Data,
     input wire [DLF_GAIN_WIDTH-1:0] DLF_KI,
     input wire [DLF_GAIN_WIDTH-1:0] DLF_KP,
-    input wire [3:0] COARSEBINARY_CODE,
+    input wire [5:0] COARSEBINARY_CODE,
     input wire [7:0] MMDCLKDIV_RATIO,
     output wire PLLOUT,
     output wire PLLOUT_DIV,
@@ -42,7 +42,7 @@ module IntegerPLL_Top #(
     output wire [DLF_CODE_WIDTH-1:0] DLF_CODE
 );
 
-    wire [14:0] coarse_ctrl;
+    wire [46:0] coarse_ctrl;
     wire [4:0] medium_binary;
     wire [4:0] fine_binary;
     wire [30:0] medium_ctrl;

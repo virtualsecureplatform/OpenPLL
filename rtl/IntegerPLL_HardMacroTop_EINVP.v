@@ -18,7 +18,7 @@ module IntegerPLL_HardMacroTop_EINVP (
     input wire [9:0] DLF_Ext_Data,
     input wire [7:0] DLF_KI,
     input wire [7:0] DLF_KP,
-    input wire [3:0] COARSEBINARY_CODE,
+    input wire [5:0] COARSEBINARY_CODE,
     input wire [7:0] MMDCLKDIV_RATIO,
     output wire PLLOUT,
     output wire PLLOUT_DIV,
@@ -28,7 +28,7 @@ module IntegerPLL_HardMacroTop_EINVP (
     output wire [9:0] DLF_CODE
 );
 
-    wire [14:0] coarse_ctrl;
+    wire [46:0] coarse_ctrl;
     wire [4:0] medium_binary;
     wire [4:0] fine_binary;
     wire [30:0] medium_ctrl;
@@ -80,7 +80,7 @@ module IntegerPLL_HardMacroTop_EINVP (
         .DLF_CODE(DLF_CODE)
     );
 
-    IntegerPLL_DCO_EINVP oscillator (
+    IntegerPLL_DCO_EINVP_COARSE oscillator (
 `ifdef USE_POWER_PINS
         .VPWR(VPWR),
         .VGND(VGND),
@@ -88,6 +88,7 @@ module IntegerPLL_HardMacroTop_EINVP (
         .VNB(VNB),
 `endif
         .RESET_N(RESET_N),
+        .COARSETHERMAL_CODE(coarse_ctrl),
         .DCO_THERM(dco_therm),
         .PLLOUT(PLLOUT)
     );

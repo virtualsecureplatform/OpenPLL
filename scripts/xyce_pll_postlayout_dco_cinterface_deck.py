@@ -43,13 +43,23 @@ def wrapped_instance(name: str, ports: list[str], subckt: str, width: int = 8) -
     return lines
 
 
+def coarse_therm_voltage(index: int, coarse_code: int, invert: bool) -> str:
+    active = coarse_code > index
+    if invert:
+        active = not active
+    return "{VDD}" if active else "0"
+
+
 def build_deck(args) -> str:
     pdk_root = Path(args.pdk_root).expanduser().resolve()
     model_path = pdk_root / args.pdk / "libs.tech" / "ngspice" / "sky130.lib.spice"
+    hs_spice_path = pdk_root / args.pdk / "libs.ref" / "sky130_fd_sc_hs" / "spice" / "sky130_fd_sc_hs.spice"
     bbpd_path = Path(args.bbpd_rcx_netlist).expanduser().resolve()
     dco_path = Path(args.dco_rcx_netlist).expanduser().resolve()
     if not model_path.exists():
         raise FileNotFoundError(model_path)
+    if args.pllout_isolation_buffer_drive and not hs_spice_path.exists():
+        raise FileNotFoundError(hs_spice_path)
     if not bbpd_path.exists():
         raise FileNotFoundError(bbpd_path)
     if not dco_path.exists():
@@ -72,8 +82,9 @@ def build_deck(args) -> str:
         raise ValueError(f"unsupported {args.bbpd_subckt} ports: {', '.join(missing_bbpd)}")
 
     dco_ports = parse_subckt_ports(dco_path, args.dco_subckt)
+    dco_pllout_net = "DCO_PLLOUT_PRE" if args.pllout_isolation_buffer_drive else "PLLOUT"
     dco_nets = {
-        "PLLOUT": "PLLOUT",
+        "PLLOUT": dco_pllout_net,
         "RESET_N": "RESET_N",
         "VGND": "VGND",
         "VNB": "VNB",
@@ -82,6 +93,8 @@ def build_deck(args) -> str:
     }
     for index in range(255):
         dco_nets[f"DCO_THERM[{index}]"] = f"DCO_THERM[{index}]"
+    for index in range(47):
+        dco_nets[f"COARSETHERMAL_CODE[{index}]"] = f"COARSETHERMAL_CODE[{index}]"
     missing_dco = [port for port in dco_ports if port not in dco_nets]
     if missing_dco:
         raise ValueError(f"unsupported {args.dco_subckt} ports: {', '.join(missing_dco)}")
@@ -97,6 +110,20 @@ def build_deck(args) -> str:
     else:
         ref_source = "BREF REF 0 V={0.9 + 0.9*tanh(CLK_SHARPNESS*sin(2*3.141592653589793*(FREF*time+CLOCK_PHASE_OFFSET)))}"
 
+    stdcell_includes = (
+        [f'.include "{hs_spice_path}"'] if args.pllout_isolation_buffer_drive else []
+    )
+    pllout_isolation = (
+        [
+            (
+                "XPLLOUT_ISO DCO_PLLOUT_PRE VGND VNB VPB VPWR PLLOUT "
+                f"sky130_fd_sc_hs__buf_{args.pllout_isolation_buffer_drive}"
+            )
+        ]
+        if args.pllout_isolation_buffer_drive
+        else []
+    )
+
     lines = [
         "* OpenPLL mixed-signal C-interface deck with RCX BBPD and RCX DCO.",
         "* Xyce owns the extracted analog BBPD/DCO. The external C-interface",
@@ -104,6 +131,12 @@ def build_deck(args) -> str:
         f"* BBPD RCX netlist: {bbpd_path}",
         f"* DCO RCX netlist: {dco_path}",
         f'.lib "{model_path}" {args.corner}',
+        "* Compatibility alias for Magic RCX generic special-device naming.",
+        ".subckt sky130_fd_pr__special_nfet_01v8 d g s b",
+        ".param l=0.15 w=0.36 ad=0 as=0 pd=0 ps=0 nrd=0 nrs=0",
+        "X0 d g s b sky130_fd_pr__nfet_01v8 ad={ad} pd={pd} as={as} ps={ps} w={w} l={l} nrd={nrd} nrs={nrs}",
+        ".ends sky130_fd_pr__special_nfet_01v8",
+        *stdcell_includes,
         f'.include "{bbpd_path}"',
         f'.include "{dco_path}"',
         ".param VDD=1.8",
@@ -121,6 +154,13 @@ def build_deck(args) -> str:
             for index in range(255)
         ],
         "YDAC div_driver CLKDIVR 0 logic_dac",
+        *[
+            (
+                f"VCOARSETHERM_{index:02d} COARSETHERMAL_CODE[{index}] 0 "
+                f"{coarse_therm_voltage(index, args.coarse_code, args.coarse_therm_invert)}"
+            )
+            for index in range(47)
+        ],
         "YADC up_adc BBPD[1] 0 logic_adc R=1T WIDTH=1",
         "YADC dn_adc BBPD[0] 0 logic_adc R=1T WIDTH=1",
         "YADC pllout_adc PLLOUT 0 logic_adc R=1T WIDTH=1",
@@ -131,6 +171,7 @@ def build_deck(args) -> str:
         ref_source,
         "",
         *wrapped_instance("XDCO", [dco_nets[port] for port in dco_ports], args.dco_subckt),
+        *pllout_isolation,
         *wrapped_instance("XBBPD", [bbpd_nets[port] for port in bbpd_ports], args.bbpd_subckt),
         "",
         ".print tran v(REF) v(CLKDIVR) v(PLLOUT) v(BBPD[1]) v(BBPD[0]) v(CODE) N(YADC!UP_ADC_STATE) N(YADC!DN_ADC_STATE) N(YADC!PLLOUT_ADC_STATE)",
@@ -173,11 +214,19 @@ def main() -> int:
         ),
     )
     parser.add_argument("--ref-mhz", type=float, default=25.0)
+    parser.add_argument("--coarse-code", type=int, default=0)
+    parser.add_argument("--coarse-therm-invert", action=argparse.BooleanOptionalAction, default=False)
     parser.add_argument("--clock-sharpness", type=float, default=80.0)
     parser.add_argument("--clock-phase-offset", type=float, default=-0.25)
     parser.add_argument("--ref-source", choices=("pulse", "sine"), default="pulse")
     parser.add_argument("--reset-release-ns", type=float, default=1.0)
     parser.add_argument("--dco-therm-invert", action=argparse.BooleanOptionalAction, default=True)
+    parser.add_argument(
+        "--pllout-isolation-buffer-drive",
+        type=int,
+        default=0,
+        help="Optionally insert an HS buffer after the extracted DCO PLLOUT before the BBPD/ADC load.",
+    )
     parser.add_argument("--step-ps", type=float, default=5.0)
     parser.add_argument("--max-step-ps", type=float, default=25.0)
     parser.add_argument("--sim-time-ns", type=float, default=1600.0)
@@ -198,6 +247,10 @@ def main() -> int:
         raise ValueError("simulation time must be positive")
     if args.reset_release_ns < 0.0:
         raise ValueError("reset release must be non-negative")
+    if args.coarse_code < 0 or args.coarse_code > 47:
+        raise ValueError("coarse code must be in 0..47")
+    if args.pllout_isolation_buffer_drive not in (0, 1, 2, 4, 8, 16):
+        raise ValueError("PLLOUT isolation buffer drive must be one of 0, 1, 2, 4, 8, 16")
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(build_deck(args), encoding="ascii")

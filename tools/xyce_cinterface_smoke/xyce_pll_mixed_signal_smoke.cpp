@@ -228,11 +228,13 @@ double wrap_phase(double phase_s, double period_s, double wrap_cycles) {
       << "usage: " << name
       << " DECK [--init-code N] [--target-code N] [--cycles N]\n"
       << "       [--ki N] [--kp N] [--frac N] [--boost-shift N]\n"
-      << "       [--boost-after N] [--ndiv N] [--expect increase|decrease]\n"
+      << "       [--boost-after N] [--track-decay-shift N]\n"
+      << "       [--ndiv N] [--expect increase|decrease]\n"
       << "       [--phase-ps PS] [--min-motion N] [--tol-code N]\n"
       << "       [--f0-mhz F] [--f64-mhz F] [--f128-mhz F]\n"
       << "       [--f192-mhz F] [--f255-mhz F] [--coarse-code N]\n"
-      << "       [--dco-coarse-step-mhz F] [--phase-wrap-cycles F]\n";
+      << "       [--dco-coarse-step-mhz F] [--phase-wrap-cycles F]\n"
+      << "       [--ref-mhz F] [--target-mhz F]\n";
   std::exit(EXIT_FAILURE);
 }
 
@@ -260,6 +262,7 @@ struct Args {
   int frac = 6;
   int boost_shift = 4;
   int boost_after = 1;
+  int track_decay_shift = 0;
   int ndiv = 2;
   std::string expect = "increase";
   double phase_ps = std::numeric_limits<double>::quiet_NaN();
@@ -273,6 +276,8 @@ struct Args {
   int coarse_code = 0;
   double dco_coarse_step_mhz = 0.0;
   double phase_wrap_cycles = 0.45;
+  double ref_mhz = std::numeric_limits<double>::quiet_NaN();
+  double target_mhz = std::numeric_limits<double>::quiet_NaN();
 };
 
 double dco_freq_hz(int code, const Args &args) {
@@ -329,6 +334,8 @@ Args parse_args(int argc, char **argv) {
       args.boost_shift = parse_int_arg(argc, argv, index);
     } else if (opt == "--boost-after") {
       args.boost_after = parse_int_arg(argc, argv, index);
+    } else if (opt == "--track-decay-shift") {
+      args.track_decay_shift = parse_int_arg(argc, argv, index);
     } else if (opt == "--ndiv") {
       args.ndiv = parse_int_arg(argc, argv, index);
     } else if (opt == "--expect") {
@@ -358,6 +365,10 @@ Args parse_args(int argc, char **argv) {
       args.dco_coarse_step_mhz = parse_double_arg(argc, argv, index);
     } else if (opt == "--phase-wrap-cycles") {
       args.phase_wrap_cycles = parse_double_arg(argc, argv, index);
+    } else if (opt == "--ref-mhz") {
+      args.ref_mhz = parse_double_arg(argc, argv, index);
+    } else if (opt == "--target-mhz") {
+      args.target_mhz = parse_double_arg(argc, argv, index);
     } else {
       usage(argv[0]);
     }
@@ -367,18 +378,31 @@ Args parse_args(int argc, char **argv) {
       args.target_code > 255 || args.cycles <= 0 || args.ki < 0 ||
       args.kp < 0 || args.frac < 0 || args.frac > 20 ||
       args.boost_shift < 0 || args.boost_shift > 20 ||
+      args.track_decay_shift < 0 || args.track_decay_shift > 20 ||
       args.boost_after < 1 || args.ndiv <= 0 ||
-      args.coarse_code < 0 || args.coarse_code > 15 ||
+      args.coarse_code < 0 || args.coarse_code > 63 ||
       args.dco_coarse_step_mhz < 0.0 ||
       args.phase_wrap_cycles < 0.0 ||
       args.f0_mhz <= 0.0 || args.f64_mhz <= args.f0_mhz ||
       args.f128_mhz <= args.f64_mhz || args.f192_mhz <= args.f128_mhz ||
       args.f255_mhz <= args.f192_mhz ||
+      (!std::isnan(args.ref_mhz) && args.ref_mhz <= 0.0) ||
+      (!std::isnan(args.target_mhz) && args.target_mhz <= 0.0) ||
       (args.expect != "increase" && args.expect != "decrease")) {
     usage(argv[0]);
   }
 
   return args;
+}
+
+double target_freq_hz(const Args &args) {
+  if (!std::isnan(args.target_mhz)) {
+    return args.target_mhz * 1.0e6;
+  }
+  if (!std::isnan(args.ref_mhz)) {
+    return args.ref_mhz * 1.0e6 * static_cast<double>(args.ndiv);
+  }
+  return dco_freq_hz(args.target_code, args);
 }
 
 struct DlfModel {
@@ -395,6 +419,7 @@ struct DlfModel {
       return;
     }
 
+    const bool reversal = (last_dir != 0) && (decision != last_dir);
     if (decision == last_dir) {
       ++same_dir_count;
     } else {
@@ -405,6 +430,11 @@ struct DlfModel {
     int64_t ki_eff = cfg.ki;
     if (cfg.boost_shift > 0 && same_dir_count >= cfg.boost_after) {
       ki_eff <<= cfg.boost_shift;
+    } else if (cfg.track_decay_shift > 0 && reversal) {
+      ki_eff >>= cfg.track_decay_shift;
+      if (cfg.ki > 0 && ki_eff == 0) {
+        ki_eff = 1;
+      }
     }
 
     acc += static_cast<int64_t>(decision) * ki_eff;
@@ -483,7 +513,11 @@ int main(int argc, char **argv) {
   }
 
   DlfModel dlf(args);
-  const double target_hz = dco_freq_hz(args.target_code, args);
+  const double target_hz = target_freq_hz(args);
+  const double ref_mhz = !std::isnan(args.ref_mhz)
+                             ? args.ref_mhz
+                             : (target_hz / 1.0e6) / static_cast<double>(args.ndiv);
+  const double target_mhz = target_hz / 1.0e6;
   const double tref = static_cast<double>(args.ndiv) / target_hz;
   const double base_time = 20.0e-9;
   double phase = std::isnan(args.phase_ps)
@@ -572,6 +606,8 @@ int main(int argc, char **argv) {
             << " expect=" << args.expect << " start_code=" << start_code
             << " final_code=" << final_code
             << " target_code=" << args.target_code
+            << " ref_mhz=" << ref_mhz
+            << " target_mhz=" << target_mhz
             << " min_abs_error=" << min_abs_error
             << " tol_code=" << args.tol_code
             << " expected_decisions=" << expected_decisions << '\n';

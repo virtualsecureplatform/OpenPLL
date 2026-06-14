@@ -8,6 +8,8 @@
   ],
   "PNR_SDC_FILE": "dir::async_macro_top.sdc",
   "SIGNOFF_SDC_FILE": "dir::async_macro_top.sdc",
+  "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
+  "ERRORS_ON_UNMATCHED_IO": "both",
   "LINTER_DISABLE_WARNINGS_BLACKBOX": [
     "UNDRIVEN",
     "UNUSEDSIGNAL",
@@ -42,6 +44,7 @@
   "RUN_MCSTA": false,
   "RUN_IRDROP_REPORT": false,
   "RUN_EQY": false,
+  "MAGIC_CAPTURE_ERRORS": false,
   "PDN_CONNECT_MACROS_TO_GRID": true,
   "PDN_MACRO_CONNECTIONS": [
     "phase_detector VPWR VGND VPWR VGND",
@@ -83,7 +86,7 @@
         "dir::../IntegerPLL_BBPD/runs/librelane_signoff/final/spice/IntegerPLL_BBPD.spice"
       ]
     },
-    "IntegerPLL_DCO_EINVP": {
+    "IntegerPLL_DCO_EINVP_COARSE": {
       "instances": {
         "oscillator": {
           "location": [
@@ -94,19 +97,19 @@
         }
       },
       "gds": [
-        "dir::../IntegerPLL_DCO_EINVP/runs/librelane_signoff/final/gds/IntegerPLL_DCO_EINVP.gds"
+        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final/gds/IntegerPLL_DCO_EINVP_COARSE.gds"
       ],
       "lef": [
-        "dir::../IntegerPLL_DCO_EINVP/runs/librelane_signoff/final/lef/IntegerPLL_DCO_EINVP.lef"
+        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final/lef/IntegerPLL_DCO_EINVP_COARSE.lef"
       ],
       "vh": [
-        "dir::../IntegerPLL_DCO_EINVP/runs/librelane_signoff/final/vh/IntegerPLL_DCO_EINVP.vh"
+        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final/vh/IntegerPLL_DCO_EINVP_COARSE.vh"
       ],
       "pnl": [
-        "dir::../IntegerPLL_DCO_EINVP/runs/librelane_signoff/final/pnl/IntegerPLL_DCO_EINVP.pnl.v"
+        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final/pnl/IntegerPLL_DCO_EINVP_COARSE.pnl.v"
       ],
       "spice": [
-        "dir::../IntegerPLL_DCO_EINVP/runs/librelane_signoff/final/spice/IntegerPLL_DCO_EINVP.spice"
+        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final/spice/IntegerPLL_DCO_EINVP_COARSE.spice"
       ]
     },
     "IntegerPLL_DigitalCore": {

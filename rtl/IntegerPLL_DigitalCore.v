@@ -27,11 +27,11 @@ module IntegerPLL_DigitalCore #(
     input wire [DLF_CODE_WIDTH-1:0] DLF_Ext_Data,
     input wire [DLF_GAIN_WIDTH-1:0] DLF_KI,
     input wire [DLF_GAIN_WIDTH-1:0] DLF_KP,
-    input wire [3:0] COARSEBINARY_CODE,
+    input wire [5:0] COARSEBINARY_CODE,
     input wire [7:0] MMDCLKDIV_RATIO,
     output wire CLKDIV_RETIMED,
     output wire PLLOUT_DIV,
-    output wire [14:0] COARSETHERMAL_CODE,
+    output wire [46:0] COARSETHERMAL_CODE,
     output wire [4:0] Medium_BINARY_CODE,
     output wire [4:0] Fine_BINARY_CODE,
     output wire [30:0] Medium_CAPS_CTRL,
@@ -127,8 +127,8 @@ module IntegerPLL_DigitalCore #(
     );
 
     IntegerPLL_B2TH #(
-        .BIN_WIDTH(4),
-        .THERM_WIDTH(15),
+        .BIN_WIDTH(6),
+        .THERM_WIDTH(47),
         .INVERT_OUTPUT(THERM_INVERT)
     ) coarse_decoder (
         .binary_code(COARSEBINARY_CODE),
@@ -139,7 +139,7 @@ module IntegerPLL_DigitalCore #(
     assign dco_fine_mask = 8'hff >> DCO_COARSE_BITS;
     assign dco_fine_code = (dco_code_raw >> DCO_COARSE_BITS) & dco_fine_mask;
     assign dco_coarse_code =
-        ({4'b0000, COARSEBINARY_CODE} << DCO_FINE_BITS) &
+        ({2'b00, COARSEBINARY_CODE} << DCO_FINE_BITS) &
         ~dco_fine_mask;
     assign dco_code_effective = dco_coarse_code | dco_fine_code;
 

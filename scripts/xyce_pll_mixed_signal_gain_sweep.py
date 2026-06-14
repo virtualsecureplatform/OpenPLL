@@ -123,6 +123,10 @@ def run_case(args, deck: Path, ki: int, kp: int, init_code: int) -> tuple[dict[s
         "--phase-wrap-cycles",
         f"{args.phase_wrap_cycles:g}",
     ]
+    if args.ref_mhz is not None:
+        cmd.extend(["--ref-mhz", f"{args.ref_mhz:g}"])
+    if args.target_mhz is not None:
+        cmd.extend(["--target-mhz", f"{args.target_mhz:g}"])
 
     try:
         proc = subprocess.run(
@@ -168,6 +172,8 @@ def run_case(args, deck: Path, ki: int, kp: int, init_code: int) -> tuple[dict[s
         "kp": str(kp),
         "init_code": str(init_code),
         "target_code": str(args.target_code),
+        "ref_mhz": "" if args.ref_mhz is None else f"{args.ref_mhz:g}",
+        "target_mhz": "" if args.target_mhz is None else f"{args.target_mhz:g}",
         "expect": expect,
         "cycles": str(args.cycles),
         "frac": str(args.frac),
@@ -248,6 +254,18 @@ def main() -> int:
     parser.add_argument("--kp-values", type=parse_int_list, default=parse_int_list("0,8"))
     parser.add_argument("--init-codes", type=parse_int_list, default=parse_int_list("96,160"))
     parser.add_argument("--target-code", type=int, default=128)
+    parser.add_argument(
+        "--ref-mhz",
+        type=float,
+        default=None,
+        help="Use this external reference frequency instead of deriving REF from target code.",
+    )
+    parser.add_argument(
+        "--target-mhz",
+        type=float,
+        default=None,
+        help="Use this DCO target frequency instead of deriving it from the target code.",
+    )
     parser.add_argument("--cycles", type=int, default=10)
     parser.add_argument("--frac", type=int, default=6)
     parser.add_argument("--boost-shift", type=int, default=4)
@@ -328,6 +346,8 @@ def main() -> int:
         "kp",
         "init_code",
         "target_code",
+        "ref_mhz",
+        "target_mhz",
         "expect",
         "cycles",
         "frac",

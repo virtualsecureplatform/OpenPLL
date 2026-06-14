@@ -91,6 +91,15 @@ def require_text_fragments(root, relpath, fragments):
     return text
 
 
+def require_text_absent(root, relpath, fragments):
+    path = require_path(root, relpath)
+    text = path.read_text(encoding="ascii", errors="replace")
+    present = [fragment for fragment in fragments if fragment in text]
+    if present:
+        raise ValueError(f"{relpath} contains forbidden fragment(s): {present}")
+    return text
+
+
 def require_all_pass(rows, status_key="status", pass_value="pass"):
     failed = [row for row in rows if row.get(status_key) != pass_value]
     if failed:
@@ -300,7 +309,9 @@ def check_objective_deliverable_evidence(root):
             "output wire [7:0] DCO_CODE",
             "IntegerPLL_BBPD phase_detector",
             "IntegerPLL_DigitalCore digital_core",
-            "IntegerPLL_DCO_EINVP oscillator",
+            "IntegerPLL_DCO_EINVP_COARSE oscillator",
+            ".COARSEBINARY_CODE(COARSEBINARY_CODE)",
+            ".COARSETHERMAL_CODE(coarse_ctrl)",
             ".DCO_THERM(dco_therm)",
         ),
     )
@@ -314,6 +325,54 @@ def check_objective_deliverable_evidence(root):
             "sky130_fd_sc_hd__inv_1 ring_inv",
             "sky130_fd_sc_hd__einvp_1 tune_load",
             "for (f = 0; f < 255; f = f + 1)",
+        ),
+    )
+    require_text_fragments(
+        root,
+        "sky130/IntegerPLL_DCO_einvp_coarse_sky130.v",
+        (
+            "module IntegerPLL_DCO_EINVP_COARSE",
+            "input wire [46:0] COARSETHERMAL_CODE",
+            "wire [47:0] mirror_fwd",
+            "sky130_fd_sc_hs__nand2_4 osc_gate",
+            "sky130_fd_sc_hs__nand2_4 mirror_forward",
+            "sky130_fd_sc_hs__nand2b_4 mirror_turn",
+            "sky130_fd_sc_hs__nand2b_4 mirror_return",
+            "sky130_fd_sc_hs__nand2_4 mirror_merge",
+            "sky130_fd_sc_hs__buf_1 out_buf",
+            ".A_N(tie_lo)",
+            ".A(osc_node)",
+            ".A_N(mirror_ret[i+1])",
+            "for (f = 0; f < 90; f = f + 1)",
+            "DCO_THERM_INDEX",
+            "sky130_fd_sc_hs__nand2_1 tune_load",
+        ),
+    )
+    require_text_absent(
+        root,
+        "sky130/IntegerPLL_DCO_einvp_coarse_sky130.v",
+        (
+            "sky130_fd_sc_hd__inv_1",
+            "sky130_fd_sc_hs__inv_1",
+            "sky130_fd_sc_hd__mux4_1",
+            "sky130_fd_sc_hs__mux4_1",
+            "sky130_fd_sc_hd__einvp_1 tune_load",
+            "sky130_fd_sc_hd__buf_2 out_buf",
+            "sky130_fd_sc_hd__buf_4 out_buf",
+            "sky130_fd_sc_hd__buf_8 out_buf",
+            "sky130_fd_sc_hd__buf_16 out_buf",
+            "sky130_fd_sc_hs__buf_2 out_buf",
+            "sky130_fd_sc_hs__buf_4 out_buf",
+            "sky130_fd_sc_hs__buf_8 out_buf",
+            "sky130_fd_sc_hs__buf_16 out_buf",
+            "gen_c19_slow_dco_load",
+            "gen_slow_dco_load",
+            "c19_slow_band",
+            "c20_slow_band",
+            "mirror_fwd[19]",
+            "mirror_ret[19]",
+            "mirror_fwd[20]",
+            "mirror_ret[20]",
         ),
     )
     require_text_fragments(
@@ -344,7 +403,7 @@ def check_objective_deliverable_evidence(root):
 
     if hardtop.get("design") != "IntegerPLL_HardMacroTop_EINVP":
         raise ValueError(f"deliverable hard top is wrong: {hardtop}")
-    if hardtop.get("dco_macro") != "IntegerPLL_DCO_EINVP":
+    if hardtop.get("dco_macro") != "IntegerPLL_DCO_EINVP_COARSE":
         raise ValueError(f"deliverable DCO macro is wrong: {hardtop}")
     if hardtop_spice.get("dco_therm_connections") != 255:
         raise ValueError(f"deliverable SPICE wrapper does not connect 255 DCO controls: {hardtop_spice}")
@@ -943,7 +1002,7 @@ def check_hard_macro_top_einvp_signoff(root):
         raise ValueError(f"EINVP hard macro top summary is not pass: {summary.get('status')}")
     if summary.get("design") != "IntegerPLL_HardMacroTop_EINVP":
         raise ValueError(f"EINVP hard macro top design is {summary.get('design')}")
-    if summary.get("dco_macro") != "IntegerPLL_DCO_EINVP":
+    if summary.get("dco_macro") != "IntegerPLL_DCO_EINVP_COARSE":
         raise ValueError(f"EINVP hard macro top DCO macro is {summary.get('dco_macro')}")
 
     config = summary.get("config", {})
@@ -953,7 +1012,7 @@ def check_hard_macro_top_einvp_signoff(root):
     expected_rows = {
         "phase_detector": ("IntegerPLL_BBPD", 315.0, 40.0, 120.0, 120.0, "N"),
         "digital_core": ("IntegerPLL_DigitalCore", 235.0, 180.0, 300.0, 300.0, "N"),
-        "oscillator": ("IntegerPLL_DCO_EINVP", 160.0, 620.0, 450.0, 450.0, "N"),
+        "oscillator": ("IntegerPLL_DCO_EINVP_COARSE", 160.0, 620.0, 260.0, 260.0, "N"),
     }
     rows = {row["instance"]: row for row in read_csv(csv_path)}
     if set(rows) != set(expected_rows):
@@ -985,7 +1044,7 @@ def check_hard_macro_top_einvp_signoff(root):
 
     placements = {row["instance"]: row for row in signoff.get("placements", [])}
     oscillator = placements.get("oscillator", {})
-    if oscillator.get("macro") != "IntegerPLL_DCO_EINVP" or oscillator.get("master") != "IntegerPLL_DCO_EINVP":
+    if oscillator.get("macro") != "IntegerPLL_DCO_EINVP_COARSE" or oscillator.get("master") != "IntegerPLL_DCO_EINVP_COARSE":
         raise ValueError(f"EINVP hard macro top oscillator placement is {oscillator}")
     if oscillator.get("location_um") != [160.0, 620.0] or oscillator.get("orientation") != "N":
         raise ValueError(f"EINVP hard macro top oscillator placed unexpectedly: {oscillator}")
@@ -1021,8 +1080,8 @@ def check_hard_macro_top_einvp_signoff(root):
 
     netlist_path = Path(views["final/nl/IntegerPLL_HardMacroTop_EINVP.nl.v"]).expanduser()
     netlist = netlist_path.read_text(encoding="ascii", errors="replace")
-    if "IntegerPLL_DCO_EINVP oscillator" not in netlist:
-        raise ValueError("EINVP hard macro top netlist does not instantiate IntegerPLL_DCO_EINVP oscillator")
+    if "IntegerPLL_DCO_EINVP_COARSE oscillator" not in netlist:
+        raise ValueError("EINVP hard macro top netlist does not instantiate IntegerPLL_DCO_EINVP_COARSE oscillator")
     if "IntegerPLL_DCO oscillator" in netlist:
         raise ValueError("EINVP hard macro top netlist still instantiates the NAND-load DCO")
 
@@ -1052,7 +1111,7 @@ def check_hard_macro_top_einvp_spice_interface(root):
         raise ValueError(f"EINVP hard macro top SPICE summary is not pass: {summary.get('status')}")
     if summary.get("top") != "IntegerPLL_HardMacroTop_EINVP":
         raise ValueError(f"EINVP hard macro top SPICE top is {summary.get('top')}")
-    if summary.get("dco_subckt") != "IntegerPLL_DCO_EINVP":
+    if summary.get("dco_subckt") != "IntegerPLL_DCO_EINVP_COARSE":
         raise ValueError(f"EINVP hard macro top SPICE DCO subckt is {summary.get('dco_subckt')}")
     if summary.get("top_port_count") != 71:
         raise ValueError(f"EINVP hard macro top SPICE port count is {summary.get('top_port_count')}")
@@ -1060,7 +1119,7 @@ def check_hard_macro_top_einvp_spice_interface(root):
         raise ValueError(f"EINVP hard macro top BBPD SPICE port count is {summary.get('bbpd_ports')}")
     if summary.get("digital_core_ports") != 410:
         raise ValueError(f"EINVP hard macro top digital SPICE port count is {summary.get('digital_core_ports')}")
-    if summary.get("dco_ports") != 261:
+    if summary.get("dco_ports") != 265:
         raise ValueError(f"EINVP hard macro top DCO SPICE port count is {summary.get('dco_ports')}")
     if summary.get("dco_therm_connections") != 255:
         raise ValueError(f"EINVP hard macro top DCO thermometer connections are {summary.get('dco_therm_connections')}")

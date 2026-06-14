@@ -1,0 +1,79 @@
+{
+  "DESIGN_NAME": "IntegerPLL_DCO_EINVP_COARSE",
+  "VERILOG_FILES": [
+    "dir::../../sky130/IntegerPLL_DCO_einvp_coarse_sky130.v"
+  ],
+  "VERILOG_DEFINES": [
+    "USE_POWER_PINS"
+  ],
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hs",
+  "CELL_VERILOG_MODELS": [
+    "dir::../../sky130/sky130_fd_sc_hd_pll_blackbox.v"
+  ],
+  "CELL_BB_VERILOG_MODELS": [
+    "dir::../../sky130/sky130_fd_sc_hd_pll_blackbox.v"
+  ],
+  "EXTRA_VERILOG_MODELS": [],
+  "PNR_SDC_FILE": "dir::no_clock.sdc",
+  "SIGNOFF_SDC_FILE": "dir::no_clock.sdc",
+  "LINTER_DISABLE_WARNINGS_BLACKBOX": [
+    "UNDRIVEN",
+    "UNUSEDSIGNAL",
+    "PINMISSING",
+    "TIMESCALEMOD"
+  ],
+  "CLOCK_PORT": null,
+  "RUN_LINTER": false,
+  "SYNTH_ELABORATE_ONLY": true,
+  "SYNTH_HIERARCHY_MODE": "flatten",
+  "SYNTH_WRITE_NOATTR": true,
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [
+    0,
+    0,
+    200,
+    200
+  ],
+  "FP_CORE_UTIL": 8,
+  "PL_TARGET_DENSITY_PCT": 25,
+  "MAX_FANOUT_CONSTRAINT": 4,
+  "RT_MAX_LAYER": "met5",
+  "RUN_CTS": false,
+  "RUN_POST_GPL_DESIGN_REPAIR": false,
+  "RUN_POST_CTS_RESIZER_TIMING": false,
+  "RUN_POST_GRT_DESIGN_REPAIR": false,
+  "RUN_POST_GRT_RESIZER_TIMING": false,
+  "RUN_MCSTA": false,
+  "RUN_IRDROP_REPORT": false,
+  "RUN_EQY": false,
+  "PAD_GDS": null,
+  "PAD_LEFS": null,
+  "PAD_VERILOG_MODELS": null,
+  "PAD_CDLS": null,
+  "PAD_LIBS": null,
+  "VDD_NETS": [
+    "VPWR"
+  ],
+  "GND_NETS": [
+    "VGND"
+  ],
+  "scl::sky130_fd_sc_hs": {
+    "LIB": {
+      "nom_": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib"
+      ],
+      "*_tt_025C_1v80": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib"
+      ],
+      "*_ff_n40C_1v95": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hs/lib/sky130_fd_sc_hs__ff_n40C_1v95.lib"
+      ],
+      "*_ss_100C_1v60": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hs/lib/sky130_fd_sc_hs__ss_100C_1v60.lib"
+      ]
+    }
+  },
+  "meta": {
+    "flow": "Classic"
+  }
+}

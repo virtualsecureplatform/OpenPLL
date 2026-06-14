@@ -1,0 +1,5 @@
+set_false_path -from [all_inputs] -to [all_outputs]
+set_false_path -from [all_inputs] -to [all_registers]
+set_false_path -from [all_registers] -to [all_outputs]
+set_false_path -from [all_registers] -to [all_registers]
+set_max_transition 1.5 [current_design]

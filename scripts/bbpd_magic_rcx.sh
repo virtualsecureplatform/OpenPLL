@@ -16,7 +16,14 @@ if [[ -z "${PDK_ROOT:-}" || "${NORMALIZED_PDK_ROOT%/}" == "${LEGACY_VOLARE_ROOT%
     if [[ -d "$CIEL_SKY130_ROOT/$PDK" ]]; then
         PDK_ROOT="$CIEL_SKY130_ROOT"
     else
-        CIEL_SKY130_VERSION_ROOT="$(find "$CIEL_SKY130_ROOT/versions" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | sort | tail -n 1 || true)"
+        CIEL_SKY130_CURRENT_ROOT=""
+        if [[ -f "$CIEL_SKY130_ROOT/current" ]]; then
+            CIEL_SKY130_CURRENT_VERSION="$(tr -d '[:space:]' < "$CIEL_SKY130_ROOT/current")"
+            if [[ -n "$CIEL_SKY130_CURRENT_VERSION" && -d "$CIEL_SKY130_ROOT/versions/$CIEL_SKY130_CURRENT_VERSION/$PDK" ]]; then
+                CIEL_SKY130_CURRENT_ROOT="$CIEL_SKY130_ROOT/versions/$CIEL_SKY130_CURRENT_VERSION"
+            fi
+        fi
+        CIEL_SKY130_VERSION_ROOT="${CIEL_SKY130_CURRENT_ROOT:-$(find "$CIEL_SKY130_ROOT/versions" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | sort | tail -n 1 || true)}"
         PDK_ROOT="${CIEL_SKY130_VERSION_ROOT:-$LEGACY_VOLARE_ROOT}"
     fi
 fi

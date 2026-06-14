@@ -23,8 +23,17 @@ def default_pdk_root(pdk: str | None = None) -> str:
     if (ciel_root / pdk_name).is_dir():
         detected_root = ciel_root
     else:
-        version_roots = sorted(path for path in (ciel_root / "versions").glob("*") if path.is_dir())
-        detected_root = version_roots[-1] if version_roots else legacy_root
+        current_root = None
+        current_file = ciel_root / "current"
+        if current_file.is_file():
+            current_version = current_file.read_text(encoding="ascii", errors="ignore").strip()
+            candidate = ciel_root / "versions" / current_version
+            if (candidate / pdk_name).is_dir():
+                current_root = candidate
+        version_roots = sorted(
+            path for path in (ciel_root / "versions").glob("*") if path.is_dir()
+        )
+        detected_root = current_root or (version_roots[-1] if version_roots else legacy_root)
 
     env_root = os.environ.get("PDK_ROOT")
     if not env_root:

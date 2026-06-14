@@ -59,9 +59,107 @@ module sky130_fd_sc_hd__inv_1 (
 endmodule
 
 (* blackbox *)
+module sky130_fd_sc_hd__mux4_1 (
+    output wire X,
+    input wire A0,
+    input wire A1,
+    input wire A2,
+    input wire A3,
+    input wire S0,
+    input wire S1
+);
+endmodule
+
+(* blackbox *)
 module sky130_fd_sc_hd__nand2_1 (
     output wire Y,
     input wire A,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hd__nand2b_1 (
+    output wire Y,
+    input wire A_N,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hs__buf_1 (
+    output wire X,
+    input wire A
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hs__conb_1 (
+    output wire HI,
+    output wire LO
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hs__and2_1 (
+    output wire X,
+    input wire A,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hs__and2b_1 (
+    output wire X,
+    input wire A_N,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hs__nand2_1 (
+    output wire Y,
+    input wire A,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hs__nand2_2 (
+    output wire Y,
+    input wire A,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hs__nand2_4 (
+    output wire Y,
+    input wire A,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hs__nand2b_1 (
+    output wire Y,
+    input wire A_N,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hs__nand2b_2 (
+    output wire Y,
+    input wire A_N,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hs__nand2b_4 (
+    output wire Y,
+    input wire A_N,
     input wire B
 );
 endmodule

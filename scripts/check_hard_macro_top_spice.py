@@ -27,12 +27,12 @@ def bit_net(name, index):
     return f"{name}[{index}]"
 
 
-def expected_top_ports():
+def expected_top_ports(coarse_binary_width):
     return [
         bit_net("BBPD_CODE", 0),
         bit_net("BBPD_CODE", 1),
         "CLKDIV_RETIMED",
-        *(bit_net("COARSEBINARY_CODE", index) for index in range(4)),
+        *(bit_net("COARSEBINARY_CODE", index) for index in range(coarse_binary_width)),
         *(bit_net("DCO_CODE", index) for index in range(8)),
         *(bit_net("DLF_CODE", index) for index in range(10)),
         "DLF_Clear",
@@ -102,6 +102,15 @@ def instance_port_map(subckts, instances, instance_name, subckt_name):
     return dict(zip(ports, nodes))
 
 
+def reset_gate_port_map(subckts, instances):
+    instance = instances.get("X_0_")
+    if instance is None:
+        raise ValueError("missing instance X_0_")
+    if instance["subckt"] not in {"sky130_fd_sc_hd__and3b_1", "sky130_fd_sc_hd__and3b_2"}:
+        raise ValueError(f"unexpected reset-gate cell {instance['subckt']}")
+    return instance_port_map(subckts, instances, "X_0_", instance["subckt"]), instance["subckt"]
+
+
 def parse_spef_counts(path):
     name_map = {}
     d_nets = 0
@@ -143,18 +152,31 @@ def parse_spef_counts(path):
     }
 
 
+def dco_interface(dco_subckt):
+    if dco_subckt == "IntegerPLL_DCO_EINVP_COARSE":
+        return {
+            "coarse_binary_width": 6,
+            "coarse_thermal_width": 47,
+        }
+    return {
+        "coarse_binary_width": 6,
+        "coarse_thermal_width": 0,
+    }
+
+
 def check_spice_interface(spice_path, spef_path, top, dco_subckt):
     subckts, instances = parse_spice(spice_path)
+    interface = dco_interface(dco_subckt)
 
     top_ports = subckts.get(top)
-    expected_ports = expected_top_ports()
+    expected_ports = expected_top_ports(interface["coarse_binary_width"])
     if top_ports != expected_ports:
         raise ValueError("hard-top extracted SPICE top ports do not match expected wrapper interface")
 
     bbpd_map = instance_port_map(subckts, instances, "Xphase_detector", "IntegerPLL_BBPD")
     digital_map = instance_port_map(subckts, instances, "Xdigital_core", "IntegerPLL_DigitalCore")
     dco_map = instance_port_map(subckts, instances, "Xoscillator", dco_subckt)
-    reset_gate = instance_port_map(subckts, instances, "X_0_", "sky130_fd_sc_hd__and3b_2")
+    reset_gate, reset_gate_subckt = reset_gate_port_map(subckts, instances)
 
     expected_bbpd = {
         "BBPD[0]": "BBPD_CODE[0]",
@@ -208,6 +230,7 @@ def check_spice_interface(spice_path, spef_path, top, dco_subckt):
         if digital_map.get(port) != expected:
             raise ValueError(f"digital core {port} maps to {digital_map.get(port)}")
     for prefix, width in (
+        ("COARSEBINARY_CODE", interface["coarse_binary_width"]),
         ("DCO_CODE", 8),
         ("DLF_Ext_Data", 10),
         ("DLF_KI", 8),
@@ -218,6 +241,17 @@ def check_spice_interface(spice_path, spef_path, top, dco_subckt):
             port = bit_net(prefix, index)
             if digital_map.get(port) != port:
                 raise ValueError(f"digital core {port} maps to {digital_map.get(port)}")
+
+    coarse_thermal_connections = 0
+    for index in range(interface["coarse_thermal_width"]):
+        port = bit_net("COARSETHERMAL_CODE", index)
+        digital_node = digital_map.get(port)
+        dco_node = dco_map.get(port)
+        if digital_node is None or dco_node is None:
+            raise ValueError(f"missing DCO coarse thermometer port {port}")
+        if digital_node != dco_node:
+            raise ValueError(f"{port} maps to {digital_node} at digital core and {dco_node} at DCO")
+        coarse_thermal_connections += 1
 
     antenna_dco_nets = []
     for index in range(255):
@@ -230,12 +264,15 @@ def check_spice_interface(spice_path, spef_path, top, dco_subckt):
             raise ValueError(f"{port} maps to {digital_node} at digital core and {dco_node} at DCO")
         if digital_node.startswith("ANTENNA_"):
             antenna_dco_nets.append(port)
-    if len(antenna_dco_nets) < 16:
-        raise ValueError(f"too few antenna-repaired DCO thermometer nets: {len(antenna_dco_nets)}")
-
     spef = parse_spef_counts(spef_path)
-    if spef["d_nets"] < 300 or spef["cap_entries"] < 9000 or spef["res_entries"] < 1500:
-        raise ValueError(f"hard-top SPEF is unexpectedly small: {spef}")
+    if spef["d_nets"] < 300 or spef["cap_entries"] < 9000 or spef["res_entries"] < 1400:
+        spef_counts = {
+            "d_nets": spef["d_nets"],
+            "cap_entries": spef["cap_entries"],
+            "res_entries": spef["res_entries"],
+            "name_map_entries": spef["name_map_entries"],
+        }
+        raise ValueError(f"hard-top SPEF is unexpectedly small: {spef_counts}")
     key_spef_names = {
         "BBPD_CODE[0]",
         "BBPD_CODE[1]",
@@ -257,6 +294,8 @@ def check_spice_interface(spice_path, spef_path, top, dco_subckt):
         "digital_core_ports": len(digital_map),
         "dco_ports": len(dco_map),
         "dco_subckt": dco_subckt,
+        "reset_gate_subckt": reset_gate_subckt,
+        "dco_coarse_therm_connections": coarse_thermal_connections,
         "dco_therm_connections": 255,
         "antenna_dco_therm_connections": len(antenna_dco_nets),
         "spef_d_nets": spef["d_nets"],

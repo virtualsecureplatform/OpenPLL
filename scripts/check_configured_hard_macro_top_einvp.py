@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: Apache-2.0
-"""Check the EINVP-DCO hard-macro top integration path."""
+"""Check the configured 25 MHz EINVP hard-macro wrapper."""
 
 import argparse
 import csv
@@ -10,32 +10,26 @@ import sys
 from pathlib import Path
 
 
-DESIGN = "IntegerPLL_HardMacroTop_EINVP"
-CONFIG_REL = "openlane/IntegerPLL_HardMacroTop_EINVP/config.json"
-RTL_REL = "rtl/IntegerPLL_HardMacroTop_EINVP.v"
-SDC_REL = "openlane/IntegerPLL_HardMacroTop_EINVP/async_macro_top.sdc"
-PIN_ORDER_REL = "openlane/IntegerPLL_HardMacroTop_EINVP/pin_order.cfg"
-RUN_DIR_REL = "openlane/IntegerPLL_HardMacroTop_EINVP/runs/librelane_signoff"
+DESIGN = "IntegerPLL_HardMacroTop_EINVP_25MHzConfigured"
+MACRO = "IntegerPLL_HardMacroTop_EINVP"
+INSTANCE = "hard_macro"
+CONFIG_REL = f"openlane/{DESIGN}/config.json"
+SDC_REL = f"openlane/{DESIGN}/async_configured_top.sdc"
+PIN_ORDER_REL = f"openlane/{DESIGN}/pin_order.cfg"
+RUN_DIR_REL = f"openlane/{DESIGN}/runs/librelane_signoff"
 
-EXPECTED = {
-    "IntegerPLL_BBPD": {
-        "instance": "phase_detector",
-        "size_um": [120.0, 120.0],
-        "location_um": [315.0, 40.0],
-        "orientation": "N",
-    },
-    "IntegerPLL_DigitalCore": {
-        "instance": "digital_core",
-        "size_um": [300.0, 300.0],
-        "location_um": [235.0, 180.0],
-        "orientation": "N",
-    },
-    "IntegerPLL_DCO_EINVP_COARSE": {
-        "instance": "oscillator",
-        "size_um": [200.0, 200.0],
-        "location_um": [160.0, 620.0],
-        "orientation": "N",
-    },
+EXPECTED_RTL = [
+    "dir::../../rtl/IntegerPLL_25MHzModeConfig.v",
+    "dir::../../rtl/IntegerPLL_25MHzModeController.v",
+    "dir::../../rtl/IntegerPLL_HardMacroTop_EINVP_25MHzConfigured.v",
+]
+
+EXPECTED_MACRO = {
+    "macro": MACRO,
+    "instance": INSTANCE,
+    "size_um": [850.0, 1120.0],
+    "location_um": [120.0, 120.0],
+    "orientation": "N",
 }
 
 ZERO_METRICS = (
@@ -98,7 +92,7 @@ def iter_paths(config_dir, value):
 
 
 def parse_lef_size(path):
-    text = path.read_text(encoding="ascii")
+    text = path.read_text(encoding="ascii", errors="replace")
     macro = re.search(r"^MACRO\s+(\S+)\s*$", text, re.MULTILINE)
     size = re.search(r"^\s+SIZE\s+([0-9.]+)\s+BY\s+([0-9.]+)\s+;", text, re.MULTILINE)
     if not macro or not size:
@@ -130,106 +124,107 @@ def parse_def_components(path):
 
 def check_config(root):
     config_path = require_file(root / CONFIG_REL)
-    rtl_path = require_file(root / RTL_REL)
     sdc_path = require_file(root / SDC_REL)
     pin_order_path = require_file(root / PIN_ORDER_REL)
-    config_dir = config_path.parent
+    rtl_paths = [
+        require_file(resolve_config_path(config_path.parent, path))
+        for path in EXPECTED_RTL
+    ]
     config = json.loads(config_path.read_text(encoding="ascii"))
     failures = []
 
     if config.get("DESIGN_NAME") != DESIGN:
         failures.append(f"unexpected DESIGN_NAME={config.get('DESIGN_NAME')}")
-    if config.get("VERILOG_FILES") != ["dir::../../rtl/IntegerPLL_HardMacroTop_EINVP.v"]:
+    if config.get("VERILOG_FILES") != EXPECTED_RTL:
         failures.append("unexpected VERILOG_FILES")
     if config.get("CLOCK_PORT") is not None:
         failures.append("CLOCK_PORT should be null")
+    if config.get("EXTRA_EXCLUDED_CELLS") != ["sky130_fd_sc_hd__o21ai_0"]:
+        failures.append("unexpected EXTRA_EXCLUDED_CELLS")
+    if config.get("RUN_POST_GPL_DESIGN_REPAIR") is not True:
+        failures.append("RUN_POST_GPL_DESIGN_REPAIR should be true")
+    if config.get("RUN_POST_GRT_DESIGN_REPAIR") is not False:
+        failures.append("RUN_POST_GRT_DESIGN_REPAIR should be false")
+    if config.get("PNR_SDC_FILE") != "dir::async_configured_top.sdc":
+        failures.append("unexpected PNR_SDC_FILE")
+    if config.get("SIGNOFF_SDC_FILE") != "dir::async_configured_top.sdc":
+        failures.append("unexpected SIGNOFF_SDC_FILE")
     if config.get("IO_PIN_ORDER_CFG") != "dir::pin_order.cfg":
         failures.append("unexpected IO_PIN_ORDER_CFG")
     if config.get("ERRORS_ON_UNMATCHED_IO") != "both":
         failures.append("ERRORS_ON_UNMATCHED_IO should be both")
-    if config.get("PNR_SDC_FILE") != "dir::async_macro_top.sdc":
-        failures.append("unexpected PNR_SDC_FILE")
-    if config.get("SIGNOFF_SDC_FILE") != "dir::async_macro_top.sdc":
-        failures.append("unexpected SIGNOFF_SDC_FILE")
 
-    rtl_text = rtl_path.read_text(encoding="ascii")
+    wrapper_text = rtl_paths[-1].read_text(encoding="ascii", errors="replace")
     for needle in (
-        "module IntegerPLL_HardMacroTop_EINVP",
-        "IntegerPLL_BBPD phase_detector",
-        "IntegerPLL_DigitalCore digital_core",
-        "IntegerPLL_DCO_EINVP_COARSE oscillator",
-        "assign bbpd_reset_n = RESET_N && DLF_En && !DLF_Clear;",
-        ".COARSEBINARY_CODE(COARSEBINARY_CODE)",
-        ".COARSETHERMAL_CODE(coarse_ctrl)",
-        ".DCO_THERM(dco_therm)",
-        ".PLLOUT(PLLOUT)",
+        "module IntegerPLL_HardMacroTop_EINVP_25MHzConfigured",
+        "IntegerPLL_25MHzModeController",
+        "IntegerPLL_HardMacroTop_EINVP hard_macro",
+        ".PLL_ENABLE(PLL_ENABLE)",
+        ".MODE_SELECT(MODE_SELECT)",
+        ".COARSEBINARY_CODE(coarse_code)",
+        ".MMDCLKDIV_RATIO(mmd_ratio)",
     ):
-        if needle not in rtl_text:
-            failures.append(f"RTL missing {needle!r}")
+        if needle not in wrapper_text:
+            failures.append(f"wrapper RTL missing {needle!r}")
 
     macros = config.get("MACROS", {})
-    if set(macros) != set(EXPECTED):
+    if set(macros) != {MACRO}:
         failures.append(f"unexpected macro set: {sorted(macros)}")
+    macro_entry = macros.get(MACRO, {})
+    instances = macro_entry.get("instances", {})
+    if set(instances) != {INSTANCE}:
+        failures.append(f"{MACRO} should have only instance {INSTANCE}")
+    else:
+        instance = instances[INSTANCE]
+        if [float(v) for v in instance.get("location", [])] != EXPECTED_MACRO["location_um"]:
+            failures.append(f"{INSTANCE} has wrong location")
+        if instance.get("orientation") != EXPECTED_MACRO["orientation"]:
+            failures.append(f"{INSTANCE} has wrong orientation")
 
-    source_files = [str(config_path), str(rtl_path), str(sdc_path), str(pin_order_path)]
-    rows = []
-    for macro_name, expected in EXPECTED.items():
-        entry = macros.get(macro_name, {})
-        instance_name = expected["instance"]
-        instances = entry.get("instances", {})
-        if set(instances) != {instance_name}:
-            failures.append(f"{macro_name} should have only instance {instance_name}")
+    source_files = [str(config_path), str(sdc_path), str(pin_order_path)]
+    source_files.extend(str(path) for path in rtl_paths)
+    for view in ("gds", "lef", "vh", "pnl", "spice"):
+        paths = list(iter_paths(config_path.parent, macro_entry.get(view, [])))
+        if len(paths) != 1:
+            failures.append(f"{MACRO} {view} should have one path")
             continue
-        instance = instances[instance_name]
-        if [float(v) for v in instance.get("location", [])] != expected["location_um"]:
-            failures.append(f"{instance_name} has wrong location")
-        if instance.get("orientation") != expected["orientation"]:
-            failures.append(f"{instance_name} has wrong orientation")
-
-        for view in ("gds", "lef", "vh", "pnl", "spice"):
-            paths = list(iter_paths(config_dir, entry.get(view, [])))
-            if len(paths) != 1:
-                failures.append(f"{macro_name} {view} should have one path")
-                continue
+        try:
+            require_file(paths[0])
+            source_files.append(str(paths[0]))
+        except ValueError as exc:
+            failures.append(str(exc))
+        if view == "lef":
             try:
-                require_file(paths[0])
-                source_files.append(str(paths[0]))
+                lef_macro, lef_size = parse_lef_size(paths[0])
+                if lef_macro != MACRO:
+                    failures.append(f"{paths[0]} defines {lef_macro} instead of {MACRO}")
+                if lef_size != EXPECTED_MACRO["size_um"]:
+                    failures.append(f"{MACRO} LEF size {lef_size} != {EXPECTED_MACRO['size_um']}")
             except ValueError as exc:
                 failures.append(str(exc))
-            if view == "lef":
-                try:
-                    lef_macro, lef_size = parse_lef_size(paths[0])
-                    if lef_macro != macro_name:
-                        failures.append(f"{paths[0]} defines {lef_macro} instead of {macro_name}")
-                    if lef_size != expected["size_um"]:
-                        failures.append(f"{macro_name} LEF size {lef_size} != {expected['size_um']}")
-                except ValueError as exc:
-                    failures.append(str(exc))
-
-        rows.append(
-            {
-                "macro": macro_name,
-                "instance": instance_name,
-                "x_um": expected["location_um"][0],
-                "y_um": expected["location_um"][1],
-                "width_um": expected["size_um"][0],
-                "height_um": expected["size_um"][1],
-                "orientation": expected["orientation"],
-            }
-        )
 
     if failures:
         raise ValueError("; ".join(failures))
 
     return {
         "config": str(config_path),
-        "rtl": str(rtl_path),
         "sdc": str(sdc_path),
         "pin_order": str(pin_order_path),
-        "macro_count": len(EXPECTED),
-        "macro_rows": rows,
+        "rtl": [str(path) for path in rtl_paths],
+        "macro_count": 1,
+        "macro_rows": [
+            {
+                "macro": MACRO,
+                "instance": INSTANCE,
+                "x_um": EXPECTED_MACRO["location_um"][0],
+                "y_um": EXPECTED_MACRO["location_um"][1],
+                "width_um": EXPECTED_MACRO["size_um"][0],
+                "height_um": EXPECTED_MACRO["size_um"][1],
+                "orientation": EXPECTED_MACRO["orientation"],
+            }
+        ],
         "source_files": sorted(set(source_files)),
-        "total_macro_area_um2": sum(row["width_um"] * row["height_um"] for row in rows),
+        "total_macro_area_um2": EXPECTED_MACRO["size_um"][0] * EXPECTED_MACRO["size_um"][1],
     }
 
 
@@ -277,26 +272,30 @@ def check_signoff(root, config_summary, require_signoff):
         raise ValueError("; ".join(metric_failures))
 
     components = parse_def_components(run_dir / f"final/def/{DESIGN}.def")
-    placements = []
-    for macro_name, expected in EXPECTED.items():
-        instance_name = expected["instance"]
-        component = components.get(instance_name)
-        if component is None:
-            raise ValueError(f"final DEF missing component {instance_name}")
-        if component["master"] != macro_name:
-            raise ValueError(f"{instance_name} master {component['master']} != {macro_name}")
-        if component["orientation"] != expected["orientation"]:
-            raise ValueError(f"{instance_name} orientation {component['orientation']} != {expected['orientation']}")
-        observed = component["location_um"]
-        if any(abs(a - b) > 0.001 for a, b in zip(observed, expected["location_um"])):
-            raise ValueError(f"{instance_name} location {observed} != {expected['location_um']}")
-        placements.append({"instance": instance_name, "macro": macro_name, **component})
+    component = components.get(INSTANCE)
+    if component is None:
+        raise ValueError(f"final DEF missing component {INSTANCE}")
+    if component["master"] != MACRO:
+        raise ValueError(f"{INSTANCE} master {component['master']} != {MACRO}")
+    if component["orientation"] != EXPECTED_MACRO["orientation"]:
+        raise ValueError(f"{INSTANCE} orientation {component['orientation']} != {EXPECTED_MACRO['orientation']}")
+    observed = component["location_um"]
+    if any(abs(a - b) > 0.001 for a, b in zip(observed, EXPECTED_MACRO["location_um"])):
+        raise ValueError(f"{INSTANCE} location {observed} != {EXPECTED_MACRO['location_um']}")
 
     netlist = (run_dir / f"final/nl/{DESIGN}.nl.v").read_text(encoding="ascii", errors="replace")
-    if "IntegerPLL_DCO_EINVP_COARSE oscillator" not in netlist:
-        raise ValueError("final netlist does not instantiate IntegerPLL_DCO_EINVP_COARSE oscillator")
-    if "IntegerPLL_DCO oscillator" in netlist:
-        raise ValueError("final netlist still instantiates the NAND-load DCO")
+    for needle in (
+        "IntegerPLL_HardMacroTop_EINVP hard_macro",
+        ".COARSEBINARY_CODE(",
+        ".DLF_Ext_Data(",
+        ".MMDCLKDIV_RATIO(",
+        "TARGET_MHZ[",
+        "TRACKING",
+    ):
+        if needle not in netlist:
+            raise ValueError(f"final netlist missing {needle!r}")
+    if "sky130_fd_sc_hd__o21ai_0" in netlist:
+        raise ValueError("final netlist uses KLayout-DRC-failing sky130_fd_sc_hd__o21ai_0")
 
     signoff_mtime = metrics_path.stat().st_mtime
     stale = []
@@ -307,11 +306,12 @@ def check_signoff(root, config_summary, require_signoff):
     if stale:
         raise ValueError("; ".join(stale))
 
+    placement = {"instance": INSTANCE, "macro": MACRO, **component}
     return {
         "status": "pass",
         "run_dir": str(run_dir),
         "final_dir": str(final_dir),
-        "placements": placements,
+        "placements": [placement],
         "stdcells": metrics.get("design__instance__count__stdcell"),
         "macros": metrics.get("design__instance__count__macro"),
         "wirelength": metrics.get("route__wirelength"),
@@ -322,11 +322,14 @@ def check_signoff(root, config_summary, require_signoff):
 
 def write_outputs(summary, out_dir):
     out_dir.mkdir(parents=True, exist_ok=True)
-    json_path = out_dir / "hard_macro_top_einvp_summary.json"
-    csv_path = out_dir / "hard_macro_top_einvp_placements.csv"
+    json_path = out_dir / "configured_hard_macro_top_einvp_summary.json"
+    csv_path = out_dir / "configured_hard_macro_top_einvp_placements.csv"
     json_path.write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="ascii")
     with csv_path.open("w", newline="", encoding="ascii") as csv_file:
-        writer = csv.DictWriter(csv_file, fieldnames=("macro", "instance", "x_um", "y_um", "width_um", "height_um", "orientation"))
+        writer = csv.DictWriter(
+            csv_file,
+            fieldnames=("macro", "instance", "x_um", "y_um", "width_um", "height_um", "orientation"),
+        )
         writer.writeheader()
         for row in summary["config"]["macro_rows"]:
             writer.writerow(row)
@@ -336,7 +339,7 @@ def write_outputs(summary, out_dir):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", default=str(Path(__file__).resolve().parents[1]))
-    parser.add_argument("--out-dir", default="build/hard_macro_top_einvp")
+    parser.add_argument("--out-dir", default="build/configured_hard_macro_top_einvp")
     parser.add_argument("--require-signoff", action="store_true")
     args = parser.parse_args()
 
@@ -349,11 +352,11 @@ def main():
         "design": DESIGN,
         "config": config_summary,
         "signoff": signoff_summary,
-        "dco_macro": "IntegerPLL_DCO_EINVP_COARSE",
+        "embedded_macro": MACRO,
     }
     json_path, csv_path = write_outputs(summary, out_dir)
     print(
-        "hard macro top EINVP pass: "
+        "configured hard macro top EINVP pass: "
         f"macro_count={config_summary['macro_count']} "
         f"signoff_status={signoff_summary['status']} "
         f"area={config_summary['total_macro_area_um2']:.3f} um^2"
