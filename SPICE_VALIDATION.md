@@ -154,12 +154,12 @@ make -C OpenPLL check-sky130-pll-25mhz-release
 ```
 
 It validates the coarse-DCO RTL topology and `buf_1` output-buffer constraint,
-the 25 MHz RTL mode preset table and configured-mode controller/wrapper, the
+the 25 MHz RTL divider preset table and configured divider-controller/wrapper, the
 refreshed `IntegerPLL_HardMacroTop_EINVP` signoff and extracted SPICE/SPEF
 interface summaries, the configured behavioral PLL reset-to-tracking regression,
 the waveform-qualified target-code rows, the configured tracking rows, the four
 direct-RCX hold rows, and the recorded low/high near-seed direct-RCX update
-summary for all four target modes.
+summary for all four divider targets.
 
 The optional direct extracted-DCO mixed-step diagnostic for the highest target
 mode is:
@@ -2680,7 +2680,7 @@ Not yet complete:
   clean hardtop signoff/SPICE-interface checks, and post-layout TT endpoint
   plus near-target probes for the 100, 250, 300, and 400 MHz targets. It still
   needs broader all-band PVT DCO coverage and full extracted-DCO-in-loop
-  lock/acquisition evidence before the 25 MHz-reference multiplier modes can be
+  lock/acquisition evidence before the 25 MHz-reference multiplier targets can be
   treated as final PLL signoff.
 - Full closed-loop transistor-level transient SPICE. Current passing DLF
   transient evidence covers the reduced DCO-code update cone, a short full-core

@@ -82,7 +82,7 @@ export PDK
 export STD_CELL_LIBRARY
 
 .PHONY: sim digital-loop-gain-sweep pll-top-model-acq pll-top-filled-dco-acq pll-top-filled-dco-gain-sweep synth synth-frac6 check-sky130-macros check-top-macro-assembly hardtop-librelane-route hardtop-librelane-signoff check-hard-macro-top check-hard-macro-top-signoff check-hard-macro-top-spice validate-sky130-pll validate-sky130-pll-artifacts librelane-synth librelane-route librelane-signoff check-librelane-signoff dco-librelane-signoff dco-librelane-nofill dco-magic-rcx dco-magic-rcx-nofill bbpd-librelane-signoff bbpd-magic-rcx spice spice-dco spice-dco-all check-dco-all spice-dco-pvt spice-dco-pvt-all check-dco-pvt-all spice-dco-postlayout spice-dco-postlayout-filled spice-dco-postlayout-filled-code000 spice-dco-postlayout-filled-code064 spice-dco-postlayout-filled-code128 spice-dco-postlayout-filled-code192 spice-dco-postlayout-filled-code255 spice-dco-postlayout-filled-tt-9pt check-dco-postlayout-filled check-dco-postlayout-filled-tt-9pt spice-dco-postlayout-filled-highcode-probe spice-dco-postlayout-filled-tail-probe check-dco-postlayout-filled-highcode-tail spice-dco-postlayout-filled-local-gain check-dco-postlayout-filled-local-gain spice-dco-postlayout-filled-pvt-endpoints spice-dco-postlayout-filled-ff-endpoints spice-dco-postlayout-filled-ff-code000 spice-dco-postlayout-filled-ff-code255 spice-dco-postlayout-filled-fs-endpoints spice-dco-postlayout-filled-sf-endpoints spice-dco-postlayout-filled-ss-endpoints spice-dco-postlayout-filled-ss-code000 spice-dco-postlayout-filled-ss-code255 check-dco-postlayout-filled-pvt-endpoints check-dco-postlayout-filled-ff-endpoints spice-dco-postlayout-filled-ngspice spice-bbpd spice-bbpd-postlayout spice-bbpd-postlayout-pvt spice-bbpd-postlayout-deadzone spice-bbpd-postlayout-deadzone-pvt spice-pll-loop spice-pll-loop-filled-dco spice-pll-loop-filled-dco-sampled spice-pll-loop-filled-dco-sampled-diagnostic spice-pll-loop-filled-bbpd-xyce-sweep spice-pll-loop-filled-bbpd-sampled-xyce-aperture-sweep spice-pll-loop-filled-bbpd-sampled-xyce-lock spice-pll-loop-filled-bbpd-sampled-xyce-phase-robustness spice-pll-loop-filled-bbpd-sampled-xyce-phase-robustness-4us spice-pll-loop-filled-bbpd-sampled-xyce-prop8-phase-probe spice-pll-loop-sampled-gain-sweep spice-pll-loop-sampled-pi-sweep spice-pll-loop-pvt spice-dlf-static spice-dlf-static-kp16 spice-dlf-static-kp32 spice-dlf-update spice-dlf-update-kp16 spice-dlf-update-kp32 spice-dlf-update-full-kp32-overlap spice-dlf-update-signoff-nl-kp32 spice-dlf-update-signoff-spef-kp32 spice-dlf-update-signoff-spef-rc-kp32 spice-bbpd-dlf-integration spice-bbpd-dlf-integration-full spice-bbpd-dlf-integration-signoff-spef-rc spice-pll-mapped-loop-smoke spice-pll-mapped-loop-gain-sweep spice-pll-mapped-loop-signoff-nl-smoke spice-pll-mapped-loop-extracted-dco-startup spice-pll-mapped-loop-extracted-dco-startup-mpi4-klu spice-pll-mapped-loop-extracted-dco-motion spice-pll-mapped-loop-extracted-dco-motion-mpi4-klu spice-pll-mapped-loop-extracted-dco-low-trend-mpi4-klu spice-pll-mapped-loop-extracted-dco-high-trend-mpi4-klu spice-pll-mapped-loop-extracted-dco-midcode-inc-mpi4-klu spice-pll-mapped-loop-extracted-dco-midcode-kp0-hold-mpi4-klu spice-pll-mapped-loop-phase-sweep spice-dco-decoder spice-dco-decoder-all spice-dco-decoder-full-taps spice-dco-decoder-all-taps clean
-.PHONY: check-pdk-stdcell check-pll-25mhz-mode-config check-pll-25mhz-mode-controller check-pll-25mhz-configured-wrapper check-pll-25mhz-configured-behavioral
+.PHONY: check-pdk-stdcell check-pll-25mhz-divider-config check-pll-25mhz-divider-controller check-pll-25mhz-mode-config check-pll-25mhz-mode-controller check-pll-25mhz-configured-wrapper check-pll-25mhz-configured-behavioral
 .PHONY: check-sky130-pll-25mhz-release
 .PHONY: spice-pll-mapped-loop-progress-1us
 .PHONY: spice-pll-mapped-loop-signoff-nl-hardtop-spef-smoke spice-pll-mapped-loop-signoff-nl-hardtop-spef-rc-startup-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-spef-rc-extracted-dco-startup-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-spef-rc-extracted-dco-motion-low-diagnostic spice-pll-mapped-loop-signoff-nl-hardtop-spef-rc-extracted-dco-motion-high-diagnostic
@@ -308,12 +308,16 @@ synth-frac4:
 check-sky130-macros:
 	./scripts/check_sky130_macros.sh
 
-check-pll-25mhz-mode-config:
+check-pll-25mhz-mode-config: check-pll-25mhz-divider-config
+
+check-pll-25mhz-divider-config:
 	mkdir -p build/check
 	iverilog -g2012 -Wall -s tb_pll_25mhz_mode_config -o build/check/pll_25mhz_mode_config.vvp rtl/IntegerPLL_25MHzModeConfig.v tb/tb_pll_25mhz_mode_config.v
 	vvp build/check/pll_25mhz_mode_config.vvp
 
-check-pll-25mhz-mode-controller:
+check-pll-25mhz-mode-controller: check-pll-25mhz-divider-controller
+
+check-pll-25mhz-divider-controller:
 	mkdir -p build/check
 	iverilog -g2012 -Wall -s tb_pll_25mhz_mode_controller -o build/check/pll_25mhz_mode_controller.vvp rtl/IntegerPLL_25MHzModeConfig.v rtl/IntegerPLL_25MHzModeController.v tb/tb_pll_25mhz_mode_controller.v
 	vvp build/check/pll_25mhz_mode_controller.vvp
@@ -328,7 +332,7 @@ check-pll-25mhz-configured-behavioral:
 	iverilog -g2012 -DOPENPLL_DCO_MODEL_COARSE -Wall -s tb_pll_25mhz_configured_behavioral -o build/check/pll_25mhz_configured_behavioral.vvp rtl/IntegerPLL_B2TH.v rtl/IntegerPLL_MMD_Retimer.v rtl/IntegerPLL_Divider.v rtl/IntegerPLL_DLF.v rtl/IntegerPLL_DigitalCore.v rtl/IntegerPLL_Top.v rtl/IntegerPLL_25MHzModeConfig.v rtl/IntegerPLL_25MHzModeController.v models/IntegerPLL_BBPD_model.v models/IntegerPLL_DCO_25MHzCoarse_model.v tb/tb_pll_25mhz_configured_behavioral.v
 	vvp build/check/pll_25mhz_configured_behavioral.vvp
 
-check-sky130-pll-25mhz-release: check-sky130-macros check-pll-25mhz-mode-config check-pll-25mhz-mode-controller check-pll-25mhz-configured-wrapper check-pll-25mhz-configured-behavioral check-hard-macro-top-einvp check-hard-macro-top-einvp-spice check-configured-hard-macro-top-einvp-signoff
+check-sky130-pll-25mhz-release: check-sky130-macros check-pll-25mhz-divider-config check-pll-25mhz-divider-controller check-pll-25mhz-configured-wrapper check-pll-25mhz-configured-behavioral check-hard-macro-top-einvp check-hard-macro-top-einvp-spice check-configured-hard-macro-top-einvp-signoff
 	python3 ./scripts/check_sky130_pll_25mhz_release.py
 
 check-top-macro-assembly:

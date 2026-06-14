@@ -160,7 +160,9 @@ def check_config(root):
         "IntegerPLL_25MHzModeController",
         "IntegerPLL_HardMacroTop_EINVP hard_macro",
         ".PLL_ENABLE(PLL_ENABLE)",
-        ".MODE_SELECT(MODE_SELECT)",
+        "input wire [4:0] FEEDBACK_DIVIDER",
+        ".FEEDBACK_DIVIDER(FEEDBACK_DIVIDER)",
+        ".CONFIG_VALID(CONFIG_VALID)",
         ".COARSEBINARY_CODE(coarse_code)",
         ".MMDCLKDIV_RATIO(mmd_ratio)",
     ):
@@ -289,6 +291,8 @@ def check_signoff(root, config_summary, require_signoff):
         ".COARSEBINARY_CODE(",
         ".DLF_Ext_Data(",
         ".MMDCLKDIV_RATIO(",
+        "FEEDBACK_DIVIDER[",
+        "CONFIG_VALID",
         "TARGET_MHZ[",
         "TRACKING",
     ):

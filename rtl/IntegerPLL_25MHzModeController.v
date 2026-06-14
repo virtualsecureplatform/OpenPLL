@@ -6,12 +6,13 @@ module IntegerPLL_25MHzModeController #(
     parameter CODE_WIDTH = 10,
     parameter DCO_CODE_WIDTH = 8,
     parameter GAIN_WIDTH = 8,
+    parameter FEEDBACK_DIVIDER_WIDTH = 5,
     parameter CLEAR_CYCLES = 4
 ) (
     input wire CLKDIV_RETIMED,
     input wire RESET_N,
     input wire PLL_ENABLE,
-    input wire [1:0] MODE_SELECT,
+    input wire [FEEDBACK_DIVIDER_WIDTH-1:0] FEEDBACK_DIVIDER,
     output wire DLF_En,
     output wire DLF_Clear,
     output wire DLF_Ext_Override,
@@ -24,7 +25,8 @@ module IntegerPLL_25MHzModeController #(
     output wire CONFIG_BUSY,
     output wire TRACKING,
     output wire [15:0] TARGET_MHZ,
-    output wire [7:0] TARGET_DCO_CODE
+    output wire [7:0] TARGET_DCO_CODE,
+    output wire CONFIG_VALID
 );
 
     localparam [1:0] STATE_IDLE = 2'd0;
@@ -35,41 +37,43 @@ module IntegerPLL_25MHzModeController #(
         (CLEAR_LIMIT <= 1) ? 1 : $clog2(CLEAR_LIMIT + 1);
 
     reg [1:0] state;
-    reg [1:0] mode_latched;
+    reg [FEEDBACK_DIVIDER_WIDTH-1:0] feedback_divider_latched;
     reg [CLEAR_COUNT_WIDTH-1:0] clear_count;
 
     wire load_active;
     wire track_active;
 
     assign load_active = (state == STATE_LOAD) && PLL_ENABLE;
-    assign track_active = (state == STATE_TRACK) && PLL_ENABLE;
+    assign track_active = (state == STATE_TRACK) && PLL_ENABLE && CONFIG_VALID;
 
     assign DLF_En = track_active;
-    assign DLF_Clear = load_active;
+    assign DLF_Clear = load_active && CONFIG_VALID;
     assign DLF_Ext_Override = 1'b0;
     assign DLF_IN_POL = 1'b1;
-    assign CONFIG_BUSY = PLL_ENABLE && (state != STATE_TRACK);
+    assign CONFIG_BUSY = PLL_ENABLE && ((state != STATE_TRACK) || !CONFIG_VALID);
     assign TRACKING = track_active;
 
     IntegerPLL_25MHzModeConfig #(
         .CODE_WIDTH(CODE_WIDTH),
         .DCO_CODE_WIDTH(DCO_CODE_WIDTH),
-        .GAIN_WIDTH(GAIN_WIDTH)
+        .GAIN_WIDTH(GAIN_WIDTH),
+        .FEEDBACK_DIVIDER_WIDTH(FEEDBACK_DIVIDER_WIDTH)
     ) mode_config (
-        .MODE_SELECT(mode_latched),
+        .FEEDBACK_DIVIDER(feedback_divider_latched),
         .MMDCLKDIV_RATIO(MMDCLKDIV_RATIO),
         .COARSEBINARY_CODE(COARSEBINARY_CODE),
         .DLF_Ext_Data(DLF_Ext_Data),
         .DLF_KI(DLF_KI),
         .DLF_KP(DLF_KP),
         .TARGET_MHZ(TARGET_MHZ),
-        .TARGET_DCO_CODE(TARGET_DCO_CODE)
+        .TARGET_DCO_CODE(TARGET_DCO_CODE),
+        .CONFIG_VALID(CONFIG_VALID)
     );
 
     always @(posedge CLKDIV_RETIMED or negedge RESET_N) begin
         if (!RESET_N) begin
             state <= STATE_IDLE;
-            mode_latched <= 2'd0;
+            feedback_divider_latched <= 5'd4;
             clear_count <= {CLEAR_COUNT_WIDTH{1'b0}};
         end else begin
             case (state)
@@ -77,7 +81,7 @@ module IntegerPLL_25MHzModeController #(
                     clear_count <= {CLEAR_COUNT_WIDTH{1'b0}};
                     if (PLL_ENABLE) begin
                         state <= STATE_LOAD;
-                        mode_latched <= MODE_SELECT;
+                        feedback_divider_latched <= FEEDBACK_DIVIDER;
                     end
                 end
 
@@ -97,9 +101,9 @@ module IntegerPLL_25MHzModeController #(
                     clear_count <= {CLEAR_COUNT_WIDTH{1'b0}};
                     if (!PLL_ENABLE) begin
                         state <= STATE_IDLE;
-                    end else if (MODE_SELECT != mode_latched) begin
+                    end else if (FEEDBACK_DIVIDER != feedback_divider_latched) begin
                         state <= STATE_LOAD;
-                        mode_latched <= MODE_SELECT;
+                        feedback_divider_latched <= FEEDBACK_DIVIDER;
                     end
                 end
 

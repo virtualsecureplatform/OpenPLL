@@ -6,7 +6,7 @@ module tb_pll_25mhz_configured_behavioral;
     reg ref_clk;
     reg reset_n;
     reg pll_enable;
-    reg [1:0] mode_select;
+    reg [4:0] feedback_divider;
 
     wire dlf_en;
     wire dlf_clear;
@@ -21,6 +21,7 @@ module tb_pll_25mhz_configured_behavioral;
     wire tracking;
     wire [15:0] target_mhz;
     wire [7:0] target_dco_code;
+    wire config_valid;
 
     wire pllout;
     wire pllout_div;
@@ -37,7 +38,7 @@ module tb_pll_25mhz_configured_behavioral;
         .CLKDIV_RETIMED(clkdiv_retimed),
         .RESET_N(reset_n),
         .PLL_ENABLE(pll_enable),
-        .MODE_SELECT(mode_select),
+        .FEEDBACK_DIVIDER(feedback_divider),
         .DLF_En(dlf_en),
         .DLF_Clear(dlf_clear),
         .DLF_Ext_Override(dlf_override),
@@ -50,7 +51,8 @@ module tb_pll_25mhz_configured_behavioral;
         .CONFIG_BUSY(config_busy),
         .TRACKING(tracking),
         .TARGET_MHZ(target_mhz),
-        .TARGET_DCO_CODE(target_dco_code)
+        .TARGET_DCO_CODE(target_dco_code),
+        .CONFIG_VALID(config_valid)
     );
 
     IntegerPLL_Top #(
@@ -107,12 +109,12 @@ module tb_pll_25mhz_configured_behavioral;
                 guard = guard + 1;
             end
             if (tracking !== 1'b1)
-                $fatal(1, "tracking did not assert for mode %0d", mode_select);
+                $fatal(1, "tracking did not assert for divider %0d", feedback_divider);
         end
     endtask
 
-    task run_mode;
-        input [1:0] mode;
+    task run_divider;
+        input [4:0] divider;
         input [15:0] expected_target_mhz;
         input [7:0] expected_ratio;
         input [5:0] expected_coarse_code;
@@ -129,28 +131,30 @@ module tb_pll_25mhz_configured_behavioral;
         begin
             reset_n = 1'b0;
             pll_enable = 1'b0;
-            mode_select = mode;
+            feedback_divider = divider;
             repeat (5) @(posedge ref_clk);
             reset_n = 1'b1;
             repeat (2) @(posedge ref_clk);
             pll_enable = 1'b1;
 
             wait_for_tracking();
+            if (config_valid !== 1'b1)
+                $fatal(1, "divider %0d did not produce a valid configuration", divider);
             if (target_mhz !== expected_target_mhz)
-                $fatal(1, "mode %0d target mismatch: got %0d expected %0d",
-                       mode, target_mhz, expected_target_mhz);
+                $fatal(1, "divider %0d target mismatch: got %0d expected %0d",
+                       divider, target_mhz, expected_target_mhz);
             if (mmd_ratio !== expected_ratio)
-                $fatal(1, "mode %0d divider mismatch: got %0d expected %0d",
-                       mode, mmd_ratio, expected_ratio);
+                $fatal(1, "divider %0d MMD ratio mismatch: got %0d expected %0d",
+                       divider, mmd_ratio, expected_ratio);
             if (coarse_code !== expected_coarse_code)
-                $fatal(1, "mode %0d coarse mismatch: got %0d expected %0d",
-                       mode, coarse_code, expected_coarse_code);
+                $fatal(1, "divider %0d coarse mismatch: got %0d expected %0d",
+                       divider, coarse_code, expected_coarse_code);
             if (target_dco_code !== expected_target_code)
-                $fatal(1, "mode %0d target-code mismatch: got %0d expected %0d",
-                       mode, target_dco_code, expected_target_code);
+                $fatal(1, "divider %0d target-code mismatch: got %0d expected %0d",
+                       divider, target_dco_code, expected_target_code);
             if (abs_int(dco_code - expected_target_code) > 4)
-                $fatal(1, "mode %0d did not load near target: dco=%0d target=%0d",
-                       mode, dco_code, expected_target_code);
+                $fatal(1, "divider %0d did not load near target: dco=%0d target=%0d",
+                       divider, dco_code, expected_target_code);
 
             inc_count = 0;
             dec_count = 0;
@@ -171,16 +175,16 @@ module tb_pll_25mhz_configured_behavioral;
             measured_mhz = 1000.0 * (end_edges - start_edges) / (end_time - start_time);
 
             if ((dco_code < 4) || (dco_code > 251))
-                $fatal(1, "mode %0d final code remains railed: dco=%0d target=%0d",
-                       mode, dco_code, expected_target_code);
+                $fatal(1, "divider %0d final code remains railed: dco=%0d target=%0d",
+                       divider, dco_code, expected_target_code);
             if (abs_real(measured_mhz - expected_target_mhz) > 8.0)
-                $fatal(1, "mode %0d measured frequency too far: got %0.3f MHz expected %0d MHz",
-                       mode, measured_mhz, expected_target_mhz);
+                $fatal(1, "divider %0d measured frequency too far: got %0.3f MHz expected %0d MHz",
+                       divider, measured_mhz, expected_target_mhz);
             if ((inc_count + dec_count) < 1)
-                $fatal(1, "mode %0d saw no active BBPD decisions", mode);
+                $fatal(1, "divider %0d saw no active BBPD decisions", divider);
 
-            $display("RESULT: mode=%0d target_mhz=%0d ratio=%0d coarse=%0d target_code=%0d final_code=%0d measured_mhz=%0.3f inc=%0d dec=%0d idle=%0d",
-                     mode, expected_target_mhz, expected_ratio, expected_coarse_code,
+            $display("RESULT: feedback_divider=%0d target_mhz=%0d ratio=%0d coarse=%0d target_code=%0d final_code=%0d measured_mhz=%0.3f inc=%0d dec=%0d idle=%0d",
+                     divider, expected_target_mhz, expected_ratio, expected_coarse_code,
                      expected_target_code, dco_code, measured_mhz,
                      inc_count, dec_count, idle_count);
 
@@ -192,13 +196,13 @@ module tb_pll_25mhz_configured_behavioral;
     initial begin
         reset_n = 1'b0;
         pll_enable = 1'b0;
-        mode_select = 2'd0;
+        feedback_divider = 5'd4;
         pllout_edges = 0;
 
-        run_mode(2'd0, 16'd100, 8'd4, 6'd20, 8'd93);
-        run_mode(2'd1, 16'd250, 8'd10, 6'd6, 8'd234);
-        run_mode(2'd2, 16'd300, 8'd12, 6'd4, 8'd90);
-        run_mode(2'd3, 16'd400, 8'd16, 6'd2, 8'd76);
+        run_divider(5'd4, 16'd100, 8'd4, 6'd20, 8'd93);
+        run_divider(5'd10, 16'd250, 8'd10, 6'd6, 8'd234);
+        run_divider(5'd12, 16'd300, 8'd12, 6'd4, 8'd90);
+        run_divider(5'd16, 16'd400, 8'd16, 6'd2, 8'd76);
 
         $display("PASS: 25 MHz configured behavioral PLL tracking");
         $finish;

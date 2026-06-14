@@ -591,30 +591,32 @@ code93, code234, code90, and code76. It remains a configured-mode check, not a
 blind rail-start acquisition claim:
 `COARSEBINARY_CODE` selects a characterized mirror-delay path, the fine code is
 seeded near the target estimate, and the DLF then performs phase tracking.
-The reusable RTL preset table is `IntegerPLL_25MHzModeConfig`: mode 0 selects
-100 MHz with /4, C20/code93; mode 1 selects 250 MHz with /10, C06/code234;
-mode 2 selects 300 MHz with /12, C04/code90; and mode 3 selects 400 MHz with
-/16, C02/code76. It also emits `KI=16`, `KP=4`, and the 10-bit DLF seed word
-`target_code << 2`. The table is checked by:
+The reusable RTL preset table is `IntegerPLL_25MHzModeConfig`: the external
+5-bit `FEEDBACK_DIVIDER` value /4 selects 100 MHz with C20/code93; /10 selects
+250 MHz with C06/code234; /12 selects 300 MHz with C04/code90; and /16 selects
+400 MHz with C02/code76. It also emits `KI=16`, `KP=4`, the 10-bit DLF seed
+word `target_code << 2`, and `CONFIG_VALID`. Unsupported divider values hold
+`CONFIG_VALID=0` and do not enable tracking. The table is checked by:
 
 ```sh
-make -C OpenPLL check-pll-25mhz-mode-config
+make -C OpenPLL check-pll-25mhz-divider-config
 ```
 
 For normal fixed-mode RTL use, instantiate
 `IntegerPLL_HardMacroTop_EINVP_25MHzConfigured` instead of driving the DLF pins
 manually. It wraps `IntegerPLL_HardMacroTop_EINVP` with
-`IntegerPLL_25MHzModeController`: `MODE_SELECT` picks one of the four 25 MHz
-reference modes, and `PLL_ENABLE` starts a retimed-divider-clocked sequence
-that holds `DLF_Clear` long enough to load the preset seed before asserting
-`DLF_En` for tracking. The wrapper test checks all four mode reloads through
-the hard-macro instance, not only the isolated controller. The behavioral check
-uses the real controller, digital core, divider, and BBPD with a DCO table
-fitted to the post-layout coarse-band measurements to verify reset-to-tracking
-operation and measured frequency for all four modes. These checks are:
+`IntegerPLL_25MHzModeController`: `FEEDBACK_DIVIDER[4:0]` is the public
+feedback-loop divider input, and `PLL_ENABLE` starts a
+retimed-divider-clocked sequence that holds `DLF_Clear` long enough to load the
+preset seed before asserting `DLF_En` for tracking. The wrapper test checks all
+four supported divider reloads through the hard-macro instance, not only the
+isolated controller. The behavioral check uses the real controller, digital
+core, divider, and BBPD with a DCO table fitted to the post-layout coarse-band
+measurements to verify reset-to-tracking operation and measured frequency for
+all four supported divider values. These checks are:
 
 ```sh
-make -C OpenPLL check-pll-25mhz-mode-controller
+make -C OpenPLL check-pll-25mhz-divider-controller
 make -C OpenPLL check-pll-25mhz-configured-wrapper
 make -C OpenPLL check-pll-25mhz-configured-behavioral
 ```
@@ -634,14 +636,14 @@ make -C OpenPLL check-sky130-pll-25mhz-release
 ```
 
 It validates the HS NAND/NAND2B mirror-delay RTL, rejects ring-facing output
-buffer upsizing, checks the 25 MHz mode preset table and configured-mode
-controller/wrapper, requires the refreshed `IntegerPLL_HardMacroTop_EINVP`
+buffer upsizing, checks the 25 MHz divider preset table and configured
+divider-controller/wrapper, requires the refreshed `IntegerPLL_HardMacroTop_EINVP`
 signoff and extracted SPICE/SPEF interface summaries, requires the signed
 `IntegerPLL_HardMacroTop_EINVP_25MHzConfigured` physical wrapper summary,
 checks the configured behavioral PLL reset-to-tracking row, checks the four
 waveform-qualified target-code rows, checks the bounded configured-tracking
 summary, checks the four direct-RCX hold smokes, and requires the recorded
-low/high near-seed direct-RCX update summary for all four target modes.
+low/high near-seed direct-RCX update summary for all four divider targets.
 
 The optional direct extracted-DCO mixed-step diagnostic for the hardest target
 mode is:
@@ -760,9 +762,9 @@ thermometer nets, 374 nominal SPEF nets, 10082 nominal SPEF capacitance
 entries, 1670 nominal SPEF resistance entries, and a passing Xyce `-norun`
 syntax/topology probe. The configured physical wrapper,
 `IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`, embeds that signed lower hard
-macro at `(120, 120)` and adds the 25 MHz mode controller in one physical
-macro. Its signoff is clean with 39777 standard-cell instances, 40118 microns
-routed wire length, 999 vias, and zero route/Magic/KLayout DRC, LVS, XOR,
+macro at `(120, 120)` and adds the 25 MHz divider controller in one physical
+macro. Its signoff is clean with 39808 standard-cell instances, 44417 microns
+routed wire length, 1316 vias, and zero route/Magic/KLayout DRC, LVS, XOR,
 timing, max-slew, max-cap, and antenna metrics. The wrapper flow excludes
 `sky130_fd_sc_hd__o21ai_0` because the current Ciel KLayout deck reports an
 `npc.2` marker in that cell; synthesis uses the clean `o21ai_1` variant.

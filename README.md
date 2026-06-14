@@ -41,8 +41,8 @@ The current coarse-DCO structural and interface gates are:
 
 ```sh
 make -C OpenPLL check-sky130-macros
-make -C OpenPLL check-pll-25mhz-mode-config
-make -C OpenPLL check-pll-25mhz-mode-controller
+make -C OpenPLL check-pll-25mhz-divider-config
+make -C OpenPLL check-pll-25mhz-divider-controller
 make -C OpenPLL check-pll-25mhz-configured-wrapper
 make -C OpenPLL check-dco-einvp-coarse-librelane-signoff
 make -C OpenPLL check-hard-macro-top-einvp
@@ -51,26 +51,30 @@ make -C OpenPLL check-configured-hard-macro-top-einvp-signoff
 ```
 
 `rtl/IntegerPLL_25MHzModeConfig.v` is the reusable preset table for a 25 MHz
-reference. It maps mode selects to the characterized settings: 100 MHz uses
-`MMDCLKDIV_RATIO=4`, C20/code93; 250 MHz uses /10, C06/code234; 300 MHz uses
-/12, C04/code90; and 400 MHz uses /16, C02/code76. It also emits the promoted
-`KI=16`, `KP=4` gains and a 10-bit `DLF_Ext_Data` seed equal to
-`target_code << 2`.
+reference. It maps the 5-bit `FEEDBACK_DIVIDER` input to characterized
+settings: divider /4 gives 100 MHz with C20/code93; /10 gives 250 MHz with
+C06/code234; /12 gives 300 MHz with C04/code90; and /16 gives 400 MHz with
+C02/code76. It also emits the promoted `KI=16`, `KP=4` gains, a 10-bit
+`DLF_Ext_Data` seed equal to `target_code << 2`, and `CONFIG_VALID`. Unsupported
+divider values are passed to the lower divider bus for observability but hold
+`CONFIG_VALID=0` and do not enter tracking.
 
 `rtl/IntegerPLL_25MHzModeController.v` and
 `rtl/IntegerPLL_HardMacroTop_EINVP_25MHzConfigured.v` are the intended
-fixed-mode RTL entry point for the 25 MHz reference path. `MODE_SELECT` chooses
-100, 250, 300, or 400 MHz; `PLL_ENABLE` starts a divider-clocked load sequence
-that asserts `DLF_Clear` for the preset seed and then enables closed-loop
-tracking. The shipped hard-macro path uses the divider-clocked DLF macro; the
+configured RTL entry point for the 25 MHz reference path. The external control
+is the feedback-loop divider value, `FEEDBACK_DIVIDER[4:0]`, plus `PLL_ENABLE`;
+the controller latches the divider, applies the matching characterized
+coarse/fine/gain seed when `CONFIG_VALID=1`, asserts `DLF_Clear` for the preset
+seed, and then enables closed-loop tracking. The shipped hard-macro path uses
+the divider-clocked DLF macro; the
 generic digital core and `IntegerPLL_Top` still support
 `DLF_UPDATE_ON_PLLOUT=1` as a diagnostic build option if the digital-core macro
 is rebuilt for that variant. `make -C OpenPLL
-check-pll-25mhz-configured-wrapper` runs the wrapper-level mode sequencing test
+check-pll-25mhz-configured-wrapper` runs the wrapper-level divider sequencing test
 and checks that those preset controls reach the hard-macro instance. The
 configured wrapper is also hardened as
 `IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`, a signed-off physical macro
-that embeds the signed low-level hard macro and adds the 25 MHz mode controller.
+that embeds the signed low-level hard macro and adds the 25 MHz divider controller.
 The lower-level `IntegerPLL_HardMacroTop_EINVP` pins remain available for
 characterization and custom bring-up.
 
@@ -79,7 +83,7 @@ for robust acquisition from arbitrary phase and code, rather than on packaging
 the configured interface.
 
 `make -C OpenPLL check-pll-25mhz-configured-behavioral` runs a reset-to-tracking
-behavioral PLL regression for the same four modes. It uses the real controller,
+behavioral PLL regression for the same four divider values. It uses the real controller,
 digital core, divider, and BBPD with a behavioral DCO table fitted to the
 post-layout coarse-band measurements, and checks measured output frequency plus
 non-rail DCO control after the preset load.
@@ -106,7 +110,7 @@ make -C OpenPLL check-sky130-pll-25mhz-release
 ```
 
 It checks the coarse-DCO RTL shape, including the `buf_1` output-buffer
-constraint, the mode preset table, the mode controller/wrapper, the four
+constraint, the divider preset table, the divider controller/wrapper, the four
 waveform-qualified target-code rows, the configured tracking summaries, the
 configured behavioral PLL reset-to-tracking regression, the fresh
 `IntegerPLL_HardMacroTop_EINVP` signoff/SPICE-interface summaries, the signed
@@ -114,7 +118,7 @@ configured behavioral PLL reset-to-tracking regression, the fresh
 direct-RCX hold smokes, and the eight low/high near-seed direct-RCX code-update
 rows.
 
-An optional slow direct-RCX integration smoke for the hardest mode is:
+An optional slow direct-RCX integration smoke for the hardest divider target is:
 
 ```sh
 make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-400m-hold-smoke
@@ -131,7 +135,7 @@ An even slower all-mode direct-RCX near-seed code-update diagnostic is:
 make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-nearseed-smokes
 ```
 
-The current TT run checks +/-4 fine-code starts for all four modes. Low-side
+The current TT run checks +/-4 fine-code starts for all four divider targets. Low-side
 cases use REF phase offset -0.25 and divider seed 0; high-side cases use REF
 phase offset 0.25 and divider seed `NDIV-1`. All eight rows pass with two
 expected BBPD decisions and end one code from the target: 100 MHz 89->92 and

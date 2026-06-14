@@ -305,7 +305,7 @@ effective path length rather than selecting a muxed feedback tap. The 255-bit
 current physical candidate samples that bus with 90 evenly mapped HS NAND2
 fine loads split between `osc_node` and `mirror_ret[0]`.
 
-For fixed 25 MHz-reference multiplier modes, the intended operating sequence is
+For fixed 25 MHz-reference multiplier operating points, the intended sequence is
 configured acquisition rather than blind bang-bang rail acquisition: select a
 characterized coarse mirror-delay path for the requested multiplier, seed the
 fine code near the measured target code through the existing DLF override/config
@@ -322,20 +322,23 @@ interpolated between 397.373 MHz at code64 and 404.357 MHz at code96. The
 C06/code255 endpoint is numerically closer to 250 MHz than code224 but has
 weaker duty and rail behavior, so the 250 MHz mode uses the measured code234
 near-target row instead of relying on the rail.
-`IntegerPLL_25MHzModeConfig` captures these settings as reusable RTL: mode 0
-emits /4, C20, code93 for 100 MHz; mode 1 emits /10, C06, code234 for 250 MHz;
-mode 2 emits /12, C04, code90 for 300 MHz; and mode 3 emits /16, C02, code76
-for 400 MHz. The helper also emits `KI=16`, `KP=4`, and a DLF seed word of
-`target_code << 2` for the default 10-bit DLF / 8-bit DCO-code split.
-`IntegerPLL_25MHzModeController` turns that table into the fixed-mode bring-up
-sequence: it latches `MODE_SELECT`, drives the preset divider/coarse/gain/seed
-values, asserts `DLF_Clear` for a small number of `CLKDIV_RETIMED` edges, and
-then asserts `DLF_En` for normal tracking. `IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`
-wraps that controller around the low-level hard macro so the shipped fixed
-25 MHz-reference interface is `PLL_ENABLE` plus `MODE_SELECT`. That wrapper is
-also hardened as `IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`, which embeds
-the signed low-level hard macro and signs off the mode controller plus wrapper
-routing as one physical macro. The promoted 25 MHz hard-macro modes use the
+`IntegerPLL_25MHzModeConfig` captures these settings as reusable RTL keyed by
+the external 5-bit `FEEDBACK_DIVIDER` value: /4 emits C20/code93 for 100 MHz,
+/10 emits C06/code234 for 250 MHz, /12 emits C04/code90 for 300 MHz, and /16
+emits C02/code76 for 400 MHz. The helper also emits `KI=16`, `KP=4`, a DLF seed
+word of `target_code << 2` for the default 10-bit DLF / 8-bit DCO-code split,
+and `CONFIG_VALID`; unsupported divider values hold `CONFIG_VALID=0` and do not
+enter tracking. `IntegerPLL_25MHzModeController` turns that table into the
+configured bring-up sequence: it latches `FEEDBACK_DIVIDER`, drives the preset
+divider/coarse/gain/seed values, asserts `DLF_Clear` for a small number of
+`CLKDIV_RETIMED` edges when the divider is valid, and then asserts `DLF_En` for
+normal tracking. `IntegerPLL_HardMacroTop_EINVP_25MHzConfigured` wraps that
+controller around the low-level hard macro so the shipped 25 MHz-reference
+interface is `PLL_ENABLE` plus `FEEDBACK_DIVIDER[4:0]`, with `CONFIG_VALID` as
+status. That wrapper is also hardened as
+`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`, which embeds the signed
+low-level hard macro and signs off the divider controller plus wrapper routing
+as one physical macro. The promoted 25 MHz hard-macro operating points use the
 default divider-clocked DLF update path. The generic digital core can be
 rebuilt with `DLF_UPDATE_ON_PLLOUT=1` for diagnostic experiments, but the
 placed hard macro does not expose that as a runtime-selectable mode.
@@ -347,7 +350,7 @@ buffer, since that buffer is still an oscillator load.
 The paired configured-mode Xyce check,
 `make xyce-pll-mixed-signal-25mhz-targets`, aliases to the direct extracted-DCO
 configured-tracking gate plus the direct extracted-DCO hold smoke for the four
-25 MHz-reference multiplier modes.
+25 MHz-reference multiplier targets.
 The configured-tracking gate uses `KI=16`, `KP=4`, starts each target at
 +/-4 fine codes, requires a target-code-neighborhood hit and at least one BBPD
 decision in the expected initial direction, then checks that the final modeled
@@ -355,7 +358,7 @@ frequency and the last eight modeled DCO updates stay within 2 MHz of the
 requested target with no more than 16 fine-code span.
 The current fast release artifact check is
 `make check-sky130-pll-25mhz-release`; it validates the coarse-DCO structure,
-the `buf_1` output-buffer constraint, the RTL mode preset table, the signed
+the `buf_1` output-buffer constraint, the RTL divider preset table, the signed
 low-level hardtop, the signed configured physical wrapper, the target rows,
 configured tracking rows, direct-RCX hold rows, and all eight low/high near-seed
 direct-RCX update rows. The near-seed update rows intentionally use different

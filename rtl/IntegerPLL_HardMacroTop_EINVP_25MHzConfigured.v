@@ -14,7 +14,7 @@ module IntegerPLL_HardMacroTop_EINVP_25MHzConfigured #(
     input wire REF,
     input wire RESET_N,
     input wire PLL_ENABLE,
-    input wire [1:0] MODE_SELECT,
+    input wire [4:0] FEEDBACK_DIVIDER,
     output wire PLLOUT,
     output wire PLLOUT_DIV,
     output wire CLKDIV_RETIMED,
@@ -24,7 +24,8 @@ module IntegerPLL_HardMacroTop_EINVP_25MHzConfigured #(
     output wire CONFIG_BUSY,
     output wire TRACKING,
     output wire [15:0] TARGET_MHZ,
-    output wire [7:0] TARGET_DCO_CODE
+    output wire [7:0] TARGET_DCO_CODE,
+    output wire CONFIG_VALID
 );
 
     wire dlf_en;
@@ -46,7 +47,7 @@ module IntegerPLL_HardMacroTop_EINVP_25MHzConfigured #(
         .CLKDIV_RETIMED(CLKDIV_RETIMED),
         .RESET_N(RESET_N),
         .PLL_ENABLE(PLL_ENABLE),
-        .MODE_SELECT(MODE_SELECT),
+        .FEEDBACK_DIVIDER(FEEDBACK_DIVIDER),
         .DLF_En(dlf_en),
         .DLF_Clear(dlf_clear),
         .DLF_Ext_Override(dlf_ext_override),
@@ -59,7 +60,8 @@ module IntegerPLL_HardMacroTop_EINVP_25MHzConfigured #(
         .CONFIG_BUSY(CONFIG_BUSY),
         .TRACKING(TRACKING),
         .TARGET_MHZ(TARGET_MHZ),
-        .TARGET_DCO_CODE(TARGET_DCO_CODE)
+        .TARGET_DCO_CODE(TARGET_DCO_CODE),
+        .CONFIG_VALID(CONFIG_VALID)
     );
 
     IntegerPLL_HardMacroTop_EINVP hard_macro (

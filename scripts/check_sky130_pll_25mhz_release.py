@@ -141,6 +141,8 @@ def check_mode_config(root: Path) -> dict[str, object]:
     text = path.read_text(encoding="ascii", errors="replace")
     fragments = (
         "module IntegerPLL_25MHzModeConfig",
+        "input wire [FEEDBACK_DIVIDER_WIDTH-1:0] FEEDBACK_DIVIDER",
+        "output reg CONFIG_VALID",
         "MMDCLKDIV_RATIO = 8'd4",
         "COARSEBINARY_CODE = 6'd20",
         "TARGET_DCO_CODE = 8'd93",
@@ -157,20 +159,23 @@ def check_mode_config(root: Path) -> dict[str, object]:
         "COARSEBINARY_CODE = 6'd2",
         "TARGET_DCO_CODE = 8'd76",
         "DLF_Ext_Data = seed_word(8'd76)",
+        "CONFIG_VALID = 1'b0",
         "DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16}",
         "DLF_KP = {{(GAIN_WIDTH-3){1'b0}}, 3'd4}",
     )
     missing = [fragment for fragment in fragments if fragment not in text]
     if missing:
-        raise ValueError(f"{artifact_text(path)} missing mode-config fragment(s): {missing}")
+        raise ValueError(f"{artifact_text(path)} missing divider-config fragment(s): {missing}")
     return {
         "rtl": artifact_text(path),
-        "modes": [
-            {"target_mhz": 100, "multiplier": 4, "coarse_code": 20, "target_code": 93},
-            {"target_mhz": 250, "multiplier": 10, "coarse_code": 6, "target_code": 234},
-            {"target_mhz": 300, "multiplier": 12, "coarse_code": 4, "target_code": 90},
-            {"target_mhz": 400, "multiplier": 16, "coarse_code": 2, "target_code": 76},
+        "external_control": "FEEDBACK_DIVIDER[4:0]",
+        "supported_dividers": [
+            {"feedback_divider": 4, "target_mhz": 100, "coarse_code": 20, "target_code": 93},
+            {"feedback_divider": 10, "target_mhz": 250, "coarse_code": 6, "target_code": 234},
+            {"feedback_divider": 12, "target_mhz": 300, "coarse_code": 4, "target_code": 90},
+            {"feedback_divider": 16, "target_mhz": 400, "coarse_code": 2, "target_code": 76},
         ],
+        "invalid_divider_behavior": "CONFIG_VALID=0 and tracking disabled",
         "ki": 16,
         "kp": 4,
         "dlf_seed": "target_code << 2 for CODE_WIDTH=10",
@@ -185,13 +190,13 @@ def check_mode_controller(root: Path) -> dict[str, str]:
         "parameter CLEAR_CYCLES = 4",
         "STATE_LOAD",
         "STATE_TRACK",
-        "mode_latched",
+        "feedback_divider_latched",
         "assign DLF_En = track_active",
-        "assign DLF_Clear = load_active",
+        "assign DLF_Clear = load_active && CONFIG_VALID",
         "assign DLF_Ext_Override = 1'b0",
         "assign DLF_IN_POL = 1'b1",
         "IntegerPLL_25MHzModeConfig",
-        "MODE_SELECT != mode_latched",
+        "FEEDBACK_DIVIDER != feedback_divider_latched",
     )
     missing = [
         fragment for fragment in controller_fragments if fragment not in controller_text
@@ -206,11 +211,13 @@ def check_mode_controller(root: Path) -> dict[str, str]:
     wrapper_fragments = (
         "module IntegerPLL_HardMacroTop_EINVP_25MHzConfigured",
         "input wire PLL_ENABLE",
-        "input wire [1:0] MODE_SELECT",
+        "input wire [4:0] FEEDBACK_DIVIDER",
         "output wire CONFIG_BUSY",
         "output wire TRACKING",
+        "output wire CONFIG_VALID",
         "IntegerPLL_25MHzModeController",
         "IntegerPLL_HardMacroTop_EINVP hard_macro",
+        ".FEEDBACK_DIVIDER(FEEDBACK_DIVIDER)",
         ".DLF_En(dlf_en)",
         ".DLF_Clear(dlf_clear)",
         ".DLF_Ext_Data(dlf_ext_data)",
@@ -253,7 +260,7 @@ def check_mode_controller(root: Path) -> dict[str, str]:
         "configured_behavioral_testbench": artifact_text(behavioral_test_path),
         "configured_behavioral_dco_model": artifact_text(behavioral_model_path),
         "wrapper_syntax_stub": artifact_text(stub_path),
-        "sequence": "load preset with DLF_Clear, then enable closed-loop tracking",
+        "sequence": "latch FEEDBACK_DIVIDER, load valid preset with DLF_Clear, then enable closed-loop tracking",
     }
 
 
@@ -359,13 +366,13 @@ def check_configured_hardtop_summary(summary_path: Path) -> dict[str, object]:
         raise ValueError(f"{artifact_text(summary_path)} macro count is {config.get('macro_count')}")
     if signoff.get("status") != "pass":
         raise ValueError(f"{artifact_text(summary_path)} signoff status is {signoff.get('status')}")
-    if signoff.get("stdcells") != 39777:
+    if signoff.get("stdcells") != 39808:
         raise ValueError(
             f"{artifact_text(summary_path)} stdcell count changed: {signoff.get('stdcells')}"
         )
-    if signoff.get("vias") != 999:
+    if signoff.get("vias") != 1316:
         raise ValueError(f"{artifact_text(summary_path)} via count changed: {signoff.get('vias')}")
-    if signoff.get("wirelength") != 40118:
+    if signoff.get("wirelength") != 44417:
         raise ValueError(
             f"{artifact_text(summary_path)} wirelength changed: {signoff.get('wirelength')}"
         )
@@ -687,8 +694,8 @@ def main() -> int:
             "configured_hardtop_summary": artifact_text(configured_hardtop_summary_path),
         },
         "dco_structure": check_dco_structure(ROOT),
-        "mode_config": check_mode_config(ROOT),
-        "mode_controller": check_mode_controller(ROOT),
+        "divider_config": check_mode_config(ROOT),
+        "divider_controller": check_mode_controller(ROOT),
         "hardtop": check_hardtop_summary(hardtop_summary_path, hardtop_spice_summary_path),
         "configured_hardtop": check_configured_hardtop_summary(configured_hardtop_summary_path),
         "target_results": check_target_results(target_results_path, args),
