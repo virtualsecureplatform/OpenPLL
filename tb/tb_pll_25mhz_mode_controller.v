@@ -14,7 +14,7 @@ module tb_pll_25mhz_mode_controller;
     wire dlf_in_pol;
     wire [9:0] dlf_ext_data;
     wire [7:0] dlf_ki;
-    wire [7:0] dlf_kp;
+    wire [4:0] dlf_kp;
     wire [5:0] coarse_code;
     wire [7:0] mmd_ratio;
     wire config_busy;
@@ -64,6 +64,8 @@ module tb_pll_25mhz_mode_controller;
         input [7:0] expected_ratio;
         input [5:0] expected_coarse_code;
         input [7:0] expected_dco_code;
+        input [7:0] expected_ki;
+        input [4:0] expected_kp;
         input expected_valid;
         begin
             if (target_mhz !== expected_target_mhz)
@@ -81,12 +83,12 @@ module tb_pll_25mhz_mode_controller;
             if (dlf_ext_data !== (expected_valid ? {expected_dco_code, 2'b00} : 10'd0))
                 $fatal(1, "%0s DLF seed mismatch: got %0d",
                        label, dlf_ext_data);
-            if (dlf_ki !== 8'd16)
-                $fatal(1, "%0s KI mismatch: got %0d expected 16",
-                       label, dlf_ki);
-            if (dlf_kp !== 8'd4)
-                $fatal(1, "%0s KP mismatch: got %0d expected 4",
-                       label, dlf_kp);
+            if (dlf_ki !== expected_ki)
+                $fatal(1, "%0s KI mismatch: got %0d expected %0d",
+                       label, dlf_ki, expected_ki);
+            if (dlf_kp !== expected_kp)
+                $fatal(1, "%0s KP mismatch: got %0d expected %0d",
+                       label, dlf_kp, expected_kp);
             if (config_valid !== expected_valid)
                 $fatal(1, "%0s CONFIG_VALID mismatch: got %0b expected %0b",
                        label, config_valid, expected_valid);
@@ -125,6 +127,8 @@ module tb_pll_25mhz_mode_controller;
         input [7:0] expected_ratio;
         input [5:0] expected_coarse_code;
         input [7:0] expected_dco_code;
+        input [7:0] expected_ki;
+        input [4:0] expected_kp;
         begin
             feedback_divider = divider;
             pll_enable = 1'b1;
@@ -132,7 +136,8 @@ module tb_pll_25mhz_mode_controller;
             tick();
             check_controls("load edge 0", 1'b0, 1'b1, 1'b1, 1'b0);
             check_mode_outputs("load edge 0", expected_target_mhz, expected_ratio,
-                               expected_coarse_code, expected_dco_code, 1'b1);
+                               expected_coarse_code, expected_dco_code,
+                               expected_ki, expected_kp, 1'b1);
 
             tick();
             check_controls("load edge 1", 1'b0, 1'b1, 1'b1, 1'b0);
@@ -141,7 +146,8 @@ module tb_pll_25mhz_mode_controller;
             tick();
             check_controls("track edge", 1'b1, 1'b0, 1'b0, 1'b1);
             check_mode_outputs("track edge", expected_target_mhz, expected_ratio,
-                               expected_coarse_code, expected_dco_code, 1'b1);
+                               expected_coarse_code, expected_dco_code,
+                               expected_ki, expected_kp, 1'b1);
         end
     endtask
 
@@ -154,7 +160,7 @@ module tb_pll_25mhz_mode_controller;
             tick();
             check_controls("invalid load edge 0", 1'b0, 1'b0, 1'b1, 1'b0);
             check_mode_outputs("invalid load edge 0", 16'd0, {3'd0, divider},
-                               6'd0, 8'd0, 1'b0);
+                               6'd0, 8'd0, 8'd16, 5'd4, 1'b0);
 
             tick();
             check_controls("invalid load edge 1", 1'b0, 1'b0, 1'b1, 1'b0);
@@ -163,44 +169,34 @@ module tb_pll_25mhz_mode_controller;
             tick();
             check_controls("invalid held busy", 1'b0, 1'b0, 1'b1, 1'b0);
             check_mode_outputs("invalid held busy", 16'd0, {3'd0, divider},
-                               6'd0, 8'd0, 1'b0);
+                               6'd0, 8'd0, 8'd16, 5'd4, 1'b0);
         end
     endtask
 
     initial begin
         reset_n = 1'b1;
         pll_enable = 1'b0;
-        feedback_divider = 5'd4;
+        feedback_divider = 5'd20;
 
         #1 reset_n = 1'b0;
         #1;
         check_controls("reset", 1'b0, 1'b0, 1'b0, 1'b0);
-        check_mode_outputs("reset", 16'd100, 8'd4, 6'd20, 8'd93, 1'b1);
+        check_mode_outputs("reset", 16'd500, 8'd20, 6'd1, 8'd121, 8'd16, 5'd5, 1'b1);
 
         reset_n = 1'b1;
-        load_and_track_divider(5'd12, 16'd300, 8'd12, 6'd4, 8'd90);
-
-        feedback_divider = 5'd16;
-        #1;
-        check_controls("before divider change clock", 1'b1, 1'b0, 1'b0, 1'b1);
-        check_mode_outputs("before divider change clock", 16'd300, 8'd12, 6'd4, 8'd90, 1'b1);
-
-        load_and_track_divider(5'd16, 16'd400, 8'd16, 6'd2, 8'd76);
-
-        feedback_divider = 5'd20;
-        #1;
-        check_controls("before 500 MHz divider change clock", 1'b1, 1'b0, 1'b0, 1'b1);
-        check_mode_outputs("before 500 MHz divider change clock", 16'd400, 8'd16, 6'd2, 8'd76, 1'b1);
-
-        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121);
+        load_and_track_divider(5'd4, 16'd100, 8'd4, 6'd20, 8'd93, 8'd16, 5'd8);
+        load_and_track_divider(5'd10, 16'd250, 8'd10, 6'd6, 8'd234, 8'd16, 5'd8);
+        load_and_track_divider(5'd12, 16'd300, 8'd12, 6'd4, 8'd90, 8'd16, 5'd2);
+        load_and_track_divider(5'd16, 16'd400, 8'd16, 6'd2, 8'd76, 8'd1, 5'd4);
+        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121, 8'd16, 5'd5);
 
         pll_enable = 1'b0;
         tick();
         check_controls("disabled", 1'b0, 1'b0, 1'b0, 1'b0);
-        check_mode_outputs("disabled", 16'd500, 8'd20, 6'd1, 8'd121, 1'b1);
+        check_mode_outputs("disabled", 16'd500, 8'd20, 6'd1, 8'd121, 8'd16, 5'd5, 1'b1);
 
         load_invalid_divider(5'd5);
-        load_and_track_divider(5'd4, 16'd100, 8'd4, 6'd20, 8'd93);
+        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121, 8'd16, 5'd5);
 
         $display("PASS: 25 MHz PLL divider controller sequencing");
         $finish;

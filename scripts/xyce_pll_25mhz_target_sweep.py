@@ -16,6 +16,14 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 
+PRESET_TARGET_CODES = {
+    100.0: 93,
+    250.0: 234,
+    300.0: 90,
+    400.0: 76,
+    500.0: 121,
+}
+
 
 def resolve_repo_path(path: Path) -> Path:
     path = path.expanduser()
@@ -273,6 +281,14 @@ def target_candidates(
         )
     )
     return candidates
+
+
+def apply_preset_target_code(target: dict[str, object]) -> None:
+    target_mhz = float(target["target_mhz"])
+    for preset_mhz, target_code in PRESET_TARGET_CODES.items():
+        if math.isclose(target_mhz, preset_mhz, rel_tol=0.0, abs_tol=1.0e-6):
+            target["target_code"] = target_code
+            return
 
 
 def parse_key_values(line: str) -> dict[str, str]:
@@ -691,6 +707,7 @@ def main() -> int:
         best["target_mhz"] = target_mhz
         best["multiplier"] = multiplier_int
         best["candidate_count"] = len(candidates)
+        apply_preset_target_code(best)
         targets.append(best)
 
     if not args.skip_deck_generation:

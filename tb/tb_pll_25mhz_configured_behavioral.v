@@ -14,7 +14,7 @@ module tb_pll_25mhz_configured_behavioral;
     wire dlf_in_pol;
     wire [9:0] dlf_ext_data;
     wire [7:0] dlf_ki;
-    wire [7:0] dlf_kp;
+    wire [4:0] dlf_kp;
     wire [5:0] coarse_code;
     wire [7:0] mmd_ratio;
     wire config_busy;
@@ -196,7 +196,7 @@ module tb_pll_25mhz_configured_behavioral;
     initial begin
         reset_n = 1'b0;
         pll_enable = 1'b0;
-        feedback_divider = 5'd4;
+        feedback_divider = 5'd20;
         pllout_edges = 0;
 
         run_divider(5'd4, 16'd100, 8'd4, 6'd20, 8'd93);

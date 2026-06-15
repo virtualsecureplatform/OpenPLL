@@ -13,7 +13,7 @@ module tb_digital_core_coarse;
     reg dlf_in_pol;
     reg [9:0] dlf_ext_data;
     reg [7:0] dlf_ki;
-    reg [7:0] dlf_kp;
+    reg [4:0] dlf_kp;
     reg [3:0] coarse_code;
     reg [7:0] mmd_ratio;
 
@@ -117,7 +117,7 @@ module tb_digital_core_coarse;
         dlf_in_pol = 1'b1;
         dlf_ext_data = 10'd0;
         dlf_ki = 8'd0;
-        dlf_kp = 8'd0;
+        dlf_kp = 5'd0;
         coarse_code = 4'd0;
         mmd_ratio = 8'd8;
 

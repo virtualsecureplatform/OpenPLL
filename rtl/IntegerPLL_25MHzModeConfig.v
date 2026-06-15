@@ -6,6 +6,7 @@ module IntegerPLL_25MHzModeConfig #(
     parameter CODE_WIDTH = 10,
     parameter DCO_CODE_WIDTH = 8,
     parameter GAIN_WIDTH = 8,
+    parameter KP_WIDTH = 5,
     parameter FEEDBACK_DIVIDER_WIDTH = 5
 ) (
     input wire [FEEDBACK_DIVIDER_WIDTH-1:0] FEEDBACK_DIVIDER,
@@ -13,7 +14,7 @@ module IntegerPLL_25MHzModeConfig #(
     output reg [5:0] COARSEBINARY_CODE,
     output reg [CODE_WIDTH-1:0] DLF_Ext_Data,
     output reg [GAIN_WIDTH-1:0] DLF_KI,
-    output reg [GAIN_WIDTH-1:0] DLF_KP,
+    output reg [KP_WIDTH-1:0] DLF_KP,
     output reg [15:0] TARGET_MHZ,
     output reg [7:0] TARGET_DCO_CODE,
     output reg CONFIG_VALID
@@ -37,7 +38,7 @@ module IntegerPLL_25MHzModeConfig #(
 
     always @* begin
         DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16};
-        DLF_KP = {{(GAIN_WIDTH-3){1'b0}}, 3'd4};
+        DLF_KP = {{(KP_WIDTH-3){1'b0}}, 3'd4};
         CONFIG_VALID = 1'b1;
 
         case (FEEDBACK_DIVIDER)
@@ -47,6 +48,8 @@ module IntegerPLL_25MHzModeConfig #(
                 COARSEBINARY_CODE = 6'd20;
                 TARGET_DCO_CODE = 8'd93;
                 DLF_Ext_Data = seed_word(8'd93);
+                DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16};
+                DLF_KP = {{(KP_WIDTH-4){1'b0}}, 4'd8};
             end
             DIV_250MHZ: begin
                 TARGET_MHZ = 16'd250;
@@ -54,6 +57,8 @@ module IntegerPLL_25MHzModeConfig #(
                 COARSEBINARY_CODE = 6'd6;
                 TARGET_DCO_CODE = 8'd234;
                 DLF_Ext_Data = seed_word(8'd234);
+                DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16};
+                DLF_KP = {{(KP_WIDTH-4){1'b0}}, 4'd8};
             end
             DIV_300MHZ: begin
                 TARGET_MHZ = 16'd300;
@@ -61,6 +66,8 @@ module IntegerPLL_25MHzModeConfig #(
                 COARSEBINARY_CODE = 6'd4;
                 TARGET_DCO_CODE = 8'd90;
                 DLF_Ext_Data = seed_word(8'd90);
+                DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16};
+                DLF_KP = {{(KP_WIDTH-2){1'b0}}, 2'd2};
             end
             DIV_400MHZ: begin
                 TARGET_MHZ = 16'd400;
@@ -68,6 +75,8 @@ module IntegerPLL_25MHzModeConfig #(
                 COARSEBINARY_CODE = 6'd2;
                 TARGET_DCO_CODE = 8'd76;
                 DLF_Ext_Data = seed_word(8'd76);
+                DLF_KI = {{(GAIN_WIDTH-1){1'b0}}, 1'b1};
+                DLF_KP = {{(KP_WIDTH-3){1'b0}}, 3'd4};
             end
             DIV_500MHZ: begin
                 TARGET_MHZ = 16'd500;
@@ -75,6 +84,8 @@ module IntegerPLL_25MHzModeConfig #(
                 COARSEBINARY_CODE = 6'd1;
                 TARGET_DCO_CODE = 8'd121;
                 DLF_Ext_Data = seed_word(8'd121);
+                DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16};
+                DLF_KP = {{(KP_WIDTH-3){1'b0}}, 3'd5};
             end
             default: begin
                 TARGET_MHZ = 16'd0;

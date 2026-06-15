@@ -9,9 +9,11 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 from sky130_pdk import default_pdk_root
+from xyce_utils import add_xyce_arguments, validate_xyce_arguments, xyce_simulator_command
 
 
 RE_FLOAT = r"([-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?)"
@@ -122,6 +124,124 @@ def waveform_values(log_text, period):
     return high_time, low_time, duty_ratio, rise_time, fall_time
 
 
+def xyce_output_base(netlist_path):
+    return netlist_path.with_suffix("")
+
+
+def xyce_waveform_path(netlist_path):
+    return Path(f"{xyce_output_base(netlist_path)}.prn")
+
+
+def read_waveform_points(waveform_path):
+    if not waveform_path.exists():
+        return []
+
+    points = []
+    for line in waveform_path.read_text(encoding="utf-8", errors="replace").splitlines():
+        parts = line.split()
+        if len(parts) < 2:
+            continue
+        try:
+            if len(parts) >= 3:
+                time_s = float(parts[1])
+                value = float(parts[2])
+            else:
+                time_s = float(parts[0])
+                value = float(parts[1])
+        except ValueError:
+            continue
+        points.append((time_s, value))
+    return points
+
+
+def threshold_crossings(points, threshold, direction, meas_start_s):
+    prev_time = None
+    prev_value = None
+    crossings = []
+    for time_s, value in points:
+        if (
+            prev_time is not None
+            and prev_value is not None
+            and (
+                (direction == "rise" and prev_value < threshold <= value)
+                or (direction == "fall" and prev_value > threshold >= value)
+            )
+        ):
+            slope = value - prev_value
+            if slope != 0:
+                frac = (threshold - prev_value) / slope
+                crossing_s = prev_time + frac * (time_s - prev_time)
+                if crossing_s >= meas_start_s:
+                    crossings.append(crossing_s)
+        prev_time = time_s
+        prev_value = value
+    return crossings
+
+
+def xyce_waveform_values(waveform_path, meas_start_ns, mid_threshold=0.9):
+    points = read_waveform_points(waveform_path)
+    if not points:
+        return None, None, None, None, None, None
+
+    meas_start_s = meas_start_ns * 1.0e-9
+    rises_mid = threshold_crossings(points, mid_threshold, "rise", meas_start_s)
+    falls_mid = threshold_crossings(points, mid_threshold, "fall", meas_start_s)
+    rises_20 = threshold_crossings(points, 0.36, "rise", meas_start_s)
+    rises_80 = threshold_crossings(points, 1.44, "rise", meas_start_s)
+    falls_80 = threshold_crossings(points, 1.44, "fall", meas_start_s)
+    falls_20 = threshold_crossings(points, 0.36, "fall", meas_start_s)
+
+    period_s = None
+    periods = [
+        rise_b - rise_a
+        for rise_a, rise_b in zip(rises_mid, rises_mid[1:])
+        if rise_b > rise_a
+    ]
+    if periods:
+        period_s = sum(periods) / len(periods)
+
+    high_time = None
+    low_time = None
+    duty_ratio = None
+    high_times = []
+    low_times = []
+    if len(rises_mid) >= 2 and falls_mid:
+        for rise_a, rise_b in zip(rises_mid, rises_mid[1:]):
+            fall = next((item for item in falls_mid if rise_a < item < rise_b), None)
+            if fall is None:
+                continue
+            high_candidate = fall - rise_a
+            low_candidate = rise_b - fall
+            if high_candidate > 0 and low_candidate > 0:
+                high_times.append(high_candidate)
+                low_times.append(low_candidate)
+        if high_times and low_times:
+            high_time = sum(high_times) / len(high_times)
+            low_time = sum(low_times) / len(low_times)
+            duty_ratio = high_time / (high_time + low_time)
+
+    rise_time = None
+    rise_times = []
+    for lo in rises_20:
+        hi = next((item for item in rises_80 if item > lo), None)
+        if hi is not None:
+            rise_times.append(hi - lo)
+    if rise_times:
+        rise_time = sum(rise_times) / len(rise_times)
+
+    fall_time = None
+    fall_times = []
+    for hi in falls_80:
+        lo = next((item for item in falls_20 if item > hi), None)
+        if lo is not None:
+            fall_times.append(lo - hi)
+    if fall_times:
+        fall_time = sum(fall_times) / len(fall_times)
+
+    freq_hz = 1.0 / period_s if period_s else None
+    return period_s, freq_hz, high_time, low_time, duty_ratio, rise_time, fall_time
+
+
 def load_control_index(idx, load_index_min, load_index_max, load_control_map):
     if load_control_map == "physical-index":
         return idx
@@ -168,7 +288,13 @@ def monotonic_failures(rows, therm_invert):
         for prev, curr in zip(sorted_rows, sorted_rows[1:]):
             prev_freq = float(prev["freq_hz"])
             curr_freq = float(curr["freq_hz"])
-            if therm_invert:
+            prev_loads = int(prev["enabled_loads"])
+            curr_loads = int(curr["enabled_loads"])
+            if curr_loads == prev_loads:
+                tolerance = max(abs(prev_freq), abs(curr_freq), 1.0) * 1.0e-4
+                ok = abs(curr_freq - prev_freq) <= tolerance
+                relation = "hold"
+            elif curr_loads < prev_loads:
                 ok = curr_freq > prev_freq
                 relation = "increase"
             else:
@@ -189,34 +315,34 @@ def monotonic_failures(rows, therm_invert):
     return failures
 
 
-def load_cell_lines(idx, active, ring_node, load_style, cell_prefix, load_drive):
+def load_cell_lines(idx, active, ring_node, load_style, load_cell_prefix, load_drive):
     if load_style == "nand2":
         ctrl = "VDD" if active else "0"
         return [
             f"VCTRL{idx:03d} C{idx:03d} 0 {{{ctrl}}}",
             f"XLOAD{idx:03d} {ring_node} C{idx:03d} VGND VNB VPB VPWR "
-            f"LD{idx:03d} {cell_prefix}__nand2_{load_drive}",
+            f"LD{idx:03d} {load_cell_prefix}__nand2_{load_drive}",
         ]
     if load_style == "einvp":
         ctrl = "VDD" if active else "0"
         return [
             f"VCTRL{idx:03d} C{idx:03d} 0 {{{ctrl}}}",
             f"XLOAD{idx:03d} {ring_node} C{idx:03d} VGND VNB VPB VPWR "
-            f"LD{idx:03d} {cell_prefix}__einvp_1",
+            f"LD{idx:03d} {load_cell_prefix}__einvp_1",
         ]
     if load_style == "einvn":
         ctrl = "0" if active else "VDD"
         return [
             f"VCTRL{idx:03d} C{idx:03d} 0 {{{ctrl}}}",
             f"XLOAD{idx:03d} {ring_node} C{idx:03d} VGND VNB VPB VPWR "
-            f"LD{idx:03d} {cell_prefix}__einvn_1",
+            f"LD{idx:03d} {load_cell_prefix}__einvn_1",
         ]
     if load_style == "dlclkp":
         ctrl = "VDD" if active else "0"
         return [
             f"VCTRL{idx:03d} C{idx:03d} 0 {{{ctrl}}}",
             f"XLOAD{idx:03d} {ring_node} C{idx:03d} VGND VNB VPB VPWR "
-            f"LD{idx:03d} {cell_prefix}__dlclkp_1",
+            f"LD{idx:03d} {load_cell_prefix}__dlclkp_1",
         ]
     raise ValueError(f"unsupported load style: {load_style}")
 
@@ -331,6 +457,8 @@ def dco_netlist(
     ngspice_threads,
     load_style,
     std_cell_library,
+    load_std_cell_library,
+    simulator,
     topology,
     ring_stages,
     load_index_min,
@@ -352,12 +480,22 @@ def dco_netlist(
         / "spice"
         / f"{std_cell_library}.spice"
     )
+    load_cell_path = (
+        pdk_dir
+        / "libs.ref"
+        / load_std_cell_library
+        / "spice"
+        / f"{load_std_cell_library}.spice"
+    )
     cell_prefix = std_cell_library
+    load_cell_prefix = load_std_cell_library
 
     if not model_path.exists():
         raise FileNotFoundError(model_path)
     if not cell_path.exists():
         raise FileNotFoundError(cell_path)
+    if not load_cell_path.exists():
+        raise FileNotFoundError(load_cell_path)
 
     mirror_input = mirror_input_node(fixed_delay_cells)
     if topology == "mirror-coarse":
@@ -375,6 +513,7 @@ def dco_netlist(
         f"* load_style={load_style}",
         f"* load_control_map={load_control_map}",
         f"* std_cell_library={std_cell_library}",
+        f"* load_std_cell_library={load_std_cell_library}",
         f"* topology={topology}",
         f"* reset_source={reset_source}",
         f"* coarse_code={coarse_code}",
@@ -388,10 +527,23 @@ def dco_netlist(
         f"* output_buffer_drives={','.join(str(drive) for drive in output_buffer_drives)}",
         f"* load_drive={load_drive}",
         f"* fixed_delay_cells={fixed_delay_cells}",
-        *model_include_lines(model_path, corner),
+        f"* model_corner={corner}",
+        f"* simulator={simulator}",
+        *(
+            [f'.lib "{model_path}" {corner}']
+            if simulator == "xyce"
+            else model_include_lines(model_path, corner)
+        ),
         f'.include "{cell_path}"',
-        ".option method=gear reltol=1e-3 abstol=1e-15 chgtol=1e-16"
-        + (f" num_threads={ngspice_threads}" if ngspice_threads > 0 else ""),
+        *( [f'.include "{load_cell_path}"'] if load_cell_path != cell_path else [] ),
+        *(
+            [
+                ".option method=gear reltol=1e-3 abstol=1e-15 chgtol=1e-16"
+                + (f" num_threads={ngspice_threads}" if ngspice_threads > 0 else "")
+            ]
+            if simulator == "ngspice"
+            else []
+        ),
         ".param VDD=1.8",
         "VVPWR VPWR 0 {VDD}",
         "VVPB VPB 0 {VDD}",
@@ -468,7 +620,7 @@ def dco_netlist(
                 active=active,
                 ring_node=ring_node,
                 load_style=load_style,
-                cell_prefix=cell_prefix,
+                load_cell_prefix=load_cell_prefix,
                 load_drive=load_drive,
             )
         )
@@ -486,6 +638,9 @@ def dco_netlist(
             lines.append(f".ic v({node})={{{value}}}")
 
     tran_suffix = " uic" if initial_nodes else ""
+
+    if simulator == "xyce":
+        lines.extend(["", ".print tran v(PLLOUT)"])
 
     lines.extend(
         [
@@ -520,11 +675,22 @@ def dco_netlist(
 
 def dco_result_from_log(code, coarse_code, corner, args, netlist_path, log_path):
     log_text = log_path.read_text(encoding="utf-8", errors="replace")
-    period = measure_value(log_text, "period_s")
-    freq = measure_value(log_text, "freq_hz")
-    high_time, low_time, duty_ratio, rise_time, fall_time = waveform_values(
-        log_text, period
-    )
+    if args.simulator == "xyce":
+        (
+            period,
+            freq,
+            high_time,
+            low_time,
+            duty_ratio,
+            rise_time,
+            fall_time,
+        ) = xyce_waveform_values(xyce_waveform_path(netlist_path), args.meas_start_ns)
+    else:
+        period = measure_value(log_text, "period_s")
+        freq = measure_value(log_text, "freq_hz")
+        high_time, low_time, duty_ratio, rise_time, fall_time = waveform_values(
+            log_text, period
+        )
     status = (
         "pass"
         if period and freq and high_time and low_time and duty_ratio and rise_time and fall_time
@@ -533,8 +699,11 @@ def dco_result_from_log(code, coarse_code, corner, args, netlist_path, log_path)
     selected_tap = mirror_turn_cell(coarse_code) if args.topology == "mirror-coarse" else ""
     return {
         "corner": corner,
+        "simulator": args.simulator,
+        "xyce_mpi_procs": args.xyce_mpi_procs if args.simulator == "xyce" else "",
         "topology": args.topology,
         "std_cell_library": args.std_cell_library,
+        "load_std_cell_library": args.load_std_cell_library,
         "coarse_code": coarse_code,
         "selected_tap": selected_tap,
         "code": code,
@@ -558,6 +727,9 @@ def dco_result_from_log(code, coarse_code, corner, args, netlist_path, log_path)
         "load_drive": args.load_drive,
         "fixed_delay_cells": args.fixed_delay_cells,
         "status": status,
+        "returncode": "",
+        "timed_out": "",
+        "elapsed_s": "",
         "period_s": period or "",
         "freq_hz": freq or "",
         "freq_mhz": (freq / 1.0e6) if freq else "",
@@ -581,6 +753,8 @@ def existing_result_matches_request(netlist_path, code, coarse_code, corner, arg
         f"load_style={args.load_style}",
         f"load_control_map={args.load_control_map}",
         f"std_cell_library={args.std_cell_library}",
+        f"load_std_cell_library={args.load_std_cell_library}",
+        f"simulator={args.simulator}",
         f"topology={args.topology}",
         f"coarse_code={coarse_code}",
         f"ring_stages={args.ring_stages}",
@@ -596,8 +770,10 @@ def existing_result_matches_request(netlist_path, code, coarse_code, corner, arg
         f"model_corner={corner}",
         f".tran {args.step_ps}p {args.sim_time_ns}n uic",
     ]
-    if args.ngspice_threads > 0:
+    if args.simulator == "ngspice" and args.ngspice_threads > 0:
         required_snippets.append(f"num_threads={args.ngspice_threads}")
+    if args.simulator == "xyce":
+        required_snippets.append(".print tran v(PLLOUT)")
     if args.topology == "mirror-coarse":
         required_snippets.append("mirror_delay_style=turn-pass")
         required_snippets.append("reset_source=uic-active-path")
@@ -610,6 +786,50 @@ def existing_result_matches_request(netlist_path, code, coarse_code, corner, arg
     required_snippets.append("rise_time_same_s")
     required_snippets.append("fall_time_offset_s")
     return all(snippet in text for snippet in required_snippets)
+
+
+def simulator_command(args, netlist_path):
+    if args.simulator == "ngspice":
+        return [args.ngspice, "-b", str(netlist_path)]
+    if args.simulator == "xyce":
+        return xyce_simulator_command(args, netlist_path, xyce_output_base(netlist_path))
+    raise ValueError(f"unsupported simulator: {args.simulator}")
+
+
+def run_simulator(args, netlist_path, log_path):
+    start = time.monotonic()
+    env = os.environ.copy()
+    if args.simulator == "ngspice" and args.ngspice_threads > 0:
+        env["OMP_NUM_THREADS"] = str(args.ngspice_threads)
+    model_dir = (
+        Path(args.pdk_root).expanduser().resolve()
+        / args.pdk
+        / "libs.tech"
+        / "ngspice"
+    )
+    proc = subprocess.Popen(
+        simulator_command(args, netlist_path),
+        cwd=model_dir,
+        env=env,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+    )
+    timed_out = False
+    try:
+        stdout, _ = proc.communicate(timeout=args.timeout_s)
+    except subprocess.TimeoutExpired:
+        timed_out = True
+        proc.kill()
+        stdout, _ = proc.communicate()
+    elapsed_s = time.monotonic() - start
+    if timed_out:
+        stdout += (
+            f"\nOpenPLL timeout: killed {args.simulator} after {args.timeout_s:.1f} s "
+            f"for {netlist_path.name}\n"
+        )
+    log_path.write_text(stdout, encoding="utf-8")
+    return proc.returncode, timed_out, elapsed_s, stdout
 
 
 def run_one(code, coarse_code, corner, args, build_dir):
@@ -643,6 +863,8 @@ def run_one(code, coarse_code, corner, args, build_dir):
             ngspice_threads=args.ngspice_threads,
             load_style=args.load_style,
             std_cell_library=args.std_cell_library,
+            load_std_cell_library=args.load_std_cell_library,
+            simulator=args.simulator,
             topology=args.topology,
             ring_stages=args.ring_stages,
             load_index_min=args.load_index_min,
@@ -658,34 +880,28 @@ def run_one(code, coarse_code, corner, args, build_dir):
         encoding="ascii",
     )
 
-    env = os.environ.copy()
-    if args.ngspice_threads > 0:
-        env["OMP_NUM_THREADS"] = str(args.ngspice_threads)
-    model_dir = (
-        Path(args.pdk_root).expanduser().resolve()
-        / args.pdk
-        / "libs.tech"
-        / "ngspice"
-    )
-    proc = subprocess.run(
-        [args.ngspice, "-b", str(netlist_path)],
-        cwd=model_dir,
-        env=env,
-        text=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        check=False,
-    )
-    log_path.write_text(proc.stdout, encoding="utf-8")
+    returncode, timed_out, elapsed_s, log_text = run_simulator(args, netlist_path, log_path)
 
-    period = measure_value(proc.stdout, "period_s")
-    freq = measure_value(proc.stdout, "freq_hz")
-    high_time, low_time, duty_ratio, rise_time, fall_time = waveform_values(
-        proc.stdout, period
-    )
+    if args.simulator == "xyce":
+        (
+            period,
+            freq,
+            high_time,
+            low_time,
+            duty_ratio,
+            rise_time,
+            fall_time,
+        ) = xyce_waveform_values(xyce_waveform_path(netlist_path), args.meas_start_ns)
+    else:
+        period = measure_value(log_text, "period_s")
+        freq = measure_value(log_text, "freq_hz")
+        high_time, low_time, duty_ratio, rise_time, fall_time = waveform_values(
+            log_text, period
+        )
     status = (
         "pass"
-        if proc.returncode == 0
+        if returncode == 0
+        and not timed_out
         and period
         and freq
         and high_time
@@ -698,8 +914,11 @@ def run_one(code, coarse_code, corner, args, build_dir):
     selected_tap = mirror_turn_cell(coarse_code) if args.topology == "mirror-coarse" else ""
     return {
         "corner": corner,
+        "simulator": args.simulator,
+        "xyce_mpi_procs": args.xyce_mpi_procs if args.simulator == "xyce" else "",
         "topology": args.topology,
         "std_cell_library": args.std_cell_library,
+        "load_std_cell_library": args.load_std_cell_library,
         "coarse_code": coarse_code,
         "selected_tap": selected_tap,
         "code": code,
@@ -723,6 +942,9 @@ def run_one(code, coarse_code, corner, args, build_dir):
         "load_drive": args.load_drive,
         "fixed_delay_cells": args.fixed_delay_cells,
         "status": status,
+        "returncode": returncode,
+        "timed_out": int(timed_out),
+        "elapsed_s": elapsed_s,
         "period_s": period or "",
         "freq_hz": freq or "",
         "freq_mhz": (freq / 1.0e6) if freq else "",
@@ -751,6 +973,14 @@ def main():
         default=os.environ.get("STD_CELL_LIBRARY", "sky130_fd_sc_hd"),
         help="Sky130 standard-cell library used for generated transistor DCO decks.",
     )
+    parser.add_argument(
+        "--load-std-cell-library",
+        default=None,
+        help=(
+            "Sky130 standard-cell library used only for thermometer load cells. "
+            "Defaults to --std-cell-library."
+        ),
+    )
     parser.add_argument("--corner", default="tt")
     parser.add_argument(
         "--corners",
@@ -769,7 +999,7 @@ def main():
         "--jobs",
         type=int,
         default=1,
-        help="Number of parallel ngspice jobs to run.",
+        help="Number of independent simulator decks to run in parallel.",
     )
     parser.add_argument(
         "--coarse-codes",
@@ -864,6 +1094,19 @@ def main():
     )
     parser.add_argument("--ngspice", default=shutil.which("ngspice") or "ngspice")
     parser.add_argument(
+        "--simulator",
+        choices=("ngspice", "xyce"),
+        default="ngspice",
+        help="Circuit simulator for generated DCO decks.",
+    )
+    add_xyce_arguments(parser)
+    parser.add_argument(
+        "--timeout-s",
+        type=float,
+        default=600.0,
+        help="Per-deck simulator timeout in seconds.",
+    )
+    parser.add_argument(
         "--ngspice-threads",
         type=int,
         default=int(os.environ.get("NGSPICE_THREADS", "0")),
@@ -879,6 +1122,9 @@ def main():
         default=str(Path(__file__).resolve().parents[1] / "build" / "spice"),
     )
     args = parser.parse_args()
+    validate_xyce_arguments(args)
+    if args.load_std_cell_library is None:
+        args.load_std_cell_library = args.std_cell_library
     args.output_buffer_drives = parse_drive_list(args.output_buffer_drives)
     args.output_buffer_drives_text = ",".join(str(drive) for drive in args.output_buffer_drives)
 
@@ -892,6 +1138,8 @@ def main():
     build_dir.mkdir(parents=True, exist_ok=True)
     if args.jobs < 1:
         raise ValueError("--jobs must be at least 1")
+    if args.timeout_s <= 0:
+        raise ValueError("--timeout-s must be positive")
     if args.ngspice_threads < 0:
         raise ValueError("--ngspice-threads must be non-negative")
     if args.meas_start_ns < 0 or args.meas_start_ns >= args.sim_time_ns:
@@ -918,6 +1166,8 @@ def main():
     allowed_scls = {"sky130_fd_sc_hd", "sky130_fd_sc_hs"}
     if args.std_cell_library not in allowed_scls:
         raise ValueError(f"--std-cell-library must be one of {sorted(allowed_scls)}")
+    if args.load_std_cell_library not in allowed_scls:
+        raise ValueError(f"--load-std-cell-library must be one of {sorted(allowed_scls)}")
     if (
         args.load_index_min < 0
         or args.load_index_max > 254
@@ -963,8 +1213,11 @@ def main():
             csv_file,
             fieldnames=[
                 "corner",
+                "simulator",
+                "xyce_mpi_procs",
                 "topology",
                 "std_cell_library",
+                "load_std_cell_library",
                 "coarse_code",
                 "selected_tap",
                 "code",
@@ -982,6 +1235,9 @@ def main():
                 "load_drive",
                 "fixed_delay_cells",
                 "status",
+                "returncode",
+                "timed_out",
+                "elapsed_s",
                 "period_s",
                 "freq_hz",
                 "freq_mhz",

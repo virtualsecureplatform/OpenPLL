@@ -60,6 +60,8 @@ module tb_pll_25mhz_configured_wrapper;
         input [7:0] expected_ratio;
         input [5:0] expected_coarse_code;
         input [7:0] expected_dco_code;
+        input [7:0] expected_ki;
+        input [4:0] expected_kp;
         input expected_valid;
         begin
             if (dut.hard_macro.DLF_En !== expected_dlf_en)
@@ -72,12 +74,12 @@ module tb_pll_25mhz_configured_wrapper;
                 $fatal(1, "%0s hard macro DLF_Ext_Override should remain low", label);
             if (dut.hard_macro.DLF_IN_POL !== 1'b1)
                 $fatal(1, "%0s hard macro DLF_IN_POL should remain high", label);
-            if (dut.hard_macro.DLF_KI !== 8'd16)
-                $fatal(1, "%0s hard macro DLF_KI mismatch: got %0d expected 16",
-                       label, dut.hard_macro.DLF_KI);
-            if (dut.hard_macro.DLF_KP !== 8'd4)
-                $fatal(1, "%0s hard macro DLF_KP mismatch: got %0d expected 4",
-                       label, dut.hard_macro.DLF_KP);
+            if (dut.hard_macro.DLF_KI !== expected_ki)
+                $fatal(1, "%0s hard macro DLF_KI mismatch: got %0d expected %0d",
+                       label, dut.hard_macro.DLF_KI, expected_ki);
+            if (dut.hard_macro.DLF_KP !== expected_kp)
+                $fatal(1, "%0s hard macro DLF_KP mismatch: got %0d expected %0d",
+                       label, dut.hard_macro.DLF_KP, expected_kp);
             if (dut.hard_macro.MMDCLKDIV_RATIO !== expected_ratio)
                 $fatal(1, "%0s hard macro divider mismatch: got %0d expected %0d",
                        label, dut.hard_macro.MMDCLKDIV_RATIO, expected_ratio);
@@ -105,6 +107,8 @@ module tb_pll_25mhz_configured_wrapper;
         input [7:0] expected_ratio;
         input [5:0] expected_coarse_code;
         input [7:0] expected_dco_code;
+        input [7:0] expected_ki;
+        input [4:0] expected_kp;
         begin
             feedback_divider = divider;
             pll_enable = 1'b1;
@@ -115,23 +119,27 @@ module tb_pll_25mhz_configured_wrapper;
                        divider, config_busy, tracking);
             check_hard_macro_inputs("first load edge", 1'b0, 1'b1,
                                     expected_target_mhz, expected_ratio,
-                                    expected_coarse_code, expected_dco_code, 1'b1);
+                                    expected_coarse_code, expected_dco_code,
+                                    expected_ki, expected_kp, 1'b1);
 
             tick();
             check_hard_macro_inputs("second load edge", 1'b0, 1'b1,
                                     expected_target_mhz, expected_ratio,
-                                    expected_coarse_code, expected_dco_code, 1'b1);
+                                    expected_coarse_code, expected_dco_code,
+                                    expected_ki, expected_kp, 1'b1);
             tick();
             check_hard_macro_inputs("third load edge", 1'b0, 1'b1,
                                     expected_target_mhz, expected_ratio,
-                                    expected_coarse_code, expected_dco_code, 1'b1);
+                                    expected_coarse_code, expected_dco_code,
+                                    expected_ki, expected_kp, 1'b1);
             tick();
             if (config_busy !== 1'b0 || tracking !== 1'b1)
                 $fatal(1, "divider %0d track status busy=%0b tracking=%0b",
                        divider, config_busy, tracking);
             check_hard_macro_inputs("track edge", 1'b1, 1'b0,
                                     expected_target_mhz, expected_ratio,
-                                    expected_coarse_code, expected_dco_code, 1'b1);
+                                    expected_coarse_code, expected_dco_code,
+                                    expected_ki, expected_kp, 1'b1);
             if (pllout_div !== 1'b1)
                 $fatal(1, "divider %0d stub PLLOUT_DIV should show tracking enable", divider);
         end
@@ -148,7 +156,8 @@ module tb_pll_25mhz_configured_wrapper;
                 $fatal(1, "invalid divider first edge status busy=%0b tracking=%0b",
                        config_busy, tracking);
             check_hard_macro_inputs("invalid first edge", 1'b0, 1'b0,
-                                    16'd0, {3'd0, divider}, 6'd0, 8'd0, 1'b0);
+                                    16'd0, {3'd0, divider}, 6'd0, 8'd0,
+                                    8'd16, 5'd4, 1'b0);
 
             tick();
             tick();
@@ -157,57 +166,41 @@ module tb_pll_25mhz_configured_wrapper;
                 $fatal(1, "invalid divider held status busy=%0b tracking=%0b",
                        config_busy, tracking);
             check_hard_macro_inputs("invalid held", 1'b0, 1'b0,
-                                    16'd0, {3'd0, divider}, 6'd0, 8'd0, 1'b0);
+                                    16'd0, {3'd0, divider}, 6'd0, 8'd0,
+                                    8'd16, 5'd4, 1'b0);
         end
     endtask
 
     initial begin
         reset_n = 1'b0;
         pll_enable = 1'b0;
-        feedback_divider = 5'd4;
+        feedback_divider = 5'd20;
 
         repeat (2) @(posedge ref_clk);
         #1;
         if (config_busy !== 1'b0 || tracking !== 1'b0)
             $fatal(1, "reset status mismatch busy=%0b tracking=%0b",
                    config_busy, tracking);
-        check_hard_macro_inputs("reset", 1'b0, 1'b0, 16'd100, 8'd4, 6'd20, 8'd93, 1'b1);
+        check_hard_macro_inputs("reset", 1'b0, 1'b0, 16'd500, 8'd20,
+                                6'd1, 8'd121, 8'd16, 5'd5, 1'b1);
 
         reset_n = 1'b1;
-        load_and_track_divider(5'd4, 16'd100, 8'd4, 6'd20, 8'd93);
-
-        feedback_divider = 5'd10;
-        #1;
-        check_hard_macro_inputs("before 250 MHz reload", 1'b1, 1'b0,
-                                16'd100, 8'd4, 6'd20, 8'd93, 1'b1);
-        load_and_track_divider(5'd10, 16'd250, 8'd10, 6'd6, 8'd234);
-
-        feedback_divider = 5'd12;
-        #1;
-        check_hard_macro_inputs("before 300 MHz reload", 1'b1, 1'b0,
-                                16'd250, 8'd10, 6'd6, 8'd234, 1'b1);
-        load_and_track_divider(5'd12, 16'd300, 8'd12, 6'd4, 8'd90);
-
-        feedback_divider = 5'd16;
-        #1;
-        check_hard_macro_inputs("before 400 MHz reload", 1'b1, 1'b0,
-                                16'd300, 8'd12, 6'd4, 8'd90, 1'b1);
-        load_and_track_divider(5'd16, 16'd400, 8'd16, 6'd2, 8'd76);
-
-        feedback_divider = 5'd20;
-        #1;
-        check_hard_macro_inputs("before 500 MHz reload", 1'b1, 1'b0,
-                                16'd400, 8'd16, 6'd2, 8'd76, 1'b1);
-        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121);
+        load_and_track_divider(5'd4, 16'd100, 8'd4, 6'd20, 8'd93, 8'd16, 5'd8);
+        load_and_track_divider(5'd10, 16'd250, 8'd10, 6'd6, 8'd234, 8'd16, 5'd8);
+        load_and_track_divider(5'd12, 16'd300, 8'd12, 6'd4, 8'd90, 8'd16, 5'd2);
+        load_and_track_divider(5'd16, 16'd400, 8'd16, 6'd2, 8'd76, 8'd1, 5'd4);
+        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121, 8'd16, 5'd5);
 
         pll_enable = 1'b0;
         tick();
         if (config_busy !== 1'b0 || tracking !== 1'b0)
             $fatal(1, "disabled status mismatch busy=%0b tracking=%0b",
                    config_busy, tracking);
-        check_hard_macro_inputs("disabled", 1'b0, 1'b0, 16'd500, 8'd20, 6'd1, 8'd121, 1'b1);
+        check_hard_macro_inputs("disabled", 1'b0, 1'b0, 16'd500, 8'd20,
+                                6'd1, 8'd121, 8'd16, 5'd5, 1'b1);
 
         load_invalid_divider(5'd5);
+        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121, 8'd16, 5'd5);
 
         $display("PASS: 25 MHz configured wrapper divider sequencing");
         $finish;

@@ -232,7 +232,7 @@ def static_netlist(case_name, args, instances, subckt_ports):
         *source_bit_lines("bbpd_decision", 2, case["bbpd"]),
         *source_bit_lines("DLF_Ext_Data", 10, case["start_dlf"]),
         *source_bit_lines("DLF_KI", 8, args.ki),
-        *source_bit_lines("DLF_KP", 8, args.kp),
+        *source_bit_lines("DLF_KP", 5, args.kp),
         *source_bit_lines("COARSEBINARY_CODE", 4, 5),
         *source_bit_lines("MMDCLKDIV_RATIO", 8, args.mmd_ratio),
         *source_internal_bits("loop_filter.integ_acc", 19, expected["start_acc"]),
@@ -385,7 +385,7 @@ def main():
         | {bit_net("bbpd_decision", index) for index in range(2)}
         | {bit_net("DLF_Ext_Data", index) for index in range(10)}
         | {bit_net("DLF_KI", index) for index in range(8)}
-        | {bit_net("DLF_KP", index) for index in range(8)}
+        | {bit_net("DLF_KP", index) for index in range(5)}
         | {bit_net("MMDCLKDIV_RATIO", index) for index in range(8)}
         | {bit_net("COARSEBINARY_CODE", index) for index in range(4)}
         | {integ_acc_net(index) for index in range(19)}

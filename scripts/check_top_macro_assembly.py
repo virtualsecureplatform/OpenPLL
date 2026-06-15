@@ -32,7 +32,7 @@ EXPECTED = {
             + bus("BBPD", 2)
             + bus("DLF_Ext_Data", 10)
             + bus("DLF_KI", 8)
-            + bus("DLF_KP", 8)
+            + bus("DLF_KP", 5)
             + bus("COARSEBINARY_CODE", 4)
             + bus("MMDCLKDIV_RATIO", 8)
         ),

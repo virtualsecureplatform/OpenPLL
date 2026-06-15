@@ -6,6 +6,7 @@ module IntegerPLL_DLF #(
     parameter CODE_WIDTH = 10,
     parameter FRAC_WIDTH = 8,
     parameter GAIN_WIDTH = 8,
+    parameter KP_WIDTH = 5,
     parameter DCO_CODE_WIDTH = 8,
     parameter ACQ_BOOST_SHIFT = 0,
     parameter ACQ_BOOST_AFTER = 3,
@@ -23,7 +24,7 @@ module IntegerPLL_DLF #(
     input wire DLF_IN_POL,
     input wire [CODE_WIDTH-1:0] DLF_Ext_Data,
     input wire [GAIN_WIDTH-1:0] DLF_KI,
-    input wire [GAIN_WIDTH-1:0] DLF_KP,
+    input wire [KP_WIDTH-1:0] DLF_KP,
     input wire [1:0] BBPD,
     output wire [4:0] Medium_BINARY_CODE,
     output wire [4:0] Fine_BINARY_CODE,
@@ -42,7 +43,7 @@ module IntegerPLL_DLF #(
         {(ACC_WIDTH + 1){1'b0}};
     localparam signed [ACC_WIDTH:0] ACC_MAX_WIDE =
         {1'b0, ACC_MAX};
-    localparam integer KP_PAD_WIDTH = ACC_WIDTH - GAIN_WIDTH - FRAC_WIDTH;
+    localparam integer KP_PAD_WIDTH = ACC_WIDTH - KP_WIDTH - FRAC_WIDTH;
     localparam integer DCO_CODE_SHIFT = CODE_WIDTH - DCO_CODE_WIDTH;
     localparam integer ACQ_COUNT_WIDTH = 4;
     localparam [ACQ_COUNT_WIDTH-1:0] ACQ_BOOST_AFTER_COUNT = ACQ_BOOST_AFTER;

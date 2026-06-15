@@ -12,7 +12,7 @@ module tb_pll_top_model;
     reg dlf_in_pol;
     reg [9:0] dlf_ext_data;
     reg [7:0] dlf_ki;
-    reg [7:0] dlf_kp;
+    reg [4:0] dlf_kp;
     reg [3:0] coarse_code;
     reg [7:0] mmd_ratio;
 
@@ -76,7 +76,7 @@ module tb_pll_top_model;
         dlf_in_pol = 1'b1;
         dlf_ext_data = 10'd512;
         dlf_ki = 8'd16;
-        dlf_kp = 8'd0;
+        dlf_kp = 5'd0;
         coarse_code = 4'd5;
         mmd_ratio = 8'd10;
         pllo_edges = 0;

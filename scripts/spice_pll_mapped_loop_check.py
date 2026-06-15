@@ -1116,7 +1116,7 @@ def mapped_loop_netlist(case_name, args, instances, subckt_ports):
         "* Static control words.",
         *source_bit_lines("DLF_Ext_Data", 10, case["start_dlf"]),
         *source_bit_lines("DLF_KI", 8, args.ki),
-        *source_bit_lines("DLF_KP", 8, args.kp),
+        *source_bit_lines("DLF_KP", 5, args.kp),
         *source_bit_lines("COARSEBINARY_CODE", 4, args.coarse_code),
         *source_bit_lines("MMDCLKDIV_RATIO", 8, args.ndiv),
         "",

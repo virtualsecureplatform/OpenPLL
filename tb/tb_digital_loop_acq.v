@@ -29,7 +29,7 @@ module tb_digital_loop_acq #(
     reg dlf_in_pol;
     reg [9:0] dlf_ext_data;
     reg [7:0] dlf_ki;
-    reg [7:0] dlf_kp;
+    reg [4:0] dlf_kp;
     reg [3:0] coarse_code;
     reg [7:0] mmd_ratio;
 
@@ -171,7 +171,7 @@ module tb_digital_loop_acq #(
             dlf_in_pol = 1'b1;
             dlf_ext_data = init_code;
             dlf_ki = cfg_ki[7:0];
-            dlf_kp = cfg_kp[7:0];
+            dlf_kp = cfg_kp[4:0];
             coarse_code = cfg_coarse_code[3:0];
             mmd_ratio = MMD_RATIO[7:0];
 
@@ -270,7 +270,7 @@ module tb_digital_loop_acq #(
             cfg_coarse_code = 5;
 
         dlf_ki = cfg_ki[7:0];
-        dlf_kp = cfg_kp[7:0];
+        dlf_kp = cfg_kp[4:0];
         coarse_code = cfg_coarse_code[3:0];
         mmd_ratio = MMD_RATIO[7:0];
 

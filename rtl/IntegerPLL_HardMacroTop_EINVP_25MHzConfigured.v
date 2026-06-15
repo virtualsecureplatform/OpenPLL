@@ -34,7 +34,7 @@ module IntegerPLL_HardMacroTop_EINVP_25MHzConfigured #(
     wire dlf_in_pol;
     wire [9:0] dlf_ext_data;
     wire [7:0] dlf_ki;
-    wire [7:0] dlf_kp;
+    wire [4:0] dlf_kp;
     wire [5:0] coarse_code;
     wire [7:0] mmd_ratio;
     wire pllo_internal;

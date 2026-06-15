@@ -17,7 +17,7 @@ module IntegerPLL_HardMacroTop_EINVP (
     input wire DLF_IN_POL,
     input wire [9:0] DLF_Ext_Data,
     input wire [7:0] DLF_KI,
-    input wire [7:0] DLF_KP,
+    input wire [4:0] DLF_KP,
     input wire [5:0] COARSEBINARY_CODE,
     input wire [7:0] MMDCLKDIV_RATIO,
     output wire PLLOUT,

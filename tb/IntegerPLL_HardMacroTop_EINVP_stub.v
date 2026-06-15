@@ -17,7 +17,7 @@ module IntegerPLL_HardMacroTop_EINVP (
     input wire DLF_IN_POL,
     input wire [9:0] DLF_Ext_Data,
     input wire [7:0] DLF_KI,
-    input wire [7:0] DLF_KP,
+    input wire [4:0] DLF_KP,
     input wire [5:0] COARSEBINARY_CODE,
     input wire [7:0] MMDCLKDIV_RATIO,
     output wire PLLOUT,
@@ -33,7 +33,7 @@ module IntegerPLL_HardMacroTop_EINVP (
     assign CLKDIV_RETIMED = REF && (MMDCLKDIV_RATIO != 8'd0);
     assign BBPD_CODE = DLF_Ext_Override ? 2'b00 : {DLF_IN_POL, DLF_En};
     assign DCO_CODE = DLF_Ext_Data[9:2] ^ {2'b00, COARSEBINARY_CODE};
-    assign DLF_CODE = DLF_Ext_Data ^ {DLF_KI[3:0], DLF_KP[5:0]};
+    assign DLF_CODE = DLF_Ext_Data ^ {DLF_KI[4:0], DLF_KP};
 
 endmodule
 

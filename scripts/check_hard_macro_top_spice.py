@@ -41,7 +41,7 @@ def expected_top_ports(coarse_binary_width):
         "DLF_Ext_Override",
         "DLF_IN_POL",
         *(bit_net("DLF_KI", index) for index in range(8)),
-        *(bit_net("DLF_KP", index) for index in range(8)),
+        *(bit_net("DLF_KP", index) for index in range(5)),
         *(bit_net("MMDCLKDIV_RATIO", index) for index in range(8)),
         "PLLOUT",
         "PLLOUT_DIV",
@@ -234,7 +234,7 @@ def check_spice_interface(spice_path, spef_path, top, dco_subckt):
         ("DCO_CODE", 8),
         ("DLF_Ext_Data", 10),
         ("DLF_KI", 8),
-        ("DLF_KP", 8),
+        ("DLF_KP", 5),
         ("MMDCLKDIV_RATIO", 8),
     ):
         for index in range(width):

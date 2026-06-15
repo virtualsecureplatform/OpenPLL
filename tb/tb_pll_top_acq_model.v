@@ -26,7 +26,7 @@ module tb_pll_top_acq_model #(
     reg dlf_in_pol;
     reg [9:0] dlf_ext_data;
     reg [7:0] dlf_ki;
-    reg [7:0] dlf_kp;
+    reg [4:0] dlf_kp;
     reg [3:0] coarse_code;
     reg [7:0] mmd_ratio;
 
@@ -132,7 +132,7 @@ module tb_pll_top_acq_model #(
             dlf_in_pol = 1'b1;
             dlf_ext_data = init_code;
             dlf_ki = cfg_ki[7:0];
-            dlf_kp = cfg_kp[7:0];
+            dlf_kp = cfg_kp[4:0];
             coarse_code = cfg_coarse_code[3:0];
             mmd_ratio = cfg_mmd_ratio[7:0];
 
@@ -259,7 +259,7 @@ module tb_pll_top_acq_model #(
         ref_half_ns = cfg_ref_half_ps / 1000.0;
         ref_mhz = 1000000.0 / (2.0 * cfg_ref_half_ps);
         dlf_ki = cfg_ki[7:0];
-        dlf_kp = cfg_kp[7:0];
+        dlf_kp = cfg_kp[4:0];
         coarse_code = cfg_coarse_code[3:0];
         mmd_ratio = cfg_mmd_ratio[7:0];
 

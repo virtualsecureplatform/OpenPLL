@@ -13,11 +13,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 EXPECTED_TARGETS = {
-    100: {"multiplier": 4, "coarse_code": 20, "target_code": 93},
-    250: {"multiplier": 10, "coarse_code": 6, "target_code": 234},
-    300: {"multiplier": 12, "coarse_code": 4, "target_code": 90},
-    400: {"multiplier": 16, "coarse_code": 2, "target_code": 76},
-    500: {"multiplier": 20, "coarse_code": 1, "target_code": 121},
+    100: {"multiplier": 4, "coarse_code": 20, "target_code": 93, "ki": 16, "kp": 8},
+    250: {"multiplier": 10, "coarse_code": 6, "target_code": 234, "ki": 16, "kp": 8},
+    300: {"multiplier": 12, "coarse_code": 4, "target_code": 90, "ki": 16, "kp": 2},
+    400: {"multiplier": 16, "coarse_code": 2, "target_code": 76, "ki": 1, "kp": 4},
+    500: {"multiplier": 20, "coarse_code": 1, "target_code": 121, "ki": 16, "kp": 5},
 }
 
 NEARSEED_MIN_RISES = {
@@ -167,7 +167,7 @@ def check_mode_config(root: Path) -> dict[str, object]:
         "DLF_Ext_Data = seed_word(8'd121)",
         "CONFIG_VALID = 1'b0",
         "DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16}",
-        "DLF_KP = {{(GAIN_WIDTH-3){1'b0}}, 3'd4}",
+        "DLF_KP = {{(KP_WIDTH-3){1'b0}}, 3'd4}",
     )
     missing = [fragment for fragment in fragments if fragment not in text]
     if missing:
@@ -176,15 +176,18 @@ def check_mode_config(root: Path) -> dict[str, object]:
         "rtl": artifact_text(path),
         "external_control": "FEEDBACK_DIVIDER[4:0]",
         "supported_dividers": [
-            {"feedback_divider": 4, "target_mhz": 100, "coarse_code": 20, "target_code": 93},
-            {"feedback_divider": 10, "target_mhz": 250, "coarse_code": 6, "target_code": 234},
-            {"feedback_divider": 12, "target_mhz": 300, "coarse_code": 4, "target_code": 90},
-            {"feedback_divider": 16, "target_mhz": 400, "coarse_code": 2, "target_code": 76},
-            {"feedback_divider": 20, "target_mhz": 500, "coarse_code": 1, "target_code": 121},
+            {
+                "feedback_divider": expected["multiplier"],
+                "target_mhz": target_mhz,
+                "coarse_code": expected["coarse_code"],
+                "target_code": expected["target_code"],
+                "ki": expected["ki"],
+                "kp": expected["kp"],
+            }
+            for target_mhz, expected in EXPECTED_TARGETS.items()
         ],
         "invalid_divider_behavior": "CONFIG_VALID=0 and tracking disabled",
-        "ki": 16,
-        "kp": 4,
+        "gain_policy": "per-mode KI/KP",
         "dlf_seed": "target_code << 2 for CODE_WIDTH=10",
     }
 
@@ -431,8 +434,9 @@ def check_target_results(path: Path, args: argparse.Namespace) -> list[dict[str,
             for item in row.get("passing_gains", "").split(";")
             if item.strip()
         }
-        if "ki16_kp4" not in passing_gains:
-            raise ValueError(f"target {target_mhz} missing promoted gain ki16_kp4: {row}")
+        required_gain = f"ki{expected['ki']}_kp{expected['kp']}"
+        if required_gain not in passing_gains:
+            raise ValueError(f"target {target_mhz} missing promoted gain {required_gain}: {row}")
         for key in ("low_duty_ratio", "high_duty_ratio"):
             duty = to_float(row, key)
             if duty < args.min_duty_ratio or duty > args.max_duty_ratio:
@@ -454,6 +458,7 @@ def check_target_results(path: Path, args: argparse.Namespace) -> list[dict[str,
                 "target_code": expected["target_code"],
                 "selection": row.get("selection", ""),
                 "target_code_est": to_float(row, "target_code_est"),
+                "required_gain": required_gain,
                 "passing_gains": sorted(passing_gains),
             }
         )
@@ -468,13 +473,14 @@ def check_tracking_summary(path: Path, args: argparse.Namespace) -> list[dict[st
             row
             for row in rows
             if int(round(to_float(row, "target_mhz"))) == target_mhz
-            and to_int(row, "ki") == 16
-            and to_int(row, "kp") == 4
+            and to_int(row, "ki") == expected["ki"]
+            and to_int(row, "kp") == expected["kp"]
         ]
         expects = {row.get("expect"): row for row in target_rows}
         if set(expects) != {"increase", "decrease"}:
             raise ValueError(
-                f"{artifact_text(path)} target {target_mhz} lacks low/high ki16_kp4 rows"
+                f"{artifact_text(path)} target {target_mhz} lacks low/high "
+                f"ki{expected['ki']}_kp{expected['kp']} rows"
             )
         for expect, row in sorted(expects.items()):
             if row.get("target_pass") != "1":

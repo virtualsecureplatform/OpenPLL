@@ -8,7 +8,7 @@ module tb_pll_25mhz_mode_config;
     wire [5:0] coarse_code;
     wire [9:0] dlf_ext_data;
     wire [7:0] dlf_ki;
-    wire [7:0] dlf_kp;
+    wire [4:0] dlf_kp;
     wire [15:0] target_mhz;
     wire [7:0] target_dco_code;
     wire config_valid;
@@ -31,6 +31,8 @@ module tb_pll_25mhz_mode_config;
         input [7:0] expected_ratio;
         input [5:0] expected_coarse_code;
         input [7:0] expected_dco_code;
+        input [7:0] expected_ki;
+        input [4:0] expected_kp;
         input expected_valid;
         begin
             feedback_divider = divider;
@@ -50,12 +52,12 @@ module tb_pll_25mhz_mode_config;
             if (dlf_ext_data !== (expected_valid ? {expected_dco_code, 2'b00} : 10'd0))
                 $fatal(1, "DLF seed mismatch for divider %0d: got %0d",
                        divider, dlf_ext_data);
-            if (dlf_ki !== 8'd16)
-                $fatal(1, "KI mismatch for divider %0d: got %0d expected 16",
-                       divider, dlf_ki);
-            if (dlf_kp !== 8'd4)
-                $fatal(1, "KP mismatch for divider %0d: got %0d expected 4",
-                       divider, dlf_kp);
+            if (dlf_ki !== expected_ki)
+                $fatal(1, "KI mismatch for divider %0d: got %0d expected %0d",
+                       divider, dlf_ki, expected_ki);
+            if (dlf_kp !== expected_kp)
+                $fatal(1, "KP mismatch for divider %0d: got %0d expected %0d",
+                       divider, dlf_kp, expected_kp);
             if (config_valid !== expected_valid)
                 $fatal(1, "CONFIG_VALID mismatch for divider %0d: got %0b expected %0b",
                        divider, config_valid, expected_valid);
@@ -63,12 +65,12 @@ module tb_pll_25mhz_mode_config;
     endtask
 
     initial begin
-        check_divider(5'd4, 16'd100, 8'd4, 6'd20, 8'd93, 1'b1);
-        check_divider(5'd10, 16'd250, 8'd10, 6'd6, 8'd234, 1'b1);
-        check_divider(5'd12, 16'd300, 8'd12, 6'd4, 8'd90, 1'b1);
-        check_divider(5'd16, 16'd400, 8'd16, 6'd2, 8'd76, 1'b1);
-        check_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121, 1'b1);
-        check_divider(5'd5, 16'd0, 8'd5, 6'd0, 8'd0, 1'b0);
+        check_divider(5'd4, 16'd100, 8'd4, 6'd20, 8'd93, 8'd16, 5'd8, 1'b1);
+        check_divider(5'd10, 16'd250, 8'd10, 6'd6, 8'd234, 8'd16, 5'd8, 1'b1);
+        check_divider(5'd12, 16'd300, 8'd12, 6'd4, 8'd90, 8'd16, 5'd2, 1'b1);
+        check_divider(5'd16, 16'd400, 8'd16, 6'd2, 8'd76, 8'd1, 5'd4, 1'b1);
+        check_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121, 8'd16, 5'd5, 1'b1);
+        check_divider(5'd5, 16'd0, 8'd5, 6'd0, 8'd0, 8'd16, 5'd4, 1'b0);
         $display("PASS: 25 MHz PLL divider configuration table");
         $finish;
     end

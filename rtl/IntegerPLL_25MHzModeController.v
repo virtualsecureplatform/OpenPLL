@@ -6,6 +6,7 @@ module IntegerPLL_25MHzModeController #(
     parameter CODE_WIDTH = 10,
     parameter DCO_CODE_WIDTH = 8,
     parameter GAIN_WIDTH = 8,
+    parameter KP_WIDTH = 5,
     parameter FEEDBACK_DIVIDER_WIDTH = 5,
     parameter CLEAR_CYCLES = 4
 ) (
@@ -19,7 +20,7 @@ module IntegerPLL_25MHzModeController #(
     output wire DLF_IN_POL,
     output wire [CODE_WIDTH-1:0] DLF_Ext_Data,
     output wire [GAIN_WIDTH-1:0] DLF_KI,
-    output wire [GAIN_WIDTH-1:0] DLF_KP,
+    output wire [KP_WIDTH-1:0] DLF_KP,
     output wire [5:0] COARSEBINARY_CODE,
     output wire [7:0] MMDCLKDIV_RATIO,
     output wire CONFIG_BUSY,
@@ -57,6 +58,7 @@ module IntegerPLL_25MHzModeController #(
         .CODE_WIDTH(CODE_WIDTH),
         .DCO_CODE_WIDTH(DCO_CODE_WIDTH),
         .GAIN_WIDTH(GAIN_WIDTH),
+        .KP_WIDTH(KP_WIDTH),
         .FEEDBACK_DIVIDER_WIDTH(FEEDBACK_DIVIDER_WIDTH)
     ) mode_config (
         .FEEDBACK_DIVIDER(feedback_divider_latched),
@@ -73,7 +75,7 @@ module IntegerPLL_25MHzModeController #(
     always @(posedge CLKDIV_RETIMED or negedge RESET_N) begin
         if (!RESET_N) begin
             state <= STATE_IDLE;
-            feedback_divider_latched <= 5'd4;
+            feedback_divider_latched <= 5'd20;
             clear_count <= {CLEAR_COUNT_WIDTH{1'b0}};
         end else begin
             case (state)

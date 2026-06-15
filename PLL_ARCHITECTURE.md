@@ -26,20 +26,17 @@ selection is a 48-position HS NAND/NAND2B turn/pass mirror-delay network; the
 terminal mirror turn supplies the 48th position after the 47 decoded coarse
 thermometer controls. Fine tuning uses 90 HS NAND2 loads sampled from the
 existing 255-bit fine thermometer bus and placed locally on `osc_node` and
-`mirror_ret[0]`. The active loop gates use HS `_4` cells, but the first output
-buffer remains `sky130_fd_sc_hs__buf_1` so the measurement/output path does not
-unnecessarily load the oscillator node. The earlier C19/C20 deep-node slow-load
-banks were removed; they made target coverage fragile by burdening internal
-mirror nodes.
+`mirror_ret[0]`. The active reset/forward/merge NAND path uses HS `_4` cells,
+the turn/return NAND2B path remains HS `_4`, and the first output buffer remains
+`sky130_fd_sc_hs__buf_1` so the measurement/output path does not unnecessarily
+load the oscillator node. The fine-load digital enable is NAND2 pin `B`, whose
+NMOS is directly connected to `VGND` in the Sky130 HS `nand2_1` SPICE view.
 
-Post-layout TT Xyce RCX endpoint and local target-code probes now cover the
-requested 25 MHz-reference modes in one macro. The selected configured-mode
-settings are C20/code93 for 100 MHz, C06/code234 for 250 MHz, C04/code90 for
-300 MHz, C02/code76 for 400 MHz, and C01/code121 for 500 MHz. The direct
-mixed-step hold smoke uses those settings with the extracted DCO and extracted
-BBPD. This is post-layout DCO range and configured-mode integration evidence,
-not yet full
-extracted-DCO-in-loop PLL lock signoff.
+The current promoted source candidate restores the 25 MHz-reference /4, /10,
+/12, /16, and /20 modes from the v5-supported physical DCO range, then tunes
+the configured-mode gains for lower deterministic fitted TIE. The selected
+seeds are C20/code93, C06/code234, C04/code90, C02/code76, and C01/code121 for
+100, 250, 300, 400, and 500 MHz respectively.
 
 In other words, the current fast-path architecture does not require coarse and
 fine tuning to sum to 8 bits. `DCO_COARSE_BITS=0` keeps all 8 exported DCO bits
@@ -47,15 +44,21 @@ as fine control; coarse tuning is a separate band-select input in the
 behavioral/mixed DCO model. Nonzero `DCO_COARSE_BITS` remains only as a legacy
 packed-code diagnostic mode.
 
-The strongest evidence for the current coarse-DCO path is the combination of
-clean physical signoff/RCX, waveform-qualified post-layout DCO endpoint plus
-near-target rows, and the configured-mode 25 MHz-reference mixed-signal check.
-It should not be read as a blind rail-start acquisition claim. The intended use
-is configured acquisition: select the characterized coarse mirror-delay path,
-seed the fine code near the measured target, then enable the DLF for phase
-tracking. Older low-frequency EINVP extracted-DCO lock-window results remain
-useful historical evidence for loop polarity and methodology, but they are not
-the signoff claim for the 100/250/300/400/500 MHz coarse-DCO target.
+The strongest fast evidence for the restored configured path is the RTL
+configured-mode regression plus deterministic ideal-BBPD jitter comparison. This
+is a narrower claim than arbitrary BBPLL acquisition or noise/post-layout jitter
+signoff. The intended use is configured acquisition: select the characterized
+coarse mirror-delay path, seed the fine code near the measured target, then
+enable the DLF for phase tracking.
+
+The deterministic ideal-BBPD jitter comparison in
+`build/jitter_compare_25mhz_tuned_v5range/` is also a model-level screen, not a
+noise or post-layout jitter signoff. Against the v5 release table with
+`KI=16`, `KP=4`, the restored DCO plus per-mode gain tuning reduces worst-phase
+fitted TIE RMS at 100, 250, 300, 400, and 500 MHz. Period-jitter RMS is not
+lower in every mode, so the next jitter-oriented step remains a real
+noise/post-layout jitter model or a TDC-style detector if period noise becomes
+the primary metric.
 
 ## 1. Architecture Summary
 
@@ -303,8 +306,8 @@ in a single 48-position HS NAND/NAND2B mirror-delay loop. Higher coarse codes
 pass through more mirror cells before turning back, so the code changes
 effective path length rather than selecting a muxed feedback tap. The 255-bit
 `DCO_THERM` bank remains the fine control path driven by the loop filter; the
-current physical candidate samples that bus with 90 evenly mapped HS NAND2
-fine loads split between `osc_node` and `mirror_ret[0]`.
+current source candidate samples that bus with 90 evenly mapped HS NAND2 fine
+loads split between `osc_node` and `mirror_ret[0]`.
 
 For fixed 25 MHz-reference multiplier operating points, the intended sequence is
 configured acquisition rather than blind bang-bang rail acquisition: select a
@@ -312,26 +315,14 @@ characterized coarse mirror-delay path for the requested multiplier, seed the
 fine code near the measured target code through the existing DLF override/config
 path, then enable the DLF for phase tracking. The pre-layout mirror check,
 `make check-dco-einvp-coarse-mirror-targets`, remains a topology diagnostic
-with the minimum output buffer; it currently checks sampled 100/300 MHz
-pre-layout brackets and waveform quality. The current post-layout RCX DCO
-target map is the full 25 MHz-reference range claim and covers all five target
-frequencies while keeping the ring-facing output buffer at `buf_1`: C20/code93
-is interpolated from 98.609 MHz at code0 and 100.515 MHz at code128,
-C06/code234 measures 249.813 MHz directly, C04/code90 is interpolated between
-295.760 MHz at code64 and 301.054 MHz at code96, and C02/code76 is
-interpolated between 397.373 MHz at code64 and 404.357 MHz at code96.
-C01/code121 is interpolated between 468.489 MHz at code0 and 501.912 MHz at
-code128. The
-C06/code255 endpoint is numerically closer to 250 MHz than code224 but has
-weaker duty and rail behavior, so the 250 MHz mode uses the measured code234
-near-target row instead of relying on the rail.
-`IntegerPLL_25MHzModeConfig` captures these settings as reusable RTL keyed by
-the external 5-bit `FEEDBACK_DIVIDER` value: /4 emits C20/code93 for 100 MHz,
-/10 emits C06/code234 for 250 MHz, /12 emits C04/code90 for 300 MHz, and /16
-emits C02/code76 for 400 MHz, and /20 emits C01/code121 for 500 MHz. The helper
-also emits `KI=16`, `KP=4`, a DLF seed word of `target_code << 2` for the
-default 10-bit DLF / 8-bit DCO-code split, and `CONFIG_VALID`; unsupported
-divider values hold `CONFIG_VALID=0` and do not enter tracking.
+with the minimum output buffer and the 90-cell HS NAND2 load bank.
+`IntegerPLL_25MHzModeConfig` captures the reusable RTL table keyed by the
+external 5-bit `FEEDBACK_DIVIDER` value: /4 emits C20/code93 with KI=16/KP=8,
+/10 emits C06/code234 with KI=16/KP=8, /12 emits C04/code90 with KI=16/KP=2,
+/16 emits C02/code76 with KI=1/KP=4, and /20 emits C01/code121 with KI=16/KP=5.
+Each valid mode also emits a DLF seed word of `target_code << 2` for the default
+10-bit DLF / 8-bit DCO-code split and `CONFIG_VALID`. Unsupported divider
+values hold `CONFIG_VALID=0` and do not enter tracking.
 `IntegerPLL_25MHzModeController` turns that table into the
 configured bring-up sequence: it latches `FEEDBACK_DIVIDER`, drives the preset
 divider/coarse/gain/seed values, asserts `DLF_Clear` for a small number of
@@ -353,24 +344,20 @@ path length, or fine-load topology, not from upsizing the ring-facing output
 buffer, since that buffer is still an oscillator load.
 The paired configured-mode Xyce check,
 `make xyce-pll-mixed-signal-25mhz-targets`, aliases to the direct extracted-DCO
-configured-tracking gate plus the direct extracted-DCO hold smoke for the five
-25 MHz-reference multiplier targets.
-The configured-tracking gate uses `KI=16`, `KP=4`, starts each target at
-+/-4 fine codes, requires a target-code-neighborhood hit and at least one BBPD
-decision in the expected initial direction, then checks that the final modeled
-frequency and the last eight modeled DCO updates stay within 2 MHz of the
-requested target with no more than 16 fine-code span.
-The current fast release artifact check is
-`make check-sky130-pll-25mhz-release`; it validates the coarse-DCO structure,
-the `buf_1` output-buffer constraint, the RTL divider preset table, the signed
-low-level hardtop, the signed configured physical wrapper, the target rows,
-configured tracking rows, direct-RCX hold rows, and all ten low/high near-seed
-direct-RCX update rows. The near-seed rows pass with two expected BBPD
-decisions from +/-4 fine-code starts: 100 MHz moves 89->92 and 97->94, 250 MHz
-moves 230->233 and 238->235, 300 MHz moves 86->89 and 94->91, 400 MHz moves
-72->75 and 80->77, and 500 MHz moves 117->120 and 125->122. The low-side and
-high-side rows intentionally use different REF phase/divider seeds, because
-BBPD direction is phase dependent.
+configured-tracking gate plus the direct extracted-DCO hold smoke. The current
+fast source/behavioral gate is:
+
+```sh
+make check-pll-25mhz-divider-config check-pll-25mhz-divider-controller check-pll-25mhz-configured-wrapper check-pll-25mhz-configured-behavioral check-sky130-macros
+```
+
+It validates the coarse-DCO structure, the `buf_1` output-buffer constraint, the
+restored RTL divider preset table, and the configured behavioral PLL
+reset-to-tracking regressions. The heavier
+`make check-sky130-pll-25mhz-release` target still checks post-layout
+hard-macro artifact freshness, so it requires rerouting/signoff after the
+5-bit physical `DLF_KP` interface change. Post-layout target rows and direct-RCX
+mixed-signal rows should be regenerated after any physical DCO reroute.
 The optional
 `make xyce-pll-postlayout-dco-mixed-25mhz-500m-hold-smoke` diagnostic runs the
 extracted coarse DCO and extracted BBPD together at the hardest requested mode,
