@@ -64,22 +64,22 @@ if grep -Eq "sky130_fd_sc_(hd|hs)__mux4_1" "$COARSE_DCO_RTL"; then
     exit 1
 fi
 
-if grep -Eq "sky130_fd_sc_hs__buf_(2|4|8|16)[[:space:]]+out_buf" "$COARSE_DCO_RTL"; then
-    echo "Coarse DCO output buffer must stay hs__buf_1 to avoid extra oscillator loading" >&2
+if grep -Eq "sky130_fd_sc_(hd|hs)__buf_(2|4|8|16)[[:space:]]+out_buf" "$COARSE_DCO_RTL"; then
+    echo "Coarse DCO output buffer must stay buf_1 to avoid extra oscillator loading" >&2
     exit 1
 fi
 
-require_coarse_dco_fragment "sky130_fd_sc_hs__nand2_4 osc_gate"
+require_coarse_dco_fragment "sky130_fd_sc_hd__nand2_8 osc_gate"
 require_coarse_dco_fragment "input wire [46:0] COARSETHERMAL_CODE"
 require_coarse_dco_fragment "wire [47:0] mirror_fwd"
-require_coarse_dco_fragment "sky130_fd_sc_hs__nand2_4 mirror_forward"
-require_coarse_dco_fragment "sky130_fd_sc_hs__nand2b_4 mirror_turn"
-require_coarse_dco_fragment "sky130_fd_sc_hs__nand2b_4 mirror_return"
-require_coarse_dco_fragment "sky130_fd_sc_hs__nand2_4 mirror_merge"
-require_coarse_dco_fragment "sky130_fd_sc_hs__buf_1 out_buf"
-require_coarse_dco_fragment "sky130_fd_sc_hs__nand2_1 tune_load"
-require_coarse_dco_fragment "for (f = 0; f < 90; f = f + 1)"
-require_coarse_dco_fragment "DCO_THERM_INDEX"
+require_coarse_dco_fragment "sky130_fd_sc_hd__nand2_8 mirror_forward"
+require_coarse_dco_fragment "sky130_fd_sc_hd__nand2b_4 mirror_turn"
+require_coarse_dco_fragment "sky130_fd_sc_hd__nand2b_4 mirror_return"
+require_coarse_dco_fragment "sky130_fd_sc_hd__nand2_8 mirror_merge"
+require_coarse_dco_fragment "sky130_fd_sc_hd__buf_1 out_buf"
+require_coarse_dco_fragment "sky130_fd_sc_hd__nand2_1 tune_load"
+require_coarse_dco_fragment "for (f = 0; f < 255; f = f + 1)"
+require_coarse_dco_fragment ".B(DCO_THERM[f])"
 require_coarse_dco_fragment ".A_N(tie_lo)"
 require_coarse_dco_fragment ".A(osc_node)"
 require_coarse_dco_fragment ".A_N(mirror_ret[i+1])"

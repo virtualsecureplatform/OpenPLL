@@ -51,73 +51,53 @@ module IntegerPLL_DCO #(
         end
     endfunction
 
-    function real c20_freq_mhz;
+    function real c24_freq_mhz;
         input integer code;
         begin
-            if (code <= 128)
-                c20_freq_mhz = interp(code, 0, 98.609, 128, 100.515);
+            if (code <= 139)
+                c24_freq_mhz = interp(code, 0, 98.224916, 139, 100.069087);
             else
-                c20_freq_mhz = interp(code, 128, 100.515, 255, 101.817);
+                c24_freq_mhz = interp(code, 139, 100.069087, 255, 101.386615);
+        end
+    endfunction
+
+    function real c07_freq_mhz;
+        input integer code;
+        begin
+            if (code <= 11)
+                c07_freq_mhz = interp(code, 0, 249.071391, 11, 250.146396);
+            else
+                c07_freq_mhz = interp(code, 11, 250.146396, 255, 271.542690);
         end
     endfunction
 
     function real c06_freq_mhz;
         input integer code;
         begin
-            if (code <= 128)
-                c06_freq_mhz = interp(code, 0, 231.778, 128, 243.384);
-            else if (code <= 192)
-                c06_freq_mhz = interp(code, 128, 243.384, 192, 249.187);
-            else if (code <= 224)
-                c06_freq_mhz = interp(code, 192, 249.187, 224, 249.756);
-            else if (code <= 234)
-                c06_freq_mhz = interp(code, 224, 249.756, 234, 249.813);
+            if (code <= 242)
+                c06_freq_mhz = interp(code, 0, 274.036913, 242, 299.853581);
             else
-                c06_freq_mhz = interp(code, 234, 249.813, 255, 250.488);
+                c06_freq_mhz = interp(code, 242, 299.853581, 255, 301.072500);
         end
     endfunction
 
-    function real c04_freq_mhz;
+    function real c03_freq_mhz;
         input integer code;
         begin
-            if (code <= 64)
-                c04_freq_mhz = interp(code, 0, 285.172, 64, 295.760);
-            else if (code <= 96)
-                c04_freq_mhz = interp(code, 64, 295.760, 96, 301.054);
-            else if (code <= 128)
-                c04_freq_mhz = interp(code, 96, 301.054, 128, 304.371);
-            else if (code <= 160)
-                c04_freq_mhz = interp(code, 128, 304.371, 160, 308.390);
+            if (code <= 45)
+                c03_freq_mhz = interp(code, 0, 390.798007, 45, 399.903986);
             else
-                c04_freq_mhz = interp(code, 160, 308.390, 255, 320.321);
+                c03_freq_mhz = interp(code, 45, 399.903986, 255, 448.308082);
         end
     endfunction
 
     function real c02_freq_mhz;
         input integer code;
         begin
-            if (code <= 32)
-                c02_freq_mhz = interp(code, 0, 385.207, 32, 390.628);
-            else if (code <= 64)
-                c02_freq_mhz = interp(code, 32, 390.628, 64, 397.373);
-            else if (code <= 96)
-                c02_freq_mhz = interp(code, 64, 397.373, 96, 404.357);
-            else if (code <= 128)
-                c02_freq_mhz = interp(code, 96, 404.357, 128, 411.194);
-            else if (code <= 192)
-                c02_freq_mhz = interp(code, 128, 411.194, 192, 425.984);
+            if (code <= 149)
+                c02_freq_mhz = interp(code, 0, 456.089574, 149, 500.154405);
             else
-                c02_freq_mhz = interp(code, 192, 425.984, 255, 438.705);
-        end
-    endfunction
-
-    function real c01_freq_mhz;
-        input integer code;
-        begin
-            if (code <= 128)
-                c01_freq_mhz = interp(code, 0, 468.489, 128, 501.912);
-            else
-                c01_freq_mhz = interp(code, 128, 501.912, 255, 546.363);
+                c02_freq_mhz = interp(code, 149, 500.154405, 255, 535.379413);
         end
     endfunction
 
@@ -126,12 +106,12 @@ module IntegerPLL_DCO #(
         input integer code;
         begin
             case (coarse)
-                6'd20: coarse_freq_mhz = c20_freq_mhz(code);
+                6'd24: coarse_freq_mhz = c24_freq_mhz(code);
+                6'd7: coarse_freq_mhz = c07_freq_mhz(code);
                 6'd6: coarse_freq_mhz = c06_freq_mhz(code);
-                6'd4: coarse_freq_mhz = c04_freq_mhz(code);
+                6'd3: coarse_freq_mhz = c03_freq_mhz(code);
                 6'd2: coarse_freq_mhz = c02_freq_mhz(code);
-                6'd1: coarse_freq_mhz = c01_freq_mhz(code);
-                default: coarse_freq_mhz = c20_freq_mhz(code);
+                default: coarse_freq_mhz = c24_freq_mhz(code);
             endcase
         end
     endfunction

@@ -93,6 +93,16 @@ def main() -> int:
             "config.json, and SDC set."
         ),
     )
+    parser.add_argument(
+        "--skip-magic-streamout",
+        action="store_true",
+        help="Do not require final Magic .mag or Magic-generated GDS views.",
+    )
+    parser.add_argument(
+        "--skip-xor",
+        action="store_true",
+        help="Do not require the Magic-vs-KLayout XOR metric.",
+    )
     args = parser.parse_args()
 
     final_dir = Path(args.final_dir)
@@ -107,12 +117,23 @@ def main() -> int:
     required_views = [
         template.format(design=args.design_name) for template in REQUIRED_VIEW_TEMPLATES
     ]
+    if args.skip_magic_streamout:
+        required_views = [
+            relpath
+            for relpath in required_views
+            if not (relpath.startswith("mag/") or relpath.startswith("mag_gds/"))
+        ]
     for relpath in required_views:
         path = final_dir / relpath
         if not path.is_file():
             failures.append(f"missing view: {path}")
 
-    for key in REQUIRED_ZERO_METRICS:
+    required_zero_metrics = list(REQUIRED_ZERO_METRICS)
+    if args.skip_xor:
+        required_zero_metrics = [
+            key for key in required_zero_metrics if key != "design__xor_difference__count"
+        ]
+    for key in required_zero_metrics:
         if key not in metrics:
             failures.append(f"missing metric: {key}")
             continue

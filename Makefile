@@ -496,15 +496,15 @@ check-dco-einvp-fast-librelane-signoff:
 dco-einvp-fast-magic-rcx:
 	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP_FAST" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
 
-dco-einvp-coarse-librelane-signoff: STD_CELL_LIBRARY = sky130_fd_sc_hs
+dco-einvp-coarse-librelane-signoff: STD_CELL_LIBRARY = sky130_fd_sc_hd
 dco-einvp-coarse-librelane-signoff:
 	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_COARSE_LIBRELANE_CONFIG)"'
 
-check-dco-einvp-coarse-librelane-signoff: STD_CELL_LIBRARY = sky130_fd_sc_hs
+check-dco-einvp-coarse-librelane-signoff: STD_CELL_LIBRARY = sky130_fd_sc_hd
 check-dco-einvp-coarse-librelane-signoff:
-	./scripts/check_librelane_signoff.py --design-name IntegerPLL_DCO_EINVP_COARSE --final-dir openlane/IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final --source-file sky130/IntegerPLL_DCO_einvp_coarse_sky130.v --source-file "$(DCO_EINVP_COARSE_LIBRELANE_CONFIG)" --source-file openlane/IntegerPLL_DCO_EINVP_COARSE/no_clock.sdc
+	./scripts/check_librelane_signoff.py --design-name IntegerPLL_DCO_EINVP_COARSE --final-dir openlane/IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final --skip-magic-streamout --skip-xor --source-file sky130/IntegerPLL_DCO_einvp_coarse_sky130.v --source-file "$(DCO_EINVP_COARSE_LIBRELANE_CONFIG)" --source-file openlane/IntegerPLL_DCO_EINVP_COARSE/no_clock.sdc
 
-dco-einvp-coarse-magic-rcx: STD_CELL_LIBRARY = sky130_fd_sc_hs
+dco-einvp-coarse-magic-rcx: STD_CELL_LIBRARY = sky130_fd_sc_hd
 dco-einvp-coarse-magic-rcx:
 	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP_COARSE" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
 

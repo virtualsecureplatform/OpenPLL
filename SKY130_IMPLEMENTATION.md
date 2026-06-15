@@ -79,33 +79,36 @@ This repo now separates the PLL into two implementation tracks:
 
 ## Current Deliverable Snapshot
 
-The current Sky130 high-frequency implementation path is
-`IntegerPLL_HardMacroTop_EINVP`. It combines the signed-off digital core, the
-filled `IntegerPLL_BBPD` macro, the physical `IntegerPLL_DCO_EINVP_COARSE`
-oscillator macro, and hard-top routing/SPEF around those macros. The exported
-fine loop control remains 8 bits: `DCO_CODE[7:0]` drives a 255-line thermometer
-load bank, `COARSEBINARY_CODE[5:0]` selects the oscillator band through a
-47-line coarse thermometer bus, and `MMDCLKDIV_RATIO[7:0]` selects the integer
-feedback division ratio.
+The current Sky130 high-frequency source/integration path is
+`IntegerPLL_HardMacroTop_EINVP`. It combines the digital core RTL, the filled
+`IntegerPLL_BBPD` macro, the physical `IntegerPLL_DCO_EINVP_COARSE` oscillator
+macro source, and the hard-top hardening flow around those macros. Existing
+hard-top/configured-wrapper routed artifacts must be regenerated after the
+current 5-bit `DLF_KP` interface update before they are treated as current
+post-layout release evidence. The exported fine loop control remains 8 bits:
+`DCO_CODE[7:0]` drives a 255-line thermometer control bus connected to 255 local
+HD NAND2 loads,
+`COARSEBINARY_CODE[5:0]` selects the oscillator band through a 47-line coarse
+thermometer bus, and `MMDCLKDIV_RATIO[7:0]` selects the integer feedback
+division ratio.
 
-The coarse DCO keeps one macro and one oscillator loop: an HS NAND enable gate,
-a 48-position HS NAND/NAND2B turn/pass mirror-delay network driven through the
-47-bit coarse thermometer bus, and 90 local HS NAND2 fine loads split between
-`osc_node` and `mirror_ret[0]`. The active ring and mirror gates use HS `_4`
-cells; the ring-facing output buffer stays
-`sky130_fd_sc_hs__buf_1` to limit oscillator-node loading. It is not a set of
+The coarse DCO keeps one macro and one oscillator loop: an HD NAND enable gate,
+a 48-position HD NAND/NAND2B turn/pass mirror-delay network driven through the
+47-bit coarse thermometer bus, and 255 local HD NAND2 fine loads split between
+`osc_node` and `mirror_ret[0]`. The active ring and mirror gates use HD
+`nand2_8` and `nand2b_4` cells; the ring-facing output buffer stays
+`sky130_fd_sc_hd__buf_1` to limit oscillator-node loading. It is not a set of
 parallel DCO macros, it does not select a simple muxed feedback tap, and the
 coarse path does not use NOT cells as the ring delay.
 
-The current evidence includes clean DCO macro signoff/RCX, clean force127
-digital-core signoff with the 6-bit coarse interface, clean
-`IntegerPLL_HardMacroTop_EINVP` signoff/SPICE-interface checks, and
-post-layout TT Xyce DCO endpoint plus near-target probes for 100, 250, 300,
-400, and 500 MHz from a 25 MHz reference. The paired configured-mode
-mixed-signal target uses extracted-DCO hold settings at C20/code93,
-C06/code234, C04/code90, C02/code76, and C01/code121. Full
-extracted-DCO-in-loop PLL lock evidence is still required
-before treating this as final PLL signoff.
+The current evidence for the all-HD variant includes the 255-load coarse-DCO
+source structure, standalone DCO macro signoff, the 25 MHz
+divider/configured-wrapper RTL regressions, and configured behavioral
+reset-to-tracking checks using the all-HD DCO model. The configured operating
+points are C24/code139, C07/code8, C06/code242, C03/code45, and C02/code149 for
+100, 250, 300, 400, and 500 MHz respectively. Hard-top/configured-wrapper
+post-layout artifacts must still be regenerated before treating this as
+complete physical PLL signoff evidence.
 
 The older filled `IntegerPLL_DCO_EINVP` and sparse72 paths remain documented as
 low-frequency and 200 MHz diagnostic history. They are useful evidence for loop
@@ -517,33 +520,30 @@ make -C OpenPLL spice-dco-postlayout-einvp-coarse-target-probe
 ```
 
 Its RTL-level structural check is already covered by
-`make -C OpenPLL check-sky130-macros`. The current local latest-Ciel run
-completes LibreLane signoff for the coarse DCO macro with 3003 standard cells
-in a 200 x 200 um die. Final route, Magic DRC, KLayout DRC, Netgen LVS, XOR,
-max-slew, max-cap, and antenna violation counts are all zero. Magic RCX produces
-the extracted DCO deck under
-`openlane/IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/rcx-magic/`.
+`make -C OpenPLL check-sky130-macros`. The current local latest-Ciel run passes
+the standalone LibreLane artifact checker for the all-HD coarse DCO macro with
+1047 standard cells, 0.158011 utilization, 9698 microns routed wire length, and
+2151 vias. The current checker uses the KLayout streamout path and skips Magic
+streamout/XOR for this standalone DCO artifact. Hard-top RCX/SPEF artifacts
+must be regenerated before making full post-layout PLL claims.
 Full arbitrary-start extracted-loop lock evidence for the 25 MHz-reference
 100/250/300/400/500 MHz target set is still pending.
 
-The current post-layout RCX DCO target probes cover all requested
-25 MHz-reference modes while keeping the ring-facing output buffer at `buf_1`:
+The current all-HD DCO target probes cover all requested 25 MHz-reference modes
+while keeping the ring-facing output buffer at `buf_1`:
 
-| Target | Multiplier | Coarse/fine setting | Extracted TT evidence |
+| Target | Multiplier | Coarse/fine setting | TT evidence |
 | ---: | ---: | --- | --- |
-| 100 MHz | 4 | C20/code93 | Interpolated from 98.609 MHz at code0 to 100.515 MHz at code128. |
-| 250 MHz | 10 | C06/code234 | 249.813 MHz measured directly; C06/code255 is numerically closer than code224 but has weaker duty, so the rail is avoided. |
-| 300 MHz | 12 | C04/code90 | Interpolated from 295.760 MHz at code64 to 301.054 MHz at code96. |
-| 400 MHz | 16 | C02/code76 | Interpolated from 397.373 MHz at code64 to 404.357 MHz at code96. |
-| 500 MHz | 20 | C01/code121 | Interpolated from 468.489 MHz at code0 to 501.912 MHz at code128. |
+| 100 MHz | 4 | C24/code139 | Interpolated at 100.069 MHz. |
+| 250 MHz | 10 | C07/code8 | Bracketed by C07/code8..11 at 249.851..250.146 MHz. |
+| 300 MHz | 12 | C06/code242 | Interpolated at 299.854 MHz. |
+| 400 MHz | 16 | C03/code45 | Interpolated at 399.904 MHz. |
+| 500 MHz | 20 | C02/code149 | Interpolated at 500.154 MHz. |
 
-The endpoint sweeps also keep target-band context: C20 spans
-98.609/100.515/101.817 MHz at fine 0/128/255, C06 measures
-243.384/249.187/249.756/249.813/250.488 MHz at codes 128/192/224/234/255, C04 measures
-295.760/301.054/304.371/308.390 MHz at codes 64/96/128/160, and C02 spans
-385.207/390.628/397.373/404.357/411.194/425.984/438.705 MHz at codes
-0/32/64/96/128/192/255. C01 spans 468.489/501.912/546.363 MHz at codes
-0/128/255.
+The endpoint sweeps also keep target-band context: C24 spans
+98.225..101.387 MHz, C07 spans 249.071..271.543 MHz, C06 spans
+274.037..301.073 MHz, C03 spans 390.798..448.308 MHz, and C02 spans
+456.090..535.379 MHz over the measured code range.
 
 Measured duty remains close to 50% on the selected target bands, and rise/fall
 times remain well below 25% of period. The rejected root-connected slow-load
@@ -567,11 +567,13 @@ The optional pre-layout turn/pass mirror-delay diagnostic is:
 make -C OpenPLL check-dco-einvp-coarse-mirror-targets
 ```
 
-It uses `sky130_fd_sc_hs`, a 48-position mirror path, 90 evenly mapped NAND2
-fine loads, and waveform-quality filtering at the buffered `PLLOUT`
+It uses a legacy `sky130_fd_sc_hs` 48-position mirror path, 90 evenly mapped
+NAND2 fine loads, and waveform-quality filtering at the buffered `PLLOUT`
 (`0.35 <= duty <= 0.65`, rise/fall each below 25% of period), while keeping
 the output buffer drive at 1. With the current small output buffer it is a
-partial pre-layout diagnostic, not the shipping target-range gate:
+partial pre-layout diagnostic, not the shipping target-range gate. The recorded
+rows below predate the all-HD 255-load source and are retained only as topology
+history:
 
 | Target | Multiplier | Coarse turn | Fine code estimate | Bracket |
 | ---: | ---: | ---: | ---: | --- |
@@ -579,8 +581,8 @@ partial pre-layout diagnostic, not the shipping target-range gate:
 | 300 MHz | 12 | 10 | 59.228 | 293.946000-320.011000 MHz |
 
 The 250 and 400 MHz shipping targets are intentionally qualified from the
-post-layout RCX probes above instead. This keeps the pre-layout check from
-encouraging output-buffer upsizing just to close a sampled pre-layout bracket.
+all-HD target probes above instead. This keeps the legacy pre-layout check from
+encouraging output-buffer upsizing just to close a sampled bracket.
 
 The corresponding configured-mode mixed-signal PLL gate is:
 
@@ -588,19 +590,20 @@ The corresponding configured-mode mixed-signal PLL gate is:
 make -C OpenPLL xyce-pll-mixed-signal-25mhz-targets
 ```
 
-That target now aliases to the direct extracted-DCO mixed-step hold smoke after
-refreshing the post-layout RCX DCO probes above. The selected target codes are
-code93, code234, code90, code76, and code121. It remains a configured-mode check, not a
+That target aliases to the direct extracted-DCO mixed-step hold smoke after
+refreshing the DCO target probes above. The selected target codes are
+code139, code8, code242, code45, and code149. It remains a configured-mode check, not a
 blind rail-start acquisition claim:
 `COARSEBINARY_CODE` selects a characterized mirror-delay path, the fine code is
 seeded near the target estimate, and the DLF then performs phase tracking.
 The reusable RTL preset table is `IntegerPLL_25MHzModeConfig`: the external
-5-bit `FEEDBACK_DIVIDER` value /4 selects 100 MHz with C20/code93; /10 selects
-250 MHz with C06/code234; /12 selects 300 MHz with C04/code90; /16 selects
-400 MHz with C02/code76; and /20 selects 500 MHz with C01/code121. It also
-emits `KI=16`, `KP=4`, the 10-bit DLF seed word `target_code << 2`, and
-`CONFIG_VALID`. Unsupported divider values hold `CONFIG_VALID=0` and do not
-enable tracking. The table is checked by:
+5-bit `FEEDBACK_DIVIDER` value /4 selects 100 MHz with C24/code139 and
+KI=4/KP=2; /10 selects 250 MHz with C07/code8 and KI=4/KP=2; /12 selects
+300 MHz with C06/code242 and KI=4/KP=2; /16 selects 400 MHz with C03/code45 and
+KI=4/KP=2; and /20 selects 500 MHz with C02/code149 and KI=4/KP=2. It also
+emits the 10-bit DLF seed word `target_code << 2` and `CONFIG_VALID`.
+Unsupported divider values hold `CONFIG_VALID=0` and do not enable tracking.
+The table is checked by:
 
 ```sh
 make -C OpenPLL check-pll-25mhz-divider-config
@@ -615,7 +618,7 @@ retimed-divider-clocked sequence that holds `DLF_Clear` long enough to load the
 preset seed before asserting `DLF_En` for tracking. The wrapper test checks all
 five supported divider reloads through the hard-macro instance, not only the
 isolated controller. The behavioral check uses the real controller, digital
-core, divider, and BBPD with a DCO table fitted to the post-layout coarse-band
+core, divider, and BBPD with a DCO table fitted to the all-HD coarse-band
 measurements to verify reset-to-tracking operation and measured frequency for
 all five supported divider values. These checks are:
 
@@ -625,29 +628,30 @@ make -C OpenPLL check-pll-25mhz-configured-wrapper
 make -C OpenPLL check-pll-25mhz-configured-behavioral
 ```
 
-The calibrated BBPD/DCO-table tracking row uses `KI=16`, `KP=4`, starts each
-mode from +/-4 fine codes around the target, and passes the bounded configured
-tracking gate for all five requested multipliers. That gate requires a
+The calibrated BBPD/DCO-table tracking row uses the per-mode gains above, starts
+each mode from +/-4 fine codes around the target, and passes the bounded
+configured tracking gate for all five requested multipliers. That gate requires a
 target-code-neighborhood hit, at least one BBPD decision in the expected
 initial direction, final modeled frequency error within 2 MHz, and the last
 eight modeled DCO updates also inside the 2 MHz frequency window with no more
 than 16 fine-code span.
 
-The fast artifact gate for the current 25 MHz coarse-DCO release is:
+The current fast source/behavioral gate for the 25 MHz coarse-DCO release is:
 
 ```sh
-make -C OpenPLL check-sky130-pll-25mhz-release
+make -C OpenPLL check-pll-25mhz-divider-config check-pll-25mhz-divider-controller check-pll-25mhz-configured-wrapper check-pll-25mhz-configured-behavioral check-sky130-macros
 ```
 
-It validates the HS NAND/NAND2B mirror-delay RTL, rejects ring-facing output
+It validates the HD NAND/NAND2B mirror-delay RTL, rejects ring-facing output
 buffer upsizing, checks the 25 MHz divider preset table and configured
-divider-controller/wrapper, requires the refreshed `IntegerPLL_HardMacroTop_EINVP`
-signoff and extracted SPICE/SPEF interface summaries, requires the signed
-`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured` physical wrapper summary,
-checks the configured behavioral PLL reset-to-tracking row, checks the five
-waveform-qualified target-code rows, checks the bounded configured-tracking
-summary, checks the five direct-RCX hold smokes, and requires the recorded
-low/high near-seed direct-RCX update summary for all five divider targets.
+divider-controller/wrapper, and checks the configured behavioral PLL
+reset-to-tracking row. The heavier
+`make -C OpenPLL check-sky130-pll-25mhz-release` audit still checks post-layout
+hard-macro artifact freshness, waveform-qualified target-code rows, direct-RCX
+hold smokes, and near-seed direct-RCX update summaries. After the 5-bit
+physical `DLF_KP` interface change, regenerate the hard-top/configured-wrapper
+physical artifacts before using that audit as current post-layout release
+evidence.
 
 The optional direct extracted-DCO mixed-step diagnostic for the hardest target
 mode is:
@@ -657,7 +661,7 @@ make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-500m-hold-smoke
 ```
 
 It instantiates the `IntegerPLL_DCO_EINVP_COARSE` RCX deck and the filled BBPD
-RCX deck in Xyce, fixes the DCO at C01/code121, and drives the divider/filter
+RCX deck in Xyce, fixes the DCO at C02/code149, and drives the divider/filter
 from the C-interface. The short ADC-sampled frequency estimate is intentionally
 loose; the standalone post-layout DCO rows remain the precise frequency
 evidence for the 500 MHz target. Single-cycle BBPD motion checks are phase
@@ -748,31 +752,25 @@ Xyce: 70.251790-99.895518 MHz at FF, 51.688142-70.763937 MHz at FS,
 44.076396-64.579620 MHz at SF, and 33.875977-47.497548 MHz at SS. The PVT
 endpoint target is `make -C OpenPLL spice-dco-postlayout-einvp-pvt-endpoints`.
 
-The current high-frequency hard-macro top,
-`IntegerPLL_HardMacroTop_EINVP`, now instantiates
-`IntegerPLL_DCO_EINVP_COARSE`. The supporting force127 digital-core signoff
-uses ABC buffering for the 6-bit coarse/47-line thermometer interface and is
-clean with 8218 standard-cell instances, 77944 microns routed wire length,
-14661 vias, and zero final route/Magic/KLayout DRC, LVS, XOR, setup, hold,
-max-slew, and max-cap violations. `hardtop-einvp-librelane-signoff` is clean
-with 61100 standard-cell instances in expanded metrics, 190674 microns routed
-wire length, 1826 vias, and zero route/Magic/KLayout DRC, LVS, XOR, timing,
-max-slew, max-cap, and antenna metrics. `check-hard-macro-top-einvp-spice`
-verifies the generated top-level SPICE/SPEF wrapper with 73 top ports, the
-`IntegerPLL_DCO_EINVP_COARSE` oscillator subcircuit, 255 DCO thermometer
-connections, 47 coarse thermometer connections, 5 antenna-repaired DCO
-thermometer nets, 374 nominal SPEF nets, 10082 nominal SPEF capacitance
-entries, 1670 nominal SPEF resistance entries, and a passing Xyce `-norun`
-syntax/topology probe. The configured physical wrapper,
-`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`, embeds that signed lower hard
-macro at `(120, 120)` and adds the 25 MHz divider controller in one physical
-macro. Its signoff is clean with 39786 standard-cell instances, 47081 microns
-routed wire length, 1336 vias, and zero route/Magic/KLayout DRC, LVS, XOR,
-timing, max-slew, max-cap, and antenna metrics. The wrapper locally buffers
-the `TARGET_MHZ[8]` status output with `sky130_fd_sc_hd__buf_8`, keeping the
-long status route off the weak divider-decode net. The wrapper flow excludes
-`sky130_fd_sc_hd__o21ai_0` because the current Ciel KLayout deck reports an
-`npc.2` marker in that cell; synthesis uses the clean `o21ai_1` variant.
+The current high-frequency hard-macro source top,
+`IntegerPLL_HardMacroTop_EINVP`, instantiates
+`IntegerPLL_DCO_EINVP_COARSE`. The last checked physical artifacts for this path
+are useful history, but they predate the current 5-bit `DLF_KP` interface and
+must be regenerated before use as current release evidence. Those historical
+artifacts include a force127 digital-core signoff with ABC buffering for the
+6-bit coarse/47-line thermometer interface, a clean
+`hardtop-einvp-librelane-signoff` run, and a `check-hard-macro-top-einvp-spice`
+SPICE/SPEF wrapper probe covering the `IntegerPLL_DCO_EINVP_COARSE` oscillator
+subcircuit, 255 DCO thermometer connections, and 47 coarse thermometer
+connections. The configured physical wrapper flow,
+`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`, embeds the lower hard macro and
+adds the 25 MHz divider controller in one physical macro; rerun that flow after
+the 5-bit `DLF_KP` interface update before treating the wrapper as signed off.
+The wrapper locally buffers the `TARGET_MHZ[8]` status output with
+`sky130_fd_sc_hd__buf_8`, keeping the long status route off the weak
+divider-decode net. The wrapper flow excludes `sky130_fd_sc_hd__o21ai_0` because
+the current Ciel KLayout deck reports an `npc.2` marker in that cell; synthesis
+uses the clean `o21ai_1` variant.
 
 The older low-frequency E hard-top artifact also has MPI16/KLU extracted-loop
 diagnostics with the final force-to-mid digital-core netlist, filled BBPD RCX,
@@ -1785,10 +1783,11 @@ promotion: `KI=192`, `KP=32` ends 0->0 and 255->217 in 1 us, and the lower-gain
 alternating BBPD decisions that pull the proportional output back to the rail,
 so this path remains diagnostic rather than a promoted acquisition fix.
 
-The current release promotes the 25 MHz configured interface as the signed
-`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured` physical macro. Robust
-acquisition from arbitrary phase and code remains the next BBPLL/control
-architecture extension, not a packaging gap.
+The current release promotes the 25 MHz configured RTL/source interface through
+`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`; the physical wrapper must be
+regenerated after the 5-bit `DLF_KP` interface update before it is signed-off
+release evidence. Robust acquisition from arbitrary phase and code remains the
+next BBPLL/control architecture extension, not a packaging gap.
 
 FRAC=6 behavioral results are promising. The ideal digital-loop sweep reaches
 10.063 us worst-case lock for `DLF_KI=255`, `DLF_KP=32`, and the filled-DCO top
@@ -1927,12 +1926,13 @@ The Sky130 DCO in `sky130/IntegerPLL_DCO_sky130.v` is a first structural
 standard-cell ring with an 8-bit decoded NAND load bank. It still needs:
 
 - Coarse-DCO PLL promotion. `IntegerPLL_DCO_EINVP_COARSE` is now the current
-  high-frequency macro path, with clean standalone signoff/RCX, clean
-  `IntegerPLL_HardMacroTop_EINVP` hardtop signoff/SPICE-interface checks, and
-  post-layout TT endpoint plus near-target probes for 100, 250, 300, 400, and
-  500 MHz from a 25 MHz reference. It still needs broader PVT range coverage
-  and full extracted-DCO-in-loop lock/acquisition evidence before it can be
-  treated as final PLL signoff.
+  high-frequency macro path, with HD NAND2 fine loads in source. Standalone DCO
+  signoff/RCX, post-layout TT endpoint probes for 100, 250, 300, 400, and
+  500 MHz from a 25 MHz reference, and hard-top/configured-wrapper signoff
+  artifacts must be regenerated after the all-HD DCO and 5-bit `DLF_KP` interface
+  updates. The path still needs broader PVT range coverage and full
+  extracted-DCO-in-loop lock/acquisition evidence before it can be treated as
+  final PLL signoff.
 
 - Full transistor-level or post-layout closed-loop lock and acquisition
   validation. Current loop-level evidence includes behavioral DCO targets
@@ -1960,21 +1960,16 @@ standard-cell ring with an 8-bit decoded NAND load bank. It still needs:
   consolidated five-point calibration artifact, a TT local-gain artifact around
   code 128, and FF/FS/SF/SS endpoint smoke.
 - Placement constraints or manual layout to preserve symmetry and loading.
-- Top-level extracted closed-loop transient using the hard-macro signoff SPICE
-  and SPEF views. Current top-level hard-macro physical signoff covers GDS
+- Top-level extracted closed-loop transient using regenerated hard-macro SPICE
+  and SPEF views. The previous top-level hard-macro physical signoff covered GDS
   streamout, DRC, XOR, RCX/SPEF, extracted SPICE, LVS, macro-interface
   connectivity through the extracted wrapper, and an Xyce `-norun`
-  syntax/topology probe. A promoted force-to-mid mapped-loop smoke also adds
-  27097.842 fF of lumped nominal hard-top SPEF capacitance on 261
-  loop/inter-macro nets, including all DCO thermometer interconnects, and the
-  distributed-RC diagnostics elaborate selected hard-top loop nets with
-  behavioral and extracted DCO decks through startup and low/high first-motion
-  rows, including the parallel EINVP hard-top path. The E hard-top path also
-  has a hard-top-loaded mid-code extracted-DCO lock-window row, low/high
-  extracted-DCO rail-progress rows, low/high extracted-DCO rail-start
-  lock-window rows, FF/SS hard-top-loaded mid-code extracted-DCO lock-window
-  rows, FF/SS low/high rail PVT extracted-DCO rail-start lock-window rows, and
-  calibrated behavioral-DCO lock-window rows using lumped top SPEF capacitance.
+  syntax/topology probe, but those artifacts must be refreshed after the current
+  5-bit `DLF_KP` interface update. Historical force-to-mid mapped-loop and
+  distributed-RC diagnostics remain useful methodology evidence, including
+  hard-top-loaded extracted-DCO startup, first-motion, lock-window, rail-progress,
+  PVT, and calibrated behavioral-DCO rows, but they are not current physical
+  release evidence until regenerated.
 
 The Sky130 BBPD in `sky130/IntegerPLL_BBPD_sky130.v` follows the two-flop
 set/reset concept from the report and uses buffer delay chains for the reset

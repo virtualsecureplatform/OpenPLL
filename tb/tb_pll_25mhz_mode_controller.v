@@ -160,7 +160,7 @@ module tb_pll_25mhz_mode_controller;
             tick();
             check_controls("invalid load edge 0", 1'b0, 1'b0, 1'b1, 1'b0);
             check_mode_outputs("invalid load edge 0", 16'd0, {3'd0, divider},
-                               6'd0, 8'd0, 8'd16, 5'd4, 1'b0);
+                               6'd0, 8'd0, 8'd4, 5'd2, 1'b0);
 
             tick();
             check_controls("invalid load edge 1", 1'b0, 1'b0, 1'b1, 1'b0);
@@ -169,7 +169,7 @@ module tb_pll_25mhz_mode_controller;
             tick();
             check_controls("invalid held busy", 1'b0, 1'b0, 1'b1, 1'b0);
             check_mode_outputs("invalid held busy", 16'd0, {3'd0, divider},
-                               6'd0, 8'd0, 8'd16, 5'd4, 1'b0);
+                               6'd0, 8'd0, 8'd4, 5'd2, 1'b0);
         end
     endtask
 
@@ -181,22 +181,22 @@ module tb_pll_25mhz_mode_controller;
         #1 reset_n = 1'b0;
         #1;
         check_controls("reset", 1'b0, 1'b0, 1'b0, 1'b0);
-        check_mode_outputs("reset", 16'd500, 8'd20, 6'd1, 8'd121, 8'd16, 5'd5, 1'b1);
+        check_mode_outputs("reset", 16'd500, 8'd20, 6'd2, 8'd149, 8'd4, 5'd2, 1'b1);
 
         reset_n = 1'b1;
-        load_and_track_divider(5'd4, 16'd100, 8'd4, 6'd20, 8'd93, 8'd16, 5'd8);
-        load_and_track_divider(5'd10, 16'd250, 8'd10, 6'd6, 8'd234, 8'd16, 5'd8);
-        load_and_track_divider(5'd12, 16'd300, 8'd12, 6'd4, 8'd90, 8'd16, 5'd2);
-        load_and_track_divider(5'd16, 16'd400, 8'd16, 6'd2, 8'd76, 8'd1, 5'd4);
-        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121, 8'd16, 5'd5);
+        load_and_track_divider(5'd4, 16'd100, 8'd4, 6'd24, 8'd139, 8'd4, 5'd2);
+        load_and_track_divider(5'd10, 16'd250, 8'd10, 6'd7, 8'd8, 8'd4, 5'd2);
+        load_and_track_divider(5'd12, 16'd300, 8'd12, 6'd6, 8'd242, 8'd4, 5'd2);
+        load_and_track_divider(5'd16, 16'd400, 8'd16, 6'd3, 8'd45, 8'd4, 5'd2);
+        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd2, 8'd149, 8'd4, 5'd2);
 
         pll_enable = 1'b0;
         tick();
         check_controls("disabled", 1'b0, 1'b0, 1'b0, 1'b0);
-        check_mode_outputs("disabled", 16'd500, 8'd20, 6'd1, 8'd121, 8'd16, 5'd5, 1'b1);
+        check_mode_outputs("disabled", 16'd500, 8'd20, 6'd2, 8'd149, 8'd4, 5'd2, 1'b1);
 
         load_invalid_divider(5'd5);
-        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd1, 8'd121, 8'd16, 5'd5);
+        load_and_track_divider(5'd20, 16'd500, 8'd20, 6'd2, 8'd149, 8'd4, 5'd2);
 
         $display("PASS: 25 MHz PLL divider controller sequencing");
         $finish;

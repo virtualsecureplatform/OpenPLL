@@ -13,11 +13,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 EXPECTED_TARGETS = {
-    100: {"multiplier": 4, "coarse_code": 20, "target_code": 93, "ki": 16, "kp": 8},
-    250: {"multiplier": 10, "coarse_code": 6, "target_code": 234, "ki": 16, "kp": 8},
-    300: {"multiplier": 12, "coarse_code": 4, "target_code": 90, "ki": 16, "kp": 2},
-    400: {"multiplier": 16, "coarse_code": 2, "target_code": 76, "ki": 1, "kp": 4},
-    500: {"multiplier": 20, "coarse_code": 1, "target_code": 121, "ki": 16, "kp": 5},
+    100: {"multiplier": 4, "coarse_code": 24, "target_code": 139, "ki": 4, "kp": 2},
+    250: {"multiplier": 10, "coarse_code": 7, "target_code": 8, "ki": 4, "kp": 2},
+    300: {"multiplier": 12, "coarse_code": 6, "target_code": 242, "ki": 4, "kp": 2},
+    400: {"multiplier": 16, "coarse_code": 3, "target_code": 45, "ki": 4, "kp": 2},
+    500: {"multiplier": 20, "coarse_code": 2, "target_code": 149, "ki": 4, "kp": 2},
 }
 
 NEARSEED_MIN_RISES = {
@@ -89,15 +89,15 @@ def check_dco_structure(root: Path) -> dict[str, str]:
         "module IntegerPLL_DCO_EINVP_COARSE",
         "input wire [46:0] COARSETHERMAL_CODE",
         "wire [47:0] mirror_fwd",
-        "sky130_fd_sc_hs__nand2_4 osc_gate",
-        "sky130_fd_sc_hs__nand2_4 mirror_forward",
-        "sky130_fd_sc_hs__nand2b_4 mirror_turn",
-        "sky130_fd_sc_hs__nand2b_4 mirror_return",
-        "sky130_fd_sc_hs__nand2_4 mirror_merge",
-        "sky130_fd_sc_hs__buf_1 out_buf",
-        "sky130_fd_sc_hs__nand2_1 tune_load",
-        "for (f = 0; f < 90; f = f + 1)",
-        "DCO_THERM_INDEX",
+        "sky130_fd_sc_hd__nand2_8 osc_gate",
+        "sky130_fd_sc_hd__nand2_8 mirror_forward",
+        "sky130_fd_sc_hd__nand2b_4 mirror_turn",
+        "sky130_fd_sc_hd__nand2b_4 mirror_return",
+        "sky130_fd_sc_hd__nand2_8 mirror_merge",
+        "sky130_fd_sc_hd__buf_1 out_buf",
+        "sky130_fd_sc_hd__nand2_1 tune_load",
+        "for (f = 0; f < 255; f = f + 1)",
+        ".B(DCO_THERM[f])",
     )
     missing = [fragment for fragment in required if fragment not in text]
     if missing:
@@ -132,9 +132,9 @@ def check_dco_structure(root: Path) -> dict[str, str]:
 
     return {
         "rtl": artifact_text(path),
-        "coarse_topology": "hs_nand_nand2b_mirror_delay",
-        "output_buffer": "sky130_fd_sc_hs__buf_1",
-        "fine_loads": "90 local hs_nand2 loads",
+        "coarse_topology": "hd_nand_nand2b_mirror_delay",
+        "output_buffer": "sky130_fd_sc_hd__buf_1",
+        "fine_loads": "255 local hd_nand2 loads",
     }
 
 
@@ -146,28 +146,28 @@ def check_mode_config(root: Path) -> dict[str, object]:
         "input wire [FEEDBACK_DIVIDER_WIDTH-1:0] FEEDBACK_DIVIDER",
         "output reg CONFIG_VALID",
         "MMDCLKDIV_RATIO = 8'd4",
-        "COARSEBINARY_CODE = 6'd20",
-        "TARGET_DCO_CODE = 8'd93",
-        "DLF_Ext_Data = seed_word(8'd93)",
+        "COARSEBINARY_CODE = 6'd24",
+        "TARGET_DCO_CODE = 8'd139",
+        "DLF_Ext_Data = seed_word(8'd139)",
         "MMDCLKDIV_RATIO = 8'd10",
-        "COARSEBINARY_CODE = 6'd6",
-        "TARGET_DCO_CODE = 8'd234",
-        "DLF_Ext_Data = seed_word(8'd234)",
+        "COARSEBINARY_CODE = 6'd7",
+        "TARGET_DCO_CODE = 8'd8",
+        "DLF_Ext_Data = seed_word(8'd8)",
         "MMDCLKDIV_RATIO = 8'd12",
-        "COARSEBINARY_CODE = 6'd4",
-        "TARGET_DCO_CODE = 8'd90",
-        "DLF_Ext_Data = seed_word(8'd90)",
+        "COARSEBINARY_CODE = 6'd6",
+        "TARGET_DCO_CODE = 8'd242",
+        "DLF_Ext_Data = seed_word(8'd242)",
         "MMDCLKDIV_RATIO = 8'd16",
-        "COARSEBINARY_CODE = 6'd2",
-        "TARGET_DCO_CODE = 8'd76",
-        "DLF_Ext_Data = seed_word(8'd76)",
+        "COARSEBINARY_CODE = 6'd3",
+        "TARGET_DCO_CODE = 8'd45",
+        "DLF_Ext_Data = seed_word(8'd45)",
         "MMDCLKDIV_RATIO = 8'd20",
-        "COARSEBINARY_CODE = 6'd1",
-        "TARGET_DCO_CODE = 8'd121",
-        "DLF_Ext_Data = seed_word(8'd121)",
+        "COARSEBINARY_CODE = 6'd2",
+        "TARGET_DCO_CODE = 8'd149",
+        "DLF_Ext_Data = seed_word(8'd149)",
         "CONFIG_VALID = 1'b0",
-        "DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16}",
-        "DLF_KP = {{(KP_WIDTH-3){1'b0}}, 3'd4}",
+        "DLF_KI = {{(GAIN_WIDTH-3){1'b0}}, 3'd4}",
+        "DLF_KP = {{(KP_WIDTH-2){1'b0}}, 2'd2}",
     )
     missing = [fragment for fragment in fragments if fragment not in text]
     if missing:
@@ -249,16 +249,16 @@ def check_mode_controller(root: Path) -> dict[str, str]:
     for fragment in (
         "module IntegerPLL_DCO",
         "input wire [5:0] COARSEBINARY_CODE",
-        "c20_freq_mhz",
+        "c24_freq_mhz",
+        "c07_freq_mhz",
         "c06_freq_mhz",
-        "c04_freq_mhz",
+        "c03_freq_mhz",
         "c02_freq_mhz",
-        "c01_freq_mhz",
-        "6'd20",
+        "6'd24",
+        "6'd7",
         "6'd6",
-        "6'd4",
+        "6'd3",
         "6'd2",
-        "6'd1",
     ):
         if fragment not in behavioral_model_text:
             raise ValueError(

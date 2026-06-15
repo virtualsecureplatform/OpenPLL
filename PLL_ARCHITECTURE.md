@@ -6,37 +6,39 @@ bang-bang digital PLL. The digital feedback loop is implemented in RTL and the
 timing critical analog behavior is implemented with standard-cell gate-level
 circuits.
 The current Sky130 implementation uses an 8-bit DCO tuning code decoded into a
-255-line thermometer load bank for SPICE-validated frequency control. The load
-cells are physically active when their thermometer controls are high; the RTL
+255-line thermometer control bus for SPICE-validated frequency control. The
+coarse DCO now connects all 255 thermometer controls to local HD NAND2 load
+cells. Load cells are active when their thermometer controls are high; the RTL
 defaults to an inverted DCO decoder so increasing top-level `DCO_CODE` reduces
 load and increases DCO frequency.
 
 ## Current Sky130 Deliverable
 
-The current high-frequency implementation track is
-`IntegerPLL_HardMacroTop_EINVP`: a signed-off Sky130 digital core, filled BBPD
-macro, physical `IntegerPLL_DCO_EINVP_COARSE` macro, and hard-top interconnect.
+The current high-frequency source/integration track is
+`IntegerPLL_HardMacroTop_EINVP`: Sky130 digital core RTL, the filled BBPD
+macro, physical `IntegerPLL_DCO_EINVP_COARSE` macro source, and hard-top
+interconnect flow. Existing hard-top/configured-wrapper routed artifacts must be
+regenerated after the current 5-bit `DLF_KP` interface update before they are
+treated as current post-layout signoff evidence.
 It is still an integer-N bang-bang digital PLL, with an 8-bit exported
-`DCO_CODE`, 255 physical fine thermometer load controls, a separate 6-bit
+`DCO_CODE`, 255 decoded fine thermometer controls, a separate 6-bit
 coarse band input decoded to 47 thermometer controls, and an 8-bit programmable
 `MMDCLKDIV_RATIO`.
 
 `IntegerPLL_DCO_EINVP_COARSE` keeps one macro and one oscillator loop. Coarse
-selection is a 48-position HS NAND/NAND2B turn/pass mirror-delay network; the
+selection is a 48-position HD NAND/NAND2B turn/pass mirror-delay network; the
 terminal mirror turn supplies the 48th position after the 47 decoded coarse
-thermometer controls. Fine tuning uses 90 HS NAND2 loads sampled from the
-existing 255-bit fine thermometer bus and placed locally on `osc_node` and
-`mirror_ret[0]`. The active reset/forward/merge NAND path uses HS `_4` cells,
-the turn/return NAND2B path remains HS `_4`, and the first output buffer remains
-`sky130_fd_sc_hs__buf_1` so the measurement/output path does not unnecessarily
-load the oscillator node. The fine-load digital enable is NAND2 pin `B`, whose
-NMOS is directly connected to `VGND` in the Sky130 HS `nand2_1` SPICE view.
+thermometer controls. Fine tuning uses 255 HD NAND2 loads placed locally on
+`osc_node` and `mirror_ret[0]`. The active reset/forward/merge NAND path uses
+HD `nand2_8` cells, the turn/return path uses HD `nand2b_4`, and the first
+output buffer remains `sky130_fd_sc_hd__buf_1` so the measurement/output path
+does not unnecessarily load the oscillator node. The fine-load digital enable
+is NAND2 pin `B`, whose NMOS is directly connected to `VGND` in the Sky130 HD
+`nand2_1` SPICE view.
 
-The current promoted source candidate restores the 25 MHz-reference /4, /10,
-/12, /16, and /20 modes from the v5-supported physical DCO range, then tunes
-the configured-mode gains for lower deterministic fitted TIE. The selected
-seeds are C20/code93, C06/code234, C04/code90, C02/code76, and C01/code121 for
-100, 250, 300, 400, and 500 MHz respectively.
+The current configured-mode preset table uses the characterized all-HD DCO
+settings for a 25 MHz reference: C24/code139, C07/code8, C06/code242,
+C03/code45, and C02/code149 for 100, 250, 300, 400, and 500 MHz respectively.
 
 In other words, the current fast-path architecture does not require coarse and
 fine tuning to sum to 8 bits. `DCO_COARSE_BITS=0` keeps all 8 exported DCO bits
@@ -52,13 +54,12 @@ coarse mirror-delay path, seed the fine code near the measured target, then
 enable the DLF for phase tracking.
 
 The deterministic ideal-BBPD jitter comparison in
-`build/jitter_compare_25mhz_tuned_v5range/` is also a model-level screen, not a
-noise or post-layout jitter signoff. Against the v5 release table with
-`KI=16`, `KP=4`, the restored DCO plus per-mode gain tuning reduces worst-phase
-fitted TIE RMS at 100, 250, 300, 400, and 500 MHz. Period-jitter RMS is not
-lower in every mode, so the next jitter-oriented step remains a real
-noise/post-layout jitter model or a TDC-style detector if period noise becomes
-the primary metric.
+`build/pll_jitter_25mhz_allhd255/` is also a model-level screen, not a noise or
+post-layout jitter signoff. Against the v6 release rows, the all-HD DCO improves
+worst-case peak-to-peak period jitter at 100, 250, 300, 400, and 500 MHz.
+Fitted TIE RMS is mixed, so the next jitter-oriented step remains a real
+noise/post-layout jitter model or a TDC-style detector if integrated phase error
+becomes the primary metric.
 
 ## 1. Architecture Summary
 
@@ -302,12 +303,12 @@ multiplication range.
 The physical coarse-DCO candidate follows the same control split. Its
 `COARSEBINARY_CODE` is decoded by the digital core into
 `COARSETHERMAL_CODE[46:0]`; those thermometer bits drive the turn/pass controls
-in a single 48-position HS NAND/NAND2B mirror-delay loop. Higher coarse codes
+in a single 48-position HD NAND/NAND2B mirror-delay loop. Higher coarse codes
 pass through more mirror cells before turning back, so the code changes
 effective path length rather than selecting a muxed feedback tap. The 255-bit
 `DCO_THERM` bank remains the fine control path driven by the loop filter; the
-current source candidate samples that bus with 90 evenly mapped HS NAND2 fine
-loads split between `osc_node` and `mirror_ret[0]`.
+current release connects that bus to 255 HD NAND2 fine loads split between
+`osc_node` and `mirror_ret[0]`.
 
 For fixed 25 MHz-reference multiplier operating points, the intended sequence is
 configured acquisition rather than blind bang-bang rail acquisition: select a
@@ -315,11 +316,12 @@ characterized coarse mirror-delay path for the requested multiplier, seed the
 fine code near the measured target code through the existing DLF override/config
 path, then enable the DLF for phase tracking. The pre-layout mirror check,
 `make check-dco-einvp-coarse-mirror-targets`, remains a topology diagnostic
-with the minimum output buffer and the 90-cell HS NAND2 load bank.
+with the minimum output buffer; the release DCO source uses the all-HD
+255-load macro.
 `IntegerPLL_25MHzModeConfig` captures the reusable RTL table keyed by the
-external 5-bit `FEEDBACK_DIVIDER` value: /4 emits C20/code93 with KI=16/KP=8,
-/10 emits C06/code234 with KI=16/KP=8, /12 emits C04/code90 with KI=16/KP=2,
-/16 emits C02/code76 with KI=1/KP=4, and /20 emits C01/code121 with KI=16/KP=5.
+external 5-bit `FEEDBACK_DIVIDER` value: /4 emits C24/code139 with KI=4/KP=2,
+/10 emits C07/code8 with KI=4/KP=2, /12 emits C06/code242 with KI=4/KP=2,
+/16 emits C03/code45 with KI=4/KP=2, and /20 emits C02/code149 with KI=4/KP=2.
 Each valid mode also emits a DLF seed word of `target_code << 2` for the default
 10-bit DLF / 8-bit DCO-code split and `CONFIG_VALID`. Unsupported divider
 values hold `CONFIG_VALID=0` and do not enter tracking.
@@ -330,10 +332,12 @@ divider/coarse/gain/seed values, asserts `DLF_Clear` for a small number of
 normal tracking. `IntegerPLL_HardMacroTop_EINVP_25MHzConfigured` wraps that
 controller around the low-level hard macro so the shipped 25 MHz-reference
 interface is `PLL_ENABLE` plus `FEEDBACK_DIVIDER[4:0]`, with `CONFIG_VALID` as
-status. That wrapper is also hardened as
-`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`, which embeds the signed
-low-level hard macro and signs off the divider controller plus wrapper routing
-as one physical macro. The promoted 25 MHz hard-macro operating points use the
+status. That wrapper also has a hardening flow as
+`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`, which embeds the low-level hard
+macro and signs off the divider controller plus wrapper routing as one physical
+macro after regeneration. Existing routed/signoff artifacts predate the current
+5-bit `DLF_KP` physical interface and are not current release evidence. The
+promoted 25 MHz hard-macro operating points use the
 default divider-clocked DLF update path. The generic digital core can be
 rebuilt with `DLF_UPDATE_ON_PLLOUT=1` for diagnostic experiments, but the
 placed hard macro does not expose that as a runtime-selectable mode.
@@ -352,7 +356,7 @@ make check-pll-25mhz-divider-config check-pll-25mhz-divider-controller check-pll
 ```
 
 It validates the coarse-DCO structure, the `buf_1` output-buffer constraint, the
-restored RTL divider preset table, and the configured behavioral PLL
+all-HD RTL divider preset table, and the configured behavioral PLL
 reset-to-tracking regressions. The heavier
 `make check-sky130-pll-25mhz-release` target still checks post-layout
 hard-macro artifact freshness, so it requires rerouting/signoff after the
@@ -361,7 +365,7 @@ mixed-signal rows should be regenerated after any physical DCO reroute.
 The optional
 `make xyce-pll-postlayout-dco-mixed-25mhz-500m-hold-smoke` diagnostic runs the
 extracted coarse DCO and extracted BBPD together at the hardest requested mode,
-C01/code121 with `NDIV=20`. It is a direct mixed-step integration smoke; the
+C02/code149 with `NDIV=20`. It is a direct mixed-step integration smoke; the
 short ADC-sampled frequency estimate is not used as the precise DCO frequency
 measurement.
 A wrapped BBPD by itself is not treated as a wide-range frequency detector from

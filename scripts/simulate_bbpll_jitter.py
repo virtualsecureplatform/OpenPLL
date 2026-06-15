@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: Apache-2.0
-"""Simulate deterministic BBPLL control jitter with an ideal BBPD.
+"""Simulate deterministic PLL control jitter with an ideal BBPD or TDC.
 
-This is a fast sampled model for loop-gain selection. It intentionally excludes
-device noise, supply noise, and extracted interconnect effects; those require
-transistor-level transient/noise simulation or silicon measurement.
+This is a fast sampled model for loop-gain and detector selection. It
+intentionally excludes device noise, supply noise, and extracted interconnect
+effects; those require transistor-level transient/noise simulation or silicon
+measurement.
 """
 
 from __future__ import annotations
@@ -54,27 +55,28 @@ class DlfModel:
         self.last_dir = 0
         self.same_dir_count = 0
 
-    def update(self, decision: int) -> None:
-        if decision == 0:
+    def update(self, detector_code: int) -> None:
+        direction = 1 if detector_code > 0 else -1 if detector_code < 0 else 0
+        if direction == 0:
             self.same_dir_count = 0
             self.last_dir = 0
             self.loop_code = int(self.acc >> self.frac)
             self.dco_code = clamp_int(self.loop_code >> self.code_shift, 0, 255)
             return
 
-        if decision == self.last_dir:
+        if direction == self.last_dir:
             self.same_dir_count += 1
         else:
-            self.last_dir = decision
+            self.last_dir = direction
             self.same_dir_count = 1
 
         ki_eff = self.ki
         if self.boost_shift > 0 and self.same_dir_count >= self.boost_after:
             ki_eff <<= self.boost_shift
 
-        self.acc = clamp_int(self.acc + decision * ki_eff, 0, self.max_acc)
+        self.acc = clamp_int(self.acc + detector_code * ki_eff, 0, self.max_acc)
         integ_code = int(self.acc >> self.frac)
-        self.loop_code = clamp_int(integ_code + decision * self.kp, 0, self.max_code)
+        self.loop_code = clamp_int(integ_code + detector_code * self.kp, 0, self.max_code)
         self.dco_code = clamp_int(self.loop_code >> self.code_shift, 0, 255)
 
 
@@ -186,6 +188,19 @@ def decision_name(decision: int) -> str:
     return "hold"
 
 
+def quantize_tdc_code(phase_ps: float, tdc_lsb_ps: float, tdc_max_code: int) -> int:
+    if tdc_lsb_ps <= 0.0:
+        raise ValueError("tdc_lsb_ps must be positive")
+    if phase_ps == 0.0:
+        return 0
+    magnitude = int(math.floor(abs(phase_ps) / tdc_lsb_ps + 0.5))
+    if tdc_max_code > 0:
+        magnitude = min(magnitude, tdc_max_code)
+    if magnitude == 0:
+        return 0
+    return magnitude if phase_ps > 0.0 else -magnitude
+
+
 def simulate_case(
     *,
     table: dict[int, float],
@@ -201,6 +216,9 @@ def simulate_case(
     bbpd_deadband_ps: float,
     bbpd_pos_deadband_ps: float | None,
     bbpd_neg_deadband_ps: float | None,
+    detector: str = "bbpd",
+    tdc_lsb_ps: float = 10.0,
+    tdc_max_code: int = 8,
     phase_wrap_cycles: float,
     boost_shift: int,
     boost_after: int,
@@ -221,6 +239,8 @@ def simulate_case(
     neg_deadband_ps = bbpd_deadband_ps if bbpd_neg_deadband_ps is None else bbpd_neg_deadband_ps
     pos_deadband_s = pos_deadband_ps * 1.0e-12
     neg_deadband_s = neg_deadband_ps * 1.0e-12
+    if detector not in ("bbpd", "tdc"):
+        raise ValueError(f"unsupported detector: {detector}")
 
     rows: list[dict[str, object]] = []
     period_errors_ps: list[float] = []
@@ -230,6 +250,7 @@ def simulate_case(
     fdco_values_mhz: list[float] = []
     dco_codes: list[int] = []
     decisions: list[str] = []
+    detector_codes: list[int] = []
     previous_period_ps = math.nan
 
     for cycle in range(cycles):
@@ -238,12 +259,16 @@ def simulate_case(
         fdco_mhz = dco_freq_mhz(table, code_used)
         period_ps = 1.0e6 / fdco_mhz
 
-        if phase_s > pos_deadband_s:
-            decision = 1
-        elif phase_s < -neg_deadband_s:
-            decision = -1
+        phase_now_ps = phase_s * 1.0e12
+        if detector == "bbpd":
+            if phase_s > pos_deadband_s:
+                detector_code = 1
+            elif phase_s < -neg_deadband_s:
+                detector_code = -1
+            else:
+                detector_code = 0
         else:
-            decision = 0
+            detector_code = quantize_tdc_code(phase_now_ps, tdc_lsb_ps, tdc_max_code)
 
         if collect_rows:
             row = {
@@ -251,8 +276,9 @@ def simulate_case(
                 "cycle": cycle,
                 "ref_ns": cycle * tref_s * 1.0e9,
                 "div_ns": cycle * tref_s * 1.0e9 + phase_s * 1.0e9,
-                "phase_ps": phase_s * 1.0e12,
-                "decision": decision_name(decision),
+                "phase_ps": phase_now_ps,
+                "detector_code": detector_code,
+                "decision": decision_name(detector_code),
                 "dco_code": code_used,
                 "loop_code": loop_code_used,
                 "fdco_mhz": fdco_mhz,
@@ -263,8 +289,9 @@ def simulate_case(
         if cycle >= discard_cycles:
             fdco_values_mhz.append(fdco_mhz)
             dco_codes.append(code_used)
-            decisions.append(decision_name(decision))
-            phase_values_ps.append(phase_s * 1.0e12)
+            decisions.append(decision_name(detector_code))
+            detector_codes.append(detector_code)
+            phase_values_ps.append(phase_now_ps)
             for _ in range(ndiv):
                 periods_ps.append(period_ps)
                 period_errors_ps.append(period_ps - target_period_ps)
@@ -272,7 +299,7 @@ def simulate_case(
                     c2c_ps.append(period_ps - previous_period_ps)
                 previous_period_ps = period_ps
 
-        dlf.update(decision)
+        dlf.update(detector_code)
         phase_s = wrap_phase_s(
             phase_s + (float(ndiv) / (fdco_mhz * 1.0e6)) - tref_s,
             tref_s,
@@ -285,6 +312,7 @@ def simulate_case(
     c2c_stat = stats(c2c_ps)
     phase_stat = stats(phase_values_ps)
     fdco_stat = stats(fdco_values_mhz)
+    detector_code_stat = stats([float(code) for code in detector_codes])
     tie_stat = linfit_tie_ps(periods_ps)
     decision_transitions = sum(1 for prev, cur in zip(decisions, decisions[1:]) if prev != cur)
 
@@ -296,10 +324,13 @@ def simulate_case(
         "ki": gain.ki,
         "kp": gain.kp,
         "frac": frac,
+        "detector": detector,
         "phase_start_ps": phase_ps,
         "bbpd_deadband_ps": bbpd_deadband_ps,
         "bbpd_pos_deadband_ps": pos_deadband_ps,
         "bbpd_neg_deadband_ps": neg_deadband_ps,
+        "tdc_lsb_ps": tdc_lsb_ps if detector == "tdc" else "",
+        "tdc_max_code": tdc_max_code if detector == "tdc" else "",
         "cycles": cycles,
         "discard_cycles": discard_cycles,
         "analyzed_ref_cycles": max(0, cycles - discard_cycles),
@@ -321,6 +352,8 @@ def simulate_case(
         "dco_code_max": max(dco_codes) if dco_codes else math.nan,
         "dco_code_span": (max(dco_codes) - min(dco_codes)) if dco_codes else math.nan,
         "dco_code_hist": " ".join(f"{code}:{count}" for code, count in sorted(code_counts.items())),
+        "detector_code_rms": detector_code_stat["rms"],
+        "detector_code_p2p": detector_code_stat["p2p"],
         "increase_count": counts["increase"],
         "decrease_count": counts["decrease"],
         "hold_count": counts["hold"],
@@ -357,6 +390,12 @@ def main() -> int:
     parser.add_argument("--cycles", type=int, default=100000)
     parser.add_argument("--discard-cycles", type=int, default=10000)
     parser.add_argument("--phase-ps-values", type=parse_float_list, default=[0.0, 100.0, -100.0])
+    parser.add_argument(
+        "--detector",
+        choices=("bbpd", "tdc"),
+        default="bbpd",
+        help="Phase detector model.",
+    )
     parser.add_argument("--bbpd-deadband-ps", type=float, default=40.0)
     parser.add_argument(
         "--bbpd-pos-deadband-ps",
@@ -371,6 +410,13 @@ def main() -> int:
         help="Negative-phase feedback-leading BBPD threshold magnitude. Defaults to --bbpd-deadband-ps.",
     )
     parser.add_argument("--phase-wrap-cycles", type=float, default=0.5)
+    parser.add_argument("--tdc-lsb-ps", type=float, default=10.0)
+    parser.add_argument(
+        "--tdc-max-code",
+        type=int,
+        default=8,
+        help="Maximum absolute TDC output code. Use 0 for no saturation.",
+    )
     parser.add_argument("--boost-shift", type=int, default=0)
     parser.add_argument("--boost-after", type=int, default=3)
     parser.add_argument(
@@ -415,12 +461,18 @@ def main() -> int:
                     bbpd_deadband_ps=args.bbpd_deadband_ps,
                     bbpd_pos_deadband_ps=args.bbpd_pos_deadband_ps,
                     bbpd_neg_deadband_ps=args.bbpd_neg_deadband_ps,
+                    detector=args.detector,
+                    tdc_lsb_ps=args.tdc_lsb_ps,
+                    tdc_max_code=args.tdc_max_code,
                     phase_wrap_cycles=args.phase_wrap_cycles,
                     boost_shift=args.boost_shift,
                     boost_after=args.boost_after,
                     collect_rows=detail_count < args.detail_limit,
                 )
-                case = f"target{args.target_mhz:.0f}m_frac{frac}_ki{gain.ki}_kp{gain.kp}_phase{phase_ps:+.0f}ps"
+                case = (
+                    f"target{args.target_mhz:.0f}m_{args.detector}_frac{frac}"
+                    f"_ki{gain.ki}_kp{gain.kp}_phase{phase_ps:+.0f}ps"
+                )
                 summary["case"] = case
                 for row in rows:
                     row["case"] = case
@@ -437,8 +489,8 @@ def main() -> int:
             float(row["period_jitter_rms_ps"]),
         )
     )
-    summary_csv = out_dir / "ideal_bbpd_jitter_summary.csv"
-    summary_json = out_dir / "ideal_bbpd_jitter_summary.json"
+    summary_csv = out_dir / f"ideal_{args.detector}_jitter_summary.csv"
+    summary_json = out_dir / f"ideal_{args.detector}_jitter_summary.json"
     write_csv(summary_csv, summaries)
     summary_json.write_text(json.dumps(summaries, indent=2) + "\n", encoding="ascii")
 

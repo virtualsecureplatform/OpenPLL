@@ -6,14 +6,31 @@
   "VERILOG_DEFINES": [
     "USE_POWER_PINS"
   ],
-  "STD_CELL_LIBRARY": "sky130_fd_sc_hs",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
   "CELL_VERILOG_MODELS": [
     "dir::../../sky130/sky130_fd_sc_hd_pll_blackbox.v"
   ],
   "CELL_BB_VERILOG_MODELS": [
     "dir::../../sky130/sky130_fd_sc_hd_pll_blackbox.v"
   ],
+  "CELL_GDS": [
+    "ref::$PDKPATH/../../../build/7519dfb04400f224f140749cda44ee7de6f5e095/open_pdks/sources/sky130-pdk/libraries/sky130_fd_sc_hd/latest/cells/buf/sky130_fd_sc_hd__buf_1.gds",
+    "ref::$PDKPATH/../../../build/7519dfb04400f224f140749cda44ee7de6f5e095/open_pdks/sources/sky130-pdk/libraries/sky130_fd_sc_hd/latest/cells/conb/sky130_fd_sc_hd__conb_1.gds",
+    "ref::$PDKPATH/../../../build/7519dfb04400f224f140749cda44ee7de6f5e095/open_pdks/sources/sky130-pdk/libraries/sky130_fd_sc_hd/latest/cells/decap/sky130_fd_sc_hd__decap_3.gds",
+    "ref::$PDKPATH/../../../build/7519dfb04400f224f140749cda44ee7de6f5e095/open_pdks/sources/sky130-pdk/libraries/sky130_fd_sc_hd/latest/cells/fill/sky130_fd_sc_hd__fill_1.gds",
+    "ref::$PDKPATH/../../../build/7519dfb04400f224f140749cda44ee7de6f5e095/open_pdks/sources/sky130-pdk/libraries/sky130_fd_sc_hd/latest/cells/fill/sky130_fd_sc_hd__fill_2.gds",
+    "ref::$PDKPATH/../../../build/7519dfb04400f224f140749cda44ee7de6f5e095/open_pdks/sources/sky130-pdk/libraries/sky130_fd_sc_hd/latest/cells/fill/sky130_fd_sc_hd__fill_4.gds",
+    "ref::$PDKPATH/../../../build/7519dfb04400f224f140749cda44ee7de6f5e095/open_pdks/sources/sky130-pdk/libraries/sky130_fd_sc_hd/latest/cells/fill/sky130_fd_sc_hd__fill_8.gds",
+    "ref::$PDKPATH/../../../build/7519dfb04400f224f140749cda44ee7de6f5e095/open_pdks/sources/sky130-pdk/libraries/sky130_fd_sc_hd/latest/cells/nand2/sky130_fd_sc_hd__nand2_1.gds",
+    "ref::$PDKPATH/../../../build/7519dfb04400f224f140749cda44ee7de6f5e095/open_pdks/sources/sky130-pdk/libraries/sky130_fd_sc_hd/latest/cells/nand2/sky130_fd_sc_hd__nand2_8.gds",
+    "ref::$PDKPATH/../../../build/7519dfb04400f224f140749cda44ee7de6f5e095/open_pdks/sources/sky130-pdk/libraries/sky130_fd_sc_hd/latest/cells/nand2b/sky130_fd_sc_hd__nand2b_4.gds",
+    "ref::$PDKPATH/../../../build/7519dfb04400f224f140749cda44ee7de6f5e095/open_pdks/sources/sky130-pdk/libraries/sky130_fd_sc_hd/latest/cells/tapvpwrvgnd/sky130_fd_sc_hd__tapvpwrvgnd_1.gds"
+  ],
   "EXTRA_VERILOG_MODELS": [],
+  "EXTRA_LEFS": [],
+  "EXTRA_GDS": [],
+  "EXTRA_CDLS": [],
+  "EXTRA_LIBS": [],
   "PNR_SDC_FILE": "dir::no_clock.sdc",
   "SIGNOFF_SDC_FILE": "dir::no_clock.sdc",
   "LINTER_DISABLE_WARNINGS_BLACKBOX": [
@@ -46,6 +63,14 @@
   "RUN_MCSTA": false,
   "RUN_IRDROP_REPORT": false,
   "RUN_EQY": false,
+  "PRIMARY_GDSII_STREAMOUT_TOOL": "klayout",
+  "RUN_MAGIC_STREAMOUT": false,
+  "RUN_KLAYOUT_STREAMOUT": true,
+  "RUN_KLAYOUT_XOR": false,
+  "DECAP_CELLS": [],
+  "FILL_CELLS": [
+    "sky130_fd_sc_hd__fill*"
+  ],
   "PAD_GDS": null,
   "PAD_LEFS": null,
   "PAD_VERILOG_MODELS": null,
@@ -57,19 +82,19 @@
   "GND_NETS": [
     "VGND"
   ],
-  "scl::sky130_fd_sc_hs": {
+  "scl::sky130_fd_sc_hd": {
     "LIB": {
       "nom_": [
-        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib"
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
       ],
       "*_tt_025C_1v80": [
-        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib"
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
       ],
       "*_ff_n40C_1v95": [
-        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hs/lib/sky130_fd_sc_hs__ff_n40C_1v95.lib"
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
       ],
       "*_ss_100C_1v60": [
-        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hs/lib/sky130_fd_sc_hs__ss_100C_1v60.lib"
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
       ]
     }
   },

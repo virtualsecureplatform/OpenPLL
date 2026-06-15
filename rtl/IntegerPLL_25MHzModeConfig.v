@@ -37,55 +37,55 @@ module IntegerPLL_25MHzModeConfig #(
     endfunction
 
     always @* begin
-        DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16};
-        DLF_KP = {{(KP_WIDTH-3){1'b0}}, 3'd4};
+        DLF_KI = {{(GAIN_WIDTH-3){1'b0}}, 3'd4};
+        DLF_KP = {{(KP_WIDTH-2){1'b0}}, 2'd2};
         CONFIG_VALID = 1'b1;
 
         case (FEEDBACK_DIVIDER)
             DIV_100MHZ: begin
                 TARGET_MHZ = 16'd100;
                 MMDCLKDIV_RATIO = 8'd4;
-                COARSEBINARY_CODE = 6'd20;
-                TARGET_DCO_CODE = 8'd93;
-                DLF_Ext_Data = seed_word(8'd93);
-                DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16};
-                DLF_KP = {{(KP_WIDTH-4){1'b0}}, 4'd8};
+                COARSEBINARY_CODE = 6'd24;
+                TARGET_DCO_CODE = 8'd139;
+                DLF_Ext_Data = seed_word(8'd139);
+                DLF_KI = {{(GAIN_WIDTH-3){1'b0}}, 3'd4};
+                DLF_KP = {{(KP_WIDTH-2){1'b0}}, 2'd2};
             end
             DIV_250MHZ: begin
                 TARGET_MHZ = 16'd250;
                 MMDCLKDIV_RATIO = 8'd10;
-                COARSEBINARY_CODE = 6'd6;
-                TARGET_DCO_CODE = 8'd234;
-                DLF_Ext_Data = seed_word(8'd234);
-                DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16};
-                DLF_KP = {{(KP_WIDTH-4){1'b0}}, 4'd8};
+                COARSEBINARY_CODE = 6'd7;
+                TARGET_DCO_CODE = 8'd8;
+                DLF_Ext_Data = seed_word(8'd8);
+                DLF_KI = {{(GAIN_WIDTH-3){1'b0}}, 3'd4};
+                DLF_KP = {{(KP_WIDTH-2){1'b0}}, 2'd2};
             end
             DIV_300MHZ: begin
                 TARGET_MHZ = 16'd300;
                 MMDCLKDIV_RATIO = 8'd12;
-                COARSEBINARY_CODE = 6'd4;
-                TARGET_DCO_CODE = 8'd90;
-                DLF_Ext_Data = seed_word(8'd90);
-                DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16};
+                COARSEBINARY_CODE = 6'd6;
+                TARGET_DCO_CODE = 8'd242;
+                DLF_Ext_Data = seed_word(8'd242);
+                DLF_KI = {{(GAIN_WIDTH-3){1'b0}}, 3'd4};
                 DLF_KP = {{(KP_WIDTH-2){1'b0}}, 2'd2};
             end
             DIV_400MHZ: begin
                 TARGET_MHZ = 16'd400;
                 MMDCLKDIV_RATIO = 8'd16;
-                COARSEBINARY_CODE = 6'd2;
-                TARGET_DCO_CODE = 8'd76;
-                DLF_Ext_Data = seed_word(8'd76);
-                DLF_KI = {{(GAIN_WIDTH-1){1'b0}}, 1'b1};
-                DLF_KP = {{(KP_WIDTH-3){1'b0}}, 3'd4};
+                COARSEBINARY_CODE = 6'd3;
+                TARGET_DCO_CODE = 8'd45;
+                DLF_Ext_Data = seed_word(8'd45);
+                DLF_KI = {{(GAIN_WIDTH-3){1'b0}}, 3'd4};
+                DLF_KP = {{(KP_WIDTH-2){1'b0}}, 2'd2};
             end
             DIV_500MHZ: begin
                 TARGET_MHZ = 16'd500;
                 MMDCLKDIV_RATIO = 8'd20;
-                COARSEBINARY_CODE = 6'd1;
-                TARGET_DCO_CODE = 8'd121;
-                DLF_Ext_Data = seed_word(8'd121);
-                DLF_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16};
-                DLF_KP = {{(KP_WIDTH-3){1'b0}}, 3'd5};
+                COARSEBINARY_CODE = 6'd2;
+                TARGET_DCO_CODE = 8'd149;
+                DLF_Ext_Data = seed_word(8'd149);
+                DLF_KI = {{(GAIN_WIDTH-3){1'b0}}, 3'd4};
+                DLF_KP = {{(KP_WIDTH-2){1'b0}}, 2'd2};
             end
             default: begin
                 TARGET_MHZ = 16'd0;

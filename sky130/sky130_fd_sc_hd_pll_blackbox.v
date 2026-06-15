@@ -79,7 +79,23 @@ module sky130_fd_sc_hd__nand2_1 (
 endmodule
 
 (* blackbox *)
+module sky130_fd_sc_hd__nand2_8 (
+    output wire Y,
+    input wire A,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
 module sky130_fd_sc_hd__nand2b_1 (
+    output wire Y,
+    input wire A_N,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hd__nand2b_4 (
     output wire Y,
     input wire A_N,
     input wire B

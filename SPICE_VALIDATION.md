@@ -17,7 +17,7 @@ The DCO validation script generates Sky130 standard-cell SPICE netlists for
   support `einvp`, `einvn`, and `dlclkp` cells.
 - Coarse mirror mode: `--topology mirror-coarse` can use HS cells, a
   48-position NAND/NAND2B mirror path, and sparse evenly mapped NAND2
-  varactor banks. The current physical coarse DCO uses 90 local fine loads and
+  varactor banks. The current physical coarse DCO uses 255 local HD fine loads and
   no deep-node slow-load bank.
 - Control: 8-bit binary `DCO_CODE` decoded to a 255-line thermometer bus.
 - PDK model: `sky130A`; HD is the default DCO sweep library and HS is selected
@@ -63,13 +63,16 @@ signoff-clean RCX deck directly.
 
 ## Current Validation Boundary
 
-The current high-frequency physical path is `IntegerPLL_HardMacroTop_EINVP`,
-using the signed-off Sky130 digital core, filled BBPD RCX, physical
-`IntegerPLL_DCO_EINVP_COARSE` RCX, and hard-top SPEF where each diagnostic
-requires it. The DCO uses a single HS NAND/NAND2B mirror-delay loop with a
-separate 6-bit coarse band input and an 8-bit fine code. The ring-facing output
-buffer remains `sky130_fd_sc_hs__buf_1` to avoid adding unnecessary
-oscillator-node capacitance.
+The current high-frequency source/integration path is
+`IntegerPLL_HardMacroTop_EINVP`, using the Sky130 digital core RTL, filled BBPD
+RCX, physical `IntegerPLL_DCO_EINVP_COARSE` RCX, and hard-top SPEF where each
+regenerated diagnostic requires it. Existing hard-top/configured-wrapper
+routed/signoff artifacts must be regenerated after the current 5-bit `DLF_KP`
+interface update and all-HD DCO source change before they count as current
+post-layout release evidence. The DCO uses a single HD NAND/NAND2B
+mirror-delay loop with a separate 6-bit coarse band input and an 8-bit fine
+code. The ring-facing output buffer remains `sky130_fd_sc_hd__buf_1` to avoid
+adding unnecessary oscillator-node capacitance.
 
 The older filled `IntegerPLL_DCO_EINVP` path measured 50.955942-72.479371 MHz
 across the 8-bit code endpoints and remains useful low-frequency diagnostic
@@ -83,12 +86,12 @@ probe around the 200 MHz target:
 191, and 202.264 MHz at code 192. This is post-layout DCO range evidence; the
 nearest measured fine codes bracket the 200 MHz target.
 
-`IntegerPLL_DCO_EINVP_COARSE` is the new physical coarse-DCO candidate. It uses
-one HS NAND-gated oscillator loop, a 48-position HS NAND/NAND2B turn/pass
-mirror-delay network, and 90 local HS NAND2 fine loads split between
-`osc_node` and `mirror_ret[0]`. The active ring/mirror gates use HS `_4`
-cells, while the first output buffer stays
-`buf_1` to avoid adding unnecessary capacitance at the oscillator node. The
+`IntegerPLL_DCO_EINVP_COARSE` is the current physical coarse-DCO candidate. It
+uses one HD NAND-gated oscillator loop, a 48-position HD NAND/NAND2B turn/pass
+mirror-delay network, and 255 local HD NAND2 fine loads split between
+`osc_node` and `mirror_ret[0]`. The active ring/mirror gates use HD `nand2_8`
+and `nand2b_4` cells, while the first output buffer stays `buf_1` to avoid
+adding unnecessary capacitance at the oscillator node. The
 earlier C19/C20 deep-node slow-load banks were removed after extracted
 simulation showed they made the target bands fragile. The coarse path changes
 effective loop length inside one macro rather than selecting among parallel
@@ -102,26 +105,21 @@ make -C OpenPLL check-dco-einvp-coarse-mirror-targets
 
 It keeps the output buffer drive at 1 and currently checks sampled 100 and
 300 MHz pre-layout brackets with buffered-`PLLOUT` duty/rise/fall quality. It is
-not the shipping all-target range claim. The physical DCO macro has clean
-LibreLane signoff and Magic RCX, plus post-layout TT Xyce endpoint and local
-target-code probes:
+not the shipping all-target range claim. The current all-HD target table is:
 
-| Target | Multiplier | Coarse/fine setting | Post-layout TT evidence |
+| Target | Multiplier | Coarse/fine setting | TT evidence |
 | ---: | ---: | --- | --- |
-| 100 MHz | 4 | C20/code93 | Interpolated from 98.609 MHz at code0 to 100.515 MHz at code128. |
-| 250 MHz | 10 | C06/code234 | 249.813 MHz measured directly; C06/code255 is numerically closer than code224 but has weaker duty, so the rail is avoided. |
-| 300 MHz | 12 | C04/code90 | Interpolated from 295.760 MHz at code64 to 301.054 MHz at code96. |
-| 400 MHz | 16 | C02/code76 | Interpolated from 397.373 MHz at code64 to 404.357 MHz at code96. |
-| 500 MHz | 20 | C01/code121 | Interpolated from 468.489 MHz at code0 to 501.912 MHz at code128. |
+| 100 MHz | 4 | C24/code139 | Interpolated at 100.069 MHz. |
+| 250 MHz | 10 | C07/code8 | Bracketed by C07/code8..11 at 249.851..250.146 MHz. |
+| 300 MHz | 12 | C06/code242 | Interpolated at 299.854 MHz. |
+| 400 MHz | 16 | C03/code45 | Interpolated at 399.904 MHz. |
+| 500 MHz | 20 | C02/code149 | Interpolated at 500.154 MHz. |
 
-The target-band context remains: C20 spans 98.609/100.515/101.817 MHz at fine
-0/128/255, C06 measures 243.384/249.187/249.756/249.813/250.488 MHz at codes
-128/192/224/234/255, C04 measures 295.760/301.054/304.371/308.390 MHz at codes
-64/96/128/160, and C02 spans
-385.207/390.628/397.373/404.357/411.194/425.984/438.705 MHz at codes
-0/32/64/96/128/192/255. The 500 MHz C01 target context is
-468.489/501.912/546.363 MHz at fine codes 0/128/255. Full PLL acquisition checks remain required before
-using this coarse-DCO path for PLL signoff claims.
+The target-band context remains: C24 spans 98.225..101.387 MHz, C07 spans
+249.071..271.543 MHz, C06 spans 274.037..301.073 MHz, C03 spans
+390.798..448.308 MHz, and C02 spans 456.090..535.379 MHz over the measured
+code range. Full PLL acquisition checks remain required before using this
+coarse-DCO path for final PLL signoff claims.
 If the oscillator needs more speed margin, the validated direction is to change
 ring/mirror drive strength, effective coarse path length, or fine-load topology.
 Upsizing the ring-facing output buffer is avoided because it increases the load
@@ -134,10 +132,12 @@ make -C OpenPLL xyce-pll-mixed-signal-25mhz-targets
 ```
 
 It aliases to the direct extracted-DCO mixed-step hold smoke after refreshing
-the post-layout RCX, waveform-qualified DCO tables above. The selected target
-codes are code93, code234, code90, code76, and code121. The calibrated configured
-tracking row uses `KI=16`, `KP=4`, starts each target at +/-4 fine codes, and
-passes the bounded configured tracking gate for all five multipliers. The gate
+the waveform-qualified DCO tables above. The selected target
+settings are /4 C24/code139 with KI=4/KP=2, /10 C07/code8 with KI=4/KP=2,
+/12 C06/code242 with KI=4/KP=2, /16 C03/code45 with KI=4/KP=2, and /20
+C02/code149 with KI=4/KP=2. The configured tracking row starts each target at
++/-4 fine codes and passes the bounded configured tracking gate for all five
+multipliers. The gate
 requires a target-code-neighborhood hit, at least one BBPD decision in the
 expected initial direction, final modeled frequency error within 2 MHz, and the
 last eight modeled DCO updates also inside the 2 MHz frequency window with no
@@ -149,19 +149,19 @@ the initial divider phase is explicitly controlled and are not promoted as
 frequency-acquisition evidence for the 100/250/300/400/500 MHz coarse-DCO target
 set.
 
-The fast artifact gate for this current 25 MHz-reference release evidence is:
+The current fast source/behavioral gate for this 25 MHz-reference path is:
 
 ```sh
-make -C OpenPLL check-sky130-pll-25mhz-release
+make -C OpenPLL check-pll-25mhz-divider-config check-pll-25mhz-divider-controller check-pll-25mhz-configured-wrapper check-pll-25mhz-configured-behavioral check-sky130-macros
 ```
 
 It validates the coarse-DCO RTL topology and `buf_1` output-buffer constraint,
-the 25 MHz RTL divider preset table and configured divider-controller/wrapper, the
-refreshed `IntegerPLL_HardMacroTop_EINVP` signoff and extracted SPICE/SPEF
-interface summaries, the configured behavioral PLL reset-to-tracking regression,
-the waveform-qualified target-code rows, the configured tracking rows, the five
-direct-RCX hold rows, and the recorded low/high near-seed direct-RCX update
-summary for all five divider targets.
+the 25 MHz RTL divider preset table, configured divider-controller/wrapper, and
+configured behavioral PLL reset-to-tracking regression. The heavier
+`make -C OpenPLL check-sky130-pll-25mhz-release` audit still checks post-layout
+hard-macro artifact freshness; after the 5-bit physical `DLF_KP` interface
+change, the hard-top/configured-wrapper physical artifacts must be regenerated
+before that target is a current post-layout release gate.
 
 The optional direct extracted-DCO mixed-step diagnostic for the highest target
 mode is:
@@ -172,7 +172,7 @@ make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-500m-hold-smoke
 
 This deck keeps the `IntegerPLL_DCO_EINVP_COARSE` RCX and filled BBPD RCX in
 Xyce, with the divider and DLF model in the C-interface driver. The current
-Ciel-PDK run fixes C01/code121 and uses `NDIV=20`. Because that short
+Ciel-PDK run fixes C02/code149 and uses `NDIV=20`. Because that short
 ADC-sampled window is approximate, the standalone post-layout DCO target rows
 remain the precise frequency evidence.
 
@@ -2678,12 +2678,12 @@ Validated so far:
 Not yet complete:
 
 - Full coarse-DCO RCX tuning-curve and PVT transient coverage. The current
-  `IntegerPLL_DCO_EINVP_COARSE` evidence includes clean standalone signoff/RCX,
-  clean hardtop signoff/SPICE-interface checks, and post-layout TT endpoint
-  plus near-target probes for the 100, 250, 300, 400, and 500 MHz targets. It still
+  `IntegerPLL_DCO_EINVP_COARSE` source uses an all-HD 255-load DCO. The
+  hard-top/configured-wrapper post-layout artifacts must be regenerated after
+  the 5-bit `DLF_KP` interface update and DCO source change. The path still
   needs broader all-band PVT DCO coverage and full extracted-DCO-in-loop
-  lock/acquisition evidence before the 25 MHz-reference multiplier targets can be
-  treated as final PLL signoff.
+  lock/acquisition evidence before the 25 MHz-reference multiplier targets can
+  be treated as final PLL signoff.
 - Full closed-loop transistor-level transient SPICE. Current passing DLF
   transient evidence covers the reduced DCO-code update cone, a short full-core
   reset-overlap update check, and final-signoff-netlist DLF cones with no extra

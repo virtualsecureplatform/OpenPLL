@@ -1,23 +1,22 @@
 # OpenPLL
 
 OpenPLL is an integer-N bang-bang digital PLL implementation targeting Sky130.
-The current high-frequency implementation path is
-`IntegerPLL_HardMacroTop_EINVP`, which combines a signed-off digital core,
-filled BBPD macro, physical `IntegerPLL_DCO_EINVP_COARSE` oscillator macro, and
-hard-top routing/SPEF. The DCO is one macro and one oscillator loop: HS
-NAND/NAND2B turn/pass mirror delay provides coarse band selection, while HS
-NAND2 load cells provide local fine tuning. The current 25 MHz all-mode
-candidate restores the v5-supported physical range, using HS `nand2_4` for the
-reset/forward/merge mirror path and HS `nand2b_4` for the
-turn/return path. It does not use parallel DCO macros, a mux-selected feedback
-tap, or a NOT-chain ring.
+The current high-frequency source/integration path is
+`IntegerPLL_HardMacroTop_EINVP`, which combines the digital core RTL, filled
+BBPD macro, physical `IntegerPLL_DCO_EINVP_COARSE` oscillator macro source, and
+hard-top hardening flow. The current release promotes the all-HD coarse-DCO
+source and 25 MHz configured RTL/behavioral path. Existing
+hard-top/configured-wrapper routed artifacts must be regenerated after the
+5-bit `DLF_KP` interface update before they are treated as current post-layout
+signoff evidence. The DCO is one macro and one oscillator loop: HD
+NAND/NAND2B turn/pass mirror delay provides coarse band selection, while 255 HD
+NAND2 load cells provide local fine tuning. It does not use parallel DCO
+macros, a mux-selected feedback tap, or a NOT-chain ring.
 
 The ring-facing output buffer intentionally stays
-`sky130_fd_sc_hs__buf_1` to limit oscillator-node loading. The current
-source candidate uses 90 local HS NAND2 fine loads split between `osc_node` and
-`mirror_ret[0]`. The fine-load digital enable is NAND2 pin `B`, the pin whose
-series NMOS is directly connected to `VGND` in the Sky130 HS `nand2_1` SPICE
-view.
+`sky130_fd_sc_hd__buf_1` to limit oscillator-node loading. The fine-load
+digital enable is NAND2 pin `B`, the pin whose series NMOS is directly
+connected to `VGND` in the Sky130 HD `nand2_1` SPICE view.
 If more oscillator speed margin is needed, adjust the ring/mirror gate drive,
 effective loop length, or fine-load topology; do not upsize the ring-facing
 output buffer as a speed fix because that directly increases oscillator load.
@@ -37,17 +36,14 @@ retained as low-frequency and 200 MHz diagnostic history, not as the current
 
 ## Current Status
 
-The current coarse-DCO structural and interface gates are:
+The current fast coarse-DCO source/behavioral gates are:
 
 ```sh
 make -C OpenPLL check-sky130-macros
 make -C OpenPLL check-pll-25mhz-divider-config
 make -C OpenPLL check-pll-25mhz-divider-controller
 make -C OpenPLL check-pll-25mhz-configured-wrapper
-make -C OpenPLL check-dco-einvp-coarse-librelane-signoff
-make -C OpenPLL check-hard-macro-top-einvp
-make -C OpenPLL check-hard-macro-top-einvp-spice
-make -C OpenPLL check-configured-hard-macro-top-einvp-signoff
+make -C OpenPLL check-pll-25mhz-configured-behavioral
 ```
 
 `rtl/IntegerPLL_25MHzModeConfig.v` is the reusable preset table for a 25 MHz
@@ -55,11 +51,11 @@ reference. It exposes the restored /4, /10, /12, /16, and /20 settings:
 
 | Feedback divider | Target | Coarse | Fine seed | KI | KP |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 4 | 100 MHz | C20 | 93 | 16 | 8 |
-| 10 | 250 MHz | C06 | 234 | 16 | 8 |
-| 12 | 300 MHz | C04 | 90 | 16 | 2 |
-| 16 | 400 MHz | C02 | 76 | 1 | 4 |
-| 20 | 500 MHz | C01 | 121 | 16 | 5 |
+| 4 | 100 MHz | C24 | 139 | 4 | 2 |
+| 10 | 250 MHz | C07 | 8 | 4 | 2 |
+| 12 | 300 MHz | C06 | 242 | 4 | 2 |
+| 16 | 400 MHz | C03 | 45 | 4 | 2 |
+| 20 | 500 MHz | C02 | 149 | 4 | 2 |
 
 The table also emits a 10-bit `DLF_Ext_Data` seed equal to
 `target_code << 2` and `CONFIG_VALID`. Unsupported divider values are passed to
@@ -79,9 +75,10 @@ generic digital core and `IntegerPLL_Top` still support
 is rebuilt for that variant. `make -C OpenPLL
 check-pll-25mhz-configured-wrapper` runs the wrapper-level divider sequencing test
 and checks that those preset controls reach the hard-macro instance. The
-configured wrapper is also hardened as
-`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`, a signed-off physical macro
-that embeds the signed low-level hard macro and adds the 25 MHz divider controller.
+configured wrapper also has a hardening flow as
+`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`. Its existing routed/signoff
+artifact predates the current 5-bit `DLF_KP` interface and must be regenerated
+before it is treated as current physical release evidence.
 The lower-level `IntegerPLL_HardMacroTop_EINVP` pins remain available for
 characterization and custom bring-up.
 
@@ -92,7 +89,7 @@ the configured interface.
 `make -C OpenPLL check-pll-25mhz-configured-behavioral` runs reset-to-tracking
 behavioral PLL regressions for all restored 25 MHz divider values. It uses the
 real controller, digital core, divider, and BBPD with a behavioral DCO table
-fitted to the restored 90-load coarse-DCO measurements, and checks
+fitted to the all-HD 255-load coarse-DCO measurements, and checks
 measured output frequency plus non-rail DCO control after the preset load.
 
 The current configured-mode 25 MHz-reference PLL target gate is:
@@ -101,25 +98,24 @@ The current configured-mode 25 MHz-reference PLL target gate is:
 make -C OpenPLL xyce-pll-mixed-signal-25mhz-targets
 ```
 
-The current source-level DCO table is:
+The current all-HD DCO target table is:
 
 | Target | Coarse | Seed | Interpolated seed frequency |
 | ---: | ---: | ---: | ---: |
-| 100 MHz | C20 | 93 | 99.994 MHz |
-| 250 MHz | C06 | 234 | 249.813 MHz |
-| 300 MHz | C04 | 90 | 300.062 MHz |
-| 400 MHz | C02 | 76 | 399.994 MHz |
-| 500 MHz | C01 | 121 | 500.084 MHz |
+| 100 MHz | C24 | 139 | 100.069 MHz |
+| 250 MHz | C07 | 8 | 249.851 MHz |
+| 300 MHz | C06 | 242 | 299.854 MHz |
+| 400 MHz | C03 | 45 | 399.904 MHz |
+| 500 MHz | C02 | 149 | 500.154 MHz |
 
 Fast deterministic BBPLL jitter sweeps are under
-`build/jitter_compare_25mhz_tuned_v5range/`. They use an ideal BBPD/control
-model and exclude device noise, supply noise, and extracted interconnect noise.
-Against the v5 release table with `KI=16`, `KP=4`, the restored DCO plus
-per-mode gain tuning reduces worst-phase fitted TIE RMS at all five restored
-targets: 100 MHz by 3.38%, 250 MHz by 9.38%, 300 MHz by 2.50%, 400 MHz by
-7.46%, and 500 MHz by 0.50%. Period-jitter RMS is a secondary metric and
-increases at 100, 250, and 500 MHz because those modes use stronger
-proportional tracking for lower fitted TIE.
+`build/pll_jitter_25mhz_allhd255/` with matched v6 rows under
+`build/jitter_compare_25mhz_v6_matched/`. They use an ideal BBPD/control model
+and exclude device noise, supply noise, and extracted interconnect noise. The
+all-HD DCO improves the worst-case peak-to-peak period jitter screen at all five
+configured targets versus v6. Fitted TIE RMS is mixed, improving at 100, 300,
+and 500 MHz while regressing at 250 and 400 MHz, so this remains a deterministic
+model screen rather than final jitter signoff.
 
 The current fast source/behavioral check for that 25 MHz coarse-DCO path is:
 
@@ -143,7 +139,7 @@ An optional slow direct-RCX integration smoke for the hardest divider target is:
 make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-500m-hold-smoke
 ```
 
-It runs the extracted coarse DCO and extracted BBPD in Xyce at C01/code121 with
+It runs the extracted coarse DCO and extracted BBPD in Xyce at C02/code149 with
 the digital divider/filter in the mixed-signal driver. Its short ADC-sampled
 frequency estimate is intentionally loose; regenerated standalone RCX DCO rows
 must remain the precise frequency evidence.
@@ -155,9 +151,9 @@ make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-nearseed-smokes
 ```
 
 The last completed all-mode direct-RCX run checked +/-4 fine-code starts for all
-five divider targets on the same restored HS-load/drive4 DCO family. That
-evidence remains a historical direct-RCX integration diagnostic; regenerated
-standalone RCX DCO rows remain the precise frequency evidence.
+five divider targets on the previous HS-load/drive4 DCO family. That evidence
+remains a historical direct-RCX integration diagnostic; regenerated standalone
+RCX DCO rows remain the precise frequency evidence.
 
 The legacy low-frequency v1 artifact audit remains available:
 
@@ -177,9 +173,9 @@ An optional pre-layout mirror-delay diagnostic is:
 make -C OpenPLL check-dco-einvp-coarse-mirror-targets
 ```
 
-It uses the same small `output-buffer-drives 1` assumption. The current source
-candidate should be checked with `--logic-drive 4 --turn-drive 4` and
-`--load-index-max 89` for the 90-cell HS NAND2 load bank.
+It uses the same small `output-buffer-drives 1` assumption. The legacy target is
+still useful for topology experiments, but the current release DCO source uses
+an all-HD ring and all 255 thermometer load controls.
 
 ## Environment
 
@@ -203,9 +199,8 @@ the Ciel registry root `PDK_ROOT=$HOME/.volare/ciel/sky130`, the Makefile and
 direct script defaults resolve it to the usable Ciel PDK root; pass
 `PDK_ROOT=...` on the `make` command line or export a non-default root to select
 something else. The local Ciel install used for this tree includes
-`sky130_fd_sc_hd` and `sky130_fd_sc_hs` reference views. HD remains the default
-library for the promoted low-frequency macros; the coarse high-frequency DCO
-macro explicitly uses HS cells.
+`sky130_fd_sc_hd` and `sky130_fd_sc_hs` reference views. The current coarse
+high-frequency DCO macro explicitly uses HD cells.
 
 `LIBRELANE_ROOT` is auto-detected from nearby checkout locations when possible.
 `XYCE` defaults to the first `Xyce` on `PATH`; MPI/KLU diagnostics use
