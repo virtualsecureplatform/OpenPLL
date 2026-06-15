@@ -1,0 +1,79 @@
+Bootstrap: docker
+From: ubuntu:24.04
+
+%labels
+    org.opencontainers.image.title OpenPLL latest-release reproducibility
+    org.opencontainers.image.description Apptainer environment for reproducing the OpenPLL v8 release gate
+    org.opencontainers.image.source https://github.com/virtualsecureplatform/OpenPLL
+    org.opencontainers.image.version v8
+
+%post
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update
+    apt-get install -y --no-install-recommends \
+        bash \
+        ca-certificates \
+        cmake \
+        curl \
+        file \
+        g++ \
+        gcc \
+        git \
+        iverilog \
+        jq \
+        libamd3 \
+        libblas3 \
+        libevent-core-2.1-7t64 \
+        libevent-pthreads-2.1-7t64 \
+        libfftw3-double3 \
+        libgfortran5 \
+        libhwloc15 \
+        liblapack3 \
+        libopenblas0 \
+        libopenmpi-dev \
+        libopenmpi3t64 \
+        libsuitesparseconfig7 \
+        locales \
+        make \
+        nix-bin \
+        openmpi-bin \
+        pkg-config \
+        python3 \
+        python3-numpy \
+        python3-yaml \
+        rsync \
+        time \
+        xz-utils
+    locale-gen C.UTF-8
+    apt-get clean
+    rm -rf /var/lib/apt/lists/*
+
+%environment
+    export LC_ALL=C.UTF-8
+    export LANG=C.UTF-8
+    export PATH=/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/bin
+    export OPENPLL_RELEASE_TAG=v8
+    export OPENPLL_EXPECTED_LIBRELANE_COMMIT=0f39aab99009d4a81ee3f863f0da9ca2f0b43a99
+    export OPENPLL_EXPECTED_CIEL_SKY130_VERSION=7519dfb04400f224f140749cda44ee7de6f5e095
+
+%runscript
+    set -eu
+    if [ ! -x /work/OpenPLL/scripts/reproduce_latest_release.sh ]; then
+        echo "OpenPLL is not mounted at /work/OpenPLL, or reproduce_latest_release.sh is not executable." >&2
+        echo "Use scripts/apptainer_reproduce_latest_release.sh from the repository root." >&2
+        exit 2
+    fi
+    cd /work/OpenPLL
+    exec /work/OpenPLL/scripts/reproduce_latest_release.sh "$@"
+
+%help
+    This image provides the generic OS/runtime layer for the OpenPLL latest-release
+    reproduction flow. It deliberately does not bake in the Sky130 PDK, LibreLane
+    checkout, Nix store, or Xyce install. The repository wrapper binds those host
+    inputs explicitly:
+
+        scripts/apptainer_reproduce_latest_release.sh build
+        scripts/apptainer_reproduce_latest_release.sh audit
+        scripts/apptainer_reproduce_latest_release.sh rebuild
+
+    See REPRODUCIBILITY.md for the exact scope and host prerequisites.

@@ -37,6 +37,8 @@ retained as low-frequency and 200 MHz diagnostic history, not as the current
   status, signoff evidence, and local build commands.
 - `SPICE_VALIDATION.md` records the transistor-level validation boundary,
   promoted evidence, and non-promoted diagnostic history.
+- `REPRODUCIBILITY.md` describes the Apptainer/SingularityCE flow for
+  reproducing the latest release gate.
 
 ## Current Status
 
@@ -48,6 +50,14 @@ make -C OpenPLL check-pll-25mhz-divider-config
 make -C OpenPLL check-pll-25mhz-divider-controller
 make -C OpenPLL check-pll-25mhz-configured-wrapper
 make -C OpenPLL check-pll-25mhz-configured-behavioral
+```
+
+The latest-release result can also be audited or rebuilt inside Apptainer:
+
+```sh
+make -C OpenPLL apptainer-build
+make -C OpenPLL apptainer-audit-release
+make -C OpenPLL apptainer-rebuild-release
 ```
 
 `rtl/IntegerPLL_25MHzModeConfig.v` is the reusable preset table for a 25 MHz
