@@ -35,6 +35,29 @@
   "PL_TARGET_DENSITY_PCT": 20,
   "FP_MACRO_HORIZONTAL_HALO": 10,
   "FP_MACRO_VERTICAL_HALO": 10,
+  "ROUTING_OBSTRUCTIONS": [
+    [
+      "met3",
+      162,
+      622,
+      358,
+      818
+    ],
+    [
+      "met4",
+      162,
+      622,
+      358,
+      818
+    ],
+    [
+      "met5",
+      162,
+      622,
+      358,
+      818
+    ]
+  ],
   "RT_MAX_LAYER": "met5",
   "RUN_CTS": false,
   "RUN_POST_GPL_DESIGN_REPAIR": false,
@@ -46,6 +69,7 @@
   "RUN_EQY": false,
   "MAGIC_CAPTURE_ERRORS": false,
   "PDN_CONNECT_MACROS_TO_GRID": true,
+  "PDN_HOFFSET": 13.35,
   "PDN_MACRO_CONNECTIONS": [
     "phase_detector VPWR VGND VPWR VGND",
     "digital_core VPWR VGND VPWR VGND",

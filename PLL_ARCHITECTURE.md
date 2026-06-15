@@ -17,9 +17,8 @@ load and increases DCO frequency.
 The current high-frequency source/integration track is
 `IntegerPLL_HardMacroTop_EINVP`: Sky130 digital core RTL, the filled BBPD
 macro, physical `IntegerPLL_DCO_EINVP_COARSE` macro source, and hard-top
-interconnect flow. Existing hard-top/configured-wrapper routed artifacts must be
-regenerated after the current 5-bit `DLF_KP` interface update before they are
-treated as current post-layout signoff evidence.
+interconnect flow. The regenerated hard top and 25 MHz configured wrapper pass
+the current post-layout release gate.
 It is still an integer-N bang-bang digital PLL, with an 8-bit exported
 `DCO_CODE`, 255 decoded fine thermometer controls, a separate 6-bit
 coarse band input decoded to 47 thermometer controls, and an 8-bit programmable
@@ -37,8 +36,13 @@ is NAND2 pin `B`, whose NMOS is directly connected to `VGND` in the Sky130 HD
 `nand2_1` SPICE view.
 
 The current configured-mode preset table uses the characterized all-HD DCO
-settings for a 25 MHz reference: C24/code139, C07/code8, C06/code242,
-C03/code45, and C02/code149 for 100, 250, 300, 400, and 500 MHz respectively.
+settings for a 25 MHz reference: C20/code93, C06/code234, C04/code90,
+C02/code76, and C01/code121 for 100, 250, 300, 400, and 500 MHz respectively.
+
+The DCO macro keeps a local met4/met5 PDN/ring as a PLL supply island. The
+parent hard top stitches both DCO supplies into that island and blocks
+met3/met4/met5 signal routing over the DCO macro body, while still allowing edge
+pin access.
 
 In other words, the current fast-path architecture does not require coarse and
 fine tuning to sum to 8 bits. `DCO_COARSE_BITS=0` keeps all 8 exported DCO bits
@@ -319,9 +323,10 @@ path, then enable the DLF for phase tracking. The pre-layout mirror check,
 with the minimum output buffer; the release DCO source uses the all-HD
 255-load macro.
 `IntegerPLL_25MHzModeConfig` captures the reusable RTL table keyed by the
-external 5-bit `FEEDBACK_DIVIDER` value: /4 emits C24/code139 with KI=4/KP=2,
-/10 emits C07/code8 with KI=4/KP=2, /12 emits C06/code242 with KI=4/KP=2,
-/16 emits C03/code45 with KI=4/KP=2, and /20 emits C02/code149 with KI=4/KP=2.
+external 5-bit `FEEDBACK_DIVIDER` value: /4 emits C20/code93 with KI=16/KP=4,
+/10 emits C06/code234 with KI=16/KP=4, /12 emits C04/code90 with KI=16/KP=4,
+/16 emits C02/code76 with KI=16/KP=4, and /20 emits C01/code121 with
+KI=16/KP=4.
 Each valid mode also emits a DLF seed word of `target_code << 2` for the default
 10-bit DLF / 8-bit DCO-code split and `CONFIG_VALID`. Unsupported divider
 values hold `CONFIG_VALID=0` and do not enter tracking.
@@ -335,9 +340,9 @@ interface is `PLL_ENABLE` plus `FEEDBACK_DIVIDER[4:0]`, with `CONFIG_VALID` as
 status. That wrapper also has a hardening flow as
 `IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`, which embeds the low-level hard
 macro and signs off the divider controller plus wrapper routing as one physical
-macro after regeneration. Existing routed/signoff artifacts predate the current
-5-bit `DLF_KP` physical interface and are not current release evidence. The
-promoted 25 MHz hard-macro operating points use the
+macro. The regenerated wrapper passes Magic/KLayout DRC, LVS, setup/hold, max
+slew/cap, and the configured hard-top checker. The promoted 25 MHz hard-macro
+operating points use the
 default divider-clocked DLF update path. The generic digital core can be
 rebuilt with `DLF_UPDATE_ON_PLLOUT=1` for diagnostic experiments, but the
 placed hard macro does not expose that as a runtime-selectable mode.
@@ -358,14 +363,14 @@ make check-pll-25mhz-divider-config check-pll-25mhz-divider-controller check-pll
 It validates the coarse-DCO structure, the `buf_1` output-buffer constraint, the
 all-HD RTL divider preset table, and the configured behavioral PLL
 reset-to-tracking regressions. The heavier
-`make check-sky130-pll-25mhz-release` target still checks post-layout
-hard-macro artifact freshness, so it requires rerouting/signoff after the
-5-bit physical `DLF_KP` interface change. Post-layout target rows and direct-RCX
+`make check-sky130-pll-25mhz-release` target checks the current post-layout
+hard-macro artifacts, configured-wrapper artifacts, target-code rows, and
+direct-RCX mixed-signal summaries. Post-layout target rows and direct-RCX
 mixed-signal rows should be regenerated after any physical DCO reroute.
 The optional
 `make xyce-pll-postlayout-dco-mixed-25mhz-500m-hold-smoke` diagnostic runs the
 extracted coarse DCO and extracted BBPD together at the hardest requested mode,
-C02/code149 with `NDIV=20`. It is a direct mixed-step integration smoke; the
+C01/code121 with `NDIV=20`. It is a direct mixed-step integration smoke; the
 short ADC-sampled frequency estimate is not used as the precise DCO frequency
 measurement.
 A wrapped BBPD by itself is not treated as a wide-range frequency detector from

@@ -13,11 +13,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 EXPECTED_TARGETS = {
-    100: {"multiplier": 4, "coarse_code": 24, "target_code": 139, "ki": 4, "kp": 2},
-    250: {"multiplier": 10, "coarse_code": 7, "target_code": 8, "ki": 4, "kp": 2},
-    300: {"multiplier": 12, "coarse_code": 6, "target_code": 242, "ki": 4, "kp": 2},
-    400: {"multiplier": 16, "coarse_code": 3, "target_code": 45, "ki": 4, "kp": 2},
-    500: {"multiplier": 20, "coarse_code": 2, "target_code": 149, "ki": 4, "kp": 2},
+    100: {"multiplier": 4, "coarse_code": 20, "target_code": 93, "ki": 16, "kp": 4},
+    250: {"multiplier": 10, "coarse_code": 6, "target_code": 234, "ki": 16, "kp": 4},
+    300: {"multiplier": 12, "coarse_code": 4, "target_code": 90, "ki": 16, "kp": 4},
+    400: {"multiplier": 16, "coarse_code": 2, "target_code": 76, "ki": 16, "kp": 4},
+    500: {"multiplier": 20, "coarse_code": 1, "target_code": 121, "ki": 16, "kp": 4},
 }
 
 NEARSEED_MIN_RISES = {
@@ -146,28 +146,28 @@ def check_mode_config(root: Path) -> dict[str, object]:
         "input wire [FEEDBACK_DIVIDER_WIDTH-1:0] FEEDBACK_DIVIDER",
         "output reg CONFIG_VALID",
         "MMDCLKDIV_RATIO = 8'd4",
-        "COARSEBINARY_CODE = 6'd24",
-        "TARGET_DCO_CODE = 8'd139",
-        "DLF_Ext_Data = seed_word(8'd139)",
+        "COARSEBINARY_CODE = 6'd20",
+        "TARGET_DCO_CODE = 8'd93",
+        "DLF_Ext_Data = seed_word(8'd93)",
         "MMDCLKDIV_RATIO = 8'd10",
-        "COARSEBINARY_CODE = 6'd7",
-        "TARGET_DCO_CODE = 8'd8",
-        "DLF_Ext_Data = seed_word(8'd8)",
-        "MMDCLKDIV_RATIO = 8'd12",
         "COARSEBINARY_CODE = 6'd6",
-        "TARGET_DCO_CODE = 8'd242",
-        "DLF_Ext_Data = seed_word(8'd242)",
+        "TARGET_DCO_CODE = 8'd234",
+        "DLF_Ext_Data = seed_word(8'd234)",
+        "MMDCLKDIV_RATIO = 8'd12",
+        "COARSEBINARY_CODE = 6'd4",
+        "TARGET_DCO_CODE = 8'd90",
+        "DLF_Ext_Data = seed_word(8'd90)",
         "MMDCLKDIV_RATIO = 8'd16",
-        "COARSEBINARY_CODE = 6'd3",
-        "TARGET_DCO_CODE = 8'd45",
-        "DLF_Ext_Data = seed_word(8'd45)",
-        "MMDCLKDIV_RATIO = 8'd20",
         "COARSEBINARY_CODE = 6'd2",
-        "TARGET_DCO_CODE = 8'd149",
-        "DLF_Ext_Data = seed_word(8'd149)",
+        "TARGET_DCO_CODE = 8'd76",
+        "DLF_Ext_Data = seed_word(8'd76)",
+        "MMDCLKDIV_RATIO = 8'd20",
+        "COARSEBINARY_CODE = 6'd1",
+        "TARGET_DCO_CODE = 8'd121",
+        "DLF_Ext_Data = seed_word(8'd121)",
         "CONFIG_VALID = 1'b0",
-        "DLF_KI = {{(GAIN_WIDTH-3){1'b0}}, 3'd4}",
-        "DLF_KP = {{(KP_WIDTH-2){1'b0}}, 2'd2}",
+        "PROMOTED_KI = {{(GAIN_WIDTH-5){1'b0}}, 5'd16}",
+        "PROMOTED_KP = {{(KP_WIDTH-3){1'b0}}, 3'd4}",
     )
     missing = [fragment for fragment in fragments if fragment not in text]
     if missing:
@@ -249,16 +249,16 @@ def check_mode_controller(root: Path) -> dict[str, str]:
     for fragment in (
         "module IntegerPLL_DCO",
         "input wire [5:0] COARSEBINARY_CODE",
-        "c24_freq_mhz",
-        "c07_freq_mhz",
+        "c20_freq_mhz",
         "c06_freq_mhz",
-        "c03_freq_mhz",
+        "c04_freq_mhz",
         "c02_freq_mhz",
-        "6'd24",
-        "6'd7",
+        "c01_freq_mhz",
+        "6'd20",
         "6'd6",
-        "6'd3",
+        "6'd4",
         "6'd2",
+        "6'd1",
     ):
         if fragment not in behavioral_model_text:
             raise ValueError(
@@ -295,11 +295,11 @@ def check_hardtop_summary(summary_path: Path, spice_summary_path: Path) -> dict[
         raise ValueError(f"{artifact_text(summary_path)} macro count is {config.get('macro_count')}")
     if signoff.get("status") != "pass":
         raise ValueError(f"{artifact_text(summary_path)} signoff status is {signoff.get('status')}")
-    if signoff.get("stdcells") != 61100:
+    if signoff.get("stdcells") != 61063:
         raise ValueError(f"{artifact_text(summary_path)} stdcell count changed: {signoff.get('stdcells')}")
-    if signoff.get("vias") != 1826:
+    if signoff.get("vias") != 2274:
         raise ValueError(f"{artifact_text(summary_path)} via count changed: {signoff.get('vias')}")
-    if signoff.get("wirelength") != 190674:
+    if signoff.get("wirelength") != 244759:
         raise ValueError(
             f"{artifact_text(summary_path)} wirelength changed: {signoff.get('wirelength')}"
         )
@@ -325,13 +325,13 @@ def check_hardtop_summary(summary_path: Path, spice_summary_path: Path) -> dict[
     expected_spice = {
         "top": "IntegerPLL_HardMacroTop_EINVP",
         "dco_subckt": "IntegerPLL_DCO_EINVP_COARSE",
-        "top_port_count": 73,
+        "top_port_count": 70,
         "dco_therm_connections": 255,
         "dco_coarse_therm_connections": 47,
-        "antenna_dco_therm_connections": 5,
-        "spef_d_nets": 374,
-        "spef_cap_entries": 10082,
-        "spef_res_entries": 1670,
+        "antenna_dco_therm_connections": 12,
+        "spef_d_nets": 371,
+        "spef_cap_entries": 11602,
+        "spef_res_entries": 1743,
     }
     for key, expected in expected_spice.items():
         if spice_summary.get(key) != expected:
@@ -378,13 +378,13 @@ def check_configured_hardtop_summary(summary_path: Path) -> dict[str, object]:
         raise ValueError(f"{artifact_text(summary_path)} macro count is {config.get('macro_count')}")
     if signoff.get("status") != "pass":
         raise ValueError(f"{artifact_text(summary_path)} signoff status is {signoff.get('status')}")
-    if signoff.get("stdcells") != 39786:
+    if signoff.get("stdcells") != 39801:
         raise ValueError(
             f"{artifact_text(summary_path)} stdcell count changed: {signoff.get('stdcells')}"
         )
-    if signoff.get("vias") != 1336:
+    if signoff.get("vias") != 1369:
         raise ValueError(f"{artifact_text(summary_path)} via count changed: {signoff.get('vias')}")
-    if signoff.get("wirelength") != 47081:
+    if signoff.get("wirelength") != 47884:
         raise ValueError(
             f"{artifact_text(summary_path)} wirelength changed: {signoff.get('wirelength')}"
         )

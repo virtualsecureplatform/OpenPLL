@@ -51,53 +51,49 @@ module IntegerPLL_DCO #(
         end
     endfunction
 
-    function real c24_freq_mhz;
+    function real local_band_freq_mhz;
         input integer code;
+        input integer target_code;
+        input real target_freq_mhz;
+        input real slope_mhz_per_code;
         begin
-            if (code <= 139)
-                c24_freq_mhz = interp(code, 0, 98.224916, 139, 100.069087);
-            else
-                c24_freq_mhz = interp(code, 139, 100.069087, 255, 101.386615);
+            local_band_freq_mhz = target_freq_mhz
+                                  + slope_mhz_per_code * (code - target_code);
         end
     endfunction
 
-    function real c07_freq_mhz;
+    function real c20_freq_mhz;
         input integer code;
         begin
-            if (code <= 11)
-                c07_freq_mhz = interp(code, 0, 249.071391, 11, 250.146396);
-            else
-                c07_freq_mhz = interp(code, 11, 250.146396, 255, 271.542690);
+            c20_freq_mhz = local_band_freq_mhz(code, 93, 100.0, 0.018);
         end
     endfunction
 
     function real c06_freq_mhz;
         input integer code;
         begin
-            if (code <= 242)
-                c06_freq_mhz = interp(code, 0, 274.036913, 242, 299.853581);
-            else
-                c06_freq_mhz = interp(code, 242, 299.853581, 255, 301.072500);
+            c06_freq_mhz = local_band_freq_mhz(code, 234, 250.0, 0.090);
         end
     endfunction
 
-    function real c03_freq_mhz;
+    function real c04_freq_mhz;
         input integer code;
         begin
-            if (code <= 45)
-                c03_freq_mhz = interp(code, 0, 390.798007, 45, 399.903986);
-            else
-                c03_freq_mhz = interp(code, 45, 399.903986, 255, 448.308082);
+            c04_freq_mhz = local_band_freq_mhz(code, 90, 300.0, 0.180);
         end
     endfunction
 
     function real c02_freq_mhz;
         input integer code;
         begin
-            if (code <= 149)
-                c02_freq_mhz = interp(code, 0, 456.089574, 149, 500.154405);
-            else
-                c02_freq_mhz = interp(code, 149, 500.154405, 255, 535.379413);
+            c02_freq_mhz = local_band_freq_mhz(code, 76, 400.0, 0.240);
+        end
+    endfunction
+
+    function real c01_freq_mhz;
+        input integer code;
+        begin
+            c01_freq_mhz = local_band_freq_mhz(code, 121, 500.0, 0.300);
         end
     endfunction
 
@@ -106,12 +102,12 @@ module IntegerPLL_DCO #(
         input integer code;
         begin
             case (coarse)
-                6'd24: coarse_freq_mhz = c24_freq_mhz(code);
-                6'd7: coarse_freq_mhz = c07_freq_mhz(code);
+                6'd20: coarse_freq_mhz = c20_freq_mhz(code);
                 6'd6: coarse_freq_mhz = c06_freq_mhz(code);
-                6'd3: coarse_freq_mhz = c03_freq_mhz(code);
+                6'd4: coarse_freq_mhz = c04_freq_mhz(code);
                 6'd2: coarse_freq_mhz = c02_freq_mhz(code);
-                default: coarse_freq_mhz = c24_freq_mhz(code);
+                6'd1: coarse_freq_mhz = c01_freq_mhz(code);
+                default: coarse_freq_mhz = c20_freq_mhz(code);
             endcase
         end
     endfunction

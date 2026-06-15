@@ -5,13 +5,17 @@ The current high-frequency source/integration path is
 `IntegerPLL_HardMacroTop_EINVP`, which combines the digital core RTL, filled
 BBPD macro, physical `IntegerPLL_DCO_EINVP_COARSE` oscillator macro source, and
 hard-top hardening flow. The current release promotes the all-HD coarse-DCO
-source and 25 MHz configured RTL/behavioral path. Existing
-hard-top/configured-wrapper routed artifacts must be regenerated after the
-5-bit `DLF_KP` interface update before they are treated as current post-layout
-signoff evidence. The DCO is one macro and one oscillator loop: HD
+source and 25 MHz configured RTL/behavioral path, with regenerated hard-top and
+configured-wrapper post-layout artifacts passing the release gate. The DCO is
+one macro and one oscillator loop: HD
 NAND/NAND2B turn/pass mirror delay provides coarse band selection, while 255 HD
 NAND2 load cells provide local fine tuning. It does not use parallel DCO
 macros, a mux-selected feedback tap, or a NOT-chain ring.
+
+The DCO is treated as a PLL supply island. Its macro has a local met4/met5
+PDN/ring, the hard top stitches both `VPWR` and `VGND` into that island, and
+the parent hard-top route blocks met3/met4/met5 signal routing over the DCO
+macro body.
 
 The ring-facing output buffer intentionally stays
 `sky130_fd_sc_hd__buf_1` to limit oscillator-node loading. The fine-load
@@ -51,11 +55,11 @@ reference. It exposes the restored /4, /10, /12, /16, and /20 settings:
 
 | Feedback divider | Target | Coarse | Fine seed | KI | KP |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 4 | 100 MHz | C24 | 139 | 4 | 2 |
-| 10 | 250 MHz | C07 | 8 | 4 | 2 |
-| 12 | 300 MHz | C06 | 242 | 4 | 2 |
-| 16 | 400 MHz | C03 | 45 | 4 | 2 |
-| 20 | 500 MHz | C02 | 149 | 4 | 2 |
+| 4 | 100 MHz | C20 | 93 | 16 | 4 |
+| 10 | 250 MHz | C06 | 234 | 16 | 4 |
+| 12 | 300 MHz | C04 | 90 | 16 | 4 |
+| 16 | 400 MHz | C02 | 76 | 16 | 4 |
+| 20 | 500 MHz | C01 | 121 | 16 | 4 |
 
 The table also emits a 10-bit `DLF_Ext_Data` seed equal to
 `target_code << 2` and `CONFIG_VALID`. Unsupported divider values are passed to
@@ -76,9 +80,9 @@ is rebuilt for that variant. `make -C OpenPLL
 check-pll-25mhz-configured-wrapper` runs the wrapper-level divider sequencing test
 and checks that those preset controls reach the hard-macro instance. The
 configured wrapper also has a hardening flow as
-`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`. Its existing routed/signoff
-artifact predates the current 5-bit `DLF_KP` interface and must be regenerated
-before it is treated as current physical release evidence.
+`IntegerPLL_HardMacroTop_EINVP_25MHzConfigured`. The regenerated wrapper
+artifact passes Magic/KLayout DRC, LVS, setup/hold, max slew/cap, and the
+configured hard-top release checker.
 The lower-level `IntegerPLL_HardMacroTop_EINVP` pins remain available for
 characterization and custom bring-up.
 
@@ -100,13 +104,13 @@ make -C OpenPLL xyce-pll-mixed-signal-25mhz-targets
 
 The current all-HD DCO target table is:
 
-| Target | Coarse | Seed | Interpolated seed frequency |
-| ---: | ---: | ---: | ---: |
-| 100 MHz | C24 | 139 | 100.069 MHz |
-| 250 MHz | C07 | 8 | 249.851 MHz |
-| 300 MHz | C06 | 242 | 299.854 MHz |
-| 400 MHz | C03 | 45 | 399.904 MHz |
-| 500 MHz | C02 | 149 | 500.154 MHz |
+| Target | Coarse | Seed | Target-code evidence |
+| ---: | ---: | ---: | --- |
+| 100 MHz | C20 | 93 | Interpolated code estimate 93.429 |
+| 250 MHz | C06 | 234 | Measured target code |
+| 300 MHz | C04 | 90 | Interpolated code estimate 89.631 |
+| 400 MHz | C02 | 76 | Interpolated code estimate 76.037 |
+| 500 MHz | C01 | 121 | Interpolated code estimate 120.677 |
 
 Fast deterministic BBPLL jitter sweeps are under
 `build/pll_jitter_25mhz_allhd255/` with matched v6 rows under
@@ -128,10 +132,9 @@ constraint, the restored 25 MHz divider presets, the divider
 controller/wrapper, and the configured behavioral PLL reset-to-tracking
 regression.
 
-The heavier `make -C OpenPLL check-sky130-pll-25mhz-release` target still checks
-post-layout hard-macro artifact freshness. After changing the physical
-`DLF_KP` interface to 5 bits, the existing routed/signoff artifacts are stale
-and must be regenerated before using that target as a post-layout release gate.
+The heavier `make -C OpenPLL check-sky130-pll-25mhz-release` target checks the
+current post-layout hard-macro artifacts, configured-wrapper artifacts,
+target-code rows, and direct-RCX integration summaries.
 
 An optional slow direct-RCX integration smoke for the hardest divider target is:
 
@@ -139,7 +142,7 @@ An optional slow direct-RCX integration smoke for the hardest divider target is:
 make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-500m-hold-smoke
 ```
 
-It runs the extracted coarse DCO and extracted BBPD in Xyce at C02/code149 with
+It runs the extracted coarse DCO and extracted BBPD in Xyce at C01/code121 with
 the digital divider/filter in the mixed-signal driver. Its short ADC-sampled
 frequency estimate is intentionally loose; regenerated standalone RCX DCO rows
 must remain the precise frequency evidence.
@@ -150,10 +153,10 @@ An even slower all-mode direct-RCX near-seed code-update diagnostic is:
 make -C OpenPLL xyce-pll-postlayout-dco-mixed-25mhz-nearseed-smokes
 ```
 
-The last completed all-mode direct-RCX run checked +/-4 fine-code starts for all
-five divider targets on the previous HS-load/drive4 DCO family. That evidence
-remains a historical direct-RCX integration diagnostic; regenerated standalone
-RCX DCO rows remain the precise frequency evidence.
+The current all-mode direct-RCX run checks +/-4 fine-code starts for all five
+divider targets with `KI=16`, `KP=4`, and `FRAC=2`. That evidence remains a
+near-seed direct-RCX integration diagnostic; standalone target-code rows remain
+the precise frequency evidence.
 
 The legacy low-frequency v1 artifact audit remains available:
 
