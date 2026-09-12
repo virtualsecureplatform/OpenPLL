@@ -42,8 +42,10 @@ All-net extraction reports 2,241/2,241 nets and 54,675 resistors, reduced to
 39,088 while retaining device and capacitor terminals. The initial SS fastest
 and FF slowest KLS screens both fail during parsing: extracted antenna-diode
 wrappers report no valid model for D0. Six extracted antenna diodes require
-validated PDK/Xyce compatibility and parameter scaling before these runs can
-establish frequency coverage. No frequency or jitter claim is made from them.
+validated PDK/Xyce compatibility before these runs can establish frequency
+coverage. The isolated DC/AC probe identifies a level-3 model unsupported by
+Xyce’s standard diode; the large geometry values are intentional PDK scaling.
+See `DIODE_COMPATIBILITY.md` for the retained-model probe and acceptance scope. No frequency or jitter claim is made from them.
 
 The preceding four-driver candidate reached approximately 542 MHz at its slow
 corner with coarse code 0 / fine code 8, but coarse code 1 / fine code 247 was

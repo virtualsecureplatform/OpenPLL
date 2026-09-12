@@ -86,7 +86,7 @@ def main():
     if not includes:
         p.error('base deck has no model includes')
     includes = re.sub(r'(?m)^(\.lib\s+"[^"\n]+")\s+\w+[ \t]*$', lambda m: m[1]+' '+a.corner, includes)
-    deck = out/'circuit.cir' 
+    deck = out/'circuit.cir'
     deck.write_text(f'''* Production RTL boundary: extracted BBPD only; ideal supplies.
 {includes}
 .param VDD={a.vdd:g}
