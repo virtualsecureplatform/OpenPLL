@@ -1,4 +1,5 @@
 LIBRELANE_ROOT ?= $(or $(firstword $(wildcard ../librelane ../../librelane $(HOME)/sources/librelane)),../librelane)
+
 APPTAINER ?= $(or $(shell command -v apptainer 2>/dev/null),$(shell command -v singularity 2>/dev/null),apptainer)
 OPENPLL_APPTAINER_IMAGE ?= build/apptainer/openpll-release.sif
 CIEL_SKY130_ROOT ?= $(HOME)/.volare/ciel/sky130
@@ -1015,3 +1016,33 @@ spice-dco-decoder-all-taps: synth
 
 clean:
 	rm -rf build
+
+.PHONY: check-pll-verification
+check-pll-verification:
+	python3 -m unittest discover -s scripts -p 'test_pll_verification.py'
+	python3 -m unittest discover -s scripts -p 'test_dco_calibration.py'
+	python3 -m unittest discover -s scripts -p 'test_resistor_reduction.py'
+	python3 -m unittest discover -s scripts -p 'test_parallel_dco.py'
+	python3 -m unittest discover -s scripts -p 'test_strength_dco.py'
+
+.PHONY: check-frequency-acquisition
+check-frequency-acquisition:
+	mkdir -p build/frequency-acquisition
+	iverilog -g2012 -s tb_frequency_acquisition -o build/frequency-acquisition/test tb/tb_frequency_acquisition.v rtl/IntegerPLL_FrequencyAcquisition.v
+	vvp build/frequency-acquisition/test
+	vvp build/frequency-acquisition/test +PHASE_NS=0
+	vvp build/frequency-acquisition/test +PHASE_NS=10
+	vvp build/frequency-acquisition/test +PHASE_NS=20
+	vvp build/frequency-acquisition/test +PHASE_NS=30
+	iverilog -g2012 -s tb_acquiring_core -o build/frequency-acquisition/core tb/tb_acquiring_core.v rtl/*.v
+	vvp build/frequency-acquisition/core
+	vvp build/frequency-acquisition/core +PHASE_NS=0
+	vvp build/frequency-acquisition/core +PHASE_NS=10
+	vvp build/frequency-acquisition/core +PHASE_NS=20
+	vvp build/frequency-acquisition/core +PHASE_NS=30
+
+.PHONY: check-strength-dco-controls
+check-strength-dco-controls:
+	mkdir -p build/frequency-acquisition
+	iverilog -g2012 -s tb_strength_dco_controls -o build/frequency-acquisition/strength tb/tb_strength_dco_controls.v sky130/IntegerPLL_DCO_strength_div_sky130.v
+	vvp build/frequency-acquisition/strength

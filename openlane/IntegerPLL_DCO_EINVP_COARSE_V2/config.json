@@ -1,0 +1,113 @@
+{
+  "DESIGN_NAME": "IntegerPLL_DCO_EINVP_COARSE_V2",
+  "VERILOG_FILES": [
+    "dir::../../sky130/IntegerPLL_DCO_einvp_coarse_v2_sky130.v"
+  ],
+  "VERILOG_DEFINES": [
+    "USE_POWER_PINS"
+  ],
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+  "CELL_VERILOG_MODELS": [
+    "dir::../../sky130/sky130_fd_sc_hd_pll_blackbox.v"
+  ],
+  "CELL_BB_VERILOG_MODELS": [
+    "dir::../../sky130/sky130_fd_sc_hd_pll_blackbox.v"
+  ],
+  "CELL_GDS": [
+    "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds"
+  ],
+  "EXTRA_VERILOG_MODELS": [],
+  "EXTRA_LEFS": [],
+  "EXTRA_GDS": [],
+  "EXTRA_CDLS": [],
+  "EXTRA_LIBS": [],
+  "PNR_SDC_FILE": "dir::no_clock.sdc",
+  "SIGNOFF_SDC_FILE": "dir::no_clock.sdc",
+  "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
+  "IO_PIN_H_LAYER": "met3",
+  "IO_PIN_V_LAYER": "met3",
+  "ERRORS_ON_UNMATCHED_IO": "both",
+  "LINTER_DISABLE_WARNINGS_BLACKBOX": [
+    "UNDRIVEN",
+    "UNUSEDSIGNAL",
+    "PINMISSING",
+    "TIMESCALEMOD"
+  ],
+  "CLOCK_PORT": null,
+  "RUN_LINTER": false,
+  "SYNTH_ELABORATE_ONLY": true,
+  "SYNTH_HIERARCHY_MODE": "flatten",
+  "SYNTH_WRITE_NOATTR": true,
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [
+    0,
+    0,
+    140,
+    140
+  ],
+  "CORE_AREA": [
+    10,
+    10,
+    130,
+    130
+  ],
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY_PCT": 50,
+  "MAX_FANOUT_CONSTRAINT": 4,
+  "RT_MAX_LAYER": "met5",
+  "PDN_HORIZONTAL_LAYER": "met5",
+  "PDN_VERTICAL_LAYER": "met4",
+  "PDN_MULTILAYER": true,
+  "PDN_CORE_RING": true,
+  "PDN_VPITCH": 30,
+  "PDN_HPITCH": 30,
+  "PDN_VOFFSET": 15,
+  "PDN_HOFFSET": 15.61,
+  "PDN_SKIPTRIM": true,
+  "RUN_CTS": false,
+  "RUN_POST_GPL_DESIGN_REPAIR": false,
+  "RUN_POST_CTS_RESIZER_TIMING": false,
+  "RUN_POST_GRT_DESIGN_REPAIR": false,
+  "RUN_POST_GRT_RESIZER_TIMING": false,
+  "RUN_MCSTA": false,
+  "RUN_IRDROP_REPORT": false,
+  "RUN_EQY": false,
+  "PRIMARY_GDSII_STREAMOUT_TOOL": "klayout",
+  "RUN_MAGIC_STREAMOUT": false,
+  "RUN_KLAYOUT_STREAMOUT": true,
+  "RUN_KLAYOUT_XOR": false,
+  "DECAP_CELLS": [],
+  "FILL_CELLS": [
+    "sky130_fd_sc_hd__fill*"
+  ],
+  "PAD_GDS": null,
+  "PAD_LEFS": null,
+  "PAD_VERILOG_MODELS": null,
+  "PAD_CDLS": null,
+  "PAD_LIBS": null,
+  "VDD_NETS": [
+    "VPWR"
+  ],
+  "GND_NETS": [
+    "VGND"
+  ],
+  "scl::sky130_fd_sc_hd": {
+    "LIB": {
+      "nom_": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+      ],
+      "*_tt_025C_1v80": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+      ],
+      "*_ff_n40C_1v95": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+      ],
+      "*_ss_100C_1v60": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+      ]
+    }
+  },
+  "meta": {
+    "flow": "Classic"
+  }
+}

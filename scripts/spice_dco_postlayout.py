@@ -5,11 +5,15 @@ import argparse
 import concurrent.futures
 import csv
 import json
+import math
 import os
 import shutil
 import subprocess
 import time
 import re
+import shlex
+
+from pll_verification import fingerprint
 from pathlib import Path
 
 from sky130_pdk import default_pdk_root
@@ -157,10 +161,10 @@ def crossing_waveform_metrics(waveform_path, meas_start_ns, mid_threshold=0.9):
     meas_start_s = meas_start_ns * 1.0e-9
     rises_mid = threshold_crossings(points, mid_threshold, "rise", meas_start_s)
     falls_mid = threshold_crossings(points, mid_threshold, "fall", meas_start_s)
-    rises_20 = threshold_crossings(points, 0.36, "rise", meas_start_s)
-    rises_80 = threshold_crossings(points, 1.44, "rise", meas_start_s)
-    falls_80 = threshold_crossings(points, 1.44, "fall", meas_start_s)
-    falls_20 = threshold_crossings(points, 0.36, "fall", meas_start_s)
+    rises_20 = threshold_crossings(points, mid_threshold * 0.4, "rise", meas_start_s)
+    rises_80 = threshold_crossings(points, mid_threshold * 1.6, "rise", meas_start_s)
+    falls_80 = threshold_crossings(points, mid_threshold * 1.6, "fall", meas_start_s)
+    falls_20 = threshold_crossings(points, mid_threshold * 0.4, "fall", meas_start_s)
 
     if len(rises_mid) >= 3:
         period_s = (rises_mid[2] - rises_mid[0]) / 2.0
@@ -289,7 +293,7 @@ def dco_netlist(args, code, coarse_code, ports):
         f"* subckt_name={args.subckt_name}",
         f'.lib "{model_path}" {args.corner}',
         f'.include "{rcx_path}"',
-        ".param VDD=1.8",
+        f".param VDD={getattr(args, 'vdd', 1.8):g}",
         "VVPWR VPWR 0 {VDD}",
         "VVPB VPB 0 {VDD}",
         "VVGND VGND 0 0",
@@ -386,9 +390,29 @@ def dco_netlist(args, code, coarse_code, ports):
         lines.append(".save v(PLLOUT)")
     else:
         lines.append(".print tran v(PLLOUT)")
+    if args.simulator == "xyce":
+        backend = getattr(args, "kls_backend", None)
+        kls_options = []
+        if backend is not None:
+            kls_options.extend([f"KLS_BACKEND={backend}", "KLS_THREADS=1"])
+        if getattr(args, "kls_fresh_factor", False):
+            kls_options.append("KLS_REFACTOR=0")
+        if kls_options:
+            lines.append(".options linsol type=KLS " + " ".join(kls_options))
+        tolerances = [
+            f"{name}={getattr(args, attr)}"
+            for name, attr in (("reltol", "xyce_reltol"), ("abstol", "xyce_abstol"))
+            if getattr(args, attr, None) is not None
+        ]
+        if tolerances:
+            lines.append(".options timeint " + " ".join(tolerances))
+    max_step = getattr(args, "max_step_ps", None)
+    tran = f".tran {args.step_ps}p {args.sim_time_ns}n"
+    if max_step is not None:
+        tran += f" 0 {max_step}p"
     lines.extend(
         [
-            f".tran {args.step_ps}p {args.sim_time_ns}n",
+            tran,
             f".meas tran two_cycle_s TRIG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n RISE=1 "
             f"TARG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n RISE=3",
             ".meas tran period_s PARAM='two_cycle_s/2'",
@@ -413,6 +437,12 @@ def dco_netlist(args, code, coarse_code, ports):
             "",
         ]
     )
+    vdd = getattr(args, "vdd", 1.8)
+    if vdd != 1.8:
+        lines = [line.replace("VAL=0.9", f"VAL={vdd*.5:g}").replace("VAL=0.36", f"VAL={vdd*.2:g}").replace("VAL=1.44", f"VAL={vdd*.8:g}") for line in lines]
+    temperature = getattr(args, "temperature_c", None)
+    if temperature is not None:
+        lines.insert(-2, f".temp {temperature:g}")
     return "\n".join(lines)
 
 
@@ -477,7 +507,7 @@ def row_from_log(
     if args.simulator == "xyce":
         waveform_path = str(xyce_waveform_path(netlist_path))
         waveform_metrics = crossing_waveform_metrics(
-            xyce_waveform_path(netlist_path), args.meas_start_ns
+            xyce_waveform_path(netlist_path), args.meas_start_ns, getattr(args, "vdd", 1.8) / 2
         )
         period = waveform_metrics["period_s"]
         freq = waveform_metrics["freq_hz"]
@@ -529,6 +559,16 @@ def row_from_log(
 def can_resume(args, netlist_path, log_path, netlist_text):
     if not args.resume or not netlist_path.exists() or not log_path.exists():
         return False
+    provenance = getattr(args, "run_provenance", None)
+    sidecar = netlist_path.with_suffix('.provenance.json')
+    if provenance is None or not sidecar.exists():
+        return False
+    try:
+        saved = json.loads(sidecar.read_text())
+        if saved.get('fingerprint') != provenance['fingerprint'] or not saved.get('completed'):
+            return False
+    except (ValueError, OSError):
+        return False
     old_netlist = netlist_path.read_text(encoding="ascii", errors="replace")
     return old_netlist == netlist_text
 
@@ -551,11 +591,14 @@ def run_one(code, coarse_code, args, ports, build_dir):
         if row["status"] == "pass":
             return row
 
+    sidecar = netlist_path.with_suffix('.provenance.json')
+    provenance = dict(getattr(args, 'run_provenance', {}), completed=False)
+    sidecar.write_text(json.dumps(provenance, indent=2))
     netlist_path.write_text(netlist_text, encoding="ascii")
     returncode, timed_out, elapsed_s, log_text = run_spice(
         args, netlist_path, log_path, build_dir
     )
-    return row_from_log(
+    row = row_from_log(
         args,
         code,
         coarse_code,
@@ -567,6 +610,9 @@ def run_one(code, coarse_code, args, ports, build_dir):
         elapsed_s,
         False,
     )
+    provenance['completed'] = row['status'] == 'pass'
+    sidecar.write_text(json.dumps(provenance, indent=2))
+    return row
 
 
 def parse_timeout(value):
@@ -583,6 +629,8 @@ def main():
     parser.add_argument("--codes", default="0,128,255")
     parser.add_argument("--coarse-codes", default="0")
     parser.add_argument("--corner", default="tt")
+    parser.add_argument("--vdd", type=float, default=1.8)
+    parser.add_argument("--temperature-c", type=float)
     parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default="sky130A")
     parser.add_argument(
@@ -599,6 +647,13 @@ def main():
     parser.add_argument("--reset-release-ns", type=float, default=5.0)
     parser.add_argument("--meas-start-ns", type=float, default=20.0)
     parser.add_argument("--step-ps", type=float, default=20.0)
+    parser.add_argument("--max-step-ps", type=float, help="Maximum transient timestep; step-ps alone is not a maximum")
+    parser.add_argument("--xyce-reltol", type=float, help="Xyce transient relative error tolerance")
+    parser.add_argument("--xyce-abstol", type=float, help="Xyce transient absolute error tolerance")
+    parser.add_argument("--kls-backend", choices=("AUTO", "KLS", "SERIAL"),
+                        help="Explicit KLS backend with one solver thread; omitted preserves deck defaults")
+    parser.add_argument("--kls-fresh-factor", action="store_true",
+                        help="Diagnostic fresh KLS factorization instead of numeric refactor")
     parser.add_argument(
         "--timeout-s",
         default="none",
@@ -631,6 +686,16 @@ def main():
     parser.add_argument("--ngspice", default=shutil.which("ngspice") or "ngspice")
     add_xyce_arguments(parser)
     args = parser.parse_args()
+    for name in ("max_step_ps", "xyce_reltol", "xyce_abstol"):
+        value = getattr(args, name)
+        if value is not None and (not math.isfinite(value) or value <= 0):
+            parser.error(f"--{name.replace('_', '-')} must be finite and positive")
+    if args.simulator != "xyce" and (args.xyce_reltol is not None or args.xyce_abstol is not None):
+        parser.error("Xyce tolerances require --simulator xyce")
+    if not math.isfinite(args.vdd) or args.vdd <= 0:
+        parser.error("--vdd must be finite and positive")
+    if args.temperature_c is not None and (not math.isfinite(args.temperature_c) or args.temperature_c <= -273.15):
+        parser.error("--temperature-c must be finite and above absolute zero")
     args.timeout_s = parse_timeout(args.timeout_s)
     if args.ngspice_threads < 0:
         raise ValueError("--ngspice-threads must be non-negative")
@@ -677,6 +742,14 @@ def main():
 
     build_dir = Path(args.build_dir).resolve()
     build_dir.mkdir(parents=True, exist_ok=True)
+    executable = shlex.split(args.xyce if args.simulator == 'xyce' else args.ngspice)[0]
+    executable = shutil.which(executable) or executable
+    parameters = {k: v for k, v in vars(args).items() if k not in ('resume', 'build_dir', 'jobs', 'timeout_s')}
+    model_root = Path(args.pdk_root).expanduser() / args.pdk
+    args.run_provenance = fingerprint(
+        [args.rcx_netlist, model_root / 'libs.ref', model_root / 'libs.tech/ngspice', executable,
+         *Path(__file__).parent.glob('*.py')], parameters)
+    (build_dir / 'provenance.json').write_text(json.dumps(args.run_provenance, indent=2))
     rows = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.jobs) as executor:
         futures = [

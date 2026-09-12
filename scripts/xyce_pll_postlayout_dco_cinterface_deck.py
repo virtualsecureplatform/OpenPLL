@@ -131,11 +131,16 @@ def build_deck(args) -> str:
         f"* BBPD RCX netlist: {bbpd_path}",
         f"* DCO RCX netlist: {dco_path}",
         f'.lib "{model_path}" {args.corner}',
-        "* Compatibility alias for Magic RCX generic special-device naming.",
-        ".subckt sky130_fd_pr__special_nfet_01v8 d g s b",
-        ".param l=0.15 w=0.36 ad=0 as=0 pd=0 ps=0 nrd=0 nrs=0",
-        "X0 d g s b sky130_fd_pr__nfet_01v8 ad={ad} pd={pd} as={as} ps={ps} w={w} l={l} nrd={nrd} nrs={nrs}",
-        ".ends sky130_fd_pr__special_nfet_01v8",
+        *(
+            [
+                "* Compatibility alias for Magic RCX generic special-device naming.",
+                ".subckt sky130_fd_pr__special_nfet_01v8 d g s b",
+                ".param l=0.15 w=0.36 ad=0 as=0 pd=0 ps=0 nrd=0 nrs=0",
+                "X0 d g s b sky130_fd_pr__nfet_01v8 ad={ad} pd={pd} as={as} ps={ps} w={w} l={l} nrd={nrd} nrs={nrs}",
+                ".ends sky130_fd_pr__special_nfet_01v8",
+            ]
+            if args.special_nfet_alias else []
+        ),
         *stdcell_includes,
         f'.include "{bbpd_path}"',
         f'.include "{dco_path}"',
@@ -187,6 +192,10 @@ def main() -> int:
     parser.add_argument("--pdk-root", default=default_pdk_root())
     parser.add_argument("--pdk", default="sky130A")
     parser.add_argument("--corner", default="tt")
+    parser.add_argument(
+        "--special-nfet-alias", action=argparse.BooleanOptionalAction, default=True,
+        help="Emit the legacy special-NFET alias; disable when the PDK already defines it.",
+    )
     parser.add_argument("--bbpd-subckt", default="IntegerPLL_BBPD")
     parser.add_argument(
         "--bbpd-rcx-netlist",

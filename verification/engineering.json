@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "provisional_engineering_requirements_approved_2026_09_12",
+  "reference_mhz": 25,
+  "modes_mhz": [100, 250, 300, 400, 500],
+  "solver": "KLS",
+  "acquisition_limit_ns": 200000,
+  "window_ns": 5120,
+  "sustained_windows": 4,
+  "frequency_error_ppm": 1000,
+  "phase_span_output_periods": 0.1,
+  "phase_mean_output_periods": 0.1,
+  "phase_drift_output_periods": 0.02,
+  "fine_code_min": 8,
+  "fine_code_max": 247,
+  "corners": ["tt", "ff", "ss", "sf", "fs"],
+  "voltages": [1.62, 1.8, 1.98],
+  "temperatures_c": [-40, 27, 125],
+  "calibration_error_ppm": 100,
+  "calibration_error_local_lsb": 0.25,
+  "physical_jitter_limit": null,
+  "power_limit": null,
+  "area_limit": null,
+  "optimization_policy": {
+    "priority": "functional_performance_before_area",
+    "power": "characterize_without_pass_fail_limit",
+    "jitter": "characterize_physical_jitter_before_setting_numerical_limit",
+    "area": "minimize_among_functionally_qualified_candidates",
+    "selection": "report_measured_nondominated_candidates_and_search_scope",
+    "application": "clock_for_digital_circuits",
+    "approved_date": "2026-09-12"
+  }
+}

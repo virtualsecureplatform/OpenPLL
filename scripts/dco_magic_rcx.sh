@@ -36,11 +36,20 @@ EXTRACT_STYLE="${EXTRACT_STYLE:-ngspice()}"
 
 state="$(find "$RUN_DIR" -path '*magic-streamout/state_out.json' | sort -V | tail -n 1)"
 if [[ -z "$state" ]]; then
-    echo "Missing Magic streamout state under $RUN_DIR; run the DCO LibreLane flow first." >&2
+    # The current coarse DCO uses KLayout as its primary GDS streamout.
+    # Magic.RCX consumes GDS and does not require a Magic.StreamOut step.
+    state="$(find "$RUN_DIR" -path '*klayout-streamout/state_out.json' | sort -V | tail -n 1)"
+fi
+if [[ -z "$state" ]]; then
+    echo "Missing GDS streamout state under $RUN_DIR; run the DCO LibreLane flow first." >&2
     exit 1
 fi
 
 config_in="${state%state_out.json}config.json"
+# A KLayout step's reduced configuration omits the Magic technology paths.
+if [[ -f "$RUN_DIR/resolved.json" ]]; then
+    config_in="$RUN_DIR/resolved.json"
+fi
 config_rcx="$RUN_DIR/rcx-magic.config.json"
 
 python3 - "$config_in" "$config_rcx" "$DO_RESISTANCE" "$DO_CAPACITANCE" "$CTHRESH_FF" "$EXTRACT_STYLE" <<'PY'
