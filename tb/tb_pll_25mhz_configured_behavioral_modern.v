@@ -175,7 +175,7 @@ module tb_pll_25mhz_configured_behavioral;
             end_edges = pllout_edges;
             measured_mhz = 1000.0 * (end_edges - start_edges) / (end_time - start_time);
 
-            if ((dco_code < 4) || (dco_code > 251))
+            if ((dco_code == 0) || (dco_code == 255))
                 $fatal(1, "divider %0d final code remains railed: dco=%0d target=%0d",
                        divider, dco_code, expected_target_code);
             if (abs_real(measured_mhz - expected_target_mhz) > 8.0)

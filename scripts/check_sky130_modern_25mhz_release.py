@@ -185,8 +185,12 @@ def check_direct(data: dict) -> None:
                 f"{target} MHz low/high direct-RCX decks are not separate")
         for row in (hold_row, *near["target_results"]):
             deck = evidence_path(row["deck"])
+            log = evidence_path(row["log"])
             require(deck.is_file() and deck.stat().st_mtime >= rcx.stat().st_mtime,
                     f"{target} MHz direct-RCX deck is stale or missing")
+            require(log.is_file() and log.stat().st_mtime_ns >= max(
+                rcx.stat().st_mtime_ns, MANIFEST.stat().st_mtime_ns),
+                f"{target} MHz direct-RCX simulator log is stale or missing")
             require(f"/runs/{data['dco_run_tag']}/rcx-magic/IntegerPLL_DCO_EINVP_COARSE.rcx.spice"
                     in deck.read_text(encoding="ascii"),
                     f"{target} MHz direct-RCX deck uses the wrong extraction")

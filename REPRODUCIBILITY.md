@@ -163,9 +163,9 @@ does not require a custom HS cell or a separate PDK build.
 
 | Target (MHz) | Coarse code | Fine code | Extracted DCO (MHz) | Direct-RCX hold output (MHz) |
 | ---: | ---: | ---: | ---: | ---: |
-| 100 | 16 | 58 | 99.906 | 96.432 |
+| 100 | 16 | 58 | 99.886 | 96.432 |
 | 250 | 4 | 206 | 249.959 | 238.029 |
-| 300 | 2 | 12 | 300.214 | 295.761 |
+| 300 | 2 | 12 | 300.215 | 295.761 |
 | 400 | 1 | 215 | 399.366 | 416.295 |
 | 500 | 0 | 163 | 500.707 | 499.792 |
 
@@ -201,6 +201,9 @@ mode and physical checks pass. The generated RTL can be tested separately with
 `make check-pll-25mhz-modern-rtl` inside the image. Running
 `python3 scripts/generate_modern_25mhz.py --check` reports any mismatch between
 the measured mode table and its generated RTL, model, or testbenches.
+Direct-RCX resume skips a passing case only when its log is newer than the
+extracted DCO, mode table, and driver. The release audit also rejects direct
+logs older than the extraction or mode table.
 
 The modern release currently reuses the existing BBPD and digital-core macro
 signoff runs. Its DCO, hard top, and configured wrapper are built from the

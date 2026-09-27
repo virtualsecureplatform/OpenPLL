@@ -145,6 +145,11 @@ def completed_pass(
 ) -> tuple[dict[str, str], dict[str, str]] | None:
     if not log_path.exists():
         return None
+    inputs = [args.dco_rcx_netlist, args.driver]
+    if args.target_config is not None:
+        inputs.append(resolve_repo_path(args.target_config))
+    if log_path.stat().st_mtime_ns < max(path.stat().st_mtime_ns for path in inputs):
+        return None
     text = log_path.read_text(encoding="utf-8", errors="replace")
     summary = parse_summary_line(text)
     if summary.get("status") != "pass":

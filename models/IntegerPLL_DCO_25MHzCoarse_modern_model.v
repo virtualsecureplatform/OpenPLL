@@ -82,12 +82,12 @@ module IntegerPLL_DCO #(
         input integer code;
         begin
             case (coarse)
-                6'd16: coarse_freq_mhz = interp3(code, 58, 99.096729233, 99.905637963, 103.053289215);
-                6'd4: coarse_freq_mhz = interp3(code, 206, 231.084320014, 249.959361030, 254.555677618);
-                6'd2: coarse_freq_mhz = interp3(code, 12, 298.823130042, 300.213584569, 336.203108399);
-                6'd1: coarse_freq_mhz = interp3(code, 215, 355.822245180, 399.366271779, 410.112029565);
-                6'd0: coarse_freq_mhz = interp3(code, 163, 448.562984560, 500.707437664, 532.313848198);
-                default: coarse_freq_mhz = interp3(code, 58, 99.096729233, 99.905637963, 103.053289215);
+                6'd16: coarse_freq_mhz = interp3(code, 58, 98.988217723, 99.886394071, 103.063052242);
+                6'd4: coarse_freq_mhz = interp3(code, 206, 231.084345086, 249.959364606, 254.750811191);
+                6'd2: coarse_freq_mhz = interp3(code, 12, 298.823084603, 300.214898657, 336.203029693);
+                6'd1: coarse_freq_mhz = interp3(code, 215, 355.822245180, 399.366274872, 409.733765757);
+                6'd0: coarse_freq_mhz = interp3(code, 163, 448.562984560, 500.707440088, 532.327155516);
+                default: coarse_freq_mhz = interp3(code, 58, 98.988217723, 99.886394071, 103.063052242);
             endcase
         end
     endfunction

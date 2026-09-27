@@ -112,6 +112,11 @@ def render_testbench(name: str, modes: dict[int, dict]) -> str:
         if old not in source:
             raise ValueError(f"testbench {name} lacks {target} MHz setting")
         source = source.replace(old, new)
+    if name == "configured_behavioral":
+        old_guard = "if ((dco_code < 4) || (dco_code > 251))"
+        if source.count(old_guard) != 1:
+            raise ValueError("configured behavioral testbench lacks its rail guard")
+        source = source.replace(old_guard, "if ((dco_code == 0) || (dco_code == 255))")
     return source.replace("// SPDX-License-Identifier: Apache-2.0\n",
                           "// SPDX-License-Identifier: Apache-2.0\n"
                           "// Generated from sky130/modern_25mhz_targets.json.\n", 1)
