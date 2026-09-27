@@ -15,11 +15,12 @@ EXPECTED_CIEL_VERSION="${OPENPLL_EXPECTED_CIEL_SKY130_VERSION:-7519dfb04400f224f
 
 usage() {
     cat <<'EOF'
-Usage: scripts/reproduce_latest_release.sh [audit|rebuild] [options]
+Usage: scripts/reproduce_latest_release.sh [audit|rebuild|physical-audit] [options]
 
 Modes:
   audit            Check the current generated v8 release artifacts.
   rebuild          Regenerate the v8 release artifacts, then run the release gate.
+  physical-audit   Check rebuilt physical artifacts without the v8 frequency baseline.
 
 Options:
   --clean-generated       Remove generated v8 build/runs directories before rebuild.
@@ -64,7 +65,7 @@ warn_or_die() {
 
 while (($#)); do
     case "$1" in
-        audit|rebuild)
+        audit|rebuild|physical-audit)
             MODE="$1"
             ;;
         --clean-generated)
@@ -87,7 +88,7 @@ while (($#)); do
     shift
 done
 
-if [[ "$MODE" == "audit" && "$CLEAN_GENERATED" == "1" ]]; then
+if [[ "$MODE" != "rebuild" && "$CLEAN_GENERATED" == "1" ]]; then
     die "--clean-generated is only valid with rebuild"
 fi
 
@@ -165,13 +166,14 @@ check_environment() {
 clean_generated() {
     log "Removing generated v8 release artifacts"
     if [[ -d build ]]; then
-        find build -mindepth 1 -maxdepth 1 ! -name apptainer -exec rm -rf {} +
+        find build -mindepth 1 -maxdepth 1 ! -name apptainer \
+            ! -name modern_25mhz ! -name check_modern -exec rm -rf {} +
     fi
-    rm -rf openlane/IntegerPLL_DCO_EINVP_COARSE/runs
-    rm -rf openlane/IntegerPLL_BBPD/runs
+    rm -rf openlane/IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff
+    rm -rf openlane/IntegerPLL_BBPD/runs/librelane_signoff
     rm -rf openlane/IntegerPLL_DigitalCore/runs/librelane_signoff_force127_s4a2
-    rm -rf openlane/IntegerPLL_HardMacroTop_EINVP/runs
-    rm -rf openlane/IntegerPLL_HardMacroTop_EINVP_25MHzConfigured/runs
+    rm -rf openlane/IntegerPLL_HardMacroTop_EINVP/runs/librelane_signoff
+    rm -rf openlane/IntegerPLL_HardMacroTop_EINVP_25MHzConfigured/runs/librelane_signoff
 }
 
 rebuild_release() {
@@ -213,9 +215,21 @@ case "$MODE" in
         rebuild_release
         run make check-sky130-pll-25mhz-release
         ;;
+    physical-audit)
+        run make check-dco-einvp-coarse-librelane-signoff
+        run make check-bbpd-librelane-signoff
+        run make check-librelane-signoff-force127-s4a2
+        run make check-hard-macro-top-einvp-signoff
+        run make check-hard-macro-top-einvp-spice
+        run make check-configured-hard-macro-top-einvp-signoff
+        ;;
     *)
         die "unsupported mode: $MODE"
         ;;
 esac
 
-log "OpenPLL $EXPECTED_RELEASE reproduction $MODE completed"
+if [[ "$MODE" == "physical-audit" ]]; then
+    log "OpenPLL physical audit completed with current PDK"
+else
+    log "OpenPLL $EXPECTED_RELEASE reproduction $MODE completed"
+fi

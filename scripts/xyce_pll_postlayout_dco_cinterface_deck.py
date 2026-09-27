@@ -113,6 +113,10 @@ def build_deck(args) -> str:
     stdcell_includes = (
         [f'.include "{hs_spice_path}"'] if args.pllout_isolation_buffer_drive else []
     )
+    special_model = (
+        pdk_root / args.pdk / "libs.ref" / "sky130_fd_pr" / "spice"
+        / f"sky130_fd_pr__special_nfet_01v8__{args.corner}.pm3.spice"
+    )
     pllout_isolation = (
         [
             (
@@ -139,7 +143,7 @@ def build_deck(args) -> str:
                 "X0 d g s b sky130_fd_pr__nfet_01v8 ad={ad} pd={pd} as={as} ps={ps} w={w} l={l} nrd={nrd} nrs={nrs}",
                 ".ends sky130_fd_pr__special_nfet_01v8",
             ]
-            if args.special_nfet_alias else []
+            if args.special_nfet_alias and not special_model.exists() else []
         ),
         *stdcell_includes,
         f'.include "{bbpd_path}"',

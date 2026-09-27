@@ -1,0 +1,57 @@
+{
+  "pdk_version": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "dco_strong_load_count": 16,
+  "dco_run_tag": "modern_k016",
+  "targets": {
+    "100": {
+      "ndiv": 4,
+      "coarse_code": 16,
+      "target_code": 58,
+      "ki": 16,
+      "kp": 4,
+      "f0_mhz": 99.096729233,
+      "f_target_mhz": 99.905637963,
+      "f255_mhz": 103.053289215
+    },
+    "250": {
+      "ndiv": 10,
+      "coarse_code": 4,
+      "target_code": 206,
+      "ki": 16,
+      "kp": 4,
+      "f0_mhz": 231.084320014,
+      "f_target_mhz": 249.95936103,
+      "f255_mhz": 254.555677618
+    },
+    "300": {
+      "ndiv": 12,
+      "coarse_code": 2,
+      "target_code": 12,
+      "ki": 16,
+      "kp": 4,
+      "f0_mhz": 298.823130042,
+      "f_target_mhz": 300.213584569,
+      "f255_mhz": 336.203108399
+    },
+    "400": {
+      "ndiv": 16,
+      "coarse_code": 1,
+      "target_code": 215,
+      "ki": 16,
+      "kp": 4,
+      "f0_mhz": 355.82224518,
+      "f_target_mhz": 399.366271779,
+      "f255_mhz": 410.112029565
+    },
+    "500": {
+      "ndiv": 20,
+      "coarse_code": 0,
+      "target_code": 163,
+      "ki": 16,
+      "kp": 4,
+      "f0_mhz": 448.56298456,
+      "f_target_mhz": 500.707437664,
+      "f255_mhz": 532.313848198
+    }
+  }
+}

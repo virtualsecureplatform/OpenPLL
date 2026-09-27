@@ -1,5 +1,8 @@
 # OpenPLL
 
+For the separate modern Ciel Sky130 five-mode 25 MHz-reference release,
+see [REPRODUCIBILITY.md](REPRODUCIBILITY.md#separate-modern-ciel-five-mode-release).
+
 OpenPLL is an integer-N bang-bang digital PLL implementation targeting Sky130.
 The current high-frequency source/integration path is
 `IntegerPLL_HardMacroTop_EINVP`, which combines the digital core RTL, filled
@@ -56,9 +59,18 @@ The latest-release result can also be audited or rebuilt inside Apptainer:
 
 ```sh
 make -C OpenPLL apptainer-build
+make -C OpenPLL apptainer-physical-audit
 make -C OpenPLL apptainer-audit-release
 make -C OpenPLL apptainer-rebuild-release
 ```
+
+The container includes NumPy, Sky130 PDK archives, LibreLane, and upstream
+Xyce. It selects a newer PDK with native LibreLane setup for physical rebuilds;
+see [REPRODUCIBILITY.md](REPRODUCIBILITY.md#pdk-compatibility) for the
+historical v8 pin distinction and the current audit result.
+The physical audit passes on the newer PDK; the historical v8 release audit
+does not pass because its fixed physical and frequency baselines belong to
+the older PDK.
 
 `rtl/IntegerPLL_25MHzModeConfig.v` is the reusable preset table for a 25 MHz
 reference. It exposes the restored /4, /10, /12, /16, and /20 settings:

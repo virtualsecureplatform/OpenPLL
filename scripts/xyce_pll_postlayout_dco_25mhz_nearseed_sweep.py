@@ -14,6 +14,7 @@ import sys
 import time
 
 from sky130_pdk import default_pdk_root
+from sky130_modern_targets import load_target_presets
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -211,7 +212,22 @@ def completed_pass(
         return None
     if pllout_rises < TARGETS[target_mhz]["min_pllout_rises"]:
         return None
-    return summary, parse_measure_line(text)
+    measure = parse_measure_line(text)
+    if not measure:
+        return None
+    tref_ns = 1000.0 / args.ref_mhz
+    expected_start_ns = args.start_ns + args.cycles * tref_ns + args.measure_settle_ns
+    expected_end_ns = args.start_ns + (args.cycles + args.measure_cycles) * tref_ns
+    try:
+        start_ns = float(measure["start_ns"])
+        end_ns = float(measure["end_ns"])
+    except (KeyError, ValueError):
+        return None
+    time_tolerance_ns = max(1.0e-3, float(TARGETS[target_mhz]["cosim_step_ns"]) + 1.0e-6)
+    if (abs(start_ns - expected_start_ns) > time_tolerance_ns
+            or abs(end_ns - expected_end_ns) > time_tolerance_ns):
+        return None
+    return summary, measure
 
 
 def target_paths(
@@ -221,7 +237,7 @@ def target_paths(
     target_code: int,
     side: str,
 ) -> tuple[Path, Path]:
-    deck = build_dir / f"target{target_mhz}_c{coarse_code:02d}.cir"
+    deck = build_dir / f"target{target_mhz}_c{coarse_code:02d}_nearseed_{side}.cir"
     log = (
         build_dir
         / f"target{target_mhz}_c{coarse_code:02d}_code{target_code:03d}_nearseed_{side}.log"
@@ -343,23 +359,22 @@ def run_case(args: argparse.Namespace, target_mhz: int, side: str) -> dict[str, 
             "--prop-rail-guard",
         ]
         start = time.monotonic()
-        try:
-            proc = subprocess.run(
-                cmd,
-                cwd=ROOT,
-                text=True,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                timeout=args.timeout_s,
-                check=False,
-            )
-            output = proc.stdout
-            returncode = proc.returncode
-        except subprocess.TimeoutExpired as exc:
-            output = (exc.stdout or "") + f"\nOpenPLL timeout after {args.timeout_s:.1f} s\n"
-            returncode = 124
+        with log.open("w", encoding="utf-8", errors="replace") as handle:
+            try:
+                proc = subprocess.run(
+                    cmd,
+                    cwd=ROOT,
+                    stdout=handle,
+                    stderr=subprocess.STDOUT,
+                    timeout=args.timeout_s,
+                    check=False,
+                )
+                returncode = proc.returncode
+            except subprocess.TimeoutExpired:
+                handle.write(f"\nOpenPLL timeout after {args.timeout_s:.1f} s\n")
+                returncode = 124
         elapsed_s = time.monotonic() - start
-        log.write_text(output, encoding="utf-8", errors="replace")
+        output = log.read_text(encoding="utf-8", errors="replace")
         print_driver_excerpt(output)
         summary = parse_summary_line(output)
         measure = parse_measure_line(output)
@@ -461,6 +476,7 @@ def validate_args(args: argparse.Namespace) -> None:
 
 
 def main() -> int:
+    global TARGETS
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--driver",
@@ -473,6 +489,8 @@ def main() -> int:
     parser.add_argument("--pdk-root", type=Path, default=Path(default_pdk_root()))
     parser.add_argument("--pdk", default="sky130A")
     parser.add_argument("--targets-mhz", type=parse_targets, default=parse_targets("100,250,300,400,500"))
+    parser.add_argument("--target-config", type=Path,
+                        help="Characterized target manifest for a separate PDK release.")
     parser.add_argument("--sides", type=parse_sides, default=parse_sides("low,high"))
     parser.add_argument("--ref-mhz", type=float, default=25.0)
     parser.add_argument("--dco-subckt", default="IntegerPLL_DCO_EINVP_COARSE")
@@ -525,10 +543,20 @@ def main() -> int:
     parser.add_argument("--reset-release-ns", type=float, default=1.0)
     parser.add_argument("--ref-source", choices=("pulse", "sine"), default="pulse")
     parser.add_argument("--timeout-s", type=float, default=1200.0)
+    parser.add_argument("--cosim-step-ns", type=float, default=None,
+                        help="Override the driver time step for every selected target.")
     parser.add_argument("--summary-stem", default="pll_postlayout_dco_25mhz_nearseed_summary")
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--keep-going", action="store_true")
     args = parser.parse_args()
+
+    if args.target_config is not None:
+        TARGETS = load_target_presets(resolve_repo_path(args.target_config), TARGETS)
+    if args.cosim_step_ns is not None:
+        if args.cosim_step_ns <= 0:
+            parser.error("--cosim-step-ns must be positive")
+        TARGETS = {target: {**cfg, "cosim_step_ns": args.cosim_step_ns}
+                   for target, cfg in TARGETS.items()}
 
     args.driver = resolve_repo_path(args.driver)
     args.pdk_root = args.pdk_root.expanduser().resolve()

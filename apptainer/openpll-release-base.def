@@ -1,0 +1,78 @@
+Bootstrap: docker
+From: ubuntu:24.04
+
+%labels
+    org.opencontainers.image.title OpenPLL latest-release reproducibility
+    org.opencontainers.image.description Apptainer environment for reproducing the OpenPLL v8 release gate
+    org.opencontainers.image.source https://github.com/virtualsecureplatform/OpenPLL
+    org.opencontainers.image.version v8
+
+%post
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update
+    apt-get install -y --no-install-recommends \
+        bash \
+        ca-certificates \
+        cmake \
+        curl \
+        file \
+        bison \
+        flex \
+        g++ \
+        gcc \
+        gfortran \
+        git \
+        iverilog \
+        jq \
+        libamd3 \
+        libblas3 \
+        libevent-core-2.1-7t64 \
+        libevent-pthreads-2.1-7t64 \
+        libfftw3-double3 \
+        libfftw3-dev \
+        libgfortran5 \
+        libhwloc15 \
+        liblapack3 \
+        liblapack-dev \
+        libopenblas0 \
+        libopenblas-dev \
+        libopenmpi-dev \
+        libopenmpi3t64 \
+        libsuitesparseconfig7 \
+        libsuitesparse-dev \
+        locales \
+        make \
+        nix-bin \
+        openmpi-bin \
+        pkg-config \
+        python3 \
+        python3-pip \
+        python3-numpy \
+        python3-venv \
+        python3-yaml \
+        rsync \
+        time \
+        xz-utils
+    locale-gen C.UTF-8
+    apt-get clean
+    rm -rf /var/lib/apt/lists/*
+
+    # Keep the full physical-flow dependency set inside the SIF. The checkout
+    # is still mounted at runtime so generated artifacts remain in the workspace.
+    python3 -m venv /opt/ciel-venv
+    /opt/ciel-venv/bin/pip install --no-cache-dir 'ciel==2.0.1'
+    /opt/ciel-venv/bin/ciel enable --pdk-root /opt/pdk --pdk-family sky130 \
+        7519dfb04400f224f140749cda44ee7de6f5e095
+    test -d /opt/pdk/ciel/sky130/versions/7519dfb04400f224f140749cda44ee7de6f5e095/sky130A
+
+    git clone --filter=blob:none https://github.com/librelane/librelane.git /opt/librelane
+    git -C /opt/librelane checkout --detach 0f39aab99009d4a81ee3f863f0da9ca2f0b43a99
+    mkdir -p /etc/nix
+    printf '%s\n' \
+        'sandbox = false' \
+        'build-users-group =' \
+        'substituters = https://cache.nixos.org https://nix-cache.fossi-foundation.org' \
+        'trusted-public-keys = cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY= nix-cache.fossi-foundation.org:3+K59iFwXqKsL7BNu6Guy0v+uTlwsxYQxjspXzqLYQs=' \
+        'experimental-features = nix-command flakes' > /etc/nix/nix.conf
+    export NIX_REMOTE=local
+    nix-shell /opt/librelane/shell.nix --run 'librelane --version'

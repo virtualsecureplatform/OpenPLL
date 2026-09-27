@@ -128,19 +128,19 @@
         }
       },
       "gds": [
-        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final/gds/IntegerPLL_DCO_EINVP_COARSE.gds"
+        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/modern_k016/final/gds/IntegerPLL_DCO_EINVP_COARSE.gds"
       ],
       "lef": [
-        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final/lef/IntegerPLL_DCO_EINVP_COARSE.lef"
+        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/modern_k016/final/lef/IntegerPLL_DCO_EINVP_COARSE.lef"
       ],
       "vh": [
-        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final/vh/IntegerPLL_DCO_EINVP_COARSE.vh"
+        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/modern_k016/final/vh/IntegerPLL_DCO_EINVP_COARSE.vh"
       ],
       "pnl": [
-        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final/pnl/IntegerPLL_DCO_EINVP_COARSE.pnl.v"
+        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/modern_k016/final/pnl/IntegerPLL_DCO_EINVP_COARSE.pnl.v"
       ],
       "spice": [
-        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/librelane_signoff/final/spice/IntegerPLL_DCO_EINVP_COARSE.spice"
+        "dir::../IntegerPLL_DCO_EINVP_COARSE/runs/modern_k016/final/spice/IntegerPLL_DCO_EINVP_COARSE.spice"
       ]
     },
     "IntegerPLL_DigitalCore": {

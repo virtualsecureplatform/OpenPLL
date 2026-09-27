@@ -1,0 +1,29 @@
+Bootstrap: localimage
+From: build/apptainer/openpll-release-base.sif
+
+%post
+    apt-get update
+    apt-get install -y --no-install-recommends libfl-dev
+    apt-get clean
+    rm -rf /var/lib/apt/lists/*
+    # This pinned Ciel archive predates the libs.tech/librelane alias expected
+    # by the current release checker. LibreLane consumes the same OpenLane setup.
+    for variant in sky130A sky130B; do
+        tech="/opt/pdk/ciel/sky130/versions/7519dfb04400f224f140749cda44ee7de6f5e095/$variant/libs.tech"
+        if [ -d "$tech/openlane" ] && [ ! -e "$tech/librelane" ]; then
+            ln -s openlane "$tech/librelane"
+        fi
+    done
+    git clone --filter=blob:none --branch trilinos-release-14-4-0 \
+        https://github.com/trilinos/Trilinos.git /opt/Trilinos
+    git clone --filter=blob:none --branch Release-7.10.0 \
+        https://github.com/Xyce/Xyce.git /opt/Xyce
+    cmake -S /opt/Trilinos -B /opt/trilinos-build \
+        -C /opt/Xyce/cmake/trilinos/trilinos-MPI-base.cmake \
+        -D CMAKE_BUILD_TYPE=Release \
+        -D CMAKE_INSTALL_PREFIX=/opt/trilinos \
+        -D AMD_INCLUDE_DIRS=/usr/include/suitesparse \
+        -D CMAKE_C_COMPILER=mpicc \
+        -D CMAKE_CXX_COMPILER=mpicxx \
+        -D CMAKE_Fortran_COMPILER=mpifort
+    cmake --build /opt/trilinos-build --parallel 8 --target install

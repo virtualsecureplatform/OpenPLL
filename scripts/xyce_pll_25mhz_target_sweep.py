@@ -13,6 +13,8 @@ import re
 import subprocess
 import sys
 
+from sky130_modern_targets import load_target_presets
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -428,7 +430,10 @@ def run_case(
             output = proc.stdout
             returncode = proc.returncode
         except subprocess.TimeoutExpired as exc:
-            output = (exc.stdout or "") + f"\nOpenPLL timeout after {args.timeout_s:.1f} s\n"
+            partial_output = exc.stdout or ""
+            if isinstance(partial_output, bytes):
+                partial_output = partial_output.decode("utf-8", errors="replace")
+            output = partial_output + f"\nOpenPLL timeout after {args.timeout_s:.1f} s\n"
             returncode = 124
         log_path.write_text(output, encoding="utf-8", errors="replace")
 
@@ -575,6 +580,7 @@ def write_csv(path: Path, rows: list[dict[str, str]], fieldnames: list[str]) -> 
 
 
 def main() -> int:
+    global PRESET_TARGET_CODES
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--driver",
@@ -597,6 +603,8 @@ def main() -> int:
     parser.add_argument("--build-dir", type=Path, default=ROOT / "build" / "xyce_pll_25mhz_target_sweep")
     parser.add_argument("--ref-mhz", type=float, default=25.0)
     parser.add_argument("--targets-mhz", type=parse_float_list, default=parse_float_list("100,250,300,400,500"))
+    parser.add_argument("--target-config", type=Path,
+                        help="Characterized target manifest for a separate PDK release.")
     parser.add_argument("--ki-values", type=parse_int_list, default=parse_int_list("192"))
     parser.add_argument("--kp-values", type=parse_int_list, default=parse_int_list("8"))
     parser.add_argument("--init-codes", type=parse_int_list, default=parse_int_list("0,255"))
@@ -674,6 +682,15 @@ def main() -> int:
     parser.add_argument("--resume", action="store_true", help="Reuse existing completed case logs.")
     args = parser.parse_args()
 
+    configured_modes = None
+    if args.target_config is not None:
+        defaults = {
+            int(mhz): {"coarse_code": 0, "target_code": code, "ndiv": int(mhz) // 25}
+            for mhz, code in PRESET_TARGET_CODES.items()
+        }
+        configured_modes = load_target_presets(resolve_repo_path(args.target_config), defaults)
+        PRESET_TARGET_CODES = {float(mhz): row["target_code"] for mhz, row in configured_modes.items()}
+
     args.driver = resolve_repo_path(args.driver)
     args.dco_csv = [resolve_repo_path(path) for path in args.dco_csv]
     args.build_dir = resolve_repo_path(args.build_dir)
@@ -701,6 +718,9 @@ def main() -> int:
         if not math.isclose(multiplier, multiplier_int, rel_tol=0.0, abs_tol=1.0e-9):
             raise ValueError(f"target {target_mhz:g} MHz is not an integer multiple of {args.ref_mhz:g} MHz")
         candidates = target_candidates(rows, target_mhz, args)
+        if configured_modes is not None:
+            candidates = [candidate for candidate in candidates
+                          if candidate["coarse_code"] == configured_modes[int(target_mhz)]["coarse_code"]]
         if not candidates:
             raise ValueError(f"no measured coarse DCO band brackets {target_mhz:g} MHz")
         best = candidates[0]

@@ -1,57 +1,27 @@
-Bootstrap: docker
-From: ubuntu:24.04
-
-%labels
-    org.opencontainers.image.title OpenPLL latest-release reproducibility
-    org.opencontainers.image.description Apptainer environment for reproducing the OpenPLL v8 release gate
-    org.opencontainers.image.source https://github.com/virtualsecureplatform/OpenPLL
-    org.opencontainers.image.version v8
+Bootstrap: localimage
+From: build/apptainer/openpll-xyce-base.sif
 
 %post
-    export DEBIAN_FRONTEND=noninteractive
-    apt-get update
-    apt-get install -y --no-install-recommends \
-        bash \
-        ca-certificates \
-        cmake \
-        curl \
-        file \
-        g++ \
-        gcc \
-        git \
-        iverilog \
-        jq \
-        libamd3 \
-        libblas3 \
-        libevent-core-2.1-7t64 \
-        libevent-pthreads-2.1-7t64 \
-        libfftw3-double3 \
-        libgfortran5 \
-        libhwloc15 \
-        liblapack3 \
-        libopenblas0 \
-        libopenmpi-dev \
-        libopenmpi3t64 \
-        libsuitesparseconfig7 \
-        locales \
-        make \
-        nix-bin \
-        openmpi-bin \
-        pkg-config \
-        python3 \
-        python3-numpy \
-        python3-yaml \
-        rsync \
-        time \
-        xz-utils
-    locale-gen C.UTF-8
-    apt-get clean
-    rm -rf /var/lib/apt/lists/*
+    cmake -S /opt/Xyce -B /opt/xyce-build \
+        -D CMAKE_BUILD_TYPE=Release \
+        -D CMAKE_INSTALL_PREFIX=/opt/xyce \
+        -D Trilinos_ROOT=/opt/trilinos \
+        -D CMAKE_C_COMPILER=mpicc \
+        -D CMAKE_CXX_COMPILER=mpicxx
+    cmake --build /opt/xyce-build --parallel 8 --target install
+    cmake --build /opt/xyce-build --parallel 8 --target xycecinterface
+    /opt/xyce/bin/Xyce -v
+
 
 %environment
     export LC_ALL=C.UTF-8
     export LANG=C.UTF-8
-    export PATH=/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/bin
+    export PATH=/opt/xyce/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/bin:/opt/ciel-venv/bin
+    export NIX_REMOTE=local
+    export LIBRELANE_ROOT=/opt/librelane
+    export CIEL_SKY130_ROOT=/opt/pdk/ciel/sky130
+    export XYCE_MPI_ROOT=/opt/xyce
+    export XYCE_MIXED_BUILD_DIR=/opt/xyce-build
     export OPENPLL_RELEASE_TAG=v8
     export OPENPLL_EXPECTED_LIBRELANE_COMMIT=0f39aab99009d4a81ee3f863f0da9ca2f0b43a99
     export OPENPLL_EXPECTED_CIEL_SKY130_VERSION=7519dfb04400f224f140749cda44ee7de6f5e095
@@ -67,10 +37,9 @@ From: ubuntu:24.04
     exec /work/OpenPLL/scripts/reproduce_latest_release.sh "$@"
 
 %help
-    This image provides the generic OS/runtime layer for the OpenPLL latest-release
-    reproduction flow. It deliberately does not bake in the Sky130 PDK, LibreLane
-    checkout, Nix store, or Xyce install. The repository wrapper binds those host
-    inputs explicitly:
+    This image includes the pinned Sky130 PDK, LibreLane/Nix closure, and upstream
+    MPI Xyce 7.10.0. It does not include the project's experimental KLS solver.
+    The repository wrapper binds only the OpenPLL checkout:
 
         scripts/apptainer_reproduce_latest_release.sh build
         scripts/apptainer_reproduce_latest_release.sh audit

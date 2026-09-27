@@ -1,7 +1,7 @@
 {
   "DESIGN_NAME": "IntegerPLL_DCO_EINVP_COARSE",
   "VERILOG_FILES": [
-    "dir::../../sky130/IntegerPLL_DCO_einvp_coarse_sky130.v"
+    "dir::../../sky130/IntegerPLL_DCO_einvp_coarse_modern_sky130.v"
   ],
   "VERILOG_DEFINES": [
     "USE_POWER_PINS"

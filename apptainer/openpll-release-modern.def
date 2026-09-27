@@ -1,0 +1,18 @@
+Bootstrap: localimage
+From: build/apptainer/openpll-release.sif
+
+%post
+    # Keep the historical v8 archive in the image. Select a pinned archive
+    # with native LibreLane configuration for new physical-flow runs.
+    /opt/ciel-venv/bin/ciel enable --pdk-root /opt/pdk --pdk-family sky130 \
+        1689ac3f2dc763876eaf967227c7dfe831b031ae
+    test -f /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/librelane/config.tcl
+
+%environment
+    export OPENPLL_EXPECTED_CIEL_SKY130_VERSION=1689ac3f2dc763876eaf967227c7dfe831b031ae
+
+%help
+    This image extends openpll-release.sif with a newer pinned Ciel Sky130
+    archive that contains native LibreLane setup. The historical v8 PDK archive
+    remains available, but new results are not bit-for-bit v8 reproductions.
+    Use scripts/apptainer_reproduce_latest_release.sh from the checkout.

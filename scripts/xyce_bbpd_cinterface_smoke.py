@@ -55,15 +55,23 @@ def build_deck(args) -> str:
     if missing:
         raise ValueError(f"unsupported {args.subckt} ports: {', '.join(missing)}")
 
-    lines = [
-        "* OpenPLL BBPD RCX mixed-signal C-interface smoke deck.",
-        f"* RCX netlist: {rcx_path}",
-        f'.lib "{model_path}" {args.corner}',
+    special_model = (
+        pdk_root / args.pdk / "libs.ref" / "sky130_fd_pr" / "spice"
+        / f"sky130_fd_pr__special_nfet_01v8__{args.corner}.pm3.spice"
+    )
+    special_alias = [] if special_model.exists() else [
         "* Compatibility alias for Magic RCX generic special-device naming.",
         ".subckt sky130_fd_pr__special_nfet_01v8 d g s b",
         ".param l=0.15 w=0.36 ad=0 as=0 pd=0 ps=0 nrd=0 nrs=0",
         "X0 d g s b sky130_fd_pr__nfet_01v8 ad={ad} pd={pd} as={as} ps={ps} w={w} l={l} nrd={nrd} nrs={nrs}",
         ".ends sky130_fd_pr__special_nfet_01v8",
+    ]
+
+    lines = [
+        "* OpenPLL BBPD RCX mixed-signal C-interface smoke deck.",
+        f"* RCX netlist: {rcx_path}",
+        f'.lib "{model_path}" {args.corner}',
+        *special_alias,
         f'.include "{rcx_path}"',
         ".param VDD=1.8",
         "VVPWR VPWR 0 {VDD}",

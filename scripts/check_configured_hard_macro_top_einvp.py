@@ -341,11 +341,19 @@ def write_outputs(summary, out_dir):
 
 
 def main():
+    global CONFIG_REL, RUN_DIR_REL, EXPECTED_RTL
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", default=str(Path(__file__).resolve().parents[1]))
     parser.add_argument("--out-dir", default="build/configured_hard_macro_top_einvp")
     parser.add_argument("--require-signoff", action="store_true")
+    parser.add_argument("--modern", action="store_true",
+                        help="Check the separate modern-PDK config and signoff run.")
     args = parser.parse_args()
+
+    if args.modern:
+        CONFIG_REL = f"openlane/{DESIGN}/config_modern.json"
+        RUN_DIR_REL = f"openlane/{DESIGN}/runs/modern_signoff"
+        EXPECTED_RTL = [EXPECTED_RTL[0].replace("ModeConfig.v", "ModeConfig_modern.v"), *EXPECTED_RTL[1:]]
 
     root = Path(args.root).expanduser().resolve()
     out_dir = root / args.out_dir if not Path(args.out_dir).is_absolute() else Path(args.out_dir)

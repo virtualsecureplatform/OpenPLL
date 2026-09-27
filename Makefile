@@ -1,7 +1,7 @@
 LIBRELANE_ROOT ?= $(or $(firstword $(wildcard ../librelane ../../librelane $(HOME)/sources/librelane)),../librelane)
 
 APPTAINER ?= $(or $(shell command -v apptainer 2>/dev/null),$(shell command -v singularity 2>/dev/null),apptainer)
-OPENPLL_APPTAINER_IMAGE ?= build/apptainer/openpll-release.sif
+OPENPLL_APPTAINER_IMAGE ?= build/apptainer/openpll-release-modern.sif
 CIEL_SKY130_ROOT ?= $(HOME)/.volare/ciel/sky130
 CIEL_SKY130_CURRENT_VERSION ?= $(shell cat "$(CIEL_SKY130_ROOT)/current" 2>/dev/null)
 CIEL_SKY130_CURRENT_ROOT ?= $(if $(CIEL_SKY130_CURRENT_VERSION),$(if $(wildcard $(CIEL_SKY130_ROOT)/versions/$(CIEL_SKY130_CURRENT_VERSION)/$(PDK)),$(CIEL_SKY130_ROOT)/versions/$(CIEL_SKY130_CURRENT_VERSION)))
@@ -68,6 +68,7 @@ XYCE_MIXED_INSTALL_DIR ?= $(XYCE_MPI_ROOT)
 XYCE_MIXED_BUILD_DIR ?= $(HOME)/builds/xyce/xyce-mpi
 XYCE_CINTERFACE_SMOKE_BUILD_DIR ?= build/xyce_cinterface_smoke_mpi
 XYCE_CINTERFACE_CXX ?= /usr/bin/mpicxx
+XYCE_CINTERFACE_CMAKE_FLAGS ?= $(if $(wildcard /opt/Xyce/src),-DXYCE_SOURCE_DIR=/opt/Xyce -DTrilinos_DIR=/opt/trilinos/lib/cmake/Trilinos)
 PLL_MPI_KLU_XYCE ?= $(XYCE_MIXED_XYCE) -linsolv KLU
 PLL_EXTRACTED_DCO_MPI_KLU_XYCE ?= $(PLL_MPI_KLU_XYCE)
 PLL_EXTRACTED_DCO_MPI_PROCS ?= 4
@@ -129,22 +130,27 @@ check-xyce-mixed-signal:
 	./scripts/check_xyce_mixed_signal.py --xyce "$(XYCE_MIXED_XYCE)" --xyce-lib-dir "$(XYCE_MIXED_LIB_DIR)" --xyce-share "$(XYCE_MIXED_SHARE)" --xyce-build-dir "$(XYCE_MIXED_BUILD_DIR)"
 
 xyce-cinterface-static:
-	cmake --build "$(XYCE_MIXED_BUILD_DIR)" --target xycecinterface -j 4
+	@if [ "$(XYCE_MIXED_BUILD_DIR)" = /opt/xyce-build ] && \
+	   [ -s "$(XYCE_MIXED_BUILD_DIR)/utils/XyceCInterface/libxycecinterface.a" ]; then \
+		echo "using bundled Xyce C interface library"; \
+	else \
+		cmake --build "$(XYCE_MIXED_BUILD_DIR)" --target xycecinterface -j 4; \
+	fi
 
 xyce-cinterface-smoke: xyce-cinterface-static
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
 	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_cinterface_smoke tools/xyce_cinterface_smoke/yadc_ydac_smoke.cir
 
 xyce-bbpd-cinterface-smoke: xyce-cinterface-static
 	./scripts/xyce_bbpd_cinterface_smoke.py --out build/xyce_bbpd_cinterface_smoke/bbpd_yadc_ydac.cir
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
 	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_bbpd_cinterface_smoke build/xyce_bbpd_cinterface_smoke/bbpd_yadc_ydac.cir
 
 xyce-pll-mixed-signal-smoke: xyce-cinterface-static
 	./scripts/xyce_bbpd_cinterface_smoke.py --out build/xyce_pll_mixed_signal_smoke/pll_bbpd_yadc_ydac.cir --step-ps 5 --sim-time-ns 350
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
 	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_mixed_signal_smoke build/xyce_pll_mixed_signal_smoke/pll_bbpd_yadc_ydac.cir --init-code 96 --target-code 128 --cycles 8 --ki 255 --kp 8 --frac 6 --boost-shift 4 --boost-after 1 --ndiv 2 --expect increase --min-motion 8 --tol-code 24 > build/xyce_pll_mixed_signal_smoke/low.log 2>&1 || { tail -n 80 build/xyce_pll_mixed_signal_smoke/low.log; false; }
 	grep -E '^(cycle,|[0-9]+,|xyce_pll_mixed_signal_smoke=)' build/xyce_pll_mixed_signal_smoke/low.log
@@ -152,20 +158,20 @@ xyce-pll-mixed-signal-smoke: xyce-cinterface-static
 	grep -E '^(cycle,|[0-9]+,|xyce_pll_mixed_signal_smoke=)' build/xyce_pll_mixed_signal_smoke/high.log
 
 xyce-pll-mixed-signal-gain-sweep: xyce-cinterface-static
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
 	./scripts/xyce_pll_mixed_signal_gain_sweep.py --driver "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_mixed_signal_smoke --ki-values 160 --kp-values 0,8 --init-codes 96,160 --cycles 10 --frac 6 --boost-shift 4 --boost-after 2 --tol-code 24 --build-dir build/xyce_pll_mixed_signal_gain_sweep
 
 xyce-pll-mixed-signal-25mhz-targets: xyce-pll-mixed-signal-25mhz-configured-tracking xyce-pll-postlayout-dco-mixed-25mhz-hold-smokes
 
 xyce-pll-mixed-signal-25mhz-configured-tracking: xyce-cinterface-static spice-dco-postlayout-einvp-coarse-target-probe
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" --target xyce_pll_mixed_signal_smoke -j 4
 	python3 ./scripts/xyce_pll_25mhz_target_sweep.py --driver "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_mixed_signal_smoke --dco-csv build/spice_dco_postlayout_einvp_coarse90_drv4_nodeepslow0_100m_c20_mpi4/dco_postlayout_results.csv --dco-csv build/spice_dco_postlayout_einvp_coarse90_drv4_nodeepslow0_250m_c6_mpi4/dco_postlayout_results.csv --dco-csv build/spice_dco_postlayout_einvp_coarse90_drv4_nodeepslow0_300m_c4_mpi4/dco_postlayout_results.csv --dco-csv build/spice_dco_postlayout_einvp_coarse90_drv4_nodeepslow0_400m_c2_low_mpi4/dco_postlayout_results.csv --dco-csv build/spice_dco_postlayout_einvp_coarse90_drv4_nodeepslow0_400m_c2_mpi4/dco_postlayout_results.csv --dco-csv build/spice_dco_postlayout_einvp_coarse90_drv4_nodeepslow0_450_600_probe_mpi4/dco_postlayout_results.csv --targets-mhz 100,250,300,400,500 --ki-values 1,16 --kp-values 2,4,5,8 --init-offsets=-4,4 --cycles 24 --frac 2 --boost-shift 0 --boost-after 1 --tol-code 4 --freq-tol-mhz 2 --late-window-cycles 8 --max-late-code-span 16 --min-expected-decisions 1 --min-motion 1 --require-waveform-quality --resume --build-dir build/xyce_pll_25mhz_target_sweep_coarse90_drv4_nodeepslow0_tracking_near4
 
 xyce-pll-mixed-signal-fast100-coarse4-smoke: xyce-cinterface-static
 	./scripts/xyce_bbpd_cinterface_smoke.py --out build/xyce_pll_mixed_signal_fast100_coarse4_smoke/pll_bbpd_yadc_ydac.cir --step-ps 5 --sim-time-ns 500
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
 	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_mixed_signal_smoke build/xyce_pll_mixed_signal_fast100_coarse4_smoke/pll_bbpd_yadc_ydac.cir --init-code 0 --target-code 32 --cycles 24 --ki 192 --kp 8 --frac 2 --boost-shift 0 --boost-after 1 --ndiv 2 --expect increase --min-motion 20 --tol-code 8 --f0-mhz 102.518 --f64-mhz 119.260 --f128-mhz 142.355 --f192-mhz 176.267 --f255-mhz 229.054 --coarse-code 1 --dco-coarse-step-mhz 16 --phase-wrap-cycles 0.45 > build/xyce_pll_mixed_signal_fast100_coarse4_smoke/low.log 2>&1 || { tail -n 80 build/xyce_pll_mixed_signal_fast100_coarse4_smoke/low.log; false; }
 	grep -E '^(cycle,|[0-9]+,|xyce_pll_mixed_signal_smoke=)' build/xyce_pll_mixed_signal_fast100_coarse4_smoke/low.log
@@ -174,7 +180,7 @@ xyce-pll-mixed-signal-fast100-coarse4-smoke: xyce-cinterface-static
 
 xyce-pll-analog-dco-mixed-fast100-coarse4-acq: xyce-cinterface-static
 	./scripts/xyce_pll_analog_dco_cinterface_deck.py --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --out build/xyce_pll_analog_dco_mixed_fast100_coarse4/pll_analog_dco_bbpd.cir --sim-time-ns 1500 --step-ps 5 --max-step-ps 50 --clock-sharpness 50 --clock-phase-offset -0.25
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
 	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_analog_dco_mixed_signal_smoke build/xyce_pll_analog_dco_mixed_fast100_coarse4/pll_analog_dco_bbpd.cir --init-code 0 --target-code 32 --cycles 4 --ki 128 --kp 8 --frac 2 --ref-mhz 63.443725 --target-mhz 126.88745 --freq-tol-mhz 2 --measure-cycles 2 --measure-settle-ns 1 --min-pllout-rises 3 --expect increase --min-motion 20 --tol-code 8 --prop-rail-guard > build/xyce_pll_analog_dco_mixed_fast100_coarse4/low.log 2>&1 || { tail -n 100 build/xyce_pll_analog_dco_mixed_fast100_coarse4/low.log; false; }
 	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_analog_dco_mixed_signal_smoke=)' build/xyce_pll_analog_dco_mixed_fast100_coarse4/low.log
@@ -183,7 +189,7 @@ xyce-pll-analog-dco-mixed-fast100-coarse4-acq: xyce-cinterface-static
 
 xyce-pll-analog-dco-mixed-fast200-acq: xyce-cinterface-static
 	./scripts/xyce_pll_analog_dco_cinterface_deck.py --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --out build/xyce_pll_analog_dco_mixed_fast200/pll_analog_dco_bbpd.cir --ref-mhz 25 --ndiv 8 --coarse-code 0 --dco-coarse-step-mhz 16 --sim-time-ns 2500 --step-ps 5 --max-step-ps 50 --clock-sharpness 50 --clock-phase-offset -0.25
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
 	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_analog_dco_mixed_signal_smoke build/xyce_pll_analog_dco_mixed_fast200/pll_analog_dco_bbpd.cir --init-code 0 --target-code 220 --cycles 27 --ki 128 --kp 8 --frac 2 --ref-mhz 25 --ndiv 8 --target-mhz 200 --freq-tol-mhz 3 --measure-cycles 2 --measure-settle-ns 1 --min-pllout-rises 5 --expect increase --min-motion 160 --tol-code 8 --prop-rail-guard > build/xyce_pll_analog_dco_mixed_fast200/low.log 2>&1 || { tail -n 100 build/xyce_pll_analog_dco_mixed_fast200/low.log; false; }
 	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_analog_dco_mixed_signal_smoke=)' build/xyce_pll_analog_dco_mixed_fast200/low.log
@@ -192,7 +198,7 @@ xyce-pll-analog-dco-mixed-fast200-acq: xyce-cinterface-static
 
 xyce-pll-postlayout-calibrated-dco-mixed-fast200-sparse72-lock: xyce-cinterface-static
 	./scripts/xyce_pll_analog_dco_cinterface_deck.py --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --out build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/pll_postlayout_calibrated_dco_bbpd.cir --dco-model sparse72-postlayout --ref-mhz 25 --ndiv 8 --coarse-code 0 --dco-coarse-step-mhz 0 --f184-mhz 194.46898415754885 --f190-mhz 195.9684798596022 --f191-mhz 196.67618891873252 --f192-mhz 202.26421728014336 --f220-mhz 236.81624939278817 --f255-mhz 296.9920407006145 --sim-time-ns 1800 --step-ps 5 --max-step-ps 50 --clock-sharpness 50 --clock-phase-offset -0.25
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
 	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_analog_dco_mixed_signal_smoke build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/pll_postlayout_calibrated_dco_bbpd.cir --init-code 0 --target-code 192 --cycles 40 --ki 76 --kp 8 --frac 2 --ref-mhz 25 --ndiv 8 --target-mhz 200 --freq-tol-mhz 4 --measure-cycles 2 --measure-settle-ns 1 --min-pllout-rises 5 --expect increase --min-motion 188 --tol-code 1 --prop-rail-guard > build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/low.log 2>&1 || { tail -n 120 build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/low.log; false; }
 	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_analog_dco_mixed_signal_smoke=)' build/xyce_pll_postlayout_calibrated_dco_mixed_fast200_sparse72/low.log
@@ -201,7 +207,7 @@ xyce-pll-postlayout-calibrated-dco-mixed-fast200-sparse72-lock: xyce-cinterface-
 
 xyce-pll-postlayout-dco-mixed-fast200-sparse72-near-lock-motion: xyce-cinterface-static
 	./scripts/xyce_pll_postlayout_dco_cinterface_deck.py --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --out build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/pll_postlayout_dco_bbpd_near_meas.cir --ref-mhz 25 --dco-subckt IntegerPLL_DCO_EINVP_SPARSE72 --dco-rcx-netlist "$(DCO_EINVP_SPARSE72_POSTLAYOUT_SIGNOFF_RCX)" --sim-time-ns 320 --step-ps 20 --max-step-ps 200 --clock-sharpness 80 --clock-phase-offset -0.25 --reset-release-ns 5 --ref-source pulse
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -j 4
 	"$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_postlayout_dco_mixed_signal_smoke build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/pll_postlayout_dco_bbpd_near_meas.cir --init-code 196 --target-code 196 --cycles 1 --ki 0 --kp 0 --frac 2 --ref-mhz 25 --ndiv 8 --target-mhz 200 --freq-tol-mhz 8 --measure-cycles 1 --measure-settle-ns 20 --min-pllout-rises 3 --expect increase --min-motion 0 --tol-code 0 --start-ns 8 --cosim-step-ns 0.25 --divider-latency-ps 50 --initial-divider-count 7 --no-warmup-divider --prop-rail-guard > build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/near_code196_hold_meas.log 2>&1 || { tail -n 120 build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/near_code196_hold_meas.log; false; }
 	grep -E '^(cycle,|[0-9]+,|measure,|xyce_pll_postlayout_dco_mixed_signal_smoke=)' build/xyce_pll_postlayout_dco_mixed_fast200_sparse72/near_code196_hold_meas.log
@@ -213,7 +219,7 @@ xyce-pll-postlayout-dco-mixed-fast200-sparse72-near-lock-motion: xyce-cinterface
 xyce-pll-postlayout-dco-mixed-fast200-sparse72-acq: xyce-pll-postlayout-dco-mixed-fast200-sparse72-near-lock-motion
 
 xyce-pll-postlayout-dco-mixed-25mhz-400m-hold-smoke: xyce-cinterface-static spice-dco-postlayout-einvp-coarse-target-probe
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" --target xyce_pll_postlayout_dco_mixed_signal_smoke -j 4
 	python3 ./scripts/xyce_pll_postlayout_dco_25mhz_hold_sweep.py --driver "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_postlayout_dco_mixed_signal_smoke --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --dco-rcx-netlist "$(DCO_EINVP_COARSE_POSTLAYOUT_SIGNOFF_RCX)" --targets-mhz 400 --resume --build-dir "$$(pwd)/build/xyce_pll_postlayout_dco_mixed_25mhz_coarse90_drv4_nodeepslow0"
 
@@ -221,7 +227,7 @@ xyce-pll-postlayout-dco-mixed-25mhz-400m-nearseed-low-smoke: xyce-pll-postlayout
 	python3 ./scripts/xyce_pll_postlayout_dco_25mhz_nearseed_sweep.py --driver "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_postlayout_dco_mixed_signal_smoke --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --dco-rcx-netlist "$(DCO_EINVP_COARSE_POSTLAYOUT_SIGNOFF_RCX)" --targets-mhz 400 --sides low --resume --summary-stem pll_postlayout_dco_25mhz_400m_nearseed_low_summary --build-dir "$$(pwd)/build/xyce_pll_postlayout_dco_mixed_25mhz_coarse90_drv4_nodeepslow0"
 
 xyce-pll-postlayout-dco-mixed-25mhz-500m-hold-smoke: xyce-cinterface-static spice-dco-postlayout-einvp-coarse-target-probe
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" --target xyce_pll_postlayout_dco_mixed_signal_smoke -j 4
 	python3 ./scripts/xyce_pll_postlayout_dco_25mhz_hold_sweep.py --driver "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_postlayout_dco_mixed_signal_smoke --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --dco-rcx-netlist "$(DCO_EINVP_COARSE_POSTLAYOUT_SIGNOFF_RCX)" --targets-mhz 500 --resume --build-dir "$$(pwd)/build/xyce_pll_postlayout_dco_mixed_25mhz_coarse90_drv4_nodeepslow0"
 
@@ -229,12 +235,12 @@ xyce-pll-postlayout-dco-mixed-25mhz-500m-nearseed-low-smoke: xyce-pll-postlayout
 	python3 ./scripts/xyce_pll_postlayout_dco_25mhz_nearseed_sweep.py --driver "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_postlayout_dco_mixed_signal_smoke --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --dco-rcx-netlist "$(DCO_EINVP_COARSE_POSTLAYOUT_SIGNOFF_RCX)" --targets-mhz 500 --sides low --resume --summary-stem pll_postlayout_dco_25mhz_500m_nearseed_low_summary --build-dir "$$(pwd)/build/xyce_pll_postlayout_dco_mixed_25mhz_coarse90_drv4_nodeepslow0"
 
 xyce-pll-postlayout-dco-mixed-25mhz-nearseed-smokes: xyce-cinterface-static spice-dco-postlayout-einvp-coarse-target-probe
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" --target xyce_pll_postlayout_dco_mixed_signal_smoke -j 4
 	python3 ./scripts/xyce_pll_postlayout_dco_25mhz_nearseed_sweep.py --driver "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_postlayout_dco_mixed_signal_smoke --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --dco-rcx-netlist "$(DCO_EINVP_COARSE_POSTLAYOUT_SIGNOFF_RCX)" --targets-mhz 100,250,300,400,500 --sides low,high --resume --build-dir "$$(pwd)/build/xyce_pll_postlayout_dco_mixed_25mhz_coarse90_drv4_nodeepslow0"
 
 xyce-pll-postlayout-dco-mixed-25mhz-hold-smokes: xyce-cinterface-static spice-dco-postlayout-einvp-coarse-target-probe
-	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)"
+	cmake -S tools/xyce_cinterface_smoke -B "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" -DCMAKE_CXX_COMPILER="$(XYCE_CINTERFACE_CXX)" -DXYCE_INSTALL_DIR="$(XYCE_MIXED_INSTALL_DIR)" -DXYCE_BUILD_DIR="$(XYCE_MIXED_BUILD_DIR)" $(XYCE_CINTERFACE_CMAKE_FLAGS)
 	cmake --build "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)" --target xyce_pll_postlayout_dco_mixed_signal_smoke -j 4
 	python3 ./scripts/xyce_pll_postlayout_dco_25mhz_hold_sweep.py --driver "$(XYCE_CINTERFACE_SMOKE_BUILD_DIR)"/xyce_pll_postlayout_dco_mixed_signal_smoke --pdk-root "$(PDK_ROOT)" --pdk "$(PDK)" --dco-rcx-netlist "$(DCO_EINVP_COARSE_POSTLAYOUT_SIGNOFF_RCX)" --targets-mhz 100,250,300,400,500 --resume --build-dir "$$(pwd)/build/xyce_pll_postlayout_dco_mixed_25mhz_coarse90_drv4_nodeepslow0"
 
@@ -343,14 +349,42 @@ check-pll-25mhz-configured-behavioral:
 	iverilog -g2012 -DOPENPLL_DCO_MODEL_COARSE -Wall -s tb_pll_25mhz_configured_behavioral -o build/check/pll_25mhz_configured_behavioral.vvp rtl/IntegerPLL_B2TH.v rtl/IntegerPLL_MMD_Retimer.v rtl/IntegerPLL_Divider.v rtl/IntegerPLL_DLF.v rtl/IntegerPLL_DigitalCore.v rtl/IntegerPLL_Top.v rtl/IntegerPLL_25MHzModeConfig.v rtl/IntegerPLL_25MHzModeController.v models/IntegerPLL_BBPD_model.v models/IntegerPLL_DCO_25MHzCoarse_model.v tb/tb_pll_25mhz_configured_behavioral.v
 	vvp build/check/pll_25mhz_configured_behavioral.vvp
 
+.PHONY: check-pll-25mhz-modern-rtl
+check-pll-25mhz-modern-rtl:
+	python3 scripts/generate_modern_25mhz.py --check
+	mkdir -p build/check_modern
+	iverilog -g2012 -Wall -s tb_pll_25mhz_mode_config -o build/check_modern/mode_config.vvp rtl/IntegerPLL_25MHzModeConfig_modern.v tb/tb_pll_25mhz_mode_config_modern.v
+	vvp build/check_modern/mode_config.vvp
+	iverilog -g2012 -Wall -s tb_pll_25mhz_mode_controller -o build/check_modern/mode_controller.vvp rtl/IntegerPLL_25MHzModeConfig_modern.v rtl/IntegerPLL_25MHzModeController.v tb/tb_pll_25mhz_mode_controller_modern.v
+	vvp build/check_modern/mode_controller.vvp
+	iverilog -g2012 -Wall -s tb_pll_25mhz_configured_wrapper -o build/check_modern/configured_wrapper.vvp rtl/IntegerPLL_25MHzModeConfig_modern.v rtl/IntegerPLL_25MHzModeController.v rtl/IntegerPLL_HardMacroTop_EINVP_25MHzConfigured.v tb/IntegerPLL_HardMacroTop_EINVP_stub.v tb/tb_pll_25mhz_configured_wrapper_modern.v
+	vvp build/check_modern/configured_wrapper.vvp
+	iverilog -g2012 -DOPENPLL_DCO_MODEL_COARSE -Wall -s tb_pll_25mhz_configured_behavioral -o build/check_modern/configured_behavioral.vvp rtl/IntegerPLL_B2TH.v rtl/IntegerPLL_MMD_Retimer.v rtl/IntegerPLL_Divider.v rtl/IntegerPLL_DLF.v rtl/IntegerPLL_DigitalCore.v rtl/IntegerPLL_Top.v rtl/IntegerPLL_25MHzModeConfig_modern.v rtl/IntegerPLL_25MHzModeController.v models/IntegerPLL_BBPD_model.v models/IntegerPLL_DCO_25MHzCoarse_modern_model.v tb/tb_pll_25mhz_configured_behavioral_modern.v
+	vvp build/check_modern/configured_behavioral.vvp > build/check_modern/configured_behavioral.log
+	cat build/check_modern/configured_behavioral.log
+
 check-sky130-pll-25mhz-release: check-sky130-macros check-pll-25mhz-divider-config check-pll-25mhz-divider-controller check-pll-25mhz-configured-wrapper check-pll-25mhz-configured-behavioral check-hard-macro-top-einvp check-hard-macro-top-einvp-spice check-configured-hard-macro-top-einvp-signoff
 	python3 ./scripts/check_sky130_pll_25mhz_release.py
+
+.PHONY: check-sky130-modern-25mhz-release apptainer-audit-modern-release apptainer-rebuild-modern-release
+check-sky130-modern-25mhz-release:
+	python3 scripts/check_sky130_modern_25mhz_release.py
+
+apptainer-audit-modern-release:
+	APPTAINER="$(APPTAINER)" OPENPLL_APPTAINER_IMAGE="$(OPENPLL_APPTAINER_IMAGE)" ./scripts/apptainer_reproduce_latest_release.sh modern-audit
+
+apptainer-rebuild-modern-release:
+	APPTAINER="$(APPTAINER)" OPENPLL_APPTAINER_IMAGE="$(OPENPLL_APPTAINER_IMAGE)" ./scripts/apptainer_reproduce_latest_release.sh modern-rebuild
 
 apptainer-build:
 	APPTAINER="$(APPTAINER)" OPENPLL_APPTAINER_IMAGE="$(OPENPLL_APPTAINER_IMAGE)" ./scripts/apptainer_reproduce_latest_release.sh build
 
 apptainer-audit-release:
 	APPTAINER="$(APPTAINER)" OPENPLL_APPTAINER_IMAGE="$(OPENPLL_APPTAINER_IMAGE)" ./scripts/apptainer_reproduce_latest_release.sh audit
+
+.PHONY: apptainer-physical-audit
+apptainer-physical-audit:
+	APPTAINER="$(APPTAINER)" OPENPLL_APPTAINER_IMAGE="$(OPENPLL_APPTAINER_IMAGE)" ./scripts/apptainer_reproduce_latest_release.sh physical-audit
 
 apptainer-rebuild-release:
 	APPTAINER="$(APPTAINER)" OPENPLL_APPTAINER_IMAGE="$(OPENPLL_APPTAINER_IMAGE)" ./scripts/apptainer_reproduce_latest_release.sh rebuild
@@ -362,10 +396,10 @@ check-top-macro-assembly:
 	./scripts/check_top_macro_assembly.py
 
 hardtop-librelane-route:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --to OpenROAD.DetailedRouting --run-tag librelane_route --overwrite "$(HARDMACRO_TOP_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --to OpenROAD.DetailedRouting --run-tag librelane_route --overwrite "$(HARDMACRO_TOP_LIBRELANE_CONFIG)"'
 
 hardtop-librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(HARDMACRO_TOP_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(HARDMACRO_TOP_LIBRELANE_CONFIG)"'
 
 check-hard-macro-top:
 	./scripts/check_hard_macro_top.py
@@ -377,7 +411,7 @@ check-hard-macro-top-spice:
 	./scripts/check_hard_macro_top_spice.py --xyce "$(XYCE)"
 
 hardtop-einvp-librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(HARDMACRO_TOP_EINVP_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(HARDMACRO_TOP_EINVP_LIBRELANE_CONFIG)"'
 
 check-hard-macro-top-einvp:
 	./scripts/check_hard_macro_top_einvp.py
@@ -389,7 +423,7 @@ check-hard-macro-top-einvp-spice:
 	./scripts/check_hard_macro_top_spice.py --xyce "$(XYCE)" --top IntegerPLL_HardMacroTop_EINVP --dco-subckt IntegerPLL_DCO_EINVP_COARSE --spice "$(HARDMACRO_TOP_EINVP_SIGNOFF_SPICE)" --spef "$(HARDMACRO_TOP_EINVP_SIGNOFF_SPEF)" --metrics openlane/IntegerPLL_HardMacroTop_EINVP/runs/librelane_signoff/final/metrics.json --out-dir "$$(pwd)/build/hard_macro_top_einvp_spice"
 
 hardtop-einvp-configured-librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(HARDMACRO_TOP_EINVP_CONFIGURED_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(HARDMACRO_TOP_EINVP_CONFIGURED_LIBRELANE_CONFIG)"'
 
 check-configured-hard-macro-top-einvp:
 	./scripts/check_configured_hard_macro_top_einvp.py
@@ -398,7 +432,7 @@ check-configured-hard-macro-top-einvp-signoff:
 	./scripts/check_configured_hard_macro_top_einvp.py --require-signoff
 
 hardtop-einvp-fast-librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(HARDMACRO_TOP_EINVP_FAST_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(HARDMACRO_TOP_EINVP_FAST_LIBRELANE_CONFIG)"'
 
 check-hard-macro-top-einvp-fast-spice:
 	./scripts/check_hard_macro_top_spice.py --xyce "$(XYCE)" --top IntegerPLL_HardMacroTop_EINVP_FAST --dco-subckt IntegerPLL_DCO_EINVP_FAST --spice "$(HARDMACRO_TOP_EINVP_FAST_SIGNOFF_SPICE)" --spef "$(HARDMACRO_TOP_EINVP_FAST_SIGNOFF_SPEF)" --metrics openlane/IntegerPLL_HardMacroTop_EINVP_FAST/runs/librelane_signoff/final/metrics.json --out-dir "$$(pwd)/build/hard_macro_top_einvp_fast_spice"
@@ -458,34 +492,34 @@ validate-sky130-pll-artifacts:
 	./scripts/check_sky130_pll_validation.py
 
 librelane-synth:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --to Yosys.Synthesis --run-tag librelane_synth --overwrite "$(LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --to Yosys.Synthesis --run-tag librelane_synth --overwrite "$(LIBRELANE_CONFIG)"'
 
 librelane-route:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --to OpenROAD.DetailedRouting --run-tag librelane_route --overwrite "$(LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --to OpenROAD.DetailedRouting --run-tag librelane_route --overwrite "$(LIBRELANE_CONFIG)"'
 
 librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(LIBRELANE_CONFIG)"'
 
 check-librelane-signoff:
 	./scripts/check_librelane_signoff.py
 
 librelane-signoff-force127-s4a2:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff_force127_s4a2 --overwrite "$(LIBRELANE_FORCE127_S4A2_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff_force127_s4a2 --overwrite "$(LIBRELANE_FORCE127_S4A2_CONFIG)"'
 
 check-librelane-signoff-force127-s4a2:
 	./scripts/check_librelane_signoff.py --final-dir openlane/IntegerPLL_DigitalCore/runs/librelane_signoff_force127_s4a2/final --source-file rtl/IntegerPLL_B2TH.v --source-file rtl/IntegerPLL_MMD_Retimer.v --source-file rtl/IntegerPLL_Divider.v --source-file rtl/IntegerPLL_DLF.v --source-file rtl/IntegerPLL_DigitalCore.v --source-file "$(LIBRELANE_FORCE127_S4A2_CONFIG)" --source-file openlane/IntegerPLL_DigitalCore/pnr.sdc
 
 librelane-signoff-coarse4:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff_coarse4 --overwrite "$(LIBRELANE_COARSE4_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff_coarse4 --overwrite "$(LIBRELANE_COARSE4_CONFIG)"'
 
 check-librelane-signoff-coarse4:
 	./scripts/check_librelane_signoff.py --final-dir openlane/IntegerPLL_DigitalCore/runs/librelane_signoff_coarse4/final --source-file rtl/IntegerPLL_B2TH.v --source-file rtl/IntegerPLL_MMD_Retimer.v --source-file rtl/IntegerPLL_Divider.v --source-file rtl/IntegerPLL_DLF.v --source-file rtl/IntegerPLL_DigitalCore.v --source-file "$(LIBRELANE_COARSE4_CONFIG)" --source-file openlane/IntegerPLL_DigitalCore/pnr.sdc
 
 dco-librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_LIBRELANE_CONFIG)"'
 
 dco-librelane-nofill:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_nofill --overwrite "$(DCO_NOFILL_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_nofill --overwrite "$(DCO_NOFILL_LIBRELANE_CONFIG)"'
 
 dco-magic-rcx:
 	LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
@@ -494,7 +528,7 @@ dco-magic-rcx-nofill:
 	RUN_TAG="librelane_nofill" OUT_DIR="$$(pwd)/openlane/IntegerPLL_DCO/runs/librelane_nofill/rcx-magic" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
 
 dco-einvp-librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_LIBRELANE_CONFIG)"'
 
 check-dco-einvp-librelane-signoff:
 	./scripts/check_librelane_signoff.py --design-name IntegerPLL_DCO_EINVP --final-dir openlane/IntegerPLL_DCO_EINVP/runs/librelane_signoff/final --source-file sky130/IntegerPLL_DCO_einvp_sky130.v --source-file "$(DCO_EINVP_LIBRELANE_CONFIG)" --source-file openlane/IntegerPLL_DCO_EINVP/no_clock.sdc
@@ -503,7 +537,7 @@ dco-einvp-magic-rcx:
 	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
 
 dco-einvp-fast-librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_FAST_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_FAST_LIBRELANE_CONFIG)"'
 
 check-dco-einvp-fast-librelane-signoff:
 	./scripts/check_librelane_signoff.py --design-name IntegerPLL_DCO_EINVP_FAST --final-dir openlane/IntegerPLL_DCO_EINVP_FAST/runs/librelane_signoff/final --source-file sky130/IntegerPLL_DCO_einvp_fast_sky130.v --source-file "$(DCO_EINVP_FAST_LIBRELANE_CONFIG)" --source-file openlane/IntegerPLL_DCO_EINVP_FAST/no_clock.sdc
@@ -513,7 +547,7 @@ dco-einvp-fast-magic-rcx:
 
 dco-einvp-coarse-librelane-signoff: STD_CELL_LIBRARY = sky130_fd_sc_hd
 dco-einvp-coarse-librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_COARSE_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_COARSE_LIBRELANE_CONFIG)"'
 
 check-dco-einvp-coarse-librelane-signoff: STD_CELL_LIBRARY = sky130_fd_sc_hd
 check-dco-einvp-coarse-librelane-signoff:
@@ -524,7 +558,7 @@ dco-einvp-coarse-magic-rcx:
 	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP_COARSE" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
 
 dco-einvp-sparse64-librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_SPARSE64_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_SPARSE64_LIBRELANE_CONFIG)"'
 
 check-dco-einvp-sparse64-librelane-signoff:
 	./scripts/check_librelane_signoff.py --design-name IntegerPLL_DCO_EINVP_SPARSE64 --final-dir openlane/IntegerPLL_DCO_EINVP_SPARSE64/runs/librelane_signoff/final --source-file sky130/IntegerPLL_DCO_einvp_sparse64_sky130.v --source-file "$(DCO_EINVP_SPARSE64_LIBRELANE_CONFIG)" --source-file openlane/IntegerPLL_DCO_EINVP_SPARSE64/no_clock.sdc
@@ -533,7 +567,7 @@ dco-einvp-sparse64-magic-rcx:
 	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP_SPARSE64" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
 
 dco-einvp-sparse72-librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_SPARSE72_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(DCO_EINVP_SPARSE72_LIBRELANE_CONFIG)"'
 
 check-dco-einvp-sparse72-librelane-signoff:
 	./scripts/check_librelane_signoff.py --design-name IntegerPLL_DCO_EINVP_SPARSE72 --final-dir openlane/IntegerPLL_DCO_EINVP_SPARSE72/runs/librelane_signoff/final --source-file sky130/IntegerPLL_DCO_einvp_sparse72_sky130.v --source-file "$(DCO_EINVP_SPARSE72_LIBRELANE_CONFIG)" --source-file openlane/IntegerPLL_DCO_EINVP_SPARSE72/no_clock.sdc
@@ -542,7 +576,11 @@ dco-einvp-sparse72-magic-rcx:
 	DESIGN_DIR="openlane/IntegerPLL_DCO_EINVP_SPARSE72" LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/dco_magic_rcx.sh
 
 bbpd-librelane-signoff:
-	nix-shell "$(LIBRELANE_ROOT)" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(BBPD_LIBRELANE_CONFIG)"'
+	nix-shell "$(LIBRELANE_ROOT)/shell.nix" --run 'librelane $(LIBRELANE_COMMON_ARGS) --run-tag librelane_signoff --overwrite "$(BBPD_LIBRELANE_CONFIG)"'
+
+.PHONY: check-bbpd-librelane-signoff
+check-bbpd-librelane-signoff:
+	./scripts/check_librelane_signoff.py --design-name IntegerPLL_BBPD --final-dir openlane/IntegerPLL_BBPD/runs/librelane_signoff/final --source-file sky130/IntegerPLL_BBPD_sky130.v --source-file "$(BBPD_LIBRELANE_CONFIG)" --source-file openlane/IntegerPLL_BBPD/async_false_paths.sdc
 
 bbpd-magic-rcx:
 	LIBRELANE_ROOT="$(LIBRELANE_ROOT)" PDK_ROOT="$(PDK_ROOT)" ./scripts/bbpd_magic_rcx.sh

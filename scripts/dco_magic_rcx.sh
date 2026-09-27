@@ -78,5 +78,5 @@ PY
 
 rm -rf "$OUT_DIR"
 
-nix-shell "$LIBRELANE_ROOT" --run \
+nix-shell "$LIBRELANE_ROOT/shell.nix" --run \
     "python3 -m librelane.steps run --condensed --hide-progress-bar --pdk-root '$PDK_ROOT' --id Magic.RCX --config '$config_rcx' --state-in '$state' --output '$OUT_DIR'"

@@ -334,11 +334,18 @@ def write_outputs(summary, out_dir):
 
 
 def main():
+    global CONFIG_REL, RUN_DIR_REL
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", default=str(Path(__file__).resolve().parents[1]))
     parser.add_argument("--out-dir", default="build/hard_macro_top_einvp")
     parser.add_argument("--require-signoff", action="store_true")
+    parser.add_argument("--modern", action="store_true",
+                        help="Check the separate modern-PDK config and signoff run.")
     args = parser.parse_args()
+
+    if args.modern:
+        CONFIG_REL = "openlane/IntegerPLL_HardMacroTop_EINVP/config_modern.json"
+        RUN_DIR_REL = "openlane/IntegerPLL_HardMacroTop_EINVP/runs/modern_signoff"
 
     root = Path(args.root).expanduser().resolve()
     out_dir = root / args.out_dir if not Path(args.out_dir).is_absolute() else Path(args.out_dir)
