@@ -1,0 +1,20 @@
+{
+  "comparison_pass": true,
+  "complete_saved_samples_compared": 5800,
+  "observed_vectors": 25734,
+  "reference_end_s": 1.75e-07,
+  "candidate_end_s": 1.75e-07,
+  "max_saved_time_difference_s": 0.0,
+  "saved_grid_within_tolerance": true,
+  "max_saved_value_difference": 0.0,
+  "worst_sample": null,
+  "time_tolerance_s": 1e-18,
+  "value_tolerance": 1e-06,
+  "prefix_value_record_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_cached_conversion_full_127/programming.raw": "80d95550a8faf62ff500a26ab9bb40eb3940169dee7dc9b566876097eb53aa28",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_value_gather_full_130/programming.raw": "80d95550a8faf62ff500a26ab9bb40eb3940169dee7dc9b566876097eb53aa28"
+  },
+  "full_simulation_completion_assessed": false,
+  "numerical_convergence_qualified": false,
+  "release_ready": false
+}

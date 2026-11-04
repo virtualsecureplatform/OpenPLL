@@ -1,0 +1,172 @@
+{
+  "all_native_controls_complete_and_agree": true,
+  "results": [
+    {
+      "name": "klu4",
+      "MPI_ranks": 4,
+      "points": 2862,
+      "command": [
+        "/usr/bin/mpirun",
+        "--bind-to",
+        "none",
+        "-np",
+        "4",
+        "/usr/bin/python3",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_umfpack/rank_exec.py",
+        "--cpus",
+        "0,1,2,3",
+        "--",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+        "-linsolv",
+        "klu",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/value_gather_native_controls_128/klu4/control.spice"
+      ],
+      "max_time_grid_difference_s": 0.0,
+      "max_voltage_difference_V": 0.0,
+      "max_source_current_difference_A": 0.0
+    },
+    {
+      "name": "umfpack1",
+      "MPI_ranks": 1,
+      "points": 2862,
+      "command": [
+        "/usr/bin/mpirun",
+        "--bind-to",
+        "none",
+        "-np",
+        "1",
+        "/usr/bin/python3",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_umfpack/rank_exec.py",
+        "--cpus",
+        "0,1,2,3",
+        "--",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+        "-linsolv",
+        "umfpack",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/value_gather_native_controls_128/umfpack1/control.spice"
+      ],
+      "max_time_grid_difference_s": 0.0,
+      "max_voltage_difference_V": 2.8935187579293142e-15,
+      "max_source_current_difference_A": 5.692061405548898e-17
+    },
+    {
+      "name": "umfpack4",
+      "MPI_ranks": 4,
+      "points": 2862,
+      "command": [
+        "/usr/bin/mpirun",
+        "--bind-to",
+        "none",
+        "-np",
+        "4",
+        "/usr/bin/python3",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_umfpack/rank_exec.py",
+        "--cpus",
+        "0,1,2,3",
+        "--",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+        "-linsolv",
+        "umfpack",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/value_gather_native_controls_128/umfpack4/control.spice"
+      ],
+      "max_time_grid_difference_s": 0.0,
+      "max_voltage_difference_V": 2.168404344971009e-19,
+      "max_source_current_difference_A": 3.3881317890172014e-21
+    },
+    {
+      "name": "reuse1",
+      "MPI_ranks": 1,
+      "points": 2862,
+      "command": [
+        "/usr/bin/mpirun",
+        "--bind-to",
+        "none",
+        "-np",
+        "1",
+        "/usr/bin/python3",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_umfpack/rank_exec.py",
+        "--cpus",
+        "0,1,2,3",
+        "--",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+        "-linsolv",
+        "umfpack_reuse",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/value_gather_native_controls_128/reuse1/control.spice"
+      ],
+      "reuse_hits": 2841,
+      "DC_reuse_hits": 0,
+      "adapter_statistics": [
+        [
+          "2903",
+          "62",
+          "1",
+          "0",
+          "2881",
+          "2839",
+          "2",
+          "7449",
+          "0"
+        ]
+      ],
+      "max_time_grid_difference_s": 0.0,
+      "max_voltage_difference_V": 3.5508705351072756e-15,
+      "max_source_current_difference_A": 6.657001339060997e-17
+    },
+    {
+      "name": "reuse4",
+      "MPI_ranks": 4,
+      "points": 2862,
+      "command": [
+        "/usr/bin/mpirun",
+        "--bind-to",
+        "none",
+        "-np",
+        "4",
+        "/usr/bin/python3",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_umfpack/rank_exec.py",
+        "--cpus",
+        "0,1,2,3",
+        "--",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+        "-linsolv",
+        "umfpack_reuse",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/value_gather_native_controls_128/reuse4/control.spice"
+      ],
+      "reuse_hits": 2841,
+      "DC_reuse_hits": 0,
+      "adapter_statistics": [
+        [
+          "2903",
+          "62",
+          "1",
+          "0",
+          "2881",
+          "2839",
+          "2",
+          "7449",
+          "0"
+        ]
+      ],
+      "max_time_grid_difference_s": 0.0,
+      "max_voltage_difference_V": 3.3272538370321403e-15,
+      "max_source_current_difference_A": 6.84673671924596e-17
+    }
+  ],
+  "binary_sha256": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+  "observed_voltage_vectors": 129,
+  "observed_current_vectors": 1,
+  "experimental_checked_reuse": true,
+  "solver_threads": 1,
+  "reserved_CPUs": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "extra_MPI_ranks": null,
+  "ranks_pinned_to_individual_CPUs": true,
+  "distribution_strategy": 2,
+  "hierarchical_MOS_control": true,
+  "full_PLL_qualified": false,
+  "release_ready": false
+}

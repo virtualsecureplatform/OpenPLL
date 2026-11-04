@@ -1,0 +1,12 @@
+{
+  "native_prefix_completed": true,
+  "native_elapsed_s": 783.3864724109881,
+  "reference_elapsed_s": 977.0692933640676,
+  "total_speedup": 1.2472378931397576,
+  "all_494_samples_bit_identical": true,
+  "physical_voltage_vectors": 25734,
+  "waveform_comparison": "build/signoff400/value_gather_complete21ns_waveform_20261104.json",
+  "full_175ns_validation_required": true,
+  "full_goal_achieved": false,
+  "release_ready": false
+}

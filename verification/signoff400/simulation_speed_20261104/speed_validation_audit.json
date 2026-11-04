@@ -1,0 +1,20 @@
+{
+  "native_full_original_circuit_completed": true,
+  "full_waveform_samples": 5800,
+  "physical_voltage_vectors": 25734,
+  "full_waveform_bit_identical": true,
+  "fresh_factorization_overlap_pass": true,
+  "programming_reset_checks_pass": true,
+  "immutable_inputs_and_artifacts_verified": true,
+  "native_elapsed_s": 6776.383779966971,
+  "native_minutes": 112.93972966611618,
+  "provisional_native_two_hour_target_met": true,
+  "speedup_vs_cached_conversion": 1.3275886991872587,
+  "runtime_reduction_vs_cached_conversion": 0.24675466082816644,
+  "speedup_vs_double_CSR": 1.5716803496172278,
+  "MPI_ranks": 16,
+  "solver_threads_per_rank": 1,
+  "selected_policy": "value-gather",
+  "qualification_scope": "Original full-C 175 ns pre-release programming diagnostic",
+  "startup_frequency_lock_and_release_qualified": false
+}

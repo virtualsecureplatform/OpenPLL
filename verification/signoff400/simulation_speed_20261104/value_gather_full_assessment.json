@@ -1,0 +1,96 @@
+{
+  "native_full_C_pre_release_programming_transient_completed": true,
+  "native_elapsed_s": 6776.383779966971,
+  "reuse_hits": 13129,
+  "DC_reuse_hits": 0,
+  "adapter_statistics": [
+    [
+      "14209",
+      "1080",
+      "1",
+      "3",
+      "14072",
+      "13129",
+      "0",
+      "41044",
+      "0"
+    ]
+  ],
+  "complete_prior_backend_comparison": {
+    "comparison_pass": true,
+    "complete_saved_samples_compared": 5800,
+    "observed_vectors": 25734,
+    "reference_end_s": 1.75e-07,
+    "candidate_end_s": 1.75e-07,
+    "max_saved_time_difference_s": 0.0,
+    "saved_grid_within_tolerance": true,
+    "max_saved_value_difference": 0.0,
+    "worst_sample": null,
+    "time_tolerance_s": 1e-18,
+    "value_tolerance": 1e-06,
+    "prefix_value_record_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_cached_conversion_full_127/programming.raw": "80d95550a8faf62ff500a26ab9bb40eb3940169dee7dc9b566876097eb53aa28",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_value_gather_full_130/programming.raw": "80d95550a8faf62ff500a26ab9bb40eb3940169dee7dc9b566876097eb53aa28"
+    },
+    "full_simulation_completion_assessed": false,
+    "numerical_convergence_qualified": false,
+    "release_ready": false
+  },
+  "extended_fresh_backend_comparison": {
+    "comparison_pass": true,
+    "complete_saved_samples_compared": 1500,
+    "observed_vectors": 25734,
+    "reference_end_s": 6.13060876e-08,
+    "candidate_end_s": 6.13060876e-08,
+    "max_saved_time_difference_s": 0.0,
+    "saved_grid_within_tolerance": true,
+    "max_saved_value_difference": 1.0000000161269895e-08,
+    "worst_sample": {
+      "sample": 12,
+      "variable": "v(xpll:__parent_r_node_1967)",
+      "reference_time_s": 5.000625e-09,
+      "candidate_time_s": 5.000625e-09
+    },
+    "time_tolerance_s": 1e-18,
+    "value_tolerance": 1e-06,
+    "prefix_value_record_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_Xyce_full_C_UMFPACK_programming_052/programming.raw": "6ac0a3adf1de65cc167ab1d2bdd7f3ed787ddb473fd8697e562b9b77aea0cceb",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_value_gather_full_130/programming.raw": "a4ff13b7585961aafe89269dc34999cafd8dd12bb7dbc7da8f78762637a49650"
+    },
+    "full_simulation_completion_assessed": false,
+    "numerical_convergence_qualified": false,
+    "release_ready": false
+  },
+  "captured_physical_node_vectors": 25734,
+  "all_defined_pre_release_bits_match": true,
+  "all_captured_oscillator_reset_samples_held_low": true,
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_umfpack/rank_exec.py": "d8fb51d3b32fc2686f6b408e8c58f08e9ef1098e30ee94fa432f89b04a013320",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_value_gather_full_130/programming.spice": "b44421d8143889a301266852b85653a54064a29a253ee235d0fc4b894a699076",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_Xyce_full_C_programming_pilot_030/programming.spice": "fc6f6e12ffea6fc5a2bea1f21bc8d9231a988855d5d2ddc6c97951606060f611",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_Xyce_full_C_programming_pilot_030/model.spice": "bed7c41b1fd80a3d739d1ddbe3a39aad3512ac5793640503668cf6ecbd3b6c6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/assessment.json": "8b6a14b5aedaf107373ac36fba5b008072942ec4f286fea7978c5822f2300a87",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/N_LAS_OpenPLLUMFPACKSolver.h": "52136c3de6c40fbb5db70fce037e3561281095476351d7e2b14b939e6e216e79",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_context_clock_wire_programming_threads4_019/observations.json": "cd674f40b5015f4e809df2118a1d0f9ecf122a167550424be5af87bbecb4eecd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/CheckedUMFPACK.h": "e3aaf020f726803d2a2b415816c5f8f6dea2a805394c8bd9e5227094a78ebb4c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_umfpack/compare_prefix.py": "d88aa7c94867c4a51747b02fb86223c60dab21f0c4dc7b83cd2940e4aaa45e2f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/value_gather_native_controls_128/assessment.json": "1d7d4e8364f4aaa2faf0d3850b27ba8bb356f1eb3ddbd4ea19e2801afb908f84",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_value_gather_prefix_129/assessment.json": "8e95401c2bab8f60724a6c4eceb2aec6005cf708546a9bf69c6b97ac950aaf2c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_UMFPACK_double_product_replay_109/assessment.json": "95e0ee4c92cc2e5d59b716d8b689f07c08f11a139b4a36e9f5393616657c8178",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_value_gather_full_130/run.py": "3eb056a2faf424b10b6a096801eb80560b463cd0e0e14e97e2c09bf4e23e9771"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_value_gather_full_130/programming.raw": "9b867b1641bea824a49a76bec4263d94a9bdcd5cc1f3aaff5be1190a4dd0ec03",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_value_gather_full_130/native.log": "0e855d74f029e91b987dd386e318fdf150ba1ead443f96cb78d97240c72bce7b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_value_gather_full_130/last_physical_node_values.json": "5681429095e17e7aadae85c0aeb8c1152e595ef25ce40b1ab97f05bc9e94b874",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_value_gather_full_130/programming_observations.json": "a497c30dbd240e2c128fbbd725eab0d57a3159196ae52b1910db35b08b9892e3"
+  },
+  "maximum_timestep_s": 1e-09,
+  "numerical_convergence_qualified": false,
+  "full_ready_handshake_proven": false,
+  "frequency_qualified": false,
+  "loaded_native_model_qualified": false,
+  "diagnostic": true,
+  "release_ready": false
+}
