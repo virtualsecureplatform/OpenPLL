@@ -835,3 +835,19 @@ move by at most 0.0143 ps, while first-synchronizer output edges move by up to
 490.33 ps. Decision agreement does not qualify receiver or clock-domain timing.
 The exact comparison is retained in
 `verification/prototype400/selected_detector_physical_driver_controls.json`.
+
+The recorded-clock native pulses now replay through the frozen RTL event
+receiver with the candidate divider/filter parameters. The bench adapts reset
+to the observed internal receiver boundary; it never forces DUT storage.
+Both event counts match, but the UP first receive stage samples one clock
+cycle earlier in zero-delay RTL at that same physical clock boundary. The
+native event Q changes at 63.132 ns, after the 62.752 ns receiver edge; native
+first-stage capture therefore uses the next edge. The zero-delay event Q is
+already visible before 62.752 ns. DN captures on the same cycle in both runs.
+See `verification/prototype400/selected_receiver_cycle_replay.json`.
+
+This identifies a missing timing effect at the receiver boundary. It does not
+establish a full-loop decision-cycle error: root-clock distribution, later
+receive stages, and guarded decision timing must be correlated together.
+Receiver and complete-controller timing remain unqualified. No timing offset
+has been patched into the detector fit, and the candidate RTL is unchanged.

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "scope": "event toggles and first receive stage only; DLF disabled and second stages not compared",
+  "assessment": {
+    "path": "build/signoff400/selected_actual_RTL_receiver_cycle_replay_311/assessment.json",
+    "sha256": "efbde95e21b7ab39d3dc1fa553b01d786cc85973a264b6cd288a89712b45c9bd"
+  },
+  "native_case": "build/signoff400/selected_detector_recorded_sync_clock_case_280",
+  "actual_frozen_RTL_receiver_replayed": true,
+  "DUT_storage_forced": false,
+  "reset_adapter": "direct reset represents the observed internal native reset pins; release at 0.9 V crossing 5.1 ns",
+  "all_observed_counts_match": true,
+  "all_observed_sampling_cycles_match": false,
+  "records": [
+    {
+      "role": "up",
+      "physical_observation_roles": {
+        "event": "event1",
+        "sync": "synchronizer0"
+      },
+      "native_event_count": 1,
+      "native_first_stage_count": 1,
+      "logical_event_count": 1,
+      "logical_first_stage_count": 1,
+      "counts_match": true,
+      "samples": [
+        {
+          "native_event_ns": 63.13196758167392,
+          "native_first_stage_ns": 65.48158738414027,
+          "logical_first_stage_ns": 62.752,
+          "earliest_clock_index_after_native_data": 21,
+          "native_sampling_clock_index": 21,
+          "logical_sampling_clock_index": 20,
+          "values_match": true,
+          "cycles_match": false,
+          "native_data_lead_ps": 2169.220612514721,
+          "native_first_stage_clock_to_Q_ps": 180.39918995162907
+        }
+      ]
+    },
+    {
+      "role": "dn",
+      "physical_observation_roles": {
+        "event": "event0",
+        "sync": "synchronizer1"
+      },
+      "native_event_count": 1,
+      "native_first_stage_count": 1,
+      "logical_event_count": 1,
+      "logical_first_stage_count": 1,
+      "counts_match": true,
+      "samples": [
+        {
+          "native_event_ns": 23.131531975078758,
+          "native_first_stage_ns": 24.69517300613424,
+          "logical_first_stage_ns": 24.513,
+          "earliest_clock_index_after_native_data": 5,
+          "native_sampling_clock_index": 5,
+          "logical_sampling_clock_index": 5,
+          "values_match": true,
+          "cycles_match": true,
+          "native_data_lead_ps": 1381.0501596512167,
+          "native_first_stage_clock_to_Q_ps": 182.59087140426544
+        }
+      ]
+    }
+  ],
+  "interpretation": "The zero-delay RTL event flip-flop publishes UP early enough for the preceding physical receiver clock. Native event-flop clock-to-Q delays publication until after that edge. This is a receiver-boundary diagnostic, not proof that the full mixed-signal loop consumes a wrong decision cycle; root-clock skew, later receive stages and guarded decision timing still need correlation.",
+  "receiver_setup_hold_qualified": false,
+  "second_receive_stage_qualified": false,
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}
