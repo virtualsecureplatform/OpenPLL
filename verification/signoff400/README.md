@@ -7359,3 +7359,19 @@ and endpoint, and reject nonfinite data. Separate observation receipts `268`/
 `270` and responses `269`/`271` recover the normally completed native runs;
 no circuit retry was needed. The comparison command accepts explicit recovered
 `--assessment` and `--response` paths for this situation.
+
+Feedback-driver inventory `264` resolves CLK/D/RESET_B/Q on the actual 39-
+primitive HS DFRTP4. Capture `265` extracts all five driver/reference channels
+from the existing full native RAW, preserving its 45,760 saved samples and
+checking the prior complete RAW fingerprint. The cropped reset input is still
+asserted at initialization. No storage state or driver Q is forced.
+
+Loaded partition `267` moves the feedback cut from Q to the three real input
+pins, includes both actual CLKBUF16 loads on Q, and keeps 2,514 primitives/
+36,726 passives. Q's explicit wire-R component has no exterior voltage clamp.
+The recorded clock/data/reset curves receive one common time translation; the
+original Q curve supplies an anchor only. V7 native diagnostic `273` runs on
+CPU25 with a two-hour/12 GiB cap. Live runtime capture `274` matches the same
+319-file PDK include superset and executable as the full calibration. Exterior
+switching, remaining loads, other corners and active interface qualification
+remain open; this bench does not issue a qualified model.

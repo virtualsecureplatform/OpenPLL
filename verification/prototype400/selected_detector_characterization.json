@@ -898,5 +898,42 @@
       "sha256": "7a8adf33dbe5de5cda19e1c9d3da4389c9251bb4cacdabef5e8d18300ddeb70b"
     },
     "waveform_bound_scope": "Uniform stimulus voltage error only; derivative, full charge response and detector equivalence are not proven."
+  },
+  "real_feedback_driver_diagnostic": {
+    "native": "build/signoff400/selected_detector_real_feedback_driver_case_273",
+    "status_at_recording": "native_running",
+    "CPU": 25,
+    "native_cap_s": 7200,
+    "memory_GiB": 12,
+    "selected_primitives": 2514,
+    "retained_passive_cards": 36726,
+    "feedback_driver_primitives": 39,
+    "physical_Q_load_buffers": 2,
+    "feedback_driver_Q_voltage_prescribed": false,
+    "recorded_input_roles": [
+      "CLK",
+      "D",
+      "RESET_B"
+    ],
+    "physical_models_qualified": false,
+    "release_ready": false,
+    "evidence": {
+      "driver_input_inventory": {
+        "path": "build/signoff400/selected_feedback_driver_input_inventory_264.json",
+        "sha256": "a194f3ce3d2dd9cac733c034c4a2f9bab18abba75d6c1cc27d81603e455d2018"
+      },
+      "driver_input_waveforms": {
+        "path": "build/signoff400/selected_feedback_driver_input_waveforms_265/assessment.json",
+        "sha256": "c14c66e81a32c25f8ed1045f45094e5a45947853ad96cf063bbd96d4a99da701"
+      },
+      "partition": {
+        "path": "build/signoff400/selected_real_feedback_driver_loaded_detector_cut_267/plan.json",
+        "sha256": "5c9311891e3a520f988a5b75826c22de4c2ac17cebce98f8ec5fbab24285fc24"
+      },
+      "live_runtime": {
+        "path": "build/signoff400/selected_real_feedback_driver_live_runtime_274.json",
+        "sha256": "1d4611abb71f6c79efc6a9427efc7d01ca83603437a4333a41c46bafda532c1f"
+      }
+    }
   }
 }
