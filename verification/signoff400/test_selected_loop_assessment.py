@@ -19,6 +19,21 @@ class LoopAssessmentTests(unittest.TestCase):
             (p/'segments.csv').write_text('segment,enabled_ns,stop_ns\n0,0,220000\n')
             r=assess(p,0,1);self.assertFalse(r['functional_trace_pass']);self.assertIn('segments',r['failure'])
 
+    def test_duplicate_or_truncated_segments_fail_before_acceptance(self):
+        from unittest.mock import patch
+        for scenario,rows in [(1,'0,0,220000\n0,230000,450000\n'),
+                              (0,'0,0,219999\n')]:
+            with self.subTest(scenario=scenario,rows=rows), tempfile.TemporaryDirectory() as d:
+                p=Path(d)
+                (p/'run.log').write_text(f'PROGRAMMED400_LOOP_END scenario={scenario}')
+                (p/'edges.csv').write_text('event,time_ns,code,bbpd\n')
+                (p/'controls.csv').write_text('event,time_ps,fine\n')
+                (p/'segments.csv').write_text('segment,enabled_ns,stop_ns\n'+rows)
+                with patch('selected_loop_assessment.evaluate') as evaluate:
+                    result=assess(p,0,scenario)
+                    self.assertFalse(result['functional_trace_pass'])
+                    evaluate.assert_not_called()
+
     def test_complete_functional_trace_passes_but_never_qualifies_release(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d);(p/'run.log').write_text('PROGRAMMED400_LOOP_END scenario=0')

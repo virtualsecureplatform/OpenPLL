@@ -10,7 +10,7 @@ from pathlib import Path
 import subprocess
 import time
 from common_v3 import ROOT, PROFILE, RTL, source_pins, sha, save, spec, verify
-from acceptance_v3 import evaluate
+from selected_loop_assessment import assess
 from resources import lease
 
 
@@ -100,6 +100,7 @@ def main():
     for path in (a.models.resolve(),bench,bridge,bridge.with_name('phase_clock.h'),
                  Path(__file__).resolve(),Path(__file__).with_name('common_v3.py'),
                  Path(__file__).with_name('acceptance_v3.py'),
+                 Path(__file__).with_name('selected_loop_assessment.py'),
                  Path('/usr/bin/iverilog'),Path('/usr/bin/iverilog-vpi'),Path('/usr/bin/vvp')):
         pins[str(path)]=sha(path)
 
@@ -130,19 +131,10 @@ def main():
                 f'+seed={models["seed"]}',f'+polarity={models["polarity"]}',f'+ki={a.ki}',f'+kp={a.kp}',
                 f'+edge_trace={edges}',f'+segment_trace={segments}',*clock_arguments],directory/'run.log')
             record=dict(scenario=name,phase_offset_ns=phase,native_exit=code,segments=[],passed=False)
-            if code==0 and 'PROGRAMMED400_LOOP_END' in (directory/'run.log').read_text():
-                events={kind:[] for kind in ('REF','DIV','OUT')}
-                for row in csv.DictReader(edges.open()):
-                    events[row['event']].append([float(row['time_ns']),int(row['code']),int(row['bbpd'])])
-                tunes=[]
-                for row in csv.DictReader(control.open()):
-                    if row['event']=='ERROR':raise ValueError('phase driver reported error')
-                    if row['event']=='TUNE':tunes.append([int(row['time_ps'])/1000,int(row['fine'])])
-                for segment in csv.DictReader(segments.open()):
-                    result=evaluate(events,tunes,400,float(segment['enabled_ns']),float(segment['stop_ns']),value)
-                    save(directory/('segment'+segment['segment']+'.json'),result)
-                    record['segments'].append(dict(segment=int(segment['segment']),passed=result['passed']))
-                record['passed']=len(record['segments'])==(1 if scenario==0 else 2) and all(s['passed'] for s in record['segments'])
+            assessment=assess(directory,code,scenario)
+            record['segments']=assessment['segments']
+            record['passed']=assessment['functional_trace_pass']
+            if 'failure' in assessment:record['failure']=assessment['failure']
             records.append(record)
             save(out/'status.json',dict(state='loop_cases_running',completed_cases=len(records),
                  passed_trace_cases=sum(r['passed'] for r in records),synthetic=models['synthetic'],
