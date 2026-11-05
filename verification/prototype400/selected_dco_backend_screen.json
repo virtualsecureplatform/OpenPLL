@@ -53,7 +53,7 @@
   },
   "real_driver_diagnostic": {
     "scope": "coarse20 fine111; TT 1.8 V 27 C; conditional full-derived DCO",
-    "status_at_recording": "native_running",
+    "status_at_recording": "native_completed_normally",
     "native": "build/signoff400/selected_DCO_real_driver_control_248",
     "CPU": 27,
     "native_cap_s": 7200,
@@ -85,6 +85,73 @@
         "path": "build/signoff400/selected_DCO_real_driver_runtime_249.json",
         "sha256": "6e53ad400b330afebbf83d4aaf56f01c786c3f8a1aa4426017d8c0fbca3374e9"
       }
-    }
+    },
+    "normal_full_window_completed": true,
+    "native_wall_seconds": 5903.15,
+    "measured_frequency_mhz": 392.692113936,
+    "comparison": {
+      "path": "build/signoff400/selected_DCO_real_driver_comparison_250/assessment.json",
+      "sha256": "7af4a68de9e7adc73e3acb6c7dc253ba6c83b49f25e4289d93484369d1c2ebde",
+      "frequency_comparisons": {
+        "common": {
+          "window_after_first_rise_ns": [
+            10,
+            40
+          ],
+          "candidate": {
+            "rising_edges": 12,
+            "frequency_mhz": 392.65452625520294,
+            "minimum_period_ns": 2.5463329347920336,
+            "maximum_period_ns": 2.5474243802657064
+          },
+          "full_native": {
+            "rising_edges": 12,
+            "frequency_mhz": 392.2233074552463,
+            "minimum_period_ns": 2.5491226980751946,
+            "maximum_period_ns": 2.5502163293856484
+          },
+          "difference_ppm": 1099.4216604678363
+        },
+        "early": {
+          "window_after_first_rise_ns": [
+            10,
+            25.0
+          ],
+          "candidate": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.6054145563107,
+            "minimum_period_ns": 2.5468047650887975,
+            "maximum_period_ns": 2.5474243802657064
+          },
+          "full_native": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.1738939585622,
+            "minimum_period_ns": 2.549602625344079,
+            "maximum_period_ns": 2.5502163293856484
+          },
+          "difference_ppm": 1100.3297373846087
+        },
+        "late": {
+          "window_after_first_rise_ns": [
+            25.0,
+            40
+          ],
+          "candidate": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.7013881913182,
+            "minimum_period_ns": 2.5463329347920336,
+            "maximum_period_ns": 2.5466177742772302
+          },
+          "full_native": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.27095708937003,
+            "minimum_period_ns": 2.5491226980751946,
+            "maximum_period_ns": 2.549417548736784
+          },
+          "difference_ppm": 1097.2800666710914
+        }
+      }
+    },
+    "interpretation": "Real programming drivers reduce the earlier isolated-model discrepancy, but the matched-startup-age residual is about +1099 ppm. Static final programming and full-native programming histories differ; charge causality, loading, exterior switching and numerical convergence remain unresolved."
   }
 }

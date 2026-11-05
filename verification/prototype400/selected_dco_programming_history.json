@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "assessment": {
+    "path": "build/signoff400/selected_programming_history_assessment_290.json",
+    "sha256": "526be6105b96222d9f114f3094359765a6bd491206a886373546c39f028e3f2a"
+  },
+  "logical_endpoint_counts": {
+    "initial": {
+      "fine": 128,
+      "coarse": 0
+    },
+    "final": {
+      "fine": 111,
+      "coarse": 20
+    }
+  },
+  "transient_logic_excursion_channels": [
+    "DCO_THERM[109]",
+    "DCO_THERM[95]",
+    "DCO_THERM[96]",
+    "DCO_THERM[98]",
+    "DCO_THERM[99]",
+    "DCO_THERM[102]",
+    "DCO_THERM[107]",
+    "DCO_THERM[108]",
+    "DCO_THERM[104]",
+    "DCO_THERM[110]",
+    "DCO_THERM[106]",
+    "DCO_THERM[105]",
+    "DCO_THERM[97]",
+    "DCO_THERM[100]",
+    "DCO_THERM[101]",
+    "DCO_THERM[103]"
+  ],
+  "reset_input": {
+    "samples": 45760,
+    "initial_voltage": 1.28597023e-07,
+    "final_voltage": 1.8,
+    "initial_high": false,
+    "final_high": true,
+    "minimum_voltage": -0.0314921676,
+    "maximum_voltage": 1.81157931,
+    "crossings": [
+      {
+        "time_ns": 180.92270843609973,
+        "direction": "rise"
+      }
+    ],
+    "transient_logic_excursion": false
+  },
+  "history_control": {
+    "native": "build/signoff400/selected_DCO_history_control_291",
+    "programming_history_until_ns": 170,
+    "then": "hold actual programming input voltages",
+    "reset": "complete recorded actual driver input curve",
+    "duration_ns": 260,
+    "status_at_recording": "preparing"
+  },
+  "floating_charge_causality_proven": false,
+  "frequency_correlation_qualified": false,
+  "release_ready": false
+}
