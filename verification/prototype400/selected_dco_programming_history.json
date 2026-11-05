@@ -54,7 +54,7 @@
     "then": "hold actual programming input voltages",
     "reset": "complete recorded actual driver input curve",
     "duration_ns": 260,
-    "status_at_recording": "preparing",
+    "status_at_recording": "native_running",
     "execution": "pinned release container",
     "supersedes_preparse_environment_failure": "build/signoff400/selected_DCO_history_control_291"
   },

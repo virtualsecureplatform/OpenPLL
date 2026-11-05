@@ -786,3 +786,14 @@ feedback aperture against the first reference edge. Their results must be
 checked for pre-reference activity before interpreting detector state.
 These controls do not qualify the detector model or satisfy release gates;
 see `verification/prototype400/selected_detector_physical_driver_controls.json`.
+
+The complete 260 ns recorded-boundary control now has a formal comparison:
+`verification/prototype400/selected_streaming_full_window.json`. Its PLLOUT
+frequency differs by -0.2003 ppm and its largest matched rising-edge difference
+is 0.0367 ps, while peak saved-time voltage error is 1.894 mV and fails the
+original 1 uV diagnostic screen. Recorded exterior histories are prescribed;
+this is not standalone tuning-model or closed-loop qualification. The frozen
+TT detector fit also matches both observed real-feedback-driver reference
+windows and every available output edge within its existing fit band plus
+1 ps quantization, without refitting. The new reference-level checker retains
+no/both decisions and pre-reference detector activity explicitly.

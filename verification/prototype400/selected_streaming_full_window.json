@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "scope": "TT coarse20 fine111; prescribed full-native exterior voltage histories",
+  "assessment": {
+    "path": "build/signoff400/selected_streaming_conditional_comparison_169/assessment.json",
+    "sha256": "84caeaec36e52901622fbe70ce3b8d3cfcaaa6e93b52ff04bf28704435d64818"
+  },
+  "normal_full_window_completed": true,
+  "end_s": 2.6e-07,
+  "candidate_samples": 49948,
+  "channels": 31,
+  "maximum_voltage_difference_V": 0.0018940731874634575,
+  "within_original_1uV_diagnostic_tolerance": false,
+  "metrics": {
+    "v(pllout)": {
+      "frequency_window_start_s": 2e-07,
+      "candidate_frequency_MHz": 392.3102389806397,
+      "reference_frequency_MHz": 392.3103175732505,
+      "frequency_difference_ppm": -0.20033276523144017,
+      "maximum_voltage_difference_V": 0.0018940731874634575,
+      "rising_edge_count_candidate": 30,
+      "rising_edge_count_reference": 30,
+      "maximum_rising_edge_difference_s": 3.6650664397360706e-14
+    },
+    "v(clkdiv_retimed)": {
+      "frequency_window_start_s": 2e-07,
+      "candidate_frequency_MHz": null,
+      "reference_frequency_MHz": null,
+      "frequency_difference_ppm": null,
+      "maximum_voltage_difference_V": 0.00019911233095393222,
+      "rising_edge_count_candidate": 2,
+      "rising_edge_count_reference": 2,
+      "maximum_rising_edge_difference_s": 1.0985646748973852e-15
+    }
+  },
+  "interpretation": "Close output timing under recorded exterior histories; not a standalone tunable DCO or a closed-loop result. Peak saved-time voltage difference fails the original diagnostic tolerance.",
+  "exterior_condition_independent": false,
+  "physical_correlation_qualified": false,
+  "release_ready": false
+}

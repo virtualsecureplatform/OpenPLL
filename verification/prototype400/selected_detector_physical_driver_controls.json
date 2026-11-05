@@ -23,6 +23,25 @@
       "all_event_counts_match": true,
       "all_edges_within_observed_fit_band": true,
       "maximum_observed_edge_error_ps": 0.4454650894842871
+    },
+    "reference_level_holdout": {
+      "path": "build/signoff400/selected_frozen_detector_level_holdout_294/assessment.json",
+      "sha256": "61c1eac902c0926bb8d916edd5a97d8143cc4277c37357e7fbcdcd9df3c45a87",
+      "parameters_refitted": false,
+      "reference_windows": 2,
+      "all_sampled_signs_match": true,
+      "all_event_counts_match": true,
+      "all_edges_within_observed_fit_band": true,
+      "pre_reference_detector_edges": {
+        "detector_up": {
+          "rising_ns": [],
+          "falling_ns": []
+        },
+        "detector_dn": {
+          "rising_ns": [],
+          "falling_ns": []
+        }
+      }
     }
   },
   "recorded_synchronizer_clock": {
