@@ -231,6 +231,159 @@
           "one_toggle_per_detector_rise": true
         }
       }
+    },
+    {
+      "commanded_feedback_driver_offset_ns": -0.1875,
+      "feedback_driver_is_physical_DIV_output": false,
+      "native_elapsed_s": 624.03,
+      "samples": 15278,
+      "all_saved_vectors_finite": true,
+      "assessment": "build/signoff400/selected_detector_nearzero_case_219/waveform_assessment/assessment.json",
+      "assessment_sha256": "5dd1d276f8ed3e234d741e7db556c1f4705d3a59c14eb5ba8a8e8f1bf926c896",
+      "response": "build/signoff400/selected_detector_nearzero_case_219/response.json",
+      "response_sha256": "cdb4a0353cc73f2e19d8e0bca3caf2001ba1f0dc2acd51780b0097c0159f8bdc",
+      "missing_physical_input_observations": [],
+      "measured_feedback_minus_reference_ps": [
+        -182.29310336415594,
+        -182.2930744549751
+      ],
+      "measured_pin_clock_metrics": {
+        "reference_pin": {
+          "complete_10_90_rise_slews_ps": [
+            79.93900275609533,
+            79.94140947227635
+          ]
+        },
+        "feedback_pin": {
+          "complete_10_90_rise_slews_ps": [
+            478.123526588039,
+            478.12291527295514
+          ]
+        }
+      },
+      "decisions": [
+        "dn",
+        "dn"
+      ],
+      "global_capture": {
+        "up": {
+          "detector_rises": 0,
+          "event_toggles": 0,
+          "capture_latencies_ps": [],
+          "one_toggle_per_detector_rise": true
+        },
+        "dn": {
+          "detector_rises": 2,
+          "event_toggles": 2,
+          "capture_latencies_ps": [
+            473.8644956898881,
+            456.9491797322627
+          ],
+          "one_toggle_per_detector_rise": true
+        }
+      }
+    },
+    {
+      "commanded_feedback_driver_offset_ns": -0.125,
+      "feedback_driver_is_physical_DIV_output": false,
+      "native_elapsed_s": 597.576,
+      "samples": 15230,
+      "all_saved_vectors_finite": true,
+      "assessment": "build/signoff400/selected_detector_nearzero_case_220/waveform_assessment/assessment.json",
+      "assessment_sha256": "a83fad4982de9ec36f901e630d5290ba94c4b8cec6c6c67952fc2de8e02d2025",
+      "response": "build/signoff400/selected_detector_nearzero_case_220/response.json",
+      "response_sha256": "8a38f0934170176afb0d8ac2d1745292eb6f28606b0e97b2d528b9189813e1bd",
+      "missing_physical_input_observations": [],
+      "measured_feedback_minus_reference_ps": [
+        -119.7950912803023,
+        -119.79555905692507
+      ],
+      "measured_pin_clock_metrics": {
+        "reference_pin": {
+          "complete_10_90_rise_slews_ps": [
+            79.93793008517969,
+            79.94053026974512
+          ]
+        },
+        "feedback_pin": {
+          "complete_10_90_rise_slews_ps": [
+            478.0436779533872,
+            478.04360837578486
+          ]
+        }
+      },
+      "decisions": [
+        "dn",
+        "dn"
+      ],
+      "global_capture": {
+        "up": {
+          "detector_rises": 0,
+          "event_toggles": 0,
+          "capture_latencies_ps": [],
+          "one_toggle_per_detector_rise": true
+        },
+        "dn": {
+          "detector_rises": 2,
+          "event_toggles": 2,
+          "capture_latencies_ps": [
+            473.86350742572245,
+            456.94740036412185
+          ],
+          "one_toggle_per_detector_rise": true
+        }
+      }
+    },
+    {
+      "commanded_feedback_driver_offset_ns": -0.0625,
+      "feedback_driver_is_physical_DIV_output": false,
+      "native_elapsed_s": 590.115,
+      "samples": 14989,
+      "all_saved_vectors_finite": true,
+      "assessment": "build/signoff400/selected_detector_nearzero_case_221/waveform_assessment/assessment.json",
+      "assessment_sha256": "8192384d1dab1121dbfa330e8ba96c932dd6581c7ce34b20af602218e3d08f60",
+      "response": "build/signoff400/selected_detector_nearzero_case_221/response.json",
+      "response_sha256": "1362a894023fbfffd043815869f47b9fd70c8daa55cd8f9addb3245bf487e7c9",
+      "missing_physical_input_observations": [],
+      "measured_feedback_minus_reference_ps": [
+        -57.296217559905216,
+        -57.29634376655923
+      ],
+      "measured_pin_clock_metrics": {
+        "reference_pin": {
+          "complete_10_90_rise_slews_ps": [
+            79.94046071766903,
+            79.94192380123621
+          ]
+        },
+        "feedback_pin": {
+          "complete_10_90_rise_slews_ps": [
+            478.0546289631431,
+            478.0549100087228
+          ]
+        }
+      },
+      "decisions": [
+        "up",
+        "up"
+      ],
+      "global_capture": {
+        "up": {
+          "detector_rises": 2,
+          "event_toggles": 2,
+          "capture_latencies_ps": [
+            466.0790131900825,
+            454.8365881765406
+          ],
+          "one_toggle_per_detector_rise": true
+        },
+        "dn": {
+          "detector_rises": 0,
+          "event_toggles": 0,
+          "capture_latencies_ps": [],
+          "one_toggle_per_detector_rise": true
+        }
+      }
     }
   ],
   "diagnostic_boundary": {
@@ -251,28 +404,17 @@
   "exterior_condition_validated": false,
   "physical_models_qualified": false,
   "release_ready": false,
-  "pending_probes": [
-    {
-      "commanded_feedback_driver_offset_ns": -0.1875,
-      "case": "build/signoff400/selected_detector_nearzero_case_219",
-      "CPU": 27
-    },
-    {
-      "commanded_feedback_driver_offset_ns": -0.125,
-      "case": "build/signoff400/selected_detector_nearzero_case_220",
-      "CPU": 28
-    },
-    {
-      "commanded_feedback_driver_offset_ns": -0.0625,
-      "case": "build/signoff400/selected_detector_nearzero_case_221",
-      "CPU": 29
-    }
-  ],
+  "pending_probes": [],
   "observed_opposite_decision_interval_ps": [
-    -244.79425063731597,
-    5.222575378105887
+    -119.7950912803023,
+    -57.29634376655923
   ],
   "decision_interval_qualified": false,
-  "pending_load_holdout": "build/signoff400/selected_detector_loaded_case_218",
-  "full_initial_voltage_snapshot": "build/signoff400/selected_full_initial_voltage_snapshot_216"
+  "full_initial_voltage_snapshot": "build/signoff400/selected_full_initial_voltage_snapshot_216",
+  "pending_load_holdouts": [
+    "build/signoff400/selected_detector_loaded_case_218",
+    "build/signoff400/selected_detector_loaded_case_223",
+    "build/signoff400/selected_detector_loaded_case_224"
+  ],
+  "live_runtime_capture": "build/signoff400/selected_detector_live_runtime_group_222.json"
 }
