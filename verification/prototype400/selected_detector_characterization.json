@@ -718,10 +718,7 @@
     "remaining_external_primitive_load_obligations": 68,
     "partition": "build/signoff400/selected_detector_full_buffer_load_cut_217.json"
   },
-  "pending_native_shape_holdouts": [
-    "build/signoff400/selected_detector_native_shape_case_234",
-    "build/signoff400/selected_detector_native_shape_case_235"
-  ],
+  "pending_native_shape_holdouts": [],
   "native_clock_driver_waveforms": "build/signoff400/selected_clock_driver_waveforms_232",
   "RTL_phase_coverage_control": {
     "assessment": "build/signoff400/selected_reference_phase_engine_control_239/assessment.json",
@@ -737,5 +734,100 @@
     "synthetic": true,
     "functional_passes": 3,
     "purpose": "Phase initialization and trace-audit control only; not physical lock evidence"
-  }
+  },
+  "native_shape_budget_prefix_diagnostics": [
+    {
+      "assessment": "build/signoff400/selected_detector_native_shape_prefix_241/assessment.json",
+      "assessment_sha256": "99bf199c4efb1670a4a3b294a5ed1040feae3a498a9fc8002eb323c968ab1f62",
+      "normal_full_window_completed": false,
+      "native_budget_stopped": true,
+      "measured_window_ns": [
+        0,
+        55.6416211
+      ],
+      "cycles": [
+        {
+          "reference_rise_ns": 20.000662366450243,
+          "feedback_rise_ns": 19.87090709548314,
+          "measured_feedback_minus_reference_ps": -129.75527096710238,
+          "complete_observation_window_ns": [
+            19.87090709548314,
+            39.87090709548314
+          ],
+          "decision": "dn",
+          "capture": {
+            "up": {
+              "detector_rises": 0,
+              "event_toggles": 0,
+              "capture_latencies_ps": [],
+              "one_toggle_per_detector_rise": true
+            },
+            "dn": {
+              "detector_rises": 1,
+              "event_toggles": 1,
+              "capture_latencies_ps": [
+                473.85707200873026
+              ],
+              "one_toggle_per_detector_rise": true
+            }
+          }
+        }
+      ],
+      "complete_10_90_rise_slews_ps": {
+        "reference_pin": [
+          79.93932746823873
+        ],
+        "feedback_pin": [
+          477.0369986649001
+        ]
+      }
+    },
+    {
+      "assessment": "build/signoff400/selected_detector_native_shape_prefix_242/assessment.json",
+      "assessment_sha256": "2fb067db6383416e7ef90a9b12a037a0ae09151fb48373fec7cf8c790eb05fbe",
+      "normal_full_window_completed": false,
+      "native_budget_stopped": true,
+      "measured_window_ns": [
+        0,
+        58.496688
+      ],
+      "cycles": [
+        {
+          "reference_rise_ns": 20.00066304394329,
+          "feedback_rise_ns": 19.910907095376984,
+          "measured_feedback_minus_reference_ps": -89.75594856630664,
+          "complete_observation_window_ns": [
+            19.910907095376984,
+            39.910907095376984
+          ],
+          "decision": "up",
+          "capture": {
+            "up": {
+              "detector_rises": 1,
+              "event_toggles": 1,
+              "capture_latencies_ps": [
+                466.068594143664
+              ],
+              "one_toggle_per_detector_rise": true
+            },
+            "dn": {
+              "detector_rises": 0,
+              "event_toggles": 0,
+              "capture_latencies_ps": [],
+              "one_toggle_per_detector_rise": true
+            }
+          }
+        }
+      ],
+      "complete_10_90_rise_slews_ps": {
+        "reference_pin": [
+          79.94008560331878
+        ],
+        "feedback_pin": [
+          477.03121104659726
+        ]
+      }
+    }
+  ],
+  "native_shape_interpretation": "Each budget-stopped probe contains one complete first-event observation window. Native-shape decisions agree with the sampled baseline signs, but complete 80 ns holdouts and exterior-switching qualification remain open."
 }
