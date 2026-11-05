@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "scope": "physical buffered first-to-second synchronizer transfer under recorded TT clocks",
+  "inventory": {
+    "path": "build/signoff400/selected_receiver_continuation_inventory_341.json",
+    "sha256": "c89dad69bbd516079b0930c881da2277b91a204df3d9eb4f6a2908e87b2feda7"
+  },
+  "plan": {
+    "path": "build/signoff400/selected_second_stage_detector_cut_344/plan.json",
+    "sha256": "287aa720b47da93b461b957e84c825826f13fc1730dbd4abece35eda1b656b12"
+  },
+  "waveforms": {
+    "path": "build/signoff400/selected_second_stage_clock_waveforms_343/assessment.json",
+    "sha256": "867e232016a3b344973397526644bda68c4f86482d512a44a5eb18c04f962b84"
+  },
+  "preflight": {
+    "path": "build/signoff400/selected_second_stage_preflight_identity_347.json",
+    "sha256": "63d40de542d62531fa1d3ea0e084cdf1625db05216cd1e2d89fd600a1c624dee"
+  },
+  "native": "build/signoff400/selected_second_stage_native_case_346",
+  "native_status_at_recording": "running",
+  "followup": "build/signoff400/selected_second_stage_replay_followup_348",
+  "buffers_per_role": 5,
+  "added_primitives": 112,
+  "full_controller_timing_qualified": false,
+  "release_ready": false
+}

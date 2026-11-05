@@ -915,3 +915,11 @@ from 35,410 to 23,484. Retained differential equations are unchanged; absolute
 charge, energy and removed-source currents require reconstruction. The native
 accuracy/speed comparison is running; this reduction is not yet qualified.
 See `verification/prototype400/selected_constant_cut_control.json`.
+
+The physical receiver continuation contains five CLKBUF2 cells per role before
+the next synchronizer, whose clock is a different tree node. A new native
+control retains those paths and both next-stage flops, driven by the recorded
+next-stage clock. The prepared deck retains all original device lines; its
+only changed shared boundary source activates that previously held clock.
+Native measurement and automatic two-stage RTL comparison are pending.
+See `verification/prototype400/selected_second_stage_controls.json`.
