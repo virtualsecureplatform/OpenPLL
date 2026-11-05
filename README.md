@@ -767,3 +767,22 @@ the live 16-core projection reservation. All cases retain both simulator
 outputs and exact model/binary input hashes. Numeric screens remain
 diagnostic: full response enclosures, physical junction allocation and
 MOS backend compatibility are not qualified by this grid.
+
+The selected 400 MHz DCO control with 302 physical programming drivers completed
+60 ns normally in 5,903 s. Its matched-startup-age frequency remains about
+1,099 ppm above the full native circuit. The recorded physical programming
+inputs start at coarse 0/fine 128 and finish at coarse 20/fine 111; 16 fine
+inputs have logic excursions despite equal endpoints. This is an observed
+history mismatch, not proof of floating-charge causality. Separate controls
+now test MPI consistency, an expanded physical receiver load layer, and
+recorded programming/reset history. See
+`verification/prototype400/selected_dco_backend_screen.json` and
+`verification/prototype400/selected_dco_programming_history.json`.
+
+The physical feedback flip-flop and its real output loads completed the
+conditional detector control with one captured event per DN/UP pulse.
+New probes retain the recorded fast synchronizer clock and test a falling
+feedback aperture against the first reference edge. Their results must be
+checked for pre-reference activity before interpreting detector state.
+These controls do not qualify the detector model or satisfy release gates;
+see `verification/prototype400/selected_detector_physical_driver_controls.json`.
