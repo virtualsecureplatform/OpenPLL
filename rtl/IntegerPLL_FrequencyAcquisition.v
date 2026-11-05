@@ -13,7 +13,8 @@ module IntegerPLL_FrequencyAcquisition #(
     parameter integer LOAD_CYCLES = 4,
     // Three detection windows plus worst-case acquisition must leave room for
     // BBPD settling and four acceptance windows inside the 200 us deadline.
-    parameter integer MONITOR_CYCLES = 256
+    parameter integer MONITOR_CYCLES = 256,
+    parameter integer FINE_CODE_ON_FINECLK = 0
 ) (
     input wire REFCLK,
     input wire PLLOUT,
@@ -28,13 +29,41 @@ module IntegerPLL_FrequencyAcquisition #(
     output reg FINE_INCREASING,
     output wire RUN_FINE,
     output wire BUSY,
-    output wire FAILED
+    output wire FAILED,
+    input wire FINECLK,
+    input wire FINE_RESET_N
 );
     localparam [3:0] IDLE=0, SCAN_SETTLE=1, SCAN=2, PICK=3,
         LOW_SETTLE=4, LOW=5, HIGH_SETTLE=6, HIGH=7, CHOOSE=8,
-        LOAD=9, TRACK=10, FAIL=11;
+        LOAD=9, TRACK=10, FAIL=11, SEED_DIVIDE=12;
     reg [3:0] state;
     reg [15:0] dco_count, dco_gray;
+    // Predict each nibble carry one cycle ahead. This keeps the oscillator
+    // counter and its registered Gray encoding off a 16-bit carry chain.
+    reg carry4, carry8, carry12;
+    wire [3:0] next0=dco_count[3:0]+4'd1;
+    wire [3:0] next1=dco_count[7:4]+{3'b000,carry4};
+    wire [3:0] next2=dco_count[11:8]+{3'b000,carry8};
+    wire [3:0] next3=dco_count[15:12]+{3'b000,carry12};
+    wire [15:0] next_dco_count={next3,next2,next1,next0};
+    // Gray bit i flips when the binary carry reaches i but stops there.
+    // Reuse predicted nibble carries instead of encoding the incremented
+    // binary word through a second XOR level. The MSB flips on carry alone.
+    wire [15:0] gray_increment;
+    genvar gray_bit;
+    generate for(gray_bit=0;gray_bit<16;gray_bit=gray_bit+1) begin : gen_gray_increment
+        localparam integer BASE=(gray_bit/4)*4;
+        wire nibble_carry;
+        wire bit_carry;
+        if(BASE==0) assign nibble_carry=1'b1;
+        else if(BASE==4) assign nibble_carry=carry4;
+        else if(BASE==8) assign nibble_carry=carry8;
+        else assign nibble_carry=carry12;
+        if(gray_bit==BASE) assign bit_carry=nibble_carry;
+        else assign bit_carry=nibble_carry && (&dco_count[gray_bit-1:BASE]);
+        if(gray_bit==15) assign gray_increment[gray_bit]=bit_carry;
+        else assign gray_increment[gray_bit]=bit_carry && !dco_count[gray_bit];
+    end endgenerate
     reg dco_rail;
     (* ASYNC_REG = "TRUE" *) reg [15:0] gray_meta, gray_sync;
     (* ASYNC_REG = "TRUE" *) reg rail_meta, rail_sync;
@@ -49,7 +78,7 @@ module IntegerPLL_FrequencyAcquisition #(
     reg bad_monitor;
     integer bit_index;
     wire valid_mode = FEEDBACK_DIVIDER==4 || FEEDBACK_DIVIDER==10 ||
-        FEEDBACK_DIVIDER==12 || FEEDBACK_DIVIDER==16 || FEEDBACK_DIVIDER==20;
+        FEEDBACK_DIVIDER==12 || FEEDBACK_DIVIDER==16 || FEEDBACK_DIVIDER==18;
     wire [15:0] elapsed_edges = synchronized_count-start_count;
     wire [15:0] scan_target = divider*SCAN_CYCLES[15:0];
     wire [15:0] scan_error = elapsed_edges>scan_target ?
@@ -63,8 +92,17 @@ module IntegerPLL_FrequencyAcquisition #(
     wire [31:0] seed_numerator = ascending ?
         ({16'b0,endpoint_target}-{16'b0,low_count})*32'd239 : ({16'b0,low_count}-{16'b0,endpoint_target})*32'd239;
     wire [15:0] count_span = upper_count-lower_count;
-    wire [31:0] interpolated_seed = count_span==0 ? 32'd128 :
-        32'd8+seed_numerator/{16'b0,count_span};
+    // A combinational 32/16 divider exceeds the 40 ns reference period.
+    // Restoring division preserves the integer interpolation in 32 clocks.
+    reg [31:0] seed_dividend, seed_quotient;
+    reg [15:0] seed_remainder, seed_divisor;
+    reg [5:0] seed_iterations;
+    wire [16:0] seed_trial = {seed_remainder,seed_dividend[31]};
+    wire seed_subtract = seed_trial>={1'b0,seed_divisor};
+    wire [16:0] seed_next_remainder = seed_subtract ?
+        seed_trial-{1'b0,seed_divisor} : seed_trial;
+    wire [31:0] seed_next_quotient = {seed_quotient[30:0],seed_subtract};
+    wire [31:0] interpolated_seed = 32'd8+seed_next_quotient;
     wire [15:0] monitor_target = divider*MONITOR_CYCLES[15:0];
     wire [15:0] monitor_error = elapsed_edges>monitor_target ?
         elapsed_edges-monitor_target : monitor_target-elapsed_edges;
@@ -84,13 +122,25 @@ module IntegerPLL_FrequencyAcquisition #(
     // synthesis translate_on
 
     always @(posedge PLLOUT or negedge DCO_RESET_N) begin
-        if (!DCO_RESET_N) begin dco_count<=0; dco_gray<=0; dco_rail<=0; end
+        if (!DCO_RESET_N) begin
+            dco_count<=0; dco_gray<=0;
+            carry4<=0;carry8<=0;carry12<=0;
+        end
         else begin
-            dco_count<=dco_count+1'b1;
-            dco_gray<=((dco_count+16'd1)>>1)^(dco_count+16'd1);
-            dco_rail<=FINE_CODE==0 || FINE_CODE==255;
+            dco_count<=next_dco_count;
+            dco_gray<=dco_gray^gray_increment;
+            carry4<=dco_count[3:0]==4'he;
+            carry8<=dco_count[7:0]==8'hfe;
+            carry12<=dco_count[11:0]==12'hffe;
         end
     end
+    // Decode the registered tuning word on its owning clock, then use the
+    // existing two-stage reference receiver for the single rail flag.
+    wire rail_clk=(FINE_CODE_ON_FINECLK!=0) ? FINECLK : PLLOUT;
+    wire rail_reset_n=(FINE_CODE_ON_FINECLK!=0) ? FINE_RESET_N : DCO_RESET_N;
+    always @(posedge rail_clk or negedge rail_reset_n)
+        if(!rail_reset_n) dco_rail<=0;
+        else dco_rail<=FINE_CODE==0 || FINE_CODE==255;
     always @(posedge REFCLK or negedge RESET_N) begin
         if (!RESET_N) begin gray_meta<=0; gray_sync<=0; rail_meta<=0;rail_sync<=0;end
         else begin
@@ -109,6 +159,8 @@ module IntegerPLL_FrequencyAcquisition #(
             state<=IDLE; COARSE_CODE<=0; FINE_SEED<=128;FINE_INCREASING<=1;divider<=0;
             cycles<=0; start_count<=0; low_count<=0; high_count<=0;
             apply_wait<=0;
+            seed_dividend<=0;seed_quotient<=0;seed_remainder<=0;
+            seed_divisor<=0;seed_iterations<=0;
             endpoint_window<=ENDPOINT_CYCLES[15:0]; candidate<=0; bad_monitor<=0;
             best_error[0]<=16'hffff; best_error[1]<=16'hffff; best_error[2]<=16'hffff;
             best_band[0]<=0; best_band[1]<=0; best_band[2]<=0;
@@ -165,15 +217,26 @@ module IntegerPLL_FrequencyAcquisition #(
                 CHOOSE: begin
                     if(bracket) begin
                         FINE_INCREASING<=ascending;
-                        FINE_SEED<=interpolated_seed<8 ? 8 :
-                            (interpolated_seed>247 ? 247 : interpolated_seed[7:0]);
-                        cycles<=0;state<=LOAD;
+                        seed_dividend<=seed_numerator;seed_divisor<=count_span;
+                        seed_quotient<=0;seed_remainder<=0;seed_iterations<=32;
+                        cycles<=0;state<=SEED_DIVIDE;
                     end else if(endpoint_window==ENDPOINT_CYCLES[15:0]) begin
                         endpoint_window<=ENDPOINT_CYCLES[15:0]*16'd2;FINE_SEED<=8;
                         cycles<=0;state<=LOW_SETTLE;
                     end else if(candidate<2 && {4'b0,candidate}<COARSE_BANDS[5:0]-6'd1) begin
                         candidate<=candidate+1'b1;state<=PICK;
                     end else state<=FAIL;
+                end
+                SEED_DIVIDE: begin
+                    seed_dividend<={seed_dividend[30:0],1'b0};
+                    seed_quotient<=seed_next_quotient;
+                    seed_remainder<=seed_next_remainder[15:0];
+                    seed_iterations<=seed_iterations-1'b1;
+                    if(seed_iterations==1) begin
+                        FINE_SEED<=interpolated_seed<8 ? 8 :
+                            (interpolated_seed>247 ? 247 : interpolated_seed[7:0]);
+                        cycles<=0;state<=LOAD;
+                    end
                 end
                 LOAD: begin
                     if(!TUNING_APPLIED) cycles<=0;

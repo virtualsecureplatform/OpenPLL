@@ -30,7 +30,7 @@ module tb_frequency_acquisition;
                 6:mhz=248.0+code*4.0/255.0;
                 4:mhz=297.0+code*6.0/255.0;
                 2:mhz=396.0+code*8.0/255.0;
-                0:mhz=495.0+code*10.0/255.0;
+                0:mhz=445.0+code*10.0/255.0;
                 1:mhz=100.0; // Closest midpoint, but no usable tuning span.
                 default:mhz=650.0+band*10.0+code*0.02;
             endcase
@@ -71,7 +71,7 @@ module tb_frequency_acquisition;
         acquire(10,6);
         acquire(12,4);
         acquire(16,2);
-        acquire(20,0);
+        acquire(18,0);
         force_rail=1;
         wait(!run_fine);
         force_rail=0;
@@ -81,6 +81,8 @@ module tb_frequency_acquisition;
         wait(!run_fine);
         if($realtime-started>62000) $fatal(1,"frequency loss not detected");
         // Disable and invalid mode must not falsely hand off.
+        enable=0;#100;divider=20;enable=1;#1000;
+        if(run_fine) $fatal(1,"retired 500 MHz divider accepted");
         enable=0;#100;divider=3;enable=1;#1000;
         if(run_fine) $fatal(1,"invalid divider accepted");
         enable=0;scale=1;#100;

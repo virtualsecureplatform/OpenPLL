@@ -13,6 +13,14 @@ module sky130_fd_sc_hd__and2_1 (
 endmodule
 
 (* blackbox *)
+module sky130_fd_sc_hd__and2_4 (
+    output wire X,
+    input wire A,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
 module sky130_fd_sc_hd__and2b_1 (
     output wire X,
     input wire A_N,
@@ -22,6 +30,13 @@ endmodule
 
 (* blackbox *)
 module sky130_fd_sc_hd__buf_1 (
+    output wire X,
+    input wire A
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hd__buf_8 (
     output wire X,
     input wire A
 );
@@ -44,6 +59,30 @@ module sky130_fd_sc_hd__dfrtp_1 (
 endmodule
 
 (* blackbox *)
+module sky130_fd_sc_hd__einvn_8 (
+    output wire Z,
+    input wire A,
+    input wire TE_B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hd__einvn_4 (
+    output wire Z,
+    input wire A,
+    input wire TE_B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hd__einvn_0 (
+    output wire Z,
+    input wire A,
+    input wire TE_B
+);
+endmodule
+
+(* blackbox *)
 module sky130_fd_sc_hd__einvp_1 (
     output wire Z,
     input wire A,
@@ -55,6 +94,47 @@ endmodule
 module sky130_fd_sc_hd__inv_1 (
     output wire Y,
     input wire A
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hd__or2_1 (
+    output wire X,
+    input wire A,
+    input wire B
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hd__or2b_1 (
+    output wire X,
+    input wire A,
+    input wire B_N
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hd__or2b_2 (
+    output wire X,
+    input wire A,
+    input wire B_N
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hd__or2b_4 (
+    output wire X,
+    input wire A,
+    input wire B_N
+);
+endmodule
+
+(* blackbox *)
+module sky130_fd_sc_hd__mux2_1 (
+    output wire X,
+    input wire A0,
+    input wire A1,
+    input wire S
 );
 endmodule
 

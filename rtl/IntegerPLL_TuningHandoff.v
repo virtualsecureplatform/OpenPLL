@@ -23,6 +23,7 @@ module IntegerPLL_TuningHandoff #(
     (* ASYNC_REG="TRUE" *) reg acknowledge_meta, acknowledge_sync;
     reg [COUNT_WIDTH-1:0] remaining;
     reg pending_request;
+    reg capture_pending;
     assign APPLIED=sent_valid && acknowledge_sync==request && payload==COMMAND;
 
     always @(posedge REFCLK or negedge REF_RESET_N) begin
@@ -39,16 +40,21 @@ module IntegerPLL_TuningHandoff #(
     always @(posedge DCOCLK or negedge DCO_RESET_N) begin
         if(!DCO_RESET_N) begin
             request_meta<=0; request_sync<=0; acknowledge<=0;
-            APPLIED_COMMAND<=0; remaining<=0; pending_request<=0;
+            APPLIED_COMMAND<=0; remaining<=0; pending_request<=0;capture_pending<=0;
         end else begin
             request_meta<=request; request_sync<=request_meta;
-            if(remaining!=0) begin
+            // Register request qualification before driving the wide payload
+            // capture mux. The source holds payload until acknowledgement.
+            if(capture_pending) begin
+                APPLIED_COMMAND<=payload;
+                capture_pending<=0;
+                remaining<=APPLY_CYCLES[COUNT_WIDTH-1:0];
+            end else if(remaining!=0) begin
                 remaining<=remaining-1'b1;
                 if(remaining==1) acknowledge<=pending_request;
             end else if(request_sync!=acknowledge) begin
-                APPLIED_COMMAND<=payload;
                 pending_request<=request_sync;
-                remaining<=APPLY_CYCLES[COUNT_WIDTH-1:0];
+                capture_pending<=1;
             end
         end
     end

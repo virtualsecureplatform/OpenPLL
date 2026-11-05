@@ -1,0 +1,11 @@
+{
+  "origin": "build/timing450/hs/closure/handoff_candidate/build/timing450/hs/rtl_snapshot",
+  "files": {
+    "rtl/prototype400/IntegerPLL_DigitalCore.v": "859174a87a4d72281af2adbfa84006c0505510c0ff5743f9d2d985b42984c303",
+    "rtl/prototype400/IntegerPLL_TuningHandoff.v": "00f380665af4ca3e11d3f37b6b448311d41f1c3e0f5aca875ade7d2b825ddfc4",
+    "rtl/prototype400/IntegerPLL_DLF.v": "4b98becbc5424ed7eabdf38ceedb757d66db35b965ac33bbd0a0c4b6e4ade2db",
+    "rtl/prototype400/IntegerPLL_B2TH.v": "7cdf2a2224e2b1fcf848cc1cd42b5417e3d0d1bb8dea82e0c274e5065432f74b",
+    "rtl/prototype400/IntegerPLL_MMD_Retimer.v": "b967f654d1b527296cb89b4c8600b590ec35e412a9b993a275842152260e9b69",
+    "rtl/prototype400/IntegerPLL_Divider.v": "2e3dc884988a510b0e749291cfaa6ff4dac05f04b6fb4d07c4c1fea4bf785d64"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "status": "unqualified_400mhz_first_release",
+  "requirements": "verification/release_requirements_400mhz.json",
+  "reference_mhz": 25,
+  "maximum_mode_mhz": 400,
+  "targets": {
+    "100": {
+      "ndiv": 4,
+      "coarse_code": null,
+      "target_code": null,
+      "calibration_qualified": false
+    },
+    "250": {
+      "ndiv": 10,
+      "coarse_code": null,
+      "target_code": null,
+      "calibration_qualified": false
+    },
+    "300": {
+      "ndiv": 12,
+      "coarse_code": null,
+      "target_code": null,
+      "calibration_qualified": false
+    },
+    "400": {
+      "ndiv": 16,
+      "coarse_code": null,
+      "target_code": null,
+      "calibration_qualified": false
+    }
+  },
+  "deferred_modes_mhz": [
+    450
+  ],
+  "release_qualified": false
+}
