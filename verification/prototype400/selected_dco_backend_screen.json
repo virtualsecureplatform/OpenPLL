@@ -230,7 +230,15 @@
     "MPI_ranks": 4,
     "interpretation": "The matched-age residual is still +1059 ppm. Comparison with serial baseline also includes MPI numerical effects; completed MPI baseline is required to isolate the load change.",
     "receiver_loading_bounded": false,
-    "frequency_correlation_qualified": false
+    "frequency_correlation_qualified": false,
+    "MPI_matched_comparison": {
+      "status_at_recording": "waiting_for_original_MPI_baseline",
+      "output": "build/signoff400/selected_DCO_MPI_matched_load_comparison_307",
+      "base": "build/signoff400/selected_DCO_parallel_control_282",
+      "target": "build/signoff400/selected_DCO_receiver_load_control_284",
+      "strict_circuit_superset_and_common_boundary_identity_required": true,
+      "receiver_loading_bounded": false
+    }
   },
   "fine112_receiver_load_holdout": {
     "status_at_recording": "native_running",
