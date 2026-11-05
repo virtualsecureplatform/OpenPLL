@@ -302,7 +302,7 @@
     }
   },
   "fine112_receiver_load_holdout": {
-    "status_at_recording": "native_running",
+    "status_at_recording": "native_completed_normally",
     "native": "build/signoff400/selected_DCO_receiver_load_fine112_control_297",
     "coarse": 20,
     "fine": 112,
@@ -313,7 +313,75 @@
       22,
       23
     ],
-    "purpose": "Measure tuning sensitivity with the same expanded receiver partition; no extrapolated closed-loop point"
+    "purpose": "Measure tuning sensitivity with the same expanded receiver partition; no extrapolated closed-loop point",
+    "assessment": {
+      "path": "build/signoff400/selected_DCO_receiver_load_fine112_control_297/assessment.json",
+      "sha256": "85b86b2ed003a414911a57782b77c2b56b1a0442f68923129c263c606a27d07c"
+    },
+    "startup_aligned_comparison": {
+      "path": "build/signoff400/selected_DCO_fine112_startup_comparison_313/assessment.json",
+      "sha256": "58c509ac959786bac4e8df822120fff06885a6d0af6a8b958c7c6f47169055d4"
+    },
+    "frequency_comparisons": {
+      "common": {
+        "window_after_first_rise_ns": [
+          10,
+          40
+        ],
+        "candidate": {
+          "rising_edges": 12,
+          "frequency_mhz": 392.92020558040775,
+          "minimum_period_ns": 2.544580641873182,
+          "maximum_period_ns": 2.5456834971605424
+        },
+        "full_native": {
+          "rising_edges": 12,
+          "frequency_mhz": 392.58116563835176,
+          "minimum_period_ns": 2.5467915522877718,
+          "maximum_period_ns": 2.5479526551180527
+        },
+        "difference_ppm": 863.617442025566
+      },
+      "early": {
+        "window_after_first_rise_ns": [
+          10,
+          25.0
+        ],
+        "candidate": {
+          "rising_edges": 6,
+          "frequency_mhz": 392.87088414889956,
+          "minimum_period_ns": 2.545066699124238,
+          "maximum_period_ns": 2.5456834971605424
+        },
+        "full_native": {
+          "rising_edges": 6,
+          "frequency_mhz": 392.5306666585272,
+          "minimum_period_ns": 2.54726549018838,
+          "maximum_period_ns": 2.5479526551180527
+        },
+        "difference_ppm": 866.7284349233029
+      },
+      "late": {
+        "window_after_first_rise_ns": [
+          25.0,
+          40
+        ],
+        "candidate": {
+          "rising_edges": 6,
+          "frequency_mhz": 392.9682173986176,
+          "minimum_period_ns": 2.544580641873182,
+          "maximum_period_ns": 2.5448690238458553
+        },
+        "full_native": {
+          "rising_edges": 6,
+          "frequency_mhz": 392.6299466525855,
+          "minimum_period_ns": 2.5467915522877718,
+          "maximum_period_ns": 2.5470845681624894
+        },
+        "difference_ppm": 861.5510582319353
+      }
+    },
+    "frequency_correlation_qualified": false
   },
   "MPI_consistency_and_performance": {
     "path": "build/signoff400/selected_DCO_parallel_control_282/assessment.json",
@@ -329,5 +397,95 @@
     "policy": "Keep serial as the reduced-control default for independent batches; use four ranks selectively for latency when spare cores are available. Existing live jobs continue unchanged.",
     "timing_repeatability_characterized": false,
     "numerical_convergence_qualified": false
+  },
+  "two_code_tuning_difference": {
+    "codes": [
+      111,
+      112
+    ],
+    "coarse": 20,
+    "corner": "tt",
+    "window_after_first_rise_ns": [
+      10,
+      40
+    ],
+    "full_model_difference_mhz": 0.35785818310546347,
+    "reduced_model_difference_mhz": 0.2815279429679549,
+    "reduced_relative_difference_percent": -21.329745620212204,
+    "interpretation": "Two-point finite difference only. The residual varies with code, so a single fitted frequency offset is not a qualified correction.",
+    "global_tuning_law_qualified": false
+  },
+  "full_fine112_calibration": {
+    "assessment": {
+      "path": "build/signoff400/selected_native_fine112_calibration_assessment_138/assessment.json",
+      "sha256": "1549f84300f9c561f2634832ed11231270c2ccee5dbe1d24374d3e9dd54b5c71"
+    },
+    "provenance": {
+      "path": "build/signoff400/selected_native_fine112_calibration_assessment_138/provenance.json",
+      "sha256": "08b4594c22e25524e110de6f6555afb2e44d587409cf3574e7f85ddbf1568257"
+    },
+    "coarse": 20,
+    "fine": 112,
+    "samples": 45725,
+    "end_ns": 260,
+    "measurement_window_ns": [
+      200,
+      260
+    ],
+    "frequency_mhz": 392.67011420252953,
+    "native_elapsed_s": 43715.96922757407,
+    "all_saved_values_finite": true,
+    "actual_RTL_startup_replay": {
+      "path": "build/signoff400/selected_fine112_native_startup_RTL_replay_321/assessment.json",
+      "sha256": "4c2d026d9c24915b182f2bdc8783f1747a2a8c4dc0765d0b7b7c9868eaa9c38b"
+    },
+    "native_end": {
+      "config_ready": 0,
+      "config_busy": 1,
+      "tracking": 0,
+      "failed": 0,
+      "coarse_code": 20,
+      "dco_code": 112
+    },
+    "rtl_end": {
+      "config_ready": 0,
+      "config_busy": 1,
+      "tracking": 0,
+      "failed": 0,
+      "coarse_code": 20,
+      "dco_code": 112,
+      "startup_state": 2
+    },
+    "end_state_matches": true,
+    "enabled_native_handshake_proven": false,
+    "lock_qualified": false
+  },
+  "next_target_measurement": {
+    "request": {
+      "path": "build/signoff400/selected_calibration_registry_advance_173/next_point.json",
+      "sha256": "22e28b1444643faca3b0a9a465a4deba1829379b59c62fb8b4ccf679c59c91e5"
+    },
+    "fine": 133,
+    "coarse": 20,
+    "frequency_hint_used_as_table_point": false,
+    "pipeline": "build/signoff400/selected_target_calibration_pipeline_316",
+    "status_at_recording": "waiting_for_corner_initialization_queue",
+    "selected_seed": "closest measured frequency after the new native measurement",
+    "maximum_new_native_jobs": 1
+  },
+  "strict_RTL_after_two_measured_points": {
+    "assessment": {
+      "path": "build/signoff400/selected_detector_calibration_followup_257/assessment.json",
+      "sha256": "102b76b8564c5f616a97f485fcd8ab07e07f7d3dd86f0088587ca2af45aff50a"
+    },
+    "state": "needs_native_tuning_points",
+    "measurement_requests": [
+      {
+        "coarse": 20,
+        "fine": 113
+      }
+    ],
+    "missing_frequencies_extrapolated": false,
+    "lock_qualified": false
   }
 }

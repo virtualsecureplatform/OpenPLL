@@ -855,9 +855,23 @@ has been patched into the detector fit, and the candidate RTL is unchanged.
 A separate receiver publication adapter now uses event-flop delays measured in
 native control 273 and validates against independent recorded-clock control
 280. Both first-stage sampling cycles match after this adjustment, including
-the UP event missed by a zero-delay publication model. The adapter's functional
+the UP event that previously landed on the wrong sampling clock. The adapter's functional
 BBPD delivery input represents event publication to the zero-delay RTL flop;
 it is not the physical BBPD output voltage. Scope is limited to TT first
 post-reset positive event publications at the local physical receiver clock.
 The main PLL model remains unchanged. Opposite event transitions, later receive
 stages, root-clock distribution and full-controller timing remain unqualified.
+
+The full coarse20/fine112 TT calibration completed 260 ns normally, with all
+saved values finite. Its 200--260 ns output frequency is 392.670114 MHz,
+compared with 392.310318 MHz at fine111. Native stimulus replay through the
+actual startup RTL matches all six observed endpoint fields; PLL_ENABLE and
+TRACKING remain low, so this is not enabled-handshake or lock proof.
+
+The reduced fine112 control remains +863.6 ppm above its full reference at
+matched oscillator ages. Its two-code frequency difference is about 21.3%
+smaller than the full model's, so a constant frequency-offset correction is
+not qualified. The secant selector requests native fine133 near 400 MHz. One
+full-native calibration is queued after the corner-initialization queue, then
+its measured point will attach and the actual RTL diagnostic will use the
+closest measured seed. No predicted frequency enters the tuning table.
