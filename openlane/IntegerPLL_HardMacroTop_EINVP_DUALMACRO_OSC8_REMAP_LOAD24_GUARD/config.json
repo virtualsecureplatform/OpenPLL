@@ -1,0 +1,187 @@
+{
+  "DESIGN_NAME": "IntegerPLL_HardMacroTop_EINVP_DUALMACRO_OSC8_REMAP_LOAD24_GUARD",
+  "VERILOG_FILES": [
+    "dir::../../rtl/IntegerPLL_HardMacroTop_EINVP_DUALMACRO_OSC8_REMAP_LOAD24_GUARD.v"
+  ],
+  "VERILOG_DEFINES": [
+    "USE_POWER_PINS"
+  ],
+  "PNR_SDC_FILE": "dir::async_macro_top.sdc",
+  "SIGNOFF_SDC_FILE": "dir::async_macro_top.sdc",
+  "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
+  "ERRORS_ON_UNMATCHED_IO": "both",
+  "LINTER_DISABLE_WARNINGS_BLACKBOX": [
+    "UNDRIVEN",
+    "UNUSEDSIGNAL",
+    "PINMISSING",
+    "TIMESCALEMOD"
+  ],
+  "CLOCK_PORT": null,
+  "CLOCK_PERIOD": 8.0,
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [
+    0,
+    0,
+    850,
+    1120
+  ],
+  "CORE_AREA": [
+    20,
+    20,
+    830,
+    1100
+  ],
+  "FP_CORE_UTIL": 5,
+  "PL_TARGET_DENSITY_PCT": 20,
+  "FP_MACRO_HORIZONTAL_HALO": 10,
+  "FP_MACRO_VERTICAL_HALO": 10,
+  "ROUTING_OBSTRUCTIONS": [
+    [
+      "met3",
+      162,
+      622,
+      588,
+      868
+    ],
+    [
+      "met4",
+      162,
+      622,
+      588,
+      868
+    ],
+    [
+      "met5",
+      162,
+      622,
+      588,
+      868
+    ]
+  ],
+  "RT_MAX_LAYER": "met5",
+  "RUN_CTS": false,
+  "RUN_POST_GPL_DESIGN_REPAIR": false,
+  "RUN_POST_CTS_RESIZER_TIMING": false,
+  "RUN_POST_GRT_DESIGN_REPAIR": false,
+  "RUN_POST_GRT_RESIZER_TIMING": false,
+  "RUN_MCSTA": false,
+  "RUN_IRDROP_REPORT": false,
+  "RUN_EQY": false,
+  "MAGIC_CAPTURE_ERRORS": false,
+  "PDN_CONNECT_MACROS_TO_GRID": true,
+  "PDN_HOFFSET": 13.35,
+  "PDN_MACRO_CONNECTIONS": [
+    "phase_detector VPWR VGND VPWR VGND",
+    "digital_core VPWR VGND VPWR VGND",
+    "oscillator VPWR VGND VPWR VGND"
+  ],
+  "ERROR_ON_PDN_VIOLATIONS": false,
+  "PAD_LIBS": null,
+  "VDD_NETS": [
+    "VPWR"
+  ],
+  "GND_NETS": [
+    "VGND"
+  ],
+  "MACROS": {
+    "IntegerPLL_BBPD": {
+      "instances": {
+        "phase_detector": {
+          "location": [
+            315,
+            40
+          ],
+          "orientation": "N"
+        }
+      },
+      "gds": [
+        "dir::../IntegerPLL_BBPD/runs/librelane_signoff/final/gds/IntegerPLL_BBPD.gds"
+      ],
+      "lef": [
+        "dir::../IntegerPLL_BBPD/runs/librelane_signoff/final/lef/IntegerPLL_BBPD.lef"
+      ],
+      "vh": [
+        "dir::../IntegerPLL_BBPD/runs/librelane_signoff/final/vh/IntegerPLL_BBPD.vh"
+      ],
+      "pnl": [
+        "dir::../IntegerPLL_BBPD/runs/librelane_signoff/final/pnl/IntegerPLL_BBPD.pnl.v"
+      ],
+      "spice": [
+        "dir::../IntegerPLL_BBPD/runs/librelane_signoff/final/spice/IntegerPLL_BBPD.spice"
+      ]
+    },
+    "IntegerPLL_DigitalCore": {
+      "instances": {
+        "digital_core": {
+          "location": [
+            235,
+            180
+          ],
+          "orientation": "N"
+        }
+      },
+      "gds": [
+        "dir::../IntegerPLL_DigitalCore/runs/librelane_signoff_force127_s4a2/final/gds/IntegerPLL_DigitalCore.gds"
+      ],
+      "lef": [
+        "dir::../IntegerPLL_DigitalCore/runs/librelane_signoff_force127_s4a2/final/lef/IntegerPLL_DigitalCore.lef"
+      ],
+      "vh": [
+        "dir::../IntegerPLL_DigitalCore/runs/librelane_signoff_force127_s4a2/final/vh/IntegerPLL_DigitalCore.vh"
+      ],
+      "pnl": [
+        "dir::../IntegerPLL_DigitalCore/runs/librelane_signoff_force127_s4a2/final/pnl/IntegerPLL_DigitalCore.pnl.v"
+      ],
+      "spice": [
+        "dir::../IntegerPLL_DigitalCore/runs/librelane_signoff_force127_s4a2/final/spice/IntegerPLL_DigitalCore.spice"
+      ]
+    },
+    "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_DUALMACRO_OSC8_REMAP_LOAD24_DBUF_GUARD": {
+      "instances": {
+        "oscillator": {
+          "location": [
+            160,
+            620
+          ],
+          "orientation": "N"
+        }
+      },
+      "gds": [
+        "dir::../IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_DUALMACRO_OSC8_REMAP_LOAD24_DBUF_GUARD/runs/pvt_probe_turn10_dualmacro_osc8_remap_load24_dbuf_guard_slow240_bufsel_guard24/final/gds/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_DUALMACRO_OSC8_REMAP_LOAD24_DBUF_GUARD.gds"
+      ],
+      "lef": [
+        "dir::../IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_DUALMACRO_OSC8_REMAP_LOAD24_DBUF_GUARD/runs/pvt_probe_turn10_dualmacro_osc8_remap_load24_dbuf_guard_slow240_bufsel_guard24/final/lef/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_DUALMACRO_OSC8_REMAP_LOAD24_DBUF_GUARD.lef"
+      ],
+      "vh": [
+        "dir::../IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_DUALMACRO_OSC8_REMAP_LOAD24_DBUF_GUARD/runs/pvt_probe_turn10_dualmacro_osc8_remap_load24_dbuf_guard_slow240_bufsel_guard24/final/vh/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_DUALMACRO_OSC8_REMAP_LOAD24_DBUF_GUARD.vh"
+      ],
+      "pnl": [
+        "dir::../IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_DUALMACRO_OSC8_REMAP_LOAD24_DBUF_GUARD/runs/pvt_probe_turn10_dualmacro_osc8_remap_load24_dbuf_guard_slow240_bufsel_guard24/final/pnl/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_DUALMACRO_OSC8_REMAP_LOAD24_DBUF_GUARD.pnl.v"
+      ],
+      "spice": [
+        "dir::../IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_DUALMACRO_OSC8_REMAP_LOAD24_DBUF_GUARD/runs/pvt_probe_turn10_dualmacro_osc8_remap_load24_dbuf_guard_slow240_bufsel_guard24/final/spice/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_DUALMACRO_OSC8_REMAP_LOAD24_DBUF_GUARD.spice"
+      ]
+    }
+  },
+  "scl::sky130_fd_sc_hd": {
+    "LIB": {
+      "nom_": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+      ],
+      "*_tt_025C_1v80": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+      ],
+      "*_ff_n40C_1v95": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+      ],
+      "*_ss_100C_1v60": [
+        "ref::$PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+      ]
+    }
+  },
+  "meta": {
+    "flow": "Classic"
+  },
+  "GRT_ANTENNA_REPAIR_JUMPER_ONLY": true,
+  "DRT_ANTENNA_REPAIR_JUMPER_ONLY": true
+}

@@ -1,0 +1,7 @@
+{
+  "scope": "isolated fixed-load experiment, unqualified",
+  "source_parent_sha256": "95a040827a961eba6aca1a5587794f06063b6d11396e5d19abe5613017d6ed96",
+  "source_sha256": "8aa12ef9b25c4e6445d538b96bb5bd428704141a2a70002df4d5f1ad724ab304",
+  "fixed_load_count": 36,
+  "reason": "LOAD32 corrected hot SS code8/9 drive jump 445.053 to451.556 MHz spans450; shift switched segment downward with four further fixed loads"
+}

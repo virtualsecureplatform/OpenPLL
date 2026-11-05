@@ -1,0 +1,9 @@
+{
+  "scope": "isolated fixed-load experiment; no qualified presets",
+  "source_parent_sha256": "a84c2a8d7232d0e68cbe6b99e5365789228531d19641f6f5170b5effa4621861",
+  "source_sha256": "95a040827a961eba6aca1a5587794f06063b6d11396e5d19abe5613017d6ed96",
+  "reason": "corrected hot-SS LOAD24 lower endpoint 453.984 MHz exceeds 450 MHz; add eight fixed loads",
+  "fixed_load_count": 32,
+  "initial_source_sha256": "dd102ef35b35e754cda71b7900ba7a56d7e40df5f9c7b47465a02259f58ce9b9",
+  "initial_failure": "v1 synthesis rejected fixed-load output indexes 24..31; dummy bus expanded to 32 bits"
+}
