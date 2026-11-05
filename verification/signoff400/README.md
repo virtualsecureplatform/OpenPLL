@@ -7174,3 +7174,13 @@ layer. The installed technology explicitly imports both tested purpose codes
 as `fomfill`. Physical FOM coverage/accuracy remains an open evidence item;
 its diffusion display style alone establishes neither implant physics nor
 an electrical model.
+
+Selected streaming control `164` completed 21 ns normally in 1,417.41 seconds
+(23.62 minutes), with 4,942 linear solves, zero UMFPACK failures and no DC reuse.
+Comparison `165` completed all 2,693 positive accepted samples and 31 outputs.
+Its maximum voltage difference against the full-native trace is 33.30 uV on
+CLKDIV_RETIMED, so the strict 1 uV diagnostic flag is false. Neither trace has
+oscillator rising edges in this interval; frequency/startup correlation is
+still unproven. The PWL control remains live and is not a completed runtime
+baseline. Queue `167` has advanced to preparation of the separate full 260 ns
+control `168`; its result will be assessed in `169`. No release gate is changed.
