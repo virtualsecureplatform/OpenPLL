@@ -1,0 +1,96 @@
+"""Fast diagnostic RTL/continuous-phase simulation using explicit measured DCO points.
+
+No tuning extrapolation. An unsupported code produces a measurement request.
+Detector timing is explicitly supplied and unqualified; this runner never signs off.
+"""
+import argparse
+import csv
+import json
+import math
+from pathlib import Path
+import subprocess
+import time
+from common_v3 import ROOT, source_pins, sha, save, verify
+
+
+def measured_point(receipt):
+    value=json.loads(receipt.read_text())
+    signal=value['signals']['v(pllout)']
+    if signal['rising_edges_200_260ns']<3:
+        raise ValueError('at least three measured oscillator edges required')
+    coarse=value['coarse_code']['window_codes'];fine=value['dco_code']['window_codes']
+    frequency=signal['mean_frequency_mhz']
+    if len(coarse)!=1 or len(fine)!=1 or not math.isfinite(frequency) or frequency<=0:
+        raise ValueError('stationary measured positive-frequency point required')
+    if not 0<=coarse[0]<=47 or not 8<=fine[0]<=247:
+        raise ValueError('measured point outside prototype code limits')
+    return coarse[0],fine[0],round(frequency*1e9)
+
+
+def run(receipts,detector,output,ki=4,kp=0,coarse=20,seed=111,polarity=1,scenario=0,phase_ns=0,registry_path=None):
+    points={}
+    for receipt in receipts:
+        c,f,mhz=measured_point(receipt)
+        if (c,f) in points:raise ValueError('duplicate measured code')
+        points[c,f]=mhz
+    if (coarse,seed) not in points:raise ValueError('measured startup point required')
+    if scenario not in (0,1,2) or phase_ns not in (0,10,20,30) or polarity not in (0,1):raise ValueError('unsupported case')
+    if not 1<=ki<=255 or not 0<=kp<=31:raise ValueError('invalid gains')
+    output.mkdir(parents=True,exist_ok=False)
+    pins=source_pins();pins.update({str(p):sha(p) for p in [*receipts,detector,Path(__file__).resolve(),ROOT/'tb/tb_programmed400_closed_loop.v',ROOT/'verification/timing400/phase_clock_vpi.cpp',ROOT/'verification/timing400/phase_clock.h',ROOT/'verification/signoff400/selected_loop_assessment.py',ROOT/'verification/signoff400/acceptance_v3.py',ROOT/'verification/signoff400/requirements_v3.json',ROOT/'verification/signoff400/selected_model_registry.py',ROOT/'verification/signoff400/common_v3.py']})
+    if registry_path:
+        from selected_model_registry import validate
+        registry=validate(json.loads(registry_path.read_text()))
+        pins[str(registry_path)]=sha(registry_path)
+        for key in ['analog','interface']:pins.update(registry[key]['input_sha256'])
+    save(output/'inputs.json',dict(input_sha256=pins,measured_points=[dict(coarse=c,fine=f,frequency_millihertz=v) for (c,f),v in points.items()],detector_qualified_for_selected_layout=False,diagnostic=True,release_ready=False))
+    table=output/'dco_table.txt';table.write_text(''.join(f'{c} {f} {v}\n' for (c,f),v in sorted(points.items())))
+    elapsed=time.monotonic()
+    def execute(command,name):
+        with (output/name).open('w') as log:
+            return subprocess.run(list(map(str,command)),cwd=output,stdout=log,stderr=subprocess.STDOUT,timeout=60).returncode
+    bridge=ROOT/'verification/timing400/phase_clock_vpi.cpp'
+    if execute(['/usr/bin/iverilog-vpi',bridge],'vpi_compile.log')!=0:raise RuntimeError('VPI compilation failed')
+    source=list(source_pins());rtl=[p for p in source if p.endswith('.v') and not p.endswith('IntegerPLL_400MHz_PrototypeTop.v')]
+    if execute(['/usr/bin/iverilog','-g2012','-s','tb_programmed400_closed_loop','-o',output/'loop.vvp',*rtl,ROOT/'tb/tb_programmed400_closed_loop.v',detector],'compile.log')!=0:raise RuntimeError('RTL compilation failed')
+    code=execute(['/usr/bin/vvp','-M',output,'-m','phase_clock_vpi',output/'loop.vvp',f'+phase400_table={table}',f'+phase400_trace={output/"controls.csv"}',f'+scenario={scenario}',f'+phase_ns={phase_ns}',f'+coarse={coarse}',f'+seed={seed}',f'+polarity={polarity}',f'+ki={ki}',f'+kp={kp}',f'+edge_trace={output/"edges.csv"}',f'+segment_trace={output/"segments.csv"}'],'run.log')
+    log=(output/'run.log').read_text();requests=[]
+    if 'MODEL_LOOKUP_MISSING' in log:
+        with (output/'controls.csv').open() as stream:
+            for row in csv.DictReader(stream):
+                if row['event']=='ERROR':requests.append(dict(coarse=int(row['coarse']),fine=int(row['fine'])))
+    verify(pins)
+    report=dict(state='needs_native_tuning_points' if requests else ('diagnostic_simulation_completed' if code==0 and 'PROGRAMMED400_LOOP_END' in log else 'diagnostic_failed'),elapsed_s=time.monotonic()-elapsed,native_exit=code,terminal_marker_present='PROGRAMMED400_LOOP_END' in log,measurement_requests=requests,scenario=scenario,phase_offset_ns=phase_ns,diagnostic=True,physical_models_qualified=False,lock_qualified=False,release_ready=False)
+    from selected_loop_assessment import assess
+    report.update(assess(output,code,scenario))
+    if not requests and not report['functional_trace_pass']:report['state']='diagnostic_failed'
+    save(output/'assessment.json',report);print(json.dumps(report));return report
+
+
+def exit_status(report):
+    if report.get('state')=='needs_native_tuning_points':return 3
+    if (report.get('state')=='diagnostic_simulation_completed' and report.get('functional_trace_pass') and report.get('native_exit')==0 and report.get('terminal_marker_present')):return 0
+    return 1
+
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser(description=__doc__)
+    inputs=p.add_mutually_exclusive_group(required=True)
+    inputs.add_argument('--point',type=Path,action='append')
+    inputs.add_argument('--registry',type=Path)
+    p.add_argument('--detector',type=Path,required=True)
+    p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--ki',type=int,default=4);p.add_argument('--kp',type=int,default=0)
+    p.add_argument('--coarse',type=int,default=20);p.add_argument('--seed',type=int,default=111)
+    p.add_argument('--polarity',type=int,choices=(0,1),default=1)
+    p.add_argument('--scenario',type=int,choices=(0,1,2),default=0)
+    p.add_argument('--phase-ns',type=int,choices=(0,10,20,30),default=0)
+    a=p.parse_args()
+    if a.registry:
+        from selected_model_registry import validate
+        registry=validate(json.loads(a.registry.read_text()))
+        if registry['interface']['input_sha256'].get(str(a.detector.resolve()))!=sha(a.detector.resolve()):p.error('detector does not match registry interface')
+        a.point=[Path(row['receipt']) for row in registry['points']]
+    report=run([r.resolve() for r in a.point],a.detector.resolve(),a.output.resolve(),a.ki,a.kp,a.coarse,a.seed,a.polarity,a.scenario,a.phase_ns,a.registry.resolve() if a.registry else None)
+
+    raise SystemExit(exit_status(report))

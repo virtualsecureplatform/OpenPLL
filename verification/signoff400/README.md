@@ -7015,3 +7015,69 @@ Each new circuit trial needs its own deck and output directory; archived trial
 This is runtime validation of the pre-release programming diagnostic. The
 175 ns endpoint precedes oscillator-reset release at 180 ns. Startup, frequency,
 lock, numerical convergence and release/tapeout qualification remain unproven.
+
+
+### Selected-circuit mixed-signal development — 2026-11-05
+
+Full native startup trial `131` completed 260 ns with 45,760 finite saved
+samples and zero failed transient linear solves. The oscillator starts after
+reset release; its measured 200–260 ns average is 392.3103 MHz at coarse 20,
+fine 111. The deck holds PLL_ENABLE low. Its lack of tracking is therefore
+expected and is not a failed lock result. Native-input RTL replay `135` matches
+the final programming/status outputs. A separate synthetic clock continuation
+`146` predicts configuration-ready at 900.05 ns; it does not qualify native
+startup timing beyond the observed interval.
+
+`run_selected_mixed_signal.py` provides explicit scenario, phase, preset,
+polarity and gain inputs. It requires full observation segments and the terminal
+completion marker, applies the existing functional acceptance limits, and keeps
+physical/release qualification false. The measured-only flow requests missing
+native data rather than extrapolating tuning. The current missing point is
+coarse 20/fine 112, under native calibration `134`, with assessment watcher `138`.
+`selected_model_registry.py` keeps analog/interface identity distinct from the
+controller version and verifies pinned data. The current registry is diagnostic;
+its detector fit has not been qualified for the selected layout.
+
+All 8,383 boundary voltages of the proposed conditional partition are uniquely
+available in the native waveform (`140`). Export `142` retains 15,600 primitive
+instances, 6,054 wire resistors and 714,168 private-incident capacitors. Omitting
+555,050 boundary-only capacitors is specific to a prescribed-voltage private-KCL
+solve and does not qualify exterior currents. Replay files `144` preserve every
+saved knot. Loading that complete replay in control `145` failed with SIGSEGV
+before DC initialization after high memory use near the address-space cap;
+memory pressure is suspected, not a proven root cause. No identical retry is
+scheduled and no circuit/partition failure is inferred from it.
+
+Separate variant `148` removes only redundant constant-plateau interior knots,
+without voltage approximation. Bounded prefix `149` retains the right guard knot
+for the 1 fs control interval; control `150` tests initial-state correctness
+without loading irrelevant future data. Neither a prefix/DC pass nor a
+conditional waveform match establishes a reusable tuning model. Full transient
+correlation, independent code/loading holdouts, extraction/FOM uncertainty,
+five-corner tuning coverage, the 60-case closed-loop matrix, final timing/CDC,
+and the five-gate release audit remain open.
+
+The bounded initial-state control `150` completed in 90.48 seconds and matched
+all six monitored initial output voltages exactly. This covers six DC values,
+not internal state or transient behavior. Exact 21 ns replay preparation `152`
+is complete; transient control `153` is running. The full fine-112 native
+calibration `134` and its assessment watcher remain active.
+
+`run_selected_matrix.py` now orchestrates the five-corner, three-scenario,
+four-phase diagnostic matrix using one common KI/KP pair. Supply five
+`--registry` arguments and a fresh `--output`, starting with `--ki 4 --kp 0`.
+Each registry interface must name its `detector_rtl` and pin that file in
+`input_sha256`; recompute the interface identity when adding this explicit
+path. Missing corners or measured startup points produce exit 3 before
+simulation. An unsupported tuning code stops the matrix and records a native
+measurement request. Exit 0 means all 60 functional diagnostic traces passed;
+physical qualification and release readiness remain false. The existing
+`loop_v3.py` qualified-model route and five-gate audit remain the release gates.
+
+Preflight `156` checked the real TT measurement registry and requested the four
+missing corner registries without launching simulations. Synthetic benchmark
+`155` completed twelve engine cases in an observed upper bound of 116.63 seconds;
+its deliberately untunable model passed zero functional cases. This establishes
+engine throughput and failure handling, not target-PLL lock. The streaming-DAC
+review `154` identified different time-zero initialization behavior, so that
+alternative is not adopted without a native equivalence control.
