@@ -61,7 +61,15 @@
       "path": "build/signoff400/selected_DCO_history_live_runtime_295.json",
       "sha256": "5fa7c62e9b528589263870442b671238e2663c3fc16a099a8dbc9c64b3ee5ba6"
     },
-    "live_PDK_and_executable_match_reference": true
+    "live_PDK_and_executable_match_reference": true,
+    "input_identity_audit": {
+      "path": "build/signoff400/selected_DCO_history_input_audit_305.json",
+      "sha256": "94dcc94f7e24bb588eb1be185cf0dcca58e03b100e069c730f5b441840c91568",
+      "physical_circuit_identical": true,
+      "quiet_exterior_snapshot_identical": true,
+      "native_solver_and_tolerances_identical": true,
+      "changed_source_count": 303
+    }
   },
   "floating_charge_causality_proven": false,
   "frequency_correlation_qualified": false,
