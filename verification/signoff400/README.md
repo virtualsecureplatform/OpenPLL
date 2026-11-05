@@ -7375,3 +7375,11 @@ CPU25 with a two-hour/12 GiB cap. Live runtime capture `274` matches the same
 319-file PDK include superset and executable as the full calibration. Exterior
 switching, remaining loads, other corners and active interface qualification
 remain open; this bench does not issue a qualified model.
+
+The diagnostic synchronizer stimulus is already a nominal 400 MHz pulse
+(`pulse(-10,100,2.5)`), not 25 MHz. It is not the recorded physical clock
+waveform. Inventory `276` and capture `278` additionally request the actual
+synchronizer-clock and reset-pin curves from the existing native reference,
+so its phase/slew relationship can be tested without changing running `273`.
+The inactive native event/detector reset traces are evidence only; they cannot
+replace the explicit active-reset protocol used by detector tests.
