@@ -1,5 +1,5 @@
 from pathlib import Path
-import os,sys,time,json,hashlib
+import os,sys,time,json,hashlib,re
 root=Path.cwd();sys.path.insert(0,str(root/'verification/signoff400'))
 from resources import lease,identity
 from compiled_charge_v2 import execute
@@ -7,7 +7,9 @@ from analyze_xyce_runtime import analyze
 import argparse
 parser=argparse.ArgumentParser()
 parser.add_argument('--output',type=Path,required=True)
+parser.add_argument('--fine',type=int,default=111)
 args=parser.parse_args()
+if not 8<=args.fine<=247:parser.error('fine code must be in 8..247')
 out=args.output.resolve();out.mkdir(parents=True,exist_ok=False)
 original=root/'build/signoff400/prototype_v3_Xyce_full_C_programming_pilot_030'
 tool=root/'build/tools/xyce_umfpack_value_gather_001'
@@ -20,12 +22,19 @@ text=(original/'programming.spice').read_text().replace(str(original/'programmin
 assert 'exittime' not in text.lower()
 assert '.tran 10p 175n 0 1n' in text
 text=text.replace('.tran 10p 175n 0 1n','.tran 10p 260n 0 10p')
+pattern=r'^Vbias\d+\s+STARTUP_FINE\[(\d+)\]\s+0\s+\S+$'
+seen=[]
+def fine_bias(m):
+ bit=int(m.group(1));seen.append(bit)
+ return ' '.join(m.group(0).split()[:3])+(' 1.8' if args.fine&(1<<bit) else ' 0.0')
+text=re.sub(pattern,fine_bias,text,flags=re.MULTILINE)
+assert sorted(seen)==list(range(8))
 deck.write_text(text.replace('.end\n','.options DIST STRATEGY=2\n.end\n'))
 from common_v3 import source_pins
 save('candidate_snapshot.json',dict(source_sha256=source_pins(),active_release=json.loads((root/'verification/active_release.json').read_text())))
 inputs=[root/'verification/signoff400/requirements_v3.json',out/'candidate_snapshot.json',deck,original/'model.spice',tool/'Xyce',tool/'CheckedUMFPACK.h',helper,Path(__file__).resolve()];pins={str(p):sha(p) for p in inputs}
 start=time.clock_gettime(time.CLOCK_BOOTTIME);deadline=start+172500
-save('manifest.json',dict(input_sha256=pins,CPUs=list(range(16)),MPI_ranks=16,root_solver_threads=1,root_affinity=[0],memory_GiB=64,required_end_s=260e-9,measurement_start_s=200e-9,maximum_step_s=10e-12,reset_release_s=180e-9,qualification_pending=True,release_ready=False))
+save('manifest.json',dict(input_sha256=pins,CPUs=list(range(16)),MPI_ranks=16,root_solver_threads=1,root_affinity=[0],memory_GiB=64,startup_fine=args.fine,required_end_s=260e-9,measurement_start_s=200e-9,maximum_step_s=10e-12,reset_release_s=180e-9,qualification_pending=True,release_ready=False))
 save('owner.json',dict(pid=os.getpid(),birth=identity(os.getpid())))
 os.sched_setaffinity(0,set(range(16)));os.environ.update(OMP_NUM_THREADS='1',OMP_THREAD_LIMIT='1',OPENBLAS_NUM_THREADS='1')
 save('status.json',dict(state='running_loaded_startup_260ns',started_uptime=start,native_deadline_uptime=deadline))
