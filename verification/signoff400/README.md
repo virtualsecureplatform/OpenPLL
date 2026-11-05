@@ -7114,3 +7114,19 @@ python3 tools/xyce_streaming/run_controls.py \
 Use fresh output directories. The builder links the existing isolated Xyce
 archive without simulator patches. The control runner uses CPU 24, an 8 GiB
 address-space limit, and a 60 second timeout per small fixture.
+
+Exact compaction `148` is complete: 383,606,080 recorded knots became
+295,665,644 by removing only redundant constant-plateau interior knots across
+all 8,383 files. No voltage approximation was introduced. This receipt verifies
+file equivalence, not native memory fit or circuit behavior.
+
+`boundary_replay.cpp` generalizes the API control to the selected recorded
+boundary inventory. It keeps a source's current right guard in memory, enforces
+future-knot spacing above the DAC filter threshold, caps bootstrap at 1 ps,
+and uses the isolated ADC needed by the API. Native smoke `163` completed 2 ns;
+its source and PWL reference differed by at most 5.56e-16 V. Reference readback
+also matched the analytic PWL at the accepted timestamps within 5.56e-16 V.
+Selected control `164` is running through 21 ns on CPU 24, with comparison
+watcher `165`. It uses the same private devices, R and C as the PWL control.
+The watcher compares only positive accepted samples and never claims DC or
+physical-model qualification. These controls still precede oscillator startup.

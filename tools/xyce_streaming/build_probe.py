@@ -23,8 +23,9 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--manifest',required=True,type=Path)
     p.add_argument('--output',required=True,type=Path)
+    p.add_argument('--source',type=Path,default=Path(__file__).with_name('dac_replay_probe.cpp'))
     a=p.parse_args();out=a.output.resolve();out.mkdir(parents=True,exist_ok=False)
-    source=Path(__file__).with_name('dac_replay_probe.cpp').resolve()
+    source=a.source.resolve()
     cmds=commands(a.manifest.resolve(),source,out)
     (out/'commands.json').write_text(json.dumps(cmds,indent=2)+'\n')
     for i,command in enumerate(cmds):

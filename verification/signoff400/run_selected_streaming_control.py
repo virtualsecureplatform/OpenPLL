@@ -1,0 +1,78 @@
+"""Native memory-bounded recorded-boundary control; diagnostic only."""
+import argparse,json,os,re,sys,time
+from pathlib import Path
+from common_v3 import ROOT,save,sha,verify
+from resources import identity,lease
+from compiled_charge_v2 import execute
+
+
+def run(bench,replay,binary,reference,output,stop_ns):
+    if not 1<stop_ns<=21:raise ValueError('control endpoint must be within 1..21ns')
+    output.mkdir(parents=True,exist_ok=False)
+    save(output/'owner.json',dict(pid=os.getpid(),birth=identity(os.getpid())))
+    save(output/'status.json',dict(state='preparing_streaming_control',release_ready=False))
+    try:
+        r=json.loads((replay/'assessment.json').read_text())
+        a=json.loads((bench/'assessment.json').read_text())
+        if r.get('exact_replay_valid_through_s',0)<stop_ns*1e-9:raise ValueError('replay interval does not cover control')
+        verify(r['artifacts']);verify(a['artifacts'])
+        lines=(bench/'boundary_sources.spice').read_text().splitlines()
+        mapping=[];drivers=[]
+        for i,line in enumerate(lines):
+            m=re.fullmatch(r'Vboundary\d+ (\S+) 0 PWL FILE "([^"]+)"',line)
+            if not m:raise ValueError('unexpected prescribed source')
+            node=m[1];path=replay/f'boundary_{i}.pwl'
+            if str(path) not in r['artifacts']:raise ValueError('unpinned replay boundary')
+            mapping.append(f'{node} {path}\n')
+            drivers.append(f'YDAC boundary{i} {node} 0 boundary_model\n')
+        if len(mapping)!=r['boundary_files'] or len(mapping)!=a['required_boundary_files']:raise ValueError('boundary count mismatch')
+        (output/'boundaries.txt').write_text(''.join(mapping))
+        (output/'boundary_sources.spice').write_text(''.join(drivers))
+        nodes=['PLLOUT','CLKDIV_RETIMED','CONFIG_READY','CONFIG_BUSY','FAILED','TRACKING']
+        for name,width in [('COARSE_CODE',6),('DCO_CODE',8),('DLF_CODE',10)]:nodes.extend(f'{name}[{i}]' for i in range(width))
+        nodes.append('__parent_R_node_617')
+        (output/'outputs.txt').write_text('\n'.join(nodes)+'\n')
+        deck=output/'control.spice'
+        deck.write_text(f'''Selected recorded-boundary DAC streaming control; diagnostic
+.lib "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.include "{bench}/devices.spice"
+.include "{output}/boundary_sources.spice"
+.model boundary_model DAC(tr=0 tf=0)
+* ADC API readback is on an isolated ideal source, outside the private circuit.
+Vapi api_monitor 0 0
+YADC api_readback api_monitor 0 api_model R=1T WIDTH=1
+.model api_model ADC(settlingtime=1p uppervoltagelimit=1 lowervoltagelimit=0)
+Vpower VPWR 0 1.8
+Vbody VPB 0 1.8
+Vground VGND 0 0
+Vnb VNB 0 0
+.options parser model_binning=true
+.options device temp=27
+.options nonlin reltol=1e-5 abstol=1e-9
+.options timeint reltol=1e-5 abstol=1e-9
+.tran 1p {stop_ns}n 0 10p
+.print tran v(PLLOUT)
+.end
+''')
+        files=[deck,output/'boundaries.txt',output/'outputs.txt',output/'boundary_sources.spice',binary,reference,replay/'assessment.json',bench/'assessment.json',Path(__file__).resolve(),ROOT/'tools/xyce_streaming/boundary_replay.cpp']
+        pins={str(p):sha(p) for p in files};pins.update(r['artifacts']);pins.update(a['artifacts'])
+        save(output/'manifest.json',dict(input_sha256=pins,CPU=24,memory_GiB=48,native_cap_s=3600,
+            bootstrap_s=1e-12,isolated_ADC_readback=True,private_circuit_loading_preserved=True,
+            diagnostic=True,physical_models_qualified=False,release_ready=False))
+        os.sched_setaffinity(0,{24});os.environ.update(OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',OMP_THREAD_LIMIT='1')
+        deadline=time.clock_gettime(time.CLOCK_BOOTTIME)+3600
+        with lease(1,48,deadline):
+            save(output/'status.json',dict(state='native_streaming_control_running',release_ready=False))
+            execute([binary,deck,output/'boundaries.txt',output/'outputs.txt',str(stop_ns),output/'signals.csv'],output/'native.log',deadline,48)
+        verify(pins)
+        if 'BOUNDARY_REPLAY_COMPLETE' not in (output/'native.log').read_text():raise ValueError('missing native completion marker')
+        save(output/'status.json',dict(state='native_streaming_completed_comparison_pending',release_ready=False))
+    except BaseException as error:
+        save(output/'status.json',dict(state='stopped_without_qualification',reason=repr(error),release_ready=False));raise
+
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser(description=__doc__)
+    for name in ['bench','replay','binary','reference','output']:p.add_argument('--'+name,required=True,type=Path)
+    p.add_argument('--stop-ns',type=float,default=21)
+    a=p.parse_args();run(*(getattr(a,n).resolve() for n in ['bench','replay','binary','reference','output']),a.stop_ns)
