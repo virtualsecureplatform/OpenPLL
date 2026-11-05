@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "status": "conditional_characterization_in_progress",
+  "scope": "selected 400 MHz detector and event receivers; TT, 1.8 V, 27 C",
+  "completed_conditional_probes": [
+    {
+      "commanded_feedback_driver_offset_ns": 1,
+      "feedback_driver_is_physical_DIV_output": false,
+      "native_elapsed_s": 875.504,
+      "samples": 15059,
+      "all_saved_vectors_finite": true,
+      "assessment": "build/signoff400/selected_detector_phase_assessment_206/waveform_assessment/assessment.json",
+      "assessment_sha256": "35f5a1e86689716c7c6d4e12dc7a629cd8090684d83393c6642d78c569e75dbb",
+      "missing_physical_input_observations": [
+        "reference_pin",
+        "feedback_pin",
+        "detector_reset_pin"
+      ],
+      "detector_up_rises_ns": [
+        22.665025476905157,
+        62.664330362979946
+      ],
+      "detector_dn_rises_ns": [],
+      "active_event_rises_ns": [
+        23.131101819758097
+      ],
+      "active_event_falls_ns": [
+        63.119164015671934
+      ]
+    }
+  ],
+  "diagnostic_boundary": {
+    "exterior_voltages": "full native initial sample, held constant",
+    "omitted_primitive_load_count": 12,
+    "omitted_load_physical_cells": 3,
+    "partition": "build/signoff400/selected_detector_driver_passive_cut_202.json",
+    "prescribed_clock_and_reset_roles": "build/signoff400/selected_detector_driver_stimulus_ports_201.json"
+  },
+  "pending_probe": "build/signoff400/selected_detector_phase_minus1ns_209",
+  "pending_assessment": "build/signoff400/selected_detector_phase_minus1ns_assessment_210",
+  "next_measurements": [
+    "opposite-polarity repeated capture",
+    "actual detector-pin clock slews and phases",
+    "phase decision boundary near zero",
+    "receiver-load sensitivity",
+    "exterior switching holdouts"
+  ],
+  "detector_fit_qualified": false,
+  "receiver_loading_bounded": false,
+  "exterior_condition_validated": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}
