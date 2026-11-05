@@ -923,3 +923,10 @@ next-stage clock. The prepared deck retains all original device lines; its
 only changed shared boundary source activates that previously held clock.
 Native measurement and automatic two-stage RTL comparison are pending.
 See `verification/prototype400/selected_second_stage_controls.json`.
+
+Full FF, SS, SF and FS reset-state initializations now all completed normally
+with every saved voltage finite. These are reset-only snapshots, without
+tuning or tracking qualification. The exclusive full-circuit queue has moved
+to the requested TT coarse20/fine133 measurement. Three new small controls
+also match the pinned live executable and all 319 PDK include-file bytes.
+See `verification/prototype400/selected_complete_corner_initializations.json`.

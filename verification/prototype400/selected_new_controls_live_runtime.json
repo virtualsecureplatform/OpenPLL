@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "observation": {
+    "path": "build/signoff400/selected_new_controls_live_runtime_349.json",
+    "sha256": "1f8d7a02a12413b3fbd5f1f74d291d9784bbb10079bc16c3b2c93207e59a1c35"
+  },
+  "scope": "live executable and static PDK include superset for three controls",
+  "historical_launch_attestation": false,
+  "release_ready": false
+}

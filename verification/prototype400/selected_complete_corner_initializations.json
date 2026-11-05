@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "scope": "full-circuit non-TT reset-state initialization at 1.8 V and 27 C",
+  "assessment": {
+    "path": "build/signoff400/selected_full_corner_initial_states_306/assessment.json",
+    "sha256": "4d9a70a2c385a46bc2ac6c06c92044e41df7725f8e06a1f84fd53de92c29076e"
+  },
+  "corners": [
+    "ff",
+    "ss",
+    "sf",
+    "fs"
+  ],
+  "all_initializations_native_exit_zero": true,
+  "all_saved_values_finite": true,
+  "reset_state_only": true,
+  "tuning_qualified": false,
+  "tracking_qualified": false,
+  "release_ready": false
+}
