@@ -404,17 +404,146 @@
   "exterior_condition_validated": false,
   "physical_models_qualified": false,
   "release_ready": false,
-  "pending_probes": [],
+  "pending_probes": [
+    {
+      "commanded_feedback_driver_offset_ns": -0.109375,
+      "case": "build/signoff400/selected_detector_nearzero_case_229",
+      "CPU": 26
+    },
+    {
+      "commanded_feedback_driver_offset_ns": -0.09375,
+      "case": "build/signoff400/selected_detector_nearzero_case_230",
+      "CPU": 27
+    },
+    {
+      "commanded_feedback_driver_offset_ns": -0.078125,
+      "case": "build/signoff400/selected_detector_nearzero_case_231",
+      "CPU": 28
+    }
+  ],
   "observed_opposite_decision_interval_ps": [
     -119.7950912803023,
     -57.29634376655923
   ],
   "decision_interval_qualified": false,
   "full_initial_voltage_snapshot": "build/signoff400/selected_full_initial_voltage_snapshot_216",
-  "pending_load_holdouts": [
-    "build/signoff400/selected_detector_loaded_case_218",
-    "build/signoff400/selected_detector_loaded_case_223",
-    "build/signoff400/selected_detector_loaded_case_224"
+  "pending_load_holdouts": [],
+  "live_runtime_capture": "build/signoff400/selected_detector_live_runtime_group_222.json",
+  "completed_conditional_load_holdouts": [
+    {
+      "commanded_feedback_driver_offset_ns": 0,
+      "response": "build/signoff400/selected_detector_loaded_case_218/response.json",
+      "response_sha256": "a4cb376b35d286cee95aacb932cd1921550b912f33244a3d155ac8cc30bfdd57",
+      "measured_feedback_minus_reference_ps": [
+        4.22375103951822,
+        4.223501228395321
+      ],
+      "decisions": [
+        "up",
+        "up"
+      ],
+      "sampled_decisions_match_baseline": true,
+      "measured_pin_phase_difference_from_baseline_ps": [
+        -0.9989568534649607,
+        -0.999074149710566
+      ],
+      "global_capture": {
+        "up": {
+          "detector_rises": 2,
+          "event_toggles": 2,
+          "capture_latencies_ps": [
+            466.08635590650135,
+            454.8385111176856
+          ],
+          "one_toggle_per_detector_rise": true
+        },
+        "dn": {
+          "detector_rises": 0,
+          "event_toggles": 0,
+          "capture_latencies_ps": [],
+          "one_toggle_per_detector_rise": true
+        }
+      }
+    },
+    {
+      "commanded_feedback_driver_offset_ns": -0.125,
+      "response": "build/signoff400/selected_detector_loaded_case_223/response.json",
+      "response_sha256": "b25e9e6588ccc6ff45ae974a330c1510cee67f5a3f83b94bcfec27102084a223",
+      "measured_feedback_minus_reference_ps": [
+        -120.79200090953535,
+        -120.79212511834925
+      ],
+      "decisions": [
+        "dn",
+        "dn"
+      ],
+      "sampled_decisions_match_baseline": true,
+      "measured_pin_phase_difference_from_baseline_ps": [
+        -0.9969096292330448,
+        -0.9965660614241756
+      ],
+      "global_capture": {
+        "up": {
+          "detector_rises": 0,
+          "event_toggles": 0,
+          "capture_latencies_ps": [],
+          "one_toggle_per_detector_rise": true
+        },
+        "dn": {
+          "detector_rises": 2,
+          "event_toggles": 2,
+          "capture_latencies_ps": [
+            473.86764934174863,
+            456.9615352807048
+          ],
+          "one_toggle_per_detector_rise": true
+        }
+      }
+    },
+    {
+      "commanded_feedback_driver_offset_ns": -0.0625,
+      "response": "build/signoff400/selected_detector_loaded_case_224/response.json",
+      "response_sha256": "95cb8209bcf0c708011332ce3983b2f8690ed86526de349e7af8bb7d893b9c56",
+      "measured_feedback_minus_reference_ps": [
+        -58.29293314378603,
+        -58.29294888069114
+      ],
+      "decisions": [
+        "up",
+        "up"
+      ],
+      "sampled_decisions_match_baseline": true,
+      "measured_pin_phase_difference_from_baseline_ps": [
+        -0.9967155838808139,
+        -0.9966051141319099
+      ],
+      "global_capture": {
+        "up": {
+          "detector_rises": 2,
+          "event_toggles": 2,
+          "capture_latencies_ps": [
+            466.08723684189357,
+            454.8408095175418
+          ],
+          "one_toggle_per_detector_rise": true
+        },
+        "dn": {
+          "detector_rises": 0,
+          "event_toggles": 0,
+          "capture_latencies_ps": [],
+          "one_toggle_per_detector_rise": true
+        }
+      }
+    }
   ],
-  "live_runtime_capture": "build/signoff400/selected_detector_live_runtime_group_222.json"
+  "loaded_observed_opposite_decision_interval_ps": [
+    -120.79200090953535,
+    -58.29294888069114
+  ],
+  "expanded_load_scope": {
+    "primitives": 2395,
+    "retained_passive_cards": 33868,
+    "remaining_external_primitive_load_obligations": 68,
+    "partition": "build/signoff400/selected_detector_full_buffer_load_cut_217.json"
+  }
 }
