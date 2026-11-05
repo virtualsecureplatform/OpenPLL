@@ -147,5 +147,185 @@
     "receiver_setup_hold_qualified": false,
     "complete_controller_timing_qualified": false,
     "release_ready": false
+  },
+  "additional_publication_adapter_holdouts": {
+    "records": [
+      {
+        "path": "build/signoff400/selected_receiver_publication_phase20_holdout_324/assessment.json",
+        "sha256": "4fe03deea53051f49d030c028e56d0459a310a650dcfe487078f03d22a3a4b6f",
+        "all_observed_counts_match": true,
+        "all_observed_sampling_cycles_match": true,
+        "native_publications": 2,
+        "records": [
+          {
+            "role": "up",
+            "physical_observation_roles": {
+              "event": "event1",
+              "sync": "synchronizer0"
+            },
+            "native_event_count": 1,
+            "native_first_stage_count": 1,
+            "logical_event_count": 1,
+            "logical_first_stage_count": 1,
+            "counts_match": true,
+            "samples": [
+              {
+                "native_event_ns": 23.13208188625367,
+                "native_first_stage_ns": 32.07344502653417,
+                "logical_first_stage_ns": 31.893,
+                "earliest_clock_index_after_native_data": 0,
+                "native_sampling_clock_index": 0,
+                "logical_sampling_clock_index": 0,
+                "values_match": true,
+                "cycles_match": true,
+                "native_data_lead_ps": 8761.029597410825,
+                "native_first_stage_clock_to_Q_ps": 180.33354286967906
+              }
+            ]
+          },
+          {
+            "role": "dn",
+            "physical_observation_roles": {
+              "event": "event0",
+              "sync": "synchronizer1"
+            },
+            "native_event_count": 1,
+            "native_first_stage_count": 1,
+            "logical_event_count": 1,
+            "logical_first_stage_count": 1,
+            "counts_match": true,
+            "samples": [
+              {
+                "native_event_ns": 63.13157242573834,
+                "native_first_stage_ns": 65.2269109042521,
+                "logical_first_stage_ns": 65.044,
+                "earliest_clock_index_after_native_data": 13,
+                "native_sampling_clock_index": 13,
+                "logical_sampling_clock_index": 13,
+                "values_match": true,
+                "cycles_match": true,
+                "native_data_lead_ps": 1912.7321614624293,
+                "native_first_stage_clock_to_Q_ps": 182.60631705132369
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "build/signoff400/selected_receiver_publication_phase30_holdout_325/assessment.json",
+        "sha256": "325a2262b981be7b4e42d547b4e7bc1a9f7a369612ea9629e874f0dc291f7af0",
+        "all_observed_counts_match": true,
+        "all_observed_sampling_cycles_match": true,
+        "native_publications": 2,
+        "records": [
+          {
+            "role": "up",
+            "physical_observation_roles": {
+              "event": "event1",
+              "sync": "synchronizer0"
+            },
+            "native_event_count": 1,
+            "native_first_stage_count": 1,
+            "logical_event_count": 1,
+            "logical_first_stage_count": 1,
+            "counts_match": true,
+            "samples": [
+              {
+                "native_event_ns": 23.132081945062748,
+                "native_first_stage_ns": 42.07344451068757,
+                "logical_first_stage_ns": 41.893,
+                "earliest_clock_index_after_native_data": 0,
+                "native_sampling_clock_index": 0,
+                "logical_sampling_clock_index": 0,
+                "values_match": true,
+                "cycles_match": true,
+                "native_data_lead_ps": 18761.029538601728,
+                "native_first_stage_clock_to_Q_ps": 180.33302702309584
+              }
+            ]
+          },
+          {
+            "role": "dn",
+            "physical_observation_roles": {
+              "event": "event0",
+              "sync": "synchronizer1"
+            },
+            "native_event_count": 1,
+            "native_first_stage_count": 1,
+            "logical_event_count": 1,
+            "logical_first_stage_count": 1,
+            "counts_match": true,
+            "samples": [
+              {
+                "native_event_ns": 63.13108423760027,
+                "native_first_stage_ns": 65.02941305793321,
+                "logical_first_stage_ns": 64.847,
+                "earliest_clock_index_after_native_data": 9,
+                "native_sampling_clock_index": 9,
+                "logical_sampling_clock_index": 9,
+                "values_match": true,
+                "cycles_match": true,
+                "native_data_lead_ps": 1715.726304008747,
+                "native_first_stage_clock_to_Q_ps": 182.6025163241951
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "build/signoff400/selected_receiver_publication_falling_holdout_326/assessment.json",
+        "sha256": "32e25a8b0ab7b1714a01189471adaaa0c1ac2c1a3b5d83fbcb8965330f0b06b3",
+        "all_observed_counts_match": true,
+        "all_observed_sampling_cycles_match": true,
+        "native_publications": 1,
+        "records": [
+          {
+            "role": "up",
+            "physical_observation_roles": {
+              "event": "event1",
+              "sync": "synchronizer0"
+            },
+            "native_event_count": 1,
+            "native_first_stage_count": 1,
+            "logical_event_count": 1,
+            "logical_first_stage_count": 1,
+            "counts_match": true,
+            "samples": [
+              {
+                "native_event_ns": 63.132104091435174,
+                "native_first_stage_ns": 64.82470432362628,
+                "logical_first_stage_ns": 64.644,
+                "earliest_clock_index_after_native_data": 13,
+                "native_sampling_clock_index": 13,
+                "logical_sampling_clock_index": 13,
+                "values_match": true,
+                "cycles_match": true,
+                "native_data_lead_ps": 1512.2004957655904,
+                "native_first_stage_clock_to_Q_ps": 180.39973642551388
+              }
+            ]
+          },
+          {
+            "role": "dn",
+            "physical_observation_roles": {
+              "event": "event0",
+              "sync": "synchronizer1"
+            },
+            "native_event_count": 0,
+            "native_first_stage_count": 0,
+            "logical_event_count": 0,
+            "logical_first_stage_count": 0,
+            "counts_match": true,
+            "samples": []
+          }
+        ]
+      }
+    ],
+    "all_observed_sampling_cycles_match": true,
+    "training_control_unchanged": "build/signoff400/selected_detector_real_feedback_driver_case_273",
+    "parameters_refitted": false,
+    "scope": "TT first positive event publication per active role; local receiver-clock boundary, including first-reference falling aperture",
+    "complete_controller_timing_qualified": false,
+    "release_ready": false
   }
 }

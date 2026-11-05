@@ -883,3 +883,11 @@ rising-neighborhood detector model matches the observed decision and output
 edges within its existing fit-band-plus-quantization allowance, without refit.
 One opposite-side companion and one repeated-DN publication control are live;
 these add validation points rather than assuming a full aperture bound.
+
+The receiver publication adapter also passes independent native phase20,
+phase30 and first-reference falling-aperture controls without refitting. The
+five active event publications in these three controls all land on the native
+first-stage clock cycles, alongside the two earlier recorded-clock holdout
+events. An inactive role is checked for zero events rather than fabricated
+activity. These are local receiver-boundary checks; later stages, opposite
+event transitions and all-corner full-controller timing remain open.
