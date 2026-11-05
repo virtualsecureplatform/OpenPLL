@@ -49,12 +49,14 @@
     "transient_logic_excursion": false
   },
   "history_control": {
-    "native": "build/signoff400/selected_DCO_history_control_291",
+    "native": "build/signoff400/selected_DCO_history_control_293",
     "programming_history_until_ns": 170,
     "then": "hold actual programming input voltages",
     "reset": "complete recorded actual driver input curve",
     "duration_ns": 260,
-    "status_at_recording": "preparing"
+    "status_at_recording": "preparing",
+    "execution": "pinned release container",
+    "supersedes_preparse_environment_failure": "build/signoff400/selected_DCO_history_control_291"
   },
   "floating_charge_causality_proven": false,
   "frequency_correlation_qualified": false,

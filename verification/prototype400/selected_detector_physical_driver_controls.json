@@ -13,7 +13,17 @@
     ],
     "one_event_per_detector_pulse": true,
     "feedback_Q_voltage_prescribed": false,
-    "synchronizer_clock": "synthetic 400 MHz"
+    "synchronizer_clock": "synthetic 400 MHz",
+    "frozen_fit_holdout": {
+      "path": "build/signoff400/selected_frozen_detector_real_driver_holdout_292/assessment.json",
+      "sha256": "85fa54753c119211383aded0862c9bdf4593df894ccc868c6b0f822886b48005",
+      "parameters_refitted": false,
+      "all_sampled_signs_match": true,
+      "sampled_rising_phase_count": 1,
+      "all_event_counts_match": true,
+      "all_edges_within_observed_fit_band": true,
+      "maximum_observed_edge_error_ps": 0.4454650894842871
+    }
   },
   "recorded_synchronizer_clock": {
     "native": "build/signoff400/selected_detector_recorded_sync_clock_case_280/native",
