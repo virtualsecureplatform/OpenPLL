@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scope": "TT conditional detector controls; not a release qualification",
+  "real_feedback_driver": {
+    "status": "completed_normally",
+    "response": {
+      "path": "build/signoff400/selected_detector_real_feedback_driver_case_273/response.json",
+      "sha256": "6fa1b2c136b7c8d511f66c7bfc72311e476ce2584aeb6048f1bc739d4b0cc5ed"
+    },
+    "observed_decisions": [
+      "dn",
+      "up"
+    ],
+    "one_event_per_detector_pulse": true,
+    "feedback_Q_voltage_prescribed": false,
+    "synchronizer_clock": "synthetic 400 MHz"
+  },
+  "recorded_synchronizer_clock": {
+    "native": "build/signoff400/selected_detector_recorded_sync_clock_case_280/native",
+    "status_at_recording": "running",
+    "purpose": "Sensitivity to actual native 392.31 MHz carrier phase and slew"
+  },
+  "falling_aperture": {
+    "native": "build/signoff400/selected_detector_falling_aperture_case_286/native",
+    "status_at_recording": "running",
+    "first_reference_rise_target_ns": 60,
+    "feedback_Q_anchor_target_ns": 39.6,
+    "pre_reference_detector_activity_must_be_checked": true
+  },
+  "live_runtime": {
+    "path": "build/signoff400/selected_recorded_clock_aperture_live_runtime_287.json",
+    "sha256": "a1b0fe9bab11ed32c48aaed129c403d50b06bafc78882f8e5ad3b1692da6b6c9"
+  },
+  "detector_fit_qualified": false,
+  "release_ready": false
+}
