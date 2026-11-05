@@ -232,11 +232,72 @@
     "receiver_loading_bounded": false,
     "frequency_correlation_qualified": false,
     "MPI_matched_comparison": {
-      "status_at_recording": "waiting_for_original_MPI_baseline",
-      "output": "build/signoff400/selected_DCO_MPI_matched_load_comparison_307",
-      "base": "build/signoff400/selected_DCO_parallel_control_282",
-      "target": "build/signoff400/selected_DCO_receiver_load_control_284",
-      "strict_circuit_superset_and_common_boundary_identity_required": true,
+      "path": "build/signoff400/selected_DCO_MPI_matched_load_comparison_307/assessment.json",
+      "sha256": "9b4a241795948258d2e4fd9bf58ce19164559e0169eba6514711c69e3f0459a4",
+      "status_at_recording": "completed",
+      "frequency_comparisons": {
+        "common": {
+          "window_after_first_rise_ns": [
+            10,
+            40
+          ],
+          "baseline": {
+            "rising_edges": 12,
+            "frequency_mhz": 392.65470491136256,
+            "minimum_period_ns": 2.54631967991655,
+            "maximum_period_ns": 2.5474156319953387
+          },
+          "expanded_load": {
+            "rising_edges": 12,
+            "frequency_mhz": 392.6386776374398,
+            "minimum_period_ns": 2.5464340972546253,
+            "maximum_period_ns": 2.5475017609494195
+          },
+          "difference_ppm": -40.817730495246174
+        },
+        "early": {
+          "window_after_first_rise_ns": [
+            10,
+            25
+          ],
+          "baseline": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.60568030205894,
+            "minimum_period_ns": 2.546811182722994,
+            "maximum_period_ns": 2.5474156319953387
+          },
+          "expanded_load": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.5897950789576,
+            "minimum_period_ns": 2.5469127927466673,
+            "maximum_period_ns": 2.5475017609494195
+          },
+          "difference_ppm": -40.46101189658646
+        },
+        "late": {
+          "window_after_first_rise_ns": [
+            25,
+            40
+          ],
+          "baseline": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.70172296544587,
+            "minimum_period_ns": 2.54631967991655,
+            "maximum_period_ns": 2.5466152761630454
+          },
+          "expanded_load": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.68595946167596,
+            "minimum_period_ns": 2.5464340972546253,
+            "maximum_period_ns": 2.5467043058571477
+          },
+          "difference_ppm": -40.14116274020374
+        }
+      },
+      "physical_circuit_strict_superset": true,
+      "added_logical_cards": 43425,
+      "common_boundary_voltages_identical": true,
+      "MPI_ranks": 4,
       "receiver_loading_bounded": false
     }
   },
@@ -253,5 +314,20 @@
       23
     ],
     "purpose": "Measure tuning sensitivity with the same expanded receiver partition; no extrapolated closed-loop point"
+  },
+  "MPI_consistency_and_performance": {
+    "path": "build/signoff400/selected_DCO_parallel_control_282/assessment.json",
+    "sha256": "18e9e1204388c3abba4e48788ebcd409a803ddbae94e74784e1ff3fb0bf5df9c",
+    "status_at_recording": "native_completed_normally",
+    "reference_elapsed_s": 5903.15,
+    "candidate_elapsed_s": 5267.53,
+    "wall_speedup": 1.1206675614566979,
+    "frequency_difference_ppm": -0.09198276518240789,
+    "maximum_oscillator_edge_difference_ps": 0.021001724991975834,
+    "MPI_ranks": 4,
+    "scope": "same 5610-primitive circuit and solver controls; one measured execution per mode",
+    "policy": "Keep serial as the reduced-control default for independent batches; use four ranks selectively for latency when spare cores are available. Existing live jobs continue unchanged.",
+    "timing_repeatability_characterized": false,
+    "numerical_convergence_qualified": false
   }
 }

@@ -815,3 +815,13 @@ a one-hour cap. The queue observes other full-native workers and does not run
 alongside one. These snapshots establish corner-specific initialization only;
 programming histories, target tuning and interface qualification remain open.
 See `verification/prototype400/selected_corner_initial_states.json`.
+
+The completed 5610-device DCO MPI control measures 1.1207x wall speedup from
+one rank to four (5903.15 s versus 5267.53 s). The same circuit's measured
+frequency differs by -0.092 ppm and its maximum oscillator edge difference is
+0.0211 ps. This is one timing trial, not numerical convergence qualification.
+Independent reduced-control batches retain the serial default; four ranks can
+reduce latency when cores are otherwise spare. The matched four-rank receiver
+load comparison isolates a -40.82 ppm shift with a strict circuit superset and
+identical common boundary voltages. Remaining exterior loads are not bounded,
+and the full-circuit frequency discrepancy remains unresolved.
