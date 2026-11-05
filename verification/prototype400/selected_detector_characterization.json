@@ -564,9 +564,7 @@
   ],
   "decision_interval_qualified": false,
   "full_initial_voltage_snapshot": "build/signoff400/selected_full_initial_voltage_snapshot_216",
-  "pending_load_holdouts": [
-    "build/signoff400/selected_detector_loaded_case_233"
-  ],
+  "pending_load_holdouts": [],
   "live_runtime_capture": "build/signoff400/selected_detector_live_runtime_group_222.json",
   "completed_conditional_load_holdouts": [
     {
@@ -673,11 +671,46 @@
           "one_toggle_per_detector_rise": true
         }
       }
+    },
+    {
+      "commanded_feedback_driver_offset_ns": -0.109375,
+      "response": "build/signoff400/selected_detector_loaded_case_233/response.json",
+      "response_sha256": "e04290a13045c8bc78fe9d49e15357571c47db5aeb322cb3d5c5fd13d9db89cd",
+      "measured_feedback_minus_reference_ps": [
+        -105.16764050610306,
+        -105.16758629410106
+      ],
+      "decisions": [
+        "up",
+        "up"
+      ],
+      "sampled_decisions_match_baseline": true,
+      "measured_pin_phase_difference_from_baseline_ps": [
+        -0.9972665194339925,
+        -0.9970738061255702
+      ],
+      "global_capture": {
+        "up": {
+          "detector_rises": 2,
+          "event_toggles": 2,
+          "capture_latencies_ps": [
+            466.08905467217454,
+            454.8403782285888
+          ],
+          "one_toggle_per_detector_rise": true
+        },
+        "dn": {
+          "detector_rises": 0,
+          "event_toggles": 0,
+          "capture_latencies_ps": [],
+          "one_toggle_per_detector_rise": true
+        }
+      }
     }
   ],
   "loaded_observed_opposite_decision_interval_ps": [
     -120.79200090953535,
-    -58.29294888069114
+    -105.16764050610306
   ],
   "expanded_load_scope": {
     "primitives": 2395,
