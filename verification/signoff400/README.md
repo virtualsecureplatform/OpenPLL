@@ -7237,3 +7237,20 @@ complete finite ordered samples through 9.0947 ns, short of the required 21 ns.
 This is a runtime-budget result, not a circuit-failure or completed waveform
 comparison result. The completed streaming control remains the bounded replay
 path under investigation; it does not yet qualify tuning or oscillator behavior.
+
+Selected detector inventory `181` verifies every native primitive's terminal
+mapping against the same physical sidecar and original wire model. The detector
+contains 1,782 primitives, 66 signal nodes, 1,414 incident capacitors (1,113 with
+an external endpoint), 619 remote RC nodes, and five crossing wire resistors.
+Its hierarchical view has 59 formal ports; nine logical signal/supply roles are
+resolved, including formal `SUB` connected to parent `VGND`. The remaining 50
+hierarchical ports are not assumed to be independent voltage inputs. There are
+29 detector primitives shared with the current DCO partition.
+
+`bind_selected_detector_ports.py` uses the wire-contraction sidecar to resolve
+the five physical terminals (`182`). Old output names alone do not work after
+R insertion. REF maps to `__parent_R_node_3003`, CLKDIVR to
+`__parent_R_node_2885`, detector RESET_N to `__parent_R_node_3059`, and the two
+outputs to `__parent_R_node_3055`/`3057`. The parent drives detector RESET_N from
+TRACKING. These bindings prepare a correctly bounded interface bench; receiver
+loading and active phase response remain unqualified.
