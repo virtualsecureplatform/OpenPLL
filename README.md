@@ -806,3 +806,12 @@ pair to the declared search. Regression controls include a passing 400 MHz
 trace, a falsely marked 500 MHz trace, missing control provenance and altered
 phase coordinates. This strengthens evidence checking without changing the
 prototype acceptance limits or qualifying any current diagnostic model.
+
+A serial full-circuit reset-state queue is waiting for the original TT fine-112
+calibration assessment. It will capture FF, SS, SF and FS initial voltages in
+1 ps native runs, retaining every saved voltage and the same candidate circuit.
+Each case uses the pinned release container, 16 ranks, a 64 GiB reservation and
+a one-hour cap. The queue observes other full-native workers and does not run
+alongside one. These snapshots establish corner-specific initialization only;
+programming histories, target tuning and interface qualification remain open.
+See `verification/prototype400/selected_corner_initial_states.json`.
