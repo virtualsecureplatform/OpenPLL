@@ -37,5 +37,18 @@
   "integration_algorithm_matched": false,
   "numerical_convergence_qualified": false,
   "fast_model_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "physical_basis_audit": {
+    "assessment": "build/signoff400/selected_DCO_model_basis_audit_240.json",
+    "assessment_sha256": "fe7837a16edf17ace72975c783bdca60139686324a60b1553f119e7287bdf52f",
+    "same_assembled_candidate": true,
+    "isolated_nominal_wire_resistors": 2510,
+    "maximum_wire_value_relative_difference": 0.0,
+    "internal_driver_networks_compared": 53,
+    "different_internal_driver_anchors": 0,
+    "externally_driven_child_input_networks_not_compared": 303,
+    "capacitance_operator_equivalence_validated": false,
+    "external_driver_impedance_equivalence_validated": false,
+    "initial_history_equivalence_validated": false
+  }
 }
