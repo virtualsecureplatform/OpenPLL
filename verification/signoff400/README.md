@@ -7271,3 +7271,14 @@ interface probe must cover the observed input-slew asymmetry, actual receiver
 loading and relevant holdouts before the historical detector fit can contribute
 to release evidence. The existing closed-loop bench already drives its detector
 reset from the actual RTL BBPD_RESET_N output, which is assigned TRACKING.
+
+Receiver inventory `186` follows actual LEF pin directions through clock and
+data fanout, rather than assuming a direct detector-to-flop connection. It
+identifies 14 parent cells/484 primitives: ten HS clkbuf_16 cells, two HS dfrtp_1
+cells and two HS xnor2_1 cells. Each detector output reaches one event clock
+and the other receiver's D input, matching cross-channel inhibition. Backward
+D-input closure finds no unresolved input-driver components or external state
+inputs. Each Q output additionally drives a downstream HS dfrtp_1; that loading
+and other coupled boundary behavior still need bounds before phase-bench use.
+No receiver substitute load or active phase-response qualification is emitted.
+The LEF snapshots in `185` match the selected candidate's existing proof hashes.
