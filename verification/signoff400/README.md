@@ -7219,3 +7219,21 @@ shares its captured controller mount namespace. The declared image digest
 matches the previously recorded release-tool image. These are live-namespace
 observations, not proof of a historical run's image binding or corner selection;
 `historical_reference_runtime_attested` and physical qualification remain false.
+
+The diagnostic matrix now accepts `--presets FILE` for explicit startup
+programming by corner. The JSON object must contain exactly `tt`, `ff`, `ss`,
+`sf`, and `fs`; each value must contain integer `coarse`, `seed`, and `polarity`
+fields within the existing programming limits. Each startup code must already
+have a measured point in its corner registry. The file is pinned and each case
+records its actual preset. KI/KP remain common across all 60 cases. Without this
+option, the scalar startup arguments remain common defaults. No measured
+all-corner presets have been invented or supplied; preflight `177` still
+requests the four absent process-corner registries and launches no simulations.
+
+PWL conditional control `153` reached its one-hour native budget and stopped
+without qualification. Watcher `157` also stopped explicitly; neither job is
+restarted. Review `178` preserves the final partial RAW and verifies 4,550
+complete finite ordered samples through 9.0947 ns, short of the required 21 ns.
+This is a runtime-budget result, not a circuit-failure or completed waveform
+comparison result. The completed streaming control remains the bounded replay
+path under investigation; it does not yet qualify tuning or oscillator behavior.

@@ -25,11 +25,26 @@ def inventory(paths):
     return models
 
 
-def execute(paths, output, ki=4, kp=0, coarse=20, seed=111, polarity=1):
+def startup_presets(path, coarse, seed, polarity):
+    if path is None:
+        values = {corner: dict(coarse=coarse, seed=seed, polarity=polarity) for corner in CORNERS}
+    else:
+        values = json.loads(path.read_text())
+        if not isinstance(values, dict) or set(values) != set(CORNERS):
+            raise ValueError('explicit presets must cover exactly five corners')
+    for corner, value in values.items():
+        if not isinstance(value, dict) or set(value) != {'coarse', 'seed', 'polarity'}:
+            raise ValueError('coarse, seed and polarity required for ' + corner)
+        if any(type(v) is not int for v in value.values()) or not 0 <= value['coarse'] <= 47 or not 8 <= value['seed'] <= 247 or value['polarity'] not in (0, 1):
+            raise ValueError('invalid startup preset for ' + corner)
+    return values
+
+
+def execute(paths, output, ki=4, kp=0, coarse=20, seed=111, polarity=1, presets_path=None):
     if not 1 <= ki <= 255 or not 0 <= kp <= 31:
         raise ValueError('invalid common gains')
-    if not 0 <= coarse <= 47 or not 8 <= seed <= 247 or polarity not in (0, 1):
-        raise ValueError('invalid common startup preset')
+    preset_digest = sha(presets_path) if presets_path is not None else None
+    presets = startup_presets(presets_path, coarse, seed, polarity)
     profile = spec()
     if tuple(profile["corners"]) != CORNERS or profile["reference_phase_offsets_ns"] != [0, 10, 20, 30] or len(profile["scenarios"]) != 3:
         raise ValueError("matrix does not match release profile")
@@ -39,19 +54,22 @@ def execute(paths, output, ki=4, kp=0, coarse=20, seed=111, polarity=1):
     for path in (Path(__file__).resolve(), Path(__file__).with_name("run_selected_mixed_signal.py"),
                  Path(__file__).with_name("selected_model_registry.py"), PROFILE):
         pins[str(path)] = sha(path)
+    if presets_path is not None:
+        pins[str(presets_path.resolve())] = preset_digest
     requests = []
     for corner in CORNERS:
         if corner not in models:
             requests.append(dict(corner=corner, reason='missing_corner_registry'))
             continue
         path, model = models[corner]
+        preset = presets[corner]
         pins[str(path)] = sha(path)
         for domain in ('analog', 'interface'):
             pins.update(model[domain]['input_sha256'])
         for point in model['points']:
             pins[point['receipt']] = point['receipt_sha256']
-        if not any(p['coarse'] == coarse and p['fine'] == seed for p in model['points']):
-            requests.append(dict(corner=corner, coarse=coarse, fine=seed,
+        if not any(p['coarse'] == preset['coarse'] and p['fine'] == preset['seed'] for p in model['points']):
+            requests.append(dict(corner=corner, coarse=preset['coarse'], fine=preset['seed'],
                                  reason='missing_measured_startup_point'))
         if 'detector_rtl' not in model['interface']:
             raise ValueError('registry interface requires detector_rtl')
@@ -60,8 +78,8 @@ def execute(paths, output, ki=4, kp=0, coarse=20, seed=111, polarity=1):
             raise ValueError('detector must be pinned by interface identity')
     report = dict(state='needs_native_calibration' if requests else 'matrix_running',
                   expected_cases=60, records=[], measurement_requests=requests,
-                  ki=ki, kp=kp, coarse=coarse, seed=seed, polarity=polarity,
-                  input_sha256=pins, diagnostic=True,
+                  ki=ki, kp=kp, startup_defaults=dict(coarse=coarse, seed=seed, polarity=polarity),
+                  startup_presets=presets, input_sha256=pins, diagnostic=True,
                   functional_matrix_pass=False, physical_models_qualified=False,
                   release_ready=False)
     save(output/'assessment.json', report)
@@ -70,15 +88,16 @@ def execute(paths, output, ki=4, kp=0, coarse=20, seed=111, polarity=1):
         return report
     for corner in CORNERS:
         path, model = models[corner]
+        preset = presets[corner]
         receipts = [Path(p['receipt']) for p in model['points']]
         detector = Path(model['interface']['detector_rtl']).resolve()
         for scenario in range(3):
             for phase in (0, 10, 20, 30):
                 verify(pins)
                 directory = output/f'{corner}_scenario{scenario}_phase{phase}'
-                result = run(receipts, detector, directory, ki, kp, coarse, seed,
-                             polarity, scenario, phase, path)
-                report['records'].append(dict(corner=corner, scenario=scenario,
+                result = run(receipts, detector, directory, ki, kp, preset['coarse'], preset['seed'],
+                             preset['polarity'], scenario, phase, path)
+                report['records'].append(dict(corner=corner, scenario=scenario, startup_preset=preset,
                     phase_offset_ns=phase, assessment=str(directory/'assessment.json'),
                     assessment_sha256=sha(directory/'assessment.json'),
                     functional_trace_pass=bool(result.get('functional_trace_pass')),
@@ -117,8 +136,9 @@ if __name__ == '__main__':
     p.add_argument('--coarse', type=int, default=20)
     p.add_argument('--seed', type=int, default=111)
     p.add_argument('--polarity', type=int, choices=(0, 1), default=1)
+    p.add_argument('--presets', type=Path, help='JSON mapping each corner to coarse, seed and polarity; scalar options are defaults when omitted')
     a = p.parse_args()
     result = execute(a.registry, a.output.resolve(), a.ki, a.kp,
-                     a.coarse, a.seed, a.polarity)
+                     a.coarse, a.seed, a.polarity, a.presets.resolve() if a.presets else None)
     print(json.dumps(result))
     raise SystemExit(exit_status(result))

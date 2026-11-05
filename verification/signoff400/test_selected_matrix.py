@@ -1,3 +1,4 @@
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -49,6 +50,37 @@ class MatrixTests(unittest.TestCase):
             self.assertEqual(matrix.exit_status(report), 0)
             self.assertFalse(report['release_ready'])
             self.assertFalse(report['physical_models_qualified'])
+
+    def test_corner_specific_presets_keep_common_gains(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            models = self.fixture(root, matrix.CORNERS)
+            presets = {corner: dict(coarse=19+i, seed=100+i, polarity=i%2)
+                       for i, corner in enumerate(matrix.CORNERS)}
+            for corner, (_, model) in models.items():
+                model['points'][0].update(coarse=presets[corner]['coarse'], fine=presets[corner]['seed'])
+            path = root/'presets.json';path.write_text(json.dumps(presets))
+            with patch.object(matrix, 'inventory', return_value=models), \
+                 patch.object(matrix, 'run', side_effect=self.simulated_run) as run:
+                report = matrix.execute([], root/'output', ki=4, kp=0, presets_path=path)
+            self.assertEqual(run.call_count, 60)
+            self.assertEqual({call.args[3:5] for call in run.call_args_list}, {(4, 0)})
+            for index, corner in enumerate(matrix.CORNERS):
+                expected = presets[corner]
+                for call in run.call_args_list[index*12:(index+1)*12]:
+                    self.assertEqual(call.args[5:8], (expected['coarse'], expected['seed'], expected['polarity']))
+            self.assertIn(str(path), report['input_sha256'])
+            self.assertEqual(report['startup_presets'], presets)
+            self.assertFalse(report['release_ready'])
+
+    def test_corner_presets_reject_incomplete_or_noninteger_values(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d)/'presets.json'
+            path.write_text('{}')
+            with self.assertRaises(ValueError):matrix.startup_presets(path,20,111,1)
+            values = {c: dict(coarse=20, seed=111, polarity=1) for c in matrix.CORNERS}
+            values['ff']['seed'] = True;path.write_text(json.dumps(values))
+            with self.assertRaises(ValueError):matrix.startup_presets(path,20,111,1)
 
     def test_missing_code_stops_and_requests_measurement(self):
         with tempfile.TemporaryDirectory() as d:
