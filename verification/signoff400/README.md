@@ -7081,3 +7081,36 @@ its deliberately untunable model passed zero functional cases. This establishes
 engine throughput and failure handling, not target-PLL lock. The streaming-DAC
 review `154` identified different time-zero initialization behavior, so that
 alternative is not adopted without a native equivalence control.
+
+Native DAC/PWL controls `161` now quantify the alternative memory-bounded replay
+route (`tools/xyce_streaming`). The four controls completed 2 ns each. Loading a
+whole waveform at time zero produced a 1 V error for both fixtures. Streaming
+after an explicit 1 ps bootstrap matched a plateau fixture within 6.67e-16 V,
+but produced a 2 mV maximum error for a ramp starting at zero. The provisional
+API requires an ADC readback device; direct solution readback is used because
+normal deck waveform printing is not emitted along this stepping path. DC
+readback can expose the initial trial point, so only positive accepted transient
+intervals are included in these metrics. No DC-equivalence claim follows.
+
+Initial-segment analysis `162` verified all 8,383 prefix PWL artifact hashes and
+examined their first saved segment/right guard. Of these, 1,027 are not exactly
+flat; the worst held-voltage error over a 1 ps bootstrap is approximately
+1.0e-16 V. This is a recorded source-voltage bound only. It does not bound
+private charge/state error, extend the prefix bench's declared interval, or
+qualify a selected-circuit streaming model. Streaming is not adopted in the
+release path pending a native circuit equivalence control.
+
+To reproduce the small API controls, run inside the pinned tool container:
+
+```sh
+python3 tools/xyce_streaming/build_probe.py \
+  --manifest build/tools/xyce_umfpack_value_gather_001/manifest.json \
+  --output build/tools/xyce_streaming_new
+python3 tools/xyce_streaming/run_controls.py \
+  --probe build/tools/xyce_streaming_new/probe \
+  --output build/signoff400/streaming_controls_new
+```
+
+Use fresh output directories. The builder links the existing isolated Xyce
+archive without simulator patches. The control runner uses CPU 24, an 8 GiB
+address-space limit, and a 60 second timeout per small fixture.
