@@ -7130,3 +7130,28 @@ Selected control `164` is running through 21 ns on CPU 24, with comparison
 watcher `165`. It uses the same private devices, R and C as the PWL control.
 The watcher compares only positive accepted samples and never claims DC or
 physical-model qualification. These controls still precede oscillator startup.
+
+Partial snapshot `166` covers 5.121 ns of the running selected streaming
+control. The largest of 31 output voltage differences is 7.27 uV on PLLOUT;
+neither trace has oscillator rising edges in that interval. The 1 uV diagnostic
+flag is false. Preserve this discrepancy; it is neither a lock failure nor a
+qualified analog-model error bound.
+
+Queued controller `167` will start a separate 260 ns streaming diagnostic `168`
+once short comparison `165` completes, then write assessment `169`. The longer
+run has a 12 hour native cap, CPU 24 and a 48 GiB address-space cap; it does not
+retry automatically. Its prerequisite requires a complete, pinned, 31-channel
+21 ns comparison against the same reference. The strict diagnostic voltage
+flag may be false: this extension investigates whether voltage discrepancies
+change oscillator startup/frequency/edge timing, and never grants qualification.
+The extended comparator reports measured frequencies from edges at/after 200 ns
+when at least three are available. Missing or failed short observations stop
+the queue. Full recorded-knot replay, rather than the 21 ns prefix, supplies the
+extended run. Its shared saved grid has no intervals at/below the DAC's 1 fs
+filter threshold (minimum recorded interval 63 fs).
+
+The extended scripts and `boundary_replay_v2.cpp` are separate variants so the
+running short-control sources remain immutable. The C++ variant accepts a
+260 ns endpoint with a small floating-point comparison guard. Both controls
+remain recorded-boundary diagnostics; native tuning holdouts and physical
+correlation are still required before model-based release evidence is valid.
