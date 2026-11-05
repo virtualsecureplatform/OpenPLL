@@ -370,6 +370,10 @@ check-sky130-pll-25mhz-release: check-sky130-macros check-pll-25mhz-divider-conf
 check-sky130-modern-25mhz-release:
 	python3 scripts/check_sky130_modern_25mhz_release.py
 
+.PHONY: check-sky130-dualmacro-physical
+check-sky130-dualmacro-physical:
+	python3 scripts/check_sky130_dualmacro_physical.py
+
 apptainer-audit-modern-release:
 	APPTAINER="$(APPTAINER)" OPENPLL_APPTAINER_IMAGE="$(OPENPLL_APPTAINER_IMAGE)" ./scripts/apptainer_reproduce_latest_release.sh modern-audit
 
@@ -1058,29 +1062,128 @@ clean:
 .PHONY: check-pll-verification
 check-pll-verification:
 	python3 -m unittest discover -s scripts -p 'test_pll_verification.py'
+	python3 -m unittest discover -s scripts -p 'test_librelane_signoff.py'
+	python3 -m unittest discover -s scripts -p 'test_modern_release_freshness.py'
+	python3 -m unittest discover -s scripts -p 'test_pvt_release_gate.py'
+	python3 -m unittest discover -s scripts -p 'test_spice_temperature.py'
+	python3 -m unittest discover -s scripts -p 'test_diode_qualification.py'
+	python3 -m unittest discover -s scripts -p 'test_diode_translation.py'
 	python3 -m unittest discover -s scripts -p 'test_dco_calibration.py'
 	python3 -m unittest discover -s scripts -p 'test_resistor_reduction.py'
 	python3 -m unittest discover -s scripts -p 'test_parallel_dco.py'
+	python3 -m unittest discover -s scripts -p 'test_dualcore_dco.py'
 	python3 -m unittest discover -s scripts -p 'test_strength_dco.py'
 
 .PHONY: check-frequency-acquisition
 check-frequency-acquisition:
 	mkdir -p build/frequency-acquisition
+	iverilog -g2012 -s tb_bbpd_event_cdc -o build/frequency-acquisition/event_cdc tb/tb_bbpd_event_cdc.v $(filter-out rtl/IntegerPLL_25MHzModeConfig_modern.v,$(wildcard rtl/*.v))
+	vvp build/frequency-acquisition/event_cdc
+	iverilog -g2012 -s tb_bbpd_event_cdc -Ptb_bbpd_event_cdc.RATIO=18 -o build/frequency-acquisition/event_cdc450 tb/tb_bbpd_event_cdc.v $(filter-out rtl/IntegerPLL_25MHzModeConfig_modern.v,$(wildcard rtl/*.v))
+	vvp build/frequency-acquisition/event_cdc450
+	iverilog -g2012 -s tb_bbpd_event_cdc -Ptb_bbpd_event_cdc.SEPARATE_CAPTURE=1 -o build/frequency-acquisition/event_cdc_separate tb/tb_bbpd_event_cdc.v $(filter-out rtl/IntegerPLL_25MHzModeConfig_modern.v,$(wildcard rtl/*.v))
+	vvp build/frequency-acquisition/event_cdc_separate
+	iverilog -g2012 -s tb_bbpd_event_cdc -Ptb_bbpd_event_cdc.SEPARATE_CAPTURE=1 -Ptb_bbpd_event_cdc.RATIO=18 -o build/frequency-acquisition/event_cdc_separate450 tb/tb_bbpd_event_cdc.v $(filter-out rtl/IntegerPLL_25MHzModeConfig_modern.v,$(wildcard rtl/*.v))
+	vvp build/frequency-acquisition/event_cdc_separate450
+	iverilog -g2012 -s tb_acquiring_core_reset -o build/frequency-acquisition/reset tb/tb_acquiring_core_reset.v $(filter-out rtl/IntegerPLL_25MHzModeConfig_modern.v,$(wildcard rtl/*.v))
+	vvp build/frequency-acquisition/reset
+	iverilog -g2012 -s tb_mmd_countdown -o build/frequency-acquisition/countdown tb/tb_mmd_countdown.v rtl/IntegerPLL_MMD_Retimer.v
+	vvp build/frequency-acquisition/countdown
+	iverilog -g2012 -s tb_mmd_countdown -Ptb_mmd_countdown.REGISTER_CONFIG=0 -o build/frequency-acquisition/countdown_direct tb/tb_mmd_countdown.v rtl/IntegerPLL_MMD_Retimer.v
+	vvp build/frequency-acquisition/countdown_direct
+	iverilog -g2012 -s tb_tuning_handoff -o build/frequency-acquisition/handoff tb/tb_tuning_handoff.v rtl/IntegerPLL_TuningHandoff.v
+	vvp build/frequency-acquisition/handoff
+	iverilog -g2012 -s tb_tuning_handoff -Ptb_tuning_handoff.APPLY_CYCLES=1 -o build/frequency-acquisition/handoff_one tb/tb_tuning_handoff.v rtl/IntegerPLL_TuningHandoff.v
+	vvp build/frequency-acquisition/handoff_one
+	iverilog -g2012 -s tb_mmd_registered_config -o build/frequency-acquisition/mmd_config tb/tb_mmd_registered_config.v rtl/IntegerPLL_MMD_Retimer.v
+	vvp build/frequency-acquisition/mmd_config
+	iverilog -g2012 -s tb_acquisition_rail_clock -o build/frequency-acquisition/rail_clock tb/tb_acquisition_rail_clock.v rtl/IntegerPLL_FrequencyAcquisition.v
+	vvp build/frequency-acquisition/rail_clock
+	iverilog -g2012 -s tb_acquisition_edge_counter -o build/frequency-acquisition/edge_counter tb/tb_acquisition_edge_counter.v rtl/IntegerPLL_FrequencyAcquisition.v
+	vvp build/frequency-acquisition/edge_counter
+	iverilog -g2012 -s tb_acquisition_seed_division -o build/frequency-acquisition/seed tb/tb_acquisition_seed_division.v rtl/IntegerPLL_FrequencyAcquisition.v
+	vvp build/frequency-acquisition/seed
 	iverilog -g2012 -s tb_frequency_acquisition -o build/frequency-acquisition/test tb/tb_frequency_acquisition.v rtl/IntegerPLL_FrequencyAcquisition.v
 	vvp build/frequency-acquisition/test
 	vvp build/frequency-acquisition/test +PHASE_NS=0
 	vvp build/frequency-acquisition/test +PHASE_NS=10
 	vvp build/frequency-acquisition/test +PHASE_NS=20
 	vvp build/frequency-acquisition/test +PHASE_NS=30
-	iverilog -g2012 -s tb_acquiring_core -o build/frequency-acquisition/core tb/tb_acquiring_core.v rtl/*.v
+	iverilog -g2012 -s tb_acquiring_core -o build/frequency-acquisition/core tb/tb_acquiring_core.v $(filter-out rtl/IntegerPLL_25MHzModeConfig_modern.v,$(wildcard rtl/*.v))
 	vvp build/frequency-acquisition/core
 	vvp build/frequency-acquisition/core +PHASE_NS=0
 	vvp build/frequency-acquisition/core +PHASE_NS=10
 	vvp build/frequency-acquisition/core +PHASE_NS=20
 	vvp build/frequency-acquisition/core +PHASE_NS=30
+	iverilog -g2012 -s tb_acquiring_core -Ptb_acquiring_core.DLF_UPDATE_ON_PLLOUT=1 -o build/frequency-acquisition/core_pllout tb/tb_acquiring_core.v $(filter-out rtl/IntegerPLL_25MHzModeConfig_modern.v,$(wildcard rtl/*.v))
+	vvp build/frequency-acquisition/core_pllout
 
 .PHONY: check-strength-dco-controls
 check-strength-dco-controls:
 	mkdir -p build/frequency-acquisition
 	iverilog -g2012 -s tb_strength_dco_controls -o build/frequency-acquisition/strength tb/tb_strength_dco_controls.v sky130/IntegerPLL_DCO_strength_div_sky130.v
 	vvp build/frequency-acquisition/strength
+# Temperature-qualified programmed 400 MHz hard-macro flow. Fresh outputs only.
+SIGNOFF400_PYTHON ?= python3
+SIGNOFF400_OUTPUT ?= build/signoff400/campaign_001
+SIGNOFF400_CHARGE_SOURCE ?= build/timing400/prototype_001/filled_capacitance_004
+SIGNOFF400_CHARGE_OUTPUT ?= build/signoff400/compiled_charge_001
+SIGNOFF400_WORKERS ?= 32
+.PHONY: signoff400-test signoff400-prepare signoff400-audit signoff400-charge
+signoff400-test:
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/signoff400 -p 'test_*.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_filled_domain_groups.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_candidate_macro.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_measured_antennas.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_measured_antennas_v2.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_measured_antennas_v3.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_parallel_geometry_jobs.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_parallel_geometry_comparison.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_parent_macro_views.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_parent_bank_planner.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_parent_protection_ancestry.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_parent_bank_ancestry.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_parent_route_ancestry.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_def_pin_equivalence.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_freeze_parent_routes.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_candidate_timing.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_timing_annotation.py' -v
+	PYTHONDONTWRITEBYTECODE=1 $(SIGNOFF400_PYTHON) -m unittest discover -s verification/prototype400 -p 'test_measured_load_buffer.py' -v
+SIGNOFF400_CLOSURE ?= build/signoff400/startup_timing_filled_closure_002
+SIGNOFF400_CAD_PYTHON ?= apptainer exec --bind /home:/home,/tmp:/tmp,$(CURDIR):/work/OpenPLL $(CURDIR)/build/apptainer/openpll-release-modern.sif /nix/store/ps0r3qpgjh1lqyqacra33rvxsjgkd874-python3-3.13.9-env/bin/python3
+signoff400-prepare:
+	$(SIGNOFF400_CAD_PYTHON) verification/signoff400/prepare_candidate_v2.py --closure $(SIGNOFF400_CLOSURE) --output $(SIGNOFF400_OUTPUT)
+signoff400-audit:
+	$(SIGNOFF400_CAD_PYTHON) verification/signoff400/audit.py --manifest $(SIGNOFF400_OUTPUT)/manifest.json --output $(SIGNOFF400_OUTPUT)/audit.json
+signoff400-charge:
+	$(SIGNOFF400_PYTHON) verification/signoff400/compile_charge.py --source $(SIGNOFF400_CHARGE_SOURCE) --output $(SIGNOFF400_CHARGE_OUTPUT) --workers $(SIGNOFF400_WORKERS)
+
+.PHONY: signoff400-charge-native
+signoff400-charge-native:
+	$(SIGNOFF400_PYTHON) verification/signoff400/compile_native_charge_v4.py --source $(SIGNOFF400_CHARGE_SOURCE) --output $(SIGNOFF400_CHARGE_OUTPUT) --workers $(SIGNOFF400_WORKERS)
+
+SIGNOFF400_CARD_SOURCE ?= build/signoff400/startup_timing_electrical_003/native_charge
+SIGNOFF400_CARD_OUTPUT ?= build/signoff400/native_card_comparison_001
+.PHONY: signoff400-native-card-equivalence
+signoff400-native-card-equivalence:
+	$(SIGNOFF400_PYTHON) verification/signoff400/compare_native_cards_v2.py --native-charge $(SIGNOFF400_CARD_SOURCE) --output $(SIGNOFF400_CARD_OUTPUT)
+
+SIGNOFF400_HANDOFF_OUTPUT ?= build/signoff400/handoff_protocol_001
+SIGNOFF400_HANDOFF_JOBS ?= 4
+.PHONY: signoff400-handoff
+signoff400-handoff:
+	$(SIGNOFF400_PYTHON) verification/signoff400/prove_handoff_pdr.py --container build/apptainer/openpll-release-modern.sif --output $(SIGNOFF400_HANDOFF_OUTPUT) --jobs $(SIGNOFF400_HANDOFF_JOBS)
+
+# Versioned tapeout campaign: CDC reliability is mandatory; original flows stay pinned.
+SIGNOFF400_V2_OUTPUT ?= build/signoff400/campaign_tapeout_v2_001
+SIGNOFF400_V2_AUDIT_OUTPUT ?= $(SIGNOFF400_V2_OUTPUT)/audit_v2.json
+SIGNOFF400_V2_PACKAGE ?= build/signoff400/handoff_v2_001
+.PHONY: signoff400-v2-prepare signoff400-v2-audit signoff400-v2-package signoff400-v2-test
+signoff400-v2-prepare:
+	$(SIGNOFF400_CAD_PYTHON) verification/signoff400/prepare_candidate_v3.py --closure $(SIGNOFF400_CLOSURE) --output $(SIGNOFF400_V2_OUTPUT)
+signoff400-v2-audit:
+	$(SIGNOFF400_CAD_PYTHON) verification/signoff400/audit_v2.py --manifest $(SIGNOFF400_V2_OUTPUT)/manifest.json --output $(SIGNOFF400_V2_AUDIT_OUTPUT)
+signoff400-v2-package:
+	$(SIGNOFF400_CAD_PYTHON) verification/signoff400/package_v2.py --manifest $(SIGNOFF400_V2_OUTPUT)/manifest.json --output $(SIGNOFF400_V2_PACKAGE)
+signoff400-v2-test:
+	PYTHONPATH="$(CURDIR)/verification/signoff400:$${PYTHONPATH}" $(SIGNOFF400_PYTHON) -m unittest test_audit_v2 test_package_v2 test_signoff_acceptance_v2 test_signoff_models_v2 test_signoff_native_v2 test_prepare_candidate_v3 -v

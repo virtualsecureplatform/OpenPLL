@@ -1,6 +1,15 @@
 # Reproducing the Latest Release with Apptainer
 
-This flow reproduces the current OpenPLL release gate for the 25 MHz-reference
+The active prototype qualification targets programmed 400 MHz and is
+identified by [the active manifest](verification/active_release.json).
+Its [qualification workflow](verification/signoff400/README.md) uses
+`requirements_v3.json`: a 25 MHz reference, nominal 1.80 V, five process corners
+at 27°C, and 60 startup/recovery/enable-offset cases with one common gain pair.
+Additional oscillator-startup phase samples address synchronization of the
+enable offsets. All release gates remain unqualified. The commands below
+reproduce historical evidence; passing them does not qualify this candidate.
+
+The historical recipe below reproduces the configured release gate for the 25 MHz-reference
 Sky130 PLL path. It is intentionally scoped to the latest release evidence: the
 all-HD coarse DCO, hard top, configured wrapper, target-code rows, direct-RCX
 hold smokes, direct-RCX near-seed smokes, and
@@ -21,9 +30,9 @@ image build, and space for the full physical toolchain. The image installs:
 - Upstream MPI Xyce 7.10.0, built with Trilinos 14.4, in `/opt/xyce`.
 
 The wrapper mounts only this OpenPLL checkout at `/work/OpenPLL`. The bundled
-Xyce is upstream and does not contain the experimental KLS solver used by the
-newer acquisition diagnostics. Do not treat those KLS runs as available from
-this release image. The container wrapper verifies the newer PDK and pinned
+upstream Xyce is the approved simulator as of 2026-09-28. Earlier experimental
+KLS diagnostics cannot be reproduced with this image and are not release gates.
+The container wrapper verifies the newer PDK and pinned
 LibreLane revisions. The newer PDK makes this a fresh release-flow run, not a
 bit-for-bit reproduction of the historical v8 PDK run.
 
@@ -144,21 +153,64 @@ physical result on the bundled PDK.
 
 ## Separate modern Ciel five-mode release
 
+The approved modes are now **100/250/300/400/450 MHz**. The 500 MHz preset
+table below is historical. The checked-in modern mode table still contains
+that old mode and the release audit rejects it; measured 450 MHz presets and
+complete PVT evidence are required before qualification.
+
 The modern release uses the Ciel Sky130 pin
 `1689ac3f2dc763876eaf967227c7dfe831b031ae`. It has its own DCO source,
 LibreLane configurations and run tags, calibrated mode table, behavioral model,
 testbenches, and audit. The historical v8 presets and audit remain separate.
-This release is scoped to TT operation with a 25 MHz reference and near-seed
-starting codes. Arbitrary-start acquisition and PVT coverage require further
-work.
+The historical audit was scoped to TT operation with a 25 MHz reference and
+near-seed starting codes. The revised 450 MHz release requires the full PVT
+matrix in `verification/engineering.json`.
 
-The physical DCO uses 16 balanced `sky130_fd_sc_hd__nand2_2` fine-load cells;
-the other 239 fine-load cells are `nand2_1`. This change closes the measured
-300 MHz coarse-band gap on the modern PDK. The five extracted-TT settings are
+### Slow-corner PVT screen
+
+The modern release is **not qualified across PVT**. An earlier extracted-DCO
+Xyce screen on the `modern_k016` RCX netlist reported the following settings.
+Its non-27°C decks used `.temp`, which upstream Xyce ignored; those rows do
+not establish the stated temperature. Corrected runs use `.options device
+temp=...` and are tracked in `verification/IMPLEMENTATION.md`.
+
+| Process | Temperature | Supply | Coarse | Fine | Output (MHz) | Intended use |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| TT | 27°C | 1.80 V | 2 | 12 | 300.215 | 300 MHz release seed |
+| SS | 27°C | 1.80 V | 2 | 12 | 192.576 | Isolate process shift |
+| SS | 100°C | 1.60 V | 2 | 12 | 140.090 | Full slow-corner seed |
+| SS | 100°C | 1.60 V | 0 | 255 | 238.431 | Fastest DCO setting |
+
+These historical rows cannot establish a full slow-corner frequency limit.
+The old DCO and TT audit are not release evidence for the revised 450 MHz
+target. Corrected extracted characterization and closed-loop checks are
+required.
+
+To reproduce one of these measurements inside the release image, run the
+following command from the checkout root. Set `--corner`, `--temperature-c`,
+`--vdd`, `--coarse-codes`, `--codes`, and `--build-dir` for the other rows.
+
+```sh
+apptainer exec --userns --writable-tmpfs --cleanenv \
+  --pwd /work/OpenPLL --bind "$PWD:/work/OpenPLL" \
+  build/apptainer/openpll-release-modern.sif \
+  python3 scripts/spice_dco_postlayout.py \
+  --simulator xyce --xyce /opt/xyce/bin/Xyce --xyce-mpi-procs 4 \
+  --timeout-s 1800 --subckt-name IntegerPLL_DCO_EINVP_COARSE \
+  --rcx-netlist openlane/IntegerPLL_DCO_EINVP_COARSE/runs/modern_k016/rcx-magic/IntegerPLL_DCO_EINVP_COARSE.rcx.spice \
+  --corner ss --temperature-c 100 --vdd 1.6 \
+  --coarse-codes 0 --codes 255 --sim-time-ns 70 \
+  --meas-start-ns 12 --step-ps 10 --resume \
+  --build-dir build/modern_25mhz/pvt_ss_100c_1p6v_c00_max
+```
+
+The historical physical DCO uses 16 balanced `sky130_fd_sc_hd__nand2_2` fine-load
+cells; the other 239 fine-load cells are `nand2_1`. This change closed its
+measured 300 MHz coarse-band gap. The five historical extracted-TT settings are
 stored in `sky130/modern_25mhz_targets.json`; the direct-RCX hold measurements
 are written under `build/modern_25mhz/hold_*/`:
 
-Both cells come from the Ciel-provided HD standard-cell library. The release
+Both cells come from the Ciel-provided HD standard-cell library. This path
 does not require a custom HS cell or a separate PDK build.
 
 | Target (MHz) | Coarse code | Fine code | Extracted DCO (MHz) | Direct-RCX hold output (MHz) |
@@ -169,7 +221,7 @@ does not require a custom HS cell or a separate PDK build.
 | 400 | 1 | 215 | 399.366 | 416.295 |
 | 500 | 0 | 163 | 500.707 | 499.792 |
 
-The DCO frequency gate requires each seed to be within 2 MHz, and checks both
+The historical DCO frequency gate required each seed to be within 2 MHz, and checked both
 endpoints and codes eight steps below and above the seed for monotonic tuning,
 edge time, and duty ratio. The direct extracted-DCO hold and near-seed drivers
 also inspect PLL behavior. Their legacy waveform tolerance is 25 MHz, so that
@@ -196,8 +248,15 @@ make apptainer-rebuild-modern-release
 This can take hours because each extracted-DCO and direct-RCX case runs Xyce.
 The script resumes completed measurements when their inputs still match.
 
-The audit writes `build/modern_25mhz/check_summary.json` only after all five
-mode and physical checks pass. The generated RTL can be tested separately with
+The audit writes `build/modern_25mhz/check_summary.json` after evaluating all
+five modes and the physical checks. Its command exits unsuccessfully when the
+approved 12--70 ns frequency window fails, while the summary retains the
+separate near-seed result. It also requires qualified extracted-DCO reports
+for all five modes at all 45 approved PVT points under
+`build/modern_25mhz/pvt_qualification/mode_<MHz>/`. Missing reports fail the
+audit. Run `dco_calibration.py qualify` with `--target-code` and
+`--validate-interpolation` for each selected band; this measures the complete
+allowed fine-code range and is computationally expensive. The generated RTL can be tested separately with
 `make check-pll-25mhz-modern-rtl` inside the image. Running
 `python3 scripts/generate_modern_25mhz.py --check` reports any mismatch between
 the measured mode table and its generated RTL, model, or testbenches.
