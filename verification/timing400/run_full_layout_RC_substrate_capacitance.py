@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""Extract full-layout C with the native RC substrate context and full wire R off.
+
+Require direct DCO equality against installed resistance-enabled extraction at
+all three RC corners before using the opt-in context on a broad flat view.
+Trace logging stays off to bound full-layout output/runtime. Preserve floating
+branches and full feedback; no spatial RC or runtime model adoption is implied.
+"""
+import argparse
+import fcntl
+from datetime import datetime,timezone
+import json
+import os
+import signal
+from pathlib import Path
+import subprocess
+import time
+from check_compact_clock_tree import verify
+from run_candidate_layout_checks_v2 import MAGIC
+from run_dco_qualification import ROOT,sha,save
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    for name in ['view','output']:parser.add_argument('--'+name,required=True,type=Path)
+    parser.add_argument('--corner',required=True,choices=['min','nom','max'])
+    args=parser.parse_args();view=args.view.resolve();out=args.output.resolve();v=verify(view/'assessment.json')
+    style={'min':'ngspice(lrlc)','nom':'ngspice()','max':'ngspice(hrhc)'}[args.corner]
+    base=ROOT/'build/timing400/release_001'
+    equivalence=base/'DCO_RC_substrate_C_equivalence_001/assessment.json'
+    e=verify(equivalence);assert e['full_DCO_trace_accounting_passed'] and e['installed_RC_and_opt_in_C_only_exact_C_and_devices_identical']
+    small_context=base/'magic_RC_substrate_C_context_controls_001/assessment.json'
+    assert verify(small_context)['installed_RC_and_opt_in_C_only_C_and_devices_equal']
+    baseline=base/'magic_RC_substrate_C_default_controls_001/assessment.json'
+    assert verify(baseline)['installed_and_isolated_C_devices_feedback_equal']
+    build=base/'magic_RC_substrate_C_build_001/assessment.json';assert verify(build)['full_geometry_trace_build_completed']
+    MAGIC=ROOT/'build/timing400/magic_RC_substrate_C_623_001/bin/magic'
+    narrow=ROOT/'build/timing400/release_001/narrow_mos_corner_exports_001/assessment.json'
+    narrow_control=verify(narrow)
+    assert narrow_control['orig_and_nominal_wrapper_complete_capacitor_matrices_identical']
+    assert narrow_control['all_three_wrapper_style_native_devices_identical']
+    control=ROOT/'build/timing400/release_001/capacitance_corner_control_audit_001/assessment.json'
+    primitive=ROOT/'build/timing400/release_001/primitive_corner_export_audit_001/assessment.json'
+    assert verify(control)['all_five_control_effective_capacitances_strictly_ordered']
+    assert verify(primitive)['exported_device_geometry_and_terminal_order_preserved']
+    assert v['converted_metal_fill_purpose_layers_removed'] and v['converted_fill_material_footprints_preserved']
+    assert v['drawing_and_fill_overlays_not_used']
+    assert v['converted_poly_fill_purpose_removed'] and v['no_added_gate_contact_or_resistor_overlap']
+    assert v['extraction_only_view'] and v['unique_parent_net_labels']==359 and v['manufacturing_gds_unchanged']
+    owner=json.loads((view/'owner.json').read_text());deadline=owner['deadline_uptime'];assert deadline>time.clock_gettime(time.CLOCK_BOOTTIME)
+    private=ROOT/'build/timing450/pdk/sky130A';startup=private/'libs.tech/magic/sky130A.magicrc';tech=private/'libs.tech/magic/sky130A.tech'
+    gds=view/'capacitance_view.gds';assert sha(gds)==v['artifacts'][str(gds)]
+    out.mkdir(parents=True,exist_ok=False)
+    save(out/'owner.json',dict(runner_pid=os.getpid(),started_utc=datetime.now(timezone.utc).isoformat(),deadline_uptime=deadline,
+        original_owner=str(view/'owner.json'),total_budget_restarted=False,automatic_identical_retry=False,
+        reason="Native RC substrate context with wire extraction off, after exact DCO native controls at all3 corners",
+        original_export_retried=False))
+    task=out/'extract.tcl';task.write_text(f'''crashbackups stop
+locking disable
+drc off
+gds read {gds}
+load {v['top']}
+extract style {style}
+extract do capacitance
+extract do coupling
+extract no resistance
+extract all
+feedback save {out}/extraction_feedback.txt
+ext2spice cthresh 0
+ext2spice rthresh infinite
+ext2spice subcircuit off
+ext2spice -o {out}/capacitance.spice {v['top']}.ext
+puts "FILLED_CAPACITANCE_EXTRACTION_COMPLETE"
+quit -noprompt
+''')
+    files=[Path(__file__).resolve(),MAGIC,startup,tech,task,view/'assessment.json',view/'owner.json',gds,control,primitive,narrow,equivalence,small_context,baseline,build]
+    pins={str(p):sha(p) for p in files};save(out/'input_manifest.json',dict(input_sha256=pins,scope=__doc__))
+    # Share the full-layout CAD memory admission lock, under the same deadline.
+    with (ROOT/'build/timing400/full_capacitance_cad.lock').open('a') as lock:
+        while True:
+            left=deadline-time.clock_gettime(time.CLOCK_BOOTTIME)
+            if left<=0:
+                save(out/'status.json',dict(state='timeout_inconclusive_waiting_for_cad_lock',release_qualified=False));return
+            try:
+                fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);break
+            except BlockingIOError:
+                save(out/'status.json',dict(state='waiting_for_cad_lock',release_qualified=False,native_analog_jobs_added=0))
+                time.sleep(min(15,left))
+        env=dict(os.environ,PDK_ROOT=str(private.parent),OPENPLL_CAP_RC_SUBSTRATE='1')
+        env.pop('OPENPLL_CAP_TRACE_SUPPORT',None);env.pop('OPENPLL_CAP_TRACE_FILE',None);env.pop('OPENPLL_CAP_CLIP_INTERNAL',None)
+        with task.open() as commands,(out/'extract.log').open('x') as log:
+            child=subprocess.Popen([str(MAGIC),'-dnull','-noconsole','-rcfile',str(startup)],stdin=commands,
+                stdout=log,stderr=subprocess.STDOUT,cwd=out,env=env,start_new_session=True)
+            save(out/'status.json',dict(state='native_capacitance_extraction',native_pid=child.pid,native_analog_jobs_added=0,release_qualified=False))
+            try:code=child.wait(timeout=deadline-time.clock_gettime(time.CLOCK_BOOTTIME))
+            except subprocess.TimeoutExpired:
+                os.killpg(child.pid,signal.SIGTERM)
+                try:child.wait(timeout=10)
+                except subprocess.TimeoutExpired:os.killpg(child.pid,signal.SIGKILL);child.wait()
+                save(out/'status.json',dict(state='timeout_inconclusive',release_qualified=False));return
+    for p,d in pins.items():assert sha(p)==d,p
+    spice=out/'capacitance.spice';caps=0
+    feedback=out/'extraction_feedback.txt'
+    if spice.exists():
+        with spice.open() as source:
+            for line in source:
+                if line[:1].upper()=='C':caps+=1
+    success=code==0 and caps>0 and feedback.exists() and not list(out.glob('*.res.ext')) and 'for resistance extraction.' not in (out/'extract.log').read_text() and 'FILLED_CAPACITANCE_EXTRACTION_COMPLETE' in (out/'extract.log').read_text()
+    save(out/'native_completion.json',dict(input_sha256=pins,artifacts={str(p):sha(p) for p in out.iterdir() if p.is_file() and p.name!='status.json'},
+        exit_code=code,native_extraction_completed=success,capacitor_records=caps,floating_nodes_preserved=True,
+        full_flattened_feedback_captured=feedback.exists(),converted_poly_fill_included=True,
+        capacitance_corner=args.corner,extraction_style=style,foundry_wrapper_export_used=True,
+        raw_network_is_qualified_upstream_xyce_model=False,
+        native_RC_substrate_context_used=True,full_wire_R_pass_skipped=True,
+        full_capacitance_coverage_qualified=False,resistance_included=False,model_adopted=False,release_qualified=False,scope=__doc__))
+    save(out/'status.json',dict(state='raw_network_terminal' if success else 'native_nonpass',capacitor_records=caps,release_qualified=False))
+    print('Raw capacitance extraction terminal:',code,'capacitors',caps,'qualified=False',flush=True)
+
+if __name__=='__main__':main()

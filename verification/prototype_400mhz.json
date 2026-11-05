@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "profile": "programmed_400mhz_prototype",
+  "status": "implementation_and_qualification_in_progress",
+  "target_mhz": 400,
+  "reference_mhz": 25,
+  "feedback_divider": 16,
+  "modes_mhz": [
+    400
+  ],
+  "corners": [
+    "tt",
+    "ff",
+    "ss",
+    "sf",
+    "fs"
+  ],
+  "voltages": [
+    1.8
+  ],
+  "temperatures_c": [
+    27
+  ],
+  "startup": "externally_programmed_static_until_reset",
+  "acquisition_limit_ns": 200000,
+  "window_ns": 5120,
+  "sustained_windows": 4,
+  "frequency_error_ppm": 1000,
+  "phase_span_output_periods": 0.1,
+  "phase_mean_output_periods": 0.1,
+  "phase_drift_output_periods": 0.02,
+  "fine_code_min": 8,
+  "fine_code_max": 247,
+  "coarse_code_min": 0,
+  "coarse_code_max": 47,
+  "calibration_error_ppm": 100,
+  "calibration_error_local_lsb": 0.25,
+  "native": {
+    "wall_limit_s": 172800,
+    "assessment_reserve_s": 300,
+    "max_large_cases": 1,
+    "minimum_available_memory_GiB": 40,
+    "address_space_limit_GiB": 48,
+    "scaled_true_residual_limit": 1e-12,
+    "automatic_identical_retry": false,
+    "solver": "KLU bounded reuse plus GMRES",
+    "baseline_duration_ns": 80,
+    "measurement_start_ns": 20,
+    "maximum_step_ps": 10,
+    "reltol": 1e-05,
+    "abstol": 1e-09
+  },
+  "gain_search": {
+    "first": [
+      4,
+      0
+    ],
+    "ki": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "kp": [
+      0,
+      1,
+      2,
+      4,
+      8
+    ],
+    "selection": "lowest_KI_then_lowest_KP_passing_all_cases"
+  },
+  "scenarios": [
+    "cold_start",
+    "disable_reenable",
+    "reset_during_tracking"
+  ],
+  "reference_phase_offsets_ns": [
+    0,
+    10,
+    20,
+    30
+  ],
+  "deliverable": "verified_macro_handoff",
+  "deferred": [
+    "automatic_band_acquisition",
+    "100MHz",
+    "250MHz",
+    "300MHz",
+    "450MHz",
+    "temperature_qualification",
+    "mode_transitions",
+    "precision_jitter_qualification",
+    "chip_or_shuttle_submission"
+  ],
+  "gates": [
+    "digital_startup",
+    "dco_model",
+    "interfaces_reset_cdc",
+    "whole_pll_lock",
+    "digital_timing",
+    "physical_signoff",
+    "reproducible_handoff"
+  ],
+  "prototype_handoff_qualified": false,
+  "release_qualified": false
+}

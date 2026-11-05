@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "qualification_in_progress_not_a_release",
+  "approved_utc": "2026-10-19T14:21:51.447382+00:00",
+  "target_mhz": 400,
+  "reference_mhz": 25,
+  "modes_mhz": [
+    100,
+    250,
+    300,
+    400
+  ],
+  "supply_v": 1.8,
+  "pvt_points": 15,
+  "mode_pvt_cases": 60,
+  "requirements": "verification/release_requirements_400mhz.json",
+  "plan": "verification/release_plan_400mhz.json",
+  "presets": "sky130/release_400mhz_targets.json",
+  "dco_status": "build/timing400/release_001/dco/status.json",
+  "functional_matrix": "build/timing400/release_001/functional_matrix/assessment.json",
+  "deferred_modes_mhz": [
+    450
+  ],
+  "release_qualified": false,
+  "sha256": {
+    "requirements": "02911569a2538d8b4d6c3139decdf7ec4d7c33bf2cbad85eed442947c0022b52",
+    "plan": "2d6d5ed4404df842d64d42d68ebe593e4f627e65b4f90aaa48bef5f991e94b02",
+    "presets": "cac5c0e4f5e2161ab03f94fbc29da4573d09df6d75c4c2b82b1c290ae4d5a18d"
+  }
+}

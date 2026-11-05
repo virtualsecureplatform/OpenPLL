@@ -1,0 +1,59 @@
+"""Tighter native capture holdouts at fast/slow slew endpoints and FF/SS corners."""
+import argparse
+from concurrent.futures import ThreadPoolExecutor
+import json
+from pathlib import Path
+import sys
+import time
+from common_v3 import save, sha, verify
+from compiled_charge import execute
+
+
+def run(extraction, output):
+    worker=Path(__file__).with_name('run_prototype_final_capture_numerical_point.py').resolve()
+    reviewer=Path(__file__).with_name('review_prototype_capture_point_v5.py').resolve()
+    output.mkdir(parents=True,exist_ok=False)
+    pins={str(p):sha(p) for p in (extraction/'assessment.json',worker,reviewer,Path(__file__).resolve())}
+    deadline=time.clock_gettime(time.CLOCK_BOOTTIME)+43200
+    loads={'dfrtp_1':250,'dfrtp_2':400,'dfrtp_4':600,'dfstp_1':125,'dfstp_2':400}
+    points=[(c,m,load,d,k) for c in ('ff','ss') for m,load in loads.items() for d,k in ((20,20),(2000,400))]
+    save(output/'status.json',dict(state='final_capture_supplement_running',grids=20,release_ready=False))
+    def point(case):
+        c,m,load,d,k=case;name=f'{c}_{m}_d{d}_c{k}'
+        where=output/name
+        execute([sys.executable,worker,'--extraction',extraction,'--output',where,
+                 '--corner',c,'--master',m,'--load-ff',str(load),
+                 '--data-ramp-ps',str(d),'--clock-ramp-ps',str(k)],output/(name+'.log'),deadline,4)
+        receipt=where/'assessment.json'
+        r=json.loads(receipt.read_text());verify(r['input_sha256']);verify(r['artifacts'])
+        if (r['corner'],r['master'],r['input_full_ramp_ps'],r['clock_full_ramp_ps'],r['load_fF'],r['cases'])!=(c,'sky130_fd_sc_hs__'+m,d,k,load,30):
+            raise ValueError('supplement point mismatch')
+        if r['input_sha256'].get(str(worker))!=pins[str(worker)] or r['input_sha256'].get(str(extraction/'assessment.json'))!=pins[str(extraction/'assessment.json')]:
+            raise ValueError('supplement source/worker mismatch')
+        review=output/(name+'_review')
+        execute([sys.executable,reviewer,'--point',where,'--output',review],output/(name+'_review.log'),deadline,4)
+        reviewed=json.loads((review/'assessment.json').read_text())
+        return dict(corner=c,master=m,load_fF=load,data_ramp_ps=d,clock_ramp_ps=k,directory=str(where),
+                    assessment_sha256=sha(receipt),reused=False,review_directory=str(review),
+                    review_sha256=sha(review/'assessment.json'),
+                    unresolved_or_glitching_cases=reviewed['unresolved_or_glitching_cases'])
+    with ThreadPoolExecutor(max_workers=4) as pool: records=list(pool.map(point,points))
+    for row in records:
+        for directory,digest in ((row['directory'],row['assessment_sha256']),(row['review_directory'],row['review_sha256'])):
+            p=Path(directory)/'assessment.json'
+            if sha(p)!=digest:raise ValueError('point changed during supplement')
+            pins[str(p)]=digest
+    detail=output/'points.json';save(detail,records);verify(pins)
+    save(output/'assessment.json',dict(input_sha256=pins,artifacts={str(detail):sha(detail)},
+         characterization_load_fF_by_master=loads,complete_numerical_holdout_grids=20,native_cases=600,
+         all_fixture_and_pretest_waveforms_valid=True,
+         unresolved_or_glitching_cases=sum(r['unresolved_or_glitching_cases'] for r in records),
+         load_is_qualified_route_bound=False,
+         numerical_uncertainty_bounded=False,constraints_qualified=False,release_ready=False))
+    save(output/'status.json',dict(state='final_capture_supplement_complete',grids=20,release_ready=False))
+
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser(description=__doc__)
+    for n in ('extraction','output'):p.add_argument('--'+n,type=Path,required=True)
+    a=p.parse_args();run(a.extraction.resolve(),a.output.resolve())

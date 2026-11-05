@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "profile": "programmed_400mhz_temperature_signoff",
+  "status": "implementation_and_qualification_in_progress",
+  "target_mhz": 400,
+  "reference_mhz": 25,
+  "feedback_divider": 16,
+  "modes_mhz": [
+    400
+  ],
+  "corners": [
+    "tt",
+    "ff",
+    "ss",
+    "sf",
+    "fs"
+  ],
+  "voltages": [
+    1.8
+  ],
+  "temperatures_c": [
+    -40,
+    27,
+    125
+  ],
+  "startup": "externally_programmed_static_until_reset",
+  "acquisition_limit_ns": 200000,
+  "window_ns": 5120,
+  "sustained_windows": 4,
+  "frequency_error_ppm": 1000,
+  "phase_span_output_periods": 0.1,
+  "phase_mean_output_periods": 0.1,
+  "phase_drift_output_periods": 0.02,
+  "fine_code_min": 8,
+  "fine_code_max": 247,
+  "coarse_code_min": 0,
+  "coarse_code_max": 47,
+  "calibration_error_ppm": 100,
+  "calibration_error_local_lsb": 0.25,
+  "native": {
+    "wall_limit_s": 172800,
+    "assessment_reserve_s": 300,
+    "max_large_cases": 1,
+    "minimum_available_memory_GiB": 40,
+    "address_space_limit_GiB": 48,
+    "scaled_true_residual_limit": 1e-12,
+    "automatic_identical_retry": false,
+    "solver": "KLU bounded reuse plus GMRES",
+    "baseline_duration_ns": 80,
+    "measurement_start_ns": 20,
+    "maximum_step_ps": 10,
+    "reltol": 1e-05,
+    "abstol": 1e-09
+  },
+  "gain_search": {
+    "first": [
+      4,
+      0
+    ],
+    "ki": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "kp": [
+      0,
+      1,
+      2,
+      4,
+      8
+    ],
+    "selection": "lowest_KI_then_lowest_KP_passing_all_cases"
+  },
+  "scenarios": [
+    "cold_start",
+    "disable_reenable",
+    "reset_during_tracking"
+  ],
+  "reference_phase_offsets_ns": [
+    0,
+    10,
+    20,
+    30
+  ],
+  "deliverable": "qualified_hard_macro",
+  "deferred": [
+    "automatic_band_acquisition",
+    "100MHz",
+    "250MHz",
+    "300MHz",
+    "450MHz",
+    "voltage_variation",
+    "chip_or_shuttle_submission"
+  ],
+  "gates": [
+    "digital_startup",
+    "dco_model",
+    "interfaces_reset_cdc",
+    "whole_pll_lock",
+    "digital_timing",
+    "physical_signoff",
+    "reproducible_handoff"
+  ],
+  "release_qualified": false,
+  "operating_points": 15,
+  "model_based_scenarios": 180,
+  "resources": {
+    "physical_cores": 32,
+    "logical_cpus": 64,
+    "default_workers": 32,
+    "smt_minimum_throughput_improvement": 0.1,
+    "aggregate_memory_limit_GiB": 200,
+    "host_memory_reserve_GiB": 32,
+    "worker_memory_limit_GiB": 4,
+    "max_large_cases_until_benchmarked": 1,
+    "max_large_cases_after_controls": 4,
+    "cad_wall_limit_s": 43200
+  },
+  "physical_jitter_limit": null,
+  "power_limit": null,
+  "area_limit": null,
+  "clock_quality_policy": "Characterize and publish jitter, power and supported output loading; no invented application pass/fail limits.",
+  "parent_profile_sha256": "50f06da6052bc66e830ac0d268993828e99557cc4ac23b97f05cbfcaf4dabfde",
+  "cdc_reliability": {
+    "aggregate_max_fit": 1.0,
+    "scope": "command_and_reset_synchronizers",
+    "event_rates": "declared_upper_bounds",
+    "bbpd_decision_noise": "characterize_separately"
+  },
+  "layout_fallback": "constrained_redesign_if_existing_candidate_cannot_be_qualified",
+  "projection_wall_limit_s": 86400
+}

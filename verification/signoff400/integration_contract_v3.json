@@ -1,0 +1,225 @@
+{
+  "schema_version": 3,
+  "status": "draft_pending_gate_evidence",
+  "release_level": "prototype_tapeout_macro",
+  "module": "IntegerPLL_400MHz_PrototypeTop",
+  "profile_sha256": "a09e26d592a2b09e7945df293422f5e9ed60483b9086813467128d035165b5da",
+  "source_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_DigitalCore.v": "4cba0c4b262d43d5b18e484affdc1c03e0c72f8e21de3a7ce044c66f4f7a9055",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_TuningHandoff.v": "00f380665af4ca3e11d3f37b6b448311d41f1c3e0f5aca875ade7d2b825ddfc4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_DLF.v": "4b98becbc5424ed7eabdf38ceedb757d66db35b965ac33bbd0a0c4b6e4ade2db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_B2TH.v": "7cdf2a2224e2b1fcf848cc1cd42b5417e3d0d1bb8dea82e0c274e5065432f74b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_MMD_Retimer.v": "b967f654d1b527296cb89b4c8600b590ec35e412a9b993a275842152260e9b69",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_Divider.v": "2e3dc884988a510b0e749291cfaa6ff4dac05f04b6fb4d07c4c1fea4bf785d64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_ProgrammedStartup.v": "0aceb40b543247af5e893485fef957b2f8cc2c2888fe43462db3f9adcc1b8b41",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_ProgrammedCore.v": "eba2157966c0d799bb269c4c108ce1e125ca5e90a2e10c019c60deed12cf530d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_400MHz_PrototypeTop.v": "0df53ecb2d5ff685713d4f9f9ede71939bdac8b1c8288ef5d586ea9f915e162e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/sources.json": "60a32fa1856c996a60d1aedd4c7b4f8b8e49588a962c4bc37f0f15ab05370bb3"
+  },
+  "ports": {
+    "VPWR": {
+      "direction": "inout",
+      "width": 1,
+      "physical_power_pin": true
+    },
+    "VGND": {
+      "direction": "inout",
+      "width": 1,
+      "physical_power_pin": true
+    },
+    "VPB": {
+      "direction": "inout",
+      "width": 1,
+      "physical_power_pin": true
+    },
+    "VNB": {
+      "direction": "inout",
+      "width": 1,
+      "physical_power_pin": true
+    },
+    "REFCLK": {
+      "direction": "input",
+      "width": 1,
+      "physical_power_pin": false
+    },
+    "RESET_N": {
+      "direction": "input",
+      "width": 1,
+      "physical_power_pin": false
+    },
+    "PLL_ENABLE": {
+      "direction": "input",
+      "width": 1,
+      "physical_power_pin": false
+    },
+    "STARTUP_COARSE": {
+      "direction": "input",
+      "width": 6,
+      "physical_power_pin": false
+    },
+    "STARTUP_FINE": {
+      "direction": "input",
+      "width": 8,
+      "physical_power_pin": false
+    },
+    "STARTUP_INCREASING": {
+      "direction": "input",
+      "width": 1,
+      "physical_power_pin": false
+    },
+    "KI": {
+      "direction": "input",
+      "width": 8,
+      "physical_power_pin": false
+    },
+    "KP": {
+      "direction": "input",
+      "width": 5,
+      "physical_power_pin": false
+    },
+    "PLLOUT": {
+      "direction": "output",
+      "width": 1,
+      "physical_power_pin": false
+    },
+    "CLKDIV_RETIMED": {
+      "direction": "output",
+      "width": 1,
+      "physical_power_pin": false
+    },
+    "CONFIG_READY": {
+      "direction": "output",
+      "width": 1,
+      "physical_power_pin": false
+    },
+    "CONFIG_BUSY": {
+      "direction": "output",
+      "width": 1,
+      "physical_power_pin": false
+    },
+    "TRACKING": {
+      "direction": "output",
+      "width": 1,
+      "physical_power_pin": false
+    },
+    "FAILED": {
+      "direction": "output",
+      "width": 1,
+      "physical_power_pin": false
+    },
+    "COARSE_CODE": {
+      "direction": "output",
+      "width": 6,
+      "physical_power_pin": false
+    },
+    "DCO_CODE": {
+      "direction": "output",
+      "width": 8,
+      "physical_power_pin": false
+    },
+    "DLF_CODE": {
+      "direction": "output",
+      "width": 10,
+      "physical_power_pin": false
+    }
+  },
+  "target": {
+    "reference_MHz": 25,
+    "output_MHz": 400,
+    "divider": 16,
+    "supply_V": 1.8,
+    "corners": [
+      "tt",
+      "ff",
+      "ss",
+      "sf",
+      "fs"
+    ],
+    "temperature_C": 27
+  },
+  "physical_power": {
+    "build_define": "USE_POWER_PINS",
+    "positive_supply": [
+      "VPWR",
+      "VPB"
+    ],
+    "ground_supply": [
+      "VGND",
+      "VNB"
+    ]
+  },
+  "programming": {
+    "static_until_reset": [
+      "STARTUP_COARSE",
+      "STARTUP_FINE",
+      "STARTUP_INCREASING",
+      "KI",
+      "KP"
+    ],
+    "allowed_ranges": {
+      "STARTUP_COARSE": [
+        0,
+        47
+      ],
+      "STARTUP_FINE": [
+        8,
+        247
+      ],
+      "STARTUP_INCREASING": [
+        0,
+        1
+      ],
+      "KI": [
+        1,
+        255
+      ],
+      "KP": [
+        0,
+        31
+      ]
+    },
+    "calibrated_presets": null,
+    "common_gain_pair": null,
+    "sequence": [
+      "Assert RESET_N low.",
+      "Present a valid calibrated preset and gains.",
+      "Release reset with REFCLK running.",
+      "Keep programming inputs fixed until the next reset."
+    ],
+    "change_without_reset": "Sticky FAILED; recover with reset."
+  },
+  "operation": {
+    "RESET_N": "Active-low reset; minimum pulse and deassertion timing await timing evidence.",
+    "PLL_ENABLE": "Fine-loop enable; disable does not permit programming changes.",
+    "CONFIG_READY": "The preset has completed the startup load handshake.",
+    "CONFIG_BUSY": "Configuration or fine-loop startup is pending while FAILED is low.",
+    "TRACKING": "Loop-enable indication, not a lock detector.",
+    "FAILED": "Sticky invalid configuration, programming change or handshake timeout; reset to clear.",
+    "PLLOUT": "DCO output; target frequency is not guaranteed during reset, startup, disable or failure.",
+    "CLKDIV_RETIMED": "Retimed divider feedback; not a lock indication."
+  },
+  "qualification": {
+    "acquisition_limit_us": 200,
+    "lock_decision": "Evaluate qualified frequency and phase windows externally.",
+    "reset_minimum_pulse_ns": null,
+    "input_timing": null,
+    "reachable_startup_frequency_max_MHz": null,
+    "supported_output_loading": null,
+    "clock_quality_characterization": null,
+    "power_characterization": null
+  },
+  "required_before_release": [
+    "five passing release-gate receipts",
+    "calibrated five-corner presets and common gain pair",
+    "native startup and maximum-frequency coverage",
+    "reset/input timing limits",
+    "supported output loading and clock/power characterization",
+    "portable replay-verified macro package"
+  ],
+  "release_ready": false,
+  "production_qualified": false,
+  "source_candidate_receipt": {
+    "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/assessment.json",
+    "sha256": "c42f9adbc01b56fdab6b171b742c154d2ab8dda4df635e3977004c343f4b3fdb"
+  }
+}

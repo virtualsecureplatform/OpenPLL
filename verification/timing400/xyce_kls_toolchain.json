@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "selection": "user_requested_updated_KLS_with_detailed_profile",
+  "qualification_solver": "GMRES with KLS sparse preconditioner",
+  "reference_solver": "KLU",
+  "repositories": {
+    "Xyce": {
+      "url": "https://github.com/nindanaoto/Xyce.git",
+      "branch": "kls",
+      "commit": "ff7abc4b313974c81b4ebc17f713cc912da9bf4b"
+    },
+    "KLS": {
+      "url": "https://github.com/nindanaoto/KLS.git",
+      "commit": "56abf844fb07931370ef386ff724124dfa5d965c",
+      "branch": "main"
+    }
+  },
+  "adapter_patch": "verification/timing400/xyce_kls_column_map.patch",
+  "adapter_patch_sha256": "cdf165a99298218bf55194ce7885fd8e985751551aa1f28e79174500d5ee5e68",
+  "patch_reason": "Translate Epetra local column IDs through global IDs into domain-local indices; validate cached columns on updates.",
+  "KLS_library_modified": false,
+  "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing400/release_001/KLS_detailed_profile_001/native_build_002/bin/Xyce",
+  "binary_sha256": "ae3ad342fc7daf34e7e915af803b45937e5c523989f70a76876952c512017f35",
+  "runtime_container": "build/apptainer/openpll-release-modern.sif",
+  "cmake_options": {
+    "Xyce_KLS": "ON",
+    "Xyce_KLS_ROOT": "pinned KLS source tree",
+    "Xyce_PARALLEL_MPI": "OFF",
+    "BUILD_TESTING": "ON"
+  },
+  "linsol_options": ".options LINSOL TYPE=KLS KLS_THREADS=4 KLS_PROFILE=1 TR_PARTITION=0 TR_AMD=0",
+  "certification_policy": "KLS application-managed inner policy with unchanged 1e-12 outer full-equation acceptance",
+  "captured_original_equation_weighted_residual_limit": 1e-12,
+  "build_assessment": "build/timing400/release_001/KLS_detailed_profile_001/native_build_002/assessment.json",
+  "native_control_assessment": "build/timing400/release_001/KLS_detailed_profile_001/native_controls_001/assessment.json",
+  "captured_DCO_equation_assessment": "build/timing400/release_001/KLS_detailed_profile_001/profile_assessment.json",
+  "DCO_trial": "build/timing400/release_001/KLS_detailed_profile_001/native_prefix_profile_001",
+  "campaign_deadline_utc": "2026-10-25T01:19:27+00:00",
+  "per_campaign_wall_limit_s": 43200,
+  "automatic_identical_retry": false,
+  "release_qualified": false,
+  "published_adapter_fix": {
+    "repository": "https://github.com/nindanaoto/Xyce.git",
+    "branch": "kls",
+    "commit": "8e88b9dd18b5c5e798a035e354ae0ffcab450a7a",
+    "commit_url": "https://github.com/nindanaoto/Xyce/commit/8e88b9dd18b5c5e798a035e354ae0ffcab450a7a",
+    "published_file_identical_to_tested_source": true
+  },
+  "runtime_environment": {
+    "OPENPLL_WIRE_PC": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing400/release_001/native_wire_preconditioner_metadata_001/wire_C.bin",
+    "OPENPLL_KLS_COMPARE_THREADS": "4",
+    "OPENPLL_KLS_COMPARE_POLICY": "application_managed"
+  },
+  "preconditioner_header": "verification/timing400/native_KLS_detailed_profile_v2/OpenPLL_KLS_comparison.h",
+  "preconditioner_header_sha256": "9e3675645a116615b620cce3f4bc7bf7ec08b80d7c85dd15213d8f23c073c9e5",
+  "KLS_lifecycle_hints": {
+    "expected_refactorizations": 20000,
+    "expected_solves": 20000,
+    "threads": 4
+  },
+  "full_DCO_speedup_demonstrated": false,
+  "available_source_update": {
+    "repository": "https://github.com/nindanaoto/KLS.git",
+    "checkout": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing400/xyce_kls_sources_003/KLS",
+    "previous_commit": "a3be41b58833f1548a8bc48df75bf34813ca2eba",
+    "commit": "56abf844fb07931370ef386ff724124dfa5d965c",
+    "working_tree_clean": true,
+    "binary_rebuilt": true,
+    "updated_utc": "2026-10-25T00:46:58.283259+00:00"
+  },
+  "certification_optout_experiment": {
+    "commit": "7d2c909c6ab77a7201bad8559b024f4e97625840",
+    "results": "build/timing400/release_001/KLS_certification_comparison_001/results.json",
+    "best_KLS_setting": "four threads, application-managed certification policy",
+    "candidate_binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing400/release_001/KLS_certification_comparison_001/native_build_002/bin/Xyce",
+    "candidate_binary_sha256": "e4c7f7273976a404932e3222c8db4306ac9c8a0bb0106a8816fd72333250e3d6",
+    "required_environment": {
+      "OPENPLL_WIRE_PC": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing400/release_001/native_wire_preconditioner_metadata_001/wire_C.bin",
+      "OPENPLL_KLS_COMPARE_THREADS": "4",
+      "OPENPLL_KLS_COMPARE_POLICY": "application_managed"
+    },
+    "release_qualified": false,
+    "adopted": false
+  },
+  "DCO_trial_scope": "Original 80 ns deck, diagnostic exit after 64 accepted full-equation solves; 80 ns qualification not attempted",
+  "detailed_profile": {
+    "campaign": "build/timing400/release_001/KLS_detailed_profile_001",
+    "captured_findings": "build/timing400/release_001/KLS_detailed_profile_001/captured_findings.json",
+    "short_native_state": "completed",
+    "uninstrumented_production_library_modified": false,
+    "instrumentation_inverse_exact": true,
+    "results": "build/timing400/release_001/KLS_detailed_profile_001/results.json"
+  }
+}

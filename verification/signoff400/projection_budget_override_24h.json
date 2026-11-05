@@ -1,0 +1,9 @@
+{
+  "scope": "full_spatial_operator_projection",
+  "wall_limit_s": 86400,
+  "authorization": "User: Then extend limit to 24h",
+  "active_attempt": "build/signoff400/startup_timing_full_spatial_projection_002",
+  "controller": "verification/signoff400/project_full_native_operators_v3.py",
+  "other_compute_budgets_unchanged": true,
+  "prior_attempt_preserved": true
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "approved_utc": "2026-10-19T14:14:17.460934+00:00",
+  "approval": "User selected 400 MHz first and approved implementation.",
+  "requirements": "verification/release_requirements_400mhz.json",
+  "requirements_sha256": "02911569a2538d8b4d6c3139decdf7ec4d7c33bf2cbad85eed442947c0022b52",
+  "target_mhz": 400,
+  "supply_v": 1.8,
+  "pvt_points": 15,
+  "whole_pll_cases": 60,
+  "per_check_wall_clock_seconds": 43200,
+  "timeout_is_inconclusive": true,
+  "automatic_identical_retry": false,
+  "remaining_reset_cartesian_matrix_mandatory": false,
+  "fixed_300ns_dco_duration_mandatory": false,
+  "gates": [
+    {
+      "id": "dco_calibration",
+      "status": "PENDING_TT_RANGE_GATE",
+      "required": "Exact-candidate nominal tuning coverage and settled, numerically converged frequency model across15process/temperature points, with valid fine8..247 operating range.",
+      "acceptance": "Combined calibration uncertainty <=min(100ppm target,0.25measured localLSB). Independent timestep/tolerance/duration checks, adjacent-code spacing and interpolation/error-bound validation; no fixed300ns requirement.",
+      "active_work": "build/timing400/release_001/dco/status.json",
+      "next": "160-load candidate first, 144-load fallback. Reuse TT400 endpoints; check TT300/250/100 before15PVT expansion. Missing measured brackets stop a candidate. Calibration follows a full range pass."
+    },
+    {
+      "id": "digital_timing",
+      "status": "OPEN_SAMPLED_ENVELOPE_REJECTED",
+      "required": "Qualified setup/hold, reset recovery/removal, pulse/slew and routed min/maxRC coverage over nominal15PVT, including generated/event clocks.",
+      "acceptance": "Qualified STA views or independently justified conservative envelopes, plus targeted timing-aware checks for behavior not covered by STA/proofs. Unsupported blanketSDF replay is not itself a required test method; uncovered physical timing remains a blocker.",
+      "reuse": "Candidate diagnostic STA and route/formal evidence retain their original scope.",
+      "next": "Determine conservative timing bounds from qualified characterization; the tested fastFF/slowSS LUT envelope is rejected, even on these sampled arcs. Full cells/arcs/constraints/RC remain open.",
+      "native_characterization": "build/timing450/interface_characterization/nominal_hs_propagation_001/assessment.json",
+      "independent_delay_validation": "build/timing450/interface_characterization/nominal_hs_propagation_independent_validation_001.json",
+      "candidate_envelope_test": "build/timing450/interface_characterization/nominal_hs_sampled_delay_envelope_001.json",
+      "new_evidence": {
+        "sampled_arcs": 2,
+        "native_cases_passed": 120,
+        "independent_delay_checks": 240,
+        "candidate_envelope_violations": 20
+      },
+      "maximum_clock_period_ns": 2.5
+    },
+    {
+      "id": "reset_cdc_interfaces",
+      "status": "PARTIAL",
+      "required": "Reset, event capture/acknowledgment, no stale/repeated consumption and CDC behavior under conservative physical interface bounds.",
+      "reuse": {
+        "nominal_independent_reset_passes": 78,
+        "unbounded_RTL_properties": 13,
+        "unbounded_observable_routed_properties": 12
+      },
+      "acceptance": "Analog-correlated timing/storage/reset bounds with independent holdouts plus digital proofs over those assumptions; metastability evidence/assumptions documented. Finite deterministic passes alone do not establishMTBF.",
+      "next": "Derive uncovered physical bounds from completed nominal results before scheduling any additional native reset case."
+    },
+    {
+      "id": "whole_pll",
+      "status": "BLOCKED_VALIDATED_MODELS",
+      "required": "60mode/PVT combinations: four modes x five corners x three temperatures at1.8V, plus mode-change coverage.",
+      "acceptance": {
+        "acquisition_limit_ns": 200000,
+        "sustained_windows": 4,
+        "window_ns": 5120,
+        "frequency_error_ppm": 1000,
+        "phase_span_output_periods": 0.1,
+        "phase_mean_output_periods": 0.1,
+        "phase_drift_output_periods": 0.02
+      },
+      "prepared": "build/timing400/release_001/functional_matrix/assessment.json",
+      "next": "Use the frozen candidateRTL harness with a validated continuous-phase DCO and analog-correlated receiver/BBPD/reset model. Legacy rootRTL co-simulation does not match the candidate."
+    },
+    {
+      "id": "physical_signoff",
+      "status": "PARTIAL",
+      "required": "Final-layout DRC/LVS/antenna, applicable density and power integrity; measured physical jitter/power/area and documented integration assumptions.",
+      "reuse": {
+        "digital_candidate_DRC_errors": 0,
+        "digital_candidate_LVS_unique": true,
+        "antenna_net_violations": 0,
+        "power_pins_connected": 74778
+      },
+      "acceptance": "Complete applicable assembled-context checks; static assumed-activity power/IR and global density diagnostics retain limited scope. Characterize jitter/power per existing policy, without inventing numerical limits.",
+      "next": "Use validated wholePLL activity and actual power/assembly assumptions to close remaining integrity and density checks; qualify physical noise."
+    },
+    {
+      "id": "reproducible_release",
+      "status": "BLOCKED_PRIOR_GATES",
+      "required": "One frozen qualified candidate and mutually matching RTL/layout/extracted models/calibration/constraints/reports.",
+      "acceptance": "All prior five gates have direct passing evidence for the same final candidate; regenerate/re-audit artifacts and source/model identities.",
+      "next": "Retain current candidate unselected until mandatory evidence passes; no release tag or qualification claim now."
+    }
+  ],
+  "release_qualified": false,
+  "previous_plan": "verification/release_plan.json",
+  "modes_mhz": [
+    100,
+    250,
+    300,
+    400
+  ],
+  "dco_candidate_priority": [
+    160,
+    144
+  ],
+  "max_concurrent_native_checks": 4,
+  "native_settings": {
+    "per_check_wall_clock_seconds": 43200,
+    "automatic_identical_retry": false,
+    "range_duration_ns": 80,
+    "range_measurement_start_ns": 20,
+    "range_max_step_ps": 10,
+    "maximum_native_workers_including_legacy": 4
+  }
+}

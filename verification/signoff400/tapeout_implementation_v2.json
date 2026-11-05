@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "objective": "Implement the complete 400 MHz hard-macro tapeout qualification plan",
+  "profile": {
+    "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/requirements_v2.json",
+    "sha256": "779229dc9f5595ebe91ad80e788684eeb35a818108775f8c8ee7c692ac5d4e19"
+  },
+  "campaign": {
+    "manifest": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/campaign_tapeout_v2_001/manifest.json",
+    "status": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/campaign_tapeout_v2_001/status.json"
+  },
+  "completed_numerical_and_flow_controls": {
+    "release_v2_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/release_v2_controls_001/assessment.json",
+      "sha256": "e296b26556cf12f3919d1a28275e5f8182d9cee8d193528572b8c082d5782347"
+    },
+    "conservative_C_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/conservative_C_controls_001/assessment.json",
+      "sha256": "61d30ce9a60926eab86faa6322a9f310488d21a208f1bc2da4df0b195464a7a6"
+    },
+    "startup_timing_conservative_C_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_conservative_C_001/assessment.json",
+      "sha256": "cfea4bdef8cb148c593aedea30141279d1e19a99315697dfc3d8e1d8b8626fcb"
+    },
+    "fringe_interval_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/fringe_interval_controls_001/assessment.json",
+      "sha256": "fd382ed6c551519d77d655506ea033caf690ee66b33de8094c89194e1200910b"
+    },
+    "registered_mpfr_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/registered_mpfr_controls_001/assessment.json",
+      "sha256": "e49a5ff2c59a1dc5ffafd829da3eb4a907af66ba0d337aeccb47f4505656dc02"
+    },
+    "reference_interval_trace_controls_002": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/reference_interval_trace_controls_002/assessment.json",
+      "sha256": "07352777d441e9eeae93638dd9bf20a630c9c7e99fff978a652f56e7c10ffa9c"
+    },
+    "startup_timing_conservative_C_row_replay_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_conservative_C_row_replay_001/assessment.json",
+      "sha256": "b526fbfeb805e113914fd60b27c79e6f78b89a7e65f147b70f4f3b6edc24455a"
+    },
+    "startup_timing_negative_C_fields_002": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_negative_C_fields_002/assessment.json",
+      "sha256": "970d419670f9f3dfac28170671d52ce42071f96d68ffa7eba7663c936da52c66"
+    },
+    "startup_timing_body_zero_VDS_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_body_zero_VDS_001/assessment.json",
+      "sha256": "718ddd0a1cca6fe864a1dd44e404c4aa04e9b710445a61aa1a5102cff5be98b1"
+    },
+    "startup_timing_body_operating_parameters_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_body_operating_parameters_001/assessment.json",
+      "sha256": "e48433e9ea8039d2345f1a9554b119e1da3f9c4c153dddf29ad166bb33c9b3cf"
+    },
+    "startup_timing_junction_zero_bias_continuity_002": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_junction_zero_bias_continuity_002/assessment.json",
+      "sha256": "938ef972d1f189faebbad021fbac44d65f5785b1d9ad11680b99d336ad1997ac"
+    },
+    "startup_timing_reference_intervals_003": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_reference_intervals_003/assessment.json",
+      "sha256": "f446c9b443f9a20b2f18c97069990fd0e5befb29f5b4c50da81b0b84b2c3886d"
+    },
+    "negative_C_support_controls_002": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/negative_C_support_controls_002/assessment.json",
+      "sha256": "a6f5fe1fe34c17fa4c8c6ecfdd9b12887359de04d1daa78fc05a0eb20060f1cb"
+    },
+    "startup_timing_negative_C_support_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_negative_C_support_001/assessment.json",
+      "sha256": "ec548511a48c8f8d33fd758b7d2f8fcaf5c3eb2ef1b178d3d5af5d108fd1b30a"
+    },
+    "negative_C_selector_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/negative_C_selector_controls_001/assessment.json",
+      "sha256": "eaed939346b9f44c01814cfacc7812c673b532490861ed3405ef9d676d919b37"
+    },
+    "startup_timing_negative_C_operators_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_negative_C_operators_001/assessment.json",
+      "sha256": "9124398ea6e498d5b66ebe363e2472c9436f7cc4d8c10bff9ebcc8d30c3d4a05"
+    },
+    "selected_C_diagonal_controls_002": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_C_diagonal_controls_002/assessment.json",
+      "sha256": "ebe2c94f2ed21093ef14329123b9f6244bd8611e43dcd825ffb034284668cee1"
+    },
+    "startup_timing_analytic_negative_C_diagonals_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_analytic_negative_C_diagonals_001/assessment.json",
+      "sha256": "cba49c35b6c46272d8de2995c913c299002e4c902fdd8e59f7f583e328eb2efe"
+    },
+    "interval_reference_comparator_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/interval_reference_comparator_controls_001/assessment.json",
+      "sha256": "99fcced0cc2e321da1ce1e384aaf214d28f507538a8a7c177cbdde227aa554fc"
+    },
+    "startup_timing_spatial_equivalence_intervals_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_spatial_equivalence_intervals_001/assessment.json",
+      "sha256": "ad7651c2fd7ace32374a18220ff7154c4f8ee90fb2a5434732b4171d9747fa7a"
+    },
+    "symbolic_C_zero_row_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/symbolic_C_zero_row_controls_001/assessment.json",
+      "sha256": "df634ae5b545044b14658e7d96d2e91d897106c1319f65b8ebdc5c4443c48854"
+    },
+    "startup_timing_symbolic_C_zero_rows_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_symbolic_C_zero_rows_001/assessment.json",
+      "sha256": "88227239b2f58e70ce02ee642cc6d5340839ba28e48104f2b715cb4297dba62b"
+    },
+    "zero_row_C_operator_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/zero_row_C_operator_controls_001/assessment.json",
+      "sha256": "5df470e60a9171b3000e7467a289fd678f659427d8809309aad6e7c133ec0c87"
+    },
+    "startup_timing_conservative_C_source_zero_rows_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_conservative_C_source_zero_rows_001/assessment.json",
+      "sha256": "ea4dc1c966d81104deb313ea549eda1c12d2fdcd0575196629aa950591058f6c"
+    },
+    "startup_timing_source_zero_C_followup_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_source_zero_C_followup_001/assessment.json",
+      "sha256": "320fcff22feef985da7b0650a0e921a00b5e6f55f6d50520385869ebd892ee36"
+    },
+    "startup_timing_combined_source_zero_C_rows_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_combined_source_zero_C_rows_001/assessment.json",
+      "sha256": "a9a3b8a430852f423d432e22b5ce38bbcf4715f37d9afef58bc1bd04a745e77e"
+    },
+    "logical_C_weighted_DD_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/logical_C_weighted_DD_controls_001/assessment.json",
+      "sha256": "e260db571807186342f122b5291d9a38de64ebd6c4dfc41f64561b9e5af9e05d"
+    },
+    "logical_C_principal_pair_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/logical_C_principal_pair_controls_001/assessment.json",
+      "sha256": "d391f6bbdde9c8e822fb981d6f84798af57baf9c438879a224491bd82612ca2f"
+    },
+    "startup_timing_conservative_C_source_zero_rows_002": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_conservative_C_source_zero_rows_002/assessment.json",
+      "sha256": "320cb45acbc76142a9cce68e670b592bddb5ad8b470af244aceb6020b1c53867"
+    },
+    "startup_timing_full_logical_C_principal_pairs_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_logical_C_principal_pairs_001/assessment.json",
+      "sha256": "24b9ef2a687702d34502e080a3c73a605976599803f99dab7a5ce471c7adc626"
+    },
+    "startup_timing_full_logical_C_weighted_DD_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_logical_C_weighted_DD_001/assessment.json",
+      "sha256": "6c83e106493b59e231373389932b02c4523f638af93ad9e7c5ef9d5580e40c75"
+    },
+    "startup_timing_source_zero_C_pair_followup_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_source_zero_C_pair_followup_001/assessment.json",
+      "sha256": "ae93c05f88beae6816556a25d1d7b232087f0204258e15cc65066e6db9d9df0d"
+    },
+    "startup_timing_combined_source_zero_C_rows_002": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_combined_source_zero_C_rows_002/assessment.json",
+      "sha256": "3183fd8c594979e775719c5d5e3b7c44bf37fd7a89f04fd6c13c352c13a4fe7c"
+    },
+    "startup_timing_small_C_row_inventory_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_small_C_row_inventory_001/assessment.json",
+      "sha256": "eb4b2d50e197d16fd2b97622b36f5116085fe7538fa8ae50791184bfa79a0118"
+    },
+    "startup_timing_implicit_MOS_terminal_geometry_003": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_implicit_MOS_terminal_geometry_003/assessment.json",
+      "sha256": "06eece05f08fc81af780c799bad41f033202dd9baf46beca81d791caa87887c0"
+    },
+    "startup_timing_mapped_CDC_inventory_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_mapped_CDC_inventory_001/assessment.json",
+      "sha256": "97b808c7b864fc8cd3e8e1825ae3ef6b019aa014c557e089c778ba4048046bb1"
+    },
+    "startup_timing_routed_CDC_inventory_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_routed_CDC_inventory_001/assessment.json",
+      "sha256": "9374166207be0b13c407645dda9d6dbdbcf03ba82df906349e34dd61f839ca41"
+    },
+    "startup_timing_routed_CDC_comparison_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_routed_CDC_comparison_001/assessment.json",
+      "sha256": "73293f991f1845c3ca0c434f04169507590283957490a6d26362339b8e172217"
+    },
+    "startup_timing_source_zero_C_inventory_followup_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_source_zero_C_inventory_followup_001/assessment.json",
+      "sha256": "0e484db3dafb3ada315fe94a614841503ec88164d4f39fab86bb2cbc4d7bae9a"
+    },
+    "startup_timing_combined_source_zero_C_rows_003": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_combined_source_zero_C_rows_003/assessment.json",
+      "sha256": "4b358ea01276650c817c175619ec269e8d46dc82618e8429612627851b670a84"
+    },
+    "C_factor_pattern_controls_002": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/C_factor_pattern_controls_002/assessment.json",
+      "sha256": "479589ad3c4d74e54dd48307e76cb12394417f9f38dc50ba73c5a7f5ec3be19c"
+    },
+    "startup_timing_CDC_obligations_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_CDC_obligations_001/assessment.json",
+      "sha256": "759c2d280bda0ddeb39c33c05267649b5f44fb60b68286224430711bc4ff4d88"
+    },
+    "startup_timing_conservative_C_source_zero_rows_003": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_conservative_C_source_zero_rows_003/assessment.json",
+      "sha256": "c6bbb293c15544a018467df92ff6c6e79cffa3044d021b146b9b07f3d2fb11fa"
+    },
+    "startup_timing_full_C_factor_pattern_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_C_factor_pattern_001/assessment.json",
+      "sha256": "c1381a20cd2b29d4086145dad85d152293fd9c840ae91dc733771847bb80455d"
+    },
+    "startup_timing_full_logical_C_principal_pairs_002": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_logical_C_principal_pairs_002/assessment.json",
+      "sha256": "c6c9648ab9e669e156e727403b686291ddbc7a40a4f9a33f2c806955dca6c67f"
+    },
+    "startup_timing_CDC_physical_binding_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_CDC_physical_binding_001/assessment.json",
+      "sha256": "4e0ec857e77c93c90a9ed8d11a2b469bfd9184f6ebdc37464f96af8e01286cf6"
+    },
+    "startup_timing_CDC_interstage_paths_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_CDC_interstage_paths_001/assessment.json",
+      "sha256": "e397824d065bf39c3f96ddc49baa5fb805929087f5d12dcc9191392358264393"
+    },
+    "startup_timing_conservative_C_source_zero_rows_004": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_conservative_C_source_zero_rows_004/assessment.json",
+      "sha256": "3928f3e2ce158cd63f518666b27b9faa191e87ac7d4f113afe3cc0e8de2ed4cf"
+    },
+    "component_CG_pattern_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/component_CG_pattern_controls_001/assessment.json",
+      "sha256": "657b6f864ebe83dcd511cb8889ee6b868716584704e4c6e3c37cf01ed04da64d"
+    },
+    "startup_timing_component_CG_factor_pattern_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_component_CG_factor_pattern_001/assessment.json",
+      "sha256": "db055746dbead1009c254c139cdd1f4a370920ad757e6a8deefd162a2d293bde"
+    },
+    "C_vector_energy_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/C_vector_energy_controls_001/assessment.json",
+      "sha256": "0d1cd82216d787cc90f9fd3bdd9c0fcc7fb27d54cfba08cdb2b1884ac0be3521"
+    },
+    "C_negative_energy_search_controls_001": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/C_negative_energy_search_controls_001/assessment.json",
+      "sha256": "c29a495a1cf4c075b8f408474446a585db28d09005a20bab4efd875299f12d70"
+    },
+    "startup_timing_full_logical_C_principal_pairs_003": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_logical_C_principal_pairs_003/assessment.json",
+      "sha256": "1664fd800d63c15ac45b507bbec93d059ea7553f92c0e15c5c6e30e459be8046"
+    }
+  },
+  "active_work": {
+    "full_logical_C_passivity_149_rows": {
+      "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_logical_C_weighted_DD_002",
+      "owner": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_logical_C_weighted_DD_002/owner.json",
+      "owner_sha256": "caec7d3fafc3316252601f423d3a7a06f12ce1ebdd9e726e835892031c168700",
+      "status": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_logical_C_weighted_DD_002/status.json",
+      "automatic_identical_retry": false
+    },
+    "full_logical_C_passivity_344_rows": {
+      "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_logical_C_weighted_DD_003",
+      "owner": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_logical_C_weighted_DD_003/owner.json",
+      "owner_sha256": "66da27cc48169cf24caea7f3a1b59af9d8cd2326f1aea1a15b0725d61aeffa64",
+      "status": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_logical_C_weighted_DD_003/status.json",
+      "automatic_identical_retry": false
+    },
+    "full_C_negative_energy_search": {
+      "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_C_negative_energy_001",
+      "owner": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_C_negative_energy_001/owner.json",
+      "owner_sha256": "1916cae9bfd321d53a667355666e08467877ffb9f94beadd92544f2e5b612534",
+      "status": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/startup_timing_full_C_negative_energy_001/status.json",
+      "automatic_identical_retry": false
+    }
+  },
+  "stages": [
+    {
+      "id": "electrical_numerics",
+      "depends_on": [],
+      "required_outcomes": [
+        "charge-conserving C",
+        "certified reference equivalence",
+        "full passivity"
+      ],
+      "qualified": false
+    },
+    {
+      "id": "materials_and_devices",
+      "depends_on": [],
+      "required_outcomes": [
+        "qualified sheet/contact/well PVT laws",
+        "560 semiconductor end states",
+        "junction attachment",
+        "MOS backend closure"
+      ],
+      "qualified": false
+    },
+    {
+      "id": "native_solver",
+      "depends_on": [
+        "electrical_numerics",
+        "materials_and_devices"
+      ],
+      "required_outcomes": [
+        "full-equation residual <= 1e-12",
+        "independent numerical holdouts"
+      ],
+      "qualified": false
+    },
+    {
+      "id": "cells_and_cdc",
+      "depends_on": [
+        "materials_and_devices"
+      ],
+      "required_outcomes": [
+        "15-PVT cell libraries and sequential constraints",
+        "command/reset aggregate <= 1 FIT"
+      ],
+      "qualified": false
+    },
+    {
+      "id": "digital_timing",
+      "depends_on": [
+        "cells_and_cdc"
+      ],
+      "required_outcomes": [
+        "final routed timing at locked and reachable startup frequencies"
+      ],
+      "qualified": false
+    },
+    {
+      "id": "dco_calibration",
+      "depends_on": [
+        "native_solver"
+      ],
+      "required_outcomes": [
+        "15-PVT final-loading DCO and calibration error bounds"
+      ],
+      "qualified": false
+    },
+    {
+      "id": "pll_lock",
+      "depends_on": [
+        "dco_calibration",
+        "cells_and_cdc"
+      ],
+      "required_outcomes": [
+        "180 passing scenarios",
+        "one common gain pair",
+        "native validation and bounded model error"
+      ],
+      "qualified": false
+    },
+    {
+      "id": "physical_signoff",
+      "depends_on": [
+        "digital_timing",
+        "pll_lock"
+      ],
+      "required_outcomes": [
+        "final physical checks",
+        "qualified power-integrity and EM limits"
+      ],
+      "qualified": false
+    },
+    {
+      "id": "handoff",
+      "depends_on": [
+        "physical_signoff"
+      ],
+      "required_outcomes": [
+        "all seven audit gates",
+        "ten artifact roles",
+        "reproducible clean handoff"
+      ],
+      "qualified": false
+    }
+  ],
+  "physical_RC_qualified": false,
+  "release_qualified": false,
+  "next_actions": [
+    "The 344-row source-zero C derivative is fully certified and passes all exact principal-pair screens. Its full weighted-DD audit and the new diagonally scaled two-pass Lanczos candidate search/exact GMP energy check remain open. A nonnegative candidate energy or a failed sufficient DD certificate is not a PSD proof.",
+    "The full weighted-DD audit on the 129-row derivative failed (9,142,411 negative margins); two coupled zero diagonals prevented a scaling search. Recheck after source-proven repairs with the new separate 16-CPU search and 1-CPU exact-verification leases. Full PSD remains open; use local positive-energy decomposition or verified factorization if sufficient DD fails again.",
+    "The complete conductor-collapse comparison now passes all 45,967,654 entries using independent source-derived intervals at the two originally failing explicit-reference entries. Preserve original failed comparison and scalar reference bytes.",
+    "Resolve physically justified junction areas/perimeters, distributed/intrinsic allocation, all sheet/contact/well PVT laws and the 560 capacitively active semiconductor end states; do not substitute guessed values.",
+    "Continue native solver integration, 15-PVT cell/CDC and timing, DCO calibration, 180 PLL lock scenarios, physical signoff and reproducible handoff; keep the full release objective active.",
+    "Mapped and routed cone inventories match all 489 sequential identities, source cones and clock roots with inversion parity retained; both have 421 normalized data-crossing candidates. Classify those candidates and 18 mapped asynchronous-control groups with explicit protocol/clock intent, preserve all 13 marked two-stage chains, bind final GDS connectivity, then characterize timing and aggregate <=1 FIT reliability. Structural tracing alone proves no FIT bound.",
+    "Finish the bounded CHOLMOD symbolic fill benchmark on the full completed 129-row C pattern. Independent graph-elimination controls match all factor column counts. This is C-only structure with explicit reference/all states retained: no numeric factorization, KLU fill bound, PSD, G/device integration or native-solver qualification follows from it.",
+    "The CDC obligation manifest binds 11 command/reset chains and two separate BBPD chains to actual routed masters. It retains every one of 421 crossing candidates without waiver and records 2/29 implemented destination registers for the two logical 34-bit bundles. Obtain rate declarations, physical stage resolution bounds, metastability/recovery characterizations, bundle capture timing and initial static-input setup evidence before any interface/FIT promotion.",
+    "The full C AMD symbolic factor has 27,338,076,683 entries: about 407.37 GiB for simplicial row indices and values alone, exceeding the 48-GiB native budget. This rules out that measured ordering, not all KLU/orderings. Benchmark component/block preconditioner structure and full-equation GMRES rather than launching this numeric factorization.",
+    "All 13 synchronizer pairs bind to actual database instances and pins. Twelve have two clkbuf_2 hold buffers each; one is direct. All 24 intermediate buffers are traced in signal order with even inversion parity. Bind their physical pins/nets and include the complete paths in resolution/metastability characterization; do not assume a direct two-flop path.",
+    "Conductor-block C/G pattern analysis completed with 36,952,592 factor entries (591,241,472 index/value bytes), all G-family edges retained and C cross-component couplings omitted only from preconditioning. This bounded structure supports the next numeric preconditioner/full-equation GMRES work; it supplies no physical material values, native-solver qualification or KLU fill bound."
+  ]
+}

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(OpenPLLNativeSolverProbe LANGUAGES CXX)
+find_package(Trilinos REQUIRED)
+add_executable(native_solver_probe main.cpp)
+target_compile_features(native_solver_probe PRIVATE cxx_std_17)
+target_include_directories(native_solver_probe PRIVATE ${Trilinos_INCLUDE_DIRS} ${Trilinos_TPL_INCLUDE_DIRS})
+target_link_directories(native_solver_probe PRIVATE ${Trilinos_LIBRARY_DIRS} ${Trilinos_TPL_LIBRARY_DIRS})
+target_link_libraries(native_solver_probe PRIVATE ${Trilinos_LIBRARIES} ${Trilinos_TPL_LIBRARIES})

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "prototype_400mhz_qualification_in_progress",
+  "target_mhz": 400,
+  "reference_mhz": 25,
+  "modes_mhz": [
+    400
+  ],
+  "supply_v": 1.8,
+  "pvt_points": 5,
+  "mode_pvt_cases": 5,
+  "requirements": "verification/prototype_400mhz.json",
+  "qualification_status": "build/timing400/prototype_001/status.json",
+  "historical_four_mode_profile": "verification/active_release_four_mode_400mhz.json",
+  "prototype_handoff_qualified": false,
+  "release_qualified": false,
+  "sha256": {
+    "requirements": "23afb9bba5f944141ffa8d01a6665ce19cbb756659684be4c819644236f1696b"
+  }
+}

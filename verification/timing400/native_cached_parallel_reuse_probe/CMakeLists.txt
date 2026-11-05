@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.16)
+project(OpenPLLScaleReuseProbe LANGUAGES CXX)
+find_package(Trilinos REQUIRED)
+add_executable(native_cached_parallel_reuse_probe main.cpp)
+target_compile_features(native_cached_parallel_reuse_probe PRIVATE cxx_std_17)
+target_include_directories(native_cached_parallel_reuse_probe PRIVATE ${Trilinos_INCLUDE_DIRS} ${Trilinos_TPL_INCLUDE_DIRS})
+target_link_directories(native_cached_parallel_reuse_probe PRIVATE ${Trilinos_LIBRARY_DIRS} ${Trilinos_TPL_LIBRARY_DIRS})
+target_link_libraries(native_cached_parallel_reuse_probe PRIVATE ${Trilinos_LIBRARIES} ${Trilinos_TPL_LIBRARIES})
+target_include_directories(native_cached_parallel_reuse_probe PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../native_wire_preconditioner)
+
+find_package(OpenMP REQUIRED)
+target_link_libraries(native_cached_parallel_reuse_probe PRIVATE OpenMP::OpenMP_CXX)

@@ -1,0 +1,141 @@
+#!/usr/bin/env python3
+"""Place the prototype's three macros and audit every logical/PG connection.
+
+This produces an unrouted assembly frame, not physical signoff or lock evidence.
+"""
+import argparse
+from datetime import datetime, timezone
+import json
+from pathlib import Path
+import subprocess
+import sys
+from common import ROOT, TOP, source_pins, sha, save, verify
+sys.path.insert(0, str(ROOT/'verification/timing400'))
+from check_compact_mapping import TECH, LEF, OPENROAD
+
+DCO = 'IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160'
+
+
+def expected():
+    result = {}
+    def scalar(inst, pin, net=None):
+        result[inst, pin] = net or pin
+    def bus(inst, pin, width, net=None):
+        for i in range(width): scalar(inst, f'{pin}[{i}]', f'{net or pin}[{i}]')
+    for pin in ('REFCLK','PLLOUT','RESET_N','PLL_ENABLE','STARTUP_INCREASING',
+                'CONFIG_READY','CLKDIV_RETIMED','TRACKING','CONFIG_BUSY','FAILED'):
+        scalar('digital', pin)
+    for pin,width in [('STARTUP_COARSE',6),('STARTUP_FINE',8),('KI',8),('KP',5),
+                      ('COARSE_CODE',6),('DCO_CODE',8),('DLF_CODE',10)]:
+        bus('digital',pin,width)
+    scalar('digital','VDD','VPWR'); scalar('digital','VSS','VGND')
+    scalar('digital','OSC_RESET_N','osc_reset_n')
+    scalar('digital','BBPD_RESET_N','bbpd_reset_n')
+    bus('digital','BBPD',2,'bbpd')
+    bus('digital','DCO_THERM',255,'fine_therm')
+    bus('digital','COARSETHERMAL_CODE',47,'coarse_therm')
+    for inst in ('oscillator','detector'):
+        for pin in ('VPWR','VGND','VPB','VNB'): scalar(inst,pin)
+    scalar('oscillator','RESET_N','osc_reset_n'); scalar('oscillator','PLLOUT')
+    bus('oscillator','DCO_THERM',255,'fine_therm')
+    bus('oscillator','COARSETHERMAL_CODE',47,'coarse_therm')
+    scalar('detector','REF','REFCLK'); scalar('detector','CLKDIVR','CLKDIV_RETIMED')
+    scalar('detector','RESET_N','bbpd_reset_n'); bus('detector','BBPD',2,'bbpd')
+    return result
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', required=True, type=Path)
+    a=parser.parse_args(); out=a.output.resolve(); out.mkdir(parents=True,exist_ok=False)
+    base=ROOT/'build/timing400/prototype_001'
+    receipt=base/'physical_checks_006/assessment.json'
+    checked=json.loads(receipt.read_text())
+    assert checked['digital_layout_pass']
+    for key in ('route_equivalence','digital_layout_assessment'):
+        assert sha(checked[key]) == checked[key+'_sha256']
+    digital=base/'local_antenna_001/digital.lef'
+    dco=ROOT/f'openlane/{DCO}/runs/c1fine_range_001/final/lef/{DCO}.lef'
+    bbpd=ROOT/'build/timing450/interface_characterization/bbpd_sampled/runs/timing450_sampled_v2/final/lef/IntegerPLL_BBPD.lef'
+    pins=source_pins()
+    for path in (Path(__file__).resolve(),Path(__file__).with_name('common.py'),
+                 Path(OPENROAD),Path('/usr/bin/iverilog'),TECH,LEF,digital,dco,bbpd,receipt,
+                 base/'local_antenna_001/signoff/route.gds'):
+        pins[str(path)]=sha(path)
+    save(out/'owner.json',dict(started_utc=datetime.now(timezone.utc).isoformat(),wall_limit_s=600))
+    # Preprocess the exact logical top, then add only the physical digital PG ports.
+    subprocess.run(['/usr/bin/iverilog','-g2012','-E','-DUSE_POWER_PINS','-o',
+                    str(out/'logical_top.v'),str(TOP)],check=True,timeout=30)
+    text=(out/'logical_top.v').read_text()
+    token='IntegerPLL_ProgrammedCore digital ('
+    assert text.count(token)==1
+    (out/'physical_top.v').write_text(text.replace(token,token+'\n        .VDD(VPWR),.VSS(VGND),'))
+    tcl='\n'.join(f'read_lef {{{p}}}' for p in (TECH,LEF,digital,dco,bbpd))
+    tcl+=f'''
+read_verilog {{{out/'physical_top.v'}}}
+link_design IntegerPLL_400MHz_PrototypeTop
+initialize_floorplan -site unit -die_area {{0 0 1000 850}} -core_area {{10 10 990 840}}
+place_macro -macro_name digital -location {{150 150}} -orientation R0 -exact
+place_macro -macro_name oscillator -location {{750 150}} -orientation R0 -exact
+place_macro -macro_name detector -location {{750 400}} -orientation R0 -exact
+set block [ord::get_db_block]
+foreach rail {{VPWR VPB}} {{[$block findNet $rail] setSigType POWER}}
+foreach rail {{VGND VNB}} {{[$block findNet $rail] setSigType GROUND}}
+set f [open {{{out/'connections.tsv'}}} w]
+foreach inst [$block getInsts] {{
+ set bb [$inst getBBox]
+ puts $f [join [list INST [$inst getName] [[$inst getMaster] getName] [$bb xMin] [$bb yMin] [$bb xMax] [$bb yMax]] "\\t"]
+ foreach pin [$inst getITerms] {{
+  set net [$pin getNet]
+  if {{$net == "NULL"}} {{error "unconnected macro pin"}}
+  puts $f [join [list PIN [$inst getName] [[$pin getMTerm] getName] [$net getName]] "\\t"]
+ }}
+}}
+close $f
+write_db {{{out/'floorplan.odb'}}}
+write_def {{{out/'floorplan.def'}}}
+'''
+    (out/'floorplan.tcl').write_text(tcl)
+    verify(pins)
+    with (out/'floorplan.log').open('x') as log:
+        subprocess.run([OPENROAD,'-exit',str(out/'floorplan.tcl')],stdout=log,
+                       stderr=subprocess.STDOUT,check=True,timeout=540)
+    actual={}; boxes={}; masters={}
+    for line in (out/'connections.tsv').read_text().splitlines():
+        fields=line.split('\t')
+        if fields[0]=='PIN':
+            key=tuple(fields[1:3]); assert key not in actual
+            actual[key]=fields[3]
+        else:
+            assert fields[0]=='INST'
+            masters[fields[1]]=fields[2]; boxes[fields[1]]=list(map(int,fields[3:]))
+    assert masters==dict(digital='IntegerPLL_ProgrammedCore',oscillator=DCO,detector='IntegerPLL_BBPD')
+    want=expected()
+    assert actual==want, dict(missing=list(want.keys()-actual.keys()),extra=list(actual.keys()-want.keys()),
+                             wrong=[(k,v,actual.get(k)) for k,v in want.items() if actual.get(k)!=v])
+    for name,b in boxes.items():
+        assert 0<=b[0]<b[2]<=1000000 and 0<=b[1]<b[3]<=850000, (name,b)
+    names=list(boxes)
+    for i,name in enumerate(names):
+        for other in names[i+1:]:
+            x,y=boxes[name],boxes[other]
+            assert x[2]<=y[0] or y[2]<=x[0] or x[3]<=y[1] or y[3]<=x[1]
+    negatives={}
+    for key,value in [(('detector','RESET_N'),'osc_reset_n'),
+                      (('oscillator','DCO_THERM[0]'),'fine_therm[254]'),
+                      (('digital','VDD'),'VGND')]:
+        corrupted=dict(actual); corrupted[key]=value
+        assert corrupted!=want
+        negatives['/'.join(key)]=True
+    verify(pins)
+    save(out/'assessment.json',dict(completed_utc=datetime.now(timezone.utc).isoformat(),
+         input_sha256=pins, macro_bboxes_dbu=boxes,macro_pins_checked=len(actual),
+         exact_logical_and_pg_pin_mapping_pass=True,inside_die_and_no_macro_overlap=True,
+         corrupted_connections_rejected=negatives,assembly_frame_pass=True,
+         physical_power_connectivity_verified=False,signal_routing_complete=False,
+         extraction_complete=False,prototype_handoff_qualified=False,release_qualified=False,
+         artifacts={str(p):sha(p) for p in out.iterdir() if p.is_file()}))
+    print(json.dumps(dict(assembly_frame_pass=True,macro_pins_checked=len(actual))))
+
+
+if __name__=='__main__':main()
