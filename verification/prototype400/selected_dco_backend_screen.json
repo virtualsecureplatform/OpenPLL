@@ -153,5 +153,97 @@
       }
     },
     "interpretation": "Real programming drivers reduce the earlier isolated-model discrepancy, but the matched-startup-age residual is about +1099 ppm. Static final programming and full-native programming histories differ; charge causality, loading, exterior switching and numerical convergence remain unresolved."
+  },
+  "expanded_receiver_load_diagnostic": {
+    "status_at_recording": "native_completed_normally",
+    "native": "build/signoff400/selected_DCO_receiver_load_control_284",
+    "assessment": {
+      "path": "build/signoff400/selected_DCO_receiver_load_control_284/assessment.json",
+      "sha256": "2789331b2c7b589096ed7a9dd1ef8e8ecb9c4b1f581147b8be104bd7513082bc"
+    },
+    "startup_aligned_comparison": {
+      "path": "build/signoff400/selected_DCO_receiver_load_comparison_296/assessment.json",
+      "sha256": "f1d233a39e7e0a1e569813ed4d1ed933c60f4fcb08a342370d2d784d0d57554d"
+    },
+    "frequency_comparisons": {
+      "common": {
+        "window_after_first_rise_ns": [
+          10,
+          40
+        ],
+        "candidate": {
+          "rising_edges": 12,
+          "frequency_mhz": 392.6386776374398,
+          "minimum_period_ns": 2.5464340972546253,
+          "maximum_period_ns": 2.5475017609494195
+        },
+        "full_native": {
+          "rising_edges": 12,
+          "frequency_mhz": 392.2233074552463,
+          "minimum_period_ns": 2.5491226980751946,
+          "maximum_period_ns": 2.5502163293856484
+        },
+        "difference_ppm": 1059.0145315136913
+      },
+      "early": {
+        "window_after_first_rise_ns": [
+          10,
+          25.0
+        ],
+        "candidate": {
+          "rising_edges": 6,
+          "frequency_mhz": 392.5897950789576,
+          "minimum_period_ns": 2.5469127927466673,
+          "maximum_period_ns": 2.5475017609494195
+        },
+        "full_native": {
+          "rising_edges": 6,
+          "frequency_mhz": 392.1738939585622,
+          "minimum_period_ns": 2.549602625344079,
+          "maximum_period_ns": 2.5502163293856484
+        },
+        "difference_ppm": 1060.5017998452927
+      },
+      "late": {
+        "window_after_first_rise_ns": [
+          25.0,
+          40
+        ],
+        "candidate": {
+          "rising_edges": 6,
+          "frequency_mhz": 392.68595946167596,
+          "minimum_period_ns": 2.5464340972546253,
+          "maximum_period_ns": 2.5467043058571477
+        },
+        "full_native": {
+          "rising_edges": 6,
+          "frequency_mhz": 392.27095708937003,
+          "minimum_period_ns": 2.5491226980751946,
+          "maximum_period_ns": 2.549417548736784
+        },
+        "difference_ppm": 1057.9482493051628
+      }
+    },
+    "selected_primitives": 6569,
+    "retained_passive_cards": 623661,
+    "remaining_omitted_primitive_loads": 591,
+    "MPI_ranks": 4,
+    "interpretation": "The matched-age residual is still +1059 ppm. Comparison with serial baseline also includes MPI numerical effects; completed MPI baseline is required to isolate the load change.",
+    "receiver_loading_bounded": false,
+    "frequency_correlation_qualified": false
+  },
+  "fine112_receiver_load_holdout": {
+    "status_at_recording": "native_running",
+    "native": "build/signoff400/selected_DCO_receiver_load_fine112_control_297",
+    "coarse": 20,
+    "fine": 112,
+    "corner": "tt",
+    "MPI_CPUs": [
+      20,
+      21,
+      22,
+      23
+    ],
+    "purpose": "Measure tuning sensitivity with the same expanded receiver partition; no extrapolated closed-loop point"
   }
 }

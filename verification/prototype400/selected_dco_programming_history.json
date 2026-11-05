@@ -56,7 +56,12 @@
     "duration_ns": 260,
     "status_at_recording": "native_running",
     "execution": "pinned release container",
-    "supersedes_preparse_environment_failure": "build/signoff400/selected_DCO_history_control_291"
+    "supersedes_preparse_environment_failure": "build/signoff400/selected_DCO_history_control_291",
+    "live_runtime": {
+      "path": "build/signoff400/selected_DCO_history_live_runtime_295.json",
+      "sha256": "5fa7c62e9b528589263870442b671238e2663c3fc16a099a8dbc9c64b3ee5ba6"
+    },
+    "live_PDK_and_executable_match_reference": true
   },
   "floating_charge_causality_proven": false,
   "frequency_correlation_qualified": false,
