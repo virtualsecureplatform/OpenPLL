@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scope": "independent direction-complete publication followup",
+  "inputs": {
+    "path": "build/signoff400/selected_complete_publication_followup_339/inputs.json",
+    "sha256": "c16d14121caf94bf00caa7d4ef8d2d152d107d48f9df06ec995e55efc411882f"
+  },
+  "native_launch_or_restart_permitted": false,
+  "status_at_recording": "waiting_for_original_publication_cases",
+  "full_controller_timing_qualified": false,
+  "release_ready": false
+}
