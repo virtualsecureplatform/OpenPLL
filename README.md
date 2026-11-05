@@ -901,3 +901,10 @@ probes are running with the solved FF exterior biases and unchanged geometry.
 Their upstream clock/data excitation is still the recorded TT packet; these
 are controlled FF response measurements, not full FF sender or PLL correlation.
 See `verification/prototype400/selected_detector_corner_controls.json`.
+
+The TT publication adapter now selects separate observed delays for event-Q
+rising and falling transitions. An independent actual-RTL receiver replay
+matches native first-stage sampling cycles. Missing directions are rejected;
+DN falling coverage and complete-controller timing remain open. The four
+recorded phase detector holdouts also pass the frozen fit without refitting.
+See `verification/prototype400/selected_publication_direction_model.json`.

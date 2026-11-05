@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "scope": "TT event-toggle publication delivery and first synchronizer only",
+  "training": {
+    "path": "build/signoff400/selected_TT_publication_direction_model_334/assessment.json",
+    "sha256": "7b33d20d939dbe69819dc909d845234fbe04651eab6ffac6a198d90d00affcad"
+  },
+  "parameters": {
+    "path": "build/signoff400/selected_TT_publication_direction_model_334/parameters.json",
+    "sha256": "6f44ffa9b025c568585f9b7f2d8702f912311610e19856dc4a5077a8a1a84263"
+  },
+  "independent_holdout": {
+    "path": "build/signoff400/selected_direction_publication_first_holdout_335/assessment.json",
+    "sha256": "dee589f5c06a486898b557a10f18fc23310e78cba17d05883f9d5421987ae01c"
+  },
+  "broad_detector_holdouts": {
+    "path": "build/signoff400/selected_detector_broad_phase_frozen_holdouts_303/assessment.json",
+    "sha256": "ec3db9061d744146b38725d5574fb6dd0f153e3e09e9f9115c541e05155fd497"
+  },
+  "up_rise_and_fall_measured": true,
+  "dn_fall_measured": false,
+  "missing_direction_fallback_permitted": false,
+  "full_controller_timing_qualified": false,
+  "release_ready": false,
+  "independent_opposite_transition_holdout": {
+    "path": "build/signoff400/selected_direction_publication_phase_zero_holdout_338/assessment.json",
+    "sha256": "e9b11131f5a75c2b09503a14f7b7c6209e2a330e5794ed2d60b36df6132e5ecd"
+  }
+}
