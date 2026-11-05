@@ -7208,3 +7208,14 @@ measured fine code against the requested stimulus; and creates a fresh measured
 registry with unchanged analog/interface keys. It writes a next-native-point
 request using `select_calibration_point.py`. It does not extrapolate a simulation
 table, launch another full native circuit, or promote diagnostic models.
+
+`capture_selected_native_runtime.py` addresses a provenance gap in the older
+native manifests: those pin the extracted model/deck, but not the PDK's nested
+include closure directly. Captures `174` and `175` read the live controller
+mount namespaces twice and hash a conservative superset of all statically
+referenced PDK files, including inactive library sections. Comparison `176`
+confirms identical contents for 319 files and checks that each native child
+shares its captured controller mount namespace. The declared image digest
+matches the previously recorded release-tool image. These are live-namespace
+observations, not proof of a historical run's image binding or corner selection;
+`historical_reference_runtime_attested` and physical qualification remain false.
