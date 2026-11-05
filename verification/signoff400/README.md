@@ -7383,3 +7383,13 @@ synchronizer-clock and reset-pin curves from the existing native reference,
 so its phase/slew relationship can be tested without changing running `273`.
 The inactive native event/detector reset traces are evidence only; they cannot
 replace the explicit active-reset protocol used by detector tests.
+
+Capture `278` completed nine channels with every one of the 45,760 native
+samples retained. Clock-path observation `279` pairs all 30 startup carrier
+edges in order: physical synchronizer transport is 249.583–249.635 ps and
+feedback-FF clock transport 261.656–261.699 ps. All four observed driver-Q
+changes follow the first eligible clock edge after data/reset changes, with
+about 441 ps rising and 319 ps falling CLK-to-Q delays. These refer to the
+physical driver Q, not a substitute observation port. The packet remains
+diagnostic; it neither replaces `187` nor qualifies an uncertainty/corner
+envelope or a complete unwrapped causal timing model.

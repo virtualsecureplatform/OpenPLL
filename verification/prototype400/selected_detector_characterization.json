@@ -937,5 +937,38 @@
     },
     "synchronizer_clock_scope": "synthetic nominal 400 MHz; recorded physical waveform comparison pending"
   },
-  "pending_physical_interface_waveform_capture": "build/signoff400/selected_interface_clock_reset_waveforms_278"
+  "physical_interface_waveform_capture": {
+    "assessment": "build/signoff400/selected_interface_clock_reset_waveforms_278/assessment.json",
+    "assessment_sha256": "d1ca369ebae8f38780ebc8bef6709cc628cc30e7554bd9f848169daea8c7fc56",
+    "channels": 9,
+    "complete_samples_per_channel": 45760,
+    "clock_path_observations": {
+      "path": "build/signoff400/selected_retimer_clock_path_observations_279.json",
+      "sha256": "c74a3b04a76e79e993d75f6a4ba9f3505df4c4c04bb015b6fa86ddcea580f57a",
+      "clock_paths": {
+        "feedback_ff_clock": {
+          "samples": 30,
+          "observed_transport_interval_ps": [
+            261.65626291677313,
+            261.69926888420036
+          ],
+          "mean_transport_ps": 261.6845877080171,
+          "ordered_startup_edge_counts_match": true
+        },
+        "synchronizer_clock": {
+          "samples": 30,
+          "observed_transport_interval_ps": [
+            249.58262471091075,
+            249.63547729163338
+          ],
+          "mean_transport_ps": 249.62170840355688,
+          "ordered_startup_edge_counts_match": true
+        }
+      },
+      "retimer_Q_transitions": 4,
+      "all_observed_Q_changes_match_first_eligible_CLK": true,
+      "unwrapped_causal_latency_qualified": false,
+      "clock_timing_qualified": false
+    }
+  }
 }
