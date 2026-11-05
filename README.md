@@ -851,3 +851,13 @@ establish a full-loop decision-cycle error: root-clock distribution, later
 receive stages, and guarded decision timing must be correlated together.
 Receiver and complete-controller timing remain unqualified. No timing offset
 has been patched into the detector fit, and the candidate RTL is unchanged.
+
+A separate receiver publication adapter now uses event-flop delays measured in
+native control 273 and validates against independent recorded-clock control
+280. Both first-stage sampling cycles match after this adjustment, including
+the UP event missed by a zero-delay publication model. The adapter's functional
+BBPD delivery input represents event publication to the zero-delay RTL flop;
+it is not the physical BBPD output voltage. Scope is limited to TT first
+post-reset positive event publications at the local physical receiver clock.
+The main PLL model remains unchanged. Opposite event transitions, later receive
+stages, root-clock distribution and full-controller timing remain unqualified.

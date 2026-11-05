@@ -69,5 +69,83 @@
   "receiver_setup_hold_qualified": false,
   "second_receive_stage_qualified": false,
   "complete_controller_timing_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "publication_adapter_holdout": {
+    "assessment": {
+      "path": "build/signoff400/selected_receiver_publication_delay_holdout_320/assessment.json",
+      "sha256": "0464965f9d02786ade066dbfa46957ef021bd8f473bd3edd8dae0ffa90d3f280"
+    },
+    "publication_reference": {
+      "path": "build/signoff400/selected_detector_real_feedback_driver_case_273/response.json",
+      "sha256": "6fa1b2c136b7c8d511f66c7bfc72311e476ce2584aeb6048f1bc739d4b0cc5ed"
+    },
+    "validation_case": "build/signoff400/selected_detector_recorded_sync_clock_case_280",
+    "publication_delays_ns": {
+      "up": 0.46644461395111847,
+      "dn": 0.4738544376166907
+    },
+    "all_observed_counts_match": true,
+    "all_observed_sampling_cycles_match": true,
+    "records": [
+      {
+        "role": "up",
+        "physical_observation_roles": {
+          "event": "event1",
+          "sync": "synchronizer0"
+        },
+        "native_event_count": 1,
+        "native_first_stage_count": 1,
+        "logical_event_count": 1,
+        "logical_first_stage_count": 1,
+        "counts_match": true,
+        "samples": [
+          {
+            "native_event_ns": 63.13196758167392,
+            "native_first_stage_ns": 65.48158738414027,
+            "logical_first_stage_ns": 65.301,
+            "earliest_clock_index_after_native_data": 21,
+            "native_sampling_clock_index": 21,
+            "logical_sampling_clock_index": 21,
+            "values_match": true,
+            "cycles_match": true,
+            "native_data_lead_ps": 2169.220612514721,
+            "native_first_stage_clock_to_Q_ps": 180.39918995162907
+          }
+        ]
+      },
+      {
+        "role": "dn",
+        "physical_observation_roles": {
+          "event": "event0",
+          "sync": "synchronizer1"
+        },
+        "native_event_count": 1,
+        "native_first_stage_count": 1,
+        "logical_event_count": 1,
+        "logical_first_stage_count": 1,
+        "counts_match": true,
+        "samples": [
+          {
+            "native_event_ns": 23.131531975078758,
+            "native_first_stage_ns": 24.69517300613424,
+            "logical_first_stage_ns": 24.513,
+            "earliest_clock_index_after_native_data": 5,
+            "native_sampling_clock_index": 5,
+            "logical_sampling_clock_index": 5,
+            "values_match": true,
+            "cycles_match": true,
+            "native_data_lead_ps": 1381.0501596512167,
+            "native_first_stage_clock_to_Q_ps": 182.59087140426544
+          }
+        ]
+      }
+    ],
+    "timing_fitted_to_validation_case": false,
+    "scope": "TT first post-reset positive event publications at the physical local receiver clock boundary; second receive stage and full controller not compared",
+    "RTL_BBPD_input_boundary": "abstract publication delivery to a zero-delay functional event flop",
+    "main_PLL_model_changed": false,
+    "receiver_setup_hold_qualified": false,
+    "complete_controller_timing_qualified": false,
+    "release_ready": false
+  }
 }
