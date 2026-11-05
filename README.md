@@ -891,3 +891,13 @@ first-stage clock cycles, alongside the two earlier recorded-clock holdout
 events. An inactive role is checked for zero events rather than fabricated
 activity. These are local receiver-boundary checks; later stages, opposite
 event transitions and all-corner full-controller timing remain open.
+
+Full FF and SS reset-state initializations completed with all saved voltages
+finite. A new corner-aware conditional probe path binds only a matching solved
+corner snapshot and rejects mismatched corners or nonfinite vectors. Its TT
+prepare-only control reproduces the existing native TT circuit, every voltage
+source, and solver/observation settings exactly. Two FF detector/publication
+probes are running with the solved FF exterior biases and unchanged geometry.
+Their upstream clock/data excitation is still the recorded TT packet; these
+are controlled FF response measurements, not full FF sender or PLL correlation.
+See `verification/prototype400/selected_detector_corner_controls.json`.

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scope": "FF private detector/feedback driver/receivers under recorded TT excitation; initialization from solved full FF reset state",
+  "TT_input_identity": {
+    "path": "build/signoff400/selected_corner_probe_TT_input_identity_331.json",
+    "sha256": "a9e5c32402edfd5334cdd19ee252b259031f8731bc0435b179737d6066ead761"
+  },
+  "FF_initialization": {
+    "path": "build/signoff400/selected_full_corner_initial_states_306/ff/assessment.json",
+    "sha256": "f44f2f753e1bb37356adba56173e08b81d0e4331f4dbc9a7b30e4e554334879f"
+  },
+  "cases": [
+    {
+      "native": "build/signoff400/selected_FF_detector_publication_case_329/native",
+      "phase_ns": 10,
+      "CPU": 20,
+      "status_at_recording": "native_running"
+    },
+    {
+      "native": "build/signoff400/selected_FF_detector_publication_case_330/native",
+      "phase_ns": -5,
+      "CPU": 21,
+      "status_at_recording": "native_running"
+    }
+  ],
+  "live_runtime": {
+    "path": "build/signoff400/selected_FF_detector_live_runtime_332.json",
+    "sha256": "26d68c81be7594eafdf73f9eea3cdb8e19729a320b03dcda971319d43a4ece9e"
+  },
+  "initialization_corner": "ff",
+  "upstream_waveform_corner": "tt",
+  "corner_sender_waveforms_correlated": false,
+  "physical_models_qualified": false,
+  "full_FF_interface_qualified": false,
+  "release_ready": false
+}

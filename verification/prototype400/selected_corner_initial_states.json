@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "scope": "Full assembled circuit reset-state initialization only; 1.8 V, 27 C",
-  "status_at_recording": "FF_native_DC_operating_point_running",
+  "status_at_recording": "corner_reset_state_native_running",
   "queue": "build/signoff400/selected_full_corner_initial_states_306",
   "prerequisite": "build/signoff400/selected_calibration_registry_advance_173",
   "existing_TT_snapshot": "build/signoff400/selected_full_initial_voltage_snapshot_216",
@@ -45,5 +45,21 @@
     "path": "build/signoff400/selected_full_FF_reset_runtime_318.json",
     "sha256": "1cf052e8fda41716e9958bed95762cc27642f57cde2972f39901934503bac8bb"
   },
-  "runtime_scope": "controller mount namespace and static PDK include superset; no historical image binding or launcher attestation claimed"
+  "runtime_scope": "controller mount namespace and static PDK include superset; no historical image binding or launcher attestation claimed",
+  "completed_reset_state_corners": [
+    {
+      "corner": "ff",
+      "assessment": {
+        "path": "build/signoff400/selected_full_corner_initial_states_306/ff/assessment.json",
+        "sha256": "f44f2f753e1bb37356adba56173e08b81d0e4331f4dbc9a7b30e4e554334879f"
+      }
+    },
+    {
+      "corner": "ss",
+      "assessment": {
+        "path": "build/signoff400/selected_full_corner_initial_states_306/ss/assessment.json",
+        "sha256": "12b5fe63c0655ef51c91b0c76acd4e909c9ffdf19dfd98e99697fb2a230aff23"
+      }
+    }
+  ]
 }
