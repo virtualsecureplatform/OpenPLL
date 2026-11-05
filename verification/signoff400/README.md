@@ -7199,3 +7199,12 @@ all 2,693 samples/31 outputs: zero sampled logic mismatches, with the nearest
 native output sample 0.89004 V from the threshold. Every channel's minimum
 sample distance exceeds its observed maximum voltage difference. This is not
 a noise-margin specification, unsaved-hazard assessment, or timing/model gate.
+
+`advance_selected_calibration.py` is now waiting in `173` for completed native
+assessment `138`. It verifies the original native/model identities, provenance,
+artifact hashes and RAW digest; compares the two decks while permitting only
+the eight binary fine biases and RAW output destination to change; checks the
+measured fine code against the requested stimulus; and creates a fresh measured
+registry with unchanged analog/interface keys. It writes a next-native-point
+request using `select_calibration_point.py`. It does not extrapolate a simulation
+table, launch another full native circuit, or promote diagnostic models.
