@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "scope": "constant voltage cuts incident only on linear capacitors",
+  "elimination": {
+    "path": "build/signoff400/selected_DCO_constant_cut_elimination_336/elimination.json",
+    "sha256": "837f8b30e5968e37f97f9888950ad5cd001c6038abc2ce96ee6f26b733677084"
+  },
+  "eliminated_nodes": 5963,
+  "reference_unknowns": 35410,
+  "control_unknowns": 23484,
+  "native_control_status_at_recording": "running",
+  "native_equivalence_and_speedup_qualified": false,
+  "absolute_charge_energy_and_removed_source_currents_preserved": false,
+  "release_ready": false
+}

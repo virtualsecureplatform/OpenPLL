@@ -908,3 +908,10 @@ matches native first-stage sampling cycles. Missing directions are rejected;
 DN falling coverage and complete-controller timing remain open. The four
 recorded phase detector holdouts also pass the frozen fit without refitting.
 See `verification/prototype400/selected_publication_direction_model.json`.
+
+A separate DCO performance control eliminates 5,963 unobserved constant-voltage
+cut nodes connected only through linear capacitors, reducing solver unknowns
+from 35,410 to 23,484. Retained differential equations are unchanged; absolute
+charge, energy and removed-source currents require reconstruction. The native
+accuracy/speed comparison is running; this reduction is not yet qualified.
+See `verification/prototype400/selected_constant_cut_control.json`.
