@@ -12,6 +12,9 @@ import sys
 from pathlib import Path
 
 from sky130_modern_targets import TARGETS_MHZ, load_target_presets
+from dco_calibration import measure
+from pll_verification import load_spec
+from pvt_release_gate import check_pvt_grid
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -39,13 +42,24 @@ def evidence_path(value: str) -> Path:
     return path if path.is_absolute() else ROOT / path
 
 
+def require_current(output: Path, inputs: list[Path], label: str) -> None:
+    require(output.is_file(), f"missing {label}: {output}")
+    for source in inputs:
+        require(source.is_file(), f"missing {label} input: {source}")
+        require(output.stat().st_mtime_ns >= source.stat().st_mtime_ns,
+                f"stale {label}: {output} predates {source}")
+
+
 def check_dco(data: dict) -> list[dict]:
+    spec = load_spec()
     rows: dict[tuple[int, int], dict[str, str]] = {}
     rcx = (ROOT / "openlane" / "IntegerPLL_DCO_EINVP_COARSE" / "runs"
            / data["dco_run_tag"] / "rcx-magic"
            / "IntegerPLL_DCO_EINVP_COARSE.rcx.spice")
     require(rcx.is_file(), f"missing characterized DCO extraction: {rcx}")
-    with (BUILD / "dco_measurements.csv").open(newline="", encoding="ascii") as handle:
+    measurements = BUILD / "dco_measurements.csv"
+    require_current(measurements, [rcx], "DCO measurements")
+    with measurements.open(newline="", encoding="ascii") as handle:
         for row in csv.DictReader(handle):
             if row.get("corner") != "tt" or row.get("status") != "pass":
                 continue
@@ -65,8 +79,11 @@ def check_dco(data: dict) -> list[dict]:
             row = rows.get((coarse, measured_code))
             require(row is not None, f"missing TT DCO row C{coarse}/code{measured_code}")
             deck = evidence_path(row["netlist"])
-            require(deck.is_file() and deck.stat().st_mtime >= rcx.stat().st_mtime,
-                    f"stale or missing TT DCO deck C{coarse}/code{measured_code}")
+            log = evidence_path(row["log"])
+            require_current(deck, [rcx], f"TT DCO deck C{coarse}/code{measured_code}")
+            require_current(log, [deck, ROOT / "scripts" / "spice_dco_postlayout.py"],
+                            f"TT DCO log C{coarse}/code{measured_code}")
+            require_current(measurements, [log], "DCO measurements")
             require(f"/runs/{data['dco_run_tag']}/rcx-magic/IntegerPLL_DCO_EINVP_COARSE.rcx.spice"
                     in deck.read_text(encoding="ascii"),
                     f"TT DCO deck C{coarse}/code{measured_code} uses the wrong extraction")
@@ -85,8 +102,19 @@ def check_dco(data: dict) -> list[dict]:
                                 (frequencies[4], "f255_mhz")):
             require(abs(observed - float(mode[field])) < 0.05,
                     f"{target} MHz manifest {field} differs from measured CSV")
+        target_waveform = evidence_path(rows[coarse, code]["waveform"])
+        require_current(target_waveform, [rcx], f"TT DCO waveform C{coarse}/code{code}")
+        window = measure(target_waveform, 12, 70, 1.8, min_periods=3)
+        error_ppm = abs(window["mhz"] / target - 1) * 1e6
         results.append({"target_mhz": target, "coarse_code": coarse,
                         "target_code": code, "freq_mhz": frequencies[2],
+                        "window_12_70_mhz": window["mhz"],
+                        "window_periods": window["periods"],
+                        "window_half_difference_mhz": window["half_window_difference_mhz"],
+                        "window_frequency_error_ppm": error_ppm,
+                        "approved_window_frequency_passed": (
+                            window["periods"] >= 8 and
+                            error_ppm <= spec["frequency_error_ppm"]),
                         "status": "pass"})
     return results
 
@@ -144,10 +172,26 @@ def check_physical(data: dict) -> None:
         require(summary.get("status") == "pass", f"physical summary failed: {path}")
         if "signoff" in summary:
             require(summary["signoff"].get("status") == "pass", f"physical signoff failed: {path}")
+    require_current(BUILD / "hardtop" / "hard_macro_top_einvp_summary.json",
+                    [ROOT / "openlane" / "IntegerPLL_HardMacroTop_EINVP" / "runs"
+                     / "modern_signoff" / "final" / "metrics.json"], "hard-top summary")
+    require_current(BUILD / "configured" / "configured_hard_macro_top_einvp_summary.json",
+                    [ROOT / "openlane" / "IntegerPLL_HardMacroTop_EINVP_25MHzConfigured"
+                     / "runs" / "modern_signoff" / "final" / "metrics.json"],
+                    "configured summary")
 
 
 def check_behavioral(data: dict) -> None:
-    log = (ROOT / "build" / "check_modern" / "configured_behavioral.log").read_text(encoding="ascii")
+    log_path = ROOT / "build" / "check_modern" / "configured_behavioral.log"
+    require_current(log_path, [MANIFEST,
+                               ROOT / "rtl" / "IntegerPLL_25MHzModeConfig_modern.v",
+                               ROOT / "rtl" / "IntegerPLL_25MHzModeController.v",
+                               ROOT / "rtl" / "IntegerPLL_DigitalCore.v",
+                               ROOT / "rtl" / "IntegerPLL_Top.v",
+                               ROOT / "models" / "IntegerPLL_DCO_25MHzCoarse_modern_model.v",
+                               ROOT / "tb" / "tb_pll_25mhz_configured_behavioral_modern.v"],
+                    "behavioral result")
+    log = log_path.read_text(encoding="ascii")
     require("PASS: 25 MHz configured behavioral PLL tracking" in log,
             "modern behavioral tracking did not pass")
     for target in TARGETS_MHZ:
@@ -157,7 +201,12 @@ def check_behavioral(data: dict) -> None:
 
 
 def check_tracking(data: dict) -> None:
-    summary = read_json(BUILD / "tracking" / "pll_25mhz_target_summary.json")
+    summary_path = BUILD / "tracking" / "pll_25mhz_target_summary.json"
+    require_current(summary_path, [BUILD / "dco_measurements.csv", MANIFEST,
+                                   ROOT / "scripts" / "xyce_pll_25mhz_target_sweep.py",
+                                   ROOT / "build" / "xyce_cinterface_smoke_mpi"
+                                   / "xyce_pll_mixed_signal_smoke"], "tracking summary")
+    summary = read_json(summary_path)
     require(summary.get("status") == "pass", "configured mixed-signal tracking failed")
     by_target = {int(float(row["target_mhz"])): row for row in summary["target_results"]}
     for target in TARGETS_MHZ:
@@ -174,8 +223,10 @@ def check_direct(data: dict) -> None:
            / "IntegerPLL_DCO_EINVP_COARSE.rcx.spice")
     for target in TARGETS_MHZ:
         mode = data["targets"][str(target)]
-        hold = read_json(BUILD / f"hold_{target}" / "pll_postlayout_dco_25mhz_hold_summary.json")
-        near = read_json(BUILD / f"nearseed_{target}" / "pll_postlayout_dco_25mhz_nearseed_summary.json")
+        hold_path = BUILD / f"hold_{target}" / "pll_postlayout_dco_25mhz_hold_summary.json"
+        near_path = BUILD / f"nearseed_{target}" / "pll_postlayout_dco_25mhz_nearseed_summary.json"
+        hold = read_json(hold_path)
+        near = read_json(near_path)
         require(hold.get("status") == "pass" and near.get("status") == "pass",
                 f"{target} MHz direct-RCX hold or near-seed run failed")
         require(len(hold["target_results"]) == 1 and len(near["target_results"]) == 2,
@@ -186,11 +237,16 @@ def check_direct(data: dict) -> None:
         for row in (hold_row, *near["target_results"]):
             deck = evidence_path(row["deck"])
             log = evidence_path(row["log"])
-            require(deck.is_file() and deck.stat().st_mtime >= rcx.stat().st_mtime,
-                    f"{target} MHz direct-RCX deck is stale or missing")
-            require(log.is_file() and log.stat().st_mtime_ns >= max(
-                rcx.stat().st_mtime_ns, MANIFEST.stat().st_mtime_ns),
-                f"{target} MHz direct-RCX simulator log is stale or missing")
+            require_current(deck, [rcx], f"{target} MHz direct-RCX deck")
+            sweep_script = ("xyce_pll_postlayout_dco_25mhz_hold_sweep.py" if row is hold_row
+                            else "xyce_pll_postlayout_dco_25mhz_nearseed_sweep.py")
+            require_current(log, [deck, MANIFEST, ROOT / "scripts" / sweep_script,
+                                  ROOT / "scripts" / "xyce_pll_postlayout_dco_cinterface_deck.py",
+                                  ROOT / "build" / "xyce_cinterface_smoke_mpi"
+                                  / "xyce_pll_postlayout_dco_mixed_signal_smoke"],
+                            f"{target} MHz direct-RCX log")
+            summary_path = hold_path if row is hold_row else near_path
+            require_current(summary_path, [log], f"{target} MHz direct-RCX summary")
             require(f"/runs/{data['dco_run_tag']}/rcx-magic/IntegerPLL_DCO_EINVP_COARSE.rcx.spice"
                     in deck.read_text(encoding="ascii"),
                     f"{target} MHz direct-RCX deck uses the wrong extraction")
@@ -214,6 +270,9 @@ def check_direct(data: dict) -> None:
 def main() -> int:
     path = BUILD / "check_summary.json"
     path.unlink(missing_ok=True)
+    spec = load_spec()
+    require(tuple(spec["modes_mhz"]) == TARGETS_MHZ,
+            "release audit target list differs from approved engineering requirements")
     data = read_json(MANIFEST)
     require(data.get("pdk_version") == PDK_VERSION, "wrong modern Ciel PDK pin")
     defaults = {target: {"coarse_code": 0, "target_code": 128, "ndiv": target // 25}
@@ -226,14 +285,25 @@ def main() -> int:
     check_behavioral(data)
     check_tracking(data)
     check_direct(data)
-    output = {"status": "pass", "pdk_version": PDK_VERSION,
+    approved_window_frequency_all_passed = all(
+        row["approved_window_frequency_passed"] for row in dco_results)
+    rcx = (ROOT / "openlane" / "IntegerPLL_DCO_EINVP_COARSE" / "runs"
+           / data["dco_run_tag"] / "rcx-magic"
+           / "IntegerPLL_DCO_EINVP_COARSE.rcx.spice")
+    pvt = check_pvt_grid(BUILD / "pvt_qualification", load_spec(), rcx,
+                         "IntegerPLL_DCO_EINVP_COARSE")
+    release_passed = approved_window_frequency_all_passed and pvt["passed"]
+    output = {"status": "pass" if release_passed else "fail",
+              "scoped_near_seed_status": "pass", "pdk_version": PDK_VERSION,
               "dco_strong_load_count": data["dco_strong_load_count"],
               "targets": dco_results,
-              "scope": "TT configured near-seed release; not arbitrary-start or PVT lock"}
+              "approved_window_frequency_all_passed": approved_window_frequency_all_passed,
+              "pvt_qualification": pvt,
+              "scope": "TT configured near-seed, full-window frequency, and extracted-DCO PVT; not arbitrary-start PLL lock"}
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(output, indent=2) + "\n", encoding="ascii")
     print(path)
-    return 0
+    return 0 if release_passed else 1
 
 
 if __name__ == "__main__":

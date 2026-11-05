@@ -8,14 +8,15 @@ import json
 from pathlib import Path
 
 
-TARGETS_MHZ = (100, 250, 300, 400, 500)
+TARGETS_MHZ = (100, 250, 300, 400, 450)
 
 
 def load_target_presets(path: Path, defaults: dict[int, dict]) -> dict[int, dict]:
     data = json.loads(path.read_text(encoding="ascii"))
     modes = data.get("targets")
     if not isinstance(modes, dict) or {int(key) for key in modes} != set(TARGETS_MHZ):
-        raise ValueError("target manifest must contain exactly 100, 250, 300, 400, 500 MHz")
+        found = sorted(modes) if isinstance(modes, dict) else None
+        raise ValueError(f"target manifest must contain exactly {TARGETS_MHZ} MHz; found {found}")
     result = {}
     for target_mhz in TARGETS_MHZ:
         mode = modes[str(target_mhz)]

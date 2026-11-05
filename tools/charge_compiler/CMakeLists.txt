@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(openpll_charge_compiler LANGUAGES CXX)
+find_package(Threads REQUIRED)
+add_executable(charge_compiler main.cpp)
+target_compile_features(charge_compiler PRIVATE cxx_std_20)
+target_link_libraries(charge_compiler PRIVATE Threads::Threads)
+target_compile_options(charge_compiler PRIVATE -O3 -Wall -Wextra -Wpedantic -fno-fast-math -ffp-contract=off)

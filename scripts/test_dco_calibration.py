@@ -2,7 +2,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from dco_calibration import assess, measure
+from dco_calibration import assess, assess_interpolation, measure
 
 
 class CalibrationTest(unittest.TestCase):
@@ -29,6 +29,19 @@ class CalibrationTest(unittest.TestCase):
         del data['step']
         with self.assertRaises(ValueError): assess(data,100)
 
+    def test_nonfinite_and_invalid_calibration_values_are_rejected(self):
+        for variant in ['baseline', 'tolerance', 'step', 'settling']:
+            for field, values in [('mhz', [float('nan'), float('inf'), 0, -1]),
+                                  ('half_window_difference_mhz', [float('nan'), float('inf'), -1])]:
+                for value in values:
+                    data = self.samples()
+                    data[variant][1][field] = value
+                    with self.assertRaisesRegex(ValueError, 'calibration samples'):
+                        assess(data, 100)
+        for target in [float('nan'), float('inf'), 0, -1]:
+            with self.assertRaisesRegex(ValueError, 'target frequency'):
+                assess(self.samples(), target)
+
     def test_frequency_over_full_window_and_truncation(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory)/'wave.prn'
@@ -41,6 +54,25 @@ class CalibrationTest(unittest.TestCase):
             self.assertAlmostEqual(measure(path,10,120,1.8)['mhz'],100)
             with self.assertRaisesRegex(ValueError,'incomplete'): measure(path,10,130,1.8)
             with self.assertRaisesRegex(ValueError,'at least'): measure(path,100,120,1.8)
+
+    def test_interpolation_requires_every_code_and_local_accuracy(self):
+        spec = {"fine_code_min": 8, "fine_code_max": 12,
+                "calibration_error_ppm": 100,
+                "calibration_error_local_lsb": 0.25}
+        reference = {code: {"mhz": 500 + (code - 8) * .1,
+                            "half_window_difference_mhz": 0}
+                     for code in (8, 9, 11, 12)}
+        holdouts = {10: {"mhz": 500.2, "half_window_difference_mhz": 0}}
+        self.assertTrue(assess_interpolation(
+            reference, holdouts, [8, 12], 500, spec)["interpolation_validated"])
+        holdouts[10]["mhz"] = 500.23
+        self.assertFalse(assess_interpolation(
+            reference, holdouts, [8, 12], 500, spec)["interpolation_validated"])
+        with self.assertRaisesRegex(ValueError, 'every fine code'):
+            assess_interpolation(reference, {}, [8, 12], 500, spec)
+        holdouts[10]['mhz'] = float('nan')
+        with self.assertRaisesRegex(ValueError, 'calibration samples'):
+            assess_interpolation(reference, holdouts, [8, 12], 500, spec)
 
 
 if __name__ == '__main__': unittest.main()

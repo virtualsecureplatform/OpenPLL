@@ -62,6 +62,14 @@ TARGETS = {
         "min_pllout_rises": 10,
         "cosim_step_ns": 0.1,
     },
+    450: {
+        "coarse_code": 0,
+        "target_code": 0,
+        "ndiv": 18,
+        "freq_tol_mhz": 25.0,
+        "min_pllout_rises": 10,
+        "cosim_step_ns": 0.1,
+    },
 }
 
 
@@ -374,7 +382,7 @@ def main() -> int:
     )
     parser.add_argument("--pdk-root", type=Path, default=Path(default_pdk_root()))
     parser.add_argument("--pdk", default="sky130A")
-    parser.add_argument("--targets-mhz", type=parse_targets, default=parse_targets("100,250,300,400,500"))
+    parser.add_argument("--targets-mhz", type=parse_targets, default=parse_targets("100,250,300,400,450"))
     parser.add_argument("--target-config", type=Path,
                         help="Characterized target manifest for a separate PDK release.")
     parser.add_argument("--ref-mhz", type=float, default=25.0)
@@ -427,6 +435,8 @@ def main() -> int:
 
     if args.target_config is not None:
         TARGETS = load_target_presets(resolve_repo_path(args.target_config), TARGETS)
+    elif 450 in args.targets_mhz:
+        parser.error("450 MHz requires a measured --target-config preset")
     if args.cosim_step_ns is not None:
         if args.cosim_step_ns <= 0:
             parser.error("--cosim-step-ns must be positive")

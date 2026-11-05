@@ -4,8 +4,6 @@ import hashlib
 import json
 from pathlib import Path
 
-import numpy as np
-
 SPEC_PATH = Path(__file__).resolve().parents[1] / 'verification/engineering.json'
 
 
@@ -38,6 +36,8 @@ def evaluate_trace(events, target_mhz, enabled_ns, spec=None):
     TRACKING flag. Missing divided-clock cycles are detected independently of
     wrapped phase, which otherwise hides an exact reference-period slip.
     """
+    import numpy as np
+
     spec = spec or load_spec()
     if target_mhz not in spec['modes_mhz']:
         raise ValueError('unsupported output mode')

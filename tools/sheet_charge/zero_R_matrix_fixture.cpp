@@ -1,0 +1,3 @@
+#include "../charge_compiler/json.hpp"
+#include "sparse_runs_v2.hpp"
+int main(int argc,char**argv){try{require(argc==2,"zero_R_matrix_fixture OUTPUT");constexpr int n=24;long double values[n][n]{},absolute[n][n]{};uint64_t terms[n][n]{};for(int i=0;i<n;i++)for(int j=i+1;j<n;j++){int w=(i*7+j*3)%13-6;values[i][i]+=w;values[j][j]+=w;values[i][j]-=w;absolute[i][i]+=std::abs(w);absolute[j][j]+=std::abs(w);absolute[i][j]+=std::abs(w);terms[i][i]++;terms[j][j]++;terms[i][j]++;}std::vector<sparse::Record> records;for(uint64_t i=0;i<n;i++)for(uint64_t j=i;j<n;j++)records.push_back({i<<32|j,values[i][j],absolute[i][j],terms[i][j]});sparse::write(argv[1],records);return 0;}catch(const std::exception&e){return 2;}}

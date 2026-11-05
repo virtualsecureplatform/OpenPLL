@@ -21,6 +21,21 @@ audit() {
 }
 
 rebuild() {
+    local settings_text
+    settings_text="$(python3 - <<'PY'
+from pathlib import Path
+from scripts.sky130_modern_targets import TARGETS_MHZ, load_target_presets
+
+manifest = Path("sky130/modern_25mhz_targets.json")
+defaults = {target: {"coarse_code": 0, "target_code": 128,
+                     "ndiv": target // 25} for target in TARGETS_MHZ}
+modes = load_target_presets(manifest, defaults)
+print("\n".join(f"{target}:{modes[target]['coarse_code']}:{modes[target]['target_code']}"
+                for target in TARGETS_MHZ))
+PY
+)"
+    local -a settings=()
+    mapfile -t settings <<< "$settings_text"
     [[ -d "$PDK_ROOT/sky130A" ]] || { echo "Missing modern Ciel PDK: $PDK_ROOT" >&2; exit 1; }
     [[ -x "$XYCE" ]] || { echo "Missing upstream Xyce: $XYCE" >&2; exit 1; }
     if [[ ! -f openlane/IntegerPLL_BBPD/runs/librelane_signoff/final/gds/IntegerPLL_BBPD.gds ]]; then
@@ -39,22 +54,24 @@ rebuild() {
 
     local -a csv_args=()
     local target coarse code low high out
-    for setting in 100:16:58 250:4:206 300:2:12 400:1:215 500:0:163; do
+    for setting in "${settings[@]}"; do
         IFS=: read -r target coarse code <<< "$setting"
         low=$((code - 8))
         high=$((code + 8))
         out="build/modern_25mhz/dco_${target}"
-        python3 scripts/spice_dco_postlayout.py --simulator xyce --xyce "$XYCE" \
-            --xyce-mpi-procs 4 --jobs 2 --timeout-s 1800 \
+        python3 scripts/spice_dco_postlayout.py --simulator xyce --xyce "$XYCE -linsolv KLU" \
+            --xyce-mpi-procs 1 --jobs 2 --timeout-s 1800 \
             --subckt-name IntegerPLL_DCO_EINVP_COARSE --rcx-netlist "$RCX" \
             --coarse-codes "$coarse" --codes "0,$low,$code,$high,255" \
             --sim-time-ns 70 --meas-start-ns 12 --step-ps 10 --resume --build-dir "$out"
         csv_args+=(--csv "$out/dco_postlayout_results.csv")
     done
+    local -a setting_args=()
+    for setting in "${settings[@]}"; do
+        setting_args+=(--setting "$setting")
+    done
     python3 scripts/calibrate_modern_25mhz.py --strong-load-count 16 \
-        "${csv_args[@]}" \
-        --setting 100:16:58 --setting 250:4:206 --setting 300:2:12 \
-        --setting 400:1:215 --setting 500:0:163
+        "${csv_args[@]}" "${setting_args[@]}"
     python3 scripts/generate_modern_25mhz.py
     make check-pll-25mhz-modern-rtl
 
@@ -77,9 +94,9 @@ rebuild() {
         -DXYCE_BUILD_DIR=/opt/xyce-build -DXYCE_SOURCE_DIR=/opt/Xyce \
         -DTrilinos_DIR=/opt/trilinos/lib/cmake/Trilinos
     cmake --build "$DRIVER_DIR" -j 4
-    for target in 100 250 300 400 500; do
+    for target in 100 250 300 400 450; do
         local -a hold_window=(--cycles 1 --measure-cycles 1 --sim-time-ns 92)
-        if [[ "$target" == 100 || "$target" == 250 || "$target" == 500 ]]; then
+        if [[ "$target" == 100 || "$target" == 250 || "$target" == 450 ]]; then
             hold_window=(--cycles 1 --measure-cycles 2 --sim-time-ns 132)
         fi
         python3 scripts/xyce_pll_postlayout_dco_25mhz_hold_sweep.py \
@@ -100,7 +117,7 @@ rebuild() {
         --driver "$DRIVER_DIR/xyce_pll_mixed_signal_smoke" \
         --dco-csv build/modern_25mhz/dco_measurements.csv \
         --target-config sky130/modern_25mhz_targets.json \
-        --targets-mhz 100,250,300,400,500 --ki-values 16 --kp-values 4 \
+        --targets-mhz 100,250,300,400,450 --ki-values 16 --kp-values 4 \
         --init-offsets=-4,4 --cycles 24 --frac 2 --boost-shift 0 --boost-after 1 \
         --tol-code 4 --freq-tol-mhz 2 --late-window-cycles 8 \
         --max-late-code-span 16 --min-expected-decisions 1 --min-motion 1 \

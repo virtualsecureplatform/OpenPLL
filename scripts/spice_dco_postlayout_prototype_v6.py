@@ -1,0 +1,897 @@
+#!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
+
+import argparse
+import concurrent.futures
+import csv
+import hashlib
+import json
+import math
+import os
+import shutil
+import subprocess
+import time
+import re
+import shlex
+
+from pll_verification import fingerprint
+from pathlib import Path
+
+from sky130_pdk import default_pdk_root
+from xyce_utils import add_xyce_arguments, validate_xyce_arguments, xyce_simulator_command
+
+
+RE_FLOAT = r"([-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?)"
+
+
+def parse_codes(text):
+    if text == "all":
+        return list(range(256))
+    codes = []
+    for item in text.split(","):
+        item = item.strip()
+        if not item:
+            continue
+        code = int(item, 0)
+        if code < 0 or code > 255:
+            raise ValueError(f"code out of 8-bit range: {code}")
+        codes.append(code)
+    return codes
+
+
+def parse_coarse_codes(text):
+    codes = []
+    for item in text.split(","):
+        item = item.strip()
+        if not item:
+            continue
+        code = int(item, 0)
+        if code < 0 or code > 63:
+            raise ValueError(f"coarse code out of mirror-turn range: {code}")
+        codes.append(code)
+    return codes
+
+
+def coarse_thermal_bits_for_turn(coarse_code, width):
+    if coarse_code < 0 or coarse_code > width:
+        raise ValueError(
+            f"coarse mirror turn {coarse_code} is not representable by "
+            f"COARSETHERMAL_CODE[{width - 1}:0]"
+        )
+    bits = [False] * width
+    for bit in range(width):
+        bits[bit] = bit < coarse_code
+    return bits
+
+
+def enabled_load_count(code, therm_invert):
+    count = 0
+    for idx in range(255):
+        active = idx < code
+        if therm_invert:
+            active = not active
+        if active:
+            count += 1
+    return count
+
+
+def measure_value(log_text, name):
+    for pattern in (
+        rf"^\s*{name}\s*=\s*{RE_FLOAT}",
+        rf"^\s*{name}\s*:\s*{RE_FLOAT}",
+    ):
+        match = re.search(pattern, log_text, re.IGNORECASE | re.MULTILINE)
+        if match:
+            return float(match.group(1))
+    return None
+
+
+def xyce_output_base(netlist_path):
+    return netlist_path.with_suffix("")
+
+
+def xyce_waveform_path(netlist_path):
+    return Path(f"{xyce_output_base(netlist_path)}.prn")
+
+
+def crossing_period_freq(waveform_path, meas_start_ns, threshold=0.9):
+    metrics = crossing_waveform_metrics(waveform_path, meas_start_ns, threshold)
+    return metrics["period_s"], metrics["freq_hz"]
+
+
+def read_waveform_points(waveform_path):
+    if not waveform_path.exists():
+        return []
+
+    points = []
+    for line in waveform_path.read_text(encoding="utf-8", errors="replace").splitlines():
+        parts = line.split()
+        if len(parts) < 2:
+            continue
+        try:
+            if len(parts) >= 3:
+                time_s = float(parts[1])
+                value = float(parts[2])
+            else:
+                time_s = float(parts[0])
+                value = float(parts[1])
+        except ValueError:
+            continue
+        points.append((time_s, value))
+    return points
+
+
+def threshold_crossings(points, threshold, direction, meas_start_s):
+    prev_time = None
+    prev_value = None
+    crossings = []
+    for time_s, value in points:
+        if (
+            prev_time is not None
+            and prev_value is not None
+            and (
+                (direction == "rise" and prev_value < threshold and value >= threshold)
+                or (direction == "fall" and prev_value > threshold and value <= threshold)
+            )
+        ):
+            slope = value - prev_value
+            if slope != 0:
+                frac = (threshold - prev_value) / slope
+                crossing_s = prev_time + frac * (time_s - prev_time)
+                if crossing_s >= meas_start_s:
+                    crossings.append(crossing_s)
+        prev_time = time_s
+        prev_value = value
+    return crossings
+
+
+def crossing_waveform_metrics(waveform_path, meas_start_ns, mid_threshold=0.9):
+    points = read_waveform_points(waveform_path)
+    metrics = {
+        "period_s": None,
+        "freq_hz": None,
+        "high_time_s": None,
+        "low_time_s": None,
+        "duty_ratio": None,
+        "rise_time_s": None,
+        "fall_time_s": None,
+    }
+    if not points:
+        return metrics
+
+    meas_start_s = meas_start_ns * 1.0e-9
+    rises_mid = threshold_crossings(points, mid_threshold, "rise", meas_start_s)
+    falls_mid = threshold_crossings(points, mid_threshold, "fall", meas_start_s)
+    rises_20 = threshold_crossings(points, mid_threshold * 0.4, "rise", meas_start_s)
+    rises_80 = threshold_crossings(points, mid_threshold * 1.6, "rise", meas_start_s)
+    falls_80 = threshold_crossings(points, mid_threshold * 1.6, "fall", meas_start_s)
+    falls_20 = threshold_crossings(points, mid_threshold * 0.4, "fall", meas_start_s)
+
+    if len(rises_mid) >= 3:
+        period_s = (rises_mid[2] - rises_mid[0]) / 2.0
+        if period_s > 0:
+            metrics["period_s"] = period_s
+            metrics["freq_hz"] = 1.0 / period_s
+    if len(rises_mid) >= 2 and falls_mid:
+        for rise_a, rise_b in zip(rises_mid, rises_mid[1:]):
+            fall = next((item for item in falls_mid if rise_a < item < rise_b), None)
+            if fall is None:
+                continue
+            high_time = fall - rise_a
+            low_time = rise_b - fall
+            if high_time > 0 and low_time > 0:
+                metrics["high_time_s"] = high_time
+                metrics["low_time_s"] = low_time
+                metrics["duty_ratio"] = high_time / (high_time + low_time)
+                break
+    for lo in rises_20:
+        hi = next((item for item in rises_80 if item > lo), None)
+        if hi is not None:
+            metrics["rise_time_s"] = hi - lo
+            break
+    for hi in falls_80:
+        lo = next((item for item in falls_20 if item > hi), None)
+        if lo is not None:
+            metrics["fall_time_s"] = lo - hi
+            break
+    return metrics
+
+
+def waveform_values_from_log(log_text, period):
+    high_candidates = [
+        measure_value(log_text, "high_time_same_s"),
+        measure_value(log_text, "high_time_next_s"),
+    ]
+    low_candidates = [
+        measure_value(log_text, "low_time_same_s"),
+        measure_value(log_text, "low_time_next_s"),
+    ]
+    rise_candidates = [
+        measure_value(log_text, "rise_time_same_s"),
+        measure_value(log_text, "rise_time_offset_s"),
+    ]
+    fall_candidates = [
+        measure_value(log_text, "fall_time_same_s"),
+        measure_value(log_text, "fall_time_offset_s"),
+    ]
+
+    def first_positive(values):
+        for value in values:
+            if value is not None and value > 0.0:
+                return value
+        return None
+
+    high_time = first_positive(
+        value for value in high_candidates if period is None or value is None or value <= period
+    )
+    low_time = first_positive(
+        value for value in low_candidates if period is None or value is None or value <= period
+    )
+    rise_time = first_positive(rise_candidates)
+    fall_time = first_positive(fall_candidates)
+    duty_ratio = None
+    if high_time is not None and low_time is not None and high_time + low_time > 0:
+        duty_ratio = high_time / (high_time + low_time)
+    return {
+        "high_time_s": high_time,
+        "low_time_s": low_time,
+        "duty_ratio": duty_ratio,
+        "rise_time_s": rise_time,
+        "fall_time_s": fall_time,
+    }
+
+
+def parse_subckt_ports(rcx_netlist, subckt_name):
+    lines = Path(rcx_netlist).read_text(encoding="utf-8", errors="replace").splitlines()
+    header = []
+    in_header = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith(f".subckt {subckt_name}"):
+            header.append(stripped)
+            in_header = True
+            continue
+        if in_header:
+            if stripped.startswith("+"):
+                header.append(stripped)
+                continue
+            break
+    if not header:
+        raise ValueError(f"subckt {subckt_name!r} not found in {rcx_netlist}")
+
+    tokens = []
+    for idx, line in enumerate(header):
+        if idx == 0:
+            tokens.extend(line.split()[2:])
+        else:
+            tokens.extend(line[1:].split())
+    return tokens
+
+
+def wrapped_instance(name, ports, subckt_name, width=8):
+    tokens = list(ports) + [subckt_name]
+    lines = [f"{name} " + " ".join(tokens[:width])]
+    for idx in range(width, len(tokens), width):
+        lines.append("+ " + " ".join(tokens[idx : idx + width]))
+    return lines
+
+
+def dco_netlist(args, code, coarse_code, ports):
+    pdk_root = Path(args.pdk_root).expanduser().resolve()
+    model_path = pdk_root / args.pdk / "libs.tech" / "ngspice" / "sky130.lib.spice"
+    rcx_path = Path(args.rcx_netlist).expanduser().resolve()
+    if not model_path.exists():
+        raise FileNotFoundError(model_path)
+    if not rcx_path.exists():
+        raise FileNotFoundError(rcx_path)
+    translation_path = rcx_path.with_suffix('.translation.json')
+    if ('openpll_pw2nd_qualified_geometry' in rcx_path.read_text().lower()
+            and not translation_path.exists()):
+        raise ValueError('translated diode netlist is missing corner and temperature provenance')
+    if translation_path.exists():
+        translation = json.loads(translation_path.read_text())
+        if (args.simulator != 'xyce' or translation.get('corner') != args.corner
+                or translation.get('temperature_c') != getattr(args, 'temperature_c', 27)
+                or translation.get('output_sha256') != hashlib.sha256(rcx_path.read_bytes()).hexdigest()):
+            raise ValueError('translated diode netlist does not match requested simulator, corner, temperature or content')
+
+    lines = [
+        f"* OpenPLL DCO post-layout transient, code={code}, coarse_code={coarse_code}",
+        f"* simulator={args.simulator}",
+        f"* therm_invert={int(args.therm_invert)}, enabled_loads={enabled_load_count(code, args.therm_invert)}",
+        f"* coarse_code={coarse_code}",
+        f"* RCX netlist: {rcx_path}",
+        f"* subckt_name={args.subckt_name}",
+        f'.lib "{model_path}" {args.corner}',
+        f'.include "{rcx_path}"',
+        f".param VDD={getattr(args, 'vdd', 1.8):g}",
+        *(
+            [
+                "VVPWR VPWR 0 "
+                f"PULSE(0 {{VDD}} {args.supply_ramp_delay_ns:g}n "
+                f"{args.supply_ramp_ns:g}n {args.supply_ramp_ns:g}n "
+                f"{args.sim_time_ns + 1000:g}n {2 * args.sim_time_ns + 2000:g}n)",
+                "VVPB VPB 0 "
+                f"PULSE(0 {{VDD}} {args.supply_ramp_delay_ns:g}n "
+                f"{args.supply_ramp_ns:g}n {args.supply_ramp_ns:g}n "
+                f"{args.sim_time_ns + 1000:g}n {2 * args.sim_time_ns + 2000:g}n)",
+            ] if getattr(args, "supply_ramp_ns", 0.0) > 0 else [
+                "VVPWR VPWR 0 {VDD}",
+                "VVPB VPB 0 {VDD}",
+            ]
+        ),
+        "VVGND VGND 0 0",
+        "VVNB VNB 0 0",
+        f"VRESET RESET_N 0 PULSE(0 {{VDD}} {args.reset_release_ns}n 50p 50p {args.sim_time_ns}n {2 * args.sim_time_ns}n)",
+    ]
+    if args.simulator == "ngspice":
+        lines.insert(
+            5,
+            f".option method=gear reltol={getattr(args, 'ngspice_reltol', 1e-5):.17g} "
+            f"abstol={getattr(args, 'ngspice_abstol', 1e-15):.17g} chgtol=1e-16 numdgt=15"
+            + (
+                f" num_threads={args.ngspice_threads}"
+                if args.ngspice_threads > 0
+                else ""
+            ),
+        )
+
+    if args.simulator == "ngspice" and getattr(args, "ngspice_klu", False):
+        lines.insert(5, ".option klu")
+
+    seen = set()
+    for port in ports:
+        match = re.fullmatch(r"DCO_THERM\[(\d+)\]", port)
+        if not match:
+            continue
+        idx = int(match.group(1))
+        if idx in seen:
+            continue
+        seen.add(idx)
+        active = idx < code
+        if args.therm_invert:
+            active = not active
+        value = "{VDD}" if active else "0"
+        lines.append(f"VCTRL{idx:03d} {port} 0 {value}")
+
+    seen_coarse = set()
+    coarse_binary_width = max(
+        (
+            int(match.group(1)) + 1
+            for port in ports
+            for match in [re.fullmatch(r"COARSEBINARY_CODE\[(\d+)\]", port)]
+            if match
+        ),
+        default=0,
+    )
+    for port in ports:
+        match = re.fullmatch(r"COARSEBINARY_CODE\[(\d+)\]", port)
+        if not match:
+            continue
+        idx = int(match.group(1))
+        if idx in seen_coarse:
+            continue
+        seen_coarse.add(idx)
+        if idx >= coarse_binary_width:
+            raise ValueError(f"unsupported coarse port index: {port}")
+        value = "{VDD}" if ((coarse_code >> idx) & 1) else "0"
+        lines.append(f"VCOARSE{idx} {port} 0 {value}")
+
+    coarse_thermal_width = max(
+        (
+            int(match.group(1)) + 1
+            for port in ports
+            for match in [re.fullmatch(r"COARSETHERMAL_CODE\[(\d+)\]", port)]
+            if match
+        ),
+        default=0,
+    )
+    coarse_thermal_bits = (
+        coarse_thermal_bits_for_turn(coarse_code, coarse_thermal_width)
+        if coarse_thermal_width
+        else []
+    )
+    seen_coarse_thermal = set()
+    for port in ports:
+        match = re.fullmatch(r"COARSETHERMAL_CODE\[(\d+)\]", port)
+        if not match:
+            continue
+        idx = int(match.group(1))
+        if idx in seen_coarse_thermal:
+            continue
+        seen_coarse_thermal.add(idx)
+        if idx >= coarse_thermal_width:
+            raise ValueError(f"unsupported coarse thermal port index: {port}")
+        value = "{VDD}" if coarse_thermal_bits[idx] else "0"
+        lines.append(f"VCOARSETHERM{idx:02d} {port} 0 {value}")
+
+    lines.extend(
+        [
+            "",
+            "* The reset pulse puts the extracted odd-inverter loop into a known",
+            "* state before it is released for free-running oscillation.",
+            *wrapped_instance("XDUT", ports, args.subckt_name),
+            "",
+        ]
+    )
+    if args.simulator == "ngspice":
+        lines.append(".save v(PLLOUT) i(VVPWR) i(VVPB)")
+        # Observe both fixed 1.8 V rails; control-driver energy is outside this
+        # DCO supply measurement. Keep the printed voltage waveform unchanged.
+        for rail in ("vpwr", "vpb"):
+            lines.append(f".meas tran {rail}_current_avg AVG i(V{rail}) FROM={args.meas_start_ns}n TO={args.sim_time_ns}n")
+            lines.append(f".meas tran {rail}_current_min MIN i(V{rail}) FROM={args.meas_start_ns}n TO={args.sim_time_ns}n")
+            lines.append(f".meas tran {rail}_current_max MAX i(V{rail}) FROM={args.meas_start_ns}n TO={args.sim_time_ns}n")
+        if getattr(args, "ngspice_waveform", False):
+            lines.append(".print tran v(PLLOUT)")
+    else:
+        lines.append(".print tran v(PLLOUT)")
+    if args.simulator == "xyce":
+        backend = getattr(args, "kls_backend", None)
+        kls_options = []
+        if backend is not None:
+            kls_options.extend([f"KLS_BACKEND={backend}", "KLS_THREADS=1"])
+        if getattr(args, "kls_fresh_factor", False):
+            kls_options.append("KLS_REFACTOR=0")
+        if kls_options:
+            lines.append(".options linsol type=KLS " + " ".join(kls_options))
+        tolerances = [
+            f"{name}={getattr(args, attr)}"
+            for name, attr in (("reltol", "xyce_reltol"), ("abstol", "xyce_abstol"))
+            if getattr(args, attr, None) is not None
+        ]
+        if tolerances:
+            lines.append(".options timeint " + " ".join(tolerances))
+    max_step = getattr(args, "max_step_ps", None)
+    tran = f".tran {args.step_ps}p {args.sim_time_ns}n"
+    if max_step is not None:
+        tran += f" 0 {max_step}p"
+    if getattr(args, "tran_uic", False):
+        tran += " uic"
+    lines.extend(
+        [
+            tran,
+            f".meas tran two_cycle_s TRIG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n RISE=1 "
+            f"TARG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n RISE=3",
+            ".meas tran period_s PARAM='two_cycle_s/2'",
+            ".meas tran freq_hz PARAM='1/period_s'",
+            f".meas tran high_time_same_s TRIG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n RISE=2 "
+            f"TARG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n FALL=2",
+            f".meas tran high_time_next_s TRIG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n RISE=2 "
+            f"TARG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n FALL=3",
+            f".meas tran low_time_same_s TRIG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n FALL=2 "
+            f"TARG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n RISE=2",
+            f".meas tran low_time_next_s TRIG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n FALL=2 "
+            f"TARG v(PLLOUT) VAL=0.9 TD={args.meas_start_ns}n RISE=3",
+            f".meas tran rise_time_same_s TRIG v(PLLOUT) VAL=0.36 TD={args.meas_start_ns}n RISE=2 "
+            f"TARG v(PLLOUT) VAL=1.44 TD={args.meas_start_ns}n RISE=2",
+            f".meas tran rise_time_offset_s TRIG v(PLLOUT) VAL=0.36 TD={args.meas_start_ns}n RISE=3 "
+            f"TARG v(PLLOUT) VAL=1.44 TD={args.meas_start_ns}n RISE=2",
+            f".meas tran fall_time_same_s TRIG v(PLLOUT) VAL=1.44 TD={args.meas_start_ns}n FALL=2 "
+            f"TARG v(PLLOUT) VAL=0.36 TD={args.meas_start_ns}n FALL=2",
+            f".meas tran fall_time_offset_s TRIG v(PLLOUT) VAL=1.44 TD={args.meas_start_ns}n FALL=1 "
+            f"TARG v(PLLOUT) VAL=0.36 TD={args.meas_start_ns}n FALL=2",
+            ".end",
+            "",
+        ]
+    )
+    vdd = getattr(args, "vdd", 1.8)
+    if vdd != 1.8:
+        lines = [line.replace("VAL=0.9", f"VAL={vdd*.5:g}").replace("VAL=0.36", f"VAL={vdd*.2:g}").replace("VAL=1.44", f"VAL={vdd*.8:g}") for line in lines]
+    temperature = getattr(args, "temperature_c", None)
+    if temperature is not None:
+        directive = (f".options device temp={temperature:g}" if args.simulator == "xyce"
+                     else f".temp {temperature:g}")
+        lines.insert(-2, directive)
+    return "\n".join(lines)
+
+
+def simulator_command(args, netlist_path):
+    if args.simulator == "ngspice":
+        return [args.ngspice, "-b", str(netlist_path)]
+    if args.simulator == "xyce":
+        return xyce_simulator_command(args, netlist_path, xyce_output_base(netlist_path))
+    raise ValueError(f"unsupported simulator: {args.simulator}")
+
+
+def run_spice(args, netlist_path, log_path, build_dir):
+    start = time.monotonic()
+    env = os.environ.copy()
+    if args.simulator == "ngspice" and args.ngspice_threads > 0:
+        env["OMP_NUM_THREADS"] = str(args.ngspice_threads)
+    model_dir = (
+        Path(args.pdk_root).expanduser().resolve()
+        / args.pdk
+        / "libs.tech"
+        / "ngspice"
+    )
+    proc = subprocess.Popen(
+        simulator_command(args, netlist_path),
+        cwd=model_dir,
+        env=env,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+    )
+    timed_out = False
+    try:
+        stdout, _ = proc.communicate(timeout=args.timeout_s)
+    except subprocess.TimeoutExpired:
+        timed_out = True
+        proc.kill()
+        stdout, _ = proc.communicate()
+
+    elapsed_s = time.monotonic() - start
+    if timed_out:
+        stdout += (
+            f"\nOpenPLL timeout: killed {args.simulator} after {args.timeout_s:.1f} s "
+            f"for {netlist_path.name}\n"
+        )
+    log_path.write_text(stdout, encoding="utf-8")
+    return proc.returncode, timed_out, elapsed_s, stdout
+
+
+def ngspice_printed_waveform(log_text):
+    from decimal import Decimal
+    points=[];raw_count=0;previous=None
+    pattern=re.compile(r"^\s*(\d+)\s+("+RE_FLOAT+r")\s+("+RE_FLOAT+r")\s*$")
+    for line in log_text.splitlines():
+        match=pattern.fullmatch(line)
+        if match is None:continue
+        index,t,v=int(match[1]),Decimal(match[2]),Decimal(match[4])
+        if index!=raw_count or not t.is_finite() or not v.is_finite():raise ValueError('invalid native waveform row')
+        raw_count+=1
+        if previous is not None and t<=previous[0]:
+            if (t,v)!=previous:raise ValueError('nonredundant native time collision')
+            continue
+        tf,vf=float(t),float(v)
+        if not math.isfinite(tf) or not math.isfinite(vf) or points and tf<=points[-1][0]:
+            raise ValueError('native waveform time precision lost')
+        points.append((tf,vf));previous=(t,v)
+    declared=re.findall(r'^No\. of Data Rows\s*:\s*(\d+)\s*$',log_text,re.M)
+    if len(declared)!=1 or int(declared[0])!=raw_count or len(points)<2:
+        raise ValueError('complete native waveform table required')
+    return points
+
+
+def row_from_log(
+    args,
+    code,
+    coarse_code,
+    netlist_path,
+    log_path,
+    log_text,
+    returncode,
+    timed_out,
+    elapsed_s,
+    resumed,
+):
+    waveform_path = ""
+    if args.simulator == "xyce":
+        waveform_path = str(xyce_waveform_path(netlist_path))
+        waveform_metrics = crossing_waveform_metrics(
+            xyce_waveform_path(netlist_path), args.meas_start_ns, getattr(args, "vdd", 1.8) / 2
+        )
+        period = waveform_metrics["period_s"]
+        freq = waveform_metrics["freq_hz"]
+    else:
+        if getattr(args, 'ngspice_waveform', False) and returncode == 0 and not timed_out:
+            points = ngspice_printed_waveform(log_text)
+            wave = netlist_path.with_suffix('.waveform.tsv')
+            wave.write_text(''.join(f'{t:.17g} {v:.17g}\n' for t,v in points))
+            waveform_path = str(wave)
+            waveform_metrics = crossing_waveform_metrics(wave, args.meas_start_ns, getattr(args, 'vdd', 1.8) / 2)
+            period, freq = waveform_metrics['period_s'], waveform_metrics['freq_hz']
+        else:
+            period = measure_value(log_text, "period_s")
+            freq = measure_value(log_text, "freq_hz")
+            waveform_metrics = waveform_values_from_log(log_text, period)
+    ok = (
+        returncode == 0
+        and not timed_out
+        and period is not None
+        and period > 0.0
+        and freq is not None
+        and freq > 0.0
+        and waveform_metrics["high_time_s"] is not None
+        and waveform_metrics["low_time_s"] is not None
+        and waveform_metrics["duty_ratio"] is not None
+        and waveform_metrics["rise_time_s"] is not None
+        and waveform_metrics["fall_time_s"] is not None
+    )
+    return {
+        "simulator": args.simulator,
+        "xyce_mpi_procs": args.xyce_mpi_procs if args.simulator == "xyce" else "",
+        "corner": args.corner,
+        "subckt_name": args.subckt_name,
+        "coarse_code": coarse_code,
+        "code": code,
+        "therm_invert": int(args.therm_invert),
+        "enabled_loads": enabled_load_count(code, args.therm_invert),
+        "status": "pass" if ok else "fail",
+        "returncode": returncode,
+        "timed_out": "yes" if timed_out else "no",
+        "elapsed_s": f"{elapsed_s:.3f}" if elapsed_s is not None else "",
+        "resumed": "yes" if resumed else "no",
+        "period_s": period or "",
+        "freq_hz": freq or "",
+        "freq_mhz": (freq / 1.0e6) if freq else "",
+        "high_time_s": waveform_metrics["high_time_s"] or "",
+        "low_time_s": waveform_metrics["low_time_s"] or "",
+        "duty_ratio": waveform_metrics["duty_ratio"] or "",
+        "rise_time_s": waveform_metrics["rise_time_s"] or "",
+        "fall_time_s": waveform_metrics["fall_time_s"] or "",
+        "netlist": str(netlist_path),
+        "log": str(log_path),
+        "waveform": waveform_path,
+        "vpwr_average_source_current_A": measure_value(log_text, "vpwr_current_avg"),
+        "vpb_average_source_current_A": measure_value(log_text, "vpb_current_avg"),
+        "vpwr_minimum_source_current_A": measure_value(log_text, "vpwr_current_min"),
+        "vpwr_maximum_source_current_A": measure_value(log_text, "vpwr_current_max"),
+        "vpb_minimum_source_current_A": measure_value(log_text, "vpb_current_min"),
+        "vpb_maximum_source_current_A": measure_value(log_text, "vpb_current_max"),
+        "power_observation_start_ns": args.meas_start_ns,
+        "power_observation_stop_ns": args.sim_time_ns,
+        "power_includes_external_control_drivers": False,
+        "power_is_integer_cycle_average": False,
+    }
+
+
+def can_resume(args, netlist_path, log_path, netlist_text):
+    if not args.resume or not netlist_path.exists() or not log_path.exists():
+        return False
+    provenance = getattr(args, "run_provenance", None)
+    sidecar = netlist_path.with_suffix('.provenance.json')
+    if provenance is None or not sidecar.exists():
+        return False
+    try:
+        saved = json.loads(sidecar.read_text())
+        if (saved.get('fingerprint') != provenance['fingerprint'] or not saved.get('completed')
+                or saved.get('netlist_sha256') != hashlib.sha256(netlist_text.encode('ascii')).hexdigest()):
+            return False
+    except (ValueError, OSError):
+        return False
+    old_netlist = netlist_path.read_text(encoding="ascii", errors="replace")
+    return old_netlist == netlist_text
+
+
+def run_one(code, coarse_code, args, ports, build_dir):
+    netlist_path = (
+        build_dir
+        / f"dco_postlayout_{args.corner}_coarse_{coarse_code:02d}_code_{code:03d}.spice"
+    )
+    log_path = (
+        build_dir
+        / f"dco_postlayout_{args.corner}_coarse_{coarse_code:02d}_code_{code:03d}.log"
+    )
+    netlist_text = dco_netlist(args, code, coarse_code, ports)
+    if can_resume(args, netlist_path, log_path, netlist_text):
+        log_text = log_path.read_text(encoding="utf-8", errors="replace")
+        row = row_from_log(
+            args, code, coarse_code, netlist_path, log_path, log_text, 0, False, None, True
+        )
+        if row["status"] == "pass":
+            return row
+
+    sidecar = netlist_path.with_suffix('.provenance.json')
+    provenance = dict(getattr(args, 'run_provenance', {}), completed=False,
+                      netlist_sha256=hashlib.sha256(netlist_text.encode('ascii')).hexdigest())
+    sidecar.write_text(json.dumps(provenance, indent=2))
+    netlist_path.write_text(netlist_text, encoding="ascii")
+    returncode, timed_out, elapsed_s, log_text = run_spice(
+        args, netlist_path, log_path, build_dir
+    )
+    row = row_from_log(
+        args,
+        code,
+        coarse_code,
+        netlist_path,
+        log_path,
+        log_text,
+        returncode,
+        timed_out,
+        elapsed_s,
+        False,
+    )
+    provenance['completed'] = row['status'] == 'pass'
+    sidecar.write_text(json.dumps(provenance, indent=2))
+    return row
+
+
+def parse_timeout(value):
+    if value in (None, "", "none"):
+        return None
+    timeout = float(value)
+    if timeout <= 0:
+        raise ValueError("--timeout-s must be positive or 'none'")
+    return timeout
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Run DCO post-layout RCX transient SPICE.")
+    parser.add_argument("--codes", default="0,128,255")
+    parser.add_argument("--coarse-codes", default="0")
+    parser.add_argument("--corner", default="tt")
+    parser.add_argument("--vdd", type=float, default=1.8)
+    parser.add_argument("--temperature-c", type=float)
+    parser.add_argument("--pdk-root", default=default_pdk_root())
+    parser.add_argument("--pdk", default="sky130A")
+    parser.add_argument(
+        "--rcx-netlist",
+        default="openlane/IntegerPLL_DCO/runs/librelane_signoff/rcx-magic/IntegerPLL_DCO.rcx.spice",
+    )
+    parser.add_argument(
+        "--subckt-name",
+        default="IntegerPLL_DCO",
+        help="Name of the extracted DCO subckt to instantiate from --rcx-netlist.",
+    )
+    parser.add_argument("--build-dir", default="build/spice_dco_postlayout")
+    parser.add_argument("--sim-time-ns", type=float, default=200.0)
+    parser.add_argument("--reset-release-ns", type=float, default=5.0)
+    parser.add_argument("--meas-start-ns", type=float, default=20.0)
+    parser.add_argument("--step-ps", type=float, default=20.0)
+    parser.add_argument("--max-step-ps", type=float, help="Maximum transient timestep; step-ps alone is not a maximum")
+    parser.add_argument("--tran-uic", action="store_true",
+                        help="Start transient from supplied initial conditions without a DC operating-point solve")
+    parser.add_argument("--supply-ramp-ns", type=float, default=0.0,
+                        help="Supply ramp time; zero preserves the constant supply")
+    parser.add_argument("--supply-ramp-delay-ns", type=float, default=0.0,
+                        help="Delay before a nonzero supply ramp")
+    parser.add_argument("--ngspice-reltol", type=float, default=1e-5)
+    parser.add_argument("--ngspice-abstol", type=float, default=1e-15)
+    parser.add_argument("--ngspice-waveform", action="store_true")
+    parser.add_argument("--xyce-reltol", type=float, help="Xyce transient relative error tolerance")
+    parser.add_argument("--xyce-abstol", type=float, help="Xyce transient absolute error tolerance")
+    parser.add_argument("--kls-backend", choices=("AUTO", "KLS", "SERIAL"),
+                        help="Explicit KLS backend with one solver thread; omitted preserves deck defaults")
+    parser.add_argument("--kls-fresh-factor", action="store_true",
+                        help="Diagnostic fresh KLS factorization instead of numeric refactor")
+    parser.add_argument(
+        "--timeout-s",
+        default="none",
+        help="Per-simulation wall-clock timeout in seconds, or 'none'.",
+    )
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Reuse an existing matching passing netlist/log in the build directory.",
+    )
+    parser.add_argument("--jobs", type=int, default=1)
+    parser.add_argument(
+        "--ngspice-threads",
+        type=int,
+        default=int(os.environ.get("NGSPICE_THREADS", "0")),
+        help="Set ngspice OpenMP threads via .option num_threads and OMP_NUM_THREADS; 0 leaves default.",
+    )
+    parser.add_argument(
+        "--therm-invert",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Use the RTL top-level inverted thermometer polarity by default.",
+    )
+    parser.add_argument(
+        "--simulator",
+        choices=("ngspice", "xyce"),
+        default="ngspice",
+        help="Circuit simulator for the generated post-layout deck.",
+    )
+    parser.add_argument("--ngspice-klu", action="store_true")
+    parser.add_argument("--ngspice", default=shutil.which("ngspice") or "ngspice")
+    add_xyce_arguments(parser)
+    args = parser.parse_args()
+    for name in ("max_step_ps", "xyce_reltol", "xyce_abstol", "ngspice_reltol", "ngspice_abstol"):
+        value = getattr(args, name)
+        if value is not None and (not math.isfinite(value) or value <= 0):
+            parser.error(f"--{name.replace('_', '-')} must be finite and positive")
+    if args.simulator != "xyce" and (args.xyce_reltol is not None or args.xyce_abstol is not None):
+        parser.error("Xyce tolerances require --simulator xyce")
+    if not math.isfinite(args.vdd) or args.vdd <= 0:
+        parser.error("--vdd must be finite and positive")
+    if args.temperature_c is not None and (not math.isfinite(args.temperature_c) or args.temperature_c <= -273.15):
+        parser.error("--temperature-c must be finite and above absolute zero")
+    if not math.isfinite(args.supply_ramp_ns) or args.supply_ramp_ns < 0:
+        parser.error("--supply-ramp-ns must be finite and non-negative")
+    if not math.isfinite(args.supply_ramp_delay_ns) or args.supply_ramp_delay_ns < 0:
+        parser.error("--supply-ramp-delay-ns must be finite and non-negative")
+    if args.supply_ramp_ns == 0 and args.supply_ramp_delay_ns != 0:
+        parser.error("--supply-ramp-delay-ns requires a nonzero supply ramp")
+    args.timeout_s = parse_timeout(args.timeout_s)
+    if args.ngspice_threads < 0:
+        raise ValueError("--ngspice-threads must be non-negative")
+    validate_xyce_arguments(args)
+
+    codes = parse_codes(args.codes)
+    coarse_codes = parse_coarse_codes(args.coarse_codes)
+    ports = parse_subckt_ports(args.rcx_netlist, args.subckt_name)
+    if len([port for port in ports if port.startswith("DCO_THERM[")]) != 255:
+        raise ValueError("RCX netlist does not expose all 255 thermometer ports")
+    coarse_ports = [port for port in ports if port.startswith("COARSEBINARY_CODE[")]
+    coarse_thermal_ports = [
+        port for port in ports if port.startswith("COARSETHERMAL_CODE[")
+    ]
+    coarse_width = 0
+    if coarse_ports:
+        coarse_indices = sorted(
+            int(re.fullmatch(r"COARSEBINARY_CODE\[(\d+)\]", port).group(1))
+            for port in coarse_ports
+        )
+        if coarse_indices != list(range(coarse_indices[-1] + 1)):
+            raise ValueError("RCX netlist exposes a partial coarse-code bus")
+        coarse_width = coarse_indices[-1] + 1
+    coarse_thermal_width = 0
+    if coarse_thermal_ports:
+        coarse_thermal_indices = sorted(
+            int(re.fullmatch(r"COARSETHERMAL_CODE\[(\d+)\]", port).group(1))
+            for port in coarse_thermal_ports
+        )
+        if coarse_thermal_indices != list(range(coarse_thermal_indices[-1] + 1)):
+            raise ValueError("RCX netlist exposes a partial coarse-thermal bus")
+        coarse_thermal_width = coarse_thermal_indices[-1] + 1
+        for code in coarse_codes:
+            coarse_thermal_bits_for_turn(code, coarse_thermal_width)
+    if coarse_ports and any(code >= (1 << coarse_width) for code in coarse_codes):
+        raise ValueError(
+            f"COARSEBINARY_CODE ports only support coarse codes 0..{(1 << coarse_width) - 1}"
+        )
+    if not coarse_ports and not coarse_thermal_ports and any(code != 0 for code in coarse_codes):
+        raise ValueError(
+            "--coarse-codes requires COARSEBINARY_CODE or COARSETHERMAL_CODE ports "
+            "in the RCX netlist"
+        )
+
+    build_dir = Path(args.build_dir).resolve()
+    build_dir.mkdir(parents=True, exist_ok=True)
+    executable = shlex.split(args.xyce if args.simulator == 'xyce' else args.ngspice)[0]
+    executable = shutil.which(executable) or executable
+    parameters = {k: v for k, v in vars(args).items() if k not in ('resume', 'build_dir', 'jobs', 'timeout_s')}
+    model_root = Path(args.pdk_root).expanduser() / args.pdk
+    args.run_provenance = fingerprint(
+        [args.rcx_netlist, model_root / 'libs.ref', model_root / 'libs.tech/ngspice', executable,
+         *Path(__file__).parent.glob('*.py')], parameters)
+    (build_dir / 'provenance.json').write_text(json.dumps(args.run_provenance, indent=2))
+    rows = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=args.jobs) as executor:
+        futures = [
+            executor.submit(run_one, code, coarse_code, args, ports, build_dir)
+            for coarse_code in coarse_codes
+            for code in codes
+        ]
+        for future in concurrent.futures.as_completed(futures):
+            rows.append(future.result())
+
+    rows.sort(key=lambda row: (row["coarse_code"], row["code"]))
+    csv_path = build_dir / "dco_postlayout_results.csv"
+    with csv_path.open("w", newline="", encoding="utf-8") as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=list(rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(rows)
+
+    summary = {
+        "simulator": args.simulator,
+        "rows": len(rows),
+        "bad_rows": sum(1 for row in rows if row["status"] != "pass"),
+        "results_csv": str(csv_path),
+        "rcx_netlist": str(Path(args.rcx_netlist).resolve()),
+        "subckt_name": args.subckt_name,
+        "coarse_codes": coarse_codes,
+    }
+    print(json.dumps(summary, indent=2))
+    for row in rows:
+        print(
+            f"{row['status']:>4} {row['simulator']} "
+            f"coarse={row['coarse_code']:2d} code={row['code']:3d} "
+            f"enabled_loads={row['enabled_loads']:3d} "
+            f"freq_mhz={row['freq_mhz'] if row['freq_mhz'] != '' else 'NA'} "
+            f"duty={row['duty_ratio'] if row['duty_ratio'] != '' else 'NA'} "
+            f"rise_s={row['rise_time_s'] if row['rise_time_s'] != '' else 'NA'} "
+            f"fall_s={row['fall_time_s'] if row['fall_time_s'] != '' else 'NA'} "
+            f"timeout={row['timed_out']} elapsed_s={row['elapsed_s']} "
+            f"resumed={row['resumed']}"
+        )
+
+    if summary["bad_rows"]:
+        raise SystemExit(1)
+
+
+if __name__ == "__main__":
+    main()

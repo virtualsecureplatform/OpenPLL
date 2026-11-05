@@ -4,6 +4,7 @@
 import argparse
 import concurrent.futures
 import csv
+import hashlib
 import json
 import math
 import os
@@ -283,6 +284,16 @@ def dco_netlist(args, code, coarse_code, ports):
         raise FileNotFoundError(model_path)
     if not rcx_path.exists():
         raise FileNotFoundError(rcx_path)
+    translation_path = rcx_path.with_suffix('.translation.json')
+    if ('openpll_pw2nd_qualified_geometry' in rcx_path.read_text().lower()
+            and not translation_path.exists()):
+        raise ValueError('translated diode netlist is missing corner and temperature provenance')
+    if translation_path.exists():
+        translation = json.loads(translation_path.read_text())
+        if (args.simulator != 'xyce' or translation.get('corner') != args.corner
+                or translation.get('temperature_c') != getattr(args, 'temperature_c', 27)
+                or translation.get('output_sha256') != hashlib.sha256(rcx_path.read_bytes()).hexdigest()):
+            raise ValueError('translated diode netlist does not match requested simulator, corner, temperature or content')
 
     lines = [
         f"* OpenPLL DCO post-layout transient, code={code}, coarse_code={coarse_code}",
@@ -294,8 +305,21 @@ def dco_netlist(args, code, coarse_code, ports):
         f'.lib "{model_path}" {args.corner}',
         f'.include "{rcx_path}"',
         f".param VDD={getattr(args, 'vdd', 1.8):g}",
-        "VVPWR VPWR 0 {VDD}",
-        "VVPB VPB 0 {VDD}",
+        *(
+            [
+                "VVPWR VPWR 0 "
+                f"PULSE(0 {{VDD}} {args.supply_ramp_delay_ns:g}n "
+                f"{args.supply_ramp_ns:g}n {args.supply_ramp_ns:g}n "
+                f"{args.sim_time_ns + 1000:g}n {2 * args.sim_time_ns + 2000:g}n)",
+                "VVPB VPB 0 "
+                f"PULSE(0 {{VDD}} {args.supply_ramp_delay_ns:g}n "
+                f"{args.supply_ramp_ns:g}n {args.supply_ramp_ns:g}n "
+                f"{args.sim_time_ns + 1000:g}n {2 * args.sim_time_ns + 2000:g}n)",
+            ] if getattr(args, "supply_ramp_ns", 0.0) > 0 else [
+                "VVPWR VPWR 0 {VDD}",
+                "VVPB VPB 0 {VDD}",
+            ]
+        ),
         "VVGND VGND 0 0",
         "VVNB VNB 0 0",
         f"VRESET RESET_N 0 PULSE(0 {{VDD}} {args.reset_release_ns}n 50p 50p {args.sim_time_ns}n {2 * args.sim_time_ns}n)",
@@ -410,6 +434,8 @@ def dco_netlist(args, code, coarse_code, ports):
     tran = f".tran {args.step_ps}p {args.sim_time_ns}n"
     if max_step is not None:
         tran += f" 0 {max_step}p"
+    if getattr(args, "tran_uic", False):
+        tran += " uic"
     lines.extend(
         [
             tran,
@@ -442,7 +468,9 @@ def dco_netlist(args, code, coarse_code, ports):
         lines = [line.replace("VAL=0.9", f"VAL={vdd*.5:g}").replace("VAL=0.36", f"VAL={vdd*.2:g}").replace("VAL=1.44", f"VAL={vdd*.8:g}") for line in lines]
     temperature = getattr(args, "temperature_c", None)
     if temperature is not None:
-        lines.insert(-2, f".temp {temperature:g}")
+        directive = (f".options device temp={temperature:g}" if args.simulator == "xyce"
+                     else f".temp {temperature:g}")
+        lines.insert(-2, directive)
     return "\n".join(lines)
 
 
@@ -565,7 +593,8 @@ def can_resume(args, netlist_path, log_path, netlist_text):
         return False
     try:
         saved = json.loads(sidecar.read_text())
-        if saved.get('fingerprint') != provenance['fingerprint'] or not saved.get('completed'):
+        if (saved.get('fingerprint') != provenance['fingerprint'] or not saved.get('completed')
+                or saved.get('netlist_sha256') != hashlib.sha256(netlist_text.encode('ascii')).hexdigest()):
             return False
     except (ValueError, OSError):
         return False
@@ -592,7 +621,8 @@ def run_one(code, coarse_code, args, ports, build_dir):
             return row
 
     sidecar = netlist_path.with_suffix('.provenance.json')
-    provenance = dict(getattr(args, 'run_provenance', {}), completed=False)
+    provenance = dict(getattr(args, 'run_provenance', {}), completed=False,
+                      netlist_sha256=hashlib.sha256(netlist_text.encode('ascii')).hexdigest())
     sidecar.write_text(json.dumps(provenance, indent=2))
     netlist_path.write_text(netlist_text, encoding="ascii")
     returncode, timed_out, elapsed_s, log_text = run_spice(
@@ -648,6 +678,12 @@ def main():
     parser.add_argument("--meas-start-ns", type=float, default=20.0)
     parser.add_argument("--step-ps", type=float, default=20.0)
     parser.add_argument("--max-step-ps", type=float, help="Maximum transient timestep; step-ps alone is not a maximum")
+    parser.add_argument("--tran-uic", action="store_true",
+                        help="Start transient from supplied initial conditions without a DC operating-point solve")
+    parser.add_argument("--supply-ramp-ns", type=float, default=0.0,
+                        help="Supply ramp time; zero preserves the constant supply")
+    parser.add_argument("--supply-ramp-delay-ns", type=float, default=0.0,
+                        help="Delay before a nonzero supply ramp")
     parser.add_argument("--xyce-reltol", type=float, help="Xyce transient relative error tolerance")
     parser.add_argument("--xyce-abstol", type=float, help="Xyce transient absolute error tolerance")
     parser.add_argument("--kls-backend", choices=("AUTO", "KLS", "SERIAL"),
@@ -696,6 +732,12 @@ def main():
         parser.error("--vdd must be finite and positive")
     if args.temperature_c is not None and (not math.isfinite(args.temperature_c) or args.temperature_c <= -273.15):
         parser.error("--temperature-c must be finite and above absolute zero")
+    if not math.isfinite(args.supply_ramp_ns) or args.supply_ramp_ns < 0:
+        parser.error("--supply-ramp-ns must be finite and non-negative")
+    if not math.isfinite(args.supply_ramp_delay_ns) or args.supply_ramp_delay_ns < 0:
+        parser.error("--supply-ramp-delay-ns must be finite and non-negative")
+    if args.supply_ramp_ns == 0 and args.supply_ramp_delay_ns != 0:
+        parser.error("--supply-ramp-delay-ns requires a nonzero supply ramp")
     args.timeout_s = parse_timeout(args.timeout_s)
     if args.ngspice_threads < 0:
         raise ValueError("--ngspice-threads must be non-negative")

@@ -30,7 +30,7 @@ def main():
     p.add_argument('--step-ps', type=float, default=20)
     p.add_argument('--ki', type=int, default=4)
     p.add_argument('--kp', type=int, default=4)
-    p.add_argument('--mode-mhz',type=int,choices=[100,250,300,400,500],default=100)
+    p.add_argument('--mode-mhz',type=int,choices=[100,250,300,400,450],default=100)
     p.add_argument('--corner',choices=['tt','ff','ss','sf','fs'],default='tt')
     p.add_argument('--vdd',type=float,default=1.8)
     p.add_argument('--temperature-c',type=float,default=27)
@@ -90,7 +90,7 @@ def main():
     deck.write_text(f'''* Production RTL boundary: extracted BBPD only; ideal supplies.
 {includes}
 .param VDD={a.vdd:g}
-.temp {a.temperature_c:g}
+.options device temp={a.temperature_c:g}
 VVPWR VPWR 0 {{VDD}}
 VVPB VPB 0 {{VDD}}
 VVGND VGND 0 0

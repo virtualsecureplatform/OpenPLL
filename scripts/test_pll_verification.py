@@ -17,12 +17,12 @@ def clocks(target=100, duration=100000, offset=0):
 
 class AcceptanceTests(unittest.TestCase):
     def test_all_modes_pass_clean_clocks(self):
-        for target in [100, 250, 300, 400, 500]:
+        for target in [100, 250, 300, 400, 450]:
             self.assertTrue(evaluate_trace(clocks(target), target, 0)['passed'])
 
     def test_mode_scaled_phase_limit(self):
         self.assertTrue(evaluate_trace(clocks(100, offset=.5), 100, 0)['passed'])
-        self.assertFalse(evaluate_trace(clocks(500, offset=.5), 500, 0)['passed'])
+        self.assertFalse(evaluate_trace(clocks(450, offset=.5), 450, 0)['passed'])
 
     def test_frequency_error(self):
         events=clocks()
@@ -44,12 +44,12 @@ class AcceptanceTests(unittest.TestCase):
         self.assertFalse(result['passed'])
 
     def test_output_only_rail_or_missing_edge_cannot_hide_between_divider_edges(self):
-        events=clocks(500)
+        events=clocks(450)
         events['OUT'][-100,1]=255
-        self.assertFalse(evaluate_trace(events,500,0)['passed'])
-        events=clocks(500)
+        self.assertFalse(evaluate_trace(events,450,0)['passed'])
+        events=clocks(450)
         events['OUT']=np.delete(events['OUT'],-100,axis=0)
-        self.assertFalse(evaluate_trace(events,500,0)['passed'])
+        self.assertFalse(evaluate_trace(events,450,0)['passed'])
 
     def test_relock_to_changed_reference_phase(self):
         events=clocks(duration=150000)

@@ -71,6 +71,18 @@ def is_zero(value):
     return value in (0, 0.0, "0")
 
 
+def zero_metric_failures(metrics, required_metrics):
+    failures = []
+    for base in required_metrics:
+        if base not in metrics:
+            failures.append(f"missing metric: {base}")
+        for key, value in metrics.items():
+            if key == base or key.startswith(base + "__corner:"):
+                if not is_zero(value):
+                    failures.append(f"{key}={value}")
+    return failures
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -133,12 +145,7 @@ def main() -> int:
         required_zero_metrics = [
             key for key in required_zero_metrics if key != "design__xor_difference__count"
         ]
-    for key in required_zero_metrics:
-        if key not in metrics:
-            failures.append(f"missing metric: {key}")
-            continue
-        if not is_zero(metrics[key]):
-            failures.append(f"{key}={metrics[key]}")
+    failures.extend(zero_metric_failures(metrics, required_zero_metrics))
 
     root = Path(__file__).resolve().parents[1]
     metrics_mtime = metrics_path.stat().st_mtime

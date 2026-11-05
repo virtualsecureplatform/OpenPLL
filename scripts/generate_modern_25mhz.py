@@ -24,11 +24,14 @@ TB_NAMES = (
     "configured_wrapper",
     "configured_behavioral",
 )
-LEGACY_SETTINGS = {100: (20, 93), 250: (6, 234), 300: (4, 90), 400: (2, 76), 500: (1, 121)}
+LEGACY_SETTINGS = {100: (20, 93), 250: (6, 234), 300: (4, 90), 400: (2, 76), 450: (1, 121)}
 
 
 def render_mode_config(modes: dict[int, dict]) -> str:
     source = MODE_SOURCE.read_text(encoding="ascii")
+    source = source.replace("DIV_500MHZ = 5'd20;", "DIV_450MHZ = 5'd18;")
+    source = source.replace("DIV_500MHZ: begin\n                TARGET_MHZ = 16'd500;\n                MMDCLKDIV_RATIO = 8'd20;",
+                            "DIV_450MHZ: begin\n                TARGET_MHZ = 16'd450;\n                MMDCLKDIV_RATIO = 8'd18;")
     for target in TARGETS_MHZ:
         pattern = rf"(DIV_{target}MHZ: begin)(.*?)(\n            end)"
         match = re.search(pattern, source, re.S)
@@ -105,6 +108,9 @@ def render_model(data: dict) -> str:
 
 def render_testbench(name: str, modes: dict[int, dict]) -> str:
     source = (ROOT / "tb" / f"tb_pll_25mhz_{name}.v").read_text(encoding="ascii")
+    source = source.replace("5'd20, 16'd500, 8'd20", "5'd18, 16'd450, 8'd18")
+    source = source.replace("16'd500, 8'd20", "16'd450, 8'd18")
+    source = source.replace("feedback_divider = 5'd20;", "feedback_divider = 5'd18;")
     for target in TARGETS_MHZ:
         old_coarse, old_code = LEGACY_SETTINGS[target]
         old = f"6'd{old_coarse}, 8'd{old_code}"

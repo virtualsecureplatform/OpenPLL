@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare one extracted SKY130 antenna diode in ngspice and Xyce/KLS.
+"""Compare one extracted SKY130 antenna diode in ngspice and upstream Xyce.
 
 Retains the PDK model and its geometry scaling unchanged. This is a model
 compatibility diagnostic, not a substitute for PLL or physical-noise signoff.
@@ -19,6 +19,10 @@ def main():
     parser.add_argument('--pdk', type=Path, required=True, help='sky130A directory')
     parser.add_argument('--xyce', type=Path, required=True)
     parser.add_argument('--ngspice', type=Path, required=True)
+    parser.add_argument('--linear-solver', default='KLU',
+                        help='upstream Xyce linear solver (default: KLU)')
+    parser.add_argument('--relative-tolerance', type=float, default=1e-8)
+    parser.add_argument('--absolute-tolerance', type=float, default=1e-24)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--corner', choices=['tt', 'ss', 'ff', 'sf', 'fs'], default='tt')
     parser.add_argument('--temperature-c', type=float, default=27)
@@ -30,6 +34,9 @@ def main():
         parser.error('parameters must be finite')
     if args.area <= 0 or args.perim < 0 or args.temperature_c <= -273.15:
         parser.error('invalid geometry or temperature')
+    if (not math.isfinite(args.relative_tolerance) or args.relative_tolerance <= 0
+            or not math.isfinite(args.absolute_tolerance) or args.absolute_tolerance <= 0):
+        parser.error('solver tolerances must be positive and finite')
     out = args.output.resolve()
     if out.exists():
         parser.error('use a fresh output directory')
@@ -52,19 +59,26 @@ def main():
             quantities = ('i(Vbias)' if analysis == 'dc' else
                           'real(vbias#branch) imag(vbias#branch)' if simulator == 'ngspice' else
                           'ir(Vbias) ii(Vbias)')
+            tolerance_options = (
+                f'.options reltol={args.relative_tolerance:.17g} '
+                f'abstol={args.absolute_tolerance:.17g} vntol=1e-12'
+                if simulator == 'ngspice' else
+                f'.options nonlin reltol={args.relative_tolerance:.17g} '
+                f'abstol={args.absolute_tolerance:.17g}')
             deck.write_text(f'''* Unmodified extracted SKY130 antenna diode compatibility probe
 .lib "{model_dir}/sky130.lib.spice" {args.corner}
 Vbias bias 0 {source}
 XD 0 bias sky130_fd_pr__diode_pw2nd_05v5 area={args.area:.17g} perim={args.perim:.17g}
-.temp {args.temperature_c:.17g}
-.options gmin=1e-18
+{'.options device temp=' if simulator == 'xyce' else '.temp '}{args.temperature_c:.17g}
+.options {'device ' if simulator == 'xyce' else ''}gmin=1e-18
+{tolerance_options}
 {sweep}
 .print {analysis} {quantities}
 .end
 ''')
             inputs.append(deck)
             command = ([str(executable), '-b', str(deck)] if simulator == 'ngspice' else
-                       [str(executable), '-linsolv', 'KLS', '-o', str(base), str(deck)])
+                       [str(executable), '-linsolv', args.linear_solver, '-o', str(base), str(deck)])
             with base.with_suffix('.log').open('w') as log:
                 try:
                     proc = subprocess.run(command, cwd=model_dir, stdout=log,

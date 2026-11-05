@@ -1,0 +1,32 @@
+#include "../charge_compiler/json.hpp"
+#include "sparse_runs_v2.hpp"
+#include <algorithm>
+#include <cstdint>
+#include <filesystem>
+#include <iostream>
+#include <sstream>
+#include <thread>
+#include <unordered_map>
+#include <exception>
+#include <time.h>
+using I=long long;
+static double now(){timespec t{};require(clock_gettime(CLOCK_BOOTTIME,&t)==0,"clock");return t.tv_sec+t.tv_nsec*1e-9;}
+struct Stats {uint64_t caps=0,nonzero=0,missing=0,zero_missing=0,same=0,runs=0;std::unordered_map<std::string,std::pair<uint64_t,uint64_t>> unknown;std::exception_ptr error;};
+int main(int argc,char**argv){try{
+ require(argc==2,"usage CONFIG");auto cfg=Json::read(argv[1]);I threads=cfg.at("threads").integer();require(threads>0&&threads<=16,"thread bounds");double deadline=cfg.at("deadline_uptime").num();
+ std::unordered_map<std::string,uint32_t> names;std::string line;std::ifstream input(cfg.at("names").str());require(bool(input),"conductor names open");uint64_t original=0;
+ while(std::getline(input,line)){auto r=Json::parse(line);require(r.at(0).integer()==I(original++),"conductor contiguous IDs");require(names.emplace(r.at(1).str(),r.at(0).integer()).second,"conductor unique names");}require(input.eof()&&original>0,"conductor names complete");
+ input.close();input.open(cfg.at("native_nodes").str());require(bool(input),"native R nodes open");uint64_t native=0,inserted=0;
+ while(std::getline(input,line)){if(native++%10000==0)require(now()<deadline,"registry deadline");auto r=Json::parse(line);auto c=names.find(r.at("original_conductor").str());require(c!=names.end(),"R original conductor missing");uint32_t id=c->second;auto [it,ok]=names.emplace(r.at("printed_name").str(),id);require(ok||it->second==id,"native printed name conductor collision");inserted+=ok;}require(input.eof(),"native R nodes complete");
+ require(names.at("VGND")==1,"explicit substrate conductor ID");for(auto&[name,id]:names)id=id<2?0:id-1;
+ std::string outdir=cfg.at("output").str();std::filesystem::create_directory(outdir);I limit=cfg.at("max_accumulator_entries").integer();require(limit>=16&&limit<=1000000,"bounded matrix accumulator");
+ std::string deck=cfg.at("deck").str();uint64_t bytes=std::filesystem::file_size(deck);std::vector<Stats> stats(threads);std::vector<std::thread> jobs;
+ for(I part=0;part<threads;part++)jobs.emplace_back([&,part]{auto&s=stats[part];try{std::unordered_map<uint64_t,sparse::Value> acc;acc.reserve(limit);
+ auto flush=[&](){if(acc.empty())return;std::vector<sparse::Record> rows;rows.reserve(acc.size());for(auto&[key,v]:acc)rows.push_back({key,v.signed_sum.value(),v.absolute_sum.value(),v.terms});std::sort(rows.begin(),rows.end(),[](auto&a,auto&b){return a.key<b.key;});sparse::write(outdir+"/part_"+std::to_string(part)+"_run_"+std::to_string(s.runs++)+".bin",rows);acc.clear();};
+ auto add=[&](uint32_t a,uint32_t b,long double v){uint64_t key=(uint64_t(std::min(a,b))<<32)|std::max(a,b);acc[key].add(v);};std::ifstream stream(deck,std::ios::binary);require(bool(stream),"deck open");uint64_t begin=bytes*part/threads,end=bytes*(part+1)/threads;if(begin){stream.seekg(begin-1);char ch;stream.get(ch);if(ch!='\n'){std::string skipped;std::getline(stream,skipped);}}else stream.seekg(0);std::string text;uint64_t count=0;
+ while(stream&&uint64_t(stream.tellg())<end&&std::getline(stream,text)){if(count++%10000==0)require(now()<deadline,"endpoint scan deadline");if(text.empty()||text[0]!='C')continue;std::istringstream row(text);std::string instance,a,b,token;require(bool(row>>instance>>a>>b>>token),"C token syntax");size_t used=0;long double value=std::stold(token,&used);std::string suffix=token.substr(used);require(suffix.empty()||suffix=="f"||suffix=="p"||suffix=="n"||suffix=="u"||suffix=="m"||suffix=="k"||suffix=="G","C suffix");require(std::isfinite(value),"C finite");bool nonzero=value!=0;s.caps++;s.nonzero+=nonzero;auto x=names.find(a),y=names.find(b);bool absent=x==names.end()||y==names.end();if(absent){if(nonzero)s.missing++;else s.zero_missing++;for(auto*n:{&a,&b})if(names.find(*n)==names.end()){require(s.unknown.size()<100000||s.unknown.contains(*n),"bounded missing endpoint inventory");auto&u=s.unknown[*n];if(nonzero)u.first++;else u.second++;}}else if(x->second==y->second)s.same++;else if(nonzero){long double factor=1e18L;if(suffix=="f")factor=1000;else if(suffix=="p")factor=1e6L;else if(suffix=="n")factor=1e9L;else if(suffix=="u")factor=1e12L;else if(suffix=="m")factor=1e15L;else if(suffix=="k")factor=1e21L;else if(suffix=="G")factor=1e27L;long double raw=value*factor;require(std::isfinite(raw),"raw C conversion finite");add(x->second,x->second,raw);add(y->second,y->second,raw);add(x->second,y->second,-raw);if(acc.size()>=uint64_t(limit))flush();}
+ }require(!stream.bad(),"complete deck shard");flush();}catch(...){s.error=std::current_exception();}});
+ for(auto&t:jobs)t.join();Stats all;for(auto&s:stats){if(s.error)std::rethrow_exception(s.error);all.caps+=s.caps;all.nonzero+=s.nonzero;all.missing+=s.missing;all.zero_missing+=s.zero_missing;all.same+=s.same;all.runs+=s.runs;for(auto&[name,n]:s.unknown){all.unknown[name].first+=n.first;all.unknown[name].second+=n.second;}}
+ std::vector<std::string> sorted;for(auto&[name,n]:all.unknown)sorted.push_back(name);std::sort(sorted.begin(),sorted.end());std::ofstream unknown(cfg.at("unknown_output").str());for(auto&name:sorted){auto n=all.unknown.at(name);unknown<<Json(Json::Array{name,I(n.first),I(n.second)}).dump()<<'\n';}unknown.close();require(bool(unknown),"unknown endpoint inventory close");
+ Json report=Json::object();report["sparse_runs"]=I(all.runs);report["ideal_conductor_nodes"]=I(original-1);report["raw_EXT_unit_SI_F"]=1e-18;report["original_conductors"]=I(original);report["native_R_node_records"]=I(native);report["added_native_R_names"]=I(inserted);report["registered_endpoint_names"]=I(names.size());report["capacitor_records"]=I(all.caps);report["nonzero_capacitor_records"]=I(all.nonzero);report["nonzero_capacitors_with_unresolved_endpoints"]=I(all.missing);report["zero_capacitors_with_unresolved_endpoints"]=I(all.zero_missing);report["unresolved_endpoint_names"]=I(all.unknown.size());report["same_original_conductor_capacitors"]=I(all.same);require(all.missing==0&&all.zero_missing==0,"all capacitor endpoints must be registered");std::ofstream out(cfg.at("report").str());out<<report.dump()<<'\n';require(bool(out),"report write");return 0;
+ }catch(const std::exception&e){std::cerr<<e.what()<<'\n';return 1;}}
