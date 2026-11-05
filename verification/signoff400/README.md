@@ -7254,3 +7254,20 @@ R insertion. REF maps to `__parent_R_node_3003`, CLKDIVR to
 outputs to `__parent_R_node_3055`/`3057`. The parent drives detector RESET_N from
 TRACKING. These bindings prepare a correctly bounded interface bench; receiver
 loading and active phase response remain unqualified.
+
+Pin capture `183` collected all five detector-terminal traces from completed
+full-native run `131`, without rerunning its circuit. Four verified boundary
+PWL files were reused; the missing CLKDIVR trace was extracted by the existing
+compiled finite/ordered RAW reader. The RAW digest was checked before and
+after extraction. Every trace contains 45,760 samples through 260 ns.
+Measured complete 10–90% rising slews are 79.820–79.822 ps on REF (six edges)
+and 477.028–477.033 ps on CLKDIVR (two edges). These are observed TT/disabled-loop
+values, not a qualified all-corner active-mode slew envelope.
+
+The actual detector reset pin ranges from -12.77 mV to +11.40 mV and never
+crosses 0.9 V; neither detector output has a rising logic edge. This confirms
+that run `131` does not calibrate active phase response. The selected-layout
+interface probe must cover the observed input-slew asymmetry, actual receiver
+loading and relevant holdouts before the historical detector fit can contribute
+to release evidence. The existing closed-loop bench already drives its detector
+reset from the actual RTL BBPD_RESET_N output, which is assigned TRACKING.
