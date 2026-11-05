@@ -797,3 +797,12 @@ TT detector fit also matches both observed real-feedback-driver reference
 windows and every available output edge within its existing fit band plus
 1 ps quantization, without refitting. The new reference-level checker retains
 no/both decisions and pre-reference detector activity explicitly.
+
+The prototype auditor now recomputes closed-loop functional limits from each
+case's pinned edges, control changes, segments and completion log. A receipt's
+`passed` flags cannot replace the raw measurements. The auditor also checks
+phase coordinates against the raw REF/DIV edges and restricts the common gain
+pair to the declared search. Regression controls include a passing 400 MHz
+trace, a falsely marked 500 MHz trace, missing control provenance and altered
+phase coordinates. This strengthens evidence checking without changing the
+prototype acceptance limits or qualifying any current diagnostic model.

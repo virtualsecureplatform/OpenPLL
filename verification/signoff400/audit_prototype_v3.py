@@ -36,6 +36,7 @@ def audit(manifest):
                     if point not in {(c,27,1.8) for c in profile['corners']} or point in covered:raise ValueError('duplicate/unsupported corner')
                     covered.add(point)
                 if gate=='closed_loop_operation':
+                    if type(r['ki']) is not int or type(r['kp']) is not int or r['ki'] not in profile['gain_search']['ki'] or r['kp'] not in profile['gain_search']['kp']:raise ValueError('declared common gain search pair required')
                     gains.add((r['ki'],r['kp']))
                     expected={(s,p) for s in profile['scenarios'] for p in profile['reference_phase_offsets_ns']}
                     cases=r['records']
@@ -48,6 +49,8 @@ def audit(manifest):
                             reference,feedback=float(point['reference_ns']),float(point['feedback_ns'])
                             if not math.isfinite(reference) or not math.isfinite(feedback) or abs(reference-feedback-case['phase_offset_ns'])>.001:raise ValueError('phase coordinates do not realize requested offset')
                     if len(cases)!=12 or {(x['scenario'],x['phase_offset_ns']) for x in cases}!=expected or any(x.get('passed') is not True for x in cases):raise ValueError('incomplete functional matrix')
+                    from audit_selected_closed_loop_traces import check
+                    check(r,profile)
             except (ValueError,KeyError,TypeError,OSError) as error:failures.append(str(error))
         if gate in ('analog_models_and_tuning','digital_timing_and_cdc','closed_loop_operation') and len(covered)!=5:failures.append('five process corners at 27C required')
         gates[gate]=dict(status='fail' if failures else 'pass',failures=failures)
