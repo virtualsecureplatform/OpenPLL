@@ -88,8 +88,8 @@ def main():
     if a.phase_zero_only and not a.diagnostic:p.error('reduced matrix is diagnostic only')
     models=load_models(a.models.resolve(),a.diagnostic)
     out=a.output.resolve();out.mkdir(parents=True,exist_ok=False)
-    clock_sources=[ROOT/'tb/Prototype400ClockTiming.v'] if models.get('clock_timing') else []
-    bench=ROOT/('tb/tb_programmed400_closed_loop_timed.v' if clock_sources else 'tb/tb_programmed400_closed_loop.v')
+    clock_sources=[ROOT/'tb/Prototype400ClockTiming.v',ROOT/'tb/Prototype400ReferencePhase.v'] if models.get('clock_timing') else []
+    bench=ROOT/('tb/tb_programmed400_closed_loop_phased.v' if clock_sources else 'tb/tb_programmed400_closed_loop.v')
     clock_arguments=[]
     if clock_sources:
         from selected_clock_timing import load,arguments
@@ -101,6 +101,7 @@ def main():
                  Path(__file__).resolve(),Path(__file__).with_name('common_v3.py'),
                  Path(__file__).with_name('acceptance_v3.py'),
                  Path(__file__).with_name('selected_loop_assessment.py'),
+                 Path(__file__).with_name('selected_reference_phase.py'),
                  Path('/usr/bin/iverilog'),Path('/usr/bin/iverilog-vpi'),Path('/usr/bin/vvp')):
         pins[str(path)]=sha(path)
 
@@ -133,7 +134,12 @@ def main():
             record=dict(scenario=name,phase_offset_ns=phase,native_exit=code,segments=[],passed=False)
             assessment=assess(directory,code,scenario)
             record['segments']=assessment['segments']
-            record['passed']=assessment['functional_trace_pass']
+            from selected_reference_phase import assess as assess_phase
+            phase_result=assess_phase(directory,scenario,phase) if clock_sources else dict(reference_phase_coverage_pass=False,failure='no physical phase challenge')
+            save(directory/'reference_phase.json',phase_result)
+            record['reference_phase_coverage_pass']=phase_result['reference_phase_coverage_pass']
+            record['reference_phase_initializations']=phase_result.get('initializations',[])
+            record['passed']=assessment['functional_trace_pass'] and phase_result['reference_phase_coverage_pass']
             if 'failure' in assessment:record['failure']=assessment['failure']
             records.append(record)
             save(out/'status.json',dict(state='loop_cases_running',completed_cases=len(records),
@@ -146,6 +152,7 @@ def main():
          artifacts={str(path):sha(path) for path in out.rglob('*') if path.is_file() and path.name!='status.json'},
          corner=models['corner'],temperature_c=models['temperature_c'],supply_v=models['supply_v'],profile_sha256=sha(PROFILE),ki=a.ki,kp=a.kp,records=records,
          physical_models_qualified=not models['synthetic'],clock_timing_applied=bool(clock_sources),
+         reference_phase_coverage_pass=len(records)==12 and all(r['reference_phase_coverage_pass'] for r in records),
          phase_observation_boundary='physical_divided_output' if clock_sources else 'ideal_RTL_diagnostic_only',all_trace_cases_passed=complete,
          prototype_trace_pass=bool(complete and not a.diagnostic and not models['synthetic']),
          validated_for_prototype=False,uncertainty_holdouts_complete=False,release_ready=False,production_qualified=False,

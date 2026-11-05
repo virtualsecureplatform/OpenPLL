@@ -1,6 +1,7 @@
 """Audit scoped prototype evidence without promoting historical qualification flags."""
 import argparse
 import json
+import math
 from pathlib import Path
 from common import sha,verify,save
 
@@ -9,7 +10,7 @@ CHECKS={
  'physical_integrity':{'drc','lvs','antenna','density','power_bulk_connectivity','device_parameters','electrical_rules'},
  'analog_models_and_tuning':{'passive_extraction','compatible_device_models','target_bracket','startup_headroom','native_interface_validation','independent_holdouts','numerical_convergence','uncertainty_included'},
  'digital_timing_and_cdc':{'setup_hold','recovery_removal','pulse_electrical','startup_frequency_coverage','all_crossings_reviewed','complete_interstage_paths'},
- 'closed_loop_operation':{'native_correlated_models','uncertainty_holdouts','functional_limits'},
+ 'closed_loop_operation':{'native_correlated_models','uncertainty_holdouts','functional_limits','reference_phase_coverage'},
  'reproducible_handoff':{'complete_artifacts','portable_paths','clean_environment_replay','representative_native_replay','integration_contract'}}
 
 
@@ -38,6 +39,14 @@ def audit(manifest):
                     gains.add((r['ki'],r['kp']))
                     expected={(s,p) for s in profile['scenarios'] for p in profile['reference_phase_offsets_ns']}
                     cases=r['records']
+                    if any(x.get('reference_phase_coverage_pass') is not True for x in cases):raise ValueError('reference phase coverage not demonstrated')
+                    for case in cases:
+                        initializations=case.get('reference_phase_initializations',[])
+                        count=1 if case['scenario']=='cold_start' else 2
+                        if [x['epoch'] for x in initializations]!=list(range(count)):raise ValueError('incomplete phase coordinate evidence')
+                        for point in initializations:
+                            reference,feedback=float(point['reference_ns']),float(point['feedback_ns'])
+                            if not math.isfinite(reference) or not math.isfinite(feedback) or abs(reference-feedback-case['phase_offset_ns'])>.001:raise ValueError('phase coordinates do not realize requested offset')
                     if len(cases)!=12 or {(x['scenario'],x['phase_offset_ns']) for x in cases}!=expected or any(x.get('passed') is not True for x in cases):raise ValueError('incomplete functional matrix')
             except (ValueError,KeyError,TypeError,OSError) as error:failures.append(str(error))
         if gate in ('analog_models_and_tuning','digital_timing_and_cdc','closed_loop_operation') and len(covered)!=5:failures.append('five process corners at 27C required')

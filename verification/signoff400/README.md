@@ -13,6 +13,18 @@ integrity, analog models/tuning, digital timing/CDC, closed-loop operation,
 and reproducible handoff. Passing diagnostic geometry, waveforms or unit
 tests cannot substitute for their direct qualification evidence.
 
+Reference-phase coverage uses `tb_programmed400_closed_loop_phased.v` and
+`Prototype400ReferencePhase.v`. On each tracking entry, the external reference
+is held low for at least 20 ns and its acquisition edge is placed 0, 10, 20 or
+30 ns after an observed physical feedback edge. It then resumes its 40 ns
+period. This avoids offsets being absorbed by synchronous startup. The actual
+controller RTL is unchanged. `selected_reference_phase.py` checks every
+initialization against recorded REF/DIV edges in the first observation window;
+the release audit requires those coordinates for every scenario segment.
+`run_selected_mixed_signal_v3.py` and `run_selected_matrix_v3.py` are the current
+diagnostic runners for this phase convention. Synthetic phase-engine controls
+validate coverage only and cannot qualify analog models or release readiness.
+
 Current simulation speed trial:
 
 The leading configuration is isolated diode-corrected Xyce with checked UMFPACK
