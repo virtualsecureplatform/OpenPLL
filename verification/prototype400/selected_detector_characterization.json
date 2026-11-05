@@ -829,5 +829,44 @@
       }
     }
   ],
-  "native_shape_interpretation": "Each budget-stopped probe contains one complete first-event observation window. Native-shape decisions agree with the sampled baseline signs, but complete 80 ns holdouts and exterior-switching qualification remain open."
+  "native_shape_interpretation": "Each budget-stopped probe contains one complete first-event observation window. Native-shape decisions agree with the sampled baseline signs, but complete 80 ns holdouts and exterior-switching qualification remain open.",
+  "selected_diagnostic_fit": {
+    "assessment": "build/signoff400/selected_detector_diagnostic_fit_254/assessment.json",
+    "assessment_sha256": "ecc5c8413fa6bd9a258228e236092c2de0897ee6dd55f270b4f47c1a4248ade6",
+    "fitting_assessments": 7,
+    "holdout_assessments": 8,
+    "holdouts_include_two_budget_prefixes": true,
+    "all_sampled_signs_match": true,
+    "all_event_counts_match": true,
+    "all_edges_within_observed_fit_band_and_1ps_quantization": true,
+    "nominal_lookback_ps": 111.9828018841389,
+    "native_interface_qualified": false,
+    "scope": "sampled rising-edge neighborhood; conditional exterior voltage and loading only",
+    "limitations": [
+      "other phase regions and corners unqualified",
+      "receiver path latency not included",
+      "exterior switching unqualified",
+      "numerical convergence unqualified"
+    ],
+    "registry_binding": {
+      "assessment": "build/signoff400/selected_detector_bound_registry_255/assessment.json",
+      "assessment_sha256": "174df92cdb2a29a5c6f29585bbb1df83f9f3c91871b9820fc15c6791bc263f43",
+      "analog_cache_key_unchanged": true,
+      "measured_points_retained": 1
+    },
+    "actual_RTL_probe": {
+      "assessment": "build/signoff400/selected_detector_bound_RTL_probe_256/assessment.json",
+      "assessment_sha256": "c9aaeef95243ab7ff30bd0e00bf651608b3846b7b030223154a7f22a8b1824e7",
+      "state": "needs_native_tuning_points",
+      "elapsed_s": 4.729854360921308,
+      "measurement_requests": [
+        {
+          "coarse": 20,
+          "fine": 112
+        }
+      ],
+      "lock_qualified": false
+    },
+    "queued_calibration_followup": "build/signoff400/selected_detector_calibration_followup_257"
+  }
 }

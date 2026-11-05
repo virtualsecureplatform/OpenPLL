@@ -7324,3 +7324,20 @@ control: all 5,503 DIV edges move by 704 ps, while 5,505 REF edges and 88,000 OU
 edges remain unchanged. This verifies timing-boundary implementation, not PLL
 lock or native interface qualification. All 72 selected-flow tests pass in the
 release container, including the Icarus timing adapter checks.
+
+Selected-layout diagnostic detector fit `254` uses seven conditional native
+waveforms and eight separate holdouts, including two budget-stopped native
+clock-shape prefixes with complete first-event windows. All sampled decisions
+and replayed event counts agree; output edges lie within the observed fit band
+plus 1 ps quantization. The nominal lookback is 111.9828 ps. This remains a TT
+rising-edge-neighborhood diagnostic: receiver latency, other phase regions,
+exterior switching, numerical convergence and other corners are unqualified.
+`fit_selected_detector_diagnostic.py` requires one physical native model across
+fitting and holdout data and replays the emitted Verilog in Icarus.
+
+`bind_selected_detector_registry.py` creates a new interface identity while
+preserving the measured analog cache. Binding `255` retains coarse20/fine111.
+Actual RTL probe `256` takes 4.73 s and requests measured fine112, without tuning
+extrapolation. Follow-up `257` observes registry advancement `173`, then binds
+the selected detector and reruns the same actual RTL case once; it does not
+launch another native calibration or promote diagnostic results to release.
