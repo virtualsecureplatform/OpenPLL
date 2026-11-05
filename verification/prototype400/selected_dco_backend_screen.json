@@ -50,5 +50,41 @@
     "capacitance_operator_equivalence_validated": false,
     "external_driver_impedance_equivalence_validated": false,
     "initial_history_equivalence_validated": false
+  },
+  "real_driver_diagnostic": {
+    "scope": "coarse20 fine111; TT 1.8 V 27 C; conditional full-derived DCO",
+    "status_at_recording": "native_running",
+    "native": "build/signoff400/selected_DCO_real_driver_control_248",
+    "CPU": 27,
+    "native_cap_s": 7200,
+    "selected_primitives": 5610,
+    "control_driver_cells": 302,
+    "control_driver_primitives": 1208,
+    "retained_passive_cards": 581215,
+    "remaining_omitted_primitive_load_count": 269,
+    "planned_measured_window_ns": [
+      20,
+      60
+    ],
+    "exterior_condition": "full native final 260 ns voltages held constant",
+    "purpose": "Test whether retaining real programming drivers and the first reset/output halo changes the isolated/full frequency discrepancy; not a qualified model",
+    "evidence": {
+      "drivers": {
+        "path": "build/signoff400/selected_DCO_control_driver_inventory_243.json",
+        "sha256": "a8296817bf54c8ef7f729e6d0fb8110ed16f4ddad3d34b21bc9bbd478b8c29a5"
+      },
+      "load_halo": {
+        "path": "build/signoff400/selected_DCO_real_driver_load_halo_245.json",
+        "sha256": "ce9bd42496f82862c0761e31963c98e656fe78e81729044445d9ba2f0d2c3582"
+      },
+      "partition": {
+        "path": "build/signoff400/selected_DCO_real_driver_reset_cut_247.json",
+        "sha256": "8da511786dbaf51f93910b0c8038b84ddb310a2b5c31fd9d0be7537f3a01864e"
+      },
+      "live_runtime": {
+        "path": "build/signoff400/selected_DCO_real_driver_runtime_249.json",
+        "sha256": "6e53ad400b330afebbf83d4aaf56f01c786c3f8a1aa4426017d8c0fbca3374e9"
+      }
+    }
   }
 }
