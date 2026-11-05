@@ -43,9 +43,10 @@ def run(source,deck_source,ng_waveform,output):
         original=source.read_text();before=caps(original)
         text=original;nr=0
         if 'sky130_fd_pr__res_generic_po' in text:text,nr=resistor(text)
-        text,nd=diode(text)
+        nd=0
+        if 'sky130_fd_pr__diode_pw2nd_05v5' in text:text,nd=diode(text)
         if caps(text)!=before:raise ValueError('constant capacitor cards changed')
-        model=translated_model(27,1,1)
+        model=translated_model(27,1,1) if nd else ""
         model=re.sub(r'(?m)^\+ CJ=\S+',r'+ CJ={1.3459e-15*sky130_fd_pr__nfet_01v8__ajunction_mult}',model)
         model=re.sub(r'(?m)^\+ CJSW=\S+',r'+ CJSW={3.6001e-17*sky130_fd_pr__nfet_01v8__pjunction_mult}',model)
         adapted=output/'model.spice';adapted.write_text(model+text);del original,text
