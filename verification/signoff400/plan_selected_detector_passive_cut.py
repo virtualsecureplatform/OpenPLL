@@ -13,14 +13,15 @@ from common_v3 import save,sha,verify
 RAILS={'0','VPWR','VGND','VPB','VNB'}
 
 
-def passive_cut(terms,passives,selected):
+def passive_cut(terms,passives,selected,prescribed=()):
     if not selected or not selected<=terms.keys():raise ValueError('unknown selected primitive')
-    seeds={n for name in selected for n in terms[name]}-RAILS
+    prescribed=set(prescribed)
+    seeds={n for name in selected for n in terms[name]}-RAILS-prescribed
     external={n for name in terms.keys()-selected for n in terms[name]}-seeds-RAILS
     adjacency=defaultdict(list)
     for index,(_,a,b) in enumerate(passives):
         adjacency[a].append(index);adjacency[b].append(index)
-    private=set(seeds);boundary=set();cards=set();queue=deque(sorted(seeds))
+    private=set(seeds);boundary=set(prescribed);cards=set();queue=deque(sorted(seeds))
     while queue:
         node=queue.popleft()
         for index in adjacency[node]:
@@ -28,14 +29,14 @@ def passive_cut(terms,passives,selected):
             _,a,b=passives[index]
             for other in [a,b]:
                 if other in RAILS or other in private:continue
-                if other in external:boundary.add(other)
+                if other in external or other in prescribed:boundary.add(other)
                 else:private.add(other);queue.append(other)
     omitted={name:sorted(set(nodes)&private) for name,nodes in terms.items()
              if name not in selected and set(nodes)&private}
     return private,boundary,cards,omitted
 
 
-def run(detector,receivers,roles,metadata,model,output):
+def run(detector,receivers,roles,metadata,model,output,stimulus_ports=None):
     if output.exists():raise FileExistsError(output)
     dv,rv,cv=[json.loads(p.read_text()) for p in [detector,receivers,roles]]
     for v in [dv,rv,cv]:verify(v['input_sha256'])
@@ -61,7 +62,14 @@ def run(detector,receivers,roles,metadata,model,output):
             count=len(items[f[0]]['local_primitive_signature'][1]);terms[f[0]]=f[1:count+1]
         elif f[0][0].upper() in ['R','C']:passives.append((f[0],f[1],f[2]))
     if terms.keys()!=items.keys():raise ValueError('native primitive coverage mismatch')
-    private,boundary,cards,omitted=passive_cut(terms,passives,selected)
+    prescribed=[]
+    if stimulus_ports is not None:
+        sv=json.loads(stimulus_ports.read_text());verify(sv['input_sha256'])
+        if sv['input_sha256'].get(str(receivers))!=sha(receivers):raise ValueError('stimulus receiver identity mismatch')
+        prescribed=list(sv['prescribed_voltage_roles'].values())
+        if set(prescribed)&set(sv['observed_unknown_roles'].values()):raise ValueError('output voltage clamp forbidden')
+        pins[str(stimulus_ports)]=sha(stimulus_ports)
+    private,boundary,cards,omitted=passive_cut(terms,passives,selected,prescribed)
     result=dict(input_sha256=pins,selected_primitives=sorted(selected),private_unknown_nodes=sorted(private),
                 required_non_supply_boundary_voltage_nodes=sorted(boundary),
                 retained_passive_cards=[passives[i][0] for i in sorted(cards)],
@@ -78,4 +86,5 @@ def run(detector,receivers,roles,metadata,model,output):
 if __name__=='__main__':
     p=argparse.ArgumentParser()
     for n in ['detector','receivers','roles','metadata','model','output']:p.add_argument('--'+n,type=Path,required=True)
-    a=p.parse_args();run(*(getattr(a,n).resolve() for n in ['detector','receivers','roles','metadata','model','output']))
+    p.add_argument('--stimulus-ports',type=Path)
+    a=p.parse_args();run(*(getattr(a,n).resolve() for n in ['detector','receivers','roles','metadata','model','output']),stimulus_ports=a.stimulus_ports.resolve() if a.stimulus_ports else None)

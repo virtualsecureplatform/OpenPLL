@@ -11,6 +11,14 @@ class DetectorPassiveCutTests(unittest.TestCase):
         self.assertEqual(boundary,{'z'})
         self.assertEqual(retained,{0,1,2})
         self.assertEqual(omitted,{'load':['a']})
+    def test_prescribed_input_stops_expansion_but_output_stays_unknown(self):
+        p,b,c,o=passive_cut({'inside':['output','reset'],'driver':['reset','driver_internal']},
+                           [('R0','output','input'),('C0','reset','driver_internal')],
+                           {'inside'},{'input','reset'})
+        self.assertEqual(p,{'output'})
+        self.assertEqual(b,{'input','reset'})
+        self.assertEqual(c,{0});self.assertEqual(o,{})
+
     def test_supply_nodes_do_not_pull_in_unrelated_capacitance(self):
         p,b,c,o=passive_cut({'X':['a','VPWR']},[('C0','a','VPWR'),('C1','VPWR','remote')],{'X'})
         self.assertEqual(p,{'a'});self.assertEqual(c,{0})
