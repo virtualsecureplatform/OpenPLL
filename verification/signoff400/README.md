@@ -7184,3 +7184,18 @@ oscillator rising edges in this interval; frequency/startup correlation is
 still unproven. The PWL control remains live and is not a completed runtime
 baseline. Queue `167` has advanced to preparation of the separate full 260 ns
 control `168`; its result will be assessed in `169`. No release gate is changed.
+
+Transition cross-check `171` extends the PWL/full/streaming comparison through
+5.237 ns, including reset. The PWL conditional control differs from full-native
+by up to 6.21 uV; streaming differs by up to 7.27 uV, and the two conditional
+methods differ by up to 3.81 uV. Thus streaming initialization is not the sole
+source of the observed deviation. This remains a partial common-window check,
+not a convergence study.
+
+`assess_selected_interface_observations.py` separately quantifies saved-sample
+logic agreement using the existing 0.9 V readback convention. Assessment `172`
+verifies the completed comparison's input hashes and inventory, then checks
+all 2,693 samples/31 outputs: zero sampled logic mismatches, with the nearest
+native output sample 0.89004 V from the threshold. Every channel's minimum
+sample distance exceeds its observed maximum voltage difference. This is not
+a noise-margin specification, unsaved-hazard assessment, or timing/model gate.
