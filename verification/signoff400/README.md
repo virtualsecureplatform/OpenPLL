@@ -7341,3 +7341,21 @@ Actual RTL probe `256` takes 4.73 s and requests measured fine112, without tunin
 extrapolation. Follow-up `257` observes registry advancement `173`, then binds
 the selected detector and reruns the same actual RTL case once; it does not
 launch another native calibration or promote diagnostic results to release.
+
+Bounded native clock-source controls `259`/`260` completed all 80 ns in
+1550.81/1399.66 s. `bounded_clock_sources.py` certifies at most 1 uV uniform
+voltage error by checking the union of the two PWL knot sets and preserves
+all 0.18/0.9/1.62 V crossing times. Audit `263` verifies identical devices,
+passives, exterior biases and solver controls before comparing responses.
+Comparison `275` agrees with the exact-source prefixes in sampled signs and
+actual receiver captures; the largest edge shift is 0.03449 ps and capture
+latency shift 0.00644 ps. This is diagnostic agreement, not a charge-response
+or all-condition interface-equivalence proof.
+
+RAW output still rounds time despite the print precision setting. Each complete
+control contains 74 repeated printed timestamps. The V3 assessor and V2 response
+characterizer retain every complete sample, require the declared point count
+and endpoint, and reject nonfinite data. Separate observation receipts `268`/
+`270` and responses `269`/`271` recover the normally completed native runs;
+no circuit retry was needed. The comparison command accepts explicit recovered
+`--assessment` and `--response` paths for this situation.

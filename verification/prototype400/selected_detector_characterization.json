@@ -868,5 +868,35 @@
       "lock_qualified": false
     },
     "queued_calibration_followup": "build/signoff400/selected_detector_calibration_followup_257"
+  },
+  "bounded_native_clock_source_controls": {
+    "source_voltage_error_bound_V": 1e-06,
+    "protected_crossing_levels_V": [
+      0.18,
+      0.9,
+      1.62
+    ],
+    "comparison": "build/signoff400/selected_bounded_clock_response_comparison_275/assessment.json",
+    "comparison_sha256": "aefc705e5f690f11f7972cc5de87eb0c381ae05e5089b9ae64a15f9812381a5a",
+    "all_sampled_controls_agree": true,
+    "maximum_observed_edge_difference_ps": 0.034485319226007505,
+    "maximum_observed_capture_latency_difference_ps": 0.006439363215122285,
+    "native_elapsed_s": [
+      1550.81,
+      1399.66
+    ],
+    "normal_native_duration_ns": 80,
+    "observation_recovery": "Preserved all complete RAW samples, including 74 printed timestamp collisions per case; native circuits were not rerun.",
+    "physical_models_qualified": false,
+    "release_ready": false,
+    "input_identity": {
+      "path": "build/signoff400/selected_bounded_clock_control_identity_263.json",
+      "sha256": "d2c6194d11700574a69156e1aa3417d2de6d11b1c21b516e8cdefe227a38a21e"
+    },
+    "live_runtime": {
+      "path": "build/signoff400/selected_bounded_shape_live_runtime_261.json",
+      "sha256": "7a8adf33dbe5de5cda19e1c9d3da4389c9251bb4cacdabef5e8d18300ddeb70b"
+    },
+    "waveform_bound_scope": "Uniform stimulus voltage error only; derivative, full charge response and detector equivalence are not proven."
   }
 }
