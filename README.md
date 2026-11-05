@@ -875,3 +875,11 @@ not qualified. The secant selector requests native fine133 near 400 MHz. One
 full-native calibration is queued after the corner-initialization queue, then
 its measured point will attach and the actual RTL diagnostic will use the
 closest measured seed. No predicted frequency enters the tuning table.
+
+The first-reference falling-aperture probe completed normally. At a measured
+feedback falling offset of -116.16 ps, native decides UP and captures one event.
+There are no detector edges before the first reference at 60 ns. The frozen
+rising-neighborhood detector model matches the observed decision and output
+edges within its existing fit-band-plus-quantization allowance, without refit.
+One opposite-side companion and one repeated-DN publication control are live;
+these add validation points rather than assuming a full aperture bound.

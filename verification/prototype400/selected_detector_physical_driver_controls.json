@@ -75,10 +75,36 @@
   },
   "falling_aperture": {
     "native": "build/signoff400/selected_detector_falling_aperture_case_286/native",
-    "status_at_recording": "running",
+    "status_at_recording": "completed_normally",
     "first_reference_rise_target_ns": 60,
     "feedback_Q_anchor_target_ns": 39.6,
-    "pre_reference_detector_activity_must_be_checked": true
+    "pre_reference_detector_activity_must_be_checked": true,
+    "response": {
+      "path": "build/signoff400/selected_detector_falling_aperture_case_286/response.json",
+      "sha256": "5c368a5d429a84c68dbfaa6152e4ae8d6295882520e7ba98bfa36ff18e9eb600"
+    },
+    "frozen_fit_holdout": {
+      "path": "build/signoff400/selected_frozen_detector_falling_aperture_holdout_314/assessment.json",
+      "sha256": "90a2394ced908dba7a5b93279f3dea67c5c87ed164ba5eda9ee528157ae31bc2"
+    },
+    "first_reference_rise_ns": 60.001657543651284,
+    "measured_feedback_falling_offset_ps": -116.16211385162245,
+    "observed_decision": "up",
+    "pre_reference_detector_edges": {
+      "detector_up": {
+        "rising_ns": [],
+        "falling_ns": []
+      },
+      "detector_dn": {
+        "rising_ns": [],
+        "falling_ns": []
+      }
+    },
+    "all_sampled_signs_match": true,
+    "all_event_counts_match": true,
+    "all_edges_within_observed_fit_band": true,
+    "maximum_observed_edge_error_ps": 1.0031606108356073,
+    "parameters_refitted": false
   },
   "live_runtime": {
     "path": "build/signoff400/selected_recorded_clock_aperture_live_runtime_287.json",
@@ -117,6 +143,26 @@
     "parameters_will_not_be_refitted": true,
     "all_process_corners_covered": false,
     "full_phase_coverage_qualified": false,
+    "release_ready": false
+  },
+  "falling_aperture_companion": {
+    "native": "build/signoff400/selected_detector_falling_aperture_case_317/native",
+    "status_at_recording": "running",
+    "Q_anchor_offset_ns": 19.62,
+    "CPU": 17,
+    "purpose": "Opposite side of the falling-edge neighborhood; decision remains a native observation",
+    "live_runtime": {
+      "path": "build/signoff400/selected_falling_aperture_companion_live_runtime_319.json",
+      "sha256": "fac1676dd812f47933822839aea144d056b02056ffe76d8288c7ae2579640ae7"
+    },
+    "release_ready": false
+  },
+  "negative_event_publication_control": {
+    "native": "build/signoff400/selected_detector_recorded_sync_clock_case_322/native",
+    "status_at_recording": "running",
+    "Q_anchor_offset_ns": -7,
+    "CPU": 18,
+    "purpose": "Exercise consecutive same-direction detector events to observe the event-toggle falling publication delay",
     "release_ready": false
   }
 }

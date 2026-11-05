@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "scope": "Full assembled circuit reset-state initialization only; 1.8 V, 27 C",
-  "status_at_recording": "queued_after_original_TT_calibration_assessment",
+  "status_at_recording": "FF_native_DC_operating_point_running",
   "queue": "build/signoff400/selected_full_corner_initial_states_306",
   "prerequisite": "build/signoff400/selected_calibration_registry_advance_173",
   "existing_TT_snapshot": "build/signoff400/selected_full_initial_voltage_snapshot_216",
@@ -40,5 +40,10 @@
   "transient_programming_history_captured": false,
   "target_tuning_qualified": false,
   "physical_models_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "live_namespace_runtime": {
+    "path": "build/signoff400/selected_full_FF_reset_runtime_318.json",
+    "sha256": "1cf052e8fda41716e9958bed95762cc27642f57cde2972f39901934503bac8bb"
+  },
+  "runtime_scope": "controller mount namespace and static PDK include superset; no historical image binding or launcher attestation claimed"
 }
