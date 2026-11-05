@@ -52,6 +52,21 @@ def load_models(path, diagnostic):
             artifact=value['dco_table' if key=='dco_receipt' else 'detector_rtl']
             if artifact not in report['artifacts']:
                 raise ValueError('model artifact not covered by receipt')
+    if not value['synthetic'] and not value.get('clock_timing'):
+        raise ValueError('physical divided-clock timing model required')
+    if value.get('clock_timing'):
+        clock=Path(value['clock_timing'])
+        if str(clock) not in value['input_sha256']:raise ValueError('unpinned clock timing artifact')
+        from selected_clock_timing import load
+        timing=load(clock,diagnostic=value['synthetic'])
+        if timing['operating_point']!=dict(corner=value['corner'],temperature_c=value['temperature_c'],supply_v=value['supply_v']):
+            raise ValueError('clock timing operating point mismatch')
+        if not value['synthetic']:
+            interface=json.loads(Path(value['interface_receipt']).read_text())
+            if str(clock) not in interface['artifacts']:raise ValueError('clock timing not covered by qualified interface receipt')
+            model_inputs=dict(value['input_sha256'],**interface['input_sha256'])
+            if any(model_inputs.get(k)!=v for k,v in timing['reference_model_sha256'].items()):
+                raise ValueError('clock timing/native physical model identity mismatch')
     for key in ('dco_table','detector_rtl'):
         if value[key] not in value['input_sha256']:
             raise ValueError('unpinned model artifact')
@@ -73,7 +88,12 @@ def main():
     if a.phase_zero_only and not a.diagnostic:p.error('reduced matrix is diagnostic only')
     models=load_models(a.models.resolve(),a.diagnostic)
     out=a.output.resolve();out.mkdir(parents=True,exist_ok=False)
-    bench=ROOT/'tb/tb_programmed400_closed_loop.v'
+    clock_sources=[ROOT/'tb/Prototype400ClockTiming.v'] if models.get('clock_timing') else []
+    bench=ROOT/('tb/tb_programmed400_closed_loop_timed.v' if clock_sources else 'tb/tb_programmed400_closed_loop.v')
+    clock_arguments=[]
+    if clock_sources:
+        from selected_clock_timing import load,arguments
+        clock_arguments=arguments(load(Path(models['clock_timing']),diagnostic=models['synthetic']))
     bridge=ROOT/'verification/timing400/phase_clock_vpi.cpp'
     pins=source_pins()
     pins.update(models['input_sha256'])
@@ -81,6 +101,9 @@ def main():
                  Path(__file__).resolve(),Path(__file__).with_name('common_v3.py'),
                  Path(__file__).with_name('acceptance_v3.py'),
                  Path('/usr/bin/iverilog'),Path('/usr/bin/iverilog-vpi'),Path('/usr/bin/vvp')):
+        pins[str(path)]=sha(path)
+
+    for path in [*clock_sources,Path(__file__).with_name('selected_clock_timing.py')]:
         pins[str(path)]=sha(path)
 
     def run(command,log):
@@ -91,10 +114,10 @@ def main():
                 stderr=subprocess.STDOUT,timeout=max(.001,43200-(time.monotonic()-started))).returncode
         return code
 
-    assert run(['/usr/bin/iverilog-vpi',bridge],out/'vpi_compile.log')==0
+    if run(['/usr/bin/iverilog-vpi',bridge],out/'vpi_compile.log')!=0:raise RuntimeError('VPI compilation failed')
     binary=out/'loop.vvp'
-    assert run(['/usr/bin/iverilog','-g2012','-s','tb_programmed400_closed_loop','-o',binary,
-                *RTL,bench,models['detector_rtl']],out/'compile.log')==0
+    if run(['/usr/bin/iverilog','-g2012','-s','tb_programmed400_closed_loop','-o',binary,
+                *RTL,bench,*clock_sources,models['detector_rtl']],out/'compile.log')!=0:raise RuntimeError('RTL compilation failed')
     records=[]
     phases=[0] if a.phase_zero_only else value['reference_phase_offsets_ns']
     for scenario,name in enumerate(value['scenarios']):
@@ -105,7 +128,7 @@ def main():
                 f'+phase400_table={models["dco_table"]}',f'+phase400_trace={control}',
                 f'+scenario={scenario}',f'+phase_ns={phase}',f'+coarse={models["coarse"]}',
                 f'+seed={models["seed"]}',f'+polarity={models["polarity"]}',f'+ki={a.ki}',f'+kp={a.kp}',
-                f'+edge_trace={edges}',f'+segment_trace={segments}'],directory/'run.log')
+                f'+edge_trace={edges}',f'+segment_trace={segments}',*clock_arguments],directory/'run.log')
             record=dict(scenario=name,phase_offset_ns=phase,native_exit=code,segments=[],passed=False)
             if code==0 and 'PROGRAMMED400_LOOP_END' in (directory/'run.log').read_text():
                 events={kind:[] for kind in ('REF','DIV','OUT')}
@@ -130,7 +153,8 @@ def main():
          candidate_source_sha256=source_pins(),candidate_physical_sha256=models.get('candidate_physical_sha256',{}),
          artifacts={str(path):sha(path) for path in out.rglob('*') if path.is_file() and path.name!='status.json'},
          corner=models['corner'],temperature_c=models['temperature_c'],supply_v=models['supply_v'],profile_sha256=sha(PROFILE),ki=a.ki,kp=a.kp,records=records,
-         physical_models_qualified=not models['synthetic'],all_trace_cases_passed=complete,
+         physical_models_qualified=not models['synthetic'],clock_timing_applied=bool(clock_sources),
+         phase_observation_boundary='physical_divided_output' if clock_sources else 'ideal_RTL_diagnostic_only',all_trace_cases_passed=complete,
          prototype_trace_pass=bool(complete and not a.diagnostic and not models['synthetic']),
          validated_for_prototype=False,uncertainty_holdouts_complete=False,release_ready=False,production_qualified=False,
          macro_handoff_qualified=False,release_qualified=False))

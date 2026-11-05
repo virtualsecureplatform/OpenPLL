@@ -7282,3 +7282,33 @@ inputs. Each Q output additionally drives a downstream HS dfrtp_1; that loading
 and other coupled boundary behavior still need bounds before phase-bench use.
 No receiver substitute load or active phase-response qualification is emitted.
 The LEF snapshots in `185` match the selected candidate's existing proof hashes.
+
+Clock-path observation `187` measures nearest-preceding-edge phase offsets in
+the 200–260 ns native window. Rounded transport values are 704/582 ps for rising/
+falling divided-output transitions after PLLOUT rising edges, 5 ps for the
+feedback wire and 2 ps for the reference wire. These are sparse TT observations,
+not proven unwrapped causal latencies or an all-corner timing model. The packet
+explicitly remains diagnostic and unqualified.
+
+`Prototype400ClockTiming.v` and the separate timed closed-loop bench apply those
+explicit delays before the detector and record DIV at the physical divided-output
+boundary. The actual controller RTL and the existing phase acceptance limits are
+unchanged. `run_selected_mixed_signal_v2.py` requires a clock timing packet;
+`run_selected_matrix_v2.py` additionally requires one pinned by each corner's
+interface registry. Timed registry `190`/preflight `191` still request the four
+missing corner datasets. Smoke `189` compiled and exercised the actual RTL,
+then exited 3 requesting native coarse 20/fine 112 without extrapolation.
+
+The qualified-model route in `loop_v3.py` now requires clock timing covered by
+the qualified interface receipt, matching the operating point and physical
+model. Diagnostic phase observations cannot qualify that path. Synthetic engine
+controls can still exercise zero-delay timing explicitly as diagnostics. Compile
+commands now execute independently of Python assertions.
+
+Synthetic timed control `193` completed all 12 scenario/phase cases; zero
+functional passes are expected for its untunable 400 MHz/no-detector fixture.
+Cross-check `194` pairs its cold-start edges with the prior zero-delay engine
+control: all 5,503 DIV edges move by 704 ps, while 5,505 REF edges and 88,000 OUT
+edges remain unchanged. This verifies timing-boundary implementation, not PLL
+lock or native interface qualification. All 72 selected-flow tests pass in the
+release container, including the Icarus timing adapter checks.
