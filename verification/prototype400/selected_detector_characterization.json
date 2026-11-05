@@ -722,5 +722,20 @@
     "build/signoff400/selected_detector_native_shape_case_234",
     "build/signoff400/selected_detector_native_shape_case_235"
   ],
-  "native_clock_driver_waveforms": "build/signoff400/selected_clock_driver_waveforms_232"
+  "native_clock_driver_waveforms": "build/signoff400/selected_clock_driver_waveforms_232",
+  "RTL_phase_coverage_control": {
+    "assessment": "build/signoff400/selected_reference_phase_engine_control_239/assessment.json",
+    "assessment_sha256": "3192b2e1a9e8b450ea43c7ce6f5cd45ef323e520e644f8179aa477dc53269d9b",
+    "scenarios": 3,
+    "phase_offsets_ns": [
+      0,
+      10,
+      20,
+      30
+    ],
+    "all_12_actual_phase_cases_verified": true,
+    "synthetic": true,
+    "functional_passes": 3,
+    "purpose": "Phase initialization and trace-audit control only; not physical lock evidence"
+  }
 }

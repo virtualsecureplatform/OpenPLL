@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "partial_diagnostic_screen",
+  "scope": "coarse20 fine111; TT 27 C 1.8 V",
+  "assessment": "build/signoff400/selected_isolated_common_window_assessment_238/assessment.json",
+  "assessment_sha256": "f9d994ae11c1d242b58b01ae22773f323fb13b95ce10446ddbfa5a605bbdad94",
+  "normal_full_window_completed": false,
+  "native_budget_stopped": true,
+  "common_measured_window_ns": [
+    20,
+    36.452253299999995
+  ],
+  "Xyce": {
+    "rising_edges": 6,
+    "frequency_mhz": 370.337475355669,
+    "minimum_period_ns": 2.6999983808250576,
+    "maximum_period_ns": 2.700516841429078
+  },
+  "ngspice": {
+    "rising_edges": 6,
+    "frequency_mhz": 369.0850913790384,
+    "minimum_period_ns": 2.70916279009365,
+    "maximum_period_ns": 2.709670954793225
+  },
+  "frequency_difference_ppm": 3393.212042110072,
+  "full_model_reference": {
+    "assessment": "build/signoff400/prototype_v3_loaded_startup_260ns_131/waveform_assessment/assessment.json",
+    "assessment_sha256": "eab72015922f2049e4aa71f9eb96aabe7c57ef9811b65b3d237e372d185e7b87",
+    "window_ns": [
+      200,
+      260
+    ],
+    "frequency_mhz": 392.3103175732505
+  },
+  "frequency_difference_Xyce_isolated_to_full_ppm": -56008.83084977437,
+  "interpretation": "Backend switching alone did not close the isolated/full-model gap; boundary, extraction, initialization and numerical correlation remain open.",
+  "integration_algorithm_matched": false,
+  "numerical_convergence_qualified": false,
+  "fast_model_qualified": false,
+  "release_ready": false
+}
