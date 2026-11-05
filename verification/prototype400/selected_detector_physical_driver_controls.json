@@ -61,5 +61,38 @@
     "sha256": "a1b0fe9bab11ed32c48aaed129c403d50b06bafc78882f8e5ad3b1692da6b6c9"
   },
   "detector_fit_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "broad_reference_phase_controls": {
+    "status_at_recording": "native_running",
+    "cases": [
+      {
+        "phase_ns": 0,
+        "CPU": 24,
+        "native": "build/signoff400/selected_detector_broad_phase_case_299/native"
+      },
+      {
+        "phase_ns": 10,
+        "CPU": 27,
+        "native": "build/signoff400/selected_detector_broad_phase_case_300/native"
+      },
+      {
+        "phase_ns": 20,
+        "CPU": 29,
+        "native": "build/signoff400/selected_detector_broad_phase_case_301/native"
+      },
+      {
+        "phase_ns": 30,
+        "CPU": 31,
+        "native": "build/signoff400/selected_detector_broad_phase_case_302/native"
+      }
+    ],
+    "frozen_fit": "build/signoff400/selected_detector_diagnostic_fit_254",
+    "followup": "build/signoff400/selected_detector_broad_phase_frozen_holdouts_303",
+    "physical_feedback_driver_and_loads_retained": true,
+    "recorded_fast_clock": true,
+    "parameters_will_not_be_refitted": true,
+    "all_process_corners_covered": false,
+    "full_phase_coverage_qualified": false,
+    "release_ready": false
+  }
 }
