@@ -825,3 +825,13 @@ reduce latency when cores are otherwise spare. The matched four-rank receiver
 load comparison isolates a -40.82 ppm shift with a strict circuit superset and
 identical common boundary voltages. Remaining exterior loads are not bounded,
 and the full-circuit frequency discrepancy remains unresolved.
+
+The physical-driver detector control with the recorded synchronizer clock
+completed normally and passes the frozen TT detector fit without refitting.
+Both observed reference-window decisions and all available output-edge counts
+match; maximum edge error against the fit is 0.460 ps. A circuit/source audit
+isolates the synchronizer-clock substitution: native detector output edges
+move by at most 0.0143 ps, while first-synchronizer output edges move by up to
+490.33 ps. Decision agreement does not qualify receiver or clock-domain timing.
+The exact comparison is retained in
+`verification/prototype400/selected_detector_physical_driver_controls.json`.

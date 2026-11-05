@@ -46,8 +46,32 @@
   },
   "recorded_synchronizer_clock": {
     "native": "build/signoff400/selected_detector_recorded_sync_clock_case_280/native",
-    "status_at_recording": "running",
-    "purpose": "Sensitivity to actual native 392.31 MHz carrier phase and slew"
+    "status_at_recording": "completed_normally",
+    "purpose": "Sensitivity to actual native 392.31 MHz carrier phase and slew",
+    "frozen_fit_holdout": {
+      "path": "build/signoff400/selected_frozen_detector_recorded_clock_holdout_308/assessment.json",
+      "sha256": "5e6973ec1895d83fee633276eebb4317165ae7ae507903ac629571746eb33590",
+      "parameters_refitted": false,
+      "reference_windows": 2,
+      "all_sampled_signs_match": true,
+      "all_event_counts_match": true,
+      "all_edges_within_observed_fit_band": true,
+      "maximum_observed_edge_error_ps": 0.45974418084426816
+    },
+    "synthetic_clock_comparison": {
+      "path": "build/signoff400/selected_detector_recorded_clock_comparison_309.json",
+      "sha256": "4739d3913ab645d71d7342921b7818da023a7a1b5aed64fed270aa1bb92fcbd8",
+      "changed_voltage_input_nodes": [
+        "__context_node_5343"
+      ],
+      "physical_circuit_identical": true,
+      "quiet_exterior_identical": true,
+      "solver_controls_identical": true,
+      "all_sampled_decisions_match": true,
+      "maximum_detector_edge_difference_ps": 0.014279091359981066,
+      "maximum_synchronizer_edge_difference_ps": 490.328823761967
+    },
+    "receiver_timing_interpretation": "Sampled decisions and event capture remain consistent, but observed synchronizer output edges move by up to 490 ps with the clock substitution. Receiver path and clock-domain timing still require separate qualification."
   },
   "falling_aperture": {
     "native": "build/signoff400/selected_detector_falling_aperture_case_286/native",
