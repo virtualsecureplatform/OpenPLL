@@ -7155,3 +7155,22 @@ running short-control sources remain immutable. The C++ variant accepts a
 260 ns endpoint with a small floating-point comparison guard. Both controls
 remain recorded-boundary diagnostics; native tuning holdouts and physical
 correlation are still required before model-based release evidence is valid.
+
+Partial cross-check `170` snapshots the two live controls and compares their
+common 1.55 ps–3.7318 ns interval at the PWL control's saved times. Across 1,672
+samples and 31 outputs, PWL versus full-native error is at most 1.09e-13 V;
+streaming versus PWL/full-native error is at most 2.41e-9 V. These observations
+precede the reset transition at 5 ns. They support baseline partition/API
+consistency, but do not explain or qualify the later 7.27 uV discrepancy.
+Snapshots do not establish either control's completion.
+
+The primary [SKY130 mask documentation](https://skywater-pdk.readthedocs.io/en/main/rules/masks.html)
+identifies FOM as Field Oxide, and the [layer reference](https://skywater-pdk.readthedocs.io/en/main/rules/layers.html)
+identifies FOM dummy/waffle geometry. These descriptions do not supply a physical
+capacitance error bound for the selected fill. In the existing native scope
+controls, “canonical 23/28” means the pinned Magic technology's FOMFILL export
+purpose; it is not a claim that this purpose is the documentation's 23:0 mask
+layer. The installed technology explicitly imports both tested purpose codes
+as `fomfill`. Physical FOM coverage/accuracy remains an open evidence item;
+its diffusion display style alone establishes neither implant physics nor
+an electrical model.
