@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "scope": "native TT fine111 boundary voltage variation omitted by reduced DCO constant cuts",
+  "observation": {
+    "path": "build/signoff400/selected_DCO_native_boundary_variation_355/assessment.json",
+    "sha256": "d71585e1d9b0da683ae922de7c16174df6394df92cec30809ec76b55542f387f"
+  },
+  "unknown_forcing_ranking": {
+    "path": "build/signoff400/selected_DCO_unknown_boundary_forcing_357/assessment.json",
+    "sha256": "48af36a4991fde85258cbc202efdd39ba01bfde7e972ea990bcfd15d730c0d65"
+  },
+  "measurement_window_ns": [
+    200,
+    260
+  ],
+  "constant_nonrail_boundary_nodes": 6303,
+  "directly_capacitive_boundary_nodes": 5961,
+  "directly_capacitive_nodes_with_span_above_0p1V": 1784,
+  "top_forcing_nodes": [
+    "__context_node_4129",
+    "__context_node_8802",
+    "__context_node_5344",
+    "__context_node_5345",
+    "__context_node_8540",
+    "__context_node_4152",
+    "__context_node_4146",
+    "__parent_R_node_2886"
+  ],
+  "frequency_error_causality_demonstrated": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}

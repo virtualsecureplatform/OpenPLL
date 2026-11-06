@@ -951,3 +951,12 @@ counts and observed output edges without refitting. This brackets the sampled
 falling transition for the retained waveform and initialization; it does not
 establish a uniform aperture or uncertainty bound. See
 `verification/prototype400/selected_falling_aperture_pair.json`.
+
+The retained full TT fine111 waveform exposes dynamic forcing omitted by the
+reduced DCO constant cuts. Of 6,303 nonrail held boundaries, 5,961 connect by
+literal capacitors to retained voltage unknowns; 1,784 of those vary by more
+than 0.1 V over 200–260 ns. The strongest ranked omitted forcing includes
+clock-tree and feedback nodes. Connections between prescribed voltages are
+excluded from the unknown-equation ranking. This demonstrates a boundary
+approximation, not its frequency-error contribution or a qualified uncertainty
+bound. See `verification/prototype400/selected_DCO_boundary_variation.json`.
