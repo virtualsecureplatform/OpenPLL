@@ -1,0 +1,64 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_remaining_full_corner_requests_855.json": "f0aabea836508ad993ab8eb55e153b1f96512a327d5228376792f2d3bf46bd8e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_remaining_full_corner_pipeline_856/inputs.json": "c00b1d8a159e1c89da5e700ea622a6d405d4b3f0f7e7e1ab4a32293ba028bb94",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_remaining_full_corner_pipeline_856/owner.json": "de44ac6570c571124db6eb6c7bdc232aea3c5abbe77cb90c013ce4012ccfa85a"
+  },
+  "pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_remaining_full_corner_pipeline_856",
+  "predecessor": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_full_target_power_pipeline_842",
+  "requests": [
+    {
+      "corner": "ss",
+      "coarse": 47,
+      "fine": 145,
+      "conditional_frequency_mhz": 400.03682389232654,
+      "conditional_measurement_is_request_guidance_only": true,
+      "release_ready": false
+    },
+    {
+      "corner": "sf",
+      "coarse": 26,
+      "fine": 115,
+      "conditional_frequency_mhz": 399.9112025442367,
+      "conditional_measurement_is_request_guidance_only": true,
+      "release_ready": false
+    },
+    {
+      "corner": "fs",
+      "coarse": 20,
+      "fine": 180,
+      "conditional_frequency_mhz": 400.0621896668421,
+      "conditional_measurement_is_request_guidance_only": true,
+      "release_ready": false
+    }
+  ],
+  "max_additional_full_native_cases": 3,
+  "full_native_jobs_at_once": 1,
+  "CPUs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "memory_GiB_each": 64,
+  "native_cap_s_each": 172500,
+  "automatic_identical_retry": false,
+  "three_request_tests_passed": true,
+  "actual_guide_deck_corner_and_supply_checked": true,
+  "full_native_supply_csv_enabled": true,
+  "points_will_not_be_attached_to_TT_registry": true,
+  "full_corner_model_families_qualified": false,
+  "release_ready": false
+}
