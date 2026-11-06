@@ -10,7 +10,8 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_bracket_fit_910/inputs.json": "66776ebd2e2fc41b6e737306f7dbd987032e32e4586dd9db1cadcee1c5e647b9",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_bracket_fit_910/owner.json": "dfcae9e5fd848eb58b80b4a805931cfdea23e7f652c47e2e614f8491a2a35d12",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_corner_detector_bracket.py": "44f571c42f0c8d488467e9fe0745ea6607b4ff5e74ce4b930ae996551a9fe67a",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_corner_detector_bracket_guard.py": "bd0099d88aa0cf5b65c9c64e9e08c2994bd046fe7b7b50ddff729cffe8a61d1f"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_corner_detector_bracket_guard.py": "bd0099d88aa0cf5b65c9c64e9e08c2994bd046fe7b7b50ddff729cffe8a61d1f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_phase_m0225_899/waveform_assessment/assessment.json": "64ee7bf8722ca2a8f40185c6c908970720c9d88b7d568773ea13474e10658046"
   },
   "operating_point": {
     "corner": "ss",
@@ -26,8 +27,17 @@
       "CPU": 20,
       "memory_GiB": 12,
       "native_cap_s": 10800,
-      "pending": true,
-      "expected_decision_not_assumed": true
+      "pending": false,
+      "expected_decision_not_assumed": true,
+      "normal_native_completion": true,
+      "measured_phases_ps": [
+        -8.419915358381047
+      ],
+      "native_decisions": [
+        "up"
+      ],
+      "observed_cycles": 1,
+      "requested_coordinate_is_not_measured_physical_phase": true
     },
     {
       "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_phase_m0400_900",
