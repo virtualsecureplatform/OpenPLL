@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "build_inputs": {
+    "path": "build/signoff400/selected_magic_antenna_diagnostic_build_611/inputs.json",
+    "sha256": "603a80cf2991b0481b5d43e1c005735a4be1d33ae6456ef99acc73f292485ced"
+  },
+  "instrumentation": {
+    "path": "build/signoff400/selected_magic_antenna_diagnostic_build_611/instrumentation.json",
+    "sha256": "edce7fdb5c02ee08afd3e9eb3fcba9a6abc9f5f507634b89f902fd2b035c9a19"
+  },
+  "diagnostic": {
+    "path": "build/signoff400/selected_magic_contact_diagnostic_612/assessment.json",
+    "sha256": "4537bbc74917098f1af728008e6870916d9ab66642893a80114104e06fc395bd"
+  },
+  "results": {
+    "path": "build/signoff400/selected_magic_contact_diagnostic_612/results.json",
+    "sha256": "7780d47988a125a0d932e1fa584bb00de2fb8c28afdf7b6baec7fdff240dfd3a"
+  },
+  "findings": {
+    "MOS_geometry_connectivity_unchanged": true,
+    "native_mcon_fixture_array": [
+      14,
+      14
+    ],
+    "reported_mcon_cuts": [
+      2,
+      2
+    ],
+    "CIF_scale_factor": 5,
+    "contact_area_nonzero": true,
+    "source_unit_conversion_hypothesis": "CIFGetContactSize returns CIF/GDS units; tile widths in database units are used without scale conversion in nx/ny",
+    "hypothesis_fix_validated": false
+  },
+  "release_tool_replaced": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}

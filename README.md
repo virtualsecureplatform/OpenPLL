@@ -1084,3 +1084,9 @@ publication directions; each has one observation, which does not establish
 an uncertainty bound. Separate SF repeated-UP and repeated-DN holdouts are
 running. See
 `verification/prototype400/selected_SS_independent_result_SF_complete_training.json`.
+
+An isolated logging build reproduces the missed contact feedback with unchanged
+MOS geometry/connectivity. The 14-by-14 MCON fixture is counted as only 2-by-2
+cuts. Contact areas are nonzero; a database/CIF unit mismatch is now under
+controlled test. The release tool and PDK rules remain unchanged. See
+`verification/prototype400/selected_magic_contact_area_diagnostic.json`.
