@@ -1246,3 +1246,12 @@ versus 392.223307 MHz full native (+4.72 ppm); early/late differences are
 +3.78/+5.60 ppm. This supports investigating history-consistent initialization,
 but does not qualify other codes, tuning slope, or the later expanded circuit.
 See `verification/prototype400/selected_history_consistent_DCO_result.json`.
+
+A separate sparse-history diagnostic is running on the same retained physical
+circuit. Its 303 source certificates preserve initial/final values and threshold
+transition times: programming has a 1 mV bound, reset retains 1 uV. The original
+strict clock helper is unchanged. Bounded knots drop from 201,024 to 13,352.
+An actual Xyce probe verifies 1 ns quiet-window steps and 10 ps transition/
+oscillation steps. The input audit passes; runtime speedup and response/charge
+equivalence remain unqualified. The new native budget is 3 h/8 GiB. See
+`verification/prototype400/selected_sparse_history_control.json`.

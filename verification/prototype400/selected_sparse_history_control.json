@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "native_case": "build/signoff400/selected_sparse_history_native_670",
+  "manifest": {
+    "path": "build/signoff400/selected_sparse_history_native_670/manifest.json",
+    "sha256": "1c3cd767a23881dafb62f1c76f83e00c95052546abb9207ea83bf5f6bd3b678d"
+  },
+  "input_audit": {
+    "path": "build/signoff400/selected_sparse_history_input_audit_682.json",
+    "sha256": "4df806831820c389c9f9a3f6755432d27e19c5f9a716ebddc813eaea51197bcd"
+  },
+  "actual_schedule_probe": {
+    "path": "build/signoff400/selected_history_step_schedule_probe_668/assessment.json",
+    "sha256": "954dd16575bf2ea820eb382f510e3fef18c09a7ed2b9ba737ec94b81da30ca2c"
+  },
+  "runtime": {
+    "path": "build/signoff400/selected_sparse_history_runtime_679/assessment.json",
+    "sha256": "958b45e588d0681137abe4ffc410b3a863942059ebc604e462c881eb5144c43e"
+  },
+  "comparison_output": "build/signoff400/selected_sparse_history_comparison_681",
+  "comparison_observation_limit_s": 12600,
+  "original_bounded_history_knots": 201024,
+  "new_bounded_history_knots": 13352,
+  "programming_voltage_error_limit_V": 0.001,
+  "reset_voltage_error_limit_V": 1e-06,
+  "clock_helper_strict_1uV_guard_replaced": false,
+  "native_budget_s": 10800,
+  "native_memory_GiB": 8,
+  "frequency_equivalence_qualified": false,
+  "derivative_or_charge_error_bounded": false,
+  "release_ready": false
+}
