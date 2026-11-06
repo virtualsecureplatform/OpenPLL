@@ -1,0 +1,35 @@
+{
+  "status": "proposed_RTL_ECO_candidate",
+  "basis": "selected_filled_layout_019",
+  "basis_input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_400MHz_PrototypeTop.v": "0df53ecb2d5ff685713d4f9f9ede71939bdac8b1c8288ef5d586ea9f915e162e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_B2TH.v": "7cdf2a2224e2b1fcf848cc1cd42b5417e3d0d1bb8dea82e0c274e5065432f74b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_DLF.v": "4b98becbc5424ed7eabdf38ceedb757d66db35b965ac33bbd0a0c4b6e4ade2db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_DigitalCore.v": "4cba0c4b262d43d5b18e484affdc1c03e0c72f8e21de3a7ce044c66f4f7a9055",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_Divider.v": "2e3dc884988a510b0e749291cfaa6ff4dac05f04b6fb4d07c4c1fea4bf785d64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_MMD_Retimer.v": "b967f654d1b527296cb89b4c8600b590ec35e412a9b993a275842152260e9b69",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_ProgrammedCore.v": "eba2157966c0d799bb269c4c108ce1e125ca5e90a2e10c019c60deed12cf530d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_ProgrammedStartup.v": "0aceb40b543247af5e893485fef957b2f8cc2c2888fe43462db3f9adcc1b8b41",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_TuningHandoff.v": "00f380665af4ca3e11d3f37b6b448311d41f1c3e0f5aca875ade7d2b825ddfc4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/sources.json": "0303be1d819be180e43e232d84d8e15a514abd46593bf44d1bd192df2be7c82f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_parent_filled_layout_019/assessment.json": "6172bc631c7be70c0b9bd69b1180c241be75cf96a95bbe4d49065b94f48149fd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_parent_filled_layout_019/assembly.gds": "71dc786409f1c59279f6d29896df666446b1fe7f3a3d4bab32efe5e7f234cb63",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_physical_rtl.py": "63ce1ac6e6cf73cda4ccfb3082b6f10992b670ca6e6a679a68a9a3d5d46eb890"
+  },
+  "source_sha256": {
+    "rtl/candidate400_async_enable_v1/IntegerPLL_400MHz_PrototypeTop.v": "0df53ecb2d5ff685713d4f9f9ede71939bdac8b1c8288ef5d586ea9f915e162e",
+    "rtl/candidate400_async_enable_v1/IntegerPLL_B2TH.v": "7cdf2a2224e2b1fcf848cc1cd42b5417e3d0d1bb8dea82e0c274e5065432f74b",
+    "rtl/candidate400_async_enable_v1/IntegerPLL_DLF.v": "4b98becbc5424ed7eabdf38ceedb757d66db35b965ac33bbd0a0c4b6e4ade2db",
+    "rtl/candidate400_async_enable_v1/IntegerPLL_DigitalCore.v": "4cba0c4b262d43d5b18e484affdc1c03e0c72f8e21de3a7ce044c66f4f7a9055",
+    "rtl/candidate400_async_enable_v1/IntegerPLL_Divider.v": "2e3dc884988a510b0e749291cfaa6ff4dac05f04b6fb4d07c4c1fea4bf785d64",
+    "rtl/candidate400_async_enable_v1/IntegerPLL_MMD_Retimer.v": "b967f654d1b527296cb89b4c8600b590ec35e412a9b993a275842152260e9b69",
+    "rtl/candidate400_async_enable_v1/IntegerPLL_ProgrammedCore.v": "1d180510c32bda356dcbc0dd3ceb7bc8cb198625a7a1d4c4b400b3f2864e5baf",
+    "rtl/candidate400_async_enable_v1/IntegerPLL_ProgrammedStartup.v": "0aceb40b543247af5e893485fef957b2f8cc2c2888fe43462db3f9adcc1b8b41",
+    "rtl/candidate400_async_enable_v1/IntegerPLL_TuningHandoff.v": "00f380665af4ca3e11d3f37b6b448311d41f1c3e0f5aca875ade7d2b825ddfc4"
+  },
+  "change": "Two REFCLK-domain enable capture stages; startup consumes synchronized enable. Existing raw-input withdrawal paths preserved.",
+  "release_interface_choice_pending": true,
+  "physical_layout_exists": false,
+  "selected_layout_promoted": false,
+  "release_ready": false
+}

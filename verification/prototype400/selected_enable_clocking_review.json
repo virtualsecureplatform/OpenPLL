@@ -1,6 +1,9 @@
 {
   "input_sha256": {
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_enable_clocking_review_886.json": "cd099f1998914b2fceff5206bd628a085fe7bf187521f07eba4c8a923cb624f3"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_enable_clocking_review_886.json": "cd099f1998914b2fceff5206bd628a085fe7bf187521f07eba4c8a923cb624f3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/candidate400_async_enable_v1/sources.json": "d44eab7d04fdb5a6512d35b54d8d37d8ef33aeb2d59c2a0f10efe3386e061c3f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_checked_896/assessment.json": "e0ede062488dc6c3a46b2058ce323ca7725e72e1655d8f340b50ceb5967dbd1b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_clear_seed_proof_897/inputs.json": "c3c38a4047b0de3729a17658fe1395dbe160da405a5a731bf4a29d21986e3a1d"
   },
   "raw_enable_REFCLK_destination_registers": 76,
   "raw_enable_fine_rising_destination_registers": 275,
@@ -13,5 +16,19 @@
   "discrete_DLF_clear_proof_discharges_reference_FSM_input_CDC": false,
   "asynchronous_enable_qualified": false,
   "physical_CDC_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "asynchronous_enable_proposal": {
+    "source_directory": "rtl/candidate400_async_enable_v1",
+    "logic_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_checked_896/assessment.json",
+    "phase_and_restart_regressions_passed": 18,
+    "stable_tracking_observation_ns": 200,
+    "startup_consumes_second_REFCLK_capture_stage": true,
+    "existing_raw_withdrawal_paths_preserved": true,
+    "candidate_clear_seed_proof": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_clear_seed_proof_897",
+    "candidate_clear_seed_proof_pending": true,
+    "release_interface_choice_pending": true,
+    "selected_layout_promoted": false,
+    "candidate_layout_exists": false,
+    "physical_CDC_qualified": false
+  }
 }
