@@ -3,7 +3,13 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_short_prefix_response_771/assessment.json": "08b05b20b63a261de944f823d83ebd981402dfbb0e766554ce8f50d3c53bb494",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_100uV_input_audit_773.json": "a7c5574b4abbffab485ea4968472a0bd65a8e4f3edd6dee0586e286210222862",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_reset_100uV_native_772/manifest.json": "a223190c883d947f348ba4282663b3bab5bf37c8b473376f3a46779811e1325b",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_100uV_runtime_775.json": "a82adb19450aac5cf57abf4d016b0e0cd85fdcf8dab5ecfbb2cd340f5c1cc978"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_100uV_runtime_775.json": "a82adb19450aac5cf57abf4d016b0e0cd85fdcf8dab5ecfbb2cd340f5c1cc978",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_100uV_comparison_774/assessment.json": "c000fcc90ce1ef5e369daca941fb05529b861925d938a472919a1d7364330a9f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_full_response_849/assessment.json": "41484273db5792fb475a67f11f20148dbb667b6e7d5fab3bf51a9197ca0fddff",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_reset_100uV_native_772/assessment.json": "8f283dfbc8f1f18b7ebb9332b57e4e312bb296ea8108b687715d17ad1678ce49",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_reset_100uV_native_772/native.log": "dfb9ac7c1cd6e373af15544052080facf4db906f03ff4729dd8e4ced17a82c89",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_full_response_input_audit_848.json": "144f3560a775c2cd25311a927053ec81b1a67da5537816fe6380df539eb04861",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_full_window_controls_851.json": "f15ec8d0b5fd1e5f17858fcdca102333b01eeb775cb6dc0e0cabb318af27b8b0"
   },
   "tight_reset_control_budget_stopped": true,
   "tight_control_oscillator_age_ns": 23.536079712552606,
@@ -22,8 +28,17 @@
   "independent_actual_maximum_reset_voltage_difference_V": 9.986482800794505e-05,
   "next_reset_knots": 689,
   "next_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_100uV_comparison_774/assessment.json",
-  "next_response_pending": true,
-  "scope": "The original tight-reset control reached its own three-hour cap. A separately labeled short response comparison does not replace the full-window criterion. A distinct 100 uV reset-waveform control now runs with unchanged circuit, private initial voltages, other sources and solver; this is a new convergence experiment, not a restart of the capped job.",
+  "next_response_pending": false,
+  "scope": "Original dense-reset control remains budget-stopped with only its labeled short comparison. The separate 100 uV control completed its full horizon and full 10--40 ns oscillator-age comparison against full native and the completed sparse-reset control. Both controls retain identical circuit/private voltages/solver/other sources. This is one-code TT sampled convergence evidence, not a uniform reset-response bound.",
   "uniform_reset_response_bound_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "hundred_uV_normal_full_horizon_completed": true,
+  "hundred_uV_native_elapsed_s": 10522.9,
+  "hundred_uV_vs_full_native_common_frequency_error_ppm": 0.3214167019205405,
+  "hundred_uV_vs_full_native_maximum_subwindow_error_ppm": 1.2311607942017133,
+  "hundred_uV_vs_sparse_full_window_criterion_satisfied": true,
+  "sparse_vs_hundred_uV_full_window_frequency_difference_ppm": -0.8433024062393102,
+  "sparse_vs_hundred_uV_maximum_subwindow_frequency_difference_ppm": 1.710717993708144,
+  "sparse_vs_hundred_uV_first_output_rise_difference_ps": 0.014891268023120574,
+  "original_capped_tight_run_rejected_for_full_window_comparison": true
 }
