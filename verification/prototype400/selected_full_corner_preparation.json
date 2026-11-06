@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_corner_TT_prepare_805/profile.spice": "8006cae8214580de9805b88e74041e11ff5b32d73710a71bc6b0ea173bad2145",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_corner_TT_prepare_805/manifest.json": "968d092e6103a67132f5544875f3e7d13a9ce70203e71da02ceaf071172271e9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_corner_FF_prepare_806/profile.spice": "31065fa4c8804336aabb04e601c17c745c5ba3018e0775dbc0aa1659e77bf29e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_corner_FF_prepare_806/manifest.json": "154ea51e64192a271164d12b36ccd9517ccc061244d35e8dcc136002bc5f76af",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_calibration_pipeline_316/native/profile.spice": "0d8f4a95e680d78a4113c94d9494e38ae71651222fb5157582e20275725f9c4f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_calibration_pipeline_316/native/manifest.json": "baa6b3dee3e3e051e7accd6f62311ecd77eefade7d190cb2047d387e4acae4e0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_corner_preparation_controls_807.json": "267304708df505033a7ba703543be308f444ec1abf8984a2fb07ef4e81fec58a"
+  },
+  "TT_deck_matches_completed_fine133_reference_except_RAW": true,
+  "FF_coarse10_fine152_deck_prepared": true,
+  "native_workers_started": false,
+  "device_corner_scope": "TT/FF/SS/SF/FS at 27 C, fixed selected nominal geometric R/C",
+  "qualification_pending": true,
+  "release_ready": false,
+  "checks_passed": 6,
+  "execution_requires": "Pinned CAD image and shared large-case scheduler slot; one full native job at a time."
+}
