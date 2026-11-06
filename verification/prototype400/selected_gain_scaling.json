@@ -1,0 +1,12 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_gain_scaling_replay_745/assessment.json": "3d49356377de4ba12787fc3e3ea41de24a70725ce1672d6772e651919c1fefc2"
+  },
+  "KI4_fine_code_increment_per_update": 0.25,
+  "KP4_fine_code_offset": 1,
+  "integral_update_checks": 112,
+  "proportional_checks": 3,
+  "scope": "Selected DLF simulation and pinned selected-wrapper parameter/projection binding. Fractional increments quantize asymmetrically at integer boundaries. This is not a complete controller or analog-loop test.",
+  "FF_headroom_qualified": false,
+  "release_ready": false
+}
