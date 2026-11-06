@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "scope": "retained TT fine111 full-native waveform correlation reference",
+  "provenance": {
+    "path": "build/signoff400/selected_fine111_reference_provenance_364/provenance.json",
+    "sha256": "b34a46dd2c3f797a93d0a83d0fe25e0cc44d4a969f3f141c09e203717b58266b"
+  },
+  "original_CSV_reproduced_byte_for_byte": true,
+  "original_assessment_reproduced": true,
+  "coherent_clock_comparison_followup": "build/signoff400/selected_DCO_coherent_clock_comparison_followup_365",
+  "native_restarted": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}

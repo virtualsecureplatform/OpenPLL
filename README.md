@@ -969,3 +969,10 @@ device/passive line, shared boundary value, corner, solver setting and horizon.
 The native control is running; full boundary coverage and frequency correlation
 remain unqualified. See
 `verification/prototype400/selected_DCO_coherent_clock_control.json`.
+
+The retained full fine111 CSV has now been independently re-extracted from
+the immutable native RAW and reproduced byte-for-byte; its original assessment
+also reproduces exactly. An automatic follower will compare the clock-buffer
+control with both the original reduced baseline and this checked full reference
+after normal native completion. See
+`verification/prototype400/selected_fine111_reference_provenance.json`.
