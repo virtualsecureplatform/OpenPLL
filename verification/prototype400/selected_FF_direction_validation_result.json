@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "combined_nominal_collection": {
+    "path": "build/signoff400/selected_FF_direction_and_aperture_followup_385/assessment.json",
+    "sha256": "88cc5ab6e89da44cb6ba0063054ae6d79bacfb87a2dc420cc947b3f21ce0cb43"
+  },
+  "DN_nominal_holdout": {
+    "path": "build/signoff400/selected_FF_direction_and_aperture_followup_385/holdout_2/assessment.json",
+    "sha256": "4f22441d5add0fbf4ea83e8934f22373fd170ab5233f411a14b7a5613c748f64"
+  },
+  "layout_pinned_DN_stress_replay": {
+    "path": "build/signoff400/selected_FF_DN_direction_stress_456/assessment.json",
+    "sha256": "b3b571440c8d435e40159ae570df1e76f136edeb4f28e64e9ce310ddb0a3a387"
+  },
+  "DN_rise_and_fall_cycles_and_values_match": true,
+  "capture_stress_applied_to_DN_events": false,
+  "publication_parameters_byte_identical_to_382": true,
+  "combined_nominal_all_cycles_match": false,
+  "remaining_mismatch": "previously observed UP capture deferral at 19.992 ps data lead",
+  "receiver_aperture_bound_qualified": false,
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}
