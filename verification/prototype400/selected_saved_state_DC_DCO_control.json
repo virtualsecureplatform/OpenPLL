@@ -1,0 +1,17 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_actual_IC_state_control_717/assessment.json": "80e95cedabd08bbfcc8ea2661d8c64f0317295a117e05b4c53f22311dbd438a2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_DC_DCO_native_718/manifest.json": "fb3ca75beb695e4a829027ab1da9f791808ad769230dfc722eae6ec382438a2e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_DC_DCO_runtime_720/assessment.json": "e356a5d727bf5e4ce7d2a152c62f793ee25686743282838abaebdab5895a35ea"
+  },
+  "actual_saved_time_ns": 175.001,
+  "initialized_private_nodes": 5980,
+  "private_voltage_constraints_preserved_during_DC": true,
+  "unspecified_variables_solved_during_DC": true,
+  "original_UIC_run_failed": true,
+  "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_DC_DCO_comparison_719/assessment.json",
+  "comparison_pending": true,
+  "scope": "Constrained-DC voltage-state initialization diagnostic; no UIC. RC controls verify both initialization modes. Saved external circuit voltages are fixed during DC while unspecified variables are solved; this is not a complete simulator checkpoint. Oscillator response and boundary charge-state equivalence remain unqualified.",
+  "nonlinear_restart_qualified": false,
+  "release_ready": false
+}

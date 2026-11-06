@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_calibration_pipeline_316/native/manifest.json": "baa6b3dee3e3e051e7accd6f62311ecd77eefade7d190cb2047d387e4acae4e0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_calibration_pipeline_316/native/status.json": "7391aab159b5a67ebbb27019fc7434f47f1e273570432b6484c876d021ba906e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_calibration_pipeline_316/waveform_assessment/assessment.json": "9a1b1ef2b953eeb2cb8d0d8bce5584507680fad524bffa1e9c7703a02142ccd1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_calibration_pipeline_316/waveform_assessment/provenance.json": "ea4b080e9bbf8425c44731697f519819b1add3c9d5667f3a51e7bd84b91a0da5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_calibration_pipeline_316/registry/assessment.json": "a4e6b6add12af04d35a62badfba2f690fdb190099f38919f4ebb1a94407d5c5b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_calibration_pipeline_316/registry/next_point.json": "fce728067140503063d96093636e689d9e617b964bdacaccc80e5c8cf19ebe91"
+  },
+  "corner": "tt",
+  "coarse": 20,
+  "fine": 133,
+  "end_ns": 260,
+  "measurement_window_ns": [
+    200,
+    260
+  ],
+  "samples": 45408,
+  "mean_frequency_mhz": 397.2351251829792,
+  "error_ppm": -6912.187042552032,
+  "within_1000ppm_target": false,
+  "native_completed_normally": true,
+  "native_elapsed_s": 42519.10339994193,
+  "next_native_target_measurement_hint": 146,
+  "scope": "Third measured full-native TT programming point. Confirms the sampled tuning curve remains below 400 MHz at fine133; a target bracket and qualified preset are still missing. The existing upper-bracket pipeline has advanced to another native run.",
+  "qualified_400MHz_preset": false,
+  "release_ready": false
+}

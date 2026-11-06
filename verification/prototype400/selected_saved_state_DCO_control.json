@@ -3,7 +3,9 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_native175_saved_state_712/assessment.json": "0f45860eba4d7e76d74ca3bcf62cb4d220082dbfd82a2a8de7c3a5ffece7b062",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_actual_UIC_state_control_713/assessment.json": "b07c8830bddbf9e34c31ec8b6c232deb5a8172f37fd9b1801fa8094bff777fe7",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_DCO_native_714/manifest.json": "6c8a22e0748e5df5fbcdc04d6c38081b7ad12bee64a8cab155a63e800f940d03",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_DCO_runtime_715/assessment.json": "9ee8cee76e51871088158d5e95c5d4c01b9ce453dbd094453cfc0d0613d6a72c"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_DCO_runtime_715/assessment.json": "9ee8cee76e51871088158d5e95c5d4c01b9ce453dbd094453cfc0d0613d6a72c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_DCO_native_714/status.json": "13c66fb8b2228be3faf10989755cba0096196de71d7364c09ae8b5ef1471dc3d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_DCO_native_714/native.log": "fc241f242a203730f62ab384119badd835017245b6eca1cb0061c5916bb5c757"
   },
   "actual_native_saved_knot_ns": 175.001,
   "private_node_voltages_initialized": 5980,
@@ -14,9 +16,10 @@
   "actual_UIC_RC_decay_and_charge_balance_verified": true,
   "live_runtime_dependency_files": 319,
   "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_DCO_comparison_716/assessment.json",
-  "comparison_pending": true,
+  "comparison_pending": false,
   "scope": "Separate TT20/fine111 checkpoint diagnostic. Every private voltage comes from the actual full-native 175.001 ns knot; the original history jobs continue unchanged. Quiet exterior boundaries still use original final DC. Native restart, boundary charge-state equivalence and other codes remain unqualified.",
   "nonlinear_restart_qualified": false,
   "DCO_response_equivalence_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "terminal_outcome": "UIC run failed near 10.063 ps with time step too small; nonlinear state restart rejected"
 }
