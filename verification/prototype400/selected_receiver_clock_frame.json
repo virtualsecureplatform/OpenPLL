@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "scope": "recorded TT local-to-root clock-frame mapping, not a uniform or unwrapped causal bound",
+  "evidence": {
+    "path": "build/signoff400/selected_receiver_clock_frame_405/assessment.json",
+    "sha256": "69734661edaca3d22934ec5c6c79c58371e6899f1db48ae429d2f6103836709e"
+  },
+  "transport_interval_ps": {
+    "first": [
+      249.58262471092496,
+      249.63547729164048
+    ],
+    "second": [
+      252.24365561646778,
+      252.29626663284677
+    ]
+  },
+  "observed_UP_transfers": [
+    {
+      "role": "up",
+      "first_root_index": 5,
+      "second_root_index": 6,
+      "root_cycle_separation": 1,
+      "first_to_second_data_transport_ps": 365.6630313577232,
+      "second_data_lead_ps": 2006.659539415061,
+      "paired_clock_skew_ps": 2.6523631689556737
+    },
+    {
+      "role": "up",
+      "first_root_index": 21,
+      "second_root_index": 22,
+      "root_cycle_separation": 1,
+      "first_to_second_data_transport_ps": 365.1242997493256,
+      "second_data_lead_ps": 2004.4453073091545,
+      "paired_clock_skew_ps": 2.609379583574878
+    }
+  ],
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}
