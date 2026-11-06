@@ -930,3 +930,16 @@ tuning or tracking qualification. The exclusive full-circuit queue has moved
 to the requested TT coarse20/fine133 measurement. Three new small controls
 also match the pinned live executable and all 319 PDK include-file bytes.
 See `verification/prototype400/selected_complete_corner_initializations.json`.
+
+Source binding correction: the selected filled layout was built with a
+negative-edge decision register and static divider configuration. Earlier
+mixed-signal runners compiled a different RTL revision with a positive-edge
+decision register and registered divider configuration. New version-4 mixed
+signal runners use exact source bytes pinned by the physical layout receipt,
+retained under `rtl/selected400`, and reject changed RTL or unrelated GDS.
+The matching-source startup replay agrees with all six native endpoint fields;
+the loop still requests unmeasured fine113. Legacy full-controller results
+cannot qualify this physical candidate. Local receiver-only observations keep
+their existing scope. A matching-source replay of the active calibration is
+queued without changing its native job or old receipts. See
+`verification/prototype400/selected_physical_RTL_binding.json`.

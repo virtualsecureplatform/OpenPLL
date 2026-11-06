@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "scope": "correct physical-candidate RTL binding for future full-controller mixed-signal runs",
+  "binding": "rtl/selected400/sources.json",
+  "audit": {
+    "path": "build/signoff400/selected_physical_RTL_binding_audit_353.json",
+    "sha256": "c06e3355a3cb1cb458f70ebc8c2afced4fb2bee3813ae656822b05e29f351219"
+  },
+  "native_startup_endpoint_replay": {
+    "path": "build/signoff400/selected_physical_RTL_native_startup_351/assessment.json",
+    "sha256": "03f1c58bb294958f9f28e4f5b700602369eddb81cd14c2418a0f49d68ea4754f"
+  },
+  "mixed_signal_control": {
+    "path": "build/signoff400/selected_physical_RTL_mixed_signal_control_350/assessment.json",
+    "sha256": "994fb611da8b4c7509a040f3b93e56d8684f76d2d99ecab2076224c999ea6092"
+  },
+  "calibration_followup": "build/signoff400/selected_physical_calibration_replay_followup_352",
+  "legacy_full_controller_runs_qualify_physical_candidate": false,
+  "complete_controller_native_correlation_qualified": false,
+  "release_ready": false
+}
