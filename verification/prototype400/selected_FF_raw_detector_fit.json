@@ -15,7 +15,8 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_replay_870/inputs.json": "f8aba60e57047d65180f428320a4ec591661fe34529e1028fbc8593dcc05d31b",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_runtime_871.json": "dace0c39907195ddaa58b0acc9e09919b1ac7a757bc5f67fcd40887cd29e0ebc",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_detector_bracket_holdout_review_898/assessment.json": "2fd79232575f2c1e6899ded26d5d98c9c96bbbf29f9961fcff986dba5fc02ca1",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_replay_870/assessment.json": "5ee8851db6d2b89245b47222402072670d3d87ea515fd7ab693189e86fa9b04f"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_replay_870/assessment.json": "5ee8851db6d2b89245b47222402072670d3d87ea515fd7ab693189e86fa9b04f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_detector_endpoint_stress_916/assessment.json": "8bcbcd2fc0e9636a4e948fd86db7ab411691ad3153a510d0a8a583b1aa01551e"
   },
   "native_probe": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_nearzero_844",
   "fit_followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846",
@@ -82,5 +83,20 @@
   },
   "prior_two_holdout_maximum_replay_edge_error_ps": 0.9877835875755636,
   "current_nominal_validation_passed": false,
-  "nominal_edge_pairing_invalid_when_event_counts_differ": true
+  "nominal_edge_pairing_invalid_when_event_counts_differ": true,
+  "finite_endpoint_stress": {
+    "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_detector_endpoint_stress_916/assessment.json",
+    "fixed_models": 32,
+    "threshold_choices": 2,
+    "independent_latency_endpoint_fields": 4,
+    "native_replay_cases": 7,
+    "actual_compiled_replays": 224,
+    "all_cases_have_a_fixed_sign_count_replay": true,
+    "new_holdout_used_for_parameter_selection": false,
+    "nominal_fit_modified": false,
+    "endpoint_timing_qualified": false,
+    "closed_loop_stress_executed": false,
+    "cross_cycle_adaptive_ambiguity_covered": false,
+    "uniform_uncertainty_bound_qualified": false
+  }
 }
