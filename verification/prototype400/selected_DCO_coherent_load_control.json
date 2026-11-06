@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scope": "conditional load-sensitivity control after coherent-clock expansion",
+  "inventory": {
+    "path": "build/signoff400/selected_DCO_omitted_load_inventory_419.json",
+    "sha256": "02b91a7c23a8feb925684dfcdb3e2956091dec9bf4b4756d2e3ede9ee202cc3d"
+  },
+  "plan": {
+    "path": "build/signoff400/selected_DCO_coherent_load_layer_420.json",
+    "sha256": "bb45b6f35f6e6230a6b1c7be1a1725fbbedd2d3a92c37198aae3e0017c9b5275"
+  },
+  "preflight": {
+    "path": "build/signoff400/selected_DCO_coherent_load_preflight_422.json",
+    "sha256": "936d8b4e4af4e59edb7896cf483063a10dc486abea90f45b275e5f92a6b6f8ce"
+  },
+  "runtime": {
+    "path": "build/signoff400/selected_DCO_coherent_load_runtime_425.json",
+    "sha256": "c3360a9d0fdc5f7467ffb6aa90e24d95590a2c5c335ffc24055f275b9ac8606f"
+  },
+  "complete_load_cells_added": 77,
+  "primitives_added": 2038,
+  "selected_primitives": 7818,
+  "primitive_superset_of_previous_284": true,
+  "additional_primitives_beyond_previous_284": 1249,
+  "native": "build/signoff400/selected_DCO_coherent_load_native_423",
+  "followup": "build/signoff400/selected_DCO_coherent_load_followup_424",
+  "CPU": 16,
+  "memory_GiB": 16,
+  "native_cap_s": 10800,
+  "status_at_recording": "native_running",
+  "new_exterior_voltage_cuts": 702,
+  "removed_voltage_cuts_become_unknowns": 625,
+  "stateful_exterior_histories_qualified": false,
+  "frequency_correlation_qualified": false,
+  "release_ready": false
+}
