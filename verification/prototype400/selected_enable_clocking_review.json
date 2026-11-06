@@ -6,7 +6,8 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_clear_seed_proof_897/inputs.json": "c3c38a4047b0de3729a17658fe1395dbe160da405a5a731bf4a29d21986e3a1d",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_logic_review_905.json": "101fb679d8382182d52033727e0d2e33c4f03edb69ecf091803023eecd6dcd5c",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_reset_contract_903/assessment.json": "098d6ef7ca31f051c4832e822dc3dde91356988a80d4d93a4b6968578b5455b1",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_first_stage_control_906/assessment.json": "43e40d26545915a8277bf473117263bb0ec48c7d8bf08a8fe81b8e1cb58f32a6"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_first_stage_control_906/assessment.json": "43e40d26545915a8277bf473117263bb0ec48c7d8bf08a8fe81b8e1cb58f32a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_mapping_909/assessment.json": "249321780787ac0e7b58cbc5ba075582eb4005f7f10dc50a149a8e9eef555e9e"
   },
   "raw_enable_REFCLK_destination_registers": 76,
   "raw_enable_fine_rising_destination_registers": 275,
@@ -37,6 +38,12 @@
     "candidate_handoff_reset_contract_proven": true,
     "first_capture_stage_startup_tap_mutant_rejected": true,
     "reset_polarity_mutant_rejected": true,
-    "combined_logic_review": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_logic_review_905.json"
+    "combined_logic_review": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_logic_review_905.json",
+    "technology_mapping": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_mapping_909/assessment.json",
+    "technology_mapping_completed": true,
+    "full_and_compact_mappings_equivalent": true,
+    "mapped_paired_registers": 483,
+    "two_stage_capture_preserved_in_both_mappings": true,
+    "mapped_chain_mutation_tests_passed": 4
   }
 }
