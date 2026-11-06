@@ -1098,3 +1098,10 @@ missing input drives enables DC convergence but does not close the frequency
 gap. This is a budget-stopped prefix result, not normal 60 ns completion or
 model qualification. See
 `verification/prototype400/selected_driven_load_budget_prefix_result.json`.
+
+Converting database tile dimensions to CIF units in an isolated Magic control
+restores feedback for oversized MCON and all four via arrays, while every
+matched normal contact control remains clean. LICON remains missed. This
+controlled result confirms a consequential unit mismatch; exact cut accounting,
+early-plane coverage, diode protection, and parent qualification remain open.
+See `verification/prototype400/selected_magic_contact_unit_control_result.json`.

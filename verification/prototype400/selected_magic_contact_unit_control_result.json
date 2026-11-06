@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "path": "build/signoff400/selected_magic_contact_diagnostic_612/assessment.json",
+    "sha256": "4537bbc74917098f1af728008e6870916d9ab66642893a80114104e06fc395bd"
+  },
+  "experimental_build": {
+    "path": "build/signoff400/selected_magic_antenna_units_build_615/inputs.json",
+    "sha256": "f489513e9e92482c609136d2ba097457c6d25a32a034c43afe208b21169a8541"
+  },
+  "experimental_instrumentation": {
+    "path": "build/signoff400/selected_magic_antenna_units_build_615/instrumentation.json",
+    "sha256": "971a780054707e11bdeb0b963d6c8c047a6681e6e3227276fc41ae4bfca08aa8"
+  },
+  "controlled_replay": {
+    "path": "build/signoff400/selected_magic_contact_units_control_616/assessment.json",
+    "sha256": "a2d8c4d1b868f74e38fae700a4164e0943bc57bd9dc4d9674b79de4ccef1002c"
+  },
+  "feedback_counts": {
+    "normal_licon": 0,
+    "array_licon": 0,
+    "normal_mcon": 0,
+    "array_mcon": 23,
+    "normal_via1": 0,
+    "array_via1": 17,
+    "normal_via2": 0,
+    "array_via2": 17,
+    "normal_via3": 0,
+    "array_via3": 19,
+    "normal_via4": 0,
+    "array_via4": 15
+  },
+  "findings": {
+    "database_to_CIF_dimension_conversion_restores_MCON_and_via_negative_feedback": true,
+    "matched_normal_controls_clean": true,
+    "LICON_still_missed": true,
+    "MOS_geometry_connectivity_unchanged": true,
+    "exact_contact_area_qualified": false,
+    "poly_plane_coverage_qualified": false,
+    "diode_protection_qualified": false
+  },
+  "release_tool_replaced": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}
