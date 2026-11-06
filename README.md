@@ -1153,3 +1153,10 @@ fine115 for a new native probe, with no interpolated frequency assigned.
 The refinement retains the same physical cards, solver, and TT-derived held
 exterior biases; its input audit passes. See
 `verification/prototype400/selected_SF_measured_target_refinement.json`.
+
+The pitch-corrected experimental engine also completes on the selected parent
+with zero antenna feedback. Its 26 matched rule controls and local diode
+control pass, and independent comparison again preserves all 16 checked masks
+and exact MOS gate area. General contact-area validation and portable release
+tool integration remain open. See
+`verification/prototype400/selected_pitch_corrected_parent_antenna_result.json`.

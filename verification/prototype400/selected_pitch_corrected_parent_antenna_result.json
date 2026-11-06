@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "native": {
+    "path": "build/signoff400/selected_pitch_corrected_parent_antenna_633/assessment.json",
+    "sha256": "1d551985e7165df122f69dc9d3417b9adc8bddd4d7aebcc9e1fc8cd2f64f74f9"
+  },
+  "geometry": {
+    "path": "build/signoff400/selected_pitch_corrected_parent_geometry_639/assessment.json",
+    "sha256": "0895ba476429d3a0adf822f1e2afa89ef1e7da1d86393b2aab91b0d76335f7c4"
+  },
+  "engine_controls": {
+    "path": "build/signoff400/selected_magic_antenna_pitch_controls_630/assessment.json",
+    "sha256": "c83cad525d92347248dc782a326c075f1c3747a5839d7afdfc8471b782d719a3"
+  },
+  "diode_control": {
+    "path": "build/signoff400/selected_experimental_diode_control_632/assessment.json",
+    "sha256": "773b98dce5edeaae31758b30c0d45eb8509382ee6b1097a543f133d9d8213fd6"
+  },
+  "native_feedback_entries": 0,
+  "MOS_primitives": 61616,
+  "gate_area_um2": "58552479/5000",
+  "all_16_checked_masks_preserved": true,
+  "source_flat_and_extracted_gate_areas_match": true,
+  "all_26_matched_rule_controls_pass": true,
+  "local_M3_diode_control_pass": true,
+  "exact_contact_area_qualified": false,
+  "portable_release_tool_integration_complete": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}
