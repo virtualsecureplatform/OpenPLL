@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "original_geometry": {
+    "path": "build/signoff400/prototype_v3_selected_parent_filled_antenna_geometry_019/assessment.json",
+    "sha256": "0fdc76b2bae4376fb186b5b431994eef96d31aa921b1c5ca8c4ef3787311493f"
+  },
+  "original_drawing_only_mismatch": [
+    {
+      "mask": "met5",
+      "GDS_layer": [
+        72,
+        20
+      ],
+      "exact_region_match": false,
+      "source_area_um2": "2130292/125",
+      "flat_area_um2": "979248673/5000",
+      "difference_area_um2": "894036993/5000"
+    }
+  ],
+  "control": "build/signoff400/selected_M5_fill_alias_control_553",
+  "control_inputs": {
+    "path": "build/signoff400/selected_M5_fill_alias_control_553/inputs.json",
+    "sha256": "e6d9dbe3c205fc28af5a7594cf212c034617794e035ac132ce3e374546fad3e8"
+  },
+  "parent_recheck": "build/signoff400/selected_parent_fill_geometry_recheck_554",
+  "proposed_M5_source_purposes": [
+    [
+      72,
+      20
+    ],
+    [
+      59,
+      28
+    ],
+    [
+      72,
+      99
+    ]
+  ],
+  "native_geometry_alias_control_pending": true,
+  "parent_geometry_recheck_pending": true,
+  "source_GDS_modified": false,
+  "antenna_electrical_negative_controls_complete": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}
