@@ -25,7 +25,11 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_antenna_repair_923/targets.json": "3bab690603f48ead08182e908ed36829e69deb5e0b6fc5cfcd1873509f4c9f87",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_antenna_repair_proof_924/inputs.json": "e6bab7d26c3c21a51422c6559e4d1230f867d25484d35e57ce03102cb002d85f",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_antenna_repair_proof_924/owner.json": "1297615a025f5d08c225810291d50f071fe59b447fd56f716e897cdf7efefe49",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/repair_async_enable_candidate_antennas.py": "e8820797801877b76eb58f4e8a9652e30cebe5df0091bb0817ad41ff7fd8cf84"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/repair_async_enable_candidate_antennas.py": "e8820797801877b76eb58f4e8a9652e30cebe5df0091bb0817ad41ff7fd8cf84",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_antenna_repair_923/assessment.json": "e11344f9b41e46fe463fe39ede560c79c807ad71e9a9ab5339e1651d01fae46c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_antenna_repair_proof_924/assessment.json": "fbc5b9b73cf3989c1b2e7e97c3506368025b3205c3d9a2066508a2953b8081e0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_repaired_layout_checks_925/assessment.json": "80b1d5312f85f5efe18d1e10e4f3d2703f1d6b4cb32675c618c00be6319bf40e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_repaired_capture_926/assessment.json": "ff1df6fb29996b52bc8161cb5275c5e2083e3a5a2c0610da8f64fcc5a5825074"
   },
   "raw_enable_REFCLK_destination_registers": 76,
   "raw_enable_fine_rising_destination_registers": 275,
@@ -109,17 +113,37 @@
     "candidate_component_physical_pass": false,
     "antenna_repair": {
       "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_antenna_repair_923",
-      "pending": true,
+      "pending": false,
       "measured_failing_nets": 10,
       "measured_failing_pins": 12,
       "local_diodes_inserted": 12,
       "placement_method": "partition matched existing filler footprints within20um of each measured sink",
       "helper_regressions_passed": 3,
       "routed_equivalence_followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_antenna_repair_proof_924",
-      "routed_equivalence_pending": true,
-      "repeat_GDS_checks_required": true,
+      "routed_equivalence_pending": false,
+      "repeat_GDS_checks_required": false,
       "load_model_qualification_transferred": false,
-      "legacy_diode_receipt_namespace_bind": "/home/work-bleaker/kmatsuoka/sources/OpenPLL:/work/OpenPLL"
+      "legacy_diode_receipt_namespace_bind": "/home/work-bleaker/kmatsuoka/sources/OpenPLL:/work/OpenPLL",
+      "routed_state_primitives_equivalent": 483,
+      "routed_reset_corruption_rejected": true,
+      "repaired_layout_checks": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_repaired_layout_checks_925/assessment.json",
+      "repaired_capture_audit": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_repaired_capture_926/assessment.json",
+      "digital_component_results": {
+        "power_pins_total": 48444,
+        "power_pins_connected": 48444,
+        "antenna_net_violations": 0,
+        "antenna_pin_violations": 0,
+        "magic_drc_rectangles": 0,
+        "lvs_unique_match": true,
+        "diagnostic_physical_pass": true
+      },
+      "digital_component_physical_pass": true,
+      "capture_origin_Manhattan_distance_um": 12.48,
+      "first_stage_functional_fanout_only_second_stage_D": true,
+      "diode_load_conditionally_modeled": true,
+      "assembled_parent_checked": false,
+      "physical_CDC_qualified": false,
+      "physical_timing_qualified": false
     }
   }
 }
