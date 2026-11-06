@@ -7,7 +7,15 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_state_response_908/owner.json": "8e7c8808ff4d555515a980c4250145d0e95eb2f1ee35240dd4b72653fe200637",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_selected_checkpoint_state_control.py": "996ffe5ff4056798b44ec84b80c089823a6b8e77fb8a949b10dac6797153f83f",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_fine112_IC111_control_876/assessment.json": "867c5d28a5248fb3d49ad543010e6af2166f420884969a93c9f63997f15cfe5c",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_state_response_908/assessment.json": "e672100f46250b4f600b0551b803b5ba07e18aff5701ea77ca4f240957cefeb8"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_state_response_908/assessment.json": "e672100f46250b4f600b0551b803b5ba07e18aff5701ea77ca4f240957cefeb8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_context_IC_control_918/manifest.json": "f061fed65b85053a75aaec8ef47eaf5d79dae2f4fd25a175bb057f165f60f8e6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_runtime_920/context/binding.json": "784d9972a6d4aa0c0362b1bd57ea12e4c08a200ac5b3d5e62e5582358c59dba3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_runtime_920/context/namespace.json": "8acea641356bb81a3f2709d42267329229900be0517f302ce513ae7974989544",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_complement_IC_control_919/manifest.json": "321012e1a614bfe7111330d11f79fb69c1b64b6df355d9b5d1eadba3a5227220",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_runtime_920/complement/binding.json": "a774bb48ddd94e65980d7ce68428c8d10ac459e8d22d774ab71b66b33b35c0e8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_runtime_920/complement/namespace.json": "41bb8e3814744c2ebd11ff625753d89422bfdff7db61f9cd0596952aa86f56ca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_comparison_921/inputs.json": "4290e165e6bc68b33d3bfa4c442e89d629225d1e02b174323fa605d41bb562a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_comparison_921/owner.json": "b977a68ad4e0d6a04955d0e68e9241a25719e746ffa2a58da7e7e53b905c2fad"
   },
   "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_fine112_IC111_control_876",
   "target_static_fine": 112,
@@ -163,5 +171,43 @@
   ],
   "initial_state_sensitivity_observed": true,
   "discrepancy_cause_identified": false,
-  "uniform_model_uncertainty_qualified": false
+  "uniform_model_uncertainty_qualified": false,
+  "two_group_state_factorial": {
+    "context_selection": "Twelve __context_node_ initial voltages with absolute111/112 difference greater than100mV; complement is every other private node.",
+    "context_size": 12,
+    "complement_size": 5968,
+    "cases": [
+      {
+        "group": "context",
+        "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_context_IC_control_918",
+        "CPU": 19,
+        "donor_nodes_selected": 12,
+        "actual_changed_nodes": 12,
+        "runtime_PDK_include_files": 319,
+        "memory_GiB": 8,
+        "native_cap_s": 10800,
+        "pending": true
+      },
+      {
+        "group": "complement",
+        "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_complement_IC_control_919",
+        "CPU": 22,
+        "donor_nodes_selected": 5968,
+        "actual_changed_nodes": 3496,
+        "runtime_PDK_include_files": 319,
+        "memory_GiB": 8,
+        "native_cap_s": 10800,
+        "pending": true
+      }
+    ],
+    "observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_comparison_921",
+    "exact_complementary_interventions_independently_verified": true,
+    "only_IC_include_and_raw_destination_deck_changes": true,
+    "baseline_and_all_donor_corners_already_completed": true,
+    "max_new_distinct_native_cases": 2,
+    "automatic_identical_retry": false,
+    "pending": true,
+    "hybrid_physical_reachability_assumed": false,
+    "uniform_model_uncertainty_qualified": false
+  }
 }
