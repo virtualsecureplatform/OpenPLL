@@ -42,7 +42,8 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_flat_antenna_934/input_manifest.json": "382922dbd6f087bfbd5354dc68cbcbad7eec874978160e0365bebca6529c4c83",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_flat_antenna_934/owner.json": "4ee677b029f4fa75ab6d608c853abd36f34cfc0f9bdca0217e1de4f73c0b2751",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_flat_antenna_934/assessment.json": "e41e9fee778f0940d97e08e6ceba55771db23de8511aa7c933fd3bedee0e929a",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_antenna_localization_935/assessment.json": "8a78a1e4eb261b6c993699f54847a7dffe27470928df5f7e4195a249142ba587"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_antenna_localization_935/assessment.json": "8a78a1e4eb261b6c993699f54847a7dffe27470928df5f7e4195a249142ba587",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_enable_input_timing_937/assessment.json": "e9f135e28f38356cd98708705b501b35948a77c82823e789a1c117130f23f5a9"
   },
   "raw_enable_REFCLK_destination_registers": 76,
   "raw_enable_fine_rising_destination_registers": 275,
@@ -209,5 +210,25 @@
       "full_topology_used_only_for_net_identity": true,
       "process_stage_connectivity_qualification_transferred": false
     }
+  },
+  "REFCLK_timed_enable_option": {
+    "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_enable_input_timing_937/assessment.json",
+    "selected_REFCLK_destination_registers": 76,
+    "explicit_min_max_paths": 1520,
+    "corners": 5,
+    "input_slews_ns": [
+      0.1,
+      1.0
+    ],
+    "reference_period_ns": 40,
+    "reference_input_transition_ns": 0.1,
+    "clock_uncertainty_ns": 0.15,
+    "maximum_sampled_setup_ns": 6.345531463999997,
+    "maximum_sampled_hold_ns": 0.531635404,
+    "report_validation_tests_passed": 4,
+    "continuous_input_slew_range_qualified": false,
+    "fine_domain_withdrawal_and_reset_timing_qualified": false,
+    "interface_contract_qualified": false,
+    "source_and_layout_unchanged": true
   }
 }
