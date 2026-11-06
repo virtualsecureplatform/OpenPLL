@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "corner": "ss",
+      "bracket": {
+        "path": "build/signoff400/selected_DCO_SS_bracket_followup_468/assessment.json",
+        "sha256": "ae9c76f8f2ac077856a6ccc679f8bd166872f91e298c218063f4b08bc0a526de"
+      },
+      "selection": {
+        "path": "build/signoff400/selected_SS_target_probe_selection_510.json",
+        "sha256": "23ac04ff318a946d71587202b79d27062e0a0fa21195b86c4aa32d9186c94e1f"
+      },
+      "native_case": "build/signoff400/selected_DCO_SS_target_check_512",
+      "manifest": {
+        "path": "build/signoff400/selected_DCO_SS_target_check_512/manifest.json",
+        "sha256": "060587d1b1815efb66debec5e551eef06f3d6346ce1fafe1e8eaa50386d12c3c"
+      },
+      "input_audit": {
+        "path": "build/signoff400/selected_SS_target_check_input_audit_516.json",
+        "sha256": "158177a93f53188c36dd1be106978fd8a51588857996b18e68d5b05bfb95b6ce"
+      },
+      "runtime": {
+        "path": "build/signoff400/selected_SS_target_check_runtime_518/assessment.json",
+        "sha256": "58e32f16a6bf712b4c361b2e1405cefc6e2958ba269e0ab0c40908ab5c125f34"
+      },
+      "collector": "build/signoff400/selected_SS_three_point_guides_514",
+      "requested_fine": 145,
+      "frequency_assigned": false
+    },
+    {
+      "corner": "fs",
+      "bracket": {
+        "path": "build/signoff400/selected_DCO_FS_bracket_followup_480/assessment.json",
+        "sha256": "90911f613246fdf8531320d9d907e3b8337f423c6c8d4e1f36946755e307fc82"
+      },
+      "selection": {
+        "path": "build/signoff400/selected_FS_target_probe_selection_511.json",
+        "sha256": "2df94abcc10d2e4aadcb25ea94151ce699459d071bca1be735c771257e882321"
+      },
+      "native_case": "build/signoff400/selected_DCO_FS_target_check_513",
+      "manifest": {
+        "path": "build/signoff400/selected_DCO_FS_target_check_513/manifest.json",
+        "sha256": "8f2acd499bfbc2c75084466cdc896008325afaf23f20ea4cfc62d8edf1a33a19"
+      },
+      "input_audit": {
+        "path": "build/signoff400/selected_FS_target_check_input_audit_517.json",
+        "sha256": "07d96bbe9757587b17305f7e88ed0d1afa715179d53df93b9624fb542a2eacc5"
+      },
+      "runtime": {
+        "path": "build/signoff400/selected_FS_target_check_runtime_519/assessment.json",
+        "sha256": "cfb901669c9d776264ff7e0cf60c6641a9c92e61dfde6a849d89cb0b69e780b1"
+      },
+      "collector": "build/signoff400/selected_FS_three_point_guides_515",
+      "requested_fine": 177,
+      "frequency_assigned": false
+    }
+  ],
+  "exterior_bias_corner": "tt",
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}
