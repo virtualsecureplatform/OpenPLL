@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "lower": {
+    "path": "build/signoff400/selected_DCO_SF_target_guide_445/assessment.json",
+    "sha256": "bb97792762c9558fa1dae7c4e9d6c8ad8f59ce2110ff6c49199201066ef5d397"
+  },
+  "lower_frequency_mhz": 392.7704246365043,
+  "upper_probe": {
+    "path": "build/signoff400/selected_DCO_SF_upper_guide_493",
+    "manifest": {
+      "path": "build/signoff400/selected_DCO_SF_upper_guide_493/manifest.json",
+      "sha256": "5e4396b30dab1dc60e943face352a2a32c4467fa6d0c807d2be3f95610e6fa54"
+    },
+    "coarse": 26,
+    "fine": 168,
+    "corner": "sf",
+    "cpu": 18,
+    "memory_gib": 16,
+    "native_cap_seconds": 10800,
+    "frequency_assigned": false
+  },
+  "input_audit": {
+    "path": "build/signoff400/selected_DCO_SF_upper_input_audit_495.json",
+    "sha256": "c4e05062e7648beb2fadf9f868638a8f0d459451892e7d725686eea613abd018"
+  },
+  "runtime": {
+    "path": "build/signoff400/selected_SF_upper_runtime_496/assessment.json",
+    "sha256": "424dcd3f1357d02b7e2c30d685826c9bba7915f0fd292412f27081e878b09189"
+  },
+  "collector": "build/signoff400/selected_SF_bracket_guides_followup_494",
+  "exterior_bias_corner": "tt",
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}
