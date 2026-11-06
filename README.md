@@ -8,13 +8,13 @@ The [active release manifest](verification/active_release.json) points to the
 points and 60 closed-loop startup/recovery/phase scenarios per common gain pair.
 Temperature qualification belongs to the retained earlier plan.
 
-**The macro is not tapeout ready.** The current unfilled parent with 302 control
-buffer pairs passes assembled DRC/LVS, bulk connectivity and both antenna
-checks. An earlier filled template passes DRC/LVS and all seven global density
-limits; chip-level window checks remain separate. Digital timing closure over
-wire RC variation, final fill, loaded analog models, timing/CDC, closed-loop
-qualification and clean handoff remain open. The audit keeps qualification
-false until evidence for one final candidate closes all five prototype gates.
+**The macro is not tapeout ready.** The selected filled GDS has a
+[qualified antenna component](verification/prototype400/selected_antenna_component_qualification.json)
+under a pinned tool profile, with independent process-view geometry/connectivity
+checks. Remaining physical checks, analog model/tuning qualification, complete
+digital timing/CDC, closed-loop operation and clean handoff are still open.
+Release requires direct evidence closing all five prototype gates for this
+same candidate.
 
 The verification hot loop now has a C++20 streaming charge compiler, bounded
 multicore scheduling and Python-reference comparison controls. Start with
@@ -1283,3 +1283,11 @@ now each have a measured conditional target within 1000 ppm. These fresh-local-D
 probes retain TT-derived exterior biases and do not qualify full-corner startup
 or calibration. See
 `verification/prototype400/selected_four_corner_conditional_targets.json`.
+
+The selected antenna component now passes its reproducible qualification
+command with frozen GDS/RTL/profile identity, the installed tool closure, all
+26 rule controls, the actual diode control, independent geometry/paint bounds,
+and all seven guarded process views. Three negative metadata controls reject
+a missing stage, a mixed tool build, and a wrong GDS profile. This closes the
+selected antenna component; the complete physical gate remains open. See
+`verification/prototype400/selected_antenna_component_qualification.json`.

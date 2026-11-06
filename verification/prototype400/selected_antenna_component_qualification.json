@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "qualification": {
+    "path": "build/signoff400/selected_antenna_component_689/qualification.json",
+    "sha256": "693eb4c973d4bf119878f39366a54dea6a874ecfded9c210e3b73c15a05b3171"
+  },
+  "rejection_controls": {
+    "path": "build/signoff400/selected_antenna_qualifier_rejections_690/assessment.json",
+    "sha256": "ef796ec7a3bd7d476dd31f0e64c923b668a39f67c640a1884755f0992c7d0361"
+  },
+  "tool_profile": {
+    "path": "tools/magic_antenna/selected_profile_v1.json",
+    "sha256": "502fb9bfa4f9ce0c46fca5c028ce12af7f121eb66876619604449bdee22cce96"
+  },
+  "qualifier": "verification/signoff400/qualify_selected_antenna_component_v3.py",
+  "selected_antenna_component_qualified": true,
+  "scope": "exact selected GDS and pinned PDK native antenna rules, with conservative contact area and guarded process views",
+  "complete_physical_gate_qualified": false,
+  "release_ready": false
+}
