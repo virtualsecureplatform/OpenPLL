@@ -1113,3 +1113,11 @@ solver, and observations match; only the expected fine driver input changes.
 The reduced tuning model remains unqualified and no offset correction is
 applied. See
 `verification/prototype400/selected_repaired_load_tuning_slope_result.json`.
+
+The isolated Magic contact-unit and gate-plane control passes all 26 matched
+fixtures: all 13 oversized conductor/contact negatives produce feedback, and
+all 13 normal controls remain clean. MOS geometry/connectivity is unchanged;
+the complete installed experimental tool is hash-pinned. A selected-parent
+run is underway with this executable. Exact cut accounting, diode protection,
+and parent antenna qualification remain open. See
+`verification/prototype400/selected_magic_complete_engine_controls.json`.

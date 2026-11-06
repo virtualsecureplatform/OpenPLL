@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "assessment": {
+    "path": "build/signoff400/selected_magic_antenna_pinned_controls_626/assessment.json",
+    "sha256": "baf1dce631b8d48d8e531b4c36808813a985ac094714cbfa3a9a92c4581a3bb5"
+  },
+  "results": {
+    "path": "build/signoff400/selected_magic_antenna_pinned_controls_626/results.json",
+    "sha256": "12f30064afcc82347432ec701851e0769d5fd9894d4a26fcf91be539bd4f95a0"
+  },
+  "build": {
+    "path": "build/signoff400/selected_magic_antenna_plane_build_624/inputs.json",
+    "sha256": "c06c4d20c3a8af1653a163c3984656f689f76ec2bfbb106b241a0aa3f80c111e"
+  },
+  "instrumentation": {
+    "path": "build/signoff400/selected_magic_antenna_plane_build_624/instrumentation.json",
+    "sha256": "6953f2c38dae9103af6ac669ca3e93dd9a67fa0d2881d842b6c56d8144979768"
+  },
+  "feedback_counts": {
+    "normal_poly": 0,
+    "pad_poly": 40,
+    "normal_li1": 0,
+    "pad_li1": 19,
+    "normal_metal1": 0,
+    "pad_metal1": 13,
+    "normal_metal2": 0,
+    "pad_metal2": 13,
+    "normal_metal3": 0,
+    "pad_metal3": 17,
+    "normal_metal4": 0,
+    "pad_metal4": 13,
+    "normal_metal5": 0,
+    "pad_metal5": 13,
+    "normal_licon": 0,
+    "array_licon": 44,
+    "normal_mcon": 0,
+    "array_mcon": 23,
+    "normal_via1": 0,
+    "array_via1": 17,
+    "normal_via2": 0,
+    "array_via2": 17,
+    "normal_via3": 0,
+    "array_via3": 19,
+    "normal_via4": 0,
+    "array_via4": 15
+  },
+  "all_13_negative_controls_detected": true,
+  "all_13_matched_normal_controls_clean": true,
+  "installed_tool_files_pinned": true,
+  "MOS_geometry_connectivity_unchanged": true,
+  "exact_contact_area_qualified": false,
+  "diode_protection_qualified": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}
