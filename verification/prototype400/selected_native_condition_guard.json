@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "scope": "Native comparison guard checks corner and 27 C temperature; matching geometry alone cannot admit FF data against a TT reference. Supply and library identity require the separate runtime/input audits.",
+  "evidence": {
+    "path": "build/signoff400/selected_native_corner_comparison_guard_395.json",
+    "sha256": "13cabb025df15dd2d0c3854e84fcbe1e4fe4b191c5ac9930a8a1231c9460748c"
+  },
+  "release_ready": false
+}

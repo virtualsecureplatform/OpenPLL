@@ -7414,3 +7414,7 @@ selects linear period or linear frequency between native knots. Estimated
 rows are never inserted into the native measurement registry, and unsupported
 codes outside each bank span still request native data. Interpolation itself
 is not a validated uncertainty bound or release-qualified model.
+
+Native comparison guard checks corner and 27 C temperature; matching geometry alone cannot admit FF data against a TT reference. Supply and library identity require the separate runtime/input audits. Evidence: `build/signoff400/selected_native_corner_comparison_guard_395.json`.
+
+Two-stage TT receiver replay matches both observed UP transitions in count, value and sampling cycle. DN remains inactive. DLF is disabled: this is local receiver evidence, not full-controller or setup/hold qualification. V6 resolves the continuation geometry through its verified boundary inventory; the original failed observer is retained. Evidence: `build/signoff400/selected_two_stage_receiver_replay_398/assessment.json`.

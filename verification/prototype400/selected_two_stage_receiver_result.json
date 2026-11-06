@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "scope": "Two-stage TT receiver replay matches both observed UP transitions in count, value and sampling cycle. DN remains inactive. DLF is disabled: this is local receiver evidence, not full-controller or setup/hold qualification. V6 resolves the continuation geometry through its verified boundary inventory; the original failed observer is retained.",
+  "evidence": {
+    "path": "build/signoff400/selected_two_stage_receiver_replay_398/assessment.json",
+    "sha256": "1bf8a0c7cf8ebb238f8dca75eb8f316b5574d8d9587b74efd2b04414d1eab741"
+  },
+  "release_ready": false
+}
