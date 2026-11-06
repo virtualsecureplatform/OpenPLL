@@ -1234,3 +1234,8 @@ now have local independent first-stage sampling-cycle/count validation, without
 refitting. Uniform uncertainty, second-stage corner coverage, and complete
 controller timing remain open. See
 `verification/prototype400/selected_SS_complete_local_receiver_validation.json`.
+
+The SF phase-zero independent holdout also completes normally and matches
+frozen selected-RTL first-stage cycles/counts under nominal and provisional
+100 ps replay, without refitting. See
+`verification/prototype400/selected_SF_phase_zero_receiver_result.json`.
