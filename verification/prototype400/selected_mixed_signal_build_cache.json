@@ -6,7 +6,11 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cached_callback_migration_792.json": "fde2f0b585bdde7814905823da6f7a84181656db9b6b5a8c34096a732734e112",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_nominal_RTL_build_cache_778/assessment.json": "109352da2ad3667bdfa739ed4388458ee60f3f50864e38b1a8bd7b75f69a12a9",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_stress_RTL_build_cache_788/assessment.json": "2281f2b318841b4e332efbf03a94ccc55bebb1c84f58a829389c4b894641a29a",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_stress_cache_smoke_791/assessment.json": "8a71ed0e47b0deba9255b7513a84803a2009a2a37b96a080e3ee961e01232ded"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_stress_cache_smoke_791/assessment.json": "8a71ed0e47b0deba9255b7513a84803a2009a2a37b96a080e3ee961e01232ded",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refinement_namespace_migration_804.json": "11d1e00daaa5029f06bd4086aa24a71fd6e102098dd6af3d8b174093f7e768eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refinement_namespace_control_800/assessment.json": "d1b0dc95fe3acd2513536301280893ea1367c999a5d06f6a545f1d9bdc6c07cc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_container_nominal_matrix_802/inputs.json": "16657eeaa664e5da941095e2c977daef957224b1e57446d5adf1a4bfe1ce63b8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_container_stress_matrix_803/inputs.json": "ccc5737faadd036359c828c219586a795c0f8b323c151c9b2d25545b757ca334"
   },
   "paired_uncached_wall_s": 35.42658549291082,
   "paired_cached_wall_s": 23.86637063533999,
@@ -18,12 +22,14 @@
   "rejected_cache_mutations": 3,
   "cached_matrix_execution_wall_s": 102.34145765798166,
   "cached_followups": [
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_nominal_matrix_789",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_stress_matrix_790"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_container_nominal_matrix_802",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_container_stress_matrix_803"
   ],
   "superseded_waiting_followups": [
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_nominal_scenario_matrix_767",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_stress_scenario_matrix_768"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_stress_scenario_matrix_768",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_nominal_matrix_789",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_stress_matrix_790"
   ],
   "native_jobs_restarted_or_terminated": false,
   "scope": "Selected RTL/VPI compilation reuse only. Actual measured-data matrices preserve every trace and missing tuning request; synthetic fixtures test complete recovery paths without entering a calibration registry. Timing is observed under concurrent native host load, not a universal speed guarantee.",

@@ -5,9 +5,14 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_stress_scenario_matrix_768/inputs.json": "bf0ebee260473dde41802f4aeb5441b3b7233e1937b35f542e9dd0611865c962",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cached_callback_migration_792.json": "fde2f0b585bdde7814905823da6f7a84181656db9b6b5a8c34096a732734e112",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_nominal_matrix_789/inputs.json": "23e6fb35919c8b8e626bbc095df456ca4b50fee76217446eb81093a8ff119db3",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_stress_matrix_790/inputs.json": "941e4dad36027535accc4b421ae732c8996a144f9e1cf14144eb9b261d5b8ad5"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_stress_matrix_790/inputs.json": "941e4dad36027535accc4b421ae732c8996a144f9e1cf14144eb9b261d5b8ad5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refinement_namespace_migration_804.json": "11d1e00daaa5029f06bd4086aa24a71fd6e102098dd6af3d8b174093f7e768eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refinement_namespace_control_800/assessment.json": "d1b0dc95fe3acd2513536301280893ea1367c999a5d06f6a545f1d9bdc6c07cc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799/inputs.json": "526a386b12c5dbdaf923ec193c73565df3be9a5ec31bdaadba0fb2c1f11d827d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_container_nominal_matrix_802/inputs.json": "16657eeaa664e5da941095e2c977daef957224b1e57446d5adf1a4bfe1ce63b8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_container_stress_matrix_803/inputs.json": "ccc5737faadd036359c828c219586a795c0f8b323c151c9b2d25545b757ca334"
   },
-  "pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_766",
+  "pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799",
   "profile_target_MHz": 400,
   "profile_nominal_limit_ppm": 1000,
   "policy": "Skip a new nominal target measurement if a native point is already within the declared tolerance; otherwise measure the nearest available code to a bracket secant target, or request a fresh unbracketed measurement hint. No estimated frequency is inserted into a registry.",
@@ -15,14 +20,18 @@
   "shared_full_native_slot": true,
   "automatic_identical_retry": false,
   "followup_matrices": [
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_nominal_matrix_789",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_stress_matrix_790"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_container_nominal_matrix_802",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_container_stress_matrix_803"
   ],
   "six_selector_tests_passed": true,
   "scope": "One adaptive full-native measurement after fine165, conditionally skipped when unnecessary. Nominal target selection does not qualify the measured bracket, startup headroom, interpolation or closed-loop operation.",
   "release_ready": false,
   "superseded_waiting_followup_matrices": [
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_nominal_scenario_matrix_767",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_stress_scenario_matrix_768"
-  ]
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_stress_scenario_matrix_768",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_nominal_matrix_789",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_stress_matrix_790"
+  ],
+  "superseded_refinement_pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_766",
+  "native_child_execution": "Every native/assessment/registry subprocess explicitly enters the pinned CAD image; validated child PDK namespace smoke control."
 }
