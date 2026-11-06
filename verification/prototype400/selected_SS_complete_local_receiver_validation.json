@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "model": {
+    "path": "build/signoff400/selected_SS_publication_training_followup_459/model/parameters.json",
+    "sha256": "cad8e816cf33d01d19b9b61a33d679adb750cc556f349a6c28c1bbd6d8f871e2"
+  },
+  "records": [
+    {
+      "assessment": {
+        "path": "build/signoff400/selected_SS_UP_independent_replay_582/assessment.json",
+        "sha256": "890cab4d76c1fbc81913f3f69729b168b0c20794a35b267db9d868ffaa0f87d1"
+      },
+      "nominal": {
+        "path": "build/signoff400/selected_SS_UP_independent_replay_582/nominal/assessment.json",
+        "sha256": "09d2ae936abe43153ae3be9bcc6dbffe91944c97b01040deaa062177fd591ee7"
+      },
+      "active_transitions": {
+        "up": 2,
+        "dn": 0
+      },
+      "publication_residuals": [
+        {
+          "role": "up",
+          "edge": "rise",
+          "prediction_minus_native_ps": 0.17587951741049324
+        },
+        {
+          "role": "up",
+          "edge": "fall",
+          "prediction_minus_native_ps": -0.0041727411996816954
+        }
+      ]
+    },
+    {
+      "assessment": {
+        "path": "build/signoff400/selected_SS_DN_independent_replay_583/assessment.json",
+        "sha256": "4962263a2a202350df73b748c96f5aff3cba1a2c18af81340426077ef774f880"
+      },
+      "nominal": {
+        "path": "build/signoff400/selected_SS_DN_independent_replay_583/nominal/assessment.json",
+        "sha256": "73c4b823468c2580f48dc15993c61482c08063a3da460faafb2aeebf2f65f1c6"
+      },
+      "active_transitions": {
+        "up": 0,
+        "dn": 2
+      },
+      "publication_residuals": [
+        {
+          "role": "dn",
+          "edge": "rise",
+          "prediction_minus_native_ps": 0.08249836615448203
+        },
+        {
+          "role": "dn",
+          "edge": "fall",
+          "prediction_minus_native_ps": -0.06684373528287324
+        }
+      ]
+    }
+  ],
+  "all_four_publication_directions_have_independent_local_holdouts": true,
+  "refit_to_holdout": false,
+  "scope": "SS retained publication and first-stage receiver under recorded TT upstream excitation",
+  "uniform_uncertainty_bound_qualified": false,
+  "second_receive_stage_qualified": false,
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}

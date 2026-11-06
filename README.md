@@ -1227,3 +1227,10 @@ selected-RTL first-stage sampling cycles/counts for both UP transitions, under
 nominal and provisional 100 ps replay without refitting. Other SF/FS direction
 holdouts and full-controller timing remain open. See
 `verification/prototype400/selected_SF_UP_independent_receiver_result.json`.
+
+The SS repeated-DN holdout completes and passes both replay policies. Together
+with the independent repeated-UP holdout, all four SS publication directions
+now have local independent first-stage sampling-cycle/count validation, without
+refitting. Uniform uncertainty, second-stage corner coverage, and complete
+controller timing remain open. See
+`verification/prototype400/selected_SS_complete_local_receiver_validation.json`.
