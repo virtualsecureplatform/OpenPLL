@@ -1,0 +1,26 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_sparse_reset_comparison_722/assessment.json": "95c55f8f70b2be15079aa8297e348c2d2faa9f8a8dfc322929ff45e1382f76d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_sparse_reset_native_721/assessment.json": "778d30bcd2d07386d463387ce67ce7001627c2cc7ba9dba8954c262f38107959",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_sparse_reset_native_721/manifest.json": "8fb95c911d90c605051ad7dca79f3935607712166727af7c3ec9b9bdcbc7b67c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_sparse_reset_native_721/native.log": "76f453f9e015a2bcc0e58db5805f2e3934fa5eff77f352d4f968d320e3b2cb9e"
+  },
+  "normal_full_horizon_completion": true,
+  "original_native_horizon_end_ns": 260,
+  "checkpoint_ns": 175.001,
+  "simulated_restart_duration_ns": 84.999,
+  "native_reported_elapsed_s": 8931.09,
+  "common_oscillator_age_ns": [
+    10,
+    40
+  ],
+  "frequency_errors_ppm": {
+    "common": -0.5218859755462546,
+    "early": -1.293214174302726,
+    "late": -0.47955930559950843
+  },
+  "frequency_MHz_original_time_200_to_260ns": 392.3106888524209,
+  "scope": "Normally completed TT20/fine111 constrained-DC saved-voltage diagnostic. Runtime is the backend-reported elapsed time for this run; no controlled throughput speedup, whole-family uncertainty bound or 400 MHz preset qualification follows.",
+  "whole_family_qualified": false,
+  "release_ready": false
+}
