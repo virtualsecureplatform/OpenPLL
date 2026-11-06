@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_reference_forcing_comparison_followup_380/assessment.json",
+    "sha256": "1d935f1d5b3e96d90fe72c645a91e620410615dba8a95a52259e0acd0f471b58"
+  },
+  "comparisons": {
+    "common": {
+      "window_after_first_rise_ns": [
+        10,
+        40
+      ],
+      "held_reference": {
+        "rising_edges": 12,
+        "frequency_mhz": 392.6402912624013,
+        "minimum_period_ns": 2.5464049685892647,
+        "maximum_period_ns": 2.5475134859827655
+      },
+      "replayed_reference": {
+        "rising_edges": 12,
+        "frequency_mhz": 392.64777982338165,
+        "minimum_period_ns": 2.546381854616115,
+        "maximum_period_ns": 2.5474436006845096
+      },
+      "difference_ppm": 19.072319237256607
+    },
+    "early": {
+      "window_after_first_rise_ns": [
+        10,
+        25
+      ],
+      "held_reference": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.59108906363633,
+        "minimum_period_ns": 2.546879144282933,
+        "maximum_period_ns": 2.5475134859827655
+      },
+      "replayed_reference": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.5958425542528,
+        "minimum_period_ns": 2.546885694503864,
+        "maximum_period_ns": 2.5474436006845096
+      },
+      "difference_ppm": 12.107994167065428
+    },
+    "late": {
+      "window_after_first_rise_ns": [
+        25,
+        40
+      ],
+      "held_reference": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.6881589241246,
+        "minimum_period_ns": 2.5464049685892647,
+        "maximum_period_ns": 2.546706706658746
+      },
+      "replayed_reference": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.6973687278261,
+        "minimum_period_ns": 2.546381854616115,
+        "maximum_period_ns": 2.546645710112344
+      },
+      "difference_ppm": 23.453224886393897
+    }
+  },
+  "aligned_edge_difference_ps": {
+    "minimum": -0.6522273759230757,
+    "maximum": -0.11754431803367993,
+    "paired_edges": 12
+  },
+  "scope": "conditional two-REFCLK-cut forcing control; does not explain the majority of the 1063 ppm reduced/full fine111 gap",
+  "uniform_uncertainty_bound_qualified": false,
+  "release_ready": false
+}
