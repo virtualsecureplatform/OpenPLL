@@ -12,7 +12,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/place_async_enable_candidate_v2.py": "b2c8205bf73cdab75a2e1adc507bdf5342fa35781446b5400b3d9a33a0cd1fd8",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_proof_915/inputs.json": "fb4aa871d59f9c18f2352aa7df74a6f5eb24841df79ea5e95f716d80dbfbd963",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_proof_915/owner.json": "58ab5c6a66cf3dd4d20c1abbff6607a0015c9d8286711382d8f3ff2ba757408f",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_async_enable_route_equivalence.py": "9b14dbbe6642efec4af895356807ec2f3336a496c90cfe88221ebe2a77f1f448"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_async_enable_route_equivalence.py": "9b14dbbe6642efec4af895356807ec2f3336a496c90cfe88221ebe2a77f1f448",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_914/assessment.json": "f01fcb57c91dc3a18a06c35c8e1719e39caf0b227f1ecde4877a016d75a75fe6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_proof_915/assessment.json": "4eb593d4c0c41d864e1188f4001d0da63cc24536f96cfc9e9d1a6cd46572f043",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_routed_capture_917/assessment.json": "0a63d397f7f1bbd83ff4a8f881a2bd14ba3c058a2ad72ec5addc35961fb8c5de"
   },
   "raw_enable_REFCLK_destination_registers": 76,
   "raw_enable_fine_rising_destination_registers": 275,
@@ -37,7 +40,7 @@
     "candidate_clear_seed_proof_pending": false,
     "release_interface_choice_pending": true,
     "selected_layout_promoted": false,
-    "candidate_layout_exists": false,
+    "candidate_layout_exists": true,
     "physical_CDC_qualified": false,
     "candidate_clear_clock_and_all_eight_variable_seed_bits_proven": true,
     "candidate_handoff_reset_contract_proven": true,
@@ -56,10 +59,23 @@
     "external_async_enable_excluded_only_for_capacity_screen": true,
     "capture_interstage_REFCLK_path_kept_timed": true,
     "routing_directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_914",
-    "routing_pending": true,
+    "routing_pending": false,
     "routed_equivalence_followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_proof_915",
-    "routed_equivalence_pending": true,
+    "routed_equivalence_pending": false,
     "routed_proof_requires_same_candidate_sources": true,
-    "routed_proof_requires_reset_corruption_rejection": true
+    "routed_proof_requires_reset_corruption_rejection": true,
+    "routing_completed": true,
+    "nominal_rc_extracted": true,
+    "router_final_violations": 0,
+    "router_DRC_report_empty": true,
+    "routed_state_primitives_equivalent": 483,
+    "routed_reset_corruption_rejected": true,
+    "routed_capture_audit": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_routed_capture_917/assessment.json",
+    "routed_first_stage_functional_fanout_only_second_stage_D": true,
+    "capture_origin_Manhattan_distance_um": 12.48,
+    "routed_capture_mutation_tests_passed": 4,
+    "nominal_REFCLK_interstage_min_max_reports_present": true,
+    "assembled_GDS_DRC_LVS_passed": false,
+    "candidate_assembled_GDS_exists": false
   }
 }
