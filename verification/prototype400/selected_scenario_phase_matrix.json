@@ -1,0 +1,43 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_current_nominal_scenario_matrix_762/assessment.json": "43aad769d37670d4c4bfded327ff63d93b6321faa66e5f4df7afb126d59668a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_upper_nominal_scenario_matrix_763/inputs.json": "5b6251f0c756dd62be0b656113234b558d2c13479166b97c7268094253bcf188",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_upper_stress_scenario_matrix_764/inputs.json": "a6c2324d07e6bd01f06fc33a5caefc78e3842616891a24537c045da00c339bd7"
+  },
+  "operating_point": {
+    "corner": "tt",
+    "temperature_c": 27,
+    "supply_v": 1.8
+  },
+  "gain_pair": [
+    4,
+    0
+  ],
+  "unique_scenario_phase_cases": 12,
+  "interpolation_variants": [
+    "linear_period",
+    "linear_frequency"
+  ],
+  "completed_current_diagnostic_runs": 24,
+  "functional_passes": 0,
+  "requested_native_points": [
+    {
+      "coarse": 20,
+      "fine": 110
+    },
+    {
+      "coarse": 20,
+      "fine": 134
+    }
+  ],
+  "phase20_missing_lower_code": 110,
+  "other_phases_missing_upper_code": 134,
+  "upper_native_followup_matrices": [
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_upper_nominal_scenario_matrix_763",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_upper_stress_scenario_matrix_764"
+  ],
+  "scope": "Actual selected RTL, nominal publication timing, measured startup fine133, three scenarios and four phases under two interpolation estimates. Every current case requests more native tuning coverage. Followups wait for the existing fine165 calibration and then rerun nominal and receiver-stress matrices; no native run is launched by the matrix controller.",
+  "all_declared_phase_scenarios_functionally_passed": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}
