@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_handoff_reset_contract_PDR_812/assessment.json": "5918a88d0caca3e958ab7334d26cfa9b76dba987ac0916cfd2f93476e38d7a70",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_handoff_reset_contract_PDR_812/status.json": "96be52b50cdb7a585c4c04601df3b7084f28f021bfe0b64434c3a9639d8fa15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/handoff_pdr_002/assessment.json": "4c4ca8852b3f62ff4be7676cffbf396c911a3c1f6ef4b0f6d1a290302f34f65a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/handoff_properties.vh": "1b26f458f3870fa5ea61a68427ab358dfe24bd6b0bd83c57872bbd3c609766e4"
+  },
+  "selected_top_supplies_sampled_handoff_coassertion_contract": true,
+  "selected_leaf_matches_standalone_34bit_three_cycle_proof": true,
+  "assertions": 7,
+  "initial_external_reset_assumptions": 1,
+  "independent_clock_stalls_allowed": true,
+  "baseline_unbounded_PDR_proven": true,
+  "reset_polarity_negative_control_rejected": true,
+  "physical_recovery_removal_qualified": false,
+  "payload_timing_qualified": false,
+  "all_crossings_reviewed": false,
+  "release_ready": false
+}
