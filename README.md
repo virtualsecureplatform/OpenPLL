@@ -1221,3 +1221,9 @@ selected-RTL first-stage sampling-cycle/count comparisons, under both nominal
 and provisional 100 ps replay, without refitting. Repeated-UP/DN holdouts are
 still running; uniform uncertainty and full-controller timing remain open.
 See `verification/prototype400/selected_FS_independent_receiver_result.json`.
+
+The independent SF repeated-UP holdout completes normally and matches frozen
+selected-RTL first-stage sampling cycles/counts for both UP transitions, under
+nominal and provisional 100 ps replay without refitting. Other SF/FS direction
+holdouts and full-controller timing remain open. See
+`verification/prototype400/selected_SF_UP_independent_receiver_result.json`.
