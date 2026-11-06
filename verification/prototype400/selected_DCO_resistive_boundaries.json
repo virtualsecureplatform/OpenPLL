@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "scope": "resolved-clock voltage-cut guard and residual reference-input boundary forcing",
+  "assessment": {
+    "path": "build/signoff400/selected_DCO_resistive_boundary_audit_367.json",
+    "sha256": "16abb841bab67bf693e6119268137c68afb1a3918eb99e9837d66204d9ad4d07"
+  },
+  "resolved_clock_nodes_without_resistive_voltage_cuts": 7,
+  "remaining_nonrail_nonprogramming_resistive_boundaries": 40,
+  "switching_boundaries_above_0p1V": [
+    {
+      "node": "__parent_R_node_3004",
+      "native_span_V": 1.8001160610848999,
+      "resistively_connected_top_ports": [
+        "REFCLK"
+      ]
+    },
+    {
+      "node": "__parent_R_node_3003",
+      "native_span_V": 1.8000403853914,
+      "resistively_connected_top_ports": [
+        "REFCLK"
+      ]
+    }
+  ],
+  "reference_input_sensitivity_qualified": false,
+  "frequency_uncertainty_bound_qualified": false,
+  "release_ready": false
+}

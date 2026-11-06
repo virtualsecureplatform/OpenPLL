@@ -976,3 +976,12 @@ also reproduces exactly. An automatic follower will compare the clock-buffer
 control with both the original reduced baseline and this checked full reference
 after normal native completion. See
 `verification/prototype400/selected_fine111_reference_provenance.json`.
+
+A resistor-connectivity guard confirms that all seven resolved clock nodes
+and every added clock-buffer/inverter output have no prescribed voltage cut
+on their resistive components. A separate surviving-boundary audit finds 40
+nonrail, nonprogramming resistor-connected constant cuts. Two switch by about
+1.8 V in the full native trace and both belong to REFCLK. Their reference-input
+forcing remains a separate unqualified approximation; the five-buffer control
+does not claim to close it. See
+`verification/prototype400/selected_DCO_resistive_boundaries.json`.
