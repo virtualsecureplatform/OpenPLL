@@ -3,7 +3,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_enable_clocking_review_886.json": "cd099f1998914b2fceff5206bd628a085fe7bf187521f07eba4c8a923cb624f3",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/candidate400_async_enable_v1/sources.json": "d44eab7d04fdb5a6512d35b54d8d37d8ef33aeb2d59c2a0f10efe3386e061c3f",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_checked_896/assessment.json": "e0ede062488dc6c3a46b2058ce323ca7725e72e1655d8f340b50ceb5967dbd1b",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_clear_seed_proof_897/inputs.json": "c3c38a4047b0de3729a17658fe1395dbe160da405a5a731bf4a29d21986e3a1d"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_clear_seed_proof_897/inputs.json": "c3c38a4047b0de3729a17658fe1395dbe160da405a5a731bf4a29d21986e3a1d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_logic_review_905.json": "101fb679d8382182d52033727e0d2e33c4f03edb69ecf091803023eecd6dcd5c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_reset_contract_903/assessment.json": "098d6ef7ca31f051c4832e822dc3dde91356988a80d4d93a4b6968578b5455b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_first_stage_control_906/assessment.json": "43e40d26545915a8277bf473117263bb0ec48c7d8bf08a8fe81b8e1cb58f32a6"
   },
   "raw_enable_REFCLK_destination_registers": 76,
   "raw_enable_fine_rising_destination_registers": 275,
@@ -25,10 +28,15 @@
     "startup_consumes_second_REFCLK_capture_stage": true,
     "existing_raw_withdrawal_paths_preserved": true,
     "candidate_clear_seed_proof": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_clear_seed_proof_897",
-    "candidate_clear_seed_proof_pending": true,
+    "candidate_clear_seed_proof_pending": false,
     "release_interface_choice_pending": true,
     "selected_layout_promoted": false,
     "candidate_layout_exists": false,
-    "physical_CDC_qualified": false
+    "physical_CDC_qualified": false,
+    "candidate_clear_clock_and_all_eight_variable_seed_bits_proven": true,
+    "candidate_handoff_reset_contract_proven": true,
+    "first_capture_stage_startup_tap_mutant_rejected": true,
+    "reset_polarity_mutant_rejected": true,
+    "combined_logic_review": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_logic_review_905.json"
   }
 }
