@@ -1,0 +1,39 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/assessment.json": "01288a6976bcbc3db50c85052c7b67a6445ac51c88ea866d54d79f6a97ac0f1d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_stress_registry_945/assessment.json": "ad4a76bc2f56147ba1cf6d59eb2315530d4ecd01f289e9078068e7cc66fe63f9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_frequency_stress_delivery_955.json": "76bc1b2bd7f6073d4d054ba319d8b3c5637807dd5756daafff509ef337bda702"
+  },
+  "operating_point": {
+    "corner": "tt",
+    "temperature_c": 27,
+    "supply_v": 1.8
+  },
+  "coarse": 20,
+  "anchor_fine": 111,
+  "stress_packets": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944",
+  "observed_gain_multiplier": 0.7862884234920747,
+  "observed_retarget_offset_ppm": -2077.6492482351696,
+  "finite_scenarios": [
+    "nominal",
+    "gain",
+    "offset",
+    "gain_offset"
+  ],
+  "runner": "verification/signoff400/run_selected_mixed_signal_v7.py",
+  "delivery_review": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_frequency_stress_delivery_955.json",
+  "unstressed_and_nominal_seven_artifacts_byte_identical": true,
+  "oscillator_edges_checked": 20576,
+  "constant_code_half_periods_checked": 20478,
+  "maximum_half_period_quantization_error_ps": 0.9820864520363557,
+  "parameter_and_identity_guard_tests_passed": 6,
+  "measured_frequency_knots_modified": false,
+  "lookup_domain_expanded": false,
+  "missing_native_coverage_preserved": true,
+  "complete_closed_loop_delivery_cases": 0,
+  "wide_code_applicability_qualified": false,
+  "extrema_joint_physical_realizability_claimed": false,
+  "uniform_model_uncertainty_qualified": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}
