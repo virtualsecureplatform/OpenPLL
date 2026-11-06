@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "FS": {
+    "coarse": 20,
+    "fine": 180,
+    "frequency_mhz": 400.0621896668421,
+    "nominal_error_ppm": 155.47416710526284,
+    "nominal_target_frequency_check_pass": true,
+    "native": {
+      "path": "build/signoff400/selected_DCO_FS_refined_target_559/assessment.json",
+      "sha256": "03dcc6b5cf16ca12eca8856eaa3b2aec54dd562059032ac17ef511dc94c92ae8"
+    },
+    "guides": {
+      "path": "build/signoff400/selected_FS_refined_guides_560/assessment.json",
+      "sha256": "eeb91eb8191b4918c692901aecab391f69311b0466eebc70448018dee8041cbd"
+    },
+    "selection": {
+      "path": "build/signoff400/selected_FS_measured_target_selection_594.json",
+      "sha256": "8d2092d8fb5e8656251b7a10d73d1eb43ef6ea0016f6d55844becfb53ec64624"
+    }
+  },
+  "FF": {
+    "selection": {
+      "path": "build/signoff400/selected_FF_target_selection_595.json",
+      "sha256": "23d45f9894709710cefa3f85c67b09b562fcf6c24d0147ea3b6e1e6f067bbf95"
+    },
+    "requested_coarse": 9,
+    "requested_fine": 229,
+    "native_case": "build/signoff400/selected_DCO_FF_target_check_596",
+    "manifest": {
+      "path": "build/signoff400/selected_DCO_FF_target_check_596/manifest.json",
+      "sha256": "fbee930544db8fc8c6abf24a50960f8e905a04189fe7af1c299a13cc55adf010"
+    },
+    "input_audit": {
+      "path": "build/signoff400/selected_FF_target_input_audit_598.json",
+      "sha256": "a3baeb2a43eeb544a7b7c706c6afc4d3049d08b51c80584e1cdcb99135ccb53a"
+    },
+    "followup": "build/signoff400/selected_FF_three_point_guides_597",
+    "frequency_assigned": false
+  },
+  "SF": {
+    "native_case": "build/signoff400/selected_DCO_SF_target_check_576",
+    "input_audit": {
+      "path": "build/signoff400/selected_SF_target_input_audit_578.json",
+      "sha256": "1802169910d78e2c0cce693345508e4f20fce3e3d95db5cdb61dea9e90914efb"
+    }
+  },
+  "scope": "27 C, 1.8 V retained corner devices with TT-derived held exterior bias; conditional tuning guidance only",
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}

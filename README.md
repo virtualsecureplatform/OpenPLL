@@ -1069,3 +1069,10 @@ with oversized positive controls correctly rejected and all MOS channel area
 preserved. Later contacts and diode protection remain unqualified; this does
 not close the physical-integrity gate. See
 `verification/prototype400/selected_antenna_coverage_and_early_bounds.json`.
+
+The FS refinement at coarse20/fine180 completed normally at 400.062190 MHz
+(+155.47 ppm), passing the conditional nominal-frequency check. The FF bracket
+now requests a native coarse9/fine229 probe; its frequency is not assigned from
+interpolation. These retained-device measurements still use TT-derived held
+exterior biases and do not qualify full-corner calibration. See
+`verification/prototype400/selected_FS_refined_result_and_FF_target.json`.
