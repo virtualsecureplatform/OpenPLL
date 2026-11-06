@@ -2,7 +2,9 @@
   "input_sha256": {
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_fine111_code_pulse_813/manifest.json": "6188eee0b9b6a3e858de511b37536bc2d811588ffef14998158e5d7a42e25b0d",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_code_pulse_runtime_814.json": "9ddf18b6a0af714aec97b19eccd7c83b82c313d82c64ca22e121831be2cc6420",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_code_pulse_input_audit_815.json": "63cd5f6b843bbc95aed2ac3e9f801e31ed35478405b9e3920ada293b97da4b81"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_code_pulse_input_audit_815.json": "63cd5f6b843bbc95aed2ac3e9f801e31ed35478405b9e3920ada293b97da4b81",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_selected_checkpoint_code_step.py": "0d1847c695d7bf3529f77973acfc23efd7399706aee2622f78b430926f441dfc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_code_pulse_response_816/owner.json": "d3454af78651a711d88d31c9e45b5211a8d8cc6b1dc73b3de24544a79f060d25"
   },
   "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_fine111_code_pulse_813",
   "operating_point": {
@@ -33,5 +35,25 @@
   "native_cap_s": 10800,
   "response_pending": true,
   "full_circuit_dynamic_equivalence_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "response_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_code_pulse_response_816",
+  "comparison_windows_ns": [
+    [
+      15,
+      25
+    ],
+    [
+      40,
+      55
+    ],
+    [
+      70,
+      84
+    ]
+  ],
+  "static_reference_fine_codes": [
+    111,
+    112
+  ],
+  "observed_driver_output_settled_state_verification_required": true
 }
