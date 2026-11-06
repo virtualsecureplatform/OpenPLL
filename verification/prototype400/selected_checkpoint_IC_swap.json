@@ -5,7 +5,9 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_swap_input_audit_878.json": "5ef611ef8737b93309aa51a41afd749722a7af5bd66c3dbb6136b6be889c8f8a",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_state_response_908/inputs.json": "3905ecd6563f6612032e5f011ae97bf236b5e67eb18d2e2605aaf6ef916cff1c",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_state_response_908/owner.json": "8e7c8808ff4d555515a980c4250145d0e95eb2f1ee35240dd4b72653fe200637",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_selected_checkpoint_state_control.py": "996ffe5ff4056798b44ec84b80c089823a6b8e77fb8a949b10dac6797153f83f"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_selected_checkpoint_state_control.py": "996ffe5ff4056798b44ec84b80c089823a6b8e77fb8a949b10dac6797153f83f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_fine112_IC111_control_876/assessment.json": "867c5d28a5248fb3d49ad543010e6af2166f420884969a93c9f63997f15cfe5c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_state_response_908/assessment.json": "e672100f46250b4f600b0551b803b5ba07e18aff5701ea77ca4f240957cefeb8"
   },
   "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_fine112_IC111_control_876",
   "target_static_fine": 112,
@@ -17,7 +19,7 @@
   "changed_initial_nodes_over_100mV": 24,
   "all_target_boundary_sources_and_reset_unchanged": true,
   "purpose": "Separate initial-state sensitivity from target boundary histories after observed switched/static tuning discrepancy.",
-  "response_pending": true,
+  "response_pending": false,
   "hybrid_physical_reachability_assumed": false,
   "model_family_qualified": false,
   "release_ready": false,
@@ -41,5 +43,125 @@
     ]
   ],
   "comparison_waits_for_normal_native_completion": true,
-  "comparison_is_causal_identification": false
+  "comparison_is_causal_identification": false,
+  "normal_native_completion": true,
+  "comparison_completed": true,
+  "own_state112_frequency_differences_ppm": [
+    {
+      "window_ns": [
+        15,
+        25
+      ],
+      "difference_ppm": -262.34071314834574
+    },
+    {
+      "window_ns": [
+        35,
+        45
+      ],
+      "difference_ppm": -260.5889441641418
+    },
+    {
+      "window_ns": [
+        40,
+        55
+      ],
+      "difference_ppm": -260.1140491430565
+    },
+    {
+      "window_ns": [
+        50,
+        59
+      ],
+      "difference_ppm": -259.93667581913905
+    },
+    {
+      "window_ns": [
+        70,
+        84
+      ],
+      "difference_ppm": -257.55676304795026
+    }
+  ],
+  "equal_age_frequency_decomposition": [
+    {
+      "window_ns": [
+        35,
+        45
+      ],
+      "frequency_MHz": {
+        "IC111_static112": 392.5282219073696,
+        "pulse": 392.5543847705082,
+        "static111": 392.271412767971,
+        "static112": 392.630537084475
+      },
+      "static_increment_MHz": 0.3591243165039941,
+      "switched_increment_MHz": 0.28297200253717847,
+      "IC_only_shift_MHz": -0.10231517710542448,
+      "pulse_minus_IC_only_MHz": 0.026162863138608827,
+      "pulse_minus_static112_MHz": -0.07615231396681565,
+      "IC_only_shift_over_static_increment": -0.28490183594762664,
+      "residual_over_static_increment": 0.07285182856259706
+    },
+    {
+      "window_ns": [
+        40,
+        55
+      ],
+      "frequency_MHz": {
+        "IC111_static112": 392.5581946069965,
+        "pulse": 392.58380480481077,
+        "static111": 392.3007217290059,
+        "static112": 392.66033107565045
+      },
+      "static_increment_MHz": 0.3596093466445609,
+      "switched_increment_MHz": 0.2830830758048819,
+      "IC_only_shift_MHz": -0.10213646865395276,
+      "pulse_minus_IC_only_MHz": 0.02561019781427376,
+      "pulse_minus_static112_MHz": -0.076526270839679,
+      "IC_only_shift_over_static_increment": -0.28402061739208573,
+      "residual_over_static_increment": 0.07121671906816973
+    },
+    {
+      "window_ns": [
+        45,
+        55
+      ],
+      "frequency_MHz": {
+        "IC111_static112": 392.5672012677486,
+        "pulse": 392.5927451942741,
+        "static111": 392.30969933756785,
+        "static112": 392.6694754472527
+      },
+      "static_increment_MHz": 0.3597761096848444,
+      "switched_increment_MHz": 0.28304585670622373,
+      "IC_only_shift_MHz": -0.1022741795040929,
+      "pulse_minus_IC_only_MHz": 0.025543926525472216,
+      "pulse_minus_static112_MHz": -0.07673025297862068,
+      "IC_only_shift_over_static_increment": -0.28427173664666816,
+      "residual_over_static_increment": 0.07099950729871449
+    },
+    {
+      "window_ns": [
+        50,
+        59
+      ],
+      "frequency_MHz": {
+        "IC111_static112": 392.5795457800922,
+        "pulse": 392.6046552845668,
+        "static111": 392.32149328191963,
+        "static112": 392.6816181345654
+      },
+      "static_increment_MHz": 0.3601248526457539,
+      "switched_increment_MHz": 0.2831620026471455,
+      "IC_only_shift_MHz": -0.10207235447319363,
+      "pulse_minus_IC_only_MHz": 0.025109504474585265,
+      "pulse_minus_static112_MHz": -0.07696284999860836,
+      "IC_only_shift_over_static_increment": -0.28343601871209856,
+      "residual_over_static_increment": 0.06972444220417322
+    }
+  ],
+  "initial_state_sensitivity_observed": true,
+  "discrepancy_cause_identified": false,
+  "uniform_model_uncertainty_qualified": false
 }
