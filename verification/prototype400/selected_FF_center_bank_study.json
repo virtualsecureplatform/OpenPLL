@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_center_bank_C11_F128_native_738/manifest.json": "fd9ad5a0c9799925ffcaf97310d4cd3616cc40e1b31401b38aba34712698bb38",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_center_bank_runtime_739/assessment.json": "ca5f340ea0faa415c78ad6a7b1d80fa31b15b4aa29d7cb290302161b0e015c99",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_center_bank_C10_F128_native_742/manifest.json": "09de74d4f5dffc396975b687f5181a6a482331423bf73d37f1cb0786d85bf90c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_center_bank_C10_runtime_743/assessment.json": "1e55e7b9fe49834eee7d0f3162463af226dc60edcb13cfa393c5196eb4975dd5"
+  },
+  "existing_conditional_preset": {
+    "coarse": 9,
+    "fine": 229,
+    "upper_fine_guard": 247,
+    "upper_headroom_codes": 18
+  },
+  "candidate_measurements": [
+    {
+      "coarse": 10,
+      "fine": 128
+    },
+    {
+      "coarse": 11,
+      "fine": 128
+    }
+  ],
+  "measurements_pending": true,
+  "preferred_replacement": null,
+  "scope": "Two separate fresh-DC FF device-corner measurements under the same recorded TT-derived exterior biases as prior FF guides. These test whether a neighboring coarse bank can place 400 MHz nearer the center of the fine range. Neither midpoint is a qualified preset, and full-corner startup/headroom validation remains required.",
+  "release_ready": false
+}
