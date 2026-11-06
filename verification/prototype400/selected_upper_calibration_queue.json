@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "pipeline": "build/signoff400/selected_upper_calibration_pipeline_463",
+  "input_receipt": {
+    "path": "build/signoff400/selected_upper_calibration_pipeline_463/inputs.json",
+    "sha256": "bb06bade30e9e647fe52762e4d2c559343ac65ac31c119914e9e39398c29e5b5"
+  },
+  "waits_for": "build/signoff400/selected_target_calibration_pipeline_316/registry/models.json",
+  "guard_codes_above_nearest_native_target": 32,
+  "bank_code_limits": [
+    8,
+    247
+  ],
+  "next_native_count_max": 1,
+  "max_full_native_cases": 1,
+  "MPI_ranks": 16,
+  "CPUs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "memory_GiB": 64,
+  "native_cap_s": 172500,
+  "nominal_followup": "build/signoff400/selected_upper_nominal_followup_464",
+  "receiver_stress_followup": "build/signoff400/selected_upper_receiver_stress_followup_465",
+  "status_at_recording": "waiting_for_original_native_target_registry",
+  "frequency_prediction_inserted": false,
+  "interpolation_error_bound_qualified": false,
+  "startup_headroom_qualified": false,
+  "release_ready": false
+}
