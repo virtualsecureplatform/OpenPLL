@@ -1,0 +1,33 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine112_verified_snapshot_692/assessment.json": "c0245cc39ecd84974859734c5f16fde0785f33cf412046af1f4571c2b64c3e0d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine112_programming_history_694/assessment.json": "12feb2fd920da2c64d7f6dbb07bd29df38a167c18cd7c88c985760fd2df4a593",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine112_programming_history_summary_695.json": "986e6919f3210bd8ff73aec2f75a76690277a7572fd0fa47cbd0aa2bbec247e9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_sparse_history_fine112_native_696/manifest.json": "d878e5de29c397eb69e50e6240c76325f80543aa4ae9806d1801548d302d3a00",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_sparse_history_fine112_native_696/history_sources/assessment.json": "d1a8cf551a220fc851eaca2e7369d2aefc71db6425743fc65eeb068eb3840985",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_sparse_history_fine112_runtime_697/assessment.json": "9ea3771b6dca44c35aafbc1b7242d90a88ab72bb35e37a2ce6fc7d7cb054538d"
+  },
+  "source_native": "selected_native_fine112_calibration_134",
+  "initial_code": {
+    "coarse": 0,
+    "fine": 128
+  },
+  "final_code": {
+    "coarse": 20,
+    "fine": 112
+  },
+  "history_channels": 303,
+  "transient_logic_excursion_channels": 14,
+  "bounded_history_knots": 13248,
+  "maximum_programming_voltage_error_v": 0.0009995760432035539,
+  "maximum_reset_voltage_error_v": 1e-06,
+  "CPU": 26,
+  "memory_GiB": 8,
+  "native_cap_s": 10800,
+  "live_runtime_dependencies_verified": 319,
+  "terminal_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_sparse_history_fine112_comparison_698/assessment.json",
+  "terminal_comparison_pending": true,
+  "scope": "Independent neighboring-code history diagnostic; quiet exterior biases held from original TT fine111 reference. Waveform voltage bounds do not qualify charge or oscillator response equivalence.",
+  "frequency_correlation_qualified": false,
+  "release_ready": false
+}
