@@ -1,0 +1,16 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_sparse_history_budget_review_740/assessment.json": "d6422315fa49301fdd8c840597936b87138e3cfccc595056d906903bd8f44c50"
+  },
+  "native_budget_s": 10800,
+  "last_complete_saved_time_ns": 188.31005599999997,
+  "end_oscillator_age_ns": 4.225173864433458,
+  "reset_release_events": 1,
+  "oscillator_rising_edges": 2,
+  "normal_260ns_completed": false,
+  "frequency_comparison_available": false,
+  "paired_observer_stopped": true,
+  "other_native_jobs_stopped": false,
+  "scope": "Original three-hour sparse-history trial exhausted its native budget after startup but before enough oscillator-age coverage. Startup observations are retained; the waiting two-code observer was superseded without restarting native work.",
+  "release_ready": false
+}
