@@ -40,7 +40,9 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_layout_checks_932/assessment.json": "db230d5308b88e15b9d5e64bdea597b6a5d787991384e34fdf2e06c602c7e7ae",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_alias_LVS_933/assessment.json": "936aa06036b69b55744863ff862a13a48ffd655746b980a911ccedb40b0cd147",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_flat_antenna_934/input_manifest.json": "382922dbd6f087bfbd5354dc68cbcbad7eec874978160e0365bebca6529c4c83",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_flat_antenna_934/owner.json": "4ee677b029f4fa75ab6d608c853abd36f34cfc0f9bdca0217e1de4f73c0b2751"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_flat_antenna_934/owner.json": "4ee677b029f4fa75ab6d608c853abd36f34cfc0f9bdca0217e1de4f73c0b2751",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_flat_antenna_934/assessment.json": "e41e9fee778f0940d97e08e6ceba55771db23de8511aa7c933fd3bedee0e929a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_antenna_localization_935/assessment.json": "8a78a1e4eb261b6c993699f54847a7dffe27470928df5f7e4195a249142ba587"
   },
   "raw_enable_REFCLK_destination_registers": 76,
   "raw_enable_fine_rising_destination_registers": 275,
@@ -188,9 +190,24 @@
       "original_extraction_preserved": true,
       "alias_normalization_guard_tests_passed": 2,
       "flat_antenna_diagnostic": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_flat_antenna_934",
-      "flat_antenna_pending": true,
+      "flat_antenna_pending": false,
       "parent_antenna_qualified": false,
-      "density_and_power_integrity_qualified": false
+      "density_and_power_integrity_qualified": false,
+      "native_flattened_MOS_primitives": 43225,
+      "native_flattened_antenna_feedback_rectangles": 7582,
+      "native_antenna_gate_plane_records": 219,
+      "native_antenna_localization": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_antenna_localization_935",
+      "all_native_gate_records_mapped_to_macro_ports": true,
+      "affected_parent_nets": 177,
+      "affected_net_families": {
+        "KP": 2,
+        "STARTUP_COARSE": 1,
+        "STARTUP_FINE": 1,
+        "coarse_therm": 27,
+        "fine_therm": 146
+      },
+      "full_topology_used_only_for_net_identity": true,
+      "process_stage_connectivity_qualification_transferred": false
     }
   }
 }
