@@ -1,0 +1,26 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_coherent_checkpoint_input_audit_793.json": "68ea9b0e749da6647d0075dd2582614e5432442a155141a51d693c05def25f83",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_coherent_checkpoint_free_C_794/assessment.json": "f1ea19f00725d143ee99fa6f1dab09f8bd4f056591278d09864aa01dea84f283",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_coherent_checkpoint_native_783/manifest.json": "3916563f0253330ded3e06c64c2fb39b2548ae1df70706c5445ac0ecc330f079",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_coherent_runtime_784.json": "214f961eb29c745e85f65e3e71ff3e6c2c6a8f1e0a249152f1a9844c3e229bc6"
+  },
+  "coarse": 20,
+  "fine": 133,
+  "initialized_private_nodes": 5988,
+  "old_private_nodes": 5980,
+  "added_nonlinear_cards": 170,
+  "added_passive_cards": 4646,
+  "old_physical_cards_and_saved_voltages_preserved": true,
+  "prescribed_nodes_now_private": 8,
+  "new_quiet_boundary_nodes": 249,
+  "common_boundary_sources_preserved": true,
+  "free_linear_C_energy_certificate_and_rational_replay_pass": true,
+  "CPU": 22,
+  "memory_GiB": 8,
+  "native_cap_s": 10800,
+  "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_coherent_comparison_785/assessment.json",
+  "response_pending": true,
+  "scope": "Independent larger clock-load partition holdout, initialized from actual full-native fine133 state and history. It replaces eight held nodes with private circuit voltages while preserving every original card and shared source. Linear geometric-C energy is certified; device dynamics, omitted exterior behavior and partition-response uncertainty remain unqualified.",
+  "release_ready": false
+}
