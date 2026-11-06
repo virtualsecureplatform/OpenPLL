@@ -1208,3 +1208,10 @@ under nominal and provisional 100 ps replay. Publication predictions differ
 from native by at most 0.176 ps without refitting. This local two-transition
 result is not a uniform uncertainty bound or full-controller timing closure.
 See `verification/prototype400/selected_SS_UP_independent_receiver_result.json`.
+
+An independent output-only paint export proves that all six actual selected
+contact masks lie inside the contact paint used by the conservative bound,
+with zero outside area. LICON/MCON painted areas equal actual cut area; via
+painted areas are larger. The original PDK file and selected GDS are unchanged.
+Per-net accounting remains open. See
+`verification/prototype400/selected_contact_paint_containment.json`.

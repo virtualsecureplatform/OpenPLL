@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "assessment": {
+    "path": "build/signoff400/selected_contact_paint_containment_659/assessment.json",
+    "sha256": "1f2243381638ae642ff8968a01a351f6ecca11b670d1fdfa2e79f685bdaede21"
+  },
+  "geometry": {
+    "path": "build/signoff400/selected_contact_paint_containment_659/geometry.json",
+    "sha256": "c68835cb101d1d4ae9befea4900658816a03637765458fe387300cdf1792ed5b"
+  },
+  "all_six_actual_contact_masks_inside_paint": true,
+  "all_outside_paint_areas_um2": 0,
+  "scope": "selected GDS global containment by undiced Magic contact paint; original PDK and GDS unchanged",
+  "per_net_assignment_qualified": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}
