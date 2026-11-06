@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_corner_bias_native_750/manifest.json": "8a7e01cda91348bdf3899b82ff691f731ff2a60e9bed997fab923bf8a3cadbba",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_corner_bias_runtime_751.json": "f6a7d171ff7083e67c5cdbfdfb0af2c0d1b3ebe6169608a17b7ae91b37cf27ce",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_corner_bias_input_audit_749.json": "bc52ed902033d673e15d81441564cb3c2141bb77f269a71595024096580718f4"
+  },
+  "controls": {
+    "coarse": 9,
+    "fine": 229,
+    "fine_inverse": true,
+    "actual_HS_INV2_inputs_driven": true
+  },
+  "operating_point": {
+    "corner": "ff",
+    "supply_v": 1.8,
+    "temperature_c": 27
+  },
+  "quiet_exterior_state": "matching FF full-circuit reset-state solve",
+  "baseline_quiet_exterior_state": "TT full-circuit final 260 ns voltages",
+  "same_device_cards_solver_controls_reset_rails_verified": true,
+  "maximum_quiet_voltage_difference_V": 1.872874985,
+  "native_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_corner_bias_comparison_752/assessment.json",
+  "response_pending": true,
+  "CPU": 19,
+  "memory_GiB": 8,
+  "native_cap_s": 10800,
+  "scope": "Combined held exterior corner and state sensitivity at FF coarse9/fine229. Source nodes bind uniquely to a completed matching-corner physical-model solve. Reset state is not a tracking-state or dynamic boundary bound.",
+  "full_corner_startup_qualified": false,
+  "release_ready": false
+}
