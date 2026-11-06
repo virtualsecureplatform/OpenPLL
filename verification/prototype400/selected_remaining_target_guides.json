@@ -50,5 +50,10 @@
   "scope": "historical macro sweeps select current-circuit probe controls only; exterior biases remain TT-derived",
   "historical_frequencies_inserted_into_registry": false,
   "full_corner_calibration_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "individual_followups": {
+    "ff": "build/signoff400/selected_FF_target_individual_followup_473",
+    "sf": "build/signoff400/selected_SF_target_individual_followup_472",
+    "fs": "build/signoff400/selected_FS_target_individual_followup_471"
+  }
 }

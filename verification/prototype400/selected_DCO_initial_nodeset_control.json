@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "scope": "load-sensitivity circuit with recorded initial-DC guesses on all private voltage nodes; second DC solve remains unconstrained",
+  "prepared": "build/signoff400/selected_DCO_initial_nodeset_prepare_474",
+  "native": "build/signoff400/selected_DCO_initial_nodeset_native_475",
+  "preflight": {
+    "path": "build/signoff400/selected_DCO_initial_nodeset_preflight_476.json",
+    "sha256": "1bf163ba9ca6a50620d41640144fa33985d19169a38a6d1c97b5cafc15bb7f80"
+  },
+  "frequency_followup": "build/signoff400/selected_DCO_initial_nodeset_followup_477",
+  "runtime_followup": "build/signoff400/selected_DCO_initial_nodeset_runtime_478",
+  "starting_voltage_guesses": 6884,
+  "source_snapshot": "build/signoff400/selected_full_initial_voltage_snapshot_216",
+  "guess_time_s": 0,
+  "CPU": 16,
+  "memory_GiB": 16,
+  "native_cap_s": 10800,
+  "status_at_recording": "waiting_for_resources",
+  "UIC_used": false,
+  "state_selection_qualified": false,
+  "release_ready": false
+}
