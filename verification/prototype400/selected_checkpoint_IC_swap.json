@@ -2,7 +2,10 @@
   "input_sha256": {
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_fine112_IC111_control_876/manifest.json": "4d12d0ee1a0f76ed2cdd381e3f9178c955e06898d7337a5c663b0cdfa9f5ffb1",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_swap_runtime_877.json": "a204875e09c53746ed596871c113d9a8fd4d76506b47c5a1f84d79cd19d2d63e",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_swap_input_audit_878.json": "5ef611ef8737b93309aa51a41afd749722a7af5bd66c3dbb6136b6be889c8f8a"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_swap_input_audit_878.json": "5ef611ef8737b93309aa51a41afd749722a7af5bd66c3dbb6136b6be889c8f8a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_state_response_908/inputs.json": "3905ecd6563f6612032e5f011ae97bf236b5e67eb18d2e2605aaf6ef916cff1c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_state_response_908/owner.json": "8e7c8808ff4d555515a980c4250145d0e95eb2f1ee35240dd4b72653fe200637",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_selected_checkpoint_state_control.py": "996ffe5ff4056798b44ec84b80c089823a6b8e77fb8a949b10dac6797153f83f"
   },
   "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_fine112_IC111_control_876",
   "target_static_fine": 112,
@@ -17,5 +20,26 @@
   "response_pending": true,
   "hybrid_physical_reachability_assumed": false,
   "model_family_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "equal_age_pulse_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_state_response_908",
+  "comparison_windows_ns": [
+    [
+      35,
+      45
+    ],
+    [
+      40,
+      55
+    ],
+    [
+      45,
+      55
+    ],
+    [
+      50,
+      59
+    ]
+  ],
+  "comparison_waits_for_normal_native_completion": true,
+  "comparison_is_causal_identification": false
 }
