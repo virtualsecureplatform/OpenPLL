@@ -1215,3 +1215,9 @@ with zero outside area. LICON/MCON painted areas equal actual cut area; via
 painted areas are larger. The original PDK file and selected GDS are unchanged.
 Per-net accounting remains open. See
 `verification/prototype400/selected_contact_paint_containment.json`.
+
+The FS phase-zero holdout completes normally and passes independent frozen
+selected-RTL first-stage sampling-cycle/count comparisons, under both nominal
+and provisional 100 ps replay, without refitting. Repeated-UP/DN holdouts are
+still running; uniform uncertainty and full-controller timing remain open.
+See `verification/prototype400/selected_FS_independent_receiver_result.json`.
