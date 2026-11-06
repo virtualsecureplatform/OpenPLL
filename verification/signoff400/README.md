@@ -7398,3 +7398,12 @@ about 441 ps rising and 319 ps falling CLK-to-Q delays. These refer to the
 physical driver Q, not a substitute observation port. The packet remains
 diagnostic; it neither replaces `187` nor qualifies an uncertainty/corner
 envelope or a complete unwrapped causal timing model.
+
+Receiver probes compare nominal publication and sampling cycles locally. An
+intentionally near-aperture asynchronous input can reveal setup/hold or
+metastability-related capture uncertainty. The prototype criterion is to
+characterize that uncertainty and demonstrate controller operation under it;
+it does not require the asynchronous first stage always to select the ideal
+first eligible edge. Unexplained behavior remains unqualified. This preserves
+the required crossing review, interstage timing and uncertainty holdouts,
+while the profile separately defers the production 1 FIT target.

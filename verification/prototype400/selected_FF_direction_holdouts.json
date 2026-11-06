@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "scope": "FF conditional publication directions and independent receiver/aperture holdouts under recorded TT excitation",
+  "parameters": {
+    "path": "build/signoff400/selected_FF_complete_publication_model_382/parameters.json",
+    "sha256": "a228503f6ac5f5d57344166d002a279cabd0d70ff32b827b8d788a4f0a35a05a"
+  },
+  "assessment": {
+    "path": "build/signoff400/selected_FF_complete_publication_model_382/assessment.json",
+    "sha256": "e015bdc150f82c5bf471966ea30ffeb9876d2777253d489458fd7a96f0cb24c6"
+  },
+  "training_cases": [
+    "329",
+    "330"
+  ],
+  "all_four_publication_directions_measured": true,
+  "independent_direction_coverage_validated": false,
+  "holdouts": [
+    {
+      "case": "build/signoff400/selected_FF_independent_publication_holdout_368",
+      "phase_ns": 0,
+      "CPU": 16,
+      "purpose": "independent phase-zero response"
+    },
+    {
+      "case": "build/signoff400/selected_FF_near_setup_UP_holdout_383",
+      "phase_ns": 9.7715,
+      "CPU": 20,
+      "purpose": "UP falling publication and first-stage near-aperture response",
+      "training_based_estimated_falling_data_lead_ps": 20.009,
+      "estimate_is_native_measurement": false
+    },
+    {
+      "case": "build/signoff400/selected_FF_DN_falling_holdout_384",
+      "phase_ns": -7,
+      "CPU": 21,
+      "purpose": "independent DN falling publication"
+    }
+  ],
+  "followup": "build/signoff400/selected_FF_direction_and_aperture_followup_385",
+  "initialization_corner": "ff",
+  "upstream_waveform_corner": "tt",
+  "FF_sender_waveforms_correlated": false,
+  "uniform_uncertainty_bound_qualified": false,
+  "full_controller_timing_qualified": false,
+  "release_ready": false
+}

@@ -1006,3 +1006,13 @@ source inventory, programming, solver and observation protocol. The native
 control and comparison follower are running. Their effect is conditional on
 the tested histories, not a universal exterior or frequency/phase uncertainty
 bound. See `verification/prototype400/selected_reference_forcing_control.json`.
+
+The FF repeated-DN control completed normally. The FF publication packet now
+measures all four directions: UP rise/fall 348.79/343.30 ps and DN rise/fall
+354.57/345.46 ps. Independent FF holdouts are running for phase zero, repeated
+DN, and repeated UP with falling data deliberately near the first-stage clock.
+The near-aperture stimulus is chosen from training observations; its actual
+sampling outcome is not presumed. Model uncertainty must explain any capture
+cycle variation before full-controller validation. All remain conditional on
+recorded TT upstream excitation, not full FF sender correlation. See
+`verification/prototype400/selected_FF_direction_holdouts.json`.
