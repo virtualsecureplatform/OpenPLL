@@ -37,6 +37,13 @@ receipts are not automatically attached as gate evidence. Baseline `461`/`462`
 verifies nine RTL files and the selected physical identity, while rejecting all
 five unfilled gates. Portable handoff and direct qualification remain open.
 
+For read-only state checks, use `report_selected_job_state.py --case CASE`
+(repeat `--case` for more jobs). It checks PID/birth identities and live resource
+leases, distinguishes queued owners from actual native workers, preserves
+uncertain observations, and reports worker exit separately from controller life.
+A declared running/completed label never establishes native execution or success.
+The reporter neither mutates jobs nor infers qualification.
+
 Current simulation speed trial:
 
 The leading configuration is isolated diode-corrected Xyce with checked UMFPACK
