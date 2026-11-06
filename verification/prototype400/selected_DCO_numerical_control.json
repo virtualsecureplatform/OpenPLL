@@ -24,7 +24,11 @@
   "CPU": 27,
   "memory_GiB": 16,
   "native_cap_s": 10800,
-  "status_at_recording": "waiting_for_resource_admission",
+  "status_at_recording": "native_running",
   "full_native_model_convergence_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "runtime": {
+    "path": "build/signoff400/selected_DCO_numerical_runtime_418.json",
+    "sha256": "91657516f288343f2638f802bf404d8e9ea6f43c822eb870f99f72ed910cafb6"
+  }
 }

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_DCO_coherent_clock_slope_416/assessment.json",
+    "sha256": "239700eb899b182e101344d934b07c28dab47cdbf086604490ad3672bd444f5e"
+  },
+  "input_isolation": {
+    "path": "build/signoff400/selected_DCO_code_increment_preflight_417.json",
+    "sha256": "59f8fb9295b3e808c84c1c3ae1951b259b0b429cf97258111cf287bf7b2e48c3"
+  },
+  "records": [
+    {
+      "window": "common",
+      "oscillator_age_ns": [
+        10,
+        40
+      ],
+      "reduced_increment_mhz": 0.28122352287999774,
+      "full_increment_mhz": 0.35785818310546347,
+      "increment_ratio": 0.7858518713741949,
+      "increment_error_percent": -21.41481286258051,
+      "fine111_frequency_error_ppm": 1063.1285781061983,
+      "fine112_frequency_error_ppm": 866.9523062221351
+    },
+    {
+      "window": "early",
+      "oscillator_age_ns": [
+        10,
+        25.0
+      ],
+      "reduced_increment_mhz": 0.2803045468035066,
+      "full_increment_mhz": 0.35677269996500627,
+      "increment_ratio": 0.7856670278611564,
+      "increment_error_percent": -21.433297213884362,
+      "fine111_frequency_error_ppm": 1063.801317479296,
+      "fine112_frequency_error_ppm": 868.0263247025089
+    },
+    {
+      "window": "late",
+      "oscillator_age_ns": [
+        25.0,
+        40
+      ],
+      "reduced_increment_mhz": 0.2809983933045146,
+      "full_increment_mhz": 0.3589895632154594,
+      "increment_ratio": 0.7827480854530141,
+      "increment_error_percent": -21.72519145469859,
+      "fine111_frequency_error_ppm": 1063.5552472457732,
+      "fine112_frequency_error_ppm": 863.9449632805718
+    }
+  ],
+  "constant_offset_correction_applied": false,
+  "tuning_curve_qualified": false,
+  "release_ready": false
+}
