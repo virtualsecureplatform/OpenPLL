@@ -1,0 +1,65 @@
+{
+  "purpose": "TT measured-bracket startup-seed and KP-zero gain sensitivity",
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_bracket_seed_challenge_963/assessment.json": "b306e727441b467caf774c762739803674b925e8c1e913492417fca779de8ec3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_bracket_gain_extension_964/assessment.json": "0373662bc12c0b8e6eea4136ba9445ce9409c962bdd8209abc8a0b339b7efc73"
+  },
+  "completed_cases": 40,
+  "gain_pairs": [
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      16,
+      0
+    ]
+  ],
+  "measured_seeds": [
+    133,
+    165
+  ],
+  "scenarios": [
+    "cold_enable"
+  ],
+  "phase_offsets_ns": [
+    0
+  ],
+  "publication_views": [
+    "nominal",
+    "receiver_delay_stress"
+  ],
+  "interpolations": [
+    "linear_period",
+    "linear_frequency"
+  ],
+  "dispositions": {
+    "needs_native_tuning_points": 36,
+    "diagnostic_failed": 4
+  },
+  "functional_passes": 0,
+  "requested_native_points": [
+    {
+      "coarse": 20,
+      "fine": 166
+    }
+  ],
+  "conclusion": "The present measured tuning range does not support complete capture assessment for these KP-zero diagnostics. Four KI1 seed133 cases complete but fail functional limits; missing coverage is not classified as hardware failure.",
+  "additional_native_simulations_launched": 0,
+  "all_KP_grid_checked": false,
+  "common_gain_selected": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}
