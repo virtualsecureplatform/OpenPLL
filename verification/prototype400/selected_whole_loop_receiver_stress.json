@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "receiver_delay_stress_ps": 100,
+  "composition": {
+    "path": "build/signoff400/selected_receiver_stress_detector_450/assessment.json",
+    "sha256": "58d4d839443e94f990b388164654cf0449840430000eb93b718728f32c9e9241"
+  },
+  "behavior_checks": {
+    "path": "build/signoff400/selected_receiver_stress_adapter_check_451/assessment.json",
+    "sha256": "2e2cdac8adef17097ba28b4c82b786775be825b615ab0f0dfdaf3e61fbf89cd8"
+  },
+  "mixed_signal": {
+    "path": "build/signoff400/selected_receiver_stress_mixed_signal_452/assessment.json",
+    "sha256": "99805b68150b8f110e8912888e5cb89531841da456294d6dedacf00057ad0375"
+  },
+  "future_calibration_followup": "build/signoff400/selected_receiver_stress_calibration_followup_453",
+  "nominal_followup": "build/signoff400/selected_publication_calibration_followup_410",
+  "only_four_direction_delays_increased_by_100ps": true,
+  "other_generated_Verilog_identical": true,
+  "scope": "extra-latency stress motivated by observed capture deferral; not a measured TT aperture model",
+  "uniform_uncertainty_bound_qualified": false,
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}
