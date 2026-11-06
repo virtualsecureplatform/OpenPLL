@@ -1,0 +1,29 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_short_prefix_response_771/assessment.json": "08b05b20b63a261de944f823d83ebd981402dfbb0e766554ce8f50d3c53bb494",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_100uV_input_audit_773.json": "a7c5574b4abbffab485ea4968472a0bd65a8e4f3edd6dee0586e286210222862",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_reset_100uV_native_772/manifest.json": "a223190c883d947f348ba4282663b3bab5bf37c8b473376f3a46779811e1325b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_100uV_runtime_775.json": "a82adb19450aac5cf57abf4d016b0e0cd85fdcf8dab5ecfbb2cd340f5c1cc978"
+  },
+  "tight_reset_control_budget_stopped": true,
+  "tight_control_oscillator_age_ns": 23.536079712552606,
+  "short_measured_window_ns": [
+    10,
+    20
+  ],
+  "sparse_vs_tight_frequency_difference_ppm": -3.610133660125747,
+  "first_output_rise_difference_ps": 0.04112450334581297,
+  "required_full_common_age_window_ns": [
+    10,
+    40
+  ],
+  "full_window_criterion_satisfied": false,
+  "next_reset_voltage_bound_V": 0.0001,
+  "independent_actual_maximum_reset_voltage_difference_V": 9.986482800794505e-05,
+  "next_reset_knots": 689,
+  "next_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reset_100uV_comparison_774/assessment.json",
+  "next_response_pending": true,
+  "scope": "The original tight-reset control reached its own three-hour cap. A separately labeled short response comparison does not replace the full-window criterion. A distinct 100 uV reset-waveform control now runs with unchanged circuit, private initial voltages, other sources and solver; this is a new convergence experiment, not a restart of the capped job.",
+  "uniform_reset_response_bound_qualified": false,
+  "release_ready": false
+}
