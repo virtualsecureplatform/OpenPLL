@@ -15,7 +15,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_async_enable_route_equivalence.py": "9b14dbbe6642efec4af895356807ec2f3336a496c90cfe88221ebe2a77f1f448",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_914/assessment.json": "f01fcb57c91dc3a18a06c35c8e1719e39caf0b227f1ecde4877a016d75a75fe6",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_proof_915/assessment.json": "4eb593d4c0c41d864e1188f4001d0da63cc24536f96cfc9e9d1a6cd46572f043",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_routed_capture_917/assessment.json": "0a63d397f7f1bbd83ff4a8f881a2bd14ba3c058a2ad72ec5addc35961fb8c5de"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_routed_capture_917/assessment.json": "0a63d397f7f1bbd83ff4a8f881a2bd14ba3c058a2ad72ec5addc35961fb8c5de",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_layout_checks_922/inputs.json": "43f7eee642c40ba90efd80e14522654cf9b87ea77147f0e1cd7e5f30d4fca933",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_layout_checks_922/owner.json": "8c0e46fdd9192c8dfdc903d9895ba59a49b06d6062794bd4d4ff9a8237361886",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_async_enable_candidate_layout.py": "86fe09c109b41a5228596d0743c523ee5c78523e03bf338712d4629dc088ce37"
   },
   "raw_enable_REFCLK_destination_registers": 76,
   "raw_enable_fine_rising_destination_registers": 275,
@@ -76,6 +79,15 @@
     "routed_capture_mutation_tests_passed": 4,
     "nominal_REFCLK_interstage_min_max_reports_present": true,
     "assembled_GDS_DRC_LVS_passed": false,
-    "candidate_assembled_GDS_exists": false
+    "candidate_assembled_GDS_exists": false,
+    "independent_digital_layout_checks": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_layout_checks_922",
+    "independent_digital_layout_checks_pending": true,
+    "independent_checks_scope": [
+      "streamed digital component GDS Magic DRC",
+      "layout LVS",
+      "native antenna report",
+      "power pin connectivity"
+    ],
+    "assembled_parent_checked": false
   }
 }
