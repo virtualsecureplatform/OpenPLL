@@ -1,0 +1,26 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_common_prefix_snapshots_741/assessment.json": "62804b2ca57d14748db7936db2509aa989be8ff04ef37218248056621502edc5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_folded_checkpoint_common_snapshots_746/assessment.json": "7d44ad513f0086f573c5687d0be9cc791ecae7997828df526d86b24beb68d4d7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_sparse_reset_native_721/manifest.json": "8fb95c911d90c605051ad7dca79f3935607712166727af7c3ec9b9bdcbc7b67c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fixed_boundary_fold_native_734/manifest.json": "e2363ba1f041a39336a14cfe61fce8bee8bf5bf514f7aefc85a21b67eb4f37c1"
+  },
+  "common_oscillator_age_ns": [
+    10,
+    40
+  ],
+  "folded_frequency_error_against_full_native_ppm": 0.1231424997527597,
+  "folded_versus_original_frequency_difference_ppm": {
+    "common": 0.6450288119186354,
+    "early": 0.2573640129899246,
+    "late": 1.4497904037291676
+  },
+  "comparison_formula": "1e6 * (folded_snapshot_frequency / original_snapshot_frequency - 1)",
+  "first_output_rise_difference_ps": 0.0030055329638400963,
+  "normal_full_horizon_completion_claimed": false,
+  "scope": "Immutable actual native waveform prefixes of the original checkpoint circuit and its certified affine boundary fold. Same initialization, conditions and 10--40 ns oscillator-age windows; early/late windows are 10--25/25--40 ns. One TT20/fine111 voltage response only. Timing differences are simulated diagnostics, not hardware precision bounds.",
+  "speedup_qualified": false,
+  "power_qualified": false,
+  "whole_family_qualified": false,
+  "release_ready": false
+}
