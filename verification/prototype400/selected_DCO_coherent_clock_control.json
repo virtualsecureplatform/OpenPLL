@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "scope": "TT fine111 conditional DCO with five added physical clock buffers",
+  "driver_cones": {
+    "path": "build/signoff400/selected_DCO_boundary_driver_cones_359.json",
+    "sha256": "81c3ab2762a1716f56eb42d24d7a74085de67a35414f45cd7466fbe7d8a0efeb"
+  },
+  "plan": {
+    "path": "build/signoff400/selected_DCO_coherent_clock_halo_360.json",
+    "sha256": "4ee5289e3977c4fb5fc886d751214b96c8369878c1330d42d11c68d6623b8d88"
+  },
+  "preflight": {
+    "path": "build/signoff400/selected_DCO_coherent_clock_preflight_363.json",
+    "sha256": "a13d439a3898d3f3df8997e5cb29344c95a3d6ba579fcfc9928e013769fd2703"
+  },
+  "live_runtime": {
+    "path": "build/signoff400/selected_DCO_coherent_clock_live_runtime_366.json",
+    "sha256": "af36ddc24b2fcd658fd47b0efdb19e9733f82c5f4f6a985ae2102eb67d25de10"
+  },
+  "native": "build/signoff400/selected_DCO_coherent_clock_native_362",
+  "status_at_recording": "native_running",
+  "added_cells": 5,
+  "added_primitives": 170,
+  "resolved_high_ranked_clock_nodes": 7,
+  "unresolved_high_ranked_feedback_state_nodes": 1,
+  "frequency_comparison_complete": false,
+  "full_dynamic_boundary_forcing_covered": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}

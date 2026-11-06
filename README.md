@@ -960,3 +960,12 @@ clock-tree and feedback nodes. Connections between prescribed voltages are
 excluded from the unknown-equation ranking. This demonstrates a boundary
 approximation, not its frequency-error contribution or a qualified uncertainty
 bound. See `verification/prototype400/selected_DCO_boundary_variation.json`.
+
+A new reduced-DCO control retains five complete physical clock-buffer cells
+(170 primitives), making seven of the eight strongest ranked dynamic boundary
+voltages native unknowns driven by the retained circuit. The remaining ranked
+feedback-state frontier is explicit. Preflight preserves every original
+device/passive line, shared boundary value, corner, solver setting and horizon.
+The native control is running; full boundary coverage and frequency correlation
+remain unqualified. See
+`verification/prototype400/selected_DCO_coherent_clock_control.json`.
