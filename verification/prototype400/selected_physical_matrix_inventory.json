@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "scope": "layout-matched five-corner matrix inventory",
+  "assessment": {
+    "path": "build/signoff400/selected_physical_matrix_inventory_371/assessment.json",
+    "sha256": "c62e9b57b1975c2609c9f3180cf92ee7051916efd9993750f40d60ce8abf6201"
+  },
+  "expected_cases": 60,
+  "executed_cases": 0,
+  "missing_corner_registries": [
+    "ff",
+    "ss",
+    "sf",
+    "fs"
+  ],
+  "release_ready": false
+}

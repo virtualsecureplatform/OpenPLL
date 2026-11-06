@@ -21,9 +21,14 @@ period. This avoids offsets being absorbed by synchronous startup. The actual
 controller RTL is unchanged. `selected_reference_phase.py` checks every
 initialization against recorded REF/DIV edges in the first observation window;
 the release audit requires those coordinates for every scenario segment.
-`run_selected_mixed_signal_v3.py` and `run_selected_matrix_v3.py` are the current
-diagnostic runners for this phase convention. Synthetic phase-engine controls
-validate coverage only and cannot qualify analog models or release readiness.
+`run_selected_mixed_signal_v4.py` and `run_selected_matrix_v4.py` are the current
+diagnostic runners for this phase convention. They compile the exact RTL bytes
+pinned by the selected filled-layout receipt, retained in `rtl/selected400`.
+The older version-3 runners compile a different controller revision and cannot
+qualify this physical candidate. See
+`verification/prototype400/selected_physical_RTL_binding.json`. Synthetic
+phase-engine controls validate coverage only and cannot qualify analog models
+or release readiness.
 
 Current simulation speed trial:
 

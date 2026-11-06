@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "scope": "conditional event publication by process corner and Q direction; local receiver only",
+  "TT_parameters": {
+    "path": "build/signoff400/selected_TT_complete_publication_model_372/parameters.json",
+    "sha256": "9cfc80aa90123f113e203bdc7ff765ab0d94f26a479b843855b8d086f605dfc8"
+  },
+  "TT_assessment": {
+    "path": "build/signoff400/selected_TT_complete_publication_model_372/assessment.json",
+    "sha256": "1a5bb4d31b992a19a85440353fcf8f006b13581311110fb351045ca9302d304a"
+  },
+  "TT_direction_coverage_complete": true,
+  "TT_independent_DN_falling_holdout": "build/signoff400/selected_detector_recorded_sync_clock_case_333",
+  "TT_holdout_status_at_recording": "native_running",
+  "FF_parameters": {
+    "path": "build/signoff400/selected_FF_partial_publication_model_373/parameters.json",
+    "sha256": "5d8ecc569b07995697b1ee3802dbdd5646a4cfa998cc7311617ba46aaf8b02e8"
+  },
+  "FF_assessment": {
+    "path": "build/signoff400/selected_FF_partial_publication_model_373/assessment.json",
+    "sha256": "8d7b0d6b1d806caac06a5fe5b3d3fbda3e27baa8b97d3046353d18a6d6762f85"
+  },
+  "FF_direction_coverage_complete": false,
+  "FF_missing_directions": [
+    "dn_rise",
+    "dn_fall"
+  ],
+  "FF_initialization_corner": "ff",
+  "FF_upstream_waveform_corner": "tt",
+  "FF_corner_sender_correlated": false,
+  "mixed_corner_rejection": {
+    "path": "build/signoff400/selected_mixed_corner_publication_negative_374/assessment.json",
+    "sha256": "b7431c323fd42e1e32a6bf358820acfbf8df9e0ed195eff785be30cd5fbd276b"
+  },
+  "FF_independent_holdout": "build/signoff400/selected_FF_independent_publication_holdout_368",
+  "FF_holdout_followup": "build/signoff400/selected_FF_publication_model_followup_369",
+  "FF_holdout_live_runtime": {
+    "path": "build/signoff400/selected_FF_holdout_live_runtime_370.json",
+    "sha256": "65b93da01fecfd789aa9e1c9539349281878424e211e5ee1073a81ae8e40a83b"
+  },
+  "uniform_uncertainty_bound_qualified": false,
+  "full_controller_timing_qualified": false,
+  "release_ready": false
+}

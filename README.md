@@ -985,3 +985,14 @@ nonrail, nonprogramming resistor-connected constant cuts. Two switch by about
 forcing remains a separate unqualified approximation; the five-buffer control
 does not claim to close it. See
 `verification/prototype400/selected_DCO_resistive_boundaries.json`.
+
+The repeated-DN native test completed normally, measuring DN event-Q fall
+publication at 456.96 ps versus 473.86 ps for rise. The new TT packet now has
+measurements for all four UP/DN Q directions; its independent DN-fall holdout
+is still running. The first FF repeated-UP control also completed, with rise
+and fall publication at 348.79 ps and 343.30 ps. FF uses solved FF initial
+biases under the same recorded TT excitation; FF sender correlation remains
+open. Mixed TT/FF training is rejected without writing parameters. A separate
+phase-zero FF holdout is running and its comparison is queued. These remain
+local receiver diagnostics, without uniform timing uncertainty qualification.
+See `verification/prototype400/selected_publication_corner_measurements.json`.
