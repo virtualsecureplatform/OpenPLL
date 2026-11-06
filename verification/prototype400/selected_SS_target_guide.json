@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "scope": "SS coarse-bank target guide with TT-derived exterior bias; historical sweep used only to choose probe",
+  "prior_result": {
+    "path": "build/signoff400/selected_DCO_SS_corner_native_394/assessment.json",
+    "sha256": "e1e2c100b05acb7e15b5ed6efcf924992cb8bd6267e3b7c21a9b5f7bb4e6273c"
+  },
+  "historical_hint": {
+    "path": "build/signoff400/prototype_v3_DCO_fine_grain_high_grid_001/ss_co47_fine120/native/dco_postlayout_results.csv",
+    "sha256": "a31a4f6a248efa4c8da9e141512a375e0b50636bc1e960525af3a3f3649b3c53"
+  },
+  "input_audit": {
+    "path": "build/signoff400/selected_DCO_SS_target_input_audit_428.json",
+    "sha256": "582b6b0788b3924dde0bea316a5c840a0d77424488cd56d65442446b3017bc1e"
+  },
+  "runtime": {
+    "path": "build/signoff400/selected_DCO_SS_target_runtime_429.json",
+    "sha256": "cb4370a95e2efa755858bfacd9d87fc69146aad806fc05174c202b18cda99d5e"
+  },
+  "native": "build/signoff400/selected_DCO_SS_target_guide_426",
+  "followup": "build/signoff400/selected_DCO_SS_target_followup_427",
+  "controls": {
+    "coarse": 47,
+    "fine": 120
+  },
+  "CPU": 23,
+  "memory_GiB": 16,
+  "native_cap_s": 10800,
+  "status_at_recording": "native_running",
+  "historical_frequency_inserted_into_registry": false,
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}
