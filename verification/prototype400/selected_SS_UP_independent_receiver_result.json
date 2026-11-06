@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "case": "build/signoff400/selected_SS_UP_independent_holdout_580",
+  "assessment": {
+    "path": "build/signoff400/selected_SS_UP_independent_replay_582/assessment.json",
+    "sha256": "890cab4d76c1fbc81913f3f69729b168b0c20794a35b267db9d868ffaa0f87d1"
+  },
+  "nominal": {
+    "path": "build/signoff400/selected_SS_UP_independent_replay_582/nominal/assessment.json",
+    "sha256": "09d2ae936abe43153ae3be9bcc6dbffe91944c97b01040deaa062177fd591ee7"
+  },
+  "publication_residuals": [
+    {
+      "role": "up",
+      "edge": "rise",
+      "prediction_minus_native_ps": 0.17587951741049324
+    },
+    {
+      "role": "up",
+      "edge": "fall",
+      "prediction_minus_native_ps": -0.0041727411996816954
+    }
+  ],
+  "nominal_counts_and_cycles_match": true,
+  "provisional_100ps_counts_and_cycles_match": true,
+  "UP_transitions": 2,
+  "DN_transitions": 0,
+  "refit_to_holdout": false,
+  "uniform_uncertainty_bound_qualified": false,
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}

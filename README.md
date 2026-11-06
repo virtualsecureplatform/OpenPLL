@@ -1201,3 +1201,10 @@ with zero feedback. All 16 checked source/flat masks and exact MOS gate area
 match again; matched rule and local diode controls pass. The general contact
 area bound still needs an explicit qualification argument. See
 `verification/prototype400/selected_conservative_contact_parent_result.json`.
+
+The independent SS repeated-UP holdout completes normally and matches frozen
+selected-RTL first-stage sampling cycles and counts for both UP transitions,
+under nominal and provisional 100 ps replay. Publication predictions differ
+from native by at most 0.176 ps without refitting. This local two-transition
+result is not a uniform uncertainty bound or full-controller timing closure.
+See `verification/prototype400/selected_SS_UP_independent_receiver_result.json`.
