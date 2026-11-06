@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "corner": "ss",
+      "coarse": 47,
+      "fine": 145,
+      "frequency_mhz": 400.03682389232654,
+      "nominal_error_ppm": 92.05973081627405,
+      "native": {
+        "path": "build/signoff400/selected_DCO_SS_target_check_512/assessment.json",
+        "sha256": "d9ae0aed3c0559d1cafeb49e21b49da5d0d7b6c54d98c3e180776a4dcb3c9520"
+      },
+      "selection": {
+        "path": "build/signoff400/selected_SS_nominal_target_selection_558.json",
+        "sha256": "d871a19a28b1b08e8181bf420ec3a59117f54283069c6d884f04dd7a83b6a8b8"
+      },
+      "conditional_nominal_frequency_check_pass": true
+    },
+    {
+      "corner": "fs",
+      "coarse": 20,
+      "fine": 180,
+      "frequency_mhz": 400.0621896668421,
+      "nominal_error_ppm": 155.47416710526284,
+      "native": {
+        "path": "build/signoff400/selected_DCO_FS_refined_target_559/assessment.json",
+        "sha256": "03dcc6b5cf16ca12eca8856eaa3b2aec54dd562059032ac17ef511dc94c92ae8"
+      },
+      "selection": {
+        "path": "build/signoff400/selected_FS_measured_target_selection_594.json",
+        "sha256": "8d2092d8fb5e8656251b7a10d73d1eb43ef6ea0016f6d55844becfb53ec64624"
+      },
+      "conditional_nominal_frequency_check_pass": true
+    },
+    {
+      "corner": "ff",
+      "coarse": 9,
+      "fine": 229,
+      "frequency_mhz": 400.03817951554925,
+      "nominal_error_ppm": 95.44878887313146,
+      "native": {
+        "path": "build/signoff400/selected_DCO_FF_target_check_596/assessment.json",
+        "sha256": "394b402f776637ffcb3fdfd7ba0c905c270fa7af88c984015ba1415862df9f15"
+      },
+      "selection": {
+        "path": "build/signoff400/selected_FF_measured_target_selection_683.json",
+        "sha256": "25abd5102eb9dbef7191b23cc2d93cbaa8b6bc191cbb5d0c2c98ab665a80fdbc"
+      },
+      "conditional_nominal_frequency_check_pass": true
+    },
+    {
+      "corner": "sf",
+      "coarse": 26,
+      "fine": 115,
+      "frequency_mhz": 399.9112025442367,
+      "nominal_error_ppm": -221.9936394083355,
+      "native": {
+        "path": "build/signoff400/selected_DCO_SF_refined_target_635/assessment.json",
+        "sha256": "273358570cbf75c6e89419230ecfe9c516c51217da424b40e7944cc32bebd8e4"
+      },
+      "selection": {
+        "path": "build/signoff400/selected_SF_measured_target_selection_685.json",
+        "sha256": "412d80fbf31f7c6687118114c20e0e17a7e58d08a337cd356aef813dff6b3e72"
+      },
+      "conditional_nominal_frequency_check_pass": true
+    }
+  ],
+  "scope": "27 C, 1.8 V retained devices with TT-derived held exterior biases and fresh local DC initialization",
+  "full_corner_initialization_history_qualified": false,
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}

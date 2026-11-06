@@ -1276,3 +1276,10 @@ components. All current-layer views have zero conservative antenna feedback.
 This is selected-layout evidence; release-tool integration and other physical
 checks remain open. See
 `verification/prototype400/selected_antenna_process_view_audit.json`.
+
+The SF refinement at coarse26/fine115 completes at 399.911203 MHz (-221.99
+ppm), passing the conditional nominal-frequency check. FF, SS, SF, and FS
+now each have a measured conditional target within 1000 ppm. These fresh-local-DC
+probes retain TT-derived exterior biases and do not qualify full-corner startup
+or calibration. See
+`verification/prototype400/selected_four_corner_conditional_targets.json`.
