@@ -1,0 +1,23 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_CDC_component_review_826.json": "a05a1bbb7b9e22af28e2025fe61d736c8383653ded176903d24d934cc29d9be2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_CDC_review_controls_827.json": "99fa9050dbffe1bb2b875175a3215594906eb4f324303f6a760b300ddec17910",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_timing_path_classes_820/assessment.json": "9ac4243257d28a771a7eeff1a2e7aae536f8ad4b5b665fccefb5ca59b7fa0f25"
+  },
+  "synchronizers": 13,
+  "stage_registers": 26,
+  "intermediate_buffers": 49,
+  "physically_bound_cells": 75,
+  "all_interstage_nets_continuous_with_unique_expected_drivers": true,
+  "enabled_decision_path_checks": 20,
+  "minimum_enabled_decision_setup_slack_ns": 0.331332,
+  "minimum_enabled_decision_hold_slack_ns": 2.004814,
+  "native_timing_capacity_mhz": 402.1,
+  "all_five_device_corners_checked": true,
+  "actual_log_mutation_controls_rejected": 3,
+  "review_execution_requires_pinned_CAD_container": true,
+  "full_mode_timing_qualified": false,
+  "all_crossings_reviewed": false,
+  "physical_CDC_qualified": false,
+  "release_ready": false
+}
