@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "near_edge": {
+    "path": "build/signoff400/selected_FF_late_capture_stress_442/assessment.json",
+    "sha256": "5419571a84fb198ff5d23ddca7d56289fc28f0d871c3dbda03f6d71510fc4620"
+  },
+  "well_separated": {
+    "path": "build/signoff400/selected_FF_far_capture_stress_443/assessment.json",
+    "sha256": "422e6c246adfc893c13c01925b223655270a14b31d7e1bbbb7ab83843225492c"
+  },
+  "assumed_window_ps": 100,
+  "policy": "defer data arriving in assumed pre-clock window until just after that edge",
+  "scope": "diagnostic stress reproduces observed deferral; window chosen after observation, not independent validation",
+  "aperture_bound_qualified": false,
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}
