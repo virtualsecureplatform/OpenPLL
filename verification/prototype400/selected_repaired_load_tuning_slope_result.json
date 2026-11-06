@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "assessment": {
+    "path": "build/signoff400/selected_driven_load_terminal_slope_623/assessment.json",
+    "sha256": "dddf665751ba37febcc0082e217831448c267a785ad07f622abf043e20ed7e35"
+  },
+  "records": [
+    {
+      "window": "common",
+      "oscillator_age_ns": [
+        10,
+        40
+      ],
+      "reduced_increment_mhz": 0.2813007867299575,
+      "full_increment_mhz": 0.35785818310546347,
+      "increment_ratio": 0.7860677777125361,
+      "increment_error_percent": -21.39322222874639,
+      "fine111_frequency_error_ppm": 1105.6142386627332,
+      "fine112_frequency_error_ppm": 909.5960487603971
+    },
+    {
+      "window": "early",
+      "oscillator_age_ns": [
+        10,
+        25.0
+      ],
+      "reduced_increment_mhz": 0.2802076624519714,
+      "full_increment_mhz": 0.35677269996500627,
+      "increment_ratio": 0.7853954702236334,
+      "increment_error_percent": -21.460452977636656,
+      "fine111_frequency_error_ppm": 1107.9775330546936,
+      "fine112_frequency_error_ppm": 911.9155685102243
+    },
+    {
+      "window": "late",
+      "oscillator_age_ns": [
+        25.0,
+        40
+      ],
+      "reduced_increment_mhz": 0.281982205808049,
+      "full_increment_mhz": 0.3589895632154594,
+      "increment_ratio": 0.7854885899254072,
+      "increment_error_percent": -21.451141007459285,
+      "fine111_frequency_error_ppm": 1103.761378455026,
+      "fine112_frequency_error_ppm": 906.6200323033513
+    }
+  ],
+  "normal_full_windows_completed": false,
+  "native_budget_stopped": true,
+  "only_expected_fine_driver_input_changed": true,
+  "constant_offset_correction_applied": false,
+  "diagnosis": "The repaired boundary does not close reduced/full frequency or slope correlation; a constant frequency offset cannot repair the measured tuning increment.",
+  "tuning_curve_qualified": false,
+  "release_ready": false
+}

@@ -1105,3 +1105,11 @@ matched normal contact control remains clean. LICON remains missed. This
 controlled result confirms a consequential unit mismatch; exact cut accounting,
 early-plane coverage, diode protection, and parent qualification remain open.
 See `verification/prototype400/selected_magic_contact_unit_control_result.json`.
+
+Both repaired-load controls stopped at their original time limits with finite
+prefixes covering matched oscillator ages 10–40 ns. Their measured 111-to-112
+step is 0.281301 MHz versus 0.357858 MHz full native (-21.39%). Physical cards,
+solver, and observations match; only the expected fine driver input changes.
+The reduced tuning model remains unqualified and no offset correction is
+applied. See
+`verification/prototype400/selected_repaired_load_tuning_slope_result.json`.
