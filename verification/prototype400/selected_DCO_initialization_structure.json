@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_DCO_initialization_cell_inventory_454.json",
+    "sha256": "a04bd277ae39af61094bfc1688be380890e132fe2204e0e5af31dcf65bc44705"
+  },
+  "cell_master_counts": {
+    "sky130_fd_sc_hd__einvp_1": 557,
+    "sky130_fd_sc_hd__einvn_1": 110,
+    "sky130_fd_sc_hd__decap_3": 76,
+    "sky130_fd_sc_hd__buf_8": 1,
+    "sky130_fd_sc_hd__conb_1": 1,
+    "sky130_fd_sc_hd__nand2_8": 1,
+    "sky130_fd_sc_hs__inv_2": 302,
+    "sky130_fd_sc_hs__diode_2": 5,
+    "sky130_fd_sc_hs__clkinv_4": 1,
+    "sky130_fd_sc_hs__dfrtp_2": 1,
+    "sky130_fd_sc_hs__dfrtp_4": 1,
+    "sky130_fd_sc_hs__clkbuf_16": 5,
+    "sky130_fd_sc_hs__dfrtp_1": 2,
+    "sky130_fd_sc_hs__clkbuf_4": 1
+  },
+  "scope": "structural inventory only; enabled states, floating nodes and unique DC equilibrium are not proven",
+  "DC_failure_cause_identified": false,
+  "release_ready": false
+}
