@@ -13,7 +13,9 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_holdout_869/manifest.json": "fc095bdab9c685c5d21c56afd10d894566051340aafdb6e327fbf9213de87e8b",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_holdout_869/native/manifest.json": "28811266d6312fff9164594773323cf536c74298cb64352a51ae633edee751ac",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_replay_870/inputs.json": "f8aba60e57047d65180f428320a4ec591661fe34529e1028fbc8593dcc05d31b",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_runtime_871.json": "dace0c39907195ddaa58b0acc9e09919b1ac7a757bc5f67fcd40887cd29e0ebc"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_runtime_871.json": "dace0c39907195ddaa58b0acc9e09919b1ac7a757bc5f67fcd40887cd29e0ebc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_detector_bracket_holdout_review_898/assessment.json": "2fd79232575f2c1e6899ded26d5d98c9c96bbbf29f9961fcff986dba5fc02ca1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_replay_870/assessment.json": "5ee8851db6d2b89245b47222402072670d3d87ea515fd7ab693189e86fa9b04f"
   },
   "native_probe": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_nearzero_844",
   "fit_followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846",
@@ -32,7 +34,7 @@
   "memory_GiB": 12,
   "native_cap_s": 10800,
   "fitting_cases": 4,
-  "independent_holdout_cases": 2,
+  "independent_holdout_cases": 3,
   "actual_corner_binding_positive_control_passed": true,
   "mismatched_corner_negative_control_rejected": true,
   "decision_sign_not_assumed": true,
@@ -41,15 +43,15 @@
   "native_interface_qualified": false,
   "release_ready": false,
   "normal_native_probe_completed": true,
-  "all_sampled_signs_match": true,
-  "all_event_counts_match": true,
-  "all_edges_within_observed_fit_band": true,
+  "all_sampled_signs_match": false,
+  "all_event_counts_match": false,
+  "all_edges_within_observed_fit_band": false,
   "observed_transition_bracket_ps": [
     -111.09864159399052,
     -13.025594894735093
   ],
   "lookback_ps": 62.06211824436281,
-  "maximum_replay_edge_error_ps": 0.9877835875755636,
+  "maximum_replay_edge_error_ps": null,
   "independent_holdout_cases_passed": 2,
   "full_phase_coverage_qualified": false,
   "uniform_uncertainty_bound_qualified": false,
@@ -63,8 +65,22 @@
     "CPU": 20,
     "memory_GiB": 12,
     "native_cap_s": 10800,
-    "pending": true,
+    "pending": false,
     "expected_decision_not_assumed": true,
-    "scope": "One distinct held-out near-transition point under recorded TT excitation; no uniform uncertainty qualification."
-  }
+    "scope": "One distinct held-out near-transition point under recorded TT excitation; no uniform uncertainty qualification.",
+    "normal_native_completion": true,
+    "measured_phase_ps": -61.10003557069277,
+    "native_decision": "dn",
+    "nominal_prediction": "up",
+    "nominal_validation_passed": false,
+    "inside_prior_transition_bracket": true,
+    "conditional_native_event_classes_observed": 3,
+    "all_observed_conditional_latencies_within_prior_band_plus_quantization": true,
+    "model_quantization_allowance_ps": 1.01,
+    "nominal_parameters_and_Verilog_unchanged": true,
+    "new_holdout_used_for_fitting": false
+  },
+  "prior_two_holdout_maximum_replay_edge_error_ps": 0.9877835875755636,
+  "current_nominal_validation_passed": false,
+  "nominal_edge_pairing_invalid_when_event_counts_differ": true
 }
