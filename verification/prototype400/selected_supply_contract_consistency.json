@@ -1,0 +1,22 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_supply_contract_consistency_753.json": "36df7fbc92ab1643fbff62fe30758c5a6f39c40695232efc6131eb23ac45b678"
+  },
+  "contract": "verification/signoff400/integration_contract_v4.json",
+  "expanded_MOS_instances": 61616,
+  "nominal_external_connection_declaration_matches_native_fixture": true,
+  "required_external_connections": [
+    [
+      "VPWR",
+      "VPB"
+    ],
+    [
+      "VGND",
+      "VNB"
+    ]
+  ],
+  "internal_rail_shorts_assumed": false,
+  "scope": "External integration declaration and nominal fixture consistency, bound to the selected extracted GDS. It does not measure actual board voltages or prove supply tolerance, tap spacing, latchup, IR drop or electromigration.",
+  "physical_gate_qualified": false,
+  "release_ready": false
+}
