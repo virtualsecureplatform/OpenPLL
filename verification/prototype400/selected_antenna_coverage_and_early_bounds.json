@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "native_coverage": {
+    "path": "build/signoff400/selected_antenna_layer_coverage_575/assessment.json",
+    "sha256": "97a739e2caaf47c7de38b99dbee38e2d7577f3d23f310a190b006e74d2bde7b0"
+  },
+  "verified_source_identity": {
+    "path": "build/signoff400/selected_magic_antenna_source_review_573/source_identity.json",
+    "sha256": "c840243b76f19400513d0f8bb4a71a04898b0ecd5eb74eaae509bb849dd91667"
+  },
+  "independent_early_bounds": {
+    "path": "build/signoff400/selected_early_antenna_bounds_593/assessment.json",
+    "sha256": "996ff02cbc304bb327264682a93004e00b036c1ba2212bd15ec475181cbabf2a"
+  },
+  "early_bounds_summary": {
+    "path": "build/signoff400/selected_early_antenna_bounds_593/summary.json",
+    "sha256": "e22fea877f17046116cd93bbe7870b501aaa48d0f3df1f021377aa160a6989b6"
+  },
+  "early_bounds_controls": {
+    "path": "build/signoff400/selected_early_antenna_bounds_593/controls.json",
+    "sha256": "58f005e21dac27b47722d8363eff11baab17316a0d73e7a952726c21f4c044b0"
+  },
+  "source_revision": "8.3.623",
+  "source_URL": "https://github.com/RTimothyEdwards/magic/blob/8.3.623/extflat/EFantenna.c",
+  "findings": {
+    "native_missed_controls": [
+      "poly",
+      "licon",
+      "mcon",
+      "via1",
+      "via2",
+      "via3",
+      "via4"
+    ],
+    "native_detected_conductor_controls": [
+      "li1",
+      "metal1",
+      "metal2",
+      "metal3",
+      "metal4",
+      "metal5"
+    ],
+    "poly_LICON_independent_conservative_bounds_pass": true,
+    "independent_controls_reject_oversized_poly_and_LICON": true,
+    "later_contact_failure_root_cause_proven": false,
+    "later_contact_rules_qualified": false,
+    "diode_protection_qualified": false,
+    "parent_antenna_qualified": false
+  },
+  "release_ready": false
+}

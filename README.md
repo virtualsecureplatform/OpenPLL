@@ -1060,3 +1060,12 @@ come from the TT final trace. Fresh local DC initialization is explicit; these
 are preset/clock-edge guides, not full-corner calibration. Live simulator and
 all 319 PDK dependency bytes match the pinned reference. See
 `verification/prototype400/selected_conditional_corner_DCO_guides.json`.
+
+The selected-layout antenna controls expose a coverage gap in the pinned Magic
+flow: oversized poly and all six contact-array controls produce no feedback,
+while LI1 and metal conductor controls are detected. An independent geometry
+check passes conservative poly and LICON bounds for the actual selected GDS,
+with oversized positive controls correctly rejected and all MOS channel area
+preserved. Later contacts and diode protection remain unqualified; this does
+not close the physical-integrity gate. See
+`verification/prototype400/selected_antenna_coverage_and_early_bounds.json`.
