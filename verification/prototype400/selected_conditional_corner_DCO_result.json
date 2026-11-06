@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_corner_DCO_guide_followup_397/assessment.json",
+    "sha256": "2a3b00e2d1ebda9e6c9eed28ec245f6b6a744eebae6a980db642f4b20446db50"
+  },
+  "records": [
+    {
+      "retained_device_operating_point": {
+        "corner": "ff",
+        "supply_v": 1.8,
+        "temperature_c": 27
+      },
+      "exterior_bias_operating_point": {
+        "corner": "tt",
+        "temperature_c": 27,
+        "supply_v": 1.8
+      },
+      "controls": {
+        "coarse": 20,
+        "fine": 111,
+        "fine_inverse": true,
+        "actual_HS_INV2_inputs_driven": true
+      },
+      "frequency": {
+        "rising_edges": 24,
+        "frequency_mhz": 595.0485649439075,
+        "minimum_period_ns": 1.680199687916236,
+        "maximum_period_ns": 1.681060924550021
+      },
+      "clock_edge_guides": {
+        "first_sync_clock": {
+          "source_edge": "rising_ns",
+          "paired_rising_edges": 24,
+          "minimum_relative_delay_ps": 180.84025394541214,
+          "maximum_relative_delay_ps": 180.99056047895346,
+          "mean_relative_delay_ps": 180.89601091196366
+        },
+        "feedback_driver_clock": {
+          "source_edge": "rising_ns",
+          "paired_rising_edges": 24,
+          "minimum_relative_delay_ps": 187.55363793431457,
+          "maximum_relative_delay_ps": 187.6125974038274,
+          "mean_relative_delay_ps": 187.58487604000356
+        },
+        "second_sync_clock": {
+          "source_edge": "rising_ns",
+          "paired_rising_edges": 24,
+          "minimum_relative_delay_ps": 179.3741523918726,
+          "maximum_relative_delay_ps": 179.5569141428004,
+          "mean_relative_delay_ps": 179.44679239645984
+        },
+        "inverted_aux_clock": {
+          "source_edge": "falling_ns",
+          "paired_rising_edges": 23,
+          "minimum_relative_delay_ps": 177.72989652569748,
+          "maximum_relative_delay_ps": 178.3444545221471,
+          "mean_relative_delay_ps": 177.83768491315138
+        },
+        "aux_clock": {
+          "source_edge": "rising_ns",
+          "paired_rising_edges": 24,
+          "minimum_relative_delay_ps": 175.18193534217374,
+          "maximum_relative_delay_ps": 175.25668283572315,
+          "mean_relative_delay_ps": 175.22979422303092
+        }
+      }
+    },
+    {
+      "retained_device_operating_point": {
+        "corner": "ss",
+        "supply_v": 1.8,
+        "temperature_c": 27
+      },
+      "exterior_bias_operating_point": {
+        "corner": "tt",
+        "temperature_c": 27,
+        "supply_v": 1.8
+      },
+      "controls": {
+        "coarse": 20,
+        "fine": 111,
+        "fine_inverse": true,
+        "actual_HS_INV2_inputs_driven": true
+      },
+      "frequency": {
+        "rising_edges": 10,
+        "frequency_mhz": 241.9351795138311,
+        "minimum_period_ns": 4.132720277734812,
+        "maximum_period_ns": 4.134229812660827
+      },
+      "clock_edge_guides": {
+        "first_sync_clock": {
+          "source_edge": "rising_ns",
+          "paired_rising_edges": 9,
+          "minimum_relative_delay_ps": 345.92373302893975,
+          "maximum_relative_delay_ps": 345.95826600915916,
+          "mean_relative_delay_ps": 345.94169924284853
+        },
+        "feedback_driver_clock": {
+          "source_edge": "rising_ns",
+          "paired_rising_edges": 9,
+          "minimum_relative_delay_ps": 357.92821428085375,
+          "maximum_relative_delay_ps": 357.94963912033495,
+          "mean_relative_delay_ps": 357.9415981449393
+        },
+        "second_sync_clock": {
+          "source_edge": "rising_ns",
+          "paired_rising_edges": 10,
+          "minimum_relative_delay_ps": 342.9066097134381,
+          "maximum_relative_delay_ps": 342.94470925420126,
+          "mean_relative_delay_ps": 342.92419770955894
+        },
+        "inverted_aux_clock": {
+          "source_edge": "falling_ns",
+          "paired_rising_edges": 10,
+          "minimum_relative_delay_ps": 368.5610288358845,
+          "maximum_relative_delay_ps": 369.01244370925923,
+          "mean_relative_delay_ps": 368.80000931015286
+        },
+        "aux_clock": {
+          "source_edge": "rising_ns",
+          "paired_rising_edges": 10,
+          "minimum_relative_delay_ps": 335.31740902808593,
+          "maximum_relative_delay_ps": 335.3759025953558,
+          "mean_relative_delay_ps": 335.3487605266338
+        }
+      }
+    }
+  ],
+  "scope": "conditional FF/SS frequency and clock-edge guides with TT-derived exterior bias",
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "corner": "ff",
+      "coarse": 9,
+      "fine": 184,
+      "CPU": 22,
+      "native": "build/signoff400/selected_DCO_FF_target_guide_444",
+      "historical_hint": {
+        "path": "build/signoff400/prototype_v3_DCO_fine_grain_high_grid_001/ff_co9_fine184/native/dco_postlayout_results.csv",
+        "sha256": "15587cf149512f3fa982e5cda4dd8d312033fea8e13ad6b715fc52b4c94fb3c4"
+      }
+    },
+    {
+      "corner": "sf",
+      "coarse": 26,
+      "fine": 88,
+      "CPU": 18,
+      "native": "build/signoff400/selected_DCO_SF_target_guide_445",
+      "historical_hint": {
+        "path": "build/signoff400/prototype_v3_DCO_fine_grain_high_grid_001/sf_co26_fine88/native/dco_postlayout_results.csv",
+        "sha256": "7727d2928990930c6b92030b52e39f50ae3303ed83aaf1369d0a8334f70e08e1"
+      }
+    },
+    {
+      "corner": "fs",
+      "coarse": 20,
+      "fine": 136,
+      "CPU": 19,
+      "native": "build/signoff400/selected_DCO_FS_target_guide_446",
+      "historical_hint": {
+        "path": "build/signoff400/prototype_v3_DCO_fine_grain_high_grid_001/fs_co20_fine136/native/dco_postlayout_results.csv",
+        "sha256": "d53e87f54b7963d7d9e6ece639fba0cb51bc517c43248c8268e798942476be98"
+      }
+    }
+  ],
+  "input_audit": {
+    "path": "build/signoff400/selected_remaining_target_input_audit_448.json",
+    "sha256": "1d45021cab234be051c3d77fbf8b808165f2c790f9a4aa991fa99838486be5bc"
+  },
+  "runtime": {
+    "path": "build/signoff400/selected_remaining_target_runtime_449.json",
+    "sha256": "f062a47846cafd03a142da6fcdb683cdfe6ecf0bcc2f9ebfb97955a4a847a67c"
+  },
+  "followup": "build/signoff400/selected_remaining_target_guides_followup_447",
+  "memory_GiB_each": 16,
+  "native_cap_s_each": 10800,
+  "status_at_recording": "native_running",
+  "scope": "historical macro sweeps select current-circuit probe controls only; exterior biases remain TT-derived",
+  "historical_frequencies_inserted_into_registry": false,
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}
