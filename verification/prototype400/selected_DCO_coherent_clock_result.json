@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "scope": "normally completed TT fine111 clock-buffer expansion sensitivity at matched oscillator age",
+  "assessment": {
+    "path": "build/signoff400/selected_DCO_coherent_clock_comparison_recovered_387/assessment.json",
+    "sha256": "5c5109b21d32c3eae265580f9df20047dec3b0cc531534dd049086c7ed859f95"
+  },
+  "baseline_difference_ppm": -36.25322478106874,
+  "remaining_full_reference_difference_ppm": 1063.1285781061983,
+  "native_restarted": false,
+  "observer_directory_hash_failure_recovered": true,
+  "full_boundary_forcing_covered": false,
+  "frequency_correlation_qualified": false,
+  "release_ready": false
+}

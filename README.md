@@ -1025,3 +1025,12 @@ control produces the identical native table and still requests fine113. Three
 unit controls pass. Independent model holdouts and a frequency-error bound
 remain unqualified. See
 `verification/prototype400/selected_bounded_frequency_interpolation.json`.
+
+The five-buffer native control completed normally through 60 ns with every
+saved value finite. At matched oscillator ages 10–40 ns it shifts frequency
+by -36.25 ppm relative to the original reduced baseline, leaving +1,063 ppm
+against the full native reference. It therefore does not close the reduced-
+model gap. The original comparison calculation succeeded, but its wrapper
+tried to hash an output directory. A separate recovery re-computes the saved
+comparison identically and fixes the wrapper path for future controls, without
+a native retry. See `verification/prototype400/selected_DCO_coherent_clock_result.json`.
