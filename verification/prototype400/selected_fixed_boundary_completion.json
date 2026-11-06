@@ -1,0 +1,23 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fixed_boundary_direct_comparison_737/assessment.json": "d18e01ae282b8850868cc348812ba7d6acdbeda6714536c0092657ead3c9c76e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fixed_boundary_fold_comparison_736/assessment.json": "5c678d8a30ba3d6b6b405f823915d25af9722753817e0622346b657a7af15499"
+  },
+  "normal_full_windows_completed": true,
+  "folded_vs_original_frequency_difference_ppm": {
+    "common": 0.6450288119186354,
+    "early": 0.2573640129899246,
+    "late": 1.4497904037291676
+  },
+  "folded_vs_full_native_common_frequency_difference_ppm": 0.1231424997527597,
+  "first_oscillator_rise_difference_ps": 0.0030055329638400963,
+  "native_reported_solver_elapsed_s": {
+    "original": 8898.22,
+    "folded": 8203.99
+  },
+  "reported_solver_time_ratio_original_to_folded": 1.0846210197720865,
+  "controlled_throughput_benchmark": false,
+  "timing_scope": "native reported solver time only; different simultaneous host workloads are not a controlled throughput benchmark",
+  "scope": "Normally completed same-horizon original and certified affine boundary-folded checkpoint controls at TT20/fine111. The direct comparator checks identical initialization, operating conditions, native executable and transform provenance. One voltage-response case only; fixed-source currents, power and whole-family equivalence remain unqualified.",
+  "release_ready": false
+}
