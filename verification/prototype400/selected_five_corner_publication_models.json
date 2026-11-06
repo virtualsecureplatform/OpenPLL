@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "model_set": {
+    "path": "build/signoff400/selected_five_corner_publication_models_628.json",
+    "sha256": "d0fd00fc51cb99f6df9401f189eec48bb66b651cdd88ce441e230055b559c34b"
+  },
+  "FS_training": {
+    "path": "build/signoff400/selected_FS_publication_training_followup_564/model/assessment.json",
+    "sha256": "03c56cf68c070da1f415824be2e0dbc5f987cc70b1b0521a2b78a7f1a4923f78"
+  },
+  "all_twenty_directions_measured": true,
+  "missing_direction_fallback_permitted": false,
+  "uniform_uncertainty_bound_qualified": false,
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}

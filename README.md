@@ -1121,3 +1121,12 @@ the complete installed experimental tool is hash-pinned. A selected-parent
 run is underway with this executable. Exact cut accounting, diode protection,
 and parent antenna qualification remain open. See
 `verification/prototype400/selected_magic_complete_engine_controls.json`.
+
+Publication-delay training now covers all 20 direction/corner combinations
+(TT/FF/SS/SF/FS, UP/DN, rising/falling). A verified frozen-model set requires
+each corner and direction and forbids fallback. These local retained-circuit
+measurements do not establish a uniform uncertainty bound or full-controller
+timing. See `verification/prototype400/selected_five_corner_publication_models.json`.
+The experimental selected-parent antenna run and its exact controlled-engine
+inputs are retained in
+`verification/prototype400/selected_experimental_parent_antenna_queue.json`.
