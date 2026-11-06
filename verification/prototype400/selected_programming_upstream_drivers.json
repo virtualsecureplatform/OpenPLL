@@ -1,0 +1,104 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_programming_upstream_two_stages_704.json": "4a396aa5b86cd7dca6c454a06a84f11c76ae8ab8ccda879208278822fc7381f4"
+  },
+  "programming_inputs": 302,
+  "upstream_output_buffer_counts": {
+    "sky130_fd_sc_hs__inv_8": 302
+  },
+  "critical_SF_programming_role": "DCO_THERM[226]",
+  "critical_chain": [
+    {
+      "cell_key": "[[[\"IntegerPLL_400MHz_PrototypeTop\",\"scale 1000 1 500000\",[\"IntegerPLL_ProgrammedCore\",1,0,10000,0,1,20000]],[\"IntegerPLL_ProgrammedCore\",\"scale 1000 1 500000\",[\"sky130_fd_sc_hs__a21oi_4\",1,0,15840,0,-1,18648]]],\"sky130_fd_sc_hs__a21oi_4\"]",
+      "master": "sky130_fd_sc_hs__a21oi_4",
+      "primitives": [
+        "Xflat30638",
+        "Xflat30639",
+        "Xflat30640",
+        "Xflat30641",
+        "Xflat30642",
+        "Xflat30643",
+        "Xflat30644",
+        "Xflat30645",
+        "Xflat30646",
+        "Xflat30647",
+        "Xflat30648",
+        "Xflat30649",
+        "Xflat30650",
+        "Xflat30651",
+        "Xflat30652",
+        "Xflat30653",
+        "Xflat30654",
+        "Xflat30655",
+        "Xflat30656",
+        "Xflat30657",
+        "Xflat30658",
+        "Xflat30659"
+      ],
+      "pins": {
+        "A1": "__context_node_13315",
+        "A2": "__context_node_3611",
+        "B1": "__context_node_5042",
+        "VGND": "VGND",
+        "VNB": "VGND",
+        "VPB": "VPWR",
+        "VPWR": "VPWR",
+        "Y": "__parent_R_node_5024"
+      }
+    },
+    {
+      "cell_key": "[[[\"IntegerPLL_400MHz_PrototypeTop\",\"scale 1000 1 500000\",[\"sky130_fd_sc_hs__inv_8\",1,0,81024,0,1,41292]]],\"sky130_fd_sc_hs__inv_8\"]",
+      "master": "sky130_fd_sc_hs__inv_8",
+      "primitives": [
+        "Xflat62056",
+        "Xflat62057",
+        "Xflat62058",
+        "Xflat62059",
+        "Xflat62060",
+        "Xflat62061",
+        "Xflat62062",
+        "Xflat62063",
+        "Xflat62064",
+        "Xflat62065",
+        "Xflat62066",
+        "Xflat62067",
+        "Xflat62068",
+        "Xflat62069",
+        "Xflat62070",
+        "Xflat62071"
+      ],
+      "pins": {
+        "A": "__parent_R_node_5031",
+        "VGND": "VGND",
+        "VNB": "VGND",
+        "VPB": "VPWR",
+        "VPWR": "VPWR",
+        "Y": "__parent_R_node_6669"
+      }
+    },
+    {
+      "cell_key": "[[[\"IntegerPLL_400MHz_PrototypeTop\",\"scale 1000 1 500000\",[\"sky130_fd_sc_hs__inv_2\",1,0,81888,0,1,41292]]],\"sky130_fd_sc_hs__inv_2\"]",
+      "master": "sky130_fd_sc_hs__inv_2",
+      "primitives": [
+        "Xflat8962",
+        "Xflat8963",
+        "Xflat8964",
+        "Xflat8965"
+      ],
+      "pins": {
+        "A": "__parent_R_node_6668",
+        "VGND": "VGND",
+        "VNB": "VGND",
+        "VPB": "VPWR",
+        "VPWR": "VPWR",
+        "Y": "__parent_R_node_6171"
+      }
+    }
+  ],
+  "connectivity_derived_from_physical_hierarchy_and_extracted_resistor_network": true,
+  "synthesis_counter_identity_assumed": false,
+  "scope": "Physical driver and load identity for constructing native loaded programming-path checks. Finite resistors are joined only for connectivity inventory; native simulation must preserve their actual resistance and incident capacitance.",
+  "native_loaded_chain_validated": false,
+  "upstream_slew_qualified": false,
+  "release_ready": false
+}
