@@ -2,7 +2,10 @@
   "input_sha256": {
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_766/inputs.json": "a41fbb61932c195010d52fa58531edf46f0fcbf394c1b234dd8a38964ca5cdcd",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_nominal_scenario_matrix_767/inputs.json": "43f401ffeeff6f3141c51cd6a44cddfc4c22fcea7c5469f5bc1f7c182e5a414e",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_stress_scenario_matrix_768/inputs.json": "bf0ebee260473dde41802f4aeb5441b3b7233e1937b35f542e9dd0611865c962"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_stress_scenario_matrix_768/inputs.json": "bf0ebee260473dde41802f4aeb5441b3b7233e1937b35f542e9dd0611865c962",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cached_callback_migration_792.json": "fde2f0b585bdde7814905823da6f7a84181656db9b6b5a8c34096a732734e112",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_nominal_matrix_789/inputs.json": "23e6fb35919c8b8e626bbc095df456ca4b50fee76217446eb81093a8ff119db3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_stress_matrix_790/inputs.json": "941e4dad36027535accc4b421ae732c8996a144f9e1cf14144eb9b261d5b8ad5"
   },
   "pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_766",
   "profile_target_MHz": 400,
@@ -12,10 +15,14 @@
   "shared_full_native_slot": true,
   "automatic_identical_retry": false,
   "followup_matrices": [
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_nominal_scenario_matrix_767",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_stress_scenario_matrix_768"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_nominal_matrix_789",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_stress_matrix_790"
   ],
   "six_selector_tests_passed": true,
   "scope": "One adaptive full-native measurement after fine165, conditionally skipped when unnecessary. Nominal target selection does not qualify the measured bracket, startup headroom, interpolation or closed-loop operation.",
-  "release_ready": false
+  "release_ready": false,
+  "superseded_waiting_followup_matrices": [
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_nominal_scenario_matrix_767",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_stress_scenario_matrix_768"
+  ]
 }
