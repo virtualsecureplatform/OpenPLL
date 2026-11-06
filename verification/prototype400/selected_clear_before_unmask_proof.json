@@ -6,7 +6,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_abstract_comparison_seed_proof_879/seed_bit_2/abstracted.json": "dd710a8bb019636b96fff1e1bdbc27cb51cc6bac177f1bf5b787776a96e4d215",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_abstract_comparison_seed_proof_879/seed_bit_2/comparisons.json": "56b40f77de1298bbba620c67fad707087fccb8c4942e41a2f47f772e02b77426",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_comparison_abstraction_algebra_881/assessment.json": "e2aa6c2b283e4ec3607abc73a6d56c5548a6ed14dd7f5bcddecbf6d251ac97f1",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/handoff_comparison_witness.v": "bf71d682fb43c220fddff2ea8ad36b12c3e453648fda62b148b41fba6e571ec2"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/handoff_comparison_witness.v": "bf71d682fb43c220fddff2ea8ad36b12c3e453648fda62b148b41fba6e571ec2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_clear_seed_recovery_review_884/assessment.json": "b1b216eab1b516668e225688c7cde2c4b57c32b3ede7e9028f7844ec5e7b5638",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_clear_seed_review_controls_885/assessment.json": "52cbf24c6392826b5901d7475fcc82acfee2df93698b072be0a9e00598ce9731",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_abstract_comparison_seed_proof_879/assessment.json": "249b826201dbf7b02a5065d30ff5394e5718ad42cb1c2355189e3f896ac9e298"
   },
   "sampled_clear_clock_precedes_each_unmask_unbounded_proven": true,
   "baseline_AIG_independently_reproduced_identically": true,
@@ -18,8 +21,8 @@
     "discrete RTL clocks"
   ],
   "seed_bit_0_and_1_constant_equalities_proven": true,
-  "first_variable_seed_bit_result": "Proven with sound command-comparison overapproximation; remaining seven variable seed bits pending.",
-  "all_seed_bits_proven": false,
+  "first_variable_seed_bit_result": "Proven; all eight variable seed bits now proved with witnessed command-comparison overapproximations.",
+  "all_seed_bits_proven": true,
   "physical_clear_arrival_qualified": false,
   "metastability_resolution_qualified": false,
   "reset_recovery_removal_qualified": false,
@@ -27,7 +30,7 @@
   "prior_first_variable_seed_bit_result": "UNDECIDED at 600 seconds; no counterexample",
   "command_comparison_abstraction": {
     "seed_bit_0_proven": true,
-    "remaining_variable_bits_pending": 7,
+    "remaining_variable_bits_pending": 0,
     "comparisons_abstracted": 4,
     "exact_fields": [
       "one seed bit",
@@ -37,6 +40,10 @@
     "other_field_equality": "independent unconstrained inputs; original traces reproduced by choosing original omitted-field equality",
     "all_eight_comparison_projections_symbolically_validated": true,
     "algebra_assertions": 16,
-    "all_seed_bits_proven": false
-  }
+    "all_seed_bits_proven": true
+  },
+  "logical_clear_seed_recovery_before_unmask_proven": true,
+  "current_seed_sampled_on_prior_clear_clock_proven": true,
+  "arbitrary_prior_DLF_state_repaired_by_clear": true,
+  "proof_review_negative_controls_rejected": 2
 }
