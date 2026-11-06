@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_native175_fine112_saved_state_725/assessment.json": "5d754d60fcb28ed32b32fba3ac9ae17b032e480fcec590563319fc571a8a12c5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine112_native_726/manifest.json": "3939109da1b2ff6a5d7ebea034d0472f7f5cbfef78d2f89bc7ce7a7e9f359d6e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine112_runtime_728/assessment.json": "2fce6b39c93d7907cc020b093d310a6f4d51e9b6c481060fe27027be55e64db8"
+  },
+  "coarse": 20,
+  "fine": 112,
+  "checkpoint_time_ns": 175.001,
+  "initialized_private_nodes": 5980,
+  "actual_saved_code_verified_from_voltage_bits": true,
+  "CPU": 23,
+  "memory_GiB": 8,
+  "native_cap_s": 10800,
+  "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine112_comparison_727/assessment.json",
+  "comparison_pending": true,
+  "scope": "Independent neighboring-code saved-voltage diagnostic, using the actual completed full-native fine112 state. Original history replay remains unchanged. Sampled reset perturbation and constrained-DC initialization are diagnostic, with oscillator response and uniform uncertainty still unqualified.",
+  "DCO_response_equivalence_qualified": false,
+  "release_ready": false
+}
