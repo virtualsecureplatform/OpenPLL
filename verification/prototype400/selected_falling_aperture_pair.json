@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "scope": "TT unprimed falling-feedback decision aperture under retained recorded excitation",
+  "fit": {
+    "path": "build/signoff400/selected_falling_aperture_pair_holdouts_354/assessment.json",
+    "sha256": "2e089684baedfb140002433e4043c65d3da053028b6f0a3fd3ab626431d1e42e"
+  },
+  "observations": [
+    {
+      "path": "build/signoff400/selected_detector_falling_aperture_case_286/response.json",
+      "sha256": "5c368a5d429a84c68dbfaa6152e4ae8d6295882520e7ba98bfa36ff18e9eb600"
+    },
+    {
+      "path": "build/signoff400/selected_detector_falling_aperture_case_317/response.json",
+      "sha256": "58e29b3183d69b8431606961c12b2498e2a76f0726492bef0dd98a8d5cb6d933"
+    }
+  ],
+  "observed_transition_bracket_ps": [
+    -116.16211385,
+    -96.16245249
+  ],
+  "decisions": [
+    "up",
+    "dn"
+  ],
+  "parameters_refitted": false,
+  "full_phase_coverage_qualified": false,
+  "release_ready": false,
+  "independent_first_stage_receiver_holdout": {
+    "path": "build/signoff400/selected_falling_aperture_DN_receiver_holdout_356/assessment.json",
+    "sha256": "0893f6e84bae21ec709f3c4466ca1bed287cea51d1ad0fca286eed416f79da65"
+  }
+}

@@ -943,3 +943,11 @@ cannot qualify this physical candidate. Local receiver-only observations keep
 their existing scope. A matching-source replay of the active calibration is
 queued without changing its native job or old receipts. See
 `verification/prototype400/selected_physical_RTL_binding.json`.
+
+The independent unprimed falling-edge companion completed normally. Its
+measured feedback offset of -96.16 ps produces DN, opposite to UP at -116.16 ps
+in the earlier sample. The frozen detector fit predicts both decisions, event
+counts and observed output edges without refitting. This brackets the sampled
+falling transition for the retained waveform and initialization; it does not
+establish a uniform aperture or uncertainty bound. See
+`verification/prototype400/selected_falling_aperture_pair.json`.
