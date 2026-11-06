@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "case": "build/signoff400/selected_SF_DN_publication_training_546",
+      "manifest": {
+        "path": "build/signoff400/selected_SF_DN_publication_training_546/manifest.json",
+        "sha256": "77e632664ca17748f50c76e420db8aea115edc33da3d2a02f81e394e8addbf7c"
+      },
+      "corner": "sf",
+      "phase_ns": -5,
+      "cpu": 27,
+      "memory_gib": 12,
+      "native_admission_pending": true,
+      "runtime_observer": "build/signoff400/selected_publication_runtime_549",
+      "runtime_capture_pending": true
+    },
+    {
+      "case": "build/signoff400/selected_FS_UP_publication_training_547",
+      "manifest": {
+        "path": "build/signoff400/selected_FS_UP_publication_training_547/manifest.json",
+        "sha256": "11f438e94ac44af842265b0a2920d12d6a633e431f826eed1ba91071c13b92bf"
+      },
+      "corner": "fs",
+      "phase_ns": 10,
+      "cpu": 26,
+      "memory_gib": 12,
+      "native_admission_pending": true,
+      "runtime_observer": "build/signoff400/selected_publication_runtime_550",
+      "runtime_capture_pending": true
+    }
+  ],
+  "SF_training_collector": "build/signoff400/selected_SF_publication_training_followup_551",
+  "SF_UP_training_case": "build/signoff400/selected_SF_UP_publication_training_533",
+  "FS_DN_training_required": true,
+  "independent_SF_FS_holdouts_required": true,
+  "upstream_waveforms_corner": "tt",
+  "full_controller_timing_qualified": false,
+  "release_ready": false
+}
