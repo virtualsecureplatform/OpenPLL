@@ -1,0 +1,21 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_clear_clock_witness_review_875.json": "aa8a953d0e0701667c5994b0fce1e8c15d3bd4df2ad894bedb900f9f2966d6bd"
+  },
+  "sampled_clear_clock_precedes_each_unmask_unbounded_proven": true,
+  "baseline_AIG_independently_reproduced_identically": true,
+  "monitor_witness_removed_counterexample_frame": 63,
+  "abstraction": "Only core.CLKDIV_RETIMED and core.DCO_CODE become unconstrained; selected startup/reset/handshake RTL retained.",
+  "assumptions": [
+    "initial external reset for two global samples",
+    "programming inputs stable between resets",
+    "discrete RTL clocks"
+  ],
+  "seed_bit_0_and_1_constant_equalities_proven": true,
+  "first_variable_seed_bit_result": "UNDECIDED at 600 seconds; no counterexample",
+  "all_seed_bits_proven": false,
+  "physical_clear_arrival_qualified": false,
+  "metastability_resolution_qualified": false,
+  "reset_recovery_removal_qualified": false,
+  "release_ready": false
+}
