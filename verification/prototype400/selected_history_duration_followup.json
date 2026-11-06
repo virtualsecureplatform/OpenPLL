@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "native_case": "build/signoff400/selected_DCO_history_control_293",
+  "native_manifest": {
+    "path": "build/signoff400/selected_DCO_history_control_293/manifest.json",
+    "sha256": "36d6389ff4b7ca66b03dfa0eb32ff763894843d8e15cd6cb3a122a4b47bd5e48"
+  },
+  "native_owner": {
+    "path": "build/signoff400/selected_DCO_history_control_293/owner.json",
+    "sha256": "ded4fe925804c6f05856e79ce2d9e4eed13333ed26d40769e75c55e381c73c3f"
+  },
+  "comparison_source": {
+    "path": "verification/signoff400/compare_selected_dco_startup_aligned_v3.py",
+    "sha256": "052604a403c67fc0db674e373733d9538d534652c5e365ace4917070c4267770"
+  },
+  "expected_end_ns": 260,
+  "observer_output": "build/signoff400/selected_history_terminal_comparison_655",
+  "sixty_ns_regression": {
+    "path": "build/signoff400/selected_duration_comparator_regression_654/assessment.json",
+    "sha256": "9ea29b30c2dca2eb89cce29dfe5b5d553e0f0d3155f019e896ab23d0a9a2f564"
+  },
+  "existing_sixty_ns_frequency_and_startup_results_reproduced_exactly": true,
+  "native_restarted": false,
+  "frequency_correlation_qualified": false,
+  "release_ready": false
+}

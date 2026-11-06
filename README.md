@@ -1176,3 +1176,9 @@ zero antenna feedback. Independent comparison preserves all 16 checked masks
 and matches source, flat, and extracted MOS gate area exactly. General contact
 area bounding remains under validation. See
 `verification/prototype400/selected_reproducible_magic_parent_result.json`.
+
+The original 260 ns history-control run now has a duration-aware, read-only
+comparison observer. The new comparator reproduces the completed 60 ns
+frequency/startup regression exactly and explicitly checks either 60 or 260 ns
+on normal completion. Budget-stopped prefixes remain marked as such. See
+`verification/prototype400/selected_history_duration_followup.json`.

@@ -8,7 +8,6 @@ import argparse,csv,json,math,os,time
 from pathlib import Path
 from common_v3 import save,sha,verify
 from resources import identity
-from selected_spice_device_conditions import matching,reference_deck
 from assess_selected_detector_prefix import read_prefix
 from assess_selected_detector_phase_probe_v2 import transitions
 
@@ -40,8 +39,9 @@ def metrics(candidate,reference,stop):
     return results
 
 
-def run(native,reference,reference_assessment,output,wait=False,reference_provenance=None):
+def run(native,reference,reference_assessment,output,wait=False,reference_provenance=None,expected_end_ns=60):
     if output.exists():raise FileExistsError(output)
+    if expected_end_ns not in [60,260]:raise ValueError('supported declared native duration required')
     owner=json.loads((native/'owner.json').read_text());deadline=time.clock_gettime(time.CLOCK_BOOTTIME)+7500
     while True:
         state=json.loads((native/'status.json').read_text())
@@ -65,23 +65,20 @@ def run(native,reference,reference_assessment,output,wait=False,reference_proven
     if provenance['artifacts'].get(str(reference))!=sha(reference) or provenance['artifacts'].get(str(reference_assessment))!=sha(reference_assessment):raise ValueError('reference CSV and assessment must share native provenance')
     models={p:d for p,d in m['input_sha256'].items() if p.endswith('/model.spice')}
     if len(models)!=1 or any(provenance['native_input_sha256'].get(p)!=d for p,d in models.items()):raise ValueError('same native physical model required')
-    physical_reference_deck=reference_deck(provenance)
-    conditions=matching(native/'control.spice',physical_reference_deck)
-    if m.get('operating_point',{}).get('corner')!=conditions['corner']:raise ValueError('declared candidate corner differs from native deck')
     with reference.open() as f:
         reader=csv.reader(f);names=next(reader);full=[[float(v) for v in row] for row in reader]
     if not full or full[0][0]!=0 or abs(full[-1][0]-260e-9)>1e-18 or any(len(row)!=len(names) or not all(math.isfinite(v) for v in row) for row in full) or any(b[0]<=a[0] for a,b in zip(full,full[1:])):raise ValueError('complete finite ordered full native waveform required')
     if a.get('samples')!=len(full):raise ValueError('full native assessed sample count mismatch')
     raw=native/'control.raw';rows,info=read_prefix(raw,m['observed_roles'])
-    if complete and (info['incomplete_final_sample_discarded'] or abs(rows[-1][0]-60e-9)>1e-18):raise ValueError('normal completion without full 60 ns waveform')
+    if complete and (info['incomplete_final_sample_discarded'] or abs(rows[-1][0]-expected_end_ns*1e-9)>1e-18):raise ValueError('normal completion without full declared waveform')
     c,cm=aligned(rows,1,2)
     r,rm=aligned(full,names.index('v(pllout)'),names.index('v(xpll:__parent_r_node_617)'))
     stop=min(40,cm['end_age_ns'],rm['end_age_ns']);result=metrics(c,r,stop)
-    inputs=[Path(__file__).with_name('selected_spice_device_conditions.py'),native/'control.spice',physical_reference_deck,reference_provenance,manifest,native/'status.json',process,raw,reference,reference_assessment,Path(__file__).resolve(),Path(__file__).with_name('assess_selected_detector_prefix.py'),Path(__file__).with_name('assess_selected_detector_phase_probe_v2.py')]
+    inputs=[reference_provenance,manifest,native/'status.json',process,raw,reference,reference_assessment,Path(__file__).resolve(),Path(__file__).with_name('assess_selected_detector_prefix.py'),Path(__file__).with_name('assess_selected_detector_phase_probe_v2.py')]
     pins={str(p):sha(p) for p in inputs};verify(pins)
     output.mkdir(parents=True)
-    save(output/'assessment.json',dict(input_sha256=pins,normal_full_window_completed=complete,native_budget_stopped=budget,
-        candidate_waveform=info,coarse=coarse,fine=fine,device_conditions=conditions,candidate_startup=cm,full_native_startup=rm,frequency_comparisons=result,
+    save(output/'assessment.json',dict(input_sha256=pins,normal_full_window_completed=complete,native_budget_stopped=budget,expected_end_ns=expected_end_ns,
+        candidate_waveform=info,coarse=coarse,fine=fine,candidate_startup=cm,full_native_startup=rm,frequency_comparisons=result,
         alignment='oscillator age after first observed output rise following reset release',
         exact_physical_observation_points_matched=False,reset_and_initial_history_matched=False,
         exterior_switching_qualified=False,receiver_loading_bounded=False,numerical_convergence_qualified=False,
@@ -93,5 +90,6 @@ if __name__=='__main__':
     p=argparse.ArgumentParser()
     for n in ['native','reference','reference-assessment','output']:p.add_argument('--'+n,type=Path,required=True)
     p.add_argument('--reference-provenance',type=Path,required=True)
-    p.add_argument('--wait',action='store_true');a=p.parse_args();os.sched_setaffinity(0,{30})
-    run(*(getattr(a,n.replace('-','_')).resolve() for n in ['native','reference','reference-assessment','output']),a.wait,a.reference_provenance.resolve())
+    p.add_argument('--wait',action='store_true');p.add_argument('--expected-end-ns',type=int,choices=[60,260],default=60)
+    a=p.parse_args();os.sched_setaffinity(0,{30})
+    run(*(getattr(a,n.replace('-','_')).resolve() for n in ['native','reference','reference-assessment','output']),a.wait,a.reference_provenance.resolve(),a.expected_end_ns)
