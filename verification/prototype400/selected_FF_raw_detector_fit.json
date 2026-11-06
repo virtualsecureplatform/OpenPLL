@@ -9,7 +9,11 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/assessment.json": "08160012d3094f2efca76b3fcda66e97d0ffaad36f02965b31e4ca2ec9a38280",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/status.json": "c7109a4e960bb7c71490f61dcf362c9c46a4a3281127477c2c459f64828a33ed",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/model/assessment.json": "a0a74b492d975bbd24b85584a9e20bcc482838161d8299fa2499344b850530d5",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/model/parameters.json": "11349c5f44d740eb2379e029525e0074a1ec0b3109f71189a7df0fda66ef1ec6"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/model/parameters.json": "11349c5f44d740eb2379e029525e0074a1ec0b3109f71189a7df0fda66ef1ec6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_holdout_869/manifest.json": "fc095bdab9c685c5d21c56afd10d894566051340aafdb6e327fbf9213de87e8b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_holdout_869/native/manifest.json": "28811266d6312fff9164594773323cf536c74298cb64352a51ae633edee751ac",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_replay_870/inputs.json": "f8aba60e57047d65180f428320a4ec591661fe34529e1028fbc8593dcc05d31b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_runtime_871.json": "dace0c39907195ddaa58b0acc9e09919b1ac7a757bc5f67fcd40887cd29e0ebc"
   },
   "native_probe": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_nearzero_844",
   "fit_followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846",
@@ -48,5 +52,19 @@
   "maximum_replay_edge_error_ps": 0.9877835875755636,
   "independent_holdout_cases_passed": 2,
   "full_phase_coverage_qualified": false,
-  "uniform_uncertainty_bound_qualified": false
+  "uniform_uncertainty_bound_qualified": false,
+  "midpoint_independent_holdout": {
+    "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_holdout_869",
+    "replay": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_replay_870",
+    "recorded_phase_ns": 0.05,
+    "requested_coordinate_is_not_measured_physical_phase": true,
+    "excluded_from_training": true,
+    "training_cases_unchanged": 4,
+    "CPU": 20,
+    "memory_GiB": 12,
+    "native_cap_s": 10800,
+    "pending": true,
+    "expected_decision_not_assumed": true,
+    "scope": "One distinct held-out near-transition point under recorded TT excitation; no uniform uncertainty qualification."
+  }
 }
