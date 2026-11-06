@@ -5,7 +5,11 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_programming_history_757/assessment.json": "98936dd157fe378cdec7eb42321869be091940d945771cd62188cfe895e7bf42",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_history_preparation_758/manifest.json": "462b1f5811ad36e82b47402e5ac7ee79e5d83351dc45b1729650dff74b19cf96",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine133_native_759/manifest.json": "c005ec5dfc8f1e0b0cf235d56fcda006d09baba47ba4a691c4d45cbe667492b6",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine133_runtime_760.json": "cd3c7f1ffb8663845b4de3884d208100a9211f6ce4ee4c800bc27a8ae8ed5ff6"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine133_runtime_760.json": "cd3c7f1ffb8663845b4de3884d208100a9211f6ce4ee4c800bc27a8ae8ed5ff6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine133_comparison_761/assessment.json": "4bd83e248c5705f5a6d2beb4a9a6838d6197ad2bf102341e39f3f6f18c361ee5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine133_native_759/assessment.json": "6913041e93166729ea314625e521eb2cbbcf8d18f898b449d24b6d182fea1309",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine133_native_759/native.log": "1733d0a0ad343e7abbdf98f127ad9b8e1019b3b2ce32acf6accf4e86e59dabf7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine133_native_759/status.json": "a4670b80b30848b0d125783bf4559f1c9b27951596b9235870350aa8b2f70cc3"
   },
   "coarse": 20,
   "fine": 133,
@@ -18,7 +22,18 @@
   "memory_GiB": 8,
   "native_cap_s": 10800,
   "terminal_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine133_comparison_761/assessment.json",
-  "response_pending": true,
+  "response_pending": false,
   "scope": "Independent tuning-curve holdout initialized from the actual full-native fine133 state and matching recorded programming/reset history. Physical cut and TT quiet-boundary convention match the earlier checkpoint controls. No source retargeting, extrapolated 400 MHz preset or model-family qualification.",
-  "release_ready": false
+  "release_ready": false,
+  "normal_full_window_completed": true,
+  "native_reported_elapsed_s": 9361.23,
+  "common_oscillator_age_window_ns": [
+    10,
+    40
+  ],
+  "common_frequency_error_ppm": -1.1495766726321577,
+  "maximum_early_late_frequency_error_ppm": 1.941411427841544,
+  "first_oscillator_rise_difference_ps": 2.996261649570897,
+  "uniform_uncertainty_bound_qualified": false,
+  "nonlinear_restart_qualified": false
 }
