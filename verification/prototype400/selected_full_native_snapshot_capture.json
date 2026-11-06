@@ -8,8 +8,14 @@
   "captured_variables": 25735,
   "validation_tests_passed": 6,
   "waveform_export_directory": "build/signoff400/selected_full_native_driver_waveforms_959",
-  "waveform_export_state_at_publication": "running",
+  "waveform_export_state_at_publication": "native_clock_driver_waveforms_captured",
   "non_TT_sender_correlation_qualified": false,
   "physical_models_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "waveform_receipt_sha256": "bfa04b9f7bdc1b11dc4a2ace10448fe9c8a70e0f4f6dcf8b14dfbb1da5be3c4d",
+  "saved_native_samples": 45408,
+  "driver_traces": 9,
+  "matching_sender_prepare_directory": "build/signoff400/selected_matching_sender_prepare_960",
+  "matching_sender_prepare_state": "prepared_without_native_execution",
+  "matching_sender_validation_tests_passed": 6
 }
