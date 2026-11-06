@@ -1130,3 +1130,11 @@ timing. See `verification/prototype400/selected_five_corner_publication_models.j
 The experimental selected-parent antenna run and its exact controlled-engine
 inputs are retained in
 `verification/prototype400/selected_experimental_parent_antenna_queue.json`.
+
+The controlled experimental antenna engine completed on the selected parent
+with zero feedback and 61,616 extracted MOS devices. Independent source/flat
+comparison preserves all 16 checked masks after controlled M5 fill normalization;
+source, flat, and extracted MOS gate area agree exactly at 11710.4958 um².
+Exact contact cut accounting and diode-protection validation remain open, so
+this does not yet qualify the parent antenna gate. See
+`verification/prototype400/selected_experimental_parent_antenna_result.json`.

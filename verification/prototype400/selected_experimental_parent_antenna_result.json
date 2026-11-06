@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "native": {
+    "path": "build/signoff400/selected_experimental_parent_antenna_627/assessment.json",
+    "sha256": "644e5835ba9c147d546339d11f61459294a3d7b6426b9cd93290a0e4824d669a"
+  },
+  "geometry": {
+    "path": "build/signoff400/selected_experimental_parent_geometry_631/assessment.json",
+    "sha256": "94bbd4372a215d26165ab72e74850d0f44bbe4affd559d7f089b3a3cf6550d9e"
+  },
+  "engine_controls": {
+    "path": "build/signoff400/selected_magic_antenna_pinned_controls_626/assessment.json",
+    "sha256": "baf1dce631b8d48d8e531b4c36808813a985ac094714cbfa3a9a92c4581a3bb5"
+  },
+  "native_antenna_feedback_entries": 0,
+  "MOS_primitives": 61616,
+  "gate_area_um2": "58552479/5000",
+  "all_16_checked_masks_preserved_after_controlled_M5_alias_normalization": true,
+  "source_flat_and_extracted_MOS_gate_areas_match": true,
+  "all_13_engine_negative_controls_detected": true,
+  "all_13_matched_normal_controls_clean": true,
+  "exact_contact_area_qualified": false,
+  "diode_protection_qualified": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}
