@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "SS_independent": {
+    "case": "build/signoff400/selected_SS_independent_publication_holdout_532",
+    "assessment": {
+      "path": "build/signoff400/selected_SS_independent_publication_followup_534/assessment.json",
+      "sha256": "46f2e035760da742a52e9744ab9fbcc423fe2016caa67eaa8670c66d23f83579"
+    },
+    "nominal_counts_and_cycles_match": true,
+    "provisional_100ps_late_window_counts_and_cycles_match": true,
+    "refit_to_holdout": false
+  },
+  "SF_training": {
+    "assessment": {
+      "path": "build/signoff400/selected_SF_publication_training_followup_551/model/assessment.json",
+      "sha256": "b9c427a9b56dccf4c8c0ded9d3173dc8f067c963f92b6a04d800acdc5262fc87"
+    },
+    "parameters": {
+      "path": "build/signoff400/selected_SF_publication_training_followup_551/model/parameters.json",
+      "sha256": "17ac71b0fd219b1173cbd711e0202c1b9e041534a745234b43bdfecce873c90b"
+    },
+    "missing_directions": [],
+    "samples_per_direction": 1,
+    "observed_interval_is_not_uncertainty_bound": true
+  },
+  "uniform_aperture_bound_qualified": false,
+  "complete_controller_timing_qualified": false,
+  "exterior_excitation": "recorded TT upstream; requested corner retained devices and local initialization",
+  "release_ready": false
+}

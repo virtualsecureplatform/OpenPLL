@@ -1076,3 +1076,11 @@ now requests a native coarse9/fine229 probe; its frequency is not assigned from
 interpolation. These retained-device measurements still use TT-derived held
 exterior biases and do not qualify full-corner calibration. See
 `verification/prototype400/selected_FS_refined_result_and_FF_target.json`.
+
+The independent SS phase-zero holdout matches the frozen publication model
+for native first-stage sampling cycles and counts, with both nominal and
+provisional 100 ps late-window replay. SF training now measures all four
+publication directions; each has one observation, which does not establish
+an uncertainty bound. Separate SF repeated-UP and repeated-DN holdouts are
+running. See
+`verification/prototype400/selected_SS_independent_result_SF_complete_training.json`.
