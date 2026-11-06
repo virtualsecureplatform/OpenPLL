@@ -1261,3 +1261,10 @@ passing the conditional nominal-frequency check. The selector retains this
 measured point. TT-derived held exterior biases remain explicit; this is not
 full-corner calibration. See
 `verification/prototype400/selected_FF_measured_target_result.json`.
+
+SF and FS repeated-DN holdouts complete and pass both replay policies.
+Together with repeated-UP results, each corner now has independent local
+first-stage cycle/count validation for all four publication directions, without
+refitting. Near-edge uncertainty, second-stage corner coverage, and complete
+controller timing remain open. See
+`verification/prototype400/selected_SF_FS_complete_local_receiver_validation.json`.

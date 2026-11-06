@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "corners": {
+    "sf": {
+      "model": {
+        "path": "build/signoff400/selected_SF_publication_training_followup_551/model/parameters.json",
+        "sha256": "17ac71b0fd219b1173cbd711e0202c1b9e041534a745234b43bdfecce873c90b"
+      },
+      "records": [
+        {
+          "assessment": {
+            "path": "build/signoff400/selected_SF_UP_independent_replay_603/assessment.json",
+            "sha256": "b1e3fe8b4aba665acb21c62ab0909150c715c9ad15d19f7e3484188a6fe6b78a"
+          },
+          "nominal": {
+            "path": "build/signoff400/selected_SF_UP_independent_replay_603/nominal/assessment.json",
+            "sha256": "2221b98de78f987113cf90c8d8aec192f65649d9276e1fa6caee3701188277d4"
+          },
+          "active_transitions": {
+            "up": 2,
+            "dn": 0
+          },
+          "publication_residuals": [
+            {
+              "role": "up",
+              "edge": "rise",
+              "prediction_minus_native_ps": -0.19541406969736386
+            },
+            {
+              "role": "up",
+              "edge": "fall",
+              "prediction_minus_native_ps": 0.004693216830276015
+            }
+          ]
+        },
+        {
+          "assessment": {
+            "path": "build/signoff400/selected_SF_DN_independent_replay_604/assessment.json",
+            "sha256": "404d145cb72d1769ef998be359b6badd69de9aba57c7849029bb3458c8080b68"
+          },
+          "nominal": {
+            "path": "build/signoff400/selected_SF_DN_independent_replay_604/nominal/assessment.json",
+            "sha256": "fadcf5a2cc7badb1f95b02009df02f698dfb7f7612eb95ee4b47fca8fb2bf8f0"
+          },
+          "active_transitions": {
+            "up": 0,
+            "dn": 2
+          },
+          "publication_residuals": [
+            {
+              "role": "dn",
+              "edge": "rise",
+              "prediction_minus_native_ps": -0.054337624682432306
+            },
+            {
+              "role": "dn",
+              "edge": "fall",
+              "prediction_minus_native_ps": -0.05451714789472817
+            }
+          ]
+        }
+      ],
+      "all_four_publication_directions_have_independent_local_holdouts": true
+    },
+    "fs": {
+      "model": {
+        "path": "build/signoff400/selected_FS_publication_training_followup_564/model/parameters.json",
+        "sha256": "06d1da4bad18940cb12d95170b520b4c22f91b6901a3aefb78989082b131faa8"
+      },
+      "records": [
+        {
+          "assessment": {
+            "path": "build/signoff400/selected_FS_UP_independent_replay_619/assessment.json",
+            "sha256": "0660d139533556fb2ea9176886b935a0bec16ea6803f17169ceb9abd2f832315"
+          },
+          "nominal": {
+            "path": "build/signoff400/selected_FS_UP_independent_replay_619/nominal/assessment.json",
+            "sha256": "aebdd5905f5e969dd1c53b9b4f068cf913d746ad06bb0411842b6ca8b8889e3b"
+          },
+          "active_transitions": {
+            "up": 2,
+            "dn": 0
+          },
+          "publication_residuals": [
+            {
+              "role": "up",
+              "edge": "rise",
+              "prediction_minus_native_ps": -0.01585078084431757
+            },
+            {
+              "role": "up",
+              "edge": "fall",
+              "prediction_minus_native_ps": 0.009211035603584605
+            }
+          ]
+        },
+        {
+          "assessment": {
+            "path": "build/signoff400/selected_FS_DN_independent_replay_620/assessment.json",
+            "sha256": "6d24f0d6b84b33d1161bf8867264c15ac165e7a46dc0cf613ee8e0fade80789b"
+          },
+          "nominal": {
+            "path": "build/signoff400/selected_FS_DN_independent_replay_620/nominal/assessment.json",
+            "sha256": "8828f181ca2f2f3dc5cbdd74f53192efe146aad07368011d4df211760af8fe6a"
+          },
+          "active_transitions": {
+            "up": 0,
+            "dn": 2
+          },
+          "publication_residuals": [
+            {
+              "role": "dn",
+              "edge": "rise",
+              "prediction_minus_native_ps": -0.1570550416012395
+            },
+            {
+              "role": "dn",
+              "edge": "fall",
+              "prediction_minus_native_ps": 0.01706480161089985
+            }
+          ]
+        }
+      ],
+      "all_four_publication_directions_have_independent_local_holdouts": true
+    }
+  },
+  "refit_to_holdout": false,
+  "scope": "retained publication and first-stage receiver under recorded TT upstream excitation",
+  "uniform_uncertainty_bound_qualified": false,
+  "second_receive_stage_qualified": false,
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}
