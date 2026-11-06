@@ -996,3 +996,13 @@ open. Mixed TT/FF training is rejected without writing parameters. A separate
 phase-zero FF holdout is running and its comparison is queued. These remain
 local receiver diagnostics, without uniform timing uncertainty qualification.
 See `verification/prototype400/selected_publication_corner_measurements.json`.
+
+An isolated REFCLK sensitivity control now replaces only the two resistor-
+connected reference boundary DC values with recorded full-native voltages.
+The 200–260 ns source window is cropped and translated to 0–60 ns, without
+time warping or extrapolation; simplification stays within 1 uV of the recorded
+piecewise-linear curves. Preflight confirms identical device/passive bytes,
+source inventory, programming, solver and observation protocol. The native
+control and comparison follower are running. Their effect is conditional on
+the tested histories, not a universal exterior or frequency/phase uncertainty
+bound. See `verification/prototype400/selected_reference_forcing_control.json`.

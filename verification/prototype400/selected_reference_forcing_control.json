@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "scope": "conditional TT fine111 REFCLK boundary-voltage forcing sensitivity",
+  "capture": {
+    "path": "build/signoff400/selected_REFCLK_boundary_waveforms_376/assessment.json",
+    "sha256": "004d6886c8f78749e7146966c2b8507305f085a2df8d9bb2193740fad7adf19e"
+  },
+  "preflight": {
+    "path": "build/signoff400/selected_reference_forcing_preflight_379.json",
+    "sha256": "74da85f4b1fa657a31693f51e56ce7fcb33dd66f583a1d54da797c49d930dc37"
+  },
+  "live_runtime": {
+    "path": "build/signoff400/selected_reference_forcing_live_runtime_381.json",
+    "sha256": "06534b5bc1378aaa233acf3307e92ffa710cd59c104732a3da0e58fa8bfb7708"
+  },
+  "baseline": "build/signoff400/selected_DCO_coherent_clock_native_362",
+  "native": "build/signoff400/selected_reference_forcing_native_378",
+  "status_at_recording": "native_running",
+  "comparison_followup": "build/signoff400/selected_reference_forcing_comparison_followup_380",
+  "physical_devices_and_passives_identical": true,
+  "changed_source_values": 2,
+  "source_window_ns": [
+    200,
+    260
+  ],
+  "simulation_duration_ns": 60,
+  "source_error_bound_relative_recorded_PWL_V": 1e-06,
+  "extrapolation_applied": false,
+  "time_warp_applied": false,
+  "universal_exterior_model_qualified": false,
+  "uniform_frequency_or_phase_uncertainty_bound_qualified": false,
+  "release_ready": false
+}
