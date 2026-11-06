@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_load_reset_bias_inventory_437.json",
+    "sha256": "d0008b58d2f22d381398d223cdf6889c9bd5ea5621f93c873301064a6914ba24"
+  },
+  "nodeset_attempt_failure": {
+    "path": "build/signoff400/selected_DCO_load_nodeset_native_433/status.json",
+    "sha256": "c41ed7de02dfa557596e8d1b40a0540c66f52b77814e052ced5065218a5033aa"
+  },
+  "nodeset_attempt_native_log": {
+    "path": "build/signoff400/selected_DCO_load_nodeset_native_433/native.log",
+    "sha256": "e134738a85539b6fb0fad93fc43770a02757ccdcab3be9e2c9d16d2e2362ba85"
+  },
+  "stateful_load_cells": 49,
+  "reset_or_set_pins_internal_unknowns": 49,
+  "direct_held_reset_or_set_cuts": 0,
+  "scope": "structural diagnosis does not establish the cause of DC failure",
+  "transient_result_available": false,
+  "release_ready": false
+}

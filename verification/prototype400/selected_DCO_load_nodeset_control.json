@@ -26,7 +26,11 @@
   "CPU": 16,
   "memory_GiB": 16,
   "native_cap_s": 10800,
-  "status_at_recording": "native_running",
+  "status_at_recording": "DC_operating_point_failed",
   "state_selection_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "failure": {
+    "path": "build/signoff400/selected_DCO_load_nodeset_native_433/status.json",
+    "sha256": "c41ed7de02dfa557596e8d1b40a0540c66f52b77814e052ced5065218a5033aa"
+  }
 }
