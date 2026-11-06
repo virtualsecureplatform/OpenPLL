@@ -29,7 +29,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_antenna_repair_923/assessment.json": "e11344f9b41e46fe463fe39ede560c79c807ad71e9a9ab5339e1651d01fae46c",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_antenna_repair_proof_924/assessment.json": "fbc5b9b73cf3989c1b2e7e97c3506368025b3205c3d9a2066508a2953b8081e0",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_repaired_layout_checks_925/assessment.json": "80b1d5312f85f5efe18d1e10e4f3d2703f1d6b4cb32675c618c00be6319bf40e",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_repaired_capture_926/assessment.json": "ff1df6fb29996b52bc8161cb5275c5e2083e3a5a2c0610da8f64fcc5a5825074"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_repaired_capture_926/assessment.json": "ff1df6fb29996b52bc8161cb5275c5e2083e3a5a2c0610da8f64fcc5a5825074",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_preparation_927/assessment.json": "26c915621045402f9ba308e07b8eece32efc3c746927183ce115a2c1e3ba11d9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_preparation_927/frame/assessment.json": "0c80d7c65263220acc6139d6b8ef8a339e6afc658c90cbd7ff1fb81553b657ff",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_power_928/assessment.json": "f5bf817970505cc3d2506037070edccded1969172757e5470b5a16bb14394b36"
   },
   "raw_enable_REFCLK_destination_registers": 76,
   "raw_enable_fine_rising_destination_registers": 275,
@@ -144,6 +147,22 @@
       "assembled_parent_checked": false,
       "physical_CDC_qualified": false,
       "physical_timing_qualified": false
+    },
+    "parent_assembly": {
+      "preparation": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_preparation_927",
+      "exact_digital_GDS_routing_and_cut_obstructions_covered": true,
+      "macro_pin_connections_verified": 686,
+      "three_macro_frame_pass": true,
+      "power_directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_power_928",
+      "main_rail_database_connectivity_pass": true,
+      "macro_GDS_metal5_port_and_clearance_preflight_pass": true,
+      "existing_macro_geometry_unchanged": true,
+      "route_directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_parent_route_929",
+      "routing_pending": true,
+      "assembled_GDS_DRC_LVS_passed": false,
+      "power_integrity_qualified": false,
+      "old_native_model_evidence_transferred": false,
+      "candidate_selected": false
     }
   }
 }
