@@ -9,7 +9,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_first_stage_control_906/assessment.json": "43e40d26545915a8277bf473117263bb0ec48c7d8bf08a8fe81b8e1cb58f32a6",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_mapping_909/assessment.json": "249321780787ac0e7b58cbc5ba075582eb4005f7f10dc50a149a8e9eef555e9e",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_placement_913/assessment.json": "b24828f97f2ebedea8a20bc894c4130c5b09a75f9ddeed3799f68deb8af1bfdd",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/place_async_enable_candidate_v2.py": "b2c8205bf73cdab75a2e1adc507bdf5342fa35781446b5400b3d9a33a0cd1fd8"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/place_async_enable_candidate_v2.py": "b2c8205bf73cdab75a2e1adc507bdf5342fa35781446b5400b3d9a33a0cd1fd8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_proof_915/inputs.json": "fb4aa871d59f9c18f2352aa7df74a6f5eb24841df79ea5e95f716d80dbfbd963",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_proof_915/owner.json": "58ab5c6a66cf3dd4d20c1abbff6607a0015c9d8286711382d8f3ff2ba757408f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_async_enable_route_equivalence.py": "9b14dbbe6642efec4af895356807ec2f3336a496c90cfe88221ebe2a77f1f448"
   },
   "raw_enable_REFCLK_destination_registers": 76,
   "raw_enable_fine_rising_destination_registers": 275,
@@ -53,6 +56,10 @@
     "external_async_enable_excluded_only_for_capacity_screen": true,
     "capture_interstage_REFCLK_path_kept_timed": true,
     "routing_directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_914",
-    "routing_pending": true
+    "routing_pending": true,
+    "routed_equivalence_followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/async_enable_candidate_route_proof_915",
+    "routed_equivalence_pending": true,
+    "routed_proof_requires_same_candidate_sources": true,
+    "routed_proof_requires_reset_corruption_rejection": true
   }
 }
