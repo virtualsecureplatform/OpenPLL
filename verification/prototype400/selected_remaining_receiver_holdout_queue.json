@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "case": "build/signoff400/selected_SS_UP_independent_holdout_580",
+      "manifest": {
+        "path": "build/signoff400/selected_SS_UP_independent_holdout_580/manifest.json",
+        "sha256": "e56a395f0ee00d2ffd38c782713ffe60c05a670fc03898de0aa5d323c2c82891"
+      },
+      "frozen_model_producer": "build/signoff400/selected_SS_publication_training_followup_459",
+      "replay_inputs": {
+        "path": "build/signoff400/selected_SS_UP_independent_replay_582/inputs.json",
+        "sha256": "c5f81ef859fb26b0bfdca33b16c83adfffccd7676685b57d7d354ab979fa0f6c"
+      },
+      "runtime": {
+        "path": "build/signoff400/selected_SS_UP_independent_runtime_584/assessment.json",
+        "sha256": "11a15cdd4f3fae22c10e4951b4a8cfcdb14b38f4ad714a3cb2adab49f329e1d0"
+      }
+    },
+    {
+      "case": "build/signoff400/selected_SS_DN_independent_holdout_581",
+      "manifest": {
+        "path": "build/signoff400/selected_SS_DN_independent_holdout_581/manifest.json",
+        "sha256": "86e8efea4d7aa3ecfffa06cb0b881b821022e4610a97f711a178dbf15da28a3e"
+      },
+      "frozen_model_producer": "build/signoff400/selected_SS_publication_training_followup_459",
+      "replay_inputs": {
+        "path": "build/signoff400/selected_SS_DN_independent_replay_583/inputs.json",
+        "sha256": "3ab87a6d3425a55afda88835ece8e90ad9351537fb4143f95afabb783b014da8"
+      },
+      "runtime": {
+        "path": "build/signoff400/selected_SS_DN_independent_runtime_585/assessment.json",
+        "sha256": "661e18797827a6638bae67e86f48a4c3e4ea8b5ebed0f55d56af9cca09664d92"
+      }
+    },
+    {
+      "case": "build/signoff400/selected_SF_independent_publication_holdout_587",
+      "manifest": {
+        "path": "build/signoff400/selected_SF_independent_publication_holdout_587/manifest.json",
+        "sha256": "16fc915906bfe309d3a0aa52e91dc7a89ed19bfc25b08ea5a703f0e1c2e3dec3"
+      },
+      "frozen_model_producer": "build/signoff400/selected_SF_publication_training_followup_551",
+      "replay_inputs": {
+        "path": "build/signoff400/selected_SF_independent_replay_588/inputs.json",
+        "sha256": "e8d20371f6cb1b1b8714a356a18048a18ae24ed7586412ba3404d0eb20d3ec5e"
+      },
+      "runtime": {
+        "path": "build/signoff400/selected_SF_independent_runtime_589/assessment.json",
+        "sha256": "38146b294db522ea9944ba8ad05b9b684375818ef985cd8734aeb62a0d62532d"
+      }
+    },
+    {
+      "case": "build/signoff400/selected_FS_independent_publication_holdout_590",
+      "manifest": {
+        "path": "build/signoff400/selected_FS_independent_publication_holdout_590/manifest.json",
+        "sha256": "38f8a3e6d8ad35f1133112d562145cfac19c414ab8bfcd62fdb5963d01bf0de2"
+      },
+      "frozen_model_producer": "build/signoff400/selected_FS_publication_training_followup_564",
+      "replay_inputs": {
+        "path": "build/signoff400/selected_FS_independent_replay_591/inputs.json",
+        "sha256": "5b2092f4cff94c40d6acdd855b62f083d9871698d8b34e2c688be539f842e9c3"
+      },
+      "runtime": {
+        "path": "build/signoff400/selected_FS_independent_runtime_592/assessment.json",
+        "sha256": "44431c8478bc68dca7a3254e9715b79727c8766945b31271de69238b7f2163da"
+      }
+    }
+  ],
+  "refit_to_holdout": false,
+  "provisional_late_window_ps": 100,
+  "uniform_aperture_bound_qualified": false,
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}

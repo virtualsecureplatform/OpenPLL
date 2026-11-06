@@ -47,5 +47,9 @@
     "diode_protection_qualified": false,
     "parent_antenna_qualified": false
   },
-  "release_ready": false
+  "release_ready": false,
+  "source_identity_reproduction": {
+    "path": "build/signoff400/selected_magic_source_reproducibility_600.json",
+    "sha256": "601df9b353945c7b488caf76969cc07c3c4125a2b6a7f9c0fa6375c50248fae6"
+  }
 }
