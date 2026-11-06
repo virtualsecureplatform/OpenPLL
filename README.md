@@ -1146,3 +1146,10 @@ diode to the gate net removes feedback. Native extraction verifies that
 connection. The selected parent is being replayed with this exact executable;
 whole-parent qualification remains open. See
 `verification/prototype400/selected_magic_pitch_and_diode_controls.json`.
+
+The SF coarse26/fine118 probe completed at 400.673698 MHz (+1684.25 ppm),
+missing the conditional nominal-frequency limit. The measured bracket selects
+fine115 for a new native probe, with no interpolated frequency assigned.
+The refinement retains the same physical cards, solver, and TT-derived held
+exterior biases; its input audit passes. See
+`verification/prototype400/selected_SF_measured_target_refinement.json`.

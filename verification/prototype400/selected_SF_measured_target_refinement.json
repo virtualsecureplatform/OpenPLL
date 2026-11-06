@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "measured": {
+    "coarse": 26,
+    "fine": 118,
+    "frequency_mhz": 400.6736982094215,
+    "nominal_error_ppm": 1684.245523553729,
+    "nominal_frequency_check_pass": false,
+    "native": {
+      "path": "build/signoff400/selected_DCO_SF_target_check_576/assessment.json",
+      "sha256": "f212a1d737c2d14adbf3865c0232a4c14d4bae224b7b7ae102e2291396589ece"
+    }
+  },
+  "selection": {
+    "path": "build/signoff400/selected_SF_refined_target_selection_634.json",
+    "sha256": "d1f0431282401167dbe04bdfaf6eef8591f49456d6670d82f97e9d87a4144454"
+  },
+  "refinement": {
+    "coarse": 26,
+    "fine": 115,
+    "case": "build/signoff400/selected_DCO_SF_refined_target_635",
+    "manifest": {
+      "path": "build/signoff400/selected_DCO_SF_refined_target_635/manifest.json",
+      "sha256": "b667f19c219b8c267199de4479fc47d1089a94f184ab0ce710b7a60c48c36f21"
+    },
+    "input_audit": {
+      "path": "build/signoff400/selected_SF_refined_input_audit_637.json",
+      "sha256": "dfcbbe7c6580087a6c94252b9e8ea563ad36a6c38166875cc19472a868db692b"
+    },
+    "frequency_assigned": false
+  },
+  "full_corner_exterior_bias_qualified": false,
+  "release_ready": false
+}
