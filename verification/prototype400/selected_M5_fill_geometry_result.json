@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "prior_control_harness_failure": {
+    "path": "build/signoff400/selected_M5_fill_alias_control_553/status.json",
+    "sha256": "f087612d4b7ee745104418b0e2a0293c9d11f645d5fe673238aa527cbb91443f"
+  },
+  "corrected_control": {
+    "path": "build/signoff400/selected_M5_fill_alias_control_555/assessment.json",
+    "sha256": "c4f2315b1663e941c77a133be8d13f251a93857cc2f616d3ebf590f7d0be6dcb"
+  },
+  "corrected_control_geometry": {
+    "path": "build/signoff400/selected_M5_fill_alias_control_555/geometry.json",
+    "sha256": "57e4258092d09342bee417b3d3d5fc1130000f1e8e758bb8005c278c77acb65a"
+  },
+  "parent_geometry_recheck": {
+    "path": "build/signoff400/selected_parent_fill_geometry_recheck_556/assessment.json",
+    "sha256": "b67c0db750e7f0ed32fd4cb9bf72cd917115c6de76f86df93494f10919d40556"
+  },
+  "parent_geometry_records": {
+    "path": "build/signoff400/selected_parent_fill_geometry_recheck_556/geometry.json",
+    "sha256": "18924a0f60d3003d8e16cfcdb190ddcbd11a7ff6512153a5471753f1a736e56b"
+  },
+  "python_executable": "/nix/store/ps0r3qpgjh1lqyqacra33rvxsjgkd874-python3-3.13.9-env/bin/python3",
+  "pya_core": "/nix/store/ps0r3qpgjh1lqyqacra33rvxsjgkd874-python3-3.13.9-env/lib/python3.13/site-packages/klayout/pyacore.cpython-313-x86_64-linux-gnu.so",
+  "mask_regions_checked": 16,
+  "all_mask_unions_preserved": true,
+  "MOS_gate_areas_preserved": true,
+  "source_GDS_modified": false,
+  "antenna_electrical_negative_controls_complete": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}
