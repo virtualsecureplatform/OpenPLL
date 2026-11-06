@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "comparison": {
+    "path": "build/signoff400/selected_driven_load_terminal_comparison_607/assessment.json",
+    "sha256": "1a2f5ea9752aa6ca90a8022cc04f6eaff6463e0f928b49bba906891262be3e5f"
+  },
+  "native_status": {
+    "path": "build/signoff400/selected_DCO_driven_load_native_528/status.json",
+    "sha256": "7e0131fed99b728e9906b94f95356962350675bf0af64dd19b8a71eeba7505f3"
+  },
+  "normal_full_window_completed": false,
+  "native_budget_stopped": true,
+  "frequency_comparisons": {
+    "common": {
+      "window_after_first_rise_ns": [
+        10,
+        40
+      ],
+      "candidate": {
+        "rising_edges": 12,
+        "frequency_mhz": 392.65695512870417,
+        "minimum_period_ns": 2.5463069792695094,
+        "maximum_period_ns": 2.54740499209408
+      },
+      "full_native": {
+        "rising_edges": 12,
+        "frequency_mhz": 392.2233074552463,
+        "minimum_period_ns": 2.5491226980751946,
+        "maximum_period_ns": 2.5502163293856484
+      },
+      "difference_ppm": 1105.6142386627332
+    },
+    "early": {
+      "window_after_first_rise_ns": [
+        10,
+        25.0
+      ],
+      "candidate": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.60841382211885,
+        "minimum_period_ns": 2.5467722561596027,
+        "maximum_period_ns": 2.54740499209408
+      },
+      "full_native": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.1738939585622,
+        "minimum_period_ns": 2.549602625344079,
+        "maximum_period_ns": 2.5502163293856484
+      },
+      "difference_ppm": 1107.9775330546936
+    },
+    "late": {
+      "window_after_first_rise_ns": [
+        25.0,
+        40
+      ],
+      "candidate": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.7039306216949,
+        "minimum_period_ns": 2.5463069792695094,
+        "maximum_period_ns": 2.546603831368195
+      },
+      "full_native": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.27095708937003,
+        "minimum_period_ns": 2.5491226980751946,
+        "maximum_period_ns": 2.549417548736784
+      },
+      "difference_ppm": 1103.761378455026
+    }
+  },
+  "diagnosis": "Repairing missing input drives enables DC convergence but does not close the reduced/full frequency gap.",
+  "frequency_correlation_qualified": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}

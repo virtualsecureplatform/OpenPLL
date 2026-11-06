@@ -1090,3 +1090,11 @@ MOS geometry/connectivity. The 14-by-14 MCON fixture is counted as only 2-by-2
 cuts. Contact areas are nonzero; a database/CIF unit mismatch is now under
 controlled test. The release tool and PDK rules remain unchanged. See
 `verification/prototype400/selected_magic_contact_area_diagnostic.json`.
+
+The repaired-load fine111 control reached its original wall-time limit. Its
+finite saved prefix covers the full matched oscillator-age window 10–40 ns:
+392.656955 MHz versus 392.223307 MHz full native (+1105.61 ppm). Repairing all
+missing input drives enables DC convergence but does not close the frequency
+gap. This is a budget-stopped prefix result, not normal 60 ns completion or
+model qualification. See
+`verification/prototype400/selected_driven_load_budget_prefix_result.json`.
