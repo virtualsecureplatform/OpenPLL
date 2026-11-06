@@ -2,7 +2,11 @@
   "input_sha256": {
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/assessment.json": "01288a6976bcbc3db50c85052c7b67a6445ac51c88ea866d54d79f6a97ac0f1d",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_stress_registry_945/assessment.json": "ad4a76bc2f56147ba1cf6d59eb2315530d4ecd01f289e9078068e7cc66fe63f9",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_frequency_stress_delivery_955.json": "76bc1b2bd7f6073d4d054ba319d8b3c5637807dd5756daafff509ef337bda702"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_frequency_stress_delivery_955.json": "76bc1b2bd7f6073d4d054ba319d8b3c5637807dd5756daafff509ef337bda702",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_frequency_stress_nominal_956/inputs.json": "c1ebf0e494e5e7f6125825608eacbb58982e1b406c24dd3855a811d3b1268c3e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_frequency_stress_nominal_956/owner.json": "1223fadf8b0c29918cffa198c1612829a410a3e28edeedb15855f80cd92288c8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_frequency_stress_receiver_957/inputs.json": "48e080e1e2ee3c5ec435edac551a6186060f83a84d2aa50ee5740f42923e6f45",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_frequency_stress_receiver_957/owner.json": "2582f1530cf04f3ce4cb0bfdf8e0c18e61a8d672af119a04e1c9082222fd8696"
   },
   "operating_point": {
     "corner": "tt",
@@ -35,5 +39,30 @@
   "extrema_joint_physical_realizability_claimed": false,
   "uniform_model_uncertainty_qualified": false,
   "physical_models_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "target_calibration_pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799",
+  "queued_TT_stress_matrices": [
+    {
+      "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_frequency_stress_nominal_956",
+      "CPU": 23,
+      "composition": "nominal_publication",
+      "expected_cases": 96,
+      "pending": true
+    },
+    {
+      "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_frequency_stress_receiver_957",
+      "CPU": 24,
+      "composition": "receiver_delay_stress",
+      "expected_cases": 96,
+      "pending": true
+    }
+  ],
+  "expected_TT_stress_cases": 192,
+  "gain_pair": [
+    4,
+    0
+  ],
+  "registry_composition_tests_passed": 2,
+  "queued_matrices_launch_native_cases": false,
+  "qualified_60_case_five_corner_matrix": false
 }
