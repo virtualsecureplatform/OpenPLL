@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "case": "build/signoff400/selected_SS_independent_publication_holdout_532",
+      "manifest": {
+        "path": "build/signoff400/selected_SS_independent_publication_holdout_532/manifest.json",
+        "sha256": "1db9b56b86ed7a612b500439afee286cabc84880378fcc63f2bf554871765e32"
+      },
+      "corner": "ss",
+      "phase_ns": 0,
+      "cpu": 20,
+      "memory_gib": 12,
+      "runtime": {
+        "path": "build/signoff400/selected_publication_runtime_535/assessment.json",
+        "sha256": "cdebb1306c1be613df396b6589cbe7bbec8911628a7d0f3f74e8df94acf22ed4"
+      }
+    },
+    {
+      "case": "build/signoff400/selected_SF_UP_publication_training_533",
+      "manifest": {
+        "path": "build/signoff400/selected_SF_UP_publication_training_533/manifest.json",
+        "sha256": "0219f108c0dce24c81b1cb6e47523dc80045a2a7050f0b8f8a839b9613ad7f15"
+      },
+      "corner": "sf",
+      "phase_ns": 10,
+      "cpu": 17,
+      "memory_gib": 12,
+      "runtime": {
+        "path": "build/signoff400/selected_publication_runtime_536/assessment.json",
+        "sha256": "0f9933cdeee35dc5e1cee702a829277711249a0ae1a6182acca0efaf725f585a"
+      }
+    }
+  ],
+  "SS_holdout_collector": "build/signoff400/selected_SS_independent_publication_followup_534",
+  "SS_frozen_model_producer": "build/signoff400/selected_SS_publication_training_followup_459",
+  "SF_training_direction": "UP only; DN training remains required",
+  "upstream_waveforms_corner": "tt",
+  "upstream_corner_correlation_qualified": false,
+  "full_controller_timing_qualified": false,
+  "release_ready": false
+}
