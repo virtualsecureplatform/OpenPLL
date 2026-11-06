@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "baseline": "build/signoff400/selected_DCO_driven_load_native_528",
+  "challenge": "build/signoff400/selected_DCO_driven_load_fine112_537",
+  "manifest": {
+    "path": "build/signoff400/selected_DCO_driven_load_fine112_537/manifest.json",
+    "sha256": "b969f6cbefdc02815c3929e9505fa5995b25a17af3d661ea5c467556d36d79e4"
+  },
+  "programming_audit": {
+    "path": "build/signoff400/selected_driven_fine112_programming_audit_540.json",
+    "sha256": "d6c5fd39491f79cc27b440aceab13d887c6da1f4854a2afdb8d92f297cecaebb"
+  },
+  "runtime": {
+    "path": "build/signoff400/selected_DCO_driven_fine112_runtime_539/assessment.json",
+    "sha256": "84cbcec561aef94ae1a824680350812450535163cfea91228baefd1a16644b7e"
+  },
+  "baseline_full_comparison": "build/signoff400/selected_DCO_driven_load_followup_529",
+  "challenge_full_comparison": "build/signoff400/selected_DCO_driven_fine112_followup_538",
+  "tuning_slope_collector": "build/signoff400/selected_driven_load_tuning_slope_541",
+  "only_changed_programming_input": "__parent_R_node_6990",
+  "native_admitted": true,
+  "frequency_correlation_qualified": false,
+  "tuning_curve_qualified": false,
+  "release_ready": false
+}
