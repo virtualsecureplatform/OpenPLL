@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "lower": {
+    "path": "build/signoff400/selected_DCO_FF_target_guide_444/assessment.json",
+    "sha256": "352b614bf254b2420b7e0fe16d5a5a638b55eafe62d25a83f9562626142e8922"
+  },
+  "lower_frequency_mhz": 388.76776955662683,
+  "lower_clock_guide": {
+    "path": "build/signoff400/selected_FF_target_individual_followup_473/assessment.json",
+    "sha256": "5795a824719378541cf89d5059e96a39033e1c5caaac65da3ecc49830dd61d2e"
+  },
+  "upper": {
+    "case": "build/signoff400/selected_DCO_FF_upper_guide_542",
+    "manifest": {
+      "path": "build/signoff400/selected_DCO_FF_upper_guide_542/manifest.json",
+      "sha256": "9735b60123ebfdafba7c46d8083f1c78d0d00fba8dc530fdfee9a398b4c38524"
+    },
+    "coarse": 9,
+    "fine": 247,
+    "corner": "ff",
+    "frequency_assigned": false,
+    "cpu": 22,
+    "memory_gib": 16
+  },
+  "input_audit": {
+    "path": "build/signoff400/selected_FF_upper_input_audit_545.json",
+    "sha256": "966cd5e3edefefbe64db3d4fadef2fca16d4f44e23af5010d42baff567941572"
+  },
+  "collector": "build/signoff400/selected_FF_bracket_guides_followup_543",
+  "runtime_observer": "build/signoff400/selected_FF_upper_runtime_544",
+  "runtime_capture_pending": true,
+  "exterior_bias_corner": "tt",
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}
