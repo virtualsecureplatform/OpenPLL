@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "plan": {
+    "path": "build/signoff400/selected_DCO_unclamped_output_load_plan_485.json",
+    "sha256": "50cec7f25b55bfadc35e6bc3d3b2233ce0c9cfdb3477c744a83b854c8f849479"
+  },
+  "prepared_preflight": {
+    "path": "build/signoff400/selected_DCO_unclamped_output_preflight_487.json",
+    "sha256": "8c2cd9f0111b2fe4a7dd68fc64c484d577f8f8bed414f8e168c3239b9fa089ac"
+  },
+  "actual_export_preflight": {
+    "path": "build/signoff400/selected_DCO_unclamped_output_live_inputs_492.json",
+    "sha256": "13bc7999cd43fe4b10a5d6b2f12d60e883533f74d1c6b0e6980d04ef276d3f58"
+  },
+  "state_output_recheck": {
+    "path": "build/signoff400/selected_load_state_output_cut_recheck_491.json",
+    "sha256": "e9fd8bc0f662e1719511fcfc6d6ca8435d68f525152a0628d2440a0bc1143918"
+  },
+  "runtime": {
+    "path": "build/signoff400/selected_DCO_unclamped_output_runtime_490/assessment.json",
+    "sha256": "968dea36d2645505bf4a5af76c6f5ca105e4170178e5f3564e6475f15e605fd7"
+  },
+  "native_status": {
+    "path": "build/signoff400/selected_DCO_unclamped_output_native_488/status.json",
+    "sha256": "26f473e4981d3c3f54bdfdda34dadc25befa1f2d368fd51cd72a59bbe6718160"
+  },
+  "native_log": {
+    "path": "build/signoff400/selected_DCO_unclamped_output_native_488/native.log",
+    "sha256": "b4a6f392a342b175946a075e3291a0b6dda1983fc927b789e1358682e6a478d1"
+  },
+  "removed_output_voltage_sources": 4,
+  "added_physical_resistors": 15,
+  "added_physical_capacitors": 0,
+  "all_original_cards_retained": true,
+  "state_outputs_checked": 49,
+  "prescribed_state_output_components_remaining": 0,
+  "native_outcome": "DC operating point failed; zero successful transient steps",
+  "DC_failure_cause_identified": false,
+  "release_ready": false
+}
