@@ -15,8 +15,20 @@
   "CPU": 16,
   "memory_GiB": 16,
   "native_cap_s": 10800,
-  "status_at_recording": "waiting_for_resources",
+  "status_at_recording": "DC_operating_point_failed",
   "UIC_used": false,
   "state_selection_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "failure": {
+    "path": "build/signoff400/selected_DCO_initial_nodeset_native_475/status.json",
+    "sha256": "ccef3a4d7277963a85198b0c236a6938fe5863eee9d522960ac7126a374ac4c6"
+  },
+  "native_failure_log": {
+    "path": "build/signoff400/selected_DCO_initial_nodeset_native_475/native.log",
+    "sha256": "4fbb5d6be9dbe40995938776e7ac9fd36f8c8bd95952cb1c5386c8fa4ff8bde8"
+  },
+  "runtime": {
+    "path": "build/signoff400/selected_DCO_initial_nodeset_runtime_478/assessment.json",
+    "sha256": "cd2b858b4a9168e79961186674193f0dedc6346cf94897cff5008ed8477c280d"
+  }
 }

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_NODESET_native_control_483/assessment.json",
+    "sha256": "01bd4ecfcf5e66655a81aed39d93949dae1ca08b61f600327146bfb223f66a35"
+  },
+  "both_opposite_latch_states_selected": true,
+  "divider_guess_released_to_unconstrained_0p9V": true,
+  "scope": "small level1-MOS latch and linear divider; NODESET behavior only, not PLL or PDK model validation",
+  "PDK_model_validation": false,
+  "release_ready": false
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_load_state_output_cut_audit_484.json",
+    "sha256": "6daa0235065f73529139f7e907f3940c888796c57cc28cec1b79720b0abfa6f1"
+  },
+  "state_outputs_checked": 49,
+  "affected_outputs": [
+    {
+      "master": "sky130_fd_sc_hs__dfrtp_4",
+      "primitives": [
+        "Xflat18616",
+        "Xflat18617",
+        "Xflat18618",
+        "Xflat18619",
+        "Xflat18620",
+        "Xflat18621",
+        "Xflat18622",
+        "Xflat18623",
+        "Xflat18624",
+        "Xflat18625",
+        "Xflat18626",
+        "Xflat18627",
+        "Xflat18628",
+        "Xflat18629",
+        "Xflat18630",
+        "Xflat18631",
+        "Xflat18632",
+        "Xflat18633",
+        "Xflat18634",
+        "Xflat18635",
+        "Xflat18636",
+        "Xflat18637",
+        "Xflat18638",
+        "Xflat18639",
+        "Xflat18640",
+        "Xflat18641",
+        "Xflat18642",
+        "Xflat18643",
+        "Xflat18644",
+        "Xflat18645",
+        "Xflat18646",
+        "Xflat18647",
+        "Xflat18648",
+        "Xflat18649",
+        "Xflat18650",
+        "Xflat18651",
+        "Xflat18652",
+        "Xflat18653",
+        "Xflat18654"
+      ],
+      "output_node": "__parent_R_node_2886",
+      "resistive_component": "__parent_R_node_2885",
+      "prescribed_voltage_cuts": [
+        {
+          "node": "__parent_R_node_2887",
+          "source": "Vcut5643",
+          "value": "3.4533592599999999e-06"
+        },
+        {
+          "node": "__parent_R_node_2889",
+          "source": "Vcut5644",
+          "value": "3.45356065e-06"
+        },
+        {
+          "node": "__parent_R_node_2890",
+          "source": "Vcut5645",
+          "value": "3.4537430199999998e-06"
+        },
+        {
+          "node": "__parent_R_node_2891",
+          "source": "Vcut5646",
+          "value": "3.4557874900000002e-06"
+        }
+      ]
+    }
+  ],
+  "scope": "retained output boundary audit; no assertion that the prescribed levels caused DC failure",
+  "DC_failure_cause_identified": false,
+  "driver_loading_qualified": false,
+  "release_ready": false
+}
