@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "corner": "ss",
+      "native": {
+        "path": "build/signoff400/selected_DCO_SS_target_check_512/assessment.json",
+        "sha256": "d9ae0aed3c0559d1cafeb49e21b49da5d0d7b6c54d98c3e180776a4dcb3c9520"
+      },
+      "clock_guides": {
+        "path": "build/signoff400/selected_SS_three_point_guides_514/assessment.json",
+        "sha256": "c2460d522b1466bd6a35d7be52751ab1acd94fbfc36a78b424d4e3d12beb0587"
+      },
+      "selection": {
+        "path": "build/signoff400/selected_SS_nominal_target_selection_558.json",
+        "sha256": "d871a19a28b1b08e8181bf420ec3a59117f54283069c6d884f04dd7a83b6a8b8"
+      },
+      "frequency_mhz": 400.03682389232654,
+      "nominal_error_ppm": 92.05973081627405,
+      "nominal_target_frequency_check_pass": true
+    },
+    {
+      "corner": "fs",
+      "native": {
+        "path": "build/signoff400/selected_DCO_FS_target_check_513/assessment.json",
+        "sha256": "3f1f4fd4974bc2360e7d59b3916d315b329cfea9474f96aa39cf3a86f0c85c86"
+      },
+      "clock_guides": {
+        "path": "build/signoff400/selected_FS_three_point_guides_515/assessment.json",
+        "sha256": "1c1acc993881c83bbb81c49f44119145a6c8e1aa7899d6662f14bf2332a6ce11"
+      },
+      "selection": {
+        "path": "build/signoff400/selected_FS_refined_target_selection_557.json",
+        "sha256": "2f555feb6e1b22e3253ceca12fdb7ab36b79e046a73cefc8eaaa710fcbc177d3"
+      },
+      "frequency_mhz": 399.4912571419811,
+      "nominal_error_ppm": -1271.8571450471838,
+      "nominal_target_frequency_check_pass": false
+    }
+  ],
+  "FS_refinement": {
+    "case": "build/signoff400/selected_DCO_FS_refined_target_559",
+    "coarse": 20,
+    "fine": 180,
+    "manifest": {
+      "path": "build/signoff400/selected_DCO_FS_refined_target_559/manifest.json",
+      "sha256": "c68d4a70cd4f78648db6b027d6345057fb8c3c3c836a0ce3a98ac2e7810b6c92"
+    },
+    "input_audit": {
+      "path": "build/signoff400/selected_FS_refined_input_audit_561.json",
+      "sha256": "efe0a00ec87557f8db9883ce752dda603a204b8743d5acb78481224ef692c180"
+    },
+    "collector": "build/signoff400/selected_FS_refined_guides_560",
+    "runtime_observer": "build/signoff400/selected_FS_refined_runtime_562",
+    "frequency_assigned": false
+  },
+  "selector_unit_tests_passed": 4,
+  "calibration_registry_modified": false,
+  "exterior_bias_corner": "tt",
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}
