@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "native_result": {
+    "path": "build/signoff400/selected_DCO_FS_target_guide_446/assessment.json",
+    "sha256": "45dc2c130b6d228139ff5396bca57b3b4b370d6193c61afba5e371941b106fc4"
+  },
+  "clock_guide_result": {
+    "path": "build/signoff400/selected_FS_target_individual_followup_471/assessment.json",
+    "sha256": "d9175ac8ea06a0218cc5c97768c1768892d47459edf4b1d7a4c1ae5332990930"
+  },
+  "controls": {
+    "coarse": 20,
+    "fine": 136
+  },
+  "frequency_mhz": 392.43367337905477,
+  "scope": "FS retained devices with TT-derived exterior biases; measured lower target-side point only",
+  "upper_probe": "build/signoff400/selected_DCO_FS_upper_guide_479",
+  "upper_controls": {
+    "coarse": 20,
+    "fine": 216
+  },
+  "upper_input_audit": {
+    "path": "build/signoff400/selected_DCO_FS_upper_input_audit_481.json",
+    "sha256": "f4f0fd2de16ca66feedb68f329b237792096ed18130e372e80dc3253fa0654f6"
+  },
+  "upper_runtime": {
+    "path": "build/signoff400/selected_DCO_FS_upper_runtime_followup_482/assessment.json",
+    "sha256": "3d2f47fde600fecbabd853e33018fa8e5b9c87ebefe50f1d2cc56427c0e64b2a"
+  },
+  "bracket_followup": "build/signoff400/selected_DCO_FS_bracket_followup_480",
+  "upper_native_execution_observed": true,
+  "target_bracket_observed": false,
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}
