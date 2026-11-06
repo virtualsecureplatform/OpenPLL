@@ -8,7 +8,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_screen_707/sf_A1_00/sources.spice": "d33dcfce427e7c4b1473120184d88ce65c781598ac2b09d9c0767b7adf64f04e",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_screen_707/sf_A1_00/native.process.json": "bff9b5c4e58dfeb531e7b9cfe8484b79ebb0f6e35f54bf7a28946ee6381ad260",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_live_runtime_709.json": "20f0d8bcd1deb62ce880dfc3c49828c90d6ac957b17d1585f6aa9fe5bf074b21",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_programming_loaded_screen.py": "c7d40d94eaf8de36ac3671f1b54d8f7ef9b8280136fe53f75bfe23a9ba8f1601"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_programming_loaded_screen.py": "c7d40d94eaf8de36ac3671f1b54d8f7ef9b8280136fe53f75bfe23a9ba8f1601",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_screen_707/assessment.json": "f85c558e5bd71d6f31539a18529f8490c1ba1f362872a12f28cee64420674848",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_numerical_729/assessment.json": "2e098f36717b7523d7fed9409b406e9476b2a942340e12fff485ed214abdd137",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_numerical_runtime_730/assessment.json": "bc70146b71ea787a62e2debdcdb37ebae9b07b8cd09e01a6048109de2a34ca92"
   },
   "campaign": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_screen_707",
   "first_completed_case": {
@@ -44,8 +47,18 @@
   "hidden_output_clamps_rejected": true,
   "live_runtime_dependency_files": 319,
   "total_planned_cases": 24,
-  "complete_campaign_assessment_pending": true,
-  "scope": "Conditional native loaded path; both TT and SF, all three sensitized AOI arcs and all four fixed binary receiver phase states are scheduled. Exterior coupling nodes use full-TT final DC. A sampled input slew and fixed phase states do not establish a uniform dynamic bound.",
+  "complete_campaign_assessment_pending": false,
+  "scope": "All 24 conditional TT/SF cases completed: three sensitized AOI input arcs and four fixed binary receiver phase states at a sampled 1 ns input slew. The worst SF case was repeated with 1 ps maximum step and tenfold tighter tolerances. Exterior coupling nodes remain at full-TT final DC; sampled slew and fixed phase states do not establish uniform dynamic or full-library coverage.",
   "loaded_programming_path_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "native_cases_completed": 24,
+  "worst_logic_output_slew_ps_by_corner": {
+    "sf": 879.9442769679401,
+    "tt": 617.9781822010302
+  },
+  "worst_case_maximum_step_halved_ps": [
+    2,
+    1
+  ],
+  "worst_case_maximum_slew_difference_ps": 0.0339874341319657
 }
