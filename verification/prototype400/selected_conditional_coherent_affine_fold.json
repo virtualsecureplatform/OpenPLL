@@ -2,7 +2,10 @@
   "input_sha256": {
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_coherent_checkpoint_affine_fold_857/assessment.json": "b52b5ef85dfbeb7f3d79019d18d3cbbfe628b3b37384ee79cdeeb2e02ad7f858",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/inputs.json": "cb5735da51e943ca715d86b661857b3a58533cce1672100993c1106425b56b21",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/owner.json": "097cb1c89aa8da772dd502d6a14a9ffd97c0b50b24471643e53e0ebc52a6c1d7"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/owner.json": "097cb1c89aa8da772dd502d6a14a9ffd97c0b50b24471643e53e0ebc52a6c1d7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/decision.json": "6495ef44d1ec25d377c8967c068991651d6fb8c62f60f96f10fab55ea8031ddc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/native/manifest.json": "bb6025837c37bd2a2eac6096644188f4f59a3c8b454b3123cf0c924c244393af",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/runtime_namespace.json": "bf69742b644a3b7b970c6d3acaf7505006c890b632b5218e94662c1f376c8804"
   },
   "pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858",
   "original_native_case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_coherent_checkpoint_native_783",
@@ -23,5 +26,8 @@
   "three_decision_tests_passed": true,
   "fixed_source_currents_and_absolute_capacitor_charge_preserved": false,
   "response_pending": true,
-  "release_ready": false
+  "release_ready": false,
+  "original_budget_stopped": true,
+  "distinct_folded_native_launched": true,
+  "runtime_PDK_include_files": 319
 }

@@ -3,7 +3,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_coherent_checkpoint_input_audit_793.json": "68ea9b0e749da6647d0075dd2582614e5432442a155141a51d693c05def25f83",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_coherent_checkpoint_free_C_794/assessment.json": "f1ea19f00725d143ee99fa6f1dab09f8bd4f056591278d09864aa01dea84f283",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_coherent_checkpoint_native_783/manifest.json": "3916563f0253330ded3e06c64c2fb39b2548ae1df70706c5445ac0ecc330f079",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_coherent_runtime_784.json": "214f961eb29c745e85f65e3e71ff3e6c2c6a8f1e0a249152f1a9844c3e229bc6"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_coherent_runtime_784.json": "214f961eb29c745e85f65e3e71ff3e6c2c6a8f1e0a249152f1a9844c3e229bc6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_partition_response_861.json": "ff82c8e514a28db3490ba617cbe9d965a30e6ffe4d847887a86c6f4595363f34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_coherent_comparison_785/assessment.json": "321d307913812d30a913450db09aa37b32e25beac11c73c32ef446205e0ea169",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_coherent_checkpoint_native_783/status.json": "7e0131fed99b728e9906b94f95356962350675bf0af64dd19b8a71eeba7505f3"
   },
   "coarse": 20,
   "fine": 133,
@@ -20,7 +23,20 @@
   "memory_GiB": 8,
   "native_cap_s": 10800,
   "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_coherent_comparison_785/assessment.json",
-  "response_pending": true,
-  "scope": "Independent larger clock-load partition holdout, initialized from actual full-native fine133 state and history. It replaces eight held nodes with private circuit voltages while preserving every original card and shared source. Linear geometric-C energy is certified; device dynamics, omitted exterior behavior and partition-response uncertainty remain unqualified.",
-  "release_ready": false
+  "response_pending": false,
+  "scope": "Larger clock-load partition stopped at its original three-hour cap. Its terminal trace covers the full required 10--40 ns oscillator-age window, but not the original 260 ns endpoint. Physical partition-only audit remains valid. One-code TT response measurements do not qualify a uniform partition uncertainty bound.",
+  "release_ready": false,
+  "native_budget_stopped": true,
+  "normal_full_horizon_completed": false,
+  "complete_prefix_end_original_ns": 254.8241672,
+  "complete_prefix_oscillator_age_ns": 70.76779884947805,
+  "required_common_window_ns": [
+    10,
+    40
+  ],
+  "required_common_window_available": true,
+  "larger_vs_full_native_frequency_difference_ppm": 5.793538995435554,
+  "larger_vs_original_partition_frequency_difference_ppm": 6.943123649794103,
+  "maximum_partition_subwindow_frequency_difference_ppm": 7.312032385353717,
+  "uniform_partition_uncertainty_bound_qualified": false
 }
