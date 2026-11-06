@@ -1,0 +1,36 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_center_bank_C10_F128_native_742/assessment.json": "e6b659cb4b77949279fdccdb1b6b85c17a53a12d1d1d1cae291b11e296e0a37f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_center_bank_C10_F128_native_742/manifest.json": "09de74d4f5dffc396975b687f5181a6a482331423bf73d37f1cb0786d85bf90c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_center_bank_C10_F128_native_742/native.log": "b0a806b16a9866336e96fabebd6d7b92320875d1f9c8831c36d2e4cd58af04cb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_center_bank_C10_F128_native_742/devices.spice": "6160a27fd20cf04c0e7a26f58661a1688104dd4a6f96159a3d00bc4f7d91876c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_center_bank_C10_F128_native_742/sources.spice": "d2a1ca8679ac4d8d2d9a127fb4bd7e464c5b8f4c854e8628ba05567e299a5d7e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_center_bank_C10_F128_native_742/control.spice": "e94252bd781a0f40b297dc33c9fe53c80c4d60445154e909ff91ba5182c8ae89",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F160_target_bracket_native_769/manifest.json": "9b05fba69b10a2d314bf5ff89ca8ae34fedbebf281d760167c73d613c1726708",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F160_target_bracket_native_769/devices.spice": "6160a27fd20cf04c0e7a26f58661a1688104dd4a6f96159a3d00bc4f7d91876c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F160_target_bracket_native_769/sources.spice": "9a61825d49224abc07eed5d667a91b30421f06d3d33b7554d91fcbb71f72f843",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F160_target_bracket_native_769/control.spice": "9e3c3e310b43d392fefc5f818881c48c86a4d95665bd6ab24ab69b8016ba6350",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F160_runtime_770.json": "24e63d90976915cc5947794e3f3b0fc2298ac03acd498117d834f33842ab2dcb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_DCO_control_driver_inventory_243.json": "a8296817bf54c8ef7f729e6d0fb8110ed16f4ddad3d34b21bc9bbd478b8c29a5"
+  },
+  "completed_point": {
+    "coarse": 10,
+    "fine": 128,
+    "frequency_MHz": 394.8069756707631,
+    "nominal_target_error_ppm": -12982.560823092237,
+    "native_reported_elapsed_s": 3455.75
+  },
+  "requested_point": {
+    "coarse": 10,
+    "fine": 160,
+    "CPU": 20,
+    "memory_GiB": 8,
+    "native_cap_s": 10800
+  },
+  "changed_programming_driver_inputs": 32,
+  "identical_circuit_solver_reset_rails_and_quiet_biases": true,
+  "scope": "Conditional FF devices with TT final-state exterior voltages held. The second coarse10 point measures the same-bank tuning increment and tests target bracketing; its frequency and any replacement preset are pending.",
+  "preferred_preset": null,
+  "full_corner_startup_qualified": false,
+  "release_ready": false
+}
