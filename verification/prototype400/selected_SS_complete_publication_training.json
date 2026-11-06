@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "producer": {
+    "path": "build/signoff400/selected_SS_publication_training_followup_459/assessment.json",
+    "sha256": "28f9b0aa6dcb84df7aa31b68d59b0aa030f7053749906db5ce37d35cc9b42030"
+  },
+  "model_receipt": {
+    "path": "build/signoff400/selected_SS_publication_training_followup_459/model/assessment.json",
+    "sha256": "4b0c2f9d0fa43f879ea8af500473be0da28facce28b0e7643e508eb604e415be"
+  },
+  "parameters": {
+    "path": "build/signoff400/selected_SS_publication_training_followup_459/model/parameters.json",
+    "sha256": "cad8e816cf33d01d19b9b61a33d679adb750cc556f349a6c28c1bbd6d8f871e2"
+  },
+  "publication_delays": {
+    "up": {
+      "rise": {
+        "observed_interval_ns": [
+          0.6618898525258032,
+          0.6618898525258032
+        ],
+        "nominal_ns": 0.6618898525258032,
+        "samples": 1
+      },
+      "fall": {
+        "observed_interval_ns": [
+          0.6370973358201013,
+          0.6370973358201013
+        ],
+        "nominal_ns": 0.6370973358201013,
+        "samples": 1
+      }
+    },
+    "dn": {
+      "rise": {
+        "observed_interval_ns": [
+          0.6737601918208505,
+          0.6737601918208505
+        ],
+        "nominal_ns": 0.6737601918208505,
+        "samples": 1
+      },
+      "fall": {
+        "observed_interval_ns": [
+          0.6387439454285015,
+          0.6387439454285015
+        ],
+        "nominal_ns": 0.6387439454285015,
+        "samples": 1
+      }
+    }
+  },
+  "independent_holdout": "build/signoff400/selected_SS_independent_publication_holdout_532",
+  "holdout_collector": "build/signoff400/selected_SS_independent_publication_followup_534",
+  "direction_coverage_complete": true,
+  "observed_intervals_only": true,
+  "independent_holdouts_complete": false,
+  "upstream_waveforms_corner": "tt",
+  "uniform_uncertainty_bound_qualified": false,
+  "release_ready": false
+}
