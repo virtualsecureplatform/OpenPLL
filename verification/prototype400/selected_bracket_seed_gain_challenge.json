@@ -61,5 +61,108 @@
   "all_KP_grid_checked": false,
   "common_gain_selected": false,
   "physical_models_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "nonzero_KP_followup": {
+    "purpose": "Complete the nonzero proportional-gain grid at measured startup endpoints",
+    "expected_cases": 160,
+    "workers": 2,
+    "physical_CPUs": [
+      23,
+      24
+    ],
+    "memory_GiB_each": 4,
+    "expected_gain_pairs": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        16,
+        2
+      ],
+      [
+        16,
+        4
+      ],
+      [
+        16,
+        8
+      ]
+    ],
+    "queues": [
+      "build/signoff400/selected_low_KI_proportional_challenge_965",
+      "build/signoff400/selected_high_KI_proportional_challenge_966"
+    ],
+    "input_sha256": {
+      "build/signoff400/selected_low_KI_proportional_challenge_965/inputs.json": "69858104ca1499156e08edb35ccc2161997b9f94fac9f8d665ddd267f4a3cdfc",
+      "build/signoff400/selected_high_KI_proportional_challenge_966/inputs.json": "e957da2f8c567bbb6078c38195b1192ca7703f90e9e8d0f3572adf736829c7b9"
+    },
+    "state_at_publication": "running",
+    "no_native_simulations_launched": true,
+    "release_gain_selection": false
+  }
 }
