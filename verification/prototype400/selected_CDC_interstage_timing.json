@@ -1,0 +1,27 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_CDC_interstage_timing_828/assessment.json": "e89b3e8f6c917edd4ad75a8a0a8141411b6751cf84718e18ebd5863a84b67bf8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_CDC_interstage_controls_829.json": "ee4b7da4b0772a55f7180aea8ffdfa3d79303f1fdbe1b6865a6143d9ff9e802d"
+  },
+  "synchronizers": 13,
+  "explicit_min_max_checks": 130,
+  "corners": [
+    "ff",
+    "fs",
+    "sf",
+    "ss",
+    "tt"
+  ],
+  "all_interstage_setup_hold_pass": true,
+  "minimum_setup_slack_ns": 0.987688,
+  "minimum_hold_slack_ns": 0.046294,
+  "no_new_timing_exceptions": true,
+  "conditional_native_timing_views_and_nominal_routed_RC": true,
+  "negative_slack_control_recorded_as_failure": true,
+  "missing_endpoint_and_wrong_path_type_controls_rejected": true,
+  "actual_frequency_range_qualified": false,
+  "first_stage_resolution_qualified": false,
+  "reset_recovery_removal_qualified": false,
+  "all_crossings_reviewed": false,
+  "release_ready": false
+}
