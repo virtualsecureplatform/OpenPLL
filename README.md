@@ -1182,3 +1182,10 @@ comparison observer. The new comparator reproduces the completed 60 ns
 frequency/startup regression exactly and explicitly checks either 60 or 260 ns
 on normal completion. Budget-stopped prefixes remain marked as such. See
 `verification/prototype400/selected_history_duration_followup.json`.
+
+The duration follow-up uses a fresh V4 comparator, preserving native-deck
+device-condition matching. The original V3 source is restored byte-for-byte.
+V4 reproduces the 60 ns regression exactly with TT/27 C conditions verified;
+its replacement observer waits for the original 260 ns history run. Earlier
+regression654/observer655 are superseded and must not be used as evidence.
+See `verification/prototype400/selected_history_duration_followup.json`.

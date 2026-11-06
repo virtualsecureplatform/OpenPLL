@@ -10,17 +10,21 @@
     "sha256": "ded4fe925804c6f05856e79ce2d9e4eed13333ed26d40769e75c55e381c73c3f"
   },
   "comparison_source": {
-    "path": "verification/signoff400/compare_selected_dco_startup_aligned_v3.py",
-    "sha256": "052604a403c67fc0db674e373733d9538d534652c5e365ace4917070c4267770"
+    "path": "verification/signoff400/compare_selected_dco_startup_aligned_v4.py",
+    "sha256": "eabce0880001a14b82522d72c20756f7ea58ada126b1eb78b96f30412a549594"
   },
   "expected_end_ns": 260,
-  "observer_output": "build/signoff400/selected_history_terminal_comparison_655",
+  "observer_output": "build/signoff400/selected_history_terminal_comparison_658",
   "sixty_ns_regression": {
-    "path": "build/signoff400/selected_duration_comparator_regression_654/assessment.json",
-    "sha256": "9ea29b30c2dca2eb89cce29dfe5b5d553e0f0d3155f019e896ab23d0a9a2f564"
+    "path": "build/signoff400/selected_duration_comparator_regression_657/assessment.json",
+    "sha256": "70e51fd2f1adaeae6dba9230eca782447d30f6302f85da7beec591e0738ba379"
   },
   "existing_sixty_ns_frequency_and_startup_results_reproduced_exactly": true,
   "native_restarted": false,
   "frequency_correlation_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "device_condition_matching_preserved": true,
+  "superseded_invalid_regression": "build/signoff400/selected_duration_comparator_regression_654",
+  "superseded_observer_stopped": "build/signoff400/selected_history_terminal_comparison_655",
+  "correction": "Original V3 restored byte-for-byte; fresh V4 retains device-condition validation and explicit duration."
 }
