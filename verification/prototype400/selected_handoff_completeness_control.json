@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_handoff_completeness_control_552/assessment.json",
+    "sha256": "c6ee429d979249b057bc73d67a9ec80a6a7ea654214da58caa4a9089250fda53"
+  },
+  "new_completeness_tests": 4,
+  "existing_regression_tests": 6,
+  "actual_unqualified_candidate_rejected": true,
+  "actual_candidate_package_staged": false,
+  "reproducible_handoff_qualified": false,
+  "release_ready": false
+}
