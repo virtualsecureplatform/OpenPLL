@@ -1,0 +1,15 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_pair_completion_765.json": "b3b26bfdc0539be46e2700e24a581683488c71e649065f8d9591416e3fbd9be0"
+  },
+  "normal_full_horizons_completed": true,
+  "same_physical_circuit_solver_and_quiet_boundaries": true,
+  "native_reported_elapsed_s": [
+    8931.09,
+    8914.13
+  ],
+  "tuning_increment_error_percent": 0.2551302055980198,
+  "scope": "Two normally completed TT20 neighboring-code checkpoint diagnostics; independent full-native references, common oscillator ages 10--40 ns. No offset/slope fit, full tuning-family uncertainty or controlled throughput benchmark.",
+  "uniform_uncertainty_bound_qualified": false,
+  "release_ready": false
+}
