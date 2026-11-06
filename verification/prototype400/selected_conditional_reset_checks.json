@@ -1,0 +1,125 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_reset_checks_866/assessment.json": "dcf85042569544249908c5568adeff4f692f59a88edc11b7cdc73d74bf2ccdb1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_reset_controls_867/assessment.json": "d7063a84412def743161e29ef86ade1c2c4e18d5203473420fc6fa9706e7eb07"
+  },
+  "checks": [
+    {
+      "corner": "tt",
+      "check": "recovery",
+      "endpoint": "$auto$ff.cc:337:slice$17898",
+      "slack_ns": 1.25058,
+      "passed": true
+    },
+    {
+      "corner": "tt",
+      "check": "removal",
+      "endpoint": "$auto$ff.cc:337:slice$17209",
+      "slack_ns": 0.104878,
+      "passed": true
+    },
+    {
+      "corner": "tt",
+      "check": "min_pulse_width",
+      "endpoint": "$auto$ff.cc:337:slice$17301/CLK",
+      "slack_ns": 0.598622,
+      "passed": true
+    },
+    {
+      "corner": "ff",
+      "check": "recovery",
+      "endpoint": "$auto$ff.cc:337:slice$17898",
+      "slack_ns": 1.517984,
+      "passed": true
+    },
+    {
+      "corner": "ff",
+      "check": "removal",
+      "endpoint": "$auto$ff.cc:337:slice$19011",
+      "slack_ns": 0.010464,
+      "passed": true
+    },
+    {
+      "corner": "ff",
+      "check": "min_pulse_width",
+      "endpoint": "$auto$ff.cc:337:slice$17301/CLK",
+      "slack_ns": 0.581715,
+      "passed": true
+    },
+    {
+      "corner": "ss",
+      "check": "recovery",
+      "endpoint": "$auto$ff.cc:337:slice$17898",
+      "slack_ns": 0.713801,
+      "passed": true
+    },
+    {
+      "corner": "ss",
+      "check": "removal",
+      "endpoint": "$auto$ff.cc:337:slice$17209",
+      "slack_ns": 0.270248,
+      "passed": true
+    },
+    {
+      "corner": "ss",
+      "check": "min_pulse_width",
+      "endpoint": "$auto$ff.cc:337:slice$17300/CLK",
+      "slack_ns": 0.64397,
+      "passed": true
+    },
+    {
+      "corner": "sf",
+      "check": "recovery",
+      "endpoint": "$auto$ff.cc:337:slice$17898",
+      "slack_ns": 1.110918,
+      "passed": true
+    },
+    {
+      "corner": "sf",
+      "check": "removal",
+      "endpoint": "$auto$ff.cc:337:slice$17209",
+      "slack_ns": 0.224646,
+      "passed": true
+    },
+    {
+      "corner": "sf",
+      "check": "min_pulse_width",
+      "endpoint": "$auto$ff.cc:337:slice$17300/CLK",
+      "slack_ns": 0.641221,
+      "passed": true
+    },
+    {
+      "corner": "fs",
+      "check": "recovery",
+      "endpoint": "$auto$ff.cc:337:slice$17898",
+      "slack_ns": 1.307627,
+      "passed": true
+    },
+    {
+      "corner": "fs",
+      "check": "removal",
+      "endpoint": "$auto$ff.cc:337:slice$17209",
+      "slack_ns": 0.048071,
+      "passed": true
+    },
+    {
+      "corner": "fs",
+      "check": "min_pulse_width",
+      "endpoint": "$auto$ff.cc:337:slice$17301/CLK",
+      "slack_ns": 0.579329,
+      "passed": true
+    }
+  ],
+  "all_fifteen_reported_worst_checks_pass": true,
+  "minimum_slack_ns": {
+    "recovery": 0.713801,
+    "removal": 0.010464,
+    "min_pulse_width": 0.579329
+  },
+  "scope": "Worst enabled asynchronous-group recovery/removal and sequential clock pulse checks in existing five-corner 402.1MHz capacity views; not an exhaustive reset endpoint inventory.",
+  "external_reset_paths_excluded": true,
+  "startup_and_reset_transition_modes_qualified": false,
+  "external_reset_minimum_pulse_qualified": false,
+  "reset_recovery_removal_qualified": false,
+  "release_ready": false
+}
