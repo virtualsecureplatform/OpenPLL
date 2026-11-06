@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "native_case": "build/signoff400/selected_DCO_initial_boundary_native_497",
+  "manifest": {
+    "path": "build/signoff400/selected_DCO_initial_boundary_native_497/manifest.json",
+    "sha256": "49c0c8839bd463d2bfa73f3d4dc0b5135ee9bc3ff3a0f06c6d286a300d8889b7"
+  },
+  "input_audit": {
+    "path": "build/signoff400/selected_DCO_initial_boundary_input_audit_498.json",
+    "sha256": "6f4f611b7cad13bd96577f14e57cc73d821c3a3b093918e3811680c363d7c618"
+  },
+  "runtime": {
+    "path": "build/signoff400/selected_DCO_initial_boundary_runtime_499/assessment.json",
+    "sha256": "dbaa910a8b6068550d5257a46b2f3b803516abdf8e5bfcf71337b26d7d37bce5"
+  },
+  "collector": "build/signoff400/selected_DCO_initial_boundary_followup_500",
+  "quiet_exterior_nodes_verified": 6315,
+  "changed_exterior_nodes": 5729,
+  "all_physical_cards_identical": true,
+  "programming_reset_and_supplies_identical": true,
+  "solver_and_observation_protocol_identical": true,
+  "node_guesses_added": false,
+  "initial_state_consistency_qualified": false,
+  "exterior_switching_qualified": false,
+  "DC_failure_cause_identified": false,
+  "release_ready": false
+}
