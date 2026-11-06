@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "case": "build/signoff400/selected_DN_second_stage_native_case_400",
+  "followup": "build/signoff400/selected_DN_second_stage_replay_followup_401",
+  "input_identity": {
+    "path": "build/signoff400/selected_DN_second_stage_input_identity_402.json",
+    "sha256": "b824f733e63aa77e81ac6f33da7059d8876483a22c7ec815e4aa12566bfb67a8"
+  },
+  "phase_ns": -5,
+  "CPU": 26,
+  "memory_GiB": 12,
+  "native_cap_s": 10800,
+  "status_at_recording": "native_running",
+  "publication_model": "build/signoff400/selected_TT_complete_publication_model_372",
+  "publication_fit_to_this_case": false,
+  "receiver_RTL": "selected-layout binding via replay V7",
+  "complete_controller_timing_qualified": false,
+  "release_ready": false,
+  "runtime": {
+    "path": "build/signoff400/selected_DN_second_stage_runtime_403.json",
+    "sha256": "7207e3db2d84d60f2f7c90371ec2adc639d021bd019aa82b23a39c75fe372603",
+    "all_319_dependencies_and_executable_match": true
+  }
+}
