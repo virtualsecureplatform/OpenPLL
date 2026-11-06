@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "scope": "reduced TT DCO sensitivity to combined tightened numerical settings",
+  "baseline": "build/signoff400/selected_DCO_coherent_clock_native_362",
+  "prepared": "build/signoff400/selected_DCO_numerical_prepare_412",
+  "native": "build/signoff400/selected_DCO_numerical_native_414",
+  "followup": "build/signoff400/selected_DCO_numerical_followup_415",
+  "preflight": {
+    "path": "build/signoff400/selected_DCO_numerical_preflight_413.json",
+    "sha256": "60d22ec90892d5e689c52a795aa2776333a383598653b6d0648086d30325a69a"
+  },
+  "maximum_step_ps": [
+    10,
+    5
+  ],
+  "reltol": [
+    1e-05,
+    1e-06
+  ],
+  "abstol": [
+    1e-09,
+    1e-10
+  ],
+  "CPU": 27,
+  "memory_GiB": 16,
+  "native_cap_s": 10800,
+  "status_at_recording": "waiting_for_resource_admission",
+  "full_native_model_convergence_qualified": false,
+  "release_ready": false
+}
