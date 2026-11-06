@@ -37,6 +37,14 @@ receipts are not automatically attached as gate evidence. Baseline `461`/`462`
 verifies nine RTL files and the selected physical identity, while rejecting all
 five unfilled gates. Portable handoff and direct qualification remain open.
 
+Current handoff tools are `package_prototype_v4.py --manifest MANIFEST --output
+NEW_PACKAGE` and the standalone `check_portable_prototype_inventory_v2.py PACKAGE
+--receipt-sha256 TRUSTED_DIGEST`. Staging requires the four qualification gates
+other than handoff to pass, and includes every candidate RTL/GDS identity in its
+correct role. Keep the trusted staging-receipt digest outside the package.
+Relocated inventory checks establish bytes and completeness; clean functional
+and representative native replay remain separate requirements.
+
 For read-only state checks, use `report_selected_job_state.py --case CASE`
 (repeat `--case` for more jobs). It checks PID/birth identities and live resource
 leases, distinguishes queued owners from actual native workers, preserves
