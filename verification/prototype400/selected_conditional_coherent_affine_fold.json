@@ -5,7 +5,9 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/owner.json": "097cb1c89aa8da772dd502d6a14a9ffd97c0b50b24471643e53e0ebc52a6c1d7",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/decision.json": "6495ef44d1ec25d377c8967c068991651d6fb8c62f60f96f10fab55ea8031ddc",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/native/manifest.json": "bb6025837c37bd2a2eac6096644188f4f59a3c8b454b3123cf0c924c244393af",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/runtime_namespace.json": "bf69742b644a3b7b970c6d3acaf7505006c890b632b5218e94662c1f376c8804"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/runtime_namespace.json": "bf69742b644a3b7b970c6d3acaf7505006c890b632b5218e94662c1f376c8804",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_coherent_affine_direct_response_907.json": "a7bba48e447c7891c3ab61ea114566db0acc1b482be286b37981328d03c02492",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/comparison/assessment.json": "4c75149efe1855969070fd27ee420baf18669c7a4652502e9029e22cfd256483"
   },
   "pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858",
   "original_native_case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_coherent_checkpoint_native_783",
@@ -25,9 +27,22 @@
   "native_cap_s": 10800,
   "three_decision_tests_passed": true,
   "fixed_source_currents_and_absolute_capacitor_charge_preserved": false,
-  "response_pending": true,
+  "response_pending": false,
   "release_ready": false,
   "original_budget_stopped": true,
   "distinct_folded_native_launched": true,
-  "runtime_PDK_include_files": 319
+  "runtime_PDK_include_files": 319,
+  "normal_native_completion": true,
+  "native_elapsed_s": 9385.55,
+  "common_age_window_ns": [
+    10,
+    40
+  ],
+  "difference_from_original_terminal_prefix_ppm": 0.01133199756253589,
+  "difference_from_full_native_ppm": 5.804871058723293,
+  "first_output_rise_difference_from_original_ps": -0.019103436633471915,
+  "direct_original_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_coherent_affine_direct_response_907.json",
+  "full_native_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_conditional_coherent_fold_pipeline_858/comparison/assessment.json",
+  "uniform_model_uncertainty_qualified": false,
+  "controlled_throughput_comparison": false
 }
