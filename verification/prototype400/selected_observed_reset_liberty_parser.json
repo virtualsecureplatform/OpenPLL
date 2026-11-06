@@ -1,0 +1,12 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_observed_reset_liberty_parser_868/assessment.json": "4dc2d9bf3fb8ee3a20ec71149ea30b3fc50a1272dbf2cca58c7d22ff8ee05a30"
+  },
+  "libraries_read": 10,
+  "every_library_cell_inventory_and_FF_functional_pin_verified": true,
+  "parser_warnings": [],
+  "scope": "Exact ten observed-reset-load Liberty views used by selected conditional timing screens.",
+  "sequential_constraint_semantics_and_routed_timing_verified": false,
+  "physical_timing_qualified": false,
+  "release_ready": false
+}

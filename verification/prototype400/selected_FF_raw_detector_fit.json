@@ -5,7 +5,11 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_nearzero_runtime_845.json": "b8c403ab65cc76cc1d47d22379fa373758069b2037b967a61c64dbdfcb61f40d",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/inputs.json": "761c7ed2e1a2643d8fe917d09ed29487548f28e76ea58909919fd692c0ff9437",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/owner.json": "a55e82d18b27d993713e1e304f7e71a55d563acfa08995cfba5f0c8c6ba5952e",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_binding_controls_847.json": "a4f9643933edbe470a34e0ebc45db2849711b7d402caca9a8da74679d3c64bfa"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_binding_controls_847.json": "a4f9643933edbe470a34e0ebc45db2849711b7d402caca9a8da74679d3c64bfa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/assessment.json": "08160012d3094f2efca76b3fcda66e97d0ffaad36f02965b31e4ca2ec9a38280",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/status.json": "c7109a4e960bb7c71490f61dcf362c9c46a4a3281127477c2c459f64828a33ed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/model/assessment.json": "a0a74b492d975bbd24b85584a9e20bcc482838161d8299fa2499344b850530d5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/model/parameters.json": "11349c5f44d740eb2379e029525e0074a1ec0b3109f71189a7df0fda66ef1ec6"
   },
   "native_probe": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_nearzero_844",
   "fit_followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846",
@@ -28,8 +32,21 @@
   "actual_corner_binding_positive_control_passed": true,
   "mismatched_corner_negative_control_rejected": true,
   "decision_sign_not_assumed": true,
-  "fit_pending": true,
+  "fit_pending": false,
   "corner_sender_waveforms_correlated": false,
   "native_interface_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "normal_native_probe_completed": true,
+  "all_sampled_signs_match": true,
+  "all_event_counts_match": true,
+  "all_edges_within_observed_fit_band": true,
+  "observed_transition_bracket_ps": [
+    -111.09864159399052,
+    -13.025594894735093
+  ],
+  "lookback_ps": 62.06211824436281,
+  "maximum_replay_edge_error_ps": 0.9877835875755636,
+  "independent_holdout_cases_passed": 2,
+  "full_phase_coverage_qualified": false,
+  "uniform_uncertainty_bound_qualified": false
 }
