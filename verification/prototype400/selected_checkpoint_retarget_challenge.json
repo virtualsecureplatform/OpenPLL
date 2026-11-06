@@ -1,0 +1,31 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_111_to_133_native_830/manifest.json": "0ebee2467836f0458363667d6cad5feeb4ac6a23b82e8f915418a61bab7cacc0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_response_831/owner.json": "8c3e30ce92e5b4aac427b83347c30109e59ddd5110f48478abfcd7f4943b6e3a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_runtime_832.json": "1797c0515587b2fe33266bb6296e63d255c90e6610afb6bc02e212bab2ec1309",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_input_audit_833.json": "7a460b0e68997e0b22e060c8c6db111298b1327d0369bb479eccac7e40de7648"
+  },
+  "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_111_to_133_native_830",
+  "response_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_response_831",
+  "checkpoint_fine": 111,
+  "requested_fine": 133,
+  "coarse": 20,
+  "changed_real_programming_inputs": 22,
+  "retained_driver_primitives": 88,
+  "programming_ramp_ns": [
+    0.5,
+    1.5
+  ],
+  "initial_reset_assertion_observed_in_completed_baseline": true,
+  "no_target_code_state_imported": true,
+  "physical_devices_private_voltages_solver_and_other_sources_unchanged": true,
+  "reference_native_code": 133,
+  "reference_checkpoint_code": 133,
+  "two_waveform_tests_passed": true,
+  "CPU": 18,
+  "memory_GiB": 8,
+  "native_cap_s": 10800,
+  "response_pending": true,
+  "cross_code_restart_qualified": false,
+  "release_ready": false
+}
