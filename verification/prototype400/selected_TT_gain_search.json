@@ -1,0 +1,37 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_TT_gain_search_836/inputs.json": "092cc7f789ce85a96a378a4c2ec5fc9a2e0fd6573f82402ff6ee9afaea315713",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_TT_gain_search_836/owner.json": "d2e07ac75bc423db451c2c8f78921d3dfb7a153d215c8f55409a329195131571",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_gain_missing_coverage_control_835/assessment.json": "d12fb36943fc222b49840eb836536e44a0a5a5ce0a7da9806a483d01fb3923aa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_current_stress_cached_matrix_834/assessment.json": "7fd043744a6226ecfa5007f193925442f82d5eff0d8700be1529145a5469f058"
+  },
+  "pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_TT_gain_search_836",
+  "initial_pair": [
+    4,
+    0
+  ],
+  "selection_order": "lowest KI then lowest KP after the initial pair",
+  "initial_matrices_reused": [
+    802,
+    803
+  ],
+  "publication_views": [
+    "nominal",
+    "receiver_stress"
+  ],
+  "all_three_scenarios_and_four_reference_phases": true,
+  "both_interpolation_variants": true,
+  "real_missing_coverage_control_cases": 48,
+  "real_control_stopped_without_expansion": true,
+  "real_control_requested_fine_codes": [
+    110,
+    134
+  ],
+  "three_policy_unit_tests_passed": true,
+  "automatic_native_launches": 0,
+  "search_wall_cap_s": 43200,
+  "CPU": 26,
+  "common_five_corner_gain_qualified": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}
