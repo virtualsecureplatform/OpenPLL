@@ -1,0 +1,15 @@
+{
+  "purpose": "Direct full-native initial snapshot for same-corner sender waveform capture",
+  "snapshot_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_native_snapshot_958/assessment.json",
+  "snapshot_receipt_sha256": "d51fa2e9d96db954c8e5b4de12584223be09ecad435b1b9e1bd3eb6bb67be97f",
+  "source_native": "build/signoff400/selected_target_calibration_pipeline_316/native",
+  "source_corner": "tt",
+  "source_fine_code": 133,
+  "captured_variables": 25735,
+  "validation_tests_passed": 6,
+  "waveform_export_directory": "build/signoff400/selected_full_native_driver_waveforms_959",
+  "waveform_export_state_at_publication": "running",
+  "non_TT_sender_correlation_qualified": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}
