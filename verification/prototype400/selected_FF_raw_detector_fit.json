@@ -1,0 +1,35 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_nearzero_844/manifest.json": "c4e3195c806660e54b7a75f7c82b2eb09774930cab53d0a2a384df4aa4963fed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_nearzero_844/native/manifest.json": "bacf1c665fb98b5a619cdd2ba109fc0896085c9cb838fd49040b8f4ef56f4d86",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_nearzero_runtime_845.json": "b8c403ab65cc76cc1d47d22379fa373758069b2037b967a61c64dbdfcb61f40d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/inputs.json": "761c7ed2e1a2643d8fe917d09ed29487548f28e76ea58909919fd692c0ff9437",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846/owner.json": "a55e82d18b27d993713e1e304f7e71a55d563acfa08995cfba5f0c8c6ba5952e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_binding_controls_847.json": "a4f9643933edbe470a34e0ebc45db2849711b7d402caca9a8da74679d3c64bfa"
+  },
+  "native_probe": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_nearzero_844",
+  "fit_followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846",
+  "requested_recorded_phase_ns": 0.1,
+  "operating_point": {
+    "corner": "ff",
+    "temperature_c": 27,
+    "supply_v": 1.8
+  },
+  "upstream_waveforms": {
+    "corner": "tt",
+    "coarse": 20,
+    "fine": 111
+  },
+  "CPU": 20,
+  "memory_GiB": 12,
+  "native_cap_s": 10800,
+  "fitting_cases": 4,
+  "independent_holdout_cases": 2,
+  "actual_corner_binding_positive_control_passed": true,
+  "mismatched_corner_negative_control_rejected": true,
+  "decision_sign_not_assumed": true,
+  "fit_pending": true,
+  "corner_sender_waveforms_correlated": false,
+  "native_interface_qualified": false,
+  "release_ready": false
+}
