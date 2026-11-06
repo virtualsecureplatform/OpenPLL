@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "TT_DN_two_stage": {
+    "native": {
+      "path": "build/signoff400/selected_DN_second_stage_native_case_400/waveform_assessment/assessment.json",
+      "sha256": "bb8c59671bff87a76eabe5e616d67850c1544512d9b050278838a799468ef0c1"
+    },
+    "replay": {
+      "path": "build/signoff400/selected_DN_second_stage_replay_followup_401/replay/assessment.json",
+      "sha256": "8f0edba19594ceaaf7e9167079b19aedebad2eb135b2dd0adde7e9305a253585"
+    },
+    "summary": {
+      "path": "build/signoff400/selected_DN_second_stage_replay_followup_401/assessment.json",
+      "sha256": "826e83e5f37d053416dc167a27ca70fb6609a1073fbb4f4b882cf7cb623f2064"
+    },
+    "first_stage_cycles_match": true,
+    "second_stage_cycles_match": true,
+    "scope": "Recorded upstream excitation; DLF disabled; two observed DN transitions"
+  },
+  "FF_near_edge": {
+    "native": {
+      "path": "build/signoff400/selected_FF_100ps_aperture_probe_439/waveform_assessment/assessment.json",
+      "sha256": "02dceb1ef8bca2fba2616be6b54a4e0a44e1f3d712ed8da537adc3276163694b"
+    },
+    "holdout": {
+      "path": "build/signoff400/selected_FF_100ps_aperture_followup_440/holdout_0/assessment.json",
+      "sha256": "c08322bea51ab86d19d15c78f4de5817758ef7f426bae1a49d2ae56383369889"
+    },
+    "summary": {
+      "path": "build/signoff400/selected_FF_100ps_aperture_followup_440/assessment.json",
+      "sha256": "3d8ace0694069a0fa3e35618d5bc90b29b025602423ae4e45face67148745536"
+    },
+    "falling_data_lead_ps": 99.98412347422914,
+    "native_sampling_cycle": 16,
+    "logical_sampling_cycle": 16,
+    "fit_to_validation_case": false
+  },
+  "uniform_aperture_bound_qualified": false,
+  "full_controller_timing_qualified": false,
+  "release_ready": false
+}
