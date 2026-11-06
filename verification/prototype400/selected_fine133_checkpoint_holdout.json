@@ -1,0 +1,24 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_verified_native_snapshot_754/assessment.json": "e9690f5093c9a09dd9828c8428446d9314cfb79a3b4c652aa2bc67671c01bc26",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_saved_native_state_755/assessment.json": "7b47af928502508649b862ee97e3e74ea09a8f3f8ff4616fc4473b6e06bff3e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_programming_history_757/assessment.json": "98936dd157fe378cdec7eb42321869be091940d945771cd62188cfe895e7bf42",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_fine133_history_preparation_758/manifest.json": "462b1f5811ad36e82b47402e5ac7ee79e5d83351dc45b1729650dff74b19cf96",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine133_native_759/manifest.json": "c005ec5dfc8f1e0b0cf235d56fcda006d09baba47ba4a691c4d45cbe667492b6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine133_runtime_760.json": "cd3c7f1ffb8663845b4de3884d208100a9211f6ce4ee4c800bc27a8ae8ed5ff6"
+  },
+  "coarse": 20,
+  "fine": 133,
+  "actual_saved_time_ns": 175.001,
+  "initialized_private_nodes": 5980,
+  "reference_full_native_MHz": 397.2351251829792,
+  "programming_history_channels": 303,
+  "baseline_prepared_without_native_execution": true,
+  "CPU": 18,
+  "memory_GiB": 8,
+  "native_cap_s": 10800,
+  "terminal_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine133_comparison_761/assessment.json",
+  "response_pending": true,
+  "scope": "Independent tuning-curve holdout initialized from the actual full-native fine133 state and matching recorded programming/reset history. Physical cut and TT quiet-boundary convention match the earlier checkpoint controls. No source retargeting, extrapolated 400 MHz preset or model-family qualification.",
+  "release_ready": false
+}
