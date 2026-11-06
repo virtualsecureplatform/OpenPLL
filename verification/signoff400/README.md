@@ -30,6 +30,13 @@ qualify this physical candidate. See
 phase-engine controls validate coverage only and cannot qualify analog models
 or release readiness.
 
+`prepare_selected_release_manifest.py --output NEW_MANIFEST` prepares the
+selected layout-bound candidate identity and empty qualification slots for
+`audit_prototype_v3.py --manifest NEW_MANIFEST --output NEW_AUDIT`. Diagnostic
+receipts are not automatically attached as gate evidence. Baseline `461`/`462`
+verifies nine RTL files and the selected physical identity, while rejecting all
+five unfilled gates. Portable handoff and direct qualification remain open.
+
 Current simulation speed trial:
 
 The leading configuration is isolated diode-corrected Xyce with checked UMFPACK

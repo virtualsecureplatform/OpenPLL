@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "manifest": {
+    "path": "build/signoff400/selected_release_manifest_461.json",
+    "sha256": "53eaba289e72c37c097f8188ba09c187f0ef766e69f4fe735ef6e19f14bce05e"
+  },
+  "audit": {
+    "path": "build/signoff400/selected_release_audit_462.json",
+    "sha256": "c59da00c2e68d78a2352e28d9b9f312c939fd97b022d3fe269e53f3b2997aa48"
+  },
+  "candidate_identity_verified": true,
+  "qualification_evidence_attached": false,
+  "scope": "layout-bound candidate identity and expected rejection of unfilled qualification slots",
+  "release_ready": false
+}
