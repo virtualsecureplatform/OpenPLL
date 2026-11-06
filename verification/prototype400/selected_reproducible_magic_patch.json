@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "build": {
+    "path": "build/signoff400/selected_magic_reproducible_patch_build_644/assessment.json",
+    "sha256": "74b9045bdcd6adc45855cd1880acda9a9764fdc66b09157ff8dec10f0db9dc92"
+  },
+  "engine_controls": {
+    "path": "build/signoff400/selected_magic_reproducible_patch_controls_645/assessment.json",
+    "sha256": "c0d9244b6a03ca3373fd76250fc5a828eed87c406f852ec9664d925045ce3c1d"
+  },
+  "diode_control": {
+    "path": "build/signoff400/selected_magic_reproducible_patch_diode_646/assessment.json",
+    "sha256": "7816de035bd4b90a82b5c22fa24be0eb1522466121915ffead843004c5fd1f84"
+  },
+  "patch": {
+    "path": "tools/magic_antenna/antenna-8.3.623.patch",
+    "sha256": "ab74d8a93977cb1ec764a18197274d8524d5b037e302cee85c4e35e62cb13e40"
+  },
+  "toolchain": {
+    "path": "tools/magic_antenna/toolchain_sif_v1.json",
+    "sha256": "f88fce59fbd7acb4512dc0a4836d32a7ee6d4af9012385702ecfaff570aa91b8"
+  },
+  "all_26_matched_rule_controls_pass": true,
+  "local_diode_control_pass": true,
+  "diagnostic_logging_added": false,
+  "parent_case": "build/signoff400/selected_reproducible_patch_parent_647",
+  "exact_contact_area_qualified": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}

@@ -1160,3 +1160,13 @@ control pass, and independent comparison again preserves all 16 checked masks
 and exact MOS gate area. General contact-area validation and portable release
 tool integration remain open. See
 `verification/prototype400/selected_pitch_corrected_parent_antenna_result.json`.
+
+A standalone Magic 8.3.623 patch and explicit container toolchain recipe now
+build from the SHA256/NAR-verified source archive without diagnostic logging.
+The recipe-built executable passes all 26 matched rule fixtures and the actual
+diode control. Its selected-parent replay is running. Use
+`verification/signoff400/build_selected_magic_patch_v2.py` with the archive,
+`tools/magic_antenna/antenna-8.3.623.patch`, and
+`tools/magic_antenna/toolchain_sif_v1.json`; each build requires a new output
+directory. Receipts and limits are in
+`verification/prototype400/selected_reproducible_magic_patch.json`.

@@ -1,0 +1,16 @@
+{
+  "source_revision": "8.3.623",
+  "source_url": "https://codeload.github.com/RTimothyEdwards/magic/tar.gz/refs/tags/8.3.623",
+  "archive_sha256": "a767d2ae3fb1c39ae44032e0077fa6b106cf4838b718bfcde0c5849e7675cb9e",
+  "source_NAR": "sha256-BgiNUS4U9xfmoIQC6Tn3ueR+zwU3hhOXYrKEhosQStw=",
+  "tcl_root": "/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16",
+  "tk_root": "/nix/store/qg5pfny16idn650ym2m2sgjbrhgjyw17-tk-8.6.16",
+  "tk_include": "/nix/store/sycnvm378252y56g62z554vjm6agcidl-tk-8.6.16-dev/include",
+  "x11_includes": [
+    "/nix/store/c8zanvqhjwpsi130933vdcfpp8454yc4-libx11-1.8.12-dev/include",
+    "/nix/store/mq1y6y0ckk5i7xga1ly68325pn14n2wz-xorgproto-2024.1/include"
+  ],
+  "image_sha256": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+  "release_qualified": false,
+  "patch_executable": "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/patch"
+}
