@@ -17,7 +17,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F152_target_check_797/assessment.json": "8bf1549039ddff58694ab89e91c3739a663b924883ae3acf6d065241884778c2",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F152_target_check_797/status.json": "63d7d0f8abe8f9b9bd70235751d3772756869dac7cf9c95dbc9eb9a332493c68",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F152_target_check_797/native.log": "cc69e9455d8083e131bb00164275270210caa1a43c09a2c4b80c99f853f5994c",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F152_runtime_798.json": "b8ec4eba45e14eee50a200f805a88f2d5fed3bdd5ae0e3c243bf919a76114415"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F152_runtime_798.json": "b8ec4eba45e14eee50a200f805a88f2d5fed3bdd5ae0e3c243bf919a76114415",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_power_queue_migration_843.json": "b54bab263078cdf6b635b81657d5fb0fae581d9eb6b84f41ea6e49baeb57b338",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_full_target_power_pipeline_842/inputs.json": "9ff7b30d2236008be174ed809fffa92e27d4ec1433f3b531347e4ed14817fe89",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_full_target_power_pipeline_842/owner.json": "3f620f6f0af08243126680044ffb43831fad82cae37b8817250de5b35518b412"
   },
   "dependencies": [
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799",
@@ -28,12 +31,14 @@
   "waiting_cap_s": 432000,
   "automatic_identical_retry": false,
   "release_ready": false,
-  "queue": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_full_target_pipeline_809",
+  "queue": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_full_target_power_pipeline_842",
   "conditional_measurement_is_full_startup_evidence": false,
   "native_stage_execution": "explicit pinned CAD container",
   "full_native_jobs_at_once": 1,
   "request_pending": true,
   "conditional_measurement_pending": false,
   "conditional_frequency_MHz": 400.05924791746537,
-  "actual_conditional_measurement_passes_queue_frequency_screen": true
+  "actual_conditional_measurement_passes_queue_frequency_screen": true,
+  "superseded_waiting_queue": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_full_target_pipeline_809",
+  "supply_current_observations_and_analysis_enabled": true
 }

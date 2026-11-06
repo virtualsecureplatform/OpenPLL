@@ -1,0 +1,27 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_power_queue_migration_843.json": "b54bab263078cdf6b635b81657d5fb0fae581d9eb6b84f41ea6e49baeb57b338",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/native_supply_csv_control_839/assessment.json": "bc346ece0fb15d146c88768c22daaed899111b61eb2e4fa0f6df85dce4a483cd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_supply_observation_controls_841.json": "4c96a12c271140c3544a7d9909574c48bcec91562e3bfd18982753c748c84616"
+  },
+  "full_FF_pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_full_target_power_pipeline_842",
+  "supply_rails": [
+    "VPWR",
+    "VPB",
+    "VGND",
+    "VNB"
+  ],
+  "native_current_sign_and_energy_control_passed": true,
+  "analytic_resistor_control_power_W": 0.003564,
+  "extra_print_preserves_native_voltage_samples_exactly": true,
+  "prepared_full_FF_deck_has_observation_only_change": true,
+  "three_CSV_analysis_tests_passed": true,
+  "measurement_window_ns": [
+    200,
+    260
+  ],
+  "power_limits_invented": false,
+  "scope": "Full-circuit static-preset startup supply draw; not locked-loop power qualification.",
+  "locked_loop_power_qualified": false,
+  "release_ready": false
+}
