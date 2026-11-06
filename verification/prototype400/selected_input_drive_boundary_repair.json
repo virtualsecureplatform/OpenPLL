@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "input_drive_inventory": {
+    "path": "build/signoff400/selected_load_input_drive_audit_520.json",
+    "sha256": "a2a0061e5385c9eedf2c32d4096e2ede9c2b4947cf04da449773511773c7465d"
+  },
+  "corrected_plan": {
+    "path": "build/signoff400/selected_DCO_explicit_input_cut_plan_521.json",
+    "sha256": "068279dda9b2aed0e6cd55d06fa6708103dfa087794d2c1cbd5fb35ce95c54ce"
+  },
+  "input_drive_recheck": {
+    "path": "build/signoff400/selected_explicit_input_cut_recheck_522.json",
+    "sha256": "de54aaca87ad4f57b356f283240e5b75280195cf74be7ac6d12a80ce76bb33eb"
+  },
+  "input_pins_checked": 1837,
+  "previously_unprescribed_input_pins": 60,
+  "added_exterior_source_components": 54,
+  "unprescribed_inputs_remaining": 0,
+  "coherent_initial_probe": {
+    "assessment": {
+      "path": "build/signoff400/selected_driven_initial_DC_probe_524/assessment.json",
+      "sha256": "b4206f6cd91752cea4fa313c9d65e23c88423056a54c7d8529b3f07cb1bb25e3"
+    },
+    "log": {
+      "path": "build/signoff400/selected_driven_initial_DC_probe_524/native.log",
+      "sha256": "4177192a767a3902594c4a900387d771749b0ad9322adbc6ce78c1063087046b"
+    },
+    "source_value_audit": {
+      "path": "build/signoff400/selected_driven_initial_DC_input_audit_525.json",
+      "sha256": "be199af899b6f0561771c59a134edb12a08388ab03ff47d32ea2881e3f016d0b"
+    },
+    "runtime": {
+      "path": "build/signoff400/selected_driven_initial_DC_runtime_526/assessment.json",
+      "sha256": "cb1df985aace6d48db9916bf413b6f1da17e334c02d32e576bd61ebba2c6d5d7"
+    },
+    "export_delta_audit": {
+      "path": "build/signoff400/selected_added_input_source_export_audit_527.json",
+      "sha256": "51da9c1fdd26e63cd6def7b2e8ab9a1b349af8fa722eff49fdb836d6f634867f"
+    },
+    "coherent_initial_DC_convergence_restored": true,
+    "native_elapsed_seconds": 86.8134
+  },
+  "static_target_frequency_probe": {
+    "case": "build/signoff400/selected_DCO_driven_load_native_528",
+    "manifest": {
+      "path": "build/signoff400/selected_DCO_driven_load_native_528/manifest.json",
+      "sha256": "6bad0638cfa7952a6e71f6be64a0cb5a9a65b71fe0a2ed340ecaa8e7c850dc6c"
+    },
+    "export_delta_audit": {
+      "path": "build/signoff400/selected_driven_load_input_source_audit_531.json",
+      "sha256": "fd6c0404e56607d8552381e22ef7291fa6195ff6c8130505987b48643baebe4c"
+    },
+    "collector": "build/signoff400/selected_DCO_driven_load_followup_529",
+    "runtime_collector": "build/signoff400/selected_DCO_driven_load_runtime_530"
+  },
+  "input_histories_qualified": false,
+  "frequency_correlation_qualified": false,
+  "release_ready": false
+}
