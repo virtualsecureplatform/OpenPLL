@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "native_result": {
+    "path": "build/signoff400/selected_DCO_SS_target_guide_426/assessment.json",
+    "sha256": "4bfb806f25818ba4b6193cfe4d25ff4b433f8cf6a4658969d3233a0d2d7f243a"
+  },
+  "clock_guide_result": {
+    "path": "build/signoff400/selected_DCO_SS_target_followup_427/assessment.json",
+    "sha256": "a335a8f64d6f48b1fff34ba9f67b34a1d13ec968db0d9b0c004301459f78bfa1"
+  },
+  "controls": {
+    "coarse": 47,
+    "fine": 120
+  },
+  "frequency_mhz": 395.848654405957,
+  "frequency_error_from_400_ppm": -10378.363985107497,
+  "scope": "SS retained devices with TT-derived exterior biases; measured lower target-side point only",
+  "upper_probe": "build/signoff400/selected_DCO_SS_upper_guide_467",
+  "upper_controls": {
+    "coarse": 47,
+    "fine": 160
+  },
+  "upper_input_audit": {
+    "path": "build/signoff400/selected_DCO_SS_upper_input_audit_469.json",
+    "sha256": "79839f0ff0d9b420f219179ea6a292ae60d899de286ebe8bbf702381d416720c"
+  },
+  "bracket_followup": "build/signoff400/selected_DCO_SS_bracket_followup_468",
+  "queued_runtime_followup": "build/signoff400/selected_DCO_SS_upper_runtime_followup_470",
+  "upper_status_at_recording": "waiting_for_memory_admission",
+  "memory_GiB": 16,
+  "native_cap_s": 10800,
+  "target_bracket_observed": false,
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}

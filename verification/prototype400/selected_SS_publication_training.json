@@ -15,7 +15,11 @@
       "path": "build/signoff400/selected_SS_DN_publication_training_458",
       "phase_ns": -5,
       "CPU": 24,
-      "status_at_recording": "waiting_for_shared_memory_admission"
+      "status_at_recording": "native_running",
+      "runtime": {
+        "path": "build/signoff400/selected_SS_DN_publication_runtime_466.json",
+        "sha256": "c419968d89c51a54ac7888d45f829b7da94652440a208df955aa7d9eaada6987"
+      }
     }
   ],
   "followup": "build/signoff400/selected_SS_publication_training_followup_459",
