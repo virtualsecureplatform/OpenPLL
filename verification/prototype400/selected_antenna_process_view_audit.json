@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "audit": {
+    "path": "build/signoff400/selected_process_scope_audit_684/assessment.json",
+    "sha256": "ee8468833a69a26e7efa13778e877a9670fac0151c183b641797c3c4dbc0ccd0"
+  },
+  "stages": {
+    "path": "build/signoff400/selected_process_scope_audit_684/stages.json",
+    "sha256": "71da7c077bec530b4f088c0c97413caa506b2bb77b88afef29d9e8cc94b51a20"
+  },
+  "full_parent_geometry": {
+    "path": "build/signoff400/selected_conservative_contact_parent_geometry_653/assessment.json",
+    "sha256": "5b79536718f5cb10fc0977e6dc4a67af78563f13e8230a01ce2142e70acff6a8"
+  },
+  "contact_paint_containment": {
+    "path": "build/signoff400/selected_contact_paint_containment_659/assessment.json",
+    "sha256": "1f2243381638ae642ff8968a01a351f6ecca11b670d1fdfa2e79f685bdaede21"
+  },
+  "all_seven_current_process_layers_have_zero_conservative_feedback": true,
+  "retained_masks_and_MOS_channels_rechecked": true,
+  "future_layers_and_label_connections_excluded": true,
+  "local_stubs_do_not_join_distinct_current_components": true,
+  "arbitrary_layouts_qualified": false,
+  "release_tool_integration_qualified": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}

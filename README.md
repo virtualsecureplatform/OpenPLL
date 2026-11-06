@@ -1268,3 +1268,11 @@ first-stage cycle/count validation for all four publication directions, without
 refitting. Near-edge uncertainty, second-stage corner coverage, and complete
 controller timing remain open. See
 `verification/prototype400/selected_SF_FS_complete_local_receiver_validation.json`.
+
+Seven guarded process views of the selected layout now pass an independent
+audit: retained masks/MOS channels match, labels and future conductors/contacts
+are excluded, and local contact stubs cannot join distinct current conductor
+components. All current-layer views have zero conservative antenna feedback.
+This is selected-layout evidence; release-tool integration and other physical
+checks remain open. See
+`verification/prototype400/selected_antenna_process_view_audit.json`.
