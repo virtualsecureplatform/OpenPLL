@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "failed_unseeded_control": {
+    "path": "build/signoff400/selected_DCO_coherent_load_native_423/status.json",
+    "sha256": "8ebf7b627d89d84ed6e327e8dddae6cef3ba16a8fa52bfbf9ac203eb60649f4d"
+  },
+  "failed_native_log": {
+    "path": "build/signoff400/selected_DCO_coherent_load_native_423/native.log",
+    "sha256": "a86fbbdc08a5ea63f0980fb96e1e33eab6a6474cc553fc071bc2e8e9c24b261f"
+  },
+  "native": "build/signoff400/selected_DCO_load_nodeset_native_433",
+  "followup": "build/signoff400/selected_DCO_load_nodeset_followup_434",
+  "preflight": {
+    "path": "build/signoff400/selected_DCO_load_nodeset_preflight_432.json",
+    "sha256": "5585075a1dc6531e2a5c9a6e7dc393b0da8cceb235bae5323c4f49c56f206887"
+  },
+  "runtime": {
+    "path": "build/signoff400/selected_DCO_load_nodeset_runtime_435.json",
+    "sha256": "65db68ea94d7da6b5bbe29859540f3ae39d0a136d562a0b7b969354354999ea6"
+  },
+  "new_load_node_guesses": 896,
+  "same_devices_and_sources": true,
+  "original_DCO_nodes_seeded": false,
+  "UIC_used": false,
+  "reference_manual": "https://xyce.sandia.gov/files/xyce/Xyce_Reference_Guide_7.8.pdf",
+  "CPU": 16,
+  "memory_GiB": 16,
+  "native_cap_s": 10800,
+  "status_at_recording": "native_running",
+  "state_selection_qualified": false,
+  "release_ready": false
+}
