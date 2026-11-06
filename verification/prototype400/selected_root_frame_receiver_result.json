@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_root_frame_receiver_replay_406/assessment.json",
+    "sha256": "97b7e3771d520cabfdf5d43cd7c9fe3010e27277913761a7f96c73f2f169db81"
+  },
+  "clock_frame_subtraction_ns": 0.24962239115285811,
+  "records": [
+    {
+      "role": "up",
+      "stage": "first",
+      "native_cycles": [
+        5,
+        21
+      ],
+      "root_replay_cycles": [
+        5,
+        21
+      ],
+      "counts_match": true,
+      "cycles_match": true,
+      "values_match": true
+    },
+    {
+      "role": "up",
+      "stage": "second",
+      "native_cycles": [
+        6,
+        22
+      ],
+      "root_replay_cycles": [
+        6,
+        22
+      ],
+      "counts_match": true,
+      "cycles_match": true,
+      "values_match": true
+    },
+    {
+      "role": "dn",
+      "stage": "first",
+      "native_cycles": [],
+      "root_replay_cycles": [],
+      "counts_match": true,
+      "cycles_match": true,
+      "values_match": true
+    },
+    {
+      "role": "dn",
+      "stage": "second",
+      "native_cycles": [],
+      "root_replay_cycles": [],
+      "counts_match": true,
+      "cycles_match": true,
+      "values_match": true
+    }
+  ],
+  "scope": "sampled independent TT receiver replay on root PLLOUT, DLF disabled",
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}
