@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "followup": "build/signoff400/selected_publication_calibration_followup_410",
+  "input_receipt": {
+    "path": "build/signoff400/selected_publication_calibration_followup_410/inputs.json",
+    "sha256": "b84e014325ed1a82d30608daf803dc67239d3d970030a8e2d0394fb1f9ded296"
+  },
+  "native_pipeline": "build/signoff400/selected_target_calibration_pipeline_316",
+  "variants": [
+    "measured_only",
+    "linear_period",
+    "linear_frequency"
+  ],
+  "common_gains": {
+    "ki": 4,
+    "kp": 0
+  },
+  "automatic_native_launch": false,
+  "status_at_recording": "waiting_for_original_native_calibration",
+  "interpolation_error_bound_qualified": false,
+  "release_ready": false
+}
