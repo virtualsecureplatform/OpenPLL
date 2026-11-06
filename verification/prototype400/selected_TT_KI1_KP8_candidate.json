@@ -1,0 +1,65 @@
+{
+  "purpose": "Tentative TT controller setting demonstrated with actual selected RTL",
+  "ki": 1,
+  "kp": 8,
+  "coarse": 20,
+  "measured_startup_fine": 133,
+  "measured_startup_frequency_mhz": 397.235125183,
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_TT_nominal_matrix_969/assessment.json": "d2a6f5448e2451fc0aca0e07b0a892f088fa16d3c09e18102a71b0303f0538c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_TT_receiver_matrix_970/assessment.json": "7233573c1937b31114bc999efb73cf66e9ab016976b7ef61b87b76149edecb17",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_nominal_975/inputs.json": "a1fd80927a168e9bda6b9ee517562b77cd95eb485dc0a7bdbd8fa5fe71266d60",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_receiver_976/inputs.json": "cc9743615a19aed114a96499ed72542e2195b876ab70b7be362055a846f8a53f"
+  },
+  "completed_cases": 48,
+  "completed_scenario_segments": 80,
+  "all_cases_functional": true,
+  "scenarios": [
+    "cold_start",
+    "disable_reenable",
+    "reset_during_tracking"
+  ],
+  "phase_offsets_ns": [
+    0,
+    10,
+    20,
+    30
+  ],
+  "interpolations": [
+    "linear_frequency",
+    "linear_period"
+  ],
+  "publication_views": [
+    "nominal",
+    "receiver_delay_stress_100ps"
+  ],
+  "worst_acquisition_confirmation_elapsed_ns": 102240.0,
+  "final_four_windows_max_frequency_error_ppm": 38.49684101475681,
+  "final_four_windows_max_phase_span_ps": 221.00000001955777,
+  "final_four_windows_max_abs_phase_mean_ps": 124.53906249845659,
+  "final_four_windows_max_abs_phase_drift_ps": 26.700893159817124,
+  "history_stress_queues": [
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_nominal_975",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_receiver_976"
+  ],
+  "matching_sender_native_holdout": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_sender_holdout_971",
+  "frozen_fit_holdout_follower": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_frozen_fit_holdout_972",
+  "heldout_fit_parameters_refitted": false,
+  "native_runtime_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_holdout_runtime_973.json",
+  "native_runtime_receipt_sha256": "91c9d326336d68bda33698e95c663e698dba36fdefa0d44397db4025d9323688",
+  "all_five_corners_checked": false,
+  "frequency_history_uncertainty_qualified": false,
+  "native_interface_qualified": false,
+  "common_release_gain_selected": false,
+  "physical_models_qualified": false,
+  "release_ready": false,
+  "lower_KI1_KP4_expanded_cases": {
+    "completed_cases": 48,
+    "functional_passes": 36,
+    "failure": "20 ns phase acquisition exceeds 200 us confirmation deadline",
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP4_TT_nominal_matrix_967/assessment.json": "110a7312d41aabae6cb47346b749d10ab079d17cf1ab19d457f35110b39fe484",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP4_TT_receiver_matrix_968/assessment.json": "d7a11c32a9329a7cfaea67576d8e16a1e29626cfb5ecb36933a91d70876fef99"
+    }
+  }
+}
