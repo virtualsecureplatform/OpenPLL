@@ -1,0 +1,53 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_phase_m0225_899/manifest.json": "5f413cfe31f503988413875762aa92016f7306bcb5987459610f007261867f14",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_phase_m0225_899/native/manifest.json": "f7c31e26fc78f6d1b84afd67251a2c615a0836320926833199ad717186aa88b7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_phase_runtime_901.json": "4e37499491dbf1c8a79ecf1c77870675981a28b27141e0596ad0fb42f8b02e2b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_phase_m0400_900/manifest.json": "e80c4f95118c9d03ddd7a9ea0e692092615fba1d74a72f532881cfbbb804e808",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_phase_m0400_900/native/manifest.json": "40e8778e85203e1e8e26cec890b5231bae1230d9981778e8dc26575ddf87e0b7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_phase_runtime_902.json": "06216c67fdcdaf69c7dfd6698239a231717f954fd2cc3fd69611032964aa4e50",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_independent_publication_holdout_532/response.json": "683b1c4d0b9cde3231b2b764fa243edd55eb9868762b4f0b2c3b7b7b5f6b3b4e"
+  },
+  "operating_point": {
+    "corner": "ss",
+    "temperature_c": 27,
+    "supply_v": 1.8
+  },
+  "prior_measured_phase_at_recorded_zero_ps": 211.85632940090926,
+  "phase_choices_are_estimates_not_measurements": true,
+  "cases": [
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_phase_m0225_899",
+      "recorded_phase_ns": -0.225,
+      "CPU": 20,
+      "memory_GiB": 12,
+      "native_cap_s": 10800,
+      "pending": true,
+      "expected_decision_not_assumed": true
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_phase_m0400_900",
+      "recorded_phase_ns": -0.4,
+      "CPU": 18,
+      "memory_GiB": 12,
+      "native_cap_s": 10800,
+      "pending": true,
+      "expected_decision_not_assumed": true
+    }
+  ],
+  "proposed_fitting_cases": [
+    "selected_SS_UP_publication_training_457",
+    "selected_SS_raw_phase_m0225_899",
+    "selected_SS_raw_phase_m0400_900"
+  ],
+  "proposed_independent_holdouts": [
+    "selected_SS_DN_publication_training_458",
+    "selected_SS_independent_publication_holdout_532"
+  ],
+  "fitting_requires_normal_completions_and_ordered_negative_opposite_decision_bracket": true,
+  "fit_not_started": true,
+  "upstream_waveforms_corner": "tt",
+  "corner_sender_waveforms_correlated": false,
+  "native_interface_qualified": false,
+  "release_ready": false
+}
