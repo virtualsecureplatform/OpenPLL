@@ -1170,3 +1170,9 @@ diode control. Its selected-parent replay is running. Use
 `tools/magic_antenna/toolchain_sif_v1.json`; each build requires a new output
 directory. Receipts and limits are in
 `verification/prototype400/selected_reproducible_magic_patch.json`.
+
+The source-verified recipe build completes the selected-parent replay with
+zero antenna feedback. Independent comparison preserves all 16 checked masks
+and matches source, flat, and extracted MOS gate area exactly. General contact
+area bounding remains under validation. See
+`verification/prototype400/selected_reproducible_magic_parent_result.json`.
