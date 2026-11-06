@@ -4,10 +4,13 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_response_831/owner.json": "8c3e30ce92e5b4aac427b83347c30109e59ddd5110f48478abfcd7f4943b6e3a",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_runtime_832.json": "1797c0515587b2fe33266bb6296e63d255c90e6610afb6bc02e212bab2ec1309",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_input_audit_833.json": "7a460b0e68997e0b22e060c8c6db111298b1327d0369bb479eccac7e40de7648",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_programming_prefix_837.json": "dc9a95177d514234caead54831dc44d13363d706384a248036822d0204d0b74d"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_programming_prefix_837.json": "dc9a95177d514234caead54831dc44d13363d706384a248036822d0204d0b74d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_comparison_882/assessment.json": "5f0b34e162536c745ee0dc22afa05dd90ed96e847294d2b542f04e0c8182d4b3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_native_lineage_control_883.json": "5397179bf2a597cd48ea3b376c2c89a73f3c9cd11c083193de90674fe4b41e78",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_response_831/status.json": "6c71c1c96ce45f710be55a0adc49bb5fbeb251ba68ce08f0b09e5edc8cc35479"
   },
   "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_111_to_133_native_830",
-  "response_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_response_831",
+  "response_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_comparison_882",
   "checkpoint_fine": 111,
   "requested_fine": 133,
   "coarse": 20,
@@ -26,10 +29,21 @@
   "CPU": 18,
   "memory_GiB": 8,
   "native_cap_s": 10800,
-  "response_pending": true,
+  "response_pending": false,
   "cross_code_restart_qualified": false,
   "release_ready": false,
   "frozen_early_programming_samples": 375,
   "all_changed_physical_drivers_observed_settled_by_2_to_3ns": true,
-  "maximum_DCO_reset_V_through_2ns": 9.41725384e-05
+  "maximum_DCO_reset_V_through_2ns": 9.41725384e-05,
+  "normal_native_completion": true,
+  "common_oscillator_age_window_ns": [
+    10,
+    40
+  ],
+  "full_native_difference_ppm": -2077.6492482351696,
+  "target_own_state_difference_ppm": -2076.502058660834,
+  "uniform_model_uncertainty_qualified": false,
+  "failed_observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_retarget_response_831",
+  "failed_observer_reason": "Missing direct model.spice entry; verified model identity recovered through hash-pinned parent manifests.",
+  "forged_parent_digest_control_rejected": true
 }
