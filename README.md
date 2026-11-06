@@ -1239,3 +1239,10 @@ The SF phase-zero independent holdout also completes normally and matches
 frozen selected-RTL first-stage cycles/counts under nominal and provisional
 100 ps replay, without refitting. See
 `verification/prototype400/selected_SF_phase_zero_receiver_result.json`.
+
+The original history-driven DCO run stopped at its wall limit with a finite
+prefix covering matched oscillator ages 10–40 ns. It measures 392.225160 MHz
+versus 392.223307 MHz full native (+4.72 ppm); early/late differences are
++3.78/+5.60 ppm. This supports investigating history-consistent initialization,
+but does not qualify other codes, tuning slope, or the later expanded circuit.
+See `verification/prototype400/selected_history_consistent_DCO_result.json`.

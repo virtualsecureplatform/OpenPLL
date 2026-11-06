@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "comparison": {
+    "path": "build/signoff400/selected_history_terminal_comparison_658/assessment.json",
+    "sha256": "09f4f5e6b2d9cd97f98e401ce25c55e2317da73957776325996cad4a378715aa"
+  },
+  "native_status": {
+    "path": "build/signoff400/selected_DCO_history_control_293/status.json",
+    "sha256": "7e0131fed99b728e9906b94f95356962350675bf0af64dd19b8a71eeba7505f3"
+  },
+  "native_manifest": {
+    "path": "build/signoff400/selected_DCO_history_control_293/manifest.json",
+    "sha256": "36d6389ff4b7ca66b03dfa0eb32ff763894843d8e15cd6cb3a122a4b47bd5e48"
+  },
+  "normal_full_window_completed": false,
+  "native_budget_stopped": true,
+  "frequency_comparisons": {
+    "common": {
+      "window_after_first_rise_ns": [
+        10,
+        40
+      ],
+      "candidate": {
+        "rising_edges": 12,
+        "frequency_mhz": 392.2251599893852,
+        "minimum_period_ns": 2.5491063405509067,
+        "maximum_period_ns": 2.5502199804903114
+      },
+      "full_native": {
+        "rising_edges": 12,
+        "frequency_mhz": 392.2233074552463,
+        "minimum_period_ns": 2.5491226980751946,
+        "maximum_period_ns": 2.5502163293856484
+      },
+      "difference_ppm": 4.723161789899066
+    },
+    "early": {
+      "window_after_first_rise_ns": [
+        10,
+        25.0
+      ],
+      "candidate": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.17537671194486,
+        "minimum_period_ns": 2.5495886063159787,
+        "maximum_period_ns": 2.5502199804903114
+      },
+      "full_native": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.1738939585622,
+        "minimum_period_ns": 2.549602625344079,
+        "maximum_period_ns": 2.5502163293856484
+      },
+      "difference_ppm": 3.7808569246511325
+    },
+    "late": {
+      "window_after_first_rise_ns": [
+        25.0,
+        40
+      ],
+      "candidate": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.2731548478982,
+        "minimum_period_ns": 2.5491063405509067,
+        "maximum_period_ns": 2.549396931746344
+      },
+      "full_native": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.27095708937003,
+        "minimum_period_ns": 2.5491226980751946,
+        "maximum_period_ns": 2.549417548736784
+      },
+      "difference_ppm": 5.602654207237379
+    }
+  },
+  "candidate_startup": {
+    "reset_release_ns": 181.25787199099477,
+    "first_oscillator_rise_ns": 184.08488189386176,
+    "end_age_ns": 61.27517010613823
+  },
+  "full_native_startup": {
+    "reset_release_ns": 181.25370008729755,
+    "first_oscillator_rise_ns": 184.08061956900158,
+    "end_age_ns": 75.91938043099842
+  },
+  "findings": "The history-driven retained circuit matches the full native reference within 5.7 ppm in these three windows. This motivates history-consistent initialization controls; it does not qualify other codes or isolate every difference from later expanded circuits.",
+  "tuning_slope_qualified": false,
+  "uniform_uncertainty_bound_qualified": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}
