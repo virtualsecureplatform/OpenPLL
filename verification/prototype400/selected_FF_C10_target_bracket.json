@@ -16,7 +16,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_measured_target_guides_795.json": "ebbfdd4446360ae47e0634f365ea86338e27ead65da853773b51dcf01030790d",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_target_request_796.json": "b4b641501c6906cb4e1d642ff4bfc31431f0feadcaf300a88dea4d1caa7099ee",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F152_target_check_797/manifest.json": "68a2748b0f33cc66122587d2f688d81d20a310dfa10a240be05270c2f8649596",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F152_runtime_798.json": "b8ec4eba45e14eee50a200f805a88f2d5fed3bdd5ae0e3c243bf919a76114415"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F152_runtime_798.json": "b8ec4eba45e14eee50a200f805a88f2d5fed3bdd5ae0e3c243bf919a76114415",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F152_target_check_797/devices.spice": "6160a27fd20cf04c0e7a26f58661a1688104dd4a6f96159a3d00bc4f7d91876c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F152_target_check_797/sources.spice": "54a92fd86f1c6c29dabf4546555a3cb0729bbb36b2891be323098f7bbecc0efa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_C10_F152_target_check_797/control.spice": "14b2da7edd773b500d9cfe74c524d32ba25d7ff0fc5f23f4fbbd446fe44f9f28"
   },
   "completed_point": {
     "coarse": 10,
@@ -32,8 +35,6 @@
     "memory_GiB": 8,
     "native_cap_s": 10800
   },
-  "changed_programming_driver_inputs": 32,
-  "identical_circuit_solver_reset_rails_and_quiet_biases": true,
   "scope": "Conditional FF devices with TT final-state exterior voltages held. Normally completed fine128/fine160 measurements bracket 400 MHz; the nearest interpolation hint fine152 is undergoing native measurement. No target frequency is assigned to that hint and no full-corner preset is qualified.",
   "preferred_preset": null,
   "full_corner_startup_qualified": false,
@@ -44,5 +45,17 @@
     "frequency_MHz": 401.837302716364,
     "nominal_target_error_ppm": 4593.256790909939
   },
-  "target_probe_result_pending": true
+  "target_probe_result_pending": true,
+  "completed_bracket_input_audit": {
+    "lower_fine": 128,
+    "upper_fine": 160,
+    "changed_programming_driver_inputs": 32,
+    "identical_circuit_solver_reset_rails_and_quiet_biases": true
+  },
+  "target_probe_input_audit": {
+    "reference_fine": 160,
+    "target_fine": 152,
+    "changed_programming_driver_inputs": 8,
+    "identical_circuit_solver_reset_rails_and_quiet_biases": true
+  }
 }
