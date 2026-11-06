@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "time_zero_exterior_static_target_control": {
+    "status": {
+      "path": "build/signoff400/selected_DCO_initial_boundary_native_497/status.json",
+      "sha256": "5c6d1ac9e309f457ab520ae57802d2176834e05f94e0f3184025570cabec056f"
+    },
+    "log": {
+      "path": "build/signoff400/selected_DCO_initial_boundary_native_497/native.log",
+      "sha256": "0838f8f501430795123f0fb0ea0442cb4c136d0b524bf659fa5f441b875797ab"
+    },
+    "outcome": "DC operating point failed before transient"
+  },
+  "coherent_initial_control": {
+    "input_audit": {
+      "path": "build/signoff400/selected_coherent_initial_DC_input_audit_502.json",
+      "sha256": "c7abb6a1b1df8c1afded904fa8c999a925dc5bfa8fc33169522900a0887fbf83"
+    },
+    "runtime": {
+      "path": "build/signoff400/selected_coherent_initial_DC_runtime_503/assessment.json",
+      "sha256": "013a090ff8787550690d80e638089ff58ef0ad995ae0ef74494d9069a1676ef4"
+    },
+    "status": {
+      "path": "build/signoff400/selected_coherent_initial_DC_probe_501/status.json",
+      "sha256": "223766cce2c3af49bb6c8d01ce3d85b8d64828580d835599a26b5c260ebbff8c"
+    },
+    "log": {
+      "path": "build/signoff400/selected_coherent_initial_DC_probe_501/native.log",
+      "sha256": "ce98890c51d0cb0d77521acc6dac05d0050d6932d2f3b436539064eb3a5e2501"
+    },
+    "outcome": "DC operating point failed before transient"
+  },
+  "static_target_programming_inputs_differing_from_recorded_initial_state": 37,
+  "DC_failure_cause_identified": false,
+  "frequency_calibration": false,
+  "release_ready": false
+}
