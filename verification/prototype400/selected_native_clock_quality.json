@@ -1,0 +1,51 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_native_clock_quality_fine111_853.json": "e666b923a414d0c5dca88d02c9bf19f69617169dcaf453a859ae0d1fa0b55546",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_native_clock_quality_fine112_854.json": "78a04ee79bf88f3dc6c991c69e9a08b844ead71607bf8febccd6bbdc4a8fbcc8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_native_clock_quality_fine133_852.json": "8c01c58de576eb6bee42b85bbc8e7b0b648a605bd6a2fb727cf1cd3140a3348b"
+  },
+  "window_ns": [
+    200,
+    260
+  ],
+  "edge_threshold_V": 0.9,
+  "records": [
+    {
+      "coarse": 20,
+      "fine": 111,
+      "mean_frequency_MHz": 392.3103175732505,
+      "complete_periods": 22,
+      "sampled_period_RMS_deviation_ps": 0.37024725964586386,
+      "sampled_cycle_to_cycle_RMS_ps": 0.24061655458543496,
+      "detrended_sampled_period_RMS_ps": 0.14801694953750305,
+      "linear_period_drift_ps_per_ns": -0.020985951053371938
+    },
+    {
+      "coarse": 20,
+      "fine": 112,
+      "mean_frequency_MHz": 392.6701142025293,
+      "complete_periods": 22,
+      "sampled_period_RMS_deviation_ps": 0.3831473566174123,
+      "sampled_cycle_to_cycle_RMS_ps": 0.27729910651403356,
+      "detrended_sampled_period_RMS_ps": 0.16768398240542806,
+      "linear_period_drift_ps_per_ns": -0.02132287754765702
+    },
+    {
+      "coarse": 20,
+      "fine": 133,
+      "mean_frequency_MHz": 397.23512518297935,
+      "complete_periods": 23,
+      "sampled_period_RMS_deviation_ps": 0.3982317994870503,
+      "sampled_cycle_to_cycle_RMS_ps": 0.08464853822037911,
+      "detrended_sampled_period_RMS_ps": 0.08608589229775722,
+      "linear_period_drift_ps_per_ns": -0.023284739251467845
+    }
+  ],
+  "three_math_and_input_guard_tests_passed": true,
+  "scope": "Finite-window noiseless native PLLOUT timing variation at three measured TT codes, including deterministic startup drift and numerical variation.",
+  "thermal_and_flicker_noise_simulated": false,
+  "precision_jitter_qualified": false,
+  "jitter_limit_applied": false,
+  "target_400MHz_preset_qualified": false,
+  "release_ready": false
+}
