@@ -1,0 +1,22 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_DLF_arbitrary_state_clear_proof_859/assessment.json": "fee294c2106a35fa7fdfb67b89b0df86f428dca89d462b6d525fc0f397898504",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_DLF_arbitrary_state_clear_proof_859/inputs.json": "5a1fccf6be59ca370351486d146e331ec13fc84299f73053ef409430ba4e2fd2"
+  },
+  "five_assertions_proven": true,
+  "initial_DLF_state_assumptions": 0,
+  "initial_reset_assumptions": 0,
+  "arbitrary_prior_filter_state_repaired_by_one_valid_clear_clock": true,
+  "output_mask_independent_of_prior_state": true,
+  "clear_load_removed_mutation_rejected": true,
+  "output_mask_removed_mutation_rejected": true,
+  "parameters": {
+    "CODE_WIDTH": 10,
+    "FRAC_WIDTH": 2,
+    "PROP_RAIL_GUARD": 1
+  },
+  "physical_reset_recovery_removal_qualified": false,
+  "metastability_resolution_bound_qualified": false,
+  "integrated_clear_clock_arrival_guarantee_qualified": false,
+  "release_ready": false
+}
