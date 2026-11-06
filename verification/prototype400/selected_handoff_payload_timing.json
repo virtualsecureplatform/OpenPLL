@@ -1,0 +1,118 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_handoff_payload_review_891.json": "ede83e9039baf81bc99e196e839ed20daba236baa22bf4108d81161cbf058d47",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_handoff_capture_age_890/assessment.json": "33deca63bbe274e7bb5f56b4e87be348041211966b43cdc8d132bc1442d6b4d9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_handoff_payload_review_controls_892/assessment.json": "624762530c8e3f2b2f4b81c8aa9c53fe14d6ae8fe9e5fa2aea92852a863aa13f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_handoff_reset_contract_PDR_812/assessment.json": "5918a88d0caca3e958ab7334d26cfa9b76dba987ac0916cfd2f93476e38d7a70"
+  },
+  "implemented_capture_registers": {
+    "fast": 1,
+    "fine": 29
+  },
+  "corners": [
+    "tt",
+    "ff",
+    "ss",
+    "sf",
+    "fs"
+  ],
+  "explicit_min_max_paths": 300,
+  "maximum_source_clock_to_capture_D_ns": 1.341309000000365,
+  "records": [
+    {
+      "corner": "tt",
+      "bundle": "fast",
+      "capture_registers": 1,
+      "explicit_min_max_paths": 2,
+      "minimum_source_clock_to_D_ns": 0.552333,
+      "maximum_source_clock_to_D_ns": 0.8801260000000184
+    },
+    {
+      "corner": "tt",
+      "bundle": "fine",
+      "capture_registers": 29,
+      "explicit_min_max_paths": 58,
+      "minimum_source_clock_to_D_ns": 0.26963200000000004,
+      "maximum_source_clock_to_D_ns": 0.9814449999994395
+    },
+    {
+      "corner": "ff",
+      "bundle": "fast",
+      "capture_registers": 1,
+      "explicit_min_max_paths": 2,
+      "minimum_source_clock_to_D_ns": 0.404878,
+      "maximum_source_clock_to_D_ns": 0.6457519999999022
+    },
+    {
+      "corner": "ff",
+      "bundle": "fine",
+      "capture_registers": 29,
+      "explicit_min_max_paths": 58,
+      "minimum_source_clock_to_D_ns": 0.187269,
+      "maximum_source_clock_to_D_ns": 0.7636720000000423
+    },
+    {
+      "corner": "ss",
+      "bundle": "fast",
+      "capture_registers": 1,
+      "explicit_min_max_paths": 2,
+      "minimum_source_clock_to_D_ns": 0.807485,
+      "maximum_source_clock_to_D_ns": 1.2785650000000714
+    },
+    {
+      "corner": "ss",
+      "bundle": "fine",
+      "capture_registers": 29,
+      "explicit_min_max_paths": 58,
+      "minimum_source_clock_to_D_ns": 0.41599899999999995,
+      "maximum_source_clock_to_D_ns": 1.341309000000365
+    },
+    {
+      "corner": "sf",
+      "bundle": "fast",
+      "capture_registers": 1,
+      "explicit_min_max_paths": 2,
+      "minimum_source_clock_to_D_ns": 0.6050850000000001,
+      "maximum_source_clock_to_D_ns": 0.9853520000001481
+    },
+    {
+      "corner": "sf",
+      "bundle": "fine",
+      "capture_registers": 29,
+      "explicit_min_max_paths": 58,
+      "minimum_source_clock_to_D_ns": 0.301726,
+      "maximum_source_clock_to_D_ns": 1.112304999999651
+    },
+    {
+      "corner": "fs",
+      "bundle": "fast",
+      "capture_registers": 1,
+      "explicit_min_max_paths": 2,
+      "minimum_source_clock_to_D_ns": 0.5454600000000001,
+      "maximum_source_clock_to_D_ns": 0.821777000000111
+    },
+    {
+      "corner": "fs",
+      "bundle": "fine",
+      "capture_registers": 29,
+      "explicit_min_max_paths": 58,
+      "minimum_source_clock_to_D_ns": 0.263496,
+      "maximum_source_clock_to_D_ns": 0.9106440000005023
+    }
+  ],
+  "discrete_two_prior_destination_edges_of_payload_stability_before_capture_proven": true,
+  "qualification_register_bypass_counterexample_frame": 5,
+  "selected_parent_sampled_reset_coassertion_contract_proven": true,
+  "reset_assumptions": [
+    "both resets initially low",
+    "subsequent assertions coassert",
+    "releases and clock stalls independent"
+  ],
+  "native_report_mutation_controls_rejected": 3,
+  "related_clock_slacks_used_as_asynchronous_acceptance": false,
+  "physical_request_aperture_qualified": false,
+  "actual_startup_frequency_range_qualified": false,
+  "physical_payload_setup_hold_qualified": false,
+  "physical_CDC_qualified": false,
+  "release_ready": false
+}
