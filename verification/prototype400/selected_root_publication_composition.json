@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "scope": "nominal root-frame publication adapter composed with native-fitted detector and selected-layout controller",
+  "evidence": [
+    {
+      "path": "build/signoff400/selected_root_publication_detector_407/assessment.json",
+      "sha256": "18a339ae2f5868532c37229bd4bda1db6a109c91118b0f0bb36cebd51b922b30"
+    },
+    {
+      "path": "build/signoff400/selected_root_publication_mixed_signal_408/assessment.json",
+      "sha256": "694aa0e709388e03227e156d289916731fe804021429595062d3b6ba39aca98c"
+    },
+    {
+      "path": "build/signoff400/selected_root_publication_adapter_check_409/assessment.json",
+      "sha256": "aeeffd33f9834df4561f40d8051d9594d8efecb58dfbd8aa0f29ea444289e3b8"
+    }
+  ],
+  "main_release_model_changed": false,
+  "native_measurement_requests": [
+    {
+      "coarse": 20,
+      "fine": 113
+    }
+  ],
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}
