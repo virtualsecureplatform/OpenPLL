@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "DN_frame": {
+    "path": "build/signoff400/selected_DN_receiver_clock_frame_505/assessment.json",
+    "sha256": "6571d052731da0d787ac7798158a52999b06c574c10d5d509f64320f18a7fecc"
+  },
+  "DN_root_replay": {
+    "path": "build/signoff400/selected_DN_root_frame_receiver_replay_507/assessment.json",
+    "sha256": "d2993a6510f19cf131080dee5f4059d6c7528028be4e384b45cf74b2846dd1e7"
+  },
+  "UP_regression": {
+    "path": "build/signoff400/selected_UP_root_frame_receiver_replay_509/assessment.json",
+    "sha256": "fcb218d0812e8a530b473887b59a1288d0d7158de80fe36573b44180425d92e3"
+  },
+  "DN_first_stage_native_and_logical_cycles": [
+    7,
+    23
+  ],
+  "DN_second_stage_native_and_logical_cycles": [
+    8,
+    24
+  ],
+  "UP_first_stage_native_and_logical_cycles": [
+    5,
+    21
+  ],
+  "UP_second_stage_native_and_logical_cycles": [
+    6,
+    22
+  ],
+  "complete_controller_timing_qualified": false,
+  "uniform_uncertainty_bound_qualified": false,
+  "release_ready": false
+}
