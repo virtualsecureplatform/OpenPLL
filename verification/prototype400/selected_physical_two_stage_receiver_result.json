@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_physical_two_stage_receiver_replay_399/assessment.json",
+    "sha256": "c9b1d997bae46f3d3af72d8739e356158ea67265425ab4c6baa12c2c0b84d250"
+  },
+  "selected_layout_pinned_RTL": true,
+  "active_holdout_channel": "up",
+  "observed_transitions": 2,
+  "both_receive_stages_match": true,
+  "DN_active_holdout_completed": false,
+  "complete_controller_timing_qualified": false,
+  "release_ready": false
+}
