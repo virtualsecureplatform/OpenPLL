@@ -1,0 +1,51 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_programming_loaded_path_plan_706.json": "f9ca1dee2ccbb421e9693e9df359e96e0925633eace59101d490fe81743b8f70",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_screen_707/manifest.json": "ed9cf6f5f7568e6e4e02647917c73630b4cefbc7d01beac0609550f865a7dcee",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_screen_707/sf_A1_00/profile.raw": "904ce49d3c43a05afaecdb27cb99568b23b0db84fdfa27639fe0ea2f58db7e62",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_screen_707/sf_A1_00/native.log": "477b584576876605271665b25f4e8842698defd5d759f3f169e89519ab5d1286",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_screen_707/sf_A1_00/profile.spice": "f2f026326c6d6d07110d7f6829fe7f6780b5eea8dd263c767392fbfe0c22c71c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_screen_707/sf_A1_00/sources.spice": "d33dcfce427e7c4b1473120184d88ce65c781598ac2b09d9c0767b7adf64f04e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_screen_707/sf_A1_00/native.process.json": "bff9b5c4e58dfeb531e7b9cfe8484b79ebb0f6e35f54bf7a28946ee6381ad260",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_live_runtime_709.json": "20f0d8bcd1deb62ce880dfc3c49828c90d6ac957b17d1585f6aa9fe5bf074b21",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_programming_loaded_screen.py": "c7d40d94eaf8de36ac3671f1b54d8f7ef9b8280136fe53f75bfe23a9ba8f1601"
+  },
+  "campaign": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_loaded_programming_screen_707",
+  "first_completed_case": {
+    "corner": "sf",
+    "arc": "A1",
+    "receiver_phase": [
+      0,
+      0
+    ],
+    "input_20_80_slew_ps": 1000,
+    "measured_slew": {
+      "logic_output": {
+        "rise_ps": 856.6134590740742,
+        "fall_ps": 349.64508053699103
+      },
+      "buffer_output": {
+        "rise_ps": 55.21735264912753,
+        "fall_ps": 85.01338353577559
+      },
+      "DCO_input": {
+        "rise_ps": 55.20768918474861,
+        "fall_ps": 85.03324147267222
+      },
+      "enable_output": {
+        "rise_ps": 119.11893947563001,
+        "fall_ps": 35.44789310920571
+      }
+    }
+  },
+  "selected_primitives": 52,
+  "added_antenna_diodes": 4,
+  "retained_passives": 20161,
+  "hidden_output_clamps_rejected": true,
+  "live_runtime_dependency_files": 319,
+  "total_planned_cases": 24,
+  "complete_campaign_assessment_pending": true,
+  "scope": "Conditional native loaded path; both TT and SF, all three sensitized AOI arcs and all four fixed binary receiver phase states are scheduled. Exterior coupling nodes use full-TT final DC. A sampled input slew and fixed phase states do not establish a uniform dynamic bound.",
+  "loaded_programming_path_qualified": false,
+  "release_ready": false
+}
