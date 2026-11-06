@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "native": {
+    "path": "build/signoff400/selected_conservative_contact_parent_652/assessment.json",
+    "sha256": "34f641dda5ae53e31cb7f8dd4690eb6c7889efafcbd3ecb83ab5cd39bfbd1b1e"
+  },
+  "geometry": {
+    "path": "build/signoff400/selected_conservative_contact_parent_geometry_653/assessment.json",
+    "sha256": "5b79536718f5cb10fc0977e6dc4a67af78563f13e8230a01ce2142e70acff6a8"
+  },
+  "engine_controls": {
+    "path": "build/signoff400/selected_magic_conservative_contact_controls_650/assessment.json",
+    "sha256": "d084d9ec7ec7fd16314021020849863d50ee01b7d5a27970f61539f5c537af7b"
+  },
+  "diode_control": {
+    "path": "build/signoff400/selected_magic_conservative_contact_diode_651/assessment.json",
+    "sha256": "e0e81cc41b03ca61595d24bc32920e6ae796859a2c928d9bc4bd150a3a9d40c6"
+  },
+  "native_feedback_entries": 0,
+  "all_16_checked_masks_preserved": true,
+  "source_flat_and_extracted_MOS_gate_areas_match": true,
+  "surface_area_policy": "max(reconstructed cut area, painted contact rectangle area)",
+  "general_contact_area_bound_qualified": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}

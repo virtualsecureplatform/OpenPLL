@@ -1195,3 +1195,9 @@ cut area and full painted-contact rectangle area. All 26 matched rule fixtures
 and the local actual-diode control pass. Its selected-parent diagnostic is
 running; general area-bound qualification remains open. See
 `verification/prototype400/selected_conservative_contact_antenna_controls.json`.
+
+The conservative contact-area engine completes the selected-parent diagnostic
+with zero feedback. All 16 checked source/flat masks and exact MOS gate area
+match again; matched rule and local diode controls pass. The general contact
+area bound still needs an explicit qualification argument. See
+`verification/prototype400/selected_conservative_contact_parent_result.json`.
