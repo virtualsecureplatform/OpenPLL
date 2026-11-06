@@ -1034,3 +1034,11 @@ model gap. The original comparison calculation succeeded, but its wrapper
 tried to hash an output directory. A separate recovery re-computes the saved
 comparison identically and fixes the wrapper path for future controls, without
 a native retry. See `verification/prototype400/selected_DCO_coherent_clock_result.json`.
+
+The independent repeated-DN control completed normally. The TT direction-
+aware packet now passes independent native first-stage cycle/count checks
+for UP rising/falling and DN rising/falling publications, without fitting
+validation timing. Its parameters reproduce the retained packet372 exactly.
+This validates the sampled local receiver behavior; a uniform aperture bound
+and full-controller timing remain open. See
+`verification/prototype400/selected_TT_direction_holdout_result.json`.

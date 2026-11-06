@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scope": "TT event publication and first receive-stage independent direction holdouts",
+  "assessment": {
+    "path": "build/signoff400/selected_complete_publication_followup_339/assessment.json",
+    "sha256": "70f1f88c5c20e51ace6cec9871d11ee47afa62875c3045eff73118ca01bfe978"
+  },
+  "parameters": {
+    "path": "build/signoff400/selected_complete_publication_followup_339/model/parameters.json",
+    "sha256": "9cfc80aa90123f113e203bdc7ff765ab0d94f26a479b843855b8d086f605dfc8"
+  },
+  "holdout_reports": [
+    {
+      "path": "build/signoff400/selected_complete_publication_followup_339/holdout_0/assessment.json",
+      "sha256": "d15d60ee222ea1064cb2ec2847396efa019e4457565a4afd5a50cdb33af7d443"
+    },
+    {
+      "path": "build/signoff400/selected_complete_publication_followup_339/holdout_1/assessment.json",
+      "sha256": "b2bd90152fdc271400fcad908b50aca184ea1dfe1a190a2e521789b6ec8f9f8b"
+    }
+  ],
+  "all_four_event_Q_directions_observed_independently": true,
+  "all_observed_first_stage_sampling_cycles_match": true,
+  "training_parameters_identical_to_retained_packet_372": true,
+  "uniform_aperture_or_uncertainty_bound_qualified": false,
+  "full_controller_timing_qualified": false,
+  "release_ready": false
+}
