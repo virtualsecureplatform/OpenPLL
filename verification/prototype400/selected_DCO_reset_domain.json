@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_DCO_reset_domain_audit_455.json",
+    "sha256": "49de0ef375e73496ae5a30570eaa42dd3be63ae31ee5268dfde5b1a9e1f548e4"
+  },
+  "all_four_reset_pins_on_actual_DCO_reset_R_component": true,
+  "reset_input_protocol": "PULSE(0 1.8 5n 50p 50p 80n 160n)",
+  "baseline_initial_reset_voltage_V": 2.49106083e-07,
+  "scope": "physical reset-domain connectivity and completed baseline initial voltage; not failed-load DC state or uniqueness proof",
+  "DC_failure_cause_identified": false,
+  "release_ready": false
+}
