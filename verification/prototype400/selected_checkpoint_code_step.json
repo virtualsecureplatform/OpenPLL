@@ -4,7 +4,9 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_code_pulse_runtime_814.json": "9ddf18b6a0af714aec97b19eccd7c83b82c313d82c64ca22e121831be2cc6420",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_code_pulse_input_audit_815.json": "63cd5f6b843bbc95aed2ac3e9f801e31ed35478405b9e3920ada293b97da4b81",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_selected_checkpoint_code_step.py": "0d1847c695d7bf3529f77973acfc23efd7399706aee2622f78b430926f441dfc",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_code_pulse_response_816/owner.json": "d3454af78651a711d88d31c9e45b5211a8d8cc6b1dc73b3de24544a79f060d25"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_code_pulse_response_816/owner.json": "d3454af78651a711d88d31c9e45b5211a8d8cc6b1dc73b3de24544a79f060d25",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_code_pulse_response_816/assessment.json": "0b5b0c3952c5df94be4e10dfea6e80f86b64790079fcd51af791e5646cc7ee25",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_dynamic_increment_872/assessment.json": "fa5f1499e274dba333361a37c2be06218e8366570c0c426dd115554eafa2ac54"
   },
   "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_fine111_code_pulse_813",
   "operating_point": {
@@ -33,7 +35,7 @@
   "CPU": 19,
   "memory_GiB": 8,
   "native_cap_s": 10800,
-  "response_pending": true,
+  "response_pending": false,
   "full_circuit_dynamic_equivalence_qualified": false,
   "release_ready": false,
   "response_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_code_pulse_response_816",
@@ -55,5 +57,61 @@
     111,
     112
   ],
-  "observed_driver_output_settled_state_verification_required": true
+  "observed_driver_output_settled_state_verification_required": true,
+  "normal_native_completion": true,
+  "settled_real_programming_input_and_output_verified": true,
+  "static_reference_window_differences_ppm": [
+    -0.4158565813927595,
+    -194.89177995146713,
+    -0.52031956665477
+  ],
+  "same_age_increment_windows": [
+    {
+      "window_ns": [
+        35,
+        45
+      ],
+      "static_increment_MHz": 0.3591243165039941,
+      "switched_increment_MHz": 0.28297200253717847,
+      "switched_over_static_increment": 0.7879499926149705,
+      "increment_difference_percent": -21.205000738502953,
+      "switched_minus_static112_ppm": -193.95412932543542
+    },
+    {
+      "window_ns": [
+        40,
+        55
+      ],
+      "static_increment_MHz": 0.3596093466445609,
+      "switched_increment_MHz": 0.2830830758048819,
+      "switched_over_static_increment": 0.787196101676084,
+      "increment_difference_percent": -21.2803898323916,
+      "switched_minus_static112_ppm": -194.89177995146713
+    },
+    {
+      "window_ns": [
+        45,
+        55
+      ],
+      "static_increment_MHz": 0.3597761096848444,
+      "switched_increment_MHz": 0.28304585670622373,
+      "switched_over_static_increment": 0.7867277706520464,
+      "increment_difference_percent": -21.327222934795365,
+      "switched_minus_static112_ppm": -195.40671678441868
+    },
+    {
+      "window_ns": [
+        50,
+        59
+      ],
+      "static_increment_MHz": 0.3601248526457539,
+      "switched_increment_MHz": 0.2831620026471455,
+      "switched_over_static_increment": 0.7862884234920747,
+      "increment_difference_percent": -21.371157650792526,
+      "switched_minus_static112_ppm": -195.9930041142144
+    }
+  ],
+  "static_calibration_qualifies_switched_response": false,
+  "discrepancy_cause_identified": false,
+  "uniform_model_uncertainty_qualified": false
 }
