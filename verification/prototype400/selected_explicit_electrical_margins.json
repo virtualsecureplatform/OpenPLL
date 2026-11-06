@@ -1,0 +1,17 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_explicit_electrical_margins_702/assessment.json": "f33fade45de3ae708688a6b0fc4ee4f8f5f12a544435809ab4c9fb8c02c26460",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_routed_CDC_019/routed.json": "8c8ea661bbac16062cfc4ce61cd2fdb581489f2f51a80d58bcb17f224ecf8857"
+  },
+  "all_five_corner_constrained_electrical_margins_pass": true,
+  "minimum_slew_margin_ps": 0.29887199999999997,
+  "worst_slew_corner": "sf",
+  "worst_slew_net": "DCO_THERM[226]",
+  "worst_slew_driver_master": "sky130_fd_sc_hs__a21oi_4",
+  "minimum_capacitance_margin_fF": 27.024714,
+  "screen_clock_MHz": 402.1,
+  "scope": "Explicit worst constrained-pin margins in existing supplied-capacitance-envelope timing views. SF slew margin is only 0.299 ps; actual model uncertainty, complete pin coverage and startup range remain unqualified.",
+  "electrical_rules_qualified": false,
+  "physical_integrity_qualified": false,
+  "release_ready": false
+}
