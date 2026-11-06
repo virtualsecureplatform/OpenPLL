@@ -1291,3 +1291,5 @@ and all seven guarded process views. Three negative metadata controls reject
 a missing stage, a mixed tool build, and a wrong GDS profile. This closes the
 selected antenna component; the complete physical gate remains open. See
 `verification/prototype400/selected_antenna_component_qualification.json`.
+
+A [same-network DCO history audit](verification/prototype400/selected_same_network_history_pair.json) now verifies identical device cards, quiet boundary sources, solver settings and observation nodes for the static and recorded-history controls. At TT coarse20/fine111, the common 10–40 ns oscillator-age frequency error changes from +1099.42 ppm to +4.72 ppm when the 302 programming inputs and reset use their recorded histories. This diagnoses the combined history effect for one code; independent-code correlation, code-step response and numerical uncertainty remain required.

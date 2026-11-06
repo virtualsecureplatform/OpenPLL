@@ -1,0 +1,11 @@
+{
+  "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_same_network_history_pair_691/assessment.json",
+  "sha256": "fe1a946f9f4a5847cfd1a08e639543f15ada3d2dcca7ba7cbf463d68bb6e5aeb",
+  "same_physical_network": true,
+  "changed_programming_sources": 302,
+  "changed_reset_sources": 1,
+  "static_error_ppm": 1099.4216604678363,
+  "history_error_ppm": 4.723161789899066,
+  "scope": "Same-network TT coarse20/fine111 diagnostic; combined programming/reset history intervention. Other codes, numerical convergence and closed-loop release qualification remain open.",
+  "release_ready": false
+}
