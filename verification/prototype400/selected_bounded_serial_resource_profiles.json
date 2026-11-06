@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "live_headroom": {
+    "path": "build/signoff400/selected_serial_resource_headroom_566.json",
+    "sha256": "a1f5cabe72c10fb1a4362e8e989831d7aa863f2a64d45115ffde42ec54a0fe4a"
+  },
+  "observed_workers": 8,
+  "maximum_observed_virtual_gib": 3.9420433044433594,
+  "observed_peak_is_not_future_bound": true,
+  "new_DCO_profile": {
+    "memory_gib": 8,
+    "serial_only": true,
+    "case": "build/signoff400/selected_DCO_FS_refined_target_559",
+    "manifest": {
+      "path": "build/signoff400/selected_DCO_FS_refined_target_559/manifest.json",
+      "sha256": "c68d4a70cd4f78648db6b027d6345057fb8c3c3c836a0ce3a98ac2e7810b6c92"
+    },
+    "actual_live_address_space_limit": {
+      "path": "build/signoff400/selected_FS_refined_live_limit_569.json",
+      "sha256": "d0a93e60d3b38a7af139e5c9d8bed15ce898183994f425cf312d39c20e2751cb"
+    },
+    "input_audit": {
+      "path": "build/signoff400/selected_FS_refined_input_audit_561.json",
+      "sha256": "efe0a00ec87557f8db9883ce752dda603a204b8743d5acb78481224ef692c180"
+    },
+    "runtime_observer": "build/signoff400/selected_FS_refined_runtime_562",
+    "normal_completion_unproven": true
+  },
+  "new_detector_profile": {
+    "memory_gib": 4,
+    "case": "build/signoff400/selected_FS_DN_publication_training_563",
+    "manifest": {
+      "path": "build/signoff400/selected_FS_DN_publication_training_563/native/manifest.json",
+      "sha256": "a2df417300bfca1597224dd1d14b2afb9ad2aafe1d9dd3236f0c7e8ac6e93d76"
+    },
+    "original_12GiB_preparation": "build/signoff400/selected_FS_DN_original_profile_prepare_567",
+    "electrical_export_audit": {
+      "path": "build/signoff400/selected_detector_resource_profile_audit_568.json",
+      "sha256": "eebc96b86d2cdb8e7ae996100c458af5d8ed4de54462f7d4a070d5213fc4df61"
+    },
+    "observed_state_at_recording": "waiting_for_resources",
+    "runtime_observer": "build/signoff400/selected_FS_DN_publication_runtime_565",
+    "training_collector": "build/signoff400/selected_FS_publication_training_followup_564",
+    "normal_completion_unproven": true
+  },
+  "aggregate_memory_limit_gib": 200,
+  "host_reserve_gib": 32,
+  "live_job_limits_modified": false,
+  "resource_profile_guard_tests_passed": 3,
+  "release_ready": false
+}
