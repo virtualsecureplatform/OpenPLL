@@ -1042,3 +1042,12 @@ validation timing. Its parameters reproduce the retained packet372 exactly.
 This validates the sampled local receiver behavior; a uniform aperture bound
 and full-controller timing remain open. See
 `verification/prototype400/selected_TT_direction_holdout_result.json`.
+
+The constant-cut benchmark completed normally. Frequency differs by +1.37 ppm
+and oscillator edges by at most 1.47 ps from the original serial reference.
+Wall time is 6,072.59 s versus 5,903.15 s (0.972x speedup), so this trial does
+not justify adopting it for speed. Numerical convergence remains unqualified.
+A separate fine112 five-buffer control is now running, with comparison to the
+matching completed full fine112 reference queued to assess tuning slope. See
+`verification/prototype400/selected_constant_cut_benchmark_result.json` and
+`verification/prototype400/selected_DCO_clock_code_holdout.json`.

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "scope": "one serial native constant-capacitor-cut elimination benchmark",
+  "assessment": {
+    "path": "build/signoff400/selected_DCO_constant_cut_elimination_336/assessment.json",
+    "sha256": "f70ccf09c7693b2cf2384ffaa2381adb9bc1244cf6c2edeed51571e0aa490eb1"
+  },
+  "frequency_difference_ppm": 1.371493482560382,
+  "maximum_oscillator_edge_difference_ps": 1.4682545588584617,
+  "candidate_elapsed_s": 6072.59,
+  "reference_elapsed_s": 5903.15,
+  "wall_speedup": 0.9720975728642967,
+  "default_rollout_justified_by_this_trial": false,
+  "numerical_convergence_qualified": false,
+  "release_ready": false
+}

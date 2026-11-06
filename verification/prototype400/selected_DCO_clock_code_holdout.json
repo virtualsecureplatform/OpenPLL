@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "scope": "coarse20 fine112 code holdout of the five-buffer reduced DCO",
+  "native": "build/signoff400/selected_DCO_coherent_clock_fine112_388",
+  "full_reference": {
+    "path": "build/signoff400/selected_native_fine112_calibration_assessment_138/provenance.json",
+    "sha256": "08b4594c22e25524e110de6f6555afb2e44d587409cf3574e7f85ddbf1568257"
+  },
+  "comparison_followup": "build/signoff400/selected_DCO_clock_fine112_holdout_followup_389",
+  "status_at_recording": "native_running",
+  "native_identical_retry": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}
