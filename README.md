@@ -1138,3 +1138,11 @@ source, flat, and extracted MOS gate area agree exactly at 11710.4958 um².
 Exact contact cut accounting and diode-protection validation remain open, so
 this does not yet qualify the parent antenna gate. See
 `verification/prototype400/selected_experimental_parent_antenna_result.json`.
+
+The experimental antenna build with generator-matched contact pitch arithmetic
+passes all 26 matched rule controls. An actual HS diode control also passes:
+an isolated diode leaves 17 oversized-M3 feedback entries; connecting the
+diode to the gate net removes feedback. Native extraction verifies that
+connection. The selected parent is being replayed with this exact executable;
+whole-parent qualification remains open. See
+`verification/prototype400/selected_magic_pitch_and_diode_controls.json`.
