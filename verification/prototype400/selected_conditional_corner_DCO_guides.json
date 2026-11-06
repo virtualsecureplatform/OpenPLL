@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scope": "conditional reduced DCO FF/SS frequency and retained clock-edge guides",
+  "preflight": {
+    "path": "build/signoff400/selected_corner_DCO_preflight_392.json",
+    "sha256": "7aa53356c5d1d79a1f4a6ab81668b639289961a01743faede03364d6d536ac65"
+  },
+  "live_runtime": {
+    "path": "build/signoff400/selected_corner_DCO_live_runtime_396.json",
+    "sha256": "3b8193548b3243db88d55ae5cb47b6a10eee671805070d124cfa86b802a92852"
+  },
+  "cases": [
+    {
+      "native": "build/signoff400/selected_DCO_FF_corner_native_393",
+      "retained_device_corner": "ff",
+      "CPU": 22
+    },
+    {
+      "native": "build/signoff400/selected_DCO_SS_corner_native_394",
+      "retained_device_corner": "ss",
+      "CPU": 23
+    }
+  ],
+  "coarse": 20,
+  "fine": 111,
+  "temperature_c": 27,
+  "supply_v": 1.8,
+  "exterior_bias_source_corner": "tt",
+  "initialization": "fresh retained-circuit DC solve with TT-derived exterior voltages",
+  "five_retained_clock_outputs_saved": true,
+  "followup": "build/signoff400/selected_corner_DCO_guide_followup_397",
+  "status_at_recording": "native_running",
+  "full_corner_calibration_qualified": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}

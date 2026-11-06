@@ -1051,3 +1051,12 @@ A separate fine112 five-buffer control is now running, with comparison to the
 matching completed full fine112 reference queued to assess tuning slope. See
 `verification/prototype400/selected_constant_cut_benchmark_result.json` and
 `verification/prototype400/selected_DCO_clock_code_holdout.json`.
+
+Conditional reduced-DCO FF and SS probes are running at coarse20/fine111.
+They retain the same device/passive/source files as the TT clock-buffer
+baseline; only the PDK corner and five additional clock observations change.
+Retained devices use the requested corner, while prescribed exterior voltages
+come from the TT final trace. Fresh local DC initialization is explicit; these
+are preset/clock-edge guides, not full-corner calibration. Live simulator and
+all 319 PDK dependency bytes match the pinned reference. See
+`verification/prototype400/selected_conditional_corner_DCO_guides.json`.
