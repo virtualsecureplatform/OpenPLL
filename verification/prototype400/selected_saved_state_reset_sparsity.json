@@ -1,0 +1,26 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_sparse_reset_native_721/manifest.json": "8fb95c911d90c605051ad7dca79f3935607712166727af7c3ec9b9bdcbc7b67c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_sparse_reset_native_721/reset_voltage_certificate.json": "3ca3970a8ef70e95a10f3334c6baa8e693635a42425d46e81b2c52e93ea787e4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_reset_input_audit_724.json": "456c21e50937a705f54a853e3a65177a6537f6440c4307ec41fb8ed2f7705bb4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_sparse_reset_runtime_723/assessment.json": "6438b93fcf4757e7bcdf2e70c609c29180e1f7403f0b8166710f9293d61de4ab"
+  },
+  "baseline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_DC_DCO_native_718",
+  "candidate": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_sparse_reset_native_721",
+  "baseline_reset_knots": 7713,
+  "candidate_reset_knots": 121,
+  "independent_maximum_voltage_difference_v": 0.0009714179133721856,
+  "additional_voltage_bound_v": 0.001,
+  "total_triangle_bound_to_full_native_reset_v": 0.001001,
+  "only_reset_source_changed": true,
+  "initial_private_voltages_and_physical_network_identical": true,
+  "reset_endpoints_and_threshold_crossing_times_preserved": true,
+  "candidate_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_sparse_reset_comparison_722/assessment.json",
+  "baseline_comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_DC_DCO_comparison_719/assessment.json",
+  "native_response_comparisons_pending": true,
+  "scope": "Controlled reset PWL perturbation in the same constrained-DC saved-voltage experiment. The original tighter reset control remains running. Voltage and threshold-time certificates do not establish charge, oscillator-response, numerical-convergence or speedup qualification.",
+  "charge_error_bounded": false,
+  "DCO_response_equivalence_qualified": false,
+  "speedup_qualified": false,
+  "release_ready": false
+}
