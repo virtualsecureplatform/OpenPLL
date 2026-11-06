@@ -1255,3 +1255,9 @@ An actual Xyce probe verifies 1 ns quiet-window steps and 10 ps transition/
 oscillation steps. The input audit passes; runtime speedup and response/charge
 equivalence remain unqualified. The new native budget is 3 h/8 GiB. See
 `verification/prototype400/selected_sparse_history_control.json`.
+
+FF coarse9/fine229 completes normally at 400.038180 MHz (+95.45 ppm),
+passing the conditional nominal-frequency check. The selector retains this
+measured point. TT-derived held exterior biases remain explicit; this is not
+full-corner calibration. See
+`verification/prototype400/selected_FF_measured_target_result.json`.

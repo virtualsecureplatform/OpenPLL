@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "native": {
+    "path": "build/signoff400/selected_DCO_FF_target_check_596/assessment.json",
+    "sha256": "394b402f776637ffcb3fdfd7ba0c905c270fa7af88c984015ba1415862df9f15"
+  },
+  "guides": {
+    "path": "build/signoff400/selected_FF_three_point_guides_597/assessment.json",
+    "sha256": "f4ec6805fae28bd55e9a01c96179ec0c737e13469bcebeb5e6aa315af0328b77"
+  },
+  "selection": {
+    "path": "build/signoff400/selected_FF_measured_target_selection_683.json",
+    "sha256": "25abd5102eb9dbef7191b23cc2d93cbaa8b6bc191cbb5d0c2c98ab665a80fdbc"
+  },
+  "input_audit": {
+    "path": "build/signoff400/selected_FF_target_input_audit_598.json",
+    "sha256": "a3baeb2a43eeb544a7b7c706c6afc4d3049d08b51c80584e1cdcb99135ccb53a"
+  },
+  "coarse": 9,
+  "fine": 229,
+  "frequency_mhz": 400.03817951554925,
+  "nominal_error_ppm": 95.44878887313146,
+  "conditional_nominal_frequency_check_pass": true,
+  "full_corner_calibration_qualified": false,
+  "release_ready": false
+}
