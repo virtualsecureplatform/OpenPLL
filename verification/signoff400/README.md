@@ -7407,3 +7407,10 @@ it does not require the asynchronous first stage always to select the ideal
 first eligible edge. Unexplained behavior remains unqualified. This preserves
 the required crossing review, interstage timing and uncertainty holdouts,
 while the profile separately defers the production 1 FIT target.
+
+`run_selected_mixed_signal_v5.py` is an experimental bounded-interpolation
+diagnostic, separate from the version-4 measured-only path. `--interpolation`
+selects linear period or linear frequency between native knots. Estimated
+rows are never inserted into the native measurement registry, and unsupported
+codes outside each bank span still request native data. Interpolation itself
+is not a validated uncertainty bound or release-qualified model.

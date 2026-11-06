@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "diagnostic interpolation inside native tuning knots only",
+  "assessment": {
+    "path": "build/signoff400/selected_bounded_interpolation_adjacent_control_386/assessment.json",
+    "sha256": "2872a06e63de673d9ea91755c67955b759907e8b17cfb8894fe51b649071bd22"
+  },
+  "curve": {
+    "path": "build/signoff400/selected_bounded_interpolation_adjacent_control_386/dco_frequency_model.json",
+    "sha256": "9a31e835ce666cc6339729a72f177068ab588a5abdaf7708eb9411f8ef711215"
+  },
+  "native_adjacent_point_table_identical_to_discrete_control": true,
+  "native_registry_measurements_rewritten": false,
+  "unsupported_code_113_still_requests_native_measurement": true,
+  "independent_holdouts_complete": false,
+  "uniform_frequency_error_bound_qualified": false,
+  "release_ready": false
+}

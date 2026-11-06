@@ -1016,3 +1016,12 @@ sampling outcome is not presumed. Model uncertainty must explain any capture
 cycle variation before full-controller validation. All remain conditional on
 recorded TT upstream excitation, not full FF sender correlation. See
 `verification/prototype400/selected_FF_direction_holdouts.json`.
+
+A separate version-5 mixed-signal diagnostic can interpolate frequency or
+period between native tuning knots, strictly within each measured coarse-bank
+span. Every estimated row is marked as interpolation; native registry points
+are unchanged and extrapolation remains forbidden. The adjacent 111/112
+control produces the identical native table and still requests fine113. Three
+unit controls pass. Independent model holdouts and a frequency-error bound
+remain unqualified. See
+`verification/prototype400/selected_bounded_frequency_interpolation.json`.
