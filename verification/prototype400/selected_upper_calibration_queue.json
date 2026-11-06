@@ -36,9 +36,30 @@
   "native_cap_s": 172500,
   "nominal_followup": "build/signoff400/selected_upper_nominal_followup_464",
   "receiver_stress_followup": "build/signoff400/selected_upper_receiver_stress_followup_465",
-  "status_at_recording": "waiting_for_original_native_target_registry",
+  "status_at_recording": "upper_native_point_attached",
   "frequency_prediction_inserted": false,
   "interpolation_error_bound_qualified": false,
   "startup_headroom_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "measured_fine": 165,
+  "measured_frequency_mhz": 402.8602252416963,
+  "measurement_window_ns": [
+    200,
+    260
+  ],
+  "normal_native_elapsed_s": 42007.26838791696,
+  "measured_target_bracket_codes": [
+    133,
+    165
+  ],
+  "measured_target_bracket_mhz": [
+    397.235125183,
+    402.8602252416963
+  ],
+  "measured_bracket_qualifies_startup_or_capture": false,
+  "completed_artifacts": {
+    "build/signoff400/selected_upper_calibration_pipeline_463/assessment.json": "9a32d2d6b44226e26d26fa569c31653c7a91dac0a210ec60c9a3d6b01628ad3f",
+    "build/signoff400/selected_upper_calibration_pipeline_463/waveform_assessment/assessment.json": "245e2d9ab0329d34fc2e59fb451a5345fcf01b7b0553f4b8f1dd23f6042c489b",
+    "build/signoff400/selected_upper_calibration_pipeline_463/registry/models.json": "678bcb2c9484c49e14b7ac25e7a1fc2169f7b4526443160928393588803839fb"
+  }
 }

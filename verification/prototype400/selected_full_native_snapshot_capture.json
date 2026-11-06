@@ -17,5 +17,8 @@
   "driver_traces": 9,
   "matching_sender_prepare_directory": "build/signoff400/selected_matching_sender_prepare_960",
   "matching_sender_prepare_state": "prepared_without_native_execution",
-  "matching_sender_validation_tests_passed": 6
+  "matching_sender_validation_tests_passed": 6,
+  "four_corner_capture_queue": "build/signoff400/selected_full_corner_sender_packets_961",
+  "four_corner_capture_queue_inputs_sha256": "c4c8db73c13691b4abf19c7828fd41236d4abe0f9d6b0a4427506df0e771a9c0",
+  "additional_native_simulations_launched_by_capture_queue": 0
 }

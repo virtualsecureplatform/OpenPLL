@@ -33,5 +33,12 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_refined_cached_stress_matrix_790"
   ],
   "superseded_refinement_pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_766",
-  "native_child_execution": "Every native/assessment/registry subprocess explicitly enters the pinned CAD image; validated child PDK namespace smoke control."
+  "native_child_execution": "Every native/assessment/registry subprocess explicitly enters the pinned CAD image; validated child PDK namespace smoke control.",
+  "status_at_recording": "target_refinement_stage_running",
+  "active_stage": "native",
+  "requested_fine": 149,
+  "requested_coarse": 20,
+  "frequency_prediction_inserted": false,
+  "live_runtime_receipt": "build/signoff400/selected_refined_TT_runtime_962.json",
+  "live_runtime_receipt_sha256": "0459bc25244702887de03d48a898db21ad6964b0e59db1db55e83cd1f280ede8"
 }
