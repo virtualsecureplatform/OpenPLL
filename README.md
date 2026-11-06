@@ -1189,3 +1189,9 @@ V4 reproduces the 60 ns regression exactly with TT/27 C conditions verified;
 its replacement observer waits for the original 260 ns history run. Earlier
 regression654/observer655 are superseded and must not be used as evidence.
 See `verification/prototype400/selected_history_duration_followup.json`.
+
+A separate conservative antenna variant charges the larger of reconstructed
+cut area and full painted-contact rectangle area. All 26 matched rule fixtures
+and the local actual-diode control pass. Its selected-parent diagnostic is
+running; general area-bound qualification remains open. See
+`verification/prototype400/selected_conservative_contact_antenna_controls.json`.

@@ -1,0 +1,38 @@
+--- a/extflat/EFantenna.c
++++ b/extflat/EFantenna.c
+@@ -438,7 +438,7 @@
+ 	    t = EFDeviceTypes[dev->dev_type];
+ 	    pNum = DBPlane(t);
+ 	    pos = ExtCurStyle->exts_planeOrder[pNum];
+-	    pmax = ++pos;
++	    pmax = pos;
+ 
+ 	    /* Find the highest plane in the technology */
+ 	    for (p = PL_TECHDEPBASE; p < DBNumPlanes; p++)
+@@ -973,15 +973,22 @@
+ 
+ 	    CIFGetContactSize(type, &cutsize, &cutsep, &cutborder);
+ 
+-	    w = cont->r_xtop - cont->r_xbot;
+-	    h = cont->r_ytop - cont->r_ybot;
+-	    nx = (w - 2 * cutborder) / (cutsize + cutsep);
+-	    ny = (h - 2 * cutborder) / (cutsize + cutsep);
++	    w = (cont->r_xtop - cont->r_xbot) * CIFCurStyle->cs_scaleFactor;
++	    h = (cont->r_ytop - cont->r_ybot) * CIFCurStyle->cs_scaleFactor;
++	    nx = (w + cutsep - 2 * cutborder) / (cutsize + cutsep);
++	    ny = (h + cutsep - 2 * cutborder) / (cutsize + cutsep);
+ 	    if (nx == 0) nx = 1;
+ 	    if (ny == 0) ny = 1;
+ 
+ 	    fcutsize = (float)cutsize / (float)CIFCurStyle->cs_scaleFactor;
+ 	    area = (dlong)(nx * ny) * (dlong)(fcutsize * fcutsize);
++
++            /* Conservative contact-surface bound: include all painted
++             * enclosure area, without subtracting spaces between cuts.
++             * Retain any larger reconstructed-cut estimate as well.
++             */
++            area = MAX(area, (dlong)(cont->r_xtop - cont->r_xbot)
++                    * (dlong)(cont->r_ytop - cont->r_ybot));
+ 
+ 	    DBFullResidueMask(type, &sMask);
+ 	    for (ttype = TT_TECHDEPBASE; ttype < DBNumTypes; ttype++)
