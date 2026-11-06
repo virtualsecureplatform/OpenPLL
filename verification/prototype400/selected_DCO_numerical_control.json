@@ -24,11 +24,15 @@
   "CPU": 27,
   "memory_GiB": 16,
   "native_cap_s": 10800,
-  "status_at_recording": "native_running",
+  "status_at_recording": "normally_completed_and_compared",
   "full_native_model_convergence_qualified": false,
   "release_ready": false,
   "runtime": {
     "path": "build/signoff400/selected_DCO_numerical_runtime_418.json",
     "sha256": "91657516f288343f2638f802bf404d8e9ea6f43c822eb870f99f72ed910cafb6"
+  },
+  "result": {
+    "path": "build/signoff400/selected_DCO_numerical_followup_415/comparison.json",
+    "sha256": "d9911f89f7b7060864b3f96c0ecabd95c10947b9418f414f3b1eddfbc663e4cc"
   }
 }

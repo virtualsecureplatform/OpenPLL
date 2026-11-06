@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "path": "build/signoff400/selected_DCO_numerical_followup_415/comparison.json",
+    "sha256": "d9911f89f7b7060864b3f96c0ecabd95c10947b9418f414f3b1eddfbc663e4cc"
+  },
+  "collector": {
+    "path": "build/signoff400/selected_DCO_numerical_followup_415/assessment.json",
+    "sha256": "af69cc98138e0432a49d4a41d509dbbfcb075682187a587519869a58ae788f07"
+  },
+  "comparisons": {
+    "common": {
+      "window_after_first_rise_ns": [
+        10,
+        40
+      ],
+      "candidate": {
+        "rising_edges": 12,
+        "frequency_mhz": 392.6551404877742,
+        "minimum_period_ns": 2.546322863829104,
+        "maximum_period_ns": 2.5474143870827604
+      },
+      "full_native": {
+        "rising_edges": 12,
+        "frequency_mhz": 392.6402912624013,
+        "minimum_period_ns": 2.5464049685892647,
+        "maximum_period_ns": 2.5475134859827655
+      },
+      "difference_ppm": 37.818903722675046
+    },
+    "early": {
+      "window_after_first_rise_ns": [
+        10,
+        25.0
+      ],
+      "candidate": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.606183766397,
+        "minimum_period_ns": 2.546801555349706,
+        "maximum_period_ns": 2.5474143870827604
+      },
+      "full_native": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.59108906363633,
+        "minimum_period_ns": 2.546879144282933,
+        "maximum_period_ns": 2.5475134859827655
+      },
+      "difference_ppm": 38.44891843240994
+    },
+    "late": {
+      "window_after_first_rise_ns": [
+        25.0,
+        40
+      ],
+      "candidate": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.70199918154213,
+        "minimum_period_ns": 2.546322863829104,
+        "maximum_period_ns": 2.546613484999348
+      },
+      "full_native": {
+        "rising_edges": 6,
+        "frequency_mhz": 392.6881589241246,
+        "minimum_period_ns": 2.5464049685892647,
+        "maximum_period_ns": 2.546706706658746
+      },
+      "difference_ppm": 35.24490643025402
+    }
+  },
+  "scope": "TT C20/F111 reduced-circuit sensitivity to combined 5 ps step and tenfold tighter tolerances",
+  "full_native_model_convergence_qualified": false,
+  "uniform_uncertainty_bound_qualified": false,
+  "release_ready": false
+}
