@@ -1,0 +1,98 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_trace_review_nominal_1223/assessment.json": "fa60a0c18cdad63bf8f82ad288d8ce05880c16ad3220fda4dbf05f373e9a6e44",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_trace_review_nominal_1223/trace_checks.json": "0186fdfff12b20acd1cd41ef4de3d040fc3c0ce5479ecffef32c208ad02bec5d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_history_nominal_1219/matrix/assessment.json": "d2be299cf17bf5e5cf73ca77f0f5e58f0e75db97163d7668d1c51b5670d58c00",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_trace_review_receiver_1224/assessment.json": "5e75c2257a291f8b0c7ddcdc37cd3d64d91af606db5e9998030a020b2b509985",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_trace_review_receiver_1224/trace_checks.json": "0f56989cf103fe5b78c4732be7ca345a3823b2f3a28bc61756d18994cbd2ec8f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_history_receiver_1220/matrix/assessment.json": "4e9844730b2e6487c03341e693a9864eb9133288dfde98dc477322db46c3ee28"
+  },
+  "records": [
+    {
+      "view": "nominal",
+      "cases_recomputed": 96,
+      "functional_passes": 78,
+      "functional_failures": 18,
+      "by_stress": {
+        "nominal": {
+          "pass": 24
+        },
+        "gain": {
+          "pass": 24
+        },
+        "offset": {
+          "pass": 24
+        },
+        "gain_offset": {
+          "pass": 6,
+          "fail": 18
+        }
+      },
+      "failing_segments": 30,
+      "failure_segment_classes": {
+        "late_acquisition": 20,
+        "not_sustained": 10
+      },
+      "late_acquisition_elapsed_ns": [
+        209760.0
+      ],
+      "all_saved_segment_metrics_reproduced_exactly": true,
+      "all_phase_initializations_recomputed": true,
+      "all_trace_files_hashed_before_and_after": true,
+      "image_guard": {
+        "full_image_hash_checks": 2,
+        "metadata_cache_hits": 96,
+        "all_other_pins_fully_hashed_per_case": true,
+        "final_full_image_hash_required": true
+      }
+    },
+    {
+      "view": "receiver",
+      "cases_recomputed": 96,
+      "functional_passes": 78,
+      "functional_failures": 18,
+      "by_stress": {
+        "nominal": {
+          "pass": 24
+        },
+        "gain": {
+          "pass": 24
+        },
+        "offset": {
+          "pass": 24
+        },
+        "gain_offset": {
+          "pass": 6,
+          "fail": 18
+        }
+      },
+      "failing_segments": 30,
+      "failure_segment_classes": {
+        "late_acquisition": 20,
+        "not_sustained": 10
+      },
+      "late_acquisition_elapsed_ns": [
+        209760.0
+      ],
+      "all_saved_segment_metrics_reproduced_exactly": true,
+      "all_phase_initializations_recomputed": true,
+      "all_trace_files_hashed_before_and_after": true,
+      "image_guard": {
+        "full_image_hash_checks": 2,
+        "metadata_cache_hits": 96,
+        "all_other_pins_fully_hashed_per_case": true,
+        "final_full_image_hash_required": true
+      }
+    }
+  ],
+  "gain_pair": [
+    1,
+    4
+  ],
+  "all_192_complete_case_metrics_recomputed": true,
+  "reviewer_controls_passed": 4,
+  "robust_gain_selected": false,
+  "wide_code_stress_applicability_qualified": false,
+  "common_five_corner_gain_qualified": false,
+  "release_ready": false
+}
