@@ -1,0 +1,64 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP4_gain_phase20_1090/assessment.json": "5293953734099e08db7a595f985820fdc7fc5f2d680e6754ee1db177f9e4ae02"
+  },
+  "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP4_gain_phase20_1090",
+  "gain_pair": [
+    1,
+    4
+  ],
+  "scenario": 0,
+  "phase_ns": 20,
+  "stress": "gain",
+  "records": [
+    {
+      "timing": "nominal",
+      "interpolation": "linear_period",
+      "state": "needs_native_tuning_points",
+      "measurement_requests": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    },
+    {
+      "timing": "nominal",
+      "interpolation": "linear_frequency",
+      "state": "needs_native_tuning_points",
+      "measurement_requests": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    },
+    {
+      "timing": "receiver",
+      "interpolation": "linear_period",
+      "state": "needs_native_tuning_points",
+      "measurement_requests": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    },
+    {
+      "timing": "receiver",
+      "interpolation": "linear_frequency",
+      "state": "needs_native_tuning_points",
+      "measurement_requests": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    }
+  ],
+  "all_input_and_case_artifact_hashes_verified": true,
+  "new_native_cases": 0,
+  "fix_demonstrated": false,
+  "full_gain_selected": false,
+  "release_ready": false
+}
