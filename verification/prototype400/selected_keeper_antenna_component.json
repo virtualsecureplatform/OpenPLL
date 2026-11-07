@@ -1,0 +1,38 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_component_1165/qualification.json": "86a01ef919614de85c122781fa3b5ff40952e30eec1d8e10b1dba3938a7775ca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_controls_1166/assessment.json": "e46953784f937906378cc50cb2619ca7f4cd9d282aa83a43894e91466fd2507f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_antenna/keeper_profile_v1.json": "e9bb60fee011113af04008bc10b131e11bdae5a49fccdc898dfffa4ad2e3d910"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_component_1165/evidence.json": "8053a373463f9dbb8425e326feb2de680570cb466833b773d7bc6323d4b6ebff"
+  },
+  "profile_sha256": "a09e26d592a2b09e7945df293422f5e9ed60483b9086813467128d035165b5da",
+  "candidate": {
+    "identity": "keeper_filled_candidate",
+    "physical_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assembly.gds": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca"
+    },
+    "RTL_binding_qualified": false
+  },
+  "status": "pass",
+  "component": "antenna",
+  "validated_for_prototype": true,
+  "checks": {
+    "source_verified_build": true,
+    "all_26_matched_rule_controls": true,
+    "local_diode_protection_control": true,
+    "independent_selected_mask_and_gate_area": true,
+    "actual_contact_masks_contained_by_paint": true,
+    "seven_current_stage_connectivity_guards": true,
+    "zero_feedback_all_current_process_layers": true
+  },
+  "parent_antenna_qualified": true,
+  "RTL_binding_qualified": false,
+  "selected": false,
+  "qualified_tool_profile": "e9bb60fee011113af04008bc10b131e11bdae5a49fccdc898dfffa4ad2e3d910",
+  "arbitrary_layouts_qualified": false,
+  "other_physical_components_qualified": false,
+  "complete_physical_gate_qualified": false,
+  "release_ready": false
+}

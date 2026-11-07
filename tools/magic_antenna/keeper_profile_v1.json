@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "name": "keeper_candidate_conservative_antenna_v1",
+  "scope": "exact keeper candidate filled GDS only; native pinned PDK antenna rules",
+  "selected_GDS_sha256": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca",
+  "release_profile_sha256": "a09e26d592a2b09e7945df293422f5e9ed60483b9086813467128d035165b5da",
+  "technology_sha256": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+  "source_patch": "tools/magic_antenna/antenna-conservative-8.3.623.patch",
+  "source_patch_sha256": "ed5fe295c8adef497f4c4b60ad43c6a13a4ca585725f3d6dcc2dbc7c0d5d77ff",
+  "toolchain": "tools/magic_antenna/toolchain_sif_v1.json",
+  "toolchain_sha256": "f88fce59fbd7acb4512dc0a4836d32a7ee6d4af9012385702ecfaff570aa91b8",
+  "checks": [
+    "source_verified_build",
+    "all_26_matched_rule_controls",
+    "local_diode_protection_control",
+    "independent_selected_mask_and_gate_area",
+    "actual_contact_masks_contained_by_paint",
+    "seven_current_stage_connectivity_guards",
+    "zero_feedback_all_current_process_layers"
+  ],
+  "arbitrary_layouts_qualified": false,
+  "other_physical_components_qualified": false,
+  "release_ready": false,
+  "expected_native_MOS_count": 61504,
+  "RTL_binding_qualified": false
+}
