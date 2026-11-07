@@ -1,0 +1,60 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_replay_cut_1047/assessment.json": "597262a767128387490c55450c1f3c63381e77a23627f4fd3d1a83978c111aee",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_window_replay_1052/assessment.json": "895cc411c8bc9c69891d843b5d9d9efba75ad09ed30084dcbacb21685d422044",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_window_replay_runs_1054/assessment.json": "84af0a05abfda2f2254a2938ecae9e69b5cab79c43bf3716db5a47ca01b9dae4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_window_replay_comparison_1055/assessment.json": "8957d6275adab93830f467165f589e7fe05324ae85603595771b8b747f39def9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_window_replay_1048/assessment.json": "bd852467c2f798e793fe589729dcad2ebeeeb3aabf0880af44a5c003f149363c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_window_replay_runs_1049/assessment.json": "4a275aceea2249a9696ea6b70c640b0c256afd239b530495df59201f7cd2190d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_window_replay_1050/assessment.json": "ceef5b196129386e9fb7a53295354f93a107384d2d9d73fb716daca8476e0cd5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_window_replay_runs_1051/assessment.json": "a69bf21f37d0530dc853f8b5b249bcb5af1743d7dac8ceaf4e18241a0d370a6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_window_replay_runs_1053/assessment.json": "229162be1d6a34828c6e1f3f9676e0789b39956297eddc9441d245f91040836f"
+  },
+  "cut": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_replay_cut_1047/assessment.json",
+  "prepared": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_window_replay_1052/assessment.json",
+  "runs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_window_replay_runs_1054/assessment.json",
+  "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_window_replay_comparison_1055/assessment.json",
+  "original_geometry_retained": true,
+  "all_incident_passives_retained": true,
+  "counts": {
+    "MOS": 12,
+    "R": 0,
+    "C": 1686
+  },
+  "internal_nodes": 8,
+  "recorded_boundary_nodes": 377,
+  "recorded_window_ns": [
+    200,
+    210
+  ],
+  "comparison_after_first_cycle_ns": [
+    202.5,
+    210
+  ],
+  "maximum_steps_ps": [
+    0.5,
+    0.25
+  ],
+  "elapsed_seconds": {
+    "base": 42.42308723204769,
+    "refined": 59.832820609910414
+  },
+  "maximum_refined_reproduction_error_V": 2.379700640808835e-05,
+  "maximum_timestep_difference_V": 1.3194622074941265e-06,
+  "both_runs_normally_completed": true,
+  "extraction_and_assessment_tests_passed": 8,
+  "retained_attempt_history": [
+    "1049: quoted output filename rejected by Xyce",
+    "1051: UIC transient failed at time zero",
+    "1053: base run completed normally; initial wrapper used the wrong completion marker",
+    "1054: verified existing base CSV and terminal log without rerunning; completed refined run"
+  ],
+  "initialization": "recorded internal voltages constrained during DCOP, released during transient",
+  "numerical_acceptance_threshold_applied": false,
+  "conditional_boundary_replay_only": true,
+  "independent_simulator_comparison_complete": false,
+  "causality_proven": false,
+  "reliability_qualified": false,
+  "electrical_rules_qualified": false,
+  "release_ready": false
+}
