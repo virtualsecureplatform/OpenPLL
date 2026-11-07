@@ -20,5 +20,31 @@
   "matching_sender_validation_tests_passed": 6,
   "four_corner_capture_queue": "build/signoff400/selected_full_corner_sender_packets_961",
   "four_corner_capture_queue_inputs_sha256": "c4c8db73c13691b4abf19c7828fd41236d4abe0f9d6b0a4427506df0e771a9c0",
-  "additional_native_simulations_launched_by_capture_queue": 0
+  "additional_native_simulations_launched_by_capture_queue": 0,
+  "matched_fine133_sender_frozen_fit_holdout": {
+    "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_sender_holdout_971",
+    "checker": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_frozen_fit_holdout_972",
+    "normal_native_completion": true,
+    "parameters_refitted": false,
+    "all_sampled_signs_match": true,
+    "all_event_counts_match": true,
+    "all_edges_within_observed_fit_band": true,
+    "maximum_replay_edge_error_ps": 0.9850033410643277,
+    "observed_decisions": [
+      "up",
+      "up"
+    ],
+    "measured_phases_ps": [
+      4.895713303529448,
+      293.1346722896251
+    ],
+    "conditional_exterior_qualified": false,
+    "full_phase_coverage_qualified": false,
+    "native_interface_qualified": false
+  },
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_sender_holdout_971/response.json": "e4ea79687dbbb9ad6cdd607b04509393296e493721a0cd10db0544356692d679",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_frozen_fit_holdout_972/assessment.json": "5b7a3eb546f1006f7c1c09688d38de73d4cfb3d030a5c62fba2092c5a68c53e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_frozen_fit_holdout_972/holdouts/assessment.json": "257a745b0c413a47bb5659c7974bebac2bd2aeb878dcbf56d1ae0acecba36760"
+  }
 }

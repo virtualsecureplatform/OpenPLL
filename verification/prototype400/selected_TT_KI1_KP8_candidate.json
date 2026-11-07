@@ -9,7 +9,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_TT_nominal_matrix_969/assessment.json": "d2a6f5448e2451fc0aca0e07b0a892f088fa16d3c09e18102a71b0303f0538c3",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_TT_receiver_matrix_970/assessment.json": "7233573c1937b31114bc999efb73cf66e9ab016976b7ef61b87b76149edecb17",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_nominal_975/inputs.json": "a1fd80927a168e9bda6b9ee517562b77cd95eb485dc0a7bdbd8fa5fe71266d60",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_receiver_976/inputs.json": "cc9743615a19aed114a96499ed72542e2195b876ab70b7be362055a846f8a53f"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_receiver_976/inputs.json": "cc9743615a19aed114a96499ed72542e2195b876ab70b7be362055a846f8a53f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_sender_holdout_971/response.json": "e4ea79687dbbb9ad6cdd607b04509393296e493721a0cd10db0544356692d679",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_frozen_fit_holdout_972/assessment.json": "5b7a3eb546f1006f7c1c09688d38de73d4cfb3d030a5c62fba2092c5a68c53e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_frozen_fit_holdout_972/holdouts/assessment.json": "257a745b0c413a47bb5659c7974bebac2bd2aeb878dcbf56d1ae0acecba36760"
   },
   "completed_cases": 48,
   "completed_scenario_segments": 80,
@@ -145,5 +148,26 @@
     "limits_changed": false
   },
   "all_observed_history_stress_diagnostics_passed": false,
-  "guarded_exact_gain_search_followup": "verification/prototype400/selected_guarded_exact_gain_search.json"
+  "guarded_exact_gain_search_followup": "verification/prototype400/selected_guarded_exact_gain_search.json",
+  "matched_fine133_sender_frozen_fit_holdout": {
+    "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_sender_holdout_971",
+    "checker": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_frozen_fit_holdout_972",
+    "normal_native_completion": true,
+    "parameters_refitted": false,
+    "all_sampled_signs_match": true,
+    "all_event_counts_match": true,
+    "all_edges_within_observed_fit_band": true,
+    "maximum_replay_edge_error_ps": 0.9850033410643277,
+    "observed_decisions": [
+      "up",
+      "up"
+    ],
+    "measured_phases_ps": [
+      4.895713303529448,
+      293.1346722896251
+    ],
+    "conditional_exterior_qualified": false,
+    "full_phase_coverage_qualified": false,
+    "native_interface_qualified": false
+  }
 }
