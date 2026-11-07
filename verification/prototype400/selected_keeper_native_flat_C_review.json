@@ -1,0 +1,47 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_flat_signed_C_1198/inputs.json": "ebebce0ecf3d12ce10c34aba248798f147163d9e2c40d7331ce4409e6186c678",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_flat_signed_C_1198/native.process.json": "30b080c5e78c1afeef9e192c96411d492302ccbeba2513d095df823e52a7eb18",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_flat_signed_C_1198/native.log": "ef46ec34f72e37ae5f022ed0ab78b0b1adfc5d24c1006e4893b516fabcff3df2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_keeper_flat_signed_C.py": "34dc1783d06f3571753ad81705c0335730e92f08b6af1ce9c0bb036dcf0e4884",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_hierarchical_capacitance.py": "19b97e8bb8241d14c814e16ae71e988f0c04222bc82bb6b72f9043b520418028",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_flat_signed_C_1198/default_threshold.spice": "bc914c75973a470587d8144f8c12b6280831ae2e51923db6e02c316f1f91271a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_flat_signed_C_1198/signed_threshold.spice": "25acb0ba94d31b9f55620b92b0f34f6decbc0153a7c4e0deab6cb00595ec7039"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_flat_signed_C_1198/default_threshold.spice": "bc914c75973a470587d8144f8c12b6280831ae2e51923db6e02c316f1f91271a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_flat_signed_C_1198/signed_threshold.spice": "25acb0ba94d31b9f55620b92b0f34f6decbc0153a7c4e0deab6cb00595ec7039"
+  },
+  "results": [
+    {
+      "export": "default_threshold",
+      "capacitors": 582421,
+      "negative": 0,
+      "zero": 241454,
+      "positive": 340967,
+      "negative_sum_F": "0",
+      "literal_COARSE_CODE_0_incident_sum_F": "8533119/100000000000000000000"
+    },
+    {
+      "export": "signed_threshold",
+      "capacitors": 1368764,
+      "negative": 2,
+      "zero": 1027795,
+      "positive": 340967,
+      "negative_sum_F": "-1618251/100000000000000000000",
+      "literal_COARSE_CODE_0_incident_sum_F": "8533119/100000000000000000000"
+    }
+  ],
+  "both_native_exports_completed": true,
+  "positive_part_exactly_equal": true,
+  "FLOATING_annotation_stripped_without_coefficient_change": true,
+  "original_review_failed": true,
+  "extraction_rerun": false,
+  "geometry_reextracted": false,
+  "default_threshold_does_not_qualify_signed_operator": true,
+  "coefficient_equivalence_to_hierarchical_model_qualified": false,
+  "passivity_qualified": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}

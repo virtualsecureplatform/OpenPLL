@@ -1,0 +1,29 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_conservative_contact_build_649/workspace.json": "99d1e1579254a70b04f8fb4f6e010b407cb877660979582262d7e4a57b4dec8c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_conservative_contact_build_649/assessment.json": "4ca33a607f3f347da41a7b89276ad360939b07087c1727f287b5dec6d495ed81",
+    "/tmp/openpll-magic-patch-6lf7xej6/magic-8.3.623/extract/ExtHier.c": "04c53902a00b025a595481eb8f22468e01bc7ed9469e6d94a2b8f57364f710f9",
+    "/tmp/openpll-magic-patch-6lf7xej6/magic-8.3.623/ext2spice/ext2spice.c": "c0a23b0f85e4a71ef9997bd7bf5971447d4ce823c92688d34003b1f067ef56ec",
+    "/tmp/openpll-magic-patch-6lf7xej6/magic-8.3.623/ext2spice/ext2hier.c": "b4da4a530124672bb305b906eff428c1ad04ba414b38060dd1733f5475139f4c",
+    "/tmp/openpll-magic-patch-6lf7xej6/magic-8.3.623/extflat/EFvisit.c": "1f6e9b317ec8b500e691ea991deb2533e04858fa472a3641e56182dbd1fd4c92",
+    "/tmp/openpll-magic-patch-6lf7xej6/magic-8.3.623/doc/html/extract.html": "06ba1f80e25cd52ccb5cf39d7f749ea20139c46e8c55bbda8d2b1ac641f528cb"
+  },
+  "artifacts": {},
+  "version": "8.3.623",
+  "hierarchical_overlap_adjustments_subtract_child_capacitance": true,
+  "flat_SPICE_threshold_compares_signed_capacitance": true,
+  "hierarchical_SPICE_threshold_compares_absolute_capacitance": true,
+  "negative_threshold_export_needed_to_observe_signed_flat_values": true,
+  "source_functions": [
+    "extHierAdjustments",
+    "spccapVisit",
+    "spccapHierVisit",
+    "EFVisitCaps"
+  ],
+  "primary_documentation": [
+    "https://opencircuitdesign.com/magic/commandref/extract.html",
+    "https://opencircuitdesign.com/magic/howto.html"
+  ],
+  "documentation_is_not_design_passivity_proof": true,
+  "release_ready": false
+}
