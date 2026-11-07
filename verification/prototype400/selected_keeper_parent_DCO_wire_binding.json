@@ -1,0 +1,55 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/assessment.json": "f03340cfeb34c0a0fb773455741daf531ccc8e80d21f365cfa2822eff211fa62",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/assessment.json": "937a5c23dc90fdb610803b99d86b82b4b407ed3b306b14da5498537169d3312e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_binding_1121/assessment.json": "385aa7cf60cbf085bbc414a974f1de7251c1414773214778b36264db8b124592",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assessment.json": "cb53636d63bfa258d9d444c2b4e41b9cfe8cd29073262c259a6f00228d027902",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_rerouted_parent_stream_1137/assessment.json": "25487d3a7dfe222964d3c50d1a7cb98875e454b324672172b45b9d7e1afd1618",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/capacitance.spice": "065ac25e51fcf5b9aa9dd4da8b4173d4dce5226c4df2549979dbce236081e53c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.ext": "2c58e4fbbea0e69f31c54af08595006cfa39aff810b9ea763914bc93a9a0a924",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/sky130_fd_sc_hd__einvp_1.ext": "2eda9fb02492d6bea8b2426d504fa72d03a66314ae09dae218881a1a86b22350",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_binding_1121/placements.tsv": "521cdbd27908dafef9015202e42bd15f5e4702dada0cddd45433a0e5c1e2f8df",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_DCO_wire_binding_1180/master_names_normalized.ext": "f87a8c0fd6166cd411987d0a5b26ebe75ec20b45f74e2633d88f85422df41520",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_keeper_parent_DCO_wire.py": "e33c746165cda347ea2cda74ed8c5e99c26a755755e33f847f8a323baeabcbfe",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/join_prototype_physical_instances.py": "330d957947b99064f71b497d35b2a3ce7f49c13d527572fc8da6f9a278a5e8a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_prototype_spef_pins_v2.py": "086741817c145431bf5d995363311392f43cb1263334a9cadd23448ea6b97578",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/min.json": "4994bad4a754a36fa06da0648f1b34959400f243a0cae50e1d57c09f155ff431",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/nom.json": "3fd0bcf21902a12fb714a19da913bc50294c1c149d7be08b57e636b055ac7c38",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/max.json": "eee37241445543bf70c5c239f777dd69d8657b61e9fe8293ac7974e14b9709bb"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_DCO_wire_binding_1180/master_names_normalized.ext": "f87a8c0fd6166cd411987d0a5b26ebe75ec20b45f74e2633d88f85422df41520",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_DCO_wire_binding_1180/join.json": "0fdb0d2d5f8967fad68c4d9a42492e876447fd016d26a0fede30c6d8e2416f85",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_DCO_wire_binding_1180/min.binding.json": "9128483759ec0838de1ee3a033fb0e5be2622888ad596a10fb1d7990dc246873",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_DCO_wire_binding_1180/nom.binding.json": "9128483759ec0838de1ee3a033fb0e5be2622888ad596a10fb1d7990dc246873",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_DCO_wire_binding_1180/max.binding.json": "9128483759ec0838de1ee3a033fb0e5be2622888ad596a10fb1d7990dc246873"
+  },
+  "results": [
+    {
+      "corner": "min",
+      "networks": 364,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    },
+    {
+      "corner": "nom",
+      "networks": 364,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    },
+    {
+      "corner": "max",
+      "networks": 364,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    }
+  ],
+  "matched_instances": 2130,
+  "magic_grid_um": "1/200",
+  "primitive_dimension_controls": 6,
+  "all_DCO_wire_terminals_bound_inside_full_parent": true,
+  "wire_R_inserted": false,
+  "capacitance_modified": false,
+  "parent_loading_complete": false,
+  "release_ready": false
+}
