@@ -1,0 +1,118 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_audit_1203/assessment.json": "902092494bfb75f610f07601118997a1e3df94297fadf4e23a45e198d4e924b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assessment.json": "cb53636d63bfa258d9d444c2b4e41b9cfe8cd29073262c259a6f00228d027902",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_parent_frame_019/assessment.json": "168bea24909eaf5811ab123ccb1a02e0c0e9a4f826c77e343951a99b51577b98",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_rerouted_parent_stream_1137/assessment.json": "25487d3a7dfe222964d3c50d1a7cb98875e454b324672172b45b9d7e1afd1618",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assembly.gds": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/capacitance.spice": "065ac25e51fcf5b9aa9dd4da8b4173d4dce5226c4df2549979dbce236081e53c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/sky130_fd_sc_hd__einvp_1.ext": "2eda9fb02492d6bea8b2426d504fa72d03a66314ae09dae218881a1a86b22350",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_flat_device_regions.py": "d46b61517fd3eb45b301883ec4d24b8a57a79188a1718ef782915ce0678e3f60",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/join_prototype_physical_instances.py": "330d957947b99064f71b497d35b2a3ce7f49c13d527572fc8da6f9a278a5e8a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prepare_prototype_analog_reference.py": "08a9443bb0a251c970d65497e47e1c093964ba21a092b50e0dc67805e6d636db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_prototype_full_C_wire_R_v11.py": "33516ad3312e32a2f9db1353d962151301e9631d8a640a8e7f97ad1d3bc70c27"
+  },
+  "physical_macro_placements": {
+    "digital": {
+      "master": "IntegerPLL_ProgrammedCore",
+      "origin_dbu": [
+        50000,
+        100000
+      ],
+      "bbox_dbu": [
+        50000,
+        100000,
+        384775,
+        434775
+      ]
+    },
+    "oscillator": {
+      "master": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160",
+      "origin_dbu": [
+        450000,
+        100000
+      ],
+      "bbox_dbu": [
+        450000,
+        100000,
+        575000,
+        225000
+      ]
+    },
+    "detector": {
+      "master": "IntegerPLL_BBPD",
+      "origin_dbu": [
+        450000,
+        300000
+      ],
+      "bbox_dbu": [
+        450000,
+        300000,
+        570000,
+        420000
+      ]
+    }
+  },
+  "EXT_coordinate_unit_um": "1/200",
+  "GDS_coordinate_unit_um": "1/1000",
+  "independent_grid_controls": 6,
+  "regions": [
+    {
+      "region": "digital",
+      "primitive_count": 49822,
+      "model_counts": {
+        "sky130_fd_pr__nfet_01v8_lvt": 24066,
+        "sky130_fd_pr__pfet_01v8": 25524,
+        "sky130_fd_pr__diode_pw2nd_05v5": 216,
+        "sky130_fd_pr__res_generic_po": 16
+      },
+      "primitive_model_counts_match": true,
+      "MOS_dimension_multiset_matches": true
+    },
+    {
+      "region": "oscillator",
+      "primitive_count": 4098,
+      "model_counts": {
+        "sky130_fd_pr__nfet_01v8": 2040,
+        "sky130_fd_pr__pfet_01v8_hvt": 2040,
+        "sky130_fd_pr__nfet_01v8_lvt": 8,
+        "sky130_fd_pr__pfet_01v8": 8,
+        "sky130_fd_pr__res_generic_po": 2
+      },
+      "primitive_model_counts_match": true,
+      "MOS_dimension_multiset_matches": true
+    },
+    {
+      "region": "detector",
+      "primitive_count": 1782,
+      "model_counts": {
+        "sky130_fd_pr__nfet_01v8": 881,
+        "sky130_fd_pr__pfet_01v8_hvt": 889,
+        "sky130_fd_pr__special_nfet_01v8": 8,
+        "sky130_fd_pr__res_generic_po": 2,
+        "sky130_fd_pr__diode_pw2nd_05v5": 2
+      },
+      "primitive_model_counts_match": true,
+      "MOS_dimension_multiset_matches": true
+    },
+    {
+      "region": "parent",
+      "primitive_count": 6636,
+      "model_counts": {
+        "sky130_fd_pr__nfet_01v8_lvt": 3020,
+        "sky130_fd_pr__pfet_01v8": 3020,
+        "sky130_fd_pr__diode_pw2nd_05v5": 596
+      },
+      "primitive_model_counts_match": true,
+      "MOS_dimension_multiset_matches": true
+    }
+  ],
+  "all_primitive_counts_and_MOS_dimensions_match": true,
+  "emitted_SPICE_device_location_bijection_verified": false,
+  "circuit_partitioned": false,
+  "boundary_loading_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}
