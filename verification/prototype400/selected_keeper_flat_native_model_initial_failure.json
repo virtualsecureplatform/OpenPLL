@@ -1,0 +1,6 @@
+{
+  "state": "stopped_without_qualification",
+  "reason": "literal template adapter rejects native k-suffixed MOS diffusion geometry",
+  "script_sha256": "97367a165e5f44372c74c79cf5913cd23422b94622d2088a702e4b753db07746",
+  "release_ready": false
+}
