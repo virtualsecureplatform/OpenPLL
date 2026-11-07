@@ -1,0 +1,50 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_1106/ground_access.json": "83bc533aebbc79fd6138c96503301fe360115ed0f356d652c34ab2c3ceaab999",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_1106/check_full.tcl": "91bafb951da01ee729e557583aef73c48eed22929105d74281fa6230560c905c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_1106/check_full.log": "3a23227adb63b513fdbffc92fe1b6921218e6a0c63a2f1270c84274dda6f6842",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_standalone_well_check_1105/check_full.log": "9a914feeaa9a95bf85c107fda49a7aca7e62109200ca62aa090ca69ca4a6be81",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb"
+  },
+  "geometry": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_selected_keeper_ground_access_v3.py": "acdf71dbf45f59c0a032b70c501660379813839ef27a14fc28ae71f7fec4825d",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.lef": "b39366d8860f34cf7bce47750e6f8da1e97e9339ca19c1288d74aa9908593c43",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.gds": "ce09a04d97ed626d23d688cc20529b522cb35b36b7993a20e77230aeb926ede1",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/tapvpwrvgnd/sky130_fd_sc_hs__tapvpwrvgnd_1.gds": "eae7d8f94ed5b2cd5ac4124bd286094af52e8aa1e1698b585a5ea6558744c84b"
+    },
+    "artifacts": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_1106/sky130_fd_sc_hs__inv_2.lef": "bb3d9d0409a9d567b2c355574b1552b310afe20a8fc15c39163101937819ef65",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_1106/sky130_fd_sc_hs__inv_2.gds": "8cafe29eac2b53c5f1432251bfd5bab7fed986c44eabbb105c58513a2092752c"
+    },
+    "added_met1_area_um2": 1.4993999999999998,
+    "ground_extension_um": [
+      0,
+      -0.245,
+      4.5,
+      0.245
+    ],
+    "macro_width_um": 4.8,
+    "source_transistors_unchanged": true,
+    "matching_HS_tap_added": true,
+    "tap_location_um": [
+      1.44,
+      0
+    ],
+    "new_parasitics_require_extraction": true,
+    "release_ready": false
+  },
+  "untapped_macro_failed_rules": [
+    "nwell.4",
+    "LU.3",
+    "LU.2"
+  ],
+  "tapped_macro_standalone_Magic_full_DRC_pass": true,
+  "magic_environment": {
+    "PDK_ROOT": "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae"
+  },
+  "macro_check_tcl": "gds read build/signoff400/selected_keeper_tapped_macro_1106/sky130_fd_sc_hs__inv_2.gds\nload sky130_fd_sc_hs__inv_2\nselect top cell\nexpand\ndrc euclidean on\ndrc style drc(full)\ndrc check\ndrc catchup\nputs \"OPENPLL_DRC [drc listall why]\"\nquit -noprompt\n",
+  "PDN_LVS_and_routed_DRC_pending": true,
+  "selected": false,
+  "release_ready": false
+}
