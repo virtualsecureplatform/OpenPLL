@@ -1,0 +1,56 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_fixed_C_1171/assessment.json": "4014daebb9a1130e7592e5bbf4638842676211b55c18db6273286d7ae1e8592c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_flat_C_review_1200/assessment.json": "5c1ca6848a875eff20ccf6d6d5c36d33cbf716c1a445b58983ef60734f8ca376",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_C_device_LVS_1205/assessment.json": "d0ac8ef11c03a974ac614785715bc6e47a56ca9c8fb5a3fdb6ed4dfa2856706e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/capacitance.spice": "065ac25e51fcf5b9aa9dd4da8b4173d4dce5226c4df2549979dbce236081e53c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_flat_signed_C_1198/signed_threshold.spice": "25acb0ba94d31b9f55620b92b0f34f6decbc0153a7c4e0deab6cb00595ec7039",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_fixed_C_1171/dynamic.pairs.jsonl": "1626beb959621ce9e210fa31b51d500b3fd489d45655ba62a8838c42ff3aa26a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_geometry_primary_C.py": "a9d71080e8110426023c4dea02b293dfd9ce7b25b4c5b2f57abd394849407c50",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_primary_C.py": "b8e3c487163b98b3db59cfbff12389544c6eb4de2039ff1c897b5328d0199e3f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_prototype_full_C_wire_R_v11.py": "33516ad3312e32a2f9db1353d962151301e9631d8a640a8e7f97ad1d3bc70c27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_hierarchical_capacitance.py": "19b97e8bb8241d14c814e16ae71e988f0c04222bc82bb6b72f9043b520418028"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_geometry_primary_C_1206/hierarchy_vs_native_export.json": "ed14ea211a7f3604b4c0e2d4c78448320d61899e20f84a6274181c846a2eaa9a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_geometry_primary_C_1206/hierarchy_vs_flat_geometry.json": "4e232235fda134917c1bb3e2b33f78b77591b56a5f9a6e4348378c0ece3c4a64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_geometry_primary_C_1206/native_export_vs_flat_geometry.json": "0065c32b64e8f0f609e44fc5368b9e4ad7130beede6ff6578d2e748f71d4629e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_geometry_primary_C_1206/diagonals.json": "66fae6b016a01a38ea6ab0adc013a372f6f78c07f60615e83d05bad8be5351d9"
+  },
+  "comparisons": {
+    "hierarchy_vs_native_export": {
+      "differing_matrix_entries": 333,
+      "exactly_equal": false
+    },
+    "hierarchy_vs_flat_geometry": {
+      "differing_matrix_entries": 382,
+      "exactly_equal": false
+    },
+    "native_export_vs_flat_geometry": {
+      "differing_matrix_entries": 165,
+      "exactly_equal": false
+    }
+  },
+  "primary_ports": 65,
+  "non_supply_alias_groups": 61,
+  "ordered_ports_and_alias_groups_equal": true,
+  "native_export_capacitor_counts": {
+    "positive": 340967,
+    "negative": 2,
+    "zero": 1027795
+  },
+  "flat_geometry_capacitor_counts": {
+    "positive": 341067,
+    "negative": 0,
+    "zero": 1023188
+  },
+  "all_other_conductor_voltages_fixed": true,
+  "intrinsic_device_C_included": false,
+  "physical_error_bound_claimed": false,
+  "models_modified": false,
+  "model_qualified": false,
+  "release_ready": false
+}

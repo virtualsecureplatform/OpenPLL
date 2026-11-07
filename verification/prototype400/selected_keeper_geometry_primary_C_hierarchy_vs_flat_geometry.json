@@ -1,0 +1,4204 @@
+[
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "left_F": "4067589/25000000000000000000",
+    "right_F": "4608509/25000000000000000000",
+    "right_minus_left_F": "13523/625000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "left_F": "-4421/50000000000000000000",
+    "right_F": "-8839/100000000000000000000",
+    "right_minus_left_F": "3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "left_F": "-839/25000000000000000000",
+    "right_F": "-3357/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "CONFIG_READY"
+    ],
+    "left_F": "-1621/50000000000000000000",
+    "right_F": "-3313/100000000000000000000",
+    "right_minus_left_F": "-71/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "DCO_CODE[0]"
+    ],
+    "left_F": "-3329/50000000000000000000",
+    "right_F": "-1337/20000000000000000000",
+    "right_minus_left_F": "-27/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "DCO_CODE[1]"
+    ],
+    "left_F": "-6673/100000000000000000000",
+    "right_F": "-3357/50000000000000000000",
+    "right_minus_left_F": "-41/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "DCO_CODE[2]"
+    ],
+    "left_F": "-819/12500000000000000000",
+    "right_F": "-6581/100000000000000000000",
+    "right_minus_left_F": "-29/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "DCO_CODE[3]"
+    ],
+    "left_F": "-77/781250000000000000",
+    "right_F": "-9889/100000000000000000000",
+    "right_minus_left_F": "-33/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "DCO_CODE[4]"
+    ],
+    "left_F": "-3151/50000000000000000000",
+    "right_F": "-1577/25000000000000000000",
+    "right_minus_left_F": "-3/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "DCO_CODE[5]"
+    ],
+    "left_F": "-629/10000000000000000000",
+    "right_F": "-3149/50000000000000000000",
+    "right_minus_left_F": "-1/12500000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "DCO_CODE[6]"
+    ],
+    "left_F": "-7281/100000000000000000000",
+    "right_F": "-3657/50000000000000000000",
+    "right_minus_left_F": "-33/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "DCO_CODE[7]"
+    ],
+    "left_F": "-4681/100000000000000000000",
+    "right_F": "-4703/100000000000000000000",
+    "right_minus_left_F": "-11/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "REFCLK"
+    ],
+    "left_F": "-31679/12500000000000000000",
+    "right_F": "-64041/25000000000000000000",
+    "right_minus_left_F": "-683/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[0]"
+    ],
+    "left_F": "-15163/100000000000000000000",
+    "right_F": "-7581/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[0]"
+    ],
+    "left_F": "-251/20000000000000000000",
+    "right_F": "-157/12500000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "left_F": "-34147/20000000000000000000",
+    "right_F": "-42669/25000000000000000000",
+    "right_minus_left_F": "59/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "left_F": "-54109/50000000000000000000",
+    "right_F": "-108219/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "STARTUP_INCREASING"
+    ],
+    "left_F": "-7201/100000000000000000000",
+    "right_F": "-7207/100000000000000000000",
+    "right_minus_left_F": "-3/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CLKDIV_RETIMED"
+    ],
+    "column_ports": [
+      "TRACKING"
+    ],
+    "left_F": "-1117/50000000000000000000",
+    "right_F": "-2281/100000000000000000000",
+    "right_minus_left_F": "-47/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "left_F": "6647949/100000000000000000000",
+    "right_F": "9502577/100000000000000000000",
+    "right_minus_left_F": "713657/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "left_F": "-11313/100000000000000000000",
+    "right_F": "-5663/50000000000000000000",
+    "right_minus_left_F": "-13/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "left_F": "-653/10000000000000000000",
+    "right_F": "-6541/100000000000000000000",
+    "right_minus_left_F": "-11/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "left_F": "-7813/50000000000000000000",
+    "right_F": "-1587/10000000000000000000",
+    "right_minus_left_F": "-61/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "left_F": "-154437/50000000000000000000",
+    "right_F": "-314041/100000000000000000000",
+    "right_minus_left_F": "-5167/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "CONFIG_BUSY"
+    ],
+    "left_F": "-113/50000000000000000000",
+    "right_F": "-223/100000000000000000000",
+    "right_minus_left_F": "3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "CONFIG_READY"
+    ],
+    "left_F": "-232901/100000000000000000000",
+    "right_F": "-116487/50000000000000000000",
+    "right_minus_left_F": "-73/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "DCO_CODE[4]"
+    ],
+    "left_F": "-6179/50000000000000000000",
+    "right_F": "-12359/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "DCO_CODE[7]"
+    ],
+    "left_F": "-8127/100000000000000000000",
+    "right_F": "-1627/20000000000000000000",
+    "right_minus_left_F": "-1/12500000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "PLL_ENABLE"
+    ],
+    "left_F": "-1913/100000000000000000000",
+    "right_F": "-239/12500000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-33991/100000000000000000000",
+    "right_F": "-4249/12500000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[0]"
+    ],
+    "left_F": "-12713/25000000000000000000",
+    "right_F": "-50823/100000000000000000000",
+    "right_minus_left_F": "29/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[1]"
+    ],
+    "left_F": "-209/50000000000000000000",
+    "right_F": "-199/50000000000000000000",
+    "right_minus_left_F": "1/5000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "left_F": "-3797/100000000000000000000",
+    "right_F": "-463/12500000000000000000",
+    "right_minus_left_F": "93/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[5]"
+    ],
+    "left_F": "-227/100000000000000000000",
+    "right_F": "-69/25000000000000000000",
+    "right_minus_left_F": "-49/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[0]"
+    ],
+    "left_F": "-7/6250000000000000000",
+    "right_F": "0",
+    "right_minus_left_F": "7/6250000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "left_F": "-219/4000000000000000000",
+    "right_F": "-5471/100000000000000000000",
+    "right_minus_left_F": "1/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[6]"
+    ],
+    "left_F": "-164979/100000000000000000000",
+    "right_F": "-41227/25000000000000000000",
+    "right_minus_left_F": "71/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "left_F": "8943049/100000000000000000000",
+    "right_F": "10605677/100000000000000000000",
+    "right_minus_left_F": "415657/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "left_F": "-10701/6250000000000000000",
+    "right_F": "-6849/4000000000000000000",
+    "right_minus_left_F": "-9/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "left_F": "-145671/100000000000000000000",
+    "right_F": "-7633/5000000000000000000",
+    "right_minus_left_F": "-6989/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "left_F": "-34563/100000000000000000000",
+    "right_F": "-35843/100000000000000000000",
+    "right_minus_left_F": "-1/78125000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "left_F": "-10743/100000000000000000000",
+    "right_F": "-10707/100000000000000000000",
+    "right_minus_left_F": "9/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "CONFIG_BUSY"
+    ],
+    "left_F": "-3831/50000000000000000000",
+    "right_F": "-1897/25000000000000000000",
+    "right_minus_left_F": "37/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "DCO_CODE[0]"
+    ],
+    "left_F": "-10003/100000000000000000000",
+    "right_F": "-9907/100000000000000000000",
+    "right_minus_left_F": "3/3125000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "DCO_CODE[2]"
+    ],
+    "left_F": "-3341/50000000000000000000",
+    "right_F": "-6623/100000000000000000000",
+    "right_minus_left_F": "59/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "DCO_CODE[3]"
+    ],
+    "left_F": "-5743/100000000000000000000",
+    "right_F": "-1417/25000000000000000000",
+    "right_minus_left_F": "3/4000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "DCO_CODE[5]"
+    ],
+    "left_F": "-471/5000000000000000000",
+    "right_F": "-9419/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "DCO_CODE[7]"
+    ],
+    "left_F": "-291273/100000000000000000000",
+    "right_F": "-14563/5000000000000000000",
+    "right_minus_left_F": "13/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "DLF_CODE[9]"
+    ],
+    "left_F": "-12841/100000000000000000000",
+    "right_F": "-3203/25000000000000000000",
+    "right_minus_left_F": "29/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[0]"
+    ],
+    "left_F": "-14097/12500000000000000000",
+    "right_F": "-129891/100000000000000000000",
+    "right_minus_left_F": "-3423/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[1]"
+    ],
+    "left_F": "-47847/100000000000000000000",
+    "right_F": "-597/1250000000000000000",
+    "right_minus_left_F": "87/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "left_F": "-917/25000000000000000000",
+    "right_F": "-3667/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[4]"
+    ],
+    "left_F": "-1929/10000000000000000000",
+    "right_F": "-19369/100000000000000000000",
+    "right_minus_left_F": "-79/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "left_F": "-6041/50000000000000000000",
+    "right_F": "-12079/100000000000000000000",
+    "right_minus_left_F": "3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "left_F": "-611639/100000000000000000000",
+    "right_F": "-305819/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_INCREASING"
+    ],
+    "left_F": "-7867/5000000000000000000",
+    "right_F": "-76199/50000000000000000000",
+    "right_minus_left_F": "2471/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "left_F": "8743463/100000000000000000000",
+    "right_F": "136077/1250000000000000000",
+    "right_minus_left_F": "2142697/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "left_F": "-12579/100000000000000000000",
+    "right_F": "-629/5000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "left_F": "-41679/100000000000000000000",
+    "right_F": "-10657/25000000000000000000",
+    "right_minus_left_F": "-949/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "DCO_CODE[5]"
+    ],
+    "left_F": "-83/10000000000000000000",
+    "right_F": "-829/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "DCO_CODE[6]"
+    ],
+    "left_F": "-407/50000000000000000000",
+    "right_F": "-813/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "DLF_CODE[7]"
+    ],
+    "left_F": "-207/20000000000000000000",
+    "right_F": "-1/97656250000000000",
+    "right_minus_left_F": "11/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-1957/2500000000000000000",
+    "right_F": "-78279/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[1]"
+    ],
+    "left_F": "-28337/50000000000000000000",
+    "right_F": "-2267/4000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[1]"
+    ],
+    "left_F": "-719/25000000000000000000",
+    "right_F": "-2887/100000000000000000000",
+    "right_minus_left_F": "-11/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "left_F": "-1381/6250000000000000000",
+    "right_F": "-22081/100000000000000000000",
+    "right_minus_left_F": "3/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "left_F": "-83103/20000000000000000000",
+    "right_F": "-209157/50000000000000000000",
+    "right_minus_left_F": "-2799/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[6]"
+    ],
+    "left_F": "-883/25000000000000000000",
+    "right_F": "-3513/100000000000000000000",
+    "right_minus_left_F": "19/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_INCREASING"
+    ],
+    "left_F": "-1979/12500000000000000000",
+    "right_F": "-15819/100000000000000000000",
+    "right_minus_left_F": "13/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "left_F": "1074617/12500000000000000000",
+    "right_F": "10470089/100000000000000000000",
+    "right_minus_left_F": "1873153/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "left_F": "-59109/20000000000000000000",
+    "right_F": "-36943/12500000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "left_F": "-25631/25000000000000000000",
+    "right_F": "-11369/12500000000000000000",
+    "right_minus_left_F": "2893/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "CONFIG_READY"
+    ],
+    "left_F": "-699/6250000000000000000",
+    "right_F": "-447/4000000000000000000",
+    "right_minus_left_F": "9/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "DCO_CODE[0]"
+    ],
+    "left_F": "-107/1562500000000000000",
+    "right_F": "-6827/100000000000000000000",
+    "right_minus_left_F": "21/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "DCO_CODE[1]"
+    ],
+    "left_F": "-443/6250000000000000000",
+    "right_F": "-1773/25000000000000000000",
+    "right_minus_left_F": "-1/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "DCO_CODE[2]"
+    ],
+    "left_F": "-1331/20000000000000000000",
+    "right_F": "-6671/100000000000000000000",
+    "right_minus_left_F": "-1/6250000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "DCO_CODE[4]"
+    ],
+    "left_F": "-3203/50000000000000000000",
+    "right_F": "-6421/100000000000000000000",
+    "right_minus_left_F": "-3/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "DCO_CODE[5]"
+    ],
+    "left_F": "-199/3125000000000000000",
+    "right_F": "-6383/100000000000000000000",
+    "right_minus_left_F": "-3/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "PLL_ENABLE"
+    ],
+    "left_F": "-8327/100000000000000000000",
+    "right_F": "-4163/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-283/5000000000000000000",
+    "right_F": "-2823/50000000000000000000",
+    "right_minus_left_F": "7/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[0]"
+    ],
+    "left_F": "-84973/100000000000000000000",
+    "right_F": "-25741/50000000000000000000",
+    "right_minus_left_F": "33491/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "left_F": "-4279/12500000000000000000",
+    "right_F": "-34203/100000000000000000000",
+    "right_minus_left_F": "29/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "left_F": "937463/12500000000000000000",
+    "right_F": "2091741/25000000000000000000",
+    "right_minus_left_F": "43363/5000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "CONFIG_READY"
+    ],
+    "left_F": "-8077/100000000000000000000",
+    "right_F": "-2021/25000000000000000000",
+    "right_minus_left_F": "-7/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "DCO_CODE[3]"
+    ],
+    "left_F": "-193/50000000000000000000",
+    "right_F": "-377/100000000000000000000",
+    "right_minus_left_F": "9/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "DCO_CODE[6]"
+    ],
+    "left_F": "-503/50000000000000000000",
+    "right_F": "-473/50000000000000000000",
+    "right_minus_left_F": "3/5000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "DCO_CODE[7]"
+    ],
+    "left_F": "-2407/100000000000000000000",
+    "right_F": "-1201/50000000000000000000",
+    "right_minus_left_F": "1/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "DLF_CODE[4]"
+    ],
+    "left_F": "-157169/100000000000000000000",
+    "right_F": "-9823/6250000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "PLL_ENABLE"
+    ],
+    "left_F": "-357/25000000000000000000",
+    "right_F": "-1397/100000000000000000000",
+    "right_minus_left_F": "31/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-124761/100000000000000000000",
+    "right_F": "-3119/2500000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[1]"
+    ],
+    "left_F": "-49359/100000000000000000000",
+    "right_F": "-24679/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[2]"
+    ],
+    "left_F": "-9469/100000000000000000000",
+    "right_F": "-2369/25000000000000000000",
+    "right_minus_left_F": "-7/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[4]"
+    ],
+    "left_F": "-11973/25000000000000000000",
+    "right_F": "-11959/25000000000000000000",
+    "right_minus_left_F": "7/12500000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "left_F": "-14389/10000000000000000000",
+    "right_F": "-24223/20000000000000000000",
+    "right_minus_left_F": "911/4000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "column_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "left_F": "1070901/12500000000000000000",
+    "right_F": "10890709/100000000000000000000",
+    "right_minus_left_F": "2323501/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "column_ports": [
+      "CONFIG_BUSY"
+    ],
+    "left_F": "-263/100000000000000000000",
+    "right_F": "-83/50000000000000000000",
+    "right_minus_left_F": "97/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "column_ports": [
+      "CONFIG_READY"
+    ],
+    "left_F": "-609/5000000000000000000",
+    "right_F": "-12141/100000000000000000000",
+    "right_minus_left_F": "39/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "column_ports": [
+      "DCO_CODE[2]"
+    ],
+    "left_F": "-12213/25000000000000000000",
+    "right_F": "-24427/50000000000000000000",
+    "right_minus_left_F": "-1/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "column_ports": [
+      "DCO_CODE[3]"
+    ],
+    "left_F": "-6257/100000000000000000000",
+    "right_F": "-391/6250000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "column_ports": [
+      "DCO_CODE[4]"
+    ],
+    "left_F": "-3597/50000000000000000000",
+    "right_F": "-1799/25000000000000000000",
+    "right_minus_left_F": "-1/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "column_ports": [
+      "DCO_CODE[5]"
+    ],
+    "left_F": "-27/400000000000000000",
+    "right_F": "-6751/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "column_ports": [
+      "DCO_CODE[6]"
+    ],
+    "left_F": "-41/625000000000000000",
+    "right_F": "-6561/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "column_ports": [
+      "DLF_CODE[8]"
+    ],
+    "left_F": "-73/50000000000000000000",
+    "right_F": "0",
+    "right_minus_left_F": "73/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "column_ports": [
+      "DLF_CODE[9]"
+    ],
+    "left_F": "-681/5000000000000000000",
+    "right_F": "-13567/100000000000000000000",
+    "right_minus_left_F": "53/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "COARSE_CODE[5]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-2809/25000000000000000000",
+    "right_F": "-2249/20000000000000000000",
+    "right_minus_left_F": "-9/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CONFIG_BUSY"
+    ],
+    "column_ports": [
+      "CONFIG_BUSY"
+    ],
+    "left_F": "2247421/100000000000000000000",
+    "right_F": "2982099/100000000000000000000",
+    "right_minus_left_F": "367339/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CONFIG_BUSY"
+    ],
+    "column_ports": [
+      "DCO_CODE[0]"
+    ],
+    "left_F": "-621/50000000000000000000",
+    "right_F": "-1253/100000000000000000000",
+    "right_minus_left_F": "-11/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CONFIG_BUSY"
+    ],
+    "column_ports": [
+      "DCO_CODE[1]"
+    ],
+    "left_F": "-109/50000000000000000000",
+    "right_F": "-223/100000000000000000000",
+    "right_minus_left_F": "-1/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CONFIG_BUSY"
+    ],
+    "column_ports": [
+      "FAILED"
+    ],
+    "left_F": "-26219/50000000000000000000",
+    "right_F": "-52401/100000000000000000000",
+    "right_minus_left_F": "37/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CONFIG_BUSY"
+    ],
+    "column_ports": [
+      "PLLOUT"
+    ],
+    "left_F": "-6351/100000000000000000000",
+    "right_F": "-6347/100000000000000000000",
+    "right_minus_left_F": "1/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CONFIG_READY"
+    ],
+    "column_ports": [
+      "CONFIG_READY"
+    ],
+    "left_F": "1823763/50000000000000000000",
+    "right_F": "1058039/25000000000000000000",
+    "right_minus_left_F": "58463/10000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CONFIG_READY"
+    ],
+    "column_ports": [
+      "DCO_CODE[2]"
+    ],
+    "left_F": "-281/100000000000000000000",
+    "right_F": "-137/50000000000000000000",
+    "right_minus_left_F": "7/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "CONFIG_READY"
+    ],
+    "column_ports": [
+      "DCO_CODE[3]"
+    ],
+    "left_F": "-107/100000000000000000000",
+    "right_F": "-11/10000000000000000000",
+    "right_minus_left_F": "-3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[0]"
+    ],
+    "column_ports": [
+      "DCO_CODE[0]"
+    ],
+    "left_F": "496083/20000000000000000000",
+    "right_F": "384113/12500000000000000000",
+    "right_minus_left_F": "592489/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[0]"
+    ],
+    "column_ports": [
+      "DCO_CODE[1]"
+    ],
+    "left_F": "-139843/20000000000000000000",
+    "right_F": "-43701/6250000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[0]"
+    ],
+    "column_ports": [
+      "DCO_CODE[2]"
+    ],
+    "left_F": "-271697/100000000000000000000",
+    "right_F": "-16981/6250000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[0]"
+    ],
+    "column_ports": [
+      "DCO_CODE[3]"
+    ],
+    "left_F": "-239/100000000000000000000",
+    "right_F": "-291/100000000000000000000",
+    "right_minus_left_F": "-13/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[0]"
+    ],
+    "column_ports": [
+      "DCO_CODE[4]"
+    ],
+    "left_F": "-119/1562500000000000000",
+    "right_F": "-153/2000000000000000000",
+    "right_minus_left_F": "-17/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[0]"
+    ],
+    "column_ports": [
+      "DLF_CODE[9]"
+    ],
+    "left_F": "-1533/25000000000000000000",
+    "right_F": "-6119/100000000000000000000",
+    "right_minus_left_F": "13/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[0]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-317/50000000000000000000",
+    "right_F": "-69/12500000000000000000",
+    "right_minus_left_F": "41/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[1]"
+    ],
+    "column_ports": [
+      "DCO_CODE[1]"
+    ],
+    "left_F": "470187/20000000000000000000",
+    "right_F": "2955431/100000000000000000000",
+    "right_minus_left_F": "37781/6250000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[1]"
+    ],
+    "column_ports": [
+      "DCO_CODE[2]"
+    ],
+    "left_F": "-20599/6250000000000000000",
+    "right_F": "-65917/20000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[1]"
+    ],
+    "column_ports": [
+      "DCO_CODE[4]"
+    ],
+    "left_F": "-211/100000000000000000000",
+    "right_F": "-253/100000000000000000000",
+    "right_minus_left_F": "-21/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[1]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-449/100000000000000000000",
+    "right_F": "-409/100000000000000000000",
+    "right_minus_left_F": "1/2500000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[2]"
+    ],
+    "column_ports": [
+      "DCO_CODE[2]"
+    ],
+    "left_F": "172569/6250000000000000000",
+    "right_F": "1611107/50000000000000000000",
+    "right_minus_left_F": "46111/10000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[2]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-167/25000000000000000000",
+    "right_F": "-629/100000000000000000000",
+    "right_minus_left_F": "39/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "left_F": "-10939/100000000000000000000",
+    "right_F": "-5443/50000000000000000000",
+    "right_minus_left_F": "53/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[3]"
+    ],
+    "column_ports": [
+      "DCO_CODE[3]"
+    ],
+    "left_F": "718033/20000000000000000000",
+    "right_F": "2025101/50000000000000000000",
+    "right_minus_left_F": "460037/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[3]"
+    ],
+    "column_ports": [
+      "DLF_CODE[7]"
+    ],
+    "left_F": "-9/5000000000000000000",
+    "right_F": "-151/100000000000000000000",
+    "right_minus_left_F": "29/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[4]"
+    ],
+    "column_ports": [
+      "DCO_CODE[4]"
+    ],
+    "left_F": "15419/400000000000000000",
+    "right_F": "33161/800000000000000000",
+    "right_minus_left_F": "2323/800000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[4]"
+    ],
+    "column_ports": [
+      "DCO_CODE[5]"
+    ],
+    "left_F": "-858709/100000000000000000000",
+    "right_F": "-85871/10000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[4]"
+    ],
+    "column_ports": [
+      "DCO_CODE[6]"
+    ],
+    "left_F": "-7/800000000000000000",
+    "right_F": "-891/100000000000000000000",
+    "right_minus_left_F": "-1/6250000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[4]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-421/100000000000000000000",
+    "right_F": "-297/100000000000000000000",
+    "right_minus_left_F": "31/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "left_F": "-1077/20000000000000000000",
+    "right_F": "-2691/50000000000000000000",
+    "right_minus_left_F": "3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[5]"
+    ],
+    "column_ports": [
+      "DCO_CODE[5]"
+    ],
+    "left_F": "3021433/100000000000000000000",
+    "right_F": "3392043/100000000000000000000",
+    "right_minus_left_F": "37061/10000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[5]"
+    ],
+    "column_ports": [
+      "DCO_CODE[6]"
+    ],
+    "left_F": "-55503/20000000000000000000",
+    "right_F": "-138757/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[5]"
+    ],
+    "column_ports": [
+      "DCO_CODE[7]"
+    ],
+    "left_F": "-21/3125000000000000000",
+    "right_F": "-37/5000000000000000000",
+    "right_minus_left_F": "-17/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[5]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-209/50000000000000000000",
+    "right_F": "-269/100000000000000000000",
+    "right_minus_left_F": "149/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[5]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "left_F": "-1181/20000000000000000000",
+    "right_F": "-2951/50000000000000000000",
+    "right_minus_left_F": "3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[6]"
+    ],
+    "column_ports": [
+      "DCO_CODE[6]"
+    ],
+    "left_F": "2938693/100000000000000000000",
+    "right_F": "3334727/100000000000000000000",
+    "right_minus_left_F": "198017/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[6]"
+    ],
+    "column_ports": [
+      "DLF_CODE[9]"
+    ],
+    "left_F": "-5539/100000000000000000000",
+    "right_F": "-689/12500000000000000000",
+    "right_minus_left_F": "27/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[6]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-351/100000000000000000000",
+    "right_F": "-17/5000000000000000000",
+    "right_minus_left_F": "11/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[7]"
+    ],
+    "column_ports": [
+      "DCO_CODE[7]"
+    ],
+    "left_F": "2373531/100000000000000000000",
+    "right_F": "195089/6250000000000000000",
+    "right_minus_left_F": "747893/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DCO_CODE[7]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "left_F": "-3301/50000000000000000000",
+    "right_F": "-653/10000000000000000000",
+    "right_minus_left_F": "9/12500000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[0]"
+    ],
+    "column_ports": [
+      "DLF_CODE[0]"
+    ],
+    "left_F": "685117/25000000000000000000",
+    "right_F": "1443179/50000000000000000000",
+    "right_minus_left_F": "14589/10000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[0]"
+    ],
+    "column_ports": [
+      "DLF_CODE[3]"
+    ],
+    "left_F": "-163/25000000000000000000",
+    "right_F": "-651/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[0]"
+    ],
+    "column_ports": [
+      "DLF_CODE[6]"
+    ],
+    "left_F": "-123127/100000000000000000000",
+    "right_F": "-15391/12500000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[0]"
+    ],
+    "column_ports": [
+      "KI[2]"
+    ],
+    "left_F": "-7421/100000000000000000000",
+    "right_F": "-3711/50000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[0]"
+    ],
+    "column_ports": [
+      "KI[3]"
+    ],
+    "left_F": "-6853/100000000000000000000",
+    "right_F": "-6779/100000000000000000000",
+    "right_minus_left_F": "37/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[0]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-2999/50000000000000000000",
+    "right_F": "-6083/100000000000000000000",
+    "right_minus_left_F": "-17/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[0]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-6223/50000000000000000000",
+    "right_F": "-2489/20000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[1]"
+    ],
+    "column_ports": [
+      "DLF_CODE[1]"
+    ],
+    "left_F": "767153/25000000000000000000",
+    "right_F": "1596221/50000000000000000000",
+    "right_minus_left_F": "12383/10000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[1]"
+    ],
+    "column_ports": [
+      "DLF_CODE[3]"
+    ],
+    "left_F": "-53877/20000000000000000000",
+    "right_F": "-269401/100000000000000000000",
+    "right_minus_left_F": "-1/6250000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[1]"
+    ],
+    "column_ports": [
+      "DLF_CODE[4]"
+    ],
+    "left_F": "-6439/100000000000000000000",
+    "right_F": "-1289/20000000000000000000",
+    "right_minus_left_F": "-3/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[1]"
+    ],
+    "column_ports": [
+      "DLF_CODE[6]"
+    ],
+    "left_F": "-38859/50000000000000000000",
+    "right_F": "-77717/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[1]"
+    ],
+    "column_ports": [
+      "DLF_CODE[7]"
+    ],
+    "left_F": "-27/20000000000000000000",
+    "right_F": "-13/12500000000000000000",
+    "right_minus_left_F": "31/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[1]"
+    ],
+    "column_ports": [
+      "DLF_CODE[8]"
+    ],
+    "left_F": "-603/100000000000000000000",
+    "right_F": "-27/5000000000000000000",
+    "right_minus_left_F": "63/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[1]"
+    ],
+    "column_ports": [
+      "KI[0]"
+    ],
+    "left_F": "-183/2000000000000000000",
+    "right_F": "-1141/12500000000000000000",
+    "right_minus_left_F": "11/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[1]"
+    ],
+    "column_ports": [
+      "KI[1]"
+    ],
+    "left_F": "-267/3125000000000000000",
+    "right_F": "-2137/25000000000000000000",
+    "right_minus_left_F": "-1/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[1]"
+    ],
+    "column_ports": [
+      "KI[6]"
+    ],
+    "left_F": "-6719/50000000000000000000",
+    "right_F": "-13439/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[1]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-729/12500000000000000000",
+    "right_F": "-5917/100000000000000000000",
+    "right_minus_left_F": "-17/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[2]"
+    ],
+    "column_ports": [
+      "DLF_CODE[2]"
+    ],
+    "left_F": "6485981/50000000000000000000",
+    "right_F": "3735723/25000000000000000000",
+    "right_minus_left_F": "197093/10000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[2]"
+    ],
+    "column_ports": [
+      "DLF_CODE[3]"
+    ],
+    "left_F": "-388453/100000000000000000000",
+    "right_F": "-194227/50000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[2]"
+    ],
+    "column_ports": [
+      "DLF_CODE[4]"
+    ],
+    "left_F": "-42409/50000000000000000000",
+    "right_F": "-16963/20000000000000000000",
+    "right_minus_left_F": "3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[2]"
+    ],
+    "column_ports": [
+      "DLF_CODE[6]"
+    ],
+    "left_F": "-6231/50000000000000000000",
+    "right_F": "-2493/20000000000000000000",
+    "right_minus_left_F": "-3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[2]"
+    ],
+    "column_ports": [
+      "DLF_CODE[8]"
+    ],
+    "left_F": "-15907/100000000000000000000",
+    "right_F": "-15871/100000000000000000000",
+    "right_minus_left_F": "9/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[2]"
+    ],
+    "column_ports": [
+      "DLF_CODE[9]"
+    ],
+    "left_F": "-9703/100000000000000000000",
+    "right_F": "-9647/100000000000000000000",
+    "right_minus_left_F": "7/12500000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[2]"
+    ],
+    "column_ports": [
+      "KI[1]"
+    ],
+    "left_F": "-9161/100000000000000000000",
+    "right_F": "-459/5000000000000000000",
+    "right_minus_left_F": "-19/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[2]"
+    ],
+    "column_ports": [
+      "KI[2]"
+    ],
+    "left_F": "-14289/100000000000000000000",
+    "right_F": "-2571/20000000000000000000",
+    "right_minus_left_F": "717/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[2]"
+    ],
+    "column_ports": [
+      "KI[6]"
+    ],
+    "left_F": "-9661/100000000000000000000",
+    "right_F": "-1207/12500000000000000000",
+    "right_minus_left_F": "1/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[2]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-4803/50000000000000000000",
+    "right_F": "-9691/100000000000000000000",
+    "right_minus_left_F": "-17/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[3]"
+    ],
+    "column_ports": [
+      "DLF_CODE[3]"
+    ],
+    "left_F": "30993/800000000000000000",
+    "right_F": "413001/10000000000000000000",
+    "right_minus_left_F": "51177/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[3]"
+    ],
+    "column_ports": [
+      "DLF_CODE[4]"
+    ],
+    "left_F": "-459711/50000000000000000000",
+    "right_F": "-919423/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[3]"
+    ],
+    "column_ports": [
+      "DLF_CODE[6]"
+    ],
+    "left_F": "-4607/25000000000000000000",
+    "right_F": "-19271/100000000000000000000",
+    "right_minus_left_F": "-843/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[3]"
+    ],
+    "column_ports": [
+      "DLF_CODE[8]"
+    ],
+    "left_F": "-347/50000000000000000000",
+    "right_F": "-159/25000000000000000000",
+    "right_minus_left_F": "29/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[3]"
+    ],
+    "column_ports": [
+      "KI[0]"
+    ],
+    "left_F": "-5719/100000000000000000000",
+    "right_F": "-2861/50000000000000000000",
+    "right_minus_left_F": "-3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[3]"
+    ],
+    "column_ports": [
+      "KI[1]"
+    ],
+    "left_F": "-5721/100000000000000000000",
+    "right_F": "-287/5000000000000000000",
+    "right_minus_left_F": "-19/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[3]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-571/10000000000000000000",
+    "right_F": "-1159/20000000000000000000",
+    "right_minus_left_F": "-17/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "DLF_CODE[4]"
+    ],
+    "left_F": "16991451/100000000000000000000",
+    "right_F": "72477/400000000000000000",
+    "right_minus_left_F": "1127799/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "DLF_CODE[5]"
+    ],
+    "left_F": "-669447/100000000000000000000",
+    "right_F": "-334723/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "DLF_CODE[6]"
+    ],
+    "left_F": "-31371/50000000000000000000",
+    "right_F": "-31463/50000000000000000000",
+    "right_minus_left_F": "-23/12500000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "DLF_CODE[7]"
+    ],
+    "left_F": "-41791/100000000000000000000",
+    "right_F": "-4203/10000000000000000000",
+    "right_minus_left_F": "-239/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "DLF_CODE[8]"
+    ],
+    "left_F": "-197449/100000000000000000000",
+    "right_F": "-24681/12500000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "KI[0]"
+    ],
+    "left_F": "-5609/100000000000000000000",
+    "right_F": "-11/195312500000000000",
+    "right_minus_left_F": "-23/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "KI[1]"
+    ],
+    "left_F": "-5721/100000000000000000000",
+    "right_F": "-287/5000000000000000000",
+    "right_minus_left_F": "-19/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "KI[4]"
+    ],
+    "left_F": "-3347/50000000000000000000",
+    "right_F": "-6637/100000000000000000000",
+    "right_minus_left_F": "57/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "KI[7]"
+    ],
+    "left_F": "-1537/50000000000000000000",
+    "right_F": "-123/4000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-571/10000000000000000000",
+    "right_F": "-1159/20000000000000000000",
+    "right_minus_left_F": "-17/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "KP[2]"
+    ],
+    "left_F": "-169/50000000000000000000",
+    "right_F": "-337/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-3263/6250000000000000000",
+    "right_F": "-51/97656250000000000",
+    "right_minus_left_F": "-1/6250000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[0]"
+    ],
+    "left_F": "-3357/100000000000000000000",
+    "right_F": "-69/2000000000000000000",
+    "right_minus_left_F": "-93/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[1]"
+    ],
+    "left_F": "-73097/100000000000000000000",
+    "right_F": "-73067/100000000000000000000",
+    "right_minus_left_F": "3/10000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "left_F": "-889113/100000000000000000000",
+    "right_F": "-444557/50000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "left_F": "-9623/100000000000000000000",
+    "right_F": "-4783/50000000000000000000",
+    "right_minus_left_F": "57/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "DLF_CODE[5]"
+    ],
+    "left_F": "11261397/100000000000000000000",
+    "right_F": "6188971/50000000000000000000",
+    "right_minus_left_F": "223309/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "DLF_CODE[6]"
+    ],
+    "left_F": "-63439/10000000000000000000",
+    "right_F": "-629427/100000000000000000000",
+    "right_minus_left_F": "4963/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "DLF_CODE[7]"
+    ],
+    "left_F": "-727851/100000000000000000000",
+    "right_F": "-145571/20000000000000000000",
+    "right_minus_left_F": "-1/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "DLF_CODE[8]"
+    ],
+    "left_F": "-4903/50000000000000000000",
+    "right_F": "-387/4000000000000000000",
+    "right_minus_left_F": "131/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "DLF_CODE[9]"
+    ],
+    "left_F": "-5471/50000000000000000000",
+    "right_F": "-2759/25000000000000000000",
+    "right_minus_left_F": "-47/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "KI[0]"
+    ],
+    "left_F": "-699/12500000000000000000",
+    "right_F": "-5617/100000000000000000000",
+    "right_minus_left_F": "-1/4000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "KI[1]"
+    ],
+    "left_F": "-5721/100000000000000000000",
+    "right_F": "-287/5000000000000000000",
+    "right_minus_left_F": "-19/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "KI[4]"
+    ],
+    "left_F": "-1157/20000000000000000000",
+    "right_F": "-723/12500000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "KI[5]"
+    ],
+    "left_F": "-5827/50000000000000000000",
+    "right_F": "-11653/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "KI[6]"
+    ],
+    "left_F": "-1443/25000000000000000000",
+    "right_F": "-5709/100000000000000000000",
+    "right_minus_left_F": "63/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-571/10000000000000000000",
+    "right_F": "-1159/20000000000000000000",
+    "right_minus_left_F": "-17/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[1]"
+    ],
+    "left_F": "-33/625000000000000000",
+    "right_F": "-2621/50000000000000000000",
+    "right_minus_left_F": "19/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "left_F": "-47/25000000000000000000",
+    "right_F": "-23/12500000000000000000",
+    "right_minus_left_F": "1/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[5]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "left_F": "-115003/50000000000000000000",
+    "right_F": "-230007/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[6]"
+    ],
+    "column_ports": [
+      "DLF_CODE[6]"
+    ],
+    "left_F": "4301423/100000000000000000000",
+    "right_F": "900029/20000000000000000000",
+    "right_minus_left_F": "99361/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[6]"
+    ],
+    "column_ports": [
+      "DLF_CODE[7]"
+    ],
+    "left_F": "-248907/50000000000000000000",
+    "right_F": "-497953/100000000000000000000",
+    "right_minus_left_F": "-139/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[6]"
+    ],
+    "column_ports": [
+      "KI[1]"
+    ],
+    "left_F": "-5721/100000000000000000000",
+    "right_F": "-287/5000000000000000000",
+    "right_minus_left_F": "-19/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[6]"
+    ],
+    "column_ports": [
+      "KI[5]"
+    ],
+    "left_F": "-6333/100000000000000000000",
+    "right_F": "-631/10000000000000000000",
+    "right_minus_left_F": "23/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[6]"
+    ],
+    "column_ports": [
+      "KI[7]"
+    ],
+    "left_F": "-5737/100000000000000000000",
+    "right_F": "-5729/100000000000000000000",
+    "right_minus_left_F": "1/12500000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[6]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-571/10000000000000000000",
+    "right_F": "-1159/20000000000000000000",
+    "right_minus_left_F": "-17/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[6]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-11/156250000000000000",
+    "right_F": "-6991/100000000000000000000",
+    "right_minus_left_F": "49/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "DLF_CODE[7]"
+    ],
+    "left_F": "10265383/100000000000000000000",
+    "right_F": "10900129/100000000000000000000",
+    "right_minus_left_F": "317373/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "DLF_CODE[9]"
+    ],
+    "left_F": "-32747/20000000000000000000",
+    "right_F": "-81867/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "FAILED"
+    ],
+    "left_F": "-2309/100000000000000000000",
+    "right_F": "-2317/100000000000000000000",
+    "right_minus_left_F": "-1/12500000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "KI[1]"
+    ],
+    "left_F": "-5721/100000000000000000000",
+    "right_F": "-2871/50000000000000000000",
+    "right_minus_left_F": "-21/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "KI[2]"
+    ],
+    "left_F": "-597/10000000000000000000",
+    "right_F": "-5971/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "KI[6]"
+    ],
+    "left_F": "-2929/50000000000000000000",
+    "right_F": "-731/12500000000000000000",
+    "right_minus_left_F": "1/10000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "KI[7]"
+    ],
+    "left_F": "-5979/100000000000000000000",
+    "right_F": "-239/4000000000000000000",
+    "right_minus_left_F": "1/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-571/10000000000000000000",
+    "right_F": "-1159/20000000000000000000",
+    "right_minus_left_F": "-17/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "KP[2]"
+    ],
+    "left_F": "-123/50000000000000000000",
+    "right_F": "-49/20000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-10843/100000000000000000000",
+    "right_F": "-2711/25000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[0]"
+    ],
+    "left_F": "-2509/25000000000000000000",
+    "right_F": "-4977/50000000000000000000",
+    "right_minus_left_F": "41/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[1]"
+    ],
+    "left_F": "-7753/50000000000000000000",
+    "right_F": "-15507/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "left_F": "-1653/25000000000000000000",
+    "right_F": "-661/10000000000000000000",
+    "right_minus_left_F": "1/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[7]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[6]"
+    ],
+    "left_F": "-32701/100000000000000000000",
+    "right_F": "-32819/100000000000000000000",
+    "right_minus_left_F": "-59/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[8]"
+    ],
+    "column_ports": [
+      "DLF_CODE[8]"
+    ],
+    "left_F": "410621/4000000000000000000",
+    "right_F": "5765201/50000000000000000000",
+    "right_minus_left_F": "1264877/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[8]"
+    ],
+    "column_ports": [
+      "KI[1]"
+    ],
+    "left_F": "-10477/100000000000000000000",
+    "right_F": "-5239/50000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[8]"
+    ],
+    "column_ports": [
+      "KI[7]"
+    ],
+    "left_F": "-7371/100000000000000000000",
+    "right_F": "-3683/50000000000000000000",
+    "right_minus_left_F": "1/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[8]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-4431/50000000000000000000",
+    "right_F": "-223/2500000000000000000",
+    "right_minus_left_F": "-29/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[8]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-1477/12500000000000000000",
+    "right_F": "-11817/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[8]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "left_F": "-217/4000000000000000000",
+    "right_F": "-2697/50000000000000000000",
+    "right_minus_left_F": "31/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[8]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "left_F": "-18473/20000000000000000000",
+    "right_F": "-23091/25000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[9]"
+    ],
+    "column_ports": [
+      "DLF_CODE[9]"
+    ],
+    "left_F": "708377/6250000000000000000",
+    "right_F": "1585139/12500000000000000000",
+    "right_minus_left_F": "33677/2500000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[9]"
+    ],
+    "column_ports": [
+      "FAILED"
+    ],
+    "left_F": "-1798169/100000000000000000000",
+    "right_F": "-22477/1250000000000000000",
+    "right_minus_left_F": "9/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[9]"
+    ],
+    "column_ports": [
+      "KI[2]"
+    ],
+    "left_F": "-6431/100000000000000000000",
+    "right_F": "-643/10000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[9]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-571/10000000000000000000",
+    "right_F": "-5971/100000000000000000000",
+    "right_minus_left_F": "-261/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[9]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "left_F": "-1549/3125000000000000000",
+    "right_F": "-49583/100000000000000000000",
+    "right_minus_left_F": "-3/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[9]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "left_F": "-6721/100000000000000000000",
+    "right_F": "-6629/100000000000000000000",
+    "right_minus_left_F": "23/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[9]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[6]"
+    ],
+    "left_F": "-6579/100000000000000000000",
+    "right_F": "-3289/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "DLF_CODE[9]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "left_F": "-58419/25000000000000000000",
+    "right_F": "-14601/6250000000000000000",
+    "right_minus_left_F": "3/5000000000000000000"
+  },
+  {
+    "row_ports": [
+      "FAILED"
+    ],
+    "column_ports": [
+      "FAILED"
+    ],
+    "left_F": "288367/5000000000000000000",
+    "right_F": "6072847/100000000000000000000",
+    "right_minus_left_F": "305507/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "FAILED"
+    ],
+    "column_ports": [
+      "KI[2]"
+    ],
+    "left_F": "-1843/25000000000000000000",
+    "right_F": "-7371/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "FAILED"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-571/10000000000000000000",
+    "right_F": "-5929/100000000000000000000",
+    "right_minus_left_F": "-219/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "FAILED"
+    ],
+    "column_ports": [
+      "KP[4]"
+    ],
+    "left_F": "-47/50000000000000000000",
+    "right_F": "0",
+    "right_minus_left_F": "47/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "FAILED"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-1129/20000000000000000000",
+    "right_F": "-563/10000000000000000000",
+    "right_minus_left_F": "3/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "FAILED"
+    ],
+    "column_ports": [
+      "TRACKING"
+    ],
+    "left_F": "-2031/50000000000000000000",
+    "right_F": "-4061/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[0]"
+    ],
+    "column_ports": [
+      "KI[0]"
+    ],
+    "left_F": "94151/2000000000000000000",
+    "right_F": "39869/781250000000000000",
+    "right_minus_left_F": "197841/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[0]"
+    ],
+    "column_ports": [
+      "KI[1]"
+    ],
+    "left_F": "-605959/100000000000000000000",
+    "right_F": "-15149/2500000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[0]"
+    ],
+    "column_ports": [
+      "KI[2]"
+    ],
+    "left_F": "-649/10000000000000000000",
+    "right_F": "-6571/100000000000000000000",
+    "right_minus_left_F": "-81/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[0]"
+    ],
+    "column_ports": [
+      "KI[3]"
+    ],
+    "left_F": "-10513/50000000000000000000",
+    "right_F": "-21061/100000000000000000000",
+    "right_minus_left_F": "-7/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[0]"
+    ],
+    "column_ports": [
+      "KI[5]"
+    ],
+    "left_F": "-4339/100000000000000000000",
+    "right_F": "-537/12500000000000000000",
+    "right_minus_left_F": "43/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[0]"
+    ],
+    "column_ports": [
+      "KI[7]"
+    ],
+    "left_F": "-39/781250000000000000",
+    "right_F": "-1243/25000000000000000000",
+    "right_minus_left_F": "1/5000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[0]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-2417/3125000000000000000",
+    "right_F": "-69179/100000000000000000000",
+    "right_minus_left_F": "1633/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[0]"
+    ],
+    "column_ports": [
+      "KP[3]"
+    ],
+    "left_F": "-97/2000000000000000000",
+    "right_F": "-313/6250000000000000000",
+    "right_minus_left_F": "-79/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[1]"
+    ],
+    "column_ports": [
+      "KI[1]"
+    ],
+    "left_F": "3863031/100000000000000000000",
+    "right_F": "2224211/50000000000000000000",
+    "right_minus_left_F": "585391/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[1]"
+    ],
+    "column_ports": [
+      "KI[3]"
+    ],
+    "left_F": "-3679/25000000000000000000",
+    "right_F": "-14641/100000000000000000000",
+    "right_minus_left_F": "3/4000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[1]"
+    ],
+    "column_ports": [
+      "KI[4]"
+    ],
+    "left_F": "-6203/10000000000000000000",
+    "right_F": "-31039/50000000000000000000",
+    "right_minus_left_F": "-3/6250000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[1]"
+    ],
+    "column_ports": [
+      "KP[3]"
+    ],
+    "left_F": "-4349/100000000000000000000",
+    "right_F": "-1077/25000000000000000000",
+    "right_minus_left_F": "41/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[1]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-116597/100000000000000000000",
+    "right_F": "-58299/50000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[2]"
+    ],
+    "column_ports": [
+      "KI[2]"
+    ],
+    "left_F": "1033949/25000000000000000000",
+    "right_F": "4818469/100000000000000000000",
+    "right_minus_left_F": "682673/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[2]"
+    ],
+    "column_ports": [
+      "KI[3]"
+    ],
+    "left_F": "-483393/100000000000000000000",
+    "right_F": "-241697/50000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[2]"
+    ],
+    "column_ports": [
+      "KI[6]"
+    ],
+    "left_F": "-206831/100000000000000000000",
+    "right_F": "-12927/6250000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[2]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-16317/100000000000000000000",
+    "right_F": "-4707/25000000000000000000",
+    "right_minus_left_F": "-2511/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[2]"
+    ],
+    "column_ports": [
+      "KP[2]"
+    ],
+    "left_F": "-1933/100000000000000000000",
+    "right_F": "-957/50000000000000000000",
+    "right_minus_left_F": "19/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[3]"
+    ],
+    "column_ports": [
+      "KI[3]"
+    ],
+    "left_F": "394029/10000000000000000000",
+    "right_F": "142767/3125000000000000000",
+    "right_minus_left_F": "314127/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[3]"
+    ],
+    "column_ports": [
+      "KI[4]"
+    ],
+    "left_F": "-376759/100000000000000000000",
+    "right_F": "-9419/2500000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[3]"
+    ],
+    "column_ports": [
+      "KI[5]"
+    ],
+    "left_F": "-6629/12500000000000000000",
+    "right_F": "-53097/100000000000000000000",
+    "right_minus_left_F": "-13/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[3]"
+    ],
+    "column_ports": [
+      "KI[6]"
+    ],
+    "left_F": "-4517/50000000000000000000",
+    "right_F": "-9053/100000000000000000000",
+    "right_minus_left_F": "-19/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[3]"
+    ],
+    "column_ports": [
+      "KI[7]"
+    ],
+    "left_F": "-29741/50000000000000000000",
+    "right_F": "-29713/50000000000000000000",
+    "right_minus_left_F": "7/12500000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[3]"
+    ],
+    "column_ports": [
+      "PLL_ENABLE"
+    ],
+    "left_F": "-100261/50000000000000000000",
+    "right_F": "-200523/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[4]"
+    ],
+    "column_ports": [
+      "KI[4]"
+    ],
+    "left_F": "3365551/100000000000000000000",
+    "right_F": "3899121/100000000000000000000",
+    "right_minus_left_F": "53357/10000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[4]"
+    ],
+    "column_ports": [
+      "KI[5]"
+    ],
+    "left_F": "-114167/25000000000000000000",
+    "right_F": "-45667/10000000000000000000",
+    "right_minus_left_F": "-1/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[4]"
+    ],
+    "column_ports": [
+      "KI[7]"
+    ],
+    "left_F": "-229847/100000000000000000000",
+    "right_F": "-14367/6250000000000000000",
+    "right_minus_left_F": "-1/4000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[4]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "-6441/100000000000000000000",
+    "right_F": "-161/2500000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[4]"
+    ],
+    "column_ports": [
+      "KP[1]"
+    ],
+    "left_F": "-3041/50000000000000000000",
+    "right_F": "-3039/50000000000000000000",
+    "right_minus_left_F": "1/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[4]"
+    ],
+    "column_ports": [
+      "KP[3]"
+    ],
+    "left_F": "-687/12500000000000000000",
+    "right_F": "-2809/50000000000000000000",
+    "right_minus_left_F": "-61/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[4]"
+    ],
+    "column_ports": [
+      "PLL_ENABLE"
+    ],
+    "left_F": "-11311/100000000000000000000",
+    "right_F": "-707/6250000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[5]"
+    ],
+    "column_ports": [
+      "KI[5]"
+    ],
+    "left_F": "272739/12500000000000000000",
+    "right_F": "264643/10000000000000000000",
+    "right_minus_left_F": "232259/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[5]"
+    ],
+    "column_ports": [
+      "KI[6]"
+    ],
+    "left_F": "-75723/20000000000000000000",
+    "right_F": "-189307/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[5]"
+    ],
+    "column_ports": [
+      "KI[7]"
+    ],
+    "left_F": "-12553/20000000000000000000",
+    "right_F": "-15621/25000000000000000000",
+    "right_minus_left_F": "281/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[5]"
+    ],
+    "column_ports": [
+      "KP[1]"
+    ],
+    "left_F": "-6719/100000000000000000000",
+    "right_F": "-841/12500000000000000000",
+    "right_minus_left_F": "-9/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[5]"
+    ],
+    "column_ports": [
+      "KP[2]"
+    ],
+    "left_F": "-2561/12500000000000000000",
+    "right_F": "-20487/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[5]"
+    ],
+    "column_ports": [
+      "KP[3]"
+    ],
+    "left_F": "-11749/100000000000000000000",
+    "right_F": "-737/6250000000000000000",
+    "right_minus_left_F": "-43/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[5]"
+    ],
+    "column_ports": [
+      "KP[4]"
+    ],
+    "left_F": "-15137/50000000000000000000",
+    "right_F": "-1211/4000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[6]"
+    ],
+    "column_ports": [
+      "KI[6]"
+    ],
+    "left_F": "2951777/100000000000000000000",
+    "right_F": "3207051/100000000000000000000",
+    "right_minus_left_F": "127637/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[6]"
+    ],
+    "column_ports": [
+      "KP[1]"
+    ],
+    "left_F": "-4601/100000000000000000000",
+    "right_F": "-4683/100000000000000000000",
+    "right_minus_left_F": "-41/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[6]"
+    ],
+    "column_ports": [
+      "KP[2]"
+    ],
+    "left_F": "-259/625000000000000000",
+    "right_F": "-331/800000000000000000",
+    "right_minus_left_F": "13/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[6]"
+    ],
+    "column_ports": [
+      "KP[3]"
+    ],
+    "left_F": "-959/25000000000000000000",
+    "right_F": "-769/20000000000000000000",
+    "right_minus_left_F": "-9/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[7]"
+    ],
+    "column_ports": [
+      "KI[7]"
+    ],
+    "left_F": "9131/312500000000000000",
+    "right_F": "1686937/50000000000000000000",
+    "right_minus_left_F": "225977/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[7]"
+    ],
+    "column_ports": [
+      "KP[2]"
+    ],
+    "left_F": "-13511/20000000000000000000",
+    "right_F": "-33743/50000000000000000000",
+    "right_minus_left_F": "69/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[7]"
+    ],
+    "column_ports": [
+      "KP[3]"
+    ],
+    "left_F": "-33/4000000000000000000",
+    "right_F": "-413/50000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[7]"
+    ],
+    "column_ports": [
+      "KP[4]"
+    ],
+    "left_F": "-1223/50000000000000000000",
+    "right_F": "-153/6250000000000000000",
+    "right_minus_left_F": "-1/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KI[7]"
+    ],
+    "column_ports": [
+      "PLLOUT"
+    ],
+    "left_F": "-12939/100000000000000000000",
+    "right_F": "-647/5000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[0]"
+    ],
+    "column_ports": [
+      "KP[0]"
+    ],
+    "left_F": "420771/12500000000000000000",
+    "right_F": "82809/2000000000000000000",
+    "right_minus_left_F": "387141/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[0]"
+    ],
+    "column_ports": [
+      "PLL_ENABLE"
+    ],
+    "left_F": "-16033/100000000000000000000",
+    "right_F": "-501/3125000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[1]"
+    ],
+    "column_ports": [
+      "KP[1]"
+    ],
+    "left_F": "2554023/100000000000000000000",
+    "right_F": "2716163/100000000000000000000",
+    "right_minus_left_F": "8107/5000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[1]"
+    ],
+    "column_ports": [
+      "KP[4]"
+    ],
+    "left_F": "-1107/100000000000000000000",
+    "right_F": "-561/50000000000000000000",
+    "right_minus_left_F": "-3/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[1]"
+    ],
+    "column_ports": [
+      "PLLOUT"
+    ],
+    "left_F": "-2241/10000000000000000000",
+    "right_F": "-5601/25000000000000000000",
+    "right_minus_left_F": "3/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[1]"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-20223/50000000000000000000",
+    "right_F": "-41423/100000000000000000000",
+    "right_minus_left_F": "-977/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[2]"
+    ],
+    "column_ports": [
+      "KP[2]"
+    ],
+    "left_F": "1421741/50000000000000000000",
+    "right_F": "3244199/100000000000000000000",
+    "right_minus_left_F": "400717/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[2]"
+    ],
+    "column_ports": [
+      "KP[4]"
+    ],
+    "left_F": "-1903/4000000000000000000",
+    "right_F": "-23787/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[2]"
+    ],
+    "column_ports": [
+      "PLLOUT"
+    ],
+    "left_F": "-1879/6250000000000000000",
+    "right_F": "-30071/100000000000000000000",
+    "right_minus_left_F": "-7/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[2]"
+    ],
+    "column_ports": [
+      "PLL_ENABLE"
+    ],
+    "left_F": "-12759/50000000000000000000",
+    "right_F": "-25517/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[3]"
+    ],
+    "column_ports": [
+      "KP[3]"
+    ],
+    "left_F": "1361203/50000000000000000000",
+    "right_F": "1821117/50000000000000000000",
+    "right_minus_left_F": "229957/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[3]"
+    ],
+    "column_ports": [
+      "KP[4]"
+    ],
+    "left_F": "-235349/50000000000000000000",
+    "right_F": "-117681/25000000000000000000",
+    "right_minus_left_F": "-13/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[3]"
+    ],
+    "column_ports": [
+      "PLLOUT"
+    ],
+    "left_F": "-10607/100000000000000000000",
+    "right_F": "-5309/50000000000000000000",
+    "right_minus_left_F": "-11/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[4]"
+    ],
+    "column_ports": [
+      "KP[4]"
+    ],
+    "left_F": "803629/25000000000000000000",
+    "right_F": "98101/2500000000000000000",
+    "right_minus_left_F": "177381/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[4]"
+    ],
+    "column_ports": [
+      "PLLOUT"
+    ],
+    "left_F": "-54013/50000000000000000000",
+    "right_F": "-108027/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "KP[4]"
+    ],
+    "column_ports": [
+      "REFCLK"
+    ],
+    "left_F": "-59/50000000000000000000",
+    "right_F": "-123/100000000000000000000",
+    "right_minus_left_F": "-1/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "PLLOUT"
+    ],
+    "column_ports": [
+      "PLLOUT"
+    ],
+    "left_F": "8600517/100000000000000000000",
+    "right_F": "2221793/25000000000000000000",
+    "right_minus_left_F": "57331/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "PLL_ENABLE"
+    ],
+    "column_ports": [
+      "PLL_ENABLE"
+    ],
+    "left_F": "45273/781250000000000000",
+    "right_F": "1590301/25000000000000000000",
+    "right_minus_left_F": "28313/5000000000000000000"
+  },
+  {
+    "row_ports": [
+      "PLL_ENABLE"
+    ],
+    "column_ports": [
+      "REFCLK"
+    ],
+    "left_F": "-69937/100000000000000000000",
+    "right_F": "-34969/50000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "PLL_ENABLE"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "-114531/100000000000000000000",
+    "right_F": "-28633/25000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "REFCLK"
+    ],
+    "column_ports": [
+      "REFCLK"
+    ],
+    "left_F": "9995537/100000000000000000000",
+    "right_F": "11872177/100000000000000000000",
+    "right_minus_left_F": "11729/625000000000000000"
+  },
+  {
+    "row_ports": [
+      "REFCLK"
+    ],
+    "column_ports": [
+      "TRACKING"
+    ],
+    "left_F": "-6973/100000000000000000000",
+    "right_F": "-1399/20000000000000000000",
+    "right_minus_left_F": "-11/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "RESET_N"
+    ],
+    "column_ports": [
+      "RESET_N"
+    ],
+    "left_F": "12954573/50000000000000000000",
+    "right_F": "14487879/50000000000000000000",
+    "right_minus_left_F": "766653/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "RESET_N"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[0]"
+    ],
+    "left_F": "-44009/50000000000000000000",
+    "right_F": "-88019/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "RESET_N"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[2]"
+    ],
+    "left_F": "-457/100000000000000000000",
+    "right_F": "-229/50000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "RESET_N"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[5]"
+    ],
+    "left_F": "-5881/100000000000000000000",
+    "right_F": "-2973/50000000000000000000",
+    "right_minus_left_F": "-13/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "RESET_N"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "left_F": "-22409/100000000000000000000",
+    "right_F": "-11171/50000000000000000000",
+    "right_minus_left_F": "67/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "RESET_N"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "left_F": "-38481/50000000000000000000",
+    "right_F": "-76871/100000000000000000000",
+    "right_minus_left_F": "91/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "RESET_N"
+    ],
+    "column_ports": [
+      "STARTUP_INCREASING"
+    ],
+    "left_F": "-13/12500000000000000000",
+    "right_F": "-21/20000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "RESET_N"
+    ],
+    "column_ports": [
+      "TRACKING"
+    ],
+    "left_F": "-2639/25000000000000000000",
+    "right_F": "-10553/100000000000000000000",
+    "right_minus_left_F": "3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[0]"
+    ],
+    "left_F": "1212069/25000000000000000000",
+    "right_F": "2765807/50000000000000000000",
+    "right_minus_left_F": "341669/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[2]"
+    ],
+    "left_F": "-14017/5000000000000000000",
+    "right_F": "-279637/100000000000000000000",
+    "right_minus_left_F": "703/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[4]"
+    ],
+    "left_F": "-3861/25000000000000000000",
+    "right_F": "-617/4000000000000000000",
+    "right_minus_left_F": "19/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[1]"
+    ],
+    "left_F": "2952313/50000000000000000000",
+    "right_F": "3294631/50000000000000000000",
+    "right_minus_left_F": "171159/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[5]"
+    ],
+    "left_F": "-67/20000000000000000000",
+    "right_F": "-167/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[0]"
+    ],
+    "left_F": "-247753/100000000000000000000",
+    "right_F": "-123877/50000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "left_F": "-3251/50000000000000000000",
+    "right_F": "-6517/100000000000000000000",
+    "right_minus_left_F": "-3/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_INCREASING"
+    ],
+    "left_F": "-1311/6250000000000000000",
+    "right_F": "-5243/25000000000000000000",
+    "right_minus_left_F": "1/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[2]"
+    ],
+    "left_F": "2728741/50000000000000000000",
+    "right_F": "1258707/20000000000000000000",
+    "right_minus_left_F": "836053/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "left_F": "-241/10000000000000000000",
+    "right_F": "-2399/100000000000000000000",
+    "right_minus_left_F": "11/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[0]"
+    ],
+    "left_F": "-1523/100000000000000000000",
+    "right_F": "-1507/100000000000000000000",
+    "right_minus_left_F": "1/6250000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "left_F": "-4831/50000000000000000000",
+    "right_F": "-9651/100000000000000000000",
+    "right_minus_left_F": "11/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "left_F": "-8499/25000000000000000000",
+    "right_F": "-33993/100000000000000000000",
+    "right_minus_left_F": "3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_INCREASING"
+    ],
+    "left_F": "-369/5000000000000000000",
+    "right_F": "-7379/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "left_F": "1070317/20000000000000000000",
+    "right_F": "3141683/50000000000000000000",
+    "right_minus_left_F": "931781/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[5]"
+    ],
+    "left_F": "-4063/100000000000000000000",
+    "right_F": "-2033/50000000000000000000",
+    "right_minus_left_F": "-3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[1]"
+    ],
+    "left_F": "-145513/100000000000000000000",
+    "right_F": "-18189/12500000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "left_F": "-341/5000000000000000000",
+    "right_F": "-3411/50000000000000000000",
+    "right_minus_left_F": "-1/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "left_F": "-211/1250000000000000000",
+    "right_F": "-3561/20000000000000000000",
+    "right_minus_left_F": "-37/4000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "left_F": "-516867/100000000000000000000",
+    "right_F": "-258433/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[4]"
+    ],
+    "left_F": "5101309/100000000000000000000",
+    "right_F": "6117747/100000000000000000000",
+    "right_minus_left_F": "508219/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "left_F": "-6229/25000000000000000000",
+    "right_F": "-4983/20000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "left_F": "-186423/100000000000000000000",
+    "right_F": "-93211/50000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "left_F": "-679/5000000000000000000",
+    "right_F": "-2717/20000000000000000000",
+    "right_minus_left_F": "-1/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[5]"
+    ],
+    "column_ports": [
+      "STARTUP_COARSE[5]"
+    ],
+    "left_F": "546653/12500000000000000000",
+    "right_F": "2562471/50000000000000000000",
+    "right_minus_left_F": "375859/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[5]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "left_F": "-31931/100000000000000000000",
+    "right_F": "-7983/25000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[5]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "left_F": "-1141/20000000000000000000",
+    "right_F": "-5679/100000000000000000000",
+    "right_minus_left_F": "13/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_COARSE[5]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "left_F": "-303/50000000000000000000",
+    "right_F": "-261/50000000000000000000",
+    "right_minus_left_F": "21/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[0]"
+    ],
+    "left_F": "4427091/100000000000000000000",
+    "right_F": "664217/12500000000000000000",
+    "right_minus_left_F": "177329/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[1]"
+    ],
+    "left_F": "-41/12500000000000000000",
+    "right_F": "-297/100000000000000000000",
+    "right_minus_left_F": "31/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "left_F": "-189/100000000000000000000",
+    "right_F": "-47/25000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[0]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "left_F": "-309/100000000000000000000",
+    "right_F": "-31/10000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[1]"
+    ],
+    "left_F": "6422811/100000000000000000000",
+    "right_F": "7080843/100000000000000000000",
+    "right_minus_left_F": "41127/6250000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "left_F": "-8901/50000000000000000000",
+    "right_F": "-17801/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "left_F": "-223247/50000000000000000000",
+    "right_F": "-446493/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[1]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[6]"
+    ],
+    "left_F": "-63/20000000000000000000",
+    "right_F": "-317/100000000000000000000",
+    "right_minus_left_F": "-1/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "left_F": "580379/10000000000000000000",
+    "right_F": "3195793/50000000000000000000",
+    "right_minus_left_F": "146949/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "left_F": "-7969/100000000000000000000",
+    "right_F": "-1993/25000000000000000000",
+    "right_minus_left_F": "-3/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "left_F": "-561699/100000000000000000000",
+    "right_F": "-278979/50000000000000000000",
+    "right_minus_left_F": "3741/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[2]"
+    ],
+    "column_ports": [
+      "STARTUP_INCREASING"
+    ],
+    "left_F": "-4491/25000000000000000000",
+    "right_F": "-18113/100000000000000000000",
+    "right_minus_left_F": "-149/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "left_F": "2913029/50000000000000000000",
+    "right_F": "1395903/20000000000000000000",
+    "right_minus_left_F": "1153457/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "left_F": "-130111/100000000000000000000",
+    "right_F": "-2033/1562500000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "left_F": "-3317/20000000000000000000",
+    "right_F": "-4139/25000000000000000000",
+    "right_minus_left_F": "29/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[3]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "left_F": "-16173/20000000000000000000",
+    "right_F": "-83869/100000000000000000000",
+    "right_minus_left_F": "-751/25000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "left_F": "3427581/50000000000000000000",
+    "right_F": "74479/1000000000000000000",
+    "right_minus_left_F": "296369/50000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "left_F": "-19277/12500000000000000000",
+    "right_F": "-247/160000000000000000",
+    "right_minus_left_F": "-159/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[4]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "left_F": "-9857/2000000000000000000",
+    "right_F": "-492851/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "left_F": "6743363/100000000000000000000",
+    "right_F": "2013767/25000000000000000000",
+    "right_minus_left_F": "262341/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[6]"
+    ],
+    "left_F": "-43223/50000000000000000000",
+    "right_F": "-86257/100000000000000000000",
+    "right_minus_left_F": "189/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[5]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "left_F": "-5517/10000000000000000000",
+    "right_F": "-55169/100000000000000000000",
+    "right_minus_left_F": "1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[6]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[6]"
+    ],
+    "left_F": "1365123/25000000000000000000",
+    "right_F": "6540547/100000000000000000000",
+    "right_minus_left_F": "216011/20000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[6]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "left_F": "-8901/50000000000000000000",
+    "right_F": "-17803/100000000000000000000",
+    "right_minus_left_F": "-1/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "column_ports": [
+      "STARTUP_FINE[7]"
+    ],
+    "left_F": "158917/3125000000000000000",
+    "right_F": "6035591/100000000000000000000",
+    "right_minus_left_F": "950247/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "STARTUP_INCREASING"
+    ],
+    "column_ports": [
+      "STARTUP_INCREASING"
+    ],
+    "left_F": "417027/10000000000000000000",
+    "right_F": "5041237/100000000000000000000",
+    "right_minus_left_F": "870967/100000000000000000000"
+  },
+  {
+    "row_ports": [
+      "TRACKING"
+    ],
+    "column_ports": [
+      "TRACKING"
+    ],
+    "left_F": "1369803/20000000000000000000",
+    "right_F": "3788309/50000000000000000000",
+    "right_minus_left_F": "727603/100000000000000000000"
+  }
+]
