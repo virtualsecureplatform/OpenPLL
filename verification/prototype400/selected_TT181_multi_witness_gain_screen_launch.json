@@ -1,0 +1,168 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_guarded_exact_TT_gain_search_990/assessment.json": "a0f20ff17f7555796d755edaf4fdee9d5d524fedae473e3334ef4c8429c4cf8d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_history_nominal_1219/matrix/gain_offset_linear_period_scenario0_phase20/assessment.json": "1742435d631323afaf0e16192955a156528d7af80769fb5bfea5871803a58c67",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_history_nominal_1219/matrix/gain_offset_linear_period_scenario0_phase20/inputs.json": "b446abe869dc1b51683d81b21f99553808bb9bc2a7a1f4e20287d6c4dbe8d959",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_history_nominal_1219/matrix/models.json": "7c3c597758cfdae4eb9d0210a2a00a7c832e49c77fa0f7686dfe0365ba592fd4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_clock_phase_observations_187.json": "3449710334ff80a17b1d365c0c4edf69d869284adc8c38276244f6c394f9d7f8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_nominal_RTL_build_cache_778/assessment.json": "109352da2ad3667bdfa739ed4388458ee60f3f50864e38b1a8bd7b75f69a12a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_root_publication_detector_407/detector.v": "551813fd1256418ea66071fea72541ef42cfa03e8ef8b407af633068fa2a5af0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_history_receiver_1220/matrix/gain_offset_linear_period_scenario0_phase20/assessment.json": "5eb0b07f63a62c04a5ddb89284a539eaca202337151baa081a2ccf168f985a3f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_history_receiver_1220/matrix/gain_offset_linear_period_scenario0_phase20/inputs.json": "da51c9bc8cb8e51dd1d3e5f4afb19be5a563cb5582177085d19de9149387e6b3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_history_receiver_1220/matrix/models.json": "e7b93937a52053dbd30e2d54f88467efe99e59557162128a45895b4659f3f237",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_stress_RTL_build_cache_788/assessment.json": "2281f2b318841b4e332efbf03a94ccc55bebb1c84f58a829389c4b894641a29a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_receiver_stress_detector_450/detector.v": "ca01469feb67cfe9cdecf059f61280255c26be37d8226f8e8586cda536dbfa38",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/assessment.json": "23aa9487d097fe63f9558d6981a0dbdf927ed7f7d1decc36aaaea003e094ffc1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/models.json": "7c3c597758cfdae4eb9d0210a2a00a7c832e49c77fa0f7686dfe0365ba592fd4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_offset_linear_period_scenario0_phase20/assessment.json": "7dcdad2c269ec1ca07692b343ebd68eb34b39bcc47c17b87b336f6bc11afb674",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_history_nominal_1219/matrix/assessment.json": "d2be299cf17bf5e5cf73ca77f0f5e58f0e75db97163d7668d1c51b5670d58c00",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP8_offset_witness_1227/nominal_linear_period/assessment.json": "093002361713219aafb12187d1ab51ee1a0d73c8d690a83080b3ec3c3ef38364",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP8_offset_witness_1227/nominal_linear_period/inputs.json": "448d8de77eabb870cd1ef0f11384e8675752aa24ab16b6b01b2386ad562c9f8d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP8_offset_witness_1227/nominal_linear_frequency/assessment.json": "ce749eaa97b99e21c5b846c6c6855bfb2b1039f249ce43c9e274571f23f44f81",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP8_offset_witness_1227/nominal_linear_frequency/inputs.json": "17c2768ee695cff409c763a7846664909eb02250ed45804cc26cfa799361b119",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP8_offset_witness_1227/receiver_linear_period/assessment.json": "622c1d0120c18572d83bd9bbab3fdcb04352a912838312ffb79af6446f698348",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP8_offset_witness_1227/receiver_linear_period/inputs.json": "267b3dccf0c2a600f52720cbc2ec49c8e0d434ba1da91e87ccadd48969e1588b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP8_offset_witness_1227/receiver_linear_frequency/assessment.json": "ceb1f8b30ccb06f66aedd05453554411f3875f0bae7c50cc1939b9f031836b77",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP8_offset_witness_1227/receiver_linear_frequency/inputs.json": "14c51b9e2dc0850610a72882aa78899102799d0dc6e3f4d3685019489f2e0ba2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP8_offset_witness_1227/assessment.json": "e5cb88b705ed81d0a1aea576d98c80a59f953c6e98a8f26beadcb189597d615f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_mixed_signal_v8.py": "58e8285fd3450237309ba4e4e2ddc62a873c5d4984e100e9b122a48fb81c1675",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/gain_offset.json": "954abc8c48099a96c4cfd55c8147b625c5d9b50e5da2455f17a53cf7b871b870",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/offset.json": "b6fec0cec1eb5aca7ecfc92cc4e081b5eeea6142fdd8acc3c1a3ae0064240d64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/nominal.json": "34e90ee7ec63a4c2d8a00afec7f5ad4a726b600ee0adb325aa6d5609c246e3b8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/screen_selected_gain_witnesses.py": "a171f09552e3d8312ecd1dd0fd3c320f843e1a1b0c29b195dc72f1fb7cab9966",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/pinned_image_guard.py": "6a17a321830eda481e4cf4539a7c3c6b0fbb27d7ba0b2a50ac1c396e07365213",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_gain_screen_disposition.py": "e22505cbd4be14fa77b50673509adbb858c4c9a548e8ecdd6dac3084dae784ad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_model_registry.py": "2a6ec23d706c9b824bc4e7ab59d5fac53da177af337f80fd005ada5015438b34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_publication_matrix_v3.py": "72a1f1d8220a7fd70bd8ef395e2a36a1c068bbb245f44e05721dedbb98a9af3d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/acceptance_v4.py": "ced3b3c6edb28090e7b84a50d643dc53405eff20c588299b296e1f0a62b0d2d8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_loop_assessment_v2.py": "26df3ad5490d55b9f4fd28c148116f1af75fd03b7ccc78d8d8fdcf312cb14f34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_selected_frequency_stress_traces.py": "05bf5483887ad8ab05bcdd0db9c4a5c29d439b4d06c639b6de4e1b21910fa99b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_reference_phase.py": "0f376e62893417c72a3405ee835a267c014a33f130015f03967a6c37c236de1d"
+  },
+  "ordered_gains": [
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      16,
+      0
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      16,
+      4
+    ],
+    [
+      16,
+      8
+    ]
+  ],
+  "previously_rejected_pairs": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      8
+    ]
+  ],
+  "witnesses": [
+    {
+      "stress": "gain_offset",
+      "phase_ns": 20
+    },
+    {
+      "stress": "offset",
+      "phase_ns": 10
+    },
+    {
+      "stress": "nominal",
+      "phase_ns": 10
+    }
+  ],
+  "maximum_fast_cases": 240,
+  "whole_cap_s": 7200,
+  "native_launches": 0,
+  "automatic_identical_retry": false,
+  "all_completed_covered_cases_recomputed": true,
+  "provisional_screen_only": true,
+  "release_ready": false
+}
