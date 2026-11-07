@@ -1,0 +1,57 @@
+{
+  "purpose": "Exact inclusive acceptance limits for integer-picosecond mixed-signal traces",
+  "profile_sha256": "a09e26d592a2b09e7945df293422f5e9ed60483b9086813467128d035165b5da",
+  "acceptance_limits_changed": false,
+  "epsilon_added": false,
+  "off_grid_samples_rounded": false,
+  "phase_statistics": "Integer phase samples and rational span, mean, least-squares drift and frequency; requires exact timestamp-grid round trip and locally uniform reference intervals",
+  "non_grid_reference_fallback": "Original floating interpolation, explicitly reported in each window",
+  "boundary_tests": {
+    "span_250ps_passes": true,
+    "span_251ps_rejected": true,
+    "span_250_point_001ps_rejected": true,
+    "drift_50ps_exact": true,
+    "drift_51ps_rejected": true
+  },
+  "validation_tests_passed": 27,
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_phase_boundary_reassessment_978/assessment.json": "b9bf9457898b966bc71ab64a128e7915403dc68086b4570612c8fa6027515918",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_assessor_runtime_control_979/assessment.json": "c4779ae53b485c4807689d796886a3dadc09056da06b3bb45cc2e137f9b92814",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_assessor_nominal_control_980/assessment.json": "239f4527b5cdfbe0737b41c4b2e3191ba2d36d1050ee18950c87e00f67926255",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_statistics_release_audit_981.json": "c59da00c2e68d78a2352e28d9b9f312c939fd97b022d3fe269e53f3b2997aa48"
+  },
+  "runtime_control_trace_bytes_identical": {
+    "edges.csv": true,
+    "controls.csv": true,
+    "segments.csv": true,
+    "dco_table.txt": true,
+    "run.log": true
+  },
+  "runtime_control_trace_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_receiver_976/offset_linear_period_scenario0_phase0/edges.csv": "57bd6e4e9a517a8447130e3ffa9b37d7c12b83849d2eaf7b2f27a5fd5086cf2e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_receiver_976/offset_linear_period_scenario0_phase0/controls.csv": "6e0f0a458377b55bd068dff3010b116afca1dddea5997137a5a3323db1a1e679",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_receiver_976/offset_linear_period_scenario0_phase0/segments.csv": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_receiver_976/offset_linear_period_scenario0_phase0/dco_table.txt": "50d68596ce18f36f03c1a718fdcc49b1622f61fe82f3a67f6aac07093c72ccfb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_receiver_976/offset_linear_period_scenario0_phase0/run.log": "a249042ba8efdae86593b864f5877e4c3d5266045d18d09a76930c3273edc7a3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_assessor_runtime_control_979/edges.csv": "57bd6e4e9a517a8447130e3ffa9b37d7c12b83849d2eaf7b2f27a5fd5086cf2e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_assessor_runtime_control_979/controls.csv": "6e0f0a458377b55bd068dff3010b116afca1dddea5997137a5a3323db1a1e679",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_assessor_runtime_control_979/segments.csv": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_assessor_runtime_control_979/dco_table.txt": "50d68596ce18f36f03c1a718fdcc49b1622f61fe82f3a67f6aac07093c72ccfb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_assessor_runtime_control_979/run.log": "a249042ba8efdae86593b864f5877e4c3d5266045d18d09a76930c3273edc7a3"
+  },
+  "offset_control": {
+    "prior_final_four_windows_pass": false,
+    "exact_final_four_windows_pass": true,
+    "prior_functional_pass": false,
+    "exact_functional_pass": false,
+    "genuine_recent_span_ps": 253,
+    "exact_acquisition_confirmation_elapsed_ns": 214880,
+    "limit_acquisition_ns": 200000
+  },
+  "existing_nominal_control_pass_preserved": true,
+  "release_auditor": "verification/signoff400/audit_prototype_v4.py",
+  "closed_loop_trace_auditor": "verification/signoff400/audit_selected_closed_loop_traces_v2.py",
+  "exact_assessor_runtime": "verification/signoff400/run_selected_mixed_signal_v8.py",
+  "all_five_release_gates_still_fail": true,
+  "release_ready": false
+}

@@ -11,5 +11,12 @@
   "candidate_identity_verified": true,
   "qualification_evidence_attached": false,
   "scope": "layout-bound candidate identity and expected rejection of unfilled qualification slots",
-  "release_ready": false
+  "release_ready": false,
+  "exact_statistics_audit": {
+    "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_statistics_release_audit_981.json",
+    "sha256": "c59da00c2e68d78a2352e28d9b9f312c939fd97b022d3fe269e53f3b2997aa48",
+    "auditor": "verification/signoff400/audit_prototype_v4.py",
+    "profile_changed": false,
+    "release_ready": false
+  }
 }
