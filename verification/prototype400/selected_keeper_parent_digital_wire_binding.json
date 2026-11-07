@@ -1,0 +1,52 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/assessment.json": "f03340cfeb34c0a0fb773455741daf531ccc8e80d21f365cfa2822eff211fa62",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/assessment.json": "f1cef13a4d07ce32b82116f2eeb805043c7a309a1c9ddf992a07bb841f6bf00c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/route.odb": "2d4a8372441b8f0c1ae18cd450e7295b98e1828fa4b0cbdff6ed207aa99060ed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/capacitance.spice": "065ac25e51fcf5b9aa9dd4da8b4173d4dce5226c4df2549979dbce236081e53c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/IntegerPLL_ProgrammedCore.ext": "6f789d4aa84c78d6f168a3be3e15870d1c04ba3dbf189137ad91f042691cfb2a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/sky130_fd_sc_hd__and2_1.ext": "ba9c77f2d9102c9b5a08de7015ab706d58ed907987a23ca90d51a3791e41a76e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_digital_wire_binding_1191/query.tcl": "7cbf03f7f40711096e41bf38e2091d70becc03606b44f5ba936f2ecfffe44421",
+    "/nix/store/qqz49dx8dpx4q9i5wriif091n7iaa0ld-openroad-2026-02-17/bin/openroad": "b1daf182a2702687868c777a722924afeb45f85fc125029357b28a5f73ba8860",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_keeper_parent_digital_wire.py": "6d03ef2a2e24334cdd1eb363d00fec68956ccef32d225c910ff51b1aa3a4b6d7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/join_prototype_physical_instances.py": "330d957947b99064f71b497d35b2a3ce7f49c13d527572fc8da6f9a278a5e8a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_prototype_spef_pins_v2.py": "086741817c145431bf5d995363311392f43cb1263334a9cadd23448ea6b97578",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/min.json": "a09793b2ea1a5eb85e4898b7a5a0fa2c40f201ef60d4cb7a15c43fcd069b0a69",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/nom.json": "393f7baa33826d65e0fe45b27169cca55b0a250df7807033e9f75f6a3af69ff7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/max.json": "cb7049e45107d6e7eda48e5865c0aa357b6e87ba545c5a3bee3287776fc7b58d"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_digital_wire_binding_1191/placements.tsv": "c7891a2f85ba46fd4456f93b55c62114d801eda27ce08d993f07b5ab294684a0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_digital_wire_binding_1191/join.json": "8297d566daead550b5392a1f1e33e0ef617f601e9c7ffbe3ee9cddc6b72cd173",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_digital_wire_binding_1191/min.binding.json": "d2244447182ed0cf7f5236d3abbf0eab897983021b4fc8e793a3ab5b5bbf04b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_digital_wire_binding_1191/nom.binding.json": "d2244447182ed0cf7f5236d3abbf0eab897983021b4fc8e793a3ab5b5bbf04b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_digital_wire_binding_1191/max.binding.json": "d2244447182ed0cf7f5236d3abbf0eab897983021b4fc8e793a3ab5b5bbf04b1"
+  },
+  "results": [
+    {
+      "corner": "min",
+      "networks": 4071,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    },
+    {
+      "corner": "nom",
+      "networks": 4071,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    },
+    {
+      "corner": "max",
+      "networks": 4071,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    }
+  ],
+  "matched_instances": 11671,
+  "magic_grid_um": "1/200",
+  "primitive_dimension_controls": 6,
+  "all_digital_wire_terminals_bound_inside_full_parent": true,
+  "wire_R_inserted": false,
+  "parent_loading_complete": false,
+  "release_ready": false
+}
