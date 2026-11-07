@@ -6,7 +6,9 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112/runtime.json": "a79d2072951d867da2e6b56723e10c0795ff441290245c379ddaeba979ccd6f3",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_checkpoint_clamp_IC_pair.py": "5ac36490a3a5eabe3b82cd1ced5bc027e8d83463ae0e5437639fc57fd6db4be9",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_checkpoint_clamp_IC_pair.py": "1cb5b0c918a779b0951f8e0f85cecb68ff94edce205fcdb3b396eaba7b5590fa",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112/assessment.json": "46131e971d4b684c0a208ba67c95c6856deb12413960fd32e69bea769caa56cd"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112/assessment.json": "46131e971d4b684c0a208ba67c95c6856deb12413960fd32e69bea769caa56cd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/assessment.json": "1284228d8931133767f454aff30f41b92bd043ddda46d3a56d88ce68dc19ad10",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/context111/assessment.json": "850bb42d194f6f43595e6af528e571a80ff2c6405dbd9ec315bd72c3f6239fca"
   },
   "campaign": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069",
   "protocol": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/protocol.json",
@@ -80,10 +82,9 @@
   "maximum_serial_native_cases": 2,
   "new_full_native_cases": 0,
   "automatic_identical_retry": false,
-  "completed_native_cases_at_publication": 1,
+  "completed_native_cases_at_publication": 2,
   "state_at_publication": {
-    "state": "clamped_checkpoint_native_running",
-    "case": "context111",
+    "state": "clamped_checkpoint_IC_pair_assessed",
     "release_ready": false
   },
   "first_live_Xyce_PDK_dependency_files": 319,
@@ -155,7 +156,116 @@
         }
       ],
       "input_and_artifact_hashes_verified_inside_SIF": true
+    },
+    "context111": {
+      "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/context111/assessment.json",
+      "normal_native_completion": true,
+      "elapsed_seconds": 8446.290229846025,
+      "windows": [
+        {
+          "window_ns": [
+            35,
+            45
+          ],
+          "frequency": {
+            "rising_edges": 4,
+            "frequency_mhz": 392.42479380802547,
+            "minimum_period_ns": 2.548190227043804,
+            "maximum_period_ns": 2.548334689728783
+          }
+        },
+        {
+          "window_ns": [
+            40,
+            55
+          ],
+          "frequency": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.4541965354319,
+            "minimum_period_ns": 2.547961659099748,
+            "maximum_period_ns": 2.548190227043804
+          }
+        },
+        {
+          "window_ns": [
+            50,
+            59
+          ],
+          "frequency": {
+            "rising_edges": 3,
+            "frequency_mhz": 392.47454105347055,
+            "minimum_period_ns": 2.547910278559314,
+            "maximum_period_ns": 2.547961659099748
+          }
+        },
+        {
+          "window_ns": [
+            70,
+            84
+          ],
+          "frequency": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.5246405232787,
+            "minimum_period_ns": 2.5475464735879,
+            "maximum_period_ns": 2.547678967240344
+          }
+        }
+      ],
+      "input_and_artifact_hashes_verified_inside_SIF": true
     }
   },
-  "paired_history_comparison_pending": true
+  "paired_history_comparison_pending": false,
+  "both_native_cases_completed_normally": true,
+  "comparisons": [
+    {
+      "window_ns": [
+        35,
+        45
+      ],
+      "clamped_own112_MHz": 392.42550064917737,
+      "clamped_context111_MHz": 392.42479380802547,
+      "clamped_context_effect_MHz": -0.0007068411518957873,
+      "unclamped_context_effect_MHz": -0.09540617949875241,
+      "absolute_residual_ratio": 0.007408756493650712,
+      "difference_ppm": -1.8012110597487307
+    },
+    {
+      "window_ns": [
+        40,
+        55
+      ],
+      "clamped_own112_MHz": 392.45424814123595,
+      "clamped_context111_MHz": 392.4541965354319,
+      "clamped_context_effect_MHz": -5.160580406027293e-05,
+      "unclamped_context_effect_MHz": -0.09534450431482355,
+      "absolute_residual_ratio": 0.0005412561996218757,
+      "difference_ppm": -0.1314950833775086
+    },
+    {
+      "window_ns": [
+        50,
+        59
+      ],
+      "clamped_own112_MHz": 392.474986480789,
+      "clamped_context111_MHz": 392.47454105347055,
+      "clamped_context_effect_MHz": -0.00044542731848196127,
+      "unclamped_context_effect_MHz": -0.09533303597919485,
+      "absolute_residual_ratio": 0.004672329102989752,
+      "difference_ppm": -1.1349189982245989
+    },
+    {
+      "window_ns": [
+        70,
+        84
+      ],
+      "clamped_own112_MHz": 392.5245122401169,
+      "clamped_context111_MHz": 392.5246405232787,
+      "clamped_context_effect_MHz": 0.00012828316181412447,
+      "unclamped_context_effect_MHz": -0.09478995564512616,
+      "absolute_residual_ratio": 0.0013533413001519897,
+      "difference_ppm": 0.32681567097014863
+    }
+  ],
+  "campaign_and_per_case_hashes_verified_inside_SIF": true,
+  "interpretation": "Four proposed NFET clamps strongly reduce the measured twelve-node initial-context effect in this conditional TT112 pair. Tuning changes; other states, codes, corners, full-native reachability and new layout remain unqualified."
 }
