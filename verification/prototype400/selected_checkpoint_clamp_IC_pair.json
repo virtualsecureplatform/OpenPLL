@@ -5,7 +5,8 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112/owner.json": "29a5d84fda0d415b515a8a569df728cc1a27d8fe8cdee23ce34b5341a753ba82",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112/runtime.json": "a79d2072951d867da2e6b56723e10c0795ff441290245c379ddaeba979ccd6f3",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_checkpoint_clamp_IC_pair.py": "5ac36490a3a5eabe3b82cd1ced5bc027e8d83463ae0e5437639fc57fd6db4be9",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_checkpoint_clamp_IC_pair.py": "1cb5b0c918a779b0951f8e0f85cecb68ff94edce205fcdb3b396eaba7b5590fa"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_checkpoint_clamp_IC_pair.py": "1cb5b0c918a779b0951f8e0f85cecb68ff94edce205fcdb3b396eaba7b5590fa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112/assessment.json": "46131e971d4b684c0a208ba67c95c6856deb12413960fd32e69bea769caa56cd"
   },
   "campaign": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069",
   "protocol": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/protocol.json",
@@ -79,10 +80,10 @@
   "maximum_serial_native_cases": 2,
   "new_full_native_cases": 0,
   "automatic_identical_retry": false,
-  "completed_native_cases_at_publication": 0,
+  "completed_native_cases_at_publication": 1,
   "state_at_publication": {
     "state": "clamped_checkpoint_native_running",
-    "case": "own112",
+    "case": "context111",
     "release_ready": false
   },
   "first_live_Xyce_PDK_dependency_files": 319,
@@ -97,5 +98,64 @@
   "global_history_independence_qualified": false,
   "full_native_switched_equivalence_qualified": false,
   "model_family_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "completed_cases": {
+    "own112": {
+      "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112/assessment.json",
+      "normal_native_completion": true,
+      "elapsed_seconds": 8406.471320996992,
+      "windows": [
+        {
+          "window_ns": [
+            35,
+            45
+          ],
+          "frequency": {
+            "rising_edges": 4,
+            "frequency_mhz": 392.42550064917737,
+            "minimum_period_ns": 2.5481811262393563,
+            "maximum_period_ns": 2.548323501589927
+          }
+        },
+        {
+          "window_ns": [
+            40,
+            55
+          ],
+          "frequency": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.45424814123595,
+            "minimum_period_ns": 2.5479602069232996,
+            "maximum_period_ns": 2.5481811262393563
+          }
+        },
+        {
+          "window_ns": [
+            50,
+            59
+          ],
+          "frequency": {
+            "rising_edges": 3,
+            "frequency_mhz": 392.474986480789,
+            "minimum_period_ns": 2.547905947333888,
+            "maximum_period_ns": 2.5479602069232996
+          }
+        },
+        {
+          "window_ns": [
+            70,
+            84
+          ],
+          "frequency": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.5245122401169,
+            "minimum_period_ns": 2.54755131540945,
+            "maximum_period_ns": 2.5476714440905255
+          }
+        }
+      ],
+      "input_and_artifact_hashes_verified_inside_SIF": true
+    }
+  },
+  "paired_history_comparison_pending": true
 }
