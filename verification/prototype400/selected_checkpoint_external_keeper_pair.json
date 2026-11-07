@@ -1142,7 +1142,7 @@
   "campaign": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_external_keeper_IC_pair_1091",
   "state_at_publication": {
     "state": "external_keeper_checkpoint_native_running",
-    "case": "own112",
+    "case": "context111",
     "release_ready": false
   },
   "added_MOS_count": 40,
@@ -1152,5 +1152,66 @@
   "first_runtime_dependency_files": 319,
   "container_image_binding_proven": false,
   "clamp_history_remedy_verified": false,
-  "external_keeper_history_remedy_verified": false
+  "external_keeper_history_remedy_verified": false,
+  "completed_cases": {
+    "own112": {
+      "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_external_keeper_IC_pair_1091/own112/assessment.json",
+      "sha256": "8709477bfa48a58331eed4825704e236076c5418239c45b3a75b2b415ff29a97",
+      "normal_native_completion": true,
+      "elapsed_seconds": 8406.743882840034,
+      "windows": [
+        {
+          "window_ns": [
+            35,
+            45
+          ],
+          "frequency": {
+            "rising_edges": 4,
+            "frequency_mhz": 392.1612053284695,
+            "minimum_period_ns": 2.5499108349084523,
+            "maximum_period_ns": 2.550044314385218
+          }
+        },
+        {
+          "window_ns": [
+            40,
+            55
+          ],
+          "frequency": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.18971723429473,
+            "minimum_period_ns": 2.5496877750685343,
+            "maximum_period_ns": 2.5499108349084523
+          }
+        },
+        {
+          "window_ns": [
+            50,
+            59
+          ],
+          "frequency": {
+            "rising_edges": 3,
+            "frequency_mhz": 392.2094632366441,
+            "minimum_period_ns": 2.5496282472816887,
+            "maximum_period_ns": 2.5496877750685343
+          }
+        },
+        {
+          "window_ns": [
+            70,
+            84
+          ],
+          "frequency": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.25847885308247,
+            "minimum_period_ns": 2.5492842367859794,
+            "maximum_period_ns": 2.5494003942924337
+          }
+        }
+      ],
+      "input_hashes_verified": 659,
+      "artifact_hashes_verified": 3
+    }
+  },
+  "paired_comparison_pending": true
 }
