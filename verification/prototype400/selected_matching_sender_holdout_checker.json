@@ -1,0 +1,30 @@
+{
+  "scope": "Frozen model replay for identical full-native sender and initialization, with actual corner checks",
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_matching_sender_holdout.py": "0d8ed240e55eddbea3bd445df463a07fbeda019eb977d7f3d2e860b7d9175082",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_matching_sender_holdout.py": "0f547f234e9efe95cd565a9ef619e8fff9649373ab3aa6ee7eb3683da29942ae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_matching_sender_frozen_check_1006/assessment.json": "f4123b33d4890e95f60960700049540e05f806451a8fc498fe755df74b8d7298"
+  },
+  "positive_control": {
+    "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_matching_sender_frozen_check_1006/assessment.json",
+    "corner": "tt",
+    "fine": 133,
+    "parameters_refitted": false,
+    "all_sampled_signs_match": true,
+    "all_event_counts_match": true,
+    "all_edges_within_observed_fit_band": true,
+    "maximum_edge_error_ps": 0.9850033410643277
+  },
+  "negative_control": {
+    "fit": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_raw_bracket_fit_942/model",
+    "observation": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_sender_holdout_971/waveform_assessment/assessment.json",
+    "exit_code": 1,
+    "rejection": "fit, native device and initial-state corners must match",
+    "output_not_created": true
+  },
+  "guard_tests_passed": 9,
+  "non_TT_matching_sender_replays_pending": true,
+  "native_interface_qualified": false,
+  "uniform_uncertainty_bound_qualified": false,
+  "release_ready": false
+}
