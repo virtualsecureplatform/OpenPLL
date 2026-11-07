@@ -1,0 +1,155 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/assessment.json": "a7f3d15af89b27512201b1951355e61618461d546e8d460e46af52e498fd9587",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/protocol.json": "c7286e5f66d73b3540a502047da3a0ccc0eb651364b57c4c583e456e416b5cab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_einvp_drive_factorial.py": "08b2cadf870563b1cd8b530b9d62d1a5d6b7a610bb02192a8cfa740cef359669",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_einvp_drive_factorial.py": "bc818b65e93b0a1e33553fbb6100af7c2200c44d847b663fa68620087b795969"
+  },
+  "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/assessment.json",
+  "prelaunch_protocol": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/protocol.json",
+  "predeclared_variants": [
+    {
+      "name": "quiet_capacitor_boundaries",
+      "freeze_capacitor_external_endpoints": true,
+      "freeze_external_MOS_gates": false,
+      "changes": {
+        "capacitor_endpoints": 1642,
+        "external_gate_endpoints": 0,
+        "quiet_boundary_nodes": 373
+      },
+      "deck": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_capacitor_boundaries/probe.spice",
+      "csv": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_capacitor_boundaries/probe.csv"
+    },
+    {
+      "name": "quiet_external_gates",
+      "freeze_capacitor_external_endpoints": false,
+      "freeze_external_MOS_gates": true,
+      "changes": {
+        "capacitor_endpoints": 0,
+        "external_gate_endpoints": 10,
+        "quiet_boundary_nodes": 4
+      },
+      "deck": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_external_gates/probe.spice",
+      "csv": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_external_gates/probe.csv"
+    },
+    {
+      "name": "quiet_both",
+      "freeze_capacitor_external_endpoints": true,
+      "freeze_external_MOS_gates": true,
+      "changes": {
+        "capacitor_endpoints": 1642,
+        "external_gate_endpoints": 10,
+        "quiet_boundary_nodes": 377
+      },
+      "deck": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_both/probe.spice",
+      "csv": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_both/probe.csv"
+    }
+  ],
+  "all_three_controls_completed": true,
+  "runs": [
+    {
+      "name": "quiet_capacitor_boundaries",
+      "exit_code": 0,
+      "timed_out": false,
+      "normal_completion": true,
+      "elapsed_seconds": 46.56824004789814,
+      "log": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_capacitor_boundaries/native.log",
+      "csv": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_capacitor_boundaries/probe.csv"
+    },
+    {
+      "name": "quiet_external_gates",
+      "exit_code": 0,
+      "timed_out": false,
+      "normal_completion": true,
+      "elapsed_seconds": 42.02148502902128,
+      "log": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_external_gates/native.log",
+      "csv": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_external_gates/probe.csv"
+    },
+    {
+      "name": "quiet_both",
+      "exit_code": 0,
+      "timed_out": false,
+      "normal_completion": true,
+      "elapsed_seconds": 45.19176829489879,
+      "log": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_both/native.log",
+      "csv": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_drive_factorial_1056/quiet_both/probe.csv"
+    }
+  ],
+  "post_initial_cycle_window_ns": [
+    202.5,
+    210
+  ],
+  "output_ranges": {
+    "recorded_full_native": {
+      "__context_node_1468": {
+        "minimum_V": 1.69257128,
+        "maximum_V": 2.26809512,
+        "peak_to_peak_V": 0.57552384
+      },
+      "__context_node_1500": {
+        "minimum_V": 1.68404854,
+        "maximum_V": 2.27147642,
+        "peak_to_peak_V": 0.5874278799999999
+      }
+    },
+    "baseline": {
+      "__context_node_1468": {
+        "minimum_V": 1.6925788609308727,
+        "maximum_V": 2.268101354481469,
+        "peak_to_peak_V": 0.5755224935505965
+      },
+      "__context_node_1500": {
+        "minimum_V": 1.684056224744297,
+        "maximum_V": 2.2714831806916553,
+        "peak_to_peak_V": 0.5874269559473584
+      }
+    },
+    "quiet_capacitor_boundaries": {
+      "__context_node_1468": {
+        "minimum_V": 1.7437446428361345,
+        "maximum_V": 2.247839112452319,
+        "peak_to_peak_V": 0.5040944696161844
+      },
+      "__context_node_1500": {
+        "minimum_V": 1.7364655552727228,
+        "maximum_V": 2.2475710395389794,
+        "peak_to_peak_V": 0.5111054842662566
+      }
+    },
+    "quiet_external_gates": {
+      "__context_node_1468": {
+        "minimum_V": 2.0486602668251876,
+        "maximum_V": 2.11398027451699,
+        "peak_to_peak_V": 0.06532000769180257
+      },
+      "__context_node_1500": {
+        "minimum_V": 2.0457491701194335,
+        "maximum_V": 2.1155240283458414,
+        "peak_to_peak_V": 0.06977485822640794
+      }
+    },
+    "quiet_both": {
+      "__context_node_1468": {
+        "minimum_V": 2.0922975775239303,
+        "maximum_V": 2.0926845556632303,
+        "peak_to_peak_V": 0.00038697813929999825
+      },
+      "__context_node_1500": {
+        "minimum_V": 2.08999104997455,
+        "maximum_V": 2.0903537612421252,
+        "peak_to_peak_V": 0.00036271126757503325
+      }
+    }
+  },
+  "external_gate_drive_is_larger_contributor_to_dynamic_swing_in_this_cut": true,
+  "mechanism_scope": "Conditional intervention on recorded boundary excitation; gate effect includes intrinsic MOS capacitance and transistor conduction. Contributions interact and are not additive.",
+  "initial_output_charge_preserved": true,
+  "origin_of_initial_above_rail_voltage_proven": false,
+  "physical_layout_changed": false,
+  "control_tests_passed": 4,
+  "full_PLL_or_corner_qualification": false,
+  "independent_simulator_comparison_complete": false,
+  "electrical_rules_qualified": false,
+  "reliability_qualified": false,
+  "release_ready": false
+}
