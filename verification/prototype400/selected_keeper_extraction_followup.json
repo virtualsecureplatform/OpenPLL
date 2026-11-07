@@ -1,0 +1,37 @@
+{
+  "followup_inputs": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_keeper_extraction.py": "21ba5388b9ddd7316795b1548ca1e2c524e37e3fe4774afdce3b2ccff71da2b9",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/owner.json": "235a392a5e31eb9d8cd7a3047556f03c57c73aad7040e3fc624834a9c5799099",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/input_manifest.json": "095d7f6fd63e8fe1d0faa687a8a01cd1a9a97a599d3b95ede10726bb3c637a9a",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_selected_keeper_physical.py": "8039410b436569de93c550e236c098e993aaf2f5affd963554fabac3d3862ffb",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_selected_keeper_capacitance.py": "fbf8398d7f0a1e673e8fcbf7d3980cf81b89428b53511ed5bfdd45da03f688dc",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb"
+    },
+    "original_route_owner": {
+      "pid": 1861586,
+      "birth": "128274095"
+    },
+    "max_extractions": 1,
+    "automatic_identical_retry": false,
+    "release_ready": false
+  },
+  "followup_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_extraction_followup_1113",
+  "status_at_publication": {
+    "state": "waiting_for_original_keeper_route",
+    "release_ready": false
+  },
+  "known_failed_route_rejection": {
+    "rejected_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_physical_audit_negative_1111/assessment.json",
+    "receipt_sha256": "dafd91780ade5fa1341d2ec4330ccdec99239b69a925f3ac28567d2ff0ac5f02",
+    "rejection": "passing isolated keeper physical audit required",
+    "native_extraction_started": false,
+    "output_directory_created": false,
+    "release_ready": false
+  },
+  "total_followup_bound_hours": 24,
+  "native_extraction_bound_hours": 12,
+  "max_extractions": 1,
+  "extraction_complete": false,
+  "release_ready": false
+}
