@@ -1,0 +1,70 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/assessment.json": "e2bf6e20a557032bb1e7739c18499fec1fa0fd0ccb4cc6cad6cb025ba2b0af02",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/signoff/assessment.json": "9d75c6b532a71710ecbe1cdff997ca31307db8545aa5811d4f45cde5cb215277",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assessment.json": "cb53636d63bfa258d9d444c2b4e41b9cfe8cd29073262c259a6f00228d027902",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_rerouted_parent_stream_1137/assessment.json": "25487d3a7dfe222964d3c50d1a7cb98875e454b324672172b45b9d7e1afd1618",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/route.odb": "2d4a8372441b8f0c1ae18cd450e7295b98e1828fa4b0cbdff6ed207aa99060ed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/signoff/route.gds": "59a8ac3917b0aff2b8e66de6b86fc5f83ddb07eb77348bd322d713b7299dea36",
+    "/nix/store/qqz49dx8dpx4q9i5wriif091n7iaa0ld-openroad-2026-02-17/bin/openroad": "b1daf182a2702687868c777a722924afeb45f85fc125029357b28a5f73ba8860",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/collect_keeper_digital_wire_RC_v2.py": "a10b7da271a823beeb0f933a97abf3f85b7afd203972ba86b187138e6b7528db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prototype_spef_v2.py": "be9d14da339acea181adf0a2863fde3a3e98e99e8811d6a4e77073febf2da2a0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_prototype_parent_spef_v2.py": "546ffd5938f7d6380c2abafcd83e3e82ff259aff258fb81912efaaade8203d44",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/librelane/rules.openrcx.sky130A.min.magic": "53b158a45c898b3c0ce70095fbcd52cfb943359394c6e3f767121bd9d65224d8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/min.tcl": "33e27eb4f3c3f703fd0dce46944c135ae47234f2b2db34cd581fef110bc71f93",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/librelane/rules.openrcx.sky130A.nom.magic": "66be74b902a25b330ab18795e6b8e8dd0d4e4e4c4e771144e9b20aaadc1b7acd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/nom.tcl": "a6442b347836a0f709add0a404e6f5bf62c71a8c9ecb5010ccee5b4e15606e29",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/librelane/rules.openrcx.sky130A.max.magic": "2b343d7f284345c3f9a9d0e16866968a5ac43371c5e98ce70efe10111644891e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/max.tcl": "fd83f96d292f7f1040d1708e32a76eb3f6ba2db20667420d9140961f8fbe2058"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/min.spef": "29f31d6967f44e7e9857cec2236263d38f7c8189a309de2b02eb1da0ec3da433",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/min.json": "a09793b2ea1a5eb85e4898b7a5a0fa2c40f201ef60d4cb7a15c43fcd069b0a69",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/min.log": "002af77acb793d0fae07a71d6720f2ce6f4f8c078464af9d1317649c8ddabf3e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/nom.spef": "f6fc68610d9d3db9ee1774ac9f582481a6683b7b9b5cd6733def713dfd160dac",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/nom.json": "393f7baa33826d65e0fe45b27169cca55b0a250df7807033e9f75f6a3af69ff7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/nom.log": "27d9403f6c03c14703585b000ac3f4094ee138f16be32c71d337bfe88c7ced00",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/max.spef": "fbba6be8322f9fe88bbb5a6d95c95a3e8d489ff03e075f9ce79aa6f148a85e7d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/max.json": "cb7049e45107d6e7eda48e5865c0aa357b6e87ba545c5a3bee3287776fc7b58d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/max.log": "f532c5a6027452c02c2a017d1ca75c71cf9788b7a1b4de8c97bd337e344e1337",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/signal_wires.tsv": "33f4cb47a52b7d68da8b6f850e22b95839fde9019696b46ee6770b8599c41c9d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_digital_wire_RC_1190/unwired_single_terminal.tsv": "53e1af405649d36fa6756912d8907087f404c1420f07b2cdccbe652e28dd84ad"
+  },
+  "results": [
+    {
+      "corner": "min",
+      "reused_completed_native_extraction": false,
+      "nets": 4071,
+      "terminals": 13066,
+      "resistors": 14303
+    },
+    {
+      "corner": "nom",
+      "reused_completed_native_extraction": false,
+      "nets": 4071,
+      "terminals": 13066,
+      "resistors": 14651
+    },
+    {
+      "corner": "max",
+      "reused_completed_native_extraction": false,
+      "nets": 4071,
+      "terminals": 13066,
+      "resistors": 15336
+    }
+  ],
+  "exact_digital_source_used_in_parent": true,
+  "historical_route_runtime_helper_mismatches": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/resources.py": "2675be125f7f8652668c992756041b074a54a99a1b5a1e20fbbed4de556ce8d8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compiled_charge_v2.py": "77b1c62c9d16107db150bfca6eeefa5b2877ecffb311f1b98dc81367c5bb46f7"
+  },
+  "historical_runtime_provenance_complete": false,
+  "fresh_native_extraction_all_three_corners": true,
+  "cell_pin_capacitance_excluded": true,
+  "terminals_resistively_connected": true,
+  "unwired_single_terminal_nets_recorded": true,
+  "unwired_multi_terminal_nets_rejected": true,
+  "wire_binding_complete": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}
