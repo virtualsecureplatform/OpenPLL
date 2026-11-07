@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/assessment.json": "03c7af276e34ff78293d8ef379926f53039f3c4398bfed77a213f1a238075570",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/driver.spice": "7221cc6f853bf234887584d5c61c092baedfaf3e55980c43fbf70cb624dcfa73",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/sparse_C_energy_search_001/search_sparse_C_energy": "0196d8d8b9963e0a94b4f1b4f6ea18607258bd1f57ac174ce8c7b4fd279957ca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_driver_energy_1194/edges.tsv": "46e85b0d1c4f54086d009ea59ac13f9503a27c66254e6e6f54996c9d16647bfa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/search_keeper_C_energy.py": "8c4c2d38aa7f7bdd6d29bdd73d0181a9849ae4606cbbafb2e014f20c8869b6c1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/capacitance_energy/search_sparse_C_energy.cpp": "38422b8a5d12e1cf3a6549376fa205aa2270c68d2b566754f6ed53daabd05316",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_local_C_principal_energy.py": "a0443c53fbcf1db415a8c78492ef9213c915a5be56bfd1a0cad39553775e1397",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/project_prototype_fixed_rail_C_v2.py": "cb1a746247c800778b1eb2245b8376d2eb37694cca9706daf45f0df5c15413a1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_hierarchical_capacitance.py": "19b97e8bb8241d14c814e16ae71e988f0c04222bc82bb6b72f9043b520418028"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_driver_energy_1194/principal.json": "3ce6251c042fac78300d45bf5c70226d83ec3ff4e03569c61c27001cd708bb8a"
+  },
+  "attachment": "driver",
+  "result": {
+    "indefiniteness_proved": true,
+    "voltage_vector": {
+      "__flat_15357": "1"
+    },
+    "exact_twice_energy_J": "-9659/50000000000000000000",
+    "all_omitted_voltages_zero": true
+  },
+  "passivity_certified": false,
+  "intrinsic_device_C_included": false,
+  "models_modified": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}
