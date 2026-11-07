@@ -1,0 +1,38 @@
+{
+  "jobs": [
+    {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214",
+      "cpu": 23,
+      "manifest_sha256": "8bd9982dc8b9134fa107995b5ddd681e65cbe9453058012e8422b19b731e6252",
+      "owner": {
+        "pid": 1919423,
+        "birth": "130172566"
+      },
+      "expected_cases": 96,
+      "gain_pair": [
+        1,
+        2
+      ]
+    },
+    {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215",
+      "cpu": 24,
+      "manifest_sha256": "778c22f293278bbff936fd71dae8738bd66cfe5a952abfb29a9e817c9f6fdfba",
+      "owner": {
+        "pid": 1920581,
+        "birth": "130176640"
+      },
+      "expected_cases": 96,
+      "gain_pair": [
+        1,
+        2
+      ]
+    }
+  ],
+  "measured_registry": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977/selected_interface/models.json",
+  "measured_registry_sha256": "c0060d51754bd3f40c7f0734e13541f675b4c94c15f4a17f2993877f2367bce3",
+  "scope": "same exact-RTL nominal and receiver stress matrices with expanded original TT native calibration range",
+  "automatic_native_launch": false,
+  "model_qualified": false,
+  "release_ready": false
+}
