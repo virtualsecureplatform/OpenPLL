@@ -1,0 +1,201 @@
+{
+  "purpose": "Measure missing near-transition raw detector brackets for SF and FS",
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/protocol.json": "b10f67cb575a551d300b5855438efa81af89affab65fe9aa55c3b78e60344263",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/runtime_captures.json": "08775ed480c637c79fcc31d0e45454405f755424013766ec258df8740a5c6455",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0200_997/manifest.json": "dfd2b5f431b0ba16c1ec51576cb0de274ddd47b041a768891b5f83bb9c66f526",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0200_997/native/manifest.json": "85a9f1e0bd4bb0ea8637082e1fb1091a820ab4d28253290bba05b9cc12ee311c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_SF_raw_phase_m0200_997_runtime.json": "a35ae26eecd49d501d17bc07b9112d2a59f815a4a306b9799f19341b3db077b6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0400_998/manifest.json": "5175dc9a2f7e88bd9a793f6485cc3e509dcc0a03ca576aed7ff7842a0a109110",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0400_998/native/manifest.json": "2434c43ebce35652692bdbaa052e6f1223149bfb1cc5a2932ab79fa77a23b227",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_SF_raw_phase_m0400_998_runtime.json": "fae99279655c190f7ddad0c0172a31e348f010eb5c086d11b9db550f30c8092b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0300_holdout_999/manifest.json": "e85329aaf5c2a871adde53d9dd90954b8f35354994fc25144bc5715b756cb450",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0300_holdout_999/native/manifest.json": "0ec5043a60548db17d96130e16410c136317d913bce879b2603697ccd4d8075a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_SF_raw_phase_m0300_holdout_999_runtime.json": "24b05cbfa626183eda5041d039391152289ce575d97f18c7833e8139be467d06",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_p0025_1000/manifest.json": "a9ac15e3203543c9a3882e3bd437085e9241293749ce9d12eaeb3a86a0f55edc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_p0025_1000/native/manifest.json": "03a0b365ad9fba1100aed6e00d7171b26b7d355b08e7795f4589b22567a200d6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_FS_raw_phase_p0025_1000_runtime.json": "b413d14f1de4718f347ef3ba80bce8bd679f1a9ba01029f4934da9470584a21e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0200_1001/manifest.json": "350caf698f058df385520d7b96d5587e5fc176c33d98b8c718afb67e53004dbf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0200_1001/native/manifest.json": "7cc7c9ab37fa8d3879d33485b9fab3955a141ec00333aad10012df62eae57695",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_FS_raw_phase_m0200_1001_runtime.json": "05189c65f9f5e75792d923e618f36edd8c63bebe735e467ab48c41b251bae1aa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0100_holdout_1002/manifest.json": "5e1e43043decef33129715580ab076d08579072f6b9cacfe16c61f6f501f2dc8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0100_holdout_1002/native/manifest.json": "8307a99219b5219bcbf47fdba7ee87d4a808adf1f7bc6ba111003d60b684b438",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_FS_raw_phase_m0100_holdout_1002_runtime.json": "6c8190a15814a39a7f4070b761ce6318ea5b8ed749a1121e3a7895dde92f466a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_bracket_fit_1003/inputs.json": "3199f3fe5139265e5f143a42b483486c58d122fa7f5b9dd631469403971df995",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_bracket_fit_1004/inputs.json": "e88a0e8ddf4ff326bc1e7ef80254b5888a6d8606cba363ff40017390e1316976"
+  },
+  "cases": [
+    {
+      "corner": "sf",
+      "phase_ns": -0.2,
+      "CPU": 19,
+      "role": "training",
+      "name": "selected_SF_raw_phase_m0200_997",
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0200_997",
+      "estimated_first_measured_phase_ps": -60.61194564772268,
+      "coordinate_estimate_is_not_a_measurement": true,
+      "expected_decision_not_assumed": true,
+      "memory_GiB": 12,
+      "native_cap_s": 10800,
+      "runtime_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_SF_raw_phase_m0200_997_runtime.json",
+      "runtime_receipt_sha256": "a35ae26eecd49d501d17bc07b9112d2a59f815a4a306b9799f19341b3db077b6",
+      "PDK_static_include_superset_files": 319,
+      "pending": true,
+      "declared_native_corner_verified": true
+    },
+    {
+      "corner": "sf",
+      "phase_ns": -0.4,
+      "CPU": 20,
+      "role": "training",
+      "name": "selected_SF_raw_phase_m0400_998",
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0400_998",
+      "estimated_first_measured_phase_ps": -260.6119456477227,
+      "coordinate_estimate_is_not_a_measurement": true,
+      "expected_decision_not_assumed": true,
+      "memory_GiB": 12,
+      "native_cap_s": 10800,
+      "runtime_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_SF_raw_phase_m0400_998_runtime.json",
+      "runtime_receipt_sha256": "fae99279655c190f7ddad0c0172a31e348f010eb5c086d11b9db550f30c8092b",
+      "PDK_static_include_superset_files": 319,
+      "pending": true,
+      "declared_native_corner_verified": true
+    },
+    {
+      "corner": "sf",
+      "phase_ns": -0.3,
+      "CPU": 21,
+      "role": "holdout",
+      "name": "selected_SF_raw_phase_m0300_holdout_999",
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0300_holdout_999",
+      "estimated_first_measured_phase_ps": -160.61194564772268,
+      "coordinate_estimate_is_not_a_measurement": true,
+      "expected_decision_not_assumed": true,
+      "memory_GiB": 12,
+      "native_cap_s": 10800,
+      "runtime_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_SF_raw_phase_m0300_holdout_999_runtime.json",
+      "runtime_receipt_sha256": "24b05cbfa626183eda5041d039391152289ce575d97f18c7833e8139be467d06",
+      "PDK_static_include_superset_files": 319,
+      "pending": true,
+      "declared_native_corner_verified": true
+    },
+    {
+      "corner": "fs",
+      "phase_ns": 0.025,
+      "CPU": 22,
+      "role": "training",
+      "name": "selected_FS_raw_phase_p0025_1000",
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_p0025_1000",
+      "estimated_first_measured_phase_ps": -27.263181802303734,
+      "coordinate_estimate_is_not_a_measurement": true,
+      "expected_decision_not_assumed": true,
+      "memory_GiB": 12,
+      "native_cap_s": 10800,
+      "runtime_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_FS_raw_phase_p0025_1000_runtime.json",
+      "runtime_receipt_sha256": "b413d14f1de4718f347ef3ba80bce8bd679f1a9ba01029f4934da9470584a21e",
+      "PDK_static_include_superset_files": 319,
+      "pending": true,
+      "declared_native_corner_verified": true
+    },
+    {
+      "corner": "fs",
+      "phase_ns": -0.2,
+      "CPU": 23,
+      "role": "training",
+      "name": "selected_FS_raw_phase_m0200_1001",
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0200_1001",
+      "estimated_first_measured_phase_ps": -252.26318180230373,
+      "coordinate_estimate_is_not_a_measurement": true,
+      "expected_decision_not_assumed": true,
+      "memory_GiB": 12,
+      "native_cap_s": 10800,
+      "runtime_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_FS_raw_phase_m0200_1001_runtime.json",
+      "runtime_receipt_sha256": "05189c65f9f5e75792d923e618f36edd8c63bebe735e467ab48c41b251bae1aa",
+      "PDK_static_include_superset_files": 319,
+      "pending": true,
+      "declared_native_corner_verified": true
+    },
+    {
+      "corner": "fs",
+      "phase_ns": -0.1,
+      "CPU": 24,
+      "role": "holdout",
+      "name": "selected_FS_raw_phase_m0100_holdout_1002",
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0100_holdout_1002",
+      "estimated_first_measured_phase_ps": -152.26318180230373,
+      "coordinate_estimate_is_not_a_measurement": true,
+      "expected_decision_not_assumed": true,
+      "memory_GiB": 12,
+      "native_cap_s": 10800,
+      "runtime_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_FS_raw_phase_m0100_holdout_1002_runtime.json",
+      "runtime_receipt_sha256": "6c8190a15814a39a7f4070b761ce6318ea5b8ed749a1121e3a7895dde92f466a",
+      "PDK_static_include_superset_files": 319,
+      "pending": true,
+      "declared_native_corner_verified": true
+    }
+  ],
+  "followers": {
+    "sf": {
+      "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_bracket_fit_1003",
+      "fitting": [
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_UP_publication_training_533",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_DN_publication_training_546",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0200_997",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0400_998"
+      ],
+      "holdouts": [
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_independent_publication_holdout_587",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_UP_independent_holdout_601",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_DN_independent_holdout_602",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0300_holdout_999"
+      ],
+      "waiting": [
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0200_997",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0400_998",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0300_holdout_999"
+      ],
+      "status_at_publication": "waiting_for_corner_raw_probes"
+    },
+    "fs": {
+      "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_bracket_fit_1004",
+      "fitting": [
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_UP_publication_training_547",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_DN_publication_training_563",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_p0025_1000",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0200_1001"
+      ],
+      "holdouts": [
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_independent_publication_holdout_590",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_UP_independent_holdout_617",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_DN_independent_holdout_618",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0100_holdout_1002"
+      ],
+      "waiting": [
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_p0025_1000",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0200_1001",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0100_holdout_1002"
+      ],
+      "status_at_publication": "waiting_for_corner_raw_probes"
+    }
+  },
+  "predeclared_training_cases_per_corner": 4,
+  "predeclared_holdouts_per_corner": 4,
+  "new_holdouts_excluded_from_training": true,
+  "phase_translation_estimates_from_training_only": {
+    "sf": 139.38805435227732,
+    "fs": -52.263181802303734
+  },
+  "fitting_requires_normally_completed_ordered_negative_opposite_decision_bracket": true,
+  "waiting_set_and_holdout_separation_controls_passed": 4,
+  "new_serial_native_probes": 6,
+  "new_full_native_probes": 0,
+  "projected_aggregate_reserved_memory_GiB": 148,
+  "aggregate_memory_limit_GiB": 200,
+  "host_memory_reserve_GiB": 32,
+  "upstream_waveforms_corner": "tt",
+  "corner_sender_waveforms_correlated": false,
+  "native_interface_qualified": false,
+  "full_phase_coverage_qualified": false,
+  "uniform_uncertainty_bound_qualified": false,
+  "release_ready": false
+}
