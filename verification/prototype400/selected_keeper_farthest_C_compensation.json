@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/assessment.json": "03c7af276e34ff78293d8ef379926f53039f3c4398bfed77a213f1a238075570",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_wire_RC_1153/assessment.json": "1733e58fd1ee03e01e560885815470949f00909ade63ef97b04cb7513b7e260f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_C_wire_binding_1164/assessment.json": "54b47c7fc069b74d96947b4bacd8afc7c2cae01cdd3041b4775f932e9ad0a56c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_farthest_energy_1195/assessment.json": "2304d83081dc595e14ea525c0f5af8f38cd09f3ebe447aa7c8881ce4d092125d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/farthest.hierarchy.spice": "881044de365a15c0fcf329d7ddbac5ab840e178686f5705de2f3e7c0bf6086fd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/farthest.nodes.json": "a34bc80a0f76337af00981785f6a7df28c16e953344d17d6c2debc97825db3da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/farthest.spice": "9034080b5e7c8f9d3f000d125fb0a53cff7e4c54de45d41ed929461f4591730d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_wire_binding_1154/join.json": "7345b8445a533dd58891e57cc459647f1605b10a45b93f195874bcbfb94df400",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_wire_RC_1153/nom.json": "e07ff129d29227cebf15f3350aaef58835aaef9b88b9d79632743fb8aef4dc8e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/trace_keeper_C_compensation.py": "20675381a598d73bfa8d2890b5df524f452d12fe75e235c2741caee60665a73d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_prototype_full_C_wire_R_v11.py": "33516ad3312e32a2f9db1353d962151301e9631d8a640a8e7f97ad1d3bc70c27"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_farthest_C_compensation_1197/incident_terms.json": "84afe7892677b864df792cbd76064bb2909ac31c5cafed9ac43367719d1bf51f"
+  },
+  "attachment": "farthest",
+  "scope_twice_energy_J": {
+    "child_local": "0",
+    "parent_interaction": "-1679639/100000000000000000000"
+  },
+  "exact_total_twice_energy_J": "-1679639/100000000000000000000",
+  "entire_emitted_operator_independently_reconstructed": true,
+  "exact_witness_energy_reproduced": true,
+  "coefficients_modified": false,
+  "release_ready": false
+}
