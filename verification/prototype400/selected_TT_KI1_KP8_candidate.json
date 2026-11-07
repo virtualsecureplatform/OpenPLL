@@ -61,5 +61,19 @@
       "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP4_TT_nominal_matrix_967/assessment.json": "110a7312d41aabae6cb47346b749d10ab079d17cf1ab19d457f35110b39fe484",
       "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP4_TT_receiver_matrix_968/assessment.json": "d7a11c32a9329a7cfaea67576d8e16a1e29626cfb5ecb36933a91d70876fef99"
     }
+  },
+  "upper_history_capture_guard_queue": {
+    "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977",
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977/inputs.json": "cf952bb43ad13731d61243c56e2070363c4cc9f1c787fca3c5110bf3b9406b73"
+    },
+    "reason": "Reduced observed-gain stress requests fine166 outside the present measured range",
+    "depends_on": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799",
+    "guard_codes_above_nearest_measured_target": 32,
+    "max_additional_full_native_cases": 1,
+    "shared_single_full_native_slot": true,
+    "native_cap_s": 172500,
+    "status_at_publication": "waiting_for_original_native_target_registry",
+    "predicted_frequency_inserted": false
   }
 }

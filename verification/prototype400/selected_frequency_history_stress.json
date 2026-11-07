@@ -64,5 +64,18 @@
   ],
   "registry_composition_tests_passed": 2,
   "queued_matrices_launch_native_cases": false,
-  "qualified_60_case_five_corner_matrix": false
+  "qualified_60_case_five_corner_matrix": false,
+  "KI1_KP8_followup": {
+    "candidate": "verification/prototype400/selected_TT_KI1_KP8_candidate.json",
+    "matrix_directories": [
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_nominal_975",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_receiver_976"
+    ],
+    "baseline_replay_cases": 48,
+    "baseline_replay_passes": 48,
+    "reduced_gain_observation": "Early cases require unmeasured fine166; complete stress matrices still running",
+    "upper_coverage_queue": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977",
+    "wide_code_stress_applicability_qualified": false,
+    "release_ready": false
+  }
 }
