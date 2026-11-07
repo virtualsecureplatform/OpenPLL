@@ -34,7 +34,12 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_frozen_bracket_midpoint_replay_984/model/assessment.json": "71f9fc4af507c8c28745f3a21df68639908bacd5ac1fa73bf13a46cbb6231bcf",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_bracket_holdout_v2.py": "994490017fecc6cdda174ea1caca59d86dab7ba40298db49afae01b4ee2babae",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_prior_endpoint_stress_1009/assessment.json": "38cd0575304cb4c31820a0c3e0c6c0a0d44b28d2faf8bad1ee53f75fc0fb366c",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_prior_interior_diagnostic_1010/assessment.json": "757b4ea754456dd73d9fc2aaebf2bf16980c7db7b56b957dc39b720d1563e0cf"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_prior_interior_diagnostic_1010/assessment.json": "757b4ea754456dd73d9fc2aaebf2bf16980c7db7b56b957dc39b720d1563e0cf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_candidate_timing_1011/assessment.json": "828c19f675cf21919e407fcf975e6e07426014daaef94005823045dd5c49f8e4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_validation_protocol_1013/protocol.json": "cec88d40095d778c19028fdfc2c75e62a0ee3449f78cc35d8772f41988bb1a7f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_fresh_holdout_1012/manifest.json": "c46e2eafdaf68c276ca1ed0f7bc54d53465df0fc257e01bd63c53461272f41ae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_interior_detector_timing.py": "527562cd30828cb58e7ee473066486a692d2b54111f072efa9cb3ffc3a71ba97",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_validation_protocol_1013/runtime.json": "750e5bb57df35e37553725793db8c4806398faeb62eaf96651a2d00176c6d2bb"
   },
   "operating_point": {
     "corner": "ss",
@@ -279,6 +284,25 @@
     "common_fixed_model_timing_validation_complete": false,
     "adaptive_model_necessity_established": false,
     "closed_loop_stress_executed": false,
+    "release_ready": false,
+    "existing_case_timing_replay": {
+      "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_candidate_timing_1011/assessment.json",
+      "all_eight_sign_count_and_timing_checks_pass": true,
+      "maximum_edge_error_ps": 1.4893218221203597,
+      "observations_previously_used_for_candidate_comparison": true,
+      "fresh_independent_validation_complete": false
+    }
+  },
+  "fresh_interior_candidate_holdout": {
+    "protocol": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_validation_protocol_1013/protocol.json",
+    "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_fresh_holdout_1012",
+    "recorded_phase_ns": -0.4375,
+    "CPU": 18,
+    "native_cap_s": 10800,
+    "parameters_frozen_before_launch": true,
+    "independent_of_parameter_selection": true,
+    "corner_sender_waveforms_correlated": false,
+    "normal_completion_observed": false,
     "release_ready": false
   }
 }
