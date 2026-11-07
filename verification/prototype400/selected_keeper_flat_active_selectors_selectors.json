@@ -1,0 +1,32 @@
+[
+  {
+    "selector": "nsdm",
+    "active_domain_preserved": true,
+    "active_difference_area_um2": "0",
+    "full_mask_match": false
+  },
+  {
+    "selector": "psdm",
+    "active_domain_preserved": true,
+    "active_difference_area_um2": "0",
+    "full_mask_match": false
+  },
+  {
+    "selector": "lvtn",
+    "active_domain_preserved": true,
+    "active_difference_area_um2": "0",
+    "full_mask_match": false
+  },
+  {
+    "selector": "hvtp",
+    "active_domain_preserved": true,
+    "active_difference_area_um2": "0",
+    "full_mask_match": false
+  },
+  {
+    "selector": "npc",
+    "active_domain_preserved": true,
+    "active_difference_area_um2": "0",
+    "full_mask_match": false
+  }
+]

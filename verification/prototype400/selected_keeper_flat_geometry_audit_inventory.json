@@ -1,0 +1,21 @@
+{
+  "expected_models": {
+    "sky130_fd_pr__pfet_01v8_hvt": 2929,
+    "sky130_fd_pr__nfet_01v8": 2921,
+    "sky130_fd_pr__res_generic_po": 20,
+    "sky130_fd_pr__nfet_01v8_lvt": 27094,
+    "sky130_fd_pr__pfet_01v8": 28552,
+    "sky130_fd_pr__diode_pw2nd_05v5": 814,
+    "sky130_fd_pr__special_nfet_01v8": 8
+  },
+  "actual_models": {
+    "sky130_fd_pr__nfet_01v8_lvt": 27094,
+    "sky130_fd_pr__pfet_01v8": 28552,
+    "sky130_fd_pr__diode_pw2nd_05v5": 814,
+    "sky130_fd_pr__nfet_01v8": 2921,
+    "sky130_fd_pr__pfet_01v8_hvt": 2929,
+    "sky130_fd_pr__res_generic_po": 20,
+    "sky130_fd_pr__special_nfet_01v8": 8
+  },
+  "MOS_dimension_multiset_matches": true
+}
