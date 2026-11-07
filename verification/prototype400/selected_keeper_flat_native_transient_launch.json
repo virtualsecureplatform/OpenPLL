@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_transient_1213/inputs.json": "1841491dd97d0fa52a8dab21a873d1609ca72d2745657d14354498d505fd5b98",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_transient_1213/transient.spice": "02b5192c6a21829f904e42a67f4e6cded1e36c8efdc756f9cfd9fe45f1798179",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_transient_1213/owner.json": "468789fc1e6fa3eb629cc6afe66ba98f85da5f440d7682027b824afd75aa0d9a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_flat_native_transient.py": "f2d6f1c0edf3888321bc659047a8a7083688b879e13defcb7856501d6fafc39a"
+  },
+  "settings": {
+    "coarse": 20,
+    "fine": 112,
+    "corner": "tt",
+    "temperature_C": 27,
+    "supply_V": 1.8,
+    "PLL_ENABLE_held_low": true,
+    "reset_release_ns": 5,
+    "simulation_ns": 260,
+    "max_step_ps": 10,
+    "CPU": 20,
+    "memory_GiB": 16,
+    "queue_cap_s": 172800,
+    "native_cap_s": 86400,
+    "max_native_cases": 1,
+    "automatic_identical_retry": false,
+    "distributed_wire_R_included": false,
+    "release_ready": false
+  },
+  "state_at_review": "waiting_for_full_native_slot",
+  "model_qualified": false,
+  "release_ready": false
+}
