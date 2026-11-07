@@ -1,0 +1,48 @@
+{
+  "selected_design_changed": false,
+  "release_ready": false,
+  "timing_qualified": false,
+  "power_connectivity_qualified": false,
+  "runs": {
+    "1093": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1093",
+      "input_manifest_sha256": "71a52ebe2c4e3e08b0e5d04a41326af63bd834d5dcc831586515b68f3bb29c09",
+      "state_at_publication": {
+        "state": "stopped_without_promotion",
+        "reason": "RuntimeError('compiled worker failed (2): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1093/route.log')",
+        "release_ready": false
+      }
+    },
+    "1094": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1094",
+      "input_manifest_sha256": "8906e2198aab4a09df67ec0700773879ec3ef0be8d47a05a09cb5692632025d8",
+      "state_at_publication": {
+        "state": "stopped_without_promotion",
+        "reason": "RuntimeError('compiled worker failed (2): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1094/route.log')",
+        "release_ready": false
+      }
+    },
+    "1095": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1095",
+      "input_manifest_sha256": "1f177ed68f79ad95d65c6d1236f9f82d9d9eea2f8d739d4cae3f0c1424be9020",
+      "state_at_publication": {
+        "state": "stopped_without_promotion",
+        "reason": "RuntimeError('compiled worker failed (2): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1095/route.log')",
+        "release_ready": false
+      }
+    },
+    "1096": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1096",
+      "input_manifest_sha256": "298f98b0155820dc8c5597ce9b7a8a456c738bf7161d0f670ab9c7f2682899d2",
+      "state_at_publication": {
+        "state": "keeper_macro_route_running",
+        "release_ready": false
+      }
+    }
+  },
+  "known_limitations": [
+    "HS timing view not bound in current feasibility run",
+    "power-grid connectivity warnings require independent checks",
+    "final DRC LVS antenna and extracted analog qualification pending"
+  ]
+}
