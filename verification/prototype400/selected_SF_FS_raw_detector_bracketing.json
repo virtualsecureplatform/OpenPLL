@@ -22,7 +22,8 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0100_holdout_1002/native/manifest.json": "8307a99219b5219bcbf47fdba7ee87d4a808adf1f7bc6ba111003d60b684b438",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_FS_raw_phase_m0100_holdout_1002_runtime.json": "6c8190a15814a39a7f4070b761ce6318ea5b8ed749a1121e3a7895dde92f466a",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_bracket_fit_1003/inputs.json": "3199f3fe5139265e5f143a42b483486c58d122fa7f5b9dd631469403971df995",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_bracket_fit_1004/inputs.json": "e88a0e8ddf4ff326bc1e7ef80254b5888a6d8606cba363ff40017390e1316976"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_bracket_fit_1004/inputs.json": "e88a0e8ddf4ff326bc1e7ef80254b5888a6d8606cba363ff40017390e1316976",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_independent_raw_holdout_result_1025/assessment.json": "17bbb7aa4e5a4cc75d18ea37164b3baf77d40c31a8c4438c9a302d36ff014da8"
   },
   "cases": [
     {
@@ -197,5 +198,57 @@
   "native_interface_qualified": false,
   "full_phase_coverage_qualified": false,
   "uniform_uncertainty_bound_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "completed_independent_holdouts": [
+    {
+      "corner": "fs",
+      "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_independent_raw_holdout_result_1025/assessment.json",
+      "normal_native_completion": true,
+      "used_for_fitting": false,
+      "measured_cycles": [
+        {
+          "phase_ps": -152.27560022130504,
+          "decision": "dn",
+          "event_capture": {
+            "up": {
+              "detector_rises": 0,
+              "event_toggles": 0,
+              "capture_latencies_ps": [],
+              "one_toggle_per_detector_rise": true
+            },
+            "dn": {
+              "detector_rises": 1,
+              "event_toggles": 1,
+              "capture_latencies_ps": [
+                443.12644572667284
+              ],
+              "one_toggle_per_detector_rise": true
+            }
+          }
+        },
+        {
+          "phase_ps": 639.367614257722,
+          "decision": "up",
+          "event_capture": {
+            "up": {
+              "detector_rises": 1,
+              "event_toggles": 1,
+              "capture_latencies_ps": [
+                438.7083534161462
+              ],
+              "one_toggle_per_detector_rise": true
+            },
+            "dn": {
+              "detector_rises": 0,
+              "event_toggles": 0,
+              "capture_latencies_ps": [],
+              "one_toggle_per_detector_rise": true
+            }
+          }
+        }
+      ],
+      "training_probes_pending": true,
+      "native_interface_qualified": false
+    }
+  ]
 }
