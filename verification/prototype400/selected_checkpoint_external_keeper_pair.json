@@ -1141,8 +1141,7 @@
   "release_ready": false,
   "campaign": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_external_keeper_IC_pair_1091",
   "state_at_publication": {
-    "state": "external_keeper_checkpoint_native_running",
-    "case": "context111",
+    "state": "external_keeper_checkpoint_IC_pair_assessed",
     "release_ready": false
   },
   "added_MOS_count": 40,
@@ -1211,7 +1210,128 @@
       ],
       "input_hashes_verified": 659,
       "artifact_hashes_verified": 3
+    },
+    "context111": {
+      "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_external_keeper_IC_pair_1091/context111/assessment.json",
+      "sha256": "07f8e90e74b62e5aed1aeabbf01af017dcb37f07b602886cda8c9aabaa9ed1c5",
+      "normal_native_completion": true,
+      "elapsed_seconds": 8465.907748257974,
+      "windows": [
+        {
+          "window_ns": [
+            35,
+            45
+          ],
+          "frequency": {
+            "rising_edges": 4,
+            "frequency_mhz": 392.16161789857,
+            "minimum_period_ns": 2.549899562231765,
+            "maximum_period_ns": 2.5500494582058835
+          }
+        },
+        {
+          "window_ns": [
+            40,
+            55
+          ],
+          "frequency": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.1900961971362,
+            "minimum_period_ns": 2.549679000586231,
+            "maximum_period_ns": 2.549899562231765
+          }
+        },
+        {
+          "window_ns": [
+            50,
+            59
+          ],
+          "frequency": {
+            "rising_edges": 3,
+            "frequency_mhz": 392.2101987459886,
+            "minimum_period_ns": 2.549627459048395,
+            "maximum_period_ns": 2.549679000586231
+          }
+        },
+        {
+          "window_ns": [
+            70,
+            84
+          ],
+          "frequency": {
+            "rising_edges": 6,
+            "frequency_mhz": 392.258289012435,
+            "minimum_period_ns": 2.549286559791369,
+            "maximum_period_ns": 2.5494024812307003
+          }
+        }
+      ],
+      "input_hashes_verified": 659,
+      "artifact_hashes_verified": 3
     }
   },
-  "paired_comparison_pending": true
+  "paired_comparison_pending": false,
+  "paired_assessment": {
+    "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_external_keeper_IC_pair_1091/assessment.json",
+    "sha256": "4a6166f8b78484fa47ea3d548fc89ec10c58c3096e6bbc3ff7b08fe9789f33b8",
+    "input_and_artifact_hashes_verified": true,
+    "both_native_cases_completed_normally": true,
+    "comparisons": [
+      {
+        "window_ns": [
+          35,
+          45
+        ],
+        "clamped_own112_MHz": 392.1612053284695,
+        "clamped_context111_MHz": 392.16161789857,
+        "clamped_context_effect_MHz": 0.0004125701004795701,
+        "unclamped_context_effect_MHz": -0.09540617949875241,
+        "absolute_residual_ratio": 0.004324354068542962,
+        "difference_ppm": 1.052042106319817
+      },
+      {
+        "window_ns": [
+          40,
+          55
+        ],
+        "clamped_own112_MHz": 392.18971723429473,
+        "clamped_context111_MHz": 392.1900961971362,
+        "clamped_context_effect_MHz": 0.0003789628414665458,
+        "unclamped_context_effect_MHz": -0.09534450431482355,
+        "absolute_residual_ratio": 0.0039746689564322075,
+        "difference_ppm": 0.9662742923577383
+      },
+      {
+        "window_ns": [
+          50,
+          59
+        ],
+        "clamped_own112_MHz": 392.2094632366441,
+        "clamped_context111_MHz": 392.2101987459886,
+        "clamped_context_effect_MHz": 0.0007355093444516569,
+        "unclamped_context_effect_MHz": -0.09533303597919485,
+        "absolute_residual_ratio": 0.0077151570481000095,
+        "difference_ppm": 1.8752972923419264
+      },
+      {
+        "window_ns": [
+          70,
+          84
+        ],
+        "clamped_own112_MHz": 392.25847885308247,
+        "clamped_context111_MHz": 392.258289012435,
+        "clamped_context_effect_MHz": -0.00018984064746518925,
+        "unclamped_context_effect_MHz": -0.09478995564512616,
+        "absolute_residual_ratio": 0.002002750673034526,
+        "difference_ppm": -0.48396824470220423
+      }
+    ],
+    "scope": "Four external-pin standard-cell keepers in the same conditional TT112 DCO; two initial states only. Changed tuning, other states/codes/corners, full-native reachability and new layout remain unqualified.",
+    "physical_layout_changed": false,
+    "global_history_independence_qualified": false,
+    "full_native_switched_equivalence_qualified": false,
+    "model_family_qualified": false,
+    "release_ready": false
+  },
+  "external_keeper_paired_context_effect_reduction_observed": true
 }
