@@ -3,7 +3,9 @@
   "input_sha256": {
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_digital_pin_electrical_coverage_996/assessment.json": "d1399d73469ce0627f110ac6d3d50b203f05aa675c25219cd935167e7830c3d3",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_constant_pin_electrical_review_1020/assessment.json": "c3c94a39552617570d6a28b4f6cbbfb946cb559e34a37539a2d29b5a23b61c4e",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_selected_constant_pin_electrical.py": "765307b158a88a86454c10896394d2eb88b14c8ece467e51f458b039e0054b8d"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_selected_constant_pin_electrical.py": "765307b158a88a86454c10896394d2eb88b14c8ece467e51f458b039e0054b8d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_early_zero_slew_review_1021/assessment.json": "e9769932c9a92e18148c2ed32c333b3fdf6d44be410942ab90f5ba1f70b9c1c5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_selected_early_zero_slew.py": "6c336297f66d93fac0257cadccbbff9273b4e316b30f7f7f60f0d89dbf70961c"
   },
   "results": {
     "tt": {
@@ -165,6 +167,24 @@
     "late_zero_slew_topology_review_complete": true,
     "early_zero_slew_review_complete": false,
     "physical_power_up_or_constant_drive_qualified": false,
+    "electrical_rules_qualified": false
+  },
+  "zero_slew_topology_review": {
+    "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_early_zero_slew_review_1021/assessment.json",
+    "native_unconnected_outputs": 95,
+    "early_only_zero_pins_by_corner": {
+      "tt": 70,
+      "ff": 82,
+      "ss": 12,
+      "sf": 64,
+      "fs": 69
+    },
+    "all_early_only_zero_pins_physically_unconnected": true,
+    "all_affected_outputs_have_zero_early_table_entries": true,
+    "late_zero_pins_explained_by_prior_constant_review": true,
+    "zero_slew_topology_review_complete": true,
+    "zero_values_are_physical_slew_measurements": false,
+    "native_timing_views_qualified": false,
     "electrical_rules_qualified": false
   }
 }
