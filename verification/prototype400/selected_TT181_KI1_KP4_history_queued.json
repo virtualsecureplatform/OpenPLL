@@ -1,0 +1,75 @@
+{
+  "jobs": [
+    {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_history_nominal_1219",
+      "input_sha256": {
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/inputs.json": "8bd9982dc8b9134fa107995b5ddd681e65cbe9453058012e8422b19b731e6252",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/owner.json": "61f35b94e825a783ff95a852b0aa755d7f4fe576302b2422584768334511ee8d",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977/selected_interface/models.json": "c0060d51754bd3f40c7f0734e13541f675b4c94c15f4a17f2993877f2367bce3",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_root_publication_detector_407/assessment.json": "18a339ae2f5868532c37229bd4bda1db6a109c91118b0f0bb36cebd51b922b30",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_root_publication_detector_407/detector.v": "551813fd1256418ea66071fea72541ef42cfa03e8ef8b407af633068fa2a5af0",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_nominal_RTL_build_cache_778/assessment.json": "109352da2ad3667bdfa739ed4388458ee60f3f50864e38b1a8bd7b75f69a12a9",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_frequency_stress_matrix_v4.py": "e4995df760f11449d331db9f9ede7e61bf702df217e45d14b72deda065fef7e1",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_selected_frequency_stress_followup.py": "1cf0a824285167cc4d8aa98e9f2d656ce3fa50d24962c59a83169efe7b486a5e",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/pinned_image_guard.py": "6a17a321830eda481e4cf4539a7c3c6b0fbb27d7ba0b2a50ac1c396e07365213",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/nominal.json": "34e90ee7ec63a4c2d8a00afec7f5ad4a726b600ee0adb325aa6d5609c246e3b8",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/gain.json": "fdb8cb1e332ab97ac2b5fddd9013df8eb15fe3721fec169cf5bc7134ae6ccbd5",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/offset.json": "b6fec0cec1eb5aca7ecfc92cc4e081b5eeea6142fdd8acc3c1a3ae0064240d64",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/gain_offset.json": "954abc8c48099a96c4cfd55c8147b625c5d9b50e5da2455f17a53cf7b871b870"
+      },
+      "predecessor": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214",
+      "predecessor_owner": {
+        "pid": 1919423,
+        "birth": "130172566"
+      },
+      "gain_pair": [
+        1,
+        4
+      ],
+      "CPU": 23,
+      "max_fast_cases": 96,
+      "queue_cap_s": 7200,
+      "state_at_review": "waiting_for_predecessor_matrix"
+    },
+    {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_history_receiver_1220",
+      "input_sha256": {
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/inputs.json": "778c22f293278bbff936fd71dae8738bd66cfe5a952abfb29a9e817c9f6fdfba",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/owner.json": "b0645d2f6f74e8c96fc4319c29ffefc47dc1e2ad487311c03517d06fd1047697",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977/selected_interface/models.json": "c0060d51754bd3f40c7f0734e13541f675b4c94c15f4a17f2993877f2367bce3",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_receiver_stress_detector_450/assessment.json": "58d4d839443e94f990b388164654cf0449840430000eb93b718728f32c9e9241",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_receiver_stress_detector_450/detector.v": "ca01469feb67cfe9cdecf059f61280255c26be37d8226f8e8586cda536dbfa38",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_stress_RTL_build_cache_788/assessment.json": "2281f2b318841b4e332efbf03a94ccc55bebb1c84f58a829389c4b894641a29a",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_frequency_stress_matrix_v4.py": "e4995df760f11449d331db9f9ede7e61bf702df217e45d14b72deda065fef7e1",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_selected_frequency_stress_followup.py": "1cf0a824285167cc4d8aa98e9f2d656ce3fa50d24962c59a83169efe7b486a5e",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/pinned_image_guard.py": "6a17a321830eda481e4cf4539a7c3c6b0fbb27d7ba0b2a50ac1c396e07365213",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/nominal.json": "34e90ee7ec63a4c2d8a00afec7f5ad4a726b600ee0adb325aa6d5609c246e3b8",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/gain.json": "fdb8cb1e332ab97ac2b5fddd9013df8eb15fe3721fec169cf5bc7134ae6ccbd5",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/offset.json": "b6fec0cec1eb5aca7ecfc92cc4e081b5eeea6142fdd8acc3c1a3ae0064240d64",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/gain_offset.json": "954abc8c48099a96c4cfd55c8147b625c5d9b50e5da2455f17a53cf7b871b870"
+      },
+      "predecessor": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215",
+      "predecessor_owner": {
+        "pid": 1920581,
+        "birth": "130176640"
+      },
+      "gain_pair": [
+        1,
+        4
+      ],
+      "CPU": 24,
+      "max_fast_cases": 96,
+      "queue_cap_s": 7200,
+      "state_at_review": "waiting_for_predecessor_matrix"
+    }
+  ],
+  "worker": "verification/signoff400/follow_selected_frequency_stress_matrix_v4.py",
+  "targeted_four_case_recovery": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_gain_phase20_1218/assessment.json",
+  "targeted_recovery_sha256": "181b89fb5122d65f4e16ae6e6766e52c85e01a5c7fa9a305f7d587367d5777e8",
+  "native_launches": 0,
+  "automatic_identical_retry": false,
+  "minimum_gain_selected": false,
+  "release_ready": false
+}
