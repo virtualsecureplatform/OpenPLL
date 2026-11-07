@@ -1,0 +1,61 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing400/release_001/bbpd_internal_antenna_001/assessment.json": "515788b483777ad7c333669904aa2d2addc6b1362bb3bdb9a8075e9ec96ae176",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing400/release_001/bbpd_internal_antenna_001/signoff/assessment.json": "ebe0bee3e83696a41e0729c58fe00f31131e73db38edb058f5fef7f20ff200fe",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assessment.json": "cb53636d63bfa258d9d444c2b4e41b9cfe8cd29073262c259a6f00228d027902",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_rerouted_parent_stream_1137/assessment.json": "25487d3a7dfe222964d3c50d1a7cb98875e454b324672172b45b9d7e1afd1618",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing400/release_001/bbpd_internal_antenna_001/route.odb": "d32917d6dd13c21b2058bce14c48a1ce34b75a312c837146c1af57b5a3001b67",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing400/release_001/bbpd_internal_antenna_001/signoff/route.gds": "6629d9104053599e47db05055493f7adba93e261a0577326bcdb65d69e30293b",
+    "/nix/store/qqz49dx8dpx4q9i5wriif091n7iaa0ld-openroad-2026-02-17/bin/openroad": "b1daf182a2702687868c777a722924afeb45f85fc125029357b28a5f73ba8860",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_BBPD_wire_RC_v2.py": "357f6256211ef8bd05a2623ea64d78afd65ccb6ad4589c59a0706d396ba35ee7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prototype_spef_v2.py": "be9d14da339acea181adf0a2863fde3a3e98e99e8811d6a4e77073febf2da2a0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_prototype_parent_spef_v2.py": "546ffd5938f7d6380c2abafcd83e3e82ff259aff258fb81912efaaade8203d44",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/librelane/rules.openrcx.sky130A.min.magic": "53b158a45c898b3c0ce70095fbcd52cfb943359394c6e3f767121bd9d65224d8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/min.tcl": "d8436be4986460eee8b3b0ffc3457f5e85f0856a75a38acdef40f8eab7b99252",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/librelane/rules.openrcx.sky130A.nom.magic": "66be74b902a25b330ab18795e6b8e8dd0d4e4e4c4e771144e9b20aaadc1b7acd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/nom.tcl": "b0af1a072687fd831dc5ac5b157f4fa990060f1e9cc9f88d074524b6056ca2e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/librelane/rules.openrcx.sky130A.max.magic": "2b343d7f284345c3f9a9d0e16866968a5ac43371c5e98ce70efe10111644891e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/max.tcl": "fcc02709dee8d82470ec20ea378f698cc66b641ef8f64eaf7784d08ee54c37b6"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/min.spef": "cca858a695e63eb06e7a942bbb8899ae3169f43479d69edf2f4a6e03cb4d6132",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/min.json": "78b0994e1ebe39d672c319ef34c8febe4966042f4d6bcb3bf7309f49ea4cb565",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/min.log": "f5ae9da074324c71e6ebcb3df21587ae72cb8a96df7e33b509800806fc7e3e22",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/nom.spef": "937d6f78f92294014fcb0b35387d0f44bdfab1f3ed901099b57f918582fe8a4c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/nom.json": "acd1e8a07a319f0d9e7d5f79bd482a3148b0cc063909020439f8385cbcb471ef",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/nom.log": "72549b2d15093802d4a56bc645626aff27a3e8d4fc26f22f7663ee11b222b74b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/max.spef": "28e780341306378dcfb3901c7256deb1027426d6bb6974fb4c400256d47ec65f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/max.json": "cdbe76c6f7bd34ce272849d80630eec8bbcbfe46364eab5c83675433203b4520",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/max.log": "ed78e82c8300c24fc5e48723005017dbb427e2df10315a13629dee8acd59ce04",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/signal_wires.tsv": "267584befcea1ea29f060e35b319f0c15f2272d92fa752e3b2b45a3363676b81",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/unwired_single_terminal.tsv": "37e386041d534d7f936c1411716cadb63e1b1ce39ad297a6e304dc18536790f6"
+  },
+  "results": [
+    {
+      "corner": "min",
+      "nets": 16,
+      "terminals": 40,
+      "resistors": 29
+    },
+    {
+      "corner": "nom",
+      "nets": 16,
+      "terminals": 40,
+      "resistors": 30
+    },
+    {
+      "corner": "max",
+      "nets": 16,
+      "terminals": 40,
+      "resistors": 30
+    }
+  ],
+  "exact_BBPD_source_used_in_parent": true,
+  "cell_pin_capacitance_excluded": true,
+  "terminals_resistively_connected": true,
+  "unwired_single_terminal_nets_recorded": true,
+  "unwired_multi_terminal_nets_rejected": true,
+  "wire_binding_complete": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}
