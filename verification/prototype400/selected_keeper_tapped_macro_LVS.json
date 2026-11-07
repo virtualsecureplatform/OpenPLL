@@ -1,0 +1,113 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_keeper_macro_lvs.py": "abea2ec600166462b8c4c24afa4e22e9643ce2b002663c2e98f78de3e0f35c6b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_1106/ground_access.json": "83bc533aebbc79fd6138c96503301fe360115ed0f356d652c34ab2c3ceaab999",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_1106/sky130_fd_sc_hs__inv_2.gds": "8cafe29eac2b53c5f1432251bfd5bab7fed986c44eabbb105c58513a2092752c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.cdl": "0692a74e7f5f67386218ae6a1d1fbdeaec14abada7607b9ed6636c3d000a939b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_pdn_1107/config/runs/history_keeper_macros_001/17-openroad-generatepdn/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.pnl.v": "52d96618756d295b597631029ef4552d0f47b6b134e65793c4117a57ea31c20b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110/extract.tcl": "274060a6b384d46d3784b9ead36d9b3c9e7327083d64de5038261ef59a0b7def",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110/reference.spice": "f3e2531ddba6a4cd41ba407d86f589c898dc6dac8e93e03ce20c5d0a6313e0eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb"
+  },
+  "commands": [
+    [
+      "apptainer",
+      "exec",
+      "--bind",
+      "/home:/home,/tmp:/tmp",
+      "--pwd",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110",
+      "--env",
+      "PATH=/nix/store/nah36l3f04m5gsi98a7civz9n8szraml-devshell-dir/bin:/usr/bin:/bin,PDK_ROOT=/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+      "magic",
+      "-dnull",
+      "-noconsole",
+      "-rcfile",
+      "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.magicrc",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110/extract.tcl"
+    ],
+    [
+      "apptainer",
+      "exec",
+      "--bind",
+      "/home:/home,/tmp:/tmp",
+      "--pwd",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110",
+      "--env",
+      "PATH=/nix/store/nah36l3f04m5gsi98a7civz9n8szraml-devshell-dir/bin:/usr/bin:/bin,PDK_ROOT=/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+      "netgen",
+      "-batch",
+      "lvs",
+      "extracted.spice sky130_fd_sc_hs__inv_2",
+      "reference.spice keeper_reference",
+      "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/netgen/sky130A_setup.tcl",
+      "lvs.rpt",
+      "-json"
+    ]
+  ],
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110/reference.spice": "f3e2531ddba6a4cd41ba407d86f589c898dc6dac8e93e03ce20c5d0a6313e0eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110/extract.tcl": "274060a6b384d46d3784b9ead36d9b3c9e7327083d64de5038261ef59a0b7def",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110/extracted.spice": "fef07108ff11a4254a25106be23d0abb49f356c1ed4931dbb358a6d9161fcc50",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110/extract.log": "7eb634dccc43097c50a32069925440bdf8939166a1e9ba6bfb1545b38e8ddcb9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110/netgen.log": "41308b7951f748be8f6d752187b799e8f54aa7be79723c3608812945a793982a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110/lvs.rpt": "9664dcd7a4f8254c1b753497b2819dfc02ad363250a34791ecfba2027fbd32b0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tapped_macro_LVS_verified_1110/lvs.json": "71fdb58742d5312f3e64d6fe8bf1a992c8acd5e6011c3143f300ebb58570ceb1"
+  },
+  "standalone_macro_supply_tied_LVS_pass": true,
+  "routed_supply_body_bindings_verified": true,
+  "top_result": {
+    "name": [
+      "sky130_fd_sc_hs__inv_2",
+      "keeper_reference"
+    ],
+    "devices": [
+      [
+        [
+          "sky130_fd_pr__nfet_01v8_lvt",
+          1
+        ],
+        [
+          "sky130_fd_pr__pfet_01v8",
+          1
+        ]
+      ],
+      [
+        [
+          "sky130_fd_pr__nfet_01v8_lvt",
+          1
+        ],
+        [
+          "sky130_fd_pr__pfet_01v8",
+          1
+        ]
+      ]
+    ],
+    "nets": [
+      4,
+      4
+    ],
+    "badnets": [],
+    "badelements": [],
+    "pins": [
+      [
+        "A",
+        "VNB",
+        "VPB",
+        "Y"
+      ],
+      [
+        "A",
+        "VNB",
+        "VPB",
+        "Y"
+      ]
+    ]
+  },
+  "full_routed_LVS_qualified": false,
+  "parasitics_qualified": false,
+  "selected": false,
+  "release_ready": false
+}
