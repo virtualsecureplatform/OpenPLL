@@ -1,0 +1,29 @@
+{
+  "manifest": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_attachment_pair_1123/manifest.json",
+  "manifest_sha256": "113aba02483b913ed5a1d11bdc040bde25f977a8d269a6f463672ff9578b01e8",
+  "source_sha256": "26569532bed9a9e2919f79fff03301306e3ea7f1037d852a57a5ed2e1bcc3bd8",
+  "operating_point": {
+    "corner": "tt",
+    "temperature_c": 27,
+    "supply_v": 1.8
+  },
+  "coarse": 20,
+  "fine": 112,
+  "thermometer_inverted": true,
+  "reset_release_ns": 5,
+  "simulation_time_ns": 80,
+  "maximum_step_ps": 10,
+  "native_cap_s_per_case": 10800,
+  "max_native_cases": 2,
+  "CPU": 20,
+  "memory_GiB": 12,
+  "status_at_publication": {
+    "state": "keeper_attachment_native_running",
+    "attachment": "driver",
+    "release_ready": false
+  },
+  "native_completion_proven": false,
+  "parent_loading_complete": false,
+  "selected": false,
+  "release_ready": false
+}
