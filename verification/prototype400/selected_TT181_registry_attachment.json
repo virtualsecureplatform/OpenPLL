@@ -1,0 +1,35 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799/registry/models.json": "765c540e0a60da81b3abdf4e5ed24868a6b31c7fe2a3034115f0686f2fcfe9b7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_loaded_startup_260ns_131/manifest.json": "7fc07c75c444b7b5a3db9c208169e8d17398b07c6c1c66403fbbe195ad4ebcc5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977/native/manifest.json": "fd1b3709dfc7b134cb1b818fb5bd3d92be7d496906551238b4d0f935c33292e2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977/waveform_assessment/provenance.json": "17de686760fd17c8aae8085d8582e579dccd2c84bb5bd1909673a2fb47190ad9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977/waveform_assessment/assessment.json": "5e381c0ed6f53bc6de00b5cf7f5646c56b1c78314b49f7c9a174ba5690d3e920",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/advance_selected_calibration.py": "78ca30ce29b41ca374f15aa4eb31db324489263628452a9ef093dce9e7b90d23"
+  },
+  "deck_comparison": {
+    "reference_fine": 111,
+    "new_fine": 181,
+    "only_fine_bias_and_RAW_destination_changed": true
+  },
+  "measured_coarse": 20,
+  "measured_fine": 181,
+  "measured_points": 6,
+  "next_point": {
+    "coarse": 20,
+    "target_hz": 400000000.0,
+    "predictions_are_measurement_hints_only": true,
+    "release_ready": false,
+    "state": "measurement_needed",
+    "fine": 141,
+    "reason": "interior_native_holdout"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977/registry/models.json": "39a689a0c943159953f5fc66d8757230b006de6637020c051d273506e4016948",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977/registry/next_point.json": "cc00ba36910d942ba199ff9525da134b60a84373819850078d2eca4a4610081b"
+  },
+  "analog_identity_preserved": true,
+  "interface_identity_preserved": true,
+  "physical_models_qualified": false,
+  "release_ready": false
+}
