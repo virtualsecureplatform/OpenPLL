@@ -1,0 +1,410 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase20/assessment.json": "d4699c622cea53d5d08a01e743d0ede26bb25a4aa2eef31df60b2013e46e6d21",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase20/inputs.json": "72501e3224a0b56a2ca960465b465eb2e3dd145494677801451c795ed37599d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase20/segment0_acceptance.json": "b02d8167f3149b94e147ac06742cfca87d59babb3efa923d0eeb7b9b6d1a171f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/models.json": "7c3c597758cfdae4eb9d0210a2a00a7c832e49c77fa0f7686dfe0365ba592fd4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_clock_phase_observations_187.json": "3449710334ff80a17b1d365c0c4edf69d869284adc8c38276244f6c394f9d7f8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_nominal_RTL_build_cache_778/assessment.json": "109352da2ad3667bdfa739ed4388458ee60f3f50864e38b1a8bd7b75f69a12a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_root_publication_detector_407/detector.v": "551813fd1256418ea66071fea72541ef42cfa03e8ef8b407af633068fa2a5af0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase20/assessment.json": "cf3a01b21cf2c1c47f612cc0f681998b15055550b910e36c4fb47834e889871a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase20/inputs.json": "42b00b81c8ece6b6a7a2cf34ffdd5ffab316d2c2631b7e6b8afa15ddd049ffdc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase20/segment0_acceptance.json": "affb43aeeeae624d65fb11787303bef237e492708fae5d9e4116b1e2ec475c9e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/models.json": "e7b93937a52053dbd30e2d54f88467efe99e59557162128a45895b4659f3f237",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_stress_RTL_build_cache_788/assessment.json": "2281f2b318841b4e332efbf03a94ccc55bebb1c84f58a829389c4b894641a29a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_receiver_stress_detector_450/detector.v": "ca01469feb67cfe9cdecf059f61280255c26be37d8226f8e8586cda536dbfa38",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_gain_stress_phase20.py": "6913179d6070ae834480d668807ef543387ffb4852917f8ea2b66eb7c1449041",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_mixed_signal_v8.py": "58e8285fd3450237309ba4e4e2ddc62a873c5d4984e100e9b122a48fb81c1675",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944/gain.json": "fdb8cb1e332ab97ac2b5fddd9013df8eb15fe3721fec169cf5bc7134ae6ccbd5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/common_v3.py": "dc86a17d58cdd6d02d9a3279c94097962da89c31ae50903e4717e333b2b235c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/resources.py": "3b4a3fcae0f072cfdc7937c06f46f2bf7166b4a5e31b15feadb8775ce81f1b11",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_publication_matrix_v3.py": "72a1f1d8220a7fd70bd8ef395e2a36a1c068bbb245f44e05721dedbb98a9af3d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/acceptance_v4.py": "ced3b3c6edb28090e7b84a50d643dc53405eff20c588299b296e1f0a62b0d2d8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_loop_assessment_v2.py": "26df3ad5490d55b9f4fd28c148116f1af75fd03b7ccc78d8d8fdcf312cb14f34"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_gain_phase20_1218/nominal_linear_period_KI1_KP4/assessment.json": "fe73f10c43c709fa2baab79b4ace681348b34bfff7b2085c7543460a557ce3e0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_gain_phase20_1218/nominal_linear_frequency_KI1_KP4/assessment.json": "968c8937cc4c99bd19289d35cf3d954ad470d3bda362c5849101f84b3e021fab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_gain_phase20_1218/receiver_linear_period_KI1_KP4/assessment.json": "ea33c901917322d3f30056f0b0f48139aa20e9c58aa1982670ddfdc1a0076b77",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_gain_phase20_1218/receiver_linear_frequency_KI1_KP4/assessment.json": "e565612166d93c5f53faed1a810f82da71375f1e069a66e9257d2d9aab15a95f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_gain_phase20_1218/nominal_linear_period_KI1_KP4/inputs.json": "7e232bc3f7074098d02d9d6a9c10eae62166345d41e70265d395556193bce479",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_gain_phase20_1218/nominal_linear_frequency_KI1_KP4/inputs.json": "521e1301383fd3e2b87feed7adacef6e5446700b15a6f4017a395aca79d60df2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_gain_phase20_1218/receiver_linear_period_KI1_KP4/inputs.json": "072d633119c4f776eae18654a2421c9e4aac26115e4c2a423b93d570c41f901e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP4_gain_phase20_1218/receiver_linear_frequency_KI1_KP4/inputs.json": "ed14dacf0af87f79be2054632150892df1b82c71c959fe2a79319beb39e94a4a"
+  },
+  "records": [
+    {
+      "timing": "nominal",
+      "interpolation": "linear_period",
+      "state": "diagnostic_simulation_completed",
+      "functional_trace_pass": true,
+      "measurement_requests": [],
+      "acquisition_confirmed_ns": 163781.0,
+      "final_four_windows": [
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 199621.0,
+          "end_ns": 204741.0,
+          "frequency_mhz": 400.0042990203119,
+          "frequency_error_ppm": 10.747550779734809,
+          "phase_span_ns": 0.124,
+          "phase_mean_ns": -0.1116640625,
+          "phase_drift_ns": -0.006620750023853748,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 204741.0,
+          "end_ns": 209861.0,
+          "frequency_mhz": 399.994763136467,
+          "frequency_error_ppm": 13.092158832507714,
+          "phase_span_ns": 0.11,
+          "phase_mean_ns": -0.1101796875,
+          "phase_drift_ns": -0.0006673201781437625,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 209861.0,
+          "end_ns": 214981.0,
+          "frequency_mhz": 400.00664397943103,
+          "frequency_error_ppm": 16.609948577553315,
+          "phase_span_ns": 0.11,
+          "phase_mean_ns": -0.1117265625,
+          "phase_drift_ns": 0.004796258570631676,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 214981.0,
+          "end_ns": 220101.0,
+          "frequency_mhz": 399.99405968763335,
+          "frequency_error_ppm": 14.850780916590198,
+          "phase_span_ns": 0.111,
+          "phase_mean_ns": -0.1120859375,
+          "phase_drift_ns": 0.00355797968986134,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "timing": "nominal",
+      "interpolation": "linear_frequency",
+      "state": "diagnostic_simulation_completed",
+      "functional_trace_pass": true,
+      "measurement_requests": [],
+      "acquisition_confirmed_ns": 163781.0,
+      "final_four_windows": [
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 199621.0,
+          "end_ns": 204741.0,
+          "frequency_mhz": 399.9975769565441,
+          "frequency_error_ppm": 6.0576086397913365,
+          "phase_span_ns": 0.124,
+          "phase_mean_ns": -0.1094296875,
+          "phase_drift_ns": -0.011708546831115146,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 204741.0,
+          "end_ns": 209861.0,
+          "frequency_mhz": 399.9991402070264,
+          "frequency_error_ppm": 2.149482433941031,
+          "phase_span_ns": 0.125,
+          "phase_mean_ns": -0.109265625,
+          "phase_drift_ns": -0.007916617345513797,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 209861.0,
+          "end_ns": 214981.0,
+          "frequency_mhz": 400.00515883546325,
+          "frequency_error_ppm": 12.897088658104824,
+          "phase_span_ns": 0.123,
+          "phase_mean_ns": -0.1101640625,
+          "phase_drift_ns": -0.006209441272135822,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 214981.0,
+          "end_ns": 220101.0,
+          "frequency_mhz": 399.9935125624733,
+          "frequency_error_ppm": 16.21859381665134,
+          "phase_span_ns": 0.124,
+          "phase_mean_ns": -0.10928125,
+          "phase_drift_ns": -0.00801794924380788,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "timing": "receiver",
+      "interpolation": "linear_period",
+      "state": "diagnostic_simulation_completed",
+      "functional_trace_pass": true,
+      "measurement_requests": [],
+      "acquisition_confirmed_ns": 163781.0,
+      "final_four_windows": [
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 199621.0,
+          "end_ns": 204741.0,
+          "frequency_mhz": 400.0042990203119,
+          "frequency_error_ppm": 10.747550779734809,
+          "phase_span_ns": 0.124,
+          "phase_mean_ns": -0.1116640625,
+          "phase_drift_ns": -0.006620750023853748,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 204741.0,
+          "end_ns": 209861.0,
+          "frequency_mhz": 399.994763136467,
+          "frequency_error_ppm": 13.092158832507714,
+          "phase_span_ns": 0.11,
+          "phase_mean_ns": -0.1101796875,
+          "phase_drift_ns": -0.0006673201781437625,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 209861.0,
+          "end_ns": 214981.0,
+          "frequency_mhz": 400.00664397943103,
+          "frequency_error_ppm": 16.609948577553315,
+          "phase_span_ns": 0.11,
+          "phase_mean_ns": -0.1117265625,
+          "phase_drift_ns": 0.004796258570631676,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 214981.0,
+          "end_ns": 220101.0,
+          "frequency_mhz": 399.99405968763335,
+          "frequency_error_ppm": 14.850780916590198,
+          "phase_span_ns": 0.111,
+          "phase_mean_ns": -0.1120859375,
+          "phase_drift_ns": 0.00355797968986134,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "timing": "receiver",
+      "interpolation": "linear_frequency",
+      "state": "diagnostic_simulation_completed",
+      "functional_trace_pass": true,
+      "measurement_requests": [],
+      "acquisition_confirmed_ns": 163781.0,
+      "final_four_windows": [
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 199621.0,
+          "end_ns": 204741.0,
+          "frequency_mhz": 399.9975769565441,
+          "frequency_error_ppm": 6.0576086397913365,
+          "phase_span_ns": 0.124,
+          "phase_mean_ns": -0.1094296875,
+          "phase_drift_ns": -0.011708546831115146,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 204741.0,
+          "end_ns": 209861.0,
+          "frequency_mhz": 399.9991402070264,
+          "frequency_error_ppm": 2.149482433941031,
+          "phase_span_ns": 0.125,
+          "phase_mean_ns": -0.109265625,
+          "phase_drift_ns": -0.007916617345513797,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 209861.0,
+          "end_ns": 214981.0,
+          "frequency_mhz": 400.00515883546325,
+          "frequency_error_ppm": 12.897088658104824,
+          "phase_span_ns": 0.123,
+          "phase_mean_ns": -0.1101640625,
+          "phase_drift_ns": -0.006209441272135822,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 214981.0,
+          "end_ns": 220101.0,
+          "frequency_mhz": 399.9935125624733,
+          "frequency_error_ppm": 16.21859381665134,
+          "phase_span_ns": 0.124,
+          "phase_mean_ns": -0.10928125,
+          "phase_drift_ns": -0.00801794924380788,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 159,
+          "fine_max": 162,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "gain_pair": [
+    1,
+    4
+  ],
+  "scenario": 0,
+  "phase_ns": 20,
+  "stress": "gain",
+  "all_four_targeted_cases_pass": true,
+  "full_gain_matrix_qualified": false,
+  "minimum_gain_selected": false,
+  "wide_code_stress_applicability_qualified": false,
+  "release_ready": false
+}
