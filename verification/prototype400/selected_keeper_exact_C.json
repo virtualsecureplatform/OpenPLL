@@ -1,0 +1,25 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_local_C_models_1157/assessment.json": "acd6e121cb7b2fd69d7177ed598905d2e0be11288d0db40b31f848f82fb80d44",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_local_C_models_1157/nom_driver.spice": "5a68a276a687fc98cfbcdeaddb994505465f383dc8a3bd2a1e3018bb910bbb3d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/exact_local_C_elimination_v2.py": "55ad06a05191b5a1a9b882502b3a96a9efcac2a49bc6e50e928f4c4558c83891",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/project_prototype_fixed_rail_C_v2.py": "cb1a746247c800778b1eb2245b8376d2eb37694cca9706daf45f0df5c15413a1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_hierarchical_capacitance.py": "19b97e8bb8241d14c814e16ae71e988f0c04222bc82bb6b72f9043b520418028"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_exact_C_1160/elimination.json": "a988a9d6b6a1966b1ccb6dc0fb44440d744656996809255c75cb1d0175ddf9f0"
+  },
+  "corner": "nom",
+  "attachment": "driver",
+  "result": {
+    "conclusive": false,
+    "reason": "exact elimination time bound",
+    "eliminated": 4216,
+    "remaining": 130
+  },
+  "elapsed_s": 15.853576152119786,
+  "models_modified": false,
+  "native_simulation_allowed": false,
+  "physical_RC_qualified": false,
+  "release_ready": false
+}
