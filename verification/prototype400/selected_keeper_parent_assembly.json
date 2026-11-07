@@ -1,0 +1,50 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assemble_selected_keeper_parent.py": "72fb2c9d7175ee0c0be7f3a046f45bf8e43b9103a7618948bc9f2133317c3131",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_parent_filled_layout_019/assessment.json": "6172bc631c7be70c0b9bd69b1180c241be75cf96a95bbe4d49065b94f48149fd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_physical_with_normalized_LVS_1117/assessment.json": "4bbf8c1c477e03a5845fa5904d4ecbead85ad1f578d0cd6c7e9f7b82297b86ae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_parent_filled_layout_019/assembly.gds": "71dc786409f1c59279f6d29896df666446b1fe7f3a3d4bab32efe5e7f234cb63",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/final/gds/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.gds": "118e71662f86d29079508465fe11325e0ea0c569b1e9bdbeaccfd7a0969e6f38"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_assembly_1125/assembly.gds": "2dbaece9e21aab6dc94d45f6a2198f12019f0dc2aea48762c7b3bdaaffbb60b0"
+  },
+  "replaced_DCO_definition_only": true,
+  "original_DCO_reference": [
+    [
+      "IntegerPLL_400MHz_PrototypeTop",
+      "r0 *1 450000,100000"
+    ]
+  ],
+  "unchanged_original_cell_definitions": 86,
+  "source_cells_reused": [
+    "VIA_M4M5_PR",
+    "VIA_M3M4_PR",
+    "VIA_M1M2_PR",
+    "VIA_L1M1_PR_MR",
+    "VIA_M2M3_PR",
+    "VIA_via2_3_1600_480_1_5_320_320",
+    "VIA_via3_4_1600_480_1_4_400_400",
+    "VIA_via4_5_1600_480_1_4_400_400",
+    "VIA_via5_6_1600_1600_1_1_1600_1600",
+    "sky130_fd_sc_hd__conb_1",
+    "sky130_fd_sc_hd__nand2_8",
+    "sky130_fd_sc_hd__buf_8",
+    "sky130_fd_sc_hd__einvn_1",
+    "sky130_fd_sc_hd__einvp_1",
+    "sky130_fd_sc_hd__tapvpwrvgnd_1",
+    "sky130_fd_sc_hd__fill_8",
+    "sky130_fd_sc_hd__fill_4",
+    "sky130_fd_sc_hd__fill_1",
+    "sky130_fd_sc_hd__fill_2"
+  ],
+  "private_cell_renames": {
+    "sky130_fd_sc_hs__inv_2": "openpll_keeper1125__sky130_fd_sc_hs__inv_2"
+  },
+  "DCO_recursive_polygon_geometry_matches_source": true,
+  "parent_DRC_LVS_antenna_density_and_power_connectivity_qualified": false,
+  "parent_extracted_model_qualified": false,
+  "native_analog_qualified": false,
+  "selected": false,
+  "release_ready": false
+}

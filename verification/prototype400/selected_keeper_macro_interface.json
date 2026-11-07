@@ -1,0 +1,31 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_DCO_fine_grain_high_candidate_001/config/runs/prototype_fine_grain_high255_001/final/lef/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.lef": "51593ecc9711bdcdc556ec09ffef87981290d6a8271845b478c27a9889971449",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/final/lef/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.lef": "dc613ba7d1412de20d84e0075031cabb9e4e7e4b2c4af6a51fdc006b6f1636d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_prototype_macro_interface_reuse.py": "fe1ba24cebb4a01f8613e6a87049f45ce29ecdc5e09bf5740f2e9dae601d5426"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_macro_interface_1124/interfaces.json": "5dd85cbe9ddcf2cbaab03daf226236e0504b8bf839ef3dc1aa95b01967c80aba"
+  },
+  "same_master": true,
+  "same_size": true,
+  "same_origin": true,
+  "original_pins": 308,
+  "candidate_pins": 308,
+  "missing_pins": [],
+  "new_pins": [],
+  "changed_pin_geometry_or_attributes": [
+    "DCO_THERM[111]",
+    "DCO_THERM[95]",
+    "DCO_THERM[96]",
+    "DCO_THERM[97]",
+    "VGND",
+    "VPWR"
+  ],
+  "exact_LEF_interface_match": false,
+  "parent_route_geometry_reuse_qualified": false,
+  "new_parent_DRC_LVS_antenna_and_density_checks_required": true,
+  "release_ready": false,
+  "all_signal_pin_port_geometry_unchanged": true,
+  "original_power_pin_ports_preserved": true
+}
