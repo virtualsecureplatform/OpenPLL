@@ -4,38 +4,84 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_nominal_1080/inputs.json": "2cede2a77938cbda12827ae9b78a262698b95dc1a8893646393afe25af6444a7",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_nominal_1080/owner.json": "c713ef54f8f917a8c66fb88c51d558ff4f8b3a887952192b352e7c30cdd4fcec",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_receiver_1081/inputs.json": "72f0a6ced02f6c4e1a3e55bc18bc0b4b0988e9a049b74a2165f6b8ee5c9c23c3",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_receiver_1081/owner.json": "05799f7789ffdaf0c5f171779e7fb736b8d46a7ed12795979c92bb0ef3e7be5f"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_receiver_1081/owner.json": "05799f7789ffdaf0c5f171779e7fb736b8d46a7ed12795979c92bb0ef3e7be5f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_nominal_1080/assessment.json": "905ef9ba885cb45948cc5e2b9e1a86eeadb14a4ee36eca742ac8cbae53edd3fa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_receiver_1081/assessment.json": "11835bde577ec35c10f384269180152392330cab9fd6341c2ceebcd10d3d32b7"
   },
   "matrices": [
     {
       "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_nominal_1080",
-      "state_at_publication": {
-        "state": "diagnostic_frequency_stress_case_running",
-        "completed_cases": 6,
-        "current_case": [
-          "nominal",
-          "linear_period",
-          1,
-          20
-        ],
-        "release_ready": false
+      "completed_cases": 96,
+      "seed": 149,
+      "state_counts": {
+        "diagnostic_simulation_completed": 28,
+        "needs_native_tuning_points": 48,
+        "diagnostic_failed": 20
       },
-      "expected_cases": 96
+      "functional_pass_count": 28,
+      "needed_native_points": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ],
+      "failure_segments": {
+        "deadline_only": 5,
+        "final_sustained_acceptance_failed": 25
+      },
+      "by_stress": {
+        "nominal": {
+          "diagnostic_simulation_completed": 24
+        },
+        "gain": {
+          "needs_native_tuning_points": 24
+        },
+        "offset": {
+          "diagnostic_simulation_completed": 4,
+          "diagnostic_failed": 20
+        },
+        "gain_offset": {
+          "needs_native_tuning_points": 24
+        }
+      },
+      "all_input_and_case_artifact_hashes_verified": true
     },
     {
       "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_receiver_1081",
-      "state_at_publication": {
-        "state": "diagnostic_frequency_stress_case_running",
-        "completed_cases": 6,
-        "current_case": [
-          "nominal",
-          "linear_period",
-          1,
-          20
-        ],
-        "release_ready": false
+      "completed_cases": 96,
+      "seed": 149,
+      "state_counts": {
+        "diagnostic_simulation_completed": 28,
+        "needs_native_tuning_points": 48,
+        "diagnostic_failed": 20
       },
-      "expected_cases": 96
+      "functional_pass_count": 28,
+      "needed_native_points": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ],
+      "failure_segments": {
+        "deadline_only": 5,
+        "final_sustained_acceptance_failed": 25
+      },
+      "by_stress": {
+        "nominal": {
+          "diagnostic_simulation_completed": 24
+        },
+        "gain": {
+          "needs_native_tuning_points": 24
+        },
+        "offset": {
+          "diagnostic_simulation_completed": 4,
+          "diagnostic_failed": 20
+        },
+        "gain_offset": {
+          "needs_native_tuning_points": 24
+        }
+      },
+      "all_input_and_case_artifact_hashes_verified": true
     }
   ],
   "source_pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_recovered_1071",
@@ -55,5 +101,11 @@
   "wide_code_stress_applicability_qualified": false,
   "extrema_joint_physical_realizability_claimed": false,
   "uniform_uncertainty_bound_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "total_cases_assessed": 192,
+  "total_functional_passes": 56,
+  "total_controller_failures": 40,
+  "total_missing_coverage": 96,
+  "all_cases_completed_and_artifacts_verified": true,
+  "history_stress_robustness_demonstrated": false
 }
