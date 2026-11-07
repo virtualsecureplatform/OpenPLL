@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_local_C_models_1157/assessment.json": "acd6e121cb7b2fd69d7177ed598905d2e0be11288d0db40b31f848f82fb80d44",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/accept_keeper_exact_C_models.py": "2795aea75e78220feae6e298dfa988371b78946c8b361842accf2005147c7841",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GMP_C_1161/assessment.json": "3338b58d12286dd75f60187fa66048fd707de6b52bb5b67b8b600c369b086303",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_remaining_GMP_C_1163/nom_farthest/assessment.json": "03a7045a748a1710baceaa13a394ff5ed88481e938901f31a2f1edc517005821",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_remaining_GMP_C_1163/min_driver/assessment.json": "371f5e7d3cb1759031dce52723d4a54b35788084ad2c7a50c5433dc0a879e524",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_remaining_GMP_C_1163/min_farthest/assessment.json": "1a1027839cec05e17b2f39ae1be1e79637e6e2ef7911f3f10f26ffc38e2e85e0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_remaining_GMP_C_1163/max_driver/assessment.json": "061ed4dc38fc817ed43c64bdbac495bdcc945731f3ce37351ba6588d4266d0b3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_remaining_GMP_C_1163/max_farthest/assessment.json": "425439b2df9beeadf61870f65d4ebe0468db1eb8fa910a9372483f2e3182a0b3"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_exact_C_models_1168/nom_driver.spice": "5a68a276a687fc98cfbcdeaddb994505465f383dc8a3bd2a1e3018bb910bbb3d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_exact_C_models_1168/nom_farthest.spice": "706b743dccbfdba4ac8eac7d63b43bde117b14d08297626f02b9be6a3c6badd4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_exact_C_models_1168/min_driver.spice": "6cf58adeb70245e5763ffb68873de134743735821f92a89dd83d6ae3f245cb75",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_exact_C_models_1168/min_farthest.spice": "7efd9c468a26eb45a12edd62ac85c67f24ac8d41d396ff42e306109a5b96f7c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_exact_C_models_1168/max_driver.spice": "c9aecc41f59d12922cc9b212c272101fa08e082ccc421808b4c26b276a3e9071",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_exact_C_models_1168/max_farthest.spice": "67ecbbd07351bd8a19b7849ed3d658f40164b910b5733d54b4a1e4728f6eef2c"
+  },
+  "ideal_supply_passivity_certified": true,
+  "certificate_method": "exact GMP rational LDL congruence",
+  "original_sufficient_path_certificate_passed": false,
+  "zero_wire_R_exact_device_topology_and_C_operator_match": true,
+  "SPEF_capacitance_added": false,
+  "native_diagnostic_allowed": true,
+  "physical_capacitance_placement_qualified": false,
+  "parent_loading_complete": false,
+  "model_family_qualified": false,
+  "release_ready": false
+}
