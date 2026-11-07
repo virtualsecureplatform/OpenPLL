@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_rerouted_parent_fill_1143/assessment.json": "91e3fe0857bbe4f4cb2d70266db27990bd94af2691b2abd6179e57e51ca4069a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/keeper_parent_provenance.py": "f8dd9378ffd27a7e9f3a1bb0944eb6e3e3eb57019dca70e9336448749f2fc989"
+  },
+  "controls": [
+    {
+      "case": "non_fill_geometry_change",
+      "rejected": true,
+      "reason": "fresh stream or geometry-preserving fill of a checked fresh stream required"
+    },
+    {
+      "case": "different_source_GDS",
+      "rejected": true,
+      "reason": "filled source GDS differs"
+    }
+  ],
+  "all_controls_rejected": true,
+  "release_ready": false
+}
