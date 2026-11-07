@@ -1,0 +1,52 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/assessment.json": "f03340cfeb34c0a0fb773455741daf531ccc8e80d21f365cfa2822eff211fa62",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/assessment.json": "572afcbf3bfe77798dd39ac4291b5a37612400697dcdb04c66f952d032388d4a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing400/release_001/bbpd_internal_antenna_001/route.odb": "d32917d6dd13c21b2058bce14c48a1ce34b75a312c837146c1af57b5a3001b67",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/capacitance.spice": "065ac25e51fcf5b9aa9dd4da8b4173d4dce5226c4df2549979dbce236081e53c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/IntegerPLL_BBPD.ext": "573aa2a7cd92861174d3cdb15d20317eb019b4f0e4dd24996e72ae56510380c0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/sky130_fd_sc_hd__and2_1.ext": "ba9c77f2d9102c9b5a08de7015ab706d58ed907987a23ca90d51a3791e41a76e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_BBPD_wire_binding_1186/query.tcl": "a8765caadb2b8a850a433d5433b850be574d7859e28bb59e077e340696c1c5cb",
+    "/nix/store/qqz49dx8dpx4q9i5wriif091n7iaa0ld-openroad-2026-02-17/bin/openroad": "b1daf182a2702687868c777a722924afeb45f85fc125029357b28a5f73ba8860",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_keeper_parent_BBPD_wire.py": "3d9f18783b1f9e2a5eedaa6aa827af34f36aadc7386dce76e48d4eab74bc2a9b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/join_prototype_physical_instances.py": "330d957947b99064f71b497d35b2a3ce7f49c13d527572fc8da6f9a278a5e8a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_prototype_spef_pins_v2.py": "086741817c145431bf5d995363311392f43cb1263334a9cadd23448ea6b97578",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/min.json": "78b0994e1ebe39d672c319ef34c8febe4966042f4d6bcb3bf7309f49ea4cb565",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/nom.json": "acd1e8a07a319f0d9e7d5f79bd482a3148b0cc063909020439f8385cbcb471ef",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_BBPD_wire_RC_1184/max.json": "cdbe76c6f7bd34ce272849d80630eec8bbcbfe46364eab5c83675433203b4520"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_BBPD_wire_binding_1186/placements.tsv": "8202c39e8a22bf3afd807aa9d5cf365a70ba8c54bd849b6cc3c42497e1f4c87d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_BBPD_wire_binding_1186/join.json": "b303a76a274cabd875fba4758ebe14a8b628cacabdb6fa3001439dc9335c62bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_BBPD_wire_binding_1186/min.binding.json": "898eece0f756367c09051d33dd241bc6389781aab87a6a6d73937bb386777685",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_BBPD_wire_binding_1186/nom.binding.json": "898eece0f756367c09051d33dd241bc6389781aab87a6a6d73937bb386777685",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_BBPD_wire_binding_1186/max.binding.json": "898eece0f756367c09051d33dd241bc6389781aab87a6a6d73937bb386777685"
+  },
+  "results": [
+    {
+      "corner": "min",
+      "networks": 16,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    },
+    {
+      "corner": "nom",
+      "networks": 16,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    },
+    {
+      "corner": "max",
+      "networks": 16,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    }
+  ],
+  "matched_instances": 1116,
+  "magic_grid_um": "1/200",
+  "primitive_dimension_controls": 6,
+  "all_BBPD_wire_terminals_bound_inside_full_parent": true,
+  "wire_R_inserted": false,
+  "parent_loading_complete": false,
+  "release_ready": false
+}
