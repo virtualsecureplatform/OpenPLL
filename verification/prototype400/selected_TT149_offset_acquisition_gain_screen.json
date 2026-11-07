@@ -1,0 +1,113 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_offset_acquisition_gain_screen_1082/assessment.json": "e12e0c9ec8fd861faa502ad2f7bc9be0f047aa31bf411b02dd5d7d212ed725cf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_offset_acquisition_gains.py": "335b7ca3b1cfb1470040b5ad715a2c92ea05b181e6043fe2e57e64e9aa7ff42c"
+  },
+  "screen": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_offset_acquisition_gain_screen_1082",
+  "records": [
+    {
+      "ki": 2,
+      "kp": 8,
+      "timing": "nominal",
+      "state": "diagnostic_failed",
+      "functional_trace_pass": false,
+      "measurement_requests": []
+    },
+    {
+      "ki": 2,
+      "kp": 8,
+      "timing": "receiver",
+      "state": "diagnostic_failed",
+      "functional_trace_pass": false,
+      "measurement_requests": []
+    },
+    {
+      "ki": 4,
+      "kp": 8,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false,
+      "measurement_requests": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    },
+    {
+      "ki": 4,
+      "kp": 8,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false,
+      "measurement_requests": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    },
+    {
+      "ki": 8,
+      "kp": 8,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false,
+      "measurement_requests": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    },
+    {
+      "ki": 8,
+      "kp": 8,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false,
+      "measurement_requests": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    },
+    {
+      "ki": 16,
+      "kp": 8,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false,
+      "measurement_requests": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    },
+    {
+      "ki": 16,
+      "kp": 8,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false,
+      "measurement_requests": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    }
+  ],
+  "all_screen_input_and_case_artifact_hashes_verified": true,
+  "original_failure": "KI1/KP8 offset-stress cold-start phase10 confirms at220us, beyond200us; final steady state passes",
+  "KI2_KP8_final_sustained_acceptance_failed_in_both_timing_variants": true,
+  "KI4_8_16_KP8_need_fine166_native_coverage": true,
+  "new_native_cases": 0,
+  "limits_relaxed": false,
+  "fix_demonstrated": false,
+  "full_gain_matrix_qualified": false,
+  "minimum_gain_selected": false,
+  "release_ready": false
+}
