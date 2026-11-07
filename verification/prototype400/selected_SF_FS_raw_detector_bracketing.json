@@ -23,7 +23,21 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_FS_raw_bracket_inputs_1005/selected_FS_raw_phase_m0100_holdout_1002_runtime.json": "6c8190a15814a39a7f4070b761ce6318ea5b8ed749a1121e3a7895dde92f466a",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_bracket_fit_1003/inputs.json": "3199f3fe5139265e5f143a42b483486c58d122fa7f5b9dd631469403971df995",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_bracket_fit_1004/inputs.json": "e88a0e8ddf4ff326bc1e7ef80254b5888a6d8606cba363ff40017390e1316976",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_independent_raw_holdout_result_1025/assessment.json": "17bbb7aa4e5a4cc75d18ea37164b3baf77d40c31a8c4438c9a302d36ff014da8"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_independent_raw_holdout_result_1025/assessment.json": "17bbb7aa4e5a4cc75d18ea37164b3baf77d40c31a8c4438c9a302d36ff014da8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_bracket_fit_1004/assessment.json": "0f4556cb90c4908c2ebbfce22fe2a077166356b755b6200dde5390cf55ada8cb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_bracket_fit_1004/model/assessment.json": "ff5c81c0311b7d10dd11ae823e6f8d2a226083d6eb302b9b36f1d5d219867573",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_bracket_fit_1004/model/parameters.json": "29bdc8fccdb0885040f9f0a933fd9f3c86f3f7b32f51422f12c38c890191a594",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_bracket_fit_1004/model/detector.v": "4ca9c1e7e832ad51c33652e121dca35a3c99e7616927ee04726503ed349fbcdc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_bracket_fit_1003/bracket_decision.json": "4e698eb01f144415475de865604639570c36b412ca3b8054087c9f1988c4349b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_negative_UP_training_protocol_1027/protocol.json": "ee14eac9f96634485e41c03ba0ffc3f47fca497ec4f70902a6c0199528ff473e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_negative_UP_training_runtime_1029.json": "0cab2393b54e0e8a73aff2753b83034bca9cd3004e596f34f506535fbef099ae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_extended_training_bracket_fit_1028/inputs.json": "1cd69a2127a41540717d69ff2c7952441ef236a35af128cbbd715a4f8c3569a2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0150_training_1026/native/manifest.json": "d7b463a1f362def37c2d4542227c94c77ca9753021c5bd82fdc193e8f17602a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0200_997/response.json": "b42c1c52abdbc0e05acd908f6370bbf2c00f057f1850ccfa8842adcff015c97f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0400_998/response.json": "c202afdb7f09e4d2bbab25200226d190709430f9cc0fe3096d75e52e09748e0c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_p0025_1000/response.json": "eda2162d24f5d02c345386805a6ef5d1e9c2d223965c88fb29d2e00dadd268c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0200_1001/response.json": "41a821014e9d079420790f7ac169dc49a21c69c13e14d37f42053e57eb493163",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0300_holdout_999/response.json": "76ac7fc103d45a8f158f17785f492947695a639d0029fee254c47742f440fb3d"
   },
   "cases": [
     {
@@ -249,6 +263,111 @@
       ],
       "training_probes_pending": true,
       "native_interface_qualified": false
+    },
+    {
+      "corner": "sf",
+      "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0300_holdout_999/response.json",
+      "normal_native_completion": true,
+      "used_for_fitting": false,
+      "measured_cycles": [
+        {
+          "phase_ps": -161.4416718425673,
+          "decision": "dn"
+        },
+        {
+          "phase_ps": 630.7608510153173,
+          "decision": "up"
+        }
+      ],
+      "native_interface_qualified": false
     }
-  ]
+  ],
+  "completed_training_probes": [
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0200_997",
+      "role": "training",
+      "cycles": [
+        {
+          "phase_ps": -61.446994108248276,
+          "decision": "dn"
+        },
+        {
+          "phase_ps": 730.9588824250923,
+          "decision": "up"
+        }
+      ]
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0400_998",
+      "role": "training",
+      "cycles": [
+        {
+          "phase_ps": -261.4466134642228,
+          "decision": "dn"
+        },
+        {
+          "phase_ps": 530.1365864608342,
+          "decision": "up"
+        }
+      ]
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_p0025_1000",
+      "role": "training",
+      "cycles": [
+        {
+          "phase_ps": -28.25415262814701,
+          "decision": "up"
+        },
+        {
+          "phase_ps": 764.3719528438311,
+          "decision": "up"
+        }
+      ]
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_phase_m0200_1001",
+      "role": "training",
+      "cycles": [
+        {
+          "phase_ps": -252.27464242088615,
+          "decision": "dn"
+        },
+        {
+          "phase_ps": 539.3383641594767,
+          "decision": "up"
+        }
+      ]
+    }
+  ],
+  "corner_bracket_results": {
+    "fs": {
+      "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FS_raw_bracket_fit_1004/assessment.json",
+      "training_cases": 4,
+      "independent_holdout_cases": 4,
+      "measured_training_transition_bracket_ps": [
+        -252.27464242088615,
+        -28.25415262814701
+      ],
+      "all_sign_count_and_timing_checks_pass": true,
+      "maximum_edge_error_ps": 0.5931832431471662,
+      "holdouts_used_for_bracket": false,
+      "corner_sender_waveforms_correlated": false,
+      "native_interface_qualified": false
+    },
+    "sf": {
+      "guard": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_bracket_fit_1003/bracket_decision.json",
+      "state": "needs_measured_negative_transition_bracket",
+      "parameters_fitted": false,
+      "holdouts_used_for_bracket": false,
+      "new_training_protocol": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_negative_UP_training_protocol_1027/protocol.json",
+      "new_training_case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_raw_phase_m0150_training_1026",
+      "new_training_recorded_phase_ns": -0.15,
+      "new_training_decision_assumed": false,
+      "followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_extended_training_bracket_fit_1028",
+      "runtime": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SF_negative_UP_training_runtime_1029.json",
+      "PDK_static_include_files": 319,
+      "native_interface_qualified": false
+    }
+  }
 }
