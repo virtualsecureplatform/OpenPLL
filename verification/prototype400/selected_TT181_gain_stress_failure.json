@@ -1,0 +1,228 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10/segment0_acceptance.json": "22c77a5f3cfac4aa399f758bd201a0373cbd7e1db74790e239675d89a1eeae4d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10/controls.csv": "982a67b0a69bd2d125846981b6aef9407ca5a75a7c6854aa6b04a17e218e5367",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10/inputs.json": "4bcce8aa69902fba8df239a4c86060387c6135d2f8b6c8701fa10d5ad1d9c808",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10/run.log": "80e61eae6ecd28b11821e706b76ea9cef3dd0c42dfe4e7884f5a4de804d548dc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10/dco_table.txt": "98702b5e4983c77aafc07855b283e498bf844e28f980d1044e59658bd2ca415d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10/reference_phase.json": "7469eb8389528e0208f588b0df630362f247d0f760421af4926f1b5dbb45c6da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10/edges.csv": "a70caf86af10150342cf95164e74dcb9e07a29d3531c13d63f0ebc7e115ed092",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10/dco_frequency_model.json": "7cdf18ad5a22dfba5e4c63750095aa51e9ba6d649333f2942bb603fd10aa3b64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10/assessment.json": "2a2bfa78cf25b786065561c5da4565b151a467c171129be0049a760cf1f5573c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10/frequency_stress.json": "012a6591eacd2245cf4d316fc23e0e86ae747a83637b92db93a0f9a6d0ca0066",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10/segments.csv": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10/controls.csv": "ad51330b1ac6517df7a37906a69acffee5bede382ef979d2ba868c5f2ff64527",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10/assessment.json": "58f17e7fef46ca7d4475fe42478b31a4a9ecf6637a9d0e83d13a5aa2888e544d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10/inputs.json": "ec4d2583563a0849f8bb7520a303fb9c8f5e3e07ed0c3acc85dc468a75f92c7b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10/segment0_acceptance.json": "aacc5673e3d90aba42c37a21bc5ffbdd862237d37939e0f72ad7ff6a10815c12",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10/frequency_stress.json": "96231130b0a96968b17b8985c55ba2e017aa5c49f141614c2c02af5c6c3b4bb3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10/run.log": "80e61eae6ecd28b11821e706b76ea9cef3dd0c42dfe4e7884f5a4de804d548dc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10/dco_table.txt": "98702b5e4983c77aafc07855b283e498bf844e28f980d1044e59658bd2ca415d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10/dco_frequency_model.json": "7cdf18ad5a22dfba5e4c63750095aa51e9ba6d649333f2942bb603fd10aa3b64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10/reference_phase.json": "7469eb8389528e0208f588b0df630362f247d0f760421af4926f1b5dbb45c6da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10/edges.csv": "8de33ace3ab6216597c5590b7e6ec5dfca42caed7249e6a8897a263e95671af6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10/segments.csv": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33"
+  },
+  "records": [
+    {
+      "view": "nominal",
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/gain_linear_period_scenario0_phase10",
+      "state": "diagnostic_failed",
+      "completed_execution": true,
+      "missing_tuning_points": [],
+      "reference_phase_coverage_pass": true,
+      "acquisition_confirmed_ns": null,
+      "sustained_final_pass": false,
+      "final_four_windows": [
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 199621.0,
+          "end_ns": 204741.0,
+          "frequency_mhz": 400.453886826142,
+          "frequency_error_ppm": 1134.7170653550907,
+          "phase_span_ns": 5.844,
+          "phase_mean_ns": -5.4387421875,
+          "phase_drift_ns": -5.749866330913667,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 160,
+          "fine_max": 168,
+          "passed": false
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 204741.0,
+          "end_ns": 209861.0,
+          "frequency_mhz": 399.35743310860687,
+          "frequency_error_ppm": 1606.4172284828599,
+          "phase_span_ns": 8.183,
+          "phase_mean_ns": -4.0860703125,
+          "phase_drift_ns": 8.387117871726694,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 153,
+          "fine_max": 160,
+          "passed": false
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 209861.0,
+          "end_ns": 214981.0,
+          "frequency_mhz": 399.64791897758926,
+          "frequency_error_ppm": 880.2025560269251,
+          "phase_span_ns": 4.716,
+          "phase_mean_ns": 4.546421875,
+          "phase_drift_ns": 4.458146061067256,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 154,
+          "fine_max": 162,
+          "passed": false
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 214981.0,
+          "end_ns": 220101.0,
+          "frequency_mhz": 400.6643601429258,
+          "frequency_error_ppm": 1660.900357314431,
+          "phase_span_ns": 8.459,
+          "phase_mean_ns": 2.0074140625,
+          "phase_drift_ns": -9.122054199778821,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 162,
+          "fine_max": 168,
+          "passed": false
+        }
+      ],
+      "gain_multiplier": 0.7862884234920747,
+      "offset_ppm_at_anchor": 0.0,
+      "wide_code_applicability_qualified": false
+    },
+    {
+      "view": "receiver",
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/gain_linear_period_scenario0_phase10",
+      "state": "diagnostic_failed",
+      "completed_execution": true,
+      "missing_tuning_points": [],
+      "reference_phase_coverage_pass": true,
+      "acquisition_confirmed_ns": null,
+      "sustained_final_pass": false,
+      "final_four_windows": [
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 199621.0,
+          "end_ns": 204741.0,
+          "frequency_mhz": 400.453886826142,
+          "frequency_error_ppm": 1134.7170653550907,
+          "phase_span_ns": 5.844,
+          "phase_mean_ns": -5.4387421875,
+          "phase_drift_ns": -5.749866330913667,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 160,
+          "fine_max": 168,
+          "passed": false
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 204741.0,
+          "end_ns": 209861.0,
+          "frequency_mhz": 399.35743310860687,
+          "frequency_error_ppm": 1606.4172284828599,
+          "phase_span_ns": 8.183,
+          "phase_mean_ns": -4.0860703125,
+          "phase_drift_ns": 8.387117871726694,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 153,
+          "fine_max": 160,
+          "passed": false
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 209861.0,
+          "end_ns": 214981.0,
+          "frequency_mhz": 399.64791897758926,
+          "frequency_error_ppm": 880.2025560269251,
+          "phase_span_ns": 4.716,
+          "phase_mean_ns": 4.546421875,
+          "phase_drift_ns": 4.458146061067256,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 154,
+          "fine_max": 162,
+          "passed": false
+        },
+        {
+          "phase_statistics_method": "exact_integer_picosecond_grid",
+          "start_ns": 214981.0,
+          "end_ns": 220101.0,
+          "frequency_mhz": 400.6643601429258,
+          "frequency_error_ppm": 1660.900357314431,
+          "phase_span_ns": 8.459,
+          "phase_mean_ns": 2.0074140625,
+          "phase_drift_ns": -9.122054199778821,
+          "cycle_slip": false,
+          "cycle_gaps": {
+            "REF": false,
+            "DIV": false,
+            "OUT": false
+          },
+          "fine_outside_operating_range": false,
+          "fine_min": 162,
+          "fine_max": 168,
+          "passed": false
+        }
+      ],
+      "gain_multiplier": 0.7862884234920747,
+      "offset_ppm_at_anchor": 0.0,
+      "wide_code_applicability_qualified": false
+    }
+  ],
+  "KI": 1,
+  "KP": 2,
+  "phase_ns": 10,
+  "scenario": 0,
+  "interpolation": "linear_period",
+  "completed_case_witness_only": true,
+  "complete_96_case_matrices_assessed": false,
+  "physical_failure_demonstrated": false,
+  "robust_gain_selected": false,
+  "release_ready": false
+}
