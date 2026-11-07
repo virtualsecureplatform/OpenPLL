@@ -1,0 +1,56 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799/status.json": "439465abf98451a19aeb10e3248ac7a62d2f2a19ddb237d7964d5d709022bd86",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799/inputs.json": "526a386b12c5dbdaf923ec193c73565df3be9a5ec31bdaadba0fb2c1f11d827d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799/request.json": "3b0ea87c5d75070b28cbbf948d01ccc74c3432c60ba1c26270bf37dd10e13e77",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799/native/status.json": "3c81a23dfc25bfdfb7bd3fdb58869ec7edc8a5d6fe1f99fd95efb2d308f576be",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799/waveform_assessment/provenance.json": "270994bf75ac3b38c705fc4ff0c393945695e185639a972ae1c6916e7c519fed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799/waveform_assessment/assessment.json": "7491f6589de59c776e66864c99a59fd14b5e0011537033d5ffe18938bed9dc41",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799/registry/assessment.json": "1165a6567ed848ebc36f9a3ce4fb3e4477be31c5ccb2373b3641da2bb01a2f01",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799/registry/models.json": "765c540e0a60da81b3abdf4e5ed24868a6b31c7fe2a3034115f0686f2fcfe9b7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_container_binding_1070/assessment.json": "305e4d25d98b25bfd23eb6469bfa61911dd191787f76bf8a4341378caf45b332",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_container_binding_1070/models.json": "c56b6290f47f8d1cb018af21fc2fac42957c2b1d21649f6fea81b0f64a4b706b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/recover_selected_completed_target.py": "6464379107ccb6d10ae93c62463459fccdab2e54d10837dcaba95087c61fd9e8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/common_v3.py": "dc86a17d58cdd6d02d9a3279c94097962da89c31ae50903e4717e333b2b235c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_full_target_power_recovered_1072/owner.json": "8a3b76a395643f900fdadd5f15f1bb267604d0569d82b8f9b57ac621d3a64dc7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_remaining_full_corner_recovered_1073/owner.json": "93602da608ead9ce223a13631ef442c872017d09a65c6c98c27bff3c0e6ed2b8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_corner_sender_packets_recovered_1074/owner.json": "66473bd06f9f0cb5f389d40abb04f00f4f41a0303e315081f37e8bea08240e85"
+  },
+  "original_failed_pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799",
+  "measured_target_request": {
+    "coarse": 20,
+    "target_hz": 400000000.0,
+    "nominal_limit_ppm": 1000,
+    "nearest_measured_code": 133,
+    "nearest_measured_error_ppm": -6912.1870425,
+    "predicted_frequency_assigned": false,
+    "target_bracket_and_startup_headroom_qualified": false,
+    "release_ready": false,
+    "state": "measurement_needed",
+    "fine": 149,
+    "reason": "native_measurement_nearest_bracket_secant_target",
+    "bracket_codes": [
+      133,
+      165
+    ],
+    "rational_code_hint": [
+      278871433997,
+      1875033353
+    ]
+  },
+  "mean_frequency_mhz": 400.02779134942773,
+  "completed_RAW_hash_verified": true,
+  "original_failure_receipts_preserved": true,
+  "new_native_cases": 0,
+  "diagnostic": true,
+  "release_ready": false,
+  "recovery_pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_recovered_1071",
+  "guards_passed": 4,
+  "container_binding": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_container_binding_1070",
+  "downstream_continuations": [
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_full_target_power_recovered_1072",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_remaining_full_corner_recovered_1073",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_corner_sender_packets_recovered_1074"
+  ],
+  "original_native_not_repeated": true
+}
