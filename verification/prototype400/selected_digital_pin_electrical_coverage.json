@@ -1,0 +1,145 @@
+{
+  "purpose": "Exhaustive linked-digital pin electrical inventory under conditional native timing views",
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_digital_pin_electrical_coverage_996/assessment.json": "d1399d73469ce0627f110ac6d3d50b203f05aa675c25219cd935167e7830c3d3"
+  },
+  "results": {
+    "tt": {
+      "native_cell_pins": 12794,
+      "native_top_ports": 369,
+      "digital_signal_pins_reviewed": 12794,
+      "coverage_issue_count": 8,
+      "unconnected_output_pin_count": 95,
+      "zero_slew_signal_pin_count": 94,
+      "worst_inventory_slew_margin": {
+        "pin": "$auto$ff.cc:337:slice$18687/CLK",
+        "limit_ns": 0.24,
+        "measured_max_ns": 0.160470485687,
+        "margin_ns": 0.07952951431299998
+      },
+      "worst_inventory_capacitance_margin": {
+        "pin": "$abc$73649$auto$blifparse.cc:397:parse_blif$74494/Y",
+        "limit_pf": 0.06718,
+        "modeled_connected_net_load_pf": 0.040155284107,
+        "margin_pf": 0.027024715893000005
+      },
+      "unmapped_library_pin_count": 0,
+      "missing_or_nonfinite_propagated_slew_count": 0,
+      "loaded_constant_tie_outputs_without_max_capacitance": 8,
+      "declared_constant_output_pins": 16
+    },
+    "ff": {
+      "native_cell_pins": 12794,
+      "native_top_ports": 369,
+      "digital_signal_pins_reviewed": 12794,
+      "coverage_issue_count": 8,
+      "unconnected_output_pin_count": 95,
+      "zero_slew_signal_pin_count": 106,
+      "worst_inventory_slew_margin": {
+        "pin": "$auto$ff.cc:337:slice$18687/CLK",
+        "limit_ns": 0.24,
+        "measured_max_ns": 0.131120055914,
+        "margin_ns": 0.10887994408599999
+      },
+      "worst_inventory_capacitance_margin": {
+        "pin": "$abc$73649$auto$blifparse.cc:397:parse_blif$74494/Y",
+        "limit_pf": 0.06718,
+        "modeled_connected_net_load_pf": 0.040155284107,
+        "margin_pf": 0.027024715893000005
+      },
+      "unmapped_library_pin_count": 0,
+      "missing_or_nonfinite_propagated_slew_count": 0,
+      "loaded_constant_tie_outputs_without_max_capacitance": 8,
+      "declared_constant_output_pins": 16
+    },
+    "ss": {
+      "native_cell_pins": 12794,
+      "native_top_ports": 369,
+      "digital_signal_pins_reviewed": 12794,
+      "coverage_issue_count": 8,
+      "unconnected_output_pin_count": 95,
+      "zero_slew_signal_pin_count": 36,
+      "worst_inventory_slew_margin": {
+        "pin": "$auto$ff.cc:337:slice$18687/CLK",
+        "limit_ns": 0.24,
+        "measured_max_ns": 0.214527845383,
+        "margin_ns": 0.025472154617000003
+      },
+      "worst_inventory_capacitance_margin": {
+        "pin": "$abc$73649$auto$blifparse.cc:397:parse_blif$74494/Y",
+        "limit_pf": 0.06718,
+        "modeled_connected_net_load_pf": 0.040155284107,
+        "margin_pf": 0.027024715893000005
+      },
+      "unmapped_library_pin_count": 0,
+      "missing_or_nonfinite_propagated_slew_count": 0,
+      "loaded_constant_tie_outputs_without_max_capacitance": 8,
+      "declared_constant_output_pins": 16
+    },
+    "sf": {
+      "native_cell_pins": 12794,
+      "native_top_ports": 369,
+      "digital_signal_pins_reviewed": 12794,
+      "coverage_issue_count": 8,
+      "unconnected_output_pin_count": 95,
+      "zero_slew_signal_pin_count": 88,
+      "worst_inventory_slew_margin": {
+        "pin": "$abc$73649$auto$blifparse.cc:397:parse_blif$75463/Y",
+        "limit_ns": 1.0,
+        "measured_max_ns": 0.999701142311,
+        "margin_ns": 0.0002988576889999539
+      },
+      "worst_inventory_capacitance_margin": {
+        "pin": "$abc$73649$auto$blifparse.cc:397:parse_blif$74494/Y",
+        "limit_pf": 0.06718,
+        "modeled_connected_net_load_pf": 0.040155284107,
+        "margin_pf": 0.027024715893000005
+      },
+      "unmapped_library_pin_count": 0,
+      "missing_or_nonfinite_propagated_slew_count": 0,
+      "loaded_constant_tie_outputs_without_max_capacitance": 8,
+      "declared_constant_output_pins": 16
+    },
+    "fs": {
+      "native_cell_pins": 12794,
+      "native_top_ports": 369,
+      "digital_signal_pins_reviewed": 12794,
+      "coverage_issue_count": 8,
+      "unconnected_output_pin_count": 95,
+      "zero_slew_signal_pin_count": 93,
+      "worst_inventory_slew_margin": {
+        "pin": "$abc$73649$auto$blifparse.cc:397:parse_blif$74508/B",
+        "limit_ns": 1.0,
+        "measured_max_ns": 0.972010612488,
+        "margin_ns": 0.027989387511999975
+      },
+      "worst_inventory_capacitance_margin": {
+        "pin": "$abc$73649$auto$blifparse.cc:397:parse_blif$74494/Y",
+        "limit_pf": 0.06718,
+        "modeled_connected_net_load_pf": 0.040155284107,
+        "margin_pf": 0.027024715893000005
+      },
+      "unmapped_library_pin_count": 0,
+      "missing_or_nonfinite_propagated_slew_count": 0,
+      "loaded_constant_tie_outputs_without_max_capacitance": 8,
+      "declared_constant_output_pins": 16
+    }
+  },
+  "scope": "Selected digital macro, fixed divide16, 402.1 MHz capacity screen, nominal geometric min/max R/C; parent analog macros are outside this inventory",
+  "critical_port_internal_connections_verified": true,
+  "top_port_net_scope": "Inside terminal net when the top-level pin has no outer net",
+  "all_constraint_flags_are_loaded_constant_ties": true,
+  "loaded_constant_tie_capacitance_limits_invented": false,
+  "inherited_PDK_limits_changed": false,
+  "output_load_assumption_pf": 0.005,
+  "clock_transition_assumption_ns": 0.1,
+  "input_and_reset_CDC_screen_exceptions_qualified": false,
+  "external_port_contracts_qualified": false,
+  "native_timing_and_load_models_qualified": false,
+  "startup_frequency_range_qualified": false,
+  "electrical_rules_qualified": false,
+  "physical_integrity_qualified": false,
+  "validation_controls_passed": 10,
+  "additional_SPICE_simulations_started": 0,
+  "release_ready": false
+}

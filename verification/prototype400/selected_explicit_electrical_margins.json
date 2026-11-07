@@ -13,5 +13,8 @@
   "scope": "Explicit worst constrained-pin margins in existing supplied-capacitance-envelope timing views. SF slew margin is only 0.299 ps; actual model uncertainty, complete pin coverage and startup range remain unqualified.",
   "electrical_rules_qualified": false,
   "physical_integrity_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "linked_digital_pin_coverage_inventory": "verification/prototype400/selected_digital_pin_electrical_coverage.json",
+  "all_declared_dynamic_pin_constraints_enumerated": true,
+  "loaded_constant_outputs_without_declared_capacitance_limit": 8
 }
