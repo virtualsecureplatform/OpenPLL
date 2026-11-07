@@ -1,0 +1,35 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_C_attachment_locality.py": "690b2a509f81746a22d28b24e44334043affce8b0bfc4b7082033b56e47526bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_prototype_full_C_wire_R_v5.py": "a79c3f8f031a6df9bca8d2be3076d7bf0bb996c128f84971fc00deb0618db755",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_1118/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160/capacitance.spice": "701f3049e676f23ed908fd7182795aad3b7ca12f5b846bbf4df7516e9457f5e2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_binding_1121/join.json": "bca9b9e5650c65ce7e20f57271ff6237198429b01b5a009368b9f5f03a16f9d8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/nom.json": "3fd0bcf21902a12fb714a19da913bc50294c1c149d7be08b57e636b055ac7c38",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_1118/assessment.json": "1ef4b3dc8109f4f1b79b94a6fd002df8b9bac93bc93b68b14b046949e110f4e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/assessment.json": "937a5c23dc90fdb610803b99d86b82b4b407ed3b306b14da5498537169d3312e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_binding_1121/assessment.json": "385aa7cf60cbf085bbc414a974f1de7251c1414773214778b36264db8b124592",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_RC_models_1122/assessment.json": "827ff1ca085e43e483264dea661811a17634270b230553901bb050ba5f663b68",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_RC_models_1122/nom_driver.lift.json": "47d5b6e85bcabb52174d24bd10f99cbb57acf870dd80998611648079ac03672c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_RC_models_1122/nom_farthest.lift.json": "0491b7e7705a89273f470f5732b679cf7c46524ef0f3d639b77df17aeeb6020c"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_C_locality_1155/driver.json": "c66811b16fee03c3ebe81c80fa0600fcc6862e6a3e9136dd78180c68921394c7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_C_locality_1155/farthest.json": "8a027fb165b9a8cac2c1265bceef6b63ac4527d4c37a53de98a3b40fb9aea8a7"
+  },
+  "results": [
+    {
+      "attachment": "driver",
+      "cell_pin_C_endpoints": 1522,
+      "relocated_cell_pin_C_endpoints": 1461
+    },
+    {
+      "attachment": "farthest",
+      "cell_pin_C_endpoints": 1522,
+      "relocated_cell_pin_C_endpoints": 1159
+    }
+  ],
+  "incident_capacitance_is_counted_per_pin_not_a_network_total": true,
+  "diagnostic_attachment_spread_is_not_a_physical_uncertainty_bound": true,
+  "spatial_capacitance_placement_qualified": false,
+  "release_ready": false
+}
