@@ -38,11 +38,28 @@
         "state": "keeper_macro_route_running",
         "release_ready": false
       }
+    },
+    "1097": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1097",
+      "input_manifest_sha256": "c633f6d0ee7804976a24e6022e4e7f152f9ab0a410d31a0dc1b1b415669e0179",
+      "state_at_publication": {
+        "state": "waiting_for_prior_keeper_route",
+        "release_ready": false
+      }
     }
   },
   "known_limitations": [
-    "HS timing view not bound in current feasibility run",
-    "power-grid connectivity warnings require independent checks",
+    "1096 has proven missing met1-to-met4 vias and disconnected rails",
+    "1097 power-grid connectivity remains unverified",
+    "HS TT timing view does not qualify release corners",
     "final DRC LVS antenna and extracted analog qualification pending"
-  ]
+  ],
+  "run1096_power_grid_disconnected": true,
+  "run1097_changes": {
+    "met4_width_um": 0.48,
+    "met5_dimensions": "original",
+    "HS_Liberty_view_bound": "TT 25C 1.80V; diagnostic implementation only",
+    "HS_CDL_view_bound": true,
+    "queued_after_live_1096": true
+  }
 }
