@@ -1,0 +1,48 @@
+{
+  "unfilled_candidate": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/remove_selected_keeper_stale_fill.py": "5efdb5799fba1ae005986afe702672b1ccb519d629175ab28d1f419c8cf113b2",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assemble_selected_keeper_parent.py": "72fb2c9d7175ee0c0be7f3a046f45bf8e43b9103a7618948bc9f2133317c3131",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_assembly_1125/assessment.json": "6e17b977e819787f1e3f1a4e53af878f90fa6a6fd40e4db2bc086799f1c9740c",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_assembly_1125/assembly.gds": "2dbaece9e21aab6dc94d45f6a2198f12019f0dc2aea48762c7b3bdaaffbb60b0"
+    },
+    "artifacts": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_without_stale_fill_1129/assembly.gds": "e7bf8a1bbcfff25b34b3bc1e38cf678cfb655f2cd8b8cef4917bb18e3f86b29a"
+    },
+    "isolated_keeper_parent": true,
+    "only_stale_fill_instances_removed": true,
+    "removed_instances": [
+      [
+        "PROTOTYPE_PARENT_DENSITY_FILL",
+        "r0 *1 0,0",
+        "0,0",
+        "0,0",
+        0,
+        0
+      ],
+      [
+        "PROTOTYPE_PARENT_METAL5_FILL",
+        "r0 *1 0,0",
+        "0,0",
+        "0,0",
+        0,
+        0
+      ]
+    ],
+    "all_macro_definitions_and_other_parent_instances_unchanged": true,
+    "density_fill_regeneration_required": true,
+    "parent_DRC_LVS_antenna_density_and_power_qualified": false,
+    "selected": false,
+    "release_ready": false
+  },
+  "stale_fill_retained_DRC_rectangles": 50193,
+  "stale_fill_collision_hypothesis_confirmed": false,
+  "followup_DRC_path": "build/signoff400/selected_keeper_unfilled_parent_DRC_1130",
+  "followup_DRC_status_at_publication": {
+    "state": "keeper_parent_flat_DRC_assessed",
+    "release_ready": false
+  },
+  "density_fill_regeneration_required": true,
+  "selected": false,
+  "release_ready": false
+}
