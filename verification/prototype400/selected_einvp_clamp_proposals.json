@@ -1,0 +1,184 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_clamp_comparison_1060/assessment.json": "5f4f51a6b0f40a5ce7b7f7d56468b8dc85d24b688f951c67ec7ebfafb85a9628",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_disabled_clamp_proposals_1058/assessment.json": "6f92c1137e43e58ddbdbea5bb20be995d44748313e9e0943d5902fa00a4991d7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_standard_cell_keeper_1059/assessment.json": "5297573d88481a7fec9a4ff54f8d4fc8b71d08b95f2e59ff49b231a17ab191ec",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_einvp_disabled_clamps.py": "af5a26ff250e25213445c3288d243101f171aa045f9b48fca07d09462b020509",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_einvp_disabled_clamps.py": "e604197c857029c0911ada226a51847272e052d8ee522ca7470693db5b15be80",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_einvp_standard_cell_clamp.py": "04cea67a3b5fdfd1409683293c39d74861fa4442fd426b25659062c52c42fc36",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_einvp_standard_cell_clamp.py": "1f8bae77c6f7df974b36df6737b48d7e93a2229624ac7c0d741685a2f30e7e9e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_einvp_clamp_comparison.py": "26b65e54e5927adec0f2c83d3e0a39a0c31ba45ad58247121b09469ba644e3e3"
+  },
+  "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_clamp_comparison_1060/assessment.json",
+  "proposals": {
+    "nfet_to_ground": {
+      "refined_output_ranges_V": {
+        "__context_node_1468": [
+          -0.008122015529661079,
+          0.0032312616576636467
+        ],
+        "__context_node_1500": [
+          -0.008131078621974052,
+          0.0032455722963748903
+        ]
+      },
+      "maximum_absolute_terminal_difference_V": 1.8153999808,
+      "worst_terminal_difference": {
+        "instance": "Xflat2567",
+        "relation": "GB",
+        "range_V": [
+          -1.8153999808,
+          -0.30102604
+        ]
+      },
+      "maximum_internal_timestep_difference_V": 3.873489534964155e-06,
+      "per_vector_timestep_difference_V": {
+        "V(XCUT:__CONTEXT_NODE_1468)": 1.223823172108885e-06,
+        "V(XCUT:__CONTEXT_NODE_1469)": 2.4330061260244198e-06,
+        "V(XCUT:__CONTEXT_NODE_1470)": 4.2208456874082145e-07,
+        "V(XCUT:__CONTEXT_NODE_1471)": 1.6782871448128844e-07,
+        "V(XCUT:__CONTEXT_NODE_1500)": 2.0658024527660072e-06,
+        "V(XCUT:__CONTEXT_NODE_1501)": 3.873489534964155e-06,
+        "V(XCUT:__CONTEXT_NODE_1502)": 4.222632431494233e-07,
+        "V(XCUT:__CONTEXT_NODE_1503)": 2.973796031646714e-07
+      },
+      "assessed_MOS_devices": 14,
+      "physical_layout_changed": false,
+      "new_cell_extracted_parasitics_included": false
+    },
+    "pfet_to_supply": {
+      "refined_output_ranges_V": {
+        "__context_node_1468": [
+          1.757475165893419,
+          1.8270967435766787
+        ],
+        "__context_node_1500": [
+          1.7574138470287037,
+          1.8270979599426966
+        ]
+      },
+      "maximum_absolute_terminal_difference_V": 1.8270979599426966,
+      "worst_terminal_difference": {
+        "instance": "Xflat2565",
+        "relation": "BD",
+        "range_V": [
+          -1.8270979599426966,
+          -1.7574138470287037
+        ]
+      },
+      "maximum_internal_timestep_difference_V": 3.5074952563052264e-05,
+      "per_vector_timestep_difference_V": {
+        "V(XCUT:__CONTEXT_NODE_1468)": 1.4424849184457855e-05,
+        "V(XCUT:__CONTEXT_NODE_1469)": 1.6059711138716182e-07,
+        "V(XCUT:__CONTEXT_NODE_1470)": 3.195614316831019e-05,
+        "V(XCUT:__CONTEXT_NODE_1471)": 1.6438425145537394e-06,
+        "V(XCUT:__CONTEXT_NODE_1500)": 1.617375717533065e-05,
+        "V(XCUT:__CONTEXT_NODE_1501)": 1.8110186339459489e-07,
+        "V(XCUT:__CONTEXT_NODE_1502)": 3.5074952563052264e-05,
+        "V(XCUT:__CONTEXT_NODE_1503)": 1.944736897296906e-06
+      },
+      "assessed_MOS_devices": 14,
+      "physical_layout_changed": false,
+      "new_cell_extracted_parasitics_included": false
+    },
+    "standard_cell_high_keeper": {
+      "refined_output_ranges_V": {
+        "__context_node_1468": [
+          1.7655371273049476,
+          1.82194131970058
+        ],
+        "__context_node_1500": [
+          1.765490986992641,
+          1.821941536751066
+        ]
+      },
+      "maximum_absolute_terminal_difference_V": 1.8219424829219641,
+      "worst_terminal_difference": {
+        "instance": "Xkeeper_0_1",
+        "relation": "DS",
+        "range_V": [
+          1.765529540283274,
+          1.8219424829219641
+        ]
+      },
+      "maximum_internal_timestep_difference_V": 3.3428453940942404e-05,
+      "per_vector_timestep_difference_V": {
+        "V(XCUT:__CONTEXT_NODE_1468)": 1.0243950428590054e-05,
+        "V(XCUT:__CONTEXT_NODE_1469)": 1.190354487201617e-07,
+        "V(XCUT:__CONTEXT_NODE_1470)": 3.046544236018356e-05,
+        "V(XCUT:__CONTEXT_NODE_1471)": 9.080935026162251e-07,
+        "V(XCUT:__CONTEXT_NODE_1500)": 1.14006855813642e-05,
+        "V(XCUT:__CONTEXT_NODE_1501)": 1.2377823066511695e-07,
+        "V(XCUT:__CONTEXT_NODE_1502)": 3.3428453940942404e-05,
+        "V(XCUT:__CONTEXT_NODE_1503)": 1.023617199003013e-06,
+        "V(XCUT:__OPENPLL_KEEPER_0_ENB)": 3.300885851257175e-07,
+        "V(XCUT:__OPENPLL_KEEPER_0_N)": 2.766009638590568e-07,
+        "V(XCUT:__OPENPLL_KEEPER_0_P)": 1.3532583953423938e-06,
+        "V(XCUT:__OPENPLL_KEEPER_1_ENB)": 3.786334446708508e-07,
+        "V(XCUT:__OPENPLL_KEEPER_1_N)": 3.0902738962636907e-07,
+        "V(XCUT:__OPENPLL_KEEPER_1_P)": 1.4952334213003127e-06
+      },
+      "assessed_MOS_devices": 24,
+      "physical_layout_changed": false,
+      "new_cell_extracted_parasitics_included": false
+    }
+  },
+  "recorded_gate_voltage_ranges": {
+    "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_335": {
+      "A": {
+        "node": "__parent_R_node_1116",
+        "range_V": [
+          -0.0154013824,
+          1.49904685
+        ]
+      },
+      "TE": {
+        "node": "__parent_R_node_167",
+        "range_V": [
+          -0.00031236619,
+          0.000144320681
+        ]
+      }
+    },
+    "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_342": {
+      "A": {
+        "node": "__parent_R_node_1114",
+        "range_V": [
+          -0.0154014349,
+          1.49904685
+        ]
+      },
+      "TE": {
+        "node": "__parent_R_node_161",
+        "range_V": [
+          -0.000178039937,
+          0.000105786139
+        ]
+      }
+    }
+  },
+  "comparison_window_ns": [
+    202.5,
+    210
+  ],
+  "all_three_proposals_completed_at_both_steps": true,
+  "maximum_steps_ps": [
+    0.5,
+    0.25
+  ],
+  "transformation_tests_passed": 7,
+  "internal_complement_keeper_requires_non_pin_connection": true,
+  "internal_complement_keeper_is_not_a_complete_standard_cell_layout_proposal": true,
+  "original_devices_and_all_RC_retained": true,
+  "inherited_initial_above_rail_state_not_qualified": true,
+  "enabled_behavior_checked": false,
+  "enable_transition_contention_checked": false,
+  "input_loading_and_frequency_checked": false,
+  "new_physical_parasitics_checked": false,
+  "all_other_cells_and_corners_checked": false,
+  "physical_design_candidate_selected": false,
+  "model_validity_ranges_qualified": false,
+  "reliability_qualified": false,
+  "electrical_rules_qualified": false,
+  "release_ready": false
+}
