@@ -7,7 +7,16 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_selected_mos_terminal_extents.py": "b7103f35932ea980d50699d5bde59cc072177845c3e8ba2d122693dbfc098ebe",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_mos_extent_witnesses.py": "fc5ec5011443487ec2f09aa59bb99a1ca9da53f02973510a2bee94b3e5c0ccf5",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_mos_voltage_scan.py": "22bfff2953935515f81a80f1094894d505b03729e6d7c3c33c445ebc43ea6159",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_waveform/measure_mos_extents.cpp": "39535ae22082bcd44b04a7e6fd37dabfca2f2be993b622400576a8979b8d556a"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_waveform/measure_mos_extents.cpp": "39535ae22082bcd44b04a7e6fd37dabfca2f2be993b622400576a8979b8d556a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_TT_fine133_MOS_late_voltage_extents_1041/assessment.json": "434781c6eb8b411e9ddfa38820b4c3da9acd031d409e599aab509a557bade950",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_MOS_late_voltage_witness_controls_1042/assessment.json": "4d6447bb7f8c1ffc0760b063a66e5f54a12c2826bdea6b64668ead0b3108c658",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_enable_truth_control_1044/assessment.json": "dc54cd3bc2f8c7a214b1f00cb6924d640f1201fc07820e4a9fc1791926affa5d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_voltage_cell_inspection_1045/assessment.json": "3d596ed4fad146ff05938104dd4a0640081426670a70f0458267e00066d849a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_late_voltage_cell_inspection_1046/assessment.json": "adbd71662a1fbfc4fcc0142127d698fbc547e2a619179b695dce21adc430a79c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_waveform/measure_mos_extents_v2.cpp": "3122b7cd02149091656aa66d0ce741aa45fa5b124013b67bc9df26a9c7f4fb50",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_selected_mos_terminal_extents_v2.py": "763dcf651f1df494bc68a64d063829643aafe540bcbfed899662c67b740ae8f5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_mos_voltage_window_scan.py": "dfb89d71d05a4693dc4b3ef42fd4c3d248a9f87fae3bfc62346cfc18f70c6c6b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/inspect_selected_einvp_voltage_witnesses.py": "1dda26e0e87787d9a13df91eb5b56cb1fe828da3d0d52b6c80c4d6de9e897302"
   },
   "measurement": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_TT_fine133_MOS_voltage_extents_1038/assessment.json",
   "witness_verification": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_MOS_voltage_witness_controls_1039/assessment.json",
@@ -53,5 +62,89 @@
   "reliability_qualified": false,
   "electrical_rules_qualified": false,
   "physical_integrity_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "final_native_window": {
+    "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_TT_fine133_MOS_late_voltage_extents_1041/assessment.json",
+    "window_ns": [
+      200,
+      260
+    ],
+    "measured_samples": 18446,
+    "all_external_MOS_devices": 61616,
+    "window_parser_controls_passed": 9,
+    "standard_nfet_maximum_VDS_V": 1.99732827,
+    "low_VT_nfet_maximum_VDS_V": 2.130301177,
+    "largest_absolute_terminal_difference_V": 2.27438893,
+    "witness_verification": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_MOS_late_voltage_witness_controls_1042/assessment.json",
+    "independent_witnesses_verified": 7,
+    "distinct_native_witness_samples": 6,
+    "all_independent_results_match": true,
+    "excursions_persist_after_200ns": true,
+    "reliability_qualified": false
+  },
+  "affected_cell_bias_review": {
+    "global_samples": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_voltage_cell_inspection_1045/assessment.json",
+    "late_samples": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_late_voltage_cell_inspection_1046/assessment.json",
+    "functional_truth_control": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_enable_truth_control_1044/assessment.json",
+    "functional_truth_cases_passed": 4,
+    "TE0_disables_output": true,
+    "cells": [
+      {
+        "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_335",
+        "flat_MOS_instances": [
+          "Xflat3292",
+          "Xflat3293",
+          "Xflat3294",
+          "Xflat3295",
+          "Xflat3296",
+          "Xflat3297"
+        ],
+        "outside_cell_primitive_connections_to_Z": [],
+        "explicit_resistors_on_Z": [],
+        "external_capacitor_cards_on_Z": 209,
+        "TE_at_witnesses_range_V": [
+          -0.000139979997,
+          0.000122676556
+        ],
+        "Z_at_witnesses_range_V": [
+          1.76467981,
+          2.2709158
+        ],
+        "enable_complement_at_witnesses_range_V": [
+          1.7984851,
+          1.80077084
+        ]
+      },
+      {
+        "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_342",
+        "flat_MOS_instances": [
+          "Xflat2564",
+          "Xflat2565",
+          "Xflat2566",
+          "Xflat2567",
+          "Xflat2568",
+          "Xflat2569"
+        ],
+        "outside_cell_primitive_connections_to_Z": [],
+        "explicit_resistors_on_Z": [],
+        "external_capacitor_cards_on_Z": 338,
+        "TE_at_witnesses_range_V": [
+          -3.21828329e-05,
+          4.44109324e-05
+        ],
+        "Z_at_witnesses_range_V": [
+          1.76084172,
+          2.27438893
+        ],
+        "enable_complement_at_witnesses_range_V": [
+          1.79785553,
+          1.80119572
+        ]
+      }
+    ],
+    "bias_scope": "selected independently verified witness times; not complete control waveforms",
+    "interpretation": "consistent with capacitive boosting of disabled high-impedance load outputs; not a causal proof",
+    "layout_ECO_applied": false
+  },
+  "next_bounded_experiment": "Replay affected-cell cut with recorded boundary waveforms; check timestep convergence and independent-simulator agreement before any layout ECO."
 }
