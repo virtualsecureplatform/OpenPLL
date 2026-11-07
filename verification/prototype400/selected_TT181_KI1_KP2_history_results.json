@@ -1,0 +1,127 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_nominal_1088/assessment.json": "72a30c28dac5a4cbd25cf549692b365a2a5349ec27d6f048a1561a85e29eeb1a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_nominal_1088/cases.json": "04b8635f6ca3eb17724af52aea6d445ee8e2a70dff1a7f9585875ff9837e642b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/assessment.json": "23aa9487d097fe63f9558d6981a0dbdf927ed7f7d1decc36aaaea003e094ffc1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/cases.json": "f00566467dee5e189103bcfe18394eb9724deffa5ffb5fd3ad41eabb4c7515b3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_receiver_1089/assessment.json": "eb28aedf3d0e0de20cbe9c7ba292b779c5e06a6c75a903e15d3d516c14593f39",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_receiver_1089/cases.json": "9e4c61f1db927d8ffeba62c3a8cd65c6b31a5375bc007c7a8cc34d3f66751a3d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/assessment.json": "df6c6ec1ea5138d1cd90a6c6398f8f0155c98c72f9f0d774ef2b329ee62509bd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215/cases.json": "3055ec58d4ba3df368589a935313034c0ac2c8de347817807d29e6a14616d125"
+  },
+  "records": [
+    {
+      "view": "nominal",
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214",
+      "completed_cases": 96,
+      "functional_passes": 51,
+      "state_counts": {
+        "diagnostic_simulation_completed": 51,
+        "diagnostic_failed": 45
+      },
+      "by_stress": {
+        "nominal": {
+          "diagnostic_simulation_completed": 24
+        },
+        "gain": {
+          "diagnostic_simulation_completed": 6,
+          "diagnostic_failed": 18
+        },
+        "offset": {
+          "diagnostic_simulation_completed": 21,
+          "diagnostic_failed": 3
+        },
+        "gain_offset": {
+          "diagnostic_failed": 24
+        }
+      },
+      "needed_native_points": [],
+      "previous_matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_nominal_1088",
+      "state_transitions": [
+        {
+          "before": "diagnostic_failed",
+          "after": "diagnostic_failed",
+          "cases": 27
+        },
+        {
+          "before": "diagnostic_simulation_completed",
+          "after": "diagnostic_simulation_completed",
+          "cases": 45
+        },
+        {
+          "before": "needs_native_tuning_points",
+          "after": "diagnostic_failed",
+          "cases": 18
+        },
+        {
+          "before": "needs_native_tuning_points",
+          "after": "diagnostic_simulation_completed",
+          "cases": 6
+        }
+      ],
+      "all_inputs_and_case_artifacts_verified": true
+    },
+    {
+      "view": "receiver",
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_receiver_1215",
+      "completed_cases": 96,
+      "functional_passes": 51,
+      "state_counts": {
+        "diagnostic_simulation_completed": 51,
+        "diagnostic_failed": 45
+      },
+      "by_stress": {
+        "nominal": {
+          "diagnostic_simulation_completed": 24
+        },
+        "gain": {
+          "diagnostic_simulation_completed": 6,
+          "diagnostic_failed": 18
+        },
+        "offset": {
+          "diagnostic_simulation_completed": 21,
+          "diagnostic_failed": 3
+        },
+        "gain_offset": {
+          "diagnostic_failed": 24
+        }
+      },
+      "needed_native_points": [],
+      "previous_matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_receiver_1089",
+      "state_transitions": [
+        {
+          "before": "diagnostic_failed",
+          "after": "diagnostic_failed",
+          "cases": 30
+        },
+        {
+          "before": "diagnostic_simulation_completed",
+          "after": "diagnostic_simulation_completed",
+          "cases": 45
+        },
+        {
+          "before": "needs_native_tuning_points",
+          "after": "diagnostic_failed",
+          "cases": 15
+        },
+        {
+          "before": "needs_native_tuning_points",
+          "after": "diagnostic_simulation_completed",
+          "cases": 6
+        }
+      ],
+      "all_inputs_and_case_artifacts_verified": true
+    }
+  ],
+  "gain_pair": [
+    1,
+    2
+  ],
+  "seed_fine": 149,
+  "all_192_cases_completed": true,
+  "all_cases_within_available_lookup": true,
+  "robust_gain_rejected_by_diagnostic_stress": true,
+  "wide_code_stress_applicability_qualified": false,
+  "common_five_corner_gain_selected": false,
+  "release_ready": false
+}
