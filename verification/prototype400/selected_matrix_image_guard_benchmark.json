@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_KI1_KP2_history_nominal_1214/inputs.json": "8bd9982dc8b9134fa107995b5ddd681e65cbe9453058012e8422b19b731e6252",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/pinned_image_guard.py": "6a17a321830eda481e4cf4539a7c3c6b0fbb27d7ba0b2a50ac1c396e07365213",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_frequency_stress_matrix_v4.py": "e4995df760f11449d331db9f9ede7e61bf702df217e45d14b72deda065fef7e1"
+  },
+  "ordinary_full_pin_check_s": 3.3796551080886275,
+  "initial_full_guard_check_s": 2.508671433897689,
+  "unchanged_image_checks_s": [
+    0.0008967120666056871,
+    0.0009179119952023029,
+    0.000890339957550168
+  ],
+  "final_full_guard_check_s": 2.542448264081031,
+  "full_image_hash_checks": 2,
+  "metadata_hits": 3,
+  "scope": "pin-validation cost only, not simulation speedup",
+  "running_jobs_modified": false,
+  "release_ready": false
+}
