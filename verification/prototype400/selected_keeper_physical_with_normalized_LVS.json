@@ -1,0 +1,137 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/input_manifest.json": "095d7f6fd63e8fe1d0faa687a8a01cd1a9a97a599d3b95ede10726bb3c637a9a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/status.json": "573026a261ad87c8e16e8c13d24f1eef471cebc67621e08446c621ac8f4d355b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/config.json": "4c374579a772cc24fa91259934d4d6e7290c1ca3017efe884f29781f3de8cb65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/final/metrics.json": "fba1464d05e56d9458f9b0eddb26bcde05184eace5e0e7b2cf152d6e054a7fed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_selected_keeper_physical.py": "8039410b436569de93c550e236c098e993aaf2f5affd963554fabac3d3862ffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/58-netgen-lvs/reports/lvs.netgen.rpt": "9d9cec1f42ef40f727b56357c327e72011dd6ec510e1f2aae2075aa73c15d800",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/58-netgen-lvs/reports/lvs.netgen.json": "454ea0c55af04a7ee65c64dcf2088cb72b89a0996df173f32d727c7822e5868d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/final/gds/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.gds": "118e71662f86d29079508465fe11325e0ea0c569b1e9bdbeaccfd7a0969e6f38",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/sky130_fd_sc_hs__inv_2.gds": "037a77dcd1db1b5407c400b909f7846328ec3c6161d601bfd7571dda45511c35",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/normalize_selected_keeper_body_aliases_v2.py": "070add46b7d84df3c6592125da5625fe58986d4461b1b1d55a8267fd16f1f122",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/runs/gds_lvs/03-netgen-lvs/_env.tcl": "520495a3eb644200f63bb2067b81d63ac01148d9553e157658fe6f300d6f07d5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prepare_prototype_analog_reference.py": "08a9443bb0a251c970d65497e47e1c093964ba21a092b50e0dc67805e6d636db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_prototype_full_C_wire_R_v2.py": "9879886ff2d72859dfdbb5a049a556f0c13fbc3d3da81dce86b871861fb814b5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/inputs.json": "e2a57ccdbcf49903789faf463b320c7534c4a23ec54c09703e789564ba0f1b5e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/runs/gds_lvs/01-magic-spiceextraction/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.spice": "8fcca01ed395625460b5cfddfac528d2e48b4f2d9068195aeae745166d4822c1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/runs/gds_lvs/03-netgen-lvs/lvs_script.lvs": "f84545028ec5c2f4958a01d2d5000f2aa2683bec255e9f605f9b5ab002a236e2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_body_alias_LVS_1116/alias_flattened.spice": "0ea8d2d1d78ccf6eb3b95b52b2c5dbaaf6cd9ce7900a892743a5b180f9f119e1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_body_alias_LVS_1116/compare.tcl": "a7f7417c32ca66174a0b2c1fd277669d7e0bb76d47beb3da745f180f54b8f235",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/replay_selected_keeper_GDS_lvs.py": "8987d5451c76a51ab21f9b45aec9ef9866d09db2d81207331c9e812a0f6c80ef",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/56-magic-spiceextraction/state_in.json": "29083ce15c10dcbf79aca16d124232d7a3e559eaf05ac06971de5fb6e7e93792",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.cdl": "0692a74e7f5f67386218ae6a1d1fbdeaec14abada7607b9ed6636c3d000a939b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/hs_reference.spice": "459ab9ecaee59ca6bc132e5ef48037827ff44d15a9bd2441ae9a6562f2a1f6b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/config.json": "834f864968ddd5a28d631777731334da4c0e0b6d2a3340046012bedf0d703e4b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/48-klayout-streamout/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.gds": "118e71662f86d29079508465fe11325e0ea0c569b1e9bdbeaccfd7a0969e6f38",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/45-openroad-fillinsertion/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.pnl.v": "4e2101148043dbcf5bbbbf9c5eaa89913bad288b2a4f2269ae74ef4f3bedc927",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_extraction_followup_1113/physical_audit/assessment.json": "27c6884eb6ab48d6e0b1162f1c2ecc54e1afd27ad591d0548741b461d30a5937",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_body_alias_LVS_1116/assessment.json": "0fb91f4f7b18f852bf972773cdeeec5fe5f865860211ebc30d762d5e71859b61",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/accept_selected_keeper_normalized_lvs.py": "4aa41ef181607782e9ef6e7a2b02480503aa1731366bdde75a40b37a17bec1d6"
+  },
+  "source_input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_selected_keeper_ground_access_v3.py": "acdf71dbf45f59c0a032b70c501660379813839ef27a14fc28ae71f7fec4825d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.gds": "ce09a04d97ed626d23d688cc20529b522cb35b36b7993a20e77230aeb926ede1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/ground_access.json": "72ba814bf6cb606e19723d349ed40619ca5a8e40c28a7a450821cbe8b960ff87",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_history_keeper_route_v9.py": "e64096ac49f8110f8bba5d8d33d55def5c5779718cee80968d5a976d5c1a19e9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/prototype400/selected_history_keeper_RTL_candidate.json": "ad4e72d8ed15f389bf8ca301dc5b344bbcb7ecec650a0fc43c95eb14d7b38a2e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/sky130/candidates/history_keeper_v1/dco_history_keeper.v": "cb82fc570ecb1e39dd924f724b1b569cf425bbc44c11ea36f456443cee142c34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.lef": "b39366d8860f34cf7bce47750e6f8da1e97e9339ca19c1288d74aa9908593c43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/sky130_fd_sc_hs__inv_2.gds": "037a77dcd1db1b5407c400b909f7846328ec3c6161d601bfd7571dda45511c35",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/sky130_fd_sc_hs__inv_2.lef": "bb3d9d0409a9d567b2c355574b1552b310afe20a8fc15c39163101937819ef65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/cells.v": "690b3238ffe08173f8847be4f9254d26b759132442ebad967718988203a4cb2d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/hs_macro.v": "e386248ceb0c7671657ad95438226707eab2c5763fe9aff85bf9a88d3592ce10",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_history_keeper_pdn.tcl": "aa776e37b682061ea44f6877446f726ad525ee5fca107e82d59be9df0df3d24d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.ref/sky130_fd_sc_hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib": "a2fe67002819d7538f53c557ab2dc0fb4fd4c0bd461f5b07f638ac1534c0a293",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.cdl": "0692a74e7f5f67386218ae6a1d1fbdeaec14abada7607b9ed6636c3d000a939b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/dco_history_keeper.v": "cb82fc570ecb1e39dd924f724b1b569cf425bbc44c11ea36f456443cee142c34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/config.json": "4c374579a772cc24fa91259934d4d6e7290c1ca3017efe884f29781f3de8cb65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_DCO_fine_grain_high_candidate_001/config/config.json": "ee63066ac7eb7a1034c0ace4fe24f5fa5f57d2aa5849d979afb105b41704823e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_DCO_fine_grain_high_candidate_001/config/cells.v": "d1f07d5d75b48e9e8e3fa88b5d3a89b675135d3d8f7dd99ca834d70a83928539",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/no_clock.sdc": "0248fec0f910ce67e1708545767733ac9b6af553de1091c5778d30b929190d8e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/pin_order.cfg": "a0feb4d43d702fc6dd5ad31c2dd4ffd7e5aea407320d4aaab2d003d38734e761",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_pdn_1107/assessment.json": "8f34b68678e0b1e89c14a28e390c8520c4870f84e7df5860fa2158c6719fb0dd"
+  },
+  "checks": {
+    "design__power_grid_violation__count": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "route__drc_errors": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "magic__drc_error__count": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "klayout__drc_error__count": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "antenna__violating__nets": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "route__antenna_violation__count": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "macro_geometry": {
+      "cells": [
+        {
+          "name": "sky130_fd_sc_hs__inv_2",
+          "source_geometry_matches": true,
+          "different_layers": [],
+          "nonempty": true,
+          "instances": 4,
+          "expected_instances": 4,
+          "pass_check": true
+        }
+      ],
+      "pass_check": true
+    },
+    "exact_alias_normalized_GDS_LVS": {
+      "pass_check": true,
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_body_alias_LVS_1116/assessment.json",
+      "original_native_LVS_preserved": true
+    }
+  },
+  "original_LVS_diagnostics": {
+    "native_LVS": {
+      "unique_match": false,
+      "all_records_without_discrepancies": false,
+      "pass_check": false
+    },
+    "design__lvs_error__count": {
+      "observed": 303,
+      "pass_check": false
+    }
+  },
+  "alias_proof": {
+    "exact_zero_resistor_witnesses": [
+      "R0 VPB VPWR 0.000000",
+      "R1 VNB VGND 0.000000"
+    ],
+    "HS_instances": [
+      "Xsky130_fd_sc_hs__inv_2_0",
+      "Xsky130_fd_sc_hs__inv_2_1",
+      "Xsky130_fd_sc_hs__inv_2_2",
+      "Xsky130_fd_sc_hs__inv_2_3"
+    ],
+    "expanded_MOS_count": 16,
+    "changed_other_instance_arguments": [],
+    "top_port_order_unchanged": true,
+    "original_four_MOS_per_cell_and_parameters_preserved": true,
+    "geometry_unchanged": true
+  },
+  "candidate_physical_checks_pass": true,
+  "extraction_allowed": true,
+  "full_parent_qualified": false,
+  "timing_corners_qualified": false,
+  "analog_qualified": false,
+  "selected": false,
+  "release_ready": false
+}
