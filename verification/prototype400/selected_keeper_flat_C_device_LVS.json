@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_audit_1203/assessment.json": "902092494bfb75f610f07601118997a1e3df94297fadf4e23a45e198d4e924b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_active_selectors_1204/assessment.json": "901b68627f107334284a4ff7e846a689f3072d640a4ef912735a128023a93df1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_filled_parent_alias_LVS_1146/assessment.json": "e15f3a01c537f725640a16da0f78ad580db3dde6a35a376e91ef792a2d5c5c8f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_filled_parent_alias_LVS_1146/compare.tcl": "1954b31608675074dd77f34d223285df25b19e8460cecce098bb982ebca3e26b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_C_device_LVS_1205/devices_only.spice": "0ee6a254d04eb49c19f20f5bf170b3bd1a11e160f4524eaf1f69b899de1f3f2c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_C_device_LVS_1205/compare.tcl": "20c84174b1e96ec755b9da45291f923ea63b823066cb273592f1ac6cee3a8c2e",
+    "/nix/store/kw3frc6fbv3zi2m9n0wv93y1nfiyjiy6-netgen-1.5.316/bin/netgen": "ee0e49db5f9c1804ae3404f37bef23bb0facb6f7aa99dc05e3c5780f8abe41cf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_keeper_flat_C_LVS.py": "89cd8a082bac253dbbf6488a4df479661fede788b3a0416bf370107f996cd4a3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_hierarchical_capacitance.py": "19b97e8bb8241d14c814e16ae71e988f0c04222bc82bb6b72f9043b520418028"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_C_device_LVS_1205/devices_only.spice": "0ee6a254d04eb49c19f20f5bf170b3bd1a11e160f4524eaf1f69b899de1f3f2c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_C_device_LVS_1205/compare.tcl": "20c84174b1e96ec755b9da45291f923ea63b823066cb273592f1ac6cee3a8c2e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_C_device_LVS_1205/native.log": "955743d890f1ef9d39e4334310b05da10b62950cbcd2135fd1938dae06c11900",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_C_device_LVS_1205/compare.log": "37ed4e20b0f4dd41e38e2cfa9060844818fa270625fff27325a88d0761abb7e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_C_device_LVS_1205/compare.json": "087be5e5d62b5b2f2c71a0605de951308ead38fb3938e73cc211579f6eaedd32"
+  },
+  "unique_device_LVS_match": true,
+  "all_records_without_discrepancies": true,
+  "capacitor_cards_removed_for_topology_only": 1364255,
+  "original_capacitance_file_unchanged": true,
+  "capacitance_equivalence_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}
