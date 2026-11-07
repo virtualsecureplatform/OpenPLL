@@ -1,0 +1,70 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/replay_selected_keeper_parent_alias_lvs.py": "16774b75d8d34d1303037413eeefebbd93feb72275f91e89e43da7d8feb5439a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/replay_prototype_parent_port_alias_lvs.py": "6ae683b5ae92ddb4310ab891a9db5521a7bf74b25828ad9e2e2ebb61f44f09fa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_LVS_1131/assessment.json": "bacfaa92b646ef9f94ce33afaa2831e6827eeb9d9d036949979ca0740a35e240",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_DRC_1130/assessment.json": "caf75cf4ab3bd2eeec7a09d411b650c400019a43215a5a72b76a1bf211ef1dcf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_LVS_1131/assembly_alias_flattened.spice": "cecd39abde7e53459605d02f5ba26b7051c31aefad7eabc7de6504294c7b6d6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_LVS_1131/compare.tcl": "c496c08ba274eeda793115e23026ae6f3743c7b7c173336aa9ff13583b137c0f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_alias_LVS_1133/assembly_parent_alias_normalized.spice": "9aceec10ff2f6fc4ed1633e8e2ac63172c771b520b6b30360b159cbad90e73a5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_alias_LVS_1133/compare.tcl": "50ab870910e3a12666bd47e2c7823ea82ab153a08b3f13cfff91ee4aa60302bb",
+    "/nix/store/kw3frc6fbv3zi2m9n0wv93y1nfiyjiy6-netgen-1.5.316/bin/netgen": "ee0e49db5f9c1804ae3404f37bef23bb0facb6f7aa99dc05e3c5780f8abe41cf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/signoff/sky130_fd_sc_hs.canonical.spice": "ef2ae0fd94ebe95b744e3c3c282f00881c5664169cff0b465de98d4f9c67a53d",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice": "6dec6626decd1ee15afacafab9925b1a336ab344b7b5e1bec9d7483f2a6badc3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/signoff/powered.v": "a6804e272d89c377e6d4b2966e1a253c1ade47c5858756f5987e51a2a766bd61",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/45-openroad-fillinsertion/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.pnl.v": "4e2101148043dbcf5bbbbf9c5eaa89913bad288b2a4f2269ae74ef4f3bedc927",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing400/release_001/bbpd_internal_antenna_001/powered.v": "8ad65f7123e39a6f36dd411f307d9bdb902f420e910e17afe2887d904e55e187",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_parent_route_019/powered.v": "2e933b498b74998ab8d94fa340a72b7d049f101e505e96d677d70964d0823c75",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl": "7a33f3f54fab57a9d9b0887ac7b7b64ce6c454110e8b7f01f3cfb90a1282dc94"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_alias_LVS_1133/assembly_parent_alias_normalized.spice": "9aceec10ff2f6fc4ed1633e8e2ac63172c771b520b6b30360b159cbad90e73a5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_alias_LVS_1133/compare.tcl": "50ab870910e3a12666bd47e2c7823ea82ab153a08b3f13cfff91ee4aa60302bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_alias_LVS_1133/native.log": "802e90c3d95c97ef4f1787914a8c004b523995e6051f255c99ac9e3481eca64a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_alias_LVS_1133/compare.log": "20515c3319fdef4a8d316d5f3df28e49b5c61e69813b0ceb3acdbfdc9e4286d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_alias_LVS_1133/compare.json": "1b39302f3277613a59b94220aa199ed4ea0666aaadaf7b2c0b062d61a2e8b384"
+  },
+  "exact_parent_alias_proof": {
+    "exact_zero_R_witnesses": [
+      "R0 TRACKING BBPD_RESET_N 0.000000"
+    ],
+    "alias_instances": [
+      {
+        "instance": "XIntegerPLL_ProgrammedCore_0",
+        "parent_nodes": [
+          "TRACKING",
+          "IntegerPLL_BBPD_0/RESET_N"
+        ],
+        "child_ports": [
+          "TRACKING",
+          "BBPD_RESET_N"
+        ]
+      }
+    ],
+    "changed_parent_arguments": [
+      {
+        "instance": "XIntegerPLL_BBPD_0",
+        "argument": 5,
+        "old": "IntegerPLL_BBPD_0/RESET_N",
+        "new": "TRACKING"
+      },
+      {
+        "instance": "XIntegerPLL_ProgrammedCore_0",
+        "argument": 25,
+        "old": "IntegerPLL_BBPD_0/RESET_N",
+        "new": "TRACKING"
+      }
+    ],
+    "child_geometry_and_netlist_unchanged": true,
+    "top_external_port_list_unchanged": true,
+    "substitution_justified_only_by_exact_child_port_short": true
+  },
+  "all_three_macros_expanded": true,
+  "parent_LVS_match": false,
+  "all_records_without_discrepancies": false,
+  "unfilled_parent_DRC_pass": true,
+  "fill_regeneration_required": true,
+  "antenna_density_power_and_analog_qualified": false,
+  "selected": false,
+  "release_ready": false
+}

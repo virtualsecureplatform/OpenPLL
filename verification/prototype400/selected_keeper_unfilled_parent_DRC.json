@@ -1,0 +1,18 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_keeper_parent_DRC_v2.py": "8e99b691df7e04939d59ec17de89e4382a65dc295e89a5a61f1986a2b99aab78",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_without_stale_fill_1129/assessment.json": "13f9ccc27ce12e854d0fc2732d1c042a908d73995f749ca08df694e55c7c8151",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_without_stale_fill_1129/assembly.gds": "e7bf8a1bbcfff25b34b3bc1e38cf678cfb655f2cd8b8cef4917bb18e3f86b29a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_DRC_1130/drc.tcl": "5c579fa9f3a7cf8af25940fe8c06362e2073b96c911f3189f66accdb95a656f4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_DRC_1130/drc_errors.rpt": "86f90026d90bc62cea2b07c19964fca92703c1a4246e50eb118bf179cfd97225",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_unfilled_parent_DRC_1130/native.log": "36b682c14d3b4d240ce24f3f451f87fb7c40a9d15fee1852906b936e2a2f5026"
+  },
+  "Magic_full_flat_DRC_rectangles": 0,
+  "Magic_full_flat_DRC_pass": true,
+  "parent_LVS_antenna_density_power_and_model_qualified": false,
+  "selected": false,
+  "release_ready": false
+}

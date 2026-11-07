@@ -36,7 +36,7 @@
     "release_ready": false
   },
   "stale_fill_retained_DRC_rectangles": 50193,
-  "stale_fill_collision_hypothesis_confirmed": false,
+  "stale_fill_collision_hypothesis_confirmed": true,
   "followup_DRC_path": "build/signoff400/selected_keeper_unfilled_parent_DRC_1130",
   "followup_DRC_status_at_publication": {
     "state": "keeper_parent_flat_DRC_assessed",
@@ -44,5 +44,18 @@
   },
   "density_fill_regeneration_required": true,
   "selected": false,
-  "release_ready": false
+  "release_ready": false,
+  "followup_DRC_completed": true,
+  "DRC_without_stale_fill_rectangles": 0,
+  "parent_route_reuse_rejected_by_LVS": true,
+  "parent_control_shorts": [
+    [
+      91,
+      97
+    ],
+    [
+      93,
+      96
+    ]
+  ]
 }
