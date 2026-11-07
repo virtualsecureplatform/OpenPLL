@@ -2,7 +2,8 @@
   "input_sha256": {
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_TT_fine133_receiver_frame_1016/assessment.json": "cc23c131d77857ae29f4ba0a46dbf77c1aa456cd8e7cf90ad23a12c828c95db4",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_sender_clock_frame_controls_1017/assessment.json": "bc4fe947abba64fa6428920a979704b96104c53c4556251dacebb94fd32fde40",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_selected_full_sender_clock_frame.py": "28596bebdbefb49e1a8afe3be2f495e580368ac49f09e42068cd3114408d7f97"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_selected_full_sender_clock_frame.py": "28596bebdbefb49e1a8afe3be2f495e580368ac49f09e42068cd3114408d7f97",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_clock_frame_quantization_control_1019/assessment.json": "d37a5095ab01ef1165886d55808719fa6a8098d664ff15b3b84970623a65285a"
   },
   "TT_fine133": {
     "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_TT_fine133_receiver_frame_1016/assessment.json",
@@ -16,7 +17,21 @@
       "median": 249.62276857985444,
       "maximum": 249.63302490081674
     },
-    "same_full_native_root_and_receiver_source": true
+    "same_full_native_root_and_receiver_source": true,
+    "existing_frame_comparison": {
+      "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_clock_frame_quantization_control_1019/assessment.json",
+      "new_composition": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_fine133_root_publication_1018",
+      "clock_transport_difference_ps": 0.0003774269963230381,
+      "all_four_runtime_delays_equal": true,
+      "resolved_delays_ps": {
+        "up_fall": 205,
+        "dn_fall": 207,
+        "up_rise": 217,
+        "dn_rise": 224
+      },
+      "RTL_identical_except_four_publication_delay_literals": true,
+      "new_mixed_signal_matrix_executed": false
+    }
   },
   "controls": [
     {
