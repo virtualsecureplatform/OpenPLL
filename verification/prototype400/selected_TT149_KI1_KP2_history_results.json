@@ -1,0 +1,91 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_nominal_1088/assessment.json": "72a30c28dac5a4cbd25cf549692b365a2a5349ec27d6f048a1561a85e29eeb1a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_receiver_1089/assessment.json": "eb28aedf3d0e0de20cbe9c7ba292b779c5e06a6c75a903e15d3d516c14593f39"
+  },
+  "gain_pair": [
+    1,
+    2
+  ],
+  "seed_fine": 149,
+  "records": [
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_nominal_1088",
+      "completed_cases": 96,
+      "functional_passes": 45,
+      "state_counts": {
+        "diagnostic_simulation_completed": 45,
+        "needs_native_tuning_points": 24,
+        "diagnostic_failed": 27
+      },
+      "by_stress": {
+        "nominal": {
+          "diagnostic_simulation_completed": 24
+        },
+        "gain": {
+          "needs_native_tuning_points": 18,
+          "diagnostic_failed": 6
+        },
+        "offset": {
+          "diagnostic_simulation_completed": 21,
+          "diagnostic_failed": 3
+        },
+        "gain_offset": {
+          "needs_native_tuning_points": 6,
+          "diagnostic_failed": 18
+        }
+      },
+      "needed_native_points": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ],
+      "all_input_and_case_artifact_hashes_verified": true
+    },
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_receiver_1089",
+      "completed_cases": 96,
+      "functional_passes": 45,
+      "state_counts": {
+        "diagnostic_simulation_completed": 45,
+        "needs_native_tuning_points": 21,
+        "diagnostic_failed": 30
+      },
+      "by_stress": {
+        "nominal": {
+          "diagnostic_simulation_completed": 24
+        },
+        "gain": {
+          "needs_native_tuning_points": 18,
+          "diagnostic_failed": 6
+        },
+        "offset": {
+          "diagnostic_simulation_completed": 21,
+          "diagnostic_failed": 3
+        },
+        "gain_offset": {
+          "diagnostic_failed": 21,
+          "needs_native_tuning_points": 3
+        }
+      },
+      "needed_native_points": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ],
+      "all_input_and_case_artifact_hashes_verified": true
+    }
+  ],
+  "total_cases_assessed": 192,
+  "total_functional_passes": 90,
+  "total_controller_failures": 57,
+  "total_missing_coverage": 45,
+  "new_native_cases": 0,
+  "nominal_matrices_previously_passed": true,
+  "history_stress_robustness_demonstrated": false,
+  "minimum_or_common_gain_selected": false,
+  "wide_code_stress_applicability_qualified": false,
+  "release_ready": false
+}
