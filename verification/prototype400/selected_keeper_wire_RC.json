@@ -1,0 +1,59 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/collect_selected_keeper_wire_rc.py": "73a335494dc0ee9d85214711a0b41186104fcdb7a6348fb3d69a7724a07002a5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prototype_spef_v2.py": "be9d14da339acea181adf0a2863fde3a3e98e99e8811d6a4e77073febf2da2a0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_physical_with_normalized_LVS_1117/assessment.json": "4bbf8c1c477e03a5845fa5904d4ecbead85ad1f578d0cd6c7e9f7b82297b86ae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/47-openroad-rcx/state_in.json": "d6823aaaca7140762677dfa954efc12b610397b3d63ff8cdbc49b3d6353422a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/47-openroad-rcx/config.json": "169f96c864d7029beebf3f2734d7068ef6df4c0898498fc7ae9acea34f4ede09",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/46-odb-cellfrequencytables/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.odb": "3a04768c7bc341ce36a6163d5486be65994c9f62476d66f5b74c72c02a17ea30",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/final/gds/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.gds": "118e71662f86d29079508465fe11325e0ea0c569b1e9bdbeaccfd7a0969e6f38",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/47-openroad-rcx/nom/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.nom.spef": "129f96841f2fa4598e047567615a4e482985aa8530994385b6868ba45c8f1a4a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/47-openroad-rcx/nom/rcx.log": "e6c237614c0d9de0951c46a1a4d6b5be8dd354c70f378aa5d6f2b3cef61ce0c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/47-openroad-rcx/min/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.min.spef": "f22f0e75f260bba1b516427c1b02fefc95093699c6712e2a399a0a736a5da062",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/47-openroad-rcx/min/rcx.log": "9b0c0f49480e1964737cb66e4369b9e67e37589c74f7089b1ea9114196a1682e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/47-openroad-rcx/max/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.max.spef": "0ca5d0e524a3317461d4dbeca76ba80baa8d1e82c5e39b2d50c8ac7a62443b17",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/47-openroad-rcx/max/rcx.log": "fd2a3d488e5b71e1e4a0f36d8a6193de589787e94ce17e07b83b75bd61dedabf"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/nom.json": "3fd0bcf21902a12fb714a19da913bc50294c1c149d7be08b57e636b055ac7c38",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/min.json": "4994bad4a754a36fa06da0648f1b34959400f243a0cae50e1d57c09f155ff431",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/max.json": "eee37241445543bf70c5c239f777dd69d8657b61e9fe8293ac7974e14b9709bb"
+  },
+  "results": [
+    {
+      "corner": "nom",
+      "nets": 364,
+      "connections": 1826,
+      "resistors": 2532,
+      "capacitors": 9656,
+      "zero_resistors": 0,
+      "pin_capacitance_excluded": true
+    },
+    {
+      "corner": "min",
+      "nets": 364,
+      "connections": 1826,
+      "resistors": 2525,
+      "capacitors": 9645,
+      "zero_resistors": 0,
+      "pin_capacitance_excluded": true
+    },
+    {
+      "corner": "max",
+      "nets": 364,
+      "connections": 1826,
+      "resistors": 2821,
+      "capacitors": 9979,
+      "zero_resistors": 0,
+      "pin_capacitance_excluded": true
+    }
+  ],
+  "completed_same_route_RCX_views_collected": true,
+  "exact_SPEF_units_and_values_parsed": true,
+  "RC_pin_binding_complete": false,
+  "capacitance_combination_validated": false,
+  "cell_internal_resistance_included": false,
+  "parent_loading_complete": false,
+  "selected": false,
+  "release_ready": false
+}

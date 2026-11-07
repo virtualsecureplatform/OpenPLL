@@ -1,0 +1,36 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_1118/assessment.json": "1ef4b3dc8109f4f1b79b94a6fd002df8b9bac93bc93b68b14b046949e110f4e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_1118/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160/capacitance.spice": "701f3049e676f23ed908fd7182795aad3b7ca12f5b846bbf4df7516e9457f5e2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_selected_keeper_capacitance.py": "dcec6aa1bf7e910a0ccd9731012e5383e8e10affd23f8bcbbece9d2068b9fd4d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_prototype_full_C_wire_R_v5.py": "a79c3f8f031a6df9bca8d2be3076d7bf0bb996c128f84971fc00deb0618db755",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_prototype_capacitance_paths.py": "2761cb564ef52bf8a0f8fd46e0d576524b7a76a0cefcb85c0f0ec630eecf3f86",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/project_prototype_fixed_rail_C_v2.py": "cb1a746247c800778b1eb2245b8376d2eb37694cca9706daf45f0df5c15413a1"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_passivity_1119/full.pairs.jsonl": "6c75061f09a858c6713d4e66f2e3168c586fb51b01c9b39980bdb8a740f5154c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_passivity_1119/full.proof.json": "aef407b0f3a4d2dfca14161561808c337cad2c5faf751a53b01dd49a60118a47",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_passivity_1119/ideal_supply.pairs.jsonl": "1170420f0eb2d0aea0452c01ac9476ed9021100711444d00bd9590901c154449",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_passivity_1119/ideal_supply.proof.json": "ebcac30ae74dc2bf00a94fe7026c72f803eef7af833231351f1fda1881bd21e4"
+  },
+  "top": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160",
+  "expanded_devices": 4098,
+  "full_capacitor_pairs": 20266,
+  "projected_capacitor_pairs": 17472,
+  "full_network_passivity_certified": false,
+  "ideal_supply_passivity_certified": true,
+  "fixed_voltage_nodes": [
+    "0",
+    "VGND",
+    "VNB",
+    "VPB",
+    "VPWR"
+  ],
+  "ideal_constant_supply_assumption": true,
+  "full_capacitances_modified": false,
+  "wire_resistance_complete": false,
+  "parent_loading_complete": false,
+  "native_transient_qualified": false,
+  "selected": false,
+  "release_ready": false
+}
