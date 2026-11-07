@@ -5,7 +5,9 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_selected_full_sender_clock_frame.py": "28596bebdbefb49e1a8afe3be2f495e580368ac49f09e42068cd3114408d7f97",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_clock_frame_quantization_control_1019/assessment.json": "d37a5095ab01ef1165886d55808719fa6a8098d664ff15b3b84970623a65285a",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_full_sender_clock_frames.py": "f9d0a751dcebff3e46f728d715c60b450b96e692f8886e94951240c41eb55d79",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_matching_corner_receiver_frames_1022/inputs.json": "203edd342262b4858553deb1f33655f50e4bc00247e82739f96c001f710a8117"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_matching_corner_receiver_frames_1022/inputs.json": "203edd342262b4858553deb1f33655f50e4bc00247e82739f96c001f710a8117",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_selected_corner_root_publication_detector.py": "4f2d78fc3961a26c61277e58104a253266503aa7221d8bb4d91cf48cbf51fd9a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corner_composition_controls_1024/assessment.json": "da52127b0d4394d4bdb3e61f06d13f2c86e2fff4686f0e8afd8209996197f2e4"
   },
   "TT_fine133": {
     "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_TT_fine133_receiver_frame_1016/assessment.json",
@@ -75,5 +77,17 @@
     "normal_completion_observed": false,
     "second_receiver_clock_measured": false,
     "clock_timing_qualified": false
+  },
+  "same_corner_composition_builder": {
+    "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_selected_corner_root_publication_detector.py",
+    "controls": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corner_composition_controls_1024/assessment.json",
+    "TT_positive_control_byte_identical": true,
+    "negative_controls_passed": 2,
+    "requires_matching_raw_publication_and_frame_corners": true,
+    "requires_same_physical_model": true,
+    "requires_source_bound_native_clock_frame": true,
+    "non_TT_positive_compositions_pending": true,
+    "raw_model_excitation_qualification_transferred_from_frame": false,
+    "native_interface_qualified": false
   }
 }
