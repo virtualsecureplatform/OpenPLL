@@ -35,7 +35,8 @@
       "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1096",
       "input_manifest_sha256": "298f98b0155820dc8c5597ce9b7a8a456c738bf7161d0f670ab9c7f2682899d2",
       "state_at_publication": {
-        "state": "keeper_macro_route_running",
+        "state": "stopped_without_promotion",
+        "reason": "RuntimeError('compiled worker failed (2): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1096/route.log')",
         "release_ready": false
       }
     },
@@ -43,16 +44,34 @@
       "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1097",
       "input_manifest_sha256": "c633f6d0ee7804976a24e6022e4e7f152f9ab0a410d31a0dc1b1b415669e0179",
       "state_at_publication": {
-        "state": "waiting_for_prior_keeper_route",
+        "state": "stopped_without_promotion",
+        "reason": "RuntimeError('compiled worker failed (2): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1097/route.log')",
+        "release_ready": false
+      }
+    },
+    "1102": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_ground_access_pdn_1102",
+      "input_manifest_sha256": "896a183e6a2a4f7eca9e5042a591f55ca23a71e6191b7cc5a7740e42047aadc6",
+      "state_at_publication": {
+        "state": "keeper_PDN_assessed",
+        "release_ready": false
+      }
+    },
+    "1104": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_ground_access_route_1104",
+      "input_manifest_sha256": "52872c510f6bc066c9c3907c1e19a03d9fa9486e297b2ef0645075cd5896e7ac",
+      "state_at_publication": {
+        "state": "keeper_macro_route_running",
         "release_ready": false
       }
     }
   },
   "known_limitations": [
-    "1096 has proven missing met1-to-met4 vias and disconnected rails",
-    "1097 power-grid connectivity remains unverified",
+    "1096 and 1097 failed physical checks; receipts retained",
+    "1102 local-ground-extension candidate passes PDN connectivity only",
+    "1104 full physical route is pending",
     "HS TT timing view does not qualify release corners",
-    "final DRC LVS antenna and extracted analog qualification pending"
+    "New ground metal requires parasitic extraction and analog requalification"
   ],
   "run1096_power_grid_disconnected": true,
   "run1097_changes": {

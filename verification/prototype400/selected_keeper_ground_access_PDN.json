@@ -1,0 +1,149 @@
+{
+  "pdn": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_selected_keeper_ground_access.py": "51b2914e15f13bb8879125cf522473dcf3ef9470345acd8ced3d307085554f53",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.gds": "ce09a04d97ed626d23d688cc20529b522cb35b36b7993a20e77230aeb926ede1",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_ground_access_pdn_1102/config/ground_access.json": "d32caf7df03d39cd92614d6665b75e8abb65f28eb66dde03c39ceb1a5bb6a1d4",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_history_keeper_route_v6.py": "0761090b368da2c78838c1a84b5affdcf77b6f67a3cb02cc612bfdc3ca062b36",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/prototype400/selected_history_keeper_RTL_candidate.json": "ad4e72d8ed15f389bf8ca301dc5b344bbcb7ecec650a0fc43c95eb14d7b38a2e",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/sky130/candidates/history_keeper_v1/dco_history_keeper.v": "cb82fc570ecb1e39dd924f724b1b569cf425bbc44c11ea36f456443cee142c34",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.lef": "b39366d8860f34cf7bce47750e6f8da1e97e9339ca19c1288d74aa9908593c43",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_ground_access_pdn_1102/config/sky130_fd_sc_hs__inv_2.gds": "cb4c07aad188c2531409738a50b07e9f6f8e4f77b5d9e09c0abc257d97796ccc",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_ground_access_pdn_1102/config/sky130_fd_sc_hs__inv_2.lef": "625aaaf11f5bd48540bcdbe5436cae1ef932cfb4e7b26acff7f91d26491a42de",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_ground_access_pdn_1102/config/cells.v": "690b3238ffe08173f8847be4f9254d26b759132442ebad967718988203a4cb2d",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_ground_access_pdn_1102/config/hs_macro.v": "e386248ceb0c7671657ad95438226707eab2c5763fe9aff85bf9a88d3592ce10",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_history_keeper_pdn.tcl": "aa776e37b682061ea44f6877446f726ad525ee5fca107e82d59be9df0df3d24d",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.ref/sky130_fd_sc_hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib": "a2fe67002819d7538f53c557ab2dc0fb4fd4c0bd461f5b07f638ac1534c0a293",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.cdl": "0692a74e7f5f67386218ae6a1d1fbdeaec14abada7607b9ed6636c3d000a939b",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_ground_access_pdn_1102/config/dco_history_keeper.v": "cb82fc570ecb1e39dd924f724b1b569cf425bbc44c11ea36f456443cee142c34",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_ground_access_pdn_1102/config/config.json": "6a12bd41cd238c0125c93df6b22adf7bc448d9e436f39fc90c8fb3ff274f843b",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_DCO_fine_grain_high_candidate_001/config/config.json": "ee63066ac7eb7a1034c0ace4fe24f5fa5f57d2aa5849d979afb105b41704823e",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_DCO_fine_grain_high_candidate_001/config/cells.v": "d1f07d5d75b48e9e8e3fa88b5d3a89b675135d3d8f7dd99ca834d70a83928539",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_ground_access_pdn_1102/config/no_clock.sdc": "0248fec0f910ce67e1708545767733ac9b6af553de1091c5778d30b929190d8e",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_ground_access_pdn_1102/config/pin_order.cfg": "a0feb4d43d702fc6dd5ad31c2dd4ffd7e5aea407320d4aaab2d003d38734e761"
+    },
+    "pdn_connectivity_warnings": [],
+    "pdn_connectivity_pass": true,
+    "physical_signoff_independently_checked": false,
+    "release_ready": false
+  },
+  "corrected_geometry": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_selected_keeper_ground_access_v2.py": "cf29fa8db8e7b991f0dad3be819e6fd96f70a59fa503fd9e52390d1a4e0ff9ed",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.lef": "b39366d8860f34cf7bce47750e6f8da1e97e9339ca19c1288d74aa9908593c43",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.gds": "ce09a04d97ed626d23d688cc20529b522cb35b36b7993a20e77230aeb926ede1"
+    },
+    "artifacts": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_access_geometry_1103/sky130_fd_sc_hs__inv_2.lef": "625aaaf11f5bd48540bcdbe5436cae1ef932cfb4e7b26acff7f91d26491a42de",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_access_geometry_1103/sky130_fd_sc_hs__inv_2.gds": "f08775701195f2d2ee5167157b2ed319a492d9842c27b078db93fb4700b7865f"
+    },
+    "added_met1_area_um2": 1.4993999999999998,
+    "ground_extension_um": [
+      0,
+      -0.245,
+      4.5,
+      0.245
+    ],
+    "macro_width_um": 4.8,
+    "source_transistors_unchanged": true,
+    "new_parasitics_require_extraction": true,
+    "release_ready": false
+  },
+  "geometry_replay_layer_comparison": [
+    {
+      "layer": "95/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "125/44",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "94/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "93/44",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "68/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "67/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "66/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "65/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "83/44",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "64/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "81/4",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "67/44",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "66/44",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "68/5",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "67/5",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "64/5",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "64/59",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "236/0",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "122/16",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "68/16",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "67/16",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "64/16",
+      "xor_area_dbu2": 0
+    }
+  ],
+  "first_helper_area_receipt_incorrect": true,
+  "corrected_added_met1_area_um2": 1.4993999999999998,
+  "full_route": "build/signoff400/selected_history_keeper_ground_access_route_1104",
+  "full_signoff_pending": true,
+  "selected": false,
+  "release_ready": false
+}
