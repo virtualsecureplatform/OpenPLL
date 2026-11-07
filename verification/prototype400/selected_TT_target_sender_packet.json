@@ -4,7 +4,9 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_target_sender_packet_1067/owner.json": "3df7be2dd07a38124ec187d3defc43fe2e652a96286f343e148967e914c02533",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799/native/manifest.json": "7a60de5a05aafcbc848fcfd32ea535dbba948083d5119d54aa5cd60d3627dea6",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_target_sender_packet.py": "129039b722447940c08f512d97dc022fc935f24312191f0bcdb7690f59cdba6d",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_target_sender_packet.py": "0c95535aec6c138221e536607bb41a172ae809c3c3dcce89675e066d6c4dd8e9"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_target_sender_packet.py": "0c95535aec6c138221e536607bb41a172ae809c3c3dcce89675e066d6c4dd8e9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_target_sender_packet_1067/assessment.json": "d262a1da59b064d32e06596860c724cfa6098ba7ed412817bcf1fd60a4643481",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_target_sender_packet_1067/frame/assessment.json": "ecad159ab2f3c4b8b8243259ea04aeae8f333e9f828a3a0aecfd845b9ae0a725"
   },
   "observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_target_sender_packet_1067",
   "source_pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799",
@@ -23,8 +25,8 @@
     "same_source_first_receiver_clock_frame"
   ],
   "readiness_guard_tests_passed": 3,
-  "state_at_publication": "waiting_for_original_TT_target_assessment",
-  "sender_packet_available_at_publication": false,
+  "state_at_publication": "TT_target_sender_packet_and_frame_captured",
+  "sender_packet_available_at_publication": true,
   "measured_target_qualified": false,
   "native_simulations_launched": 0,
   "automatic_identical_retry": false,
@@ -32,5 +34,13 @@
   "conditional_detector_qualified": false,
   "complete_controller_timing_qualified": false,
   "native_interface_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "source_programmed_coarse": 20,
+  "first_receiver_transport_ps": {
+    "minimum": 249.59547905754675,
+    "median": 249.61936501600235,
+    "maximum": 249.63102694823647
+  },
+  "same_full_native_root_and_receiver_source": true,
+  "packet_and_frame_pins_verified_inside_SIF": true
 }
