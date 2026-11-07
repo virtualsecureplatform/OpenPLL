@@ -42,7 +42,13 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_validation_protocol_1013/runtime.json": "750e5bb57df35e37553725793db8c4806398faeb62eaf96651a2d00176c6d2bb",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_frozen_corner_candidate.py": "864c208975a52fbb7674b89d63029d389519b2353eeddc28e7cc495743d6d747",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_frozen_candidate_protocol.py": "267b84cfb4b5c005cdb58f56c1d95ea885d192d5d0469d4f60947657da5ffe72",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_frozen_candidate_fresh_replay_1015/inputs.json": "7a9300c174075f0fc1bc6da6b8fe74ec5222149690035240b9b4271d1ee94ae5"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_frozen_candidate_fresh_replay_1015/inputs.json": "7a9300c174075f0fc1bc6da6b8fe74ec5222149690035240b9b4271d1ee94ae5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_frozen_candidate_fresh_replay_1015/check/assessment.json": "b7b1f8c791f3b64a8d2faf572081b2473c2f112b4f669a1c5410fd3957b38862",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_independently_checked_candidate_1036/assessment.json": "fcc1391c64ba064299f91cd401aabd03b4d25e05874e7884d246a1257be461ad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_frozen_candidate_binding_controls_1037/assessment.json": "027d099de8716fa37338c6b4cb008c753047438fab6914553585da556d7142f5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_fresh_holdout_1012/response.json": "94db497bbb1befb442ffe6ff3c438d067afb0f4b88aa3e7e3d777ebc4fa3b1ef",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_selected_frozen_detector_candidate.py": "101786c6ab0d6ef557657e2be5eb603736e82289a0f9ce70a22d23c908286cf6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_candidate_binding_controls.py": "2e2388255645b581ba3dfe830155d579283d14a4ddf5fecba0cd09ddf450e1fc"
   },
   "operating_point": {
     "corner": "ss",
@@ -305,7 +311,7 @@
     "parameters_frozen_before_launch": true,
     "independent_of_parameter_selection": true,
     "corner_sender_waveforms_correlated": false,
-    "normal_completion_observed": false,
+    "normal_completion_observed": true,
     "release_ready": false,
     "automatic_frozen_replay": {
       "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_frozen_candidate_fresh_replay_1015",
@@ -314,7 +320,38 @@
       "parameters_refitted": false,
       "chronology_guard": "protocol predates native owner process birth",
       "tests_passed": 3,
-      "normal_completion_observed": false
-    }
+      "normal_completion_observed": true
+    },
+    "all_sampled_signs_match": true,
+    "all_event_counts_match": true,
+    "all_edges_within_observed_fit_band": true,
+    "parameters_refitted": false,
+    "maximum_fresh_edge_error_ps": 1.2476344816434448,
+    "measured_cycles": [
+      {
+        "phase_ps": -216.74647288342186,
+        "decision": "dn"
+      },
+      {
+        "phase_ps": 573.912582190772,
+        "decision": "up"
+      }
+    ]
+  },
+  "independently_checked_diagnostic_candidate": {
+    "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_independently_checked_candidate_1036/assessment.json",
+    "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_independently_checked_candidate_1036",
+    "threshold_ps": -204.24709494912287,
+    "comparison_cases": 8,
+    "fresh_independent_cases": 1,
+    "parameters_refitted": false,
+    "candidate_bytes_unchanged_since_prelaunch": true,
+    "binding_controls": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_frozen_candidate_binding_controls_1037/assessment.json",
+    "rejection_controls_passed": 3,
+    "corner_sender_waveforms_correlated": false,
+    "full_phase_coverage_qualified": false,
+    "native_interface_qualified": false,
+    "complete_controller_timing_qualified": false,
+    "release_ready": false
   }
 }
