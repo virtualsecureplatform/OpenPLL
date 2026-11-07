@@ -1,0 +1,105 @@
+{
+  "replay_inputs": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/replay_selected_keeper_GDS_lvs.py": "8987d5451c76a51ab21f9b45aec9ef9866d09db2d81207331c9e812a0f6c80ef",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/config.json": "4c374579a772cc24fa91259934d4d6e7290c1ca3017efe884f29781f3de8cb65",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/56-magic-spiceextraction/state_in.json": "29083ce15c10dcbf79aca16d124232d7a3e559eaf05ac06971de5fb6e7e93792",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.cdl": "0692a74e7f5f67386218ae6a1d1fbdeaec14abada7607b9ed6636c3d000a939b",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/hs_reference.spice": "459ab9ecaee59ca6bc132e5ef48037827ff44d15a9bd2441ae9a6562f2a1f6b1",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/config.json": "834f864968ddd5a28d631777731334da4c0e0b6d2a3340046012bedf0d703e4b",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/48-klayout-streamout/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.gds": "118e71662f86d29079508465fe11325e0ea0c569b1e9bdbeaccfd7a0969e6f38",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/45-openroad-fillinsertion/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.pnl.v": "4e2101148043dbcf5bbbbf9c5eaa89913bad288b2a4f2269ae74ef4f3bedc927"
+    },
+    "command": [
+      "apptainer",
+      "exec",
+      "--bind",
+      "/home:/home,/tmp:/tmp",
+      "--env",
+      "PATH=/nix/store/nah36l3f04m5gsi98a7civz9n8szraml-devshell-dir/bin:/usr/bin:/bin",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+      "/nix/store/nah36l3f04m5gsi98a7civz9n8szraml-devshell-dir/bin/librelane",
+      "--manual-pdk",
+      "--pdk-root",
+      "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae",
+      "--run-tag",
+      "gds_lvs",
+      "--jobs",
+      "2",
+      "--condensed",
+      "--from",
+      "Magic.SpiceExtraction",
+      "--to",
+      "Netgen.LVS",
+      "--with-initial-state",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/56-magic-spiceextraction/state_in.json",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/config.json"
+    ],
+    "original_route_unchanged": true,
+    "release_ready": false
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/runs/gds_lvs/03-netgen-lvs/reports/lvs.netgen.rpt": "8e70fc8cf138cbc90ad5c200ce2c425994cab21b873e2ea679125f317294d000",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/runs/gds_lvs/03-netgen-lvs/reports/lvs.netgen.json": "de852d00004e63571411b02c0fac89dcea470ebb61b7ff71a67f0a39dd864947",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GDS_LVS_replay_1114/runs/gds_lvs/01-magic-spiceextraction/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.spice": "8fcca01ed395625460b5cfddfac528d2e48b4f2d9068195aeae745166d4822c1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_extraction_followup_1113/physical_audit/assessment.json": "27c6884eb6ab48d6e0b1162f1c2ecc54e1afd27ad591d0548741b461d30a5937"
+  },
+  "original_physical_audit": {
+    "design__power_grid_violation__count": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "route__drc_errors": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "magic__drc_error__count": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "klayout__drc_error__count": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "design__lvs_error__count": {
+      "observed": 303,
+      "pass_check": false
+    },
+    "antenna__violating__nets": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "route__antenna_violation__count": {
+      "observed": 0,
+      "pass_check": true
+    },
+    "native_LVS": {
+      "unique_match": false,
+      "all_records_without_discrepancies": false,
+      "pass_check": false
+    },
+    "macro_geometry": {
+      "cells": [
+        {
+          "name": "sky130_fd_sc_hs__inv_2",
+          "source_geometry_matches": true,
+          "different_layers": [],
+          "nonempty": true,
+          "instances": 4,
+          "expected_instances": 4,
+          "pass_check": true
+        }
+      ],
+      "pass_check": true
+    }
+  },
+  "extracted_HS_definition": ".subckt sky130_fd_sc_hs__inv_2 A Y VPWR VGND VPB VNB\nX0 Y A VNB VNB sky130_fd_pr__nfet_01v8_lvt ad=0.1036 pd=1.02 as=0.2109 ps=2.05 w=0.74 l=0.15\nR0 VPB VPWR 0.000000\nR1 VNB VGND 0.000000\nX1 VPB A Y VPB sky130_fd_pr__pfet_01v8 ad=0.3192 pd=2.81 as=0.168 ps=1.42 w=1.12 l=0.15\nX2 VNB A Y VNB sky130_fd_pr__nfet_01v8_lvt ad=0.2109 pd=2.05 as=0.1036 ps=1.02 w=0.74 l=0.15\nX3 Y A VPB VPB sky130_fd_pr__pfet_01v8 ad=0.168 pd=1.42 as=0.3192 ps=2.81 w=1.12 l=0.15\n.ends",
+  "native_GDS_LVS_pass": false,
+  "explicit_zero_ohm_body_supply_aliases_present": true,
+  "parent_alias_propagation_not_verified": true,
+  "default_extraction_missed_HS_VPB_pin": true,
+  "extraction_followup_state": "physical_checks_failed_no_extraction",
+  "selected": false,
+  "release_ready": false
+}
