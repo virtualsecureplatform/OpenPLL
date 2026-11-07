@@ -1,0 +1,110 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/assessment.json": "f03340cfeb34c0a0fb773455741daf531ccc8e80d21f365cfa2822eff211fa62",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_wire_RC_1153/assessment.json": "1733e58fd1ee03e01e560885815470949f00909ade63ef97b04cb7513b7e260f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_C_wire_binding_1164/assessment.json": "54b47c7fc069b74d96947b4bacd8afc7c2cae01cdd3041b4775f932e9ad0a56c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_DCO_R_models_1181/assessment.json": "1d088b8f29f85c9871abb95a4426305587a0f7c557bc57958db04626aca04c3c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_BBPD_R_models_1187/assessment.json": "d1f402a2e89afcfabbc78aa1b36f510c659080afaa021b8e2592d299b8f13f60",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_digital_R_models_1192/assessment.json": "a7f9bcbe06cc93031c2a884537bc95187a041a8a4a372314528f31ebde441c3c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/capacitance.spice": "065ac25e51fcf5b9aa9dd4da8b4173d4dce5226c4df2549979dbce236081e53c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_wire_binding_1154/join.json": "7345b8445a533dd58891e57cc459647f1605b10a45b93f195874bcbfb94df400",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_wire_RC_1153/nom.json": "e07ff129d29227cebf15f3350aaef58835aaef9b88b9d79632743fb8aef4dc8e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compose_keeper_all_macro_wire_models.py": "e5ee30a2628c1aface95b34ff51fd966fee9d58e16ebf4ba5d7de360d1648264",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_prototype_full_C_wire_R_v11.py": "33516ad3312e32a2f9db1353d962151301e9631d8a640a8e7f97ad1d3bc70c27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_DCO_R_models_1181/driver.spice": "a589883d8b79cc2841378ed219b78bd4613c8ce6734746c3b83beb900da5ae28",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_BBPD_R_models_1187/driver.spice": "736fb5d80504245c58510cf4c7cd8cb43adff6d56fe51a87860f9e847e474d8d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_digital_R_models_1192/driver.spice": "5f923a045101c948908b6e2e945e9312f4760eb69bf15fa7b9447eb1a3ed93cc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_DCO_R_models_1181/farthest.spice": "9858db4b6e827f33e11c1cd9c306cf8f302766db05ef9b171a6ffde61cb64af9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_BBPD_R_models_1187/farthest.spice": "8140593b24851a8aaf6e74a055facdc44dee7bc6a1cb6963677b2e50330a782c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_digital_R_models_1192/farthest.spice": "31d13738850d0ba47b9cb1eedee4b5a2af36d93e890d828a725514d62397984a"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/driver.hierarchy.spice": "c225d19d54c7c7dfe6f38182e6bcef6df34e5412d6891868188f9ba53574e635",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/driver.spice": "7221cc6f853bf234887584d5c61c092baedfaf3e55980c43fbf70cb624dcfa73",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/driver.nodes.json": "24fc7730afa74fd8c22798fbf98da3281083b8e271c0766fe8e2adf78a89b87d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/farthest.hierarchy.spice": "881044de365a15c0fcf329d7ddbac5ab840e178686f5705de2f3e7c0bf6086fd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/farthest.spice": "9034080b5e7c8f9d3f000d125fb0a53cff7e4c54de45d41ed929461f4591730d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_all_macro_wire_models_1193/farthest.nodes.json": "a34bc80a0f76337af00981785f6a7df28c16e953344d17d6c2debc97825db3da"
+  },
+  "results": [
+    {
+      "attachment": "driver",
+      "existing_positive_resistors_retained": 17213,
+      "existing_resistor_topology_recovered": true,
+      "exported_interface_zero_R_connections": 0,
+      "all_literal_top_ports_bound": true,
+      "coalesced_root_wire_networks": [
+        {
+          "original_conductor": "TRACKING",
+          "wire_networks": [
+            "TRACKING",
+            "bbpd_reset_n"
+          ],
+          "child_zero_R_join_verified": false,
+          "child_resistor_path_join_verified": true,
+          "root_C_attachment_policy": "first_network_diagnostic_representative"
+        }
+      ],
+      "primitive_instances": 62338,
+      "original_aggregated_capacitors": 406563,
+      "lifted_aggregated_capacitors": 414383,
+      "wire_resistors": 3557,
+      "rewired_cell_pins": 2484,
+      "child_cell_capacitance_at_rewired_terminals": true,
+      "root_capacitor_pairs": 101382,
+      "child_capacitor_pairs": 351671,
+      "signed_compensation_split_requires_fresh_passivity_check": true,
+      "one_hot_capacitance_voltage_map": false,
+      "zero_wire_R_exact_device_topology_and_C_operator_match": true,
+      "wire_capacitance_from_SPEF_added": false,
+      "driver_representative_policy": "first_sorted_output_or_input_port",
+      "spatial_capacitance_placement_qualified": false
+    },
+    {
+      "attachment": "farthest",
+      "existing_positive_resistors_retained": 17213,
+      "existing_resistor_topology_recovered": true,
+      "exported_interface_zero_R_connections": 0,
+      "all_literal_top_ports_bound": true,
+      "coalesced_root_wire_networks": [
+        {
+          "original_conductor": "TRACKING",
+          "wire_networks": [
+            "TRACKING",
+            "bbpd_reset_n"
+          ],
+          "child_zero_R_join_verified": false,
+          "child_resistor_path_join_verified": true,
+          "root_C_attachment_policy": "first_network_diagnostic_representative"
+        }
+      ],
+      "primitive_instances": 62338,
+      "original_aggregated_capacitors": 396057,
+      "lifted_aggregated_capacitors": 413858,
+      "wire_resistors": 3557,
+      "rewired_cell_pins": 2484,
+      "child_cell_capacitance_at_rewired_terminals": true,
+      "root_capacitor_pairs": 101382,
+      "child_capacitor_pairs": 351155,
+      "signed_compensation_split_requires_fresh_passivity_check": true,
+      "one_hot_capacitance_voltage_map": false,
+      "zero_wire_R_exact_device_topology_and_C_operator_match": true,
+      "wire_capacitance_from_SPEF_added": false,
+      "driver_representative_policy": "first_sorted_output_or_input_port",
+      "spatial_capacitance_placement_qualified": false
+    }
+  ],
+  "full_parent_C_retained": true,
+  "parent_wire_R_inserted": true,
+  "SPEF_C_added": false,
+  "DCO_internal_wire_R_inserted": true,
+  "BBPD_internal_wire_R_inserted": true,
+  "digital_internal_wire_R_inserted": true,
+  "standard_cell_internal_wire_R_included": false,
+  "exact_zero_all_inserted_R_parent_recovery_by_composition": true,
+  "physical_C_placement_qualified": false,
+  "emitted_operator_passivity_qualified": false,
+  "parent_loading_complete": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}
