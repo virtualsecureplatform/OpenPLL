@@ -1,0 +1,353 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_enable_loading_1063/assessment.json": "df9e6cb01d05f41eda0d6e1283ab8608aa4d75d461bb4bad545bf7700d5883a7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_enabled_edge_comparison_1064/assessment.json": "bcb86bb3b9447b2ae177987a64fda0454665034523b3cbdf8f52fc67d9a18baf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_enable_loading_1063/protocol.json": "650be08df6393ce419ca1c82324e1aff48e2145f57140f89e443555de931f3f7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_einvp_enable_loading.py": "1fac59e300d47eb3f354f7a459bf58bc26c4943acbe7f4eb815065de7b514ffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_einvp_enable_loading.py": "a9f37668b396f27bba49a92e3221d80972a8ef3f189262a4ab753ef03960af3a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_einvp_enable_edges.py": "c8e60b2771897638a7bbb8a2f17f49a3543681a3b5450309a59770c20b6453f4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_einvp_enable_edges.py": "fadc9c64a47f659d584bb343708c5aecdd72c4d8c40b995fd2c9262109326440"
+  },
+  "loading_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_enable_loading_1063/assessment.json",
+  "enabled_edge_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_enabled_edge_comparison_1064/assessment.json",
+  "both_variants_completed_at_both_steps": true,
+  "maximum_steps_ps": [
+    0.5,
+    0.25
+  ],
+  "synthetic_TE_pulse_ns": [
+    2,
+    2.1,
+    7,
+    7.1
+  ],
+  "enabled_window_ns": [
+    2.6,
+    6.8
+  ],
+  "disabled_window_ns": [
+    7.6,
+    10
+  ],
+  "threshold_for_edge_measurement_V": 0.9,
+  "observed_enabled_edge_neighborhoods": 24,
+  "all_observed_enabled_edge_neighborhoods_match_inversion": true,
+  "enabled_delay_differences": {
+    "__context_node_1468": {
+      "input_events_aligned": true,
+      "keeper_minus_original_delay_ps": [
+        30.39463810666581,
+        83.45027614621574,
+        30.393337103962835
+      ]
+    },
+    "__context_node_1500": {
+      "input_events_aligned": true,
+      "keeper_minus_original_delay_ps": [
+        30.784490040795845,
+        84.38737292902672,
+        30.782830015558602
+      ]
+    }
+  },
+  "window_current_and_energy": {
+    "enabled": {
+      "original": {
+        "supply": {
+          "energy_supplied_fJ": 30.59062123867012,
+          "net_charge_supplied_fC": 16.994789577039068,
+          "absolute_charge_fC": 23.748687756724028,
+          "peak_absolute_current_A": 3.594339273564038e-05
+        },
+        "cell0_A": {
+          "energy_supplied_fJ": -1.0800508591471383,
+          "net_charge_supplied_fC": -2.6778212290495644,
+          "absolute_charge_fC": 11.13208230465523,
+          "peak_absolute_current_A": 8.397153874508881e-06
+        },
+        "cell0_TE": {
+          "energy_supplied_fJ": 0.002188843087818466,
+          "net_charge_supplied_fC": 0.0012160239376769167,
+          "absolute_charge_fC": 0.034222421309679334,
+          "peak_absolute_current_A": 2.691654954886919e-07
+        },
+        "cell1_A": {
+          "energy_supplied_fJ": -1.08768731589099,
+          "net_charge_supplied_fC": -2.6778102927159537,
+          "absolute_charge_fC": 11.131895035450922,
+          "peak_absolute_current_A": 8.49450528709729e-06
+        },
+        "cell1_TE": {
+          "energy_supplied_fJ": 0.002454387016288098,
+          "net_charge_supplied_fC": 0.0013635483423822925,
+          "absolute_charge_fC": 0.033890835798000125,
+          "peak_absolute_current_A": 2.642499529465922e-07
+        }
+      },
+      "external_keeper": {
+        "supply": {
+          "energy_supplied_fJ": 51.21024482436188,
+          "net_charge_supplied_fC": 28.450136013534483,
+          "absolute_charge_fC": 34.18223255332035,
+          "peak_absolute_current_A": 4.355006209191842e-05
+        },
+        "cell0_A": {
+          "energy_supplied_fJ": -0.805204501410032,
+          "net_charge_supplied_fC": -2.5977387230570255,
+          "absolute_charge_fC": 11.21022976785235,
+          "peak_absolute_current_A": 7.1225983054026366e-06
+        },
+        "cell0_TE": {
+          "energy_supplied_fJ": 0.027041569622186037,
+          "net_charge_supplied_fC": 0.01502309423454783,
+          "absolute_charge_fC": 0.06191602148370868,
+          "peak_absolute_current_A": 4.702803752765292e-07
+        },
+        "cell1_A": {
+          "energy_supplied_fJ": -0.8194649363014008,
+          "net_charge_supplied_fC": -2.6057600346353618,
+          "absolute_charge_fC": 11.201947196745307,
+          "peak_absolute_current_A": 7.1238957820626786e-06
+        },
+        "cell1_TE": {
+          "energy_supplied_fJ": 0.02548668662986083,
+          "net_charge_supplied_fC": 0.014159270349922776,
+          "absolute_charge_fC": 0.06038782458088548,
+          "peak_absolute_current_A": 4.677019806089388e-07
+        }
+      },
+      "absolute_input_charge_change_percent": {
+        "cell0_A": 0.7020022046049901,
+        "cell1_A": 0.6292923268796047
+      }
+    },
+    "disabled": {
+      "original": {
+        "supply": {
+          "energy_supplied_fJ": 1.3294980865076218,
+          "net_charge_supplied_fC": 0.7386100480597727,
+          "absolute_charge_fC": 5.435528847517331,
+          "peak_absolute_current_A": 7.603487635512807e-06
+        },
+        "cell0_A": {
+          "energy_supplied_fJ": -0.10821810036946185,
+          "net_charge_supplied_fC": -0.12619576042954359,
+          "absolute_charge_fC": 4.034931615875229,
+          "peak_absolute_current_A": 4.870681677023948e-06
+        },
+        "cell0_TE": {
+          "energy_supplied_fJ": 0.0,
+          "net_charge_supplied_fC": -0.05882875621381044,
+          "absolute_charge_fC": 0.13457693771299553,
+          "peak_absolute_current_A": 1.8137983829530697e-07
+        },
+        "cell1_A": {
+          "energy_supplied_fJ": -0.1129948543778945,
+          "net_charge_supplied_fC": -0.12414437242830936,
+          "absolute_charge_fC": 4.011752146199571,
+          "peak_absolute_current_A": 4.859579997141355e-06
+        },
+        "cell1_TE": {
+          "energy_supplied_fJ": 0.0,
+          "net_charge_supplied_fC": -0.05868787066411289,
+          "absolute_charge_fC": 0.1360242062040758,
+          "peak_absolute_current_A": 1.824038039081161e-07
+        }
+      },
+      "external_keeper": {
+        "supply": {
+          "energy_supplied_fJ": 2.3439087438125132,
+          "net_charge_supplied_fC": 1.3021715243402785,
+          "absolute_charge_fC": 8.626862301853816,
+          "peak_absolute_current_A": 9.909622000282317e-06
+        },
+        "cell0_A": {
+          "energy_supplied_fJ": -0.2432823536216591,
+          "net_charge_supplied_fC": -0.2957862457592314,
+          "absolute_charge_fC": 4.884697445071116,
+          "peak_absolute_current_A": 5.50635404164573e-06
+        },
+        "cell0_TE": {
+          "energy_supplied_fJ": 0.0,
+          "net_charge_supplied_fC": -0.058018181488719095,
+          "absolute_charge_fC": 0.13241315130687628,
+          "peak_absolute_current_A": 1.789323395520466e-07
+        },
+        "cell1_A": {
+          "energy_supplied_fJ": -0.24306565081415205,
+          "net_charge_supplied_fC": -0.2957104665556055,
+          "absolute_charge_fC": 4.884550381181742,
+          "peak_absolute_current_A": 5.505473548710904e-06
+        },
+        "cell1_TE": {
+          "energy_supplied_fJ": 0.0,
+          "net_charge_supplied_fC": -0.05783785609523195,
+          "absolute_charge_fC": 0.13379288253125604,
+          "peak_absolute_current_A": 1.8006111012973598e-07
+        }
+      },
+      "absolute_input_charge_change_percent": {
+        "cell0_A": 21.060228774448795,
+        "cell1_A": 21.756035846057785
+      }
+    },
+    "assert_transition": {
+      "original": {
+        "supply": {
+          "energy_supplied_fJ": 7.542505293301914,
+          "net_charge_supplied_fC": 4.19028071850105,
+          "absolute_charge_fC": 8.240164492019993,
+          "peak_absolute_current_A": 0.00013353519320272696
+        },
+        "cell0_A": {
+          "energy_supplied_fJ": 0.9023239643694202,
+          "net_charge_supplied_fC": 1.8760961411507033,
+          "absolute_charge_fC": 1.8760961411507033,
+          "peak_absolute_current_A": 1.2148143725624997e-05
+        },
+        "cell0_TE": {
+          "energy_supplied_fJ": 3.650892167394342,
+          "net_charge_supplied_fC": 3.612793449033043,
+          "absolute_charge_fC": 3.6424582750602825,
+          "peak_absolute_current_A": 4.797221429368836e-05
+        },
+        "cell1_A": {
+          "energy_supplied_fJ": 0.8998411617072398,
+          "net_charge_supplied_fC": 1.8673347471953303,
+          "absolute_charge_fC": 1.8673347471953303,
+          "peak_absolute_current_A": 1.2218039501996953e-05
+        },
+        "cell1_TE": {
+          "energy_supplied_fJ": 3.648708544611539,
+          "net_charge_supplied_fC": 3.6123869472775567,
+          "absolute_charge_fC": 3.6423394839110714,
+          "peak_absolute_current_A": 4.808314286427646e-05
+        }
+      },
+      "external_keeper": {
+        "supply": {
+          "energy_supplied_fJ": 4.079629571781299,
+          "net_charge_supplied_fC": 2.2664608732118325,
+          "absolute_charge_fC": 16.840816557868685,
+          "peak_absolute_current_A": 0.00023255681072317233
+        },
+        "cell0_A": {
+          "energy_supplied_fJ": 0.8741034091936463,
+          "net_charge_supplied_fC": 1.9485268670653506,
+          "absolute_charge_fC": 1.9513071387229346,
+          "peak_absolute_current_A": 1.2821050401410833e-05
+        },
+        "cell0_TE": {
+          "energy_supplied_fJ": 11.422603074193626,
+          "net_charge_supplied_fC": 12.118852675458427,
+          "absolute_charge_fC": 12.149738823555264,
+          "peak_absolute_current_A": 0.00017489746058090634
+        },
+        "cell1_A": {
+          "energy_supplied_fJ": 0.8744775433250186,
+          "net_charge_supplied_fC": 1.9489282840621767,
+          "absolute_charge_fC": 1.9529551647133092,
+          "peak_absolute_current_A": 1.2875966044950895e-05
+        },
+        "cell1_TE": {
+          "energy_supplied_fJ": 11.420353218537825,
+          "net_charge_supplied_fC": 12.118395461370367,
+          "absolute_charge_fC": 12.149659526574753,
+          "peak_absolute_current_A": 0.00017498756560406853
+        }
+      },
+      "absolute_input_charge_change_percent": {
+        "cell0_A": 4.008909560791518,
+        "cell1_A": 4.585167048734973
+      }
+    },
+    "withdraw_transition": {
+      "original": {
+        "supply": {
+          "energy_supplied_fJ": 8.581255317919021,
+          "net_charge_supplied_fC": 4.767364065510556,
+          "absolute_charge_fC": 6.544340724007979,
+          "peak_absolute_current_A": 6.368012024386617e-05
+        },
+        "cell0_A": {
+          "energy_supplied_fJ": 0.47070815395327853,
+          "net_charge_supplied_fC": 1.2870383183839158,
+          "absolute_charge_fC": 1.2874258781290397,
+          "peak_absolute_current_A": 5.356722790146123e-06
+        },
+        "cell0_TE": {
+          "energy_supplied_fJ": -3.0020700577343864,
+          "net_charge_supplied_fC": -3.542025466118621,
+          "absolute_charge_fC": 3.5420456411279746,
+          "peak_absolute_current_A": 3.520138732186205e-05
+        },
+        "cell1_A": {
+          "energy_supplied_fJ": 0.4681663014314557,
+          "net_charge_supplied_fC": 1.2808037348318253,
+          "absolute_charge_fC": 1.283321064339189,
+          "peak_absolute_current_A": 5.378924821736156e-06
+        },
+        "cell1_TE": {
+          "energy_supplied_fJ": -3.0021646291459394,
+          "net_charge_supplied_fC": -3.542255592653321,
+          "absolute_charge_fC": 3.5422694130337935,
+          "peak_absolute_current_A": 3.5196379458778086e-05
+        }
+      },
+      "external_keeper": {
+        "supply": {
+          "energy_supplied_fJ": 48.79998136098174,
+          "net_charge_supplied_fC": 27.11110075610097,
+          "absolute_charge_fC": 29.3775708550291,
+          "peak_absolute_current_A": 0.0005365854103247767
+        },
+        "cell0_A": {
+          "energy_supplied_fJ": 0.6433267051194784,
+          "net_charge_supplied_fC": 1.6256927583370422,
+          "absolute_charge_fC": 1.6256927583370422,
+          "peak_absolute_current_A": 6.050714652550329e-06
+        },
+        "cell0_TE": {
+          "energy_supplied_fJ": -9.820087620411098,
+          "net_charge_supplied_fC": -12.048288629047969,
+          "absolute_charge_fC": 12.048300244741512,
+          "peak_absolute_current_A": 0.00013199219010341678
+        },
+        "cell1_A": {
+          "energy_supplied_fJ": 0.6433625048680204,
+          "net_charge_supplied_fC": 1.6256297446525918,
+          "absolute_charge_fC": 1.6256297446525918,
+          "peak_absolute_current_A": 6.031459183455382e-06
+        },
+        "cell1_TE": {
+          "energy_supplied_fJ": -9.82017964098205,
+          "net_charge_supplied_fC": -12.048503624852337,
+          "absolute_charge_fC": 12.048509409981435,
+          "peak_absolute_current_A": 0.00013203172587003838
+        }
+      },
+      "absolute_input_charge_change_percent": {
+        "cell0_A": 26.274668387091225,
+        "cell1_A": 26.67365866776801
+      }
+    }
+  },
+  "maximum_base_refined_energy_difference_fJ": 0.0003179304710538844,
+  "enabled_output_maximum_waveform_difference_V": {
+    "__context_node_1468": 0.8715666137524897,
+    "__context_node_1500": 0.8876824961499623
+  },
+  "energy_sign_convention": "negative ideal-source branch current supplies charge/energy into cut",
+  "test_controls_passed": 7,
+  "all_einvp_test_controls_passed": 32,
+  "scope": "Two cells with prescribed analog boundary voltages and synthetic simultaneous TE pulse. Signed energy and absolute source charge characterize only this cut and these windows.",
+  "withdrawal_peak_cause_separated": false,
+  "full_PLL_frequency_or_power_effect_established": false,
+  "physical_control_network_and_added_parasitics_not_resimulated": true,
+  "physical_design_candidate_selected": false,
+  "layout_changed": false,
+  "enabled_logic_or_timing_qualified": false,
+  "electrical_rules_qualified": false,
+  "reliability_qualified": false,
+  "release_ready": false
+}

@@ -6,7 +6,9 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_external_standard_keeper_1061/prepared/assessment.json": "f58a26d438749331f9c708fcd212cd896bd61d4418309124410bd7218f59e13e",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_calibration_pipeline_316/waveform_assessment/assessment.json": "9a1b1ef2b953eeb2cb8d0d8bce5584507680fad524bffa1e9c7703a02142ccd1",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_einvp_external_keeper.py": "861a41507942a222612ca7a4b392c99254d4567ae15e9363896bd64a7e33f7de",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_einvp_external_keeper.py": "3362d38f4340339b1ee34d6cba988d59c2f4e34f268702c15ff78d930821bad8"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_einvp_external_keeper.py": "3362d38f4340339b1ee34d6cba988d59c2f4e34f268702c15ff78d930821bad8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_enable_loading_1063/assessment.json": "df9e6cb01d05f41eda0d6e1283ab8608aa4d75d461bb4bad545bf7700d5883a7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_enabled_edge_comparison_1064/assessment.json": "bcb86bb3b9447b2ae177987a64fda0454665034523b3cbdf8f52fc67d9a18baf"
   },
   "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_external_keeper_comparison_1062/assessment.json",
   "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_external_standard_keeper_1061/assessment.json",
@@ -79,7 +81,7 @@
   "topology_and_geometry_tests_passed": 3,
   "all_einvp_tests_passed": 25,
   "new_cell_extracted_parasitics_included": false,
-  "enabled_behavior_checked": false,
+  "enabled_behavior_checked": true,
   "enable_transition_contention_checked": false,
   "input_loading_and_frequency_checked": false,
   "new_physical_parasitics_checked": false,
@@ -90,5 +92,9 @@
   "model_validity_ranges_qualified": false,
   "reliability_qualified": false,
   "electrical_rules_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "conditional_enabled_pulse_and_loading_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_enable_loading_1063/assessment.json",
+  "conditional_enabled_edge_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_enabled_edge_comparison_1064/assessment.json",
+  "enable_transition_current_characterized": true,
+  "input_loading_characterized_under_prescribed_boundaries": true
 }
