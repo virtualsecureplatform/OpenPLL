@@ -1,0 +1,32 @@
+{
+  "native_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152",
+  "input_manifest_sha256": "06985c3c12c168be1680e0e7c7a0b382741fff59ea7a566d5670da5c3eb90cb8",
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_parent_capacitance.py": "56c0747f1a71bbd1b6789a646d89896e2136b46998e83121f515a468a54b0059",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_prototype_assembly_capacitance.py": "ab5438c1dfec4505d727ac8dc65df8d93c50e51261c396bab561800fceb1b119",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assessment.json": "cb53636d63bfa258d9d444c2b4e41b9cfe8cd29073262c259a6f00228d027902",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/lvs_proof/assessment.json": "06c86ae98299311c259262da33adeba75debf7a94c62aa41e35ae5baaced8d2e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assembly.gds": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/config.json": "f99e18a9fe05ed9ee6ec9d483505ab609f8fc6bbde8ec60b42bc27d73849632c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb"
+  },
+  "owner": {
+    "pid": 1890559,
+    "birth": "128839582",
+    "deadline_uptime": 1374796.871441994,
+    "wall_limit_s": 86400,
+    "cpu_slots": 1,
+    "memory_GiB": 16,
+    "automatic_identical_retry": false
+  },
+  "status_at_publication": {
+    "state": "full_keeper_parent_capacitance_extraction_running",
+    "release_ready": false
+  },
+  "full_parent_capacitance_extraction_complete": false,
+  "parent_loading_qualified": false,
+  "wire_resistance_complete": false,
+  "passivity_qualified": false,
+  "native_model_qualified": false,
+  "release_ready": false
+}
