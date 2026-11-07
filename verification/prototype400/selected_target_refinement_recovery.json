@@ -14,7 +14,8 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/common_v3.py": "dc86a17d58cdd6d02d9a3279c94097962da89c31ae50903e4717e333b2b235c4",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_full_target_power_recovered_1072/owner.json": "8a3b76a395643f900fdadd5f15f1bb267604d0569d82b8f9b57ac621d3a64dc7",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_remaining_full_corner_recovered_1073/owner.json": "93602da608ead9ce223a13631ef442c872017d09a65c6c98c27bff3c0e6ed2b8",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_corner_sender_packets_recovered_1074/owner.json": "66473bd06f9f0cb5f389d40abb04f00f4f41a0303e315081f37e8bea08240e85"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_corner_sender_packets_recovered_1074/owner.json": "66473bd06f9f0cb5f389d40abb04f00f4f41a0303e315081f37e8bea08240e85",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/wait_selected_parent_initialization.py": "e98a0f5b6f43f5716561b4cfbb15fc0c830f86abedd9dee3644124e785f01aac"
   },
   "original_failed_pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_pipeline_799",
   "measured_target_request": {
@@ -52,5 +53,13 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_remaining_full_corner_recovered_1073",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_corner_sender_packets_recovered_1074"
   ],
-  "original_native_not_repeated": true
+  "original_native_not_repeated": true,
+  "failed_initialization_race_attempts_preserved": [
+    1073,
+    1074
+  ],
+  "remaining_corner_continuation": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_remaining_full_corner_recovered_1075",
+  "initialization_observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_remaining_parent_initialization_1076",
+  "initialization_wrapper_integration_controls_passed": 2,
+  "sender_continuation_reconnection_pending": true
 }
