@@ -16,7 +16,12 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_runtime_871.json": "dace0c39907195ddaa58b0acc9e09919b1ac7a757bc5f67fcd40887cd29e0ebc",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_detector_bracket_holdout_review_898/assessment.json": "2fd79232575f2c1e6899ded26d5d98c9c96bbbf29f9961fcff986dba5fc02ca1",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_bracket_replay_870/assessment.json": "5ee8851db6d2b89245b47222402072670d3d87ea515fd7ab693189e86fa9b04f",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_detector_endpoint_stress_916/assessment.json": "8bcbcd2fc0e9636a4e948fd86db7ab411691ad3153a510d0a8a583b1aa01551e"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_detector_endpoint_stress_916/assessment.json": "8bcbcd2fc0e9636a4e948fd86db7ab411691ad3153a510d0a8a583b1aa01551e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_prior_interior_diagnostic_1030/assessment.json": "bec231b15b4e812adc491fa78cd221d4699f3f932988ef9b55336836d087ed40",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_interior_candidate_timing_1031/assessment.json": "c4cd8fe836e57070feaebaf82ff78ee7a3620eb99e7f9228138941d68e0b3ec4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_interior_validation_protocol_1033/protocol.json": "18cd805f1dde71af62f6c5df42914d6541c77f60f2cb4e43e791044b2442de03",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_interior_validation_runtime_1034.json": "dcb3770c7c6b476b49a98b441c9cbdab8c18157c9481dd782b375cfacc5c8b93",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_frozen_candidate_fresh_replay_1035/inputs.json": "ea2bea40c43aacb9f9794bd4a3bc9d4cbe0897f073b5e9f48bfb096a27160e05"
   },
   "native_probe": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_nearzero_844",
   "fit_followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846",
@@ -98,5 +103,40 @@
     "closed_loop_stress_executed": false,
     "cross_cycle_adaptive_ambiguity_covered": false,
     "uniform_uncertainty_bound_qualified": false
+  },
+  "interior_candidate_diagnostic": {
+    "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_prior_interior_diagnostic_1030/assessment.json",
+    "timing": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_interior_candidate_timing_1031/assessment.json",
+    "predeclared_prior_bracket_fractions": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "existing_cases": 7,
+    "common_fixed_sign_count_model": "prior_fraction_3_of_4",
+    "candidate_threshold_ps": -37.54385656954895,
+    "prior_nominal_latencies_unchanged": true,
+    "original_fit_modified": false,
+    "all_existing_sign_count_and_timing_checks_pass": true,
+    "maximum_existing_edge_error_ps": 0.9877835875755636,
+    "observations_previously_used_for_candidate_comparison": true,
+    "fresh_independent_validation_complete": false,
+    "native_interface_qualified": false
+  },
+  "fresh_interior_candidate_holdout": {
+    "protocol": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_interior_validation_protocol_1033/protocol.json",
+    "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_interior_fresh_holdout_1032",
+    "recorded_phase_ns": 0.0625,
+    "CPU": 20,
+    "native_cap_s": 10800,
+    "parameters_frozen_before_native_launch": true,
+    "excluded_from_parameter_selection": true,
+    "followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_frozen_candidate_fresh_replay_1035",
+    "runtime": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_interior_validation_runtime_1034.json",
+    "PDK_static_include_files": 319,
+    "container_image_binding_proven": false,
+    "corner_sender_waveforms_correlated": false,
+    "normal_completion_observed": false,
+    "release_ready": false
   }
 }
