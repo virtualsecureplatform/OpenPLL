@@ -75,5 +75,74 @@
     "native_cap_s": 172500,
     "status_at_publication": "waiting_for_original_native_target_registry",
     "predicted_frequency_inserted": false
-  }
+  },
+  "history_stress_campaigns_completed": true,
+  "original_history_stress_results": [
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_nominal_975",
+      "assessment_sha256": "cad2046ddd132eb743a755eded20dc87c78a4c8afaa40d04a56d60b55e4d54ee",
+      "completed_cases": 96,
+      "original_assessor_dispositions": {
+        "nominal": {
+          "diagnostic_simulation_completed": 24
+        },
+        "gain": {
+          "needs_native_tuning_points": 24
+        },
+        "offset": {
+          "diagnostic_failed": 12,
+          "diagnostic_simulation_completed": 12
+        },
+        "gain_offset": {
+          "diagnostic_failed": 24
+        }
+      },
+      "needed_native_points": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ],
+      "all_finite_cases_functional": false
+    },
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI1_KP8_history_stress_receiver_976",
+      "assessment_sha256": "3d8e37d357642b3da8994ac018a9a48d96d4081c76ccd4563f40d8a087701e1c",
+      "completed_cases": 96,
+      "original_assessor_dispositions": {
+        "nominal": {
+          "diagnostic_simulation_completed": 24
+        },
+        "gain": {
+          "needs_native_tuning_points": 24
+        },
+        "offset": {
+          "diagnostic_failed": 12,
+          "diagnostic_simulation_completed": 12
+        },
+        "gain_offset": {
+          "diagnostic_failed": 24
+        }
+      },
+      "needed_native_points": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ],
+      "all_finite_cases_functional": false
+    }
+  ],
+  "offset_exact_statistics_reassessment": {
+    "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_offset_stress_exact_reassessment_982/assessment.json",
+    "assessment_sha256": "34dc5493ff711c3ed4c02169cfcb07df73f4236ec1a17dbb86eb6f145948eb98",
+    "cases": 48,
+    "original_passes": 24,
+    "exact_passes": 30,
+    "remaining_functional_failures": 18,
+    "changed_cases": 6,
+    "simulations_rerun": 0,
+    "limits_changed": false
+  },
+  "all_observed_history_stress_diagnostics_passed": false
 }

@@ -18,7 +18,8 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_phase_boundary_reassessment_978/assessment.json": "b9bf9457898b966bc71ab64a128e7915403dc68086b4570612c8fa6027515918",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_assessor_runtime_control_979/assessment.json": "c4779ae53b485c4807689d796886a3dadc09056da06b3bb45cc2e137f9b92814",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_assessor_nominal_control_980/assessment.json": "239f4527b5cdfbe0737b41c4b2e3191ba2d36d1050ee18950c87e00f67926255",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_statistics_release_audit_981.json": "c59da00c2e68d78a2352e28d9b9f312c939fd97b022d3fe269e53f3b2997aa48"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_exact_statistics_release_audit_981.json": "c59da00c2e68d78a2352e28d9b9f312c939fd97b022d3fe269e53f3b2997aa48",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_offset_stress_exact_reassessment_982/assessment.json": "34dc5493ff711c3ed4c02169cfcb07df73f4236ec1a17dbb86eb6f145948eb98"
   },
   "runtime_control_trace_bytes_identical": {
     "edges.csv": true,
@@ -53,5 +54,16 @@
   "closed_loop_trace_auditor": "verification/signoff400/audit_selected_closed_loop_traces_v2.py",
   "exact_assessor_runtime": "verification/signoff400/run_selected_mixed_signal_v8.py",
   "all_five_release_gates_still_fail": true,
-  "release_ready": false
+  "release_ready": false,
+  "complete_offset_subset_reassessment": {
+    "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_offset_stress_exact_reassessment_982/assessment.json",
+    "assessment_sha256": "34dc5493ff711c3ed4c02169cfcb07df73f4236ec1a17dbb86eb6f145948eb98",
+    "cases": 48,
+    "original_passes": 24,
+    "exact_passes": 30,
+    "remaining_functional_failures": 18,
+    "changed_cases": 6,
+    "simulations_rerun": 0,
+    "limits_changed": false
+  }
 }
