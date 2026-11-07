@@ -1,0 +1,16 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_followup_1151/assessment.json": "93a88d9354ab05b6f25bec187892ac7f5d2f0a3783358d912ad564185646d454",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_followup_1151/process_audit/assessment.json": "58e2b63e0f2db2d92f9f5942c9b5ee9ed980313f22759666cd7f1d650200b4a0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_followup_1151/process_audit/stages.json": "8df01dc7d25593301882ffe8cc7f7b39d0ccba6d6fc18ba7954e2c96fbd57999"
+  },
+  "artifacts": {},
+  "keeper_geometry_contact_and_process_checks_completed": true,
+  "exact_candidate_antenna_profile_qualified": false,
+  "parent_antenna_qualified": false,
+  "selected": false,
+  "release_ready": false,
+  "all_seven_process_views_zero_feedback": true,
+  "MOS_count_each_stage": 61504,
+  "native_receipts_and_stage_artifacts_verified_inside_image": true
+}
