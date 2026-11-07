@@ -7,7 +7,8 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_einvp_disabled_clamps.py": "e604197c857029c0911ada226a51847272e052d8ee522ca7470693db5b15be80",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_einvp_standard_cell_clamp.py": "04cea67a3b5fdfd1409683293c39d74861fa4442fd426b25659062c52c42fc36",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_einvp_standard_cell_clamp.py": "1f8bae77c6f7df974b36df6737b48d7e93a2229624ac7c0d741685a2f30e7e9e",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_einvp_clamp_comparison.py": "26b65e54e5927adec0f2c83d3e0a39a0c31ba45ad58247121b09469ba644e3e3"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_einvp_clamp_comparison.py": "26b65e54e5927adec0f2c83d3e0a39a0c31ba45ad58247121b09469ba644e3e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_external_keeper_comparison_1062/assessment.json": "781466b9f93b982160df72a2f4b48e0ee66e5a728c5e8906f2a2353a9e29ec6d"
   },
   "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_clamp_comparison_1060/assessment.json",
   "proposals": {
@@ -180,5 +181,6 @@
   "model_validity_ranges_qualified": false,
   "reliability_qualified": false,
   "electrical_rules_qualified": false,
-  "release_ready": false
+  "release_ready": false,
+  "external_pin_only_followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_external_keeper_comparison_1062/assessment.json"
 }

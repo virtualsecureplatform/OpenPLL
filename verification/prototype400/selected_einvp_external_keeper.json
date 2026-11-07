@@ -1,0 +1,94 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_external_keeper_comparison_1062/assessment.json": "781466b9f93b982160df72a2f4b48e0ee66e5a728c5e8906f2a2353a9e29ec6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_external_standard_keeper_1061/assessment.json": "c53bc6e9c9d09001aa0baa1c6201c36ce295bc782e6ccbe46791ef526953717e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_external_standard_keeper_1061/protocol.json": "0451c6b986fbf5590c03a5a76824cbe7e2c4b943a8d109c5b652205c19037df2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_external_standard_keeper_1061/prepared/assessment.json": "f58a26d438749331f9c708fcd212cd896bd61d4418309124410bd7218f59e13e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_calibration_pipeline_316/waveform_assessment/assessment.json": "9a1b1ef2b953eeb2cb8d0d8bce5584507680fad524bffa1e9c7703a02142ccd1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_einvp_external_keeper.py": "861a41507942a222612ca7a4b392c99254d4567ae15e9363896bd64a7e33f7de",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_einvp_external_keeper.py": "3362d38f4340339b1ee34d6cba988d59c2f4e34f268702c15ff78d930821bad8"
+  },
+  "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_external_keeper_comparison_1062/assessment.json",
+  "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_einvp_external_standard_keeper_1061/assessment.json",
+  "proposal": "per load cell: HD einvp_1 keeper with input tied to ground, output tied to original Z, enable driven by an external HS inv_2 from original TE",
+  "added_standard_cells": {
+    "sky130_fd_sc_hd__einvp_1": 2,
+    "sky130_fd_sc_hs__inv_2": 2
+  },
+  "all_original_cell_connections_retained": true,
+  "all_original_geometry_and_RC_retained": true,
+  "added_cells_use_original_cell_primitive_geometry": true,
+  "internal_original_enable_complement_tapped": false,
+  "additional_cell_connections_to_hidden_original_enable_nodes": 0,
+  "only_standard_cell_boundary_pins_required": true,
+  "conditional_source_operating_point": {
+    "corner": "tt",
+    "coarse": 20,
+    "fine": 133,
+    "temperature_c": 27,
+    "supply_v": 1.8,
+    "source_full_native_mean_frequency_mhz": 397.2351251829792
+  },
+  "comparison_window_ns": [
+    202.5,
+    210
+  ],
+  "metrics": {
+    "refined_output_ranges_V": {
+      "__context_node_1468": [
+        1.7655398790466703,
+        1.8219410301595693
+      ],
+      "__context_node_1500": [
+        1.7654933119778051,
+        1.8219412081281081
+      ]
+    },
+    "maximum_absolute_terminal_difference_V": 1.8219412086462026,
+    "worst_terminal_difference": {
+      "instance": "Xkeeper_1_1",
+      "relation": "DS",
+      "range_V": [
+        1.7654933137426245,
+        1.8219412086462026
+      ]
+    },
+    "maximum_internal_timestep_difference_V": 3.4930184725556757e-05,
+    "per_vector_timestep_difference_V": {
+      "V(XCUT:__CONTEXT_NODE_1468)": 1.0159820539312747e-05,
+      "V(XCUT:__CONTEXT_NODE_1469)": 1.238120513891161e-07,
+      "V(XCUT:__CONTEXT_NODE_1470)": 3.020333963443811e-05,
+      "V(XCUT:__CONTEXT_NODE_1471)": 1.4804817602964704e-06,
+      "V(XCUT:__CONTEXT_NODE_1500)": 1.1923675452774063e-05,
+      "V(XCUT:__CONTEXT_NODE_1501)": 1.3767749784676653e-07,
+      "V(XCUT:__CONTEXT_NODE_1502)": 3.4930184725556757e-05,
+      "V(XCUT:__CONTEXT_NODE_1503)": 1.7784939494447372e-06,
+      "V(XCUT:__OPENPLL_KEEPER_0_ENB)": 4.463077275869854e-07,
+      "V(XCUT:__OPENPLL_KEEPER_0_N)": 3.10132040107709e-08,
+      "V(XCUT:__OPENPLL_KEEPER_0_P)": 1.3878176376991291e-06,
+      "V(XCUT:__OPENPLL_KEEPER_1_ENB)": 5.136700238910652e-07,
+      "V(XCUT:__OPENPLL_KEEPER_1_N)": 3.949882958783999e-08,
+      "V(XCUT:__OPENPLL_KEEPER_1_P)": 1.6243605625021473e-06,
+      "V(XCUT:__OPENPLL_EXTERNAL_ENB_0)": 2.8853605060774612e-08,
+      "V(XCUT:__OPENPLL_EXTERNAL_ENB_1)": 3.301998319216182e-08
+    },
+    "assessed_MOS_devices": 32,
+    "physical_layout_changed": false,
+    "new_cell_extracted_parasitics_included": false
+  },
+  "topology_and_geometry_tests_passed": 3,
+  "all_einvp_tests_passed": 25,
+  "new_cell_extracted_parasitics_included": false,
+  "enabled_behavior_checked": false,
+  "enable_transition_contention_checked": false,
+  "input_loading_and_frequency_checked": false,
+  "new_physical_parasitics_checked": false,
+  "startup_checked": false,
+  "all_other_cells_and_corners_checked": false,
+  "physical_design_candidate_selected": false,
+  "layout_changed": false,
+  "model_validity_ranges_qualified": false,
+  "reliability_qualified": false,
+  "electrical_rules_qualified": false,
+  "release_ready": false
+}
