@@ -1,0 +1,66 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_DCO_fine_grain_high_candidate_001/config/dco_fine_grain_high255.v": "845a78150ae4cce88d0ec689fcabb834a6962fa0861ab9b2398a171b5ce6de5b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_history_load_cells_1068/assessment.json": "57453fc0d431e9b18da99791799768878b395db6200513115f482afaaf74f73d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_context_clock_wire_joint_wire_R_margin20_nom_driver_019/wire_map.json": "388bba8bc7ee9cde44bddc55fe57cb119fe2db72432dcc94eeb04fe63cef0bd7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_Xyce_full_C_programming_pilot_030/model.spice": "bed7c41b1fd80a3d739d1ddbe3a39aad3512ac5793640503668cf6ecbd3b6c6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_external_keeper_IC_pair_1091/assessment.json": "4a6166f8b78484fa47ea3d548fc89ec10c58c3096e6bbc3ff7b08fe9789f33b8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_parent_filled_layout_019/assessment.json": "6172bc631c7be70c0b9bd69b1180c241be75cf96a95bbe4d49065b94f48149fd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_DCO_fine_grain_high_candidate_001/config/runs/prototype_fine_grain_high255_001/final/pnl/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.pnl.v": "2a8cd250695ebb082198518d823034fea112d261bd7e471fdcbd48d23ceb38bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_DCO_fine_grain_high_candidate_001/input_manifest.json": "e649b1aa7647b95f1ef3f734505092cb40257f2de762c2b5d24f52e83f84c019",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_selected_history_keeper_candidate.py": "38c0b39858261018777b85d641ad715d30c1803e7a6d0448c4ff2d5bfd3fcc86"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_RTL_candidate_1092/dco_history_keeper.v": "cb82fc570ecb1e39dd924f724b1b569cf425bbc44c11ea36f456443cee142c34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_RTL_candidate_1092/logic_cells.v": "00c8a87f51c900af05e4ac83c94fcb8dd166bc0695b6dda3765c4623171f4088",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_RTL_candidate_1092/logic.vvp": "f481975149923199e6af869109d188d828cfd998e2495e59044d60a919dd06d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_RTL_candidate_1092/power_cells.v": "da7277916199537972bb16984576ec2a5866437d43792106186babe4edd71882",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_RTL_candidate_1092/power.vvp": "3f4dbaa975987a21e62092ddaa246e92d85ba8c5d260f60d1c93009dfa2a40ff"
+  },
+  "mapped_loads": [
+    {
+      "physical_cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_404",
+      "rtl_instance": "fine_191",
+      "enable_bit": 95,
+      "signal": "ring[2]",
+      "output": "unused_load[191]"
+    },
+    {
+      "physical_cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_405",
+      "rtl_instance": "fine_195",
+      "enable_bit": 97,
+      "signal": "ring[2]",
+      "output": "unused_load[195]"
+    },
+    {
+      "physical_cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_441",
+      "rtl_instance": "fine_192",
+      "enable_bit": 96,
+      "signal": "ring[1]",
+      "output": "unused_load[192]"
+    },
+    {
+      "physical_cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_515",
+      "rtl_instance": "fine_223",
+      "enable_bit": 111,
+      "signal": "ring[2]",
+      "output": "unused_load[223]"
+    }
+  ],
+  "original_source_retained_except_appended_cells": true,
+  "added_standard_cells": {
+    "sky130_fd_sc_hd__einvp_1": 4,
+    "sky130_fd_sc_hs__inv_2": 4
+  },
+  "selected_design_changed": false,
+  "physical_layout_qualified": false,
+  "extracted_parasitics_qualified": false,
+  "release_ready": false,
+  "elaboration": {
+    "logic": true,
+    "explicit_power_pins": true,
+    "cell_declarations": "verification stubs; no functional or PDK-model qualification"
+  },
+  "candidate_source": "sky130/candidates/history_keeper_v1/dco_history_keeper.v",
+  "candidate_source_sha256": "cb82fc570ecb1e39dd924f724b1b569cf425bbc44c11ea36f456443cee142c34"
+}
