@@ -1,0 +1,57 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_TT_fine133_MOS_voltage_extents_1038/assessment.json": "ebf3ec30638a42cf4caf2850b24534a70d3625b368dc17e225d51b4e0f7abe77",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_MOS_voltage_witness_controls_1039/assessment.json": "26f8692f86296469a5b4680c091977fd094a1052b103033a80ab8aaebcef211b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_MOS_voltage_physical_locations_1040.json": "4aaa3cd1ba9a06306d4d95c7a8aeaa078ab18baa55bb6eceb5db4744e6a31c11",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_native_mos_terminals.py": "3daf0c5deaa4011816fea9c1a5724d0dd031d43bc6cef12aecebdb8c2a4e13e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_selected_mos_terminal_extents.py": "b7103f35932ea980d50699d5bde59cc072177845c3e8ba2d122693dbfc098ebe",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_mos_extent_witnesses.py": "fc5ec5011443487ec2f09aa59bb99a1ca9da53f02973510a2bee94b3e5c0ccf5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_mos_voltage_scan.py": "22bfff2953935515f81a80f1094894d505b03729e6d7c3c33c445ebc43ea6159",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_waveform/measure_mos_extents.cpp": "39535ae22082bcd44b04a7e6fd37dabfca2f2be993b622400576a8979b8d556a"
+  },
+  "measurement": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_TT_fine133_MOS_voltage_extents_1038/assessment.json",
+  "witness_verification": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_MOS_voltage_witness_controls_1039/assessment.json",
+  "physical_locations": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_MOS_voltage_physical_locations_1040.json",
+  "operating_point": {
+    "corner": "tt",
+    "temperature_c": 27.0,
+    "supply_v": 1.8,
+    "fine": 133
+  },
+  "samples": 45408,
+  "end_ns": 260,
+  "expanded_external_MOS_devices": 61616,
+  "unique_MOS_cards": 53812,
+  "unique_terminal_nodes": 21722,
+  "missing_or_ambiguous_terminal_bindings": 0,
+  "all_saved_native_values_finite": true,
+  "mapping_and_parser_controls_passed": 10,
+  "independent_extrema_witnesses_verified": 7,
+  "independent_exact_double_results_match": true,
+  "standard_nfet_maximum_VDS_V": 2.234741886,
+  "largest_absolute_external_terminal_difference": {
+    "value_V": 2.32055219,
+    "model": "sky130_fd_pr__nfet_01v8",
+    "relation": "BD"
+  },
+  "source_model_validity_context": {
+    "url": "https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html",
+    "reviewed_date_UTC": "2026-11-07",
+    "standard_nfet_VDS_model_validity_range_V": [
+      0,
+      1.95
+    ],
+    "scope": "Published model-validity range; not asserted to be an absolute reliability rating",
+    "observed_positive_VDS_exceeds_published_range": true
+  },
+  "review_state": "Investigate model validity, numerical convergence and physical significance of DCO e-inverter terminal excursions",
+  "native_simulations_launched": 0,
+  "RAW_checksum_recomputed_this_run": false,
+  "measurement_scope": "saved-sample external MOS wrapper terminal differences at TT fine133; no inter-sample or intrinsic-device bounds",
+  "other_corners_measured": false,
+  "model_validity_ranges_qualified": false,
+  "reliability_qualified": false,
+  "electrical_rules_qualified": false,
+  "physical_integrity_qualified": false,
+  "release_ready": false
+}
