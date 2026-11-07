@@ -1,0 +1,467 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_history_load_cells_1068/assessment.json": "57453fc0d431e9b18da99791799768878b395db6200513115f482afaaf74f73d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/map_selected_checkpoint_history_cells.py": "5b5a71e53ab8d623f5008e8a96d6849da3e4f307b23b81bfe8e0db30fb86d38d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_checkpoint_history_cells.py": "a31a37dd5f251681978197106465f0be1b0bae8408d6ee89fb094be06c161d11"
+  },
+  "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_history_load_cells_1068/assessment.json",
+  "context_node_locations": {
+    "__context_node_1776": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_404",
+      "local_pin": "Z"
+    },
+    "__context_node_1777": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_404",
+      "local_pin": "a_204_47#"
+    },
+    "__context_node_1778": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_404",
+      "local_pin": "a_276_297#"
+    },
+    "__context_node_1780": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_405",
+      "local_pin": "Z"
+    },
+    "__context_node_1781": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_405",
+      "local_pin": "a_204_47#"
+    },
+    "__context_node_1782": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_405",
+      "local_pin": "a_276_297#"
+    },
+    "__context_node_1940": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_441",
+      "local_pin": "Z"
+    },
+    "__context_node_1941": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_441",
+      "local_pin": "a_204_47#"
+    },
+    "__context_node_1942": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_441",
+      "local_pin": "a_276_297#"
+    },
+    "__context_node_2268": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_515",
+      "local_pin": "Z"
+    },
+    "__context_node_2269": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_515",
+      "local_pin": "a_204_47#"
+    },
+    "__context_node_2271": {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_515",
+      "local_pin": "a_27_47#"
+    }
+  },
+  "cells": [
+    {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_404",
+      "flat_MOS_instances": [
+        "Xflat1476",
+        "Xflat1477",
+        "Xflat1478",
+        "Xflat1479",
+        "Xflat1480",
+        "Xflat1481"
+      ],
+      "local_to_native_nodes": {
+        "a_276_297#": "__context_node_1778",
+        "a_27_47#": "__context_node_1779",
+        "VPWR": "VPWR",
+        "VPB": "VPWR",
+        "Z": "__context_node_1776",
+        "A": "__parent_R_node_1734",
+        "a_204_47#": "__context_node_1777",
+        "VNB": "VGND",
+        "TE": "__parent_R_node_604",
+        "VGND": "VGND"
+      },
+      "sensitive_local_pins": {
+        "__context_node_1776": "Z",
+        "__context_node_1777": "a_204_47#",
+        "__context_node_1778": "a_276_297#"
+      },
+      "outside_cell_primitive_connections_to_Z": [],
+      "explicit_resistors_on_Z": [],
+      "full_capacitor_cards_on_Z": 355,
+      "conditional_capacitor_cards_on_Z": 355,
+      "initial_voltages_V": {
+        "a_276_297#": {
+          "node": "__context_node_1778",
+          "own112": 1.79138105,
+          "donor111": 2.04224537,
+          "context111": 2.04224537
+        },
+        "a_27_47#": {
+          "node": "__context_node_1779",
+          "own112": 1.79999998,
+          "donor111": 1.79999972,
+          "context111": 1.79999998
+        },
+        "VPWR": {
+          "node": "VPWR",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "VPB": {
+          "node": "VPWR",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "Z": {
+          "node": "__context_node_1776",
+          "own112": 0.452647565,
+          "donor111": -0.00944132404,
+          "context111": -0.00944132404
+        },
+        "A": {
+          "node": "__parent_R_node_1734",
+          "own112": 1.80000012,
+          "donor111": 1.80000017,
+          "context111": 1.80000012
+        },
+        "a_204_47#": {
+          "node": "__context_node_1777",
+          "own112": 0.452647563,
+          "donor111": -0.00944152016,
+          "context111": -0.00944152016
+        },
+        "VNB": {
+          "node": "VGND",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "TE": {
+          "node": "__parent_R_node_604",
+          "own112": 1.28597036e-07,
+          "donor111": 1.3728238e-07,
+          "context111": 1.28597036e-07
+        },
+        "VGND": {
+          "node": "VGND",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        }
+      }
+    },
+    {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_405",
+      "flat_MOS_instances": [
+        "Xflat1574",
+        "Xflat1575",
+        "Xflat1576",
+        "Xflat1577",
+        "Xflat1578",
+        "Xflat1579"
+      ],
+      "local_to_native_nodes": {
+        "a_276_297#": "__context_node_1782",
+        "a_27_47#": "__context_node_1783",
+        "VPWR": "VPWR",
+        "VPB": "VPWR",
+        "Z": "__context_node_1780",
+        "A": "__parent_R_node_1736",
+        "a_204_47#": "__context_node_1781",
+        "VNB": "VGND",
+        "TE": "__parent_R_node_608",
+        "VGND": "VGND"
+      },
+      "sensitive_local_pins": {
+        "__context_node_1780": "Z",
+        "__context_node_1781": "a_204_47#",
+        "__context_node_1782": "a_276_297#"
+      },
+      "outside_cell_primitive_connections_to_Z": [],
+      "explicit_resistors_on_Z": [],
+      "full_capacitor_cards_on_Z": 354,
+      "conditional_capacitor_cards_on_Z": 354,
+      "initial_voltages_V": {
+        "a_276_297#": {
+          "node": "__context_node_1782",
+          "own112": 1.79137034,
+          "donor111": 2.04187004,
+          "context111": 2.04187004
+        },
+        "a_27_47#": {
+          "node": "__context_node_1783",
+          "own112": 1.79999998,
+          "donor111": 1.79999972,
+          "context111": 1.79999998
+        },
+        "VPWR": {
+          "node": "VPWR",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "VPB": {
+          "node": "VPWR",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "Z": {
+          "node": "__context_node_1780",
+          "own112": 0.452635593,
+          "donor111": -0.0103537027,
+          "context111": -0.0103537027
+        },
+        "A": {
+          "node": "__parent_R_node_1736",
+          "own112": 1.80000012,
+          "donor111": 1.80000017,
+          "context111": 1.80000012
+        },
+        "a_204_47#": {
+          "node": "__context_node_1781",
+          "own112": 0.452635591,
+          "donor111": -0.0103538982,
+          "context111": -0.0103538982
+        },
+        "VNB": {
+          "node": "VGND",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "TE": {
+          "node": "__parent_R_node_608",
+          "own112": 1.28606493e-07,
+          "donor111": 1.37264288e-07,
+          "context111": 1.28606493e-07
+        },
+        "VGND": {
+          "node": "VGND",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        }
+      }
+    },
+    {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_441",
+      "flat_MOS_instances": [
+        "Xflat548",
+        "Xflat549",
+        "Xflat550",
+        "Xflat551",
+        "Xflat552",
+        "Xflat553"
+      ],
+      "local_to_native_nodes": {
+        "a_276_297#": "__context_node_1942",
+        "a_27_47#": "__context_node_1943",
+        "VPWR": "VPWR",
+        "VPB": "VPWR",
+        "Z": "__context_node_1940",
+        "A": "__parent_R_node_1079",
+        "a_204_47#": "__context_node_1941",
+        "VNB": "VGND",
+        "TE": "__parent_R_node_606",
+        "VGND": "VGND"
+      },
+      "sensitive_local_pins": {
+        "__context_node_1940": "Z",
+        "__context_node_1941": "a_204_47#",
+        "__context_node_1942": "a_276_297#"
+      },
+      "outside_cell_primitive_connections_to_Z": [],
+      "explicit_resistors_on_Z": [],
+      "full_capacitor_cards_on_Z": 357,
+      "conditional_capacitor_cards_on_Z": 357,
+      "initial_voltages_V": {
+        "a_276_297#": {
+          "node": "__context_node_1942",
+          "own112": 1.34170118,
+          "donor111": 1.96005451,
+          "context111": 1.96005451
+        },
+        "a_27_47#": {
+          "node": "__context_node_1943",
+          "own112": 1.79999998,
+          "donor111": 1.79999998,
+          "context111": 1.79999998
+        },
+        "VPWR": {
+          "node": "VPWR",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "VPB": {
+          "node": "VPWR",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "Z": {
+          "node": "__context_node_1940",
+          "own112": 1.34170118,
+          "donor111": 1.96005445,
+          "context111": 1.96005445
+        },
+        "A": {
+          "node": "__parent_R_node_1079",
+          "own112": 1.54280281e-09,
+          "donor111": -1.30426611e-10,
+          "context111": 1.54280281e-09
+        },
+        "a_204_47#": {
+          "node": "__context_node_1941",
+          "own112": -0.0439878205,
+          "donor111": -0.167860261,
+          "context111": -0.167860261
+        },
+        "VNB": {
+          "node": "VGND",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "TE": {
+          "node": "__parent_R_node_606",
+          "own112": 1.28639741e-07,
+          "donor111": 1.32017148e-07,
+          "context111": 1.28639741e-07
+        },
+        "VGND": {
+          "node": "VGND",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        }
+      }
+    },
+    {
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_515",
+      "flat_MOS_instances": [
+        "Xflat3062",
+        "Xflat3063",
+        "Xflat3064",
+        "Xflat3065",
+        "Xflat3066",
+        "Xflat3067"
+      ],
+      "local_to_native_nodes": {
+        "a_276_297#": "__context_node_2270",
+        "a_27_47#": "__context_node_2271",
+        "VPWR": "VPWR",
+        "VPB": "VPWR",
+        "Z": "__context_node_2268",
+        "A": "__parent_R_node_1753",
+        "a_204_47#": "__context_node_2269",
+        "VNB": "VGND",
+        "TE": "__parent_R_node_125",
+        "VGND": "VGND"
+      },
+      "sensitive_local_pins": {
+        "__context_node_2268": "Z",
+        "__context_node_2269": "a_204_47#",
+        "__context_node_2271": "a_27_47#"
+      },
+      "outside_cell_primitive_connections_to_Z": [],
+      "explicit_resistors_on_Z": [],
+      "full_capacitor_cards_on_Z": 399,
+      "conditional_capacitor_cards_on_Z": 399,
+      "initial_voltages_V": {
+        "a_276_297#": {
+          "node": "__context_node_2270",
+          "own112": 1.79502962,
+          "donor111": 1.8,
+          "context111": 1.79502962
+        },
+        "a_27_47#": {
+          "node": "__context_node_2271",
+          "own112": 1.79999998,
+          "donor111": 8.17476043e-09,
+          "context111": 8.17476043e-09
+        },
+        "VPWR": {
+          "node": "VPWR",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "VPB": {
+          "node": "VPWR",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "Z": {
+          "node": "__context_node_2268",
+          "own112": 0.423485232,
+          "donor111": 5.39420975e-09,
+          "context111": 5.39420975e-09
+        },
+        "A": {
+          "node": "__parent_R_node_1753",
+          "own112": 1.80000013,
+          "donor111": 1.80000018,
+          "context111": 1.80000013
+        },
+        "a_204_47#": {
+          "node": "__context_node_2269",
+          "own112": 0.423485231,
+          "donor111": 2.69669873e-09,
+          "context111": 2.69669873e-09
+        },
+        "VNB": {
+          "node": "VGND",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        },
+        "TE": {
+          "node": "__parent_R_node_125",
+          "own112": 1.28692321e-07,
+          "donor111": 1.79999999,
+          "context111": 1.28692321e-07
+        },
+        "VGND": {
+          "node": "VGND",
+          "own112": null,
+          "donor111": null,
+          "context111": null
+        }
+      }
+    }
+  ],
+  "all_24_MOS_cards_and_wrappers_identical_in_measured_partition": true,
+  "all_four_Z_have_no_outside_primitives_or_resistors": true,
+  "previously_measured_factorial_primary_window": {
+    "window_ns": [
+      40,
+      55
+    ],
+    "frequency_MHz": {
+      "own112": 392.66033107565045,
+      "all111": 392.5581946069965,
+      "context111": 392.5649865713356,
+      "complement111": 392.6337667401973
+    },
+    "context_effect_with_other_state112_MHz": -0.09534450431482355,
+    "complement_effect_with_context112_MHz": -0.02656433545314485,
+    "interaction_MHz": 0.01977237111401564,
+    "full_IC_shift_MHz": -0.10213646865395276
+  },
+  "context_to_full_IC_shift_ratio": 0.9335010850811675,
+  "mapping_guard_tests_passed": 3,
+  "cell_topology_matches_prior_voltage_keeper_study": true,
+  "same_cell_instances_as_voltage_keeper_study": false,
+  "scope": "Join of retained physical topology to the previously measured TT coarse20/fine112 conditional IC intervention; no new native simulation.",
+  "observed_target_checkpoint_TE_near_zero_and_enable_complement_near_1p8": true,
+  "hybrid_physical_reachability_assumed": false,
+  "clamp_history_remedy_verified": false,
+  "full_native_switched_equivalence_qualified": false,
+  "uniform_model_uncertainty_qualified": false,
+  "model_family_qualified": false,
+  "physical_layout_changed": false,
+  "release_ready": false
+}
