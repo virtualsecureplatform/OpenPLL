@@ -144,5 +144,6 @@
     "simulations_rerun": 0,
     "limits_changed": false
   },
-  "all_observed_history_stress_diagnostics_passed": false
+  "all_observed_history_stress_diagnostics_passed": false,
+  "guarded_exact_gain_search_followup": "verification/prototype400/selected_guarded_exact_gain_search.json"
 }

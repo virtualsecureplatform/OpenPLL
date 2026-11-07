@@ -1,0 +1,134 @@
+{
+  "purpose": "Continue diagnostic gain exploration through missing native coverage without claiming a resolved minimum",
+  "pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_capture_upper_guard_977",
+  "initial_gain": [
+    4,
+    0
+  ],
+  "ordered_gain_grid": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      16,
+      0
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      16,
+      4
+    ],
+    [
+      16,
+      8
+    ]
+  ],
+  "baseline_matrices": [
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_guarded_exact_initial_nominal_988",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_guarded_exact_initial_receiver_989"
+  ],
+  "search": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_guarded_exact_TT_gain_search_990",
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_guarded_exact_initial_nominal_988/inputs.json": "299da49bf0d1c8cd60a9f2c0f9d77300db125a29f8160925a2134b8692accd05",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_guarded_exact_initial_receiver_989/inputs.json": "6e56dc62010e4dd9f770f7d5ff6c97c7c3005424c64a1b64c4e1000308d8e895",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_guarded_exact_TT_gain_search_990/inputs.json": "6fc2883d2dc5c44f569dd16d4ac726bb81248fc08942bdedd48cf51324f2322c"
+  },
+  "worker": "verification/signoff400/follow_selected_publication_matrix_v3.py",
+  "runtime": "verification/signoff400/run_selected_mixed_signal_v8.py",
+  "gain_selection_controls_passed": 5,
+  "cases_per_gain_pair": 48,
+  "maximum_additional_matrices": 48,
+  "search_wall_cap_s": 43200,
+  "original_calibration_and_corner_jobs_unchanged": true,
+  "native_simulations_launched_by_search": 0,
+  "missing_coverage_classification": "indeterminate; other gains may be explored",
+  "minimum_order_claim_requires_all_lower_pairs_to_fail_functionally": true,
+  "stops_on_incomplete_execution": true,
+  "common_five_corner_gain_qualified": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}

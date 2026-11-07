@@ -40,5 +40,6 @@
   "requested_coarse": 20,
   "frequency_prediction_inserted": false,
   "live_runtime_receipt": "build/signoff400/selected_refined_TT_runtime_962.json",
-  "live_runtime_receipt_sha256": "0459bc25244702887de03d48a898db21ad6964b0e59db1db55e83cd1f280ede8"
+  "live_runtime_receipt_sha256": "0459bc25244702887de03d48a898db21ad6964b0e59db1db55e83cd1f280ede8",
+  "guarded_exact_gain_search_followup": "verification/prototype400/selected_guarded_exact_gain_search.json"
 }
