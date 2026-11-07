@@ -1,7 +1,9 @@
 {
   "purpose": "Exhaustive linked-digital pin electrical inventory under conditional native timing views",
   "input_sha256": {
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_digital_pin_electrical_coverage_996/assessment.json": "d1399d73469ce0627f110ac6d3d50b203f05aa675c25219cd935167e7830c3d3"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_digital_pin_electrical_coverage_996/assessment.json": "d1399d73469ce0627f110ac6d3d50b203f05aa675c25219cd935167e7830c3d3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_constant_pin_electrical_review_1020/assessment.json": "c3c94a39552617570d6a28b4f6cbbfb946cb559e34a37539a2d29b5a23b61c4e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_selected_constant_pin_electrical.py": "765307b158a88a86454c10896394d2eb88b14c8ece467e51f458b039e0054b8d"
   },
   "results": {
     "tt": {
@@ -141,5 +143,28 @@
   "physical_integrity_qualified": false,
   "validation_controls_passed": 10,
   "additional_SPICE_simulations_started": 0,
-  "release_ready": false
+  "release_ready": false,
+  "constant_pin_applicability_review": {
+    "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_constant_pin_electrical_review_1020/assessment.json",
+    "corners": [
+      "tt",
+      "ff",
+      "ss",
+      "sf",
+      "fs"
+    ],
+    "late_zero_pins_per_corner": 24,
+    "loaded_constant_outputs": 8,
+    "routed_fanout": "one D pin per loaded constant output",
+    "modeled_capacitance_range_ff": [
+      3.207748989,
+      8.955637924
+    ],
+    "source_capacitance_limit_lost_in_rendering": false,
+    "source_max_capacitance_specified": false,
+    "late_zero_slew_topology_review_complete": true,
+    "early_zero_slew_review_complete": false,
+    "physical_power_up_or_constant_drive_qualified": false,
+    "electrical_rules_qualified": false
+  }
 }
