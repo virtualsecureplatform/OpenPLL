@@ -1,0 +1,344 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_nominal_1084/assessment.json": "d5746512de9f4a8c2861c2dc5ed3d91be9f3dea42eedc8b19938f931b50542c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_receiver_1085/assessment.json": "c69b41362fc3db1d6cce1c8e44283fb898a2efa3b745cd1b39f334445dc07204",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP4_nominal_1086/assessment.json": "7c1e76256776bc4226fdc14a9a44ae5a500997c68e737c5ed8d5b673719444b7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP4_receiver_1087/assessment.json": "4dd72dcc5f217089bfa5ce2bdb8e9cdc72d0b1121682421eafb7abd08c20cf06",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_offset_remaining_gain_screen_1083/assessment.json": "61408aae5acc43fad01b047dba02a0677d8d9f0266a4ee9c0f02fa721b212ab3"
+  },
+  "matrices": [
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_nominal_1084",
+      "ki": 1,
+      "kp": 2,
+      "completed_cases": 24,
+      "functional_passes": 24,
+      "needed_native_points": [],
+      "all_inputs_and_case_artifacts_verified": true
+    },
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_receiver_1085",
+      "ki": 1,
+      "kp": 2,
+      "completed_cases": 24,
+      "functional_passes": 24,
+      "needed_native_points": [],
+      "all_inputs_and_case_artifacts_verified": true
+    },
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP4_nominal_1086",
+      "ki": 1,
+      "kp": 4,
+      "completed_cases": 24,
+      "functional_passes": 24,
+      "needed_native_points": [],
+      "all_inputs_and_case_artifacts_verified": true
+    },
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP4_receiver_1087",
+      "ki": 1,
+      "kp": 4,
+      "completed_cases": 24,
+      "functional_passes": 24,
+      "needed_native_points": [],
+      "all_inputs_and_case_artifacts_verified": true
+    }
+  ],
+  "screen_results": [
+    {
+      "ki": 1,
+      "kp": 0,
+      "timing": "nominal",
+      "state": "diagnostic_failed",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 1,
+      "kp": 0,
+      "timing": "receiver",
+      "state": "diagnostic_failed",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 1,
+      "kp": 1,
+      "timing": "nominal",
+      "state": "diagnostic_failed",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 1,
+      "kp": 1,
+      "timing": "receiver",
+      "state": "diagnostic_failed",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 1,
+      "kp": 2,
+      "timing": "nominal",
+      "state": "diagnostic_simulation_completed",
+      "functional_trace_pass": true
+    },
+    {
+      "ki": 1,
+      "kp": 2,
+      "timing": "receiver",
+      "state": "diagnostic_simulation_completed",
+      "functional_trace_pass": true
+    },
+    {
+      "ki": 1,
+      "kp": 4,
+      "timing": "nominal",
+      "state": "diagnostic_simulation_completed",
+      "functional_trace_pass": true
+    },
+    {
+      "ki": 1,
+      "kp": 4,
+      "timing": "receiver",
+      "state": "diagnostic_simulation_completed",
+      "functional_trace_pass": true
+    },
+    {
+      "ki": 2,
+      "kp": 0,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 2,
+      "kp": 0,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 2,
+      "kp": 1,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 2,
+      "kp": 1,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 2,
+      "kp": 2,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 2,
+      "kp": 2,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 2,
+      "kp": 4,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 2,
+      "kp": 4,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 4,
+      "kp": 0,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 4,
+      "kp": 0,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 4,
+      "kp": 1,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 4,
+      "kp": 1,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 4,
+      "kp": 2,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 4,
+      "kp": 2,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 4,
+      "kp": 4,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 4,
+      "kp": 4,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 8,
+      "kp": 0,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 8,
+      "kp": 0,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 8,
+      "kp": 1,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 8,
+      "kp": 1,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 8,
+      "kp": 2,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 8,
+      "kp": 2,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 8,
+      "kp": 4,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 8,
+      "kp": 4,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 16,
+      "kp": 0,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 16,
+      "kp": 0,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 16,
+      "kp": 1,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 16,
+      "kp": 1,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 16,
+      "kp": 2,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 16,
+      "kp": 2,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 16,
+      "kp": 4,
+      "timing": "nominal",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    },
+    {
+      "ki": 16,
+      "kp": 4,
+      "timing": "receiver",
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false
+    }
+  ],
+  "total_matrix_cases": 96,
+  "total_matrix_passes": 96,
+  "screen_full_gain_selected": false,
+  "minimum_gain_selected": false,
+  "history_stress_robustness_demonstrated": false,
+  "release_ready": false,
+  "next_history_stress_gain_pair": [
+    1,
+    2
+  ],
+  "history_stress_continuations": [
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_nominal_1088",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP2_history_receiver_1089"
+  ],
+  "new_native_cases": 0
+}

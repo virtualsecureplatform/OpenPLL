@@ -24,7 +24,8 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/acceptance_v4.py": "ced3b3c6edb28090e7b84a50d643dc53405eff20c588299b296e1f0a62b0d2d8",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_loop_assessment_v2.py": "26df3ad5490d55b9f4fd28c148116f1af75fd03b7ccc78d8d8fdcf312cb14f34",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_offset_remaining_gain_screen_1083/protocol.json": "c25eea1def10f9fafae2acfa9df67c14a2b3690aaac0384a87b16b1e05b958c6",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_offset_remaining_gain_screen_1083/owner.json": "06cf3d3420662cb9cb7d792a8da6da40ab260292f188a1bf9f9f256ce92f6e2e"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_offset_remaining_gain_screen_1083/owner.json": "06cf3d3420662cb9cb7d792a8da6da40ab260292f188a1bf9f9f256ce92f6e2e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_offset_remaining_gain_screen_1083/assessment.json": "61408aae5acc43fad01b047dba02a0677d8d9f0266a4ee9c0f02fa721b212ab3"
   },
   "gains": [
     [
@@ -134,5 +135,23 @@
   "phase_span_failure_observed_ps": 251,
   "phase_span_limit_ps": 250,
   "thresholds_unchanged": true,
-  "passing_screen_does_not_select_common_gain": true
+  "passing_screen_does_not_select_common_gain": true,
+  "completed_cases": 40,
+  "all_input_and_case_artifact_hashes_verified": true,
+  "case_state_counts": {
+    "diagnostic_failed": 4,
+    "diagnostic_simulation_completed": 4,
+    "needs_native_tuning_points": 32
+  },
+  "passing_screen_pairs": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ]
+  ],
+  "full_gain_selected": false
 }
