@@ -1,0 +1,59 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_selected_keeper_wire_rc.py": "4e7329d20d29353faac037aff456967fba4e46d7b41f1a02cec7d9e0072b41b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_1118/assessment.json": "1ef4b3dc8109f4f1b79b94a6fd002df8b9bac93bc93b68b14b046949e110f4e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/assessment.json": "937a5c23dc90fdb610803b99d86b82b4b407ed3b306b14da5498537169d3312e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_1118/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160/capacitance.spice": "701f3049e676f23ed908fd7182795aad3b7ca12f5b846bbf4df7516e9457f5e2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_1118/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160/sky130_fd_sc_hd__einvp_1.ext": "f24b46a0de02259b49d422bd12ba37483653b5500ca7b3ce32afaed0c521173a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitance_1118/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.ext": "6585819b147b70a4b4c3a683de5e26e18ba668f1a2352f984d50f25a23f81fee",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_tapped_route_1108/config/runs/history_keeper_macros_001/46-odb-cellfrequencytables/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.odb": "3a04768c7bc341ce36a6163d5486be65994c9f62476d66f5b74c72c02a17ea30",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_binding_1121/query.tcl": "8e814057899e68f941796e1a3262a6bfd950a900f955507880ce8e075aeeacda",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/join_prototype_physical_instances.py": "330d957947b99064f71b497d35b2a3ce7f49c13d527572fc8da6f9a278a5e8a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_prototype_spef_pins_v2.py": "086741817c145431bf5d995363311392f43cb1263334a9cadd23448ea6b97578",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/nom.json": "3fd0bcf21902a12fb714a19da913bc50294c1c149d7be08b57e636b055ac7c38",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/min.json": "4994bad4a754a36fa06da0648f1b34959400f243a0cae50e1d57c09f155ff431",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_RC_1120/max.json": "eee37241445543bf70c5c239f777dd69d8657b61e9fe8293ac7974e14b9709bb"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_binding_1121/placements.tsv": "521cdbd27908dafef9015202e42bd15f5e4702dada0cddd45433a0e5c1e2f8df",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_binding_1121/join.json": "bca9b9e5650c65ce7e20f57271ff6237198429b01b5a009368b9f5f03a16f9d8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_binding_1121/nom.binding.json": "43344bb5c3c0139e335bd399adb62199ac3ac20eee323243b47ada8cd40f8d31",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_binding_1121/min.binding.json": "43344bb5c3c0139e335bd399adb62199ac3ac20eee323243b47ada8cd40f8d31",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_wire_binding_1121/max.binding.json": "43344bb5c3c0139e335bd399adb62199ac3ac20eee323243b47ada8cd40f8d31"
+  },
+  "results": [
+    {
+      "corner": "nom",
+      "networks": 364,
+      "terminals": 1826,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    },
+    {
+      "corner": "min",
+      "networks": 364,
+      "terminals": 1826,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    },
+    {
+      "corner": "max",
+      "networks": 364,
+      "terminals": 1826,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    }
+  ],
+  "magic_grid_um": "1/200",
+  "database_units_per_magic_unit": "5",
+  "primitive_controls": 6,
+  "exact_primitive_length_width_grid_match": true,
+  "all_instance_placements_match": true,
+  "matched_instances": 2130,
+  "all_RC_terminals_bound_and_connected": true,
+  "capacitance_scope_combination_validated": false,
+  "parent_loading_complete": false,
+  "selected": false,
+  "release_ready": false
+}
