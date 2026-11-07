@@ -1,0 +1,43 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP8_nominal_1078/assessment.json": "786d9289e3c7cedf752b6b222292a75bf3ed91c25bed7201ac6b87bea9424ae8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP8_receiver_1079/assessment.json": "b271d67299f98645ee1b6f7ab07477f30dc524ad28573fe097ed27874f6503f3"
+  },
+  "gain_pair": [
+    1,
+    8
+  ],
+  "operating_point": {
+    "corner": "tt",
+    "temperature_c": 27,
+    "supply_v": 1.8
+  },
+  "matrices": [
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP8_nominal_1078",
+      "expected_cases": 24,
+      "functional_pass_count": 24,
+      "requested_native_points": [],
+      "wall_s": 234.3741307221353,
+      "seed_fine": 149,
+      "all_input_and_case_artifact_hashes_verified": true
+    },
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_KI1_KP8_receiver_1079",
+      "expected_cases": 24,
+      "functional_pass_count": 24,
+      "requested_native_points": [],
+      "wall_s": 237.0510598111432,
+      "seed_fine": 149,
+      "all_input_and_case_artifact_hashes_verified": true
+    }
+  ],
+  "total_cases": 48,
+  "total_diagnostic_functional_passes": 48,
+  "new_native_cases": 0,
+  "minimum_gain_order_qualified": false,
+  "analog_uncertainty_qualified": false,
+  "all_corner_controller_qualified": false,
+  "native_interface_qualified": false,
+  "release_ready": false
+}
