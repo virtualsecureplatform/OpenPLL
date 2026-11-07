@@ -21,7 +21,8 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_interior_candidate_timing_1031/assessment.json": "c4cd8fe836e57070feaebaf82ff78ee7a3620eb99e7f9228138941d68e0b3ec4",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_interior_validation_protocol_1033/protocol.json": "18cd805f1dde71af62f6c5df42914d6541c77f60f2cb4e43e791044b2442de03",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_interior_validation_runtime_1034.json": "dcb3770c7c6b476b49a98b441c9cbdab8c18157c9481dd782b375cfacc5c8b93",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_frozen_candidate_fresh_replay_1035/inputs.json": "ea2bea40c43aacb9f9794bd4a3bc9d4cbe0897f073b5e9f48bfb096a27160e05"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_frozen_candidate_fresh_replay_1035/inputs.json": "ea2bea40c43aacb9f9794bd4a3bc9d4cbe0897f073b5e9f48bfb096a27160e05",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_frozen_candidate_fresh_replay_1035/check/assessment.json": "dd67c0b8e2893e8e9c694b5b64743b3a282cfb8d1d7b81935eef90ece2134900"
   },
   "native_probe": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_nearzero_844",
   "fit_followup": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_raw_detector_fit_followup_846",
@@ -136,7 +137,22 @@
     "PDK_static_include_files": 319,
     "container_image_binding_proven": false,
     "corner_sender_waveforms_correlated": false,
-    "normal_completion_observed": false,
-    "release_ready": false
+    "normal_completion_observed": true,
+    "release_ready": false,
+    "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_FF_frozen_candidate_fresh_replay_1035/check/assessment.json",
+    "measured_cycles": [
+      {
+        "phase_ps": -48.66385112784144,
+        "decision": "up",
+        "predicted": "dn"
+      }
+    ],
+    "parameters_refitted": false,
+    "all_sampled_signs_match": false,
+    "all_event_counts_match": false,
+    "all_edges_within_observed_fit_band": false,
+    "candidate_independently_validated": false,
+    "candidate_bound_for_downstream_use": false,
+    "outcome": "frozen_candidate_rejected_by_fresh_holdout"
   }
 }
