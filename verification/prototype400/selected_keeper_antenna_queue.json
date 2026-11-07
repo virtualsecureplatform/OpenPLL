@@ -1,0 +1,41 @@
+{
+  "native_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conservative_antenna_1150",
+  "native_manifest_sha256": "214e62455944e07bd9f84f1dc97d97bcee5a337fb4aea14fd1105e3d3083db6b",
+  "native_status_at_publication": {
+    "state": "native_flat_antenna_experiment_complete",
+    "release_ready": false
+  },
+  "followup_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_followup_1151",
+  "followup_inputs": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_keeper_antenna_checks.py": "353e6ffb726ed8539f0da2a0dde1fdec0ea2f606a508e2a440585fa247846f4f",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conservative_antenna_1150/owner.json": "87cc3b7dcbd0359479bf21c4471a0905427e54df123bd779c3698452d3959815",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conservative_antenna_1150/input_manifest.json": "214e62455944e07bd9f84f1dc97d97bcee5a337fb4aea14fd1105e3d3083db6b",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_conservative_contact_controls_650/assessment.json": "d084d9ec7ec7fd16314021020849863d50ee01b7d5a27970f61539f5c537af7b",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_M5_fill_alias_control_555/assessment.json": "c4f2315b1663e941c77a133be8d13f251a93857cc2f616d3ebf590f7d0be6dcb",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_prototype_flat_antenna_geometry_v2.py": "02ec6a1405fe74f868cf50aa7cfcd4a122831af72257a17c595349100ac3621a",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_contact_paint_containment.py": "8e5ee66c5bd5a9b3651cc7968445179b0246be6da510d127d6253c4c422ffc71",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_antenna_process_prefix_v3.py": "b56cb78fb4a880ead721fc47d3801d381ae32a2053b6cf66ec23d65d45883d91",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_antenna_process_views.py": "a465860353c228a2931bb72184c37278ced755d8ec9bf5a9110f1cd87bf533f0"
+    },
+    "original_parent_owner": {
+      "pid": 1888937,
+      "birth": "128758269"
+    },
+    "total_cap_s": 86400,
+    "max_parallel_process_views": 2,
+    "automatic_identical_retry": false,
+    "release_ready": false
+  },
+  "followup_status_at_publication": {
+    "state": "keeper_mask_geometry_check_running",
+    "release_ready": false
+  },
+  "controlled_engine": "build/signoff400/selected_magic_conservative_contact_build_649/install/bin/magic",
+  "rule_controls": "build/signoff400/selected_magic_conservative_contact_controls_650/assessment.json",
+  "original_selected_GDS_qualification_reused": false,
+  "candidate_antenna_qualified": false,
+  "max_parallel_process_views": 2,
+  "total_followup_cap_hours": 24,
+  "release_ready": false
+}
