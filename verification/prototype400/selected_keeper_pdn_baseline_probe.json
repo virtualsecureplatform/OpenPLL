@@ -1,0 +1,54 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_selected_keeper_pdn.py": "23d8657e74e10b02040f7c58eb4b874ca55c701b9bb36bbb3bb343dc2975988d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1097/config/config.json": "924c9b34aca296eb68def91f9184e999333d68b0aed32d33126a43680784c850",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1097/config/runs/history_keeper_macros_001/17-openroad-generatepdn/state_in.json": "33ea694c82461dc8e6f8421f4aa66a48cce673fef596f276704f5cd133d5ec6f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1097/config/runs/history_keeper_macros_001/15-openroad-tapendcapinsertion/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.odb": "f1b6c2efd7160f8538bff3647892b14eb44fb4a7d95636c2816d8fba2cacb89d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_pdn_baseline_probe_1101/config.json": "0b6c0a29b95d58ff6c3ce32cfde4d5f228e03715d1a3e181e47b8986dad030cb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.gds": "ce09a04d97ed626d23d688cc20529b522cb35b36b7993a20e77230aeb926ede1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1097/config/sky130_fd_sc_hs__inv_2.lef": "d54b5db5897b404b5e1e699fd62a8b760e8f0a657038744b936c64f3906adf3a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_history_keeper_pdn.tcl": "aa776e37b682061ea44f6877446f726ad525ee5fca107e82d59be9df0df3d24d"
+  },
+  "command": [
+    "apptainer",
+    "exec",
+    "--bind",
+    "/home:/home,/tmp:/tmp",
+    "--env",
+    "PATH=/nix/store/nah36l3f04m5gsi98a7civz9n8szraml-devshell-dir/bin:/usr/bin:/bin",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+    "/nix/store/nah36l3f04m5gsi98a7civz9n8szraml-devshell-dir/bin/librelane",
+    "--manual-pdk",
+    "--pdk-root",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae",
+    "--run-tag",
+    "pdn_only",
+    "--jobs",
+    "4",
+    "--condensed",
+    "--only",
+    "OpenROAD.GeneratePDN",
+    "--with-initial-state",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1097/config/runs/history_keeper_macros_001/17-openroad-generatepdn/state_in.json",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_pdn_baseline_probe_1101/config.json"
+  ],
+  "no_via_warnings": [],
+  "unconnected_instances": [
+    "[WARNING PSM-0039] Unconnected instance history_enable_191/VNB at location (24.845um, 24.125um).",
+    "[WARNING PSM-0039] Unconnected instance history_enable_191/VGND at location (25.440um, 24.000um).",
+    "[WARNING PSM-0039] Unconnected instance history_enable_195/VNB at location (54.845um, 24.125um).",
+    "[WARNING PSM-0039] Unconnected instance history_enable_223/VNB at location (54.845um, 54.125um).",
+    "[WARNING PSM-0039] Unconnected instance history_enable_195/VGND at location (55.440um, 24.000um).",
+    "[WARNING PSM-0039] Unconnected instance history_enable_223/VGND at location (55.440um, 54.000um).",
+    "[WARNING PSM-0039] Unconnected instance history_enable_192/VNB at location (84.845um, 24.125um).",
+    "[WARNING PSM-0039] Unconnected instance history_enable_192/VGND at location (85.440um, 24.000um)."
+  ],
+  "connectivity_failures": [
+    "[ERROR PSM-0069] Check connectivity failed on VGND.",
+    "[WARNING] Grid check for VGND failed: PSM-0069"
+  ],
+  "original_inputs_unchanged": true,
+  "physical_qualification": false,
+  "release_ready": false
+}
