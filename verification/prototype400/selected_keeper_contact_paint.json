@@ -1,0 +1,24 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_contact_paint_containment.py": "8e5ee66c5bd5a9b3651cc7968445179b0246be6da510d127d6253c4c422ffc71",
+    "/nix/store/ps0r3qpgjh1lqyqacra33rvxsjgkd874-python3-3.13.9-env/bin/python3": "6089315ff298ff5ef084e0ef5bf693cf3e60bc5782c4a0294612fe51b44f278a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conservative_antenna_1150/assessment.json": "c46302e9f4b00115710ebcb8ac13dc0243062cde835dffe3e3a73fbacc111e99",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assembly.gds": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_followup_1151/paint/contact_paint_output.tech": "19c6ac6eb8f79cf1135690596bff7e47ccbd0aed4a61fb08f956224de296d044",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_followup_1151/paint/minimal.magicrc": "8ef2d25866c9637d63d8211e2dbbb8feba050eaf9508d791f03c8a916c2df83f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_followup_1151/paint/control.tcl": "bebdabab47256d2ab8af49317182ec64a4767e45c06ac1ef7d4a62fcaa1ce0c4",
+    "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+    "/nix/store/ps0r3qpgjh1lqyqacra33rvxsjgkd874-python3-3.13.9-env/lib/python3.13/site-packages/klayout/pyacore.cpython-313-x86_64-linux-gnu.so": "af2934f6f14e74d8d386171e4e45dbfa760f629d968cce417731e7dd4a52c38c"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_followup_1151/paint/paint.gds": "1b34b61bc311bbc6f02db9a9f456588f95b5ff966968f892a56c5ec7c7ade348",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_followup_1151/paint/geometry.json": "2254be7bf559bd4e7c26eb32e719edf9ed44e84366f52b85a99aea77d9b7c7ae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_followup_1151/paint/magic.log": "17f3d8048a8192ffe82e341cc193c47520fd31b98234e556a0c02161f59801a9"
+  },
+  "all_six_actual_contact_masks_contained_by_paint": true,
+  "per_net_assignment_qualified": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}

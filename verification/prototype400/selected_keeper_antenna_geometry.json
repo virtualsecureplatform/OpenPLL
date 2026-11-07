@@ -1,0 +1,38 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conservative_antenna_1150/assessment.json": "c46302e9f4b00115710ebcb8ac13dc0243062cde835dffe3e3a73fbacc111e99",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assembly.gds": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conservative_antenna_1150/flat.gds": "abd7851577fbb85b402f10697fad6ece108442b3be5debe24daec6f463062aff",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_M5_fill_alias_control_555/assessment.json": "c4f2315b1663e941c77a133be8d13f251a93857cc2f616d3ebf590f7d0be6dcb",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_prototype_flat_antenna_geometry_v2.py": "02ec6a1405fe74f868cf50aa7cfcd4a122831af72257a17c595349100ac3621a"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_antenna_followup_1151/geometry/geometry.json": "0c011b6d51d8783a92227eb930837f654743259b625e0c1679b503c3df9aaf73"
+  },
+  "common_geometry_grid_um": "1/1000",
+  "all_checked_mask_regions_preserved": true,
+  "M5_drawing_plus_fill_purposes": [
+    [
+      72,
+      20
+    ],
+    [
+      59,
+      28
+    ],
+    [
+      72,
+      99
+    ]
+  ],
+  "M5_alias_normalization_independently_controlled": true,
+  "source_poly_diff_channel_area_um2": "11651539/1000",
+  "flat_poly_diff_channel_area_um2": "11651539/1000",
+  "raw_extracted_MOS_gate_area_um2": "11651539/1000",
+  "extracted_MOS_gate_area_matches_source_poly_diff_intersection": true,
+  "source_and_flat_channel_areas_match": true,
+  "antenna_engine_negative_controls_complete": false,
+  "parent_antenna_qualified": false,
+  "release_ready": false
+}

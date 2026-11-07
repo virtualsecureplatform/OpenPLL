@@ -1,0 +1,15 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_parent_filled_layout_019/assembly.gds": "71dc786409f1c59279f6d29896df666446b1fe7f3a3d4bab32efe5e7f234cb63",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assembly.gds": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca",
+    "build/signoff400/prototype_v3_selected_parent_filled_layout_019/assembly.spice": "cafc75f92f940431dbd88cd206ddf364e18eb7b86f9bcca4764b26a322ee32e8"
+  },
+  "old_parent_MOS": 61616,
+  "new_keeper_MOS_added": 40,
+  "old_decap3_MOS_per_cell": 2,
+  "DCO_decap3_instance_delta": -76,
+  "predicted_parent_MOS": 61504,
+  "actual_native_parent_MOS": 61504,
+  "inventory_delta_explained": true,
+  "release_ready": false
+}
