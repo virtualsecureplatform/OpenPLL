@@ -1,0 +1,101 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/protocol.json": "5ee7a4eca057dbc6930b6cadd7ebdda67f326153a555ba8852f5eb130149496b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/owner.json": "b640b9fde1c6589ab31746f114de71803fbe5f70ace4a0b529d7b221c03d84f8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112/owner.json": "29a5d84fda0d415b515a8a569df728cc1a27d8fe8cdee23ce34b5341a753ba82",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112/runtime.json": "a79d2072951d867da2e6b56723e10c0795ff441290245c379ddaeba979ccd6f3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_checkpoint_clamp_IC_pair.py": "5ac36490a3a5eabe3b82cd1ced5bc027e8d83463ae0e5437639fc57fd6db4be9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_checkpoint_clamp_IC_pair.py": "1cb5b0c918a779b0951f8e0f85cecb68ff94edce205fcdb3b396eaba7b5590fa"
+  },
+  "campaign": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069",
+  "protocol": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/protocol.json",
+  "predeclared_cases": [
+    {
+      "name": "own112",
+      "initial_conditions": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_saved_state_fine112_native_726/initial_conditions.spice",
+      "deck": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112/control.spice",
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112"
+    },
+    {
+      "name": "context111",
+      "initial_conditions": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_context_IC_control_918/initial_conditions.spice",
+      "deck": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/context111/control.spice",
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/context111"
+    }
+  ],
+  "added_MOS": [
+    {
+      "instance": "Xhistory_clamp0",
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_404",
+      "terminals": [
+        "__context_node_1776",
+        "__context_node_1779",
+        "VGND",
+        "VGND"
+      ],
+      "geometry_wrapper": "__openpll_literal_leaf_5"
+    },
+    {
+      "instance": "Xhistory_clamp1",
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_405",
+      "terminals": [
+        "__context_node_1780",
+        "__context_node_1783",
+        "VGND",
+        "VGND"
+      ],
+      "geometry_wrapper": "__openpll_literal_leaf_5"
+    },
+    {
+      "instance": "Xhistory_clamp2",
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_441",
+      "terminals": [
+        "__context_node_1940",
+        "__context_node_1943",
+        "VGND",
+        "VGND"
+      ],
+      "geometry_wrapper": "__openpll_literal_leaf_5"
+    },
+    {
+      "instance": "Xhistory_clamp3",
+      "cell": "IntegerPLL_400MHz_PrototypeTop/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0/sky130_fd_sc_hd__einvp_1_515",
+      "terminals": [
+        "__context_node_2268",
+        "__context_node_2271",
+        "VGND",
+        "VGND"
+      ],
+      "geometry_wrapper": "__openpll_literal_leaf_5"
+    }
+  ],
+  "original_device_RC_bytes_retained": true,
+  "boundary_histories_reset_solver_and_horizon_unchanged": true,
+  "only_initial_context_differs_between_paired_cases": true,
+  "CPU": 22,
+  "native_address_space_limit_GiB": 8,
+  "aggregate_lease_GiB": 10,
+  "native_cap_s": 10800,
+  "maximum_serial_native_cases": 2,
+  "new_full_native_cases": 0,
+  "automatic_identical_retry": false,
+  "completed_native_cases_at_publication": 0,
+  "state_at_publication": {
+    "state": "clamped_checkpoint_native_running",
+    "case": "own112",
+    "release_ready": false
+  },
+  "first_live_Xyce_PDK_dependency_files": 319,
+  "first_runtime_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_four_clamp_IC_pair_1069/own112/runtime.json",
+  "container_image_binding_proven": false,
+  "structural_guard_tests_passed": 4,
+  "intervention": "Four proposed NFET clamps from load output Z to ground, gates driven by each existing internal enable complement; same retained geometry wrapper.",
+  "internal_enable_taps_require_new_cell_layout": true,
+  "physical_layout_changed": false,
+  "hybrid_physical_reachability_assumed": false,
+  "clamp_history_remedy_verified": false,
+  "global_history_independence_qualified": false,
+  "full_native_switched_equivalence_qualified": false,
+  "model_family_qualified": false,
+  "release_ready": false
+}
