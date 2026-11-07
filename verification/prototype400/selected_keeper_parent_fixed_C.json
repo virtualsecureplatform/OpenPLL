@@ -1,0 +1,46 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_C_inventory_1162/assessment.json": "01800ee0eab0fa52802371754345755f4793d320d2d3b55cd70d0533e3d5c8be",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_C_inventory_1162/IntegerPLL_400MHz_PrototypeTop.pairs.jsonl": "0a0239800f0831bb7011f9f28a9e2bcc4881d250aa0b8e2a72e43ec13eb2bc37",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/capacitance.spice": "065ac25e51fcf5b9aa9dd4da8b4173d4dce5226c4df2549979dbce236081e53c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/project_keeper_parent_fixed_C_v2.py": "cdbde9c5b9fef9f571aaa6a7acd1c6b90b7bc607b20c387cd11ffa9db5fa5fb4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prototype_capacitance_aliases_v2.py": "1b3f9239dc66c2898a8252f5edae20ee336d12ace7d2939e58e52af7b02fc2f4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_prototype_spef_pins_v2.py": "086741817c145431bf5d995363311392f43cb1263334a9cadd23448ea6b97578",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prepare_prototype_analog_reference.py": "08a9443bb0a251c970d65497e47e1c093964ba21a092b50e0dc67805e6d636db"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_fixed_C_1171/dynamic.pairs.jsonl": "1626beb959621ce9e210fa31b51d500b3fd489d45655ba62a8838c42ff3aa26a"
+  },
+  "fixed_voltage_nodes": [
+    "0",
+    "VGND",
+    "VNB",
+    "VPB",
+    "VPWR"
+  ],
+  "supply_pin_conductor_bindings": {
+    "VGND": [
+      "VGND"
+    ],
+    "VNB": [
+      "VGND",
+      "VNB"
+    ],
+    "VPB": [
+      "VPB",
+      "VPWR"
+    ],
+    "VPWR": [
+      "VPWR"
+    ]
+  },
+  "supplies_exposed_as_top_ports": true,
+  "complete_original_operator_independently_reparsed": true,
+  "exact_fixed_voltage_congruence": true,
+  "signed_values_preserved": true,
+  "dynamic_pairs": 329261,
+  "ideal_constant_supply_assumption": true,
+  "nonideal_supply_behavior_qualified": false,
+  "release_ready": false
+}
