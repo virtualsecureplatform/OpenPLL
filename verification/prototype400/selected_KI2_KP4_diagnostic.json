@@ -1,0 +1,73 @@
+{
+  "purpose": "Alternative controller gain evaluated with exact-picosecond acceptance",
+  "gain_pair": [
+    2,
+    4
+  ],
+  "coarse": 20,
+  "measured_startup_fine": 133,
+  "completed_cases": 48,
+  "publication_views": [
+    "nominal",
+    "receiver_delay_stress_100ps"
+  ],
+  "interpolations": [
+    "linear_frequency",
+    "linear_period"
+  ],
+  "scenarios": [
+    "cold_start",
+    "disable_reenable",
+    "reset_during_tracking"
+  ],
+  "phase_offsets_ns": [
+    0,
+    10,
+    20,
+    30
+  ],
+  "records": [
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI2_KP4_TT_nominal_matrix_986",
+      "assessment_sha256": "818ce299aedd8993d0ca4a0ac423cb658063de01cd1c13c540ec211d503b4a45",
+      "functional_passes": 9,
+      "dispositions": {
+        "diagnostic_simulation_completed": 9,
+        "needs_native_tuning_points": 12,
+        "diagnostic_failed": 3
+      },
+      "needed_native_points": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    },
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_KI2_KP4_TT_receiver_matrix_987",
+      "assessment_sha256": "035138714ca7bb49db80592e0f6470f7dafd68fca9cde528d4df00b3f78b99ae",
+      "functional_passes": 12,
+      "dispositions": {
+        "diagnostic_simulation_completed": 12,
+        "needs_native_tuning_points": 12
+      },
+      "needed_native_points": [
+        {
+          "coarse": 20,
+          "fine": 166
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "functional_passes": 21,
+    "missing_fine166_coverage_cases": 24,
+    "functional_failures": 3
+  },
+  "genuine_failure": "Nominal receiver view, period interpolation and phase20 require 209.76 us acquisition confirmation, above the unchanged 200 us limit",
+  "case_classifier_controls_passed": 2,
+  "exact_statistics_runtime": "verification/signoff400/run_selected_mixed_signal_v8.py",
+  "common_gain_selected": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}
