@@ -1,0 +1,59 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_frequency_stress_matrix_v3.py": "678e6d282407b673481b4b2b0eae4fd89f8aedbd3319bb16705d28a579024997",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_nominal_1080/inputs.json": "2cede2a77938cbda12827ae9b78a262698b95dc1a8893646393afe25af6444a7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_nominal_1080/owner.json": "c713ef54f8f917a8c66fb88c51d558ff4f8b3a887952192b352e7c30cdd4fcec",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_receiver_1081/inputs.json": "72f0a6ced02f6c4e1a3e55bc18bc0b4b0988e9a049b74a2165f6b8ee5c9c23c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_receiver_1081/owner.json": "05799f7789ffdaf0c5f171779e7fb736b8d46a7ed12795979c92bb0ef3e7be5f"
+  },
+  "matrices": [
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_nominal_1080",
+      "state_at_publication": {
+        "state": "diagnostic_frequency_stress_case_running",
+        "completed_cases": 6,
+        "current_case": [
+          "nominal",
+          "linear_period",
+          1,
+          20
+        ],
+        "release_ready": false
+      },
+      "expected_cases": 96
+    },
+    {
+      "matrix": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT149_exact_history_receiver_1081",
+      "state_at_publication": {
+        "state": "diagnostic_frequency_stress_case_running",
+        "completed_cases": 6,
+        "current_case": [
+          "nominal",
+          "linear_period",
+          1,
+          20
+        ],
+        "release_ready": false
+      },
+      "expected_cases": 96
+    }
+  ],
+  "source_pipeline": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_target_refinement_recovered_1071",
+  "stress_packets": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT_frequency_stress_packets_944",
+  "gain_pair": [
+    1,
+    8
+  ],
+  "seed_fine": 149,
+  "total_expected_cases": 192,
+  "new_native_cases": 0,
+  "acceptance_statistics": "exact_integer_ps_rational_on_uniform_grid",
+  "shared_compiled_build_required": true,
+  "each_case_inputs_and_artifacts_verified": true,
+  "full_unique_schedule_required": true,
+  "existing_result_record_guard_tests_passed": 2,
+  "wide_code_stress_applicability_qualified": false,
+  "extrema_joint_physical_realizability_claimed": false,
+  "uniform_uncertainty_bound_qualified": false,
+  "release_ready": false
+}
