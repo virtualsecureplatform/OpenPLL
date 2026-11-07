@@ -1,0 +1,26 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_fixed_C_1171/assessment.json": "4014daebb9a1130e7592e5bbf4638842676211b55c18db6273286d7ae1e8592c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_flat_C_review_1200/assessment.json": "5c1ca6848a875eff20ccf6d6d5c36d33cbf716c1a445b58983ef60734f8ca376",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_parent_capacitance_1152/IntegerPLL_400MHz_PrototypeTop/capacitance.spice": "065ac25e51fcf5b9aa9dd4da8b4173d4dce5226c4df2549979dbce236081e53c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_fixed_C_1171/dynamic.pairs.jsonl": "1626beb959621ce9e210fa31b51d500b3fd489d45655ba62a8838c42ff3aa26a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_flat_signed_C_1198/signed_threshold.spice": "25acb0ba94d31b9f55620b92b0f34f6decbc0153a7c4e0deab6cb00595ec7039",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_primary_C.py": "b8e3c487163b98b3db59cfbff12389544c6eb4de2039ff1c897b5328d0199e3f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_prototype_full_C_wire_R_v11.py": "33516ad3312e32a2f9db1353d962151301e9631d8a640a8e7f97ad1d3bc70c27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_primary_C_comparison_1201/differences.json": "03d5d1b9e443da7e676b4b0f35ba174bbc40dd61cca5bd38812ab8eb19881d3a"
+  },
+  "primary_ports": 65,
+  "alias_group_partitions_equal": true,
+  "differing_matrix_entries": 333,
+  "primary_restricted_operators_exactly_equal": false,
+  "hierarchical_primary_groups": 61,
+  "native_primary_groups": 61,
+  "all_other_conductor_voltages_fixed": true,
+  "intrinsic_device_C_included": false,
+  "physical_error_bound_claimed": false,
+  "models_modified": false,
+  "release_ready": false
+}
