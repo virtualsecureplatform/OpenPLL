@@ -39,7 +39,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_validation_protocol_1013/protocol.json": "cec88d40095d778c19028fdfc2c75e62a0ee3449f78cc35d8772f41988bb1a7f",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_fresh_holdout_1012/manifest.json": "c46e2eafdaf68c276ca1ed0f7bc54d53465df0fc257e01bd63c53461272f41ae",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_selected_interior_detector_timing.py": "527562cd30828cb58e7ee473066486a692d2b54111f072efa9cb3ffc3a71ba97",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_validation_protocol_1013/runtime.json": "750e5bb57df35e37553725793db8c4806398faeb62eaf96651a2d00176c6d2bb"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_interior_validation_protocol_1013/runtime.json": "750e5bb57df35e37553725793db8c4806398faeb62eaf96651a2d00176c6d2bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/follow_selected_frozen_corner_candidate.py": "864c208975a52fbb7674b89d63029d389519b2353eeddc28e7cc495743d6d747",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_frozen_candidate_protocol.py": "267b84cfb4b5c005cdb58f56c1d95ea885d192d5d0469d4f60947657da5ffe72",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_frozen_candidate_fresh_replay_1015/inputs.json": "7a9300c174075f0fc1bc6da6b8fe74ec5222149690035240b9b4271d1ee94ae5"
   },
   "operating_point": {
     "corner": "ss",
@@ -303,6 +306,15 @@
     "independent_of_parameter_selection": true,
     "corner_sender_waveforms_correlated": false,
     "normal_completion_observed": false,
-    "release_ready": false
+    "release_ready": false,
+    "automatic_frozen_replay": {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_frozen_candidate_fresh_replay_1015",
+      "input_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_SS_frozen_candidate_fresh_replay_1015/inputs.json",
+      "native_cases_launched": 0,
+      "parameters_refitted": false,
+      "chronology_guard": "protocol predates native owner process birth",
+      "tests_passed": 3,
+      "normal_completion_observed": false
+    }
   }
 }
