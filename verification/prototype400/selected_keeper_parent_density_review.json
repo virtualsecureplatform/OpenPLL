@@ -1,0 +1,190 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_density_1148/input_manifest.json": "6a391da392c8e19fcc1b701bbbf8821069db84e3136c729d05c9083573a32154",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_density_1148/density.log": "62d77013aa58f5fdc4445f0adff0e90a46e3103bd28aa50a5217c7eaa881851c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/magic/check_density.py": "9ef4c226f45014d20419f38388a205a55ff40589cddd1f97ffb5c6a1e0ab0a1a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_prototype_small_macro_density.py": "3434342f7a6c68ef47eab3a9d700bed7d40e22f2b8225fee015d785932d66a27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/common_v3.py": "dc86a17d58cdd6d02d9a3279c94097962da89c31ae50903e4717e333b2b235c4"
+  },
+  "artifacts": {},
+  "raw_tiles": 80,
+  "results": {
+    "FOM": {
+      "global_density": "0.3730787352264787155068032536",
+      "limits": [
+        "0.33",
+        "0.57"
+      ],
+      "within_limits": true
+    },
+    "POLY": {
+      "global_density": "0.1395059574405447803757662588",
+      "limits": null,
+      "within_limits": null
+    },
+    "LI1": {
+      "global_density": "0.4805933212867149914212601539",
+      "limits": [
+        "0.35",
+        "0.60"
+      ],
+      "within_limits": true
+    },
+    "MET1": {
+      "global_density": "0.4150749797087449272969102952",
+      "limits": [
+        "0.35",
+        "0.60"
+      ],
+      "within_limits": true
+    },
+    "MET2": {
+      "global_density": "0.3840702879612262431520182581",
+      "limits": [
+        "0.35",
+        "0.60"
+      ],
+      "within_limits": true
+    },
+    "MET3": {
+      "global_density": "0.4042383683278010448388139132",
+      "limits": [
+        "0.35",
+        "0.60"
+      ],
+      "within_limits": true
+    },
+    "MET4": {
+      "global_density": "0.4353751142483491167827311638",
+      "limits": [
+        "0.35",
+        "0.60"
+      ],
+      "within_limits": true
+    },
+    "MET5": {
+      "global_density": "0.6070074721758182391703472168",
+      "limits": [
+        "0.45",
+        "0.76"
+      ],
+      "within_limits": true
+    }
+  },
+  "constrained_global_checks": 7,
+  "failed_global_checks": 0,
+  "stock_wrapper_passed": false,
+  "native_tile_measurement_completed": true,
+  "source_geometry_warnings": [
+    "Warning:  snap setting is also changing units.  This usage is deprecated",
+    "Warning: Calma reading is not undoable!  I hope that's OK.",
+    "Error while reading cell \"IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160\" (byte position 50563366): Warning: cell \"VIA_via5_6_1600_1600_1_1_1600_1600\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160\" (byte position 50601322): Warning: cell \"VIA_via5_6_1600_1600_1_1_1600_1600\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160\" (byte position 50618124): Warning: cell \"VIA_via5_6_1600_1600_1_1_1600_1600\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160\" (byte position 50678566): Warning: cell \"VIA_via5_6_1600_1600_1_1_1600_1600\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55298872): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55299016): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55299052): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55299160): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55299196): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55299376): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55299592): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55299628): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55299844): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55299988): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300024): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300060): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300132): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300168): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300276): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300384): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300456): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300492): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300600): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300636): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300672): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300744): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300924): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300960): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55300996): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301032): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301104): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301140): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301176): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301212): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301248): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301284): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301320): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301356): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301392): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301428): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301464): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301500): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301536): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301572): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301608): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301644): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301680): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301788): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301824): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55301968): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302004): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302040): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302292): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302328): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302364): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302400): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302436): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302472): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302580): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302652): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302688): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302724): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302760): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302796): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302832): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302868): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302904): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55302940): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303012): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303084): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303120): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303156): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303192): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303228): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303264): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303300): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303336): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303372): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303408): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303444): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303552): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303588): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303696): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303732): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303912): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55303948): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304056): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304128): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304164): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304200): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304236): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304308): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304344): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304380): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304416): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304452): Warning: cell \"VIA_M1M2_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304488): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304560): Warning: cell \"VIA_M3M4_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error while reading cell \"IntegerPLL_400MHz_PrototypeTop\" (byte position 55304596): Warning: cell \"VIA_M2M3_PR\" placed on top of itself.  Ignoring the extra one.",
+    "Error limit set:  Remaining errors will not be reported."
+  ],
+  "global_density_limits_met": true,
+  "nominal_window_um": 700,
+  "step_um": 70,
+  "stepped_windows_available": false,
+  "chip_integration_density_qualified": false,
+  "density_qualified": false,
+  "physical_integrity_qualified": false,
+  "release_ready": false
+}
