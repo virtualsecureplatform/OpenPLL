@@ -15,7 +15,10 @@
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_runtime_920/complement/binding.json": "a774bb48ddd94e65980d7ce68428c8d10ac459e8d22d774ab71b66b33b35c0e8",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_runtime_920/complement/namespace.json": "41bb8e3814744c2ebd11ff625753d89422bfdff7db61f9cd0596952aa86f56ca",
     "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_comparison_921/inputs.json": "4290e165e6bc68b33d3bfa4c442e89d629225d1e02b174323fa605d41bb562a9",
-    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_comparison_921/owner.json": "b977a68ad4e0d6a04955d0e68e9241a25719e746ffa2a58da7e7e53b905c2fad"
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_comparison_921/owner.json": "b977a68ad4e0d6a04955d0e68e9241a25719e746ffa2a58da7e7e53b905c2fad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_context_IC_control_918/assessment.json": "87558ac250b9d75e43569e2f12d75b87bfaa9dbb94934a5c70d7e93e7b63882d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_complement_IC_control_919/assessment.json": "facf19476b7219d8b3eadcc55b8afd54e081161dc99fdcbfcbe76a496abeb693",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_comparison_921/assessment.json": "56bb1050c3bc37b173be98863e43e71e6d4d515d7ab05d4a4151c6f9423b2df6"
   },
   "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_fine112_IC111_control_876",
   "target_static_fine": 112,
@@ -186,7 +189,8 @@
         "runtime_PDK_include_files": 319,
         "memory_GiB": 8,
         "native_cap_s": 10800,
-        "pending": true
+        "pending": false,
+        "normal_native_completion": true
       },
       {
         "group": "complement",
@@ -197,7 +201,8 @@
         "runtime_PDK_include_files": 319,
         "memory_GiB": 8,
         "native_cap_s": 10800,
-        "pending": true
+        "pending": false,
+        "normal_native_completion": true
       }
     ],
     "observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_checkpoint_IC_factorial_comparison_921",
@@ -206,8 +211,80 @@
     "baseline_and_all_donor_corners_already_completed": true,
     "max_new_distinct_native_cases": 2,
     "automatic_identical_retry": false,
-    "pending": true,
+    "pending": false,
     "hybrid_physical_reachability_assumed": false,
-    "uniform_model_uncertainty_qualified": false
+    "uniform_model_uncertainty_qualified": false,
+    "normal_native_cases_completed": 4,
+    "comparison_completed": true,
+    "comparison_sha256": "56bb1050c3bc37b173be98863e43e71e6d4d515d7ab05d4a4151c6f9423b2df6",
+    "windows": [
+      {
+        "window_ns": [
+          35,
+          45
+        ],
+        "frequency_MHz": {
+          "own112": 392.630537084475,
+          "all111": 392.5282219073696,
+          "context111": 392.53513090497626,
+          "complement111": 392.6037138728008
+        },
+        "context_effect_with_other_state112_MHz": -0.09540617949875241,
+        "complement_effect_with_context112_MHz": -0.026823211674184222,
+        "interaction_MHz": 0.019914214067512148,
+        "full_IC_shift_MHz": -0.10231517710542448
+      },
+      {
+        "window_ns": [
+          40,
+          55
+        ],
+        "frequency_MHz": {
+          "own112": 392.66033107565045,
+          "all111": 392.5581946069965,
+          "context111": 392.5649865713356,
+          "complement111": 392.6337667401973
+        },
+        "context_effect_with_other_state112_MHz": -0.09534450431482355,
+        "complement_effect_with_context112_MHz": -0.02656433545314485,
+        "interaction_MHz": 0.01977237111401564,
+        "full_IC_shift_MHz": -0.10213646865395276
+      },
+      {
+        "window_ns": [
+          50,
+          59
+        ],
+        "frequency_MHz": {
+          "own112": 392.6816181345654,
+          "all111": 392.5795457800922,
+          "context111": 392.5862850985862,
+          "complement111": 392.65429868678206
+        },
+        "context_effect_with_other_state112_MHz": -0.09533303597919485,
+        "complement_effect_with_context112_MHz": -0.027319447783327178,
+        "interaction_MHz": 0.020580129289328397,
+        "full_IC_shift_MHz": -0.10207235447319363
+      },
+      {
+        "window_ns": [
+          70,
+          84
+        ],
+        "frequency_MHz": {
+          "own112": 392.730875308963,
+          "all111": 392.62972481596944,
+          "context111": 392.63608535331787,
+          "complement111": 392.70484940238657
+        },
+        "context_effect_with_other_state112_MHz": -0.09478995564512616,
+        "complement_effect_with_context112_MHz": -0.026025906576421676,
+        "interaction_MHz": 0.01966536922799378,
+        "full_IC_shift_MHz": -0.10115049299355405
+      }
+    ],
+    "context_effect_fraction_of_full_IC_shift_40_55": 0.9335010850811675,
+    "physical_discrepancy_cause_identified": false,
+    "full_native_switched_reference_available": false
   }
 }
