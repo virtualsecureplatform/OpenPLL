@@ -1,0 +1,144 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/diagnose_selected_keeper_streamout.py": "d397053919a023823d9e4f9185cfe45b2ee7b777ae6098e5b540a8df3866284e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1096/config/runs/history_keeper_macros_001/48-klayout-streamout/COMMANDS": "d496152d5227cc55665386c7a1c4c9a5157d43ef36eaac6d1147b8f820cedb01",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1096/config/runs/history_keeper_macros_001/48-klayout-streamout/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.klayout.gds": "798a1967724a4b294968744943629c3118e9f65b0aac88edafee89d599c4c0a7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.gds": "ce09a04d97ed626d23d688cc20529b522cb35b36b7993a20e77230aeb926ede1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb"
+  },
+  "command": [
+    "/nix/store/ps0r3qpgjh1lqyqacra33rvxsjgkd874-python3-3.13.9-env/bin/python3.13",
+    "/nix/store/ps0r3qpgjh1lqyqacra33rvxsjgkd874-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/klayout/stream_out.py",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1096/config/runs/history_keeper_macros_001/46-odb-cellfrequencytables/IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160.def",
+    "--output",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_streamout_diagnosis_verified_1100/overwrite.gds",
+    "--top",
+    "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160",
+    "--conflict-resolution",
+    "OverwriteCell",
+    "--lyp",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/klayout/tech/sky130A.lyp",
+    "--lyt",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/klayout/tech/sky130A.lyt",
+    "--lym",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/klayout/tech/sky130A.map",
+    "--input-lef",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef",
+    "--input-lef",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef",
+    "--input-lef",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
+    "--input-lef",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_history_keeper_macro_route_1096/config/sky130_fd_sc_hs__inv_2.lef",
+    "--with-gds-file",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds",
+    "--with-gds-file",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk_src/sky130_fd_sc_hs/cells/inv/sky130_fd_sc_hs__inv_2.gds"
+  ],
+  "original": {
+    "cell_li_area_dbu2": 0,
+    "cell_li_polygons": 0,
+    "top_li_polygons_below_0056_um2": 8
+  },
+  "candidate": {
+    "cell_li_area_dbu2": 2738750,
+    "cell_li_polygons": 4,
+    "top_li_polygons_below_0056_um2": 0
+  },
+  "source_cell_layer_comparison": [
+    {
+      "layer": "125/44",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "66/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "83/44",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "94/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "64/59",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "122/16",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "64/5",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "64/16",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "65/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "93/44",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "64/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "95/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "68/5",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "68/16",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "236/0",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "81/4",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "67/16",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "68/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "67/44",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "67/20",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "66/44",
+      "xor_area_dbu2": 0
+    },
+    {
+      "layer": "67/5",
+      "xor_area_dbu2": 0
+    }
+  ],
+  "source_geometry_restored": true,
+  "candidate_gds_sha256": "5c1a2f281d09b2beb7a6b337391d039f070791a825b8812ad9dd629ac50a9039",
+  "power_connectivity_qualified": false,
+  "DRC_LVS_qualified": false,
+  "selected": false,
+  "release_ready": false
+}

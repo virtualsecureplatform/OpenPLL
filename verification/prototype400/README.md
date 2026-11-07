@@ -224,3 +224,5 @@ included as simultaneous physical domains. Of 371 repeated conductor labels,
 qualify capacitance, device bindings, contact impedance or tile-voltage coverage.
 The original v3 index and the complete v4 raw index both remain unqualified as
 runtime models until those physical-domain checks pass.
+
+Keeper stream-out diagnosis (1100): the 1096 RenameCell export retained empty HS inverter cells. Replaying only stream-out with OverwriteCell restores source geometry on every source GDS layer; the eight LI polygons below 0.056 square micrometres disappear after merging with the restored cell. This does not qualify DRC, LVS, power connectivity, or analog behavior. See `selected_keeper_streamout_diagnosis.json` and `../signoff400/diagnose_selected_keeper_streamout.py`. The separate 1097 wider-grid route still reports disconnected power rails; neither candidate is selected.
