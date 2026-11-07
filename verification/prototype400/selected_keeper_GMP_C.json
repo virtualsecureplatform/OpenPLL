@@ -1,0 +1,29 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_local_C_models_1157/assessment.json": "acd6e121cb7b2fd69d7177ed598905d2e0be11288d0db40b31f848f82fb80d44",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_local_C_models_1157/nom_driver.spice": "5a68a276a687fc98cfbcdeaddb994505465f383dc8a3bd2a1e3018bb910bbb3d",
+    "/tmp/openpll-exact-sparse-ldl": "abdb4e0d584ce507d12cde606095d35db46ebe2feb7046cfc46f5c8eb233da45",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/capacitance_energy/exact_sparse_ldl.cpp": "c37809d2eee22cd5c7e7cbe8b35ee27a0459985f04ca471c246eb5d58230f00f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_exact_C_GMP.py": "1afaa8fb7236f5b5673b8be483ad7b5a0d460a91bde694c2f181fa2310fee89b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/project_prototype_fixed_rail_C_v2.py": "cb1a746247c800778b1eb2245b8376d2eb37694cca9706daf45f0df5c15413a1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_hierarchical_capacitance.py": "19b97e8bb8241d14c814e16ae71e988f0c04222bc82bb6b72f9043b520418028",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GMP_C_1161/edges.tsv": "6aef59b24ddf3c3f8936ab4b1a3d2b74a023e8ad2ca32a10b560986e3f4e3c19"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_GMP_C_1161/report.json": "6b1de700c0429e56a1d76acc302409b66da19a3c919c684368cc7ac5142129a6"
+  },
+  "result": {
+    "state": "positive_semidefinite",
+    "eliminated": 4346,
+    "remaining": 0,
+    "failed_pivot": -1,
+    "passivity_certified": true,
+    "indefiniteness_proved": false
+  },
+  "method": "exact GMP rational sparse LDL congruence",
+  "fixed_supply_scope": true,
+  "models_modified": false,
+  "native_simulation_allowed": false,
+  "physical_RC_qualified": false,
+  "release_ready": false
+}
