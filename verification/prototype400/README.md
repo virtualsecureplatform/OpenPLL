@@ -2540,3 +2540,20 @@ that the real PDK contact tables differ or that contact normalization explains
 the stopped full-layout audit. The completed-trace counterexample and a native
 contact/residue layout control are still required before promoting a fix. All
 extractor/model/release qualification flags remain false.
+
+Native contact layout probe 1569 is queued under the unchanged global resource
+policy (one CPU, 0.5 GiB, 24-hour admission cap, four one-shot 60-second native
+cases). It uses the original pinned 1360 instrumented Magic executable and
+shared library, with the real Sky130 technology. The fixture has an m3 source,
+a separate m1 target, an optional via3 source-edge region, and an optional m2
+shield. Contact versus metal-only and shield versus no-shield give four fresh
+native processes. The fixture is diagnostic geometry with no DRC claim.
+
+The runner requires normal native completion before inspecting each trace,
+checks complete fringe groups, reports kernel-field differences without
+assuming a desired outcome, and retains layout/EXT/SPICE/trace/log hashes. No
+candidate patch is applied. Python syntax and Tcl command completeness checks
+passed; native geometry behavior remains untested while admission is pending.
+The retained `magic_contact_layout_probe_1569` files are initial pending-state
+snapshots, not completed extraction evidence. The full-trace scanner 1567 and
+last gain-screen case 1566 also remain live and waiting for memory.
