@@ -1,0 +1,25 @@
+{
+  "comparison_pass": true,
+  "complete_saved_samples_compared": 1500,
+  "observed_vectors": 25734,
+  "reference_end_s": 6.13060876e-08,
+  "candidate_end_s": 6.13060876e-08,
+  "max_saved_time_difference_s": 0.0,
+  "saved_grid_within_tolerance": true,
+  "max_saved_value_difference": 1.0000000161269895e-08,
+  "worst_sample": {
+    "sample": 12,
+    "variable": "v(xpll:__parent_r_node_1967)",
+    "reference_time_s": 5.000625e-09,
+    "candidate_time_s": 5.000625e-09
+  },
+  "time_tolerance_s": 1e-18,
+  "value_tolerance": 1e-06,
+  "prefix_value_record_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_Xyce_full_C_UMFPACK_programming_052/programming.raw": "6ac0a3adf1de65cc167ab1d2bdd7f3ed787ddb473fd8697e562b9b77aea0cceb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_value_gather_full_130/programming.raw": "a4ff13b7585961aafe89269dc34999cafd8dd12bb7dbc7da8f78762637a49650"
+  },
+  "full_simulation_completion_assessed": false,
+  "numerical_convergence_qualified": false,
+  "release_ready": false
+}

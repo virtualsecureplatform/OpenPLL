@@ -274,3 +274,26 @@ from 64 around the 126.88745 MHz target, with measured `PLLOUT` frequencies of
 Diagnostic targets that are slow, host-sensitive, or known not to pass from
 both rails are deliberately excluded from the promoted artifact gate and are
 documented as diagnostic history in `SPICE_VALIDATION.md`.
+
+## Isolated Xyce backend diagnostics
+
+`tools/xyce_umfpack` builds a separate MPI/UMFPACK backend inside the pinned
+release CAD image. Stock simulator and PDK files stay unchanged. The checked
+reuse policies, including value gathering, require explicit experimental flags.
+For example, inside the image:
+
+```sh
+python3 tools/xyce_umfpack/build.py --output build/tools/value_gather \
+  --experimental-checked-reuse --reuse-policy value-gather
+python3 tools/xyce_umfpack/check.py --binary build/tools/value_gather/Xyce \
+  --output build/xyce_backend_control --experimental-checked-reuse \
+  --hierarchical-mos --pin-ranks
+```
+
+The controls compare KLU and UMFPACK waveforms, exercise the diode charge seam,
+and require reuse hits with no DC reuse. The retained
+[performance evidence](verification/signoff400/simulation_speed_20261104/speed_validation_audit.json)
+concerns a completed 175 ns programming diagnostic; it does not establish PLL
+lock, tuning, or release readiness. See the
+[diode discontinuity report](verification/DIODE_SIDEWALL_CHARGE_DISCONTINUITY.md)
+for the separate charge-continuity defect and inspected upstream fix.

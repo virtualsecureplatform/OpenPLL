@@ -1,0 +1,203 @@
+{
+  "date": "2026-11-08",
+  "review_base": "36a66f7",
+  "source_branch": "origin/perf/xyce-value-gather-20261104",
+  "fresh_isolated_build_succeeded": true,
+  "build_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/main_merge_value_gather_1260/assessment.json",
+  "build_assessment_sha256": "0682367670576c30de377bc9994d10ed8d3dda7e9b1b3607d91bff3ac4e88583",
+  "build_inputs": {
+    "/tmp/openpll-main-merge-20261108/tools/xyce_umfpack/build.py": "9b8ffd1143b0ea1c25744f071172e2430656ffd59641f33cdf219a81d983e52c",
+    "/tmp/openpll-main-merge-20261108/tools/xyce_umfpack/experimental_value_gather/N_LAS_OpenPLLUMFPACKSolver.h": "52136c3de6c40fbb5db70fce037e3561281095476351d7e2b14b939e6e216e79",
+    "/opt/Xyce/src/DeviceModelPKG/OpenModels/N_DEV_Diode.C": "67f18f566d50caa2dea862a4d3b0097973f829dd40f4070bcb056c91544c4862",
+    "/opt/Xyce/src/LinearAlgebraServicesPKG/N_LAS_TranSolverFactory.C": "9fc7eaa3eba40ffa9d253f68a47f7eecbd7d6bc00f1762f2bebd5dde98a1c4a9",
+    "/opt/xyce-build/src/libxyce.a": "93308854fbe04c033736fee10704de6adde82576af5d67b6817337dcaba34998",
+    "/opt/xyce-build/src/CMakeFiles/XyceLib.dir/flags.make": "5e36caa91f198ef7b7e6c5cadaf0a188e70c7ec32ab4e05aa649ff1264c48116",
+    "/opt/xyce-build/src/CMakeFiles/Xyce.dir/link.txt": "232811447dda16824f53ec6315d30d4999b054e66637bcc085ee3fb5ce447f29",
+    "/opt/xyce/bin/Xyce": "a8a679da37cd5da306745acaf1bd178cccc63cd0776d531eb15c5ecdff8e83bf",
+    "/usr/lib/x86_64-linux-gnu/libumfpack.so.6": "e3668a9962d2786ec76541b146ecd384546bdfa24670d2be5ca32cb7fa9900e6",
+    "/usr/lib/x86_64-linux-gnu/libblas.so.3": "8ba4a98f44d763c2e648755ef452025919e28633339f23ff605044de3483a25d",
+    "/opt/Xyce/src/NonlinearSolverPKG/N_NLS_NonLinearSolver.C": "1b26f455b9b3a95d373b37523090acb88208245c4a1c5bb48a860d1b1a8d7c2d",
+    "/tmp/openpll-main-merge-20261108/tools/xyce_umfpack/experimental_value_gather/CheckedUMFPACK.h": "e3aaf020f726803d2a2b415816c5f8f6dea2a805394c8bd9e5227094a78ebb4c"
+  },
+  "changed_archive_members": [
+    "N_DEV_Diode.C.o",
+    "N_LAS_TranSolverFactory.C.o",
+    "N_NLS_NonLinearSolver.C.o"
+  ],
+  "native_controls": {
+    "all_native_controls_complete_and_agree": true,
+    "results": [
+      {
+        "name": "klu4",
+        "MPI_ranks": 4,
+        "points": 2862,
+        "command": [
+          "/usr/bin/mpirun",
+          "--bind-to",
+          "none",
+          "-np",
+          "4",
+          "/usr/bin/python3",
+          "/tmp/openpll-main-merge-20261108/tools/xyce_umfpack/rank_exec.py",
+          "--cpus",
+          "24,25,26,27",
+          "--",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/main_merge_value_gather_1260/Xyce",
+          "-linsolv",
+          "klu",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_merge_backend_control_1261/klu4/control.spice"
+        ],
+        "max_time_grid_difference_s": 0.0,
+        "max_voltage_difference_V": 0.0,
+        "max_source_current_difference_A": 0.0
+      },
+      {
+        "name": "umfpack1",
+        "MPI_ranks": 1,
+        "points": 2862,
+        "command": [
+          "/usr/bin/mpirun",
+          "--bind-to",
+          "none",
+          "-np",
+          "1",
+          "/usr/bin/python3",
+          "/tmp/openpll-main-merge-20261108/tools/xyce_umfpack/rank_exec.py",
+          "--cpus",
+          "24,25,26,27",
+          "--",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/main_merge_value_gather_1260/Xyce",
+          "-linsolv",
+          "umfpack",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_merge_backend_control_1261/umfpack1/control.spice"
+        ],
+        "max_time_grid_difference_s": 0.0,
+        "max_voltage_difference_V": 2.8935187579293142e-15,
+        "max_source_current_difference_A": 5.692061405548898e-17
+      },
+      {
+        "name": "umfpack4",
+        "MPI_ranks": 4,
+        "points": 2862,
+        "command": [
+          "/usr/bin/mpirun",
+          "--bind-to",
+          "none",
+          "-np",
+          "4",
+          "/usr/bin/python3",
+          "/tmp/openpll-main-merge-20261108/tools/xyce_umfpack/rank_exec.py",
+          "--cpus",
+          "24,25,26,27",
+          "--",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/main_merge_value_gather_1260/Xyce",
+          "-linsolv",
+          "umfpack",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_merge_backend_control_1261/umfpack4/control.spice"
+        ],
+        "max_time_grid_difference_s": 0.0,
+        "max_voltage_difference_V": 1.1102230246251565e-16,
+        "max_source_current_difference_A": 3.3881317890172014e-21
+      },
+      {
+        "name": "reuse1",
+        "MPI_ranks": 1,
+        "points": 2862,
+        "command": [
+          "/usr/bin/mpirun",
+          "--bind-to",
+          "none",
+          "-np",
+          "1",
+          "/usr/bin/python3",
+          "/tmp/openpll-main-merge-20261108/tools/xyce_umfpack/rank_exec.py",
+          "--cpus",
+          "24,25,26,27",
+          "--",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/main_merge_value_gather_1260/Xyce",
+          "-linsolv",
+          "umfpack_reuse",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_merge_backend_control_1261/reuse1/control.spice"
+        ],
+        "reuse_hits": 2841,
+        "DC_reuse_hits": 0,
+        "adapter_statistics": [
+          [
+            "2903",
+            "62",
+            "1",
+            "0",
+            "2881",
+            "2839",
+            "2",
+            "7449",
+            "0"
+          ]
+        ],
+        "max_time_grid_difference_s": 0.0,
+        "max_voltage_difference_V": 3.550762114890027e-15,
+        "max_source_current_difference_A": 6.657001339060997e-17
+      },
+      {
+        "name": "reuse4",
+        "MPI_ranks": 4,
+        "points": 2862,
+        "command": [
+          "/usr/bin/mpirun",
+          "--bind-to",
+          "none",
+          "-np",
+          "4",
+          "/usr/bin/python3",
+          "/tmp/openpll-main-merge-20261108/tools/xyce_umfpack/rank_exec.py",
+          "--cpus",
+          "24,25,26,27",
+          "--",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/main_merge_value_gather_1260/Xyce",
+          "-linsolv",
+          "umfpack_reuse",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_merge_backend_control_1261/reuse4/control.spice"
+        ],
+        "reuse_hits": 2841,
+        "DC_reuse_hits": 0,
+        "adapter_statistics": [
+          [
+            "2903",
+            "62",
+            "1",
+            "0",
+            "2881",
+            "2839",
+            "2",
+            "7449",
+            "0"
+          ]
+        ],
+        "max_time_grid_difference_s": 0.0,
+        "max_voltage_difference_V": 3.4799095029180993e-15,
+        "max_source_current_difference_A": 6.548581121812447e-17
+      }
+    ],
+    "binary_sha256": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+    "observed_voltage_vectors": 129,
+    "observed_current_vectors": 1,
+    "experimental_checked_reuse": true,
+    "solver_threads": 1,
+    "reserved_CPUs": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "extra_MPI_ranks": null,
+    "ranks_pinned_to_individual_CPUs": true,
+    "distribution_strategy": 0,
+    "hierarchical_MOS_control": true,
+    "full_PLL_qualified": false,
+    "release_ready": false
+  },
+  "Python_tool_parse_checks": 9,
+  "CLI_help_checks": 5,
+  "scope": "Isolated experimental backend tooling; no PLL design or release gate promotion",
+  "release_ready": false
+}
