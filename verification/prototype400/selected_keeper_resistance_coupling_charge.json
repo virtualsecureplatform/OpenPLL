@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_after_C_1273/assessment.json": "8ed241feb08ad5dafed7da125c6b17e3aced8f7e54fb8ccf219ca992e9773cc0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_after_C_contraction_1274/assessment.json": "16b8cb4a05a56cb0e615562c30a2d0776b6cd6b3b4a09b0fddaa6f85a1f1582a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_after_C_1273/IntegerPLL_400MHz_KeeperFlatC.ext": "06a47396ce8a5a210a4169386c6ad78df0260490fa38b6c7fb9e2d582c2823a2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_after_C_1273/IntegerPLL_400MHz_KeeperFlatC.res.ext": "6572751df520d56ec558fee5132d0e1c25c7ea9d8b1c6be79519670d9697fd87",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_resistance_coupling_charge.py": "d02b724b61b3f3bd64704b0f5958aab44df045155cd5f7a6812af34f1ea364d4"
+  },
+  "raw_coupling_branches": 1030,
+  "coupling_fF": 65.944796012611,
+  "resistance_nodes": 79,
+  "added_rnode_ground_C_fF": 65.944820109,
+  "exported_ground_C_delta_fF": 65.9448,
+  "rnode_minus_coupling_fF": 2.4096388999999456e-05,
+  "exact_equality": false,
+  "native_float_and_export_rounding_not_removed": true,
+  "spatial_capacitance_placement_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}
