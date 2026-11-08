@@ -978,3 +978,26 @@ autonomous clock tree or eliminate the prescribed environment. No native
 run or controller prediction is claimed. Three tests verify the downstream
 frontier and literal capacitor preservation, reject a formally exposed
 receiver that cannot become internal, and reject an empty expansion.
+
+### Isolated coupling-import export control (2026-11-08)
+
+Source review of stock Magic8.3.623 identifies `ResReadCapacitor` in
+`resis/ResReadExt.c`: when `ResOpt_Signal` is set, it adds each explicit
+coupling value to both endpoint substrate capacitances. `ResRex.c` sets
+that option for resistance extraction and passes `node->capacitance` into
+`rg_nodecap`; `ResSimple.c` distributes that value into the resistor network.
+The existing native fixture shows explicit coupling remains exported.
+
+Experiment1417 builds an isolated stock-source variant that removes only
+this signal-mode grounding block, retaining the existing `cap_couple`
+accounting. It does not replace the release executable, mutate PDK/layout,
+or include earlier geometry fixes. Experiment1418 waits for the checked
+build, then repeats the original coupling-on/off fixture on both stock and
+modified executables, requiring stock-on to reproduce the difference and
+the other three cases to produce byte-identical before/after exports.
+The build uses one CPU28 and4GiB; each native fixture has a300s cap. Two
+transformation tests pass. Build/control completion is not yet claimed in
+the launch receipt. This is an export diagnostic, not a general coupling
+placement or delay/simplification fix: the small fixture does not exercise
+a qualified distributed-R network, and changed lumped-C heuristics need
+separate validation. No PLL model or release qualification follows.

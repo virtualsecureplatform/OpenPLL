@@ -1,0 +1,31 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/preserve_explicit_coupling.py": "1aa69a2e3bdf76f3d41b9976dad3304e6c8dbb509e944bd379e3d24f456c2c50",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/test_preserve_explicit_coupling.py": "05c67aee81aed35f47d84cbfcdd4c18751c5ecf0856168c5d9a3e2ef182fef0a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/coupling_grounding_probe.tcl": "da61a91937b00796d1465a75b1cd490675488c2ec4613e076a8e7198a458d823",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_magic_explicit_coupling_control.py": "3e10fed12f5a590f68eb26d425cc40a972d926810ff5316bee74755bbb80bccd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_explicit_coupling_control.py": "cd35fe89ade1f090d17ba66a41e263ace5fe111562b3d387efb7294926c713f8"
+  },
+  "jobs": {
+    "build": {
+      "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_explicit_coupling_control_1417",
+      "owner": {
+        "pid": 2238283,
+        "birth": "135495088"
+      },
+      "state": "diagnostic_make"
+    },
+    "controls": {
+      "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418",
+      "owner": {
+        "pid": 2240136,
+        "birth": "135500352"
+      },
+      "state": "waiting_for_isolated_engine"
+    }
+  },
+  "native_regression_complete": false,
+  "RC_simplification_qualified": false,
+  "PLL_model_qualified": false,
+  "release_ready": false
+}
