@@ -1,0 +1,35 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/assessment.json": "6be9784b418d77a29590a83038c50d9685f1ba2a7e95e50eeeac51d8828b4b5e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/model.spice": "db4c9cd5d521781d224a0551c94d2100e0c4bcbe978b01ec42b479a81243daf1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/bindings.json": "f048d65334cf68457a35d9f9f55db8b3f01d653982d13a68f403b2db6b7e58c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/reduce_keeper_capacitor_boundaries.py": "be9b1fdfce56e4d305e4afeac102e399e9cbb270d34191d31d6c22878ee00ca8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383/model.spice": "280d2596855f6be7bb49d2dd51032cd3e2dbbaa2da9a4020f9a46ff6c25a3808",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383/bindings.json": "6223298dc85cd465edcf402fcd012f34dc37745b266887863861923ada822c0b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383/charge_certificate.json": "d3cbd2f72e4e6096c72d912bfb7422d6675848638f60ac25224f3f1fb1814546"
+  },
+  "original_primitive_calls": 10147,
+  "original_explicit_C_cards": 93531,
+  "transformed_explicit_C_cards": 60000,
+  "eliminated_boundary_ports": 7310,
+  "retained_direct_boundary_ports": 306,
+  "aggregate_forcing_ports": 188,
+  "transformed_driven_ports": 494,
+  "discarded_forced_boundary_only_C": 32924,
+  "grouped_boundary_to_interior_C": 795,
+  "inserted_aggregate_C": 188,
+  "symbolic_retained_charge_coefficients_preserved": true,
+  "primitive_and_wrapper_records_sha256": "e49a09fcdd951e125f9399fb6b024d4e14bac06187c2144a25fb515e46f4a65d",
+  "prescribed_boundary_histories_required_unchanged": true,
+  "boundary_source_currents_preserved": false,
+  "floating_point_aggregation_error_qualified": false,
+  "native_equivalence_verified": false,
+  "native_simulation_allowed": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_primitive_count": 10147,
+  "source_nonzero_C_cards": 93531
+}

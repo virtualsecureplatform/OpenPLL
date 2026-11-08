@@ -1,0 +1,47 @@
+{
+  "launcher": {
+    "pid": 2205920,
+    "birth": "134336833",
+    "command": [
+      "apptainer",
+      "exec",
+      "--bind",
+      "/home:/home,/tmp:/tmp",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+      "/usr/bin/python3",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_capacitor_boundary_superposition_v2.py",
+      "--output",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_Gear_controls_1392"
+    ]
+  },
+  "owner": {
+    "pid": 2205952,
+    "birth": "134336842"
+  },
+  "inputs": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_capacitor_boundary_superposition_v2.py": "05de9c171ad8ef7a97d39ae438fbda954e9fe2d5f622ec89676ca05d831ee460",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a"
+    },
+    "maximum_native_cases": 24,
+    "memory_GiB": 2,
+    "CPU": 29,
+    "resource_queue_cap_s": 7200,
+    "native_campaign_cap_s": 600,
+    "automatic_identical_retry": false,
+    "release_ready": false
+  },
+  "observed_status": {
+    "state": "waiting_for_global_CPU_RAM_budget",
+    "release_ready": false
+  },
+  "original_control_failure": {
+    "state": "stopped_without_qualification",
+    "reason": "RuntimeError('compiled worker failed (1): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_controls_1384/0_pF_kohm_opposed_ramps_original/native.log')",
+    "release_ready": false
+  },
+  "prior_waveform_followup_stopped": true,
+  "prior_pipeline_stopped": true,
+  "release_ready": false
+}

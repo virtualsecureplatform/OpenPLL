@@ -1,0 +1,78 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_tracking_configuration_proof_002/baseline/IntegerPLL_ProgrammedCore.v": "c13c2e33aeca3455c504a4ffb30dabce2ca3a7c27512d62cdbba0219b199292b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_tracking_configuration_proof_002/baseline/proof.log": "495efb3bbd9da15bc2218671655f91c5d9de0940f03f39026eb0fef571a047ac",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_tracking_configuration_proof_002/baseline/model.aig": "de8da1101863be806d9f36c157bb67e614a91fb588b5e93861824161149b7501",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_tracking_configuration_proof_002/baseline/export.ys": "6e448a5471b45bbbc6137c1c3a3a215e78848169d9b186f8d7169f67853bf90a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_tracking_configuration_proof_002/baseline/export.log": "1e7edf90d9d47471985febb7042a6ce56f937563c3906eaac08a3d2c5b1b8b45",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/assessment.json": "c42f9adbc01b56fdab6b171b742c154d2ab8dda4df635e3977004c343f4b3fdb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_DigitalCore.v": "4cba0c4b262d43d5b18e484affdc1c03e0c72f8e21de3a7ce044c66f4f7a9055",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_TuningHandoff.v": "00f380665af4ca3e11d3f37b6b448311d41f1c3e0f5aca875ade7d2b825ddfc4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_DLF.v": "4b98becbc5424ed7eabdf38ceedb757d66db35b965ac33bbd0a0c4b6e4ade2db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_B2TH.v": "7cdf2a2224e2b1fcf848cc1cd42b5417e3d0d1bb8dea82e0c274e5065432f74b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_MMD_Retimer.v": "b967f654d1b527296cb89b4c8600b590ec35e412a9b993a275842152260e9b69",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_Divider.v": "2e3dc884988a510b0e749291cfaa6ff4dac05f04b6fb4d07c4c1fea4bf785d64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_ProgrammedStartup.v": "0aceb40b543247af5e893485fef957b2f8cc2c2888fe43462db3f9adcc1b8b41",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_ProgrammedCore.v": "eba2157966c0d799bb269c4c108ce1e125ca5e90a2e10c019c60deed12cf530d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_400MHz_PrototypeTop.v": "0df53ecb2d5ff685713d4f9f9ede71939bdac8b1c8288ef5d586ea9f915e162e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/sources.json": "60a32fa1856c996a60d1aedd4c7b4f8b8e49588a962c4bc37f0f15ab05370bb3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_tracking_seed_witness_002/IntegerPLL_ProgrammedCore.v": "d4f265ad43aaa9c1d7e40cc2de3c5ee0aea4052972aae24e599c050fbd95c8b8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_tracking_seed_witness_002/export.ys": "f324829018484b86f98de6a8c1ba0f4b8bd1da500fa001d51f6423605dd187bc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prove_prototype_tracking_configuration_v2.py": "d46ad833d53ede19d0735efde3a780aff52ec6fb699262dafd48ec71dd028b5f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_prototype_tracking_seed_witness_v2.py": "1a1f6c339d46c14458b3769829a1e0fd3841465da5431d837f7107734ec6d354",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136/assessment.json": "423ec02bd4de48457acf1e9fa3ba715704e3387bfcbb2a6650cbf195e1a600c5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_tracking_seed_witness_002/assessment.json": "6af2299a5ba03e245a5d035d7346db48c43b5a3a1c301c676554b4e4462e30ee",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_keeper_seed_RTL_proof.py": "90753549452b468cd79ff98e60a944af26fd262a32a02d3476eabe3f35ac009f",
+    "/nix/store/4bmfi4470w0i3ixcaidfki18d3fyqvva-yosys-with-plugins-0.62/bin/yosys": "163a52612b0d0540474b54ecf8ec66cd231a2031acca99f379324a694c62ff65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/baseline/export.ys": "fd9ecd8b6a7e57699913ce742257010934e3d25cbdbd09dd9d0a4a542f896a97",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_tracking_seed_witness_002/model.aig": "8184fdafdd960c12115c797b548f42db3d53673b0dbd49a18162c9d08d3f0cc5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/seed_witness/export.ys": "3101d740c0a7405a511f98c2e7732baf3075c22e9f7450d71daa070217309818"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/baseline/export.process.json": "d9f2668082208e5e80836a9fb9ac956da79607235e92b7d8432ea8114b33af5a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/baseline/export.ys": "fd9ecd8b6a7e57699913ce742257010934e3d25cbdbd09dd9d0a4a542f896a97",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/baseline/model.map": "558a62078853e537cba0a35ad7e5e8dc3e4e7150165610b0092e21d8d2129f45",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/baseline/export.log": "33c7d21342a130ed95d1cec61b79485f21ec3515f82ff997a5b7de87d52feb4d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/baseline/model.aig": "de8da1101863be806d9f36c157bb67e614a91fb588b5e93861824161149b7501",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/seed_witness/model.aig": "8184fdafdd960c12115c797b548f42db3d53673b0dbd49a18162c9d08d3f0cc5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/seed_witness/export.process.json": "64095f168ea8cb532bd97147d60ced97b1ec18753091d0ec50f3b032918a069c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/seed_witness/export.log": "f7cc0b3c719125607a78026c7484294f2e4f907cd389966f349b8be1511e0a08",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/seed_witness/export.ys": "3101d740c0a7405a511f98c2e7732baf3075c22e9f7450d71daa070217309818",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_seed_RTL_binding_1386/seed_witness/model.map": "4c77b27eef73a1bacd351d95a0336c28249ad00d799a330ec28920a3ee88461d"
+  },
+  "results": [
+    {
+      "case": "baseline",
+      "reconstructed_AIG_sha256": "de8da1101863be806d9f36c157bb67e614a91fb588b5e93861824161149b7501",
+      "recorded_AIG_sha256": "de8da1101863be806d9f36c157bb67e614a91fb588b5e93861824161149b7501",
+      "exact_match": true
+    },
+    {
+      "case": "seed_witness",
+      "reconstructed_AIG_sha256": "8184fdafdd960c12115c797b548f42db3d53673b0dbd49a18162c9d08d3f0cc5",
+      "recorded_AIG_sha256": "8184fdafdd960c12115c797b548f42db3d53673b0dbd49a18162c9d08d3f0cc5",
+      "exact_match": true
+    }
+  ],
+  "current_route_declared_RTL_formal_models_reconstructed_exactly": true,
+  "configuration_stable_during_sampled_tracking_proved": true,
+  "ready_configuration_and_running_fine_payload_match_static_presets_proved": true,
+  "tracked_seed_state_reachable": true,
+  "existing_induction_and_BMC_control_reused": true,
+  "new_induction_run_performed": false,
+  "conservative_free_core_outputs_and_feedback_clock_cut": false,
+  "actual_full_core_and_both_handoffs_retained": true,
+  "initial_seed_loading_proved": true,
+  "initial_sampled_tracking_code_matches_seed_proved": true,
+  "deterministic_legal_clock_witness_only_for_reachability": true,
+  "full_core_behavior_proved": false,
+  "assumptions": [
+    "RESET_N asserted for first two global samples",
+    "presets and gains stable between external resets",
+    "ideal sampled RTL clocks; no analog metastability model"
+  ],
+  "routed_netlist_equivalence_qualified": false,
+  "physical_timing_qualified": false,
+  "release_ready": false
+}
