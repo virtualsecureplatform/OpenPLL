@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/instrument_ground_support.py": "aa10c356439472bb20aeab8ca800d898d915e7e1f456ba80d01731dc6f0c3d77",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_magic_ground_support_trace.py": "03c2c29e5d6da8d4c8fdbc344b0bee5573fe3a1b4dd965e61e2c3a851926de7c"
+  },
+  "owner": {
+    "pid": 2129819,
+    "birth": "133070693"
+  },
+  "CPU": 29,
+  "memory_GiB": 4,
+  "build_cap_s": 3600,
+  "state": "source_verification_or_isolated_build_pending",
+  "ground_support_sites": 6,
+  "native_trace_neutrality_verified": false,
+  "spatial_ground_placement_qualified": false,
+  "release_tool_replaced": false,
+  "release_ready": false
+}

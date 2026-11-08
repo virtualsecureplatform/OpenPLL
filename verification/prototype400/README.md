@@ -718,3 +718,7 @@ A live CPU-28 controller verifies the unchanged checked GDS, isolated logging en
 ### Completed-trace support audit observer initialized (1353)
 
 A live CPU-29 observer waits for the completed 1352 receipt and checks owner birth while waiting. Under an 8 GiB analysis lease, it verifies the full artifact closure, exact C-only circuit preservation, overlap shielding subtraction and fringe support integrals, then rechecks hashes. It does not read partial native traces. Nine existing overlap/fringe auditor tests pass. Split cases remain explicit and ground placement, distributed R, simulation authorization and release qualification remain false. See `selected_keeper_resolved_fringe_audit_launch.json`.
+
+### Ground area/perimeter observer build started (1354)
+
+An isolated source transformation preserves the original numerical ledger and adds support records immediately before its six ExtBasic area/perimeter additions. Records include tile/neighbor bounds, clipping rectangle, plane/residue, direction, split flags, native measure and coefficient. This supplies missing geometry rather than inferring it from the numerical ground delta. A source check finds all six expected original statements and inserts six observations. The live CPU-29/4-GiB builder verifies the pinned source before compilation; native neutrality and support reconstruction remain unverified. Existing source trees, PDK, GDS and running traces are untouched. See `selected_magic_ground_support_build_launch.json`.
