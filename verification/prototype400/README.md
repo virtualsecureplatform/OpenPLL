@@ -936,3 +936,28 @@ Original old-backend fine-112 capture 1213 completes normally at stationary coar
 Completed corrected coarse-20/fine-149 capture 1341 and its all-604-endpoint check are below 400 MHz. A new explicitly exploratory corrected coarse-19/fine-149 capture 1412 uses the same checked physical model, 50 ps diagnostic maximum step, 16 GiB limit and one core (free CPU 20). Its existing parameterized capture producer validates all six startup coarse sources. Observer 1413 waits for normal completion and checks all 302 tuning bits at both endpoints. The prior fit/holdout jobs remain unchanged. This single adjacent-band experiment does not prove coarse-20 unreachability or select/qualify coarse 19. See `selected_keeper_coarse19_probe_plan_1414.json` and `selected_keeper_coarse19_probe_launch.json`.
 
 The retention checkout now uses an independent Git clone on local scratch to avoid the observed NFS object-write stalls. Simulation workers and frozen input/artifact paths remain in the original workspace. The local clone passes the existing 19 helper tests before synchronization; the four current-mask comparison tests are checked separately after synchronization.
+
+### Completed aggregate replay and prescribed receiver boundary (2026-11-08)
+
+The completed old-backend TT coarse20/fine149 replay1403 and comparison1404
+retain all shared source knots and use the exact capacitor reduction1383.
+Native GNU-time elapsed is6109s versus10612s unreduced (one-run ratio1.737),
+peak RSS1448788 versus5013188KiB. Frequency differs by-0.604690ppm; maximum
+absolute final-window rising/falling edge differences are1.274891/1.271350ps.
+Output sampling grids differ; this does not establish timestep convergence,
+a dynamic aggregation error bound, corrected-backend qualification, or release readiness.
+The original full-reference discrepancy remains approximately1076ppm.
+
+Static causality audit1415 binds the reduced model and completed physical1279
+plan:302 macro programming endpoints, one reset, two supplies,188 aggregate
+capacitor forcing inputs, and one other prescribed node `a_61378_74686#`.
+Eight four-terminal MOS wrapper calls have PLLOUT on the gate and that
+prescribed node on a source/drain terminal. The literal wrappers preserve
+p0/p1/p2/p3 ordering into the PDK MOS calls. Thus the replay also prescribes
+a receiver output; freeing PLLOUT alone does not make the environment causal
+under changed controller histories. An independent plant must resolve or
+bound this receiver/downstream loading and replace or qualify sampled
+capacitor forcing before controller-change predictions can be accepted.
+The audit reports terminal positions and hashes, without claiming a dynamic
+error bound. Three tests cover receiver detection, supply exclusion and
+missing physical controls. All model/release qualification flags remain false.
