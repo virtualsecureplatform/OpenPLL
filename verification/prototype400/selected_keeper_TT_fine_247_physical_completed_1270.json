@@ -1,0 +1,39 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/assessment.json": "66a33a9102b4b4ef0a948aefc0714ed2d0ac239608023a6d2b79b213dc66b673",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208/assessment.json": "a3c818e04c7f616498519d8fc326c20f5878a80ecfe07382f27207a2b87589fa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/native/inputs.json": "35e738d3554a9f5bdc4254aa2f198478e9437fc88bc797951db51d72fc3d4ce9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136/assessment.json": "423ec02bd4de48457acf1e9fa3ba715704e3387bfcbb2a6650cbf195e1a600c5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_ProgrammedCore.v": "eba2157966c0d799bb269c4c108ce1e125ca5e90a2e10c019c60deed12cf530d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_DigitalCore.v": "4cba0c4b262d43d5b18e484affdc1c03e0c72f8e21de3a7ce044c66f4f7a9055",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_B2TH.v": "7cdf2a2224e2b1fcf848cc1cd42b5417e3d0d1bb8dea82e0c274e5065432f74b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208/nodes.json": "7316ef06b9c3b4141066f7c2f6c834963cbcaa7db4dab306ebb556d881aa9ff3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/chains.json": "1a38c79e1d9eb9f556b259df7b1f505fc1431346d5206e29876b5242ac6ae955",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/native/owner.json": "e24503541967e2fbaa46f04bdfc9332ed5dc8ee605a68c5a0601140b83f9b63c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py": "4b83a4d6c4951cafd271eeeab996644b63350c2b75c2bc3e45dcff1d156b8a09",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/plan_keeper_conditional_replay.py": "765a5ccfcf27e5c363755c2ef5112d9dc5ecc96a6e82636e05034070ceeb38f5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/native/assessment.json": "59810aaec52e2533a5fb6182f9416bb9d2bc228057031598ea68b74d2b3404ad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/native/transient.raw": "20f3fcf908d6a63b2a4ecc6d2e9db37e18ded2edcbe764310253fc89faf634e2"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/physical/controls.npy": "26e59057a6ab945df32fca7a9ddcc99da4a2d89cae2a39f225ba36b11d747aab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/physical/checks.json": "84d7ef2ec0bd5e034c99c0fb2110497901d9f2e43451941c32c95b5e97948add",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/physical/plan.json": "e0685c028ce98987833fce3a64db9f02f2d72115d78a4e7ac1e1e479c03efd46"
+  },
+  "native_completed": true,
+  "observed_bits": 302,
+  "observed_endpoint_voltages": 604,
+  "all_macro_and_DCO_tuning_bits_match": true,
+  "mismatched_endpoints": 0,
+  "coarse": 20,
+  "fine": 247,
+  "samples": 26076,
+  "window_ns": [
+    200,
+    260
+  ],
+  "model_qualified": false,
+  "release_ready": false
+}

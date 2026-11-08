@@ -1,0 +1,119 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/protocol.json": "15875f2d778e58cf20c239b5676347411598150f9071c60cce37d09d5a42d360",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/assessment.json": "eb45914f6e7f0ddf285256e22c447579a23fd65b97efcd5e41b129291990a489",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/collect_keeper_TT_characterization.py": "5b9906294c0701bf35f3aa5cbd3080f60f6d78fbde682d72acba37cf30403436",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/common_v3.py": "dc86a17d58cdd6d02d9a3279c94097962da89c31ae50903e4717e333b2b235c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/resources.py": "3b4a3fcae0f072cfdc7937c06f46f2bf7166b4a5e31b15feadb8775ce81f1b11",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266/assessment.json": "68b23ce99289d47a674876fbdfdec4898b3cb4592a9093d64d7c42a9fe861d0d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parallel_physical_tuning_1268/assessment.json": "f7eb0c913b3373963dcd47e9322aae9f8d5201275c13c25d446828dd046e3aa0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266/inputs.json": "70877a61179d2625aa6bf959d1fbd65ef727d1cd0e3f6b4715944e2643c7a5c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_008/native/assessment.json": "45a19d0a2038172cf66c22bd88842d17a3578aa827fe548c7673f6d894de12c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_008/physical/assessment.json": "1a593e79a45e4714b5a8c7b24ee0ab326bb0378aa87a615b627579a22d580773",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_008/native/inputs.json": "2300c1aac7fdd5a75001327ad4d60bf7e1d02c77c1b0144e6f5f918f4f0b1d30",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/native/assessment.json": "c4e31e442fc8517a09fb068128a3fb7d05afdc8bcb4a46cff3028e1d383f1e9c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/physical/assessment.json": "3c8292d4e92d89fb15ba3aa381734b30660fedec0193f3c811ded5d60555cb55",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/native/inputs.json": "55768230a95239d371d30255c656963638c5914cd2d8e7b02709d62e250d6c00",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_133/native/assessment.json": "6175e3faf486eed0fc2a73a3476f16dc5536230824551e234fd0304af69c8a7d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_133/physical/assessment.json": "d56dbd26ad3108972e785c1f8c22ca8359e682c56e376f22ef4f92fa25415c06",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_133/native/inputs.json": "f483d0d1a2b9b357d6fa718eaada02cf4ddb7374a94592d18d59c8e122ba7f1f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/native/assessment.json": "cf773fbc20e3c2bae99a8acd94c19ee4a620135e332e4ecc10a94da5d293f42b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/physical/assessment.json": "b6e6dce632144f9f38b93c272031ff021c26e076663b23bb43d43c545ef265ff",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/native/inputs.json": "2896aa0f7ecf0e38bb6506693b3464865e4ebdcc43f71fc14f03b5b30207b7f5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/native/assessment.json": "59810aaec52e2533a5fb6182f9416bb9d2bc228057031598ea68b74d2b3404ad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/physical/assessment.json": "bc7f8765723e30b9d003e4eaa4dc02a77b15ff614ce5fd418dcb2bf22b4c55b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/native/inputs.json": "35e738d3554a9f5bdc4254aa2f198478e9437fc88bc797951db51d72fc3d4ce9"
+  },
+  "fit_points": [
+    {
+      "fine": 8,
+      "frequency_hz": 347873211.3324956,
+      "role": "fit",
+      "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_008/native/assessment.json",
+      "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_008/physical/assessment.json"
+    },
+    {
+      "fine": 110,
+      "frequency_hz": 366476299.4780054,
+      "role": "fit",
+      "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/native/assessment.json",
+      "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/physical/assessment.json"
+    },
+    {
+      "fine": 149,
+      "frequency_hz": 374076080.98402536,
+      "role": "fit",
+      "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266/assessment.json",
+      "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parallel_physical_tuning_1268/assessment.json"
+    },
+    {
+      "fine": 182,
+      "frequency_hz": 380305417.341403,
+      "role": "fit",
+      "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/native/assessment.json",
+      "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/physical/assessment.json"
+    },
+    {
+      "fine": 247,
+      "frequency_hz": 393221014.38839716,
+      "role": "fit",
+      "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/native/assessment.json",
+      "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/physical/assessment.json"
+    }
+  ],
+  "target": {
+    "target_hz": 400000000.0,
+    "measured_bracket_available": false
+  },
+  "independent_holdout": {
+    "measured": {
+      "fine": 133,
+      "frequency_hz": 371145181.75834024,
+      "role": "holdout",
+      "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_133/native/assessment.json",
+      "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_133/physical/assessment.json"
+    },
+    "bracket": [
+      {
+        "fine": 110,
+        "frequency_hz": 366476299.4780054,
+        "role": "fit",
+        "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/native/assessment.json",
+        "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/physical/assessment.json"
+      },
+      {
+        "fine": 149,
+        "frequency_hz": 374076080.98402536,
+        "role": "fit",
+        "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266/assessment.json",
+        "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parallel_physical_tuning_1268/assessment.json"
+      }
+    ],
+    "predictions": [
+      {
+        "interpolation": "linear_frequency",
+        "predicted_frequency_hz": 370958221.90463257,
+        "error_ppm": -503.73779021439805
+      },
+      {
+        "interpolation": "linear_period",
+        "predicted_frequency_hz": 370920412.8586629,
+        "error_ppm": -605.609100494009
+      }
+    ]
+  },
+  "interpolation_accuracy_characterized": true,
+  "interpolation_accuracy_accepted": false,
+  "all_native_and_physical_points_complete": true,
+  "coarse": 20,
+  "corner": "tt",
+  "temperature_C": 27,
+  "supply_V": 1.8,
+  "C_only_reference": true,
+  "distributed_wire_R_qualified": false,
+  "other_corners_qualified": false,
+  "closed_loop_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}

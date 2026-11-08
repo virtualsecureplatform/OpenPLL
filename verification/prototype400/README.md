@@ -1590,3 +1590,15 @@ backend, changed-controller prediction, or full closed-loop operation. The 5 ps
 control and corrected-backend 10 ps references retain their original tasks and
 criteria. This result narrows the observed discrepancy without weakening any
 release acceptance gate.
+
+
+The complete old-backend coarse20 TT curve 1271 has five fit points at fine codes
+8, 110, 149, 182 and 247, with an independently predeclared holdout at 133. Every
+native capture is normally completed/finite/stationary and each physical observer
+validates 302 bits and 604 endpoint voltages with zero mismatches. The measured
+fit range is 347.873211-393.221014 MHz, so it has no measured 400 MHz bracket;
+extrapolation does not make this a target-ready curve. The holdout errors are
+-503.737790 ppm for linear frequency and -605.609100 ppm for linear period.
+Neither is accepted as a global interpolation bound. All completed receipts and
+actual input/artifact hashes were rechecked before retention. These results are
+old-backend C-only characterization, not corrected-BSIM or other-corner evidence.
