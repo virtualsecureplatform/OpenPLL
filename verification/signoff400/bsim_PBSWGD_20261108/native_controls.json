@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-08",
+  "review_base": "312eb62",
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/main_BSIM_backend_1298/assessment.json": "406ce5d9ef8c75594d4ff430677c498f3870e9bd09d391316afd6583d8a2b956",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_BSIM_positive_1299/assessment.json": "b428d0c217655693b57bdcd7077acd800cb9a7403688dc7013baa4b30a5fe68b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_BSIM_negative_1300/assessment.json": "80aafbddfb05633d588552981e04d77e9572d4d74af1bfa522f0b86c5eff686f"
+  },
+  "fresh_build_succeeded": true,
+  "baseline_archive_relink_exactly_reproduces_checked_binary": true,
+  "patched_binary_sha256": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+  "changed_archive_members": [
+    "N_DEV_MOSFET_B4p61.C.o",
+    "N_DEV_MOSFET_B4p70.C.o",
+    "N_DEV_MOSFET_B4p82.C.o"
+  ],
+  "all_other_archive_members_identical": true,
+  "source_shape_unit_tests_passed": 2,
+  "CLI_help_checks_passed": 2,
+  "positive": {
+    "native_analyses": 24,
+    "versions_requested": [
+      "4.6.1",
+      "4.7.0",
+      "4.8.2"
+    ],
+    "maximum_capacitance_difference_fF": 1.4066030889576133e-11,
+    "regression_tolerance_fF": 1e-08,
+    "all_controls_agree": true
+  },
+  "negative": {
+    "native_analyses": 24,
+    "all_native_analyses_completed": true,
+    "maximum_capacitance_difference_fF": 0.07919601720405653,
+    "all_controls_agree": false,
+    "expected_nonzero_exit": true
+  },
+  "PDK_used": false,
+  "scope": "Isolated simulator defaulting correction and native regression controls",
+  "PLL_model_qualified": false,
+  "release_ready": false
+}

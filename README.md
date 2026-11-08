@@ -316,3 +316,34 @@ before/after capacitances agree exactly. The
 [native records and expected exports](verification/signoff400/magic_coupling_20261108/native_controls.json)
 retain this diagnostic evidence. No extraction correction or PLL qualification
 is implied.
+
+### Xyce BSIM gate-sidewall junction default control
+
+The inspected Xyce BSIM4 paths default an omitted `PBSWGD` to `PBSWD`; the
+checked ngspice implementation uses `PBSWGS`. These values differ in the
+SKY130 models used here. The [isolated patch](tools/xyce_umfpack/bsim_PBSWGD_default.patch)
+changes only that omitted-value assignment in the 4.6.1, 4.7.0 and 4.8.2
+paths. Explicit `PBSWGD` values remain unchanged.
+
+Build on the existing checked value-gather archive, inside the release CAD
+image, then run the PDK-free native regression with an ngspice executable:
+
+```sh
+python3 tools/xyce_umfpack/build_bsim_junction.py \
+  --base build/tools/value_gather --output build/tools/value_gather_bsim --cpu 0
+python3 tools/xyce_umfpack/bsim_junction_probe.py \
+  --xyce build/tools/value_gather_bsim/Xyce --ngspice /path/to/ngspice \
+  --output build/bsim_default_control --cpu 0
+```
+
+The builder first relinks the base archive and requires the existing executable
+to be reproduced exactly; only the three intended BSIM object members may then
+change. The regression tests omitted, equal-potential and explicit/asymmetric
+values across all three version paths. Its 1e-8 fF tolerance is for this small
+regression fixture, not a PLL accuracy requirement.
+
+[Fresh native validation](verification/signoff400/bsim_PBSWGD_20261108/native_controls.json)
+passes all 24 corrected analyses with a maximum 1.41e-11 fF difference. The
+unpatched negative control completes its analyses and fails the same regression
+with a 0.079196 fF difference. These controls grant no full-MOS, PLL or release
+qualification.
