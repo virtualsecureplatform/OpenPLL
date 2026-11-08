@@ -1074,3 +1074,20 @@ C charge after ideal-R contraction against1202/1339. No cap conservation,
 placement or dynamic qualification is asserted at launch; no release tool,
 PDK or layout is modified. Build and observer actual PID/birth are pinned
 in the launch receipt.
+
+### MASKIVARS completed comparison: no observed PLL speed benefit
+
+Replay1410 and completed comparison1411 use the same old backend, exact
+shared source bank, reduction, model and50ps/260ns settings as1403. The
+only numerical directive difference is `maskivars=1` (plus output paths),
+checked by the comparator. Native GNU-time wall is6134s versus6109s
+default: masked is about0.41% slower in these single concurrent runs,
+so no PLL runtime improvement is established. Peak RSS1448580 versus
+1448788KiB is essentially unchanged. Final frequency difference is
+-0.080961ppm; maximum absolute rising/falling edge differences are
+0.281880/0.209839ps. The masked run has30130 samples versus30154.
+The option resolved the small RC-fixture LTE failure, but that does not
+justify adopting it for the PLL. Keep the default reduced solver for
+subsequent comparisons; MASKIVARS accuracy and corrected-backend behavior
+remain unqualified. This negative benchmark closes this speed experiment
+without further identical runs, and does not change release gate status.
