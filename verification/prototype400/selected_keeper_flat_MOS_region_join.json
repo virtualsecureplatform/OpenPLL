@@ -1,0 +1,33 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_device_regions_1222/assessment.json": "4233d627cd5a6c6883ddc91455d9eb3902e604ff4003d6d16aa8ba5151d54033",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_flat_MOS_region_join.py": "489cdd2adb11424539fccf6bfd12a31eb378f8d6be3da548d786363f9f04093a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_MOS_region_join_1229/MOS_regions.json": "31daef66a50819c52a98afd5abba071291bb669791c9bb53bf0eedf98fcd0d61"
+  },
+  "physical_MOS_count": 61504,
+  "emitted_MOS_count": 61504,
+  "signature_count": 37502,
+  "region_counts": {
+    "digital": 49590,
+    "oscillator": 4096,
+    "parent": 6040,
+    "detector": 1778
+  },
+  "count_mismatches": [],
+  "cross_region_ambiguous_classes": [],
+  "all_MOS_region_ownership_verified": true,
+  "individual_parallel_device_bijection_claimed": false,
+  "diffusion_area_and_perimeter_correspondence_verified": false,
+  "non_MOS_correspondence_verified": false,
+  "circuit_partitioned": false,
+  "boundary_loading_qualified": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_MOS_region_join_1229/assessment.json"
+}
