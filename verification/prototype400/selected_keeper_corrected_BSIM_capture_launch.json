@@ -1,0 +1,31 @@
+{
+  "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295",
+  "physical_observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296",
+  "native": {
+    "pid": 2020450,
+    "birth": "131823009",
+    "process_group": 2020450
+  },
+  "controller": {
+    "pid": 2020417,
+    "birth": "131822576"
+  },
+  "observer": {
+    "pid": 2020510,
+    "birth": "131825320"
+  },
+  "active_executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+  "active_executable_sha256": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+  "BSIM_PBSWGD_default_corrected": true,
+  "actual_electrical_deck_identical_except_output_path": true,
+  "CPU": 16,
+  "memory_GiB": 16,
+  "native_cap_s": 86400,
+  "maximum_native_cases": 1,
+  "automatic_identical_retry": false,
+  "all_node_voltages_requested": true,
+  "old_backend_points_not_promoted_to_new_backend": true,
+  "numerical_accuracy_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}
