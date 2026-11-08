@@ -1,0 +1,162 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_ground_tail_trace_1360/instrumentation.json": "da9692cfcc0e4a6e62c9511008d47cec679e3cc23f65fa96310977d388e3dfe7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_tail_parallel_controls_1362/assessment.json": "866fc2f20ef047883cac423b727354d56ab1dc51fb9af227124a16fd1487e824",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_tail_parallel_controls_1362/shielded_overlap_on/coupling.jsonl": "ea9bc14d6062c44afe807ae678cd80a8204d584b5ce3ae15defe820b6472af27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_tail_parallel_controls_1362/recursive_shielding_on/coupling.jsonl": "9295c7150c1f1942ff313016d93eb1bb084b4a0733d903393509b4072aa5d365",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_tail_parallel_controls_1362/fringe_shielding_on/coupling.jsonl": "29f9018b100ca3449934553b771731806348e7196776f7e866d8939b9d4f0315",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_tail_parallel_controls_1362/recursive_fringe_on/coupling.jsonl": "58fc86f3150b9b1e80056bf3a2060de956b80f0682ff8cc1ef2b0ff68c5b3f72",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_ground_support_coverage.py": "3e4630fd89908272e6cf26222725518d6dc5b6d077ae9c383053431ea8a9a737",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_audit_magic_ground_support_coverage.py": "56210a071815fd6c0b2ecf37ef2ab4e74a0ed4aecc7ec7d122afadf7365514a6"
+  },
+  "results": [
+    {
+      "case": "shielded_overlap",
+      "area_perimeter_site_counts": {
+        "ExtBasic.c:5332": 4,
+        "ExtBasic.c:5351": 0,
+        "ExtBasic.c:5409": 4,
+        "ExtBasic.c:5459": 4,
+        "ExtBasic.c:5510": 4,
+        "ExtBasic.c:5560": 4
+      },
+      "shielding_subtraction_site_counts": {
+        "ExtCouple.c:522": 3,
+        "ExtCouple.c:1521": 3,
+        "ExtCouple.c:1254": 2
+      },
+      "all_nine_supported_site_counts_match": true,
+      "legacy_ground_subtractions": 0,
+      "legacy_ground_path_observed": false,
+      "substrate_relocation_updates": {
+        "ExtCouple.c:234": 0,
+        "ExtCouple.c:239": 0
+      },
+      "reset_site_counts": {
+        "ExtBasic.c:336": 0,
+        "ExtBasic.c:5248": 5,
+        "ExtBasic.c:5568": 0,
+        "ExtCouple.c:1525": 0,
+        "ExtCouple.c:1707": 0,
+        "ExtRegion.c:403": 0
+      },
+      "substrate_relocation_spatially_qualified": false,
+      "legacy_ground_support_qualified": false,
+      "pointwise_placement_qualified": false,
+      "distributed_wire_R_qualified": false,
+      "release_ready": false
+    },
+    {
+      "case": "recursive_shielding",
+      "area_perimeter_site_counts": {
+        "ExtBasic.c:5332": 5,
+        "ExtBasic.c:5351": 0,
+        "ExtBasic.c:5409": 5,
+        "ExtBasic.c:5459": 5,
+        "ExtBasic.c:5510": 5,
+        "ExtBasic.c:5560": 5
+      },
+      "shielding_subtraction_site_counts": {
+        "ExtCouple.c:522": 5,
+        "ExtCouple.c:1521": 5,
+        "ExtCouple.c:1254": 2
+      },
+      "all_nine_supported_site_counts_match": true,
+      "legacy_ground_subtractions": 0,
+      "legacy_ground_path_observed": false,
+      "substrate_relocation_updates": {
+        "ExtCouple.c:234": 0,
+        "ExtCouple.c:239": 0
+      },
+      "reset_site_counts": {
+        "ExtBasic.c:336": 0,
+        "ExtBasic.c:5248": 6,
+        "ExtBasic.c:5568": 0,
+        "ExtCouple.c:1525": 0,
+        "ExtCouple.c:1707": 0,
+        "ExtRegion.c:403": 0
+      },
+      "substrate_relocation_spatially_qualified": false,
+      "legacy_ground_support_qualified": false,
+      "pointwise_placement_qualified": false,
+      "distributed_wire_R_qualified": false,
+      "release_ready": false
+    },
+    {
+      "case": "fringe_shielding",
+      "area_perimeter_site_counts": {
+        "ExtBasic.c:5332": 4,
+        "ExtBasic.c:5351": 0,
+        "ExtBasic.c:5409": 4,
+        "ExtBasic.c:5459": 4,
+        "ExtBasic.c:5510": 4,
+        "ExtBasic.c:5560": 4
+      },
+      "shielding_subtraction_site_counts": {
+        "ExtCouple.c:522": 3,
+        "ExtCouple.c:1521": 3,
+        "ExtCouple.c:1254": 2
+      },
+      "all_nine_supported_site_counts_match": true,
+      "legacy_ground_subtractions": 0,
+      "legacy_ground_path_observed": false,
+      "substrate_relocation_updates": {
+        "ExtCouple.c:234": 0,
+        "ExtCouple.c:239": 0
+      },
+      "reset_site_counts": {
+        "ExtBasic.c:336": 0,
+        "ExtBasic.c:5248": 5,
+        "ExtBasic.c:5568": 0,
+        "ExtCouple.c:1525": 0,
+        "ExtCouple.c:1707": 0,
+        "ExtRegion.c:403": 0
+      },
+      "substrate_relocation_spatially_qualified": false,
+      "legacy_ground_support_qualified": false,
+      "pointwise_placement_qualified": false,
+      "distributed_wire_R_qualified": false,
+      "release_ready": false
+    },
+    {
+      "case": "recursive_fringe",
+      "area_perimeter_site_counts": {
+        "ExtBasic.c:5332": 5,
+        "ExtBasic.c:5351": 0,
+        "ExtBasic.c:5409": 5,
+        "ExtBasic.c:5459": 5,
+        "ExtBasic.c:5510": 5,
+        "ExtBasic.c:5560": 5
+      },
+      "shielding_subtraction_site_counts": {
+        "ExtCouple.c:522": 5,
+        "ExtCouple.c:1521": 5,
+        "ExtCouple.c:1254": 2
+      },
+      "all_nine_supported_site_counts_match": true,
+      "legacy_ground_subtractions": 0,
+      "legacy_ground_path_observed": false,
+      "substrate_relocation_updates": {
+        "ExtCouple.c:234": 0,
+        "ExtCouple.c:239": 0
+      },
+      "reset_site_counts": {
+        "ExtBasic.c:336": 0,
+        "ExtBasic.c:5248": 6,
+        "ExtBasic.c:5568": 0,
+        "ExtCouple.c:1525": 0,
+        "ExtCouple.c:1707": 0,
+        "ExtRegion.c:403": 0
+      },
+      "substrate_relocation_spatially_qualified": false,
+      "legacy_ground_support_qualified": false,
+      "pointwise_placement_qualified": false,
+      "distributed_wire_R_qualified": false,
+      "release_ready": false
+    }
+  ],
+  "all_four_fixture_coverage_checks_passed": true,
+  "full_PLL_coverage_verified": false,
+  "pointwise_placement_qualified": false,
+  "release_ready": false
+}
