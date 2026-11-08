@@ -1,0 +1,49 @@
+{
+  "launcher": {
+    "pid": 2211017,
+    "birth": "134644472",
+    "command": [
+      "apptainer",
+      "exec",
+      "--bind",
+      "/home:/home,/tmp:/tmp",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+      "/usr/bin/python3",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_early_settling.py",
+      "--reference",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341",
+      "--physical",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342",
+      "--output",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_early_settling_1407"
+    ]
+  },
+  "owner": {
+    "pid": 2211049,
+    "birth": "134644499"
+  },
+  "inputs": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/assessment.json": "773699eff553d8dfa13eb69d437ac1451611fe4c0013fde372fbd5ca0fbe4d00",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342/assessment.json": "3535df4019c14022ed25e5f3a751e897984de538718c6a41e41986c90ef86254",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/transient.raw": "1124410ba3bffb1f23dd512731553c669775205f759a99b6bad62002b88f9343",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342/controls.npy": "55258a3d5c9e263d6cb1d0d4a042cdc7c0115a75db373840427444815bafd2b4",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342/plan.json": "a9b75a57a03742bf0802dcfedc37a22c2df72ee9550745c5cb6dc5f2394d1fbf",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_early_settling.py": "062c2420ba1f21281ee17af01c62cc8be722435a672ffcd0501c32ad7e1f6a86",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_isolated_control.py": "abada00c7349f8209324c743e11ab32a75eac8743e73998697c767fdb53c7117",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py": "4b83a4d6c4951cafd271eeeab996644b63350c2b75c2bc3e45dcff1d156b8a09",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2"
+    },
+    "CPU": 25,
+    "memory_GiB": 2,
+    "resource_queue_cap_s": 7200,
+    "native_simulation_requested": false,
+    "release_ready": false
+  },
+  "observed_status": {
+    "state": "waiting_for_global_CPU_RAM_budget",
+    "release_ready": false
+  },
+  "release_ready": false
+}
