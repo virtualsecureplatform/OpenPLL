@@ -1,0 +1,21 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capture_syntax_1237/capture.spice": "b3f9999546d2b3cc681bfb65c437388b89c69b0dbc1cccf82fdad7a3d0413bd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capture_syntax_1237/capture.raw": "2e384dfbb00fe46fb37a98e05e7816a1765c073c1ffacbc5654cd9df8aadfe0f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capture_syntax_1237/native.log": "3622f24b902d43686d2f1bca4c8609587e79b71d33e998aebb3b66b16618f7cd"
+  },
+  "normal_native_completion": true,
+  "all_voltage_wildcard_and_selected_reader_work": true,
+  "samples": 686,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OMP_THREAD_LIMIT": "1"
+  },
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capture_syntax_1237/assessment.json"
+}
