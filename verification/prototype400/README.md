@@ -44,6 +44,13 @@ models remain separate unqualified diagnostic inputs.
 The [completed coarse23/fine8 point](static_coarse23_fine8_DCO_1545/assessment.json)
 measures376.003 MHz; together with fine149 at404.097 MHz it brackets400 MHz
 inside the unqualified fast subsystem. This is not a full-layout bracket.
+The [first actual-RTL loop diagnostic](fast_RTL_cold_start_1550/assessment.json)
+completes under the fast models but fails sustained lock at KI4/KP0. Its
+[new cycle-winding assessment](RTL_cycle_winding_review_1552/assessment.json)
+flags full-reference-cycle phase excursions in40 of42 windows. A KI4/KP4
+comparison stops at an unsupported code rather than extrapolating. These are
+diagnostic model/controller findings, not physically qualified gain choices.
+
 The current numerical work replays measured programming-input ripple and
 continues the existing full-layout references and boundary replay. Their results
 must be completed and hash-verified before selecting a calibration or correcting
@@ -2286,3 +2293,14 @@ release. Pending independent fine128 point1549 can provide a measured near-targe
 seed for subsequent diagnostics. Retained CSV files use lossless gzip with
 verified decompressed hashes; the incomplete1551 trace is retained only as a
 failure artifact, without a completed-scenario claim.
+
+Acceptance v5 adds detection of a gradual full-reference-cycle phase excursion
+within a measurement window even when every individual clock period remains
+within the clock-gap limits. Existing v4 reports such drift as cycle_slip=false;
+its strict phase limits already reject the demonstrated trace, so no previous
+pass is promoted or revoked by this reassessment. Small motion across the wrapped
+phase branch does not count as a full-cycle excursion. Four new winding/missing
+edge/ideal-lock tests and22 inherited strict-boundary/guard/control tests pass.
+Completed KI4/KP0 trace1550 is rechecked as1552, with40 of42 windows now flagged;
+its acceptance remains false. New loop assessment v3 and runner v11 use v5 while
+all historical hashed scripts, traces and requirements remain unchanged.
