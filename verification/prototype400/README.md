@@ -1,11 +1,44 @@
 # Programmed 400 MHz prototype
 
-The active profile is `verification/prototype_400mhz.json`: 25 MHz reference,
+The active profile is [`requirements_v3.json`](../signoff400/requirements_v3.json),
+as selected by [`active_release.json`](../active_release.json): 25 MHz reference,
 400 MHz output, 1.8 V, 27°C, TT/FF/SS/SF/FS. The deliverable is a verified macro
 handoff. Other frequencies, temperature qualification, automatic acquisition,
 precision jitter qualification and chip/shuttle submission are deferred.
 Historical four-mode requirements remain unchanged; their former active pointer
 is preserved in `verification/active_release_four_mode_400mhz.json`.
+
+## Current release blockers (2026-11-08)
+
+The 400 MHz prototype is not release ready. All five gates remain open; the
+historical implementation notes below do not override the active v3 profile.
+
+| Gate | Evidence still required |
+| --- | --- |
+| Physical integrity | Resolve extracted RC/ground-capacitance concerns and bind final checks to the selected candidate. Running ground audits are not passing receipts. |
+| Analog models and tuning | Establish a measured full-layout 400 MHz bracket in every corner, then qualify tuning/detector models and numerical uncertainty. |
+| Digital timing and CDC | Complete routed reset pulse/recovery/removal coverage and physical interface constraints. Unreported checks and structural classifications are not passes or waivers. |
+| Closed-loop operation | Pass all 60 active-profile cases with actual RTL and qualified analog models, including acquisition, sustained frequency/phase, no slips and code limits. |
+| Reproducible handoff | Pin and independently verify the final selected views, models, calibration, constraints and completed gate receipts. Development snapshots alone do not qualify a handoff. |
+
+The [corrected full-layout TT collection](selected_keeper_corrected_BSIM_TT_collection_1351_completed.json)
+measures 365.579–379.312 MHz at coarse20 and does not bracket400 MHz.
+The [fast coarse23/fine149 pilot](static_coarse23_DCO_1541/assessment.json)
+measures404.097 MHz in19.2 minutes, but remains an unqualified subsystem point.
+At coarse20, the [reset-aligned comparison](static_reset_aligned_1540/assessment.json)
+shows roughly+1,531 ppm discrepancy. The
+[0/32 fF receiver-load comparison](static_load_pair_1538/assessment.json)
+changes frequency by only0.0031 ppm and does not explain that discrepancy.
+The [omitted-aggressor ranking](omitted_capacitive_drives_1543/assessment.json)
+identifies dynamic exterior coupling, including REFCLK, that the static model
+grounds. These diagnostics do not supply a transferable correction or error bound.
+
+The current numerical work measures the coarse23 lower fine endpoint, tests
+analytic REFCLK excitation, replays measured programming-input ripple, and
+continues the existing full-layout references and boundary replay. Their results
+must be completed and hash-verified before selecting a calibration or correcting
+a model. The full-reference and reduced-model routes are both retained; the
+faster route is not substituted for release evidence.
 
 ## Programming and integration
 
