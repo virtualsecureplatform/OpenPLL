@@ -1943,3 +1943,19 @@ existing flat-C circuit; the current observation set does not save the internal
 node voltage needed for complete de-embedding. The next measurement must add
 that observable and a finer-step control. No causal load element, numerical
 convergence or actual routed load envelope is qualified by this characterization.
+
+Finer-step buffer campaign1527 completed all45 fixtures at1 ps while also
+observing the internal a_114_74# input-capacitor terminal. All reference-capacitor,
+input-level and output-response checks pass. Explicit capacitor charge is
+computed as sum C*(V_A-V_other) from all six unchanged input-capacitor literals,
+observed internal/output voltages and fixed rails, then separated from port
+charge. Three controls check moving-neighbor charge, fixed-rail offsets and
+rejection of missing/changed capacitor observations. De-embedded20–80% effective
+intrinsic input capacitance ranges from6.319707 to8.736814 fF. Input leakage is
+not subtracted. The source-pinned completed receipt, full observations, helper
+and runner are retained after independent input/artifact verification.
+
+This completes explicit capacitor accounting in the extracted-cell measurement,
+not full-flat-C stitching, a causal load element or routed-load qualification.
+The actual coupling topology and voltage response must still be preserved when
+using these data in a receiver model.

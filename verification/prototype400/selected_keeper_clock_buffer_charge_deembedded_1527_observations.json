@@ -1,0 +1,2612 @@
+[
+  {
+    "corner": "tt",
+    "full_ramp_ps": 20,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6419580913457564e-14,
+      1.6416228033164282e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.103727365263033e-15,
+      7.968455695079095e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0007693409832357272,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.752025554484077e-15,
+        "explicit_capacitor_charge_C": 1.270342400151418e-15,
+        "intrinsic_gate_charge_C": 7.481683154332659e-15,
+        "input_voltage_change_V": 1.0800000000002676,
+        "port_effective_capacitance_F": 8.103727365261026e-15,
+        "explicit_effective_capacitance_F": 1.1762429631028732e-15,
+        "intrinsic_effective_capacitance_F": 6.9274844021581526e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.605932150685423e-15,
+        "explicit_capacitor_charge_C": -1.27148256445107e-15,
+        "intrinsic_gate_charge_C": -7.334449586234353e-15,
+        "input_voltage_change_V": -1.0800000000004046,
+        "port_effective_capacitance_F": 7.96845569507611e-15,
+        "explicit_effective_capacitance_F": 1.1772986707875868e-15,
+        "intrinsic_effective_capacitance_F": 6.791157024288523e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6419580913457564e-14,
+        "explicit_capacitor_charge_C": 2.975291880706136e-15,
+        "intrinsic_gate_charge_C": 1.3444289032751427e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.121989396365314e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256311e-15,
+        "intrinsic_effective_capacitance_F": 7.469049462639681e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6416228033164282e-14,
+        "explicit_capacitor_charge_C": -2.975291880706137e-15,
+        "intrinsic_gate_charge_C": -1.3440936152458145e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.120126685091268e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256315e-15,
+        "intrinsic_effective_capacitance_F": 7.467186751365635e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989622e-14,
+      2.000000000001924e-14
+    ]
+  },
+  {
+    "corner": "tt",
+    "full_ramp_ps": 20,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6419568779805703e-14,
+      1.641626509288439e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.097239884186475e-15,
+      7.963198053784196e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0007679507022684283,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.745019074921394e-15,
+        "explicit_capacitor_charge_C": 1.2689168754748504e-15,
+        "intrinsic_gate_charge_C": 7.476102199446543e-15,
+        "input_voltage_change_V": 1.0800000000002676,
+        "port_effective_capacitance_F": 8.097239884184468e-15,
+        "explicit_effective_capacitance_F": 1.1749230328467925e-15,
+        "intrinsic_effective_capacitance_F": 6.922316851337676e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.600253898086931e-15,
+        "explicit_capacitor_charge_C": -1.2695537095865245e-15,
+        "intrinsic_gate_charge_C": -7.330700188500408e-15,
+        "input_voltage_change_V": -1.0800000000004046,
+        "port_effective_capacitance_F": 7.963198053781212e-15,
+        "explicit_effective_capacitance_F": 1.1755126940611563e-15,
+        "intrinsic_effective_capacitance_F": 6.787685359720057e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6419568779805703e-14,
+        "explicit_capacitor_charge_C": 2.9752918807061322e-15,
+        "intrinsic_gate_charge_C": 1.3444276899099571e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.121982655447613e-15,
+        "explicit_effective_capacitance_F": 1.652939933725629e-15,
+        "intrinsic_effective_capacitance_F": 7.469042721721983e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.641626509288439e-14,
+        "explicit_capacitor_charge_C": -2.975291880706132e-15,
+        "intrinsic_gate_charge_C": -1.3440973212178259e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.120147273824661e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256287e-15,
+        "intrinsic_effective_capacitance_F": 7.467207340099032e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989622e-14,
+      2.000000000001924e-14
+    ]
+  },
+  {
+    "corner": "tt",
+    "full_ramp_ps": 20,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6419570661696997e-14,
+      1.6416222461810685e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.09608481348604e-15,
+      7.962969298842707e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0007679605357334088,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.743771598564925e-15,
+        "explicit_capacitor_charge_C": 1.2687199438820368e-15,
+        "intrinsic_gate_charge_C": 7.475051654682888e-15,
+        "input_voltage_change_V": 1.0800000000002676,
+        "port_effective_capacitance_F": 8.096084813484035e-15,
+        "explicit_effective_capacitance_F": 1.1747406887793726e-15,
+        "intrinsic_effective_capacitance_F": 6.921344124704662e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.600006842750123e-15,
+        "explicit_capacitor_charge_C": -1.2695379146448413e-15,
+        "intrinsic_gate_charge_C": -7.330468928105282e-15,
+        "input_voltage_change_V": -1.0800000000004046,
+        "port_effective_capacitance_F": 7.962969298839723e-15,
+        "explicit_effective_capacitance_F": 1.1754980691151535e-15,
+        "intrinsic_effective_capacitance_F": 6.78747122972457e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6419570661696997e-14,
+        "explicit_capacitor_charge_C": 2.9752918807061275e-15,
+        "intrinsic_gate_charge_C": 1.344427878099087e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.121983700942776e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256264e-15,
+        "intrinsic_effective_capacitance_F": 7.46904376721715e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6416222461810685e-14,
+        "explicit_capacitor_charge_C": -2.9752918807061275e-15,
+        "intrinsic_gate_charge_C": -1.3440930581104557e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.120123589894824e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256264e-15,
+        "intrinsic_effective_capacitance_F": 7.467183656169198e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989622e-14,
+      2.000000000001924e-14
+    ]
+  },
+  {
+    "corner": "tt",
+    "full_ramp_ps": 400,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.641760892401622e-14,
+      1.6416666343025138e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.302620526236001e-15,
+      8.62458586779878e-15
+    ],
+    "maximum_absolute_input_current_A": 6.447192893564049e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0046830168334882e-14,
+        "explicit_capacitor_charge_C": 1.818376801272094e-15,
+        "intrinsic_gate_charge_C": 8.228453367062788e-15,
+        "input_voltage_change_V": 1.0799999999999805,
+        "port_effective_capacitance_F": 9.30262052623617e-15,
+        "explicit_effective_capacitance_F": 1.6836822234001175e-15,
+        "intrinsic_effective_capacitance_F": 7.618938302836051e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.314552737222684e-15,
+        "explicit_capacitor_charge_C": -1.6289849742098793e-15,
+        "intrinsic_gate_charge_C": -7.685567763012805e-15,
+        "input_voltage_change_V": -1.0799999999999876,
+        "port_effective_capacitance_F": 8.62458586779888e-15,
+        "explicit_effective_capacitance_F": 1.5083194205647202e-15,
+        "intrinsic_effective_capacitance_F": 7.11626644723416e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.641760892401622e-14,
+        "explicit_capacitor_charge_C": 2.9752918807061365e-15,
+        "intrinsic_gate_charge_C": 1.3442317043310082e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.120893846675677e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256313e-15,
+        "intrinsic_effective_capacitance_F": 7.467953912950046e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6416666343025138e-14,
+        "explicit_capacitor_charge_C": -2.975291880706137e-15,
+        "intrinsic_gate_charge_C": -1.3441374462319001e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.120370190569521e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256315e-15,
+        "intrinsic_effective_capacitance_F": 7.46743025684389e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989622e-14,
+      2.000000000001924e-14
+    ]
+  },
+  {
+    "corner": "tt",
+    "full_ramp_ps": 400,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6417608677100295e-14,
+      1.6416659987020754e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.357318393075204e-15,
+      8.625525679990874e-15
+    ],
+    "maximum_absolute_input_current_A": 5.826643397469165e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0105903864521222e-14,
+        "explicit_capacitor_charge_C": 1.8436579929146947e-15,
+        "intrinsic_gate_charge_C": 8.262245871606527e-15,
+        "input_voltage_change_V": 1.0799999999999805,
+        "port_effective_capacitance_F": 9.357318393075375e-15,
+        "explicit_effective_capacitance_F": 1.7070907341803037e-15,
+        "intrinsic_effective_capacitance_F": 7.65022765889507e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.315567734390145e-15,
+        "explicit_capacitor_charge_C": -1.6295093953958114e-15,
+        "intrinsic_gate_charge_C": -7.686058338994333e-15,
+        "input_voltage_change_V": -1.0799999999999876,
+        "port_effective_capacitance_F": 8.625525679990973e-15,
+        "explicit_effective_capacitance_F": 1.5088049957368796e-15,
+        "intrinsic_effective_capacitance_F": 7.116720684254093e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6417608677100295e-14,
+        "explicit_capacitor_charge_C": 2.975291880706133e-15,
+        "intrinsic_gate_charge_C": 1.3442316796394161e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.120893709500163e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256293e-15,
+        "intrinsic_effective_capacitance_F": 7.467953775774534e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6416659987020754e-14,
+        "explicit_capacitor_charge_C": -2.9752918807061397e-15,
+        "intrinsic_gate_charge_C": -1.3441368106314614e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.120366659455975e-15,
+        "explicit_effective_capacitance_F": 1.652939933725633e-15,
+        "intrinsic_effective_capacitance_F": 7.46742672573034e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989622e-14,
+      2.000000000001924e-14
+    ]
+  },
+  {
+    "corner": "tt",
+    "full_ramp_ps": 400,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6417611914530006e-14,
+      1.6416667980346728e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.368000421785532e-15,
+      8.62244467381661e-15
+    ],
+    "maximum_absolute_input_current_A": 6.16687031031694e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0117440455528376e-14,
+        "explicit_capacitor_charge_C": 1.8485162112372374e-15,
+        "intrinsic_gate_charge_C": 8.268924244291139e-15,
+        "input_voltage_change_V": 1.0799999999999805,
+        "port_effective_capacitance_F": 9.368000421785703e-15,
+        "explicit_effective_capacitance_F": 1.7115890844789545e-15,
+        "intrinsic_effective_capacitance_F": 7.656411337306748e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.31224024772194e-15,
+        "explicit_capacitor_charge_C": -1.627786861195459e-15,
+        "intrinsic_gate_charge_C": -7.68445338652648e-15,
+        "input_voltage_change_V": -1.0799999999999876,
+        "port_effective_capacitance_F": 8.62244467381671e-15,
+        "explicit_effective_capacitance_F": 1.5072100566624793e-15,
+        "intrinsic_effective_capacitance_F": 7.115234617154229e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6417611914530006e-14,
+        "explicit_capacitor_charge_C": 2.9752918807061306e-15,
+        "intrinsic_gate_charge_C": 1.3442320033823875e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.120895508072225e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256281e-15,
+        "intrinsic_effective_capacitance_F": 7.467955574346598e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6416667980346728e-14,
+        "explicit_capacitor_charge_C": -2.975291880706148e-15,
+        "intrinsic_gate_charge_C": -1.344137609964058e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.120371100192627e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256378e-15,
+        "intrinsic_effective_capacitance_F": 7.467431166466989e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989622e-14,
+      2.000000000001924e-14
+    ]
+  },
+  {
+    "corner": "tt",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6416999723308333e-14,
+      1.641722110030928e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.0147598289315168e-14,
+      1.0019693525467075e-14
+    ],
+    "maximum_absolute_input_current_A": 2.060649814479391e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0959406152460381e-14,
+        "explicit_capacitor_charge_C": 2.120869530905447e-15,
+        "intrinsic_gate_charge_C": 8.838536621554935e-15,
+        "input_voltage_change_V": 1.0799999999999992,
+        "port_effective_capacitance_F": 1.0147598289315175e-14,
+        "explicit_effective_capacitance_F": 1.9637680841717113e-15,
+        "intrinsic_effective_capacitance_F": 8.183830205143464e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.0821269007504442e-14,
+        "explicit_capacitor_charge_C": -2.1023148430884373e-15,
+        "intrinsic_gate_charge_C": -8.718954164416004e-15,
+        "input_voltage_change_V": -1.0800000000000065,
+        "port_effective_capacitance_F": 1.0019693525467015e-14,
+        "explicit_effective_capacitance_F": 1.946587817674467e-15,
+        "intrinsic_effective_capacitance_F": 8.073105707792548e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6416999723308333e-14,
+        "explicit_capacitor_charge_C": 2.9752918807061444e-15,
+        "intrinsic_gate_charge_C": 1.3441707842602188e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.120555401837963e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256358e-15,
+        "intrinsic_effective_capacitance_F": 7.467615468112326e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.641722110030928e-14,
+        "explicit_capacitor_charge_C": -2.975291880706145e-15,
+        "intrinsic_gate_charge_C": -1.3441929219603136e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.12067838906071e-15,
+        "explicit_effective_capacitance_F": 1.652939933725636e-15,
+        "intrinsic_effective_capacitance_F": 7.467738455335075e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989622e-14,
+      2.000000000001924e-14
+    ]
+  },
+  {
+    "corner": "tt",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6416998539321067e-14,
+      1.6417232441282266e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.0147240537464395e-14,
+      9.989764821104765e-15
+    ],
+    "maximum_absolute_input_current_A": 1.946839057409555e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0959019780461548e-14,
+        "explicit_capacitor_charge_C": 2.120766455448071e-15,
+        "intrinsic_gate_charge_C": 8.838253325013477e-15,
+        "input_voltage_change_V": 1.0799999999999992,
+        "port_effective_capacitance_F": 1.0147240537464403e-14,
+        "explicit_effective_capacitance_F": 1.9636726439334002e-15,
+        "intrinsic_effective_capacitance_F": 8.183567893531004e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.0788946006793147e-14,
+        "explicit_capacitor_charge_C": -2.0977456207809978e-15,
+        "intrinsic_gate_charge_C": -8.691200386012149e-15,
+        "input_voltage_change_V": -1.0800000000000065,
+        "port_effective_capacitance_F": 9.989764821104707e-15,
+        "explicit_effective_capacitance_F": 1.94235705627869e-15,
+        "intrinsic_effective_capacitance_F": 8.047407764826015e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6416998539321067e-14,
+        "explicit_capacitor_charge_C": 2.975291880706136e-15,
+        "intrinsic_gate_charge_C": 1.344170665861493e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.120554744067259e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256311e-15,
+        "intrinsic_effective_capacitance_F": 7.467614810341628e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6417232441282266e-14,
+        "explicit_capacitor_charge_C": -2.9752918807061433e-15,
+        "intrinsic_gate_charge_C": -1.3441940560576122e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.120684689601259e-15,
+        "explicit_effective_capacitance_F": 1.652939933725635e-15,
+        "intrinsic_effective_capacitance_F": 7.467744755875623e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989622e-14,
+      2.000000000001924e-14
+    ]
+  },
+  {
+    "corner": "tt",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.641699876018162e-14,
+      1.6417225997641254e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.0119677960465259e-14,
+      9.963983963923663e-15
+    ],
+    "maximum_absolute_input_current_A": 1.835841447611789e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.092925219730248e-14,
+        "explicit_capacitor_charge_C": 2.1130571787354293e-15,
+        "intrinsic_gate_charge_C": 8.816195018567051e-15,
+        "input_voltage_change_V": 1.0799999999999992,
+        "port_effective_capacitance_F": 1.0119677960465267e-14,
+        "explicit_effective_capacitance_F": 1.9565344247550286e-15,
+        "intrinsic_effective_capacitance_F": 8.163143535710238e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.0761102681037557e-14,
+        "explicit_capacitor_charge_C": -2.094883385161454e-15,
+        "intrinsic_gate_charge_C": -8.666219295876103e-15,
+        "input_voltage_change_V": -1.0800000000000065,
+        "port_effective_capacitance_F": 9.963983963923605e-15,
+        "explicit_effective_capacitance_F": 1.9397068381124455e-15,
+        "intrinsic_effective_capacitance_F": 8.024277125811158e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.641699876018162e-14,
+        "explicit_capacitor_charge_C": 2.9752918807061393e-15,
+        "intrinsic_gate_charge_C": 1.344170687947548e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.120554866767566e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256329e-15,
+        "intrinsic_effective_capacitance_F": 7.467614933041933e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6417225997641254e-14,
+        "explicit_capacitor_charge_C": -2.9752918807061393e-15,
+        "intrinsic_gate_charge_C": -1.3441934116935114e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.120681109800696e-15,
+        "explicit_effective_capacitance_F": 1.6529399337256329e-15,
+        "intrinsic_effective_capacitance_F": 7.467741176075064e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989622e-14,
+      2.000000000001924e-14
+    ]
+  },
+  {
+    "corner": "ff",
+    "full_ramp_ps": 20,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6077014380683612e-14,
+      1.6072773650945767e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.001363871829277e-15,
+      7.886263670259173e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0007546590173619542,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.641472981575619e-15,
+        "explicit_capacitor_charge_C": 1.2887242945644318e-15,
+        "intrinsic_gate_charge_C": 7.352748687011186e-15,
+        "input_voltage_change_V": 1.0800000000003198,
+        "port_effective_capacitance_F": 8.001363871826907e-15,
+        "explicit_effective_capacitance_F": 1.1932632357074538e-15,
+        "intrinsic_effective_capacitance_F": 6.808100636119453e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.517164763879907e-15,
+        "explicit_capacitor_charge_C": -1.2917788734621126e-15,
+        "intrinsic_gate_charge_C": -7.225385890417794e-15,
+        "input_voltage_change_V": -1.0799999999992855,
+        "port_effective_capacitance_F": 7.88626367026439e-15,
+        "explicit_effective_capacitance_F": 1.1960915495027474e-15,
+        "intrinsic_effective_capacitance_F": 6.690172120761642e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6077014380683612e-14,
+        "explicit_capacitor_charge_C": 2.9752888270209233e-15,
+        "intrinsic_gate_charge_C": 1.3101725553662688e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.93167465593534e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338461e-15,
+        "intrinsic_effective_capacitance_F": 7.278736418701493e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6072773650945767e-14,
+        "explicit_capacitor_charge_C": -2.975288827020923e-15,
+        "intrinsic_gate_charge_C": -1.3097484823924844e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.92931869496987e-15,
+        "explicit_effective_capacitance_F": 1.652938237233846e-15,
+        "intrinsic_effective_capacitance_F": 7.276380457736024e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990426e-14,
+      2.0000000000017377e-14
+    ]
+  },
+  {
+    "corner": "ff",
+    "full_ramp_ps": 20,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.607692488338611e-14,
+      1.6072824242071676e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      7.995879619266447e-15,
+      7.878777552288296e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0007532801038264586,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.635549988807764e-15,
+        "explicit_capacitor_charge_C": 1.2873618287531475e-15,
+        "intrinsic_gate_charge_C": 7.348188160054617e-15,
+        "input_voltage_change_V": 1.0800000000003198,
+        "port_effective_capacitance_F": 7.99587961926408e-15,
+        "explicit_effective_capacitance_F": 1.1920016932895984e-15,
+        "intrinsic_effective_capacitance_F": 6.803877925974482e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.50907975647136e-15,
+        "explicit_capacitor_charge_C": -1.2884809095339254e-15,
+        "intrinsic_gate_charge_C": -7.220598846937435e-15,
+        "input_voltage_change_V": -1.0799999999992855,
+        "port_effective_capacitance_F": 7.878777552293508e-15,
+        "explicit_effective_capacitance_F": 1.1930378791988683e-15,
+        "intrinsic_effective_capacitance_F": 6.68573967309464e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.607692488338611e-14,
+        "explicit_capacitor_charge_C": 2.9752888270209253e-15,
+        "intrinsic_gate_charge_C": 1.3101636056365186e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.931624935214505e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338473e-15,
+        "intrinsic_effective_capacitance_F": 7.278686697980658e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6072824242071676e-14,
+        "explicit_capacitor_charge_C": -2.9752888270209256e-15,
+        "intrinsic_gate_charge_C": -1.3097535415050751e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.929346801150931e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338475e-15,
+        "intrinsic_effective_capacitance_F": 7.276408563917084e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990426e-14,
+      2.0000000000017377e-14
+    ]
+  },
+  {
+    "corner": "ff",
+    "full_ramp_ps": 20,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6076896823681572e-14,
+      1.6072775709478808e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      7.994256197871917e-15,
+      7.877492657042908e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0007531251839698223,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.633796693701671e-15,
+        "explicit_capacitor_charge_C": 1.2870017292184194e-15,
+        "intrinsic_gate_charge_C": 7.346794964483252e-15,
+        "input_voltage_change_V": 1.0800000000003198,
+        "port_effective_capacitance_F": 7.99425619786955e-15,
+        "explicit_effective_capacitance_F": 1.1916682677944798e-15,
+        "intrinsic_effective_capacitance_F": 6.802587930075071e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.507692069606341e-15,
+        "explicit_capacitor_charge_C": -1.2879503401291552e-15,
+        "intrinsic_gate_charge_C": -7.219741729477186e-15,
+        "input_voltage_change_V": -1.0799999999992855,
+        "port_effective_capacitance_F": 7.877492657048121e-15,
+        "explicit_effective_capacitance_F": 1.1925466112314882e-15,
+        "intrinsic_effective_capacitance_F": 6.684946045816632e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6076896823681572e-14,
+        "explicit_capacitor_charge_C": 2.9752888270209414e-15,
+        "intrinsic_gate_charge_C": 1.3101607996660632e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.931609346489762e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338564e-15,
+        "intrinsic_effective_capacitance_F": 7.278671109255906e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6072775709478808e-14,
+        "explicit_capacitor_charge_C": -2.9752888270209347e-15,
+        "intrinsic_gate_charge_C": -1.3097486882457873e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.929319838599337e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338526e-15,
+        "intrinsic_effective_capacitance_F": 7.276381601365485e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990426e-14,
+      2.0000000000017377e-14
+    ]
+  },
+  {
+    "corner": "ff",
+    "full_ramp_ps": 400,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6074330995220772e-14,
+      1.6073667240626397e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.343799668150186e-15,
+      8.697711501249714e-15
+    ],
+    "maximum_absolute_input_current_A": 6.099704473891302e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0091303641602202e-14,
+        "explicit_capacitor_charge_C": 1.9243144263657568e-15,
+        "intrinsic_gate_charge_C": 8.166989215236445e-15,
+        "input_voltage_change_V": 1.0799999999999808,
+        "port_effective_capacitance_F": 9.343799668150353e-15,
+        "explicit_effective_capacitance_F": 1.7817726170053622e-15,
+        "intrinsic_effective_capacitance_F": 7.562027051144991e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.393528421349691e-15,
+        "explicit_capacitor_charge_C": -1.7636232734803924e-15,
+        "intrinsic_gate_charge_C": -7.629905147869299e-15,
+        "input_voltage_change_V": -1.0799999999999774,
+        "port_effective_capacitance_F": 8.697711501249895e-15,
+        "explicit_effective_capacitance_F": 1.632984512481879e-15,
+        "intrinsic_effective_capacitance_F": 7.064726988768017e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6074330995220772e-14,
+        "explicit_capacitor_charge_C": 2.975288827020924e-15,
+        "intrinsic_gate_charge_C": 1.3099042168199847e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.930183886233761e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338467e-15,
+        "intrinsic_effective_capacitance_F": 7.277245648999916e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6073667240626397e-14,
+        "explicit_capacitor_charge_C": -2.975288827020924e-15,
+        "intrinsic_gate_charge_C": -1.3098378413605472e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.929815133681331e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338467e-15,
+        "intrinsic_effective_capacitance_F": 7.276876896447484e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990426e-14,
+      2.0000000000017377e-14
+    ]
+  },
+  {
+    "corner": "ff",
+    "full_ramp_ps": 400,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6074327661500967e-14,
+      1.607366611772446e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.507404491537195e-15,
+      8.77264402374978e-15
+    ],
+    "maximum_absolute_input_current_A": 5.493001686083295e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0267996850860172e-14,
+        "explicit_capacitor_charge_C": 1.987202801258132e-15,
+        "intrinsic_gate_charge_C": 8.28079404960204e-15,
+        "input_voltage_change_V": 1.0799999999999808,
+        "port_effective_capacitance_F": 9.507404491537366e-15,
+        "explicit_effective_capacitance_F": 1.8400025937575625e-15,
+        "intrinsic_effective_capacitance_F": 7.667401897779803e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.474455545649762e-15,
+        "explicit_capacitor_charge_C": -1.807901162359829e-15,
+        "intrinsic_gate_charge_C": -7.666554383289934e-15,
+        "input_voltage_change_V": -1.0799999999999774,
+        "port_effective_capacitance_F": 8.772644023749963e-15,
+        "explicit_effective_capacitance_F": 1.6739825577406175e-15,
+        "intrinsic_effective_capacitance_F": 7.0986614660093465e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6074327661500967e-14,
+        "explicit_capacitor_charge_C": 2.975288827020932e-15,
+        "intrinsic_gate_charge_C": 1.3099038834480036e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.930182034167203e-15,
+        "explicit_effective_capacitance_F": 1.652938237233851e-15,
+        "intrinsic_effective_capacitance_F": 7.277243796933353e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.607366611772446e-14,
+        "explicit_capacitor_charge_C": -2.9752888270209327e-15,
+        "intrinsic_gate_charge_C": -1.3098377290703526e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.929814509846921e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338515e-15,
+        "intrinsic_effective_capacitance_F": 7.27687627261307e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990426e-14,
+      2.0000000000017377e-14
+    ]
+  },
+  {
+    "corner": "ff",
+    "full_ramp_ps": 400,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6074328400134098e-14,
+      1.6073666942496427e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.558323493073257e-15,
+      8.790077342355835e-15
+    ],
+    "maximum_absolute_input_current_A": 5.917597878149147e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0322989372519117e-14,
+        "explicit_capacitor_charge_C": 2.005577473800363e-15,
+        "intrinsic_gate_charge_C": 8.317411898718754e-15,
+        "input_voltage_change_V": 1.0799999999999808,
+        "port_effective_capacitance_F": 9.558323493073427e-15,
+        "explicit_effective_capacitance_F": 1.8570161794448133e-15,
+        "intrinsic_effective_capacitance_F": 7.701307313628613e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.493283529744303e-15,
+        "explicit_capacitor_charge_C": -1.8180372134461376e-15,
+        "intrinsic_gate_charge_C": -7.675246316298165e-15,
+        "input_voltage_change_V": -1.0799999999999774,
+        "port_effective_capacitance_F": 8.79007734235602e-15,
+        "explicit_effective_capacitance_F": 1.6833677902279404e-15,
+        "intrinsic_effective_capacitance_F": 7.10670955212808e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6074328400134098e-14,
+        "explicit_capacitor_charge_C": 2.9752888270209327e-15,
+        "intrinsic_gate_charge_C": 1.3099039573113165e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.930182444518944e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338515e-15,
+        "intrinsic_effective_capacitance_F": 7.277244207285092e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6073666942496427e-14,
+        "explicit_capacitor_charge_C": -2.9752888270209387e-15,
+        "intrinsic_gate_charge_C": -1.3098378115475487e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.92981496805357e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338548e-15,
+        "intrinsic_effective_capacitance_F": 7.276876730819715e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990426e-14,
+      2.0000000000017377e-14
+    ]
+  },
+  {
+    "corner": "ff",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.607401670360911e-14,
+      1.6074193043649785e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.91109317190286e-15,
+      9.894379519827706e-15
+    ],
+    "maximum_absolute_input_current_A": 2.021893524065208e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0703980625655089e-14,
+        "explicit_capacitor_charge_C": 2.11991003574053e-15,
+        "intrinsic_gate_charge_C": 8.584070589914559e-15,
+        "input_voltage_change_V": 1.0799999999999956,
+        "port_effective_capacitance_F": 9.9110931719029e-15,
+        "explicit_effective_capacitance_F": 1.9628796627227208e-15,
+        "intrinsic_effective_capacitance_F": 7.94821350918018e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.0685929881413923e-14,
+        "explicit_capacitor_charge_C": -2.11780198831835e-15,
+        "intrinsic_gate_charge_C": -8.568127893095573e-15,
+        "input_voltage_change_V": -1.0800000000000065,
+        "port_effective_capacitance_F": 9.894379519827646e-15,
+        "explicit_effective_capacitance_F": 1.9609277669614235e-15,
+        "intrinsic_effective_capacitance_F": 7.933451752866224e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.607401670360911e-14,
+        "explicit_capacitor_charge_C": 2.9752888270209245e-15,
+        "intrinsic_gate_charge_C": 1.3098727876588184e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.930009279782839e-15,
+        "explicit_effective_capacitance_F": 1.652938237233847e-15,
+        "intrinsic_effective_capacitance_F": 7.277071042548991e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6074193043649785e-14,
+        "explicit_capacitor_charge_C": -2.975288827020931e-15,
+        "intrinsic_gate_charge_C": -1.3098904216628854e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.930107246472103e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338507e-15,
+        "intrinsic_effective_capacitance_F": 7.277169009238252e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990426e-14,
+      2.0000000000017377e-14
+    ]
+  },
+  {
+    "corner": "ff",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6074015140397748e-14,
+      1.6074193772499432e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.91109083529741e-15,
+      9.893804771022404e-15
+    ],
+    "maximum_absolute_input_current_A": 1.973313255590643e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0703978102121204e-14,
+        "explicit_capacitor_charge_C": 2.1199092731728975e-15,
+        "intrinsic_gate_charge_C": 8.584068828948307e-15,
+        "input_voltage_change_V": 1.0799999999999956,
+        "port_effective_capacitance_F": 9.911090835297452e-15,
+        "explicit_effective_capacitance_F": 1.9628789566415796e-15,
+        "intrinsic_effective_capacitance_F": 7.948211878655873e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.0685309152704196e-14,
+        "explicit_capacitor_charge_C": -2.117709213436481e-15,
+        "intrinsic_gate_charge_C": -8.567599939267716e-15,
+        "input_voltage_change_V": -1.0800000000000065,
+        "port_effective_capacitance_F": 9.893804771022344e-15,
+        "explicit_effective_capacitance_F": 1.960841864293026e-15,
+        "intrinsic_effective_capacitance_F": 7.932962906729318e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6074015140397748e-14,
+        "explicit_capacitor_charge_C": 2.975288827020936e-15,
+        "intrinsic_gate_charge_C": 1.3098726313376812e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.930008411332081e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338532e-15,
+        "intrinsic_effective_capacitance_F": 7.277070174098229e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6074193772499432e-14,
+        "explicit_capacitor_charge_C": -2.975288827020936e-15,
+        "intrinsic_gate_charge_C": -1.3098904945478496e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.930107651388573e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338532e-15,
+        "intrinsic_effective_capacitance_F": 7.27716941415472e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990426e-14,
+      2.0000000000017377e-14
+    ]
+  },
+  {
+    "corner": "ff",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.607401535178976e-14,
+      1.6074193856086707e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.906313832565287e-15,
+      9.841741507299587e-15
+    ],
+    "maximum_absolute_input_current_A": 1.810164679485187e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.069881893917051e-14,
+        "explicit_capacitor_charge_C": 2.1184902854993113e-15,
+        "intrinsic_gate_charge_C": 8.5803286536712e-15,
+        "input_voltage_change_V": 1.0799999999999956,
+        "port_effective_capacitance_F": 9.906313832565327e-15,
+        "explicit_effective_capacitance_F": 1.961565079166037e-15,
+        "intrinsic_effective_capacitance_F": 7.94474875339929e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.0629080827883553e-14,
+        "explicit_capacitor_charge_C": -2.1093539627047137e-15,
+        "intrinsic_gate_charge_C": -8.51972686517884e-15,
+        "input_voltage_change_V": -1.0800000000000065,
+        "port_effective_capacitance_F": 9.841741507299527e-15,
+        "explicit_effective_capacitance_F": 1.9531055210228713e-15,
+        "intrinsic_effective_capacitance_F": 7.888635986276656e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.607401535178976e-14,
+        "explicit_capacitor_charge_C": 2.975288827020966e-15,
+        "intrinsic_gate_charge_C": 1.3098726524768795e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.930008528772089e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338698e-15,
+        "intrinsic_effective_capacitance_F": 7.27707029153822e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6074193856086707e-14,
+        "explicit_capacitor_charge_C": -2.9752888270209406e-15,
+        "intrinsic_gate_charge_C": -1.3098905029065767e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.930107697825949e-15,
+        "explicit_effective_capacitance_F": 1.6529382372338558e-15,
+        "intrinsic_effective_capacitance_F": 7.277169460592092e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990426e-14,
+      2.0000000000017377e-14
+    ]
+  },
+  {
+    "corner": "ss",
+    "full_ramp_ps": 20,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6628277885155914e-14,
+      1.6625660090740275e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.124257393242552e-15,
+      7.944328220834347e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0007845092524007143,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.774197984701957e-15,
+        "explicit_capacitor_charge_C": 1.2573509815723878e-15,
+        "intrinsic_gate_charge_C": 7.51684700312957e-15,
+        "input_voltage_change_V": 1.079999999999821,
+        "port_effective_capacitance_F": 8.124257393243898e-15,
+        "explicit_effective_capacitance_F": 1.1642138718264778e-15,
+        "intrinsic_effective_capacitance_F": 6.960043521417421e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.579874478501095e-15,
+        "explicit_capacitor_charge_C": -1.2593476171322209e-15,
+        "intrinsic_gate_charge_C": -7.320526861368874e-15,
+        "input_voltage_change_V": -1.0800000000001784,
+        "port_effective_capacitance_F": 7.944328220833035e-15,
+        "explicit_effective_capacitance_F": 1.1660626084555675e-15,
+        "intrinsic_effective_capacitance_F": 6.778265612377468e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6628277885155914e-14,
+        "explicit_capacitor_charge_C": 2.975291994024409e-15,
+        "intrinsic_gate_charge_C": 1.3652985891131505e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.237932158419953e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802272e-15,
+        "intrinsic_effective_capacitance_F": 7.584992161739725e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6625660090740275e-14,
+        "explicit_capacitor_charge_C": -2.9752919940244085e-15,
+        "intrinsic_gate_charge_C": -1.3650368096715865e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.23647782818904e-15,
+        "explicit_effective_capacitance_F": 1.652939996680227e-15,
+        "intrinsic_effective_capacitance_F": 7.583537831508815e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989237e-14,
+      2.0000000000022467e-14
+    ]
+  },
+  {
+    "corner": "ss",
+    "full_ramp_ps": 20,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.662827270850711e-14,
+      1.6625642687805027e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.117489382668543e-15,
+      7.94255034780917e-15
+    ],
+    "maximum_absolute_input_current_A": 0.000783629747687692,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.766888533282028e-15,
+        "explicit_capacitor_charge_C": 1.2559542855442464e-15,
+        "intrinsic_gate_charge_C": 7.510934247737782e-15,
+        "input_voltage_change_V": 1.079999999999821,
+        "port_effective_capacitance_F": 8.117489382669889e-15,
+        "explicit_effective_capacitance_F": 1.1629206347633838e-15,
+        "intrinsic_effective_capacitance_F": 6.954568747906506e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.577954375633903e-15,
+        "explicit_capacitor_charge_C": -1.2589520481356183e-15,
+        "intrinsic_gate_charge_C": -7.319002327498284e-15,
+        "input_voltage_change_V": -1.0800000000001784,
+        "port_effective_capacitance_F": 7.942550347807858e-15,
+        "explicit_effective_capacitance_F": 1.1656963408661206e-15,
+        "intrinsic_effective_capacitance_F": 6.776854006941737e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.662827270850711e-14,
+        "explicit_capacitor_charge_C": 2.9752919940244156e-15,
+        "intrinsic_gate_charge_C": 1.3652980714482695e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.23792928250395e-15,
+        "explicit_effective_capacitance_F": 1.652939996680231e-15,
+        "intrinsic_effective_capacitance_F": 7.584989285823719e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6625642687805027e-14,
+        "explicit_capacitor_charge_C": -2.975291994024508e-15,
+        "intrinsic_gate_charge_C": -1.365035069378052e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.236468159891682e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802822e-15,
+        "intrinsic_effective_capacitance_F": 7.5835281632114e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989237e-14,
+      2.0000000000022467e-14
+    ]
+  },
+  {
+    "corner": "ss",
+    "full_ramp_ps": 20,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6628271641089653e-14,
+      1.662565540685741e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.116794600731573e-15,
+      7.943379936511077e-15
+    ],
+    "maximum_absolute_input_current_A": 0.000783830584115382,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.7661381687901e-15,
+        "explicit_capacitor_charge_C": 1.2559100085477737e-15,
+        "intrinsic_gate_charge_C": 7.510228160242326e-15,
+        "input_voltage_change_V": 1.079999999999821,
+        "port_effective_capacitance_F": 8.116794600732919e-15,
+        "explicit_effective_capacitance_F": 1.1628796375444274e-15,
+        "intrinsic_effective_capacitance_F": 6.953914963188491e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.578850331431964e-15,
+        "explicit_capacitor_charge_C": -1.2593737009725524e-15,
+        "intrinsic_gate_charge_C": -7.319476630459412e-15,
+        "input_voltage_change_V": -1.0800000000001784,
+        "port_effective_capacitance_F": 7.943379936509766e-15,
+        "explicit_effective_capacitance_F": 1.1660867601595783e-15,
+        "intrinsic_effective_capacitance_F": 6.777293176350189e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6628271641089653e-14,
+        "explicit_capacitor_charge_C": 2.9752919940244077e-15,
+        "intrinsic_gate_charge_C": 1.3652979647065245e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.237928689494251e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802264e-15,
+        "intrinsic_effective_capacitance_F": 7.584988692814025e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.662565540685741e-14,
+        "explicit_capacitor_charge_C": -2.9752919940244077e-15,
+        "intrinsic_gate_charge_C": -1.3650363412833003e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.236475226031895e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802264e-15,
+        "intrinsic_effective_capacitance_F": 7.583535229351669e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989237e-14,
+      2.0000000000022467e-14
+    ]
+  },
+  {
+    "corner": "ss",
+    "full_ramp_ps": 400,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.662660876822683e-14,
+      1.6625783810679803e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.087422464084058e-15,
+      8.355761598054714e-15
+    ],
+    "maximum_absolute_input_current_A": 4.66593292391723e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 9.814416261210783e-15,
+        "explicit_capacitor_charge_C": 1.689283106770588e-15,
+        "intrinsic_gate_charge_C": 8.125133154440195e-15,
+        "input_voltage_change_V": 1.0799999999999885,
+        "port_effective_capacitance_F": 9.087422464084155e-15,
+        "explicit_effective_capacitance_F": 1.564151024787598e-15,
+        "intrinsic_effective_capacitance_F": 7.523271439296557e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.024222525899092e-15,
+        "explicit_capacitor_charge_C": -1.4704775117349249e-15,
+        "intrinsic_gate_charge_C": -7.553745014164167e-15,
+        "input_voltage_change_V": -1.0799999999999728,
+        "port_effective_capacitance_F": 8.355761598054926e-15,
+        "explicit_effective_capacitance_F": 1.3615532516064462e-15,
+        "intrinsic_effective_capacitance_F": 6.9942083464484796e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.662660876822683e-14,
+        "explicit_capacitor_charge_C": 2.9752919940244093e-15,
+        "intrinsic_gate_charge_C": 1.3651316774202422e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.237004871237128e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802274e-15,
+        "intrinsic_effective_capacitance_F": 7.5840648745569e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6625783810679803e-14,
+        "explicit_capacitor_charge_C": -2.975291994024503e-15,
+        "intrinsic_gate_charge_C": -1.36504918166553e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.23654656148878e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802794e-15,
+        "intrinsic_effective_capacitance_F": 7.5836065648085e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989237e-14,
+      2.0000000000022467e-14
+    ]
+  },
+  {
+    "corner": "ss",
+    "full_ramp_ps": 400,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6626611173725516e-14,
+      1.6625806245763915e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.085903033472005e-15,
+      8.352293503520354e-15
+    ],
+    "maximum_absolute_input_current_A": 4.94880639771854e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 9.812775276149767e-15,
+        "explicit_capacitor_charge_C": 1.6885915518774635e-15,
+        "intrinsic_gate_charge_C": 8.124183724272304e-15,
+        "input_voltage_change_V": 1.0799999999999885,
+        "port_effective_capacitance_F": 9.085903033472103e-15,
+        "explicit_effective_capacitance_F": 1.5635106961828533e-15,
+        "intrinsic_effective_capacitance_F": 7.52239233728925e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.020476983801983e-15,
+        "explicit_capacitor_charge_C": -1.4686510077572418e-15,
+        "intrinsic_gate_charge_C": -7.55182597604474e-15,
+        "input_voltage_change_V": -1.0799999999999728,
+        "port_effective_capacitance_F": 8.352293503520566e-15,
+        "explicit_effective_capacitance_F": 1.3598620442197026e-15,
+        "intrinsic_effective_capacitance_F": 6.992431459300862e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6626611173725516e-14,
+        "explicit_capacitor_charge_C": 2.9752919940244196e-15,
+        "intrinsic_gate_charge_C": 1.3651319179701097e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.237006207625287e-15,
+        "explicit_effective_capacitance_F": 1.652939996680233e-15,
+        "intrinsic_effective_capacitance_F": 7.584066210945053e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6625806245763915e-14,
+        "explicit_capacitor_charge_C": -2.9752919940245127e-15,
+        "intrinsic_gate_charge_C": -1.3650514251739401e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.236559025424397e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802848e-15,
+        "intrinsic_effective_capacitance_F": 7.583619028744112e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989237e-14,
+      2.0000000000022467e-14
+    ]
+  },
+  {
+    "corner": "ss",
+    "full_ramp_ps": 400,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.662660873051272e-14,
+      1.6625804576159972e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.084047690326238e-15,
+      8.348893970211165e-15
+    ],
+    "maximum_absolute_input_current_A": 4.975291598420658e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 9.810771505552337e-15,
+        "explicit_capacitor_charge_C": 1.6877369009035505e-15,
+        "intrinsic_gate_charge_C": 8.123034604648786e-15,
+        "input_voltage_change_V": 1.0799999999999885,
+        "port_effective_capacitance_F": 9.084047690326335e-15,
+        "explicit_effective_capacitance_F": 1.5627193526884892e-15,
+        "intrinsic_effective_capacitance_F": 7.521328337637846e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.016805487828059e-15,
+        "explicit_capacitor_charge_C": -1.4668578279718685e-15,
+        "intrinsic_gate_charge_C": -7.54994765985619e-15,
+        "input_voltage_change_V": -1.0799999999999728,
+        "port_effective_capacitance_F": 8.348893970211376e-15,
+        "explicit_effective_capacitance_F": 1.3582016925665792e-15,
+        "intrinsic_effective_capacitance_F": 6.990692277644797e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.662660873051272e-14,
+        "explicit_capacitor_charge_C": 2.9752919940244077e-15,
+        "intrinsic_gate_charge_C": 1.3651316736488312e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.237004850284843e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802264e-15,
+        "intrinsic_effective_capacitance_F": 7.584064853604617e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6625804576159972e-14,
+        "explicit_capacitor_charge_C": -2.9752919940244077e-15,
+        "intrinsic_gate_charge_C": -1.3650512582135565e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.236558097866652e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802264e-15,
+        "intrinsic_effective_capacitance_F": 7.583618101186424e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989237e-14,
+      2.0000000000022467e-14
+    ]
+  },
+  {
+    "corner": "ss",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6626015046340834e-14,
+      1.6626281246104696e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.0217892365813776e-14,
+      9.110604041085118e-15
+    ],
+    "maximum_absolute_input_current_A": 2.124341609659186e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.1035323755078878e-14,
+        "explicit_capacitor_charge_C": 2.117456781786372e-15,
+        "intrinsic_gate_charge_C": 8.917866973292505e-15,
+        "input_voltage_change_V": 1.0799999999999974,
+        "port_effective_capacitance_F": 1.0217892365813801e-14,
+        "explicit_effective_capacitance_F": 1.9606081312836826e-15,
+        "intrinsic_effective_capacitance_F": 8.257284234530118e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.839452364371928e-15,
+        "explicit_capacitor_charge_C": -1.8630659560424273e-15,
+        "intrinsic_gate_charge_C": -7.976386408329502e-15,
+        "input_voltage_change_V": -1.0800000000000027,
+        "port_effective_capacitance_F": 9.110604041085096e-15,
+        "explicit_effective_capacitance_F": 1.7250610704096506e-15,
+        "intrinsic_effective_capacitance_F": 7.385542970675446e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6626015046340834e-14,
+        "explicit_capacitor_charge_C": 2.975291994024399e-15,
+        "intrinsic_gate_charge_C": 1.3650723052316435e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.236675025744907e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802217e-15,
+        "intrinsic_effective_capacitance_F": 7.583735029064686e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6626281246104696e-14,
+        "explicit_capacitor_charge_C": -2.975291994024498e-15,
+        "intrinsic_gate_charge_C": -1.3650989252080199e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.23682291450261e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802767e-15,
+        "intrinsic_effective_capacitance_F": 7.583882917822333e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989237e-14,
+      2.0000000000022467e-14
+    ]
+  },
+  {
+    "corner": "ss",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.6626011474074524e-14,
+      1.6626284201994345e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.0177502237208845e-14,
+      9.244249894164905e-15
+    ],
+    "maximum_absolute_input_current_A": 1.840449379531678e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0991702416185553e-14,
+        "explicit_capacitor_charge_C": 2.105970157764487e-15,
+        "intrinsic_gate_charge_C": 8.885732258421065e-15,
+        "input_voltage_change_V": 1.0799999999999974,
+        "port_effective_capacitance_F": 1.017750223720887e-14,
+        "explicit_effective_capacitance_F": 1.9499723683004556e-15,
+        "intrinsic_effective_capacitance_F": 8.227529868908414e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.983789885698098e-15,
+        "explicit_capacitor_charge_C": -1.9258951194665396e-15,
+        "intrinsic_gate_charge_C": -8.057894766231559e-15,
+        "input_voltage_change_V": -1.0800000000000027,
+        "port_effective_capacitance_F": 9.244249894164883e-15,
+        "explicit_effective_capacitance_F": 1.783236221728273e-15,
+        "intrinsic_effective_capacitance_F": 7.46101367243661e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.6626011474074524e-14,
+        "explicit_capacitor_charge_C": 2.9752919940244046e-15,
+        "intrinsic_gate_charge_C": 1.365071948005012e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.236673041152513e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802248e-15,
+        "intrinsic_effective_capacitance_F": 7.583733044472288e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6626284201994345e-14,
+        "explicit_capacitor_charge_C": -2.9752919940244953e-15,
+        "intrinsic_gate_charge_C": -1.3650992207969851e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.236824556663525e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802751e-15,
+        "intrinsic_effective_capacitance_F": 7.58388455998325e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989237e-14,
+      2.0000000000022467e-14
+    ]
+  },
+  {
+    "corner": "ss",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.66260115864202e-14,
+      1.6626258381751375e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.0207773422196493e-14,
+      9.329037926140802e-15
+    ],
+    "maximum_absolute_input_current_A": 1.854755787574291e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.1024395295972213e-14,
+        "explicit_capacitor_charge_C": 2.115921085968204e-15,
+        "intrinsic_gate_charge_C": 8.908474210004009e-15,
+        "input_voltage_change_V": 1.0799999999999974,
+        "port_effective_capacitance_F": 1.0207773422196517e-14,
+        "explicit_effective_capacitance_F": 1.959186190711305e-15,
+        "intrinsic_effective_capacitance_F": 8.248587231485214e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.0075360960232067e-14,
+        "explicit_capacitor_charge_C": -1.958244575871935e-15,
+        "intrinsic_gate_charge_C": -8.117116384360132e-15,
+        "input_voltage_change_V": -1.0800000000000027,
+        "port_effective_capacitance_F": 9.32903792614078e-15,
+        "explicit_effective_capacitance_F": 1.813189422103639e-15,
+        "intrinsic_effective_capacitance_F": 7.51584850403714e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.66260115864202e-14,
+        "explicit_capacitor_charge_C": 2.9752919940244006e-15,
+        "intrinsic_gate_charge_C": 1.3650719592395801e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.236673103566777e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802224e-15,
+        "intrinsic_effective_capacitance_F": 7.583733106886556e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.6626258381751375e-14,
+        "explicit_capacitor_charge_C": -2.9752919940243928e-15,
+        "intrinsic_gate_charge_C": -1.3650966387726981e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.236810212084097e-15,
+        "explicit_effective_capacitance_F": 1.6529399966802181e-15,
+        "intrinsic_effective_capacitance_F": 7.583870215403879e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999989237e-14,
+      2.0000000000022467e-14
+    ]
+  },
+  {
+    "corner": "sf",
+    "full_ramp_ps": 20,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.7378814616668583e-14,
+      1.7374369503620652e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.56542375412028e-15,
+      8.241953198766119e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0008345932363485656,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 9.250657654449903e-15,
+        "explicit_capacitor_charge_C": 1.2888027775413028e-15,
+        "intrinsic_gate_charge_C": 7.9618548769086e-15,
+        "input_voltage_change_V": 1.0799999999996728,
+        "port_effective_capacitance_F": 8.565423754122876e-15,
+        "explicit_effective_capacitance_F": 1.1933359051311976e-15,
+        "intrinsic_effective_capacitance_F": 7.372087848991679e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.901309454667409e-15,
+        "explicit_capacitor_charge_C": -1.259293772134285e-15,
+        "intrinsic_gate_charge_C": -7.642015682533123e-15,
+        "input_voltage_change_V": -1.0799999999992858,
+        "port_effective_capacitance_F": 8.24195319877157e-15,
+        "explicit_effective_capacitance_F": 1.1660127519769608e-15,
+        "intrinsic_effective_capacitance_F": 7.075940446794608e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.7378814616668583e-14,
+        "explicit_capacitor_charge_C": 2.9752919279603563e-15,
+        "intrinsic_gate_charge_C": 1.4403522688708227e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.654897009260323e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779756e-15,
+        "intrinsic_effective_capacitance_F": 8.001957049282348e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.7374369503620652e-14,
+        "explicit_capacitor_charge_C": -2.9752919279603338e-15,
+        "intrinsic_gate_charge_C": -1.4399077575660318e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.652427502011474e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779632e-15,
+        "intrinsic_effective_capacitance_F": 7.99948754203351e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.999999999999016e-14,
+      2.0000000000017882e-14
+    ]
+  },
+  {
+    "corner": "sf",
+    "full_ramp_ps": 20,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.737879255422603e-14,
+      1.737439726124375e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.560073645766178e-15,
+      8.240748666832906e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0008331399664909844,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 9.244879537427473e-15,
+        "explicit_capacitor_charge_C": 1.2874634008731128e-15,
+        "intrinsic_gate_charge_C": 7.95741613655436e-15,
+        "input_voltage_change_V": 1.0799999999996728,
+        "port_effective_capacitance_F": 8.560073645768772e-15,
+        "explicit_effective_capacitance_F": 1.1920957415495397e-15,
+        "intrinsic_effective_capacitance_F": 7.367977904219231e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.900008560179539e-15,
+        "explicit_capacitor_charge_C": -1.2590514356809131e-15,
+        "intrinsic_gate_charge_C": -7.640957124498625e-15,
+        "input_voltage_change_V": -1.0799999999992858,
+        "port_effective_capacitance_F": 8.240748666838357e-15,
+        "explicit_effective_capacitance_F": 1.165788366371987e-15,
+        "intrinsic_effective_capacitance_F": 7.074960300466369e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.737879255422603e-14,
+        "explicit_capacitor_charge_C": 2.9752919279603504e-15,
+        "intrinsic_gate_charge_C": 1.440350062626568e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.654884752347795e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779724e-15,
+        "intrinsic_effective_capacitance_F": 8.001944792369823e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.737439726124375e-14,
+        "explicit_capacitor_charge_C": -2.9752919279603504e-15,
+        "intrinsic_gate_charge_C": -1.43991053332834e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.652442922913194e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779724e-15,
+        "intrinsic_effective_capacitance_F": 7.999502962935222e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.999999999999016e-14,
+      2.0000000000017882e-14
+    ]
+  },
+  {
+    "corner": "sf",
+    "full_ramp_ps": 20,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.7378771966384394e-14,
+      1.7374407381812892e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.558457584404291e-15,
+      8.24183976618989e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0008331875436872437,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 9.243134191156635e-15,
+        "explicit_capacitor_charge_C": 1.287121380969202e-15,
+        "intrinsic_gate_charge_C": 7.956012810187433e-15,
+        "input_voltage_change_V": 1.0799999999996728,
+        "port_effective_capacitance_F": 8.558457584406885e-15,
+        "explicit_effective_capacitance_F": 1.191779056453326e-15,
+        "intrinsic_effective_capacitance_F": 7.366678527953559e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.901186947485083e-15,
+        "explicit_capacitor_charge_C": -1.2594561262845115e-15,
+        "intrinsic_gate_charge_C": -7.641730821200571e-15,
+        "input_voltage_change_V": -1.0799999999992858,
+        "port_effective_capacitance_F": 8.241839766195343e-15,
+        "explicit_effective_capacitance_F": 1.1661630798938375e-15,
+        "intrinsic_effective_capacitance_F": 7.075676686301504e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.7378771966384394e-14,
+        "explicit_capacitor_charge_C": 2.975291927960356e-15,
+        "intrinsic_gate_charge_C": 1.4403480038424038e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.654873314657996e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779754e-15,
+        "intrinsic_effective_capacitance_F": 8.001933354680021e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.7374407381812892e-14,
+        "explicit_capacitor_charge_C": -2.975291927960228e-15,
+        "intrinsic_gate_charge_C": -1.4399115453852665e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.652448545451606e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779044e-15,
+        "intrinsic_effective_capacitance_F": 7.999508585473703e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.999999999999016e-14,
+      2.0000000000017882e-14
+    ]
+  },
+  {
+    "corner": "sf",
+    "full_ramp_ps": 400,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.7376972474662236e-14,
+      1.7376012794452464e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.0256409799755549e-14,
+      8.616525821028742e-15
+    ],
+    "maximum_absolute_input_current_A": 5.338184866344884e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.1076922583735994e-14,
+        "explicit_capacitor_charge_C": 1.98736861758298e-15,
+        "intrinsic_gate_charge_C": 9.089553966153015e-15,
+        "input_voltage_change_V": 1.0800000000000147,
+        "port_effective_capacitance_F": 1.025640979975541e-14,
+        "explicit_effective_capacitance_F": 1.840156127391623e-15,
+        "intrinsic_effective_capacitance_F": 8.416253672363788e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.305847886711042e-15,
+        "explicit_capacitor_charge_C": -1.4246617333487282e-15,
+        "intrinsic_gate_charge_C": -7.881186153362314e-15,
+        "input_voltage_change_V": -1.0799999999999774,
+        "port_effective_capacitance_F": 8.616525821028922e-15,
+        "explicit_effective_capacitance_F": 1.3191312345821833e-15,
+        "intrinsic_effective_capacitance_F": 7.29739458644674e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.7376972474662236e-14,
+        "explicit_capacitor_charge_C": 2.975291927960356e-15,
+        "intrinsic_gate_charge_C": 1.440168054670188e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.653873597034576e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779754e-15,
+        "intrinsic_effective_capacitance_F": 8.000933637056599e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.7376012794452464e-14,
+        "explicit_capacitor_charge_C": -2.9752919279603456e-15,
+        "intrinsic_gate_charge_C": -1.4400720866492117e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.65334044136248e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779697e-15,
+        "intrinsic_effective_capacitance_F": 8.000400481384509e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.999999999999016e-14,
+      2.0000000000017882e-14
+    ]
+  },
+  {
+    "corner": "sf",
+    "full_ramp_ps": 400,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.7376976126590797e-14,
+      1.7376012264215082e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.043065854805064e-14,
+      8.613352241625164e-15
+    ],
+    "maximum_absolute_input_current_A": 5.329965834562599e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.1265111231894693e-14,
+        "explicit_capacitor_charge_C": 2.0418327797815843e-15,
+        "intrinsic_gate_charge_C": 9.223278452113108e-15,
+        "input_voltage_change_V": 1.0800000000000147,
+        "port_effective_capacitance_F": 1.04306585480505e-14,
+        "explicit_effective_capacitance_F": 1.890585907205145e-15,
+        "intrinsic_effective_capacitance_F": 8.540072640845355e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.302420420955178e-15,
+        "explicit_capacitor_charge_C": -1.4231496690352704e-15,
+        "intrinsic_gate_charge_C": -7.879270751919908e-15,
+        "input_voltage_change_V": -1.0799999999999774,
+        "port_effective_capacitance_F": 8.613352241625345e-15,
+        "explicit_effective_capacitance_F": 1.3177311750326853e-15,
+        "intrinsic_effective_capacitance_F": 7.29562106659266e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.7376976126590797e-14,
+        "explicit_capacitor_charge_C": 2.9752919279603472e-15,
+        "intrinsic_gate_charge_C": 1.440168419863045e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.653875625883776e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779707e-15,
+        "intrinsic_effective_capacitance_F": 8.000935665905805e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.7376012264215082e-14,
+        "explicit_capacitor_charge_C": -2.9752919279603243e-15,
+        "intrinsic_gate_charge_C": -1.4400720336254757e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.653340146786157e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779578e-15,
+        "intrinsic_effective_capacitance_F": 8.000400186808197e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.999999999999016e-14,
+      2.0000000000017882e-14
+    ]
+  },
+  {
+    "corner": "sf",
+    "full_ramp_ps": 400,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.7376979416057685e-14,
+      1.7376011362046406e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.0457771834601338e-14,
+      8.610294499322491e-15
+    ],
+    "maximum_absolute_input_current_A": 5.316355617670382e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.1294393581369446e-14,
+        "explicit_capacitor_charge_C": 2.0500437034957813e-15,
+        "intrinsic_gate_charge_C": 9.244349877873665e-15,
+        "input_voltage_change_V": 1.0800000000000147,
+        "port_effective_capacitance_F": 1.0457771834601196e-14,
+        "explicit_effective_capacitance_F": 1.8981886143479197e-15,
+        "intrinsic_effective_capacitance_F": 8.559583220253276e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.299118059268292e-15,
+        "explicit_capacitor_charge_C": -1.4216566234480607e-15,
+        "intrinsic_gate_charge_C": -7.877461435820231e-15,
+        "input_voltage_change_V": -1.0799999999999774,
+        "port_effective_capacitance_F": 8.610294499322673e-15,
+        "explicit_effective_capacitance_F": 1.3163487254148984e-15,
+        "intrinsic_effective_capacitance_F": 7.293945773907773e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.7376979416057685e-14,
+        "explicit_capacitor_charge_C": 2.9752919279603535e-15,
+        "intrinsic_gate_charge_C": 1.4401687488097332e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.653877453365381e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779742e-15,
+        "intrinsic_effective_capacitance_F": 8.000937493387406e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.7376011362046406e-14,
+        "explicit_capacitor_charge_C": -2.9752919279603322e-15,
+        "intrinsic_gate_charge_C": -1.4400719434086074e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.653339645581336e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779624e-15,
+        "intrinsic_effective_capacitance_F": 8.000399685603375e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.999999999999016e-14,
+      2.0000000000017882e-14
+    ]
+  },
+  {
+    "corner": "sf",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.7376338708433637e-14,
+      1.7376580119414177e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.070180829811516e-14,
+      9.158222577763292e-15
+    ],
+    "maximum_absolute_input_current_A": 2.281414331840176e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.1557952961964374e-14,
+        "explicit_capacitor_charge_C": 2.122193663869691e-15,
+        "intrinsic_gate_charge_C": 9.435759298094682e-15,
+        "input_voltage_change_V": 1.080000000000003,
+        "port_effective_capacitance_F": 1.0701808298115131e-14,
+        "explicit_effective_capacitance_F": 1.9649941332126716e-15,
+        "intrinsic_effective_capacitance_F": 8.73681416490246e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.890880383984357e-15,
+        "explicit_capacitor_charge_C": -1.6835026472949452e-15,
+        "intrinsic_gate_charge_C": -8.207377736689412e-15,
+        "input_voltage_change_V": -1.0800000000000027,
+        "port_effective_capacitance_F": 9.15822257776327e-15,
+        "explicit_effective_capacitance_F": 1.5587987474953158e-15,
+        "intrinsic_effective_capacitance_F": 7.599423830267956e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.7376338708433637e-14,
+        "explicit_capacitor_charge_C": 2.975291927960314e-15,
+        "intrinsic_gate_charge_C": 1.440104678047332e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.653521504685353e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779521e-15,
+        "intrinsic_effective_capacitance_F": 8.0005815447074e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.7376580119414177e-14,
+        "explicit_capacitor_charge_C": -2.975291927960303e-15,
+        "intrinsic_gate_charge_C": -1.4401288191453874e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.653655621896766e-15,
+        "explicit_effective_capacitance_F": 1.652939959977946e-15,
+        "intrinsic_effective_capacitance_F": 8.000715661918819e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.999999999999016e-14,
+      2.0000000000017882e-14
+    ]
+  },
+  {
+    "corner": "sf",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.737633702895815e-14,
+      1.7376597035532335e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.0701770275781223e-14,
+      9.284619134356097e-15
+    ],
+    "maximum_absolute_input_current_A": 2.269065695080334e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.1557911897843722e-14,
+        "explicit_capacitor_charge_C": 2.122183330975685e-15,
+        "intrinsic_gate_charge_C": 9.435728566868037e-15,
+        "input_voltage_change_V": 1.080000000000003,
+        "port_effective_capacitance_F": 1.0701770275781195e-14,
+        "explicit_effective_capacitance_F": 1.9649845657182218e-15,
+        "intrinsic_effective_capacitance_F": 8.736785710062974e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.0027388665104586e-14,
+        "explicit_capacitor_charge_C": -1.7455959089160737e-15,
+        "intrinsic_gate_charge_C": -8.281792756188512e-15,
+        "input_voltage_change_V": -1.0800000000000027,
+        "port_effective_capacitance_F": 9.284619134356075e-15,
+        "explicit_effective_capacitance_F": 1.6162925082556197e-15,
+        "intrinsic_effective_capacitance_F": 7.668326626100456e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.737633702895815e-14,
+        "explicit_capacitor_charge_C": 2.9752919279603227e-15,
+        "intrinsic_gate_charge_C": 1.440104510099783e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.653520571643417e-15,
+        "explicit_effective_capacitance_F": 1.652939959977957e-15,
+        "intrinsic_effective_capacitance_F": 8.00058061166546e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.7376597035532335e-14,
+        "explicit_capacitor_charge_C": -2.975291927960291e-15,
+        "intrinsic_gate_charge_C": -1.4401305107572045e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.653665019740185e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779395e-15,
+        "intrinsic_effective_capacitance_F": 8.000725059762246e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.999999999999016e-14,
+      2.0000000000017882e-14
+    ]
+  },
+  {
+    "corner": "sf",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.7376337046253547e-14,
+      1.737659223228166e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      1.0685498210434233e-14,
+      9.329330453583292e-15
+    ],
+    "maximum_absolute_input_current_A": 1.972543118156935e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.1540338067268971e-14,
+        "explicit_capacitor_charge_C": 2.118046296640109e-15,
+        "intrinsic_gate_charge_C": 9.422291770628863e-15,
+        "input_voltage_change_V": 1.080000000000003,
+        "port_effective_capacitance_F": 1.0685498210434203e-14,
+        "explicit_effective_capacitance_F": 1.961153978370466e-15,
+        "intrinsic_effective_capacitance_F": 8.724344232063738e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.0075676889869957e-14,
+        "explicit_capacitor_charge_C": -1.767469647540135e-15,
+        "intrinsic_gate_charge_C": -8.308207242329821e-15,
+        "input_voltage_change_V": -1.0800000000000027,
+        "port_effective_capacitance_F": 9.32933045358327e-15,
+        "explicit_effective_capacitance_F": 1.6365459699445652e-15,
+        "intrinsic_effective_capacitance_F": 7.692784483638703e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.7376337046253547e-14,
+        "explicit_capacitor_charge_C": 2.975291927960306e-15,
+        "intrinsic_gate_charge_C": 1.440104511829324e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 9.65352058125197e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779478e-15,
+        "intrinsic_effective_capacitance_F": 8.000580621274023e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.737659223228166e-14,
+        "explicit_capacitor_charge_C": -2.9752919279603014e-15,
+        "intrinsic_gate_charge_C": -1.4401300304321358e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 9.65366235126759e-15,
+        "explicit_effective_capacitance_F": 1.6529399599779452e-15,
+        "intrinsic_effective_capacitance_F": 8.000722391289642e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.999999999999016e-14,
+      2.0000000000017882e-14
+    ]
+  },
+  {
+    "corner": "fs",
+    "full_ramp_ps": 20,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.533524107795371e-14,
+      1.5332497979100576e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      7.497911527047095e-15,
+      7.526250236300132e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0006983595851760286,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.097744449210863e-15,
+        "explicit_capacitor_charge_C": 1.2592164385231035e-15,
+        "intrinsic_gate_charge_C": 6.8385280106877596e-15,
+        "input_voltage_change_V": 1.0799999999996723,
+        "port_effective_capacitance_F": 7.49791152704937e-15,
+        "explicit_effective_capacitance_F": 1.1659411467810051e-15,
+        "intrinsic_effective_capacitance_F": 6.331970380268365e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.128350255204143e-15,
+        "explicit_capacitor_charge_C": -1.2985658217424422e-15,
+        "intrinsic_gate_charge_C": -6.829784433461701e-15,
+        "input_voltage_change_V": -1.0800000000001784,
+        "port_effective_capacitance_F": 7.526250236298889e-15,
+        "explicit_effective_capacitance_F": 1.202375760872433e-15,
+        "intrinsic_effective_capacitance_F": 6.3238744754264566e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.533524107795371e-14,
+        "explicit_capacitor_charge_C": 2.9752746222381056e-15,
+        "intrinsic_gate_charge_C": 1.2359966455715605e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.51957837664095e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878364e-15,
+        "intrinsic_effective_capacitance_F": 6.8666480309531136e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.5332497979100576e-14,
+        "explicit_capacitor_charge_C": -2.9752746222381048e-15,
+        "intrinsic_gate_charge_C": -1.2357223356862472e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.518054432833653e-15,
+        "explicit_effective_capacitance_F": 1.652930345687836e-15,
+        "intrinsic_effective_capacitance_F": 6.8651240871458175e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990625e-14,
+      2.0000000000023508e-14
+    ]
+  },
+  {
+    "corner": "fs",
+    "full_ramp_ps": 20,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.5335474383469216e-14,
+      1.5332330372431643e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      7.490601262424525e-15,
+      7.519429706942827e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0006975068172716221,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.089849363418488e-15,
+        "explicit_capacitor_charge_C": 1.2578253533573086e-15,
+        "intrinsic_gate_charge_C": 6.8320240100611795e-15,
+        "input_voltage_change_V": 1.0799999999996723,
+        "port_effective_capacitance_F": 7.490601262426798e-15,
+        "explicit_effective_capacitance_F": 1.1646531049608243e-15,
+        "intrinsic_effective_capacitance_F": 6.325948157465974e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.120984083498253e-15,
+        "explicit_capacitor_charge_C": -1.2949108561600511e-15,
+        "intrinsic_gate_charge_C": -6.826073227338202e-15,
+        "input_voltage_change_V": -1.0800000000001784,
+        "port_effective_capacitance_F": 7.519429706941586e-15,
+        "explicit_effective_capacitance_F": 1.1989915334813308e-15,
+        "intrinsic_effective_capacitance_F": 6.320438173460254e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.5335474383469216e-14,
+        "explicit_capacitor_charge_C": 2.9752746222381245e-15,
+        "intrinsic_gate_charge_C": 1.2360199761231092e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.519707990816231e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878468e-15,
+        "intrinsic_effective_capacitance_F": 6.866777645128384e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.5332330372431643e-14,
+        "explicit_capacitor_charge_C": -2.975274622238124e-15,
+        "intrinsic_gate_charge_C": -1.2357055750193519e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.517961318017579e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878466e-15,
+        "intrinsic_effective_capacitance_F": 6.865030972329733e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990625e-14,
+      2.0000000000023508e-14
+    ]
+  },
+  {
+    "corner": "fs",
+    "full_ramp_ps": 20,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.5335527736561723e-14,
+      1.5332412702457593e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      7.490135599764172e-15,
+      7.51811662480175e-15
+    ],
+    "maximum_absolute_input_current_A": 0.0006975855770770967,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.089346447745307e-15,
+        "explicit_capacitor_charge_C": 1.2577625553574107e-15,
+        "intrinsic_gate_charge_C": 6.831583892387897e-15,
+        "input_voltage_change_V": 1.0799999999996723,
+        "port_effective_capacitance_F": 7.490135599766446e-15,
+        "explicit_effective_capacitance_F": 1.1645949586646225e-15,
+        "intrinsic_effective_capacitance_F": 6.325540641101824e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -8.11956595478589e-15,
+        "explicit_capacitor_charge_C": -1.2942823796858651e-15,
+        "intrinsic_gate_charge_C": -6.825283575100025e-15,
+        "input_voltage_change_V": -1.0800000000001784,
+        "port_effective_capacitance_F": 7.518116624800508e-15,
+        "explicit_effective_capacitance_F": 1.1984096108200475e-15,
+        "intrinsic_effective_capacitance_F": 6.3197070139804604e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.5335527736561723e-14,
+        "explicit_capacitor_charge_C": 2.9752746222381063e-15,
+        "intrinsic_gate_charge_C": 1.2360253114323616e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.519737631423179e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878368e-15,
+        "intrinsic_effective_capacitance_F": 6.866807285735342e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.5332412702457593e-14,
+        "explicit_capacitor_charge_C": -2.9752746222381063e-15,
+        "intrinsic_gate_charge_C": -1.2357138080219486e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.518007056920885e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878368e-15,
+        "intrinsic_effective_capacitance_F": 6.865076711233048e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990625e-14,
+      2.0000000000023508e-14
+    ]
+  },
+  {
+    "corner": "fs",
+    "full_ramp_ps": 400,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.5334039478358776e-14,
+      1.5333206897167664e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.303394354104802e-15,
+      8.451075251093188e-15
+    ],
+    "maximum_absolute_input_current_A": 5.614945826222366e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.967665902433187e-15,
+        "explicit_capacitor_charge_C": 1.630501050142474e-15,
+        "intrinsic_gate_charge_C": 7.337164852290713e-15,
+        "input_voltage_change_V": 1.0799999999999834,
+        "port_effective_capacitance_F": 8.30339435410493e-15,
+        "explicit_effective_capacitance_F": 1.509723194576388e-15,
+        "intrinsic_effective_capacitance_F": 6.793671159528542e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.127161271180644e-15,
+        "explicit_capacitor_charge_C": -1.884139374872794e-15,
+        "intrinsic_gate_charge_C": -7.24302189630785e-15,
+        "input_voltage_change_V": -1.0799999999999876,
+        "port_effective_capacitance_F": 8.451075251093286e-15,
+        "explicit_effective_capacitance_F": 1.7445734952526069e-15,
+        "intrinsic_effective_capacitance_F": 6.706501755840678e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.5334039478358776e-14,
+        "explicit_capacitor_charge_C": 2.975274622238107e-15,
+        "intrinsic_gate_charge_C": 1.2358764856120668e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.51891082131043e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878372e-15,
+        "intrinsic_effective_capacitance_F": 6.865980475622593e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.5333206897167664e-14,
+        "explicit_capacitor_charge_C": -2.9752746222381087e-15,
+        "intrinsic_gate_charge_C": -1.2357932274929556e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.518448276204258e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878382e-15,
+        "intrinsic_effective_capacitance_F": 6.86551793051642e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990625e-14,
+      2.0000000000023508e-14
+    ]
+  },
+  {
+    "corner": "fs",
+    "full_ramp_ps": 400,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.5334037254169998e-14,
+      1.533319655320794e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.314485091746423e-15,
+      8.584637038155826e-15
+    ],
+    "maximum_absolute_input_current_A": 5.181873786775336e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.979643899086137e-15,
+        "explicit_capacitor_charge_C": 1.6363126684217562e-15,
+        "intrinsic_gate_charge_C": 7.34333123066438e-15,
+        "input_voltage_change_V": 1.0799999999999834,
+        "port_effective_capacitance_F": 8.31448509174655e-15,
+        "explicit_effective_capacitance_F": 1.5151043226127605e-15,
+        "intrinsic_effective_capacitance_F": 6.79938076913379e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.271408001208292e-15,
+        "explicit_capacitor_charge_C": -1.9441308513355326e-15,
+        "intrinsic_gate_charge_C": -7.32727714987276e-15,
+        "input_voltage_change_V": -1.0799999999999876,
+        "port_effective_capacitance_F": 8.584637038155924e-15,
+        "explicit_effective_capacitance_F": 1.8001211586440325e-15,
+        "intrinsic_effective_capacitance_F": 6.784515879511892e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.5334037254169998e-14,
+        "explicit_capacitor_charge_C": 2.9752746222381205e-15,
+        "intrinsic_gate_charge_C": 1.2358762631931877e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.518909585649999e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878447e-15,
+        "intrinsic_effective_capacitance_F": 6.865979239962153e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.533319655320794e-14,
+        "explicit_capacitor_charge_C": -2.9752746222381198e-15,
+        "intrinsic_gate_charge_C": -1.235792193096982e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.518442529559966e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878443e-15,
+        "intrinsic_effective_capacitance_F": 6.865512183872122e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990625e-14,
+      2.0000000000023508e-14
+    ]
+  },
+  {
+    "corner": "fs",
+    "full_ramp_ps": 400,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.533403898884645e-14,
+      1.533319856130638e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      8.317523633204451e-15,
+      8.6120065151689e-15
+    ],
+    "maximum_absolute_input_current_A": 5.498928207061347e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 8.982925523860809e-15,
+        "explicit_capacitor_charge_C": 1.6379014995977557e-15,
+        "intrinsic_gate_charge_C": 7.345024024263053e-15,
+        "input_voltage_change_V": 1.0799999999999834,
+        "port_effective_capacitance_F": 8.31752363320458e-15,
+        "explicit_effective_capacitance_F": 1.5165754625905379e-15,
+        "intrinsic_effective_capacitance_F": 6.800948170614042e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -9.300967036382412e-15,
+        "explicit_capacitor_charge_C": -1.9539613215916843e-15,
+        "intrinsic_gate_charge_C": -7.347005714790726e-15,
+        "input_voltage_change_V": -1.0799999999999876,
+        "port_effective_capacitance_F": 8.612006515168998e-15,
+        "explicit_effective_capacitance_F": 1.809223445918247e-15,
+        "intrinsic_effective_capacitance_F": 6.802783069250751e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.533403898884645e-14,
+        "explicit_capacitor_charge_C": 2.9752746222381142e-15,
+        "intrinsic_gate_charge_C": 1.2358764366608337e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.518910549359139e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878411e-15,
+        "intrinsic_effective_capacitance_F": 6.865980203671298e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.533319856130638e-14,
+        "explicit_capacitor_charge_C": -2.9752746222381142e-15,
+        "intrinsic_gate_charge_C": -1.2357923939068266e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.51844364517021e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878411e-15,
+        "intrinsic_effective_capacitance_F": 6.86551329948237e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990625e-14,
+      2.0000000000023508e-14
+    ]
+  },
+  {
+    "corner": "fs",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 0,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.5333515768046208e-14,
+      1.5333670568988207e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.355406515352441e-15,
+      9.383463211166258e-15
+    ],
+    "maximum_absolute_input_current_A": 1.737739531389171e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0103839036580637e-14,
+        "explicit_capacitor_charge_C": 2.1062564141023657e-15,
+        "intrinsic_gate_charge_C": 7.997582622478272e-15,
+        "input_voltage_change_V": 1.0799999999999994,
+        "port_effective_capacitance_F": 9.355406515352447e-15,
+        "explicit_effective_capacitance_F": 1.9502374204651546e-15,
+        "intrinsic_effective_capacitance_F": 7.405169094887292e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.013414026805956e-14,
+        "explicit_capacitor_charge_C": -2.117759762756401e-15,
+        "intrinsic_gate_charge_C": -8.016380505303159e-15,
+        "input_voltage_change_V": -1.0800000000000065,
+        "port_effective_capacitance_F": 9.383463211166201e-15,
+        "explicit_effective_capacitance_F": 1.960888669218878e-15,
+        "intrinsic_effective_capacitance_F": 7.422574541947324e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.5333515768046208e-14,
+        "explicit_capacitor_charge_C": 2.9752746222380985e-15,
+        "intrinsic_gate_charge_C": 1.235824114580811e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.518619871136782e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878324e-15,
+        "intrinsic_effective_capacitance_F": 6.86568952544895e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.5333670568988207e-14,
+        "explicit_capacitor_charge_C": -2.9752746222380992e-15,
+        "intrinsic_gate_charge_C": -1.2358395946750108e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.518705871660114e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878328e-15,
+        "intrinsic_effective_capacitance_F": 6.865775525972282e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990625e-14,
+      2.0000000000023508e-14
+    ]
+  },
+  {
+    "corner": "fs",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 100,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.533351472333101e-14,
+      1.5333673123980148e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.345186652010213e-15,
+      9.383419387147588e-15
+    ],
+    "maximum_absolute_input_current_A": 1.464448860820713e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0092801584171031e-14,
+        "explicit_capacitor_charge_C": 2.1028871664405127e-15,
+        "intrinsic_gate_charge_C": 7.989914417730519e-15,
+        "input_voltage_change_V": 1.0799999999999994,
+        "port_effective_capacitance_F": 9.34518665201022e-15,
+        "explicit_effective_capacitance_F": 1.9471177467041794e-15,
+        "intrinsic_effective_capacitance_F": 7.39806890530604e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.0134092938119395e-14,
+        "explicit_capacitor_charge_C": -2.1177524922885467e-15,
+        "intrinsic_gate_charge_C": -8.016340445830849e-15,
+        "input_voltage_change_V": -1.0800000000000065,
+        "port_effective_capacitance_F": 9.383419387147531e-15,
+        "explicit_effective_capacitance_F": 1.960881937304198e-15,
+        "intrinsic_effective_capacitance_F": 7.422537449843334e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.533351472333101e-14,
+        "explicit_capacitor_charge_C": 2.975274622238109e-15,
+        "intrinsic_gate_charge_C": 1.23582401010929e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.51861929073945e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878383e-15,
+        "intrinsic_effective_capacitance_F": 6.865688945051611e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.5333673123980148e-14,
+        "explicit_capacitor_charge_C": -2.975274622238115e-15,
+        "intrinsic_gate_charge_C": -1.2358398501742034e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.518707291100083e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878417e-15,
+        "intrinsic_effective_capacitance_F": 6.8657769454122404e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990625e-14,
+      2.0000000000023508e-14
+    ]
+  },
+  {
+    "corner": "fs",
+    "full_ramp_ps": 1600,
+    "output_load_fF": 400,
+    "input_levels_verified": true,
+    "noninverting_response_verified": true,
+    "full_window_charge_C": [
+      1.5333514467641517e-14,
+      1.5333672682912538e-14
+    ],
+    "effective_20_80_capacitance_F": [
+      9.335739992219556e-15,
+      9.356406315486106e-15
+    ],
+    "maximum_absolute_input_current_A": 1.603660461012468e-05,
+    "deembedded_charge": {
+      "rising_20_80": {
+        "port_charge_C": 1.0082599191597122e-14,
+        "explicit_capacitor_charge_C": 2.10039079926642e-15,
+        "intrinsic_gate_charge_C": 7.982208392330702e-15,
+        "input_voltage_change_V": 1.0799999999999994,
+        "port_effective_capacitance_F": 9.335739992219562e-15,
+        "explicit_effective_capacitance_F": 1.944806295617057e-15,
+        "intrinsic_effective_capacitance_F": 7.390933696602505e-15
+      },
+      "falling_80_20": {
+        "port_charge_C": -1.0104918820724995e-14,
+        "explicit_capacitor_charge_C": -2.113248344626613e-15,
+        "intrinsic_gate_charge_C": -7.991670476098382e-15,
+        "input_voltage_change_V": -1.0800000000000065,
+        "port_effective_capacitance_F": 9.35640631548605e-15,
+        "explicit_effective_capacitance_F": 1.956711430209815e-15,
+        "intrinsic_effective_capacitance_F": 7.399694885276235e-15
+      },
+      "rising_full": {
+        "port_charge_C": 1.5333514467641517e-14,
+        "explicit_capacitor_charge_C": 2.975274622238115e-15,
+        "intrinsic_gate_charge_C": 1.2358239845403402e-14,
+        "input_voltage_change_V": 1.8,
+        "port_effective_capacitance_F": 8.518619148689731e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878417e-15,
+        "intrinsic_effective_capacitance_F": 6.86568880300189e-15
+      },
+      "falling_full": {
+        "port_charge_C": -1.5333672682912538e-14,
+        "explicit_capacitor_charge_C": -2.9752746222381154e-15,
+        "intrinsic_gate_charge_C": -1.2358398060674423e-14,
+        "input_voltage_change_V": -1.8,
+        "port_effective_capacitance_F": 8.518707046062521e-15,
+        "explicit_effective_capacitance_F": 1.6529303456878419e-15,
+        "intrinsic_effective_capacitance_F": 6.865776700374679e-15
+      }
+    },
+    "reference_capacitances_F": [
+      1.9999999999990625e-14,
+      2.0000000000023508e-14
+    ]
+  }
+]
