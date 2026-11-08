@@ -1091,3 +1091,18 @@ justify adopting it for the PLL. Keep the default reduced solver for
 subsequent comparisons; MASKIVARS accuracy and corrected-backend behavior
 remain unqualified. This negative benchmark closes this speed experiment
 without further identical runs, and does not change release gate status.
+
+### Completed-only PLLOUT coupling-export audit queued
+
+Observer1435 follows live pipeline1434 for at most24h without holding a
+resource lease while waiting. It requires normal completed1433 export
+and source/receipt/artifact hashes matching the same flat1202 extraction
+and completed1339 baseline. The audit uses CPU29 and16GiB to compare exact
+primitive/C contraction against the original C circuit, plus the literal
+named R network before/after the import change. Total absolute contracted
+C error is reported with exact fractions; residual errors are retained,
+not rounded into a passing result. Geometry, coupling placement, RC
+simplification, dynamic accuracy and model/release qualification stay
+false regardless of static results. Three tests cover removing duplicate
+grounding, detecting changed R despite identical ideal-R contraction,
+and retaining a small exact residual C mismatch.
