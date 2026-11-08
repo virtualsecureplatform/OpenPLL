@@ -1,0 +1,33 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_ground_lifecycle_trace_1308/assessment.json": "db251492cf94a893f522616b6d194d86a1768a99d501d577563acde7725bd19e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_ground_lifecycle_trace_1308/coupling.jsonl": "c670c51ef2582de21fb49a6556f761e623105ea48481190d1c5ae4eac8396958",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_ground_lifecycle_trace_1308/IntegerPLL_400MHz_KeeperFlatC.ext": "d0eeccea3fc6bc954275bd2b3a254653eecec9ad23b7410e16a648cd73944015",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_ground_lifecycle_v2.py": "ab3d965339ae0f5952b40ae27c9a605e8fb0b0be6e09417dbac4014abb42ef97",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_coupling_geometry_trace.py": "e4d506efeaae05027ef4ad86acb9d2a955a3de6b1e2a143e352ecf4fc5b04bbd"
+  },
+  "ground_updates": 63740896,
+  "ground_resets": 800253,
+  "mutation_sites_observed": {
+    "ExtBasic.c:5248": 800253,
+    "ExtBasic.c:5332": 3486860,
+    "ExtBasic.c:5560": 1347148,
+    "ExtBasic.c:5459": 1344480,
+    "ExtBasic.c:5409": 500651,
+    "ExtBasic.c:5510": 494245,
+    "ExtCouple.c:522": 5993567,
+    "ExtCouple.c:1521": 45664805,
+    "ExtCouple.c:1254": 4889989,
+    "ExtCouple.c:234": 19151
+  },
+  "ground_output_records": 800253,
+  "substrate_output_records": 1,
+  "negative_export_clamps": 29,
+  "native_ground_state_continuity_verified": true,
+  "exported_ground_records_match": true,
+  "missing_exported_records": 0,
+  "extra_reconstructed_records": 0,
+  "spatial_ground_placement_qualified": false,
+  "distributed_wire_R_qualified": false,
+  "release_ready": false
+}

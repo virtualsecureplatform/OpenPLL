@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_ground_lifecycle_trace_1308/assessment.json": "db251492cf94a893f522616b6d194d86a1768a99d501d577563acde7725bd19e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_ground_lifecycle_trace_1304/assessment.json": "79dd3f9ef4763715af2411c0c5ed06b41de876ec5d5e63d769e905956a8b40d6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_ground_lifecycle_trace_1304/instrumentation.json": "6a7238909d0a2d5ad2cbf53492b78138c1e479db6598e2f86ee15840d778335b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_ground_lifecycle_trace_1308/coupling.jsonl": "c670c51ef2582de21fb49a6556f761e623105ea48481190d1c5ae4eac8396958",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_coupling_relocation.py": "2ac19ee246f1c50d27a7d0c382865d0cc30d90d5f591aa8e887fcc4cf7fc275a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_coupling_geometry_trace.py": "e4d506efeaae05027ef4ad86acb9d2a955a3de6b1e2a143e352ecf4fc5b04bbd"
+  },
+  "native_pointer_pairs": 583156,
+  "pair_classes": {
+    "substrate_relocated": 19151,
+    "exported_coupling": 564002,
+    "zero_sum": 3
+  },
+  "event_classes": {
+    "substrate_relocated": 11923030,
+    "exported_coupling": 46094709,
+    "zero_sum": 6
+  },
+  "unresolved_pairs": [],
+  "all_nonexported_pairs_classified": true,
+  "native_substrate_relocation_additions_verified": 19151,
+  "substrate_name": "VGND",
+  "spatial_ground_placement_qualified": false,
+  "distributed_wire_R_qualified": false,
+  "release_ready": false
+}
