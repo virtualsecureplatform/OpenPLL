@@ -1,0 +1,25 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_coupling_geometry_trace_1303/assessment.json": "89c64d8bd787a9d116c23b6735f3186c1abad62e210eca6863252db09dc480bd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_coupling_geometry_trace_1303/coupling.jsonl": "aff33a189a7c7ecda9cb6a5f408d5a839f4e92840b116e3ffed2c1e21ccd8c93",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_coupling_geometry_trace_1303/IntegerPLL_400MHz_KeeperFlatC.ext": "fb944329f77a0d25850b0df494f19b521fcf92ee1ce2e9da710176c3e58bf9d7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_coupling_geometry_trace.py": "e4d506efeaae05027ef4ad86acb9d2a955a3de6b1e2a143e352ecf4fc5b04bbd"
+  },
+  "events": 58017745,
+  "event_kinds": {
+    "overlap": 3228302,
+    "sideoverlap_halo": 50512775,
+    "sidewall": 4276668
+  },
+  "native_pointer_pairs": 583156,
+  "exported_name_pairs": 564002,
+  "unmapped_pointer_pairs": 19151,
+  "unmapped_events": 11923030,
+  "sidewall_spans_verified": 4276668,
+  "differences": [],
+  "all_exported_C_pairs_reconstructed_at_native_precision": true,
+  "ground_capacitance_geometry_traced": false,
+  "pointwise_placement_qualified": false,
+  "distributed_wire_R_qualified": false,
+  "release_ready": false
+}
