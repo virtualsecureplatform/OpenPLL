@@ -1972,3 +1972,18 @@ These results quantify local integration sensitivity, not a frequency-error
 bound or independent receiver-model qualification. Current model work should
 address dynamic response and C stitching rather than infer accuracy from a
 constant capacitance alone.
+
+Charge-surface candidate1529 fits all45 de-embedded observations with positive
+piecewise input capacitances and one positive Miller capacitance per corner.
+The model is conditional on observed internal voltage; it supplies no causal
+internal-state response. All five fits converge with nonnegative coefficients,
+but maximum training charge error is5.6147% of the measured charge swing.
+Three guards check recovery of a known positive surface, monotone input charge
+and invalid/unexercised data rejection. Source-pinned coefficients, error
+statistics and completed receipt are retained, with no qualification inferred.
+
+The plan predeclares a separate400 MHz /100 ps ramp /200 fF load validation
+before measuring that waveform. Exact-token parallel grouping was also inspected
+as a speed option:62,338 primitive calls form54,134 groups, a13.2% call-count
+reduction before backend support or equivalence validation. No multiplicity
+rewrite or native optimizer was implemented on that basis.

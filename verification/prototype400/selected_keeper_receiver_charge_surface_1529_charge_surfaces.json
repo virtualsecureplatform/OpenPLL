@@ -1,0 +1,122 @@
+{
+  "input_voltage_knots_V": [
+    0.0,
+    0.18,
+    0.36,
+    0.54,
+    0.72,
+    0.8999999999999999,
+    1.08,
+    1.26,
+    1.44,
+    1.6199999999999999,
+    1.8
+  ],
+  "corners": {
+    "tt": {
+      "input_capacitances_fF": [
+        6.92195634466857,
+        6.650373158460713,
+        7.092920370658561,
+        5.7571151074519165,
+        6.760433142622741,
+        5.365256390834716,
+        5.604217177493201,
+        5.284306403039254,
+        4.718686308757145,
+        4.565990389318045
+      ],
+      "Miller_capacitance_fF": 0.797755132386438,
+      "iterations": 3560,
+      "maximum_training_charge_error_fC": 0.7472087809090625,
+      "RMS_training_charge_error_fC": 0.05447126403622314,
+      "maximum_training_error_relative_to_charge_swing": 0.055577188142130626,
+      "conditional_on_observed_internal_voltage": true
+    },
+    "ff": {
+      "input_capacitances_fF": [
+        6.458569622787482,
+        6.255618505051199,
+        7.04237934555196,
+        6.296043250475663,
+        5.8592333157578445,
+        5.280985283522747,
+        5.913845834037322,
+        5.54456133287063,
+        5.103243082733813,
+        4.590895159071097
+      ],
+      "Miller_capacitance_fF": 0.7212867001992757,
+      "iterations": 4198,
+      "maximum_training_charge_error_fC": 0.6988271031726376,
+      "RMS_training_charge_error_fC": 0.044007892672995014,
+      "maximum_training_error_relative_to_charge_swing": 0.05333782730070217,
+      "conditional_on_observed_internal_voltage": true
+    },
+    "ss": {
+      "input_capacitances_fF": [
+        7.306409125998559,
+        7.504144262031305,
+        5.844359964326916,
+        6.143378404951955,
+        6.984563881609761,
+        5.699628755168739,
+        4.83866742625851,
+        4.990224688200809,
+        4.476381700618602,
+        4.65706529922412
+      ],
+      "Miller_capacitance_fF": 0.8696016074681666,
+      "iterations": 3943,
+      "maximum_training_charge_error_fC": 0.7665848259665939,
+      "RMS_training_charge_error_fC": 0.06795348174178187,
+      "maximum_training_error_relative_to_charge_swing": 0.05614665680271844,
+      "conditional_on_observed_internal_voltage": true
+    },
+    "sf": {
+      "input_capacitances_fF": [
+        7.944485017871821,
+        7.152889276898923,
+        6.066745996705288,
+        7.404679894131956,
+        5.742154399543287,
+        5.654699560614047,
+        5.638595836043745,
+        4.844598279986339,
+        4.718377056952286,
+        4.697486397322867
+      ],
+      "Miller_capacitance_fF": 1.0072558559146227,
+      "iterations": 3626,
+      "maximum_training_charge_error_fC": 0.7573597398891161,
+      "RMS_training_charge_error_fC": 0.07116818267408052,
+      "maximum_training_error_relative_to_charge_swing": 0.052580614164318605,
+      "conditional_on_observed_internal_voltage": true
+    },
+    "fs": {
+      "input_capacitances_fF": [
+        6.023160455458653,
+        6.0758610347833315,
+        5.972108493171096,
+        6.475061965853147,
+        5.375832354786428,
+        5.8207277186965705,
+        5.01502195275279,
+        5.426381340892221,
+        5.0559708974352375,
+        4.6745273359026305
+      ],
+      "Miller_capacitance_fF": 0.6368231233650035,
+      "iterations": 3953,
+      "maximum_training_charge_error_fC": 0.6632317849848994,
+      "RMS_training_charge_error_fC": 0.041841238326142505,
+      "maximum_training_error_relative_to_charge_swing": 0.05365774306119793,
+      "conditional_on_observed_internal_voltage": true
+    }
+  },
+  "units": {
+    "capacitance": "fF",
+    "charge": "fC",
+    "voltage": "V"
+  }
+}

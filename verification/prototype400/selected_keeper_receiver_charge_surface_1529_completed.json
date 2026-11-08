@@ -1,0 +1,27 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/assessment.json": "a6bbfb5438bb0d1ba98d66506f5dee929561aee659ebf68911af56d96a1227fb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/plan.json": "c83de80bd2db4da995f84753fb314cffe7938f24a0e254909771127f4efbf0c7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/explicit_input_capacitors.json": "2a647f9520bb6d80d3c1e44961059fc440b138cf94602c748de94d1c0c7c43eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/fit_keeper_receiver_charge_surface.py": "ad6b1e4785c6122d2c450fd1316a030ac468891662d4cfbc3a45b2fc464b912d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_DCO_driver_C_cut.py": "b77eb42593482a548e4d3bf3a6f9ad2ba55ab10ab81385b080582542619f1b47",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_charge_surface_1529/plan.json": "5d147556b71013185c2e1f796cf94cabf1b5b96adcddf46c4b1a48ef5722b97a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/tt/waveform.dat": "995ee81a36942d7b62e78f65417880ba866549fcc94d45e330b38c29dc150d33",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/ff/waveform.dat": "f0c123ca14308e877d951cfaaa3ce3f05f8bd26facc95e23dfbd1c20a812f12b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/ss/waveform.dat": "6cc69abd69500eab2e20bc7457aa17ea357faa52f7f1f43b34c122fd7e4c1ab6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/sf/waveform.dat": "ba67e086940dbf0ebea01992e1d88bba154b39c5a444c74b2ac9892fa474aebd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/fs/waveform.dat": "3fa08f6a721155ac48ff68d9ea760f766823a427420510a555276a72868b7092"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_charge_surface_1529/charge_surfaces.json": "21adb3d1a6a9a9843ba41a043680b3d2d0ba4929050af8eee353f9201913c846"
+  },
+  "trained_corners": 5,
+  "training_only": true,
+  "all_capacitance_coefficients_nonnegative": true,
+  "maximum_training_error_relative_to_charge_swing": 0.05614665680271844,
+  "causal_internal_voltage_model_available": false,
+  "independent_periodic_validation_complete": false,
+  "full_flat_C_stitching_qualified": false,
+  "clock_receiver_model_qualified": false,
+  "release_ready": false
+}
