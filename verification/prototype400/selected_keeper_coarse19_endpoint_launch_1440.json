@@ -1,0 +1,15 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse19_endpoints.py": "d5aaeec300bb5d772b46bce14e850f1962cf9783a4c03022f47b34e5fbe4a77e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_keeper_coarse19_endpoints.py": "95b75ef7c693e4362d7cd2e51b154ce01d7bfa49fef8e5dd0c68e0c559fd2d34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning_v2.py": "882b641aae80e2f93f503594a12c54987f5f2aacf7b130ea0b68deccac6de60a"
+  },
+  "owner": {
+    "pid": 2255417,
+    "birth": "135718623"
+  },
+  "state": "waiting_for_completed_central_native_and_physical_point",
+  "maximum_additional_native_cases": 2,
+  "completed": false,
+  "release_ready": false
+}

@@ -1174,3 +1174,26 @@ PLLOUT1433 completed normally with exactly one network extracted/output
 and74 emitted R cards, as in1339. Its exact C/R/primitive comparison1435
 is queued for memory. Ground1437 has started on CPU24. None of these
 producer results establishes C conservation or dynamic qualification.
+
+### Predeclared coarse19 safe-range endpoint measurements
+
+Protocol1440 waits for normal finite corrected-backend coarse19/fine149
+50ps capture1412 and its604-endpoint physical check1413. A missing central
+frequency or physical mismatch stops the protocol. Before any endpoint
+result is available, fine8 and247 are declared as the two safe-range
+endpoint captures1441/1443 with physical checks1442/1444. They run strictly
+sequentially on the released central CPU20, each using the unchanged
+coarse-band capture helper's16GiB/24h ceilings,260ns duration and50ps
+maximum step. No other active capture is cancelled or reconfigured.
+Physical-helper v2 changes only configurable affinity/CPU metadata; its
+604-endpoint bindings and voltage checks are unchanged. Each physical
+check runs after its native capture on the same CPU20. Four guard tests
+cover backend/band/timestep identity, physical mismatch and absent frequency.
+
+The purpose is to establish or reject a completed same-band diagnostic
+400MHz bracket across the safe fine range. The existing149 point informed
+band exploration, so it is explicitly not called a blind holdout. Neither
+50ps numerical accuracy nor interpolation, startup capture margin, band
+selection or predictive controller behavior is qualified by this protocol.
+The original corrected coarse20 10ps fit/holdout family continues unchanged.
+No additional native endpoint case begins before central completion.
