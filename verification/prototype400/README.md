@@ -726,3 +726,7 @@ An isolated source transformation preserves the original numerical ledger and ad
 ### Ground-support reconstruction prepared
 
 The new auditor independently reconstructs clipped rectangular area and neighboring edge length, checks split-area integer division while withholding rectangular qualification, and requires each support record to be immediately followed by its matching native ground update with exact double arithmetic. Five tests pass, including wrong geometry, bad arithmetic and truncation rejection. A four-fixture/eight-run native off/on runner is prepared; compilation and actual native validation remain pending. Area/perimeter support does not qualify shielding-subtraction geometry or full physical placement.
+
+### Ground area/perimeter observer passes native controls (1354/1355)
+
+The isolated build completes. Eight native off/on runs preserve each fixture circuit exactly and all prior coupling, ground, overlap and fringe ledgers reconstruct. The new support audit verifies 70 events across four fixtures (14 tile-area additions and 56 neighboring-edge additions), including immediate matching native numerical updates. No unsupported split support occurs in these controls. Clipped/split geometry has only unit coverage; native clipped/split controls, shielding-subtraction support and full-layout ground placement remain unqualified. See `selected_magic_ground_support_controls.json`.
