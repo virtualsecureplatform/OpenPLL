@@ -734,3 +734,7 @@ The isolated build completes. Eight native off/on runs preserve each fixture cir
 ### Ground overlap-shielding provenance prepared (1356)
 
 The next isolated observer links the native area shielding subtraction at ExtCouple.c:522 to its completed resolved overlap mask by epoch, overlap ID, node and area. The auditor requires the immediately following native ground update to match the exact subtraction. Three tests pass for matching support/arithmetic and rejection of wrong support, wrong arithmetic and truncation. A fresh 4-GiB/CPU-29 build has launched; native validation is pending. Three separate fringe subtraction sites (halo truncation, resolved halo shielding, legacy side overlap) remain outside this area-specific proof. No spatial placement or RC model is promoted.
+
+### Ground overlap-shielding links pass native controls (1356/1357)
+
+Eight native off/on runs preserve fixture circuits exactly. The area/perimeter support, numerical ground/coupling, overlap-mask and fringe-integral audits all pass, as do 11 native ground-area shielding subtraction links to resolved masks and adjacent exact updates. Twelve ground-auditor tests pass. This qualifies the observed fixture bookkeeping, not spatial placement: native clipped/split coverage and three fringe-ground subtraction paths remain open, and full PLL/model/release qualification stays false. See `selected_magic_ground_overlap_controls.json`.
