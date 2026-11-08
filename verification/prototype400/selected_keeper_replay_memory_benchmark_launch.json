@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/inputs.json": "ba34db9d7ab2a2b81dc6a0064e4002963d7f7e155704058b3062890377b93705"
+  },
+  "owner": {
+    "pid": 2161668,
+    "birth": "133273418"
+  },
+  "CPU": 29,
+  "native_memory_limit_GiB": 8,
+  "native_cap_s": 1800,
+  "maximum_native_cases": 1,
+  "automatic_identical_retry": false,
+  "reference": "completed old-backend 50 ps capture 1278 with physical assessment 1279",
+  "native_peak_RSS_measurement_requested": true,
+  "PLLOUT_forced": false,
+  "corrected_backend_memory_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}
