@@ -1,0 +1,39 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PWL_source_probe_1246/exercise.py": "83753b16be4bdf30a996c1035674359230de5a6595140c4af48ea8da1c2aea17",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PWL_source_probe_1246/reference.spice": "0f4f4dd1c99d557468f04b94bbe3a99ae4856b9bbad04ad6a5117aa3c7cea7f8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PWL_source_probe_1246/replay.spice": "d003ce18d097f55f3570af84832f96f9cf74e18ada98f33c0897285f9c37b89a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/write_keeper_replay_sources.py": "d64523ae9fd094fe45f28921a96cfedcb347e3479e53c8910cdc5fc18bce86da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PWL_source_probe_1246/reference.raw": "94031433d2012b27d4fb61c35e3dcaf76bbb8adafb2eddb5861ef59c3338ed91",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PWL_source_probe_1246/reference.log": "063b2b015b4ce09288f72e4b7ccec7c67edf33acc6b0f9d60a9949a826c51da7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PWL_source_probe_1246/boundary.npy": "e3e70351a39ad704101524d6cff57f898140eac7ff1e6cfdfebf62712e8d0b6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PWL_source_probe_1246/external_sources.spice": "d614e897cc0f6fcf123adb7dbf169d42ec35fce4fa29a17b39e8b1ccf8a83bc4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PWL_source_probe_1246/replay.raw": "80ff9d11f07996f19d15459cd821213d4d89d57f5453c96cb294ee85971ba0d9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PWL_source_probe_1246/replay.log": "d8aca54fd1e47778a892f8899dc732b41813ea2f8ef52e3b015d96f013decce5"
+  },
+  "normal_native_reference_and_replay_complete": true,
+  "reference_samples": 379,
+  "replay_samples": 2163,
+  "maximum_interpolated_output_difference_V": 0.0009507549814569138,
+  "sampled_RC_output_within_1mV": true,
+  "source_writer": {
+    "driven_ports": 1,
+    "observation_only_ports": [
+      "PLLOUT"
+    ],
+    "constant_waveforms": 0,
+    "nonconstant_waveforms": 1,
+    "input_driven_samples": 379,
+    "emitted_PWL_points": 379,
+    "lossy_compression_applied": false,
+    "PLLOUT_forced": false
+  },
+  "full_PLL_replay_executed": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PWL_source_probe_1246/assessment.json"
+}
