@@ -766,3 +766,7 @@ A new cross-check compares each of the six native area/perimeter mutation-site c
 ### Bounded conditional replay memory benchmark initialized (1365)
 
 The live CPU-29 controller uses completed old-backend 50 ps capture 1278 and matching 604-endpoint physical pass 1279. It verifies exact old-backend pins and prepares captured boundary sources under an 8 GiB analysis lease. One conditional replay uses the same old binary and 50 ps maximum step, an 8 GiB address-space limit, a 1800 s native cap and GNU time peak-RSS logging; no identical retry. PLLOUT remains free. Two backend guards pass. This tests whether the reduced native workload can run with a smaller reservation; neither the original 64 GiB queues nor any capture is changed, and no corrected-backend memory, timestep, predictive-model or release qualification is inferred. Launch is verifying completed inputs; native execution remains pending. See `selected_keeper_replay_memory_benchmark_launch.json`.
+
+### Reduced replay native benchmark started (1365)
+
+Boundary preparation completes with 6,454 samples and 7,616 driven ports: 33 constant sources and 7,583 nonconstant sources produce 48,940,748 PWL points without lossy compression. Native Xyce is live parsing the sources. Its actual executable hash, PID birth, CPU-29 affinity and inherited 8 GiB address-space limit are verified independently of the GNU time wrapper. Completion, final peak RSS and replay comparisons remain pending; an interim RSS is not a memory qualification. See `selected_keeper_replay_memory_native_launch.json`.

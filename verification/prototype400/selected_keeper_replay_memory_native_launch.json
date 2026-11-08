@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/native_inputs.json": "67ce86bacbeac6054533b5e458310ba254d07f9c15f6095be99afdd90bce37a0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/sources/assessment.json": "0970c34c5bf119c21de3e95d81b900dbea9a75ffcb13ebe8cbbf70376bd1274d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/waveforms/assessment.json": "dfcdcabfa65c6f79524a36fa72cfa46c5379a376e8224486e3bb650322f8d6a8"
+  },
+  "timing_wrapper": {
+    "pid": 2162112,
+    "birth": "133296428",
+    "process_group": 2162112
+  },
+  "native": {
+    "pid": 2162113,
+    "birth": "133296440"
+  },
+  "native_executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+  "native_executable_sha256": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+  "CPU": 29,
+  "address_space_limit_bytes": [
+    8589934592,
+    8589934592
+  ],
+  "driven_ports": 7616,
+  "emitted_PWL_points": 48940748,
+  "PLLOUT_forced": false,
+  "native_capture_complete": false,
+  "peak_memory_measured": false,
+  "corrected_backend_memory_qualified": false,
+  "release_ready": false
+}
