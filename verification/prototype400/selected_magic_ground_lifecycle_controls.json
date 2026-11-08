@@ -1,0 +1,191 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_ground_lifecycle_trace_1304/assessment.json": "79dd3f9ef4763715af2411c0c5ed06b41de876ec5d5e63d769e905956a8b40d6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_ground_lifecycle_trace_1304/install/bin/magic": "c2a9b002837a520a401f49c3d54a1bfd85bb65ac2f04cf312c97559d397643d0",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_ground_lifecycle_trace.py": "3edc00a64b7ced5c0090ae8da3e9bf124af2df96e6b8c0b1429f48d7c27cac74",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_coupling_geometry_trace.py": "e4d506efeaae05027ef4ad86acb9d2a955a3de6b1e2a143e352ecf4fc5b04bbd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_ground_lifecycle.py": "eb23733bfd3399aa5ce25c140780182e27c8532aec99a8b288e1280708ec93b8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/parallel_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/parallel_off/probe.tcl": "541c3d683f64b5554a972bb4e2841d4ef885b8d6c0c98630a1561f3a7fb26195",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/parallel_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/parallel_on/probe.tcl": "c045c86a9fae1796b6284b734a8d2d96174f5ce705e68b7b7233fa7f3817dc59",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/vertical_overlap_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/vertical_overlap_off/probe.tcl": "14d35ef1c676897abe7cb8a342ed733405eb0764528465501b420ae78afb21e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/vertical_overlap_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/vertical_overlap_on/probe.tcl": "b8e0e7dcd4bf423390ee3a0f9d1f4cf899018aa34c8add6330448768681439f9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/fringe_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/fringe_off/probe.tcl": "8f30e11862721e1b9e078b68af95efee43fab8e9ee9b448e9754cee221e23239",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/fringe_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/fringe_on/probe.tcl": "cbad9dec9207dcfeae6d492965de23c084b6cff6fcc72ec5480b070513f78447"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/parallel_off/view.spice": "e47179c77b5f3c0612139b82b1fe8cd6bc2e48dba606e00b0ea044867565e367",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/parallel_off/Trace_parallel.ext": "8b81ad62499c1eb7bfcd3fb3cddab8f13845956c63205c8c32bec48184465938",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/parallel_off/native.log": "2a1040ee80a3545c384000cbc3654e846b72ccdb8a860b588febfc59ba0db6c1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/parallel_on/view.spice": "e47179c77b5f3c0612139b82b1fe8cd6bc2e48dba606e00b0ea044867565e367",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/parallel_on/Trace_parallel.ext": "8b81ad62499c1eb7bfcd3fb3cddab8f13845956c63205c8c32bec48184465938",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/parallel_on/native.log": "1b6adc78da1f4f5ed6c7319ed57c93f839fe29111d4c82418a921a40da6da73f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/parallel_on/coupling.jsonl": "4a18c508fc8848c04caa87c0d6a5d687b13c1af68f526f433fc57f3d074af951",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/vertical_overlap_off/view.spice": "c66d44efa8411093a86b2a1b45c1b883ef3c2b0252e8ef81c04347841c19010e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/vertical_overlap_off/Trace_vertical_overlap.ext": "d3c741e661ece183d89ae794546ad6d8755200e8f75fe39f6970e1dc79c55e6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/vertical_overlap_off/native.log": "00c642b6cbc6d13274f0bd58ee2bc3c7873b23393e2a72ecb5b70a4d8751f36a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/vertical_overlap_on/view.spice": "c66d44efa8411093a86b2a1b45c1b883ef3c2b0252e8ef81c04347841c19010e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/vertical_overlap_on/Trace_vertical_overlap.ext": "d3c741e661ece183d89ae794546ad6d8755200e8f75fe39f6970e1dc79c55e6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/vertical_overlap_on/native.log": "ff7f449de037a4d51c9366673de75664e8a0329d1ccb7312760e636a6c7506d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/vertical_overlap_on/coupling.jsonl": "582c30cea8cdc670f568835cad7206f6e84d25d864c9904369d5d4001a165b30",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/fringe_off/view.spice": "580e253594610f3b662654c25019cc09a968e4fe392c00ef853bf6c008f77046",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/fringe_off/Trace_fringe.ext": "cbc3688c0883f6b9d85c638380d16a9da77a2ae9e94937c10f36b639aaafeaa1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/fringe_off/native.log": "411684ac84d3ee5d5e2a7dfbe16d0180ed81f8da15806096c9b5e073c4c05f95",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/fringe_on/view.spice": "580e253594610f3b662654c25019cc09a968e4fe392c00ef853bf6c008f77046",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/fringe_on/Trace_fringe.ext": "cbc3688c0883f6b9d85c638380d16a9da77a2ae9e94937c10f36b639aaafeaa1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/fringe_on/native.log": "6596450e1957ab22e10ddca11ad016df6c33cfef5d710a6bcbe2d3bfad289fb7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_ground_lifecycle_controls_1307/fringe_on/coupling.jsonl": "6177719ebfc8a29bbf3bc47dfe1f179f4bc243232cd504f07cb95a0eae372a5c"
+  },
+  "results": [
+    {
+      "case": "parallel",
+      "normal_native_completion": true,
+      "trace_off_on_exact_device_and_C_match": true,
+      "coupling": {
+        "events": 2,
+        "event_kinds": {
+          "sidewall": 2
+        },
+        "native_pointer_pairs": 1,
+        "exported_name_pairs": 1,
+        "unmapped_pointer_pairs": 0,
+        "unmapped_events": 0,
+        "sidewall_spans_verified": 2,
+        "differences": [],
+        "all_exported_C_pairs_reconstructed_at_native_precision": true,
+        "ground_capacitance_geometry_traced": false,
+        "pointwise_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "ground": {
+        "ground_updates": 12,
+        "ground_resets": 3,
+        "mutation_sites_observed": {
+          "ExtBasic.c:5248": 3,
+          "ExtBasic.c:5332": 2,
+          "ExtBasic.c:5409": 2,
+          "ExtBasic.c:5459": 2,
+          "ExtBasic.c:5510": 2,
+          "ExtBasic.c:5560": 2,
+          "ExtCouple.c:1254": 2
+        },
+        "ground_output_records": 3,
+        "substrate_output_records": 1,
+        "negative_export_clamps": 0,
+        "native_ground_state_continuity_verified": true,
+        "exported_ground_records_match": true,
+        "missing_exported_records": 0,
+        "extra_reconstructed_records": 0,
+        "spatial_ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      }
+    },
+    {
+      "case": "vertical_overlap",
+      "normal_native_completion": true,
+      "trace_off_on_exact_device_and_C_match": true,
+      "coupling": {
+        "events": 1,
+        "event_kinds": {
+          "overlap": 1
+        },
+        "native_pointer_pairs": 1,
+        "exported_name_pairs": 1,
+        "unmapped_pointer_pairs": 0,
+        "unmapped_events": 0,
+        "sidewall_spans_verified": 0,
+        "differences": [],
+        "all_exported_C_pairs_reconstructed_at_native_precision": true,
+        "ground_capacitance_geometry_traced": false,
+        "pointwise_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "ground": {
+        "ground_updates": 11,
+        "ground_resets": 3,
+        "mutation_sites_observed": {
+          "ExtBasic.c:5248": 3,
+          "ExtBasic.c:5332": 2,
+          "ExtBasic.c:5409": 2,
+          "ExtBasic.c:5459": 2,
+          "ExtBasic.c:5510": 2,
+          "ExtBasic.c:5560": 2,
+          "ExtCouple.c:522": 1
+        },
+        "ground_output_records": 3,
+        "substrate_output_records": 1,
+        "negative_export_clamps": 0,
+        "native_ground_state_continuity_verified": true,
+        "exported_ground_records_match": true,
+        "missing_exported_records": 0,
+        "extra_reconstructed_records": 0,
+        "spatial_ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      }
+    },
+    {
+      "case": "fringe",
+      "normal_native_completion": true,
+      "trace_off_on_exact_device_and_C_match": true,
+      "coupling": {
+        "events": 2,
+        "event_kinds": {
+          "sideoverlap_halo": 2
+        },
+        "native_pointer_pairs": 1,
+        "exported_name_pairs": 1,
+        "unmapped_pointer_pairs": 0,
+        "unmapped_events": 0,
+        "sidewall_spans_verified": 0,
+        "differences": [],
+        "all_exported_C_pairs_reconstructed_at_native_precision": true,
+        "ground_capacitance_geometry_traced": false,
+        "pointwise_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "ground": {
+        "ground_updates": 11,
+        "ground_resets": 3,
+        "mutation_sites_observed": {
+          "ExtBasic.c:5248": 3,
+          "ExtBasic.c:5332": 2,
+          "ExtBasic.c:5409": 2,
+          "ExtBasic.c:5459": 2,
+          "ExtBasic.c:5510": 2,
+          "ExtBasic.c:5560": 2,
+          "ExtCouple.c:1521": 1
+        },
+        "ground_output_records": 3,
+        "substrate_output_records": 1,
+        "negative_export_clamps": 0,
+        "native_ground_state_continuity_verified": true,
+        "exported_ground_records_match": true,
+        "missing_exported_records": 0,
+        "extra_reconstructed_records": 0,
+        "spatial_ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      }
+    }
+  ],
+  "all_six_native_controls_complete": true,
+  "logging_preserves_tested_circuits": true,
+  "legacy_side_overlap_runtime_path_qualified": false,
+  "numeric_ground_lifecycle_verified": true,
+  "ground_capacitance_geometry_traced": false,
+  "full_PLL_geometry_trace_qualified": false,
+  "pointwise_placement_qualified": false,
+  "release_ready": false
+}
