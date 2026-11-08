@@ -710,3 +710,7 @@ A separate collector requires explicit corrected active-executable identities in
 ### Corrected tuning interpolation collection queued (1350/1351)
 
 The live CPU-29 collector pins a three-point protocol before any corrected capture completes: fine 110/182 fit, fine 149 independent holdout. All three native controllers and physical observers are initialized; fine 182 has now acquired its lease and its actual corrected executable, PID birth and CPU-27 affinity are verified. The collector waits for completed native and physical receipts without modifying those jobs. This narrow interval cannot qualify the full tuning range or replace endpoint/corner measurements. See `selected_keeper_corrected_BSIM_TT_collection_launch.json`.
+
+### Resolved overlap/fringe full-layout trace queued (1352)
+
+A live CPU-28 controller verifies the unchanged checked GDS, isolated logging engine and eight native controls, then waits for a 16 GiB lease (24 h queue cap). One native extraction has a separate 1800 s cap and no retry. Unlike trace 1308, this engine records resolved overlap shielding and fringe support. Full-layout circuit/ledger/spatial audits remain pending; split geometries and ground placement are not promoted. See `selected_keeper_resolved_fringe_trace_launch.json`.

@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resolved_fringe_trace_1352/inputs.json": "d9ed1820b7c2fe7d17ec9da696f819e67eaad1976c49b8de1ee2cb58f8a3d182"
+  },
+  "owner": {
+    "pid": 2126450,
+    "birth": "133044773"
+  },
+  "CPU": 28,
+  "memory_GiB": 16,
+  "native_cap_s": 1800,
+  "resource_queue_cap_s": 86400,
+  "maximum_native_cases": 1,
+  "automatic_identical_retry": false,
+  "state": "waiting_for_global_CPU_RAM_budget",
+  "full_PLL_spatial_audit_complete": false,
+  "ground_capacitance_geometry_traced": false,
+  "release_ready": false
+}
