@@ -1,0 +1,28 @@
+{
+  "cases": {
+    "1428": {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_R_pilot_1428/assessment.json",
+      "receipt_sha256": "0ca90136552488d3d228b5cebd28fa235426ec12dc84a556518bf9bfd042957d",
+      "native_completed": false,
+      "reason": "native process terminated by SIGSEGV; no completed resistor export",
+      "native_log_sha256": "6456408e53317c50ff36acaa8c9345969dbf5ded6ccd3cf8e520e1bfa6de3f6e"
+    },
+    "1429": {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_R_stock_1429/assessment.json",
+      "receipt_sha256": "dd8857feb25adfd584f8a758b645b5e36e883b8ff25a3f19a28478411c4aceaf",
+      "native_completed": false,
+      "reason": "RuntimeError('compiled worker failed (-11): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_R_stock_1429/native.log')",
+      "native_log_sha256": "b44e67fed58245e7ab18e0e573912d65e04812813f15c604ef1d93497865ca62"
+    },
+    "1430": {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_R_threshold1_1430/assessment.json",
+      "receipt_sha256": "09d30bef4b356786944cd9e6695defabfd64966e8aeb72606bb566cbb7c0d9d1",
+      "native_completed": false,
+      "reason": "RuntimeError('compiled worker failed (-11): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_R_threshold1_1430/native.log')",
+      "native_log_sha256": "40094bdec8ff94b31c8f61b30517c04ea67de3c5459c7fbebbea2fe2c4d8e7f5"
+    }
+  },
+  "distributed_R_control_pass": false,
+  "PLL_model_qualified": false,
+  "release_ready": false
+}

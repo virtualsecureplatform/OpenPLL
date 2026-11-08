@@ -1,0 +1,18 @@
+{
+  "owner": {
+    "pid": 2244303,
+    "birth": "135548555",
+    "process_group": 2244303
+  },
+  "actual_CPU_affinity": [
+    25
+  ],
+  "status": {
+    "state": "conditional_native_replay_running",
+    "release_ready": false
+  },
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_replay_1427/native_inputs.json": "03829c869159577ff72c7200f7e2f9c21c4a725e35ccf51275a297bc64c6e242"
+  },
+  "release_ready": false
+}

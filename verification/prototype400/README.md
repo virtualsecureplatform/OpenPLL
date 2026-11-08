@@ -1041,3 +1041,19 @@ receiver replay1427 on CPU25. It preserves the reference260ns duration,
 automatic. The purpose is a controlled loading-sensitivity comparison
 against the first-clamped replay1403, not changed-controller prediction.
 Its launch receipt does not claim completed native simulation.
+
+### Failed two-port R controls and live receiver replay (2026-11-08)
+
+Native1428/1429 use separate A/AFAR port labels on one conductor and
+threshold0. Both modified and stock Magic terminate with SIGSEGV after
+the shorted-port warning and extraction start. Distinct stock1430 changes
+threshold to1 and also crashes. All three native input sets were verified
+inside the tool container. These are retained failures, not passing R
+controls; neither crash cause nor coupling-change responsibility is known.
+No completed resistor export exists. A supported nonzero-R control, such
+as the completed PLLOUT74-R pilot, is still required with geometry and
+coupling changes controlled separately.
+
+Receiver replay1427 is running after complete waveform preparation, on
+verified actual CPU25 with the pinned old backend and8GiB cap. No partial
+waveform analysis or completed loading conclusion is reported.
