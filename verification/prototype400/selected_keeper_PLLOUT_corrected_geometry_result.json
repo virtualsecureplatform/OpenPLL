@@ -1,0 +1,52 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_EXT_driver_anchors_1250/assessment.json": "37bf4d2ecf7b3fa920e25612027753c42ed5b169e4cb8dbccb1130a98cfe6cf5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_port_projection_1334/assessment.json": "bed746e5247fd478d2c064afc5266a49a70cbe03c05fe9423b0e064f3913ef05",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_comparison_1337/assessment.json": "60a478d323c6fca001e5323a702c9709aef7af62b5e5d2ed1e2f465bf625f4ea",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/flat.gds": "d972dc2d4cca83011936b6980981ad5188a4f6365b07cf896cd08c00b6b8b378",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/pilot.tcl": "820f9f234591f638a026c7c316431601019306e56cfaf95d41bf54a28c15f0a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_port_projection_1334/install/bin/magic": "b9f2bfc02f8b507832b5779223b5e02756fa2b7fa44fe4869d7918c21f7c31a0",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_PLLOUT_R_corrected_geometry_v2.py": "d389699b02345a426b5649be5e576613ac7abaa6fdeabdafc9fdd43ce761314e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compiled_charge_v2.py": "9c73d39edb078a302e69a3f87f3d616d8948a43698b3b79b2d9549c4bd6749e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/replay_keeper_flat_signed_C.py": "64ec7b45868d1e88eba320f64d46dc31333dae872bec8f8168874b6ad3fd0f6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_flat_geometry_C.py": "d1b11a6e7ad3b63724c815914f9c30ace8d084a414a0c43b8ffc66d6e807e13e"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/pilot.spice": "d4c600120831057f7aefc39ae11bb17098c7d45e3db4ee54898827ff1a50d625",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/IntegerPLL_400MHz_KeeperFlatC.res.ext": "c93f173d9efb00d9c431906721f865ea49fb7e4e2e5879016d3a064f002bcb15",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/IntegerPLL_400MHz_KeeperFlatC.ext": "31971678ed49b1696bbe22545dbb8c326c785e5c104b54cec5773391096678eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/native.log": "1ae43d7b44fdf46161bd6c4dd3f3a5486f2aaa46f756a633865205e8bfb8661b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/feedback.txt": "f6726585976d51242f859b0070c82f2f8a5d309b23c5ff9ca09adcec07c44f04",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/resistance_area.jsonl": "e9bdc6cfc83abaa42e7f2a45cbb8f2bc89172c05552034157333a988021c7ce2"
+  },
+  "native_process_completed": true,
+  "single_breakpoint_area_sign_corrected": true,
+  "port_drivepoint_tile_intersection_corrected": true,
+  "active_magic_executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_port_projection_1334/install/bin/magic",
+  "active_magic_sha256": "b9f2bfc02f8b507832b5779223b5e02756fa2b7fa44fe4869d7918c21f7c31a0",
+  "capacitance_conservation_verified": false,
+  "initial_full_RC_mode": false,
+  "explicit_extresist_after_C_only": true,
+  "requested_net": "PLLOUT",
+  "native_statistics": {
+    "total_nets": [
+      1
+    ],
+    "extracted_nets": [
+      1
+    ],
+    "output_nets": [
+      1
+    ]
+  },
+  "emitted_R_card_count": 74,
+  "exactly_one_requested_network_verified": false,
+  "primitive_and_C_contraction_verified": false,
+  "distributed_wire_R_qualified": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}
