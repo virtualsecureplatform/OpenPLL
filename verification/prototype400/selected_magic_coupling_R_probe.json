@@ -1,0 +1,110 @@
+{
+  "cases": [
+    {
+      "input_sha256": {
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_R_probe_1258/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_R_probe_1258/probe.tcl": "44bfad5f3cd2883f5011633bbf650f3ae89b440dd9d83994ec42884ee876e82b",
+        "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+        "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_coupling_R_export.py": "93eb8fdc2cce4c130d0f7da45eee7a6793f84ebd312ffb28269f9498026298c6",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compiled_charge_v2.py": "9c73d39edb078a302e69a3f87f3d616d8948a43698b3b79b2d9549c4bd6749e5"
+      },
+      "artifacts": {
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_R_probe_1258/before.spice": "47421b1bebdea293fe8360049a09a31b394a447e31c477e902d6bffada8a972b",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_R_probe_1258/after.spice": "236dcf2949a9d1065f033ded9c5cd2a6b00876d598b7f9f282ecc365597a379e",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_R_probe_1258/OpenPLL_Coupling_R_Probe.ext": "cd382b53ab75a7b9ae98d3112867fcade94b04d33ab122ff0cffc61cdbf23feb",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_R_probe_1258/OpenPLL_Coupling_R_Probe.res.ext": "d3892f53a26c533499fab2d71806f9b227bbb1a1af97fec9a733f370f090db04",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_R_probe_1258/native.log": "46a45c68e9ad5a526307d1cb144d34dd7be9f2873b8309ea5512581eef0b73a5",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_R_probe_1258/feedback.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "normal_native_completion": true,
+      "original_A_B_coupling_F_exact": "391111/100000000000000000000",
+      "original_A_B_coupling_fF": 3.91111,
+      "contraction": {
+        "reference_primitives": 0,
+        "candidate_primitives": 0,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 0,
+        "positive_wire_R_cards": 0,
+        "wire_R_components": 0,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 3,
+        "contracted_nonzero_C_pairs": 3,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a",
+              "w_0_0#"
+            ],
+            "reference_F_exact": "28413/10000000000000000000",
+            "contracted_F_exact": "675241/100000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 0,
+        "exact_device_and_C_contraction_verified": false
+      },
+      "distributed_wire_R_qualified": false,
+      "model_qualified": false,
+      "release_ready": false,
+      "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_R_probe_1258/assessment.json"
+    },
+    {
+      "input_sha256": {
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_no_coupling_R_probe_1259/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_no_coupling_R_probe_1259/probe.tcl": "16c2b97705f80861d05704bb48cd1a697ddbc704638a4877c2c94cca827dbdcf",
+        "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+        "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_coupling_R_export_v2.py": "b559b8966a5ba849efb711b9cd850efdef2a1b1b7dfb52b55d19f89b24eafbe0",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compiled_charge_v2.py": "9c73d39edb078a302e69a3f87f3d616d8948a43698b3b79b2d9549c4bd6749e5"
+      },
+      "artifacts": {
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_no_coupling_R_probe_1259/before.spice": "d4f12d01ac627aef3b29500d4c68e842283a5d83908dff692a076148b740f2db",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_no_coupling_R_probe_1259/after.spice": "d4f12d01ac627aef3b29500d4c68e842283a5d83908dff692a076148b740f2db",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_no_coupling_R_probe_1259/OpenPLL_Coupling_R_Probe.ext": "941315e109cd8b5825cb46aa4922fe34c45bfc3afcb89801c9d0e3ae244c0075",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_no_coupling_R_probe_1259/OpenPLL_Coupling_R_Probe.res.ext": "2735416297d5a24cb8b903175f4cac31c4dff304a85eb74c1d7132e9460332df",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_no_coupling_R_probe_1259/native.log": "29cbcd7421b48b4634fae740124e2177a254476445bfbcf954342cefde7176f6",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_no_coupling_R_probe_1259/feedback.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "normal_native_completion": true,
+      "coupling_enabled": false,
+      "original_A_B_coupling_F_exact": "0",
+      "original_A_B_coupling_fF": 0.0,
+      "contraction": {
+        "reference_primitives": 0,
+        "candidate_primitives": 0,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 0,
+        "positive_wire_R_cards": 0,
+        "wire_R_components": 0,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 2,
+        "contracted_nonzero_C_pairs": 2,
+        "C_pair_differences": [],
+        "exact_aggregated_C_match": true,
+        "negative_candidate_C_cards": 0,
+        "exact_device_and_C_contraction_verified": true
+      },
+      "distributed_wire_R_qualified": false,
+      "model_qualified": false,
+      "release_ready": false,
+      "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_no_coupling_R_probe_1259/assessment.json"
+    }
+  ],
+  "positive_control_reproduces_added_substrate_C_with_retained_coupling": true,
+  "negative_control_preserves_C_operator": true,
+  "portable_main_reproducer_commit": "312eb62",
+  "fix_applied": false,
+  "model_qualified": false,
+  "release_ready": false
+}
