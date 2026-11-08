@@ -802,3 +802,7 @@ All 1,030 PLLOUT coupling endpoint pairs map one-to-one between checked EXT and 
 ### Full TABLEFILE native replay started (1369)
 
 All 7,616 source files and their receipt complete verification, and the bounded native replay launches. The actual old-backend executable hash, PID birth, CPU-29 affinity and inherited 8 GiB address-space limit are verified independently of the GNU time wrapper. Native parsing has progressed to device/model setup. An interim RSS is not a completed peak measurement; normal replay completion, waveform comparison and final memory/runtime remain pending. This benchmark retains the known old backend solely for comparison with its completed reference; corrected-backend qualification remains separate. See `selected_keeper_TABLEFILE_native_launch.json`.
+
+### Completed TABLEFILE replay comparison observer initialized (1374)
+
+A live CPU-29 observer waits for normal completion of 1369, verifies waveform/model identity and artifact closures, and then compares its free PLLOUT with the identical completed captured reference. It reports final-window frequency and rising/falling edge differences with the existing equal-count/ordinal-pairing limitations. Five waveform helper tests pass. The actual replay is still simulating; partial RAW is not analyzed. Sampled-boundary consistency, numerical convergence and an independently predictive changed-controller model remain distinct unqualified work. See `selected_keeper_TABLEFILE_replay_comparison_launch.json`.

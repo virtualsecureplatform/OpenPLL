@@ -1,0 +1,17 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_TABLEFILE_replay.py": "d62582d34ea7467e917799231d414ef11c071cc3ae8bbe64d3168633e6dfe9c8"
+  },
+  "owner": {
+    "pid": 2181731,
+    "birth": "133537736"
+  },
+  "CPU": 29,
+  "analysis_memory_GiB": 8,
+  "observation_cap_s": 172800,
+  "state": "waiting_for_completed_TABLEFILE_replay",
+  "waveform_comparison_helper_tests_passed": 5,
+  "partial_RAW_analysis_allowed": false,
+  "predictive_model_qualified": false,
+  "release_ready": false
+}
