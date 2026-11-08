@@ -1,0 +1,42 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_off/view.spice": "b91cf55ddd987851491e951396c2f5e77ca98e51f566f06bd9297cb0451d11af",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_on/view.spice": "b91cf55ddd987851491e951396c2f5e77ca98e51f566f06bd9297cb0451d11af",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_on/Area_dangling_tee.res.ext": "c48ef5bcf91f7e8659f9f043a8e9b59d24ceb013d3a541ec80507e3f2cd716cf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_area_trace_1319/assessment.json": "c71eb1e4ae9191d69a3752fd798b95359f6816ca3aad0d7b123c14e338e48f67"
+  },
+  "completed_export_observations": [
+    {
+      "file": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_off/view.spice",
+      "negative_capacitors": [
+        {
+          "nodes": [
+            "a",
+            "sub"
+          ],
+          "value_F_exact": "-9887/10000000000000000000",
+          "value_fF": -0.9887
+        }
+      ]
+    },
+    {
+      "file": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_on/view.spice",
+      "negative_capacitors": [
+        {
+          "nodes": [
+            "a",
+            "sub"
+          ],
+          "value_F_exact": "-9887/10000000000000000000",
+          "value_fF": -0.9887
+        }
+      ]
+    }
+  ],
+  "negative_capacitor_reproduced_trace_off_and_on": true,
+  "single_breakpoint_sign_branch_runtime_exercised": false,
+  "source_cause_proven": false,
+  "network_passivity_assessed": false,
+  "distributed_wire_R_qualified": false,
+  "release_ready": false
+}
