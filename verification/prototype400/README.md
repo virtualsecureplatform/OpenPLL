@@ -1998,3 +1998,14 @@ Completed receipts, all corner errors and the native runner are retained after
 input/artifact verification. The simple surface is not integrated as a qualified
 receiver; richer voltage dependence and a causal state response remain required.
 No PLL release gate is closed by these measurements.
+
+Corrected fine182 native1346 and physical1347 are complete:379.311621187 MHz
+at coarse20 /10 ps, all saved values finite, stationary requested code, and
+all604 physical endpoints matching over26,073 samples. Controller elapsed is
+49,829.40 s. The completed native/physical receipts were independently reverified.
+Corrected collection1351 now has its predeclared fit points110/182 and separate
+holdout149, all at10 ps with matching physical controls. Linear-frequency
+prediction at149 has -350.832349 ppm error; linear-period prediction has
+-688.253260 ppm error. Neither error is accepted as a global bound. These
+measured points do not bracket400 MHz, and no extrapolated target is supplied.
+Other-corner, wire-R and closed-loop qualification remain open.
