@@ -2038,3 +2038,11 @@ Thus the static pilot's20–60 ns window cannot be treated as a simultaneous
 full-reference startup correlation. Any comparison with the final reference is
 only a steady-frequency diagnostic under different programming/reset histories;
 startup and settling require separate qualification.
+
+Receiver-load sensitivity pilot1536 repeats the static TT coarse20/fine149
+case with zero additional receiver capacitance on CPU27. Native extracted
+capacitors remain. Deck comparison confirms every other electrical statement
+and observation matches1531 after normalizing the RAW output path. This is a
+separate one-shot60 ns/10 ps case, not a retry. Both captures must complete
+before a load-sensitivity frequency diagnostic can be reported; neither passive
+termination is qualified as the full downstream environment.
