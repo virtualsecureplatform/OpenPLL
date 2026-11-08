@@ -1,0 +1,41 @@
+{
+  "reference": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266",
+  "candidate": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_step5_1281",
+  "physical_observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_step5_physical_1283",
+  "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_step5_comparison_1284",
+  "native": {
+    "pid": 2007504,
+    "birth": "131566450",
+    "process_group": 2007504
+  },
+  "owners": [
+    {
+      "pid": 2007407,
+      "birth": "131566192"
+    },
+    {
+      "pid": 2007646,
+      "birth": "131569280"
+    },
+    {
+      "pid": 2007726,
+      "birth": "131570992"
+    }
+  ],
+  "electrical_deck_identical_except_output_path_and_max_step": true,
+  "reference_max_step_ps": 10,
+  "candidate_max_step_ps": 5,
+  "CPU": 26,
+  "memory_GiB": 16,
+  "native_cap_s": 86400,
+  "maximum_new_native_cases": 1,
+  "automatic_identical_native_retry": false,
+  "observer_initialization_failure": {
+    "log": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_step5_physical_1282.launch.log",
+    "reason": "observer submitted before native inputs.json existed",
+    "native_unaffected": true,
+    "replacement_initialized_after_manifest_exists": true
+  },
+  "numerical_convergence_qualified": false,
+  "release_ready": false
+}
