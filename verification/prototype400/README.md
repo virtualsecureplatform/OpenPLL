@@ -606,3 +606,9 @@ The full-layout coupling auditor preserves double-precision event order per nati
 ### Ground-capacitance trace coverage review
 
 The pinned extraction sources contain 18 direct `nreg_cap` mutation sites across ExtBasic, ExtCouple and ExtRegion. Area/perimeter additions, shielding subtractions, substrate relocation, property/option suppression, near-zero clamps and the final negative export clamp must be accounted for before spatial redistribution. The existing coupling-only trace omits these ground updates. Its search boxes also do not resolve shielding masks. The reviewed inventory records source hashes and required coverage; it is not an alias-aware whole-program proof or an implemented ground ledger. See `selected_magic_ground_capacitance_source_review.json`.
+
+### Full-layout trace circuit neutrality (1303/1305)
+
+The coupling-only traced extraction completes normally on the unchanged checked flat GDS. Exact comparison with 1202 matches all 62,338 primitive calls, their parameters and endpoints, ordered formal ports, and all 341,067 nonzero capacitor pairs with zero differences or negative capacitor cards. The 21 GB coupling trace reconstruction audit is still running. This proves circuit neutrality for this extraction, not pointwise placement or a distributed RC model. See `selected_keeper_trace_circuit_equivalence.json`.
+
+A separate isolated tracing build instruments all 18 direct ground-capacitance mutations and observes native node output using one shared extraction epoch. Its numerical ledger validator checks state continuity, native scaling/clamps and exported node records; four tests pass, alongside the three coupling auditor tests. Compilation completes and installation is in progress. Native circuit-neutrality and ground-ledger controls remain pending; spatial shielding/ground placement remains unimplemented. The coupling auditor accepts explicit ground events for separate validation.

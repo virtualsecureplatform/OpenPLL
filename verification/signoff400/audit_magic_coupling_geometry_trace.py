@@ -26,6 +26,8 @@ def reconstruct(trace, ext):
         r = json.loads(line)
         prefix = (r['cell'], r['epoch'])
         epochs.add(prefix)
+        if r['kind'] in ('ground_update', 'ground_output'):
+            continue  # Validated separately by audit_magic_ground_lifecycle.
         if r['kind'] == 'node_name':
             key = (*prefix, r['node_id'])
             if key in names and names[key] != r['name']:
