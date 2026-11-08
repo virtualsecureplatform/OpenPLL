@@ -856,3 +856,7 @@ The prepared helper copies direct forcing and observed PLLOUT samples unchanged,
 ### Audited waveform follow-up controller live (1385)
 
 The generation runner now has an explicit 24 h completed-prerequisite observer, checking each producer's PID/birth identity and terminal status. A live CPU-29 controller waits for symbolic reduction 1383 and all native RC controls 1384 before requesting its own 2 GiB lease. It consumes no analysis lease while waiting, limits numerical-library threads to one, does not retry failed prerequisites and never launches native PLL simulation. Generation and all replay/dynamic qualification remain pending. See `selected_keeper_aggregate_waveforms_launch.json`.
+
+### Full-core initial-seed proof binding queued (1386)
+
+The completed full-core baseline induction in `prototype_v3_tracking_configuration_proof_002` and legal-clock reachability witness 002 declare the same nine RTL hashes as keeper route 1136. A new live controller verifies their completed evidence and reconstructs both AIGs from current declared source paths before accepting reuse. The deterministic witness constraints are extracted literally from the hash-pinned witness producer and apply only to the negative control. A 2 GiB lease, 2 h resource queue cap and separate 600 s export cap bound the reconstruction. No new induction is requested. Binding is pending; physical CDC/reset timing, routed equivalence and full-core behavior qualification remain open. See `selected_keeper_seed_RTL_binding_launch.json`.
