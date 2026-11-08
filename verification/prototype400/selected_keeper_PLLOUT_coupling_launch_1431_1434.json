@@ -1,0 +1,29 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_magic_geometry_explicit_coupling.py": "23b80ed9c79b5e16c4a5ead4e76334b03c9dc750a60dfd14a3845cd6448af30c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_PLLOUT_R_explicit_coupling.py": "29f12d991a91231631121a6d98b7e2f51ee092dab2e6a6682009a6526ba7de64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_explicit_coupling_PLLOUT.py": "d47b0b19185a028f5e2d7bf02da53de38bacb5ae708df185ac6eba5835f2b07e"
+  },
+  "jobs": {
+    "build": {
+      "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_geometry_explicit_coupling_1431",
+      "owner": {
+        "pid": 2245176,
+        "birth": "135569208"
+      },
+      "state": "diagnostic_make"
+    },
+    "pipeline": {
+      "directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_coupling_pipeline_1434",
+      "owner": {
+        "pid": 2246834,
+        "birth": "135574010"
+      },
+      "state": "waiting_for_combined_engine_and_native_controls"
+    }
+  },
+  "maximum_full_layout_native_cases": 1,
+  "completed": false,
+  "model_qualified": false,
+  "release_ready": false
+}

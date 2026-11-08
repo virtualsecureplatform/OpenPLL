@@ -1057,3 +1057,20 @@ coupling changes controlled separately.
 Receiver replay1427 is running after complete waveform preparation, on
 verified actual CPU25 with the pinned old backend and8GiB cap. No partial
 waveform analysis or completed loading conclusion is reported.
+
+### Combined geometry and explicit-coupling PLLOUT control queued
+
+Build1431 composes the exact source transforms from geometry engine1334
+with the explicit-coupling import diagnostic1417, in a new isolated source
+tree and installation. Pipeline1434 runs four native stock/combined
+coupling-on/off controls1432, then permits one PLLOUT extraction1433 from
+the unchanged flat1202 GDS with the1250 structural-anchor preflight. The
+pilot requires the five geometry-source hashes and trace-header hash to
+match the completed1334 baseline exactly; only `ResReadExt.c` adds the
+coupling import change. Full extraction uses CPU28,16GiB and1800s cap,
+simplification off, same PLLOUT selection and signed-C threshold as1339.
+The follow-up audit must verify primitive recovery, R network and explicit
+C charge after ideal-R contraction against1202/1339. No cap conservation,
+placement or dynamic qualification is asserted at launch; no release tool,
+PDK or layout is modified. Build and observer actual PID/birth are pinned
+in the launch receipt.
