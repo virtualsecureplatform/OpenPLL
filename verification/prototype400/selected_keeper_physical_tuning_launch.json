@@ -1,0 +1,42 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/assessment.json": "66a33a9102b4b4ef0a948aefc0714ed2d0ac239608023a6d2b79b213dc66b673",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208/assessment.json": "a3c818e04c7f616498519d8fc326c20f5878a80ecfe07382f27207a2b87589fa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_fine149_allV_1238/inputs.json": "a9df1198eb1029b1e84c57f729601480bd4396e3d22ead2f398206a63e8e387d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136/assessment.json": "423ec02bd4de48457acf1e9fa3ba715704e3387bfcbb2a6650cbf195e1a600c5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_ProgrammedCore.v": "eba2157966c0d799bb269c4c108ce1e125ca5e90a2e10c019c60deed12cf530d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_DigitalCore.v": "4cba0c4b262d43d5b18e484affdc1c03e0c72f8e21de3a7ce044c66f4f7a9055",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_B2TH.v": "7cdf2a2224e2b1fcf848cc1cd42b5417e3d0d1bb8dea82e0c274e5065432f74b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208/nodes.json": "7316ef06b9c3b4141066f7c2f6c834963cbcaa7db4dab306ebb556d881aa9ff3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/chains.json": "1a38c79e1d9eb9f556b259df7b1f505fc1431346d5206e29876b5242ac6ae955",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_fine149_allV_1238/owner.json": "6da6e1d674d751432d4fe8f79c854a0bc59f85b396636b3902c15ffe61341a91",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py": "4b83a4d6c4951cafd271eeeab996644b63350c2b75c2bc3e45dcff1d156b8a09",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/plan_keeper_conditional_replay.py": "765a5ccfcf27e5c363755c2ef5112d9dc5ecc96a6e82636e05034070ceeb38f5"
+  },
+  "expected_coarse": 20,
+  "expected_fine": 149,
+  "window_ns": [
+    200,
+    260
+  ],
+  "low_max_V": 0.36,
+  "high_min_V": 1.44,
+  "release_ready": false,
+  "source_plan": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_physical_tuning_1265/plan.json",
+  "source_plan_sha256": "603fec3f0d10aedba8647c6076ac0242bf4dd726ee2e2b2c8e8ccb7340ff6ac3",
+  "observed_endpoint_count": 604,
+  "observed_control_bits": 302,
+  "expected_coarse_polarity": "normal",
+  "expected_fine_polarity": "inverted",
+  "status_at_retention": {
+    "state": "waiting_for_completed_native_physical_controls",
+    "release_ready": false
+  },
+  "owner": {
+    "pid": 1985556,
+    "birth": "131164696"
+  },
+  "completed_native_control_assessment_available": false
+}
