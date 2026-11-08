@@ -1,0 +1,77 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_resistance_pilot_1251/assessment.json": "23ea3dc7a736653cb9deb987fcdeb4dd0f3210ca09efa39508588a48ae3c1abd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_resistance_pilot_1251/pilot.spice": "0b1467afb00b5663627e826ff5a233227f578677d833fe6000173846073b7c84",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "reference_primitives": 62338,
+  "candidate_primitives": 62338,
+  "primitive_multisets_match": true,
+  "missing_primitive_count": 0,
+  "extra_primitive_count": 0,
+  "wire_R_cards": 78,
+  "positive_wire_R_cards": 78,
+  "wire_R_components": 1,
+  "components_joining_distinct_reference_nodes": [],
+  "ordered_formal_ports_match": true,
+  "reference_nonzero_C_pairs": 341067,
+  "contracted_nonzero_C_pairs": 341067,
+  "exact_aggregated_C_match": false,
+  "negative_candidate_C_cards": 0,
+  "exact_device_and_C_contraction_verified": false,
+  "exact_requested_network_coverage_verified": false,
+  "distributed_wire_R_qualified": false,
+  "native_simulation_allowed": false,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_contraction_1252/assessment.json",
+  "source_assessment_sha256": "bf0dcb7cff0fdc2303668a8b38fb3e29f9da340541420e37bd0d115eb3fb9155",
+  "C_pair_difference_count": 8188,
+  "C_pair_differences_not_incident_on_PLLOUT": 8187,
+  "maximum_absolute_C_pair_difference_fF": 66.0057,
+  "first_three_C_pair_differences": [
+    {
+      "nodes": [
+        "a_100004_32791#",
+        "vgnd"
+      ],
+      "reference_F_exact": "24621/100000000000000000000",
+      "contracted_F_exact": "4953/20000000000000000000"
+    },
+    {
+      "nodes": [
+        "a_100004_39319#",
+        "vgnd"
+      ],
+      "reference_F_exact": "4849/20000000000000000000",
+      "contracted_F_exact": "2439/10000000000000000000"
+    },
+    {
+      "nodes": [
+        "a_100004_40407#",
+        "vgnd"
+      ],
+      "reference_F_exact": "10993/50000000000000000000",
+      "contracted_F_exact": "22131/100000000000000000000"
+    }
+  ],
+  "all_wire_R_endpoints_are_PLLOUT_or_PLLOUT_dot_nodes": true,
+  "native_network_counts": {
+    "total_nets": [
+      1,
+      1
+    ],
+    "extracted_nets": [
+      1,
+      1
+    ],
+    "output_nets": [
+      1,
+      1
+    ]
+  },
+  "wire_R_endpoint_count": 61,
+  "native_negative_C_cards": 0
+}
