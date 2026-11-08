@@ -1,0 +1,131 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_resistance_pilot_1251/assessment.json": "23ea3dc7a736653cb9deb987fcdeb4dd0f3210ca09efa39508588a48ae3c1abd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_pilot_C_controls_1253/assessment.json": "19160487f8e51e27a04d751d22169bbf2569ad2948ebe605e76af4635038b75b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_resistance_pilot_1251/pilot.spice": "0b1467afb00b5663627e826ff5a233227f578677d833fe6000173846073b7c84",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_pilot_C_controls_1253/original_EXT.spice": "436f455deba4586ccce410aeaf7d987a03b7e90f731daa4008cebd66b825338a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_pilot_C_controls_1253/pilot_EXT.spice": "c139caed59c94c2630b2281cedfb4a0b04e0774dea769d0f6346626f4f07eee7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_pilot_C_controls.py": "867b067e38596aa8b3a370c19078692954d8eec0ac150a49147fbd196c67fc7e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_pilot_C_comparison_1254/original_EXT_control_vs_original_C.json": "c7fb74935096d63c02303b5ee82f068cb42b043b47b894de21becb428dc5bc66",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_pilot_C_comparison_1254/pilot_EXT_control_vs_original_C.json": "512855130b5312167fd23abbdb3c5355360a2aecfa360b7bc7c6a680c4df8bb9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_pilot_C_comparison_1254/contracted_R_pilot_vs_pilot_EXT_control.json": "2992e9d35dfc51e0875683d6a2b1f5c8b4be8037e0112fdd2512beeb6a60330c"
+  },
+  "comparisons": [
+    {
+      "case": "original_EXT_control_vs_original_C",
+      "reference_primitives": 62338,
+      "candidate_primitives": 62338,
+      "primitive_multisets_match": false,
+      "missing_primitive_count": 61520,
+      "extra_primitive_count": 61520,
+      "wire_R_cards": 0,
+      "positive_wire_R_cards": 0,
+      "wire_R_components": 0,
+      "components_joining_distinct_reference_nodes": [],
+      "ordered_formal_ports_match": true,
+      "reference_nonzero_C_pairs": 341067,
+      "contracted_nonzero_C_pairs": 341067,
+      "exact_aggregated_C_match": true,
+      "negative_candidate_C_cards": 0,
+      "exact_device_and_C_contraction_verified": false,
+      "C_pair_difference_count": 0,
+      "C_pair_differences_not_incident_on_PLLOUT": 0,
+      "maximum_absolute_C_pair_difference_fF": 0.0,
+      "total_absolute_C_pair_difference_fF": 0.0,
+      "first_three_C_pair_differences": []
+    },
+    {
+      "case": "pilot_EXT_control_vs_original_C",
+      "reference_primitives": 62338,
+      "candidate_primitives": 62338,
+      "primitive_multisets_match": false,
+      "missing_primitive_count": 61520,
+      "extra_primitive_count": 61520,
+      "wire_R_cards": 0,
+      "positive_wire_R_cards": 0,
+      "wire_R_components": 0,
+      "components_joining_distinct_reference_nodes": [],
+      "ordered_formal_ports_match": true,
+      "reference_nonzero_C_pairs": 341067,
+      "contracted_nonzero_C_pairs": 341067,
+      "exact_aggregated_C_match": false,
+      "negative_candidate_C_cards": 0,
+      "exact_device_and_C_contraction_verified": false,
+      "C_pair_difference_count": 8188,
+      "C_pair_differences_not_incident_on_PLLOUT": 8187,
+      "maximum_absolute_C_pair_difference_fF": 11.7,
+      "total_absolute_C_pair_difference_fF": 83.5355,
+      "first_three_C_pair_differences": [
+        {
+          "nodes": [
+            "a_100004_32791#",
+            "vgnd"
+          ],
+          "reference_F_exact": "24621/100000000000000000000",
+          "contracted_F_exact": "4953/20000000000000000000"
+        },
+        {
+          "nodes": [
+            "a_100004_39319#",
+            "vgnd"
+          ],
+          "reference_F_exact": "4849/20000000000000000000",
+          "contracted_F_exact": "2439/10000000000000000000"
+        },
+        {
+          "nodes": [
+            "a_100004_40407#",
+            "vgnd"
+          ],
+          "reference_F_exact": "10993/50000000000000000000",
+          "contracted_F_exact": "22131/100000000000000000000"
+        }
+      ]
+    },
+    {
+      "case": "contracted_R_pilot_vs_pilot_EXT_control",
+      "reference_primitives": 62338,
+      "candidate_primitives": 62338,
+      "primitive_multisets_match": false,
+      "missing_primitive_count": 61520,
+      "extra_primitive_count": 61520,
+      "wire_R_cards": 78,
+      "positive_wire_R_cards": 78,
+      "wire_R_components": 1,
+      "components_joining_distinct_reference_nodes": [],
+      "ordered_formal_ports_match": true,
+      "reference_nonzero_C_pairs": 341067,
+      "contracted_nonzero_C_pairs": 341067,
+      "exact_aggregated_C_match": false,
+      "negative_candidate_C_cards": 0,
+      "exact_device_and_C_contraction_verified": false,
+      "C_pair_difference_count": 1,
+      "C_pair_differences_not_incident_on_PLLOUT": 0,
+      "maximum_absolute_C_pair_difference_fF": 65.9447,
+      "total_absolute_C_pair_difference_fF": 65.9447,
+      "first_three_C_pair_differences": [
+        {
+          "nodes": [
+            "pllout",
+            "vgnd"
+          ],
+          "reference_F_exact": "115343/5000000000000000000",
+          "contracted_F_exact": "890133/10000000000000000000"
+        }
+      ]
+    }
+  ],
+  "distributed_wire_R_qualified": false,
+  "native_simulation_allowed": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_pilot_C_comparison_1254/assessment.json",
+  "C_only_exports_have_unresolved_device_geometry_parameter_context": true,
+  "C_comparison_scope_only": true
+}
