@@ -1,0 +1,37 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_final_code_validation_plan_1556/plan.json": "42c1bfed932cba56ef2db4fc18937f41372ce7ccd929890d0e5c1a1412225841",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_final_code_validation.py": "c3ecad85d0043d46abe60c01d7ec3321d9280de0dacc6fb724007817146a49e8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_static_DCO_point.py": "db88c03544e2d1a4dabe2ac7ab4f0a228c23528a07b78be0bca8b968fef1db2f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine129_DCO_1557/assessment.json": "9ad0ea9b2f8289a61a23a8601459e79cb15e8bfa8e465c4c18b21fd096bdc0fa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine130_DCO_1558/assessment.json": "14f61993864c0f91841de043640b1012103d81572c2f01c778a82aa783d35c96",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559/assessment.json": "5afea6b8d77442642663475ac39424672bcb2891f8403b490bc7ea35230f5a5d"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_final_code_validation_review_1560/comparison.json": "67f139a2d01d481e41e059f8b9df98156158edbf06767b3467be7f49aac05b4c"
+  },
+  "fit_codes": [
+    128,
+    149
+  ],
+  "independent_validation_codes": [
+    129,
+    130,
+    131
+  ],
+  "original_final_code_set": [
+    128,
+    129,
+    130,
+    131
+  ],
+  "original_final_code_set_now_directly_measured": true,
+  "maximum_sampled_primary_residual_ppm": 53.62641513251276,
+  "maximum_sampled_secondary_residual_ppm": 46.7854764245601,
+  "original_gain_traces_changed_or_reassessed": false,
+  "holdouts_refitted": false,
+  "sampled_residuals_are_not_global_bounds": true,
+  "dynamic_code_step_response_qualified": false,
+  "full_layout_models_qualified": false,
+  "release_ready": false
+}

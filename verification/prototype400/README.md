@@ -86,6 +86,13 @@ all15 exact cases and waits for admission for the one missing case. Waiting is
 charged to a24 h wall cap, not the30 min active execution cap. No case is rerun,
 no RAM budget is expanded, and no complete six-knot TT pass is claimed yet.
 
+The [completed local holdouts](final_code_validation_review_1560/assessment.json)
+measure399.770237/400.001592/400.200329 MHz at fine129/130/131. Maximum sampled
+local fit residuals are53.6 ppm for frequency interpolation and46.8 ppm for
+period interpolation. The original final128–131 code set is now directly
+measured in the fast subsystem. These are local static samples, not a global
+error bound, settling proof or full-layout calibration.
+
 The current numerical work replays measured programming-input ripple and
 continues the existing full-layout references and boundary replay. Their results
 must be completed and hash-verified before selecting a calibration or correcting
@@ -2453,3 +2460,13 @@ tests pass, covering long queue waits, no execution on admission failure, claim
 release on simulator failure, changed model/parameter rejection and preservation
 of unresolved tuning requests. Incomplete infrastructure failures cannot be
 reused as gain failures. This recovery does not select a release gain.
+
+Native local holdouts1557/1558/1559 complete at coarse23/fine129/130/131:
+399.770236998/400.001592172/400.200329389 MHz, all with302 matching native tuning
+leaves. Fine130 is+3.980430 ppm versus400 MHz in this20–60 ns static-subsystem
+window; it is not a qualified physical setting. Frozen local128/149 predictions
+are assessed without refitting by1560. Maximum sampled residuals are53.626415 ppm
+(primary frequency) and46.785476 ppm (secondary period). Original gain traces
+are unchanged. Other startup windows, code-step dynamics, full-layout bias,
+PVT coverage and uniform uncertainty remain unqualified. Source receipts,
+leaf checks and lossless logs are retained; original RAW files stay in build.

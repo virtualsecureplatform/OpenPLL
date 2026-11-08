@@ -1,0 +1,27 @@
+{
+  "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_final_code_validation_review_1560",
+  "files": {
+    "inputs.json": {
+      "source_sha256": "b801f5b5303420fd0e8311f3a56f219a92cf367e0d3e187ca002de3374b80e41",
+      "retained_name": "inputs.json"
+    },
+    "comparison.json": {
+      "source_sha256": "67f139a2d01d481e41e059f8b9df98156158edbf06767b3467be7f49aac05b4c",
+      "retained_name": "comparison.json"
+    },
+    "owner.json": {
+      "source_sha256": "a619ced845e5cca65606d6148c4eed6d3a5fbfa7f723c8ac24eddb415866a1f8",
+      "retained_name": "owner.json"
+    },
+    "assessment.json": {
+      "source_sha256": "bc77c43cb46973c788fc32266eb3713b1221131beec3e72de3de5b6e275d7802",
+      "retained_name": "assessment.json"
+    },
+    "status.json": {
+      "source_sha256": "61e7c31e11477801e11867fbbf5908624ef2f8da79e255c7086f2a924859125d",
+      "retained_name": "status.json"
+    }
+  },
+  "large_RAW_artifacts_remain_in_build": true,
+  "release_ready": false
+}

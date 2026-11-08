@@ -1,0 +1,50 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_native_1419/assessment.json": "c29506e5809b2d37d6e1807d57be133cdb0af98768e089edb46902170bf4a6b5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_prescribed_boundary_roles_1522/assessment.json": "6e7a052b635676f8c2bbbcdb245f526e008c6572226dcb330ec8380b40744fe8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/assessment.json": "8ecc7596e01f4c099ce93b6bdcf27edf12b760f7fde1f61ad346507e5bb2161a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295/assessment.json": "ef66cf9e5d0c94034cbb444fd7e4ffefc8de35e2d7c8a4d76e12299553586125",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_native_1419/bindings.json": "1196e9c48eb07f249b5a141da2e7704769d6c9bd8d6ff9ab8a8284d42681ebe7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_prescribed_boundary_roles_1522/boundaries.json": "3fc2e76de478cb29067a8d9c99fbdcf6ebdc051a66d936922792ab269ad3aad2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/plan.json": "c5882f6937c5b0bed68cc4f555890e58a009c61196a573c30621639c1bf5cad5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_native_1419/model.spice": "b24896f161ee829c31de6dbc5cefa187ac51dc40b30b600733a5500cc05e6df5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559/transient.spice": "1c0ff3ddbdac3c6b0b44ffa92cacea41d19e18d41d9cec0d9ed78627d029d514",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_static_DCO_point.py": "e85c1c68fb743510646e4fc83edb4bf4df9c39c32cb5aeb39ba131330408b741",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py": "4b83a4d6c4951cafd271eeeab996644b63350c2b75c2bc3e45dcff1d156b8a09",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_isolated_control.py": "abada00c7349f8209324c743e11ab32a75eac8743e73998697c767fdb53c7117",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/retain_completed_native_trace.py": "909f6342265c6ca48aa5aaad1d49a7ee23df71c0ccb4e4dc59f551b0040f3d45",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compiled_charge_v2.py": "9c73d39edb078a302e69a3f87f3d616d8948a43698b3b79b2d9549c4bd6749e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_static_terminated_DCO.py": "d75b2f606c1a836b7bb1f4c84b21cbf9fea959d6c1fb900771d90978e21e1d8d"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559/transient.raw": "11a850312983b479236b8025010d09072b233451632457cc752adfab027e5f6f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559/native.log": "07a105f80292540f4258454bc48c517f8c4811bd816763060a29b6351ef4400a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559/memory.log": "86ba4a98fca66c65ebc931d0dff4417d99de0b3d3ca0f871826b01f700b12089",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559/leaf_checks.json": "be1d79e40e37c91dbc915a7803fc07b67ac13640c415290bf81c436e342b7067",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559/retention.json": "cde322a8e6182c06955ff76f2b7d61ce085cb17decad165d156b4ca664c31df2"
+  },
+  "normal_native_completion": true,
+  "all_saved_values_finite": true,
+  "native_elapsed_s": 1126.793269766029,
+  "native_DCO_leaf_endpoints_checked": 302,
+  "all_native_DCO_leaves_match": true,
+  "frequency_diagnostic": {
+    "rising_edges": 16,
+    "frequency_mhz": 400.20032938902256,
+    "minimum_period_ns": 2.498359597983466,
+    "maximum_period_ns": 2.4993413823671524
+  },
+  "frequency_unavailable_reason": null,
+  "coarse20_fine149_reference_frequency_MHz": 373.1482167548865,
+  "cross_code_reference_difference_ppm": 72496.96345703294,
+  "receiver_output_prescribed": false,
+  "voltage_histories_used": false,
+  "capacitive_exterior_grounded": true,
+  "receiver_load_approximation_qualified": false,
+  "startup_window_qualified": false,
+  "wire_R_included": false,
+  "independent_model_qualified": false,
+  "release_ready": false
+}

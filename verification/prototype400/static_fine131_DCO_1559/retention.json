@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "source": "/tmp/openpll-static-DCO-1fjuxr0i/transient.raw",
+      "retained": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559/transient.raw",
+      "bytes": 29881136,
+      "sha256": "11a850312983b479236b8025010d09072b233451632457cc752adfab027e5f6f",
+      "closed_native_trace_copy_verified": true
+    },
+    {
+      "source": "/tmp/openpll-static-DCO-1fjuxr0i/native.log",
+      "retained": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559/native.log",
+      "bytes": 91940,
+      "sha256": "07a105f80292540f4258454bc48c517f8c4811bd816763060a29b6351ef4400a",
+      "closed_native_trace_copy_verified": true
+    },
+    {
+      "source": "/tmp/openpll-static-DCO-1fjuxr0i/memory.log",
+      "retained": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559/memory.log",
+      "bytes": 974,
+      "sha256": "86ba4a98fca66c65ebc931d0dff4417d99de0b3d3ca0f871826b01f700b12089",
+      "closed_native_trace_copy_verified": true
+    }
+  ]
+}

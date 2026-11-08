@@ -1,0 +1,32 @@
+[
+  {
+    "coarse": 23,
+    "fine": 129,
+    "measured_Hz": 399770236.998,
+    "primary_prediction_Hz": 399791235.3926667,
+    "secondary_prediction_Hz": 399788940.43899834,
+    "primary_prediction_relative_to_measured_ppm": 52.52615808615246,
+    "secondary_prediction_relative_to_measured_ppm": 46.7854764245601,
+    "measured_relative_to400MHz_ppm": -574.4075049999298
+  },
+  {
+    "coarse": 23,
+    "fine": 130,
+    "measured_Hz": 400001592.172,
+    "primary_prediction_Hz": 400006513.0453333,
+    "secondary_prediction_Hz": 400002150.30792934,
+    "primary_prediction_relative_to_measured_ppm": 12.302134365649309,
+    "secondary_prediction_relative_to_measured_ppm": 1.3953342692385462,
+    "measured_relative_to400MHz_ppm": 3.980430000050106
+  },
+  {
+    "coarse": 23,
+    "fine": 131,
+    "measured_Hz": 400200329.389,
+    "primary_prediction_Hz": 400221790.698,
+    "secondary_prediction_Hz": 400215587.7104403,
+    "primary_prediction_relative_to_measured_ppm": 53.62641513251276,
+    "secondary_prediction_relative_to_measured_ppm": 38.12670885006142,
+    "measured_relative_to400MHz_ppm": 500.82347249991165
+  }
+]

@@ -1,0 +1,2116 @@
+[
+  {
+    "name": "COARSETHERMAL_CODE[26].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000394613948,
+    "maximum_V": 0.00024724346,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[29].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000391185871,
+    "maximum_V": 0.000336493887,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[31].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000580164678,
+    "maximum_V": 0.000405903565,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[33].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000537995612,
+    "maximum_V": 0.000305519908,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[34].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00070312517,
+    "maximum_V": 0.000356544587,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[35].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00078407893,
+    "maximum_V": 0.000578434466,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[128].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000260635152,
+    "maximum_V": 0.000177340263,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[132].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79972058,
+    "maximum_V": 1.80016454,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[133].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79975132,
+    "maximum_V": 1.80015743,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[135].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79920147,
+    "maximum_V": 1.80055427,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[136].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79818158,
+    "maximum_V": 1.8011346,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[137].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79898192,
+    "maximum_V": 1.80064825,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[138].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79871006,
+    "maximum_V": 1.80085272,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[139].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79971788,
+    "maximum_V": 1.80022512,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[140].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79954104,
+    "maximum_V": 1.80028844,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[141].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7993369,
+    "maximum_V": 1.80031684,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[142].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79852277,
+    "maximum_V": 1.80095753,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[144].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79903377,
+    "maximum_V": 1.8004463,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[145].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79891737,
+    "maximum_V": 1.80049091,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[146].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79963286,
+    "maximum_V": 1.80024614,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[147].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79951599,
+    "maximum_V": 1.80034334,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[148].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79917562,
+    "maximum_V": 1.80053652,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[149].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79945004,
+    "maximum_V": 1.800363,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[150].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79900941,
+    "maximum_V": 1.80066833,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[152].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79921609,
+    "maximum_V": 1.80052958,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[153].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79980289,
+    "maximum_V": 1.8001255,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[154].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79943995,
+    "maximum_V": 1.80030639,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[157].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79809635,
+    "maximum_V": 1.80091624,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[159].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7997029,
+    "maximum_V": 1.80017394,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[160].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79980893,
+    "maximum_V": 1.80012437,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[161].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7993459,
+    "maximum_V": 1.80040183,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[162].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79870621,
+    "maximum_V": 1.80070843,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[163].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79975146,
+    "maximum_V": 1.80016555,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[164].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79942386,
+    "maximum_V": 1.8003789,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[165].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79926506,
+    "maximum_V": 1.80034004,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[166].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79912365,
+    "maximum_V": 1.80059064,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[167].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79915775,
+    "maximum_V": 1.80054425,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[168].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79896082,
+    "maximum_V": 1.80068319,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[169].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79910373,
+    "maximum_V": 1.80057475,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[170].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79889551,
+    "maximum_V": 1.80062979,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[171].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79971067,
+    "maximum_V": 1.80021689,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[172].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79928934,
+    "maximum_V": 1.80039188,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[173].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7993528,
+    "maximum_V": 1.80042357,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[174].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7994286,
+    "maximum_V": 1.80037153,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[175].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79936877,
+    "maximum_V": 1.80041569,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[176].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7994252,
+    "maximum_V": 1.8003481,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[178].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79879283,
+    "maximum_V": 1.80059697,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[179].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79937063,
+    "maximum_V": 1.80041479,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[180].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79957706,
+    "maximum_V": 1.80030249,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[182].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79920498,
+    "maximum_V": 1.80040452,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[183].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7978711,
+    "maximum_V": 1.8013583,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[184].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79779349,
+    "maximum_V": 1.80139776,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[189].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79922511,
+    "maximum_V": 1.80034949,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[190].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79980545,
+    "maximum_V": 1.80011681,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[229].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79977404,
+    "maximum_V": 1.8001642,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[237].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79973763,
+    "maximum_V": 1.80020929,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[238].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79866577,
+    "maximum_V": 1.80067462,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[246].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79966375,
+    "maximum_V": 1.80024441,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[248].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79891819,
+    "maximum_V": 1.80068789,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[249].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79960398,
+    "maximum_V": 1.80027984,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[253].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79826658,
+    "maximum_V": 1.80124097,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[37].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000817142895,
+    "maximum_V": 0.000511425788,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[41].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000353252767,
+    "maximum_V": 0.00020252051,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[35].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000287308267,
+    "maximum_V": 0.000180873059,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[196].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79904448,
+    "maximum_V": 1.80060365,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[198].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79958142,
+    "maximum_V": 1.80028867,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[208].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79936298,
+    "maximum_V": 1.80038938,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[204].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79915106,
+    "maximum_V": 1.80053781,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[194].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79894524,
+    "maximum_V": 1.80066806,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[200].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79906608,
+    "maximum_V": 1.80058709,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[203].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79963418,
+    "maximum_V": 1.80025907,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[207].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79969075,
+    "maximum_V": 1.8002265,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[222].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79900082,
+    "maximum_V": 1.80066578,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[206].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79893563,
+    "maximum_V": 1.8006724,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[24].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000298919026,
+    "maximum_V": 0.000186547007,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[210].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79893348,
+    "maximum_V": 1.80067926,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[213].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79972454,
+    "maximum_V": 1.80021221,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[195].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79964084,
+    "maximum_V": 1.8002659,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[202].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79913004,
+    "maximum_V": 1.80054918,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[199].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79970118,
+    "maximum_V": 1.80022497,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[205].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79972538,
+    "maximum_V": 1.80021121,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[209].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79972626,
+    "maximum_V": 1.80020289,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[211].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79972167,
+    "maximum_V": 1.80020752,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[214].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79906071,
+    "maximum_V": 1.80060001,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[216].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79950491,
+    "maximum_V": 1.80034748,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[29].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000383224519,
+    "maximum_V": 0.000202199051,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[219].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79809916,
+    "maximum_V": 1.8009004,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[235].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79913404,
+    "maximum_V": 1.80053694,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[228].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79937027,
+    "maximum_V": 1.80039988,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[223].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7997675,
+    "maximum_V": 1.80018417,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[242].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79959187,
+    "maximum_V": 1.80025404,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[251].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79967799,
+    "maximum_V": 1.80023266,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[221].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79981413,
+    "maximum_V": 1.80015604,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[245].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79968142,
+    "maximum_V": 1.80024016,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[241].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79818838,
+    "maximum_V": 1.80114113,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[217].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79977595,
+    "maximum_V": 1.80018757,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[14].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000158197043,
+    "maximum_V": 0.000107365487,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[220].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79982228,
+    "maximum_V": 1.80011533,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[226].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79899445,
+    "maximum_V": 1.8006418,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[232].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79922398,
+    "maximum_V": 1.8005063,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[225].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79977864,
+    "maximum_V": 1.80017162,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[32].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000430733566,
+    "maximum_V": 0.000327872356,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[231].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79977904,
+    "maximum_V": 1.80017428,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[239].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79961041,
+    "maximum_V": 1.80027715,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[240].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79927764,
+    "maximum_V": 1.80046008,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[224].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79853802,
+    "maximum_V": 1.80091912,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[230].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7990303,
+    "maximum_V": 1.80061872,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[11].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000255630733,
+    "maximum_V": 0.000150650108,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[254].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7992503,
+    "maximum_V": 1.80035108,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[243].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79962423,
+    "maximum_V": 1.800274,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[233].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79981347,
+    "maximum_V": 1.80017228,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[130].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79822402,
+    "maximum_V": 1.80085054,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[234].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.799743,
+    "maximum_V": 1.80017341,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[227].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79977803,
+    "maximum_V": 1.80018228,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[236].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79959507,
+    "maximum_V": 1.80020631,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[252].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79780981,
+    "maximum_V": 1.80134106,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[247].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79963467,
+    "maximum_V": 1.80026294,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[244].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79865971,
+    "maximum_V": 1.80068632,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[12].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000404247462,
+    "maximum_V": 0.000205670153,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[25].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000527053322,
+    "maximum_V": 0.000264845924,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[30].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00050770767,
+    "maximum_V": 0.000338785786,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[24].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000348891461,
+    "maximum_V": 0.000248015718,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[129].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79921866,
+    "maximum_V": 1.80051156,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[28].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00213298213,
+    "maximum_V": 0.00178716392,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[27].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00204763357,
+    "maximum_V": 0.00116508972,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[250].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79808725,
+    "maximum_V": 1.80118641,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[212].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79958025,
+    "maximum_V": 1.80029415,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[215].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79972446,
+    "maximum_V": 1.80021124,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[218].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79968559,
+    "maximum_V": 1.80017519,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[10].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000175950183,
+    "maximum_V": 0.000102196461,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[66].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000456400699,
+    "maximum_V": 0.000296573032,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[67].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000114988591,
+    "maximum_V": 7.1231145e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[79].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000166851167,
+    "maximum_V": 9.61875791e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[82].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000514842167,
+    "maximum_V": 0.00024679553,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[68].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000179713346,
+    "maximum_V": 7.82958407e-05,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[18].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79887725,
+    "maximum_V": 1.80067602,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[70].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000167460927,
+    "maximum_V": 7.34041193e-05,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[20].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79653854,
+    "maximum_V": 1.80272683,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[22].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79762898,
+    "maximum_V": 1.80114577,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[75].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000247167739,
+    "maximum_V": 0.000163454926,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[15].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000126521408,
+    "maximum_V": 7.27905719e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[64].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00052884673,
+    "maximum_V": 0.00033610928,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[72].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.0002025074,
+    "maximum_V": 8.96202431e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[73].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000448193729,
+    "maximum_V": 0.000223264469,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[78].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000654186137,
+    "maximum_V": 0.000330360762,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[76].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000169966373,
+    "maximum_V": 7.44889827e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[69].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000428179438,
+    "maximum_V": 0.000215137846,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[81].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000217984813,
+    "maximum_V": 0.000169686222,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[80].DCO",
+    "expected_logic": 0,
+    "minimum_V": -9.1148736e-05,
+    "maximum_V": 6.94353555e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[77].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000247002611,
+    "maximum_V": 0.000172809689,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[84].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000208551768,
+    "maximum_V": 9.0647426e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[27].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000266229631,
+    "maximum_V": 0.000156346928,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[71].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000290018583,
+    "maximum_V": 0.000160160104,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[102].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000153482825,
+    "maximum_V": 6.68311525e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[107].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000247444556,
+    "maximum_V": 0.000148179161,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[114].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000330108498,
+    "maximum_V": 0.000193145747,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[91].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000111449941,
+    "maximum_V": 6.32452087e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[86].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00016626484,
+    "maximum_V": 7.27403881e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[85].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000475630437,
+    "maximum_V": 0.000234857846,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[94].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.0001091137,
+    "maximum_V": 5.4486024e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[87].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000276186501,
+    "maximum_V": 0.000161237985,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[88].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000184377801,
+    "maximum_V": 8.01105899e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[59].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000228844497,
+    "maximum_V": 0.000133964565,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[90].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000191617636,
+    "maximum_V": 8.36548925e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[96].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00175548869,
+    "maximum_V": 0.000928895842,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[92].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000428424659,
+    "maximum_V": 0.000275143499,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[98].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000761352886,
+    "maximum_V": 0.000357757179,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[95].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00395416338,
+    "maximum_V": 0.00314890089,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[99].DCO",
+    "expected_logic": 0,
+    "minimum_V": -6.0700172e-05,
+    "maximum_V": 5.20781919e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[103].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000470982534,
+    "maximum_V": 0.000237071417,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[74].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000164708573,
+    "maximum_V": 7.20747177e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[83].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000134592048,
+    "maximum_V": 8.49017248e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[89].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000477546527,
+    "maximum_V": 0.000250329644,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[33].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000108834438,
+    "maximum_V": 6.29007043e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[32].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000339193267,
+    "maximum_V": 0.000183656726,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[23].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000490141751,
+    "maximum_V": 0.000343716866,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[134].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79944068,
+    "maximum_V": 1.80036102,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[131].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79933432,
+    "maximum_V": 1.80030859,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[156].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79818583,
+    "maximum_V": 1.80095238,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[155].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7997515,
+    "maximum_V": 1.80022263,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[151].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79934373,
+    "maximum_V": 1.80044026,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[143].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7997124,
+    "maximum_V": 1.80023747,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[158].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79951821,
+    "maximum_V": 1.8003154,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[113].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000183645657,
+    "maximum_V": 0.000102808096,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[104].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000149563755,
+    "maximum_V": 6.466746e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[56].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000173849905,
+    "maximum_V": 0.000124142416,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[111].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00202852693,
+    "maximum_V": 0.00122708565,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[105].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000413778033,
+    "maximum_V": 0.000208770947,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[100].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000272385561,
+    "maximum_V": 0.000119100942,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[110].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000154916778,
+    "maximum_V": 7.07717179e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[118].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000146651799,
+    "maximum_V": 6.36880669e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[116].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000134470751,
+    "maximum_V": 5.83084483e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[112].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000130365202,
+    "maximum_V": 5.60769998e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[117].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000447218634,
+    "maximum_V": 0.000224306187,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[120].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000849738431,
+    "maximum_V": 0.000433081656,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[121].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000606827306,
+    "maximum_V": 0.000339093625,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[47].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000212812127,
+    "maximum_V": 0.000114283091,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[127].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000714679032,
+    "maximum_V": 0.000471496093,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[123].DCO",
+    "expected_logic": 0,
+    "minimum_V": -5.50732881e-05,
+    "maximum_V": 4.96245006e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[115].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000243515706,
+    "maximum_V": 0.000174201447,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[122].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000614177783,
+    "maximum_V": 0.000431523312,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[126].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000318124759,
+    "maximum_V": 0.000142302562,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[181].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7997833,
+    "maximum_V": 1.80018601,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[188].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79749285,
+    "maximum_V": 1.80164178,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[119].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000627565633,
+    "maximum_V": 0.000334876129,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[187].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79849789,
+    "maximum_V": 1.80068255,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[186].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79983371,
+    "maximum_V": 1.80010247,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[43].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000147238133,
+    "maximum_V": 9.29897492e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[108].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000131701891,
+    "maximum_V": 5.76435822e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[125].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000173739242,
+    "maximum_V": 9.83787011e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[177].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79945097,
+    "maximum_V": 1.80036184,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[191].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79773118,
+    "maximum_V": 1.80112398,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[109].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000453280969,
+    "maximum_V": 0.000226290533,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[185].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79981261,
+    "maximum_V": 1.80013251,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[124].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00015592965,
+    "maximum_V": 6.77252182e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[106].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000138251131,
+    "maximum_V": 6.05038672e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[101].DCO",
+    "expected_logic": 0,
+    "minimum_V": -6.02163619e-05,
+    "maximum_V": 5.36640576e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[97].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00223544671,
+    "maximum_V": 0.00132489077,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[39].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000393223785,
+    "maximum_V": 0.000206768993,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[93].DCO",
+    "expected_logic": 0,
+    "minimum_V": -7.67794059e-05,
+    "maximum_V": 4.44415294e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[44].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000417000457,
+    "maximum_V": 0.000283398057,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[51].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000100445875,
+    "maximum_V": 5.97565706e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[55].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000237203661,
+    "maximum_V": 0.000138941937,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[62].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000270876436,
+    "maximum_V": 0.000129538666,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[52].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000341831951,
+    "maximum_V": 0.00020225251,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[20].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00117137959,
+    "maximum_V": 0.000524073458,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[63].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000843567689,
+    "maximum_V": 0.000441942978,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[48].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000537631903,
+    "maximum_V": 0.000242082061,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[57].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000230765904,
+    "maximum_V": 0.000135342981,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[49].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000243187622,
+    "maximum_V": 0.000143231711,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[42].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000292506731,
+    "maximum_V": 0.000137310631,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[17].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79859912,
+    "maximum_V": 1.80106643,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[12].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7967171,
+    "maximum_V": 1.80260084,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[15].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79158478,
+    "maximum_V": 1.80403145,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[21].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79349388,
+    "maximum_V": 1.80297787,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[30].DCO",
+    "expected_logic": 0,
+    "minimum_V": -6.95610223e-05,
+    "maximum_V": 3.7322159e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[34].DCO",
+    "expected_logic": 0,
+    "minimum_V": -7.30896738e-05,
+    "maximum_V": 4.06218372e-05,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[16].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79818088,
+    "maximum_V": 1.80099973,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[14].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7929179,
+    "maximum_V": 1.80501966,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[19].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79680834,
+    "maximum_V": 1.80252577,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[61].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000512148223,
+    "maximum_V": 0.000335955131,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[54].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000282323869,
+    "maximum_V": 0.000152259436,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[46].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000264146951,
+    "maximum_V": 0.000168618747,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[65].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000167725882,
+    "maximum_V": 9.59741693e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[60].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000207473789,
+    "maximum_V": 0.000142723576,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[45].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000424657653,
+    "maximum_V": 0.000252351362,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[40].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000286562634,
+    "maximum_V": 0.000193325886,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[16].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000518729478,
+    "maximum_V": 0.00032724392,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[53].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000235993677,
+    "maximum_V": 0.00013838398,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[31].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000121148129,
+    "maximum_V": 6.77954554e-05,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[13].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7965346,
+    "maximum_V": 1.80238691,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[36].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000332942649,
+    "maximum_V": 0.000207227196,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[38].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000427099414,
+    "maximum_V": 0.000307621825,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[5].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79903296,
+    "maximum_V": 1.80083229,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[8].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79874418,
+    "maximum_V": 1.80096114,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[18].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000631622853,
+    "maximum_V": 0.000310635496,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[2].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000160703412,
+    "maximum_V": 0.000127885476,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[2].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79019985,
+    "maximum_V": 1.80548234,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[26].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000187399856,
+    "maximum_V": 0.000121737701,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[1].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79843917,
+    "maximum_V": 1.80128395,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[7].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79832629,
+    "maximum_V": 1.80104814,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[9].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79722728,
+    "maximum_V": 1.80225133,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[13].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000254534392,
+    "maximum_V": 0.000149382334,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[3].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79594363,
+    "maximum_V": 1.80207129,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[11].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79718579,
+    "maximum_V": 1.80135927,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[17].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00024888422,
+    "maximum_V": 0.000152897554,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[10].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79641089,
+    "maximum_V": 1.80163531,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[23].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000732618386,
+    "maximum_V": 0.000559423898,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[22].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00048425115,
+    "maximum_V": 0.000214977849,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[28].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000467434323,
+    "maximum_V": 0.000225027082,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[7].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000245229914,
+    "maximum_V": 0.000160479528,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[21].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.0006029785,
+    "maximum_V": 0.000322837306,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[6].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000508508509,
+    "maximum_V": 0.00032690381,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[6].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79577471,
+    "maximum_V": 1.80255541,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[4].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.0023239575,
+    "maximum_V": 0.00133696933,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[36].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000868410477,
+    "maximum_V": 0.000498671279,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[1].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000484742818,
+    "maximum_V": 0.000309060675,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[38].DCO",
+    "expected_logic": 0,
+    "minimum_V": -7.92437758e-05,
+    "maximum_V": 4.92228391e-05,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[9].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000828447228,
+    "maximum_V": 0.000536228062,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[5].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000697715666,
+    "maximum_V": 0.000430685206,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[58].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000418142575,
+    "maximum_V": 0.000206304442,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[40].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.0017937012,
+    "maximum_V": 0.00142095924,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[43].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00349138191,
+    "maximum_V": 0.00277650211,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[45].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000652902332,
+    "maximum_V": 0.000311912181,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[39].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000760741297,
+    "maximum_V": 0.000527378817,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[42].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.00272653505,
+    "maximum_V": 0.00132186646,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[37].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000642485316,
+    "maximum_V": 0.000367238333,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[25].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000365804556,
+    "maximum_V": 0.000271964089,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[3].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000558536599,
+    "maximum_V": 0.000396655619,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[0].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79559825,
+    "maximum_V": 1.80262931,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[4].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.7963398,
+    "maximum_V": 1.80186244,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[50].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000332577827,
+    "maximum_V": 0.000212695547,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[0].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.0003884786,
+    "maximum_V": 0.000172272674,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[8].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000258266022,
+    "maximum_V": 0.000159059775,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[19].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000420704353,
+    "maximum_V": 0.000238050584,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[41].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000261108658,
+    "maximum_V": 0.000193604356,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[192].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79859116,
+    "maximum_V": 1.80087434,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[197].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79969873,
+    "maximum_V": 1.80022885,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[44].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000888062057,
+    "maximum_V": 0.000457013108,
+    "passed": true
+  },
+  {
+    "name": "COARSETHERMAL_CODE[46].DCO",
+    "expected_logic": 0,
+    "minimum_V": -0.000934027086,
+    "maximum_V": 0.000458688218,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[193].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79971257,
+    "maximum_V": 1.80021748,
+    "passed": true
+  },
+  {
+    "name": "DCO_THERM[201].DCO",
+    "expected_logic": 1,
+    "minimum_V": 1.79972506,
+    "maximum_V": 1.80021135,
+    "passed": true
+  }
+]
