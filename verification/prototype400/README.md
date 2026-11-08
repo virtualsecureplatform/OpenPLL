@@ -1523,3 +1523,16 @@ version 2 uses an empty polygon XOR, which confirms geometric equality. Neither
 correction changes source GDS or extracted capacitance. The earlier observations
 remain preserved. Capacitance coefficient/spatial and dynamic qualification are
 separate from the passing device-connectivity and mask checks.
+
+
+Literal native reference 1487 is prepared only after the same export passes flat
+device LVS and electrical-mask checks. It preserves 62,302 actual primitives in
+433 literal templates, two checked poly adapters, and all 340,888 nonzero constant
+capacitances with exact endpoint/value checks. Only 1,022,914 zero-valued C cards
+are omitted. It requires nonnegative constant branches, so that constant-C part
+has nonnegative branch energy. It does not force the old 62,338-device inventory
+onto the physically changed candidate. These are static preparation properties,
+not native corrected-backend correlation, fill-aware wire-R timing, or predictive
+closed-loop qualification. No new full analog capture is launched, no spatial
+endpoint approximation is applied, and the model remains unselected with native
+simulation allowance and release flags false.

@@ -1,0 +1,45 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/assessment.json": "5b08dd149ac81ac231abc581f34cb86953415d0b8f6f834a290b32efb6b015f6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_LVS_1484/assessment.json": "2b38d47c0ed6a7185e52ae1d89b59fe3f8d48694aa41afc317ea887640a85690",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_masks_1486/assessment.json": "84ee771ab59121cea6e21fb64911def5e5edf754b16effa6d82b90d00ad33d6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/capacitance.spice": "58472547c055b73ab2a4bfabe4f0397068103b9b2631017c72ff54090ca57cd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prepare_keeper_clock_parent_native.py": "9aa03efa6b8505326e12c1dc330e3b847e350965b845371753108152d2990322",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prepare_keeper_flat_native_v2.py": "b631630ecf9814cabbf2567350bcda5df6f442496e670a32cebcbfc3528da93c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prototype_native_literal_templates.py": "c1aaab6be9aa9da26a55c3a20f84e425b0f2aafb5c02ffb80b18457b9e282d75",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prototype_xyce_resistor_translation.py": "6653a3658920bebdd2a866a4fd28b524f5d6056534702658d260c58b529bdd2c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_hierarchical_capacitance.py": "19b97e8bb8241d14c814e16ae71e988f0c04222bc82bb6b72f9043b520418028"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_native_1487/model.spice": "c79d129d1b9f6b7a88bc5d60a3f8f3f2e45741b899382fbc3c00f8c1eccdc180",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_native_1487/nodes.json": "de447a2db960dd33c649c744a2b7e99c458bab4d5f768e795bd920075060ddc5"
+  },
+  "source_counts": {
+    "X": 62302,
+    "k_suffix_literals_expanded": 4,
+    "C": 1363802,
+    "zero_C_omitted": 1022914
+  },
+  "nonzero_C_preserved": 340888,
+  "literal_templates": {
+    "primitives": 62302,
+    "literal_templates": 433
+  },
+  "poly_adapter_templates": 2,
+  "all_nonzero_C_endpoints_and_literal_values_preserved": true,
+  "expected_primitive_count_inferred_from_unchanged_old_layout": false,
+  "independent_flat_device_LVS_match": true,
+  "electrically_active_masks_preserved": true,
+  "constant_C_nonnegative": true,
+  "constant_C_PSD_by_nonnegative_branch_energy": true,
+  "distributed_wire_R_included": false,
+  "spatial_endpoint_attachment_applied": false,
+  "only_zero_C_cards_omitted": true,
+  "corrected_backend_correlation_complete": false,
+  "internal_wire_RC_timing_updated": false,
+  "native_simulation_allowed": false,
+  "selected": false,
+  "model_qualified": false,
+  "release_ready": false
+}
