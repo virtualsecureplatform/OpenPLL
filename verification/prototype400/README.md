@@ -1647,3 +1647,16 @@ endpoint detail is retained. These classifications provide no timing waivers.
 Retained sampled logic proofs are bound rather than rerun; physical reset
 arrival, primary-reset pulse width, metastability resolution and full startup /
 disable-reenable timing remain open. No clock-branch ECO is selected.
+
+Corrected-BSIM coarse19/fine149 capture 1412 completed normally at 50 ps
+maximum step with all saved values finite. Its final 200–260 ns window measures
+362.529421912 MHz over 22 rising edges (period range 2.756672017–2.759814923 ns).
+Elapsed capture/assessment time is 18,362.34 s. Physical check 1413 observes
+6,374 samples and all 604 macro/DCO endpoint voltages match the requested static
+coarse19/fine149 code, with no ambiguous code voltage. Input and artifact hashes
+were reverified before retaining both completed receipts. This is one TT C-only
+point, with corrected executable 84ba37cb; distributed wire R, convergence,
+other-corner behavior, 400 MHz bracketing and closed-loop behavior remain open.
+Normal completion and physical validation released the predeclared parallel
+fine8/fine247 endpoint workers and independent fine198 holdout; all three native
+processes are confirmed running. Their results are not yet available.
