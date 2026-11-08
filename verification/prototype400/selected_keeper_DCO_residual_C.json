@@ -1,0 +1,390 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_driver_C_cut_1234/assessment.json": "88abdf961f83a87e84f28315b13db1ce308508cd61fa9e07b2da9163074c78f5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_partition_boundary_1230/assessment.json": "70823d970e56ff5854f37b14a80a4df5013986ae21ac409fc14ad545247c95eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/assessment.json": "66a33a9102b4b4ef0a948aefc0714ed2d0ac239608023a6d2b79b213dc66b673",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_partition_boundary_1230/boundary.json": "e665078148ba01a63d2b6c007ef951d5bafb8a0fa8a2a6f4f07f150754b00752",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/chains.json": "1a38c79e1d9eb9f556b259df7b1f505fc1431346d5206e29876b5242ac6ae955",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_driver_C_cut_1234/crossing_capacitors.json": "a9429f4af87b526a3290d6fa7f92af56d6a806af533d82e858b5caca3e0ac9e2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_keeper_DCO_residual_C.py": "60a2b8d6e56386ece82bb4cba295388a1a46d52455f871cb4451924f36e4a895",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_flat_MOS_region_join.py": "489cdd2adb11424539fccf6bfd12a31eb378f8d6be3da548d786363f9f04093a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_DCO_driver_C_cut.py": "b77eb42593482a548e4d3bf3a6f9ad2ba55ab10ab81385b080582542619f1b47",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "residual_non_control_C_card_count": 901,
+  "selected_node_count": 36,
+  "exterior_node_count": 818,
+  "total_capacitance_F_exact": "1726767/25000000000000000000",
+  "records": [
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.sky130_fd_sc_hd__nand2_8_0.a",
+      "native_labels": {
+        "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.RESET_N": 404
+      },
+      "C_card_count": 404,
+      "total_capacitance_F_exact": "1889981/50000000000000000000",
+      "total_capacitance_fF": 37.79962,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 6.8039316e-14
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.pllout",
+      "native_labels": {
+        "PLLOUT": 463
+      },
+      "C_card_count": 463,
+      "total_capacitance_F_exact": "755231/25000000000000000000",
+      "total_capacitance_fF": 30.20924,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 5.4376632e-14
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[205]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_115.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "989/5000000000000000000",
+      "total_capacitance_fF": 0.1978,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.5604e-16
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[193]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_98.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "1109/25000000000000000000",
+      "total_capacitance_fF": 0.04436,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 7.9848e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_149.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_104.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "441/10000000000000000000",
+      "total_capacitance_fF": 0.0441,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 7.938e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[240]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_137.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "51/1250000000000000000",
+      "total_capacitance_fF": 0.0408,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 7.344e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[192]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_94.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "391/10000000000000000000",
+      "total_capacitance_fF": 0.0391,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 7.038e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_147.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_110.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "61/1562500000000000000",
+      "total_capacitance_fF": 0.03904,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 7.0272e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_144.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_107.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "3873/100000000000000000000",
+      "total_capacitance_fF": 0.03873,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 6.9714e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_2_158.a",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_8_155.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "737/20000000000000000000",
+      "total_capacitance_fF": 0.03685,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 6.633e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_150.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_101.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "3411/100000000000000000000",
+      "total_capacitance_fF": 0.03411,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 6.1398e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_151.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_99.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "163/5000000000000000000",
+      "total_capacitance_fF": 0.0326,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 5.868e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_159.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_132.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "1591/50000000000000000000",
+      "total_capacitance_fF": 0.03182,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 5.7276e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_156.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_129.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "589/20000000000000000000",
+      "total_capacitance_fF": 0.02945,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 5.301e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_146.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_126.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "2773/100000000000000000000",
+      "total_capacitance_fF": 0.02773,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 4.9914e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_158.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_131.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "2757/100000000000000000000",
+      "total_capacitance_fF": 0.02757,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 4.9626e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_152.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_106.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "2703/100000000000000000000",
+      "total_capacitance_fF": 0.02703,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 4.8654e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[214]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_118.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "239/10000000000000000000",
+      "total_capacitance_fF": 0.0239,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 4.302e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[251]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_125.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "2361/100000000000000000000",
+      "total_capacitance_fF": 0.02361,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 4.2498e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_2_111.a",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_8_102.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "1119/50000000000000000000",
+      "total_capacitance_fF": 0.02238,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 4.0284e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[250]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_156.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "2229/100000000000000000000",
+      "total_capacitance_fF": 0.02229,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 4.0122e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[218]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_159.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "277/12500000000000000000",
+      "total_capacitance_fF": 0.02216,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.9888e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[211]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_117.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "221/10000000000000000000",
+      "total_capacitance_fF": 0.0221,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.978e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[219]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_120.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "549/25000000000000000000",
+      "total_capacitance_fF": 0.02196,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.9528e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[216]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_119.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "2143/100000000000000000000",
+      "total_capacitance_fF": 0.02143,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.8574e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[195]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_112.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "2071/100000000000000000000",
+      "total_capacitance_fF": 0.02071,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.7278e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[228]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_122.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "517/25000000000000000000",
+      "total_capacitance_fF": 0.02068,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.7224e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[202]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_113.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "1031/50000000000000000000",
+      "total_capacitance_fF": 0.02062,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.7116e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[199]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_114.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "191/10000000000000000000",
+      "total_capacitance_fF": 0.0191,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.438e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[223]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_123.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "187/10000000000000000000",
+      "total_capacitance_fF": 0.0187,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.366e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[235]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_121.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "913/50000000000000000000",
+      "total_capacitance_fF": 0.01826,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.2868e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[242]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_124.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "913/50000000000000000000",
+      "total_capacitance_fF": 0.01826,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.2868e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_145.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_137.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "1811/100000000000000000000",
+      "total_capacitance_fF": 0.01811,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 3.2598e-17
+    },
+    {
+      "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.dco_therm[209]",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_116.Y": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "13/800000000000000000",
+      "total_capacitance_fF": 0.01625,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 2.925e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_148.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_98.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "1109/100000000000000000000",
+      "total_capacitance_fF": 0.01109,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 1.9962e-17
+    },
+    {
+      "canonical_node": "sky130_fd_sc_hs__inv_8_153.y",
+      "native_labels": {
+        "sky130_fd_sc_hs__inv_2_94.A": 1
+      },
+      "C_card_count": 1,
+      "total_capacitance_F_exact": "57/6250000000000000000",
+      "total_capacitance_fF": 0.00912,
+      "maximum_charge_for_1p8V_exterior_excursion_C": 1.6416e-17
+    }
+  ],
+  "charge_excursion_assumption_V": 1.8,
+  "charge_sum_is_frequency_or_phase_error_bound": false,
+  "exterior_nodes_clamped": false,
+  "circuit_partitioned": false,
+  "boundary_loading_qualified": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_residual_C_1235/assessment.json"
+}
