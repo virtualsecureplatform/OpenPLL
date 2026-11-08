@@ -1,0 +1,34 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/assessment.json": "6be9784b418d77a29590a83038c50d9685f1ba2a7e95e50eeeac51d8828b4b5e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/model.spice": "db4c9cd5d521781d224a0551c94d2100e0c4bcbe978b01ec42b479a81243daf1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/bindings.json": "f048d65334cf68457a35d9f9f55db8b3f01d653982d13a68f403b2db6b7e58c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/inventory_keeper_capacitor_boundary_reduction.py": "58341d112f4a386b4bfc894648c93bbc3505b57b3c1197cd96771ba5dcc3fa01",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b"
+  },
+  "artifacts": {},
+  "original_top_level_card_counts": {
+    "X": 10147,
+    "C": 93531
+  },
+  "external_ports": 7616,
+  "direct_device_or_other_ports": 306,
+  "capacitor_only_ports": 7310,
+  "aggregate_internal_targets": 188,
+  "forced_boundary_only_C": 32924,
+  "capacitor_only_boundary_to_interior_C": 795,
+  "maximum_distinct_boundary_neighbors_per_target": 464,
+  "projected_forcing_waveforms": 494,
+  "projected_explicit_C_cards": 60000,
+  "projection_assumptions": [
+    "Prescribed ideal boundary voltage histories remain unchanged",
+    "Linear constant positive capacitors only",
+    "Interior voltages are the observables; eliminated boundary-source currents are not retained"
+  ],
+  "model_transformed": false,
+  "native_equivalence_verified": false,
+  "floating_point_aggregation_error_qualified": false,
+  "independently_predictive_model_qualified": false,
+  "power_qualified": false,
+  "release_ready": false
+}
