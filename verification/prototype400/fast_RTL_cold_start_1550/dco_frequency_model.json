@@ -1,0 +1,1144 @@
+{
+  "kind": "linear_frequency",
+  "native_knots": [
+    {
+      "coarse": 23,
+      "fine": 8,
+      "frequency_millihertz": 376002510237,
+      "origin": "native_measurement"
+    },
+    {
+      "coarse": 23,
+      "fine": 149,
+      "frequency_millihertz": 404096788446,
+      "origin": "native_measurement"
+    }
+  ],
+  "interpolated_points": [
+    {
+      "coarse": 23,
+      "fine": 9,
+      "frequency_millihertz": 376201760437,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 10,
+      "frequency_millihertz": 376401010637,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 11,
+      "frequency_millihertz": 376600260837,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 12,
+      "frequency_millihertz": 376799511037,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 13,
+      "frequency_millihertz": 376998761237,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 14,
+      "frequency_millihertz": 377198011437,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 15,
+      "frequency_millihertz": 377397261637,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 16,
+      "frequency_millihertz": 377596511838,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 17,
+      "frequency_millihertz": 377795762038,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 18,
+      "frequency_millihertz": 377995012238,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 19,
+      "frequency_millihertz": 378194262438,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 20,
+      "frequency_millihertz": 378393512638,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 21,
+      "frequency_millihertz": 378592762838,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 22,
+      "frequency_millihertz": 378792013038,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 23,
+      "frequency_millihertz": 378991263238,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 24,
+      "frequency_millihertz": 379190513438,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 25,
+      "frequency_millihertz": 379389763638,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 26,
+      "frequency_millihertz": 379589013838,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 27,
+      "frequency_millihertz": 379788264038,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 28,
+      "frequency_millihertz": 379987514238,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 29,
+      "frequency_millihertz": 380186764438,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 30,
+      "frequency_millihertz": 380386014638,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 31,
+      "frequency_millihertz": 380585264838,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 32,
+      "frequency_millihertz": 380784515039,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 33,
+      "frequency_millihertz": 380983765239,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 34,
+      "frequency_millihertz": 381183015439,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 35,
+      "frequency_millihertz": 381382265639,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 36,
+      "frequency_millihertz": 381581515839,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 37,
+      "frequency_millihertz": 381780766039,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 38,
+      "frequency_millihertz": 381980016239,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 39,
+      "frequency_millihertz": 382179266439,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 40,
+      "frequency_millihertz": 382378516639,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 41,
+      "frequency_millihertz": 382577766839,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 42,
+      "frequency_millihertz": 382777017039,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 43,
+      "frequency_millihertz": 382976267239,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 44,
+      "frequency_millihertz": 383175517439,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 45,
+      "frequency_millihertz": 383374767639,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 46,
+      "frequency_millihertz": 383574017839,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 47,
+      "frequency_millihertz": 383773268039,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 48,
+      "frequency_millihertz": 383972518240,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 49,
+      "frequency_millihertz": 384171768440,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 50,
+      "frequency_millihertz": 384371018640,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 51,
+      "frequency_millihertz": 384570268840,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 52,
+      "frequency_millihertz": 384769519040,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 53,
+      "frequency_millihertz": 384968769240,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 54,
+      "frequency_millihertz": 385168019440,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 55,
+      "frequency_millihertz": 385367269640,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 56,
+      "frequency_millihertz": 385566519840,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 57,
+      "frequency_millihertz": 385765770040,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 58,
+      "frequency_millihertz": 385965020240,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 59,
+      "frequency_millihertz": 386164270440,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 60,
+      "frequency_millihertz": 386363520640,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 61,
+      "frequency_millihertz": 386562770840,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 62,
+      "frequency_millihertz": 386762021040,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 63,
+      "frequency_millihertz": 386961271241,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 64,
+      "frequency_millihertz": 387160521441,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 65,
+      "frequency_millihertz": 387359771641,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 66,
+      "frequency_millihertz": 387559021841,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 67,
+      "frequency_millihertz": 387758272041,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 68,
+      "frequency_millihertz": 387957522241,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 69,
+      "frequency_millihertz": 388156772441,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 70,
+      "frequency_millihertz": 388356022641,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 71,
+      "frequency_millihertz": 388555272841,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 72,
+      "frequency_millihertz": 388754523041,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 73,
+      "frequency_millihertz": 388953773241,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 74,
+      "frequency_millihertz": 389153023441,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 75,
+      "frequency_millihertz": 389352273641,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 76,
+      "frequency_millihertz": 389551523841,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 77,
+      "frequency_millihertz": 389750774041,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 78,
+      "frequency_millihertz": 389950024241,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 79,
+      "frequency_millihertz": 390149274442,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 80,
+      "frequency_millihertz": 390348524642,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 81,
+      "frequency_millihertz": 390547774842,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 82,
+      "frequency_millihertz": 390747025042,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 83,
+      "frequency_millihertz": 390946275242,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 84,
+      "frequency_millihertz": 391145525442,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 85,
+      "frequency_millihertz": 391344775642,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 86,
+      "frequency_millihertz": 391544025842,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 87,
+      "frequency_millihertz": 391743276042,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 88,
+      "frequency_millihertz": 391942526242,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 89,
+      "frequency_millihertz": 392141776442,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 90,
+      "frequency_millihertz": 392341026642,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 91,
+      "frequency_millihertz": 392540276842,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 92,
+      "frequency_millihertz": 392739527042,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 93,
+      "frequency_millihertz": 392938777242,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 94,
+      "frequency_millihertz": 393138027442,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 95,
+      "frequency_millihertz": 393337277643,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 96,
+      "frequency_millihertz": 393536527843,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 97,
+      "frequency_millihertz": 393735778043,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 98,
+      "frequency_millihertz": 393935028243,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 99,
+      "frequency_millihertz": 394134278443,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 100,
+      "frequency_millihertz": 394333528643,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 101,
+      "frequency_millihertz": 394532778843,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 102,
+      "frequency_millihertz": 394732029043,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 103,
+      "frequency_millihertz": 394931279243,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 104,
+      "frequency_millihertz": 395130529443,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 105,
+      "frequency_millihertz": 395329779643,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 106,
+      "frequency_millihertz": 395529029843,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 107,
+      "frequency_millihertz": 395728280043,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 108,
+      "frequency_millihertz": 395927530243,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 109,
+      "frequency_millihertz": 396126780443,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 110,
+      "frequency_millihertz": 396326030644,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 111,
+      "frequency_millihertz": 396525280844,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 112,
+      "frequency_millihertz": 396724531044,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 113,
+      "frequency_millihertz": 396923781244,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 114,
+      "frequency_millihertz": 397123031444,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 115,
+      "frequency_millihertz": 397322281644,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 116,
+      "frequency_millihertz": 397521531844,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 117,
+      "frequency_millihertz": 397720782044,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 118,
+      "frequency_millihertz": 397920032244,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 119,
+      "frequency_millihertz": 398119282444,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 120,
+      "frequency_millihertz": 398318532644,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 121,
+      "frequency_millihertz": 398517782844,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 122,
+      "frequency_millihertz": 398717033044,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 123,
+      "frequency_millihertz": 398916283244,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 124,
+      "frequency_millihertz": 399115533444,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 125,
+      "frequency_millihertz": 399314783644,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 126,
+      "frequency_millihertz": 399514033845,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 127,
+      "frequency_millihertz": 399713284045,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 128,
+      "frequency_millihertz": 399912534245,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 129,
+      "frequency_millihertz": 400111784445,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 130,
+      "frequency_millihertz": 400311034645,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 131,
+      "frequency_millihertz": 400510284845,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 132,
+      "frequency_millihertz": 400709535045,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 133,
+      "frequency_millihertz": 400908785245,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 134,
+      "frequency_millihertz": 401108035445,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 135,
+      "frequency_millihertz": 401307285645,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 136,
+      "frequency_millihertz": 401506535845,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 137,
+      "frequency_millihertz": 401705786045,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 138,
+      "frequency_millihertz": 401905036245,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 139,
+      "frequency_millihertz": 402104286445,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 140,
+      "frequency_millihertz": 402303536645,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 141,
+      "frequency_millihertz": 402502786845,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 142,
+      "frequency_millihertz": 402702037046,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 143,
+      "frequency_millihertz": 402901287246,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 144,
+      "frequency_millihertz": 403100537446,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 145,
+      "frequency_millihertz": 403299787646,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 146,
+      "frequency_millihertz": 403499037846,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 147,
+      "frequency_millihertz": 403698288046,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    },
+    {
+      "coarse": 23,
+      "fine": 148,
+      "frequency_millihertz": 403897538246,
+      "lower_native_knot": 8,
+      "upper_native_knot": 149,
+      "origin": "interpolated_estimate"
+    }
+  ],
+  "extrapolation_allowed": false,
+  "independent_holdouts_complete": false,
+  "uniform_frequency_error_bound_qualified": false,
+  "physical_models_qualified": false,
+  "release_ready": false
+}

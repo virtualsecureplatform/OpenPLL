@@ -1,0 +1,853 @@
+{
+  "target_mhz": 400,
+  "stimulus_ns": 101.0,
+  "observation_stop_ns": 220101.0,
+  "windows": [
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 5061.0,
+      "end_ns": 10181.0,
+      "frequency_mhz": 397.3262464767344,
+      "frequency_error_ppm": 6684.383808163931,
+      "phase_span_ns": 34.063,
+      "phase_mean_ns": -3.123007874015748,
+      "phase_drift_ns": 38.342078567022156,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 107,
+      "fine_max": 126,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 10181.0,
+      "end_ns": 15301.0,
+      "frequency_mhz": 397.7463644106868,
+      "frequency_error_ppm": 5634.088973283009,
+      "phase_span_ns": 28.376,
+      "phase_mean_ns": -13.674346456692913,
+      "phase_drift_ns": 25.67756648422734,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 105,
+      "fine_max": 127,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 15301.0,
+      "end_ns": 20421.0,
+      "frequency_mhz": 396.5747202281643,
+      "frequency_error_ppm": 8563.199429589125,
+      "phase_span_ns": 43.461,
+      "phase_mean_ns": -14.61543307086614,
+      "phase_drift_ns": 39.79715333985094,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 104,
+      "fine_max": 119,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 20421.0,
+      "end_ns": 25541.0,
+      "frequency_mhz": 396.1497449944809,
+      "frequency_error_ppm": 9625.637513797816,
+      "phase_span_ns": 49.013,
+      "phase_mean_ns": -7.7430944881889765,
+      "phase_drift_ns": 49.279561393616575,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 102,
+      "fine_max": 116,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 25541.0,
+      "end_ns": 30661.0,
+      "frequency_mhz": 395.89488658568996,
+      "frequency_error_ppm": 10262.783535775141,
+      "phase_span_ns": 52.283,
+      "phase_mean_ns": 4.167968503937008,
+      "phase_drift_ns": 54.89167644109407,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 101,
+      "fine_max": 114,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 30661.0,
+      "end_ns": 35781.0,
+      "frequency_mhz": 395.097122180561,
+      "frequency_error_ppm": 12257.19454859763,
+      "phase_span_ns": 62.079,
+      "phase_mean_ns": -18.021452380952383,
+      "phase_drift_ns": 60.27511331273758,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 99,
+      "fine_max": 110,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 35781.0,
+      "end_ns": 40901.0,
+      "frequency_mhz": 395.0705665980145,
+      "frequency_error_ppm": 12323.583504963684,
+      "phase_span_ns": 62.877,
+      "phase_mean_ns": 4.64603937007874,
+      "phase_drift_ns": 63.96420412358811,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 98,
+      "fine_max": 109,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 40901.0,
+      "end_ns": 46021.0,
+      "frequency_mhz": 394.5376757099626,
+      "frequency_error_ppm": 13655.810725093417,
+      "phase_span_ns": 69.215,
+      "phase_mean_ns": -7.821603174603174,
+      "phase_drift_ns": 69.12875344005374,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 96,
+      "fine_max": 106,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 46021.0,
+      "end_ns": 51141.0,
+      "frequency_mhz": 394.1506249446733,
+      "frequency_error_ppm": 14623.437638316678,
+      "phase_span_ns": 74.277,
+      "phase_mean_ns": -15.90584126984127,
+      "phase_drift_ns": 74.27148951386289,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 95,
+      "fine_max": 104,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 51141.0,
+      "end_ns": 56261.0,
+      "frequency_mhz": 393.89063126444364,
+      "frequency_error_ppm": 15273.421838890916,
+      "phase_span_ns": 77.624,
+      "phase_mean_ns": 19.952690476190476,
+      "phase_drift_ns": 77.92523873793742,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 93,
+      "fine_max": 103,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 56261.0,
+      "end_ns": 61381.0,
+      "frequency_mhz": 393.57714923120545,
+      "frequency_error_ppm": 16057.126921986326,
+      "phase_span_ns": 81.654,
+      "phase_mean_ns": -19.604761904761904,
+      "phase_drift_ns": 82.36618762520193,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 92,
+      "fine_max": 101,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 61381.0,
+      "end_ns": 66501.0,
+      "frequency_mhz": 393.27307576683364,
+      "frequency_error_ppm": 16817.31058291592,
+      "phase_span_ns": 85.566,
+      "phase_mean_ns": -15.131706349206349,
+      "phase_drift_ns": 86.39435808628852,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 91,
+      "fine_max": 99,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 66501.0,
+      "end_ns": 71621.0,
+      "frequency_mhz": 392.91955445931455,
+      "frequency_error_ppm": 17701.113851713606,
+      "phase_span_ns": 90.125,
+      "phase_mean_ns": -6.429142857142857,
+      "phase_drift_ns": 90.00559294983093,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 89,
+      "fine_max": 97,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 71621.0,
+      "end_ns": 76741.0,
+      "frequency_mhz": 392.5353032652724,
+      "frequency_error_ppm": 18661.74183681903,
+      "phase_span_ns": 94.306,
+      "phase_mean_ns": 6.104944,
+      "phase_drift_ns": 93.52867212126537,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 87,
+      "fine_max": 95,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 76741.0,
+      "end_ns": 81861.0,
+      "frequency_mhz": 392.2610242058473,
+      "frequency_error_ppm": 19347.43948538168,
+      "phase_span_ns": 98.646,
+      "phase_mean_ns": -16.648063492063493,
+      "phase_drift_ns": 99.45524196732929,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 86,
+      "fine_max": 93,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 81861.0,
+      "end_ns": 86981.0,
+      "frequency_mhz": 391.74663117435676,
+      "frequency_error_ppm": 20633.422064108116,
+      "phase_span_ns": 104.524,
+      "phase_mean_ns": 5.928584,
+      "phase_drift_ns": 104.07733548548936,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 84,
+      "fine_max": 91,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 86981.0,
+      "end_ns": 92101.0,
+      "frequency_mhz": 391.46454841935684,
+      "frequency_error_ppm": 21338.62895160791,
+      "phase_span_ns": 108.121,
+      "phase_mean_ns": -7.282952,
+      "phase_drift_ns": 108.18067971145274,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 82,
+      "fine_max": 89,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 92101.0,
+      "end_ns": 97221.0,
+      "frequency_mhz": 391.17690907325266,
+      "frequency_error_ppm": 22057.727316868342,
+      "phase_span_ns": 112.773,
+      "phase_mean_ns": -15.656031746031745,
+      "phase_drift_ns": 112.904179326401,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 81,
+      "fine_max": 87,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 97221.0,
+      "end_ns": 102341.0,
+      "frequency_mhz": 390.84225333065996,
+      "frequency_error_ppm": 22894.36667335007,
+      "phase_span_ns": 116.184,
+      "phase_mean_ns": 19.978312,
+      "phase_drift_ns": 116.09289614943718,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 80,
+      "fine_max": 86,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 102341.0,
+      "end_ns": 107461.0,
+      "frequency_mhz": 390.38976842735445,
+      "frequency_error_ppm": 24025.578931613796,
+      "phase_span_ns": 122.096,
+      "phase_mean_ns": 19.936736,
+      "phase_drift_ns": 121.90324460256942,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 77,
+      "fine_max": 84,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 107461.0,
+      "end_ns": 112581.0,
+      "frequency_mhz": 389.96165246836347,
+      "frequency_error_ppm": 25095.868829091294,
+      "phase_span_ns": 126.594,
+      "phase_mean_ns": -14.67325806451613,
+      "phase_drift_ns": 126.24805040910776,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 75,
+      "fine_max": 81,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 112581.0,
+      "end_ns": 117701.0,
+      "frequency_mhz": 389.74154897051744,
+      "frequency_error_ppm": 25646.127573706402,
+      "phase_span_ns": 130.561,
+      "phase_mean_ns": -4.952552,
+      "phase_drift_ns": 130.60507869560192,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 74,
+      "fine_max": 80,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 117701.0,
+      "end_ns": 122821.0,
+      "frequency_mhz": 389.409925752247,
+      "frequency_error_ppm": 26475.18561938257,
+      "phase_span_ns": 134.91,
+      "phase_mean_ns": 8.704808,
+      "phase_drift_ns": 135.25195541732728,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 72,
+      "fine_max": 79,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 122821.0,
+      "end_ns": 127941.0,
+      "frequency_mhz": 389.07175413322784,
+      "frequency_error_ppm": 27320.614666930345,
+      "phase_span_ns": 138.192,
+      "phase_mean_ns": -13.495903225806451,
+      "phase_drift_ns": 137.66078982390195,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 71,
+      "fine_max": 76,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 127941.0,
+      "end_ns": 133061.0,
+      "frequency_mhz": 388.81555449787305,
+      "frequency_error_ppm": 27961.113755317394,
+      "phase_span_ns": 142.678,
+      "phase_mean_ns": 8.117392,
+      "phase_drift_ns": 142.96356067244514,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 70,
+      "fine_max": 75,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 133061.0,
+      "end_ns": 138181.0,
+      "frequency_mhz": 388.40720791514076,
+      "frequency_error_ppm": 28981.980212148133,
+      "phase_span_ns": 146.842,
+      "phase_mean_ns": -5.998362903225806,
+      "phase_drift_ns": 146.89824055018977,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 68,
+      "fine_max": 73,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 138181.0,
+      "end_ns": 143301.0,
+      "frequency_mhz": 387.9866365368149,
+      "frequency_error_ppm": 30033.40865796282,
+      "phase_span_ns": 152.362,
+      "phase_mean_ns": -15.347451612903226,
+      "phase_drift_ns": 152.12156079576403,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 65,
+      "fine_max": 71,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 143301.0,
+      "end_ns": 148421.0,
+      "frequency_mhz": 387.53690688092007,
+      "frequency_error_ppm": 31157.73279769987,
+      "phase_span_ns": 158.257,
+      "phase_mean_ns": -18.828419354838708,
+      "phase_drift_ns": 158.44956975510857,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 63,
+      "fine_max": 69,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 148421.0,
+      "end_ns": 153541.0,
+      "frequency_mhz": 387.165644550668,
+      "frequency_error_ppm": 32085.888623330044,
+      "phase_span_ns": 163.123,
+      "phase_mean_ns": -17.01008870967742,
+      "phase_drift_ns": 163.17136556659693,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 61,
+      "fine_max": 67,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 153541.0,
+      "end_ns": 158661.0,
+      "frequency_mhz": 386.73447971412526,
+      "frequency_error_ppm": 33163.800714686884,
+      "phase_span_ns": 168.785,
+      "phase_mean_ns": -9.306725806451613,
+      "phase_drift_ns": 168.84753432900115,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 60,
+      "fine_max": 64,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 158661.0,
+      "end_ns": 163781.0,
+      "frequency_mhz": 386.45523254132803,
+      "frequency_error_ppm": 33861.918646679886,
+      "phase_span_ns": 171.021,
+      "phase_mean_ns": 2.104219512195122,
+      "phase_drift_ns": 170.7784629790806,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 58,
+      "fine_max": 63,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 163781.0,
+      "end_ns": 168901.0,
+      "frequency_mhz": 386.29064844463795,
+      "frequency_error_ppm": 34273.37888840518,
+      "phase_span_ns": 174.612,
+      "phase_mean_ns": 16.31190322580645,
+      "phase_drift_ns": 174.64610143719727,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 58,
+      "fine_max": 62,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 168901.0,
+      "end_ns": 174021.0,
+      "frequency_mhz": 386.052235701798,
+      "frequency_error_ppm": 34869.41074550498,
+      "phase_span_ns": 176.278,
+      "phase_mean_ns": -6.815878048780488,
+      "phase_drift_ns": 176.17584908129194,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 56,
+      "fine_max": 60,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 174021.0,
+      "end_ns": 179141.0,
+      "frequency_mhz": 385.90913842609643,
+      "frequency_error_ppm": 35227.153934758884,
+      "phase_span_ns": 179.658,
+      "phase_mean_ns": 12.616387096774194,
+      "phase_drift_ns": 179.56045950085198,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 56,
+      "fine_max": 60,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 179141.0,
+      "end_ns": 184261.0,
+      "frequency_mhz": 385.6353753058563,
+      "frequency_error_ppm": 35911.56173535919,
+      "phase_span_ns": 181.76,
+      "phase_mean_ns": -5.581113821138211,
+      "phase_drift_ns": 181.8104949819007,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 54,
+      "fine_max": 59,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 184261.0,
+      "end_ns": 189381.0,
+      "frequency_mhz": 385.3343918956283,
+      "frequency_error_ppm": 36664.020260929225,
+      "phase_span_ns": 187.247,
+      "phase_mean_ns": -19.379370967741934,
+      "phase_drift_ns": 187.30200373482876,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 52,
+      "fine_max": 57,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 189381.0,
+      "end_ns": 194501.0,
+      "frequency_mhz": 384.93260455365504,
+      "frequency_error_ppm": 37668.488615862465,
+      "phase_span_ns": 191.037,
+      "phase_mean_ns": 11.418162601626015,
+      "phase_drift_ns": 191.0641497549836,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 51,
+      "fine_max": 55,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 194501.0,
+      "end_ns": 199621.0,
+      "frequency_mhz": 384.71523253377205,
+      "frequency_error_ppm": 38211.918665569865,
+      "phase_span_ns": 193.9,
+      "phase_mean_ns": 5.383308943089431,
+      "phase_drift_ns": 193.76398889491384,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 50,
+      "fine_max": 54,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 199621.0,
+      "end_ns": 204741.0,
+      "frequency_mhz": 384.33109293250874,
+      "frequency_error_ppm": 39172.26766872809,
+      "phase_span_ns": 198.989,
+      "phase_mean_ns": 3.288252032520325,
+      "phase_drift_ns": 199.10052464354433,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 48,
+      "fine_max": 52,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 204741.0,
+      "end_ns": 209861.0,
+      "frequency_mhz": 384.1949318317812,
+      "frequency_error_ppm": 39512.670420546885,
+      "phase_span_ns": 200.781,
+      "phase_mean_ns": 5.085821138211382,
+      "phase_drift_ns": 200.88091443403928,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 47,
+      "fine_max": 51,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 209861.0,
+      "end_ns": 214981.0,
+      "frequency_mhz": 384.1077095848745,
+      "frequency_error_ppm": 39730.72603781371,
+      "phase_span_ns": 201.926,
+      "phase_mean_ns": 8.213447154471545,
+      "phase_drift_ns": 201.97965476631353,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 47,
+      "fine_max": 50,
+      "passed": false
+    },
+    {
+      "phase_statistics_method": "exact_integer_picosecond_grid",
+      "start_ns": 214981.0,
+      "end_ns": 220101.0,
+      "frequency_mhz": 383.9164047440652,
+      "frequency_error_ppm": 40208.988139837056,
+      "phase_span_ns": 204.456,
+      "phase_mean_ns": 12.94019512195122,
+      "phase_drift_ns": 204.62106424287953,
+      "cycle_slip": false,
+      "cycle_gaps": {
+        "REF": false,
+        "DIV": false,
+        "OUT": false
+      },
+      "fine_outside_operating_range": false,
+      "fine_min": 46,
+      "fine_max": 49,
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "sustained_final_pass": false,
+  "acquisition_confirmed_ns": null,
+  "evidence": "trace_functional_only",
+  "release_qualified": false,
+  "complete_control_trace_checked": true
+}

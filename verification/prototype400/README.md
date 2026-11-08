@@ -2267,3 +2267,22 @@ and both real coarse23 bracket captures read successfully. Per-case pins include
 the point inputs and dependencies. Selected digital RTL remains unchanged;
 frequency interpolation, detector response and clock timing stay diagnostic and
 unqualified. This adapter enables exploratory loop checks, not release passes.
+
+Actual selected-RTL cold-start diagnostic1550 uses coarse23/seed149, KI4/KP0,
+phase0 and the measured fast endpoints with linear-frequency interpolation.
+It completes220 us of simulated observation normally in3.65 s of loop/assessment
+runtime, but fails functional acceptance: the final5,120 ns window averages
+383.916405 MHz, with fine46–49 and no confirmed acquisition. This is a failure
+under unqualified frequency/detector/clock models, not proof of physical PLL
+behavior. The old runner omitted case arguments; retention metadata explicitly
+reconstructs them from the actual invocation without changing its outputs.
+
+New runner v10 retains case arguments in hashed inputs and hashes all completed
+trace artifacts in the assessment. Diagnostic1551 changes KP to4 but requests
+fine150 at startup, outside the measured8–149 span. It exits with the distinct
+needs_native_tuning_points state; it is incomplete, not a lock failure or pass,
+and no extrapolated frequency is supplied. Neither gain pair is selected for
+release. Pending independent fine128 point1549 can provide a measured near-target
+seed for subsequent diagnostics. Retained CSV files use lossless gzip with
+verified decompressed hashes; the incomplete1551 trace is retained only as a
+failure artifact, without a completed-scenario claim.

@@ -1,0 +1,3 @@
+REFERENCE_PHASE_INITIALIZED epoch=0 feedback_ns=1338.843000000 reference_ns=1338.843000000 offset_ns=0
+PROGRAMMED400_LOOP_END scenario=0
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/tb/tb_programmed400_closed_loop_phased.v:87: $finish called at 220182000 (1ps)

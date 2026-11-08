@@ -1,0 +1,44 @@
+{
+  "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fast_RTL_KI4_KP4_1551",
+  "files": {
+    "assessment.json": {
+      "source_sha256": "9a4398ff1d634bf430f2d5b4c4ddf947a4101d81c7dc1ec2838c932d5fe693e8",
+      "retained_name": "assessment.json"
+    },
+    "dco_table.txt": {
+      "source_sha256": "bea82f032311aa51eb21d8bc04b767e7386739e00fe57ad8e47d6cc59787d6cd",
+      "retained_name": "dco_table.txt"
+    },
+    "reference_phase.json": {
+      "source_sha256": "aed7758e6619cceb0ea4381d1b1d537dbb24624f1a382a364fc8cf668ce01656",
+      "retained_name": "reference_phase.json"
+    },
+    "dco_frequency_model.json": {
+      "source_sha256": "845dd188b51a3581ece6bfd733aed09c68182a221a035e9179df05360220276a",
+      "retained_name": "dco_frequency_model.json"
+    },
+    "run.log": {
+      "source_sha256": "721167a77f39b908a24f1e8571bbe386d4f1a152039bffb4155d12d035113ad4",
+      "retained_name": "run.log"
+    },
+    "segments.csv": {
+      "source_sha256": "398fba70266e42b1c6f7d465ebc3712ac688e2a3a47fb6b5f20e80203d3af83a",
+      "retained_name": "segments.csv.gz"
+    },
+    "controls.csv": {
+      "source_sha256": "17df014915686d2e1a9abcdcb1f5ea6c2bedcb901255bf3feb57c1cf7fd934d2",
+      "retained_name": "controls.csv.gz"
+    },
+    "edges.csv": {
+      "source_sha256": "c12e3a02772f0d5c6e5b844593f09d6833ceba2d8e5b322479bcc21668691bc5",
+      "retained_name": "edges.csv.gz"
+    },
+    "inputs.json": {
+      "source_sha256": "db07d517946aa838f7244e97000eab994fed2f38eef317d10eaf170bd9195a8d",
+      "retained_name": "inputs.json"
+    }
+  },
+  "release_ready": false,
+  "terminated_for_missing_tuning_point": true,
+  "complete_scenario": false
+}

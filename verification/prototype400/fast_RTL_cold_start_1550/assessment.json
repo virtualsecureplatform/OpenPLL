@@ -1,0 +1,37 @@
+{
+  "diagnostic_frequency_stress_applied": false,
+  "state": "diagnostic_failed",
+  "elapsed_s": 3.6455401938874274,
+  "compiled_build_reused": true,
+  "frequency_table_kind": "linear_frequency",
+  "interpolated_points": 140,
+  "frequency_error_bound_qualified": false,
+  "clock_timing_applied": true,
+  "phase_observation_boundary": "physical_divided_output",
+  "clock_timing_qualified": false,
+  "native_exit": 0,
+  "terminal_marker_present": true,
+  "measurement_requests": [],
+  "scenario": 0,
+  "phase_offset_ns": 0,
+  "diagnostic": true,
+  "physical_models_qualified": false,
+  "lock_qualified": false,
+  "release_ready": false,
+  "functional_trace_pass": false,
+  "segments": [
+    {
+      "segment": 0,
+      "passed": false
+    }
+  ],
+  "reference_phase_coverage_pass": true,
+  "initializations": [
+    {
+      "epoch": 0,
+      "feedback_ns": 1338.843,
+      "reference_ns": 1338.843,
+      "measured_offset_ns": 0.0
+    }
+  ]
+}

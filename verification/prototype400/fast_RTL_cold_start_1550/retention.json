@@ -1,0 +1,58 @@
+{
+  "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fast_RTL_cold_start_1550",
+  "files": {
+    "assessment.json": {
+      "source_sha256": "bbcc97e90ce6ea6c67f2fdcdad73089bbe4a4861f38e07e7bf2bb82dff791809",
+      "retained_name": "assessment.json"
+    },
+    "segment0_acceptance.json": {
+      "source_sha256": "e577c339cb2e62ca59ade458062d115f923dbc42c86c65744aab6018e9979b23",
+      "retained_name": "segment0_acceptance.json"
+    },
+    "dco_frequency_model.json": {
+      "source_sha256": "845dd188b51a3581ece6bfd733aed09c68182a221a035e9179df05360220276a",
+      "retained_name": "dco_frequency_model.json"
+    },
+    "controls.csv": {
+      "source_sha256": "d81a08959503a011c14024f2b8a99eb803e0d1908662eae4bbb69ad4337af0db",
+      "retained_name": "controls.csv.gz"
+    },
+    "run.log": {
+      "source_sha256": "26ac038318b45ae8970b7de523854c5d41343ccc674deccbdc326e79b5834e56",
+      "retained_name": "run.log"
+    },
+    "reference_phase.json": {
+      "source_sha256": "0d8568a1a89558c9641364deff75bfe238f0c629c293aa1a5e13abdb37f5b4f9",
+      "retained_name": "reference_phase.json"
+    },
+    "segments.csv": {
+      "source_sha256": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33",
+      "retained_name": "segments.csv.gz"
+    },
+    "inputs.json": {
+      "source_sha256": "df55e4ef64ccaf7f39ccb3a1424880c5afbba90727b03f652240d08839b0a713",
+      "retained_name": "inputs.json"
+    },
+    "edges.csv": {
+      "source_sha256": "1ef7d94e98a81f5ea115470911f8af6a5553b5628f74ec05b08c7ad80042eaf7",
+      "retained_name": "edges.csv.gz"
+    },
+    "dco_table.txt": {
+      "source_sha256": "bea82f032311aa51eb21d8bc04b767e7386739e00fe57ad8e47d6cc59787d6cd",
+      "retained_name": "dco_table.txt"
+    }
+  },
+  "release_ready": false,
+  "case_arguments_reconstructed_from_invocation": true,
+  "case_arguments": {
+    "ki": 4,
+    "kp": 0,
+    "coarse": 23,
+    "seed": 149,
+    "polarity": 1,
+    "scenario": 0,
+    "phase_ns": 0
+  },
+  "normal_simulator_completion": true,
+  "functional_acceptance_pass": false
+}
