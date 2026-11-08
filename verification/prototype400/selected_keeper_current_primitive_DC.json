@@ -1,0 +1,31 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_current_primitive_DC_1287/assessment.json": "1c432225d3e2d92c28d32046b89de5df8a388b966039d32697decd71d5f4bc4e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_current_primitive_DC_1287/geometries.json": "4762ebf8092b0ae59daae01cd50b5ebe77ff583b594980ee1475e376a30a5b31"
+  },
+  "all_five_corner_native_DC_comparisons_complete": true,
+  "unique_MOS_parameter_sets": 429,
+  "unique_poly_parameter_sets": 2,
+  "gate_biases_V": [
+    0,
+    0.9,
+    1.8
+  ],
+  "probe_biases_V": [
+    0.45,
+    0.9
+  ],
+  "temperature_C": 27,
+  "MOS_current_observations": 12870,
+  "poly_current_observations": 60,
+  "maximum_MOS_relative_error_floor_1nA": 1.6513831716469657e-07,
+  "maximum_poly_relative_error_floor_1pA": 2.1852897549435878e-16,
+  "poly_retained_relative_limit": 1e-10,
+  "poly_all_retained_DC_screens_pass": true,
+  "MOS_accuracy_qualified": false,
+  "capacitance_correlation_qualified": false,
+  "transient_qualified": false,
+  "noise_qualified": false,
+  "full_PLL_model_qualified": false,
+  "release_ready": false
+}
