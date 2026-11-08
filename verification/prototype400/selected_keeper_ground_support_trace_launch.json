@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_support_trace_1363/inputs.json": "43a3d6339c49546f07d66abfd6e7fc65f46fbf827705e1d10165daada47dfe87"
+  },
+  "owner": {
+    "pid": 2157314,
+    "birth": "133216449"
+  },
+  "CPU": 24,
+  "memory_GiB": 16,
+  "resource_queue_cap_s": 86400,
+  "native_cap_s": 1800,
+  "maximum_native_cases": 1,
+  "automatic_identical_retry": false,
+  "state": "waiting_for_global_CPU_RAM_budget",
+  "full_PLL_spatial_audit_complete": false,
+  "ground_spatial_redistribution_qualified": false,
+  "legacy_ground_support_qualified": false,
+  "release_ready": false
+}
