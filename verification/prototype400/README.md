@@ -1436,3 +1436,15 @@ This validation replay still prescribes downstream waveforms and cannot alone
 qualify a model for changed-controller or closed-loop prediction. It measures the
 remaining correlation error after moving the proven source-reduction technique
 to the corrected simulator and the finer reference timestep.
+
+
+Parent integration 1471 replaces only the digital macro definition in a fresh
+copy of filled baseline 1147. All 93 other original cell definitions and the
+parent reference are preserved; the ECO's recursive polygon geometry and labels
+match its checked component GDS, and the LEF prefix containing the outline and
+all pins is byte-identical to the original. The original parent is not changed.
+Component checks do not imply a parent pass: this copied filled parent has 2,592
+Magic DRC rectangles. Expanded LVS 1472 independently reproduces one top-level
+net discrepancy, while the three macro-level comparisons have no discrepancies.
+These are completed negative results, retained with rule counts and the actual
+bad-net record in 1474. No candidate selection or parent qualification follows.

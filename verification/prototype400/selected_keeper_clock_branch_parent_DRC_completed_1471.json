@@ -1,0 +1,39 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/integrate_keeper_clock_branch_parent.py": "f6b63ed50f25f5bb7a6d9ed64836f7238b0be45e1756eb3d55141d7f99ce171c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assessment.json": "cb53636d63bfa258d9d444c2b4e41b9cfe8cd29073262c259a6f00228d027902",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/assessment.json": "321657f979760f832880772755208dbf6fb429edd77b82414729380c007e8ebd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_candidate_1452/assessment.json": "ec0c6716ad95fc681f7e6056415cdb0416ef17e8245e52d25eae5882fe89046b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/assessment.json": "6397ac7e235722de1ae22aa8600bdfd3be66d7386cbb943e9d6c9f90ddf23000",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assembly.gds": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/route.gds": "f9d25ef6e94ca92144354c235eeb782ef8a557350288d3530beb473932cafbc2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/digital.lef": "bbfcdcb0ed969f2997f293b8aaaf1f8616d43245ac9dd267e78dc8e78653b3a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_candidate_1452/digital.lef": "01706f2755dbc96921fe6827d176942acd17e9bda48d254438f862065130527c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assemble_selected_keeper_parent.py": "72fb2c9d7175ee0c0be7f3a046f45bf8e43b9103a7618948bc9f2133317c3131",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_digital_macro_reuse.py": "81c89bd7d47830fce4ce4b039c66767dd829e8af51addabe30a5d361f29b1513",
+    "/nix/store/ps0r3qpgjh1lqyqacra33rvxsjgkd874-python3-3.13.9-env/bin/python3.13": "6089315ff298ff5ef084e0ef5bf693cf3e60bc5782c4a0294612fe51b44f278a",
+    "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.magicrc": "f421b9ebbbac49f7058ece92fc85e7334c9cfddc039bef41c3b6cf1572b67cb1",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/assembly.gds": "126b319dc8d0ad0742f834fa30e229db7c4a36e341f40b4296fb2fb06eb5ec3f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/geometry.json": "d15bb9970c23e687f459f99142e16a800d112bd030ab061384ecee5d5a4180b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/drc.tcl": "eaa9231d9645f53d6708f6cce7aaca517fca65bb595701d15cfe4ce7fa417faf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/assembly_receipt.json": "6e1df7a225e7b3627921f8b57891b1a171c3ada0be9c6c37b5e7c1a213bd4fb5"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/assembly.gds": "126b319dc8d0ad0742f834fa30e229db7c4a36e341f40b4296fb2fb06eb5ec3f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/geometry.json": "d15bb9970c23e687f459f99142e16a800d112bd030ab061384ecee5d5a4180b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/drc_errors.rpt": "ffe27765c580c822fb959c4e3e258aea286e039e8f76860df4e002f55fac2b22",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/native.log": "7b21a91a8ada5eeee638785d36da5351a595015a3baf371337f7b5fb519c2f33"
+  },
+  "all_other_original_cell_definitions_preserved": true,
+  "exact_checked_digital_geometry_integrated": true,
+  "full_parent_Magic_DRC_rectangles": 2592,
+  "full_parent_Magic_DRC_pass": false,
+  "parent_LVS_checked": false,
+  "parent_density_checked": false,
+  "parent_model_qualified": false,
+  "original_parent_modified": false,
+  "selected": false,
+  "release_ready": false
+}

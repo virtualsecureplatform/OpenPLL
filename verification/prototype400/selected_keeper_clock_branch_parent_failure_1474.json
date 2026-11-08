@@ -1,0 +1,88 @@
+{
+  "DRC_rectangles_by_rule": {
+    "Metal4 minimum area < 9600 (met4.4a)": 9,
+    "Metal3 spacing < 60 (met3.2)": 971,
+    "Metal4 spacing < 60 (met4.2)": 135,
+    "This layer can't abut or partially overlap between subcells": 42,
+    "Metal3 minimum area < 9600 (met3.6)": 7,
+    "Can't overlap those layers": 759,
+    "Metal1 spacing < 28 (met1.2)": 76,
+    "Metal2 spacing < 28 (met2.2)": 544,
+    "Metal2 minimum area < 2704 (met2.6)": 17,
+    "Metal2 overlap of Via1 < 6 in one direction (met2.5 - met2.4)": 22,
+    "Metal3 width < 60 (met3.1)": 4,
+    "Metal2 overlap of via2 < 9 in one direction (via2.4a - via2.4)": 1,
+    "Metal2 width < 28 (met2.1)": 4,
+    "Metal1 minimum area < 3320 (met1.6)": 1
+  },
+  "LVS_discrepant_records": [
+    {
+      "name": [
+        "IntegerPLL_400MHz_PrototypeTop",
+        "IntegerPLL_400MHz_PrototypeTop"
+      ],
+      "badnets": [
+        [
+          [
+            [
+              "IntegerPLL_ProgrammedCore_0/sky130_fd_sc_hs__a21oi_4_96/A2",
+              [
+                [
+                  "IntegerPLL_ProgrammedCore",
+                  "sky130_fd_sc_hs__a21oi_4_96/A2",
+                  1
+                ],
+                [
+                  "IntegerPLL_ProgrammedCore",
+                  "sky130_fd_sc_hs__clkinv_1_256/Y",
+                  1
+                ]
+              ]
+            ],
+            [
+              "(no matching net)",
+              [
+                [
+                  "",
+                  "",
+                  0
+                ]
+              ]
+            ]
+          ],
+          [
+            [
+              "dummy_978",
+              [
+                [
+                  "IntegerPLL_ProgrammedCore",
+                  "proxysky130_fd_sc_hs__a21oi_4_96/A2",
+                  1
+                ]
+              ]
+            ],
+            [
+              "dummy_982",
+              [
+                [
+                  "IntegerPLL_ProgrammedCore",
+                  "proxysky130_fd_sc_hs__clkinv_1_256/Y",
+                  1
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "badelements": [],
+      "properties": null
+    }
+  ],
+  "all_three_macros_expanded": true,
+  "component_checks_do_not_imply_parent_pass": true,
+  "original_parent_untouched": true,
+  "without_fill_control": "selected_keeper_clock_branch_unfilled_parent_1473",
+  "without_fill_result_available": false,
+  "selected": false,
+  "release_ready": false
+}
