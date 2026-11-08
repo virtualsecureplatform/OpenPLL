@@ -1,0 +1,36 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_device_regions_1222/assessment.json": "4233d627cd5a6c6883ddc91455d9eb3902e604ff4003d6d16aa8ba5151d54033",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_MOS_region_join_1229/assessment.json": "7a9eddf30435995a9a05ca0bd956c97d839dccd5f499153d8a2d5cfecd126aa6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_MOS_region_join_1229/MOS_regions.json": "31daef66a50819c52a98afd5abba071291bb669791c9bb53bf0eedf98fcd0d61",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_DCO_partition_boundary.py": "2bf47b0690b498a197fecd45aac07af8fad6ae0d53d86a2b02d81c39427c3d7a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_flat_MOS_region_join.py": "489cdd2adb11424539fccf6bfd12a31eb378f8d6be3da548d786363f9f04093a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_partition_boundary_1230/boundary.json": "e665078148ba01a63d2b6c007ef951d5bafb8a0fa8a2a6f4f07f150754b00752"
+  },
+  "all_20_poly_resistor_regions_verified": true,
+  "DCO_primitive_count": 4098,
+  "DCO_MOS_count": 4096,
+  "DCO_poly_resistor_count": 2,
+  "DCO_primitive_node_count": 2887,
+  "shared_primitive_node_count": 306,
+  "private_primitive_node_count": 2581,
+  "nonzero_capacitor_counts": {
+    "exterior_only": 279502,
+    "one_endpoint_on_DCO": 40099,
+    "both_endpoints_on_DCO": 21466
+  },
+  "crossing_external_node_count": 15810,
+  "circuit_partitioned": false,
+  "exterior_nodes_clamped": false,
+  "boundary_loading_qualified": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_partition_boundary_1230/assessment.json",
+  "independent_private_node_crossing_capacitor_count": 0
+}
