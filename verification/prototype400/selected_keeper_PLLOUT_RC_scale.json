@@ -1,0 +1,31 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_retained_C_R_control_1349/assessment.json": "b341d5de9580109ad6242e4fce968272d493b94b8afe69adeb867cbb33001f4c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_retained_C_R_control_1349/retained_C_control.spice": "29813cb01e16dfe333dc4f75558621679be0e1fd6cab8b53359e79c0a823acbf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/screen_keeper_PLLOUT_RC_scale.py": "888b6aa78cb7d35e6ada085e6588959a26ac8609e54b345dfc1649a400eeca73",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b"
+  },
+  "artifacts": {},
+  "wire_R_cards": 74,
+  "wire_R_nodes": 59,
+  "sum_wire_R_ohm": 6182.6630133,
+  "maximum_shortest_series_path_R_ohm": 948.61147,
+  "diameter_endpoints": [
+    "pllout.t17",
+    "pllout.t6"
+  ],
+  "incident_positive_explicit_C_cards": 678,
+  "incident_explicit_C_F": 8.887172e-14,
+  "intra_component_explicit_C_F": 0.0,
+  "series_path_diameter_times_explicit_C_s": 8.43047329506284e-11,
+  "exact_series_path_diameter_ohm": "94861147/100000",
+  "exact_incident_explicit_C_F": "2221793/25000000000000000000",
+  "intrinsic_device_capacitances_included": false,
+  "effective_resistance_diameter_computed": false,
+  "active_driver_and_load_response_included": false,
+  "timing_or_phase_bound_qualified": false,
+  "physical_C_mapping_qualified": false,
+  "release_ready": false,
+  "scope": "Explicit wire-R and extracted-C screening on an unqualified accounting control; upstream dependency closures are not requalified"
+}
