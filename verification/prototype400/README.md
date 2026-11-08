@@ -706,3 +706,7 @@ The completed offline control retains all 1,364,255 original C-only capacitor ca
 ### Corrected-backend tuning collector prepared
 
 A separate collector requires explicit corrected active-executable identities in both input and completed receipts, a hash-pinned protocol, unique predeclared fit/holdout roles, matching electrical domains and matching 604-endpoint physical assessments. It accepts only 10 ps points and checks a strictly interior independent holdout. Eight tests pass, including old-active-backend and completed-receipt rejection. No corrected curve has yet been collected; captures remain pending, and tuning-range, interpolation acceptance, model and release qualification remain false.
+
+### Corrected tuning interpolation collection queued (1350/1351)
+
+The live CPU-29 collector pins a three-point protocol before any corrected capture completes: fine 110/182 fit, fine 149 independent holdout. All three native controllers and physical observers are initialized; fine 182 has now acquired its lease and its actual corrected executable, PID birth and CPU-27 affinity are verified. The collector waits for completed native and physical receipts without modifying those jobs. This narrow interval cannot qualify the full tuning range or replace endpoint/corner measurements. See `selected_keeper_corrected_BSIM_TT_collection_launch.json`.

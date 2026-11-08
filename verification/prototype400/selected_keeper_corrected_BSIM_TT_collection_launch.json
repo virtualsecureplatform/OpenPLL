@@ -1,0 +1,27 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_TT_family_1350/protocol.json": "4512a17995ed3e091e9f2eced5d3e7c632eab39162de43659b40fea445d12b0c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_TT_family_1350/assessment.json": "a4a26ed18eddcfaed60ed7940d8987538cef99cf5d41c20a73031fbc57b7a44c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_TT_collection_1351/inputs.json": "ff66428411170ec3c10bbae81f83637404b9b49e4c38ca1a472e3b5f2e3a6544"
+  },
+  "collector_owner": {
+    "pid": 2125925,
+    "birth": "133034930"
+  },
+  "collector_cpu": 29,
+  "fit_fine_codes": [
+    110,
+    182
+  ],
+  "independent_holdout_fine": 149,
+  "corrected_fine182_native": {
+    "pid": 2125653,
+    "birth": "133024942",
+    "process_group": 2125653
+  },
+  "corrected_fine182_cpu": 27,
+  "corrected_fine182_active_executable_verified": true,
+  "collection_pending": true,
+  "model_qualified": false,
+  "release_ready": false
+}
