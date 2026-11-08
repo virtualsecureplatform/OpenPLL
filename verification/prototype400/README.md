@@ -2196,3 +2196,13 @@ on CPU17, prospectively pairing with completed1541 coarse23/fine149 to seek
 an exploratory fast-model400 MHz bracket. This is not a full-layout bracket,
 model-error correction or release calibration. Existing hashed runners remain
 unchanged.
+
+Ranked-aggressor edge audit1546 revalidates the completed reference and records
+0.9 V crossing times for the20 largest charge-excursion scores in200–260 ns.
+Several leading nodes, including REFCLK and clkbuf_16_106.X, have only one rise
+and two falls in that interval. In contrast, dfrtp_4_3.CLK has23 rises and22 falls,
+with an observed mean rising rate near373.15 MHz. Other nodes show sparse or
+irregular activity. These are measured crossings, not qualified periodic-clock
+models or proof of each source's frequency effect. They show that an analytic
+REFCLK-only correction leaves oscillator-rate and startup-dependent exterior
+activity unresolved.

@@ -1,0 +1,22 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_receiver_waveforms_1467/assessment.json": "3b1c96eec7c4662c7ca3cd42a93d4315dd2b2baaeb98698911ed2ae9663abf27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_omitted_capacitive_drives_1543/assessment.json": "a97a1b10c1f47f2bee509e7d26409d7f5628791398e1333106c56b7c6b319028",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_ranked_aggressor_edges.py": "9a92414e4ee2d9aa86f627491dce5ebec91b95cf4816c40fd16073fde8799c50",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ranked_aggressor_edges_1546/edges.json": "c0eca0cd5a93fba4edc4687119c9cf59053322c0f321a4acc8ebcb23b84ea71e"
+  },
+  "completed_reference_only": true,
+  "ranked_boundaries": 20,
+  "window_ns": [
+    200,
+    260
+  ],
+  "threshold_V": 0.9,
+  "edge_counts_do_not_establish_periodic_clock_models": true,
+  "causal_aggressor_models_qualified": false,
+  "frequency_effect_qualified": false,
+  "release_ready": false
+}
