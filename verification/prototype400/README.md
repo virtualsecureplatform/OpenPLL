@@ -1727,3 +1727,14 @@ The explicit override record is hash-pinned in the launch, since the reusable
 worker defaults to CPU17. Shared CPU/RAM leases, 4 GiB and a one-hour native
 limit per corner remain unchanged. Both campaigns are live; no result from
 an active native waveform is assessed.
+
+Completed-only review1509 waits for both reset-pulse campaigns, verifies their
+actual input/artifact hashes and matches every observation to the prospective
+plan. It rejects missing, duplicated, unplanned or inconsistently classified
+fixtures and requires identical extracted-cell sources. The common declared
+2 ns pulse is checked in exactly 75 observations: five masters, five corners,
+and full ramps of 20/400/1600 ps. All 300 observations and all failures remain
+in the review; a passing common pulse is not a minimum-width or continuous
+slew/load bound. Three guards pass, including deliberate incomplete coverage
+and a failed primitive check mislabeled as passing. The review adds no native
+cases and waits on process identity plus terminal receipt, never active traces.
