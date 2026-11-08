@@ -1738,3 +1738,14 @@ in the review; a passing common pulse is not a minimum-width or continuous
 slew/load bound. Three guards pass, including deliberate incomplete coverage
 and a failed primitive check mislabeled as passing. The review adds no native
 cases and waits on process identity plus terminal receipt, never active traces.
+
+Slow-ramp campaign1507 completed all 100 fixtures. Its original 8–9 ns
+prestate window rejects eight dfrtp_1 fixtures at SS/SF, including their no-pulse
+controls; these are invalid initial-state observations, not established reset
+capture failures. In the verified closed no-pulse traces, SS/SF Q is respectively
+1.609272/1.603998 V at 8 ns, 1.727652/1.723330 V at 9 ns, and above 1.796 V at
+12 ns. The earliest tested ramp starts at 9.2 ns. Original failed observations
+and completed receipt are retained unchanged. A separately recorded reassessment
+will use 200–100 ps before each planned ramp leading edge, with inactive reset
+and adequate sampling required. This adjusts observation timing without any
+native rerun; it cannot qualify a continuous or routed reset timing bound.
