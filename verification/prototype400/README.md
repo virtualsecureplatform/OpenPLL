@@ -2256,3 +2256,14 @@ with one case and no identical retry. It is not included in the endpoint fit.
 Two planner tests pass, including extrapolation/nonfinite/invalid-knot rejection.
 The plan is retained before the target measurement; model discrepancy corrections
 are not applied and full-layout release qualification remains open.
+
+Mixed-signal runner v9 reads native static-subsystem20–60 ns receipts directly,
+without relabeling them as legacy200–260 ns captures. Its reader verifies all
+source/artifact hashes, the TT27 C/1.8 V deck,32 fF/grounded-exterior scope and
+all302 saved leaf-voltage checks. It independently infers coarse/fine codes from
+the complete thermometer pattern and rejects changed input labels. Recorded
+voltage-history cases are rejected as static prediction points. Four tests pass,
+and both real coarse23 bracket captures read successfully. Per-case pins include
+the point inputs and dependencies. Selected digital RTL remains unchanged;
+frequency interpolation, detector response and clock timing stay diagnostic and
+unqualified. This adapter enables exploratory loop checks, not release passes.
