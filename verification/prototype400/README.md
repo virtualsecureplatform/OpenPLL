@@ -1487,3 +1487,17 @@ at its explicit small-macro applicability stop because the nominal window is
 is claimed. Fill-aware parasitics, input loading, antenna/power integration,
 startup timing and actual-frequency-range qualification remain open. The new
 filled GDS is an unselected alternative; no existing analog reference is rebound.
+
+
+Frequency-capacity measurement 1480 checks the same ECO database and fresh
+min/max wire RC at 400 and 420 MHz across five conditional cell-view corners.
+All five 400 MHz max-path checks are positive; the minimum is SS +111.357369 ps.
+At 420 MHz SS is -7.690293 ps, while the other four corners remain positive.
+Do not call the candidate 420 MHz capable across corners or infer an arbitrary
+startup/tracking frequency range. Min-path reports retain the previously
+identified first-synchronizer aperture negatives. These are capacity constraints:
+the original RESET_N false path and asynchronous clock exceptions are explicitly
+retained, with no new exceptions added. They are not a startup/reset or physical
+cell-model qualification. The filled parent is not yet represented in those
+internal-macro wire RC measurements. Summary 1481 links the completed physical
+checks and this measured limit without selecting the ECO or closing a release gate.

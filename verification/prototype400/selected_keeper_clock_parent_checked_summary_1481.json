@@ -1,0 +1,33 @@
+{
+  "completed_evidence": {
+    "selected_keeper_clock_branch_regenerated_fill_1476": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_regenerated_fill_1476/assessment.json",
+      "sha256": "ebf74c3233eeb1c25ca8ce1a8b783c7907c08d0354cbae302e92a92ff28fd2f0"
+    },
+    "selected_keeper_clock_branch_filled_parent_DRC_1477": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_filled_parent_DRC_1477/assessment.json",
+      "sha256": "602bd38e67187c55971a105875df769e1ad9618bcb77d120ef7ac3223dee6792"
+    },
+    "selected_keeper_clock_branch_filled_parent_LVS_1478": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_filled_parent_LVS_1478/assessment.json",
+      "sha256": "9bcf235ac5020dd31eae2e753183af23dbc6a0f3c4f7b177a143ed4262b2e278"
+    },
+    "selected_keeper_clock_branch_fill_density_1479": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_fill_density_1479/assessment.json",
+      "sha256": "55811df379a36917e921042704d6580cbb911e785794d6708630b931f3dd385f"
+    }
+  },
+  "filled_GDS_sha256": "96fa3766e37132f74e84c6988e99577215bb590bc31ae320378b73932be6d420",
+  "full_parent_Magic_DRC_rectangles": 0,
+  "expanded_parent_LVS_unique_match": true,
+  "global_density_limits_met": true,
+  "stock_density_window_applicability_pass": false,
+  "minimum_400MHz_max_path_screen_slack_ns": 0.111357369,
+  "SS_420MHz_max_path_screen_slack_ns": -0.007690293,
+  "retained_reset_and_async_screening_exceptions": true,
+  "startup_and_actual_frequency_range_qualified": false,
+  "fill_aware_parasitics_qualified": false,
+  "physical_timing_qualified": false,
+  "selected": false,
+  "release_ready": false
+}
