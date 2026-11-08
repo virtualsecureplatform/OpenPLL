@@ -1,0 +1,27 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/prototype400/selected_keeper_reset_pulse_grid_launch_1504.json": "00df1639d657fd504a8f482e3a851474ad8fb39888fcdb6b3205f778256cf969",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/recover_keeper_reset_TT_observations.py": "0b587d9a4c6b9e36e9006ad7c1c022fc193e69cc7a13da5b304e445ae9a52a6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_reset_pulse_grid_v3.py": "48b5531e4dc061e2c1db1cb6d3240ec46e54746e889b1328c985e339967d03a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/owner.json": "a0dcdc28b04101cb51210201514517a997ffff144442417f5d7f2673d19d21d9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/status.json": "b760941055a2e20dff9cb60cded3c10861bdf8a0ab71b486b1afb890bb1c0e6e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/plan.json": "08218cbb8effe982a44c27310f3f23f1e721b45320aa0b401aba61bcef2b59fb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/cells.spice": "b82263d82f56d45a02c092ba2488eb80c972366913b08454605f1843bd320665",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/tt/native.process.json": "0b1e05418349f898aca4e2751f464f360b9b0c39ad04053d2347d81961e7678e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/tt/native.log": "38025819074c5b53c6160ff405e10e38e2fae6bd97f7577bb21bd730c35523cb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/tt/reset.cir": "36108e1c5255596ebcbd79eec166bba1ec51e6743af9a16dafb25adc8e10b4e8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/tt/.spiceinit": "4f989b2ccc180f50d329b9eae44b2269f2241303c57fa94cc008dc7e3cd4e6e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/tt/waveform.dat": "105411fbcd1f1ada55e74c049d8b305c56c2caa216bfee02c0f2e260c0f3166a"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_TT_observations_1508/observations.json": "d28cf0adc0fc9444bb4210a9a4c1cb82fcd57602fd6aa52094b85bfac7dbd994"
+  },
+  "native_TT_completed_before_collector_failure": true,
+  "native_rerun": false,
+  "cases": 40,
+  "failed_cases": 2,
+  "all_grid_fixtures_pass": false,
+  "minimum_pulse_bound_qualified": false,
+  "routed_reset_timing_qualified": false,
+  "release_ready": false
+}

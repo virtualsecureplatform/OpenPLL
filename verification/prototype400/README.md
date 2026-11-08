@@ -1698,3 +1698,19 @@ Q-net load exceeding its declared fixture load. The smallest load margin is
 not bounds on real reset waveforms or regenerated-fill loading. Discrete pulse
 observations cannot provide a continuous envelope by themselves. The completed
 receipt and runner retain the mismatch rather than qualifying the initial grid.
+
+The TT native capture in 1504 completed normally, but its collector stopped
+when merging duplicate negative_control fields. Recovery 1508 verifies the
+specific post-native exception, original launch hashes, absent original process
+identities, normal completion markers and complete finite ordered waveforms.
+It reuses the closed TT capture without any native rerun. Of forty fixtures,
+two fail: the 100 ps / 20 ps-ramp pulse does not set dfstp_1 or dfstp_2 despite
+verified opposite prestates and released control. The other 38 pass, including
+all five no-pulse controls and all sampled widths of 400 ps or more. No minimum
+pulse bound follows from these finite observations. Completed receipt and all
+forty observations are retained, including failures.
+
+Collector v3 fixes the duplicate-field merge, preserves 1504, reuses its TT
+capture and continues FF/SS/SF/FS in distinct campaign1506. Three assessment
+controls pass. CPU17/4GiB and the one-hour native limit per corner remain in
+force. This does not rerun the original TT stimulus or change cell models.
