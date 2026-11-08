@@ -714,3 +714,7 @@ The live CPU-29 collector pins a three-point protocol before any corrected captu
 ### Resolved overlap/fringe full-layout trace queued (1352)
 
 A live CPU-28 controller verifies the unchanged checked GDS, isolated logging engine and eight native controls, then waits for a 16 GiB lease (24 h queue cap). One native extraction has a separate 1800 s cap and no retry. Unlike trace 1308, this engine records resolved overlap shielding and fringe support. Full-layout circuit/ledger/spatial audits remain pending; split geometries and ground placement are not promoted. See `selected_keeper_resolved_fringe_trace_launch.json`.
+
+### Completed-trace support audit observer initialized (1353)
+
+A live CPU-29 observer waits for the completed 1352 receipt and checks owner birth while waiting. Under an 8 GiB analysis lease, it verifies the full artifact closure, exact C-only circuit preservation, overlap shielding subtraction and fringe support integrals, then rechecks hashes. It does not read partial native traces. Nine existing overlap/fringe auditor tests pass. Split cases remain explicit and ground placement, distributed R, simulation authorization and release qualification remain false. See `selected_keeper_resolved_fringe_audit_launch.json`.

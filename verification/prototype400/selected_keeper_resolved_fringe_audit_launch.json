@@ -1,0 +1,16 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_resolved_fringe_trace.py": "755a3f7674349dba972273f081f080bb3b6e23c202aaf24bee3e57da1523ab45"
+  },
+  "owner": {
+    "pid": 2127631,
+    "birth": "133053563"
+  },
+  "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resolved_fringe_trace_1352",
+  "state": "waiting_for_completed_resolved_trace",
+  "CPU": 29,
+  "analysis_memory_GiB": 8,
+  "observation_cap_s": 172800,
+  "partial_native_trace_read_allowed": false,
+  "release_ready": false
+}
