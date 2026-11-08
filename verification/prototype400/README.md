@@ -1622,3 +1622,16 @@ holdout leakage, extrapolation, domain and physical-receipt rejection controls.
 No global interpolation bound, finer-step convergence, other-corner validity or
 closed-loop qualification is accepted from this diagnostic campaign. The live
 waiting launch and its prospective roles are retained.
+
+Per-register reset/pulse coverage 1496 queries all 481 asynchronous-reset pins
+and all 481 clock pins separately in each of five native corner views of the
+original routed macro. All 2,405 high-pulse and 2,405 low-pulse checks are
+reported and pass. Recovery and removal each report 2,135 of 2,405 queried
+endpoints with no violations; 54 endpoints per corner have no reported reset
+path and are explicitly unqualified. Minimum reported recovery/removal margins
+are 0.713801026 ns / 0.010463519 ns. Three parser rejection/control tests pass.
+The existing primary-reset and asynchronous-clock exceptions are preserved,
+with no new exceptions. Periodic screening clocks, conditional cell views and
+original macro RC do not qualify actual BBPD pulses, startup frequency range,
+external reset pulse width, regenerated-fill loading or full lifecycle timing.
+The completed receipt and compact endpoint summary are retained.

@@ -1,0 +1,21 @@
+{
+  "registers_per_corner": 481,
+  "corners": [
+    "tt",
+    "ff",
+    "ss",
+    "sf",
+    "fs"
+  ],
+  "minimum_reported_slack_ns": {
+    "recovery": 0.713801026,
+    "removal": 0.010463519,
+    "pulse_high": 0.579329431,
+    "pulse_low": 0.797079146
+  },
+  "unreported_reset_endpoints_per_corner": 54,
+  "no_path_is_not_a_pass": true,
+  "existing_external_reset_and_async_exceptions_preserved": true,
+  "actual_startup_pulse_shapes_or_cell_models_qualified": false,
+  "release_ready": false
+}
