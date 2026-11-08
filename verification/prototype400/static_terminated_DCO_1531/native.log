@@ -1,0 +1,1335 @@
+
+*****
+***** Welcome to the Xyce(TM) Parallel Electronic Simulator
+*****
+***** This is version Xyce Release 7.10.0-opensource
+***** Date: Sun Nov 08 20:26:12 UTC 2026
+
+
+***** Executing netlist /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_terminated_DCO_1531/transient.spice
+
+***** Reading and parsing netlist...
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT0:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT0:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT19:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT19:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT37:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT37:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__tt.pm3.spice
+ at or near line 51177
+ Device model XDUT:XFLAT48:XDEVICE:SKY130_FD_PR__PFET_01V8_HVT__MODEL.188:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__tt.pm3.spice
+ at or near line 51177
+ Device model XDUT:XFLAT48:XDEVICE:SKY130_FD_PR__PFET_01V8_HVT__MODEL.188:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT51:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT51:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT58:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT58:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT66:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT66:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT67:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT67:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT73:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT73:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT80:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT80:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT81:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT81:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 43670
+ Device model XDUT:XFLAT94:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.161: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 43670
+ Device model XDUT:XFLAT94:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.161: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT96:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT96:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT104:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT104:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__tt.pm3.spice
+ at or near line 51177
+ Device model XDUT:XFLAT121:XDEVICE:SKY130_FD_PR__PFET_01V8_HVT__MODEL.188:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__tt.pm3.spice
+ at or near line 51177
+ Device model XDUT:XFLAT121:XDEVICE:SKY130_FD_PR__PFET_01V8_HVT__MODEL.188:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT129:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT129:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT131:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT131:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT137:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT137:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT157:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT157:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT166:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT166:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT168:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT168:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT181:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT181:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT188:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT188:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT190:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT190:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT193:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT193:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT205:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT205:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT207:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT207:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT214:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT214:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT218:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT218:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT229:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT229:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT237:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT237:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT238:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT238:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT241:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 24158
+ Device model XDUT:XFLAT241:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.89: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT251:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT251:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT272:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT272:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT273:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT273:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 43670
+ Device model XDUT:XFLAT278:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.161: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 43670
+ Device model XDUT:XFLAT278:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.161: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT280:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT280:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT281:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT281:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT286:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT286:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT287:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT287:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 43670
+ Device model XDUT:XFLAT291:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.161: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 43670
+ Device model XDUT:XFLAT291:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.161: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 43670
+ Device model XDUT:XFLAT301:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.161: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+ at or near line 43670
+ Device model XDUT:XFLAT301:XDEVICE:SKY130_FD_PR__NFET_01V8__MODEL.161: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT311:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT311:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT316:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT316:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT322:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT322:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT327:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT327:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT334:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT334:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT344:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Model
+ card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+ at or near line 19772
+ Device model XDUT:XFLAT344:XDEVICE:SKY130_FD_PR__PFET_01V8__MODEL.71: Given
+ pbswgd is less than 0.1. Pbswgd is set to 0.1
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT349:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Model card specifies BSIM4 version 4.5 which is older than the oldest version
+ supported in Xyce (4.6.1).  Using oldest version available.
+ 
+Netlist warning in file
+ /opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/corners/../../../libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice
+ at or near line 19843
+ Device model XDUT:XFLAT349:XDEVICE:SKY130_FD_PR__NFET_01V8_LVT__MODEL.71:
+ Given pbswgd is less than 0.1. Pbswgd is set to 0.1
+Maximum warning count has been exceeded and will no longer be displayed
+***** Setting up topology...
+
+***** Device Count Summary ...
+       C level 1 (Capacitor)                   93814
+       D level 1,2 (Diode)                         1
+       M level 14 (BSIM4)                      10176
+       R level 1 (Resistor)                        2
+       V level 1 (Independent Voltage Source)      2
+       ---------------------------------------------
+       Total Devices                          103995
+***** Setting up matrix structure...
+***** Number of Unknowns = 33721
+***** Initializing...
+
+***** Beginning DC Operating Point Calculation...
+
+***** Beginning Transient Calculation...
+
+***** Percent complete: 1.01667 %
+***** Current system time: Sun Nov  8 20:26:42 2026
+***** Estimated time to completion: 15 min., 46 sec.
+
+OpenPLL UMFPACK progress: linear_calls=100 numeric_factors=34 cached_accepts=66 exact_hits=0 refinement_corrections=134 DC_hits=0 transient=1 krylov_steps=12
+OpenPLL adapter timing: calls=100 gather_s=0.194732 prepare_s=0.0961209 solve_s=2.00763 scatter_s=0.00264688
+***** Percent complete: 2.03333 %
+***** Current system time: Sun Nov  8 20:26:48 2026
+***** Estimated time to completion: 12 min., 31 sec.
+
+OpenPLL UMFPACK progress: linear_calls=200 numeric_factors=34 cached_accepts=166 exact_hits=0 refinement_corrections=334 DC_hits=0 transient=1 krylov_steps=12
+OpenPLL adapter timing: calls=200 gather_s=0.303497 prepare_s=0.188469 solve_s=2.47662 scatter_s=0.00520542
+***** Percent complete: 3.05 %
+***** Current system time: Sun Nov  8 20:26:54 2026
+***** Estimated time to completion: 11 min., 22 sec.
+
+***** Percent complete: 4.05 %
+***** Current system time: Sun Nov  8 20:27:00 2026
+***** Estimated time to completion: 10 min., 46 sec.
+
+OpenPLL UMFPACK progress: linear_calls=300 numeric_factors=34 cached_accepts=266 exact_hits=0 refinement_corrections=534 DC_hits=0 transient=1 krylov_steps=12
+OpenPLL adapter timing: calls=300 gather_s=0.412914 prepare_s=0.28091 solve_s=2.94617 scatter_s=0.00781072
+***** Percent complete: 5.05 %
+***** Current system time: Sun Nov  8 20:27:06 2026
+***** Estimated time to completion: 10 min., 21 sec.
+
+***** Percent complete: 6.05 %
+***** Current system time: Sun Nov  8 20:27:11 2026
+***** Estimated time to completion: 10 min., 3 sec.
+
+OpenPLL UMFPACK progress: linear_calls=400 numeric_factors=34 cached_accepts=366 exact_hits=0 refinement_corrections=734 DC_hits=0 transient=1 krylov_steps=12
+OpenPLL adapter timing: calls=400 gather_s=0.522242 prepare_s=0.372672 solve_s=3.41542 scatter_s=0.0103525
+***** Percent complete: 7.06667 %
+***** Current system time: Sun Nov  8 20:27:17 2026
+***** Estimated time to completion:  9 min., 48 sec.
+
+OpenPLL UMFPACK progress: linear_calls=500 numeric_factors=34 cached_accepts=466 exact_hits=0 refinement_corrections=934 DC_hits=0 transient=1 krylov_steps=12
+OpenPLL adapter timing: calls=500 gather_s=0.631678 prepare_s=0.464371 solve_s=3.88476 scatter_s=0.0128978
+***** Percent complete: 8.08333 %
+***** Current system time: Sun Nov  8 20:27:23 2026
+***** Estimated time to completion:  9 min., 35 sec.
+
+OpenPLL UMFPACK progress: linear_calls=600 numeric_factors=39 cached_accepts=561 exact_hits=0 refinement_corrections=1192 DC_hits=0 transient=1 krylov_steps=480
+OpenPLL adapter timing: calls=600 gather_s=0.740264 prepare_s=0.556353 solve_s=5.45936 scatter_s=0.0154691
+***** Percent complete: 9.1 %
+***** Current system time: Sun Nov  8 20:27:33 2026
+***** Estimated time to completion: 10 min., 6 sec.
+
+OpenPLL UMFPACK progress: linear_calls=700 numeric_factors=40 cached_accepts=660 exact_hits=0 refinement_corrections=1456 DC_hits=0 transient=1 krylov_steps=1223
+OpenPLL adapter timing: calls=700 gather_s=0.848927 prepare_s=0.6477 solve_s=7.30881 scatter_s=0.0181203
+***** Percent complete: 10.1167 %
+***** Current system time: Sun Nov  8 20:27:45 2026
+***** Estimated time to completion: 10 min., 40 sec.
+
+OpenPLL UMFPACK progress: linear_calls=800 numeric_factors=43 cached_accepts=757 exact_hits=0 refinement_corrections=1742 DC_hits=0 transient=1 krylov_steps=2058
+OpenPLL adapter timing: calls=800 gather_s=0.958982 prepare_s=0.739885 solve_s=9.50659 scatter_s=0.0208159
+***** Percent complete: 11.1333 %
+***** Current system time: Sun Nov  8 20:27:57 2026
+***** Estimated time to completion: 11 min., 11 sec.
+
+OpenPLL UMFPACK progress: linear_calls=900 numeric_factors=49 cached_accepts=851 exact_hits=0 refinement_corrections=2011 DC_hits=0 transient=1 krylov_steps=2854
+OpenPLL adapter timing: calls=900 gather_s=1.06833 prepare_s=0.831645 solve_s=11.7422 scatter_s=0.0235427
+OpenPLL UMFPACK progress: linear_calls=1000 numeric_factors=55 cached_accepts=945 exact_hits=0 refinement_corrections=2297 DC_hits=0 transient=1 krylov_steps=3660
+OpenPLL adapter timing: calls=1000 gather_s=1.17707 prepare_s=0.923536 solve_s=14.0161 scatter_s=0.0263124
+***** Percent complete: 12.15 %
+***** Current system time: Sun Nov  8 20:28:08 2026
+***** Estimated time to completion: 11 min., 34 sec.
+
+OpenPLL UMFPACK progress: linear_calls=1100 numeric_factors=57 cached_accepts=1043 exact_hits=0 refinement_corrections=2578 DC_hits=0 transient=1 krylov_steps=4464
+OpenPLL adapter timing: calls=1100 gather_s=1.28585 prepare_s=1.01534 solve_s=16.0731 scatter_s=0.0290044
+***** Percent complete: 13.1667 %
+***** Current system time: Sun Nov  8 20:28:20 2026
+***** Estimated time to completion: 11 min., 50 sec.
+
+OpenPLL UMFPACK progress: linear_calls=1200 numeric_factors=62 cached_accepts=1138 exact_hits=0 refinement_corrections=2864 DC_hits=0 transient=1 krylov_steps=5233
+OpenPLL adapter timing: calls=1200 gather_s=1.39531 prepare_s=1.10624 solve_s=18.2158 scatter_s=0.031643
+***** Percent complete: 14.1833 %
+***** Current system time: Sun Nov  8 20:28:32 2026
+***** Estimated time to completion: 12 min., 0 sec.
+
+OpenPLL UMFPACK progress: linear_calls=1300 numeric_factors=64 cached_accepts=1236 exact_hits=0 refinement_corrections=3150 DC_hits=0 transient=1 krylov_steps=5970
+OpenPLL adapter timing: calls=1300 gather_s=1.50458 prepare_s=1.20008 solve_s=20.1471 scatter_s=0.0343153
+OpenPLL UMFPACK progress: linear_calls=1400 numeric_factors=68 cached_accepts=1332 exact_hits=0 refinement_corrections=3424 DC_hits=0 transient=1 krylov_steps=6719
+OpenPLL adapter timing: calls=1400 gather_s=1.61327 prepare_s=1.29223 solve_s=22.1858 scatter_s=0.0370097
+***** Percent complete: 15.2 %
+***** Current system time: Sun Nov  8 20:28:43 2026
+***** Estimated time to completion: 12 min., 9 sec.
+
+OpenPLL UMFPACK progress: linear_calls=1500 numeric_factors=73 cached_accepts=1427 exact_hits=0 refinement_corrections=3702 DC_hits=0 transient=1 krylov_steps=7509
+OpenPLL adapter timing: calls=1500 gather_s=1.72285 prepare_s=1.38411 solve_s=24.3545 scatter_s=0.0398424
+***** Percent complete: 16.2167 %
+***** Current system time: Sun Nov  8 20:28:55 2026
+***** Estimated time to completion: 12 min., 18 sec.
+
+OpenPLL UMFPACK progress: linear_calls=1600 numeric_factors=79 cached_accepts=1521 exact_hits=0 refinement_corrections=3997 DC_hits=0 transient=1 krylov_steps=8309
+OpenPLL adapter timing: calls=1600 gather_s=1.83097 prepare_s=1.47536 solve_s=26.6094 scatter_s=0.042501
+***** Percent complete: 17.2333 %
+***** Current system time: Sun Nov  8 20:29:07 2026
+***** Estimated time to completion: 12 min., 20 sec.
+
+OpenPLL UMFPACK progress: linear_calls=1700 numeric_factors=81 cached_accepts=1619 exact_hits=0 refinement_corrections=4264 DC_hits=0 transient=1 krylov_steps=9056
+OpenPLL adapter timing: calls=1700 gather_s=1.94021 prepare_s=1.56737 solve_s=28.5305 scatter_s=0.0451488
+OpenPLL UMFPACK progress: linear_calls=1800 numeric_factors=85 cached_accepts=1715 exact_hits=0 refinement_corrections=4541 DC_hits=0 transient=1 krylov_steps=9798
+OpenPLL adapter timing: calls=1800 gather_s=2.0494 prepare_s=1.66013 solve_s=30.5485 scatter_s=0.0478161
+***** Percent complete: 18.25 %
+***** Current system time: Sun Nov  8 20:29:18 2026
+***** Estimated time to completion: 12 min., 22 sec.
+
+OpenPLL UMFPACK progress: linear_calls=1900 numeric_factors=87 cached_accepts=1813 exact_hits=0 refinement_corrections=4862 DC_hits=0 transient=1 krylov_steps=10658
+OpenPLL adapter timing: calls=1900 gather_s=2.1589 prepare_s=1.7539 solve_s=32.7944 scatter_s=0.0505686
+***** Percent complete: 19.2667 %
+***** Current system time: Sun Nov  8 20:29:30 2026
+***** Estimated time to completion: 12 min., 23 sec.
+
+OpenPLL UMFPACK progress: linear_calls=2000 numeric_factors=92 cached_accepts=1908 exact_hits=0 refinement_corrections=5155 DC_hits=0 transient=1 krylov_steps=11429
+OpenPLL adapter timing: calls=2000 gather_s=2.2683 prepare_s=1.84667 solve_s=34.9589 scatter_s=0.0533138
+***** Percent complete: 20.2833 %
+***** Current system time: Sun Nov  8 20:29:42 2026
+***** Estimated time to completion: 12 min., 25 sec.
+
+OpenPLL UMFPACK progress: linear_calls=2100 numeric_factors=96 cached_accepts=2004 exact_hits=0 refinement_corrections=5432 DC_hits=0 transient=1 krylov_steps=12216
+OpenPLL adapter timing: calls=2100 gather_s=2.37769 prepare_s=1.93996 solve_s=37.0979 scatter_s=0.0559913
+OpenPLL UMFPACK progress: linear_calls=2200 numeric_factors=101 cached_accepts=2099 exact_hits=0 refinement_corrections=5726 DC_hits=0 transient=1 krylov_steps=13005
+OpenPLL adapter timing: calls=2200 gather_s=2.48749 prepare_s=2.03378 solve_s=39.2916 scatter_s=0.0588088
+***** Percent complete: 21.3 %
+***** Current system time: Sun Nov  8 20:29:54 2026
+***** Estimated time to completion: 12 min., 24 sec.
+
+OpenPLL UMFPACK progress: linear_calls=2300 numeric_factors=103 cached_accepts=2197 exact_hits=0 refinement_corrections=5992 DC_hits=0 transient=1 krylov_steps=13779
+OpenPLL adapter timing: calls=2300 gather_s=2.59606 prepare_s=2.12671 solve_s=41.2683 scatter_s=0.0615392
+***** Percent complete: 22.3167 %
+***** Current system time: Sun Nov  8 20:30:06 2026
+***** Estimated time to completion: 12 min., 22 sec.
+
+OpenPLL UMFPACK progress: linear_calls=2400 numeric_factors=107 cached_accepts=2293 exact_hits=0 refinement_corrections=6257 DC_hits=0 transient=1 krylov_steps=14469
+OpenPLL adapter timing: calls=2400 gather_s=2.70553 prepare_s=2.21938 solve_s=43.1782 scatter_s=0.0642922
+***** Percent complete: 23.3333 %
+***** Current system time: Sun Nov  8 20:30:17 2026
+***** Estimated time to completion: 12 min., 17 sec.
+
+OpenPLL UMFPACK progress: linear_calls=2500 numeric_factors=109 cached_accepts=2391 exact_hits=0 refinement_corrections=6544 DC_hits=0 transient=1 krylov_steps=15316
+OpenPLL adapter timing: calls=2500 gather_s=2.81514 prepare_s=2.31247 solve_s=45.3575 scatter_s=0.0670759
+OpenPLL UMFPACK progress: linear_calls=2600 numeric_factors=114 cached_accepts=2486 exact_hits=0 refinement_corrections=6822 DC_hits=0 transient=1 krylov_steps=16124
+OpenPLL adapter timing: calls=2600 gather_s=2.92512 prepare_s=2.406 solve_s=47.5824 scatter_s=0.0698252
+***** Percent complete: 24.35 %
+***** Current system time: Sun Nov  8 20:30:29 2026
+***** Estimated time to completion: 12 min., 15 sec.
+
+OpenPLL UMFPACK progress: linear_calls=2700 numeric_factors=119 cached_accepts=2581 exact_hits=0 refinement_corrections=7109 DC_hits=0 transient=1 krylov_steps=16931
+OpenPLL adapter timing: calls=2700 gather_s=3.03464 prepare_s=2.49952 solve_s=49.8278 scatter_s=0.0726077
+***** Percent complete: 25.35 %
+***** Current system time: Sun Nov  8 20:30:41 2026
+***** Estimated time to completion: 12 min., 12 sec.
+
+OpenPLL UMFPACK progress: linear_calls=2800 numeric_factors=123 cached_accepts=2677 exact_hits=0 refinement_corrections=7367 DC_hits=0 transient=1 krylov_steps=17733
+OpenPLL adapter timing: calls=2800 gather_s=3.14397 prepare_s=2.59237 solve_s=51.9563 scatter_s=0.0754754
+***** Percent complete: 26.35 %
+***** Current system time: Sun Nov  8 20:30:53 2026
+***** Estimated time to completion: 12 min., 7 sec.
+
+OpenPLL UMFPACK progress: linear_calls=2900 numeric_factors=126 cached_accepts=2774 exact_hits=0 refinement_corrections=7628 DC_hits=0 transient=1 krylov_steps=18500
+OpenPLL adapter timing: calls=2900 gather_s=3.25274 prepare_s=2.68457 solve_s=53.9768 scatter_s=0.0782974
+OpenPLL UMFPACK progress: linear_calls=3000 numeric_factors=130 cached_accepts=2870 exact_hits=0 refinement_corrections=7928 DC_hits=0 transient=1 krylov_steps=19253
+OpenPLL adapter timing: calls=3000 gather_s=3.36563 prepare_s=2.77995 solve_s=56.1372 scatter_s=0.0812186
+***** Percent complete: 27.35 %
+***** Current system time: Sun Nov  8 20:31:04 2026
+***** Estimated time to completion: 12 min., 1 sec.
+
+OpenPLL UMFPACK progress: linear_calls=3100 numeric_factors=132 cached_accepts=2968 exact_hits=0 refinement_corrections=8241 DC_hits=0 transient=1 krylov_steps=20070
+OpenPLL adapter timing: calls=3100 gather_s=3.47757 prepare_s=2.87372 solve_s=58.3467 scatter_s=0.0840972
+***** Percent complete: 28.35 %
+***** Current system time: Sun Nov  8 20:31:16 2026
+***** Estimated time to completion: 11 min., 56 sec.
+
+OpenPLL UMFPACK progress: linear_calls=3200 numeric_factors=137 cached_accepts=3063 exact_hits=0 refinement_corrections=8539 DC_hits=0 transient=1 krylov_steps=20880
+OpenPLL adapter timing: calls=3200 gather_s=3.59086 prepare_s=2.96854 solve_s=60.6775 scatter_s=0.0870131
+***** Percent complete: 29.35 %
+***** Current system time: Sun Nov  8 20:31:28 2026
+***** Estimated time to completion: 11 min., 51 sec.
+
+OpenPLL UMFPACK progress: linear_calls=3300 numeric_factors=143 cached_accepts=3157 exact_hits=0 refinement_corrections=8817 DC_hits=0 transient=1 krylov_steps=21662
+OpenPLL adapter timing: calls=3300 gather_s=3.70265 prepare_s=3.06306 solve_s=62.9598 scatter_s=0.0899009
+***** Percent complete: 30.35 %
+***** Current system time: Sun Nov  8 20:31:40 2026
+***** Estimated time to completion: 11 min., 45 sec.
+
+OpenPLL UMFPACK progress: linear_calls=3400 numeric_factors=146 cached_accepts=3254 exact_hits=0 refinement_corrections=9101 DC_hits=0 transient=1 krylov_steps=22480
+OpenPLL adapter timing: calls=3400 gather_s=3.81389 prepare_s=3.15599 solve_s=65.1579 scatter_s=0.0927901
+OpenPLL UMFPACK progress: linear_calls=3500 numeric_factors=150 cached_accepts=3350 exact_hits=0 refinement_corrections=9391 DC_hits=0 transient=1 krylov_steps=23257
+OpenPLL adapter timing: calls=3500 gather_s=3.92279 prepare_s=3.24832 solve_s=67.2773 scatter_s=0.0955402
+***** Percent complete: 31.35 %
+***** Current system time: Sun Nov  8 20:31:51 2026
+***** Estimated time to completion: 11 min., 38 sec.
+
+OpenPLL UMFPACK progress: linear_calls=3600 numeric_factors=152 cached_accepts=3448 exact_hits=0 refinement_corrections=9678 DC_hits=0 transient=1 krylov_steps=23993
+OpenPLL adapter timing: calls=3600 gather_s=4.03339 prepare_s=3.34363 solve_s=69.203 scatter_s=0.0983034
+***** Percent complete: 32.35 %
+***** Current system time: Sun Nov  8 20:32:02 2026
+***** Estimated time to completion: 11 min., 29 sec.
+
+OpenPLL UMFPACK progress: linear_calls=3700 numeric_factors=156 cached_accepts=3544 exact_hits=0 refinement_corrections=9946 DC_hits=0 transient=1 krylov_steps=24741
+OpenPLL adapter timing: calls=3700 gather_s=4.14222 prepare_s=3.43594 solve_s=71.2194 scatter_s=0.100962
+***** Percent complete: 33.35 %
+***** Current system time: Sun Nov  8 20:32:14 2026
+***** Estimated time to completion: 11 min., 22 sec.
+
+OpenPLL UMFPACK progress: linear_calls=3800 numeric_factors=161 cached_accepts=3639 exact_hits=0 refinement_corrections=10234 DC_hits=0 transient=1 krylov_steps=25568
+OpenPLL adapter timing: calls=3800 gather_s=4.25116 prepare_s=3.52808 solve_s=73.4728 scatter_s=0.103706
+OpenPLL UMFPACK progress: linear_calls=3900 numeric_factors=166 cached_accepts=3734 exact_hits=0 refinement_corrections=10515 DC_hits=0 transient=1 krylov_steps=26358
+OpenPLL adapter timing: calls=3900 gather_s=4.3596 prepare_s=3.61974 solve_s=75.6358 scatter_s=0.106342
+***** Percent complete: 34.35 %
+***** Current system time: Sun Nov  8 20:32:26 2026
+***** Estimated time to completion: 11 min., 14 sec.
+
+OpenPLL UMFPACK progress: linear_calls=4000 numeric_factors=169 cached_accepts=3831 exact_hits=0 refinement_corrections=10784 DC_hits=0 transient=1 krylov_steps=27166
+OpenPLL adapter timing: calls=4000 gather_s=4.46937 prepare_s=3.71187 solve_s=77.7411 scatter_s=0.109041
+***** Percent complete: 35.35 %
+***** Current system time: Sun Nov  8 20:32:37 2026
+***** Estimated time to completion: 11 min., 6 sec.
+
+OpenPLL UMFPACK progress: linear_calls=4100 numeric_factors=173 cached_accepts=3927 exact_hits=0 refinement_corrections=11069 DC_hits=0 transient=1 krylov_steps=27928
+OpenPLL adapter timing: calls=4100 gather_s=4.5796 prepare_s=3.80653 solve_s=79.8312 scatter_s=0.1118
+***** Percent complete: 36.35 %
+***** Current system time: Sun Nov  8 20:32:48 2026
+***** Estimated time to completion: 10 min., 58 sec.
+
+OpenPLL UMFPACK progress: linear_calls=4200 numeric_factors=175 cached_accepts=4025 exact_hits=0 refinement_corrections=11356 DC_hits=0 transient=1 krylov_steps=28657
+OpenPLL adapter timing: calls=4200 gather_s=4.69061 prepare_s=3.90137 solve_s=81.7604 scatter_s=0.114643
+***** Percent complete: 37.35 %
+***** Current system time: Sun Nov  8 20:33:00 2026
+***** Estimated time to completion: 10 min., 50 sec.
+
+OpenPLL UMFPACK progress: linear_calls=4300 numeric_factors=180 cached_accepts=4120 exact_hits=0 refinement_corrections=11643 DC_hits=0 transient=1 krylov_steps=29427
+OpenPLL adapter timing: calls=4300 gather_s=4.80528 prepare_s=3.99908 solve_s=83.982 scatter_s=0.117597
+OpenPLL UMFPACK progress: linear_calls=4400 numeric_factors=184 cached_accepts=4216 exact_hits=0 refinement_corrections=11919 DC_hits=0 transient=1 krylov_steps=30198
+OpenPLL adapter timing: calls=4400 gather_s=4.91716 prepare_s=4.0934 solve_s=86.1077 scatter_s=0.120449
+***** Percent complete: 38.35 %
+***** Current system time: Sun Nov  8 20:33:13 2026
+***** Estimated time to completion: 10 min., 43 sec.
+
+OpenPLL UMFPACK progress: linear_calls=4500 numeric_factors=189 cached_accepts=4311 exact_hits=0 refinement_corrections=12244 DC_hits=0 transient=1 krylov_steps=31017
+OpenPLL adapter timing: calls=4500 gather_s=5.02794 prepare_s=4.18683 solve_s=88.4228 scatter_s=0.123184
+***** Percent complete: 39.35 %
+***** Current system time: Sun Nov  8 20:33:24 2026
+***** Estimated time to completion: 10 min., 34 sec.
+
+OpenPLL UMFPACK progress: linear_calls=4600 numeric_factors=192 cached_accepts=4408 exact_hits=0 refinement_corrections=12505 DC_hits=0 transient=1 krylov_steps=31733
+OpenPLL adapter timing: calls=4600 gather_s=5.14045 prepare_s=4.28416 solve_s=90.3839 scatter_s=0.126212
+***** Percent complete: 40.35 %
+***** Current system time: Sun Nov  8 20:33:37 2026
+***** Estimated time to completion: 10 min., 26 sec.
+
+OpenPLL UMFPACK progress: linear_calls=4700 numeric_factors=196 cached_accepts=4504 exact_hits=0 refinement_corrections=12766 DC_hits=0 transient=1 krylov_steps=32466
+OpenPLL adapter timing: calls=4700 gather_s=5.25138 prepare_s=4.37646 solve_s=92.4373 scatter_s=0.129312
+OpenPLL UMFPACK progress: linear_calls=4800 numeric_factors=199 cached_accepts=4601 exact_hits=0 refinement_corrections=13054 DC_hits=0 transient=1 krylov_steps=33218
+OpenPLL adapter timing: calls=4800 gather_s=5.36345 prepare_s=4.47046 solve_s=94.4849 scatter_s=0.132087
+***** Percent complete: 41.35 %
+***** Current system time: Sun Nov  8 20:33:48 2026
+***** Estimated time to completion: 10 min., 17 sec.
+
+OpenPLL UMFPACK progress: linear_calls=4900 numeric_factors=203 cached_accepts=4697 exact_hits=0 refinement_corrections=13349 DC_hits=0 transient=1 krylov_steps=34025
+OpenPLL adapter timing: calls=4900 gather_s=5.47167 prepare_s=4.56379 solve_s=96.6846 scatter_s=0.134924
+***** Percent complete: 42.35 %
+***** Current system time: Sun Nov  8 20:34:00 2026
+***** Estimated time to completion: 10 min., 9 sec.
+
+OpenPLL UMFPACK progress: linear_calls=5000 numeric_factors=208 cached_accepts=4792 exact_hits=0 refinement_corrections=13637 DC_hits=0 transient=1 krylov_steps=34862
+OpenPLL adapter timing: calls=5000 gather_s=5.58305 prepare_s=4.65972 solve_s=98.9995 scatter_s=0.137824
+***** Percent complete: 43.35 %
+***** Current system time: Sun Nov  8 20:34:12 2026
+***** Estimated time to completion:  9 min., 59 sec.
+
+OpenPLL UMFPACK progress: linear_calls=5100 numeric_factors=212 cached_accepts=4888 exact_hits=0 refinement_corrections=13944 DC_hits=0 transient=1 krylov_steps=35694
+OpenPLL adapter timing: calls=5100 gather_s=5.69176 prepare_s=4.75236 solve_s=101.253 scatter_s=0.140601
+***** Percent complete: 44.35 %
+***** Current system time: Sun Nov  8 20:34:23 2026
+***** Estimated time to completion:  9 min., 50 sec.
+
+OpenPLL UMFPACK progress: linear_calls=5200 numeric_factors=215 cached_accepts=4985 exact_hits=0 refinement_corrections=14204 DC_hits=0 transient=1 krylov_steps=36444
+OpenPLL adapter timing: calls=5200 gather_s=5.80197 prepare_s=4.84621 solve_s=103.222 scatter_s=0.14339
+OpenPLL UMFPACK progress: linear_calls=5300 numeric_factors=218 cached_accepts=5082 exact_hits=0 refinement_corrections=14486 DC_hits=0 transient=1 krylov_steps=37196
+OpenPLL adapter timing: calls=5300 gather_s=5.91332 prepare_s=4.93951 solve_s=105.222 scatter_s=0.14613
+***** Percent complete: 45.35 %
+***** Current system time: Sun Nov  8 20:34:34 2026
+***** Estimated time to completion:  9 min., 40 sec.
+
+OpenPLL UMFPACK progress: linear_calls=5400 numeric_factors=221 cached_accepts=5179 exact_hits=0 refinement_corrections=14801 DC_hits=0 transient=1 krylov_steps=38027
+OpenPLL adapter timing: calls=5400 gather_s=6.02267 prepare_s=5.03358 solve_s=107.455 scatter_s=0.148977
+***** Percent complete: 46.35 %
+***** Current system time: Sun Nov  8 20:34:46 2026
+***** Estimated time to completion:  9 min., 31 sec.
+
+OpenPLL UMFPACK progress: linear_calls=5500 numeric_factors=227 cached_accepts=5273 exact_hits=0 refinement_corrections=15100 DC_hits=0 transient=1 krylov_steps=38810
+OpenPLL adapter timing: calls=5500 gather_s=6.13494 prepare_s=5.12983 solve_s=109.733 scatter_s=0.151862
+***** Percent complete: 47.35 %
+***** Current system time: Sun Nov  8 20:34:58 2026
+***** Estimated time to completion:  9 min., 22 sec.
+
+OpenPLL UMFPACK progress: linear_calls=5600 numeric_factors=232 cached_accepts=5368 exact_hits=0 refinement_corrections=15385 DC_hits=0 transient=1 krylov_steps=39636
+OpenPLL adapter timing: calls=5600 gather_s=6.24565 prepare_s=5.22494 solve_s=112.039 scatter_s=0.15474
+OpenPLL UMFPACK progress: linear_calls=5700 numeric_factors=234 cached_accepts=5466 exact_hits=0 refinement_corrections=15660 DC_hits=0 transient=1 krylov_steps=40456
+OpenPLL adapter timing: calls=5700 gather_s=6.35603 prepare_s=5.31813 solve_s=114.167 scatter_s=0.157548
+***** Percent complete: 48.35 %
+***** Current system time: Sun Nov  8 20:35:10 2026
+***** Estimated time to completion:  9 min., 12 sec.
+
+OpenPLL UMFPACK progress: linear_calls=5800 numeric_factors=239 cached_accepts=5561 exact_hits=0 refinement_corrections=15933 DC_hits=0 transient=1 krylov_steps=41209
+OpenPLL adapter timing: calls=5800 gather_s=6.46913 prepare_s=5.41349 solve_s=116.302 scatter_s=0.160365
+***** Percent complete: 49.35 %
+***** Current system time: Sun Nov  8 20:35:21 2026
+***** Estimated time to completion:  9 min., 2 sec.
+
+OpenPLL UMFPACK progress: linear_calls=5900 numeric_factors=241 cached_accepts=5659 exact_hits=0 refinement_corrections=16217 DC_hits=0 transient=1 krylov_steps=41950
+OpenPLL adapter timing: calls=5900 gather_s=6.57842 prepare_s=5.50585 solve_s=118.239 scatter_s=0.163179
+***** Percent complete: 50.3667 %
+***** Current system time: Sun Nov  8 20:35:33 2026
+***** Estimated time to completion:  8 min., 52 sec.
+
+OpenPLL UMFPACK progress: linear_calls=6000 numeric_factors=245 cached_accepts=5755 exact_hits=0 refinement_corrections=16489 DC_hits=0 transient=1 krylov_steps=42686
+OpenPLL adapter timing: calls=6000 gather_s=6.68974 prepare_s=5.5992 solve_s=120.264 scatter_s=0.165956
+OpenPLL UMFPACK progress: linear_calls=6100 numeric_factors=251 cached_accepts=5849 exact_hits=0 refinement_corrections=16778 DC_hits=0 transient=1 krylov_steps=43456
+OpenPLL adapter timing: calls=6100 gather_s=6.79925 prepare_s=5.69364 solve_s=122.484 scatter_s=0.168847
+***** Percent complete: 51.3833 %
+***** Current system time: Sun Nov  8 20:35:45 2026
+***** Estimated time to completion:  8 min., 42 sec.
+
+OpenPLL UMFPACK progress: linear_calls=6200 numeric_factors=257 cached_accepts=5943 exact_hits=0 refinement_corrections=17056 DC_hits=0 transient=1 krylov_steps=44219
+OpenPLL adapter timing: calls=6200 gather_s=6.90884 prepare_s=5.78715 solve_s=124.683 scatter_s=0.171616
+***** Percent complete: 52.4 %
+***** Current system time: Sun Nov  8 20:35:57 2026
+***** Estimated time to completion:  8 min., 32 sec.
+
+OpenPLL UMFPACK progress: linear_calls=6300 numeric_factors=259 cached_accepts=6041 exact_hits=0 refinement_corrections=17346 DC_hits=0 transient=1 krylov_steps=45059
+OpenPLL adapter timing: calls=6300 gather_s=7.01927 prepare_s=5.88107 solve_s=126.865 scatter_s=0.174558
+***** Percent complete: 53.4167 %
+***** Current system time: Sun Nov  8 20:36:09 2026
+***** Estimated time to completion:  8 min., 23 sec.
+
+OpenPLL UMFPACK progress: linear_calls=6400 numeric_factors=264 cached_accepts=6136 exact_hits=0 refinement_corrections=17636 DC_hits=0 transient=1 krylov_steps=45822
+OpenPLL adapter timing: calls=6400 gather_s=7.13014 prepare_s=5.97447 solve_s=129.028 scatter_s=0.177518
+OpenPLL UMFPACK progress: linear_calls=6500 numeric_factors=265 cached_accepts=6235 exact_hits=0 refinement_corrections=17922 DC_hits=0 transient=1 krylov_steps=46572
+OpenPLL adapter timing: calls=6500 gather_s=7.23938 prepare_s=6.067 solve_s=130.945 scatter_s=0.18028
+***** Percent complete: 54.4333 %
+***** Current system time: Sun Nov  8 20:36:21 2026
+***** Estimated time to completion:  8 min., 12 sec.
+
+OpenPLL UMFPACK progress: linear_calls=6600 numeric_factors=270 cached_accepts=6330 exact_hits=0 refinement_corrections=18212 DC_hits=0 transient=1 krylov_steps=47327
+OpenPLL adapter timing: calls=6600 gather_s=7.34822 prepare_s=6.15963 solve_s=133.079 scatter_s=0.183061
+***** Percent complete: 55.45 %
+***** Current system time: Sun Nov  8 20:36:33 2026
+***** Estimated time to completion:  8 min., 2 sec.
+
+OpenPLL UMFPACK progress: linear_calls=6700 numeric_factors=274 cached_accepts=6426 exact_hits=0 refinement_corrections=18496 DC_hits=0 transient=1 krylov_steps=48148
+OpenPLL adapter timing: calls=6700 gather_s=7.45788 prepare_s=6.25361 solve_s=135.296 scatter_s=0.185837
+***** Percent complete: 56.4667 %
+***** Current system time: Sun Nov  8 20:36:45 2026
+***** Estimated time to completion:  7 min., 52 sec.
+
+OpenPLL UMFPACK progress: linear_calls=6800 numeric_factors=279 cached_accepts=6521 exact_hits=0 refinement_corrections=18779 DC_hits=0 transient=1 krylov_steps=48971
+OpenPLL adapter timing: calls=6800 gather_s=7.56717 prepare_s=6.34645 solve_s=137.552 scatter_s=0.188623
+***** Percent complete: 57.4833 %
+***** Current system time: Sun Nov  8 20:36:57 2026
+***** Estimated time to completion:  7 min., 41 sec.
+
+OpenPLL UMFPACK progress: linear_calls=6900 numeric_factors=282 cached_accepts=6618 exact_hits=0 refinement_corrections=19053 DC_hits=0 transient=1 krylov_steps=49768
+OpenPLL adapter timing: calls=6900 gather_s=7.6759 prepare_s=6.43927 solve_s=139.644 scatter_s=0.191365
+OpenPLL UMFPACK progress: linear_calls=7000 numeric_factors=285 cached_accepts=6715 exact_hits=0 refinement_corrections=19354 DC_hits=0 transient=1 krylov_steps=50579
+OpenPLL adapter timing: calls=7000 gather_s=7.78582 prepare_s=6.53367 solve_s=141.8 scatter_s=0.194145
+***** Percent complete: 58.5 %
+***** Current system time: Sun Nov  8 20:37:08 2026
+***** Estimated time to completion:  7 min., 30 sec.
+
+OpenPLL UMFPACK progress: linear_calls=7100 numeric_factors=288 cached_accepts=6812 exact_hits=0 refinement_corrections=19606 DC_hits=0 transient=1 krylov_steps=51296
+OpenPLL adapter timing: calls=7100 gather_s=7.89518 prepare_s=6.62653 solve_s=143.7 scatter_s=0.197004
+***** Percent complete: 59.5167 %
+***** Current system time: Sun Nov  8 20:37:19 2026
+***** Estimated time to completion:  7 min., 20 sec.
+
+OpenPLL UMFPACK progress: linear_calls=7200 numeric_factors=292 cached_accepts=6908 exact_hits=0 refinement_corrections=19875 DC_hits=0 transient=1 krylov_steps=52075
+OpenPLL adapter timing: calls=7200 gather_s=8.00417 prepare_s=6.71967 solve_s=145.811 scatter_s=0.199832
+***** Percent complete: 60.5333 %
+***** Current system time: Sun Nov  8 20:37:32 2026
+***** Estimated time to completion:  7 min., 9 sec.
+
+OpenPLL UMFPACK progress: linear_calls=7300 numeric_factors=296 cached_accepts=7004 exact_hits=0 refinement_corrections=20174 DC_hits=0 transient=1 krylov_steps=52917
+OpenPLL adapter timing: calls=7300 gather_s=8.11395 prepare_s=6.81227 solve_s=148.072 scatter_s=0.202542
+OpenPLL UMFPACK progress: linear_calls=7400 numeric_factors=301 cached_accepts=7099 exact_hits=0 refinement_corrections=20458 DC_hits=0 transient=1 krylov_steps=53656
+OpenPLL adapter timing: calls=7400 gather_s=8.22464 prepare_s=6.90687 solve_s=150.161 scatter_s=0.20533
+***** Percent complete: 61.55 %
+***** Current system time: Sun Nov  8 20:37:44 2026
+***** Estimated time to completion:  6 min., 59 sec.
+
+OpenPLL UMFPACK progress: linear_calls=7500 numeric_factors=304 cached_accepts=7196 exact_hits=0 refinement_corrections=20742 DC_hits=0 transient=1 krylov_steps=54454
+OpenPLL adapter timing: calls=7500 gather_s=8.33436 prepare_s=7.00003 solve_s=152.264 scatter_s=0.208081
+***** Percent complete: 62.5667 %
+***** Current system time: Sun Nov  8 20:37:55 2026
+***** Estimated time to completion:  6 min., 48 sec.
+
+OpenPLL UMFPACK progress: linear_calls=7600 numeric_factors=307 cached_accepts=7293 exact_hits=0 refinement_corrections=20997 DC_hits=0 transient=1 krylov_steps=55180
+OpenPLL adapter timing: calls=7600 gather_s=8.44334 prepare_s=7.09159 solve_s=154.176 scatter_s=0.210798
+***** Percent complete: 63.5833 %
+***** Current system time: Sun Nov  8 20:38:07 2026
+***** Estimated time to completion:  6 min., 37 sec.
+
+OpenPLL UMFPACK progress: linear_calls=7700 numeric_factors=309 cached_accepts=7391 exact_hits=0 refinement_corrections=21326 DC_hits=0 transient=1 krylov_steps=56046
+OpenPLL adapter timing: calls=7700 gather_s=8.5525 prepare_s=7.18375 solve_s=156.433 scatter_s=0.213505
+OpenPLL UMFPACK progress: linear_calls=7800 numeric_factors=315 cached_accepts=7485 exact_hits=0 refinement_corrections=21624 DC_hits=0 transient=1 krylov_steps=56839
+OpenPLL adapter timing: calls=7800 gather_s=8.6623 prepare_s=7.2766 solve_s=158.695 scatter_s=0.216194
+***** Percent complete: 64.6 %
+***** Current system time: Sun Nov  8 20:38:19 2026
+***** Estimated time to completion:  6 min., 27 sec.
+
+OpenPLL UMFPACK progress: linear_calls=7900 numeric_factors=320 cached_accepts=7580 exact_hits=0 refinement_corrections=21908 DC_hits=0 transient=1 krylov_steps=57662
+OpenPLL adapter timing: calls=7900 gather_s=8.77161 prepare_s=7.36995 solve_s=160.942 scatter_s=0.218875
+***** Percent complete: 65.6167 %
+***** Current system time: Sun Nov  8 20:38:31 2026
+***** Estimated time to completion:  6 min., 16 sec.
+
+OpenPLL UMFPACK progress: linear_calls=8000 numeric_factors=323 cached_accepts=7677 exact_hits=0 refinement_corrections=22206 DC_hits=0 transient=1 krylov_steps=58481
+OpenPLL adapter timing: calls=8000 gather_s=8.88043 prepare_s=7.46189 solve_s=163.108 scatter_s=0.221705
+***** Percent complete: 66.6333 %
+***** Current system time: Sun Nov  8 20:38:43 2026
+***** Estimated time to completion:  6 min., 5 sec.
+
+OpenPLL UMFPACK progress: linear_calls=8100 numeric_factors=327 cached_accepts=7773 exact_hits=0 refinement_corrections=22483 DC_hits=0 transient=1 krylov_steps=59256
+OpenPLL adapter timing: calls=8100 gather_s=8.99014 prepare_s=7.55582 solve_s=165.2 scatter_s=0.224405
+OpenPLL UMFPACK progress: linear_calls=8200 numeric_factors=330 cached_accepts=7870 exact_hits=0 refinement_corrections=22753 DC_hits=0 transient=1 krylov_steps=59958
+OpenPLL adapter timing: calls=8200 gather_s=9.09995 prepare_s=7.64835 solve_s=167.1 scatter_s=0.227251
+***** Percent complete: 67.65 %
+***** Current system time: Sun Nov  8 20:38:54 2026
+***** Estimated time to completion:  5 min., 54 sec.
+
+OpenPLL UMFPACK progress: linear_calls=8300 numeric_factors=334 cached_accepts=7966 exact_hits=0 refinement_corrections=23039 DC_hits=0 transient=1 krylov_steps=60720
+OpenPLL adapter timing: calls=8300 gather_s=9.21074 prepare_s=7.74329 solve_s=169.205 scatter_s=0.230112
+***** Percent complete: 68.6667 %
+***** Current system time: Sun Nov  8 20:39:06 2026
+***** Estimated time to completion:  5 min., 44 sec.
+
+OpenPLL UMFPACK progress: linear_calls=8400 numeric_factors=339 cached_accepts=8061 exact_hits=0 refinement_corrections=23321 DC_hits=0 transient=1 krylov_steps=61490
+OpenPLL adapter timing: calls=8400 gather_s=9.32226 prepare_s=7.83897 solve_s=171.384 scatter_s=0.233041
+***** Percent complete: 69.6833 %
+***** Current system time: Sun Nov  8 20:39:19 2026
+***** Estimated time to completion:  5 min., 33 sec.
+
+OpenPLL UMFPACK progress: linear_calls=8500 numeric_factors=345 cached_accepts=8155 exact_hits=0 refinement_corrections=23596 DC_hits=0 transient=1 krylov_steps=62271
+OpenPLL adapter timing: calls=8500 gather_s=9.43249 prepare_s=7.93216 solve_s=173.589 scatter_s=0.235808
+OpenPLL UMFPACK progress: linear_calls=8600 numeric_factors=347 cached_accepts=8253 exact_hits=0 refinement_corrections=23881 DC_hits=0 transient=1 krylov_steps=63059
+OpenPLL adapter timing: calls=8600 gather_s=9.54248 prepare_s=8.02606 solve_s=175.637 scatter_s=0.238622
+***** Percent complete: 70.7 %
+***** Current system time: Sun Nov  8 20:39:31 2026
+***** Estimated time to completion:  5 min., 22 sec.
+
+OpenPLL UMFPACK progress: linear_calls=8700 numeric_factors=352 cached_accepts=8348 exact_hits=0 refinement_corrections=24190 DC_hits=0 transient=1 krylov_steps=63879
+OpenPLL adapter timing: calls=8700 gather_s=9.6519 prepare_s=8.11981 solve_s=177.932 scatter_s=0.241447
+***** Percent complete: 71.7167 %
+***** Current system time: Sun Nov  8 20:39:43 2026
+***** Estimated time to completion:  5 min., 11 sec.
+
+OpenPLL UMFPACK progress: linear_calls=8800 numeric_factors=354 cached_accepts=8446 exact_hits=0 refinement_corrections=24488 DC_hits=0 transient=1 krylov_steps=64629
+OpenPLL adapter timing: calls=8800 gather_s=9.7609 prepare_s=8.21273 solve_s=179.906 scatter_s=0.24417
+***** Percent complete: 72.7333 %
+***** Current system time: Sun Nov  8 20:39:54 2026
+***** Estimated time to completion:  5 min., 0 sec.
+
+OpenPLL UMFPACK progress: linear_calls=8900 numeric_factors=358 cached_accepts=8542 exact_hits=0 refinement_corrections=24759 DC_hits=0 transient=1 krylov_steps=65364
+OpenPLL adapter timing: calls=8900 gather_s=9.87065 prepare_s=8.30536 solve_s=181.901 scatter_s=0.246855
+OpenPLL UMFPACK progress: linear_calls=9000 numeric_factors=363 cached_accepts=8637 exact_hits=0 refinement_corrections=25047 DC_hits=0 transient=1 krylov_steps=66149
+OpenPLL adapter timing: calls=9000 gather_s=9.9795 prepare_s=8.39848 solve_s=184.092 scatter_s=0.249675
+***** Percent complete: 73.75 %
+***** Current system time: Sun Nov  8 20:40:06 2026
+***** Estimated time to completion:  4 min., 49 sec.
+
+OpenPLL UMFPACK progress: linear_calls=9100 numeric_factors=368 cached_accepts=8732 exact_hits=0 refinement_corrections=25320 DC_hits=0 transient=1 krylov_steps=66944
+OpenPLL adapter timing: calls=9100 gather_s=10.0891 prepare_s=8.49302 solve_s=186.275 scatter_s=0.252441
+***** Percent complete: 74.7667 %
+***** Current system time: Sun Nov  8 20:40:18 2026
+***** Estimated time to completion:  4 min., 38 sec.
+
+OpenPLL UMFPACK progress: linear_calls=9200 numeric_factors=371 cached_accepts=8829 exact_hits=0 refinement_corrections=25596 DC_hits=0 transient=1 krylov_steps=67738
+OpenPLL adapter timing: calls=9200 gather_s=10.1994 prepare_s=8.58712 solve_s=188.393 scatter_s=0.255308
+***** Percent complete: 75.7833 %
+***** Current system time: Sun Nov  8 20:40:30 2026
+***** Estimated time to completion:  4 min., 27 sec.
+
+OpenPLL UMFPACK progress: linear_calls=9300 numeric_factors=375 cached_accepts=8925 exact_hits=0 refinement_corrections=25880 DC_hits=0 transient=1 krylov_steps=68489
+OpenPLL adapter timing: calls=9300 gather_s=10.3087 prepare_s=8.68057 solve_s=190.459 scatter_s=0.258101
+***** Percent complete: 76.8 %
+***** Current system time: Sun Nov  8 20:40:41 2026
+***** Estimated time to completion:  4 min., 16 sec.
+
+OpenPLL UMFPACK progress: linear_calls=9400 numeric_factors=377 cached_accepts=9023 exact_hits=0 refinement_corrections=26166 DC_hits=0 transient=1 krylov_steps=69239
+OpenPLL adapter timing: calls=9400 gather_s=10.4181 prepare_s=8.775 solve_s=192.432 scatter_s=0.260864
+OpenPLL UMFPACK progress: linear_calls=9500 numeric_factors=381 cached_accepts=9119 exact_hits=0 refinement_corrections=26457 DC_hits=0 transient=1 krylov_steps=70037
+OpenPLL adapter timing: calls=9500 gather_s=10.5276 prepare_s=8.86922 solve_s=194.614 scatter_s=0.263762
+***** Percent complete: 77.8167 %
+***** Current system time: Sun Nov  8 20:40:53 2026
+***** Estimated time to completion:  4 min., 5 sec.
+
+OpenPLL UMFPACK progress: linear_calls=9600 numeric_factors=387 cached_accepts=9213 exact_hits=0 refinement_corrections=26741 DC_hits=0 transient=1 krylov_steps=70790
+OpenPLL adapter timing: calls=9600 gather_s=10.6373 prepare_s=8.96261 solve_s=196.774 scatter_s=0.266454
+***** Percent complete: 78.8333 %
+***** Current system time: Sun Nov  8 20:41:06 2026
+***** Estimated time to completion:  3 min., 54 sec.
+
+OpenPLL UMFPACK progress: linear_calls=9700 numeric_factors=391 cached_accepts=9309 exact_hits=0 refinement_corrections=27037 DC_hits=0 transient=1 krylov_steps=71636
+OpenPLL adapter timing: calls=9700 gather_s=10.7469 prepare_s=9.05582 solve_s=199.035 scatter_s=0.269292
+***** Percent complete: 79.85 %
+***** Current system time: Sun Nov  8 20:41:17 2026
+***** Estimated time to completion:  3 min., 43 sec.
+
+OpenPLL UMFPACK progress: linear_calls=9800 numeric_factors=395 cached_accepts=9405 exact_hits=0 refinement_corrections=27322 DC_hits=0 transient=1 krylov_steps=72414
+OpenPLL adapter timing: calls=9800 gather_s=10.8562 prepare_s=9.1493 solve_s=201.133 scatter_s=0.271947
+OpenPLL UMFPACK progress: linear_calls=9900 numeric_factors=398 cached_accepts=9502 exact_hits=0 refinement_corrections=27591 DC_hits=0 transient=1 krylov_steps=73130
+OpenPLL adapter timing: calls=9900 gather_s=10.9659 prepare_s=9.24219 solve_s=203.04 scatter_s=0.274605
+***** Percent complete: 80.8667 %
+***** Current system time: Sun Nov  8 20:41:28 2026
+***** Estimated time to completion:  3 min., 31 sec.
+
+OpenPLL UMFPACK progress: linear_calls=10000 numeric_factors=400 cached_accepts=9600 exact_hits=0 refinement_corrections=27917 DC_hits=0 transient=1 krylov_steps=73981
+OpenPLL adapter timing: calls=10000 gather_s=11.0752 prepare_s=9.33432 solve_s=205.255 scatter_s=0.277286
+***** Percent complete: 81.8833 %
+***** Current system time: Sun Nov  8 20:41:40 2026
+***** Estimated time to completion:  3 min., 20 sec.
+
+OpenPLL UMFPACK progress: linear_calls=10100 numeric_factors=405 cached_accepts=9695 exact_hits=0 refinement_corrections=28197 DC_hits=0 transient=1 krylov_steps=74810
+OpenPLL adapter timing: calls=10100 gather_s=11.1843 prepare_s=9.42682 solve_s=207.519 scatter_s=0.279913
+***** Percent complete: 82.9 %
+***** Current system time: Sun Nov  8 20:41:52 2026
+***** Estimated time to completion:  3 min., 9 sec.
+
+OpenPLL UMFPACK progress: linear_calls=10200 numeric_factors=410 cached_accepts=9790 exact_hits=0 refinement_corrections=28495 DC_hits=0 transient=1 krylov_steps=75615
+OpenPLL adapter timing: calls=10200 gather_s=11.2937 prepare_s=9.51847 solve_s=209.751 scatter_s=0.282667
+OpenPLL UMFPACK progress: linear_calls=10300 numeric_factors=413 cached_accepts=9887 exact_hits=0 refinement_corrections=28763 DC_hits=0 transient=1 krylov_steps=76353
+OpenPLL adapter timing: calls=10300 gather_s=11.4026 prepare_s=9.61056 solve_s=211.692 scatter_s=0.285341
+***** Percent complete: 83.9167 %
+***** Current system time: Sun Nov  8 20:42:04 2026
+***** Estimated time to completion:  2 min., 58 sec.
+
+OpenPLL UMFPACK progress: linear_calls=10400 numeric_factors=416 cached_accepts=9984 exact_hits=0 refinement_corrections=29053 DC_hits=0 transient=1 krylov_steps=77196
+OpenPLL adapter timing: calls=10400 gather_s=11.5113 prepare_s=9.70195 solve_s=213.879 scatter_s=0.288062
+***** Percent complete: 84.9333 %
+***** Current system time: Sun Nov  8 20:42:16 2026
+***** Estimated time to completion:  2 min., 47 sec.
+
+OpenPLL UMFPACK progress: linear_calls=10500 numeric_factors=419 cached_accepts=10081 exact_hits=0 refinement_corrections=29335 DC_hits=0 transient=1 krylov_steps=77938
+OpenPLL adapter timing: calls=10500 gather_s=11.6205 prepare_s=9.79497 solve_s=215.854 scatter_s=0.290768
+***** Percent complete: 85.95 %
+***** Current system time: Sun Nov  8 20:42:27 2026
+***** Estimated time to completion:  2 min., 36 sec.
+
+OpenPLL UMFPACK progress: linear_calls=10600 numeric_factors=422 cached_accepts=10178 exact_hits=0 refinement_corrections=29599 DC_hits=0 transient=1 krylov_steps=78699
+OpenPLL adapter timing: calls=10600 gather_s=11.7294 prepare_s=9.88726 solve_s=217.847 scatter_s=0.29345
+OpenPLL UMFPACK progress: linear_calls=10700 numeric_factors=427 cached_accepts=10273 exact_hits=0 refinement_corrections=29898 DC_hits=0 transient=1 krylov_steps=79511
+OpenPLL adapter timing: calls=10700 gather_s=11.8386 prepare_s=9.98059 solve_s=220.092 scatter_s=0.296184
+***** Percent complete: 86.9667 %
+***** Current system time: Sun Nov  8 20:42:40 2026
+***** Estimated time to completion:  2 min., 24 sec.
+
+OpenPLL UMFPACK progress: linear_calls=10800 numeric_factors=433 cached_accepts=10367 exact_hits=0 refinement_corrections=30187 DC_hits=0 transient=1 krylov_steps=80341
+OpenPLL adapter timing: calls=10800 gather_s=11.9478 prepare_s=10.0731 solve_s=222.407 scatter_s=0.298901
+***** Percent complete: 87.9833 %
+***** Current system time: Sun Nov  8 20:42:52 2026
+***** Estimated time to completion:  2 min., 13 sec.
+
+OpenPLL UMFPACK progress: linear_calls=10900 numeric_factors=435 cached_accepts=10465 exact_hits=0 refinement_corrections=30491 DC_hits=0 transient=1 krylov_steps=81117
+OpenPLL adapter timing: calls=10900 gather_s=12.0574 prepare_s=10.165 solve_s=224.422 scatter_s=0.301572
+***** Percent complete: 89 %
+***** Current system time: Sun Nov  8 20:43:03 2026
+***** Estimated time to completion:  2 min., 2 sec.
+
+OpenPLL UMFPACK progress: linear_calls=11000 numeric_factors=439 cached_accepts=10561 exact_hits=0 refinement_corrections=30783 DC_hits=0 transient=1 krylov_steps=81873
+OpenPLL adapter timing: calls=11000 gather_s=12.167 prepare_s=10.2591 solve_s=226.493 scatter_s=0.30437
+OpenPLL UMFPACK progress: linear_calls=11100 numeric_factors=441 cached_accepts=10659 exact_hits=0 refinement_corrections=31043 DC_hits=0 transient=1 krylov_steps=82601
+OpenPLL adapter timing: calls=11100 gather_s=12.2757 prepare_s=10.3517 solve_s=228.353 scatter_s=0.307095
+***** Percent complete: 90.0167 %
+***** Current system time: Sun Nov  8 20:43:15 2026
+***** Estimated time to completion:  1 min., 51 sec.
+
+OpenPLL UMFPACK progress: linear_calls=11200 numeric_factors=445 cached_accepts=10755 exact_hits=0 refinement_corrections=31352 DC_hits=0 transient=1 krylov_steps=83372
+OpenPLL adapter timing: calls=11200 gather_s=12.385 prepare_s=10.4437 solve_s=230.484 scatter_s=0.309799
+***** Percent complete: 91.0333 %
+***** Current system time: Sun Nov  8 20:43:27 2026
+***** Estimated time to completion:  1 min., 39 sec.
+
+OpenPLL UMFPACK progress: linear_calls=11300 numeric_factors=451 cached_accepts=10849 exact_hits=0 refinement_corrections=31652 DC_hits=0 transient=1 krylov_steps=84125
+OpenPLL adapter timing: calls=11300 gather_s=12.4942 prepare_s=10.536 solve_s=232.655 scatter_s=0.312498
+***** Percent complete: 92.05 %
+***** Current system time: Sun Nov  8 20:43:39 2026
+***** Estimated time to completion:  1 min., 28 sec.
+
+OpenPLL UMFPACK progress: linear_calls=11400 numeric_factors=457 cached_accepts=10943 exact_hits=0 refinement_corrections=31923 DC_hits=0 transient=1 krylov_steps=84919
+OpenPLL adapter timing: calls=11400 gather_s=12.6032 prepare_s=10.6285 solve_s=234.852 scatter_s=0.31515
+***** Percent complete: 93.0667 %
+***** Current system time: Sun Nov  8 20:43:50 2026
+***** Estimated time to completion:  1 min., 17 sec.
+
+OpenPLL UMFPACK progress: linear_calls=11500 numeric_factors=460 cached_accepts=11040 exact_hits=0 refinement_corrections=32239 DC_hits=0 transient=1 krylov_steps=85698
+OpenPLL adapter timing: calls=11500 gather_s=12.7125 prepare_s=10.7222 solve_s=236.951 scatter_s=0.317927
+OpenPLL UMFPACK progress: linear_calls=11600 numeric_factors=464 cached_accepts=11136 exact_hits=0 refinement_corrections=32520 DC_hits=0 transient=1 krylov_steps=86460
+OpenPLL adapter timing: calls=11600 gather_s=12.8209 prepare_s=10.8139 solve_s=239.022 scatter_s=0.320659
+***** Percent complete: 94.0833 %
+***** Current system time: Sun Nov  8 20:44:02 2026
+***** Estimated time to completion:  1 min., 6 sec.
+
+OpenPLL UMFPACK progress: linear_calls=11700 numeric_factors=466 cached_accepts=11234 exact_hits=0 refinement_corrections=32801 DC_hits=0 transient=1 krylov_steps=87190
+OpenPLL adapter timing: calls=11700 gather_s=12.9298 prepare_s=10.9064 solve_s=240.92 scatter_s=0.323293
+***** Percent complete: 95.1 %
+***** Current system time: Sun Nov  8 20:44:13 2026
+***** Estimated time to completion: 54 sec.
+
+OpenPLL UMFPACK progress: linear_calls=11800 numeric_factors=471 cached_accepts=11329 exact_hits=0 refinement_corrections=33095 DC_hits=0 transient=1 krylov_steps=87972
+OpenPLL adapter timing: calls=11800 gather_s=13.0388 prepare_s=10.9987 solve_s=243.096 scatter_s=0.325998
+***** Percent complete: 96.1167 %
+***** Current system time: Sun Nov  8 20:44:25 2026
+***** Estimated time to completion: 43 sec.
+
+OpenPLL UMFPACK progress: linear_calls=11900 numeric_factors=475 cached_accepts=11425 exact_hits=0 refinement_corrections=33373 DC_hits=0 transient=1 krylov_steps=88768
+OpenPLL adapter timing: calls=11900 gather_s=13.1473 prepare_s=11.0901 solve_s=245.226 scatter_s=0.328768
+OpenPLL UMFPACK progress: linear_calls=12000 numeric_factors=481 cached_accepts=11519 exact_hits=0 refinement_corrections=33694 DC_hits=0 transient=1 krylov_steps=89578
+OpenPLL adapter timing: calls=12000 gather_s=13.2568 prepare_s=11.1828 solve_s=247.538 scatter_s=0.3314
+***** Percent complete: 97.1333 %
+***** Current system time: Sun Nov  8 20:44:37 2026
+***** Estimated time to completion: 32 sec.
+
+OpenPLL UMFPACK progress: linear_calls=12100 numeric_factors=483 cached_accepts=11617 exact_hits=0 refinement_corrections=33949 DC_hits=0 transient=1 krylov_steps=90295
+OpenPLL adapter timing: calls=12100 gather_s=13.3662 prepare_s=11.2756 solve_s=249.368 scatter_s=0.334101
+***** Percent complete: 98.15 %
+***** Current system time: Sun Nov  8 20:44:49 2026
+***** Estimated time to completion: 20 sec.
+
+OpenPLL UMFPACK progress: linear_calls=12200 numeric_factors=486 cached_accepts=11714 exact_hits=0 refinement_corrections=34251 DC_hits=0 transient=1 krylov_steps=91076
+OpenPLL adapter timing: calls=12200 gather_s=13.4752 prepare_s=11.368 solve_s=251.462 scatter_s=0.336734
+***** Percent complete: 99.1667 %
+***** Current system time: Sun Nov  8 20:45:00 2026
+***** Estimated time to completion:  9 sec.
+
+OpenPLL UMFPACK progress: linear_calls=12300 numeric_factors=489 cached_accepts=11811 exact_hits=0 refinement_corrections=34514 DC_hits=0 transient=1 krylov_steps=91773
+OpenPLL adapter timing: calls=12300 gather_s=13.5846 prepare_s=11.4608 solve_s=253.318 scatter_s=0.339525
+***** Problem read in and set up time: 20.7553 seconds
+ ***** DCOP time: 3.54049 seconds.  Breakdown follows:
+	Number Successful Steps Taken:		1
+	Number Failed Steps Attempted:		0
+	Number Jacobians Evaluated:		33
+	Number Linear Solves:			33
+	Number Failed Linear Solves:		0
+	Number Residual Evaluations:		34
+	Number Nonlinear Convergence Failures:	0
+	Total Residual Load Time:		1.28454 seconds
+	Total Jacobian Load Time:		0.400261 seconds
+	Total Linear Solution Time:		1.79983 seconds
+
+ ***** Transient Stepping time: 1114.19 seconds.  Breakdown follows:
+	Number Successful Steps Taken:		6000
+	Number Failed Steps Attempted:		0
+	Number Jacobians Evaluated:		12362
+	Number Linear Solves:			12362
+	Number Failed Linear Solves:		0
+	Number Residual Evaluations:		18362
+	Number Nonlinear Convergence Failures:	0
+	Total Residual Load Time:		627.561 seconds
+	Total Jacobian Load Time:		121.844 seconds
+	Total Linear Solution Time:		279.239 seconds
+
+
+***** Solution Summary *****
+	Number Successful Steps Taken:		6001
+	Number Failed Steps Attempted:		0
+	Number Jacobians Evaluated:		12395
+	Number Linear Solves:			12395
+	Number Failed Linear Solves:		0
+	Number Residual Evaluations:		18396
+	Number Nonlinear Convergence Failures:	0
+	Total Residual Load Time:		628.846 seconds
+	Total Jacobian Load Time:		122.244 seconds
+	Total Linear Solution Time:		281.038 seconds
+
+
+***** Total Simulation Solvers Run Time: 1117.73 seconds
+***** Total Elapsed Run Time:            1138.49 seconds
+*****
+***** End of Xyce(TM) Simulation
+*****
+
+Timing summary of 1 processor
+                 Stats                   Count       CPU Time              Wall Time
+---------------------------------------- ----- --------------------- ---------------------
+Xyce                                         1    18:50.022 (100.0%)    18:58.956 (100.0%)
+  Analysis                                   1    18:30.552 (98.28%)    18:37.735 (98.14%)
+    Transient                                1    18:30.550 (98.28%)    18:37.733 (98.14%)
+      Nonlinear Solve                     6001    17:13.877 (91.49%)    17:20.508 (91.36%)
+        Residual                         18396    10:27.385 (55.52%)    10:28.956 (55.22%)
+        Jacobian                         12395     2:01.942 (10.79%)     2:02.302 (10.74%)
+        Linear Solve                     12395     4:36.416 (24.46%)     4:41.131 (24.68%)
+      Successful DCOP Steps                  1        0.009 (<0.01%)        0.009 (<0.01%)
+      Successful Step                     6000     1:11.330 ( 6.31%)     1:11.852 ( 6.31%)
+  Netlist Import                             1       18.552 ( 1.64%)       19.830 ( 1.74%)
+    Parse Context                            1        1.299 ( 0.11%)        1.442 ( 0.13%)
+    Distribute Devices                       1       16.440 ( 1.45%)       17.438 ( 1.53%)
+    Verify Devices                           1        0.000 (<0.01%)        0.000 (<0.01%)
+    Instantiate                              1        0.801 ( 0.07%)        0.936 ( 0.08%)
+  Late Initialization                        1        0.869 ( 0.08%)        0.901 ( 0.08%)
+    Global Indices                           1        0.479 ( 0.04%)        0.481 ( 0.04%)
+  Setup Matrix Structure                     1        0.240 ( 0.02%)        0.244 ( 0.02%)
+
+OpenPLL UMFPACK adapter: calls=12395 numeric=493 symbolic=1 failures=0 reuse_attempts=12362 reuse_accepted=11902 exact_reuse=0 refinement_solves=34789 DC_reuse=0 krylov_solves=92527

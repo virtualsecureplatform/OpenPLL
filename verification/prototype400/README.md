@@ -2064,3 +2064,15 @@ its directly driven DCO reset at5 ns; oscillator settling comparisons must align
 elapsed time since native reset release. Skipping controller initialization is
 useful for static analog characterization, but does not verify that initialization
 or the closed loop. No startup qualification is claimed.
+
+Static pilot1531 completed normally in1,140.581 s (19.01 min), with all saved
+values finite and all302 native DCO tuning endpoints matching. All input and
+artifact hashes were independently reverified. Its20–60 ns frequency is
+373.665911964 MHz, +1,387.371520 ppm versus the full reference's200–260 ns
+373.148216755 MHz. This exceeds the release target's1,000 ppm tolerance;
+no model qualification is granted. The elapsed ratio47.8564 compares a60 ns
+subsystem case with a260 ns full-programming reference, not equal workloads.
+It demonstrates a faster diagnostic path, without proving an equivalent-workload
+speedup or calibrated400 MHz accuracy. Pair1536 and assessor1538 remain live.
+Grounded capacitive exterior, receiver termination, reset-history alignment,
+settling, corners and distributed wire R still require assessment.
