@@ -2518,3 +2518,25 @@ previous producer-verified archive digest, explicitly not a new whole-trace
 hash from this diagnostic. Source fingerprints are checked again after scanning.
 This does not rerun Magic, alter native arithmetic, weaken the support audit,
 or establish extractor/model/release qualification.
+
+Source probe 1568 isolates the exact instrumented native
+`extSubtractSideOverlap` function from the pinned 1360 Magic source. A small C
+harness supplies synthetic contact/residue multiplier tables and stubs geometry
+access; the diagnostic trace hook is suppressed. It does not execute a native
+layout extraction. All four boundary directions are tested with contact and
+non-contact source types and with equal/different substrate/coupling kernels.
+The unmodified function matches the normalized begin kernel in 8/16 controls:
+all eight non-contact cases agree, while all eight contact cases disagree.
+Adding contact-to-plane-residue conversion immediately after the source type
+lookup makes 16/16 agree. The candidate is generated in an isolated harness;
+no production Magic source or binary has been changed.
+
+The retained `magic_contact_fringe_source_probe_1568` directory contains both
+harness sources, the 16-case numerical outputs, and the assessment. Original
+binary hashes remain in the receipt, but binaries are not retained here; build
+either harness with `gcc -std=gnu99 -O2 FILE.c -lm -o BINARY` in the release SIF.
+The source-level probe demonstrates a possible arithmetic inconsistency, not
+that the real PDK contact tables differ or that contact normalization explains
+the stopped full-layout audit. The completed-trace counterexample and a native
+contact/residue layout control are still required before promoting a fix. All
+extractor/model/release qualification flags remain false.
