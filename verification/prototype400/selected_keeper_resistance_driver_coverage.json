@@ -1,0 +1,52 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_resistance_driver_coverage.py": "d6f8eb3c62affb6c133e71286b0e66efaa7e4ae0c7a2908137bc4a11ab06c5a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_flat_MOS_region_join.py": "489cdd2adb11424539fccf6bfd12a31eb378f8d6be3da548d786363f9f04093a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_DCO_driver_C_cut.py": "b77eb42593482a548e4d3bf3a6f9ad2ba55ab10ab81385b080582542619f1b47",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resistance_driver_coverage_1249/without_MOS_diffusion.json": "280584c28c98e2289fa17c6f8842f1385585a81d229fff9c79477a233054848c"
+  },
+  "nonzero_C_conductor_nodes": 19696,
+  "nodes_with_MOS_diffusion": 19643,
+  "nodes_without_MOS_diffusion": 53,
+  "without_diffusion_top_formal_ports": 33,
+  "without_diffusion_internal_nodes": 20,
+  "patterns": [
+    {
+      "roles": "MOS_gate",
+      "top_formal_port": true,
+      "count": 2
+    },
+    {
+      "roles": "MOS_gate,diode_terminal",
+      "top_formal_port": true,
+      "count": 29
+    },
+    {
+      "roles": "MOS_gate,poly_resistor_terminal",
+      "top_formal_port": false,
+      "count": 11
+    },
+    {
+      "roles": "no_primitive_terminal",
+      "top_formal_port": true,
+      "count": 2
+    },
+    {
+      "roles": "poly_resistor_terminal",
+      "top_formal_port": false,
+      "count": 9
+    }
+  ],
+  "predicts_exact_native_extresist_skip_set": false,
+  "drive_location_and_device_resistance_still_require_native_coverage_audit": true,
+  "distributed_wire_R_qualified": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resistance_driver_coverage_1249/assessment.json"
+}
