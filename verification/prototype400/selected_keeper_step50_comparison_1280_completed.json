@@ -1,0 +1,146 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_native_timestep.py": "313a623feac4173da70e9eb3afb3ce9f3d5eb27f37f3ebc9bef4237ae1fa2c9b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/common_v3.py": "dc86a17d58cdd6d02d9a3279c94097962da89c31ae50903e4717e333b2b235c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/resources.py": "3b4a3fcae0f072cfdc7937c06f46f2bf7166b4a5e31b15feadb8775ce81f1b11",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/plan_keeper_conditional_replay.py": "765a5ccfcf27e5c363755c2ef5112d9dc5ecc96a6e82636e05034070ceeb38f5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266/assessment.json": "68b23ce99289d47a674876fbdfdec4898b3cb4592a9093d64d7c42a9fe861d0d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_step50_1278/assessment.json": "81d2293e2dd6dfbaeaf4a50a28168038d88668665636594794ddddbc370c2c68",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parallel_physical_tuning_1268/assessment.json": "f7eb0c913b3373963dcd47e9322aae9f8d5201275c13c25d446828dd046e3aa0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_step50_physical_1279/assessment.json": "34f999b141d8e67f169f2b8421e1f6c9d70c1aed0ad599c0c29879a8ea7d591c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266/transient.spice": "db5784aaef66aa6c631f021019c742ae670c62f0b90062ab0a1633e7caa6ba3f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_step50_1278/transient.spice": "9759a1714b8dbe52c309bc884165aa157a5cd979f0295e30872e3c2b175da3b4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266/inputs.json": "70877a61179d2625aa6bf959d1fbd65ef727d1cd0e3f6b4715944e2643c7a5c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_step50_1278/inputs.json": "caa67d417a27dfe0a1a54a661cd172031aecef2346b091da798beb1217eb2b6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266/transient.raw": "3a3bf1fd62807e1c23b02a56cd5bf8579731901d1fe6ae43b6ab0a79f58e1b7f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_step50_1278/transient.raw": "5844895d1820bc4b22e60b654fd4683b2afb6679c17e0b25f805977596e40bf8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_step50_comparison_1280/reference.npy": "378e8ef6fe212a02c8dad164eb54003c6c4b38ee259c3d6dc18a4e75b694ea53",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_step50_comparison_1280/candidate.npy": "d47a0604a55423f81215d493c0af2d383f25e856cf7de0d5244809e19bcde011"
+  },
+  "reference_frequency_mhz": 374.07608098402534,
+  "candidate_frequency_mhz": 373.86022479023774,
+  "frequency_difference_ppm": -577.0382143113206,
+  "edge_comparison": {
+    "rising_ns": {
+      "reference_edges": 29,
+      "candidate_edges": 29,
+      "equal_post_reset_edge_counts": true,
+      "pairing": "ordinal after reset; equal counts alone do not establish absence of cycle slips",
+      "paired_final_window_edges": 23,
+      "signed_candidate_minus_reference_ps": [
+        20.219187121938376,
+        21.285538604473686,
+        22.93960888255242,
+        24.175181441364657,
+        25.89894452657404,
+        27.12559477930654,
+        29.137265600525097,
+        31.56216151117519,
+        31.709509309536088,
+        33.713045032783384,
+        35.235701612322146,
+        37.10163358246632,
+        37.861970829197844,
+        40.45178254489201,
+        42.62670284273895,
+        42.3843568302118,
+        45.09399825357718,
+        46.25523725815128,
+        48.43949790003421,
+        49.641208007557225,
+        51.41364689424677,
+        52.073847752694746,
+        54.17530192920594
+      ],
+      "maximum_absolute_difference_ps": 54.17530192920594,
+      "difference_span_ps": 33.95611480726757
+    },
+    "falling_ns": {
+      "reference_edges": 29,
+      "candidate_edges": 29,
+      "equal_post_reset_edge_counts": true,
+      "pairing": "ordinal after reset; equal counts alone do not establish absence of cycle slips",
+      "paired_final_window_edges": 22,
+      "signed_candidate_minus_reference_ps": [
+        18.027160650945007,
+        19.49856351888002,
+        21.203885647651077,
+        23.27461952569365,
+        24.761647271674292,
+        27.062546258520115,
+        28.325453049632188,
+        30.300167372359965,
+        30.927064862595444,
+        33.33216739065392,
+        35.058147335746526,
+        36.512605142860366,
+        38.23254142699284,
+        39.6257929796775,
+        41.206330273467984,
+        42.958446138356976,
+        44.50828175086485,
+        45.105531032987756,
+        47.40238605626246,
+        48.08933599093734,
+        49.57012557733265,
+        52.084569415114856
+      ],
+      "maximum_absolute_difference_ps": 52.084569415114856,
+      "difference_span_ps": 34.05740876416985
+    }
+  },
+  "reference_samples": 26077,
+  "candidate_samples": 6454,
+  "numerical_accuracy_qualified": false,
+  "finer_step_convergence_available": false,
+  "release_ready": false,
+  "captures": [
+    {
+      "samples": 26077,
+      "native_variables": 19697,
+      "stored_columns": 2,
+      "ordered_physical_ports": [
+        "PLLOUT"
+      ],
+      "bindings": {
+        "PLLOUT": {
+          "role": "observation_only",
+          "expected_RAW_variable": "V(PLLOUT)",
+          "RAW_index": 8528
+        }
+      },
+      "all_saved_native_values_finite": true,
+      "storage": "float64 NPY, sample-major, time in column zero",
+      "end_time_s": 2.6e-07
+    },
+    {
+      "samples": 6454,
+      "native_variables": 19697,
+      "stored_columns": 2,
+      "ordered_physical_ports": [
+        "PLLOUT"
+      ],
+      "bindings": {
+        "PLLOUT": {
+          "role": "observation_only",
+          "expected_RAW_variable": "V(PLLOUT)",
+          "RAW_index": 8528
+        }
+      },
+      "all_saved_native_values_finite": true,
+      "storage": "float64 NPY, sample-major, time in column zero",
+      "end_time_s": 2.6e-07
+    }
+  ],
+  "electrical_deck_only_max_step_changed": true,
+  "all_physical_tuning_controls_correct": true,
+  "reference_capture_elapsed_s": 52934.329722960945,
+  "candidate_capture_elapsed_s": 14994.938809060957,
+  "capture_elapsed_ratio": 3.5301464312061372,
+  "runtime_scope": "controller elapsed through capture validation; includes output and postprocessing, not isolated solver time",
+  "model_qualified": false
+}

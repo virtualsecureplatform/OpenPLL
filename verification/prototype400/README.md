@@ -1556,3 +1556,19 @@ It observes both endpoint workers to termination before combining their results;
 failed cases are not retried, and no band or interpolated model is auto-selected.
 The old coordinator's KeyboardInterrupt status is intentional schedule replacement,
 not cancellation or failure of a native simulation.
+
+
+The completed old-backend 10 ps fine149 capture 1266 reports 374.076080984 MHz
+for coarse20, TT/27C/1.8V over 200-260 ns. It is normally completed, finite and
+stationary; physical observer 1268 validates all 302 bits and 604 endpoint
+voltages with zero mismatches across 26,077 saved samples. This is not the
+corrected-BSIM capture 1295, which remains a separate live reference.
+
+Completed timestep comparison 1280 checks full 10 and 50 ps captures whose decks
+differ only in output path and maximum timestep. Both pass their physical
+controls. The 50 ps frequency is 373.860224790 MHz, -577.038214 ppm relative to
+10 ps. Controller-through-validation elapsed is 52,934.33 s versus 14,994.94 s
+(a single-run ratio of 3.5301); this includes capture/output/postprocessing rather
+than isolated solver time. The comparison has no finer-step convergence result
+and does not qualify numerical accuracy. The 5 ps control continues separately.
+Completed inputs and artifacts were rehashed before retaining these receipts.
