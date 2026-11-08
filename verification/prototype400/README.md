@@ -1333,3 +1333,30 @@ trace audit1401; the original CPU30 retention producer is confirmed gone.
 The native child inherits this override. The candidate is unselected and
 currently awaiting resources; existing layout and analog references remain
 unchanged.
+
+### Retained enabled-phase proof bound to current RTL1453
+
+Scope review found the existing integrated decision-phase proof001 and
+five selected402.1MHz enabled-phase screens. Their full retained input/
+artifact hashes verify, and all nine current parent1136 RTL source hashes
+match the integrated proof. It proves enabled decision stability at the
+sampled falling edge, high-phase-only enabled decision changes and
+high-phase loop-enable assertion in the actual integrated parent, retaining
+both handoffs and the filter. It assumes initial external reset, stable
+presets/gains between resets and ideal sampled RTL clocks. No new induction
+is performed by1453.
+
+The retained conditional screens shift only the two decision source hold
+checks by one actual source period, retain physical launch latency and
+all setup checks, and leave no reported ordinary/interface violating
+samples; five first-stage aperture samples remain. This is a proved-phase
+conditional diagnostic, not an arbitrary waiver, but the report is sampled
+and does not qualify disabled-state masking, startup/reset/capture-disable
+or full physical mode transitions. The unconditional delta screen1448
+therefore does not establish that an ECO is required. Candidate1452 is
+optional stronger-timing exploration, not the accepted fix or a reason
+to replace the existing macro/reference captures. Earlier language that
+physical clock/data repair was necessarily required is superseded by
+this scope distinction. Full lifecycle timing and model qualification
+remain release blockers; the existing phase proof must be used within
+its actual assumptions.

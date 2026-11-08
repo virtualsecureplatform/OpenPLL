@@ -1,0 +1,84 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_integrated_decision_phase_proof_001/assessment.json": "765f129e1588d2ffde5734a4234ee06c60552b24bcdbebebbe8c02f56ade81a1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136/assessment.json": "423ec02bd4de48457acf1e9fa3ba715704e3387bfcbb2a6650cbf195e1a600c5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_DigitalCore.v": "4cba0c4b262d43d5b18e484affdc1c03e0c72f8e21de3a7ce044c66f4f7a9055",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_TuningHandoff.v": "00f380665af4ca3e11d3f37b6b448311d41f1c3e0f5aca875ade7d2b825ddfc4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_DLF.v": "4b98becbc5424ed7eabdf38ceedb757d66db35b965ac33bbd0a0c4b6e4ade2db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_B2TH.v": "7cdf2a2224e2b1fcf848cc1cd42b5417e3d0d1bb8dea82e0c274e5065432f74b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_MMD_Retimer.v": "b967f654d1b527296cb89b4c8600b590ec35e412a9b993a275842152260e9b69",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_Divider.v": "2e3dc884988a510b0e749291cfaa6ff4dac05f04b6fb4d07c4c1fea4bf785d64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_ProgrammedStartup.v": "0aceb40b543247af5e893485fef957b2f8cc2c2888fe43462db3f9adcc1b8b41",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_ProgrammedCore.v": "eba2157966c0d799bb269c4c108ce1e125ca5e90a2e10c019c60deed12cf530d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_400MHz_PrototypeTop.v": "0df53ecb2d5ff685713d4f9f9ede71939bdac8b1c8288ef5d586ea9f915e162e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_tt_019/assessment.json": "f9b00f7197210e56f38d4dc6e1dbe4ac8d38a8445d697cf9ab301a7bd66a9bdb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_ff_019/assessment.json": "443444179c21e6cdbaab0ed94b1d77d417507819a37350e647b455855b81169c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_ss_019/assessment.json": "b2ab7fc5c28ef5ddea11632446933508e970ff972f3d8c98be8c05a8963d28d2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_sf_019/assessment.json": "529093e91926585c0cdff9b2d880acd5b102be95fd587aca7335f09fa60c2656",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_fs_019/assessment.json": "32f9fb99fb3571e6070c6d8a8cb78ca8ee17f8e6232de44de6d2627697dd262b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_path_classification_019/assessment.json": "5721c6da26e5994c824dfa1e37d794cfb7fb54cd7dc9dbeb48326658dba071b8"
+  },
+  "current_RTL_sources_match_retained_integrated_phase_proof": true,
+  "RTL_files": 9,
+  "conditional_checks": [
+    {
+      "corner": "tt",
+      "conditional_slack_ns": {
+        "max": 0.75,
+        "min": -0.35
+      },
+      "hold_shift_cycles": 1,
+      "source_period_ns": 2.48694354638,
+      "capture_disable_reset_and_startup_timing_covered": false
+    },
+    {
+      "corner": "ff",
+      "conditional_slack_ns": {
+        "max": 1.06,
+        "min": -0.39
+      },
+      "hold_shift_cycles": 1,
+      "source_period_ns": 2.48694354638,
+      "capture_disable_reset_and_startup_timing_covered": false
+    },
+    {
+      "corner": "ss",
+      "conditional_slack_ns": {
+        "max": 0.16,
+        "min": -0.35
+      },
+      "hold_shift_cycles": 1,
+      "source_period_ns": 2.48694354638,
+      "capture_disable_reset_and_startup_timing_covered": false
+    },
+    {
+      "corner": "sf",
+      "conditional_slack_ns": {
+        "max": 0.33,
+        "min": -0.38
+      },
+      "hold_shift_cycles": 1,
+      "source_period_ns": 2.48694354638,
+      "capture_disable_reset_and_startup_timing_covered": false
+    },
+    {
+      "corner": "fs",
+      "conditional_slack_ns": {
+        "max": 0.87,
+        "min": -0.4
+      },
+      "hold_shift_cycles": 1,
+      "source_period_ns": 2.48694354638,
+      "capture_disable_reset_and_startup_timing_covered": false
+    }
+  ],
+  "violating_sample_counts_by_class": {
+    "first_synchronizer_stage_data_aperture": 5
+  },
+  "scope": "retained ideal-sampled enabled-decision phase proof; not new induction or full lifecycle physical timing",
+  "existing_clock_branch_ECO_is_optional_pending_full_mode_evidence": true,
+  "unconditional_ordinary_path_repair_proved_necessary": false,
+  "reset_startup_capture_disable_and_mode_transition_physical_timing_qualified": false,
+  "physical_timing_qualified": false,
+  "release_ready": false
+}
