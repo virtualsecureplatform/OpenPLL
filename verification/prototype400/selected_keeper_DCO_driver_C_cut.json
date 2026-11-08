@@ -1,0 +1,37 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_partition_boundary_1230/assessment.json": "70823d970e56ff5854f37b14a80a4df5013986ae21ac409fc14ad545247c95eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/assessment.json": "66a33a9102b4b4ef0a948aefc0714ed2d0ac239608023a6d2b79b213dc66b673",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_partition_boundary_1230/boundary.json": "e665078148ba01a63d2b6c007ef951d5bafb8a0fa8a2a6f4f07f150754b00752",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/chains.json": "1a38c79e1d9eb9f556b259df7b1f505fc1431346d5206e29876b5242ac6ae955",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_DCO_driver_C_cut.py": "b77eb42593482a548e4d3bf3a6f9ad2ba55ab10ab81385b080582542619f1b47",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_flat_MOS_region_join.py": "489cdd2adb11424539fccf6bfd12a31eb378f8d6be3da548d786363f9f04093a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_driver_C_cut_1234/crossing_capacitors.json": "a9429f4af87b526a3290d6fa7f92af56d6a806af533d82e858b5caca3e0ac9e2"
+  },
+  "selected_primitive_count": 10138,
+  "selected_primitive_node_count": 3491,
+  "nonzero_C_count": 341067,
+  "C_card_counts": {
+    "both_exterior_nonrail": 221997,
+    "both_selected_nonrail": 52901,
+    "at_RTL_control_port": 32122,
+    "supply_or_ground_endpoint": 33146,
+    "away_from_RTL_control_port": 901
+  },
+  "nonrail_crossing_count": 33023,
+  "nonrail_crossing_selected_node_count": 338,
+  "nonrail_crossing_exterior_node_count": 7304,
+  "exact_cut_closed_without_exterior_voltage_ports": false,
+  "exterior_capacitors_omitted": false,
+  "exterior_nodes_clamped": false,
+  "circuit_partitioned": false,
+  "boundary_loading_qualified": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_driver_C_cut_1234/assessment.json"
+}
