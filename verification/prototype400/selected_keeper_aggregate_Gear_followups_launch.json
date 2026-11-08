@@ -1,0 +1,65 @@
+{
+  "jobs": [
+    {
+      "launcher": {
+        "pid": 2206484,
+        "birth": "134372376",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/generate_keeper_aggregate_waveforms.py",
+          "--waveforms",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/waveforms",
+          "--reduction",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383",
+          "--controls",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_Gear_controls_1392",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_waveforms_1393",
+          "--wait"
+        ]
+      },
+      "owner": {
+        "pid": 2206515,
+        "birth": "134372385"
+      },
+      "observed_status": {
+        "state": "waiting_for_completed_reduction_and_native_controls",
+        "observation_cap_s": 86400,
+        "release_ready": false
+      }
+    },
+    {
+      "launcher": {
+        "pid": 2206537,
+        "birth": "134372391",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_reduced_replay_pipeline_v2.py",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_pipeline_1397"
+        ]
+      },
+      "owner": {
+        "pid": 2206570,
+        "birth": "134372421"
+      },
+      "observed_status": {
+        "state": "waiting_for_completed_audited_aggregate_waveforms",
+        "release_ready": false
+      }
+    }
+  ],
+  "prerequisite": "selected_capacitor_boundary_superposition_Gear_controls_1392",
+  "prior_failed_outputs_preserved": true,
+  "release_ready": false
+}
