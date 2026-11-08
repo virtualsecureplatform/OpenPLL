@@ -1,0 +1,145 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_bsim_drain_gate_potential_1291/assessment.json": "3dcf5d575aa1fbc01953ede6f9feeb37320de5f41e2ae4a2ad8a734a303b661c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_bsim_drain_gate_patch_controls_1293/assessment.json": "6f623114c42d015847ee4755f57cd7db3a764ee471b4c3a6c28820b6543c5903",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/assessment.json": "af9a1b0cec5ee19d6533e8be174d7aaf5753f64a465c046ac98927c2d89afb14"
+  },
+  "original_minimal_controls": [
+    {
+      "case": "omitted_distinct",
+      "PBSWGS": 0.95578,
+      "PBSWGD": null,
+      "mathematical_ngspice_default_or_explicit_fF": 0.14010921250919253,
+      "mathematical_inspected_Xyce_default_or_explicit_fF": 0.06091319529107002,
+      "observations": [
+        {
+          "frequency_Hz": 25000000.0,
+          "ngspice_reactive_cap_fF": 0.2478345840981422,
+          "Xyce_reactive_cap_fF": 0.16863856689408568,
+          "delta_fF": -0.07919601720405653
+        },
+        {
+          "frequency_Hz": 212500000.0,
+          "ngspice_reactive_cap_fF": 0.2478345840981422,
+          "Xyce_reactive_cap_fF": 0.16863856689408568,
+          "delta_fF": -0.07919601720405653
+        },
+        {
+          "frequency_Hz": 400000000.0,
+          "ngspice_reactive_cap_fF": 0.2478345840981422,
+          "Xyce_reactive_cap_fF": 0.16863856689408568,
+          "delta_fF": -0.07919601720405653
+        }
+      ]
+    },
+    {
+      "case": "explicit_source_gate",
+      "PBSWGS": 0.95578,
+      "PBSWGD": 0.95578,
+      "mathematical_ngspice_default_or_explicit_fF": 0.14010921250919253,
+      "mathematical_inspected_Xyce_default_or_explicit_fF": 0.14010921250919253,
+      "observations": [
+        {
+          "frequency_Hz": 25000000.0,
+          "ngspice_reactive_cap_fF": 0.2478345840981422,
+          "Xyce_reactive_cap_fF": 0.24783458411220824,
+          "delta_fF": 1.4066030889576133e-11
+        },
+        {
+          "frequency_Hz": 212500000.0,
+          "ngspice_reactive_cap_fF": 0.2478345840981422,
+          "Xyce_reactive_cap_fF": 0.24783458411220824,
+          "delta_fF": 1.4066030889576133e-11
+        },
+        {
+          "frequency_Hz": 400000000.0,
+          "ngspice_reactive_cap_fF": 0.2478345840981422,
+          "Xyce_reactive_cap_fF": 0.24783458411220824,
+          "delta_fF": 1.4066030889576133e-11
+        }
+      ]
+    },
+    {
+      "case": "omitted_equal",
+      "PBSWGS": 0.2,
+      "PBSWGD": null,
+      "mathematical_ngspice_default_or_explicit_fF": 0.06091319529107002,
+      "mathematical_inspected_Xyce_default_or_explicit_fF": 0.06091319529107002,
+      "observations": [
+        {
+          "frequency_Hz": 25000000.0,
+          "ngspice_reactive_cap_fF": 0.16863856688001966,
+          "Xyce_reactive_cap_fF": 0.16863856689408568,
+          "delta_fF": 1.4066006237672844e-11
+        },
+        {
+          "frequency_Hz": 212500000.0,
+          "ngspice_reactive_cap_fF": 0.16863856688001966,
+          "Xyce_reactive_cap_fF": 0.16863856689408568,
+          "delta_fF": 1.4066006237672844e-11
+        },
+        {
+          "frequency_Hz": 400000000.0,
+          "ngspice_reactive_cap_fF": 0.16863856688001966,
+          "Xyce_reactive_cap_fF": 0.16863856689408568,
+          "delta_fF": 1.4066006237672844e-11
+        }
+      ]
+    },
+    {
+      "case": "explicit_asymmetric",
+      "PBSWGS": 0.95578,
+      "PBSWGD": 0.7,
+      "mathematical_ngspice_default_or_explicit_fF": 0.12296569793917728,
+      "mathematical_inspected_Xyce_default_or_explicit_fF": 0.12296569793917728,
+      "observations": [
+        {
+          "frequency_Hz": 25000000.0,
+          "ngspice_reactive_cap_fF": 0.23069106952812693,
+          "Xyce_reactive_cap_fF": 0.23069106954219296,
+          "delta_fF": 1.4066030889576133e-11
+        },
+        {
+          "frequency_Hz": 212500000.0,
+          "ngspice_reactive_cap_fF": 0.23069106952812693,
+          "Xyce_reactive_cap_fF": 0.23069106954219296,
+          "delta_fF": 1.4066030889576133e-11
+        },
+        {
+          "frequency_Hz": 400000000.0,
+          "ngspice_reactive_cap_fF": 0.23069106952812693,
+          "Xyce_reactive_cap_fF": 0.23069106954219296,
+          "delta_fF": 1.4066030889576133e-11
+        }
+      ]
+    }
+  ],
+  "patched_versions_requested": [
+    "4.6.1",
+    "4.7.0",
+    "4.8.2"
+  ],
+  "patched_native_analyses": 24,
+  "maximum_patched_capacitance_difference_fF": 1.4066030889576133e-11,
+  "default_difference": {
+    "ngspice": "PBSWGD defaults to PBSWGS",
+    "inspected_unpatched_Xyce": "PBSWGD defaults to PBSWD"
+  },
+  "isolated_build": {
+    "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292",
+    "base_binary_sha256": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+    "patched_binary_sha256": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "changed_archive_members": [
+      "N_DEV_MOSFET_B4p61.C.o",
+      "N_DEV_MOSFET_B4p70.C.o",
+      "N_DEV_MOSFET_B4p82.C.o"
+    ],
+    "all_other_archive_members_identical": true,
+    "baseline_archive_relink_exactly_reproduces_checked_binary": true,
+    "stock_inputs_modified": false
+  },
+  "minimal_native_controls_complete": true,
+  "full_current_geometry_AC_revalidation_complete": false,
+  "full_PLL_model_qualified": false,
+  "release_ready": false
+}

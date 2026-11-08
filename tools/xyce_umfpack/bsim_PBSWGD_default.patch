@@ -1,0 +1,33 @@
+--- a/src/DeviceModelPKG/OpenModels/N_DEV_MOSFET_B4p61.C
++++ b/src/DeviceModelPKG/OpenModels/N_DEV_MOSFET_B4p61.C
+@@ -7230,7 +7230,7 @@
+   if (!given("PBSWGS"))
+     SGatesidewallJctPotential = SsidewallJctPotential;
+   if (!given("PBSWGD"))
+-    DGatesidewallJctPotential = DsidewallJctPotential;
++    DGatesidewallJctPotential = SGatesidewallJctPotential;
+   if (!given("CJD"))
+     DunitAreaJctCap=SunitAreaJctCap;
+   if (!given("CJSWD"))
+--- a/src/DeviceModelPKG/OpenModels/N_DEV_MOSFET_B4p70.C
++++ b/src/DeviceModelPKG/OpenModels/N_DEV_MOSFET_B4p70.C
+@@ -7962,7 +7962,7 @@
+   if (!given("PBSWGS"))
+     SGatesidewallJctPotential = SsidewallJctPotential;
+   if (!given("PBSWGD"))
+-    DGatesidewallJctPotential = DsidewallJctPotential;
++    DGatesidewallJctPotential = SGatesidewallJctPotential;
+   if (!given("CJD"))
+     DunitAreaJctCap=SunitAreaJctCap;
+   if (!given("CJSWD"))
+--- a/src/DeviceModelPKG/OpenModels/N_DEV_MOSFET_B4p82.C
++++ b/src/DeviceModelPKG/OpenModels/N_DEV_MOSFET_B4p82.C
+@@ -8042,7 +8042,7 @@
+   if (!given("PBSWGS"))
+     SGatesidewallJctPotential = SsidewallJctPotential;
+   if (!given("PBSWGD"))
+-    DGatesidewallJctPotential = DsidewallJctPotential;
++    DGatesidewallJctPotential = SGatesidewallJctPotential;
+   if (!given("CJD"))
+     DunitAreaJctCap=SunitAreaJctCap;
+   if (!given("CJSWD"))
