@@ -1,0 +1,47 @@
+[
+  {
+    "corner": "tt",
+    "all_periodic_reference_controls_pass": true,
+    "all_periodic_output_levels_pass": true,
+    "maximum_charge_error_fC": 0.7498000073406564,
+    "RMS_charge_error_fC": 0.12691686856907575,
+    "maximum_error_relative_to_charge_swing": 0.05576297887438814,
+    "internal_voltage_observed_not_predicted": true
+  },
+  {
+    "corner": "ff",
+    "all_periodic_reference_controls_pass": true,
+    "all_periodic_output_levels_pass": true,
+    "maximum_charge_error_fC": 0.7018440643798064,
+    "RMS_charge_error_fC": 0.1072249682150768,
+    "maximum_error_relative_to_charge_swing": 0.053559055036380025,
+    "internal_voltage_observed_not_predicted": true
+  },
+  {
+    "corner": "ss",
+    "all_periodic_reference_controls_pass": true,
+    "all_periodic_output_levels_pass": true,
+    "maximum_charge_error_fC": 0.7700299831542569,
+    "RMS_charge_error_fC": 0.15373504969368376,
+    "maximum_error_relative_to_charge_swing": 0.056390834402648346,
+    "internal_voltage_observed_not_predicted": true
+  },
+  {
+    "corner": "sf",
+    "all_periodic_reference_controls_pass": true,
+    "all_periodic_output_levels_pass": true,
+    "maximum_charge_error_fC": 0.760501881989175,
+    "RMS_charge_error_fC": 0.16048177764449872,
+    "maximum_error_relative_to_charge_swing": 0.0527874120686789,
+    "internal_voltage_observed_not_predicted": true
+  },
+  {
+    "corner": "fs",
+    "all_periodic_reference_controls_pass": true,
+    "all_periodic_output_levels_pass": true,
+    "maximum_charge_error_fC": 0.6679392399449386,
+    "RMS_charge_error_fC": 0.10103488177121091,
+    "maximum_error_relative_to_charge_swing": 0.054023521657578046,
+    "internal_voltage_observed_not_predicted": true
+  }
+]

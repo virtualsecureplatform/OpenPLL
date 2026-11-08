@@ -1,0 +1,94 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/assessment.json": "a6bbfb5438bb0d1ba98d66506f5dee929561aee659ebf68911af56d96a1227fb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_charge_surface_1529/assessment.json": "85fd1c6ee04d12514967af26a50003c434688cb8a40a07a3f5f98c20b1153c4d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_charge_surface_1529/plan.json": "5d147556b71013185c2e1f796cf94cabf1b5b96adcddf46c4b1a48ef5722b97a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_charge_surface_1529/charge_surfaces.json": "21adb3d1a6a9a9843ba41a043680b3d2d0ba4929050af8eee353f9201913c846",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/cell.spice": "68f58f03e3969b24e84ebd270b86e5a370b9e4f34f8291eaeb0e411c432d64b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/explicit_input_capacitors.json": "2a647f9520bb6d80d3c1e44961059fc440b138cf94602c748de94d1c0c7c43eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/ngspice47_diode_charge_fix_001/ngspice": "9508dd5d4739bbcc99f32f5dd7f8e55fc3de52e6755bd53545a7509e158ba4f6",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/sky130.lib.spice": "17c208a699228f5acb87bf59c09c22a4c4d3937b6766b4957737d34e8e075f64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/validate_keeper_receiver_charge_periodic.py": "1a8a78ca748e9feb2aa417a996a0ae1757fb9072a41586fe7116d843ae557c93",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/fit_keeper_receiver_charge_surface.py": "ad6b1e4785c6122d2c450fd1316a030ac468891662d4cfbc3a45b2fc464b912d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_keeper_clock_buffer_input_charge.py": "ab846d2af7a558809cd0639485f126ec9853c8a1861753755486b0124cb3168a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_prototype_capture_boundaries_v3.py": "8e3c8b1b0919c5925d2058917853a289b1b4351f01616a9bbda7ccd4bfc2eca3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/tt/periodic.cir": "a80c59456c21c9ae9959a443b324cdb4c98676b39c5a01d182345f61787436bc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/tt/.spiceinit": "4f989b2ccc180f50d329b9eae44b2269f2241303c57fa94cc008dc7e3cd4e6e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/ff/periodic.cir": "a1d1b670869b009414c32d209c35808972d43106bc60b66980252c8505773d30",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/ff/.spiceinit": "4f989b2ccc180f50d329b9eae44b2269f2241303c57fa94cc008dc7e3cd4e6e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/ss/periodic.cir": "4a01b612800463e7c590bcd56281ddabd45193a5b5062c3f33a57afeb350d259",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/ss/.spiceinit": "4f989b2ccc180f50d329b9eae44b2269f2241303c57fa94cc008dc7e3cd4e6e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/sf/periodic.cir": "da4ad9b4165d6fdab22fc692be2ff6f88769a3ad9453e71080f0b16cdf1b1b8c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/sf/.spiceinit": "4f989b2ccc180f50d329b9eae44b2269f2241303c57fa94cc008dc7e3cd4e6e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/fs/periodic.cir": "2a2cf308c1256409c4eaa22c8a194184e25697073fb9436e2da4c5c527bf600f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/fs/.spiceinit": "4f989b2ccc180f50d329b9eae44b2269f2241303c57fa94cc008dc7e3cd4e6e5"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/tt/waveform.dat": "4ea2c8f33d49ce1c406c30e9c5b40320305277922bbdc3942ff5aec84ef8bdab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/tt/native.log": "8d2d369e2f9d4330cf0712ca6bd8a653322e78cb8454d08c351987b85524fc45",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/ff/waveform.dat": "bab7bf96853e62ac8ee1e7b96582137efce758336a625f478aa6bde773ec0a2d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/ff/native.log": "9e8579f1c2e81f3099925a78bfb2d35105c0dda1b299e3975bf192940767e056",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/ss/waveform.dat": "544692a1a363132dee341365dd2c259dc77bbb39225c5cde679652403179437d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/ss/native.log": "4a5cfb84e32fe33a08cb8d02d6731619e40d6f795bdbe7cec8538e30e96d2387",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/sf/waveform.dat": "aaf83971aef30198d745023e2ea6f1e527cf4d5766815515f8bea6e711750121",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/sf/native.log": "2e28da517acb0ed0adb0d8ca98d39bfe6c93b74e7e1d29d4414c6f49102a7277",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/fs/waveform.dat": "b77913e030a3dc4f970b58da7a9b94da523c7d4d070d4f8db51b7fc437225334",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/fs/native.log": "4f47e8fd4ed776d62c4e426a00c0abe97bb0a48533b87b7e4bd1b846a127635c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_periodic_validation_1530/observations.json": "60a26a450534cbd5e8910dcd99216a28ad4f476844e7725087df8c3f69e0d75b"
+  },
+  "corners": [
+    {
+      "corner": "tt",
+      "all_periodic_reference_controls_pass": true,
+      "all_periodic_output_levels_pass": true,
+      "maximum_charge_error_fC": 0.7498000073406564,
+      "RMS_charge_error_fC": 0.12691686856907575,
+      "maximum_error_relative_to_charge_swing": 0.05576297887438814,
+      "internal_voltage_observed_not_predicted": true
+    },
+    {
+      "corner": "ff",
+      "all_periodic_reference_controls_pass": true,
+      "all_periodic_output_levels_pass": true,
+      "maximum_charge_error_fC": 0.7018440643798064,
+      "RMS_charge_error_fC": 0.1072249682150768,
+      "maximum_error_relative_to_charge_swing": 0.053559055036380025,
+      "internal_voltage_observed_not_predicted": true
+    },
+    {
+      "corner": "ss",
+      "all_periodic_reference_controls_pass": true,
+      "all_periodic_output_levels_pass": true,
+      "maximum_charge_error_fC": 0.7700299831542569,
+      "RMS_charge_error_fC": 0.15373504969368376,
+      "maximum_error_relative_to_charge_swing": 0.056390834402648346,
+      "internal_voltage_observed_not_predicted": true
+    },
+    {
+      "corner": "sf",
+      "all_periodic_reference_controls_pass": true,
+      "all_periodic_output_levels_pass": true,
+      "maximum_charge_error_fC": 0.760501881989175,
+      "RMS_charge_error_fC": 0.16048177764449872,
+      "maximum_error_relative_to_charge_swing": 0.0527874120686789,
+      "internal_voltage_observed_not_predicted": true
+    },
+    {
+      "corner": "fs",
+      "all_periodic_reference_controls_pass": true,
+      "all_periodic_output_levels_pass": true,
+      "maximum_charge_error_fC": 0.6679392399449386,
+      "RMS_charge_error_fC": 0.10103488177121091,
+      "maximum_error_relative_to_charge_swing": 0.054023521657578046,
+      "internal_voltage_observed_not_predicted": true
+    }
+  ],
+  "independently_measured_periodic_holdout": true,
+  "coefficients_refitted": false,
+  "maximum_error_relative_to_charge_swing": 0.056390834402648346,
+  "causal_internal_voltage_model_available": false,
+  "clock_receiver_model_qualified": false,
+  "full_flat_C_stitching_qualified": false,
+  "release_ready": false
+}

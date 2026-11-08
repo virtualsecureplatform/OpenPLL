@@ -1987,3 +1987,14 @@ before measuring that waveform. Exact-token parallel grouping was also inspected
 as a speed option:62,338 primitive calls form54,134 groups, a13.2% call-count
 reduction before backend support or equivalence validation. No multiplicity
 rewrite or native optimizer was implemented on that basis.
+
+Periodic validation1530 completed the predeclared400 MHz /100 ps /200 fF
+holdout in all five process corners. All periodic20 fF reference controls and
+output-level checks pass. Candidate1529 coefficients are frozen and not refit.
+Maximum charge error is5.6391% of observed charge swing (0.77003 fC at SS),
+consistent with its5.6147% training error. The internal voltage is measured in
+this test, not predicted, so this remains a conditional charge-component test.
+Completed receipts, all corner errors and the native runner are retained after
+input/artifact verification. The simple surface is not integrated as a qualified
+receiver; richer voltage dependence and a causal state response remain required.
+No PLL release gate is closed by these measurements.
