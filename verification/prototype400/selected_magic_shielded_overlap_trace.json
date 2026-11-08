@@ -1,0 +1,126 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_ground_lifecycle_trace_1304/assessment.json": "79dd3f9ef4763715af2411c0c5ed06b41de876ec5d5e63d769e905956a8b40d6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_ground_lifecycle_trace_1304/install/bin/magic": "c2a9b002837a520a401f49c3d54a1bfd85bb65ac2f04cf312c97559d397643d0",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_shielded_overlap_trace.py": "e8d291f34359cb9628f6200d91c58d9ec73b9cdaf17862f6c10892c36d52fc68",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_coupling_geometry_trace.py": "e4d506efeaae05027ef4ad86acb9d2a955a3de6b1e2a143e352ecf4fc5b04bbd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_ground_lifecycle.py": "eb23733bfd3399aa5ce25c140780182e27c8532aec99a8b288e1280708ec93b8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_shielded_overlap_trace_1309/shielded_overlap_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_shielded_overlap_trace_1309/shielded_overlap_off/probe.tcl": "25029f5567c4ce656ed112edc9f0a2fbd06effd5c58f11e3afb9debb52f7bd62",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_shielded_overlap_trace_1309/shielded_overlap_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_shielded_overlap_trace_1309/shielded_overlap_on/probe.tcl": "8c8b17416ceaebea4b85ad27ae5fdf4002130db13250ff251ba0f06b1c1200ec"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_shielded_overlap_trace_1309/shielded_overlap_off/view.spice": "a2dfff1468cd6c8b423a59a3d61959b89f1e4bb37cb3303959c8796533aad323",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_shielded_overlap_trace_1309/shielded_overlap_off/Trace_shielded_overlap.ext": "685635c548583bffd33cf206d82a61fa353577f14b2aa72eb2b3ddc256ab1846",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_shielded_overlap_trace_1309/shielded_overlap_off/native.log": "f49a2b126982236c6e36bba9e4d1ddf851761d11588407d264dc9e21e1243b1f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_shielded_overlap_trace_1309/shielded_overlap_on/view.spice": "a2dfff1468cd6c8b423a59a3d61959b89f1e4bb37cb3303959c8796533aad323",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_shielded_overlap_trace_1309/shielded_overlap_on/Trace_shielded_overlap.ext": "d4205f326ceb886ad4b5f11e329490a951d913697c683c1c80e9e7fcf4f6a84c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_shielded_overlap_trace_1309/shielded_overlap_on/native.log": "c5ae0b648071959485618eed690a7cab825b09e7158d9155bb3e59e70f406fb6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_shielded_overlap_trace_1309/shielded_overlap_on/coupling.jsonl": "d5cc2aa6db3a6623c7890e39b17547d79e5aa6203a9203c0bcf1abf1f4e3415e"
+  },
+  "results": [
+    {
+      "case": "shielded_overlap",
+      "normal_native_completion": true,
+      "trace_off_on_exact_device_and_C_match": true,
+      "coupling": {
+        "events": 5,
+        "event_kinds": {
+          "overlap": 3,
+          "sideoverlap_halo": 2
+        },
+        "native_pointer_pairs": 3,
+        "exported_name_pairs": 3,
+        "unmapped_pointer_pairs": 0,
+        "unmapped_events": 0,
+        "sidewall_spans_verified": 0,
+        "differences": [],
+        "all_exported_C_pairs_reconstructed_at_native_precision": true,
+        "ground_capacitance_geometry_traced": false,
+        "pointwise_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "ground": {
+        "ground_updates": 19,
+        "ground_resets": 4,
+        "mutation_sites_observed": {
+          "ExtBasic.c:5248": 4,
+          "ExtBasic.c:5332": 3,
+          "ExtBasic.c:5409": 3,
+          "ExtBasic.c:5459": 3,
+          "ExtBasic.c:5510": 3,
+          "ExtBasic.c:5560": 3,
+          "ExtCouple.c:522": 3,
+          "ExtCouple.c:1521": 1
+        },
+        "ground_output_records": 4,
+        "substrate_output_records": 1,
+        "negative_export_clamps": 0,
+        "native_ground_state_continuity_verified": true,
+        "exported_ground_records_match": true,
+        "missing_exported_records": 0,
+        "extra_reconstructed_records": 0,
+        "spatial_ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      }
+    }
+  ],
+  "all_two_native_controls_complete": true,
+  "logging_preserves_tested_circuits": true,
+  "legacy_side_overlap_runtime_path_qualified": false,
+  "numeric_ground_lifecycle_verified": true,
+  "ground_capacitance_geometry_traced": false,
+  "full_PLL_geometry_trace_qualified": false,
+  "pointwise_placement_qualified": false,
+  "release_ready": false,
+  "overlap_search_support_review": [
+    {
+      "nodes": [
+        "S",
+        "A"
+      ],
+      "box": [
+        0,
+        0,
+        2000,
+        100
+      ],
+      "box_area": 200000,
+      "native_unshielded_area": 200000
+    },
+    {
+      "nodes": [
+        "B",
+        "A"
+      ],
+      "box": [
+        0,
+        0,
+        4000,
+        100
+      ],
+      "box_area": 400000,
+      "native_unshielded_area": 200000
+    },
+    {
+      "nodes": [
+        "B",
+        "S"
+      ],
+      "box": [
+        0,
+        0,
+        2000,
+        100
+      ],
+      "box_area": 200000,
+      "native_unshielded_area": 200000
+    }
+  ],
+  "search_box_alone_sufficient_for_spatial_placement": false
+}
