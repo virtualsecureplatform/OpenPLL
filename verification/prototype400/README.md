@@ -33,8 +33,10 @@ The [omitted-aggressor ranking](omitted_capacitive_drives_1543/assessment.json)
 identifies dynamic exterior coupling, including REFCLK, that the static model
 grounds. These diagnostics do not supply a transferable correction or error bound.
 
-The current numerical work measures the coarse23 lower fine endpoint, tests
-analytic REFCLK excitation, replays measured programming-input ripple, and
+The [completed analytic REFCLK case](static_REFCLK_DCO_1544/assessment.json)
+changes frequency by only+1.019906 ppm versus the grounded-REFCLK pilot.
+The current numerical work measures the coarse23 lower fine endpoint,
+replays measured programming-input ripple, and
 continues the existing full-layout references and boundary replay. Their results
 must be completed and hash-verified before selecting a calibration or correcting
 a model. The full-reference and reduced-model routes are both retained; the
@@ -2206,3 +2208,14 @@ irregular activity. These are measured crossings, not qualified periodic-clock
 models or proof of each source's frequency effect. They show that an analytic
 REFCLK-only correction leaves oscillator-rate and startup-dependent exterior
 activity unresolved.
+
+Analytic REFCLK case1544 completed normally in1,125.325 s (18.76 min), with all
+302 native tuning leaves matching and all saved values finite. Its20–60 ns
+frequency373.666293068 MHz differs by+1.019906 ppm from grounded-REFCLK
+pilot1531. Saved native REFCLK crossings are3.78994769 and43.78994770 ns
+rising,23.78994770 ns falling, matching the declared stimulus phase and period.
+Input/artifact hashes were independently reverified and the compressed native
+log reproduces its receipt hash. The remaining difference from the full reference
+is still+1,388.392841 ppm in these unaligned windows. Restoring REFCLK alone
+therefore does not resolve model accuracy; other dynamic boundaries, input
+idealization, reset history and numerical uncertainty remain unqualified.

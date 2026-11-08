@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "source": "/tmp/openpll-static-DCO-bk6j_wb7/transient.raw",
+      "retained": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_REFCLK_DCO_1544/transient.raw",
+      "bytes": 30146966,
+      "sha256": "83e2b3a64d35b68cfd3946f3cdc8a193ba7a8862e98ed9f5ee453d0bf2cc5b2d",
+      "closed_native_trace_copy_verified": true
+    },
+    {
+      "source": "/tmp/openpll-static-DCO-bk6j_wb7/native.log",
+      "retained": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_REFCLK_DCO_1544/native.log",
+      "bytes": 91758,
+      "sha256": "abff058832e64108fa17b9f4aaf48da3f894cd758a4310ef6aff9729f92e8c73",
+      "closed_native_trace_copy_verified": true
+    },
+    {
+      "source": "/tmp/openpll-static-DCO-bk6j_wb7/memory.log",
+      "retained": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_REFCLK_DCO_1544/memory.log",
+      "bytes": 973,
+      "sha256": "d122c77ddf0d8cb176ff05dd0b68441b2b23cbb6e736b0b87cd8a31447bb57e6",
+      "closed_native_trace_copy_verified": true
+    }
+  ]
+}
