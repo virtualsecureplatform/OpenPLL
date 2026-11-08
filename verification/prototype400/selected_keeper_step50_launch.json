@@ -1,0 +1,29 @@
+{
+  "reference": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266",
+  "candidate": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_step50_1278",
+  "physical_observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_step50_physical_1279",
+  "native": {
+    "pid": 2004068,
+    "birth": "131532717",
+    "process_group": 2004068
+  },
+  "controller": {
+    "pid": 2004029,
+    "birth": "131532406"
+  },
+  "observer": {
+    "pid": 2004129,
+    "birth": "131533539"
+  },
+  "electrical_deck_identical_except_output_path_and_max_step": true,
+  "reference_max_step_ps": 10,
+  "candidate_max_step_ps": 50,
+  "CPU": 25,
+  "memory_GiB": 16,
+  "native_cap_s": 86400,
+  "maximum_new_native_cases": 1,
+  "automatic_identical_retry": false,
+  "accuracy_qualified": false,
+  "speedup_measured": false,
+  "release_ready": false
+}
