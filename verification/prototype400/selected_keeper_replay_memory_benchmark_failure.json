@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/inputs.json": "ba34db9d7ab2a2b81dc6a0064e4002963d7f7e155704058b3062890377b93705",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/native_inputs.json": "67ce86bacbeac6054533b5e458310ba254d07f9c15f6095be99afdd90bce37a0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/status.json": "5ef3d09fbd001c2c282226bccfde1cfc5727c27c79b543e1d0371d96e7d417ed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/memory.log": "d78111021d5d9a0a8b4a3281eeb6248759139952662a6c2c5368ae2c90f52142",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/native.log": "dd06a8c2a2e9a5866c29c6f21a48253887209b5ab4a1e9a772086b4c2e5f3131",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/sources/assessment.json": "0970c34c5bf119c21de3e95d81b900dbea9a75ffcb13ebe8cbbf70376bd1274d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/waveforms/assessment.json": "dfcdcabfa65c6f79524a36fa72cfa46c5379a376e8224486e3bb650322f8d6a8"
+  },
+  "native_phase": "reading and parsing netlist",
+  "native_terminated_signal": 11,
+  "controller_exit_code": 139,
+  "native_wall_s": 148.75,
+  "native_user_s": 140.17,
+  "native_system_s": 7.36,
+  "native_peak_RSS_KiB": 8177664,
+  "address_space_limit_GiB": 8,
+  "emitted_PWL_points": 48940748,
+  "complete_replay_available": false,
+  "frequency_or_accuracy_result_available": false,
+  "inference": "peak RSS close to the imposed address-space cap is consistent with allocation exhaustion; fault location and allocation failure are not proved",
+  "eight_GiB_reservation_supported": false,
+  "GNU_time_trailing_exit_status_field_not_used_for_signal_success": true,
+  "original_replay_reservations_changed": false,
+  "automatic_retry_performed": false,
+  "release_ready": false
+}

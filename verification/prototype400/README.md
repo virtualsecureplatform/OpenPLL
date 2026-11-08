@@ -770,3 +770,7 @@ The live CPU-29 controller uses completed old-backend 50 ps capture 1278 and mat
 ### Reduced replay native benchmark started (1365)
 
 Boundary preparation completes with 6,454 samples and 7,616 driven ports: 33 constant sources and 7,583 nonconstant sources produce 48,940,748 PWL points without lossy compression. Native Xyce is live parsing the sources. Its actual executable hash, PID birth, CPU-29 affinity and inherited 8 GiB address-space limit are verified independently of the GNU time wrapper. Completion, final peak RSS and replay comparisons remain pending; an interim RSS is not a memory qualification. See `selected_keeper_replay_memory_native_launch.json`.
+
+### 8 GiB replay benchmark stops during netlist parsing (1365)
+
+The completed source set contains 48,940,748 PWL points. Xyce terminates by signal 11 while parsing, after 148.75 s and 8,177,664 KiB peak RSS under the verified 8 GiB address-space cap. The controller records exit 139 and no completed replay. GNU time's trailing exit-status line is not used to override its signal-termination report. This is consistent with allocation exhaustion near the cap, but no fault stack proves the cause. An 8 GiB reservation is not supported; original 64 GiB jobs remain unchanged. No frequency, accuracy, memory reduction or speedup result is inferred. The failed run is retained and not identically retried. See `selected_keeper_replay_memory_benchmark_failure.json`.
