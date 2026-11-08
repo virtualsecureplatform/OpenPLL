@@ -738,3 +738,7 @@ The next isolated observer links the native area shielding subtraction at ExtCou
 ### Ground overlap-shielding links pass native controls (1356/1357)
 
 Eight native off/on runs preserve fixture circuits exactly. The area/perimeter support, numerical ground/coupling, overlap-mask and fringe-integral audits all pass, as do 11 native ground-area shielding subtraction links to resolved masks and adjacent exact updates. Twelve ground-auditor tests pass. This qualifies the observed fixture bookkeeping, not spatial placement: native clipped/split coverage and three fringe-ground subtraction paths remain open, and full PLL/model/release qualification stays false. See `selected_magic_ground_overlap_controls.json`.
+
+### Resolved halo ground subtraction observer started (1358)
+
+A fresh isolated source transformation records callback begin/end around the native halo rule accumulator and observes its substrate subtraction immediately before the unchanged numerical ground update. Records bind node pair, clipped support, boundary, native substrate multiplier/fraction, accumulated shielding, coefficient and subcap. Pinned-source checks locate the exact callback and one subtraction. A CPU-29/4-GiB build has launched; compilation, callback reconstruction and native neutrality remain pending. Halo-tail truncation and legacy fringe paths are separate unresolved work. No native arithmetic or release tool is changed.
