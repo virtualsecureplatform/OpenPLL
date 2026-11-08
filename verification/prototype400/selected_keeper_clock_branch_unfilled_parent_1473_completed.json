@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/assessment.json": "a1efe9e90868be12c32aaa183c3494fb10792ff63623e952c048cfbd63d94493",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/assembly.gds": "126b319dc8d0ad0742f834fa30e229db7c4a36e341f40b4296fb2fb06eb5ec3f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_keeper_clock_parent_without_fill.py": "8c1aec493e522a502adeb88d5170280063f071286bf1ea83fd599defd249b59d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assemble_selected_keeper_parent.py": "72fb2c9d7175ee0c0be7f3a046f45bf8e43b9103a7618948bc9f2133317c3131",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/integrate_keeper_clock_branch_parent.py": "f6b63ed50f25f5bb7a6d9ed64836f7238b0be45e1756eb3d55141d7f99ce171c",
+    "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.magicrc": "f421b9ebbbac49f7058ece92fc85e7334c9cfddc039bef41c3b6cf1572b67cb1",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/drc.tcl": "eaa9231d9645f53d6708f6cce7aaca517fca65bb595701d15cfe4ce7fa417faf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_unfilled_parent_1473/assembly.gds": "d4ad64d7da8033fbbecafd8f8368d413d874645f8b8ae535d112486afb5b2e5b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_unfilled_parent_1473/drc.tcl": "67ec2603e8e52b60ceb6b80e7dd5c49d22a7fb94096ea8fc3c69b10f2e16ff4e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_unfilled_parent_1473/assembly_receipt.json": "cd91a38e0a1ffb57427dd0a01be085dfc446f40a5bc34321b8dc59bae9df5cc7"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_unfilled_parent_1473/assembly.gds": "d4ad64d7da8033fbbecafd8f8368d413d874645f8b8ae535d112486afb5b2e5b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_unfilled_parent_1473/drc_errors.rpt": "86f90026d90bc62cea2b07c19964fca92703c1a4246e50eb118bf179cfd97225",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_unfilled_parent_1473/native.log": "094cc7a3f316f8ba1c5e674d06612c370cd811673563c103feea69af39b1bbe6"
+  },
+  "only_parent_fill_instances_removed": true,
+  "full_parent_Magic_DRC_rectangles": 0,
+  "full_parent_Magic_DRC_pass": true,
+  "source_filled_DRC_rectangles": 2592,
+  "stale_fill_is_sole_observed_DRC_cause": true,
+  "fill_regeneration_required": true,
+  "parent_LVS_density_or_model_qualified": false,
+  "selected": false,
+  "release_ready": false
+}

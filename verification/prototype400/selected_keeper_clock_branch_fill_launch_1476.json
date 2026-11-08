@@ -1,0 +1,35 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/prototype400/fill_keeper_clock_parent.py": "43fd3d06e9f35f7d11de27cda1fd280de13befd29ef815d2d1f7bd199f7614f8",
+    "/nix/store/ps0r3qpgjh1lqyqacra33rvxsjgkd874-python3-3.13.9-env/bin/python3.13": "6089315ff298ff5ef084e0ef5bf693cf3e60bc5782c4a0294612fe51b44f278a",
+    "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/magic/generate_fill.py": "4be7806c1192225e28ff11d3cc52734dac1c2c0f5229379653de482ac809f0b4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/magic/sky130A-GDS.tech": "4ccf54a44c77918e92d64fb49834342340d30aa034c2a879a1da70e27bf45dab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/assessment.json": "a1efe9e90868be12c32aaa183c3494fb10792ff63623e952c048cfbd63d94493",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assessment.json": "cb53636d63bfa258d9d444c2b4e41b9cfe8cd29073262c259a6f00228d027902",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_parent_frame_019/assessment.json": "168bea24909eaf5811ab123ccb1a02e0c0e9a4f826c77e343951a99b51577b98",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_unfilled_parent_1473/assembly.gds": "d4ad64d7da8033fbbecafd8f8368d413d874645f8b8ae535d112486afb5b2e5b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_regenerated_fill_1476/prepared_parent.gds": "b8606a22a47ce212e9562c1b3a92f0ea3978b97375dc815085d38a7b3b07deca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_unfilled_parent_1473/assessment.json": "6804ade97dd7ecaea63232ae8b2cf63bf7bc8480abe2f74dea4bd5b58666196b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_unfilled_parent_LVS_1475/assessment.json": "c290e604fbcc5c555288a1b3d471744dffe448d824a65071e3c9128531ee3b77",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/prototype400/klayout_compat.py": "292d41162e20b34b183bbca7848cf1ead4663f710764364fa1900aa5a8c952f8",
+    "/nix/store/ps0r3qpgjh1lqyqacra33rvxsjgkd874-python3-3.13.9-env/lib/python3.13/site-packages/klayout/pyacore.cpython-313-x86_64-linux-gnu.so": "af2934f6f14e74d8d386171e4e45dbfa760f629d968cce417731e7dd4a52c38c"
+  },
+  "owner": {
+    "pid": 2295605,
+    "birth": "136402828"
+  },
+  "observed_status": {
+    "state": "pdk_fill_generation_running",
+    "observed_utc": "2026-11-08T16:14:59.970645+00:00",
+    "release_qualified": false,
+    "native_pid": 2295707
+  },
+  "CPU": 28,
+  "memory_GiB": 12,
+  "native_cap_s": 3600,
+  "original_parent_modified": false,
+  "source_unfilled_parent_DRC_and_LVS_pass": true,
+  "regenerated_fill_checks_complete": false,
+  "release_ready": false
+}

@@ -1448,3 +1448,23 @@ Magic DRC rectangles. Expanded LVS 1472 independently reproduces one top-level
 net discrepancy, while the three macro-level comparisons have no discrepancies.
 These are completed negative results, retained with rule counts and the actual
 bad-net record in 1474. No candidate selection or parent qualification follows.
+
+
+Controlled fill removal 1473 changes only the two parent fill instances, preserves
+all macro definitions and all other parent shapes/instances, and drops the full
+flattened Magic DRC count from 2,592 to zero. Fresh expanded LVS 1475 of this
+unfilled candidate matches uniquely, with no discrepant records and all three
+macros expanded. Both exact-zero body and parent-port alias witnesses are obtained
+from the new extraction itself; the new ECO powered digital reference is used.
+Thus old parent fill causes both observed integration failures in these controls.
+Removing fill is an intermediate repair, not a density or final physical pass.
+
+Fill regeneration 1476 runs the retained eight-purpose stock fill process plus
+the same M5 clearance/window preflight against the new, DRC/LVS-clean geometry.
+The new helper checks the exact ECO-to-original-parent frame lineage rather than
+pretending the old frame contains the new digital geometry. It reserves one CPU
+(28), 12 GiB and a one-hour native limit after resource admission, with no identical
+retry. The original parent and analog references remain untouched. A live launch
+receipt is retained; the regenerated filled candidate still requires fresh DRC,
+expanded LVS, density and fill-aware parasitics before any selection. Frequency,
+cell-model, startup and full closed-loop release gates remain open.
