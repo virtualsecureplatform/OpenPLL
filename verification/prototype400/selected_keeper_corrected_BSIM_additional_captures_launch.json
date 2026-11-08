@@ -1,0 +1,110 @@
+{
+  "observed_UTC": "2026-11-08T06:22:02.789671+00:00",
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_flat_native_BSIM_corrected_step50.py": "2fda9e1a85c469b0fb4c3a2e65bb39f951efca880f135db7f4e405c034af3bb5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_native_timestep_BSIM_corrected.py": "c688863ef8fdd4e08693355e6475d477e96cd4e116d6ce606c567e76b0f40b94",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/native.process.json": "86f4555448320da16054010a80b35e81c3abf9485b3415bfe4e9febe9caa2db5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/inputs.json": "38fa26701485098baacc652ff665e61de5808653c8f81b9e73c3d8b7f9473433",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/owner.json": "4e0dd0590f8631858185190b19ed917e4e55f4f38b855341ea12ccdc01d376f4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342/owner.json": "fc565bb752b0c489e048bd1dbe20c84d789e115a1f588a663fdc73acc955e03b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342/plan.json": "a9b75a57a03742bf0802dcfedc37a22c2df72ee9550745c5cb6dc5f2394d1fbf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine110_1344/native.process.json": "2fb84b7c1a3690fe0e4e7ba9b045e94f2b3132e264a85395f22e282255fde893",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine110_1344/inputs.json": "e6f29ad1a9a5ab93d4a7a1cd27f37b2eca192b148ebb7419efb2aa03b1e0772f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine110_1344/owner.json": "d5942a07f47446eb4426dcddc967d83e5c5ac1b967f412154e1edce15bf7a0da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine110_physical_1345/owner.json": "a3b6973218d585739aca6275adf4867095ad5b075ad8b8ca185a596ad69cef84",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine110_physical_1345/plan.json": "1aa5f59b437308a76cb8a921eea1e8207309a93f36e60a98d73834bf7a117518",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine182_1346/inputs.json": "72769de8647a534d7fce3b12060302cef685055a17a92b87cb925265d7088e23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine182_1346/owner.json": "d2998c3dd1928d2905bd900aa126b7cbb74c4ed8ff17ae99de2cc4a51e72c99d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine182_physical_1347/owner.json": "f9129066d459c9d1ffa4af2ca3344587633ef532c4a5b190cbfb8c31364ce535",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine182_physical_1347/plan.json": "467b15d38cd743dc74c4b18063238b713e0f3f41a7ea91a46afba54f4b643b75",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_timestep_comparison_1343/owner.json": "673c627022c608d18626d62d2996d2404ff7b67a5fc3c68fb3af2939a52d09c7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_timestep_comparison_1343/inputs.json": "a101f2536a9af38cef2ded0e37bb30f96b79f2c0929a9ba4cd632ed7d045c8c1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295/transient.spice": "7f97882c22f179095ee3fca877590bb66e1428bc50408f2b774701ee64ca9bad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/transient.spice": "194142585a5c16a3469ec04177e624c6a3ad80c12bf90a4a8df84b0bb8fcf3e8"
+  },
+  "captures": [
+    {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341",
+      "fine": 149,
+      "max_step_ps": 50,
+      "controller": {
+        "pid": 2103931,
+        "birth": "132766731"
+      },
+      "observed_state": "flat_native_programming_transient_running",
+      "native_executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "native_executable_sha256": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+      "CPU": 30,
+      "memory_GiB": 16,
+      "native_cap_s": 86400,
+      "physical_observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342",
+      "verified_native_process": {
+        "pid": 2103967,
+        "birth": "132767170",
+        "process_group": 2103967
+      },
+      "physical_observer_owner": {
+        "pid": 2104304,
+        "birth": "132783568"
+      }
+    },
+    {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine110_1344",
+      "fine": 110,
+      "max_step_ps": 10,
+      "controller": {
+        "pid": 2104119,
+        "birth": "132776171"
+      },
+      "observed_state": "flat_native_programming_transient_running",
+      "native_executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "native_executable_sha256": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+      "CPU": 31,
+      "memory_GiB": 16,
+      "native_cap_s": 86400,
+      "physical_observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine110_physical_1345",
+      "verified_native_process": {
+        "pid": 2104191,
+        "birth": "132776585",
+        "process_group": 2104191
+      },
+      "physical_observer_owner": {
+        "pid": 2104390,
+        "birth": "132783579"
+      }
+    },
+    {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine182_1346",
+      "fine": 182,
+      "max_step_ps": 10,
+      "controller": {
+        "pid": 2104131,
+        "birth": "132776173"
+      },
+      "observed_state": "waiting_for_global_CPU_RAM_budget",
+      "native_executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "native_executable_sha256": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+      "CPU": 27,
+      "memory_GiB": 16,
+      "native_cap_s": 86400,
+      "physical_observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine182_physical_1347",
+      "verified_native_process": null,
+      "physical_observer_owner": {
+        "pid": 2104413,
+        "birth": "132783582"
+      }
+    }
+  ],
+  "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_timestep_comparison_1343",
+  "comparison_owner": {
+    "pid": 2104582,
+    "birth": "132789230"
+  },
+  "actual_step50_deck_only_maximum_timestep_changed": true,
+  "initial_timestep_ps": 10,
+  "physical_endpoints_required_per_case": 604,
+  "BSIM_PBSWGD_default_corrected": true,
+  "timestep_accuracy_qualified": false,
+  "corrected_tuning_curve_qualified": false,
+  "release_ready": false
+}
