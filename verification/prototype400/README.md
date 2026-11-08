@@ -742,3 +742,7 @@ Eight native off/on runs preserve fixture circuits exactly. The area/perimeter s
 ### Resolved halo ground subtraction observer started (1358)
 
 A fresh isolated source transformation records callback begin/end around the native halo rule accumulator and observes its substrate subtraction immediately before the unchanged numerical ground update. Records bind node pair, clipped support, boundary, native substrate multiplier/fraction, accumulated shielding, coefficient and subcap. Pinned-source checks locate the exact callback and one subtraction. A CPU-29/4-GiB build has launched; compilation, callback reconstruction and native neutrality remain pending. Halo-tail truncation and legacy fringe paths are separate unresolved work. No native arithmetic or release tool is changed.
+
+### Resolved halo ground bookkeeping passes native controls (1358/1359)
+
+The isolated build and eight native off/on runs complete with exact fixture circuits. All prior numerical/support ledgers pass. The new audit verifies 19 halo callbacks and 8 ground subtractions: geometric initial fractions, native per-rule shielding accumulation, the original coefficient/fraction/length formula and immediately adjacent exact ground updates. Seventeen ground-auditor tests pass. The scalar accumulator proof complements the separately checked per-rule geometric supports; it does not qualify a final spatial redistribution. Halo-tail truncation, legacy paths, native clipped/split coverage and full-layout qualification remain open. See `selected_magic_ground_halo_controls.json`.
