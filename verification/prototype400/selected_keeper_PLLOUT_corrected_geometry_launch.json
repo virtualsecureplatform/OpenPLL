@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/inputs.json": "895453cb24eff67bb39f7623b0a5360a2903e95280025f8059333b0daf3d7268",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/owner.json": "baa8ee5a28940e8b90ee37f1b890410a45ef5cc12c872cdf3b2e97f5b2dd3dd8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/native.process.json": "8856a7400bad887ebad2df6061342cf126d3790abf7982f29071bf4fd666c5d6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_port_projection_1334/assessment.json": "bed746e5247fd478d2c064afc5266a49a70cbe03c05fe9423b0e064f3913ef05",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_PLLOUT_R_corrected_geometry_v2.py": "d389699b02345a426b5649be5e576613ac7abaa6fdeabdafc9fdd43ce761314e"
+  },
+  "native_pid": 2101205,
+  "native_birth": "132672965",
+  "native_executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_port_projection_1334/install/lib/magic/tcl/magicdnull",
+  "native_executable_sha256": "e9ec579a2bedbd36bca0f519d30f4ce96c8a2ea37686ca79503e7ef5fd4ee13a",
+  "native_executable_matches_installed_artifact_closure": true,
+  "CPU": 27,
+  "memory_GiB": 16,
+  "native_cap_s": 1800,
+  "maximum_native_cases": 1,
+  "only_requested_net": "PLLOUT",
+  "explicit_extresist_after_C_only": true,
+  "single_breakpoint_area_sign_corrected": true,
+  "port_drivepoint_tile_intersection_corrected": true,
+  "resistor_simplification": false,
+  "geometry_checks_pending": true,
+  "capacitance_conservation_verified": false,
+  "native_simulation_allowed": false,
+  "release_ready": false,
+  "earlier_attempt_1338": "preflight receipt-schema error; no native job started"
+}
