@@ -1,0 +1,22 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/assessment.json": "773699eff553d8dfa13eb69d437ac1451611fe4c0013fde372fbd5ca0fbe4d00",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342/assessment.json": "3535df4019c14022ed25e5f3a751e897984de538718c6a41e41986c90ef86254",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_transient_1213/assessment.json": "f8755e82c61a787377fc142d8ecd079a30471b72a088e0f060e3fdab40b33639",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_native_BSIM_coarse_band.py": "f3134a6c437fefc77235949203bafde8e824276ddd09101ba73f14bbec6ee64a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/requirements_v3.json": "a09e26d592a2b09e7945df293422f5e9ed60483b9086813467128d035165b5da"
+  },
+  "baseline_coarse": 20,
+  "baseline_fine": 149,
+  "baseline_corrected_50ps_frequency_mhz": 372.9218664876245,
+  "probe_coarse": 19,
+  "probe_fine": 149,
+  "max_step_ps": 50,
+  "CPU": 20,
+  "target_mhz": 400,
+  "exploratory_adjacent_band_probe_only": true,
+  "current_band_unreachability_proved": false,
+  "new_band_selected_or_qualified": false,
+  "existing_fit_and_holdout_jobs_unchanged": true,
+  "release_ready": false
+}

@@ -1,0 +1,87 @@
+{
+  "jobs": [
+    {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_fine149_step50_1412",
+      "launcher": {
+        "pid": 2231356,
+        "birth": "135036453",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_native_BSIM_coarse_band.py",
+          "--smoke",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_smoke_1210",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_fine149_step50_1412",
+          "--fine",
+          "149",
+          "--cpu",
+          "20",
+          "--coarse",
+          "19",
+          "--max-step-ps",
+          "50"
+        ]
+      },
+      "owner": {
+        "pid": 2231387,
+        "birth": "135036479"
+      },
+      "observed_status": {
+        "state": "flat_native_programming_transient_running",
+        "release_ready": false
+      }
+    },
+    {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_physical_1413",
+      "launcher": {
+        "pid": 2231652,
+        "birth": "135055897",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py",
+          "--reference",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_fine149_step50_1412",
+          "--chains",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233",
+          "--full",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208",
+          "--route",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_physical_1413",
+          "--wait"
+        ]
+      },
+      "owner": {
+        "pid": 2231683,
+        "birth": "135055927"
+      },
+      "observed_status": {
+        "state": "waiting_for_completed_native_physical_controls",
+        "release_ready": false
+      }
+    }
+  ],
+  "verified_native": {
+    "pid": 2231483,
+    "birth": "135040766",
+    "process_group": 2231483,
+    "affinity": [
+      20
+    ],
+    "executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+    "address_space_limit": "Max address space         17179869184          17179869184          bytes     "
+  },
+  "band_selection_or_qualification_complete": false,
+  "release_ready": false
+}
