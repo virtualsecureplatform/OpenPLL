@@ -868,3 +868,7 @@ The prepared diagnostic runner binds the symbolic reduction, exact sample-roundo
 ### Full-layout ground update coverage follow-up queued (1387)
 
 A live CPU-29 observer waits for completed full-layout support audit 1364, verifies its input/artifact closure and the exact engine mutation inventory, then requests 2 GiB to compare all six area/perimeter and three shielding-subtraction event counts with the native numerical ledger. Resets, substrate relocation and any legacy-ground events remain explicitly classified. Three coverage tests pass. Observation is bounded to 48 h; memory admission to 6 h. No active native extraction changes. Full-layout counts are pending and spatial placement/distributed-R qualification remain false. See `selected_keeper_ground_support_coverage_launch.json`.
+
+### Completed reduced/unreduced replay comparison prepared
+
+The new comparator requires normally completed finite unforced replays with matching executable, maximum step, shared-knot representation, original conditional model and full-reference identities. It compares the observed output edge/frequency diagnostics and reports peak RSS plus single-run runtime ratio. Runtime is read from each native GNU time receipt, excluding controller resource-admission delays. Three tests cover compatible conditions, rejection of changed/incomplete cases and elapsed-time parsing. No dynamic error tolerance is invented; reduction error, changed-controller prediction and release qualification remain false. Actual comparison is pending a completed reduced replay.
