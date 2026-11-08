@@ -1881,3 +1881,13 @@ This demonstrates a diagnostic speed/accuracy tradeoff at one static TT point;
 finer-step convergence, other-code/corner numerical error bounds and release
 accuracy remain unqualified. The50 ps search captures are not promoted to
 converged calibration by this comparison.
+
+Corrected-BSIM fine110 reference1344 completed at10 ps with stationary
+coarse20/fine110 and all saved native values finite. Frequency in200–260 ns is
+365.578566139 MHz over22 rising edges, period range2.735029203–2.735981819 ns.
+Controller elapsed through validation is46,006.36 s. Physical assessment1345
+passes all604 macro/DCO endpoint-voltage checks over26,075 samples, with zero
+mismatches. Both completed receipts and actual input/artifact identities were
+reverified before retention. Fine182 remains native-running; the prospective
+corrected fit/holdout collector still needs it. This TT C-only point supplies
+neither a400 MHz bracket nor other-corner, wire-R or closed-loop qualification.
