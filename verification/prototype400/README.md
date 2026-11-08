@@ -1848,3 +1848,22 @@ comparison1343 and both boundary-replay preparations1297/1466. The comparison
 is confirmed live in its completed-control comparison stage; both replays are
 extracting from the completed capture. These passing static-code voltage checks
 do not qualify wire-R, the prescribed replay environment or closed-loop behavior.
+
+Boundary dependency audit1522 classifies all 7,679 prescribed nodes in the
+receiver-expanded conditional circuit: 7,371 capacitive-only, 304 nonrail
+retained-primitive terminals, and four rails. The capacitive-only boundaries
+have an exact aggregate coefficient of 31.19899 fF to retained unknowns,
+including observed PLLOUT; this charge coefficient is not a frequency-error
+bound. The detailed table preserves each terminal role, branch counts and exact
+rational coupling coefficient. No source, capacitor, primitive or boundary
+condition is modified. Three guards check MOS gate/diffusion distinction,
+exact capacitance accounting, partition coverage and malformed cards.
+
+The remaining nonrail diffusion boundary is
+IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_16_123.A. Thus the existing
+receiver expansion removes an earlier prescribed output but still prescribes
+an active output farther along the clock path. Replay correlation under saved
+waveforms cannot establish changed-controller prediction. A causal model must
+supply or internalize this dependency as well as its gate inputs and capacitive
+exterior environment. The completed source-pinned audit and full boundary table
+are retained to scope that work; no independent environment or model is qualified.

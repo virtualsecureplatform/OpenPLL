@@ -1,0 +1,32 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_expansion_1416/assessment.json": "48ca666b8bf30bbaff3c3f94a40140ab8dbb2f1c898859f66d2e85bf196c7c75",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_expansion_1416/conditional.spice": "5f7e0fc0379576cfe60a1d083f7e73bf99e06383bad9f2d33f293290014f9fe3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_expansion_1416/interface.json": "8adeb4f57654063a2b81287accd5d219836908732fd0d98d123cca1269b06ff5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_prescribed_boundary_roles.py": "23a64c63fbb37df374961685d1027090ba15283f3eeb94cd83dc91160fa0289c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_DCO_driver_C_cut.py": "b77eb42593482a548e4d3bf3a6f9ad2ba55ab10ab81385b080582542619f1b47",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_prescribed_boundary_roles_1522/boundaries.json": "3fc2e76de478cb29067a8d9c99fbdcf6ebdc051a66d936922792ab269ad3aad2"
+  },
+  "prescribed_boundaries": 7679,
+  "counts_by_kind": {
+    "capacitive_only": 7371,
+    "retained_primitive_terminal": 304,
+    "rail": 4
+  },
+  "boundary_counts_by_terminal_role": {
+    "MOS_gate": 303,
+    "MOS_diffusion": 3,
+    "MOS_bulk": 2,
+    "other_primitive_terminal": 2
+  },
+  "capacitive_only_C_to_unknowns_F_exact": "3119899/100000000000000000000",
+  "circuit_changed": false,
+  "independent_environment_supplied": false,
+  "charge_coefficient_is_not_frequency_error_bound": true,
+  "changed_controller_prediction_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}
