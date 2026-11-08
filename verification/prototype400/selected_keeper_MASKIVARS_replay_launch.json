@@ -1,0 +1,89 @@
+{
+  "jobs": [
+    {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_masked_replay_1410",
+      "launcher": {
+        "pid": 2227852,
+        "birth": "134965334",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/benchmark_keeper_aggregated_tablefile_replay_masked.py",
+          "--reference",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_step50_1278",
+          "--conditional",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242",
+          "--plan",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_replay_plan_1243",
+          "--physical",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_step50_physical_1279",
+          "--original_waveforms",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/waveforms",
+          "--reduction",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383",
+          "--waveforms",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_waveforms_1399",
+          "--staging",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_sources_1402",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_masked_replay_1410"
+        ]
+      },
+      "owner": {
+        "pid": 2227884,
+        "birth": "134965345"
+      },
+      "observed_status": {
+        "state": "conditional_native_replay_running",
+        "release_ready": false
+      }
+    },
+    {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_MASKIVARS_comparison_1411",
+      "launcher": {
+        "pid": 2228765,
+        "birth": "134978064",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_masked_replay.py",
+          "--original",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_replay_1403",
+          "--reduced",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_masked_replay_1410",
+          "--conditional",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242",
+          "--reduction",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383",
+          "--reference",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_step50_1278",
+          "--staging",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_sources_1402",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_MASKIVARS_comparison_1411"
+        ]
+      },
+      "owner": {
+        "pid": 2228797,
+        "birth": "134978073"
+      },
+      "observed_status": {
+        "state": "waiting_for_completed_default_and_masked_replays",
+        "release_ready": false
+      }
+    }
+  ],
+  "default_reduced_replay": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_replay_1403",
+  "same_staged_forcing": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_sources_1402",
+  "only_timeint_directive_changed": "maskivars=1",
+  "no_release_accuracy_or_speedup_claim": true,
+  "release_ready": false
+}

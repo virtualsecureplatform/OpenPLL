@@ -1,0 +1,325 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_capacitor_boundary_superposition_v4.py": "aee2d6d29f8b525b2cb6bca5dbbe1cc4fad67e5e21b314ff9bf16d56b2df0ccb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/opt/Xyce/src/TimeIntegrationPKG/N_TIA_TIAParams.C": "1050cad685c43139d9418d729f8b3d29083861a7c5a0b35dc74628b521c7fa41",
+    "/opt/Xyce/src/TimeIntegrationPKG/N_TIA_DataStore.C": "da0c9c04802e1d3bda2dfd641f48a799d86cacdfbda6b5bc4b5d8f4845308e61",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_constant_original/test.spice": "c104d2d21a68b66d6ee3f597ee60d1e00350dab1532704f6954335d9ab516a03",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_constant_weighted/test.spice": "3e27df31bed61400e0a35d1246c3c94c79fa7fa0c22d4c6c52241f033d1c021a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_opposed_ramps_original/test.spice": "83c25d0d17dc579827a458a30a0bfed35558fffb170c943eaac6f1ba3fd8b6ee",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_opposed_ramps_weighted/test.spice": "ed76dac1001e3b8319601ab0df2d34bef09c98de1222980f260c61518ac806cd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_plateaus_original/test.spice": "795dbe39242f795bb4f10296313419b91f2a6a9b7c9679c49dc6edfd65287d87",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_plateaus_weighted/test.spice": "f4471fb7e9e907491aa41ea5ca96638151ab68b5a35293bc71d1ab3826314d2e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_constant_original/test.spice": "8876e69a7ad8930ce79fc5b69bf0d85c14ecca3349d0ec0f981e8c42e2a08a8f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_constant_weighted/test.spice": "7954675f73b3f86c6618a8498a99bb15a46542df97dcdfb78ec7cd942df23f36",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_opposed_ramps_original/test.spice": "228a110132136d01f412f027ad906f0242f8ce955575157f8dd4d396ada6fad8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_opposed_ramps_weighted/test.spice": "0b7e10fb7db4bdd3f900219dd1116109c67c2ba8483be3fec88fa0957d038653",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_plateaus_original/test.spice": "8f5b9e609bdce0b4e27648be34ecb05d81d0a5097d321c1b191bd96d70769204",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_plateaus_weighted/test.spice": "dac08e54f286f14af6ee754b408908de3907eae33b392f68c551d1eb2f1f204e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_constant_original/test.spice": "1a5182db1f2eea6a9e47255eb9d1275eaf1ea6e9855a986b916fda26752b8b90",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_constant_weighted/test.spice": "862c5b77f9245811c9dbc20d8bef68243213d5de8854513e0febb8c4863c604d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_opposed_ramps_original/test.spice": "6ca559e43f91f6179198c851909b80f95a2ff32d5e9fad6b2ae5f12386019d72",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_opposed_ramps_weighted/test.spice": "a830931fe6f17484e269081a0ad2ba0d1a2fd285ede9abf2008d94b53c0d0005",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_plateaus_original/test.spice": "2139d31d13e29d9f80c4cadac448d073fe7ee2cd411ab269626b59bd05fdf1c1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_plateaus_weighted/test.spice": "3e572cb89aec9b963c3bf156dbf4f536e4f7d03d25ca08369d376dd788866f61",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_constant_original/test.spice": "288f3631ec309a61cc1131a7fb1105c8ae5753e57706396192dce09a85a67aab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_constant_weighted/test.spice": "df037df33031aa65d3a4c9cac40e0d075e69b8abbd443f2f0037b93f472978de",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_opposed_ramps_original/test.spice": "bc2e72942a94ea8fe52d6a0ee1805460aa88a3281a3f4f998aa7c6d678872ece",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_opposed_ramps_weighted/test.spice": "2ada20257c8dc4a2c51c677efc62f403269ef48369d9881e9e8e826e6b7393d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_plateaus_original/test.spice": "33f648b7926531160ad3679caaf7672c71ef1b2635e765aafd30e1896f946fdc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_plateaus_weighted/test.spice": "4c8ad901c4fea3b5c022d5fd88253514de610cdfa5f099ba62d28c8ff0cbaf6a"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_constant_original/result.csv": "bf0048be31a68b931870c0ea36de62fde7ed7a2ef6bc2f642d728ed52d997f80",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_constant_original/native.log": "ef510ca68f1699c003b418368ab43f44ca3036f5708402b9954427a16a96b85f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_constant_weighted/result.csv": "495f28008954e88f1cf0f5ca60dacb2712233bb1be2158748e339dfb711184d5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_constant_weighted/native.log": "74add8c55d28027df7046c0fcbcce2e4b7c0b3c9017c3f7c39e659d869bd263a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_opposed_ramps_original/result.csv": "2d23b7c3d90ab223bf997e0b290135490d9e3d21e5640e45b8cc864ce6cb5ed2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_opposed_ramps_original/native.log": "39ef1f0219181c06c628bbd20a22f46aa173951fa925c7a769432fe440d4a31c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_opposed_ramps_weighted/result.csv": "1f860f622285e8c8e801866e8f5dcadd41a96fd78153aa7fdc8f8ed1b66b65bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_opposed_ramps_weighted/native.log": "8267727debf815096ef04c656bfecb43d97a7a1e6252468f158f13fc315384fa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_plateaus_original/result.csv": "73dc886c58bcd0f5f50c8e1e720b69374325f8acfab469821949d2edbc62f6a2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_plateaus_original/native.log": "ae13a3a8b07e751218078afe0f1d845c7810e751ff8a4bdf163e732174324eb6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_plateaus_weighted/result.csv": "1b8137ae7053fb45ece2473e07a5aa244f13dfa3d4e92ffe703e55d25bb39808",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_pF_kohm_plateaus_weighted/native.log": "bb45fee237be2613b649d189c8e30e1b079327f9c76474806c5df9d64770f83f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_constant_original/result.csv": "14ced3deffdf45eaf3e3233edd6bb2560ce29102139efb47a2b196fcad63677a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_constant_original/native.log": "cb8d9b989e60c6af02ea2a969c93838be891520ee784f7829ebdca80abccdd9a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_constant_weighted/result.csv": "4877b57cabfc8efbcf08968c910e6a22a82b4cec85a20fcffb1c521515bcfe98",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_constant_weighted/native.log": "5946a27b5c1f34f029ffc574eb275b131f057f05677cdf515243271f1b73a1c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_opposed_ramps_original/result.csv": "e6fd57d9dcb6a9df9b1aa71dcdc8a0c15184bf3fe101fbd83e8f2bad5d1331af",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_opposed_ramps_original/native.log": "9dd88063233846cf50ea9dbf1e1d7a65d009a42862343ef77639de20f7f20696",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_opposed_ramps_weighted/result.csv": "8f6763c92bafefdf9908284a89255c96367d6aeea735b3518358e654c10ee028",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_opposed_ramps_weighted/native.log": "fc20988540458744b3b59bd1047fa34dd046ca07045c1fd01553719045f9982d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_plateaus_original/result.csv": "7f1162e650a3b0a49f025751cdfe070809a81391acbb076282358009d6e190d2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_plateaus_original/native.log": "c5cd725cf26dca3b7bbd140bfb7e70960d2c9a52f08ccf8b5abb13135e2863a1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_plateaus_weighted/result.csv": "e106ab981559759413c9d02320204b0f0d8eab29d136065982ee7dec211ee7ce",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/0_fF_Mohm_plateaus_weighted/native.log": "04b4e9575f215a00c0d617f22254fc950ceba451c8bb258568bdad8d1d563202",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_constant_original/result.csv": "bf0048be31a68b931870c0ea36de62fde7ed7a2ef6bc2f642d728ed52d997f80",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_constant_original/native.log": "5a305438c8ebc4e5d655cf132cac26e4291fb972ecee34ec88eda2f5be5ed10d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_constant_weighted/result.csv": "495f28008954e88f1cf0f5ca60dacb2712233bb1be2158748e339dfb711184d5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_constant_weighted/native.log": "bf49c4e8412b1bcc339b83f0e7044170183fb07feccdb95d7910b964f730c744",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_opposed_ramps_original/result.csv": "2d23b7c3d90ab223bf997e0b290135490d9e3d21e5640e45b8cc864ce6cb5ed2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_opposed_ramps_original/native.log": "a43908cefdfcda67376156994f28a147d0f29e3ec5243d9431ff6d2fede94e56",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_opposed_ramps_weighted/result.csv": "1f860f622285e8c8e801866e8f5dcadd41a96fd78153aa7fdc8f8ed1b66b65bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_opposed_ramps_weighted/native.log": "c0f380e5e02fbccf76b950a64ebffab2790ccc51c154d57c6e6025e51752ed65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_plateaus_original/result.csv": "73dc886c58bcd0f5f50c8e1e720b69374325f8acfab469821949d2edbc62f6a2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_plateaus_original/native.log": "19f140660ee7986c10f7bbd09a633da5648992d8dbfec3cff52f09c5e97d4532",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_plateaus_weighted/result.csv": "1b8137ae7053fb45ece2473e07a5aa244f13dfa3d4e92ffe703e55d25bb39808",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_pF_kohm_plateaus_weighted/native.log": "d89c220f2372e5f62aff9b9cecc9c2d4af943a507f5ebc8a5acb1fc3b0e97c6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_constant_original/result.csv": "14ced3deffdf45eaf3e3233edd6bb2560ce29102139efb47a2b196fcad63677a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_constant_original/native.log": "10a20a735015e48c18f6a336cf867209731c3b49c85420ccd8086f839d6577cb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_constant_weighted/result.csv": "4877b57cabfc8efbcf08968c910e6a22a82b4cec85a20fcffb1c521515bcfe98",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_constant_weighted/native.log": "558a2d267cfdcc3319bb7e64aaaf85f7f036a7b0db8d682cd51d20475490f691",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_opposed_ramps_original/result.csv": "e6fd57d9dcb6a9df9b1aa71dcdc8a0c15184bf3fe101fbd83e8f2bad5d1331af",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_opposed_ramps_original/native.log": "aa21499ff68557a20c4b209c85ce94df14874040c501572a4a0b87d30ba4eceb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_opposed_ramps_weighted/result.csv": "8f6763c92bafefdf9908284a89255c96367d6aeea735b3518358e654c10ee028",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_opposed_ramps_weighted/native.log": "8198f4afbb6d47732f7ec1ba7cfc2a1fbfcacd0462de386d7430befc70c4dfe6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_plateaus_original/result.csv": "7f1162e650a3b0a49f025751cdfe070809a81391acbb076282358009d6e190d2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_plateaus_original/native.log": "30468a9e7256ca1d15fef1e38def881a00f2999dec18e65170852ff82783ea8f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_plateaus_weighted/result.csv": "e106ab981559759413c9d02320204b0f0d8eab29d136065982ee7dec211ee7ce",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_MASKIVARS_controls_1409/1_fF_Mohm_plateaus_weighted/native.log": "0c0c2fffcd343f79dccc3bc588a7a0baa9271fd22d3fe84b838a96041b2e9519"
+  },
+  "results": [
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "pF_kohm",
+      "case": "constant",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 139,
+          "maximum_closed_form_voltage_error": 1.9984014443252818e-15,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 139,
+          "maximum_closed_form_voltage_error": 3.3306690738754696e-16,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "pF_kohm",
+      "case": "opposed_ramps",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 15311,
+          "maximum_closed_form_voltage_error": 5.50023984136061e-08,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 18781,
+          "maximum_closed_form_voltage_error": 5.50023984136061e-08,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "pF_kohm",
+      "case": "plateaus",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 14275,
+          "maximum_closed_form_voltage_error": 6.875299773945187e-08,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 17518,
+          "maximum_closed_form_voltage_error": 6.875299773945187e-08,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "fF_Mohm",
+      "case": "constant",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 139,
+          "maximum_closed_form_voltage_error": 1.3322676295501878e-15,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 139,
+          "maximum_closed_form_voltage_error": 6.661338147750939e-16,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "fF_Mohm",
+      "case": "opposed_ramps",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 15311,
+          "maximum_closed_form_voltage_error": 5.50023984136061e-08,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 18781,
+          "maximum_closed_form_voltage_error": 5.50023984136061e-08,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "fF_Mohm",
+      "case": "plateaus",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 14275,
+          "maximum_closed_form_voltage_error": 6.875299751740727e-08,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 17518,
+          "maximum_closed_form_voltage_error": 6.875299773945187e-08,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "pF_kohm",
+      "case": "constant",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 139,
+          "maximum_closed_form_voltage_error": 1.9984014443252818e-15,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 139,
+          "maximum_closed_form_voltage_error": 3.3306690738754696e-16,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "pF_kohm",
+      "case": "opposed_ramps",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 15311,
+          "maximum_closed_form_voltage_error": 5.50023984136061e-08,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 18781,
+          "maximum_closed_form_voltage_error": 5.50023984136061e-08,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "pF_kohm",
+      "case": "plateaus",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 14275,
+          "maximum_closed_form_voltage_error": 6.875299773945187e-08,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 17518,
+          "maximum_closed_form_voltage_error": 6.875299773945187e-08,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "fF_Mohm",
+      "case": "constant",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 139,
+          "maximum_closed_form_voltage_error": 1.3322676295501878e-15,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 139,
+          "maximum_closed_form_voltage_error": 6.661338147750939e-16,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "fF_Mohm",
+      "case": "opposed_ramps",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 15311,
+          "maximum_closed_form_voltage_error": 5.50023984136061e-08,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 18781,
+          "maximum_closed_form_voltage_error": 5.50023984136061e-08,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "fF_Mohm",
+      "case": "plateaus",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 14275,
+          "maximum_closed_form_voltage_error": 6.875299751740727e-08,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 17518,
+          "maximum_closed_form_voltage_error": 6.875299773945187e-08,
+          "all_source_knots_present": true
+        }
+      ]
+    }
+  ],
+  "all_twenty_four_native_RC_controls_complete": true,
+  "original_and_aggregated_response_matches_closed_form": true,
+  "fixture_absolute_voltage_error_limit": 1e-07,
+  "current_type_variables_masked_from_LTE": true,
+  "voltage_LTE_control_retained": true,
+  "predictor_LTE_rejection_disabled": false,
+  "fixture_max_step_s": 5e-11,
+  "closed_form_accuracy_acceptance_unchanged": true,
+  "fixture_time_knot_tolerance_s": 1e-21,
+  "actual_PLL_native_equivalence_verified": false,
+  "aggregation_roundoff_for_PLL_qualified": false,
+  "release_ready": false
+}
