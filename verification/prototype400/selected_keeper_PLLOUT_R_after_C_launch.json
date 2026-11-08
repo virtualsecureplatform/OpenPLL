@@ -1,0 +1,21 @@
+{
+  "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_after_C_1273",
+  "owner": {
+    "pid": 1998372,
+    "birth": "131419014",
+    "deadline_uptime": 1315392.349853714
+  },
+  "native": {
+    "pid": 1998405,
+    "birth": "131419498",
+    "process_group": 1998405
+  },
+  "inputs_sha256": "9a12973638059ad57ded917ecdb97c8b06169ae24594b3d82be977ad3f2df660",
+  "hypothesis": "Explicit extresist after C-only extraction may isolate coupling augmentation from full-RC substrate-mode changes",
+  "same_reference_flat_GDS": true,
+  "maximum_native_cases": 1,
+  "native_cap_s": 1200,
+  "automatic_identical_retry": false,
+  "model_qualified": false,
+  "release_ready": false
+}
