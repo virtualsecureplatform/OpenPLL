@@ -1253,3 +1253,29 @@ The timing gate must combine the retained internal macro with current
 parent interconnect and actual load/clock envelopes, rather than require
 a different internal database solely because the parent was rerouted.
 Physical timing, reset/CDC and release qualification remain false.
+
+### Paired internal critical-path timing measurements1447
+
+Thirty fresh OpenROAD checks query setup and hold of the three retained
+critical path pairs at all five corners, using the unchanged internal019
+database, min/max wire views, native early/late models and402.1MHz clock
+constraints. No exceptions or load assumptions are added. These are
+conditional internal diagnostics, not qualified current-parent400MHz STA.
+The two `bbpd_decision` to `decision_q` bit paths are ordinary/interface
+paths. The third ends at `gen_feedback_tracking.release_pipe[0]`, classified
+as the first synchronizer aperture. Its protocol/interstage obligations
+remain separate; it is not silently waived or treated as an ordinary
+data-path ECO. The historical report is sampled, not exhaustive.
+
+Exact printed-slack screen1448 asks only whether a corner-independent
+nonnegative added data delay could repair each pair: lower bound is the
+maximum negative hold slack, upper bound the minimum setup slack. Bit0
+requires378.369123ps but permits331.331849ps, an empty window by47.037274ps.
+Bit1 has482.129335..607.153654ps (no physical margin is assigned).
+The aperture pair has396.646738..612.187207ps under this mathematical
+screen, without selecting a fix. Real cell delays vary by corner; feasible
+constant-delay windows do not select a physical implementation. In
+particular, blanket delay insertion cannot resolve bit0 under these views.
+Next timing work must qualify/tighten actual cell/load/clock bounds and
+then evaluate clock/data restructuring or a measured ECO with both setup
+and hold preserved, rather than accept an ordinary-path waiver.

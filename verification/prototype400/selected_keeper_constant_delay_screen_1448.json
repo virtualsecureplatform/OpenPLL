@@ -1,0 +1,45 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_critical_path_pairs_1447/assessment.json": "3eaab43a9bdbc519cd27148f994e98a029831935401a94a6ea77a5f5ed1c4d1b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_critical_path_pairs_1447/paths.json": "d26a5f086d88d7a7869b68b65ebdc8e07358972ab58dd53a15a9837cd1e119c9"
+  },
+  "scope": "hypothetical corner-independent extra data delay; retained 402.1 MHz conditional screen only",
+  "equations": "d >= max(0, -hold_slack_each_corner); d <= min(setup_slack_each_corner)",
+  "paths": [
+    {
+      "startpoint": "$auto$ff.cc:337:slice$17316",
+      "endpoint": "$auto$ff.cc:337:slice$18698",
+      "classification": "ordinary_or_interface_timing",
+      "minimum_constant_added_delay_ns_exact": "378369123/1000000000",
+      "maximum_constant_added_delay_ns_exact": "331331849/1000000000",
+      "window_width_ps": -47.037274,
+      "nonnegative_constant_delay_feasible": false,
+      "physical_delay_element_selected": false
+    },
+    {
+      "startpoint": "$auto$ff.cc:337:slice$17317",
+      "endpoint": "$auto$ff.cc:337:slice$18699",
+      "classification": "ordinary_or_interface_timing",
+      "minimum_constant_added_delay_ns_exact": "96425867/200000000",
+      "maximum_constant_added_delay_ns_exact": "303576827/500000000",
+      "window_width_ps": 125.024319,
+      "nonnegative_constant_delay_feasible": true,
+      "physical_delay_element_selected": false
+    },
+    {
+      "startpoint": "$auto$ff.cc:337:slice$17898",
+      "endpoint": "$auto$ff.cc:337:slice$17893",
+      "classification": "first_synchronizer_stage_data_aperture",
+      "minimum_constant_added_delay_ns_exact": "198323369/500000000",
+      "maximum_constant_added_delay_ns_exact": "612187207/1000000000",
+      "window_width_ps": 215.540469,
+      "nonnegative_constant_delay_feasible": true,
+      "physical_delay_element_selected": false
+    }
+  ],
+  "no_extra_margin_assumed": true,
+  "timing_constraints_changed": false,
+  "current_400MHz_signoff": false,
+  "physical_timing_qualified": false,
+  "release_ready": false
+}

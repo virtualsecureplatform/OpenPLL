@@ -1,0 +1,272 @@
+[
+  {
+    "corner": "tt",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17316",
+    "endpoint": "$auto$ff.cc:337:slice$18698",
+    "path_type": "min",
+    "slack_ns": -0.311226606,
+    "passed": false
+  },
+  {
+    "corner": "tt",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17316",
+    "endpoint": "$auto$ff.cc:337:slice$18698",
+    "path_type": "max",
+    "slack_ns": 0.834437668,
+    "passed": true
+  },
+  {
+    "corner": "tt",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17317",
+    "endpoint": "$auto$ff.cc:337:slice$18699",
+    "path_type": "min",
+    "slack_ns": -0.44077,
+    "passed": false
+  },
+  {
+    "corner": "tt",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17317",
+    "endpoint": "$auto$ff.cc:337:slice$18699",
+    "path_type": "max",
+    "slack_ns": 1.018221736,
+    "passed": true
+  },
+  {
+    "corner": "tt",
+    "classification": "first_synchronizer_stage_data_aperture",
+    "startpoint": "$auto$ff.cc:337:slice$17898",
+    "endpoint": "$auto$ff.cc:337:slice$17893",
+    "path_type": "min",
+    "slack_ns": -0.348014086,
+    "passed": false
+  },
+  {
+    "corner": "tt",
+    "classification": "first_synchronizer_stage_data_aperture",
+    "startpoint": "$auto$ff.cc:337:slice$17898",
+    "endpoint": "$auto$ff.cc:337:slice$17893",
+    "path_type": "max",
+    "slack_ns": 0.942459226,
+    "passed": true
+  },
+  {
+    "corner": "ff",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17316",
+    "endpoint": "$auto$ff.cc:337:slice$18698",
+    "path_type": "min",
+    "slack_ns": -0.378369123,
+    "passed": false
+  },
+  {
+    "corner": "ff",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17316",
+    "endpoint": "$auto$ff.cc:337:slice$18698",
+    "path_type": "max",
+    "slack_ns": 1.172950864,
+    "passed": true
+  },
+  {
+    "corner": "ff",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17317",
+    "endpoint": "$auto$ff.cc:337:slice$18699",
+    "path_type": "min",
+    "slack_ns": -0.482129335,
+    "passed": false
+  },
+  {
+    "corner": "ff",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17317",
+    "endpoint": "$auto$ff.cc:337:slice$18699",
+    "path_type": "max",
+    "slack_ns": 1.312554121,
+    "passed": true
+  },
+  {
+    "corner": "ff",
+    "classification": "first_synchronizer_stage_data_aperture",
+    "startpoint": "$auto$ff.cc:337:slice$17898",
+    "endpoint": "$auto$ff.cc:337:slice$17893",
+    "path_type": "min",
+    "slack_ns": -0.387203604,
+    "passed": false
+  },
+  {
+    "corner": "ff",
+    "classification": "first_synchronizer_stage_data_aperture",
+    "startpoint": "$auto$ff.cc:337:slice$17898",
+    "endpoint": "$auto$ff.cc:337:slice$17893",
+    "path_type": "max",
+    "slack_ns": 1.230575919,
+    "passed": true
+  },
+  {
+    "corner": "ss",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17316",
+    "endpoint": "$auto$ff.cc:337:slice$18698",
+    "path_type": "min",
+    "slack_ns": -0.147311285,
+    "passed": false
+  },
+  {
+    "corner": "ss",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17316",
+    "endpoint": "$auto$ff.cc:337:slice$18698",
+    "path_type": "max",
+    "slack_ns": 0.331331849,
+    "passed": true
+  },
+  {
+    "corner": "ss",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17317",
+    "endpoint": "$auto$ff.cc:337:slice$18699",
+    "path_type": "min",
+    "slack_ns": -0.310398608,
+    "passed": false
+  },
+  {
+    "corner": "ss",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17317",
+    "endpoint": "$auto$ff.cc:337:slice$18699",
+    "path_type": "max",
+    "slack_ns": 0.607153654,
+    "passed": true
+  },
+  {
+    "corner": "ss",
+    "classification": "first_synchronizer_stage_data_aperture",
+    "startpoint": "$auto$ff.cc:337:slice$17898",
+    "endpoint": "$auto$ff.cc:337:slice$17893",
+    "path_type": "min",
+    "slack_ns": -0.346156895,
+    "passed": false
+  },
+  {
+    "corner": "ss",
+    "classification": "first_synchronizer_stage_data_aperture",
+    "startpoint": "$auto$ff.cc:337:slice$17898",
+    "endpoint": "$auto$ff.cc:337:slice$17893",
+    "path_type": "max",
+    "slack_ns": 0.612187207,
+    "passed": true
+  },
+  {
+    "corner": "sf",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17316",
+    "endpoint": "$auto$ff.cc:337:slice$18698",
+    "path_type": "min",
+    "slack_ns": -0.228872254,
+    "passed": false
+  },
+  {
+    "corner": "sf",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17316",
+    "endpoint": "$auto$ff.cc:337:slice$18698",
+    "path_type": "max",
+    "slack_ns": 0.679676354,
+    "passed": true
+  },
+  {
+    "corner": "sf",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17317",
+    "endpoint": "$auto$ff.cc:337:slice$18699",
+    "path_type": "min",
+    "slack_ns": -0.35231185,
+    "passed": false
+  },
+  {
+    "corner": "sf",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17317",
+    "endpoint": "$auto$ff.cc:337:slice$18699",
+    "path_type": "max",
+    "slack_ns": 0.909860432,
+    "passed": true
+  },
+  {
+    "corner": "sf",
+    "classification": "first_synchronizer_stage_data_aperture",
+    "startpoint": "$auto$ff.cc:337:slice$17898",
+    "endpoint": "$auto$ff.cc:337:slice$17893",
+    "path_type": "min",
+    "slack_ns": -0.379918337,
+    "passed": false
+  },
+  {
+    "corner": "sf",
+    "classification": "first_synchronizer_stage_data_aperture",
+    "startpoint": "$auto$ff.cc:337:slice$17898",
+    "endpoint": "$auto$ff.cc:337:slice$17893",
+    "path_type": "max",
+    "slack_ns": 0.890412867,
+    "passed": true
+  },
+  {
+    "corner": "fs",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17316",
+    "endpoint": "$auto$ff.cc:337:slice$18698",
+    "path_type": "min",
+    "slack_ns": -0.326247364,
+    "passed": false
+  },
+  {
+    "corner": "fs",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17316",
+    "endpoint": "$auto$ff.cc:337:slice$18698",
+    "path_type": "max",
+    "slack_ns": 0.946185827,
+    "passed": true
+  },
+  {
+    "corner": "fs",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17317",
+    "endpoint": "$auto$ff.cc:337:slice$18699",
+    "path_type": "min",
+    "slack_ns": -0.463974535,
+    "passed": false
+  },
+  {
+    "corner": "fs",
+    "classification": "ordinary_or_interface_timing",
+    "startpoint": "$auto$ff.cc:337:slice$17317",
+    "endpoint": "$auto$ff.cc:337:slice$18699",
+    "path_type": "max",
+    "slack_ns": 1.113324761,
+    "passed": true
+  },
+  {
+    "corner": "fs",
+    "classification": "first_synchronizer_stage_data_aperture",
+    "startpoint": "$auto$ff.cc:337:slice$17898",
+    "endpoint": "$auto$ff.cc:337:slice$17893",
+    "path_type": "min",
+    "slack_ns": -0.396646738,
+    "passed": false
+  },
+  {
+    "corner": "fs",
+    "classification": "first_synchronizer_stage_data_aperture",
+    "startpoint": "$auto$ff.cc:337:slice$17898",
+    "endpoint": "$auto$ff.cc:337:slice$17893",
+    "path_type": "max",
+    "slack_ns": 0.994448781,
+    "passed": true
+  }
+]
