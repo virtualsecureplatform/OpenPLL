@@ -1,0 +1,27 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_partition_boundary_1230/assessment.json": "70823d970e56ff5854f37b14a80a4df5013986ae21ac409fc14ad545247c95eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/assessment.json": "66a33a9102b4b4ef0a948aefc0714ed2d0ac239608023a6d2b79b213dc66b673",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_partition_boundary_1230/boundary.json": "e665078148ba01a63d2b6c007ef951d5bafb8a0fa8a2a6f4f07f150754b00752",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/chains.json": "1a38c79e1d9eb9f556b259df7b1f505fc1431346d5206e29876b5242ac6ae955",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/export_keeper_conditional_DCO.py": "5b4a70261c94eb4a7ddf187c5d04f123de619512f04c4e202909e1faa5ed7dbf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_DCO_driver_C_cut.py": "b77eb42593482a548e4d3bf3a6f9ad2ba55ab10ab81385b080582542619f1b47",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_DCO_1240/conditional.spice": "3c298f7677905854e3e9a9031fd23e8537721281ea3011ed49362e5938d02189",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_DCO_1240/interface.json": "46e1f5032de7a8630eb84771bf262e2d4abe2a8e20f600518f7fc94ff1f01f68"
+  },
+  "selected_primitive_count": 10138,
+  "retained_nonzero_capacitor_count": 93496,
+  "boundary_port_count": 7612,
+  "interior_node_count": 3185,
+  "all_retained_cards_unchanged": true,
+  "no_omitted_branch_touches_interior": true,
+  "standalone_executable": false,
+  "environment_validated": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_DCO_1240/assessment.json"
+}
