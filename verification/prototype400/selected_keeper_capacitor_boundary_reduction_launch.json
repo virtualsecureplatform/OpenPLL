@@ -1,0 +1,27 @@
+{
+  "output_directory": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383",
+  "owner": {
+    "pid": 2192618,
+    "birth": "133876032"
+  },
+  "inputs": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/assessment.json": "6be9784b418d77a29590a83038c50d9685f1ba2a7e95e50eeeac51d8828b4b5e",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/model.spice": "db4c9cd5d521781d224a0551c94d2100e0c4bcbe978b01ec42b479a81243daf1",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/bindings.json": "f048d65334cf68457a35d9f9f55db8b3f01d653982d13a68f403b2db6b7e58c3",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/reduce_keeper_capacitor_boundaries.py": "be9b1fdfce56e4d305e4afeac102e399e9cbb270d34191d31d6c22878ee00ca8",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b"
+    },
+    "memory_GiB": 2,
+    "CPU": 29,
+    "resource_queue_cap_s": 7200,
+    "native_simulation_requested": false,
+    "release_ready": false
+  },
+  "observed_status": {
+    "state": "waiting_for_global_CPU_RAM_budget",
+    "release_ready": false
+  },
+  "native_results_available": false,
+  "release_ready": false
+}
