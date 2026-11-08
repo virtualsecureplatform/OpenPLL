@@ -1,0 +1,39 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_after_C_1273/assessment.json": "8ed241feb08ad5dafed7da125c6b17e3aced8f7e54fb8ccf219ca992e9773cc0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_after_C_1273/pilot.spice": "3d014ec8893bdab1c2aa37c12f99c1621c36b3df9e4e8ff3a17a8e8c94f81772",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "reference_primitives": 62338,
+  "candidate_primitives": 62338,
+  "primitive_multisets_match": true,
+  "missing_primitive_count": 0,
+  "extra_primitive_count": 0,
+  "wire_R_cards": 78,
+  "positive_wire_R_cards": 78,
+  "wire_R_components": 1,
+  "components_joining_distinct_reference_nodes": [],
+  "ordered_formal_ports_match": true,
+  "reference_nonzero_C_pairs": 341067,
+  "contracted_nonzero_C_pairs": 341067,
+  "C_pair_differences": [
+    {
+      "nodes": [
+        "pllout",
+        "vgnd"
+      ],
+      "reference_F_exact": "57519/2500000000000000000",
+      "contracted_F_exact": "222381/2500000000000000000"
+    }
+  ],
+  "exact_aggregated_C_match": false,
+  "negative_candidate_C_cards": 0,
+  "exact_device_and_C_contraction_verified": false,
+  "exact_requested_network_coverage_verified": false,
+  "distributed_wire_R_qualified": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}
