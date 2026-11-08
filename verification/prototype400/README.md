@@ -1749,3 +1749,21 @@ and completed receipt are retained unchanged. A separately recorded reassessment
 will use 200–100 ps before each planned ramp leading edge, with inactive reset
 and adequate sampling required. This adjusts observation timing without any
 native rerun; it cannot qualify a continuous or routed reset timing bound.
+
+Both campaigns and completed-only review1509 are now complete: the original
+300 observations retain 35 failed fixtures, including premature prestate
+sampling. Separate review1510 uses a stimulus-derived window 200–100 ps before
+each ramp begins, requiring inactive control and at least ten samples. Three
+rejection controls pass, including a state reached only after the ramp. Original
+observations, failures and native waveforms remain unchanged; no native case
+was rerun. All actual input/artifact hashes were verified again before retention.
+
+Under this explicitly revised observation rule all 50 no-pulse controls pass,
+and all 75 common 2 ns pulse observations pass across five masters, five corners
+and 20/400/1600 ps full ramps. Thirteen capture failures remain, all 100 ps pulses
+with 20 ps ramps: two TT set cells, all five masters at SS and SF, and dfstp_2 at
+FS. Every remaining failed fixture has a verified opposite prestate. All other
+sampled pulse widths pass. These are isolated clock-held-low observations with
+fixed loads, not a universal minimum-width, arbitrary waveform, clock-high,
+recovery/removal or routed reset guarantee. The complete reassessed detail and
+both original completed review/campaign receipts are retained.
