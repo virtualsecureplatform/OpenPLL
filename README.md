@@ -347,3 +347,18 @@ passes all 24 corrected analyses with a maximum 1.41e-11 fF difference. The
 unpatched negative control completes its analyses and fails the same regression
 with a 0.079196 fF difference. These controls grant no full-MOS, PLL or release
 qualification.
+
+### Magic nonzero-resistance crash reproducers
+
+The [threshold-zero fixture](tools/magic_rcx/coupling_grounding_R_probe.tcl)
+and [threshold-one fixture](tools/magic_rcx/coupling_grounding_R_threshold1_probe.tcl)
+add an `AFAR` terminal at the far end of wire A to exercise resistance
+extraction. Run each using the same fresh-directory command and SKY130
+technology as the two-wire testcase above, with coupling both enabled and
+disabled. On the tested stock Magic 8.3.623 executable, all four runs terminate
+with SIGSEGV during `extresist all`, before producing SPICE exports. The
+[native results](verification/signoff400/magic_resistive_coupling_20261108/native_controls.json)
+record return code -11 and pin the executable, technology, fixtures and logs.
+These are crash reproducers for upstream investigation; they establish neither
+a resistance/capacitance comparison nor an extraction correction. The earlier
+coupling-duplication testcase remains a separate completed export control.
