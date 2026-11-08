@@ -2021,3 +2021,10 @@ Four boundary-mapping tests pass, covering polarity, complete role/programming
 coverage, invalid codes and rejection of additional active terminals. The native
 capture is running; frequency agreement, startup-window convergence, receiver
 load sensitivity, other corners and wire-R uncertainty remain unqualified.
+
+Static mapping audit1532 exhaustively checked all11,520 legal coarse/fine
+settings against the selected physical port records:3,479,040 thermometer-bit
+assignments match an independent threshold/polarity calculation. Conditional
+input ports are unique; rails, reset, free receiver output and free PLLOUT bind
+as declared. This verifies static stimulus construction only; it supplies no
+analog accuracy or release qualification.

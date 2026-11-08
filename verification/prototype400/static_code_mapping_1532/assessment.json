@@ -1,0 +1,26 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_native_1419/bindings.json": "1196e9c48eb07f249b5a141da2e7704769d6c9bd8d6ff9ab8a8284d42681ebe7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_prescribed_boundary_roles_1522/boundaries.json": "3fc2e76de478cb29067a8d9c99fbdcf6ebdc051a66d936922792ab269ad3aad2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/plan.json": "c5882f6937c5b0bed68cc4f555890e58a009c61196a573c30621639c1bf5cad5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_static_code_mapping.py": "81e140b0948ef287b36e21f5237f996533bf3e0f8dae23f22aae0b3815b6f056",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_static_terminated_DCO.py": "d75b2f606c1a836b7bb1f4c84b21cbf9fea959d6c1fb900771d90978e21e1d8d"
+  },
+  "artifacts": {},
+  "static_codes_checked": 11520,
+  "macro_bits_per_code": 302,
+  "thermometer_assignments_checked": 3479040,
+  "all_assignments_match": true,
+  "coarse_domain": [
+    0,
+    47
+  ],
+  "fine_domain": [
+    8,
+    247
+  ],
+  "actual_selected_physical_mapping": true,
+  "native_simulations_performed": 0,
+  "analog_accuracy_qualified": false,
+  "release_ready": false
+}
