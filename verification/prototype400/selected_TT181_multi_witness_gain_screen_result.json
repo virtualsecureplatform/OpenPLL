@@ -1,0 +1,818 @@
+{
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/assessment.json",
+  "source_assessment_sha256": "4eaba74bdf74a42874e95294f64b727d1424e0266cba3f5281dc5858eccecd7b",
+  "all_source_and_artifact_hashes_verified": true,
+  "all_trial_inputs_verified": true,
+  "completed_failures_independently_trace_recomputed": true,
+  "disposition_counts": {
+    "functional_failure": 3,
+    "indeterminate_lookup": 17
+  },
+  "records": [
+    {
+      "ki": 2,
+      "kp": 0,
+      "disposition": "functional_failure",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI2_KP0_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "12c15deb96d0a1daa192e66956a8865c9bcfcbf5f762f65782bfa234f65034ca",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI2_KP0_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "880e1788ac326c6f97cc1351dc68c1f8535721514cddff9ee3a3e2ba49d6c482",
+          "state": "diagnostic_failed",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": true,
+          "measurement_requests": [],
+          "recomputed_segments": [
+            {
+              "segment": 0,
+              "passed": false,
+              "sustained_final_pass": false,
+              "acquisition_confirmed_ns": null,
+              "enabled_ns": 101.0,
+              "final_four_windows": [
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 199621.0,
+                  "end_ns": 204741.0,
+                  "frequency_mhz": 393.81389703769867,
+                  "frequency_error_ppm": 15465.257405753397,
+                  "phase_span_ns": 78.527,
+                  "phase_mean_ns": 9.091079365079365,
+                  "phase_drift_ns": 78.45366938699495,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 122,
+                  "fine_max": 126,
+                  "passed": false
+                },
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 204741.0,
+                  "end_ns": 209861.0,
+                  "frequency_mhz": 393.72024994103964,
+                  "frequency_error_ppm": 15699.37514740085,
+                  "phase_span_ns": 79.728,
+                  "phase_mean_ns": 8.901809523809524,
+                  "phase_drift_ns": 79.57557808845095,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 121,
+                  "fine_max": 126,
+                  "passed": false
+                },
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 209861.0,
+                  "end_ns": 214981.0,
+                  "frequency_mhz": 393.6073783989678,
+                  "frequency_error_ppm": 15981.554002580533,
+                  "phase_span_ns": 81.194,
+                  "phase_mean_ns": 9.987603174603175,
+                  "phase_drift_ns": 81.14970425584416,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 121,
+                  "fine_max": 125,
+                  "passed": false
+                },
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 214981.0,
+                  "end_ns": 220101.0,
+                  "frequency_mhz": 393.51639726554953,
+                  "frequency_error_ppm": 16209.006836126213,
+                  "phase_span_ns": 82.376,
+                  "phase_mean_ns": 12.457,
+                  "phase_drift_ns": 82.35312085158708,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 120,
+                  "fine_max": 124,
+                  "passed": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 2,
+      "kp": 1,
+      "disposition": "functional_failure",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI2_KP1_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "b5d4fed4fc93d290954117ec5ff33a733c5e4413cacb16276e1ffc1e32d5ac58",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI2_KP1_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "a23b105dd8f3f7764f7ad46bc8750330c96963f33cf3cdf2ee4cdf956ba94353",
+          "state": "diagnostic_failed",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": true,
+          "measurement_requests": [],
+          "recomputed_segments": [
+            {
+              "segment": 0,
+              "passed": false,
+              "sustained_final_pass": false,
+              "acquisition_confirmed_ns": null,
+              "enabled_ns": 101.0,
+              "final_four_windows": [
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 199621.0,
+                  "end_ns": 204741.0,
+                  "frequency_mhz": 394.86588341174286,
+                  "frequency_error_ppm": 12835.291470642796,
+                  "phase_span_ns": 65.528,
+                  "phase_mean_ns": 5.716283464566929,
+                  "phase_drift_ns": 65.84936137364116,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 127,
+                  "fine_max": 133,
+                  "passed": false
+                },
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 204741.0,
+                  "end_ns": 209861.0,
+                  "frequency_mhz": 394.71627325308737,
+                  "frequency_error_ppm": 13209.316867281539,
+                  "phase_span_ns": 66.916,
+                  "phase_mean_ns": -7.043468253968254,
+                  "phase_drift_ns": 67.01075619046615,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 127,
+                  "fine_max": 132,
+                  "passed": false
+                },
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 209861.0,
+                  "end_ns": 214981.0,
+                  "frequency_mhz": 394.6096324211274,
+                  "frequency_error_ppm": 13475.9189471815,
+                  "phase_span_ns": 68.33,
+                  "phase_mean_ns": -19.128563492063492,
+                  "phase_drift_ns": 68.00408225613135,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 126,
+                  "fine_max": 131,
+                  "passed": false
+                },
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 214981.0,
+                  "end_ns": 220101.0,
+                  "frequency_mhz": 394.62072726313227,
+                  "frequency_error_ppm": 13448.1818421693,
+                  "phase_span_ns": 68.136,
+                  "phase_mean_ns": 9.302674603174603,
+                  "phase_drift_ns": 68.18458869428159,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 126,
+                  "fine_max": 131,
+                  "passed": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 2,
+      "kp": 2,
+      "disposition": "functional_failure",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI2_KP2_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "906aa9941cdcee5aafa6498cda923e517b5474d3142d9c07722257b44e543f74",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI2_KP2_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "a3a36b63a41d0f1d32dc24be28ff5f372b2e816d0a4e43fed7844641dbc67985",
+          "state": "diagnostic_failed",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": true,
+          "measurement_requests": [],
+          "recomputed_segments": [
+            {
+              "segment": 0,
+              "passed": false,
+              "sustained_final_pass": false,
+              "acquisition_confirmed_ns": null,
+              "enabled_ns": 101.0,
+              "final_four_windows": [
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 199621.0,
+                  "end_ns": 204741.0,
+                  "frequency_mhz": 395.9085025356904,
+                  "frequency_error_ppm": 10228.743660774027,
+                  "phase_span_ns": 52.089,
+                  "phase_mean_ns": 1.1041102362204724,
+                  "phase_drift_ns": 53.14636451255412,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 133,
+                  "fine_max": 140,
+                  "passed": false
+                },
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 204741.0,
+                  "end_ns": 209861.0,
+                  "frequency_mhz": 395.73768044172533,
+                  "frequency_error_ppm": 10655.798895686674,
+                  "phase_span_ns": 54.294,
+                  "phase_mean_ns": 14.76368503937008,
+                  "phase_drift_ns": 53.5978024319138,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 133,
+                  "fine_max": 139,
+                  "passed": false
+                },
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 209861.0,
+                  "end_ns": 214981.0,
+                  "frequency_mhz": 395.743248815604,
+                  "frequency_error_ppm": 10641.877960990074,
+                  "phase_span_ns": 53.77,
+                  "phase_mean_ns": -10.958904761904762,
+                  "phase_drift_ns": 53.563943857576525,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 133,
+                  "fine_max": 139,
+                  "passed": false
+                },
+                {
+                  "phase_statistics_method": "exact_integer_picosecond_grid",
+                  "start_ns": 214981.0,
+                  "end_ns": 220101.0,
+                  "frequency_mhz": 395.78537414806516,
+                  "frequency_error_ppm": 10536.564629837138,
+                  "phase_span_ns": 53.67,
+                  "phase_mean_ns": 3.3613228346456694,
+                  "phase_drift_ns": 54.520953140483094,
+                  "cycle_slip": false,
+                  "cycle_gaps": {
+                    "REF": false,
+                    "DIV": false,
+                    "OUT": false
+                  },
+                  "fine_outside_operating_range": false,
+                  "fine_min": 132,
+                  "fine_max": 139,
+                  "passed": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 2,
+      "kp": 4,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI2_KP4_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "b5ffa27015ae059d6d4b719cb54425321fe749e42969a7c7d3093df54448d9da",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI2_KP4_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "8099657d7fd5ed0c8ba08a694066d9d7b4115fcb15357ff1dda997a38244e361",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 182
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 2,
+      "kp": 8,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI2_KP8_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "7e52f2cc8bd875c9c3c789fb20609c8c8b7f36cdb0c212b31d8c3af4a8ae48db",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI2_KP8_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "acc1d041781dae9e3e213b372ecf6d18e8e016f75dab21f37e9cfdfac599d60b",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 182
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 4,
+      "kp": 0,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI4_KP0_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "b554c1ead5c4946d5e0ba96e6fef4453d296598efbebbde7f2e54a6451c91e5c",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI4_KP0_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "524186ae3c2136a7c34785ce9a9cfa4f01f093f2020967838afa68132ff226be",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 4,
+      "kp": 1,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI4_KP1_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "d36b407d6aab2d4fd9355b19f9df90da2a2987de5918d6d0e57ea8fa788a6237",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI4_KP1_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "9315c688201fc6c2848940723f7504e23351f12044d503c32274670dd35d9822",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 4,
+      "kp": 2,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI4_KP2_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "c34130c6d09ee3f965461290f5ed36984bf499585e97b494c65aa1f59f208483",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI4_KP2_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "89cf928289f6ec0e1d58624a03510b404698d77a4b5a5c2afbbeb7ef03a68e44",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 4,
+      "kp": 4,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI4_KP4_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "fe859b07cdc5e1d674c23e6b9eb83839f81ac12547ac15d5c6629e123f2d0504",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI4_KP4_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "fdde473c3bfe1d7c0d65128b80f9b2c08f3c6a79511e6e56d2a610a3a63b2c96",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 4,
+      "kp": 8,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI4_KP8_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "dfc3ab3c91fa7aed385565a04cc551a5ebbbb76122f8e1ae345c9f06b2ce2f85",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI4_KP8_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "0281f09b8bb2870777f5a37bab7c2bdd2a42ca5d40960b28a83e0809dc815571",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 182
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 8,
+      "kp": 0,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI8_KP0_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "acc07da7a3abd00082a6f3df7c9a42f5e1604c4331102bee55332d5f0d5c4dee",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI8_KP0_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "f07eaad3ba2dc19f4f0bbc465aab8cf245ed800b073ba7fce973dbb2b407a369",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 8,
+      "kp": 1,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI8_KP1_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "11ca29eb63ad7b7f1e4d1d9eb905dd8cbad1dbc814eb2ac4b2d778109469eb9f",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI8_KP1_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "0c15a40f7fe774e5d6c4aa651eeda44a4b19a4278c2ddd7589a9bc1687b1a713",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 8,
+      "kp": 2,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI8_KP2_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "aeff631008c5b4ecab8583559c2a6f1b0f907c5cbcd2c309009867c117e77aa2",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI8_KP2_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "f7eb14c8e23d7cd6fad3ff6b4a76b4da41efedf894743d5fbc9fe66663df75a0",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 8,
+      "kp": 4,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI8_KP4_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "20dcd87f79fce192a5f98278b29b200fdaab443edc7d3a628dcfb92a78a71e98",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI8_KP4_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "f2b06bd76ad60efbc4fd898c88a8c8b5e54973bc986c09addf99f4aba48373b1",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 8,
+      "kp": 8,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI8_KP8_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "de7df12d7d4cf5530e62f862c214109915a45a58648318aa6a3db9f49a016dfa",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI8_KP8_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "16c7d8f6c52ed4943725eb416b69a41e8775d0d16abf1938a36690314c54be5c",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 16,
+      "kp": 0,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI16_KP0_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "76c039423f0d38eae3788b1b045e39ac12631c7be2cb7f2dd63d1a50fdf8d243",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI16_KP0_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "761c77d1d99e4729fd9e9133f09c93aec2f85b33bcce0a261e1b5c9d20653166",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 16,
+      "kp": 1,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI16_KP1_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "8df691252be5653e40cd0ce538266e80033efb90cc948c4463a5c8e3e8ccc093",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI16_KP1_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "a5c77578955d0849be56948b83773cb8f0737464730baf3c38985f7741da4a9a",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 16,
+      "kp": 2,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI16_KP2_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "99070f7e936bd31282df4743ca47aa98a422350d60fd952899cccaea9241c6c0",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI16_KP2_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "e8751f85a073d9eda7d22960a5b83ea1f1b565510c7539b0066fcfac5f5f1fd9",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 16,
+      "kp": 4,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI16_KP4_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "fa2bed5c5b83502310d1d2065fb79a69c461fbb280fca397e6d9909d71cbb982",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI16_KP4_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "a33601ddbba2e4dd203c1cade670f5ef52dd6cc0849cfd8d618b180de6879cac",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ki": 16,
+      "kp": 8,
+      "disposition": "indeterminate_lookup",
+      "trials": [
+        {
+          "stress": "gain_offset",
+          "phase_ns": 20,
+          "view": "nominal",
+          "interpolation": "linear_period",
+          "assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI16_KP8_gain_offset_phase20_nominal_linear_period/assessment.json",
+          "assessment_sha256": "ffe4a78ed3f96b19ee8effffa30603a0cab5d2a8d6389d8da292e83ca524f6d6",
+          "inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_TT181_multi_witness_gain_screen_1228/KI16_KP8_gain_offset_phase20_nominal_linear_period/inputs.json",
+          "inputs_sha256": "0c98f685b3b91bf0043f2d227d55035f389b6d6f0d19f703aaa62db41bb85151",
+          "state": "needs_native_tuning_points",
+          "functional_trace_pass": false,
+          "reference_phase_coverage_pass": false,
+          "measurement_requests": [
+            {
+              "coarse": 20,
+              "fine": 110
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "previously_rejected_pairs": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      8
+    ]
+  ],
+  "full_gain_matrix_qualified": false,
+  "minimum_gain_selected": false,
+  "wide_code_stress_applicability_qualified": false,
+  "release_ready": false,
+  "provisional_full_sweep_candidate": null
+}
