@@ -1125,3 +1125,30 @@ also changes the prescribed capacitor environment and adaptive grid.
 Downstream loading remains prescribed; no error tolerance or model
 qualification is inferred. Three tests reject incomplete/forced records
 and mismatched backend/timestep, while accepting matching checked settings.
+
+### Lossless compressed retention and local ground-support trace queued
+
+The active1400 uncompressed retention is unchanged. New helper
+`retain_completed_native_gzip.py` requires normal native completion,
+preserves the original regular source, writes a fresh gzip-level1 archive,
+checks source inode/size/mtime/ctime and independent SHA, decompresses the
+archive to verify exact byte count/SHA and gzip integrity, then publishes
+with an exclusive hard link so concurrent destinations cannot be replaced.
+An archive receipt records both compressed and uncompressed hashes. Four
+tests cover binary recovery, incomplete input/existing destinations,
+preexisting partial files and concurrent publication. No measured speedup
+is claimed before a completed full trace archive.
+
+New1437 uses the unchanged flat1202 GDS, logging-only ground-tail engine1360
+and eight checked controls1362. Hot trace output is local; native extraction
+gets CPU24,16GiB and3600s, with a24h resource queue and no automatic retry.
+It requires512GiB free local scratch at preparation and native start. After
+normal completion, gzip retention uses a separate2GiB lease; only after
+round-trip verification is `coupling.jsonl` linked to the preserved local
+trace for existing audits. Both raw local bytes and compressed archive
+are pinned. Observer1438 waits for completed producer evidence before
+partitioning/auditing the trace. The portable archive allows recovery of
+the exact raw bytes; the local raw trace must remain until all audits
+finish. Ground placement, legacy support and all release flags remain
+false. This distinct local-I/O run follows failed shared-storage1363;
+it does not reuse or audit that partial trace.

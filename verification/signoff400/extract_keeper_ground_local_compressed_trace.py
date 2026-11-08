@@ -1,0 +1,67 @@
+"""One bounded native resolved overlap/fringe plus numerical ground trace on the unchanged checked flat GDS."""
+import argparse,json,os,time,tempfile,shutil
+from pathlib import Path
+from common_v3 import save,sha,verify
+from resources import lease,identity
+from compiled_charge_v2 import execute
+from replay_keeper_flat_signed_C import TECH
+from extract_keeper_flat_geometry_C import FLAT
+from retain_completed_native_gzip import retain
+
+def run(flat,engine,controls,output):
+    receipts=[p/'assessment.json'for p in [flat,engine,controls]];f,e,c=[json.loads(p.read_text())for p in receipts]
+    for r in [f,e,c]:verify(r['input_sha256']);verify(r['artifacts'])
+    if not c['numeric_ground_lifecycle_verified'] or not c['all_eight_native_controls_complete'] or not c['logging_preserves_tested_circuits'] or e['capacitance_equations_modified'] or c['input_sha256'].get(str(receipts[1]))!=sha(receipts[1]):raise ValueError('same independently checked logging-only engine required')
+    if any(not r['overlap']['all_overlap_support_reconstructed'] or not r['fringe']['all_rectilinear_fringe_support_verified'] for r in c['results']):raise ValueError('resolved overlap/fringe native controls required')
+    if not e.get('ground_halo_tail_instrumented') or not c.get('ground_halo_tail_provenance_verified') or not c.get('ground_halo_subtraction_provenance_verified') or not c.get('ground_overlap_subtraction_provenance_verified') or not c.get('ground_area_perimeter_support_verified'):raise ValueError('complete matching native ground-support controls required')
+    binary=Path(e['installed_executable']);gds=flat/'flat.gds';output.mkdir(parents=True,exist_ok=False);os.sched_setaffinity(0,{24});os.environ.update(OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1');deadline=time.clock_gettime(time.CLOCK_BOOTTIME)+3600
+    save(output/'owner.json',dict(pid=os.getpid(),birth=identity(os.getpid())));rc=output/'minimal.magicrc';rc.write_text(f'tech load {{{TECH}}}\ndrc off\ncrashbackups disable\nlocking disable\n');script=output/'extract.tcl';model=output/'pilot.spice';local=Path(tempfile.mkdtemp(prefix='openpll-ground-trace-'));trace=local/'coupling.jsonl';archive=output/'coupling.jsonl.gz';os.environ['OPENPLL_COUPLING_TRACE']=str(trace)
+    if shutil.disk_usage(local).free<512*1024**3:raise ValueError('512 GiB free local scratch required before native extraction')
+    script.write_text(f'''cd {{{output}}}
+if {{[catch {{
+gds read {{{gds}}}
+load {FLAT}
+select top cell
+extract style ngspice()
+extract do local
+extract do capacitance
+extract do coupling
+extract no resistance
+extract warn all
+extract all
+ext2spice lvs
+ext2spice hierarchy off
+ext2spice subcircuit top on
+ext2spice short resistor
+ext2spice cthresh -1e100
+ext2spice extresist off
+ext2spice -o {{{model}}} {FLAT}.ext
+feedback save {{{output/'feedback.txt'}}}
+}} error]}} {{puts stderr $error; exit 1}}
+quit -noprompt
+''')
+    folder=Path(__file__).resolve().parent;pins={str(p):sha(p)for p in [*receipts,gds,binary,TECH,rc,script,Path(__file__).resolve(),folder/'compiled_charge_v2.py',folder/'extract_keeper_flat_geometry_C.py',folder/'retain_completed_native_gzip.py']};save(output/'inputs.json',dict(input_sha256=pins,source_GDS_unchanged=True,full_RC_extraction_mode=False,distributed_R_export=False,coupling_trace=str(output/'coupling.jsonl'),native_local_trace=str(trace),lossless_trace_archive=str(archive),minimum_local_free_GiB=512,resolved_overlap_and_fringe_events_requested=True,ground_support_records_requested=True,ground_spatial_redistribution_qualified=False,CPU=24,memory_GiB=16,native_cap_s=3600,resource_queue_cap_s=86400,maximum_native_cases=1,automatic_identical_retry=False,release_ready=False))
+    try:
+        verify(pins);save(output/'status.json',dict(state='checked_flat_ground_lifecycle_trace_running',release_ready=False))
+        save(output/'status.json',dict(state='waiting_for_global_CPU_RAM_budget',release_ready=False))
+        with lease(1,16,time.clock_gettime(time.CLOCK_BOOTTIME)+86400):
+            deadline=time.clock_gettime(time.CLOCK_BOOTTIME)+3600
+            if shutil.disk_usage(local).free<512*1024**3:raise ValueError('512 GiB free local scratch required at native start')
+            save(output/'status.json',dict(state='resolved_overlap_fringe_native_trace_running',release_ready=False))
+            execute([binary,'-nowrapper','-dnull','-noconsole','-rcfile',rc,script],output/'native.log',deadline,16)
+        verify(pins)
+        save(output/'status.json',dict(state='retaining_completed_lossless_native_trace',release_ready=False))
+        with lease(1,2,time.clock_gettime(time.CLOCK_BOOTTIME)+14400):
+            retention=retain(trace,archive,native_completed=True)
+        save(output/'trace_archive.json',retention)
+        (output/'coupling.jsonl').symlink_to(trace)
+        files=[model,output/'coupling.jsonl',archive,output/'trace_archive.json',output/(FLAT+'.ext'),output/'native.log',output/'feedback.txt']
+        if any(not p.exists()for p in files):raise ValueError('complete native trace artifacts required')
+        save(output/'assessment.json',dict(input_sha256=pins,artifacts={str(p):sha(p)for p in files},native_process_completed=True,local_native_trace_used=True,lossless_trace_archive_roundtrip_verified=True,local_uncompressed_trace_preserved=True,coupling_geometry_trace_available=True,numeric_ground_lifecycle_trace_available=True,resolved_overlap_and_fringe_trace_available=True,full_PLL_spatial_audit_complete=False,ground_support_trace_available=True,legacy_ground_support_qualified=False,numeric_ground_lifecycle_verified=False,source_GDS_sha256=sha(gds),trace_ledger_reconstruction_verified=False,full_circuit_equivalence_verified=False,ground_capacitance_geometry_traced=False,pointwise_placement_qualified=False,distributed_wire_R_qualified=False,native_simulation_allowed=False,release_ready=False));save(output/'status.json',dict(state='flat_ground_lifecycle_trace_complete_audit_pending',release_ready=False))
+    except BaseException as ex:
+        save(output/'status.json',dict(state='stopped_without_qualification',reason=repr(ex),automatic_identical_retry=False,release_ready=False));raise
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser()
+    for n in ['flat','engine','controls','output']:p.add_argument('--'+n,type=Path,required=True)
+    a=p.parse_args();run(*(getattr(a,n).resolve()for n in ['flat','engine','controls','output']))
