@@ -1,0 +1,43 @@
+{
+  "launcher": {
+    "pid": 2199229,
+    "birth": "134043415",
+    "command": [
+      "apptainer",
+      "exec",
+      "--bind",
+      "/home:/home,/tmp:/tmp",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+      "/usr/bin/python3",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_reduced_replay_pipeline.py",
+      "--output",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_pipeline_1388"
+    ]
+  },
+  "owner": {
+    "pid": 2199260,
+    "birth": "134043424"
+  },
+  "inputs": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_reduced_replay_pipeline.py": "8f7700a6f142d6371eb9987b0a4b8f28c36b7641c3c46177172d9600edcc084c",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/stage_keeper_tablefile_sources.py": "1aae1c6abee89d205a314764438498b1111d782ba5df814dc6877be0b2835759",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/write_keeper_shared_tablefile_sources.py": "744cfc58abba2870c145ee5cf225280355e8840bd96fc5ae508365b26d405d7c",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/write_keeper_tablefile_sources.py": "36ab97b0db5617d9a97d70aa6d078bde5e79b04caaf4e675db9b33883477df06",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/benchmark_keeper_aggregated_tablefile_replay.py": "fc8b6197f4a9fcd539d2aaa50b31dd51a05b442de537b4d27b9597d0977f88ce",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_reduced_replay.py": "c1eac1160013d39d1b32be3757b31497140f46d863e58a0cd8a5ec9f6add802a"
+    },
+    "maximum_native_PLL_cases": 1,
+    "automatic_identical_retry": false,
+    "observation_cap_s": 86400,
+    "staging": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_sources_1389",
+    "replay": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_replay_1390",
+    "comparison": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_comparison_1391",
+    "release_ready": false
+  },
+  "observed_status": {
+    "state": "waiting_for_completed_audited_aggregate_waveforms",
+    "release_ready": false
+  },
+  "release_ready": false
+}
