@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "source": "/tmp/openpll-static-DCO-970hjjk5/transient.raw",
+      "retained": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_DCO_1541/transient.raw",
+      "bytes": 29920267,
+      "sha256": "6b102d4587493c0c77a495d7a7355177bb4525db1ca9b888e820581a2b476024",
+      "closed_native_trace_copy_verified": true
+    },
+    {
+      "source": "/tmp/openpll-static-DCO-970hjjk5/native.log",
+      "retained": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_DCO_1541/native.log",
+      "bytes": 91664,
+      "sha256": "abbfa42980e58eec8d80580081110829fe4d27b61bcf50739db77cb9a8b07591",
+      "closed_native_trace_copy_verified": true
+    },
+    {
+      "source": "/tmp/openpll-static-DCO-970hjjk5/memory.log",
+      "retained": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_DCO_1541/memory.log",
+      "bytes": 975,
+      "sha256": "050b0b54cb7d3a663d3dddfc8545d9995a2d4bfdd8e5a76138e7583754ad6904",
+      "closed_native_trace_copy_verified": true
+    }
+  ]
+}

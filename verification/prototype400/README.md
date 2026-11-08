@@ -2143,3 +2143,13 @@ recorded voltage history, and is a capacitive-only boundary; all other capacitiv
 exterior nodes remain grounded. REFCLK_DRIVER is saved alongside PLLOUT and
 all302 native control leaves. The single CPU31/8 GiB case tests this known
 omitted excitation; other dynamic aggressors and model qualification remain open.
+
+Independent static coarse23/fine149 point1541 completed normally in1,149.327 s
+(19.16 min), at404.096788446 MHz over20–60 ns, with all302 native tuning leaves
+matching and all saved voltages finite. Inputs and artifacts were independently
+reverified. Its log is retained as lossless gzip with verified decompressed hash.
+This establishes an exploratory fast-subsystem point above400 MHz; it does not
+yet establish a qualified fine-code bracket. The matching full-layout coarse23
+center1513 is still running, and no coarse20 discrepancy correction is transferred
+to this point. The inherited frequency_difference_ppm is a cross-code comparison
+to coarse20 reference1295, not a model error measurement.
