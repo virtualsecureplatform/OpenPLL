@@ -1,0 +1,94 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse19_holdout.py": "65f415341cc4265061b94c6cc95fb32cfeb7c9e13ce051df3c859ded8c5e9aad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse19_endpoints.py": "d5aaeec300bb5d772b46bce14e850f1962cf9783a4c03022f47b34e5fbe4a77e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_native_BSIM_coarse_band.py": "f3134a6c437fefc77235949203bafde8e824276ddd09101ba73f14bbec6ee64a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning_v2.py": "882b641aae80e2f93f503594a12c54987f5f2aacf7b130ea0b68deccac6de60a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/collect_keeper_TT_characterization.py": "5b9906294c0701bf35f3aa5cbd3080f60f6d78fbde682d72acba37cf30403436",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_parallel_endpoints_1490/plan.json": "b7fd86d23181106bdfa81d6dbbb436a7eefdb0373609a56cb0f3325c625295b9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/native/assessment.json": "cf773fbc20e3c2bae99a8acd94c19ee4a620135e332e4ecc10a94da5d293f42b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_parallel_endpoints_1490/assessment.json": "9f8a74cbd1f0046489d7cbd30994ff0c2ed482671c9041ef879d9f3794fe5489",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine198_step50_1494/assessment.json": "ca651d64460a9ddd9fac86571bd16cc8bda5a7d5b7080acf3d98875c3d29b4c8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine198_physical_1495/assessment.json": "ed3a57b45a7e5df9b4457469943dd5069a09b23f6c06e4d6ba85c03b3a6617d4"
+  },
+  "fit_points": [
+    {
+      "fine": 8,
+      "frequency_hz": 337106430.25952345,
+      "role": "fit",
+      "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine8_step50_1441/assessment.json",
+      "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine8_physical_1442/assessment.json"
+    },
+    {
+      "fine": 149,
+      "frequency_hz": 362529421.9121545,
+      "role": "fit",
+      "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_fine149_step50_1412/assessment.json",
+      "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_physical_1413/assessment.json"
+    },
+    {
+      "fine": 247,
+      "frequency_hz": 381101055.3279272,
+      "role": "fit",
+      "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine247_step50_1443/assessment.json",
+      "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine247_physical_1444/assessment.json"
+    }
+  ],
+  "target": {
+    "target_hz": 400000000.0,
+    "measured_bracket_available": false
+  },
+  "independent_holdout": {
+    "measured": {
+      "fine": 198,
+      "frequency_hz": 371596959.7733522,
+      "role": "holdout",
+      "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine198_step50_1494/assessment.json",
+      "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine198_physical_1495/assessment.json"
+    },
+    "bracket": [
+      {
+        "fine": 149,
+        "frequency_hz": 362529421.9121545,
+        "role": "fit",
+        "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_fine149_step50_1412/assessment.json",
+        "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_physical_1413/assessment.json"
+      },
+      {
+        "fine": 247,
+        "frequency_hz": 381101055.3279272,
+        "role": "fit",
+        "native_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine247_step50_1443/assessment.json",
+        "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine247_physical_1444/assessment.json"
+      }
+    ],
+    "predictions": [
+      {
+        "interpolation": "linear_frequency",
+        "predicted_frequency_hz": 371815238.62004083,
+        "error_ppm": 587.4075149101543
+      },
+      {
+        "interpolation": "linear_period",
+        "predicted_frequency_hz": 371583332.06276125,
+        "error_ppm": -36.67336406432131
+      }
+    ]
+  },
+  "interpolation_accuracy_characterized": true,
+  "interpolation_accuracy_accepted": false,
+  "coarse": 19,
+  "corner": "tt",
+  "temperature_C": 27,
+  "supply_V": 1.8,
+  "corrected_backend": true,
+  "max_step_ps": 50,
+  "primary_interpolation_predeclared": "linear_frequency",
+  "independent_holdout_roles_preserved": true,
+  "target_extrapolation_used": false,
+  "numerical_accuracy_qualified": false,
+  "other_corners_qualified": false,
+  "changed_controller_prediction_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}

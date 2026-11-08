@@ -1,0 +1,39 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/assessment.json": "66a33a9102b4b4ef0a948aefc0714ed2d0ac239608023a6d2b79b213dc66b673",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208/assessment.json": "a3c818e04c7f616498519d8fc326c20f5878a80ecfe07382f27207a2b87589fa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine198_step50_1494/inputs.json": "36bc209bb60ba0cbf2b4fa7262edab4be60119fae9ed12f3065e9f107f2247fc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136/assessment.json": "423ec02bd4de48457acf1e9fa3ba715704e3387bfcbb2a6650cbf195e1a600c5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_ProgrammedCore.v": "eba2157966c0d799bb269c4c108ce1e125ca5e90a2e10c019c60deed12cf530d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_DigitalCore.v": "4cba0c4b262d43d5b18e484affdc1c03e0c72f8e21de3a7ce044c66f4f7a9055",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/rtl/IntegerPLL_B2TH.v": "7cdf2a2224e2b1fcf848cc1cd42b5417e3d0d1bb8dea82e0c274e5065432f74b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208/nodes.json": "7316ef06b9c3b4141066f7c2f6c834963cbcaa7db4dab306ebb556d881aa9ff3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233/chains.json": "1a38c79e1d9eb9f556b259df7b1f505fc1431346d5206e29876b5242ac6ae955",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine198_step50_1494/owner.json": "be047c5ba0558cbec3616b1d83c7fed66ab57cc017b054fa6a70c6e0a964ea6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning_v2.py": "882b641aae80e2f93f503594a12c54987f5f2aacf7b130ea0b68deccac6de60a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/plan_keeper_conditional_replay.py": "765a5ccfcf27e5c363755c2ef5112d9dc5ecc96a6e82636e05034070ceeb38f5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine198_step50_1494/assessment.json": "ca651d64460a9ddd9fac86571bd16cc8bda5a7d5b7080acf3d98875c3d29b4c8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine198_step50_1494/transient.raw": "b7a876e626b9d284913ca9ff2c1ed6fd0a697285ed81bac89cf39dec0ca8af78"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine198_physical_1495/controls.npy": "f4588d75f34142c5d387d1f1df6956b39e1d111a2b189046fcc3be209c4062f9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine198_physical_1495/checks.json": "dddd268f87743e29cc4492d987bf682b651ba725a666206a93b48a3efc7592ab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine198_physical_1495/plan.json": "0e9e27c3331e14d8c634e8cdd495ff69fa055fb4d1b22119e10c1cfd5833fe51"
+  },
+  "native_completed": true,
+  "observed_bits": 302,
+  "observed_endpoint_voltages": 604,
+  "all_macro_and_DCO_tuning_bits_match": true,
+  "mismatched_endpoints": 0,
+  "coarse": 19,
+  "fine": 198,
+  "samples": 6487,
+  "window_ns": [
+    200,
+    260
+  ],
+  "model_qualified": false,
+  "release_ready": false
+}

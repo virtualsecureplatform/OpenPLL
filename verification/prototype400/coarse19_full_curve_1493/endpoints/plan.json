@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_endpoint_parallel_handoff_1489.json": "faa20bdef0bc9432bba7deb967b03d673ba0d9f58991193ec30031683c8a763e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse19_parallel_endpoints.py": "b59efd9df86e92bfa874d9c2c6484836e3e3533bc44952ce3ea832ee26c0f8ea",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse19_endpoints.py": "d5aaeec300bb5d772b46bce14e850f1962cf9783a4c03022f47b34e5fbe4a77e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_native_BSIM_coarse_band.py": "f3134a6c437fefc77235949203bafde8e824276ddd09101ba73f14bbec6ee64a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning_v2.py": "882b641aae80e2f93f503594a12c54987f5f2aacf7b130ea0b68deccac6de60a"
+  },
+  "coarse": 19,
+  "endpoint_fine_codes": [
+    8,
+    247
+  ],
+  "native_CPUs": [
+    20,
+    21
+  ],
+  "native_memory_GiB_per_worker": 16,
+  "max_simultaneous_workers": 2,
+  "maximum_additional_native_cases": 2,
+  "native_cap_s_per_case": 86400,
+  "max_step_ps": 50,
+  "same_original_endpoint_output_paths": true,
+  "global_CPU_RAM_budget_enforced": true,
+  "central_point_is_not_blind_holdout": true,
+  "automatic_identical_retry": false,
+  "release_ready": false
+}

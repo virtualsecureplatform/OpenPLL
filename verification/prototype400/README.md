@@ -67,6 +67,13 @@ maximum acquisition confirmation is158.6 us. This is a functional result under
 unqualified subsystem/detector/clock models, not a physical PLL lock result or
 release gain selection. Other corners and model uncertainty remain open.
 
+The [completed full-layout coarse19 curve](coarse19_full_curve_1493/collection/assessment.json)
+has fit points at fine8/149/247 and an independent fine198 holdout, all with604
+matching physical controls. Tested frequencies remain337.106–381.101 MHz;
+there is no measured400 MHz bracket. The predeclared frequency interpolation
+has+587 ppm holdout error; period interpolation has-36.7 ppm. These are sampled
+residuals, not global accuracy bounds, and the50 ps timestep is unqualified.
+
 The current numerical work replays measured programming-input ripple and
 continues the existing full-layout references and boundary replay. Their results
 must be completed and hash-verified before selecting a calibration or correcting
@@ -2396,3 +2403,13 @@ histories. These differences remain explicit, no coarse20 timestep correction
 is transferred, and the raw discrepancy is not a qualified model-error bound,
 calibration, target bracket or release pass. The observer neither restarts nor
 changes the running reference campaign.
+
+Full-layout coarse19 collection1493 completes its predeclared fit/holdout roles:
+fine8/149/247 measure337.106430260/362.529421912/381.101055328 MHz; independent
+fine198 measures371.596959773 MHz. All four native captures are corrected-backend
+TT27 C/1.8 V,260 ns/50 ps, with604 matching macro/DCO physical endpoints each.
+Primary linear-frequency holdout residual is+587.407515 ppm; predeclared period
+sensitivity residual is-36.673364 ppm. No extrapolated400 MHz setting or uniform
+accuracy bound is supplied. All measured points are below target. Native, control
+and collection receipts are retained together with lossless logs; large RAW/NPY
+artifacts remain in the original verified build paths.

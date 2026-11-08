@@ -1,0 +1,10 @@
+{
+  "fine": 247,
+  "frequency_mhz": 381.10105532792716,
+  "native_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine247_step50_1443/assessment.json",
+  "physical_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine247_physical_1444/assessment.json",
+  "receipt_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine247_step50_1443/assessment.json": "57e04d1ef38c6b8adc6c5171f65fd6d06a47715e85e224c51b5aa18923bd497f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine247_physical_1444/assessment.json": "95a9c202356ea033cf5993b7641fa8cde40fb126a7f9d0253f3ecb79e695a7b2"
+  }
+}

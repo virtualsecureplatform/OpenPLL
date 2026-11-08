@@ -1,0 +1,33 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse19_holdout.py": "65f415341cc4265061b94c6cc95fb32cfeb7c9e13ce051df3c859ded8c5e9aad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse19_endpoints.py": "d5aaeec300bb5d772b46bce14e850f1962cf9783a4c03022f47b34e5fbe4a77e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_native_BSIM_coarse_band.py": "f3134a6c437fefc77235949203bafde8e824276ddd09101ba73f14bbec6ee64a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning_v2.py": "882b641aae80e2f93f503594a12c54987f5f2aacf7b130ea0b68deccac6de60a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/collect_keeper_TT_characterization.py": "5b9906294c0701bf35f3aa5cbd3080f60f6d78fbde682d72acba37cf30403436",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_parallel_endpoints_1490/plan.json": "b7fd86d23181106bdfa81d6dbbb436a7eefdb0373609a56cb0f3325c625295b9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/native/assessment.json": "cf773fbc20e3c2bae99a8acd94c19ee4a620135e332e4ecc10a94da5d293f42b"
+  },
+  "coarse": 19,
+  "fit_fine_codes": [
+    8,
+    149,
+    247
+  ],
+  "independent_holdout_fine": 198,
+  "primary_interpolation": "linear_frequency",
+  "sensitivity_interpolation": "linear_period",
+  "target_mhz": 400,
+  "native_CPU": 22,
+  "native_memory_GiB": 16,
+  "max_step_ps": 50,
+  "native_cap_s": 86400,
+  "maximum_additional_native_cases": 1,
+  "total_band19_campaign_cases_including_central": 4,
+  "central_point_is_not_blind_holdout": true,
+  "automatic_identical_retry": false,
+  "target_extrapolation_forbidden": true,
+  "global_interpolation_error_bound_accepted": false,
+  "other_corners_or_numerical_accuracy_qualified": false,
+  "release_ready": false
+}
