@@ -1,0 +1,27 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_replay_1297/inputs.json": "aa5e35de84d5348db68781ac2494371ac977d985a5a8f240e6e2231d3f9c8f89"
+  },
+  "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_replay_1297",
+  "owner": {
+    "pid": 2037800,
+    "birth": "131909443"
+  },
+  "reference": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295",
+  "physical_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296",
+  "native_executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+  "native_executable_sha256": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+  "BSIM_PBSWGD_default_corrected": true,
+  "waiting_for_complete_reference": true,
+  "requires_604_correct_physical_control_voltages": true,
+  "PLLOUT_forcing_forbidden": true,
+  "CPU": 28,
+  "native_memory_GiB": 64,
+  "queue_cap_s": 172800,
+  "native_cap_s": 86400,
+  "maximum_native_cases": 1,
+  "automatic_identical_retry": false,
+  "independently_predictive_DCO_model": false,
+  "model_qualified": false,
+  "release_ready": false
+}
