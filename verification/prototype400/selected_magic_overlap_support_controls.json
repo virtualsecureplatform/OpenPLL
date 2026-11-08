@@ -1,0 +1,212 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_overlap_shielding_trace_1310/assessment.json": "e6c9e841d3974af15372cae6d0c781ba86138e502d7e5e9810a4d2131f438fce",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_overlap_shielding_trace_1310/install/bin/magic": "808f8a1bb32c256fb93b0919a9bff5d1028cfbcb152bfd35d1dab3450e3f666c",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_overlap_support_trace.py": "4941c0c7b92f959e04ac425d37d6bdbd87f741baecc294dff4002b5518bdb56e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_coupling_geometry_trace.py": "e4d506efeaae05027ef4ad86acb9d2a955a3de6b1e2a143e352ecf4fc5b04bbd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_ground_lifecycle.py": "eb23733bfd3399aa5ce25c140780182e27c8532aec99a8b288e1280708ec93b8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_overlap_support.py": "85b6cb9f730f5768182b2c5dc4e2b06f12620018be313bd11cb63b789c834b63",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_off/probe.tcl": "267015ed91d9e7bf48d3c44e8712186a1da4126adb7c19e42c78b22ee8f7f473",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_on/probe.tcl": "e445200a64992e94a57a5298670fb712f6278f575ed5bbc6fa803ad40c5a3b1d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_off/probe.tcl": "340f878a2658f71b6ad5cac3f41d2bba73c0eb708e58390ed0ebe8325c283b2c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_on/probe.tcl": "9306e340951e46c49d3b304c0cc575a5ef5bb291af48489cf0aca82230e2c0c9"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_off/view.spice": "e1548c74214a8d31432895494206fab96d5b8e42777dcc7236aa02060934d95f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_off/Trace_shielded_overlap.ext": "685635c548583bffd33cf206d82a61fa353577f14b2aa72eb2b3ddc256ab1846",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_off/native.log": "f3a9bef4de9c07fcf76e2fa50c441f4018d35e0ab899c41ae922baa50f8e8d20",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_on/view.spice": "a2dfff1468cd6c8b423a59a3d61959b89f1e4bb37cb3303959c8796533aad323",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_on/Trace_shielded_overlap.ext": "685635c548583bffd33cf206d82a61fa353577f14b2aa72eb2b3ddc256ab1846",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_on/native.log": "675702eb23caa7714e665305ce4fe9a3dcca9d675068c07ab2baf0a3df8bb882",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_on/coupling.jsonl": "9d192daccc72b4aa67daee713a95ffba12bdd00f50bd7d0d792a6fe0027d4f95",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_on/numeric.jsonl": "8c28201de069022e5a957a1df24f35be4911c1e5f1f49a544693776940e3db80",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/shielded_overlap_on/overlap_support.json": "93e02e96ebde7db8ed0b7bf47495f3ebd0a2e8cbefa0f769f5658ae39c4d508b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_off/view.spice": "cf63915fb25cb3765a0a943cea81de5dd5663a1f978b1b17f6047a77e4a24b5c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_off/Trace_recursive_shielding.ext": "765662891f273400ce850f500f94870315d91d687064f33918e9d7cc7f79f1de",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_off/native.log": "3c87f620e4931d1a43100c4122142a62e36d7b041d641a3499dbe0fb686d64fd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_on/view.spice": "0540861b7d5f9360e75309a0d5358ee6e8e138aabf4042b42fcf38f49c987a5c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_on/Trace_recursive_shielding.ext": "d5a8d5320f55e64670ec5105194550eb524756387ea44b9775a8a2222a871a80",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_on/native.log": "d0be79e2a7f7d04a5f1e3d6c1df52bc4e5e435171f167e7b5d1a3c12524f1371",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_on/coupling.jsonl": "612b53bd8c19c6e79cc6d87f8dd73e911d79591830bde6729988a6aede47de18",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_on/numeric.jsonl": "d820caba8583d6bcb771a6cc64fd18dd20a16198871b8fc04c82bf59c941185f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_overlap_support_controls_1311/recursive_shielding_on/overlap_support.json": "bea18b490f2d661d0adeb62e6de2d8b4a9ab5953a04ae94a6d9e7f933bfe3d64"
+  },
+  "results": [
+    {
+      "case": "shielded_overlap",
+      "normal_native_completion": true,
+      "trace_off_on_exact_device_and_C_match": true,
+      "coupling": {
+        "events": 5,
+        "event_kinds": {
+          "overlap": 3,
+          "sideoverlap_halo": 2
+        },
+        "native_pointer_pairs": 3,
+        "exported_name_pairs": 3,
+        "unmapped_pointer_pairs": 0,
+        "unmapped_events": 0,
+        "sidewall_spans_verified": 0,
+        "differences": [],
+        "all_exported_C_pairs_reconstructed_at_native_precision": true,
+        "ground_capacitance_geometry_traced": false,
+        "pointwise_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "ground": {
+        "ground_updates": 19,
+        "ground_resets": 4,
+        "mutation_sites_observed": {
+          "ExtBasic.c:5248": 4,
+          "ExtBasic.c:5332": 3,
+          "ExtBasic.c:5409": 3,
+          "ExtBasic.c:5459": 3,
+          "ExtBasic.c:5510": 3,
+          "ExtBasic.c:5560": 3,
+          "ExtCouple.c:522": 3,
+          "ExtCouple.c:1521": 1
+        },
+        "ground_output_records": 4,
+        "substrate_output_records": 1,
+        "negative_export_clamps": 0,
+        "native_ground_state_continuity_verified": true,
+        "exported_ground_records_match": true,
+        "missing_exported_records": 0,
+        "extra_reconstructed_records": 0,
+        "spatial_ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "overlap": {
+        "overlaps": 3,
+        "shielding_leaves": 1,
+        "native_scalar_area_ledger_verified": true,
+        "rectilinear_support_reconstructions": 3,
+        "unsupported_split_cases": 0,
+        "all_overlap_support_reconstructed": true,
+        "fringe_support_qualified": false,
+        "ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      }
+    },
+    {
+      "case": "recursive_shielding",
+      "normal_native_completion": true,
+      "trace_off_on_exact_device_and_C_match": true,
+      "coupling": {
+        "events": 9,
+        "event_kinds": {
+          "overlap": 5,
+          "sideoverlap_halo": 4
+        },
+        "native_pointer_pairs": 5,
+        "exported_name_pairs": 5,
+        "unmapped_pointer_pairs": 0,
+        "unmapped_events": 0,
+        "sidewall_spans_verified": 0,
+        "differences": [],
+        "all_exported_C_pairs_reconstructed_at_native_precision": true,
+        "ground_capacitance_geometry_traced": false,
+        "pointwise_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "ground": {
+        "ground_updates": 27,
+        "ground_resets": 5,
+        "mutation_sites_observed": {
+          "ExtBasic.c:5248": 5,
+          "ExtBasic.c:5332": 4,
+          "ExtBasic.c:5409": 4,
+          "ExtBasic.c:5459": 4,
+          "ExtBasic.c:5510": 4,
+          "ExtBasic.c:5560": 4,
+          "ExtCouple.c:522": 5,
+          "ExtCouple.c:1521": 2
+        },
+        "ground_output_records": 5,
+        "substrate_output_records": 1,
+        "negative_export_clamps": 0,
+        "native_ground_state_continuity_verified": true,
+        "exported_ground_records_match": true,
+        "missing_exported_records": 0,
+        "extra_reconstructed_records": 0,
+        "spatial_ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "overlap": {
+        "overlaps": 5,
+        "shielding_leaves": 2,
+        "native_scalar_area_ledger_verified": true,
+        "rectilinear_support_reconstructions": 5,
+        "unsupported_split_cases": 0,
+        "all_overlap_support_reconstructed": true,
+        "fringe_support_qualified": false,
+        "ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      }
+    }
+  ],
+  "all_four_native_controls_complete": true,
+  "logging_preserves_tested_circuits": true,
+  "legacy_side_overlap_runtime_path_qualified": false,
+  "numeric_ground_lifecycle_verified": true,
+  "ground_capacitance_geometry_traced": false,
+  "full_PLL_geometry_trace_qualified": false,
+  "pointwise_placement_qualified": false,
+  "release_ready": false,
+  "A_B_surviving_support_examples": [
+    {
+      "case": "shielded_overlap",
+      "cell": "Trace_shielded_overlap",
+      "epoch": 1,
+      "overlap_id": 2,
+      "node_ids": [
+        "0x623bb7e4bf00",
+        "0x623bb82a3010"
+      ],
+      "native_area": 200000,
+      "rectangles": [
+        [
+          2000,
+          0,
+          4000,
+          100
+        ]
+      ],
+      "rectilinear_support_reconstructed": true,
+      "pointwise_capacitance_placement_qualified": false
+    },
+    {
+      "case": "recursive_shielding",
+      "cell": "Trace_recursive_shielding",
+      "epoch": 1,
+      "overlap_id": 3,
+      "node_ids": [
+        "0x62a9301b4be0",
+        "0x62a9305df010"
+      ],
+      "native_area": 100000,
+      "rectangles": [
+        [
+          2000,
+          0,
+          3000,
+          100
+        ]
+      ],
+      "rectilinear_support_reconstructed": true,
+      "pointwise_capacitance_placement_qualified": false
+    }
+  ]
+}

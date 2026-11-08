@@ -628,3 +628,7 @@ A new isolated build records an overlap begin/end pair and each terminal shieldi
 ### Full-layout coupling ledger reconstructed (1306)
 
 All 58,017,745 logged contributions reconstruct the 564,002 exported native coupling-name pairs exactly at native precision, with zero differences. The audit checks 4,276,668 sidewall spans. Of 583,156 native pointer pairs, 19,151 pairs comprising 11,923,030 events lack an exported coupling-name mapping; they remain explicitly unresolved, not discarded as qualified ground capacitance. The combined ground trace is needed to identify their lifecycle. Together with 1305, this proves circuit neutrality and exported coupling reconstruction, not shielding-resolved placement, distributed wire-R validity or release readiness. See `selected_keeper_trace_coupling_reconstruction.json`.
+
+### Native overlap shielding reconstruction passed (1311)
+
+All four native trace-off/on controls complete with identical circuits and matching numerical ground/coupling ledgers. The geometric audit reconstructs three overlaps/one shielding leaf in the half-shield case and five overlaps/two leaves in the recursive case. A–B support is exactly `[2000,0,4000,100]` for half shielding and `[2000,0,3000,100]` for two intervening planes, matching native remaining areas of 200,000 and 100,000 database units squared. This validates these rectilinear overlap cases, not split tiles, fringe weighting, ground placement or distributed wire R. See `selected_magic_overlap_support_controls.json`.
