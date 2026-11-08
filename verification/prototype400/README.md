@@ -41,8 +41,10 @@ exact bytes. Five source/geometry/cache rejection tests pass. The digital
 controller is actual selected RTL; analog frequency, detector and clock-timing
 models remain separate unqualified diagnostic inputs.
 
-The current numerical work measures the coarse23 lower fine endpoint,
-replays measured programming-input ripple, and
+The [completed coarse23/fine8 point](static_coarse23_fine8_DCO_1545/assessment.json)
+measures376.003 MHz; together with fine149 at404.097 MHz it brackets400 MHz
+inside the unqualified fast subsystem. This is not a full-layout bracket.
+The current numerical work replays measured programming-input ripple and
 continues the existing full-layout references and boundary replay. Their results
 must be completed and hash-verified before selecting a calibration or correcting
 a model. The full-reference and reduced-model routes are both retained; the
@@ -2233,3 +2235,13 @@ geometry, changed build inputs/tools, incomplete caches and changed image
 fingerprints. This verifies identity guards for the existing actual-RTL harness;
 it does not introduce a new functional proof or qualify analog models, timing,
 closed-loop behavior or release readiness.
+
+Coarse23/fine8 static point1545 completed normally in1,164.511 s (19.41 min),
+with all302 native tuning leaves matching, all saved values finite and verified
+input/artifact hashes. Its20–60 ns frequency is376.002510237 MHz. Together
+with completed fine149 point1541 at404.096788446 MHz, it establishes an
+exploratory fast-subsystem bracket for400 MHz at coarse23. Intermediate codes
+remain unmeasured, and there is no fitted accuracy bound or qualified full-layout
+bracket. This permits an interpolated target-code hypothesis followed by a new
+independent native measurement, without extrapolation or transferring the
+coarse20 model discrepancy as a calibration correction.
