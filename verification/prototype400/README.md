@@ -2304,3 +2304,15 @@ edge/ideal-lock tests and22 inherited strict-boundary/guard/control tests pass.
 Completed KI4/KP0 trace1550 is rechecked as1552, with40 of42 windows now flagged;
 its acceptance remains false. New loop assessment v3 and runner v11 use v5 while
 all historical hashed scripts, traces and requirements remain unchanged.
+
+Prospective TT-only gain screen1553 waits for completed measured coarse23/fine128
+point1549, then uses all three measured fast points8/128/149 and actual selected
+RTL through runner v11. It tests the prescribed KI4/KP0 first, followed by the
+remaining pairs in the25-pair grid in the declared order, across three scenarios and four
+reference phases. Each gain stops at its first failed or unsupported case; missing
+model support remains unresolved. A provisional TT diagnostic candidate requires
+all12 cases and every lower gain resolved as a diagnostic failure. It is never a
+release gain selection or an all-corner result. Two scheduling tests pass.
+The one-shot supervisor has a24 h seed-observation cap,30 min screen cap, at
+most300 cases, one CPU30/2 GiB case at a time, and no identical retry. Sources,
+active requirements and all planned model inputs are pinned before waiting.

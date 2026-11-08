@@ -1,0 +1,141 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_fast_RTL_gain_screen.py": "e280ccc0c8c29b62c5ed22bafc092c31e9b0d383c2ace2e60cf74b8ea4ea5ae4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/requirements_v3.json": "a09e26d592a2b09e7945df293422f5e9ed60483b9086813467128d035165b5da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_target_plan_1548/plan.json": "e3addf9b55cb5d50c15d4c4b4439237c5fda72ef314fc1fa5b2ac3d88d0fecb3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_target_DCO_1549/inputs.json": "07e13c56d54534d8b4cddc1a30d1c0890f8f769cced6acacd40f6f9f1b3a857d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_root_publication_detector_407/detector.v": "551813fd1256418ea66071fea72541ef42cfa03e8ef8b407af633068fa2a5af0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_clock_phase_observations_187.json": "3449710334ff80a17b1d365c0c4edf69d869284adc8c38276244f6c394f9d7f8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_nominal_RTL_build_cache_778/assessment.json": "109352da2ad3667bdfa739ed4388458ee60f3f50864e38b1a8bd7b75f69a12a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_mixed_signal_v11.py": "661d605912e9f69a5b2742e8107092b6a49ceb19a80d76ca140509648ac412b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_static_DCO_point.py": "db88c03544e2d1a4dabe2ac7ab4f0a228c23528a07b78be0bca8b968fef1db2f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_loop_assessment_v3.py": "86c265c36b8892ba8f338ca32d108acd40e1058436dc04258fb02ae4a188f530",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/acceptance_v5.py": "206e8eccae1e07a21b3dd8bff79c22537268c2a744be6caf0639773a015904f8"
+  },
+  "scope": "TT27C1.8V actual-RTL diagnostics with unqualified static DCO/detector/timing models",
+  "coarse": 23,
+  "seed": 128,
+  "gain_order": [
+    [
+      4,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      16,
+      0
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      16,
+      4
+    ],
+    [
+      16,
+      8
+    ]
+  ],
+  "scenarios": [
+    "cold_start",
+    "disable_reenable",
+    "reset_during_tracking"
+  ],
+  "phases_ns": [
+    0,
+    10,
+    20,
+    30
+  ],
+  "maximum_cases": 300,
+  "one_case_at_a_time": true,
+  "CPU": 30,
+  "memory_GiB": 2,
+  "observation_cap_s": 86400,
+  "screen_cap_s": 1800,
+  "automatic_identical_retry": false,
+  "lower_gain_unresolved_blocks_candidate": true,
+  "release_gain_selection": false,
+  "release_ready": false
+}
