@@ -1778,3 +1778,22 @@ clock-edge proximity, recovery/removal, real reset waveform timing and routed
 qualification remain open. CPU17 / 4 GiB shared leases, 2 ps step and one-hour
 native limit per corner are unchanged, with no identical retry. TT native is
 confirmed live, and the actual deck holds CLK at 1.8 V after 4.1 ns.
+
+Adaptive central experiment1512 verifies the completed corrected-backend
+coarse19 and coarse20 fine149 / 50 ps captures and all 604 physical controls
+for each. Their decks are identical after changing only six coarse-source
+values and output paths. The measured centers are 362.529421912 MHz at coarse19
+and 372.921866488 MHz at coarse20: the measured direction is toward higher
+frequency as coarse increases. One additional central experiment at coarse23 /
+fine149 is predeclared to seek a useful region nearer 400 MHz. This is selection
+of an experiment location, not extrapolated calibration, an inferred frequency,
+a target bracket or a selected band. Existing band19 endpoint/holdout captures
+continue unchanged and their results remain required evidence for that campaign.
+
+The new case uses CPU18 / 16 GiB, 50 ps maximum step and 260 ns, followed by
+all 604 physical endpoint checks in distinct outputs1513/1514. One native case
+is allowed, no identical retry, with a 24-hour cap and unchanged global CPU/RAM
+admission. The coordinator is live and has verified its prior captures; the
+new capture must wait if global memory is unavailable. Three guards reject
+wrong backend/code, incomplete physical checks and electrical deck changes
+beyond the permitted coarse sources and output paths. No release gate closes.
