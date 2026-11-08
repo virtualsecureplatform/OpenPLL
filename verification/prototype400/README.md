@@ -1572,3 +1572,21 @@ controls. The 50 ps frequency is 373.860224790 MHz, -577.038214 ppm relative to
 than isolated solver time. The comparison has no finer-step convergence result
 and does not qualify numerical accuracy. The 5 ps control continues separately.
 Completed inputs and artifacts were rehashed before retaining these receipts.
+
+
+Comparison 1491 reuses the completed, hash-verified 10/50 ps output arrays from
+1280 and the completed old-backend reduced replays; no native simulation or live
+RAW analysis is added. Against full 10 ps, replay 1403 is +497.949344 ppm with
+maximum final-window paired-edge differences 31.598173 ps rising/31.435749 ps
+falling. Expanded-receiver replay 1427 is +494.978769 ppm, 30.678072/30.320361 ps.
+The corresponding comparisons against full 50 ps and the full 50-vs-10 ratio are
+recomputed, and exact multiplicative frequency-ratio accounting is checked.
+
+The replay forcing histories still come from the 50 ps full capture, not the
+10 ps reference. These ratios are not independent additive error bounds, and
+equal edge counts are not a cycle-slip proof. A single old-backend operating
+point below 1,000 ppm does not qualify an interpolation error bound, the corrected
+backend, changed-controller prediction, or full closed-loop operation. The 5 ps
+control and corrected-backend 10 ps references retain their original tasks and
+criteria. This result narrows the observed discrepancy without weakening any
+release acceptance gate.
