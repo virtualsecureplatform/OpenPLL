@@ -1360,3 +1360,23 @@ physical clock/data repair was necessarily required is superseded by
 this scope distinction. Full lifecycle timing and model qualification
 remain release blockers; the existing phase proof must be used within
 its actual assumptions.
+
+### Completed expanded-receiver loading comparison1427/1436
+
+The expanded old-backend50ps/260ns receiver replay completes normally
+with all saved values finite and matching physical programming controls.
+Native GNU-time elapsed6229s versus6109s first-clamped; peak RSS1452684
+versus1448788KiB. Final frequency374.261240702MHz versus374.262351923MHz
+changes by-2.969097ppm. Maximum absolute final rising/falling differences
+are1.671104/1.465435ps. Both have29 post-reset rising and falling edges,
+which alone does not establish absence of slips. The adaptive grids
+differ (30170 versus30154 samples).
+
+The expanded replay remains1072.635935ppm above full50ps reference1278,
+so removing the first receiver clamp does not account for most of that
+discrepancy in this same-code experiment. Full10ps references and numerical
+convergence checks remain required; no attribution to timestep alone is
+proved. The next receiver output and sampled capacitor environment remain
+prescribed. This is neither changed-controller prediction nor corrected-
+backend model qualification. No additional same-code receiver expansion
+is automatically queued from this completed comparison.
