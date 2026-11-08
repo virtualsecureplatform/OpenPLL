@@ -1,0 +1,149 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_current_primitive_AC_1290/assessment.json": "522f13e5b896d8c3c4744c3e20a6451effb5a7bc942bf6c5aaf7049e46072072",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ngspice_AC_grid_probe_1289/control.spice": "bc9e6cee0e6ca11f9f8f6395c4495514edb37f68d68e4c121f9063bd1a4d1d22",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ngspice_AC_grid_probe_1289/native.log": "9b76839de2f731da68550762e727052eec917dac0ea1b37b325f540a7afd4319",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ngspice_AC_grid_probe_1289/lin2.tsv": "da0a0c668830d07b081ebbf9a2af24260811096ab4b0db67f2237db7d612db0e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ngspice_AC_grid_probe_1289/lin3.tsv": "198a2cbc863836007e63b5f04ba7e8e16a717c3584064b5d0d84fbd73d96b256",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ngspice_AC_grid_probe_1289/single.tsv": "fde5766fdf323bbe27fe1fb8a7324a74df7f55b2bcc7fb1a591201696f228c6c"
+  },
+  "results": [
+    {
+      "corner": "tt",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 1.0814008156242377e-06,
+      "maximum_reactive_difference_equivalent_fF": 2.404572539386245e-07
+    },
+    {
+      "corner": "tt",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 0.10942233707768077,
+      "maximum_reactive_difference_equivalent_fF": 0.051501977465742414
+    },
+    {
+      "corner": "ff",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 8.838158425859435e-07,
+      "maximum_reactive_difference_equivalent_fF": 2.2777774555238787e-07
+    },
+    {
+      "corner": "ff",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 0.10572737131437512,
+      "maximum_reactive_difference_equivalent_fF": 0.04650092332840116
+    },
+    {
+      "corner": "ss",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 1.3746220701152771e-06,
+      "maximum_reactive_difference_equivalent_fF": 2.418824065169077e-07
+    },
+    {
+      "corner": "ss",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 0.1101799047247058,
+      "maximum_reactive_difference_equivalent_fF": 0.05538298852813119
+    },
+    {
+      "corner": "sf",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 1.4671441533359592e-06,
+      "maximum_reactive_difference_equivalent_fF": 2.2047184888500982e-07
+    },
+    {
+      "corner": "sf",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 0.10310373160977283,
+      "maximum_reactive_difference_equivalent_fF": 0.04405175429835312
+    },
+    {
+      "corner": "fs",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 8.349066614548773e-07,
+      "maximum_reactive_difference_equivalent_fF": 2.3508752203661523e-07
+    },
+    {
+      "corner": "fs",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 0.11059318832402955,
+      "maximum_reactive_difference_equivalent_fF": 0.05670767908398728
+    }
+  ],
+  "observations": 17160,
+  "worst_observations": {
+    "complex_current_relative_error": {
+      "corner": "fs",
+      "excited_terminal": "drain",
+      "geometry": 125,
+      "observed_terminal": "drain",
+      "frequency_Hz": 400000000.0,
+      "reference_real_A": -1.2622662737131678e-07,
+      "reference_imag_A": -1.0610623417454758e-06,
+      "candidate_real_A": -1.2621967833672228e-07,
+      "candidate_imag_A": -9.428886450902371e-07,
+      "complex_current_relative_error": 0.11059318832402955,
+      "reactive_current_difference_equivalent_F": 4.701981991530855e-17,
+      "geometry_parameters": {
+        "kind": "MOS",
+        "model": "sky130_fd_pr__nfet_01v8",
+        "parameters": [
+          "ad=0.143",
+          "pd=1.62",
+          "as=0",
+          "ps=0",
+          "w=0.55",
+          "l=1.97"
+        ]
+      }
+    },
+    "reactive_current_difference_equivalent_F": {
+      "corner": "fs",
+      "excited_terminal": "drain",
+      "geometry": 276,
+      "observed_terminal": "drain",
+      "frequency_Hz": 25000000.0,
+      "reference_real_A": -2.055785303283782e-06,
+      "reference_imag_A": -5.6501294862715536e-08,
+      "candidate_real_A": -2.0557852391224905e-06,
+      "candidate_imag_A": -4.7593673462096436e-08,
+      "complex_current_relative_error": 0.0043313175769669355,
+      "reactive_current_difference_equivalent_F": 5.670767908398728e-17,
+      "geometry_parameters": {
+        "kind": "MOS",
+        "model": "sky130_fd_pr__nfet_01v8",
+        "parameters": [
+          "ad=0.08775",
+          "pd=0.92",
+          "as=0.08775",
+          "ps=0.92",
+          "w=0.65",
+          "l=0.15"
+        ]
+      }
+    }
+  },
+  "scope": "All 429 current MOS geometries, five corners, gate and drain separate 1 V AC excitations, 0.9 V gate/drain DC, 25/400 MHz, 27 C",
+  "frequency_grid_control": {
+    "ngspice_two_point_linear_grid_observed_rows": 1,
+    "ngspice_three_point_linear_grid_observed_rows": 3,
+    "ngspice_single_frequency_control_rows": 1,
+    "comparison_uses_verified_25_and_400_MHz_endpoints": true,
+    "reused_completed_TT_gate_Xyce": true,
+    "new_native_cases": 19
+  },
+  "full_bias_range_covered": false,
+  "small_signal_model_qualified": false,
+  "transient_qualified": false,
+  "full_PLL_model_qualified": false,
+  "release_ready": false
+}
