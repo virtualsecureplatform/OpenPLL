@@ -1825,3 +1825,16 @@ domain, incomplete physical checks, wrong/unfinished backend and missing or
 nonfinite frequency. The coordinator is confirmed waiting, with no endpoint
 or holdout output created. No band, numerical accuracy, other-corner model or
 closed-loop prediction is qualified by this launch.
+
+Corrected-BSIM full 10 ps reference1295 now completed normally. All saved
+native values are finite and the requested coarse20/fine149 code is stationary
+without ambiguous top-level code voltages. The final 200–260 ns window measures
+373.148216755 MHz over 23 rising edges, with periods 2.679179275–2.680687523 ns.
+Controller elapsed time through capture validation is 54,584.14 s; that includes
+postprocessing and is not isolated solver time. Actual input and artifact hashes
+were independently reverified before retaining the completed receipt. The
+604-endpoint physical assessment1296 is now extracting from this completed
+capture; it is not yet reported as passed. Corrected timestep comparison1343
+and reduced replay1466 remain gated on those physical checks. No distributed-R,
+transient correlation, other-corner model or closed-loop qualification follows
+from this single static-code TT C-only capture.
