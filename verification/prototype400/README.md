@@ -1687,3 +1687,14 @@ one-hour native limit per corner, with no identical retry. An earlier preflight
 1503 stopped before native execution because the older assembly lacked dfstp_2.
 No minimum pulse bound, actual routed slew/load envelope, recovery/removal or
 physical lifecycle qualification is inferred from this diagnostic grid.
+
+Routed reset fixture envelope 1505 queries all 481 reset inputs and all 481
+corresponding Q outputs at each of five conditional native corner views of
+original macro019. The largest modeled 20–80% reset slew is 0.840960860252 ns
+at SF (SS: 0.816714942455 ns); every corner has samples above the initial
+grid's 0.24 ns upper slew. There are no zero-slew observations and no modeled
+Q-net load exceeding its declared fixture load. The smallest load margin is
+52.736230195 fF, at a dfstp_1 Q output. These are conditional STA measurements,
+not bounds on real reset waveforms or regenerated-fill loading. Discrete pulse
+observations cannot provide a continuous envelope by themselves. The completed
+receipt and runner retain the mismatch rather than qualifying the initial grid.

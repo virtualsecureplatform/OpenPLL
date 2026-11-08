@@ -1,0 +1,171 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/plan.json": "08218cbb8effe982a44c27310f3f23f1e721b45320aa0b401aba61bcef2b59fb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_keeper_reset_fixture_envelope.py": "a8013e1dcadf098646f13e21b39542ee9708026f0a2c249bdd609320a615f756",
+    "/nix/store/qqz49dx8dpx4q9i5wriif091n7iaa0ld-openroad-2026-02-17/bin/openroad": "b1daf182a2702687868c777a722924afeb45f85fc125029357b28a5f73ba8860",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/inventory_selected_pin_electrical_coverage_v2.py": "03ea6d99a7a647bd1e5e3e41a50239e8b7b02cb2a057665644049a83406adecc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/report_selected_electrical_margins_v2.py": "80d42dd07e64900f6a4f77d02e8800fd3b6ceb73b5c898a525608d0b636c9548",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_observed_reset_load_liberty_001/tt_late.lib": "ba9bb2174360df1d8482cd35d97256440fcf868639c3276419982a0c1c092847",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_observed_reset_load_liberty_001/tt_early.lib": "5ba6dabffa9ba49c8f9fab6565a1d7a2084f1385391f9361e7169e23e122aec8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/route.odb": "2d4a8372441b8f0c1ae18cd450e7295b98e1828fa4b0cbdff6ed207aa99060ed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_tt_019/enabled_phase.sdc": "bc08a1ba741ebcf19883e2e41055d5aadd05be22bb01e333e9ec315283af0f65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_tt_019/fixed_divide16/route.min.normalized.spef": "c7fc129e9f522f0c4f09eeb85153cd4e736ef4971032f1077c248a0f5bc985f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_tt_019/fixed_divide16/route.max.normalized.spef": "97e510f7e9cfd3b99343a8a6f9c445a0aedcab8c55a292ffb4b24a476f0aa694",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_tt_019/assessment.json": "f9b00f7197210e56f38d4dc6e1dbe4ac8d38a8445d697cf9ab301a7bd66a9bdb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_tt_019/screen.tcl": "85367fd3d0bf14af3f9e8544d3794f41d4cba4f3bfda480b5cc551d25764b493",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/tt/query.tcl": "987dc73d32bb427403fd807290430e4616607996d32cbebdae2feddd6dbbcccf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_observed_reset_load_liberty_001/ff_late.lib": "1de188ba0661fd924fd2f31d2d700e370bd96f1c2d9f90a80c94ddbc772b573a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_observed_reset_load_liberty_001/ff_early.lib": "4ef50bfc02c67da47c4b33935fe4e530c61fce73b7126c6601371e39c62b8e73",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_ff_019/enabled_phase.sdc": "bc08a1ba741ebcf19883e2e41055d5aadd05be22bb01e333e9ec315283af0f65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ff_019/fixed_divide16/route.min.normalized.spef": "c7fc129e9f522f0c4f09eeb85153cd4e736ef4971032f1077c248a0f5bc985f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ff_019/fixed_divide16/route.max.normalized.spef": "97e510f7e9cfd3b99343a8a6f9c445a0aedcab8c55a292ffb4b24a476f0aa694",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_ff_019/assessment.json": "443444179c21e6cdbaab0ed94b1d77d417507819a37350e647b455855b81169c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_ff_019/screen.tcl": "16150a3dda21300c8b643fbe48dccbf09bda7c26ca9ba59e8d8815f5a1708850",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/ff/query.tcl": "13dd5bcb5a264c005b0e3d38f972332f18892ecdf16dd89f6d3156087f4bbea7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_observed_reset_load_liberty_001/ss_late.lib": "af32f3aee1b409d0f809a5e713b2cf8623b1e34b45d2be6cfe8fa2f10e900273",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_observed_reset_load_liberty_001/ss_early.lib": "3fd2c9607c742a1aeed41aa2101223c42e49a5f18bc3d6a5bcc3164aa662faf6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_ss_019/enabled_phase.sdc": "bc08a1ba741ebcf19883e2e41055d5aadd05be22bb01e333e9ec315283af0f65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ss_019/fixed_divide16/route.min.normalized.spef": "c7fc129e9f522f0c4f09eeb85153cd4e736ef4971032f1077c248a0f5bc985f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ss_019/fixed_divide16/route.max.normalized.spef": "97e510f7e9cfd3b99343a8a6f9c445a0aedcab8c55a292ffb4b24a476f0aa694",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_ss_019/assessment.json": "b2ab7fc5c28ef5ddea11632446933508e970ff972f3d8c98be8c05a8963d28d2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_ss_019/screen.tcl": "5616181f8482e07a700f7266508f8533347765adf54653ae1f65be21b4a2fdfd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/ss/query.tcl": "968eb015fcbf63c35d783658b5caab94552eb1f80c9bfb7979cf506354674159",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_observed_reset_load_liberty_001/sf_late.lib": "b680d7bca5c959b0a232089d31718b7e4dcd6d26dd05d839b126bcab7333ba76",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_observed_reset_load_liberty_001/sf_early.lib": "e333e00cf4425cc86eb3873780520bd667aaaddf2e4f0f13149f8a0167ccd68d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_sf_019/enabled_phase.sdc": "bc08a1ba741ebcf19883e2e41055d5aadd05be22bb01e333e9ec315283af0f65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_sf_019/fixed_divide16/route.min.normalized.spef": "c7fc129e9f522f0c4f09eeb85153cd4e736ef4971032f1077c248a0f5bc985f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_sf_019/fixed_divide16/route.max.normalized.spef": "97e510f7e9cfd3b99343a8a6f9c445a0aedcab8c55a292ffb4b24a476f0aa694",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_sf_019/assessment.json": "529093e91926585c0cdff9b2d880acd5b102be95fd587aca7335f09fa60c2656",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_sf_019/screen.tcl": "178184c9432e3e03a04ccab4ed8d0cbe2ab0bb6645ad28885501afd8733a9706",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/sf/query.tcl": "48e569187e5901dccdf420c9d724b01cab95867b6425dd6ed4e93dab62d5636a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_observed_reset_load_liberty_001/fs_late.lib": "f2ceda803be63f603c1d42510d763eb5c7f8760cc471e16c561dfb24b096c349",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_observed_reset_load_liberty_001/fs_early.lib": "88af30ba6aede744acb584060acaf40224f5bcfa0fd3d4d296ba02d685c847aa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_fs_019/enabled_phase.sdc": "bc08a1ba741ebcf19883e2e41055d5aadd05be22bb01e333e9ec315283af0f65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_fs_019/fixed_divide16/route.min.normalized.spef": "c7fc129e9f522f0c4f09eeb85153cd4e736ef4971032f1077c248a0f5bc985f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_fs_019/fixed_divide16/route.max.normalized.spef": "97e510f7e9cfd3b99343a8a6f9c445a0aedcab8c55a292ffb4b24a476f0aa694",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_fs_019/assessment.json": "32f9fb99fb3571e6070c6d8a8cb78ca8ee17f8e6232de44de6d2627697dd262b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_fs_019/screen.tcl": "54ca15b9ad6bdeb624354a6c66502b92725344c732d2ce856472b7c4a4d6ed18",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/fs/query.tcl": "5f101acae9dc7e080bf26bd4c036d16215fc16d1d9790645af05efb5d1610580"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/tt/pins.tsv": "97bd0219d1a866a738867cd5a4727e09c7e5e3d89c28fd72cae9ec23cc24293b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/tt/native.log": "260b6a86c9becdc96a2b578c24c427a6faa65b9f83d65493464df80406d04bb3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/tt/sequential_pins.json": "03addcb2fc5ada06ed152f5e0fff4451a875ad25a054a135b5b6ce66a6a85166",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/ff/pins.tsv": "98d92dc263b6118ee28f4e05b6f45a11afa3e0ce318d4d9f67dd2b37798fd7a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/ff/native.log": "74c321dc984c8acd67f43a6c2e122f21461b9d50e44bb0a9de8db788a1326b04",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/ff/sequential_pins.json": "12de21839c16b82465fc6810d2cb1686380209e508b76372ae69c12fcd9966e8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/ss/pins.tsv": "b88c12bf99761b1b625dddcc4459e3b120c8a7ab91f0d20baaad56d601a82e99",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/ss/native.log": "265a396862f60cf72c1163b96b026bb6ba23481b44e7811a3d7ddd8695ee541a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/ss/sequential_pins.json": "9a51e7c3e9634a4f2fe3663cc8f5eb382607cd1ab867ef7d0346ef1466e99c2e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/sf/pins.tsv": "25f63274b8c96f2336e1a08e407c0c934577103484039b0cc494fffe96a14577",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/sf/native.log": "c9196172aea7266c0e25d53f0c874957eb38d7c563bf8c081d0874e9b4137d21",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/sf/sequential_pins.json": "892a8ca0daf74f388908109f9c46b52669b0dc72257fab4e7f22c42bb1352ea2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/fs/pins.tsv": "ad5351adcfb88e0ebf6429cc1177b65d45c763d89ab03d298eb1c75bc6a18fc1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/fs/native.log": "c91d4f4437b47c7932dd26e64ce540d8b49dff48418aad8cda5a0b3b641ce6b9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_fixture_envelope_1505/fs/sequential_pins.json": "9cc6a1b800b6c7599f1cab40bc8d56fd723662b8960e6a6b79dd0b2bcf67fbbc"
+  },
+  "corners": {
+    "tt": {
+      "reset_pins": 481,
+      "Q_pins": 481,
+      "reset_slew_range_ns": [
+        0.027130873874,
+        0.59533405304
+      ],
+      "zero_slew_values": 0,
+      "slew_values_outside_grid": 1203,
+      "load_exceedances": 0,
+      "worst_Q_load_margin": {
+        "pin": "$auto$ff.cc:337:slice$18748/Q",
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "modeled_load_fF": 72.26376980500001,
+        "fixture_load_fF": 125,
+        "margin_fF": 52.73623019499999
+      }
+    },
+    "ff": {
+      "reset_pins": 481,
+      "Q_pins": 481,
+      "reset_slew_range_ns": [
+        0.027435712516,
+        0.478088974953
+      ],
+      "zero_slew_values": 0,
+      "slew_values_outside_grid": 836,
+      "load_exceedances": 0,
+      "worst_Q_load_margin": {
+        "pin": "$auto$ff.cc:337:slice$18748/Q",
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "modeled_load_fF": 72.26376980500001,
+        "fixture_load_fF": 125,
+        "margin_fF": 52.73623019499999
+      }
+    },
+    "ss": {
+      "reset_pins": 481,
+      "Q_pins": 481,
+      "reset_slew_range_ns": [
+        0.026789555326,
+        0.816714942455
+      ],
+      "zero_slew_values": 0,
+      "slew_values_outside_grid": 1430,
+      "load_exceedances": 0,
+      "worst_Q_load_margin": {
+        "pin": "$auto$ff.cc:337:slice$18748/Q",
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "modeled_load_fF": 72.26376980500001,
+        "fixture_load_fF": 125,
+        "margin_fF": 52.73623019499999
+      }
+    },
+    "sf": {
+      "reset_pins": 481,
+      "Q_pins": 481,
+      "reset_slew_range_ns": [
+        0.027071215212,
+        0.840960860252
+      ],
+      "zero_slew_values": 0,
+      "slew_values_outside_grid": 1130,
+      "load_exceedances": 0,
+      "worst_Q_load_margin": {
+        "pin": "$auto$ff.cc:337:slice$18748/Q",
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "modeled_load_fF": 72.26376980500001,
+        "fixture_load_fF": 125,
+        "margin_fF": 52.73623019499999
+      }
+    },
+    "fs": {
+      "reset_pins": 481,
+      "Q_pins": 481,
+      "reset_slew_range_ns": [
+        0.027068054304,
+        0.565678715706
+      ],
+      "zero_slew_values": 0,
+      "slew_values_outside_grid": 1122,
+      "load_exceedances": 0,
+      "worst_Q_load_margin": {
+        "pin": "$auto$ff.cc:337:slice$18748/Q",
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "modeled_load_fF": 72.26376980500001,
+        "fixture_load_fF": 125,
+        "margin_fF": 52.73623019499999
+      }
+    }
+  },
+  "fixture_slew_range_20_to_80_ns": [
+    0.012,
+    0.24
+  ],
+  "actual_routed_geometry": "original_macro_019",
+  "periodic_screening_constraints_only": true,
+  "sampled_cell_views_only": true,
+  "discrete_grid_is_not_continuous_bound": true,
+  "actual_reset_slew_and_load_envelope_qualified": false,
+  "external_reset_waveform_qualified": false,
+  "physical_reset_timing_qualified": false,
+  "release_ready": false
+}
