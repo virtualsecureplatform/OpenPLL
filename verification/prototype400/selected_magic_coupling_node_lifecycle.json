@@ -1,0 +1,91 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/minimal.magicrc": "df1bd269caadef1478b7b8d09e570099f213d9683dec975c735dfa4982e4e3cf",
+    "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_coupling_node_lifecycle.py": "298301d2a59abfaa63b7b2b832dcb702a97e69d6fc8cb3c92445c5ffedc4bcd8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/reference/Fixture.ext": "b869adc20bd6b423264a74371b718535480b254851b15d3887db10fe22f947d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/reference/Fixture.res.ext": "1abdec08dffaac3306279287cb782dc39c25c5f96a4a0279b7208826af07ab63",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/reference/export.tcl": "b63d8d38b936435cda67434a1d7953acfca90033649ec4dfb269b29adfd79de8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/retained/Fixture.ext": "b869adc20bd6b423264a74371b718535480b254851b15d3887db10fe22f947d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/retained/Fixture.res.ext": "77e556f493c0b39a05220c1db6c0bdc96904e855bd9e0c9e6a1c44eb906d0ac8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/retained/export.tcl": "f3ae00de5c4c2c8d840787fdb2998901f30dc7ca0ce1ccfa150153753acf568b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/killed/Fixture.ext": "b869adc20bd6b423264a74371b718535480b254851b15d3887db10fe22f947d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/killed/Fixture.res.ext": "123522d8b68f7b6a5ef5edcb948880d6c8c6a8a975fd7c8bb1175465ca195c11",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/killed/export.tcl": "654061f39f58e6d11f2e3561c246ddf061ec3d0bcc2ca5c9597d007bfd92b771",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/retained_without_extra/Fixture.ext": "b869adc20bd6b423264a74371b718535480b254851b15d3887db10fe22f947d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/retained_without_extra/Fixture.res.ext": "1108ea429077fba7f6ce98fdf5758ec5867e03c91e4873b870755a76da76ac60",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/retained_without_extra/export.tcl": "b3d95e3fd7006e3ddc28e78e0d2e33e0477e528fc7a943fa5785014bfabddeab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/killed_without_extra/Fixture.ext": "b869adc20bd6b423264a74371b718535480b254851b15d3887db10fe22f947d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/killed_without_extra/Fixture.res.ext": "b62f85998d2b4fa62084f6317c78e2448e9ccb15abcdb0cb129f78fe92e98515",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/killed_without_extra/export.tcl": "1a5d9aa0f911b635b0adae1f17387a9d53f8ed55eb4c570dc5fca422871b8d41"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/reference/export.spice": "1ed1a205a7477ba507816a5c7a587739fb1d1509acced311681e2858f8ed2258",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/reference/native.log": "b88fc8daada679d9a177aaea16efb5e755b2258edd83ac815428134a1a9e6318",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/retained/export.spice": "01337dcdfd960ae13094cb42da552742d4a0fd88e08c490c16330cfaf230e1a1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/retained/native.log": "2dbd2f45b9c4b654e329bdee503e162576baeaa7bb3759e9bd094ee44e65feb1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/killed/export.spice": "5ad0d201b4603283c1034c4d715e46b9dd44b32495e0dbb4c83a51dbaebb42b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/killed/native.log": "f5ad97268a6656dbad0822329ef8785c079c4e418255001c7f8a5b36de5da1b5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/retained_without_extra/export.spice": "4fd624f4db7f8b262ce73893a37ae97bb9bfc3417536b9c33800f86628eebfe3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/retained_without_extra/native.log": "203a82a6a0283c4010911148d0c664496d38ab9e2f8afbcc1a69f4cba4f2e738",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/killed_without_extra/export.spice": "53c97c2c7ec4be17e533f05c091faefad935ef9d86bedc20999246d209d7e57d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_node_lifecycle_1277/killed_without_extra/native.log": "4d06e47d0f1bc0787f75b5b6d46634b808f9efcd97e58d6368f9476a739922a7"
+  },
+  "normal_native_completion": true,
+  "results": [
+    {
+      "case": "reference",
+      "manual_resistance_patch": true,
+      "capacitors_fF": {
+        "a,b": 3.0,
+        "0,b": 1.0,
+        "0,a": 2.0
+      },
+      "R_cards": 0
+    },
+    {
+      "case": "retained",
+      "manual_resistance_patch": true,
+      "capacitors_fF": {
+        "a,b": 3.0,
+        "0,b": 1.0,
+        "0,a": 5.0
+      },
+      "R_cards": 1
+    },
+    {
+      "case": "killed",
+      "manual_resistance_patch": true,
+      "capacitors_fF": {
+        "0,b": 1.0,
+        "0,a": 3.0
+      },
+      "R_cards": 1
+    },
+    {
+      "case": "retained_without_extra",
+      "manual_resistance_patch": true,
+      "capacitors_fF": {
+        "a,b": 3.0,
+        "0,b": 1.0,
+        "0,a": 2.0
+      },
+      "R_cards": 1
+    },
+    {
+      "case": "killed_without_extra",
+      "manual_resistance_patch": true,
+      "capacitors_fF": {
+        "0,b": 1.0,
+        "0,a": 0.0
+      },
+      "R_cards": 1
+    }
+  ],
+  "scope": "Hand-authored native file-format controls only; node-name contraction is prescribed by the fixture",
+  "geometry_extraction_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}
