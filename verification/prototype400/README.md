@@ -912,3 +912,13 @@ A live CPU-25/2-GiB job verifies completed corrected capture 1341 and physical c
 ### Local native outputs prepared for reduced replay
 
 A versioned reduced-replay runner keeps native RAW, stdout/stderr and GNU time output on local scratch with an initial 1 GiB free-space check. It pins the chosen output paths, runs the same guarded model/source/backend case, then retains all three closed outputs through the independently tested hash-verifying retention helper before waveform analysis. Local originals and retention receipts remain available. Existing live replay and frozen producer versions are unchanged. Syntax compilation passes; native end-to-end performance/accuracy remains unmeasured and this runner is not launched before passing RC controls and completed audited sources.
+
+### Completed RC controls, unreduced replay and aggregate forcing (1380/1381/1398/1399/1407)
+
+All 24 fine-step original/weighted RC controls complete on both binaries and both capacitance/resistance scales. Their largest closed-form voltage error is 2.61258e-11 V, below the unchanged 1e-7 V fixture limit, with every source knot checked. This fixture result does not qualify the PLL reduction or its dynamic error.
+
+The completed old-backend shared-knot replay peaks at 5,013,188 KiB RSS under its 8 GiB limit and reports 374.262578 MHz versus its identical 373.860225 MHz full reference: +1,076.21 ppm. Ordinal final-window rising-edge differences reach 85.36 ps with a 63.26 ps span; falling-edge differences reach 82.75 ps. Equal edge counts do not prove absence of slips. These are measured errors, not a correlation/accuracy acceptance or corrected-backend result. Its approximately 2 h 57 min native interval includes shared-I/O and recorded scheduling effects and differs in output scope from the full capture.
+
+Completed corrected-capture early-settling analysis finds no adequate oscillation edges in windows through 160 ns. Physical controls match at every saved sample only from 109.083776 ns; the 140–200 ns frequency differs from the final window by -738.11 ppm. This evidence does not support simply shortening reference captures.
+
+Aggregate forcing generation 1399 completes exact per-sample roundoff auditing; the largest source-voltage discrepancy is `35207/124979393259158634496` V (about 2.82e-16 V). New pipeline 1405 stages sources 1402, runs local-output native replay 1403 and will compare completed reduced/unreduced outputs in 1404. The actual Xyce PID/birth, old executable path, CPU 25 affinity and 8 GiB address-space limit are verified live in observation 1408. Native reduction equivalence, speedup and release qualification remain pending. New pipeline sources and completed/launch receipts are retained alongside these results.

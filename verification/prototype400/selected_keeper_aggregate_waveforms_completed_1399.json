@@ -1,0 +1,29 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/waveforms/assessment.json": "dfcdcabfa65c6f79524a36fa72cfa46c5379a376e8224486e3bb650322f8d6a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/waveforms/boundary.npy": "cd6d3697a86a61d06df1ba269c7162d85ae13e5f6cd6977da44adc08207414ab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/waveforms/columns.json": "62fc6db6396eb4336a4fc47bbf8062542617d5478f50c8e88339dbafbb1d88f3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383/assessment.json": "c89dcdc6f3a6134c7f905248353e94b68e4bb41d8587d93e1b924210afb7a0d4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383/bindings.json": "6223298dc85cd465edcf402fcd012f34dc37745b266887863861923ada822c0b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383/charge_certificate.json": "d3cbd2f72e4e6096c72d912bfb7422d6675848638f60ac25224f3f1fb1814546",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/assessment.json": "5b23bf9d1ce05e370d62fdeac7b4cb0f9236c8477e3205d7b648af68a48de92c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/generate_keeper_aggregate_waveforms.py": "9bc34715f753e0b518d396d5eef1384054cbe646da85c1bb40c3eeaee6379c08",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/aggregate_keeper_boundary_waveforms.py": "3933864211d4ed30aa13bdb45504cc58ee65e693b2ead1de688c0be32e822114"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_waveforms_1399/boundary.npy": "847b96e2d5f44a22226078a036e6810f08cc604ffa964f9b278e65278897e4b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_waveforms_1399/columns.json": "30e3d536e30ad9016a57eb03f93292abe8057b5427d9447659a49375c5eac22f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_waveforms_1399/roundoff_audit.json": "68163e01137c7f409fa1b2963269800d3204ebad769de628f4606d1ebaad64e2"
+  },
+  "completed_boundary_waveforms_available": true,
+  "all_saved_native_values_finite": true,
+  "PLLOUT_is_observation_only": true,
+  "all_original_time_knots_preserved": true,
+  "exact_sample_roundoff_audit_complete": true,
+  "source_reduction_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383/assessment.json",
+  "native_simulation_allowed": false,
+  "native_equivalence_verified": false,
+  "dynamic_error_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}

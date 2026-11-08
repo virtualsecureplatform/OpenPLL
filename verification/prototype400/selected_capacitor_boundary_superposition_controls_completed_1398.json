@@ -1,0 +1,321 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_capacitor_boundary_superposition_v3.py": "f7da891595614a7aad7a1342299d3ee27642faf1aae04f803aa3c8c6a82ddae3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_constant_original/test.spice": "004b3b25cdfc49869f889f5308be4c931745d465572b0231fb6f697a7adaad59",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_constant_weighted/test.spice": "9e38854f7fff62e1cb88e33b186de4cc0eef83d643f87e419a646f8f5c5694ce",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_opposed_ramps_original/test.spice": "1ca7658e1b9c246e147b6a3f5a314b8531d5e0da582a74f8e4f8774e3ea906e6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_opposed_ramps_weighted/test.spice": "c508a89b35d9c08e4d6c6333d88340093d524e818fde06872dd6ab662a7580a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_plateaus_original/test.spice": "f44ce61d90f268473f5f10e81a80c8d490ace865809ca85b523c4c57ed7334f9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_plateaus_weighted/test.spice": "329a8bb24a7b444c5b8f87384e2202f3bb670b6c1a18ba51d0560d7ed23e6776",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_constant_original/test.spice": "50eab0d4042c0f0ae8c034e9da234c86f2ccb55588dd5b7bbe1e4561c502eb86",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_constant_weighted/test.spice": "7041222257beadbbd9a34f80e0a8d641dcca8c97db00ea2993ef8e0ba28d71a3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_opposed_ramps_original/test.spice": "14166609115dfadc374bd10b2f54ea943e8305818a8e702235e479be0220106e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_opposed_ramps_weighted/test.spice": "7b8f6b744ebfc98dd2dac24174c10eb62f68cd283f80eee49edb3dcb75145f6c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_plateaus_original/test.spice": "97d4cb3992293fc0a8dbb52ff42f076337f47d693f7c0a6b801c75f919dbc536",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_plateaus_weighted/test.spice": "d6e75a404b1f8bc528eefc4f3c0751d11d5b6e20389fc11589c2c95f93bf6847",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_constant_original/test.spice": "ae44d649eadb590b64673a663b8eb3730c2135b2eb178cd84753dd87ff559214",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_constant_weighted/test.spice": "1f9d56a7ff624137c0c3e0afb23f0f8858b8e26b3348369883bd7c2233b6b7d6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_opposed_ramps_original/test.spice": "6376f3d1fbee107920c9ba4c253821cfb46756a6a881cb68fa32b20ae1550c6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_opposed_ramps_weighted/test.spice": "b9219710759dd2611e93314a001f2b42cfd09ee6df40c4fb863c310f5d64bac3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_plateaus_original/test.spice": "7f1a163b2475254f0d15210791cc7fd1a4e72d23582890a60066058dfd1d89c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_plateaus_weighted/test.spice": "2277af74cb8bf80c2089c4837876f09d4f1e55ac48cfca2666dae4fbeee7b9cf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_constant_original/test.spice": "0f189262ce789d5064ec57a547e3a7eca6633be1af786d6cf03da5a2431841aa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_constant_weighted/test.spice": "9c76b88d11010286b05cc0fc456d73141adbbbea140834e58bda0bfe5b998ed0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_opposed_ramps_original/test.spice": "9c7f9921084f269fa6d920a1e2193e8e9232d447de1b2369bc15cee581cff9ed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_opposed_ramps_weighted/test.spice": "96b1f346a4567b93f01816515d1332a1c8d1f47981f2dadd49a061afc4a491cc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_plateaus_original/test.spice": "3d04054b25a4b529eee81629d1e6588aa2f10a6f4c1b7330432eb610bfb8c2e7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_plateaus_weighted/test.spice": "98541b72ec1e62689da3fdd93fef2f0c1daab46fb753f529df21f4b769aa07f2"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_constant_original/result.csv": "21ae69a100294bf6cd61c2133788bce72a13458d927c9606677288f874ddeab8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_constant_original/native.log": "0dbef04aa89577feb864406618d278f23a823d078361f1e42dacaff70b2aa0b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_constant_weighted/result.csv": "7cfff31b54ef2a02bbc63efa3df3bed2e67132d7344b6cb649319e5705745879",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_constant_weighted/native.log": "fc2f5c2e624771008fa2ec079d3fb0fee5066c5735c2f77736ed21668a4f95ff",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_opposed_ramps_original/result.csv": "0da04c54bc452126b1b66d3dc003aa9d10e9a1210440036d470595af094e002c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_opposed_ramps_original/native.log": "ef567053e5496ee7eabfd42f47ddb5c4a647453bb52950452f6c163642e1357d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_opposed_ramps_weighted/result.csv": "8cef52f5510b7db35afea72501d067adcedcdd86266707894e0858b8677d04df",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_opposed_ramps_weighted/native.log": "18a7e32ba76237c42959d6a28184d0c3613bf8dbad80135e13a0b7550d7bb0f3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_plateaus_original/result.csv": "b0a075fdc5eeedcbfe87b4c4ac456f17b96e1645d130163f707a6f47ebbad548",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_plateaus_original/native.log": "1ce4a2245e0a4d6f1b24a015938ee41ed878551a2760fbe9394cab03f421eebe",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_plateaus_weighted/result.csv": "2ab62ed56ebad1e2586a68ce1b9251ce17c9aeb4b0972ff9b99d100484f7d827",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_pF_kohm_plateaus_weighted/native.log": "529fc12eb5536bdff521952734e70cd2eecc49456c0b031c5f08af5f07f9efb4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_constant_original/result.csv": "aca718fa2a38984415ef654547c16c58df9d6e812e06f4f72d5abdfb5aab6cc5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_constant_original/native.log": "badd589704371e7b25aa2030758a1d37ea18eebcb5fefd11818adf8767abb1cb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_constant_weighted/result.csv": "7e87d0896c39e189f329630f93b86592b497397f51c5cc58102322a68bbd0d70",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_constant_weighted/native.log": "0400a6a12bd03220858a6e3f8baf7a23f0a57031aab0bd1d14605cf8a4137467",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_opposed_ramps_original/result.csv": "e71acda52570be56b8b6dc79184fcdcd3abefdf19ea9c6e8d470f7d8d776fe1b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_opposed_ramps_original/native.log": "3c91c9f039d1f92ffc36222a5156d8271074138082c7fc78b1385b68b0b1a7c2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_opposed_ramps_weighted/result.csv": "156376a5e828b9c46e3ffbabc1cd28d3f1a2bbe87ce999a4e6b96f7a4451a382",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_opposed_ramps_weighted/native.log": "5bcee451d9ec94a94ac3ab97791de7255ba10cd254d38be8e313e3ecfa698041",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_plateaus_original/result.csv": "4ca9032317926e24b702b700c93641d1792e2f11ccb3bd6b8baaf98851b68f82",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_plateaus_original/native.log": "ad91ab89c9fb08da716c058c0e2bbbd575e5f9691e54be79a72931b3747f0bf1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_plateaus_weighted/result.csv": "7c4dc228ee3694de10071325a2782c5755c07397340bb7ec71c107b1f1f56ed7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/0_fF_Mohm_plateaus_weighted/native.log": "188fc4f1d60c54f9649d2f1aec95e8cd0669efc9e9252c4a53362483c175f991",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_constant_original/result.csv": "21ae69a100294bf6cd61c2133788bce72a13458d927c9606677288f874ddeab8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_constant_original/native.log": "421beadd26d158b1e48dd463ee703cf480a4013ab2e6bc17c08e60524cb9c6d2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_constant_weighted/result.csv": "7cfff31b54ef2a02bbc63efa3df3bed2e67132d7344b6cb649319e5705745879",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_constant_weighted/native.log": "095804912a4d360666d69f3fe2c13616fd7f906dff795d19a3a3fc9397089174",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_opposed_ramps_original/result.csv": "0da04c54bc452126b1b66d3dc003aa9d10e9a1210440036d470595af094e002c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_opposed_ramps_original/native.log": "fa7546c47960fa8f98be65a0e881107b1c71b0c271578a095aad3dc79757c75a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_opposed_ramps_weighted/result.csv": "8cef52f5510b7db35afea72501d067adcedcdd86266707894e0858b8677d04df",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_opposed_ramps_weighted/native.log": "f276659c6afd4ac7e64fad191bf3c6ca122bd12ad83b06c7d9f2a7dd52afe445",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_plateaus_original/result.csv": "b0a075fdc5eeedcbfe87b4c4ac456f17b96e1645d130163f707a6f47ebbad548",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_plateaus_original/native.log": "9f182ea29cf8847ecb9ad3ed6293c5ecb194af2d0f323318fd7532ebb16ca7a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_plateaus_weighted/result.csv": "2ab62ed56ebad1e2586a68ce1b9251ce17c9aeb4b0972ff9b99d100484f7d827",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_pF_kohm_plateaus_weighted/native.log": "ac1d365e23b1684305c7efbea712d23ec1f6824a2bf9cfe003c2b615829d556b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_constant_original/result.csv": "aca718fa2a38984415ef654547c16c58df9d6e812e06f4f72d5abdfb5aab6cc5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_constant_original/native.log": "7a2e28963514ab32c520a421b39c091018881cfcf4c4575a695901f3ffd431dc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_constant_weighted/result.csv": "7e87d0896c39e189f329630f93b86592b497397f51c5cc58102322a68bbd0d70",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_constant_weighted/native.log": "30dcc3e564bf40da7bb56494239fb193e4a8741305f2a3284424860512627ed9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_opposed_ramps_original/result.csv": "e71acda52570be56b8b6dc79184fcdcd3abefdf19ea9c6e8d470f7d8d776fe1b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_opposed_ramps_original/native.log": "4616389cfd7c47579d8d872c895a00eb24c4132b101fd1d4f9b76a7054353cd6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_opposed_ramps_weighted/result.csv": "156376a5e828b9c46e3ffbabc1cd28d3f1a2bbe87ce999a4e6b96f7a4451a382",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_opposed_ramps_weighted/native.log": "fa21c4b19b902505529bbdafdb04bb30c421c2b59ed95dcf52d3424d3e6a0331",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_plateaus_original/result.csv": "4ca9032317926e24b702b700c93641d1792e2f11ccb3bd6b8baaf98851b68f82",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_plateaus_original/native.log": "43c169f8f0831dd6ffbd5fa3c013090dcecd7072143efa4ed3ac36802abcecf4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_plateaus_weighted/result.csv": "7c4dc228ee3694de10071325a2782c5755c07397340bb7ec71c107b1f1f56ed7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/1_fF_Mohm_plateaus_weighted/native.log": "583b78c35d56738686e95d2a3fe778c55cb9097ab3028d028034c418189c21b5"
+  },
+  "results": [
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "pF_kohm",
+      "case": "constant",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.6431300764452317e-14,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 3.1086244689504383e-15,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "pF_kohm",
+      "case": "opposed_ramps",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.5341283798875338e-11,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.5346390824788614e-11,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "pF_kohm",
+      "case": "plateaus",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 2.6125324126269334e-11,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 2.6123103680220083e-11,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "fF_Mohm",
+      "case": "constant",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.6653345369377348e-15,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 3.468336728928989e-13,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "fF_Mohm",
+      "case": "opposed_ramps",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.534439242334429e-11,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.534661286939354e-11,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "scale": "fF_Mohm",
+      "case": "plateaus",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 2.6125768215479184e-11,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 2.6123547769429933e-11,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "pF_kohm",
+      "case": "constant",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.6431300764452317e-14,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 3.1086244689504383e-15,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "pF_kohm",
+      "case": "opposed_ramps",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.5341283798875338e-11,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.5346390824788614e-11,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "pF_kohm",
+      "case": "plateaus",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 2.6125324126269334e-11,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 2.6123103680220083e-11,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "fF_Mohm",
+      "case": "constant",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.6653345369377348e-15,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 3.468336728928989e-13,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "fF_Mohm",
+      "case": "opposed_ramps",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.534439242334429e-11,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 1.534661286939354e-11,
+          "all_source_knots_present": true
+        }
+      ]
+    },
+    {
+      "backend": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "scale": "fF_Mohm",
+      "case": "plateaus",
+      "observations": [
+        {
+          "encoding": "original",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 2.6125768215479184e-11,
+          "all_source_knots_present": true
+        },
+        {
+          "encoding": "weighted",
+          "samples": 60019,
+          "maximum_closed_form_voltage_error": 2.6123547769429933e-11,
+          "all_source_knots_present": true
+        }
+      ]
+    }
+  ],
+  "all_twenty_four_native_RC_controls_complete": true,
+  "original_and_aggregated_response_matches_closed_form": true,
+  "fixture_absolute_voltage_error_limit": 1e-07,
+  "predictor_LTE_rejection_disabled": true,
+  "fixture_max_step_s": 1e-13,
+  "closed_form_accuracy_acceptance_unchanged": true,
+  "fixture_time_knot_tolerance_s": 1e-21,
+  "actual_PLL_native_equivalence_verified": false,
+  "aggregation_roundoff_for_PLL_qualified": false,
+  "release_ready": false
+}

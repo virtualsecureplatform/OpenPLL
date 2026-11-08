@@ -1,0 +1,122 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/assessment.json": "773699eff553d8dfa13eb69d437ac1451611fe4c0013fde372fbd5ca0fbe4d00",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342/assessment.json": "3535df4019c14022ed25e5f3a751e897984de538718c6a41e41986c90ef86254",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/transient.raw": "1124410ba3bffb1f23dd512731553c669775205f759a99b6bad62002b88f9343",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342/controls.npy": "55258a3d5c9e263d6cb1d0d4a042cdc7c0115a75db373840427444815bafd2b4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342/plan.json": "a9b75a57a03742bf0802dcfedc37a22c2df72ee9550745c5cb6dc5f2394d1fbf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_early_settling.py": "062c2420ba1f21281ee17af01c62cc8be722435a672ffcd0501c32ad7e1f6a86",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_isolated_control.py": "abada00c7349f8209324c743e11ab32a75eac8743e73998697c767fdb53c7117",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py": "4b83a4d6c4951cafd271eeeab996644b63350c2b75c2bc3e45dcff1d156b8a09",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2"
+  },
+  "artifacts": {},
+  "final_window_frequency": {
+    "rising_edges": 23,
+    "frequency_mhz": 372.9218664876245,
+    "minimum_period_ns": 2.6797193035063174,
+    "maximum_period_ns": 2.682830012474426
+  },
+  "windows": [
+    {
+      "window_ns": [
+        20,
+        60
+      ],
+      "frequency_available": false,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "frequency_difference_from_final_ppm": null,
+      "sampled_minimum_V": 1.79013178,
+      "sampled_maximum_V": 1.80909527,
+      "all_physical_controls_match_at_all_saved_samples": false
+    },
+    {
+      "window_ns": [
+        40,
+        80
+      ],
+      "frequency_available": false,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "frequency_difference_from_final_ppm": null,
+      "sampled_minimum_V": 1.79013178,
+      "sampled_maximum_V": 1.80909474,
+      "all_physical_controls_match_at_all_saved_samples": false
+    },
+    {
+      "window_ns": [
+        60,
+        100
+      ],
+      "frequency_available": false,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "frequency_difference_from_final_ppm": null,
+      "sampled_minimum_V": 1.79010044,
+      "sampled_maximum_V": 1.80909474,
+      "all_physical_controls_match_at_all_saved_samples": false
+    },
+    {
+      "window_ns": [
+        80,
+        120
+      ],
+      "frequency_available": false,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "frequency_difference_from_final_ppm": null,
+      "sampled_minimum_V": 1.79010044,
+      "sampled_maximum_V": 1.80912071,
+      "all_physical_controls_match_at_all_saved_samples": false
+    },
+    {
+      "window_ns": [
+        100,
+        160
+      ],
+      "frequency_available": false,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "frequency_difference_from_final_ppm": null,
+      "sampled_minimum_V": 1.79010234,
+      "sampled_maximum_V": 1.80912071,
+      "all_physical_controls_match_at_all_saved_samples": false
+    },
+    {
+      "window_ns": [
+        140,
+        200
+      ],
+      "frequency_available": true,
+      "rising_edges": 6,
+      "frequency_mhz": 372.6466090125779,
+      "minimum_period_ns": 2.682353309225107,
+      "maximum_period_ns": 2.6844021589531906,
+      "frequency_difference_from_final_ppm": -738.1103115221555,
+      "sampled_minimum_V": -0.0142148652,
+      "sampled_maximum_V": 1.83042918,
+      "all_physical_controls_match_at_all_saved_samples": true
+    },
+    {
+      "window_ns": [
+        200,
+        260
+      ],
+      "frequency_available": true,
+      "rising_edges": 23,
+      "frequency_mhz": 372.9218664876245,
+      "minimum_period_ns": 2.6797193035063174,
+      "maximum_period_ns": 2.682830012474426,
+      "frequency_difference_from_final_ppm": 0.0,
+      "sampled_minimum_V": -0.0230715165,
+      "sampled_maximum_V": 1.83272439,
+      "all_physical_controls_match_at_all_saved_samples": true
+    }
+  ],
+  "last_mismatching_control_sample_ns": 109.033776,
+  "all_controls_match_from_saved_sample_ns": 109.083776,
+  "samplewise_control_check_only": true,
+  "between_sample_control_behavior_qualified": false,
+  "shorter_native_capture_qualified": false,
+  "timestep_convergence_qualified": false,
+  "other_codes_or_corners_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}

@@ -1,0 +1,62 @@
+{
+  "jobs": [
+    {
+      "launcher": {
+        "pid": 2215910,
+        "birth": "134838443",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/generate_keeper_aggregate_waveforms.py",
+          "--waveforms",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/waveforms",
+          "--reduction",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383",
+          "--controls",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398",
+          "--wait",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_waveforms_1399"
+        ]
+      },
+      "owner": {
+        "pid": 2215941,
+        "birth": "134838453"
+      },
+      "observed_status": {
+        "state": "audited_weighted_samples_complete_native_unqualified",
+        "release_ready": false
+      }
+    },
+    {
+      "launcher": {
+        "pid": 2215964,
+        "birth": "134838460",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_reduced_replay_pipeline_v3.py",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_pipeline_1405"
+        ]
+      },
+      "owner": {
+        "pid": 2216002,
+        "birth": "134838468"
+      },
+      "observed_status": {
+        "state": "running_one_bounded_aggregate_replay",
+        "release_ready": false
+      }
+    }
+  ],
+  "release_ready": false
+}

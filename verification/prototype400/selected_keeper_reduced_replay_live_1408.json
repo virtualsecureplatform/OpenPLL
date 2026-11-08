@@ -1,0 +1,27 @@
+{
+  "observations": [
+    {
+      "pid": 2216935,
+      "birth": "134844982",
+      "state": "S",
+      "affinity": [
+        25
+      ],
+      "executable": "/usr/bin/time",
+      "address_space_limit": "Max address space         8589934592           8589934592           bytes     "
+    },
+    {
+      "pid": 2216936,
+      "birth": "134844983",
+      "state": "R",
+      "affinity": [
+        25
+      ],
+      "executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "address_space_limit": "Max address space         8589934592           8589934592           bytes     "
+    }
+  ],
+  "local_directory": "/tmp/openpll-reduced-native-ss2tse2g",
+  "waveform_analysis_performed": false,
+  "release_ready": false
+}
