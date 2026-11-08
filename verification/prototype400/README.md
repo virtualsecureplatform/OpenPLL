@@ -2086,3 +2086,13 @@ does not remove the discrepancy. Reset slews and prior histories still differ,
 so this is diagnostic evidence, not an isolated attribution or a global error
 bound. Passive output-load sensitivity and the prescribed-boundary replay are
 still needed to separate remaining approximation effects.
+
+Independent static point1541 prospectively tests coarse23/fine149 with the same
+32 fF receiver termination,60 ns duration and10 ps maximum step as1531. It is
+exploratory near-target characterization, with a single native case on CPU17.
+Its inherited full_reference_frequency_MHz/frequency_difference_ppm fields refer
+to the coarse20 reference1295 and therefore represent a cross-code difference,
+not model error or correlation. The relevant same-code full center1513 remains
+running at50 ps; even that later comparison must account for timestep mismatch.
+No corrected calibration, extrapolated400 MHz bracket or qualification is
+inferred from this independent static point.
