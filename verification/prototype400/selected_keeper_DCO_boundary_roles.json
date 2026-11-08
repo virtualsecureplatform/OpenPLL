@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_partition_boundary_1230/assessment.json": "70823d970e56ff5854f37b14a80a4df5013986ae21ac409fc14ad545247c95eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_partition_boundary_1230/boundary.json": "e665078148ba01a63d2b6c007ef951d5bafb8a0fa8a2a6f4f07f150754b00752",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_DCO_boundary_roles.py": "0fd16abede19902421f461031dec4d35b33174b4de560ece75274ee7c9f163d7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_boundary_roles_1231/roles.json": "be7b521156988fc6c34fed2b3062e19a72891b61f7d72d9fc49da0c7b780d8f9"
+  },
+  "boundary_class_counts": {
+    "exterior_inverter_output": 302,
+    "reset_with_exterior_driver_gate_and_diode_connections": 1,
+    "oscillator_output_with_exterior_gate_and_diode_loads": 1
+  },
+  "explicit_supply_nodes": [
+    "VGND",
+    "VPWR"
+  ],
+  "direct_exterior_primitive_count": 1253,
+  "control_driver_card_count": 1208,
+  "control_drivers_have_single_input_and_only_rail_output_diffusions": true,
+  "direct_exterior_devices_form_closed_subcircuit": false,
+  "circuit_partitioned": false,
+  "boundary_loading_qualified": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_boundary_roles_1231/assessment.json"
+}
