@@ -1468,3 +1468,22 @@ retry. The original parent and analog references remain untouched. A live launch
 receipt is retained; the regenerated filled candidate still requires fresh DRC,
 expanded LVS, density and fill-aware parasitics before any selection. Frequency,
 cell-model, startup and full closed-loop release gates remain open.
+
+
+ECO fill 1476 completed with the original unfilled geometry and labels preserved,
+only allowed fill purposes added, and the declared 650 x 500 um frame retained.
+Fresh full-parent Magic DRC 1477 has zero rectangles. Expanded LVS 1478 matches
+uniquely, with all three macros expanded and every record free of discrepancies.
+These results check the regenerated fill rather than inheriting unfilled passes.
+The first DRC invocation stopped at import time under the minimal interpreter,
+before any output or native check; the pinned KLayout interpreter ran the fresh
+check successfully. No failed native run was silently retried or overwritten.
+
+Density 1479 records 80 complete native tiles and independently applies the
+retained stock thresholds and clipped-edge weighting. All seven constrained global
+checks pass (FOM, LI1 and M1-M5; POLY has no threshold). The stock wrapper exits 1
+at its explicit small-macro applicability stop because the nominal window is
+700 um; its failure is retained, and no stepped-window or chip-integration pass
+is claimed. Fill-aware parasitics, input loading, antenna/power integration,
+startup timing and actual-frequency-range qualification remain open. The new
+filled GDS is an unselected alternative; no existing analog reference is rebound.

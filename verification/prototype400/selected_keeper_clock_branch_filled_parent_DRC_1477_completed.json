@@ -1,0 +1,24 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_regenerated_fill_1476/assessment.json": "ebf74c3233eeb1c25ca8ce1a8b783c7907c08d0354cbae302e92a92ff28fd2f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_regenerated_fill_1476/assembly.gds": "96fa3766e37132f74e84c6988e99577215bb590bc31ae320378b73932be6d420",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_filled_parent_DRC_1477/drc.tcl": "4b62c99952582310b12d868e3293752b572ca900fd407d140f10d1f76c95029c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_parent_1471/drc.tcl": "eaa9231d9645f53d6708f6cce7aaca517fca65bb595701d15cfe4ce7fa417faf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_keeper_regenerated_parent_DRC.py": "5c8dc8336be1dc084b938b92c683ceb56e20fad17c44f23499d156f476a4d00b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/integrate_keeper_clock_branch_parent.py": "f6b63ed50f25f5bb7a6d9ed64836f7238b0be45e1756eb3d55141d7f99ce171c",
+    "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.magicrc": "f421b9ebbbac49f7058ece92fc85e7334c9cfddc039bef41c3b6cf1572b67cb1",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_filled_parent_DRC_1477/drc_errors.rpt": "86f90026d90bc62cea2b07c19964fca92703c1a4246e50eb118bf179cfd97225",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_filled_parent_DRC_1477/native.log": "9afc427204cb241dae69d2d7c03e60b1c2f9297eed09ebe67a57e7d25530e7ad"
+  },
+  "full_parent_Magic_DRC_rectangles": 0,
+  "full_parent_Magic_DRC_pass": true,
+  "regenerated_fill_included": true,
+  "unfilled_DRC_pass_inherited": false,
+  "parent_LVS_density_and_model_qualified": false,
+  "selected": false,
+  "release_ready": false
+}

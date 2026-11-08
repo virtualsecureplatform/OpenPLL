@@ -1,0 +1,90 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_regenerated_fill_1476/assessment.json": "ebf74c3233eeb1c25ca8ce1a8b783c7907c08d0354cbae302e92a92ff28fd2f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_filled_parent_DRC_1477/assessment.json": "602bd38e67187c55971a105875df769e1ad9618bcb77d120ef7ac3223dee6792",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_filled_parent_LVS_1478/assessment.json": "9bcf235ac5020dd31eae2e753183af23dbc6a0f3c4f7b177a143ed4262b2e278",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_regenerated_fill_1476/assembly.gds": "96fa3766e37132f74e84c6988e99577215bb590bc31ae320378b73932be6d420",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_keeper_regenerated_fill_density.py": "64abedebd655b08514e7a442d3995f369989dfa9cd64934e69ba15649cb32268",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_prototype_small_macro_density.py": "3434342f7a6c68ef47eab3a9d700bed7d40e22f2b8225fee015d785932d66a27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/magic/check_density.py": "9ef4c226f45014d20419f38388a205a55ff40589cddd1f97ffb5c6a1e0ab0a1a",
+    "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.tech/magic/sky130A.magicrc": "f421b9ebbbac49f7058ece92fc85e7334c9cfddc039bef41c3b6cf1572b67cb1"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_fill_density_1479/density.log": "4138b8d63ce1644b2ba2cfe9a3dae9be0ecafdfc6d549cdfae76019a925e0fee",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_fill_density_1479/review/assessment.json": "2adb1b8ea27eef72dc28cffd57f9733d154472e6c1aab25c8c8041b93c33a88f"
+  },
+  "native_stock_wrapper_exit_code": 1,
+  "native_tile_measurement_completed": true,
+  "stock_wrapper_passed": false,
+  "raw_tiles": 80,
+  "results": {
+    "FOM": {
+      "global_density": "0.3730318245553913037131663935",
+      "limits": [
+        "0.33",
+        "0.57"
+      ],
+      "within_limits": true
+    },
+    "POLY": {
+      "global_density": "0.1394734256930935848497575543",
+      "limits": null,
+      "within_limits": null
+    },
+    "LI1": {
+      "global_density": "0.4805545591666148226091254003",
+      "limits": [
+        "0.35",
+        "0.60"
+      ],
+      "within_limits": true
+    },
+    "MET1": {
+      "global_density": "0.4150616324406403724046621522",
+      "limits": [
+        "0.35",
+        "0.60"
+      ],
+      "within_limits": true
+    },
+    "MET2": {
+      "global_density": "0.3840443932276505685090568654",
+      "limits": [
+        "0.35",
+        "0.60"
+      ],
+      "within_limits": true
+    },
+    "MET3": {
+      "global_density": "0.4042663618692984937033044036",
+      "limits": [
+        "0.35",
+        "0.60"
+      ],
+      "within_limits": true
+    },
+    "MET4": {
+      "global_density": "0.4354075601742817819979710205",
+      "limits": [
+        "0.35",
+        "0.60"
+      ],
+      "within_limits": true
+    },
+    "MET5": {
+      "global_density": "0.6070074721758182391703472168",
+      "limits": [
+        "0.45",
+        "0.76"
+      ],
+      "within_limits": true
+    }
+  },
+  "global_density_limits_met": true,
+  "stepped_windows_available": false,
+  "chip_integration_density_qualified": false,
+  "physical_integrity_qualified": false,
+  "release_ready": false
+}
