@@ -1197,3 +1197,16 @@ band exploration, so it is explicitly not called a blind holdout. Neither
 selection or predictive controller behavior is qualified by this protocol.
 The original corrected coarse20 10ps fit/holdout family continues unchanged.
 No additional native endpoint case begins before central completion.
+
+### Ground mutation-site coverage follow-up1445
+
+The existing completed-only coverage helper is now attached to local trace
+support audit1438 and the same pinned ground-tail engine1360. Observer1445
+waits for a completed audited trace, then checks direct-ground mutation
+inventory/counts against reconstructed numerical lifecycle and spatial
+support packets. It holds no lease while waiting and uses2GiB/CPU29 only
+for the completed check. This replaces the dependency path of stopped
+shared-trace coverage1387; neither source trace nor audit is reused from
+that failed run. No native extraction is added. Legacy/split/placement
+qualification remains governed by the actual coverage report, not observer
+launch or producer completion.
