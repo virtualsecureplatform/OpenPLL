@@ -1,0 +1,56 @@
+{
+  "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse23_characterization_1515",
+  "owner": {
+    "pid": 2312548,
+    "birth": "137222689"
+  },
+  "plan": {
+    "input_sha256": {
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse23_central_campaign_1512/plan.json": "f7a23d4d80dedcb1a4f8ad15b655cb5e65ff7828df97d9b0b3f5040cf2f01eb0",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse23_characterization.py": "dd85e66c474b3acceea5395aba816d4983eae58f0a59084b9c59534e84050c7e",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse23_center.py": "1257a6c784b0b465f9bc88df522aabcd94697ee03e80f54791f07def88eedd34",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse19_endpoints.py": "d5aaeec300bb5d772b46bce14e850f1962cf9783a4c03022f47b34e5fbe4a77e",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_native_BSIM_coarse_band.py": "f3134a6c437fefc77235949203bafde8e824276ddd09101ba73f14bbec6ee64a",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning_v2.py": "882b641aae80e2f93f503594a12c54987f5f2aacf7b130ea0b68deccac6de60a",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/collect_keeper_TT_characterization.py": "5b9906294c0701bf35f3aa5cbd3080f60f6d78fbde682d72acba37cf30403436"
+    },
+    "coarse": 23,
+    "fit_fine_codes": [
+      8,
+      149,
+      247
+    ],
+    "independent_holdout_fine": 198,
+    "primary_interpolation": "linear_frequency",
+    "sensitivity_interpolation": "linear_period",
+    "central_admission_range_mhz": [
+      380,
+      420
+    ],
+    "CPUs": [
+      17,
+      18,
+      23
+    ],
+    "native_memory_GiB_per_worker": 16,
+    "maximum_additional_native_cases": 3,
+    "total_band23_cases_including_central": 4,
+    "max_step_ps": 50,
+    "native_cap_s_per_case": 86400,
+    "global_CPU_RAM_admission_unchanged": true,
+    "automatic_identical_retry": false,
+    "central_point_is_not_blind_holdout": true,
+    "target_extrapolation_forbidden": true,
+    "band_auto_selected": false,
+    "release_ready": false
+  },
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse23_characterization_1515/owner.json": "d5188227013eed96135940da975afb9483e782a8fe261182793c6a21745931d4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse23_characterization_1515/plan.json": "f8cce3c674238d04d43c5b565a8d294a012d02a6e6f3249f1478099e9544e996",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse23_characterization.py": "dd85e66c474b3acceea5395aba816d4983eae58f0a59084b9c59534e84050c7e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_keeper_coarse23_characterization.py": "9a8990de37c7ef8fbf049f988db55387b75213618154da3ed46a6da5c1d72b0e"
+  },
+  "tests_passed": 3,
+  "central_result_available_at_declaration": false,
+  "release_ready": false
+}

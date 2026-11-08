@@ -1806,3 +1806,22 @@ retaining the completed receipt and full observations. Together with1510 this
 covers both static clock levels in the declared isolated-cell fixtures. It does
 not qualify release near active clock edges, continuous slew/load ranges,
 actual routed reset pulse widths, recovery/removal or physical lifecycle timing.
+
+Prospective coarse23 characterization1515 declares fit codes8/149/247 and
+independent holdout198 before its central result exists. It waits for normal
+central capture1513 and all physical checks1514 through coordinator1512. Only
+a verified central frequency within the predeclared 380–420 MHz experimental
+admission range starts additional captures; otherwise it records that result
+and starts none. This range controls experimental spending, not qualification.
+Linear frequency is primary and linear period a sensitivity check, with no
+calibration extrapolation or accepted global interpolation error bound.
+
+Three one-shot workers use CPU17/18/23 and 16 GiB each, subject to unchanged
+global CPU/RAM admission. Maximum new native cases: three, total band23 cases
+including the existing center: four. Each capture is 260 ns / 50 ps and followed
+by all 604 physical endpoint-voltage checks. Every spawned worker is observed
+to termination even if another fails. Three guards reject wrong operating
+domain, incomplete physical checks, wrong/unfinished backend and missing or
+nonfinite frequency. The coordinator is confirmed waiting, with no endpoint
+or holdout output created. No band, numerical accuracy, other-corner model or
+closed-loop prediction is qualified by this launch.
