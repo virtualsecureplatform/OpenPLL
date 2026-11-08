@@ -1767,3 +1767,14 @@ sampled pulse widths pass. These are isolated clock-held-low observations with
 fixed loads, not a universal minimum-width, arbitrary waveform, clock-high,
 recovery/removal or routed reset guarantee. The complete reassessed detail and
 both original completed review/campaign receipts are retained.
+
+Clock-high campaign1511 now tests the same declared 2 ns pulses with 20/400/1600
+ps full ramps while CLK remains high from its 4 ns loading edge through the
+22 ns horizon. Each of five masters at five corners has three pulse cases and
+one no-pulse control (100 observations). It uses the stimulus-derived prestate
+window already checked in1510 and verifies retention after reset release
+without any subsequent clock edge. This covers a distinct static clock state;
+clock-edge proximity, recovery/removal, real reset waveform timing and routed
+qualification remain open. CPU17 / 4 GiB shared leases, 2 ps step and one-hour
+native limit per corner are unchanged, with no identical retry. TT native is
+confirmed live, and the actual deck holds CLK at 1.8 V after 4.1 ns.
