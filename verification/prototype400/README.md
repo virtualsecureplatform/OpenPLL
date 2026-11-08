@@ -1602,3 +1602,23 @@ extrapolation does not make this a target-ready curve. The holdout errors are
 Neither is accepted as a global interpolation bound. All completed receipts and
 actual input/artifact hashes were rechecked before retention. These results are
 old-backend C-only characterization, not corrected-BSIM or other-corner evidence.
+
+
+Prospective corrected coarse19 holdout 1493 declares fine198 before the central
+1412 result and before either endpoint starts. Fit codes remain 8, 149 and 247;
+198 is never inserted into that fit. Linear frequency is predeclared as primary,
+with linear period retained as a sensitivity comparison, before the new data.
+The new case uses free CPU22, 16 GiB, the corrected backend, 50 ps and the same
+260 ns capture plus all 604 endpoint-voltage checks. One additional native case
+is allowed, with no identical retry and global CPU/RAM leases unchanged. The
+band19 campaign has four cases including its already-running central point.
+
+The holdout waits for normal central completion and physical validation, then
+can run alongside the existing endpoint workers when admitted by the shared
+budget. It subsequently collects their completed receipts and reports target
+bracketing and independent interpolation residuals without extrapolating to
+400 MHz. Thirteen reused characterization/endpoint guard tests pass, including
+holdout leakage, extrapolation, domain and physical-receipt rejection controls.
+No global interpolation bound, finer-step convergence, other-corner validity or
+closed-loop qualification is accepted from this diagnostic campaign. The live
+waiting launch and its prospective roles are retained.
