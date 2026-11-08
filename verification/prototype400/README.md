@@ -1303,3 +1303,33 @@ model/load/clock qualification and actual-frequency-range checks remain
 open. Broad supplied-load envelopes and finite interpolation margins in
 the retained libraries also require qualification; they cannot simply
 be deleted to obtain positive slack.
+
+### Isolated clock/data repair candidate1452 queued
+
+The predeclared candidate feeds both existing decision-clock inverters
+from divider Q and bypasses six non-inverting clkbuf2 data stages: bit0
+hold133/145/148/155 and bit1 hold141/182. Twenty unchanged-arc delta
+estimates across five corners/min-max are positive, with a worst estimate
+of120.542366ps. Changed loading, slew and interconnect are excluded from
+that estimate, so it is only a candidate-selection screen. The candidate
+script forks019 route.odb, verifies expected masters/connections, preserves
+RTL and clock polarity, reroutes changed nets, exports a new database/
+Verilog/LEF and freshly extracts min/nom/max wire views. No timing numbers
+are accepted from stale SPEF. Formal equivalence, DRC/LVS/antenna, current
+parent reintegration and fresh full timing remain mandatory before selection.
+
+Preflight1450 stopped on the assumption of one shared inverter; reports
+actually show separate73752/76477 inverters. No native tool ran. Queued1451
+was deliberately interrupted before native launch to correct RC extraction:
+each retained rule file has one density corner, so1452 uses separate
+read-only extraction invocations for min/max after nominal routing/export.
+No existing PLL capture was cancelled. Corrected1452 separates a24h
+resource queue from its1h native route/export cap, uses8GiB and two CPUs,
+permits one route case and has no automatic identical retry.
+
+A recorded queued-controller affinity override changes28/29 to28/30,
+retaining two CPUs and all electrical/resource caps. CPU29 is occupied by
+trace audit1401; the original CPU30 retention producer is confirmed gone.
+The native child inherits this override. The candidate is unselected and
+currently awaiting resources; existing layout and analog references remain
+unchanged.

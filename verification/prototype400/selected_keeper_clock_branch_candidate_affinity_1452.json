@@ -1,0 +1,21 @@
+{
+  "controller": {
+    "pid": 2281037,
+    "birth": "136098876"
+  },
+  "owner_receipt_sha256": "cc249b6555a3dd0e5a079c18894c0d289dd39344be161ed308ecd65815e1cf6e",
+  "before_CPUs": [
+    28,
+    29
+  ],
+  "after_CPUs": [
+    28,
+    30
+  ],
+  "queued_before_native_launch": true,
+  "child_inherits_affinity": true,
+  "thread_count_changed": false,
+  "memory_or_deadline_changed": false,
+  "reason": "CPU29 is occupied by completed-trace audit1401; CPU30 original retention producer has exited",
+  "release_ready": false
+}

@@ -1,0 +1,32 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_keeper_clock_branch_candidate_v3.py": "aa3133752e479eca47bd89d8e4555b0dd15a114cc5abd025aa846bbf017a6558",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_candidate_1452/inputs.json": "65a53ab070c8988823ab7d30c39a53cd839d8ec06a299dbbd21e51bcfd722d6c"
+  },
+  "owner": {
+    "pid": 2281037,
+    "birth": "136098876"
+  },
+  "state": "waiting_for_candidate_resource_budget",
+  "superseded_pre_native_attempts": {
+    "1450": {
+      "status": {
+        "state": "stopped_without_qualification",
+        "reason": "KeyError('$abc$73649$auto$blifparse.cc:397:parse_blif$73752')",
+        "release_ready": false
+      },
+      "native_worker_started": false
+    },
+    "1451": {
+      "status": {
+        "state": "stopped_without_qualification",
+        "reason": "KeyboardInterrupt()",
+        "release_ready": false
+      },
+      "native_worker_started": false
+    }
+  },
+  "selected": false,
+  "completed": false,
+  "release_ready": false
+}

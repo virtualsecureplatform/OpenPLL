@@ -1,0 +1,172 @@
+{
+  "clock_tap": "$auto$ff.cc:337:slice$18687/Q",
+  "existing_inverters": {
+    "0": "$abc$73649$auto$blifparse.cc:397:parse_blif$73752",
+    "1": "$abc$73649$auto$blifparse.cc:397:parse_blif$76477"
+  },
+  "bypassed_clock_buffer_stages": [
+    "clkbuf_regs_0_FINECLK",
+    "clkbuf_0_core.feedback_divider.CLKDIV_RETIMED_regs",
+    "clkbuf_3_7__f_core.feedback_divider.CLKDIV_RETIMED_regs",
+    "clkbuf_leaf_53_core.feedback_divider.CLKDIV_RETIMED_regs"
+  ],
+  "removed_noninverting_data_buffers": {
+    "0": [
+      "hold133",
+      "hold145",
+      "hold148",
+      "hold155"
+    ],
+    "1": [
+      "hold141",
+      "hold182"
+    ]
+  },
+  "projected_checks": [
+    {
+      "corner": "tt",
+      "pair": 0,
+      "type": "min",
+      "baseline_slack_ns": -0.311226606,
+      "unchanged_arc_delta_estimate_ns": 0.318435078
+    },
+    {
+      "corner": "tt",
+      "pair": 0,
+      "type": "max",
+      "baseline_slack_ns": 0.834437668,
+      "unchanged_arc_delta_estimate_ns": 0.7302436809999999
+    },
+    {
+      "corner": "tt",
+      "pair": 1,
+      "type": "min",
+      "baseline_slack_ns": -0.44077,
+      "unchanged_arc_delta_estimate_ns": 0.3058630050000001
+    },
+    {
+      "corner": "tt",
+      "pair": 1,
+      "type": "max",
+      "baseline_slack_ns": 1.018221736,
+      "unchanged_arc_delta_estimate_ns": 0.6904288300000001
+    },
+    {
+      "corner": "ff",
+      "pair": 0,
+      "type": "min",
+      "baseline_slack_ns": -0.378369123,
+      "unchanged_arc_delta_estimate_ns": 0.13800005100000007
+    },
+    {
+      "corner": "ff",
+      "pair": 0,
+      "type": "max",
+      "baseline_slack_ns": 1.172950864,
+      "unchanged_arc_delta_estimate_ns": 1.102742144
+    },
+    {
+      "corner": "ff",
+      "pair": 1,
+      "type": "min",
+      "baseline_slack_ns": -0.482129335,
+      "unchanged_arc_delta_estimate_ns": 0.12054236600000001
+    },
+    {
+      "corner": "ff",
+      "pair": 1,
+      "type": "max",
+      "baseline_slack_ns": 1.312554121,
+      "unchanged_arc_delta_estimate_ns": 1.071786709
+    },
+    {
+      "corner": "ss",
+      "pair": 0,
+      "type": "min",
+      "baseline_slack_ns": -0.147311285,
+      "unchanged_arc_delta_estimate_ns": 0.62373598
+    },
+    {
+      "corner": "ss",
+      "pair": 0,
+      "type": "max",
+      "baseline_slack_ns": 0.331331849,
+      "unchanged_arc_delta_estimate_ns": 0.14774535700000002
+    },
+    {
+      "corner": "ss",
+      "pair": 1,
+      "type": "min",
+      "baseline_slack_ns": -0.310398608,
+      "unchanged_arc_delta_estimate_ns": 0.6350549159999999
+    },
+    {
+      "corner": "ss",
+      "pair": 1,
+      "type": "max",
+      "baseline_slack_ns": 0.607153654,
+      "unchanged_arc_delta_estimate_ns": 0.134830997
+    },
+    {
+      "corner": "sf",
+      "pair": 0,
+      "type": "min",
+      "baseline_slack_ns": -0.228872254,
+      "unchanged_arc_delta_estimate_ns": 0.4420879649999999
+    },
+    {
+      "corner": "sf",
+      "pair": 0,
+      "type": "max",
+      "baseline_slack_ns": 0.679676354,
+      "unchanged_arc_delta_estimate_ns": 0.547664605
+    },
+    {
+      "corner": "sf",
+      "pair": 1,
+      "type": "min",
+      "baseline_slack_ns": -0.35231185,
+      "unchanged_arc_delta_estimate_ns": 0.45677077099999996
+    },
+    {
+      "corner": "sf",
+      "pair": 1,
+      "type": "max",
+      "baseline_slack_ns": 0.909860432,
+      "unchanged_arc_delta_estimate_ns": 0.467021756
+    },
+    {
+      "corner": "fs",
+      "pair": 0,
+      "type": "min",
+      "baseline_slack_ns": -0.326247364,
+      "unchanged_arc_delta_estimate_ns": 0.24758872500000007
+    },
+    {
+      "corner": "fs",
+      "pair": 0,
+      "type": "max",
+      "baseline_slack_ns": 0.946185827,
+      "unchanged_arc_delta_estimate_ns": 0.8531740159999999
+    },
+    {
+      "corner": "fs",
+      "pair": 1,
+      "type": "min",
+      "baseline_slack_ns": -0.463974535,
+      "unchanged_arc_delta_estimate_ns": 0.22073465600000003
+    },
+    {
+      "corner": "fs",
+      "pair": 1,
+      "type": "max",
+      "baseline_slack_ns": 1.113324761,
+      "unchanged_arc_delta_estimate_ns": 0.8465941180000001
+    }
+  ],
+  "changed_loads_and_wires_ignored_in_projection": true,
+  "projected_margin_is_not_signoff": true,
+  "RTL_changed": false,
+  "timing_exceptions_added": false,
+  "release_ready": false
+}
