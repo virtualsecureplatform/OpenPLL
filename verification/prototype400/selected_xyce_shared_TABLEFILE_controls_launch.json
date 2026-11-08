@@ -1,0 +1,21 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_xyce_shared_TABLEFILE_boundary.py": "069e7bb87c4dbafd07cde81336438ac562518aea6a90b751485156844ff0d42d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/inputs.json": "4bdc34f37e5aa0d963ea156bf284536bd70c1efb68c11eeca86e02044f170e12"
+  },
+  "owner": {
+    "pid": 2182033,
+    "birth": "133555593"
+  },
+  "CPU": 29,
+  "memory_GiB": 2,
+  "resource_queue_cap_s": 7200,
+  "native_campaign_cap_after_lease_s": 600,
+  "maximum_native_cases": 12,
+  "source_encoding": "FASTTABLEFILE plus one independent shared PWL knot driver",
+  "all_source_knots_requested": true,
+  "downsampling_requested": false,
+  "normal_native_controls_complete": false,
+  "PLL_speedup_demonstrated": false,
+  "release_ready": false
+}
