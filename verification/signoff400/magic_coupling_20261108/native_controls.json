@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-08",
+  "Magic_version": "8.3.623",
+  "input_sha256": {
+    "/tmp/openpll-main-merge-20261108/tools/magic_rcx/coupling_grounding_probe.tcl": "da61a91937b00796d1465a75b1cd490675488c2ec4613e076a8e7198a458d823",
+    "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a"
+  },
+  "cases": [
+    {
+      "coupling_enabled": true,
+      "native_completed": true,
+      "explicit_A_B_coupling_fF": 3.91111,
+      "extra_A_to_substrate_fF": 3.91111,
+      "coupling_branch_preserved": true,
+      "capacitance_network_unchanged": false,
+      "artifact_sha256": {
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_on/before.spice": "47421b1bebdea293fe8360049a09a31b394a447e31c477e902d6bffada8a972b",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_on/after.spice": "236dcf2949a9d1065f033ded9c5cd2a6b00876d598b7f9f282ecc365597a379e",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_on/native.log": "59a1d8212da44aecb74382f389001e649fec4012cd4f81bf34bb02eae0a9aac7",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_on/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_on/OpenPLL_Coupling_R_Probe.ext": "cd382b53ab75a7b9ae98d3112867fcade94b04d33ab122ff0cffc61cdbf23feb",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_on/OpenPLL_Coupling_R_Probe.res.ext": "d3892f53a26c533499fab2d71806f9b227bbb1a1af97fec9a733f370f090db04"
+      }
+    },
+    {
+      "coupling_enabled": false,
+      "native_completed": true,
+      "explicit_A_B_coupling_fF": 0.0,
+      "extra_A_to_substrate_fF": 0.0,
+      "coupling_branch_preserved": true,
+      "capacitance_network_unchanged": true,
+      "artifact_sha256": {
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_off/before.spice": "d4f12d01ac627aef3b29500d4c68e842283a5d83908dff692a076148b740f2db",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_off/after.spice": "d4f12d01ac627aef3b29500d4c68e842283a5d83908dff692a076148b740f2db",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_off/native.log": "59a1d8212da44aecb74382f389001e649fec4012cd4f81bf34bb02eae0a9aac7",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_off/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_off/OpenPLL_Coupling_R_Probe.ext": "941315e109cd8b5825cb46aa4922fe34c45bfc3afcb89801c9d0e3ae244c0075",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/main_magic_coupling_control_1262/coupling_off/OpenPLL_Coupling_R_Probe.res.ext": "2735416297d5a24cb8b903175f4cac31c4dff304a85eb74c1d7132e9460332df"
+      }
+    }
+  ],
+  "coupling_duplication_reproduced": true,
+  "negative_control_pass": true,
+  "fix_applied": false,
+  "PLL_model_or_release_qualified": false
+}

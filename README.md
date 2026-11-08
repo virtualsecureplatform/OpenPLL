@@ -297,3 +297,22 @@ concerns a completed 175 ns programming diagnostic; it does not establish PLL
 lock, tuning, or release readiness. See the
 [diode discontinuity report](verification/DIODE_SIDEWALL_CHARGE_DISCONTINUITY.md)
 for the separate charge-continuity defect and inspected upstream fix.
+
+### Magic coupling/resistance export control
+
+The [two-wire testcase](tools/magic_rcx/coupling_grounding_probe.tcl) isolates
+coupling handling during resistance export. Run it with the SKY130 technology
+loaded, from a fresh output directory for each mode:
+
+```sh
+OPENPLL_TEST_COUPLING=1 magic -nowrapper -dnull -noconsole \
+  -rcfile /path/to/sky130A.magicrc /path/to/OpenPLL/tools/magic_rcx/coupling_grounding_probe.tcl
+```
+
+Repeat with `OPENPLL_TEST_COUPLING=0` as the negative control. On the tested
+Magic 8.3.623 build, the 3.91111 fF A–B coupling remains in the exported circuit
+while A's substrate term gains another 3.91111 fF. With coupling disabled,
+before/after capacitances agree exactly. The
+[native records and expected exports](verification/signoff400/magic_coupling_20261108/native_controls.json)
+retain this diagnostic evidence. No extraction correction or PLL qualification
+is implied.
