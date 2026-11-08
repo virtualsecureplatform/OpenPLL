@@ -1,0 +1,79 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_receiver_waveforms_1467/assessment.json": "3b1c96eec7c4662c7ca3cd42a93d4315dd2b2baaeb98698911ed2ae9663abf27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/assessment.json": "8ecc7596e01f4c099ce93b6bdcf27edf12b760f7fde1f61ad346507e5bb2161a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295/assessment.json": "ef66cf9e5d0c94034cbb444fd7e4ffefc8de35e2d7c8a4d76e12299553586125",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_receiver_waveforms_1467/columns.json": "b731d4939b76a1c74d64c12003c5753c12e892c06bcbac0a3d8034969584ce82",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/plan.json": "c5882f6937c5b0bed68cc4f555890e58a009c61196a573c30621639c1bf5cad5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_reference_early_windows_v2.py": "1e314d3066d2124bca2156e7572bf6ed09dec5bdf4dd003216f42c2ea59e9c99",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_isolated_control.py": "abada00c7349f8209324c743e11ab32a75eac8743e73998697c767fdb53c7117",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py": "4b83a4d6c4951cafd271eeeab996644b63350c2b75c2bc3e45dcff1d156b8a09"
+  },
+  "artifacts": {},
+  "completed_reference_only": true,
+  "windows": [
+    {
+      "window_ns": [
+        20,
+        60
+      ],
+      "frequency_diagnostic": null,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "difference_from_final_ppm": null,
+      "physical_endpoints_checked": 604,
+      "all_controls_match": false
+    },
+    {
+      "window_ns": [
+        60,
+        100
+      ],
+      "frequency_diagnostic": null,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "difference_from_final_ppm": null,
+      "physical_endpoints_checked": 604,
+      "all_controls_match": false
+    },
+    {
+      "window_ns": [
+        100,
+        140
+      ],
+      "frequency_diagnostic": null,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "difference_from_final_ppm": null,
+      "physical_endpoints_checked": 604,
+      "all_controls_match": false
+    },
+    {
+      "window_ns": [
+        140,
+        180
+      ],
+      "frequency_diagnostic": null,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "difference_from_final_ppm": null,
+      "physical_endpoints_checked": 604,
+      "all_controls_match": true
+    },
+    {
+      "window_ns": [
+        200,
+        260
+      ],
+      "frequency_diagnostic": {
+        "rising_edges": 23,
+        "frequency_mhz": 373.1482167548865,
+        "minimum_period_ns": 2.67917927509842,
+        "maximum_period_ns": 2.680687523247343
+      },
+      "frequency_unavailable_reason": null,
+      "difference_from_final_ppm": 0.0,
+      "physical_endpoints_checked": 604,
+      "all_controls_match": true
+    }
+  ],
+  "startup_convergence_qualified": false,
+  "independent_model_qualified": false,
+  "release_ready": false
+}

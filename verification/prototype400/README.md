@@ -2028,3 +2028,13 @@ assignments match an independent threshold/polarity calculation. Conditional
 input ports are unique; rails, reset, free receiver output and free PLLOUT bind
 as declared. This verifies static stimulus construction only; it supplies no
 analog accuracy or release qualification.
+
+Completed-reference early-window audit1534 reverified the closed1467 extraction
+and1296 physical-control artifacts. Windows20–60,60–100,100–140 and140–180 ns
+have fewer than three PLLOUT rising edges, so no frequency is reported. All604
+physical tuning endpoints match throughout140–180 ns and200–260 ns; earlier
+windows do not. The final200–260 ns result exactly reproduces373.148216755 MHz.
+Thus the static pilot's20–60 ns window cannot be treated as a simultaneous
+full-reference startup correlation. Any comparison with the final reference is
+only a steady-frequency diagnostic under different programming/reset histories;
+startup and settling require separate qualification.
