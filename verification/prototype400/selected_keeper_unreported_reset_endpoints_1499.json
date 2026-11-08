@@ -1,0 +1,2506 @@
+[
+  {
+    "pin": "$auto$ff.cc:337:slice$17300/RESET_B",
+    "classification": "event_capture_reset_from_fast_domain",
+    "clock_root": [
+      "primary",
+      "BBPD",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "core.bbpd_dn_event_toggle",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17898",
+        "clock_bit": 3
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$18695",
+        "clock_bit": 3
+      }
+    ],
+    "sequential_control_clock_roots": [
+      {
+        "source": "$auto$ff.cc:337:slice$17898",
+        "clock_root": [
+          "primary",
+          "PLLOUT",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$18695",
+        "clock_root": [
+          "primary",
+          "PLLOUT",
+          0,
+          0
+        ]
+      }
+    ],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17301/RESET_B",
+    "classification": "event_capture_reset_from_fast_domain",
+    "clock_root": [
+      "primary",
+      "BBPD",
+      1,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "core.bbpd_up_event_toggle",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17898",
+        "clock_bit": 3
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$18695",
+        "clock_bit": 3
+      }
+    ],
+    "sequential_control_clock_roots": [
+      {
+        "source": "$auto$ff.cc:337:slice$17898",
+        "clock_root": [
+          "primary",
+          "PLLOUT",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$18695",
+        "clock_root": [
+          "primary",
+          "PLLOUT",
+          0,
+          0
+        ]
+      }
+    ],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17346/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "COARSE_CODE",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "command",
+        "index": 28,
+        "async_reg": false
+      },
+      {
+        "name": "core.COARSEBINARY_CODE",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "core.coarse_decoder.binary_code",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 28,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 28,
+        "async_reg": false
+      },
+      {
+        "name": "startup.COARSE_CODE",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17347/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "COARSE_CODE",
+        "index": 1,
+        "async_reg": false
+      },
+      {
+        "name": "command",
+        "index": 29,
+        "async_reg": false
+      },
+      {
+        "name": "core.COARSEBINARY_CODE",
+        "index": 1,
+        "async_reg": false
+      },
+      {
+        "name": "core.coarse_decoder.binary_code",
+        "index": 1,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 29,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 29,
+        "async_reg": false
+      },
+      {
+        "name": "startup.COARSE_CODE",
+        "index": 1,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17348/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "COARSE_CODE",
+        "index": 2,
+        "async_reg": false
+      },
+      {
+        "name": "command",
+        "index": 30,
+        "async_reg": false
+      },
+      {
+        "name": "core.COARSEBINARY_CODE",
+        "index": 2,
+        "async_reg": false
+      },
+      {
+        "name": "core.coarse_decoder.binary_code",
+        "index": 2,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 30,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 30,
+        "async_reg": false
+      },
+      {
+        "name": "startup.COARSE_CODE",
+        "index": 2,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17349/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "COARSE_CODE",
+        "index": 3,
+        "async_reg": false
+      },
+      {
+        "name": "command",
+        "index": 31,
+        "async_reg": false
+      },
+      {
+        "name": "core.COARSEBINARY_CODE",
+        "index": 3,
+        "async_reg": false
+      },
+      {
+        "name": "core.coarse_decoder.binary_code",
+        "index": 3,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 31,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 31,
+        "async_reg": false
+      },
+      {
+        "name": "startup.COARSE_CODE",
+        "index": 3,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17350/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "COARSE_CODE",
+        "index": 4,
+        "async_reg": false
+      },
+      {
+        "name": "command",
+        "index": 32,
+        "async_reg": false
+      },
+      {
+        "name": "core.COARSEBINARY_CODE",
+        "index": 4,
+        "async_reg": false
+      },
+      {
+        "name": "core.coarse_decoder.binary_code",
+        "index": 4,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 32,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 32,
+        "async_reg": false
+      },
+      {
+        "name": "startup.COARSE_CODE",
+        "index": 4,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17351/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "COARSE_CODE",
+        "index": 5,
+        "async_reg": false
+      },
+      {
+        "name": "command",
+        "index": 33,
+        "async_reg": false
+      },
+      {
+        "name": "core.COARSEBINARY_CODE",
+        "index": 5,
+        "async_reg": false
+      },
+      {
+        "name": "core.coarse_decoder.binary_code",
+        "index": 5,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 33,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 33,
+        "async_reg": false
+      },
+      {
+        "name": "startup.COARSE_CODE",
+        "index": 5,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17352/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 20,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 20,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 20,
+        "async_reg": false
+      },
+      {
+        "name": "seed",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "startup.FINE_SEED",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "startup_fine_decoder.binary_code",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "startup_seed",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17353/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 21,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 21,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 21,
+        "async_reg": false
+      },
+      {
+        "name": "seed",
+        "index": 1,
+        "async_reg": false
+      },
+      {
+        "name": "startup.FINE_SEED",
+        "index": 1,
+        "async_reg": false
+      },
+      {
+        "name": "startup_fine_decoder.binary_code",
+        "index": 1,
+        "async_reg": false
+      },
+      {
+        "name": "startup_seed",
+        "index": 1,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17354/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 22,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 22,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 22,
+        "async_reg": false
+      },
+      {
+        "name": "seed",
+        "index": 2,
+        "async_reg": false
+      },
+      {
+        "name": "startup.FINE_SEED",
+        "index": 2,
+        "async_reg": false
+      },
+      {
+        "name": "startup_fine_decoder.binary_code",
+        "index": 2,
+        "async_reg": false
+      },
+      {
+        "name": "startup_seed",
+        "index": 2,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17355/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 23,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 23,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 23,
+        "async_reg": false
+      },
+      {
+        "name": "seed",
+        "index": 3,
+        "async_reg": false
+      },
+      {
+        "name": "startup.FINE_SEED",
+        "index": 3,
+        "async_reg": false
+      },
+      {
+        "name": "startup_fine_decoder.binary_code",
+        "index": 3,
+        "async_reg": false
+      },
+      {
+        "name": "startup_seed",
+        "index": 3,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17356/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 24,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 24,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 24,
+        "async_reg": false
+      },
+      {
+        "name": "seed",
+        "index": 4,
+        "async_reg": false
+      },
+      {
+        "name": "startup.FINE_SEED",
+        "index": 4,
+        "async_reg": false
+      },
+      {
+        "name": "startup_fine_decoder.binary_code",
+        "index": 4,
+        "async_reg": false
+      },
+      {
+        "name": "startup_seed",
+        "index": 4,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17357/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 25,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 25,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 25,
+        "async_reg": false
+      },
+      {
+        "name": "seed",
+        "index": 5,
+        "async_reg": false
+      },
+      {
+        "name": "startup.FINE_SEED",
+        "index": 5,
+        "async_reg": false
+      },
+      {
+        "name": "startup_fine_decoder.binary_code",
+        "index": 5,
+        "async_reg": false
+      },
+      {
+        "name": "startup_seed",
+        "index": 5,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17358/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 26,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 26,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 26,
+        "async_reg": false
+      },
+      {
+        "name": "seed",
+        "index": 6,
+        "async_reg": false
+      },
+      {
+        "name": "startup.FINE_SEED",
+        "index": 6,
+        "async_reg": false
+      },
+      {
+        "name": "startup_fine_decoder.binary_code",
+        "index": 6,
+        "async_reg": false
+      },
+      {
+        "name": "startup_seed",
+        "index": 6,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17359/SET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 27,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 27,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 27,
+        "async_reg": false
+      },
+      {
+        "name": "seed",
+        "index": 7,
+        "async_reg": false
+      },
+      {
+        "name": "startup.FINE_SEED",
+        "index": 7,
+        "async_reg": false
+      },
+      {
+        "name": "startup_fine_decoder.binary_code",
+        "index": 7,
+        "async_reg": false
+      },
+      {
+        "name": "startup_seed",
+        "index": 7,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17360/SET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 19,
+        "async_reg": false
+      },
+      {
+        "name": "configured_increasing",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 19,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 19,
+        "async_reg": false
+      },
+      {
+        "name": "increasing",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "startup.INCREASING",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17361/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 5,
+        "async_reg": false
+      },
+      {
+        "name": "configured_ki",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 5,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 5,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KI",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17362/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 6,
+        "async_reg": false
+      },
+      {
+        "name": "configured_ki",
+        "index": 1,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 6,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 6,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KI",
+        "index": 1,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17363/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 7,
+        "async_reg": false
+      },
+      {
+        "name": "configured_ki",
+        "index": 2,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 7,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 7,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KI",
+        "index": 2,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17364/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 8,
+        "async_reg": false
+      },
+      {
+        "name": "configured_ki",
+        "index": 3,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 8,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 8,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KI",
+        "index": 3,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17365/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 9,
+        "async_reg": false
+      },
+      {
+        "name": "configured_ki",
+        "index": 4,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 9,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 9,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KI",
+        "index": 4,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17366/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 10,
+        "async_reg": false
+      },
+      {
+        "name": "configured_ki",
+        "index": 5,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 10,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 10,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KI",
+        "index": 5,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17367/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 11,
+        "async_reg": false
+      },
+      {
+        "name": "configured_ki",
+        "index": 6,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 11,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 11,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KI",
+        "index": 6,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17368/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 12,
+        "async_reg": false
+      },
+      {
+        "name": "configured_ki",
+        "index": 7,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 12,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 12,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KI",
+        "index": 7,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17376/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "configured_kp",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KP",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17377/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 1,
+        "async_reg": false
+      },
+      {
+        "name": "configured_kp",
+        "index": 1,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 1,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 1,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KP",
+        "index": 1,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17378/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 2,
+        "async_reg": false
+      },
+      {
+        "name": "configured_kp",
+        "index": 2,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 2,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 2,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KP",
+        "index": 2,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17379/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 3,
+        "async_reg": false
+      },
+      {
+        "name": "configured_kp",
+        "index": 3,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 3,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 3,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KP",
+        "index": 3,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17380/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "command",
+        "index": 4,
+        "async_reg": false
+      },
+      {
+        "name": "configured_kp",
+        "index": 4,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.COMMAND",
+        "index": 4,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.COMMAND",
+        "index": 4,
+        "async_reg": false
+      },
+      {
+        "name": "startup.CONFIGURED_KP",
+        "index": 4,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17437/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.state",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17438/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.state",
+        "index": 1,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17439/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.state",
+        "index": 2,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17507/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.wait_count",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17508/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.wait_count",
+        "index": 1,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17509/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.wait_count",
+        "index": 2,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17510/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.wait_count",
+        "index": 3,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17511/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.wait_count",
+        "index": 4,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17512/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.wait_count",
+        "index": 5,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17513/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.wait_count",
+        "index": 6,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17514/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.wait_count",
+        "index": 7,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17515/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.wait_count",
+        "index": 8,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17588/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.settle_count",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17589/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "startup.settle_count",
+        "index": 1,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17895/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "sequential",
+      "$auto$ff.cc:337:slice$18687",
+      "Q",
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "gen_feedback_handoff.reset_pipe",
+        "index": 0,
+        "async_reg": true
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17896/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "sequential",
+      "$auto$ff.cc:337:slice$18687",
+      "Q",
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "fine_reset_n",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.fine_handoff.DCO_RESET_N",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "gen_feedback_handoff.reset_pipe",
+        "index": 1,
+        "async_reg": true
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17899/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "PLLOUT",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "dco_reset_pipe",
+        "index": 0,
+        "async_reg": true
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17900/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "PLLOUT",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "dco_reset_n",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "dco_reset_pipe",
+        "index": 1,
+        "async_reg": true
+      },
+      {
+        "name": "handoff.DCO_RESET_N",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17901/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "ref_reset_pipe",
+        "index": 0,
+        "async_reg": true
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$17902/RESET_B",
+    "classification": "external_RESET_N_only",
+    "clock_root": [
+      "primary",
+      "REFCLK",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "gen_feedback_handoff.fine_handoff.REF_RESET_N",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "handoff.REF_RESET_N",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "ref_reset_n",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "ref_reset_pipe",
+        "index": 1,
+        "async_reg": true
+      },
+      {
+        "name": "startup.REF_RESET_N",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      }
+    ],
+    "sequential_control_clock_roots": [],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$18694/RESET_B",
+    "classification": "oscillator_reset_from_reference_domain",
+    "clock_root": [
+      "primary",
+      "PLLOUT",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "core.gen_local_resets.fast_pipe",
+        "index": 0,
+        "async_reg": true
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17437",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17438",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17439",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17902",
+        "clock_bit": 2
+      }
+    ],
+    "sequential_control_clock_roots": [
+      {
+        "source": "$auto$ff.cc:337:slice$17437",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17438",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17439",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17902",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      }
+    ],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$18695/RESET_B",
+    "classification": "oscillator_reset_from_reference_domain",
+    "clock_root": [
+      "primary",
+      "PLLOUT",
+      0,
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "core.fast_reset_n",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "core.feedback_divider.RESET_N",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "core.gen_local_resets.fast_pipe",
+        "index": 1,
+        "async_reg": true
+      },
+      {
+        "name": "core.test_divider.RESET_N",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17437",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17438",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17439",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17902",
+        "clock_bit": 2
+      }
+    ],
+    "sequential_control_clock_roots": [
+      {
+        "source": "$auto$ff.cc:337:slice$17437",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17438",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17439",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17902",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      }
+    ],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$18696/RESET_B",
+    "classification": "oscillator_reset_from_reference_domain",
+    "clock_root": [
+      "sequential",
+      "$auto$ff.cc:337:slice$18687",
+      "Q",
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "core.gen_local_resets.fine_pipe",
+        "index": 0,
+        "async_reg": true
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17437",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17438",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17439",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17902",
+        "clock_bit": 2
+      }
+    ],
+    "sequential_control_clock_roots": [
+      {
+        "source": "$auto$ff.cc:337:slice$17437",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17438",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17439",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17902",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      }
+    ],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  },
+  {
+    "pin": "$auto$ff.cc:337:slice$18697/RESET_B",
+    "classification": "oscillator_reset_from_reference_domain",
+    "clock_root": [
+      "sequential",
+      "$auto$ff.cc:337:slice$18687",
+      "Q",
+      0
+    ],
+    "state_aliases": [
+      {
+        "name": "core.dlf_reset_n",
+        "index": 0,
+        "async_reg": false
+      },
+      {
+        "name": "core.gen_local_resets.fine_pipe",
+        "index": 1,
+        "async_reg": true
+      },
+      {
+        "name": "core.loop_filter.RESET_N",
+        "index": 0,
+        "async_reg": false
+      }
+    ],
+    "control_sources": [
+      {
+        "kind": "primary_input",
+        "name": "RESET_N",
+        "port_index": 0
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17437",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17438",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17439",
+        "clock_bit": 2
+      },
+      {
+        "kind": "sequential",
+        "name": "$auto$ff.cc:337:slice$17902",
+        "clock_bit": 2
+      }
+    ],
+    "sequential_control_clock_roots": [
+      {
+        "source": "$auto$ff.cc:337:slice$17437",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17438",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17439",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      },
+      {
+        "source": "$auto$ff.cc:337:slice$17902",
+        "clock_root": [
+          "primary",
+          "REFCLK",
+          0,
+          0
+        ]
+      }
+    ],
+    "structurally_classified_only": true,
+    "physical_reset_timing_or_waiver_qualified": false
+  }
+]

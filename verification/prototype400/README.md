@@ -1635,3 +1635,15 @@ with no new exceptions. Periodic screening clocks, conditional cell views and
 original macro RC do not qualify actual BBPD pulses, startup frequency range,
 external reset pulse width, regenerated-fill loading or full lifecycle timing.
 The completed receipt and compact endpoint summary are retained.
+
+Lifecycle binding 1499 checks the actual nine RTL files from the routed
+candidate, mapped/routed equivalence, retained mask/rearm proof, seed proof and
+original-macro geometry reuse. Both decision registers retain the intended
+falling-edge logical capture through mapped clock inversion. All 54 unreported
+reset endpoints per corner are classified structurally: 48 external-RESET_N-only
+endpoints, four oscillator-domain reset stages sourced from the reference
+domain, and two event-capture registers reset from the fast domain. The complete
+endpoint detail is retained. These classifications provide no timing waivers.
+Retained sampled logic proofs are bound rather than rerun; physical reset
+arrival, primary-reset pulse width, metastability resolution and full startup /
+disable-reenable timing remain open. No clock-branch ECO is selected.
