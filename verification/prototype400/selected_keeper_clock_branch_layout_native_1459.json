@@ -1,0 +1,35 @@
+{
+  "release_qualified": false,
+  "selected": false,
+  "power_pins_total": 43736,
+  "power_pins_connected": 43736,
+  "antenna_net_violations": 0,
+  "antenna_pin_violations": 0,
+  "magic_drc_rectangles": 0,
+  "lvs_unique_match": true,
+  "limitations": [
+    "Antenna closure, full KLayout DRC and density/EM/IR qualification remain separate gates"
+  ],
+  "sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/sky130_fd_sc_hs.canonical.spice": "ef2ae0fd94ebe95b744e3c3c282f00881c5664169cff0b465de98d4f9c67a53d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/diode_geometry.py": "46b0a4e7544e129b0563e948d0ac7bb6192d0d7459b9570a09a3ea643b33721c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/diode_geometry.json": "ec0d880277848b5eaea9ecb090afefacdba9d92c3bf52d5b692ce52e19515781",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/layout_audit_runner/hs_views.py": "9a92d449eb648c8bba81cace613d983f3cfad984b44762b048bcc0023a279c6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/route.odb": "7bf386d6afaf5245a473a15d00cf0dfbd5ae8228acd7e35d670246d6aee93d3d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/route.gds": "f9d25ef6e94ca92144354c235eeb782ef8a557350288d3530beb473932cafbc2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/powered.v": "5cf53d084720ee844c778a51d636a59eff3d7f859f1c904c2a652dac2fb65893",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/compare.log": "df31bffaa644e09b7889b20f9d46faca30b916644c5e21708b002afd9853ebaf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/drc_errors.rpt": "86f90026d90bc62cea2b07c19964fca92703c1a4246e50eb118bf179cfd97225",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice": "16bba417cc4d48bb7c818a31cbfc9e9c770fc5eed8bacf731f3712a2e7524cd3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.ref/sky130_fd_sc_hs/gds/sky130_fd_sc_hs.gds": "a3bf5c23886959efea88c353a979dfe85b746481936952931147deaf1c094eb0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/layout_audit_runner/signoff.py": "08f5b29e0ea916ddb7a6da9db93ced134e7a04b142bafc253ef51d256ee78214",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/audit.tcl": "3efc7aed8f9c1bb91ce7683dbb6264cdff656186b5daeccaced25a3321f6c4e4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/drc.tcl": "50c5a7aa6eb24d7c0e0e18de93359670c2b87841940f4fe482ce866d7c7c8312",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/extract.tcl": "de4f148fc74659ee7f1a74b4757424e18060d5e490e9cb396fcfb9a6407504bd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/compare.tcl": "8ca518ecdcbe2beb5d868bbdbb68f9256046c8ca7f464a184e0d3d1f269914ad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/audit.log": "b092c7810a2ea6540bae374df1c333fe1c7b71a1ce09f9c8c5cd01b2fb6d80bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/antenna.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.ref/sky130_fd_sc_hs/lef/sky130_fd_sc_hs.lef": "822c6b11584aaf2a25004c9a8ef7ed6c85aac29be98811c792813f8e0e470d95"
+  },
+  "diagnostic_physical_pass": true
+}

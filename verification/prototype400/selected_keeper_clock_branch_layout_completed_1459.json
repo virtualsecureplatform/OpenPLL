@@ -1,0 +1,37 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_keeper_clock_branch_layout.py": "9f63cf60500cf58dc83c863718575defdef9420cd97f6f9e3c72334da42a8585",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/prototype400/check_layout.py": "ed4b6d7044ab75dd7b7536a8f13a08157136cb10ec20b737a94a89dc63b867c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_candidate_1452/assessment.json": "ec0c6716ad95fc681f7e6056415cdb0416ef17e8245e52d25eae5882fe89046b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_logic_1455/assessment.json": "46b16592ee2a58b63a1135d5248d6df9b8ffca50766e5940530d413d04409f95",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/assessment.json": "deb2677adb79cdb803f8ada47525aee19c6aea4033a2cd28a402e8646b6545a2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/timing400/check_compact_clock_tree.py": "a4d36e98ed47eefff0c64101ee7b0ba6e2db014a944aeefa69b3319e6391e43a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/timing450/signoff.py": "365479ddcd94efb159dd53290646685082b97e503841098eb0d16466c580bfb7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/timing450/run.py": "469b3a65b039d2333903f8df171ca340b0f20ac6d18c4882161ff7c83f8a4584",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/timing450/hs_views.py": "9a92d449eb648c8bba81cace613d983f3cfad984b44762b048bcc0023a279c6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/common_v3.py": "dc86a17d58cdd6d02d9a3279c94097962da89c31ae50903e4717e333b2b235c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/resources.py": "3b4a3fcae0f072cfdc7937c06f46f2bf7166b4a5e31b15feadb8775ce81f1b11",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compiled_charge_v2.py": "9c73d39edb078a302e69a3f87f3d616d8948a43698b3b79b2d9549c4bd6749e5"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/layout_audit_runner/completion.json": "86c176b2467e4e2e38f10b3a6a2f83fefc805f51140249559a8171123f7967c5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/candidate/signoff/assessment.json": "6397ac7e235722de1ae22aa8600bdfd3be66d7386cbb943e9d6c9f90ddf23000",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_layout_1459/native.log": "3657c5ebf437f6359f81a55818c8ab3a3a18da43db3c071e6302a79adb4c3d81"
+  },
+  "digital_component_results": {
+    "power_pins_total": 43736,
+    "power_pins_connected": 43736,
+    "antenna_net_violations": 0,
+    "antenna_pin_violations": 0,
+    "magic_drc_rectangles": 0,
+    "lvs_unique_match": true,
+    "diagnostic_physical_pass": true
+  },
+  "original_candidate_modified": false,
+  "candidate_selected": false,
+  "assembled_parent_checked": false,
+  "physical_timing_qualified": false,
+  "physical_CDC_qualified": false,
+  "density_EM_IR_qualified": false,
+  "release_ready": false
+}

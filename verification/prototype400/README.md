@@ -1402,3 +1402,14 @@ functional export to the exact ECO database. It reserves one CPU (28), 8 GiB,
 queues at most 24 hours and caps native checks at one hour. No assembled parent,
 cell model, frequency range, physical CDC, density or EM/IR qualification is
 claimed from these component checks; the route remains optional and unselected.
+
+
+Layout check 1459 completed normally: the streamed ECO component has zero Magic
+DRC rectangles, a unique layout/netlist LVS match, zero antenna net/pin violations,
+and all 43,736 power pins connected. Native PG checks report all VDD/VSS shapes
+connected. Its input/artifact hashes and native result hashes were reverified
+before retention. This removes a component-level physical objection to the
+optional ECO; it does not select it or replace the current parent GDS, whose
+analog captures still refer to the original macro. Parent integration, custom
+cell model bounds, startup/reset timing and the operating frequency range remain
+open, as do the full release gates.
