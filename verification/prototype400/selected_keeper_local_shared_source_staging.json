@@ -1,0 +1,23 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/waveforms/assessment.json": "dfcdcabfa65c6f79524a36fa72cfa46c5379a376e8224486e3bb650322f8d6a8",
+    "/tmp/openpll-tablefile-275y18u8/sources/assessment.json": "a4ec0d5f4bac8e122faacdc069bd16ef07cb8150cac44d41f205f2843ab4402b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/stage_keeper_tablefile_sources.py": "1aae1c6abee89d205a314764438498b1111d782ba5df814dc6877be0b2835759",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/write_keeper_tablefile_sources.py": "36ab97b0db5617d9a97d70aa6d078bde5e79b04caaf4e675db9b33883477df06",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/write_keeper_shared_tablefile_sources.py": "744cfc58abba2870c145ee5cf225280355e8840bd96fc5ae508365b26d405d7c"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_local_shared_sources_1379/sources.tar": "aea49d0e2bf1075fa5339b3be8b7b67b5b4ef16ae4deda1768537157fead678e"
+  },
+  "source_receipt_sha256": "a4ec0d5f4bac8e122faacdc069bd16ef07cb8150cac44d41f205f2843ab4402b",
+  "source_archive_members": 7618,
+  "all_source_archive_members_hash_verified": true,
+  "local_sources": "/tmp/openpll-tablefile-275y18u8/sources",
+  "source_generation_s": 139.84435679693706,
+  "archive_and_verification_s": 39.62152557494119,
+  "driven_ports": 7616,
+  "shared_breakpoint_samples": 6454,
+  "literal_source_points": 48940748,
+  "full_replay_accuracy_qualified": false,
+  "release_ready": false
+}

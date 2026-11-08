@@ -1,0 +1,36 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/benchmark_keeper_shared_tablefile_replay.py": "88f492469d5f3cade9d00c412a26bd577aa60e88577761b0ed218b810ec62409",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_shared_TABLEFILE_replay_1380/inputs.json": "1825c0b7be84a14217108e026a013759b5d011fa24defe3dd0e06b749e84a8bf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_shared_TABLEFILE_replay_1380/native_inputs.json": "436f3b4603243145d777bc9b6f46c6f77aa34daa1d9e62a84176eb93ec870c13",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/assessment.json": "fd54bab6b29eae33a7d1d40fb0e10276f222b60852d955b230fd802e88b4afc9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_local_shared_sources_1379/assessment.json": "ef911e985516d75275704f135c65e297c3e14db32f7da5c28a1d5a1f6c0f128f"
+  },
+  "controllers": [
+    {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_shared_TABLEFILE_replay_1380",
+      "CPU": 24,
+      "pid": 2185194,
+      "birth": "133702660"
+    },
+    {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_shared_TABLEFILE_comparison_1381",
+      "CPU": 29,
+      "pid": 2186010,
+      "birth": "133706477"
+    }
+  ],
+  "native_memory_GiB": 8,
+  "native_cap_s": 14400,
+  "native_CPU": 24,
+  "maximum_native_cases": 1,
+  "automatic_identical_retry": false,
+  "all_twelve_shared_knot_native_controls_passed": true,
+  "local_staging_complete": true,
+  "source_archive_verified": true,
+  "PLLOUT_forced": false,
+  "native_replay_started": true,
+  "native_replay_complete": false,
+  "accuracy_or_speedup_qualified": false,
+  "release_ready": false
+}

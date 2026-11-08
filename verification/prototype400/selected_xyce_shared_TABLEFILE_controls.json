@@ -1,0 +1,188 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_xyce_shared_TABLEFILE_boundary.py": "069e7bb87c4dbafd07cde81336438ac562518aea6a90b751485156844ff0d42d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_constant_PWL/samples.dat": "a3b6d37715cc0af103b1856c6ac82d1e05235a6aac4046f34a6749e4c22c83da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_constant_PWL/test.spice": "e661d7135e00a3c1b9218d7b93e15eb7632af07b7151a1f9431153522683ae8e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_constant_SHARED_FASTTABLEFILE/samples.dat": "a3b6d37715cc0af103b1856c6ac82d1e05235a6aac4046f34a6749e4c22c83da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_constant_SHARED_FASTTABLEFILE/test.spice": "11466471bd96b47bc24e81e67041e77d451a1792f90396a6d3838deeebd7e97c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_irregular_ramps_PWL/samples.dat": "5251bfa9a78d1eb9ae9be3593e7975d6f0c23efe1e90938f7ac43ad2ba7b42e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_irregular_ramps_PWL/test.spice": "ee02442d0f4e6e6beff85cb7e743cbcff336d982601e9c47d052877c3183f776",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_irregular_ramps_SHARED_FASTTABLEFILE/samples.dat": "5251bfa9a78d1eb9ae9be3593e7975d6f0c23efe1e90938f7ac43ad2ba7b42e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_irregular_ramps_SHARED_FASTTABLEFILE/test.spice": "3ec9bbd77bd4a03d5ced08332c93fe63000fb7b33ad496efe33319a6198eed50",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_plateau_PWL/samples.dat": "36e8520ed367200b54190360414479a884df6b282414172930aecfbbca155b59",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_plateau_PWL/test.spice": "c5883e27d5f75cd607aae4e1357e80a310c8f45ec2d7a4efbcc02e25cb65955b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_plateau_SHARED_FASTTABLEFILE/samples.dat": "36e8520ed367200b54190360414479a884df6b282414172930aecfbbca155b59",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_plateau_SHARED_FASTTABLEFILE/test.spice": "be73476ee8981db0b5bc8124302d95478223678b232a699a4c94bad0a0639bf4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_constant_PWL/samples.dat": "a3b6d37715cc0af103b1856c6ac82d1e05235a6aac4046f34a6749e4c22c83da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_constant_PWL/test.spice": "4a4c74b639c9695f23bcf7b814f210c4fcc307d7b64ceec541a2d98aff0d907a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_constant_SHARED_FASTTABLEFILE/samples.dat": "a3b6d37715cc0af103b1856c6ac82d1e05235a6aac4046f34a6749e4c22c83da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_constant_SHARED_FASTTABLEFILE/test.spice": "4548105af42bb88ce8a8e5ea5296f7ad99599e076e972f8e81ad5bd6c28fd4ae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_irregular_ramps_PWL/samples.dat": "5251bfa9a78d1eb9ae9be3593e7975d6f0c23efe1e90938f7ac43ad2ba7b42e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_irregular_ramps_PWL/test.spice": "daf6823d789f958c03541dfd0dcd605d3d5f5e3a1dd03cffee774ede7ab06340",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_irregular_ramps_SHARED_FASTTABLEFILE/samples.dat": "5251bfa9a78d1eb9ae9be3593e7975d6f0c23efe1e90938f7ac43ad2ba7b42e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_irregular_ramps_SHARED_FASTTABLEFILE/test.spice": "776e599e24b218bb2db582844cb1336c107033d0564237a983697ef2c98cdec1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_plateau_PWL/samples.dat": "36e8520ed367200b54190360414479a884df6b282414172930aecfbbca155b59",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_plateau_PWL/test.spice": "871fd6773c21ae314c67bac0e696da3c0f9848828674a252c824ea0c711f01db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_plateau_SHARED_FASTTABLEFILE/samples.dat": "36e8520ed367200b54190360414479a884df6b282414172930aecfbbca155b59",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_plateau_SHARED_FASTTABLEFILE/test.spice": "3660fac94a562d690da522496a18e2a8ff7eba7e24baf7c4e64db282dd993382"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_constant_PWL/result.csv": "1a66dd235187830cac738ff2ffdaa4db0088df51c6a702a07c5da787677675cc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_constant_PWL/native.log": "0d856fa37e4e6b3be1d54e5ad3535770e8e7f476df79d6c48c4e98a7b2659acc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_constant_SHARED_FASTTABLEFILE/result.csv": "c6118b2f15111211a8a1d8159e18f27918e5de4ae0195bec26450a9826e0cb60",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_constant_SHARED_FASTTABLEFILE/native.log": "b5b42e53816f63831ebf5c8b24a2ed826ddaeb903e851056eea2b57f63c1d3c5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_irregular_ramps_PWL/result.csv": "1c7767ab5595e27e847a9c829a54ce4fda8b6336873397bdfe332cf359a94527",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_irregular_ramps_PWL/native.log": "bd8eec3f841fde4dc513cedade86180cfb4782195698017200753508af28eaca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_irregular_ramps_SHARED_FASTTABLEFILE/result.csv": "629fb3014063df70a15d1dea1e5e01543c3158f9ddd3b5d893f7bb9dae9b9779",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_irregular_ramps_SHARED_FASTTABLEFILE/native.log": "0803a24381942145f17fb815b25c82b90a90aff67da9491d660bf2fd1bc726fa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_plateau_PWL/result.csv": "b9e15fe74a1006174856d21f72a84737a0bc220b7af0e13b604c6d3bb713370f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_plateau_PWL/native.log": "766f486b267bc40151ff5ab97cd844520a7a294bba461baf27238fa6b652ed9f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_plateau_SHARED_FASTTABLEFILE/result.csv": "b1601c0a29fb3a52afdb200c99097e7f351f20af0d8e6624c1e4458eafd9ff65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/0_plateau_SHARED_FASTTABLEFILE/native.log": "b9b9a44605b0d8e63a6399d781f5325198b058779e11a3219f16bdd6bce73525",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_constant_PWL/result.csv": "1a66dd235187830cac738ff2ffdaa4db0088df51c6a702a07c5da787677675cc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_constant_PWL/native.log": "3047f82e33ee6fd48f03bd2a489e5d24a074bd98506caab297094d238926a399",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_constant_SHARED_FASTTABLEFILE/result.csv": "c6118b2f15111211a8a1d8159e18f27918e5de4ae0195bec26450a9826e0cb60",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_constant_SHARED_FASTTABLEFILE/native.log": "1e0ea220aebe32a11cb253847eaa857675363162bb15b9c9245370d738684f6b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_irregular_ramps_PWL/result.csv": "1c7767ab5595e27e847a9c829a54ce4fda8b6336873397bdfe332cf359a94527",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_irregular_ramps_PWL/native.log": "6b00781e79f5d0a269939836cac0dce72dc691706a2f6042b87b9645432c5352",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_irregular_ramps_SHARED_FASTTABLEFILE/result.csv": "629fb3014063df70a15d1dea1e5e01543c3158f9ddd3b5d893f7bb9dae9b9779",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_irregular_ramps_SHARED_FASTTABLEFILE/native.log": "772d9c9a4d81371df510bde23d80992c4fcee2f183a67d932ac049381208baf1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_plateau_PWL/result.csv": "b9e15fe74a1006174856d21f72a84737a0bc220b7af0e13b604c6d3bb713370f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_plateau_PWL/native.log": "fa2534f11c680c22a4625f6c7ea70c8d1aac769999a37f2df122aeb133593364",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_plateau_SHARED_FASTTABLEFILE/result.csv": "b1601c0a29fb3a52afdb200c99097e7f351f20af0d8e6624c1e4458eafd9ff65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_shared_TABLEFILE_controls_1375/1_plateau_SHARED_FASTTABLEFILE/native.log": "a6ac905c49422bb6109be2c70a866b3b1799cbc34c97b4550c33e4e5053220b3"
+  },
+  "results": [
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "case": "constant",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 16,
+          "maximum_source_error_V": 1.1102230246251565e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "SHARED_FASTTABLEFILE",
+          "samples": 16,
+          "maximum_source_error_V": 0.0,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    },
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "case": "irregular_ramps",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 43,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "SHARED_FASTTABLEFILE",
+          "samples": 43,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    },
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "case": "plateau",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 50,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "SHARED_FASTTABLEFILE",
+          "samples": 50,
+          "maximum_source_error_V": 1.6653345369377348e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    },
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "case": "constant",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 16,
+          "maximum_source_error_V": 1.1102230246251565e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "SHARED_FASTTABLEFILE",
+          "samples": 16,
+          "maximum_source_error_V": 0.0,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    },
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "case": "irregular_ramps",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 43,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "SHARED_FASTTABLEFILE",
+          "samples": 43,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    },
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "case": "plateau",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 50,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "SHARED_FASTTABLEFILE",
+          "samples": 50,
+          "maximum_source_error_V": 1.6653345369377348e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    }
+  ],
+  "all_twelve_native_controls_complete": true,
+  "literal_source_samples_and_knot_breakpoints_verified": true,
+  "shared_knot_driver_used": true,
+  "individual_table_breakpoints_disabled": true,
+  "fixture_absolute_voltage_tolerance": 1e-12,
+  "fixture_knot_time_tolerance_s": 1e-21,
+  "PLL_replay_accuracy_qualified": false,
+  "PLL_memory_reduction_demonstrated": false,
+  "release_ready": false
+}

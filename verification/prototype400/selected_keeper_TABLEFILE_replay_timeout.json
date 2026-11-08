@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TABLEFILE_replay_memory_1369/inputs.json": "55c2fec9902cbce7566c9929a4b64aebf04379dd5028f8d4031977b40421dd5b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TABLEFILE_replay_memory_1369/native_inputs.json": "d42c8bf23ddff29dd4d8e9bb4ae33174b8644cc42ee69cd7f6b5e9d2615b9c68",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TABLEFILE_replay_memory_1369/status.json": "7e0131fed99b728e9906b94f95356962350675bf0af64dd19b8a71eeba7505f3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TABLEFILE_replay_memory_1369/native.log": "b7f51c9ec385878861e7c7341f30cc3c834bbd3be4df9bc8335c2039dca8e900",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TABLEFILE_replay_memory_1369/memory.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "native_cap_s": 1800,
+  "terminal_reason": "TimeoutError('compiled check exhausted whole-check budget')",
+  "last_native_progress_percent": 27.0657,
+  "native_parser_and_DC_completed": true,
+  "normal_native_replay_complete": false,
+  "completed_peak_RSS_available": false,
+  "frequency_or_accuracy_result_available": false,
+  "partial_RAW_analyzed": false,
+  "original_jobs_changed": false,
+  "release_ready": false
+}
