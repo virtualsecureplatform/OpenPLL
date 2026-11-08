@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_ground_lifecycle_trace_1308/assessment.json": "db251492cf94a893f522616b6d194d86a1768a99d501d577563acde7725bd19e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_ground_lifecycle_trace_1308/pilot.spice": "65a501400b0e38760e4f91e5c893465ada43ca1e80426e1a1068a81ca4883d49",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "reference_primitives": 62338,
+  "candidate_primitives": 62338,
+  "primitive_multisets_match": true,
+  "missing_primitive_count": 0,
+  "extra_primitive_count": 0,
+  "wire_R_cards": 0,
+  "positive_wire_R_cards": 0,
+  "wire_R_components": 0,
+  "components_joining_distinct_reference_nodes": [],
+  "ordered_formal_ports_match": true,
+  "reference_nonzero_C_pairs": 341067,
+  "contracted_nonzero_C_pairs": 341067,
+  "C_pair_differences": [],
+  "exact_aggregated_C_match": true,
+  "negative_candidate_C_cards": 0,
+  "exact_device_and_C_contraction_verified": true,
+  "exact_requested_network_coverage_verified": false,
+  "distributed_wire_R_qualified": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}
