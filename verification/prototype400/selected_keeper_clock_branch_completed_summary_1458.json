@@ -1,0 +1,40 @@
+{
+  "source_receipts": {
+    "route": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_candidate_1452/assessment.json",
+      "sha256": "ec0c6716ad95fc681f7e6056415cdb0416ef17e8245e52d25eae5882fe89046b"
+    },
+    "timing": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_timing_1454/assessment.json",
+      "sha256": "3bb28e66d61d7326a481c3e07b483402c0983b770f37b8e8d2c9fffda69a5918"
+    },
+    "logic": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_logic_1455/assessment.json",
+      "sha256": "46b16592ee2a58b63a1135d5248d6df9b8ffca50766e5940530d413d04409f95"
+    },
+    "equivalence": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/assessment.json",
+      "sha256": "deb2677adb79cdb803f8ada47525aee19c6aea4033a2cd28a402e8646b6545a2"
+    },
+    "supervisor": {
+      "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_controller_1457/assessment.json",
+      "sha256": "657b45dd25ca656dece06776bdc85785e1ed7f5160136df6a1b4e7b966868e01"
+    }
+  },
+  "all_source_inputs_and_artifacts_verified": true,
+  "ordinary_pair_checks": 20,
+  "worst_ordinary_hold_ns": 0.081594124,
+  "worst_ordinary_setup_ns": 0.098300926,
+  "matched_state_primitives": 481,
+  "transition_output_equivalence_verified": true,
+  "corrupted_reset_negative_control_rejected": true,
+  "unannotated_drivers": 95,
+  "all_unannotated_drivers_physically_unloaded": true,
+  "remaining_first_synchronizer_aperture_checks": 5,
+  "unconstrained_RESET_N_remains": true,
+  "current_parent_integration_verified": false,
+  "cell_models_qualified": false,
+  "physical_timing_qualified": false,
+  "selected": false,
+  "release_ready": false
+}

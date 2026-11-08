@@ -1380,3 +1380,25 @@ proved. The next receiver output and sampled capacitor environment remain
 prescribed. This is neither changed-controller prediction nor corrected-
 backend model qualification. No additional same-code receiver expansion
 is automatically queued from this completed comparison.
+
+
+The isolated clock-branch candidate 1452 completed route and fresh min/nom/max
+wire-RC export with an empty router DRC report. Diagnostics 1454 use the same
+five conditional cell-view corners and 402.1 MHz constraints, without new timing
+exceptions: all twenty ordinary decision setup/hold checks are positive (minimum
+hold 81.594124 ps, setup 98.300926 ps). The remaining reported negative paths are
+five first-synchronizer data apertures. RESET_N still lacks an input delay;
+startup/recovery and the actual operating frequency range remain unqualified.
+Export 1455 physically binds all 95 unannotated outputs to zero external sinks
+and zero top ports. Proof 1456 matches all 481 state primitives and all binary
+transition/output functions; its corrupted-reset control fails as required.
+Completed receipt inputs and artifacts were rehashed before retention in 1458.
+These are separate diagnostic results, not selection or release qualification.
+The original candidate and all analog reference captures remain unchanged.
+
+Fresh layout check 1459 uses a separate artifact bundle and the retained native
+stream/Magic DRC/LVS/antenna/PG checker. It binds the Boolean proof through the
+functional export to the exact ECO database. It reserves one CPU (28), 8 GiB,
+queues at most 24 hours and caps native checks at one hour. No assembled parent,
+cell model, frequency range, physical CDC, density or EM/IR qualification is
+claimed from these component checks; the route remains optional and unselected.

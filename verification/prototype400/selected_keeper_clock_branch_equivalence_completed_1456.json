@@ -1,0 +1,705 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/prototype400/check_route_equivalence_v2.py": "05906e7e09b8fffb0a2062141a91c9e3f5d814f3d7d265cf3b82aaf1d1f4af94",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/timing400/check_compact_routed_equivalence_v2.py": "5919f8bf0623fa15c3ff6cf5b43b1422f46f8a06c6fa48cf4e294d67d7b7c952",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/timing400/check_compact_routed_equivalence.py": "3f4987d7fa6db5a6caf9f6732cfea2e40ac939bad3b5033b338b0c3becc522ad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/prototype400/check_physical_equivalence.py": "3c02ed8673a38d2daa03b9157fa0e99ccc85b192ee906c92a59e3a20875d0aba",
+    "/nix/store/4bmfi4470w0i3ixcaidfki18d3fyqvva-yosys-with-plugins-0.62/bin/yosys": "163a52612b0d0540474b54ecf8ec66cd231a2031acca99f379324a694c62ff65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.ref/sky130_fd_sc_hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib": "a2fe67002819d7538f53c557ab2dc0fb4fd4c0bd461f5b07f638ac1534c0a293",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/timing450/pdk/sky130A/libs.ref/sky130_fd_sc_hs/lef/sky130_fd_sc_hs.lef": "822c6b11584aaf2a25004c9a8ef7ed6c85aac29be98811c792813f8e0e470d95",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_fixed_divider_candidate_001/compact/mapped.json": "f819eb481b945d581f7042cd34536dcfdfa2e6162db2f140bc6a011edefafec1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_logic_1455/assessment.json": "46b16592ee2a58b63a1135d5248d6df9b8ffca50766e5940530d413d04409f95",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_logic_1455/route.v": "ba4dcd115c281acd986cff1008239ad0165761e2cb44f7c2d386cb5199d563f5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/timing400/route_compact_candidate.py": "acdf41d0d9c36868632469e4b789d58fea25a1b6a74be74d9b78b0365214aa88"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/projection.log": "dd72b40ff43ff60d4c7b58d9dc3262301dbe0237d9a0d88451931f8b75a1d95f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof_driver.log": "79d7188f06b695583eeb3e9482f39ab8f3f2b8544f1703a10aa825f46b8f7e51",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/projection.ys": "f1e0d0db80ef9adc00f12675d647d17f0d7de8b48d5028fdd9bdc95dfb4b40f7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/logic.v": "f0bd837a568bd05224b0ad567812bfde8cf1d02a3b38b7b165806b9c68da81bf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/remove_physical.ys": "2d9fccc7000c6a5b1092b1724e7dba078c4dd4e202b7b032931e556a56f57ed6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/physical_stubs.v": "e50c764ad1c2891e932064fd45aea66b46d93ec8a6c669ea27b00858fe7fd83d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/remove_physical.log": "2e063909e9b29d0cc9d959143ce8fe0de1e97cefbd24a6514dfbc503f5e3562d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/before_projection.json": "cf1a187ecf8c5ec87e493fb75351710f87270b94b29cfb4b877852b68ec8a294",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/library.json": "1e626b82dbb4a5b55460078eabb92f3427080ccbf20fa83200154f4211c59f0b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/equivalence.ys": "4568587e9cf3405d36dc53298860d1c9532f14112b9d0b09e9827b46d5ec11e2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/CUT_GATE.json": "5dbdde1335254e46a1a6f0a7c3aa3e0d7cc5f4bb6470002de1042d6c59114c42",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/prepare.log": "98726a96cae7664ab2d6ff92bdc98ed32766f69d6d2a932ab7c1e058bff6f060",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/equivalence.log": "ba06e5abc672fdb852f47adb08af2ad4525c12915709cddbf9892e5e95ed4f44",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/assessment.json": "6784b9e09062dcd1766274bae0fbcd8b40da494c2521fc4b0a543500a5423303",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/CUT_BAD.json": "734519963f295740adf9b4c4f92cfcfdf2f4fe2daeb1182313fac0834b983dc5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/negative.ys": "de92ba0e02c9015db57198f4ff16e4cd2fe67c8c83a324473784a3ab3f1f4bf2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/CUT_GOLD.json": "81685333c1db6682a9d043f3dc304f55ec3055b1304a278ed6a4c3c1f1ac3ab9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/negative.log": "9b179782bd7263de3b25ba099adab8969e0878e4aa5ccd42f2f4e9d652b4953c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/physical.json": "23710aefebb36ef90e2c54e622872235f8b7bff561fd6e8d8a0e9a195066c069",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_equivalence_1456/proof/prepare.ys": "1cbbe68d649e220a151bdebbfded090874cd7824e0f983ab4306ce1cda07af87"
+  },
+  "projected_auxiliary_master_counts": {
+    "sky130_fd_sc_hs__diode_2": 216,
+    "sky130_fd_sc_hs__fill_1": 1357,
+    "sky130_fd_sc_hs__fill_8": 2252,
+    "sky130_fd_sc_hs__fill_2": 1351,
+    "sky130_fd_sc_hs__fill_4": 717,
+    "sky130_fd_sc_hs__decap_4": 186,
+    "sky130_fd_sc_hs__tapvpwrvgnd_1": 1474
+  },
+  "all_projected_pg_only_cells_have_no_signal_connections": true,
+  "unused_logical_pg_ports_projected": [],
+  "projected_input_only_antenna_diode_connections": {
+    "ANTENNA_1": [
+      967
+    ],
+    "ANTENNA_10": [
+      360
+    ],
+    "ANTENNA_100": [
+      3708
+    ],
+    "ANTENNA_101": [
+      460
+    ],
+    "ANTENNA_102": [
+      463
+    ],
+    "ANTENNA_103": [
+      1499
+    ],
+    "ANTENNA_104": [
+      1499
+    ],
+    "ANTENNA_105": [
+      891
+    ],
+    "ANTENNA_106": [
+      1520
+    ],
+    "ANTENNA_107": [
+      3710
+    ],
+    "ANTENNA_108": [
+      3710
+    ],
+    "ANTENNA_109": [
+      955
+    ],
+    "ANTENNA_11": [
+      362
+    ],
+    "ANTENNA_110": [
+      1010
+    ],
+    "ANTENNA_111": [
+      1542
+    ],
+    "ANTENNA_112": [
+      1542
+    ],
+    "ANTENNA_113": [
+      1576
+    ],
+    "ANTENNA_114": [
+      339
+    ],
+    "ANTENNA_115": [
+      339
+    ],
+    "ANTENNA_116": [
+      1025
+    ],
+    "ANTENNA_117": [
+      1528
+    ],
+    "ANTENNA_118": [
+      1528
+    ],
+    "ANTENNA_119": [
+      872
+    ],
+    "ANTENNA_12": [
+      67
+    ],
+    "ANTENNA_120": [
+      904
+    ],
+    "ANTENNA_121": [
+      1002
+    ],
+    "ANTENNA_122": [
+      1688
+    ],
+    "ANTENNA_123": [
+      849
+    ],
+    "ANTENNA_13": [
+      918
+    ],
+    "ANTENNA_14": [
+      1010
+    ],
+    "ANTENNA_15": [
+      1052
+    ],
+    "ANTENNA_16": [
+      1687
+    ],
+    "ANTENNA_17": [
+      1725
+    ],
+    "ANTENNA_18": [
+      12
+    ],
+    "ANTENNA_19": [
+      1018
+    ],
+    "ANTENNA_2": [
+      1620
+    ],
+    "ANTENNA_20": [
+      1476
+    ],
+    "ANTENNA_21": [
+      1620
+    ],
+    "ANTENNA_22": [
+      1643
+    ],
+    "ANTENNA_23": [
+      1603
+    ],
+    "ANTENNA_24": [
+      1559
+    ],
+    "ANTENNA_25": [
+      886
+    ],
+    "ANTENNA_26": [
+      1038
+    ],
+    "ANTENNA_27": [
+      2186
+    ],
+    "ANTENNA_28": [
+      1725
+    ],
+    "ANTENNA_29": [
+      1794
+    ],
+    "ANTENNA_3": [
+      1643
+    ],
+    "ANTENNA_30": [
+      3743
+    ],
+    "ANTENNA_31": [
+      3685
+    ],
+    "ANTENNA_32": [
+      464
+    ],
+    "ANTENNA_33": [
+      821
+    ],
+    "ANTENNA_34": [
+      841
+    ],
+    "ANTENNA_35": [
+      871
+    ],
+    "ANTENNA_36": [
+      878
+    ],
+    "ANTENNA_37": [
+      951
+    ],
+    "ANTENNA_38": [
+      887
+    ],
+    "ANTENNA_39": [
+      897
+    ],
+    "ANTENNA_4": [
+      1743
+    ],
+    "ANTENNA_40": [
+      931
+    ],
+    "ANTENNA_41": [
+      947
+    ],
+    "ANTENNA_42": [
+      979
+    ],
+    "ANTENNA_43": [
+      985
+    ],
+    "ANTENNA_44": [
+      985
+    ],
+    "ANTENNA_45": [
+      1010
+    ],
+    "ANTENNA_46": [
+      1038
+    ],
+    "ANTENNA_47": [
+      1038
+    ],
+    "ANTENNA_48": [
+      1139
+    ],
+    "ANTENNA_49": [
+      3820
+    ],
+    "ANTENNA_5": [
+      2411
+    ],
+    "ANTENNA_50": [
+      1494
+    ],
+    "ANTENNA_51": [
+      1513
+    ],
+    "ANTENNA_52": [
+      1592
+    ],
+    "ANTENNA_53": [
+      1614
+    ],
+    "ANTENNA_54": [
+      1687
+    ],
+    "ANTENNA_55": [
+      1794
+    ],
+    "ANTENNA_56": [
+      1978
+    ],
+    "ANTENNA_57": [
+      342
+    ],
+    "ANTENNA_58": [
+      8
+    ],
+    "ANTENNA_59": [
+      363
+    ],
+    "ANTENNA_6": [
+      333
+    ],
+    "ANTENNA_60": [
+      365
+    ],
+    "ANTENNA_61": [
+      365
+    ],
+    "ANTENNA_62": [
+      849
+    ],
+    "ANTENNA_63": [
+      3708
+    ],
+    "ANTENNA_64": [
+      1661
+    ],
+    "ANTENNA_65": [
+      1559
+    ],
+    "ANTENNA_66": [
+      1499
+    ],
+    "ANTENNA_67": [
+      66
+    ],
+    "ANTENNA_68": [
+      1528
+    ],
+    "ANTENNA_69": [
+      1528
+    ],
+    "ANTENNA_7": [
+      341
+    ],
+    "ANTENNA_70": [
+      1498
+    ],
+    "ANTENNA_71": [
+      64
+    ],
+    "ANTENNA_72": [
+      3821
+    ],
+    "ANTENNA_73": [
+      878
+    ],
+    "ANTENNA_74": [
+      878
+    ],
+    "ANTENNA_75": [
+      951
+    ],
+    "ANTENNA_76": [
+      936
+    ],
+    "ANTENNA_77": [
+      1705
+    ],
+    "ANTENNA_78": [
+      1705
+    ],
+    "ANTENNA_79": [
+      1705
+    ],
+    "ANTENNA_8": [
+      6
+    ],
+    "ANTENNA_80": [
+      459
+    ],
+    "ANTENNA_81": [
+      872
+    ],
+    "ANTENNA_82": [
+      979
+    ],
+    "ANTENNA_83": [
+      979
+    ],
+    "ANTENNA_84": [
+      979
+    ],
+    "ANTENNA_85": [
+      1139
+    ],
+    "ANTENNA_86": [
+      1152
+    ],
+    "ANTENNA_87": [
+      1688
+    ],
+    "ANTENNA_88": [
+      1688
+    ],
+    "ANTENNA_89": [
+      1592
+    ],
+    "ANTENNA_9": [
+      360
+    ],
+    "ANTENNA_90": [
+      1592
+    ],
+    "ANTENNA_91": [
+      2029
+    ],
+    "ANTENNA_92": [
+      1687
+    ],
+    "ANTENNA_93": [
+      1743
+    ],
+    "ANTENNA_94": [
+      1777
+    ],
+    "ANTENNA_95": [
+      1777
+    ],
+    "ANTENNA_96": [
+      2258
+    ],
+    "ANTENNA_97": [
+      3353
+    ],
+    "ANTENNA_98": [
+      340
+    ],
+    "ANTENNA_99": [
+      1095
+    ],
+    "fixed013_diode_0": [
+      915
+    ],
+    "fixed013_diode_1": [
+      1018
+    ],
+    "fixed013_diode_2": [
+      1052
+    ],
+    "fixed013_diode_3": [
+      3844
+    ],
+    "fixed013_diode_4": [
+      333
+    ],
+    "fixed013_diode_5": [
+      849
+    ],
+    "fixed013_diode_6": [
+      67
+    ],
+    "fixed013_diode_7": [
+      1584
+    ],
+    "fixed014_diode_0": [
+      915
+    ],
+    "fixed014_diode_1": [
+      1696
+    ],
+    "fixed014_diode_2": [
+      335
+    ],
+    "fixed014_diode_3": [
+      1550
+    ],
+    "local012_diode_0": [
+      924
+    ],
+    "prototype_wire_closure008_diode_0": [
+      947
+    ],
+    "prototype_wire_closure008_diode_1": [
+      1476
+    ],
+    "prototype_wire_closure009_diode_0": [
+      911
+    ],
+    "prototype_wire_closure009_diode_1": [
+      356
+    ],
+    "prototype_wire_closure009_diode_2": [
+      1069
+    ],
+    "prototype_wire_closure011_diode_0": [
+      341
+    ],
+    "prototype_wire_closure011_diode_1": [
+      341
+    ],
+    "prototype_wire_closure011_diode_10": [
+      344
+    ],
+    "prototype_wire_closure011_diode_11": [
+      344
+    ],
+    "prototype_wire_closure011_diode_12": [
+      345
+    ],
+    "prototype_wire_closure011_diode_13": [
+      345
+    ],
+    "prototype_wire_closure011_diode_14": [
+      345
+    ],
+    "prototype_wire_closure011_diode_15": [
+      346
+    ],
+    "prototype_wire_closure011_diode_16": [
+      346
+    ],
+    "prototype_wire_closure011_diode_17": [
+      346
+    ],
+    "prototype_wire_closure011_diode_18": [
+      347
+    ],
+    "prototype_wire_closure011_diode_19": [
+      347
+    ],
+    "prototype_wire_closure011_diode_2": [
+      341
+    ],
+    "prototype_wire_closure011_diode_20": [
+      347
+    ],
+    "prototype_wire_closure011_diode_21": [
+      348
+    ],
+    "prototype_wire_closure011_diode_22": [
+      348
+    ],
+    "prototype_wire_closure011_diode_23": [
+      348
+    ],
+    "prototype_wire_closure011_diode_24": [
+      349
+    ],
+    "prototype_wire_closure011_diode_25": [
+      349
+    ],
+    "prototype_wire_closure011_diode_26": [
+      350
+    ],
+    "prototype_wire_closure011_diode_27": [
+      350
+    ],
+    "prototype_wire_closure011_diode_28": [
+      351
+    ],
+    "prototype_wire_closure011_diode_29": [
+      351
+    ],
+    "prototype_wire_closure011_diode_3": [
+      342
+    ],
+    "prototype_wire_closure011_diode_30": [
+      352
+    ],
+    "prototype_wire_closure011_diode_31": [
+      352
+    ],
+    "prototype_wire_closure011_diode_32": [
+      353
+    ],
+    "prototype_wire_closure011_diode_33": [
+      353
+    ],
+    "prototype_wire_closure011_diode_34": [
+      354
+    ],
+    "prototype_wire_closure011_diode_35": [
+      354
+    ],
+    "prototype_wire_closure011_diode_36": [
+      355
+    ],
+    "prototype_wire_closure011_diode_37": [
+      355
+    ],
+    "prototype_wire_closure011_diode_38": [
+      356
+    ],
+    "prototype_wire_closure011_diode_39": [
+      356
+    ],
+    "prototype_wire_closure011_diode_4": [
+      342
+    ],
+    "prototype_wire_closure011_diode_40": [
+      357
+    ],
+    "prototype_wire_closure011_diode_41": [
+      357
+    ],
+    "prototype_wire_closure011_diode_42": [
+      358
+    ],
+    "prototype_wire_closure011_diode_43": [
+      358
+    ],
+    "prototype_wire_closure011_diode_44": [
+      358
+    ],
+    "prototype_wire_closure011_diode_45": [
+      359
+    ],
+    "prototype_wire_closure011_diode_46": [
+      359
+    ],
+    "prototype_wire_closure011_diode_47": [
+      360
+    ],
+    "prototype_wire_closure011_diode_48": [
+      360
+    ],
+    "prototype_wire_closure011_diode_49": [
+      361
+    ],
+    "prototype_wire_closure011_diode_5": [
+      342
+    ],
+    "prototype_wire_closure011_diode_50": [
+      361
+    ],
+    "prototype_wire_closure011_diode_51": [
+      362
+    ],
+    "prototype_wire_closure011_diode_52": [
+      363
+    ],
+    "prototype_wire_closure011_diode_53": [
+      363
+    ],
+    "prototype_wire_closure011_diode_54": [
+      363
+    ],
+    "prototype_wire_closure011_diode_55": [
+      363
+    ],
+    "prototype_wire_closure011_diode_56": [
+      364
+    ],
+    "prototype_wire_closure011_diode_57": [
+      364
+    ],
+    "prototype_wire_closure011_diode_58": [
+      364
+    ],
+    "prototype_wire_closure011_diode_59": [
+      364
+    ],
+    "prototype_wire_closure011_diode_6": [
+      343
+    ],
+    "prototype_wire_closure011_diode_60": [
+      365
+    ],
+    "prototype_wire_closure011_diode_61": [
+      365
+    ],
+    "prototype_wire_closure011_diode_62": [
+      365
+    ],
+    "prototype_wire_closure011_diode_63": [
+      365
+    ],
+    "prototype_wire_closure011_diode_64": [
+      365
+    ],
+    "prototype_wire_closure011_diode_65": [
+      366
+    ],
+    "prototype_wire_closure011_diode_66": [
+      366
+    ],
+    "prototype_wire_closure011_diode_67": [
+      366
+    ],
+    "prototype_wire_closure011_diode_68": [
+      366
+    ],
+    "prototype_wire_closure011_diode_69": [
+      367
+    ],
+    "prototype_wire_closure011_diode_7": [
+      343
+    ],
+    "prototype_wire_closure011_diode_70": [
+      367
+    ],
+    "prototype_wire_closure011_diode_71": [
+      367
+    ],
+    "prototype_wire_closure011_diode_72": [
+      367
+    ],
+    "prototype_wire_closure011_diode_73": [
+      10
+    ],
+    "prototype_wire_closure011_diode_74": [
+      10
+    ],
+    "prototype_wire_closure011_diode_8": [
+      343
+    ],
+    "prototype_wire_closure011_diode_9": [
+      343
+    ]
+  },
+  "passive_load_effects_excluded_from_boolean_proof": true,
+  "matched_state_primitives": 481,
+  "all_transition_and_output_functions_equivalent": true,
+  "corrupted_reset_function_rejected": true,
+  "physical_timing_qualified": false,
+  "release_qualified": false,
+  "scope": "Binary transition/output equivalence after audited PG-only and input-only antenna-cell projection. Diode loading, physical connectivity/LVS and timing remain separate checks."
+}
