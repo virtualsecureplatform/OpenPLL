@@ -1,0 +1,32 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_antenna_source_review_573/unpacked/magic-8.3.623/ext2spice/ext2spice.c": "c0a23b0f85e4a71ef9997bd7bf5971447d4ce823c92688d34003b1f067ef56ec",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_PLLOUT_C_export_quantization.py": "de1dfcdf011f78b61b71d52da1e1d937f10eba4bbb26fb5291164959cc0a3e78",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b"
+  },
+  "artifacts": {},
+  "native_negative_pairs_printed_zero": 1,
+  "signed_negative_native_C_F_exact": "-2519/2000000000000000000000000000000000000000",
+  "signed_negative_native_C_F": -1.2595e-36,
+  "coupling_pairs": 1030,
+  "positive_native_couplings_printed_zero": 352,
+  "positive_printed_couplings": 677,
+  "native_zero_pairs": 0,
+  "zeroed_positive_C_F_exact": "20183243152750000135893/250000000000000000000000000000000000000",
+  "zeroed_positive_C_fF": 0.080732972611,
+  "maximum_zeroed_positive_C_aF": 0.966448,
+  "positive_printed_rounding_delta_F_exact": "89/1562500000000000000000",
+  "positive_printed_rounding_delta_fF": 5.696e-05,
+  "native_coupling_fF": 65.944796012611,
+  "printed_coupling_fF": 65.86412,
+  "coupling_endpoint_inventory_matches": true,
+  "exact_total_discrepancy_reconciled": true,
+  "dynamic_frequency_or_timing_error_qualified": false,
+  "release_ready": false,
+  "printed_ground_C_fF": 23.0076,
+  "scope": "literal EXT/SPICE export accounting only; source formatter inspected separately; upstream dependency closures not requalified"
+}
