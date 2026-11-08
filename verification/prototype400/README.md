@@ -2054,3 +2054,13 @@ the declared load, and measures20–40,40–60 and20–60 ns frequencies. Missin
 oscillation is recorded explicitly. No unfinished native RAW is read. Load
 sensitivity and subwindow agreement remain diagnostics, without automatic model
 or release qualification.
+
+Startup timing audit1539 identifies the actual selected native DCO RESET_N:
+its0.9 V rising crossing is181.310052 ns, and the first PLLOUT rising crossing
+is184.239709 ns. The last sampled mismatch among604 tuning endpoints occurs
+at109.065 ns. The absent early frequency is therefore consistent with the
+DCO being held in reset during controller programming. The static pilot releases
+its directly driven DCO reset at5 ns; oscillator settling comparisons must align
+elapsed time since native reset release. Skipping controller initialization is
+useful for static analog characterization, but does not verify that initialization
+or the closed loop. No startup qualification is claimed.

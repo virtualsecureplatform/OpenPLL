@@ -1,0 +1,156 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_receiver_waveforms_1467/assessment.json": "3b1c96eec7c4662c7ca3cd42a93d4315dd2b2baaeb98698911ed2ae9663abf27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/assessment.json": "8ecc7596e01f4c099ce93b6bdcf27edf12b760f7fde1f61ad346507e5bb2161a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295/assessment.json": "ef66cf9e5d0c94034cbb444fd7e4ffefc8de35e2d7c8a4d76e12299553586125",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_receiver_waveforms_1467/columns.json": "b731d4939b76a1c74d64c12003c5753c12e892c06bcbac0a3d8034969584ce82",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/plan.json": "c5882f6937c5b0bed68cc4f555890e58a009c61196a573c30621639c1bf5cad5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_reference_startup_timing.py": "bff421c8702a8cfceaa5ff26b026d90d8d61110dfb7c8691291415d7ca2fcc4b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_isolated_control.py": "abada00c7349f8209324c743e11ab32a75eac8743e73998697c767fdb53c7117",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py": "4b83a4d6c4951cafd271eeeab996644b63350c2b75c2bc3e45dcff1d156b8a09"
+  },
+  "artifacts": {},
+  "completed_reference_only": true,
+  "windows": [
+    {
+      "window_ns": [
+        20,
+        60
+      ],
+      "frequency_diagnostic": null,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "difference_from_final_ppm": null,
+      "physical_endpoints_checked": 604,
+      "all_controls_match": false
+    },
+    {
+      "window_ns": [
+        60,
+        100
+      ],
+      "frequency_diagnostic": null,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "difference_from_final_ppm": null,
+      "physical_endpoints_checked": 604,
+      "all_controls_match": false
+    },
+    {
+      "window_ns": [
+        100,
+        140
+      ],
+      "frequency_diagnostic": null,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "difference_from_final_ppm": null,
+      "physical_endpoints_checked": 604,
+      "all_controls_match": false
+    },
+    {
+      "window_ns": [
+        140,
+        180
+      ],
+      "frequency_diagnostic": null,
+      "frequency_unavailable_reason": "at least three rises in the common measured window required",
+      "difference_from_final_ppm": null,
+      "physical_endpoints_checked": 604,
+      "all_controls_match": true
+    },
+    {
+      "window_ns": [
+        200,
+        260
+      ],
+      "frequency_diagnostic": {
+        "rising_edges": 23,
+        "frequency_mhz": 373.1482167548865,
+        "minimum_period_ns": 2.67917927509842,
+        "maximum_period_ns": 2.680687523247343
+      },
+      "frequency_unavailable_reason": null,
+      "difference_from_final_ppm": 0.0,
+      "physical_endpoints_checked": 604,
+      "all_controls_match": true
+    }
+  ],
+  "startup_timing": {
+    "native_DCO_reset_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.RESET_N",
+    "reset_threshold_transitions": {
+      "rising_ns": [
+        181.31005230713203
+      ],
+      "falling_ns": []
+    },
+    "PLLOUT_threshold_transitions": {
+      "rising_ns": [
+        184.23970897165572,
+        186.92276639724247,
+        189.6050924418926,
+        192.2869489303965,
+        194.96844516051124,
+        197.64967257546186,
+        200.33247240618124,
+        203.01165168127966,
+        205.692339204527,
+        208.37289704697463,
+        211.05334289630773,
+        213.7336908230981,
+        216.41393828388703,
+        219.0941146267193,
+        221.7742226104854,
+        224.45425888178053,
+        227.13423254159883,
+        229.81414811347165,
+        232.49400910920974,
+        235.17381851550928,
+        237.8535774715598,
+        240.5337355266459,
+        243.2130397679092,
+        245.8926729475659,
+        248.5722673290009,
+        251.25182446362675,
+        253.93134578274126,
+        256.6108341380946,
+        259.2902779434146
+      ],
+      "falling_ns": [
+        182.97492197234172,
+        185.6638627049108,
+        188.34667778299388,
+        191.02876598856133,
+        193.71054723902668,
+        196.3918050726537,
+        199.0729348430242,
+        201.75401360204955,
+        204.43479817156137,
+        207.11542869073543,
+        209.7959316934204,
+        212.47633081644585,
+        215.15661077292341,
+        217.83684416897117,
+        220.51726141257473,
+        223.19706160141905,
+        225.87706730771853,
+        228.55701267101782,
+        231.23690090591774,
+        233.91673630393242,
+        236.59663415808268,
+        239.2762625760105,
+        241.95602551656395,
+        244.63568065187386,
+        247.31529594327029,
+        249.9948699357238,
+        252.67439766861347,
+        255.35389260939505,
+        258.03333064503704
+      ]
+    },
+    "last_sample_with_any_tuning_endpoint_mismatch_ns": 109.065,
+    "threshold_V": 0.9,
+    "control_low_max_V": 0.36,
+    "control_high_min_V": 1.44
+  },
+  "startup_convergence_qualified": false,
+  "independent_model_qualified": false,
+  "release_ready": false
+}
