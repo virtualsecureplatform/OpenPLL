@@ -1,0 +1,27 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_keeper_clock_buffer_charge_steps.py": "0da50036f333dd87faf39523f0bbf3f3775d3bca1603c360412664e028b6cd4c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_1526/assessment.json": "78e4138eb5c463fe315cf1c5cb039a40d8ff6d5660a9e7f07de440dc78c69a34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_1526/plan.json": "d540db26f3e2e11ff7032b7b7ce00c2dfca91d014bb3f2370aca404e813807d0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_1526/observations.json": "33e61937d9998114789af280c2dbb9b91578230eca219abd706e1c03646f65a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/assessment.json": "a6bbfb5438bb0d1ba98d66506f5dee929561aee659ebf68911af56d96a1227fb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/plan.json": "c83de80bd2db4da995f84753fb314cffe7938f24a0e254909771127f4efbf0c7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/observations.json": "7015d4ba12d740dbda87e72c42fb393d6adb67a4b996155cc288850ff094938f"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_charge_step_review_1528/comparisons.json": "cd2f88e9c3e678d19862c1a8dcf486437ae40fa97e215a753b29af2941ab1389"
+  },
+  "compared_fixtures": 45,
+  "coarse_step_ps": 2,
+  "fine_step_ps": 1,
+  "maximum_absolute_20_80_capacitance_difference_ppm": 200.8228871374085,
+  "maximum_absolute_full_charge_difference_ppm": 112.21708585051893,
+  "same_extracted_cell_models": true,
+  "extra_internal_voltage_observation_added": true,
+  "finer_step_control_compared": true,
+  "frequency_error_bound_qualified": false,
+  "full_flat_C_stitching_qualified": false,
+  "causal_receiver_model_available": false,
+  "clock_receiver_model_qualified": false,
+  "release_ready": false
+}

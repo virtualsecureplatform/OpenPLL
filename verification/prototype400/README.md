@@ -1959,3 +1959,16 @@ This completes explicit capacitor accounting in the extracted-cell measurement,
 not full-flat-C stitching, a causal load element or routed-load qualification.
 The actual coupling topology and voltage response must still be preserved when
 using these data in a receiver model.
+
+Completed-only step review1528 matches all45 declared fixtures at2 ps and1 ps.
+Maximum absolute relative differences are200.822887 ppm for20–80% effective
+input capacitance and112.217086 ppm for full-window charge (0.020083% and
+0.011222%). Three controls reject incomplete/duplicate grids, invalid response
+and nonfinite measurements, and verify sensitivity is relative to the finer
+measurement. All five actual deck pairs match after normalizing the declared
+step, equivalent model include path and saved-observation command; that equality
+record and its input hashes are retained. Original measurements remain unchanged.
+These results quantify local integration sensitivity, not a frequency-error
+bound or independent receiver-model qualification. Current model work should
+address dynamic response and C stitching rather than infer accuracy from a
+constant capacitance alone.

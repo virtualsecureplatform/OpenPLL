@@ -1,0 +1,44 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_1526/tt/charge.cir": "0b529f3bd5bd67682cf88e6055c9d9ad86f3d657e910509130e536fc8d492e47",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/tt/charge.cir": "59c8bbddfade1eac3ec1948d5597daa7911228211b6003a28d534bac105439d9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_1526/ff/charge.cir": "7787b41f63541d973ab451ebcdc3204f0896c53db0eecfd763646687138abefb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/ff/charge.cir": "7cf1d7e935d443de416f164152a83c68a342636b9231790c81180c122dc78b9f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_1526/ss/charge.cir": "b974ab11354cb14d9aed40dcd1965298f7fc22719fe3cf8051692361aff8201f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/ss/charge.cir": "9e478aa69015ba6c7f40a7b9bb39ff3a9580512143da0f36740d526e70c9e906",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_1526/sf/charge.cir": "bbd3df7a52853a3b50ce5e26ae0d7ab15f09cdbc00adc9abe444f3b7e9539351",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/sf/charge.cir": "19254ee12a7eede7d576dc431a236c4de03ab2cb2ff241b70dcde0602ef2e8ca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_1526/fs/charge.cir": "17603d7db063d3ad13ad6995b862b595b28904b243806b9f3f69a6c527bc1f66",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_buffer_charge_deembedded_1527/fs/charge.cir": "158e2c93ceee53e00a05caaa81d59c198c711920a0fbcc3f34b13b1253037840"
+  },
+  "cases": [
+    {
+      "corner": "tt",
+      "normalized_deck_sha256": "5a850eb8f97272837b0a4ae8c67fd0f6665f6a95d3e3f2112b854a62300268bc",
+      "electrical_decks_equal": true
+    },
+    {
+      "corner": "ff",
+      "normalized_deck_sha256": "4475679df6630c6b56e24c21b8df7650e739cdef5285e3e40bd52b481a230f19",
+      "electrical_decks_equal": true
+    },
+    {
+      "corner": "ss",
+      "normalized_deck_sha256": "778625bae5f36fa904c8ce3bd46961d4e2233039bfd55556529c2009ed118fd6",
+      "electrical_decks_equal": true
+    },
+    {
+      "corner": "sf",
+      "normalized_deck_sha256": "6dd965638f7439c6fe48e086d64376b5e3442ee29c1f742cc816e907a0f9c783",
+      "electrical_decks_equal": true
+    },
+    {
+      "corner": "fs",
+      "normalized_deck_sha256": "4db40c510204f7e981b137bb717d7fdf4f1d841bf79a7bff2d55eaeff3121661",
+      "electrical_decks_equal": true
+    }
+  ],
+  "normalization": "one equivalent cell include path; one saved-observation command removed; declared 2ps/1ps tran statement normalized",
+  "all_five_electrical_decks_match": true,
+  "release_ready": false
+}
