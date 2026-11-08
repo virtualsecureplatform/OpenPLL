@@ -58,6 +58,15 @@ retains the interpolation residual separately; no correction is fitted away.
 The actual-RTL TT gain screen is now using the measured seed and three native
 knots, with all analog and interface models still diagnostic.
 
+The [completed TT gain screen](fast_RTL_gain_screen_1553/assessment.json)
+finds KI1/KP2 as the lowest passing TT diagnostic pair.
+[Receipt review1555](fast_RTL_candidate_review_1555/assessment.json) verifies all
+12 cases,20 segments and80 final windows. Worst final metrics are17.8 ppm
+frequency error,131 ps phase span,120 ps mean phase error and23.8 ps drift;
+maximum acquisition confirmation is158.6 us. This is a functional result under
+unqualified subsystem/detector/clock models, not a physical PLL lock result or
+release gain selection. Other corners and model uncertainty remain open.
+
 The current numerical work replays measured programming-input ripple and
 continues the existing full-layout references and boundary replay. Their results
 must be completed and hash-verified before selecting a calibration or correcting
@@ -2335,3 +2344,15 @@ global bound or a transferred full-layout calibration. The measured128 point
 may be used as a new knot for later diagnostic loop tables, while remaining an
 independent holdout for the frozen endpoint-only prediction. Gain screen1553
 has begun using the measured seed and all three knots.
+
+Gain screen1553 completed16 diagnostic cases: KI4/KP0 has unresolved support at
+fine150; KI1/KP0 fails, and KI1/KP1 fails at a subsequent reference phase.
+KI1/KP2 passes all12 TT cases, and all lower gain pairs are resolved failures in
+this screen. Candidate review1555 rehashes every candidate input and artifact,
+checks exact arguments against the full scenario/phase matrix, and checks all
+20 segments and80 final windows against active limits. Worst final frequency
+error is17.781804 ppm, phase span131 ps, absolute mean phase119.914063 ps and
+absolute drift23.797089 ps. Maximum acquisition confirmation is158,560 ns;
+final tuning codes are128–131. The record retains all qualification flags false
+for physical models, other corners and release gain selection. CSV/log archives
+reproduce their source hashes; the unsupported KI4 case is explicitly incomplete.

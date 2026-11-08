@@ -1,0 +1,761 @@
+{
+  "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fast_RTL_gain_screen_1553",
+  "files": {
+    "status.json": {
+      "source_sha256": "6e134e4b1e44b5b824b04e8404162e89b86999343aa8f74530f50c21ed8131c4",
+      "retained_name": "status.json"
+    },
+    "progress.json": {
+      "source_sha256": "b3cc76ae60013499f37c6133fcf25b4bd8d080a4a0b2525bd1597ac3aa476309",
+      "retained_name": "progress.json"
+    },
+    "assessment.json": {
+      "source_sha256": "724ce75f305fb07ffecbe7604db6276e02e945e8bd6aa436bf192106ba0bcce0",
+      "retained_name": "assessment.json"
+    },
+    "owner.json": {
+      "source_sha256": "d97f43a086baa085cb446fcab30ab1114011babdc49950b5343f205ea5caad69",
+      "retained_name": "owner.json"
+    },
+    "inputs.json": {
+      "source_sha256": "1aba534bbf7bedee580694809e7f36a3c0c91e39f17ccf2c204fedde849ccdcc",
+      "retained_name": "inputs.json"
+    },
+    "cases/KI1_KP2_cold_start_phase10.log": {
+      "source_sha256": "66cfdb38dc0728ab4612dd710b9995fd82752ea72c32db4e5264b1dae3625df9",
+      "retained_name": "cases/KI1_KP2_cold_start_phase10.log.gz"
+    },
+    "cases/KI1_KP0_cold_start_phase0.log": {
+      "source_sha256": "7b10ead1bbd6ef8aeb09f1894b2a7ef6ce095df1b72548e83ab8cf12249abfba",
+      "retained_name": "cases/KI1_KP0_cold_start_phase0.log.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20.log": {
+      "source_sha256": "67d25922c91e5de0d7fa4827359c36128e638f21eca171b0c369aa73a4540f11",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20.log.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0.log": {
+      "source_sha256": "283eaf13c44cbe37c81d31c66fb8ba1d1a1d466827ad78168c741a28a285c76c",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0.log.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0.log": {
+      "source_sha256": "5a431e206c935b305c92539a2730224713a4ce12a9191aa4fb0e1cdffedb54dc",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0.log.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10.log": {
+      "source_sha256": "d5a1c9782d2bf1d730da28a840cc21bef070aebf6f4f8577e354a4bcebc726b7",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10.log.gz"
+    },
+    "cases/KI4_KP0_cold_start_phase0.log": {
+      "source_sha256": "72bf44dad028ee7f4055dff0677d52659125f3aafd45acccae515ae2c53f700d",
+      "retained_name": "cases/KI4_KP0_cold_start_phase0.log.gz"
+    },
+    "cases/KI1_KP1_cold_start_phase0.log": {
+      "source_sha256": "e1255ba36c74e5b0996e32ad96454ce21de88497655cfc49a033b194ef9b33e3",
+      "retained_name": "cases/KI1_KP1_cold_start_phase0.log.gz"
+    },
+    "cases/KI1_KP1_cold_start_phase10.log": {
+      "source_sha256": "1b91c9ff9cd3f5dbce121ac60fb36443d3f998d0d19f32ae0a505e37bec030cf",
+      "retained_name": "cases/KI1_KP1_cold_start_phase10.log.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30.log": {
+      "source_sha256": "53cb60cde8fbf144e5159c03ae9ac598c2cf240ead5414b58ba5fa18f47b797a",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30.log.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase0.log": {
+      "source_sha256": "a2fffe338321277f16dd6e03acba978941af24a35ab2f65250c91a9641d7c33e",
+      "retained_name": "cases/KI1_KP2_cold_start_phase0.log.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20.log": {
+      "source_sha256": "257155d64fa76e643ac850c07abd764c9bfb2e812cef08626bf7bac16f49f8f4",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20.log.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase20.log": {
+      "source_sha256": "993b583352f0b1c6d7cb98a01c1d411c7487034b95c06593ded9af65c7b7a015",
+      "retained_name": "cases/KI1_KP2_cold_start_phase20.log.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10.log": {
+      "source_sha256": "29788276ea7c089b16a1d948a74ae40e89ff99767a1948ccbb96955a46ff746a",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10.log.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase30.log": {
+      "source_sha256": "f3838f5ee155d6f4b4df23101c8bc6fc780e593462a5569b5a637032a3c8d245",
+      "retained_name": "cases/KI1_KP2_cold_start_phase30.log.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30.log": {
+      "source_sha256": "cfbcb161863f13208e97427b20af2616688154ff4eab4449aebf87773dcc070a",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30.log.gz"
+    },
+    "cases/KI4_KP0_cold_start_phase0/controls.csv": {
+      "source_sha256": "3cab0969a843df2fe5f3e6b220078d368ea399432b1b7d4b4f8a0b9133e419de",
+      "retained_name": "cases/KI4_KP0_cold_start_phase0/controls.csv.gz"
+    },
+    "cases/KI4_KP0_cold_start_phase0/reference_phase.json": {
+      "source_sha256": "aed7758e6619cceb0ea4381d1b1d537dbb24624f1a382a364fc8cf668ce01656",
+      "retained_name": "cases/KI4_KP0_cold_start_phase0/reference_phase.json"
+    },
+    "cases/KI4_KP0_cold_start_phase0/inputs.json": {
+      "source_sha256": "949a0c7c409c543a016dec9e59ea8b47e056fa136998a15c00e7fd778a08cdfb",
+      "retained_name": "cases/KI4_KP0_cold_start_phase0/inputs.json"
+    },
+    "cases/KI4_KP0_cold_start_phase0/edges.csv": {
+      "source_sha256": "b65123791dff79fe5dad718b51dbff9db7d5e51a5cbb90ec285d721f646906fd",
+      "retained_name": "cases/KI4_KP0_cold_start_phase0/edges.csv.gz"
+    },
+    "cases/KI4_KP0_cold_start_phase0/run.log": {
+      "source_sha256": "b78d0b2dbcb689a784e378e991e02477c89dbe054bfbe2c5e371c09b8b8f8924",
+      "retained_name": "cases/KI4_KP0_cold_start_phase0/run.log.gz"
+    },
+    "cases/KI4_KP0_cold_start_phase0/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI4_KP0_cold_start_phase0/dco_table.txt"
+    },
+    "cases/KI4_KP0_cold_start_phase0/segments.csv": {
+      "source_sha256": "398fba70266e42b1c6f7d465ebc3712ac688e2a3a47fb6b5f20e80203d3af83a",
+      "retained_name": "cases/KI4_KP0_cold_start_phase0/segments.csv.gz"
+    },
+    "cases/KI4_KP0_cold_start_phase0/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI4_KP0_cold_start_phase0/dco_frequency_model.json"
+    },
+    "cases/KI4_KP0_cold_start_phase0/assessment.json": {
+      "source_sha256": "a4e1e6657c428bcbe3234620b2499a9ae58d5c75e0802cbc12ee0eefdcc4c34b",
+      "retained_name": "cases/KI4_KP0_cold_start_phase0/assessment.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10/reference_phase.json": {
+      "source_sha256": "c8afd474715280722e015dc1000cffd51745afdf8919d97fecc5062c4f62a96a",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10/reference_phase.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10/segment1_acceptance.json": {
+      "source_sha256": "9301b201ff61828af9d72c6454b56c54935ea1caf15f804f4e1fa5f080649027",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10/segment1_acceptance.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10/segment0_acceptance.json": {
+      "source_sha256": "2403bcb8d68b8f110ed0dee5462fee9de2800befa47ce6c7cc8848cebb4532c6",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10/controls.csv": {
+      "source_sha256": "731594819a7a7c13ef52692006969be290418e4f08239c7e366006a6bf254eba",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10/controls.csv.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10/assessment.json": {
+      "source_sha256": "42a06dbe4f962ace02e9591fb593cc19fcfe4811f60d2048d7d27592995b76ea",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10/assessment.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10/run.log": {
+      "source_sha256": "7b781e6a84cf6e60a495336f0cb509de2e5a188f7b4df7b1f51f7c8e8aad77ec",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10/run.log.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10/dco_table.txt"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10/inputs.json": {
+      "source_sha256": "0a8044f0e56ce60bd0bddc91879e43a7a0f16495760411bf5c8bd1d4b32e7265",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10/inputs.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10/segments.csv": {
+      "source_sha256": "eba345f99502d84ad39e6f15191b67228b408892e8e34b16694b7afa22d0b820",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10/segments.csv.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase10/edges.csv": {
+      "source_sha256": "6c17c49aa193379021e5e14e58f553d4b6491f7eba81d1ca58a3fe88598f7ecc",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase10/edges.csv.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0/run.log": {
+      "source_sha256": "d709987dc374ba7bd5363af7eac444eed82733d05492ca2c23072d7da664a092",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0/run.log.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0/dco_table.txt"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0/segment1_acceptance.json": {
+      "source_sha256": "1fa923b339c065aed83d44670b803676c6f90e497c99a77e7fe6eab1e1bb2efc",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0/segment1_acceptance.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0/segments.csv": {
+      "source_sha256": "eba345f99502d84ad39e6f15191b67228b408892e8e34b16694b7afa22d0b820",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0/segments.csv.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0/inputs.json": {
+      "source_sha256": "1c0bf8a6dedf771845454ee7780860ea514b0479fa01c0a90d4dbaaf15318050",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0/inputs.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0/segment0_acceptance.json": {
+      "source_sha256": "8673f13d0f8e807dd86fac5e98da2ce0f06ca93c925db73b2511939f6cf17c01",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0/controls.csv": {
+      "source_sha256": "b655be1c3c13dfcef11fb99ea7feedcdc89b237f30671d5d4708e55a7bebec19",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0/controls.csv.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0/reference_phase.json": {
+      "source_sha256": "94156491eb52d834167babce93beb008155464574133b53de2e36fc7ccef9608",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0/reference_phase.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0/assessment.json": {
+      "source_sha256": "4997c14f3229aa208163eddb974cd7ed2168a74d3a513f8120801d9863d13074",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0/assessment.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase0/edges.csv": {
+      "source_sha256": "22758a2dcb2aacb4638a465c0cbbda09ae5e003aae7d3257eeead6bfde599bd5",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase0/edges.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10/edges.csv": {
+      "source_sha256": "05db818ee980edb057ca2f9119fe2d7592effeea670405bb7874a11ee438d6fd",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10/edges.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10/assessment.json": {
+      "source_sha256": "3b99bb4ec7ba173fff6e4a743daad3c75e723e5816cb9007203493386b89f558",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10/assessment.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10/reference_phase.json": {
+      "source_sha256": "ccf70d521a11b57d85d984281576f526af3e1a59b4c2dcb495903626fa251eaf",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10/reference_phase.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10/controls.csv": {
+      "source_sha256": "4dbc29c5efb55ada574150868979e1278009660a6589e4536be3d603c9627f39",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10/controls.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10/inputs.json": {
+      "source_sha256": "40ccf6381fb4731b8f78c1a67033e70551f37c4a3591a51f9f544ae434572d66",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10/inputs.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10/segment1_acceptance.json": {
+      "source_sha256": "fa580be5a2475634ff552de22daecbdeaf068be6ff834c2b9993a49915e3e722",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10/segment1_acceptance.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10/dco_table.txt"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10/run.log": {
+      "source_sha256": "a6f0107dbce87b6b80843530e67c83a8e17ec13fc6a94c8c9117c20438bc26bb",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10/run.log.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10/segments.csv": {
+      "source_sha256": "f8560f64aec9ceb608993149f0299e2c46fba3691e1b4108aa623e5efe568b3f",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10/segments.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10/segment0_acceptance.json": {
+      "source_sha256": "e3a5fe60a39da20c0c0f3bd19202c075301d9753dc0ad6b8f686d6bc90b789ab",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase10/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase10/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_cold_start_phase20/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_cold_start_phase20/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_cold_start_phase20/inputs.json": {
+      "source_sha256": "654b797f1e2ce3c2c35038269461a1bdba629510f3609b96aa22cf514bae6dec",
+      "retained_name": "cases/KI1_KP2_cold_start_phase20/inputs.json"
+    },
+    "cases/KI1_KP2_cold_start_phase20/run.log": {
+      "source_sha256": "73c8190a2f08d47d2afa24f095ef592eae148bae180c8d6c52eb73c78a1b8442",
+      "retained_name": "cases/KI1_KP2_cold_start_phase20/run.log.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase20/edges.csv": {
+      "source_sha256": "c489525ab8373a7f444bed9545db6ed1fd8e7787baab05fb3025433482b54e2f",
+      "retained_name": "cases/KI1_KP2_cold_start_phase20/edges.csv.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase20/reference_phase.json": {
+      "source_sha256": "fd2246c409c3a29f4bef0e09f09ee19269d4aca09a6cb99ef30de769751b3e4f",
+      "retained_name": "cases/KI1_KP2_cold_start_phase20/reference_phase.json"
+    },
+    "cases/KI1_KP2_cold_start_phase20/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_cold_start_phase20/dco_table.txt"
+    },
+    "cases/KI1_KP2_cold_start_phase20/controls.csv": {
+      "source_sha256": "cf4edd4a2ae19e80909c732536d7737cc4ef603fdbb2215c9720da0cab5be689",
+      "retained_name": "cases/KI1_KP2_cold_start_phase20/controls.csv.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase20/segment0_acceptance.json": {
+      "source_sha256": "d2080a649ab81000a77c1d5919564bc97bb6a807e68ff4a9162562471cb02ddb",
+      "retained_name": "cases/KI1_KP2_cold_start_phase20/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_cold_start_phase20/segments.csv": {
+      "source_sha256": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33",
+      "retained_name": "cases/KI1_KP2_cold_start_phase20/segments.csv.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase20/assessment.json": {
+      "source_sha256": "a5c1ad06e983c4e124374d6e2eea0de48baeb333004fc12b164aa327f7a9ed8d",
+      "retained_name": "cases/KI1_KP2_cold_start_phase20/assessment.json"
+    },
+    "cases/KI1_KP2_cold_start_phase0/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_cold_start_phase0/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_cold_start_phase0/controls.csv": {
+      "source_sha256": "613b069f7b9606d6bf45e9167d725c690b607eec3b065a2bb0cbc98040d4230d",
+      "retained_name": "cases/KI1_KP2_cold_start_phase0/controls.csv.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase0/segment0_acceptance.json": {
+      "source_sha256": "8673f13d0f8e807dd86fac5e98da2ce0f06ca93c925db73b2511939f6cf17c01",
+      "retained_name": "cases/KI1_KP2_cold_start_phase0/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_cold_start_phase0/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_cold_start_phase0/dco_table.txt"
+    },
+    "cases/KI1_KP2_cold_start_phase0/assessment.json": {
+      "source_sha256": "68c2f29e3739a5c8f20e1ef3cb8382b2305dc1d871fe9d633bfee4184c8054b6",
+      "retained_name": "cases/KI1_KP2_cold_start_phase0/assessment.json"
+    },
+    "cases/KI1_KP2_cold_start_phase0/edges.csv": {
+      "source_sha256": "6c0e41251f3f4cc5a24099b0d95eca5e4fc257658a61e9c2244aab17a1b2f289",
+      "retained_name": "cases/KI1_KP2_cold_start_phase0/edges.csv.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase0/reference_phase.json": {
+      "source_sha256": "f2bbd7ef10faad7c2cfaf25aee7a0344b19a2e3a40b65a35659c84b296395e17",
+      "retained_name": "cases/KI1_KP2_cold_start_phase0/reference_phase.json"
+    },
+    "cases/KI1_KP2_cold_start_phase0/run.log": {
+      "source_sha256": "55fb6b1f7e87d3f9ad2c669c26e0747eff10933a89b8063ea43fe2f2c66ea289",
+      "retained_name": "cases/KI1_KP2_cold_start_phase0/run.log.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase0/segments.csv": {
+      "source_sha256": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33",
+      "retained_name": "cases/KI1_KP2_cold_start_phase0/segments.csv.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase0/inputs.json": {
+      "source_sha256": "7e863c63016758ce6bb6c7220cdec123cafac4bd349de06e2fcb1376beece6a7",
+      "retained_name": "cases/KI1_KP2_cold_start_phase0/inputs.json"
+    },
+    "cases/KI1_KP1_cold_start_phase10/inputs.json": {
+      "source_sha256": "9a1c8a4ce3bd1eee667c7702d00997b6faf3f04fe8b13e11263a89fd8a9282ca",
+      "retained_name": "cases/KI1_KP1_cold_start_phase10/inputs.json"
+    },
+    "cases/KI1_KP1_cold_start_phase10/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP1_cold_start_phase10/dco_table.txt"
+    },
+    "cases/KI1_KP1_cold_start_phase10/reference_phase.json": {
+      "source_sha256": "69ac09c30aa237a7f4968c50e673f2b40b5921fde13c75b8b626f24efe3e2e1f",
+      "retained_name": "cases/KI1_KP1_cold_start_phase10/reference_phase.json"
+    },
+    "cases/KI1_KP1_cold_start_phase10/segments.csv": {
+      "source_sha256": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33",
+      "retained_name": "cases/KI1_KP1_cold_start_phase10/segments.csv.gz"
+    },
+    "cases/KI1_KP1_cold_start_phase10/edges.csv": {
+      "source_sha256": "11b6c3f01793686bbbda421a51e180a1ce367adcac20234e6219ae0bb456a8db",
+      "retained_name": "cases/KI1_KP1_cold_start_phase10/edges.csv.gz"
+    },
+    "cases/KI1_KP1_cold_start_phase10/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP1_cold_start_phase10/dco_frequency_model.json"
+    },
+    "cases/KI1_KP1_cold_start_phase10/assessment.json": {
+      "source_sha256": "11443cf0fe28f7c9af417277c708ec01067f941381582d5b76eae0f9cf9f330a",
+      "retained_name": "cases/KI1_KP1_cold_start_phase10/assessment.json"
+    },
+    "cases/KI1_KP1_cold_start_phase10/controls.csv": {
+      "source_sha256": "19f526bb80e1a6e398e8db779c74264c7e514aad435ffa14a4be0c8469586f5d",
+      "retained_name": "cases/KI1_KP1_cold_start_phase10/controls.csv.gz"
+    },
+    "cases/KI1_KP1_cold_start_phase10/run.log": {
+      "source_sha256": "7b1cf99a381602dddb2e478522d52eb1bbd807852c1dbe93e1fb5d1184bac9fa",
+      "retained_name": "cases/KI1_KP1_cold_start_phase10/run.log.gz"
+    },
+    "cases/KI1_KP1_cold_start_phase10/segment0_acceptance.json": {
+      "source_sha256": "a2a6ea00eec390428fab763d00fec82ac4f1cbea19c8aa6f5d6bf464c3b68670",
+      "retained_name": "cases/KI1_KP1_cold_start_phase10/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_cold_start_phase30/assessment.json": {
+      "source_sha256": "b28cef153c32a047324d338192b1d837378801765edddcb4ceffc6b031d3bd64",
+      "retained_name": "cases/KI1_KP2_cold_start_phase30/assessment.json"
+    },
+    "cases/KI1_KP2_cold_start_phase30/run.log": {
+      "source_sha256": "f2b49e7125ec7f2cc51039127758dcf765954bea17ad8b5d173789e860f31271",
+      "retained_name": "cases/KI1_KP2_cold_start_phase30/run.log.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase30/reference_phase.json": {
+      "source_sha256": "5f19b39378893cf31c95ffc23434c9114a1f3b37dd09bd216312979e3c4d4604",
+      "retained_name": "cases/KI1_KP2_cold_start_phase30/reference_phase.json"
+    },
+    "cases/KI1_KP2_cold_start_phase30/controls.csv": {
+      "source_sha256": "7543ce32c38cccb9068c8e551771305e11f85792157af15ba046e04480a9aa64",
+      "retained_name": "cases/KI1_KP2_cold_start_phase30/controls.csv.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase30/segments.csv": {
+      "source_sha256": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33",
+      "retained_name": "cases/KI1_KP2_cold_start_phase30/segments.csv.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase30/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_cold_start_phase30/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_cold_start_phase30/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_cold_start_phase30/dco_table.txt"
+    },
+    "cases/KI1_KP2_cold_start_phase30/edges.csv": {
+      "source_sha256": "f241e86e2c553b64c61d774d17bf6ac8daa85563bb7abca04ae83fceafdcdde9",
+      "retained_name": "cases/KI1_KP2_cold_start_phase30/edges.csv.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase30/inputs.json": {
+      "source_sha256": "98c9667913c91115a876af91ea008df1bd577c3c315d03ad755ef6fc8aa9538b",
+      "retained_name": "cases/KI1_KP2_cold_start_phase30/inputs.json"
+    },
+    "cases/KI1_KP2_cold_start_phase30/segment0_acceptance.json": {
+      "source_sha256": "5e69842228cd542405d588c7f562453e19fe07596fc9fbc3f75e47ecebe9042d",
+      "retained_name": "cases/KI1_KP2_cold_start_phase30/segment0_acceptance.json"
+    },
+    "cases/KI1_KP1_cold_start_phase0/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP1_cold_start_phase0/dco_table.txt"
+    },
+    "cases/KI1_KP1_cold_start_phase0/run.log": {
+      "source_sha256": "55fb6b1f7e87d3f9ad2c669c26e0747eff10933a89b8063ea43fe2f2c66ea289",
+      "retained_name": "cases/KI1_KP1_cold_start_phase0/run.log.gz"
+    },
+    "cases/KI1_KP1_cold_start_phase0/inputs.json": {
+      "source_sha256": "7c520477088b19691cb77095af80401a928f2a0c41b726295d0f2e209cf61050",
+      "retained_name": "cases/KI1_KP1_cold_start_phase0/inputs.json"
+    },
+    "cases/KI1_KP1_cold_start_phase0/controls.csv": {
+      "source_sha256": "bc11637629be67f3361ded33c1c3b0e40e6c4320d75cc0b4d531e0b3658c0aeb",
+      "retained_name": "cases/KI1_KP1_cold_start_phase0/controls.csv.gz"
+    },
+    "cases/KI1_KP1_cold_start_phase0/reference_phase.json": {
+      "source_sha256": "f2bbd7ef10faad7c2cfaf25aee7a0344b19a2e3a40b65a35659c84b296395e17",
+      "retained_name": "cases/KI1_KP1_cold_start_phase0/reference_phase.json"
+    },
+    "cases/KI1_KP1_cold_start_phase0/assessment.json": {
+      "source_sha256": "1763f8cc0a9c037db5a21d4cc53fe320fa102e70cd88dd2e15f345238d072b2b",
+      "retained_name": "cases/KI1_KP1_cold_start_phase0/assessment.json"
+    },
+    "cases/KI1_KP1_cold_start_phase0/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP1_cold_start_phase0/dco_frequency_model.json"
+    },
+    "cases/KI1_KP1_cold_start_phase0/segments.csv": {
+      "source_sha256": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33",
+      "retained_name": "cases/KI1_KP1_cold_start_phase0/segments.csv.gz"
+    },
+    "cases/KI1_KP1_cold_start_phase0/segment0_acceptance.json": {
+      "source_sha256": "dd2cbc417f47121bb542bf88b0ba2dd1a7917e4056926b424c7a4bac3614ca7d",
+      "retained_name": "cases/KI1_KP1_cold_start_phase0/segment0_acceptance.json"
+    },
+    "cases/KI1_KP1_cold_start_phase0/edges.csv": {
+      "source_sha256": "5af49a437f97741faf759a9a9b531533af4d30e3f1401319be4f185d639948a7",
+      "retained_name": "cases/KI1_KP1_cold_start_phase0/edges.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30/controls.csv": {
+      "source_sha256": "89f78e566290419ffe5fdd462cd3058c0ba502f974852ebc2a6409680f11a740",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30/controls.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30/segment0_acceptance.json": {
+      "source_sha256": "5ecacb4aef01252ae609a9f64fbb8505a11e433c59255352327078a538f899b1",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30/assessment.json": {
+      "source_sha256": "ced0b109637b6421f623b57cd2ba126313f1cdcc4043a7d2345fc3caae68adea",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30/assessment.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30/edges.csv": {
+      "source_sha256": "2a9bb92239a2a50182e48dba1cf7c44bfb9ee2a7a4d2dbf6da503c911a4d2a34",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30/edges.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30/segment1_acceptance.json": {
+      "source_sha256": "5c7abf482d78cac34d46a89c27e2d2737ac86e7459f5d03e29313d8cf9fee68b",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30/segment1_acceptance.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30/run.log": {
+      "source_sha256": "7ec580c5f8e1f319a7845c83e756551d882d949ece16e03de331c7a1a63eab61",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30/run.log.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30/dco_table.txt"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30/inputs.json": {
+      "source_sha256": "6324cbf0dfed60823a0f8b1032382a07d5cd9897969585d2eee75490d854d665",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30/inputs.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30/reference_phase.json": {
+      "source_sha256": "9dc52b4d2f8d98600a0206e76434921f4fd0041f027052a351e9e2ba3df8de7c",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30/reference_phase.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase30/segments.csv": {
+      "source_sha256": "f8560f64aec9ceb608993149f0299e2c46fba3691e1b4108aa623e5efe568b3f",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase30/segments.csv.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30/edges.csv": {
+      "source_sha256": "75bb0f46e77fbc505ec03f786e364ea20fd7e4923644b4b1886b6c7a805f97c9",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30/edges.csv.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30/assessment.json": {
+      "source_sha256": "48e8cbe0097e590ab65dffcf8a9a5110f9a24cb994d5b89836d559b35779eb02",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30/assessment.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30/segments.csv": {
+      "source_sha256": "eba345f99502d84ad39e6f15191b67228b408892e8e34b16694b7afa22d0b820",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30/segments.csv.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30/dco_table.txt"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30/reference_phase.json": {
+      "source_sha256": "71e78005a0a636a1961d1523d55822694f989fea8fb550328bde6aadb805ba7c",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30/reference_phase.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30/controls.csv": {
+      "source_sha256": "dcf2580ebce3459a7e9563b4353f798b9896ca8f4b1e12fe8869b847543cf807",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30/controls.csv.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30/inputs.json": {
+      "source_sha256": "e0bdfd3731f5d9da56794d2b2c0f854b39981c91513675845073c1257e037057",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30/inputs.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30/segment0_acceptance.json": {
+      "source_sha256": "5e69842228cd542405d588c7f562453e19fe07596fc9fbc3f75e47ecebe9042d",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30/run.log": {
+      "source_sha256": "d7238cd236fa421129cf4594d84d7aee98128be60526b3ba1df068d08e8a4132",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30/run.log.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase30/segment1_acceptance.json": {
+      "source_sha256": "065754ba707a0695b80b72ba5c1ea68651be6c80b168f4bff8121c3a05a74d85",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase30/segment1_acceptance.json"
+    },
+    "cases/KI1_KP0_cold_start_phase0/segment0_acceptance.json": {
+      "source_sha256": "a0499c5dfa029cb0a076027caed075580bdf8732f4ed14dadc3752f318f22374",
+      "retained_name": "cases/KI1_KP0_cold_start_phase0/segment0_acceptance.json"
+    },
+    "cases/KI1_KP0_cold_start_phase0/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP0_cold_start_phase0/dco_table.txt"
+    },
+    "cases/KI1_KP0_cold_start_phase0/assessment.json": {
+      "source_sha256": "05c320f4914245ceba1c88943bc9187af6ecb66c3d01e8590232d6c6047f3cbe",
+      "retained_name": "cases/KI1_KP0_cold_start_phase0/assessment.json"
+    },
+    "cases/KI1_KP0_cold_start_phase0/controls.csv": {
+      "source_sha256": "dd91f8e1203ecf4e324462d80b09f792fb96a3e30c43d51796415bd3df01e430",
+      "retained_name": "cases/KI1_KP0_cold_start_phase0/controls.csv.gz"
+    },
+    "cases/KI1_KP0_cold_start_phase0/inputs.json": {
+      "source_sha256": "229513dcc880819a1c6c59c844dff037eca5576c7b4dbdc9b058db7cc5702d12",
+      "retained_name": "cases/KI1_KP0_cold_start_phase0/inputs.json"
+    },
+    "cases/KI1_KP0_cold_start_phase0/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP0_cold_start_phase0/dco_frequency_model.json"
+    },
+    "cases/KI1_KP0_cold_start_phase0/run.log": {
+      "source_sha256": "55fb6b1f7e87d3f9ad2c669c26e0747eff10933a89b8063ea43fe2f2c66ea289",
+      "retained_name": "cases/KI1_KP0_cold_start_phase0/run.log.gz"
+    },
+    "cases/KI1_KP0_cold_start_phase0/segments.csv": {
+      "source_sha256": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33",
+      "retained_name": "cases/KI1_KP0_cold_start_phase0/segments.csv.gz"
+    },
+    "cases/KI1_KP0_cold_start_phase0/edges.csv": {
+      "source_sha256": "d9274c8859d6d4ed22db38c34db1b234058e547a0e49f295a094566dc38577aa",
+      "retained_name": "cases/KI1_KP0_cold_start_phase0/edges.csv.gz"
+    },
+    "cases/KI1_KP0_cold_start_phase0/reference_phase.json": {
+      "source_sha256": "f2bbd7ef10faad7c2cfaf25aee7a0344b19a2e3a40b65a35659c84b296395e17",
+      "retained_name": "cases/KI1_KP0_cold_start_phase0/reference_phase.json"
+    },
+    "cases/KI1_KP2_cold_start_phase10/edges.csv": {
+      "source_sha256": "aa6c315461cc4a5d8c67012ac8666c0f499742accb93f343095992bcb420974b",
+      "retained_name": "cases/KI1_KP2_cold_start_phase10/edges.csv.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase10/controls.csv": {
+      "source_sha256": "d8d78dd3b214a040cac7f21960c2927b4fa1c0b3945b0379b81c7eff2e174417",
+      "retained_name": "cases/KI1_KP2_cold_start_phase10/controls.csv.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase10/run.log": {
+      "source_sha256": "7b1cf99a381602dddb2e478522d52eb1bbd807852c1dbe93e1fb5d1184bac9fa",
+      "retained_name": "cases/KI1_KP2_cold_start_phase10/run.log.gz"
+    },
+    "cases/KI1_KP2_cold_start_phase10/segment0_acceptance.json": {
+      "source_sha256": "2403bcb8d68b8f110ed0dee5462fee9de2800befa47ce6c7cc8848cebb4532c6",
+      "retained_name": "cases/KI1_KP2_cold_start_phase10/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_cold_start_phase10/inputs.json": {
+      "source_sha256": "2fc12a98b48ecd8388c45e1124c7c3b1fa03edd22eb887bc8c910cd4dd5c4521",
+      "retained_name": "cases/KI1_KP2_cold_start_phase10/inputs.json"
+    },
+    "cases/KI1_KP2_cold_start_phase10/reference_phase.json": {
+      "source_sha256": "69ac09c30aa237a7f4968c50e673f2b40b5921fde13c75b8b626f24efe3e2e1f",
+      "retained_name": "cases/KI1_KP2_cold_start_phase10/reference_phase.json"
+    },
+    "cases/KI1_KP2_cold_start_phase10/assessment.json": {
+      "source_sha256": "9f99a5d61bb43ecd6230efde9567b9780ad3c11ec025091d2d78f7c2b4f5930a",
+      "retained_name": "cases/KI1_KP2_cold_start_phase10/assessment.json"
+    },
+    "cases/KI1_KP2_cold_start_phase10/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_cold_start_phase10/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_cold_start_phase10/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_cold_start_phase10/dco_table.txt"
+    },
+    "cases/KI1_KP2_cold_start_phase10/segments.csv": {
+      "source_sha256": "7227227cf5386648487725382662d7b7ec3db5a8dafe15388744afc2e631ea33",
+      "retained_name": "cases/KI1_KP2_cold_start_phase10/segments.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20/edges.csv": {
+      "source_sha256": "96a02e2fa292f5b711aa6a9840e6b54faaeeefa892c80a9e767be6ac34a975f4",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20/edges.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20/segment1_acceptance.json": {
+      "source_sha256": "7cc2d29c173352101627ab2f916a3687067b87ac4434313528ef5bc0b945fb14",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20/segment1_acceptance.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20/segment0_acceptance.json": {
+      "source_sha256": "16d93b8ae76c7bd5f148f6afaa42400c3ed3ded733b14f15f5905956b134a06f",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20/controls.csv": {
+      "source_sha256": "a658c04f337cb1c403c735454f4b3c9a62a05e2514af71e8678eaa744ace7380",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20/controls.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20/reference_phase.json": {
+      "source_sha256": "0134b54b8be9297ad70acc390e89e07e5636fbcba707c605aac143b103b0fb5b",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20/reference_phase.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20/segments.csv": {
+      "source_sha256": "f8560f64aec9ceb608993149f0299e2c46fba3691e1b4108aa623e5efe568b3f",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20/segments.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20/inputs.json": {
+      "source_sha256": "408083b8c9c3a68beb0cb8888f7dc6f46c8f4f885181a29b4d2a89773e2197c6",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20/inputs.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20/dco_table.txt"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20/run.log": {
+      "source_sha256": "4466871379643e2805a854adbf64c984ccec084052f73bd4e8ac87c5ba4ceda2",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20/run.log.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase20/assessment.json": {
+      "source_sha256": "958f39febd736617c3dc5284ba3747c979c57353387d226534706049d86db8f1",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase20/assessment.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0/assessment.json": {
+      "source_sha256": "e5bb75ce6d8d944187043032de57dc16d6b2fa26dd9fda290da7fe3bafe0ab8e",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0/assessment.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0/run.log": {
+      "source_sha256": "d9b07802741783d1de9b91951fa25d2078efa979244dc99f52b2702611fcf144",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0/run.log.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0/segments.csv": {
+      "source_sha256": "f8560f64aec9ceb608993149f0299e2c46fba3691e1b4108aa623e5efe568b3f",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0/segments.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0/dco_table.txt"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0/reference_phase.json": {
+      "source_sha256": "9d51c9c866af3f2545c4beafc2c22ade9c330b6897f6a4140b31926e48c4d95d",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0/reference_phase.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0/edges.csv": {
+      "source_sha256": "22250ee3dd024c80174248cdbfc64d29cc4210ead151d5b23e5f169394adbec9",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0/edges.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0/controls.csv": {
+      "source_sha256": "cc82bbbec35055cc9f3a3db2044949e5e395a912744132d0437b7362b39bafe3",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0/controls.csv.gz"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0/segment1_acceptance.json": {
+      "source_sha256": "7caf409f8c1d4c140c2df61b55c7379ac02b7deed98c529e1ea1da06d5f59777",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0/segment1_acceptance.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0/inputs.json": {
+      "source_sha256": "492a072a3533565bd67b3acc47d5dab2d24e3f976028fc6a9ff9909986d973fa",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0/inputs.json"
+    },
+    "cases/KI1_KP2_disable_reenable_phase0/segment0_acceptance.json": {
+      "source_sha256": "0b83e4bf5c1f2ce48c315b45ea6404e9d06fdb63689c12fefdc26e71d88b5885",
+      "retained_name": "cases/KI1_KP2_disable_reenable_phase0/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20/segment0_acceptance.json": {
+      "source_sha256": "d2080a649ab81000a77c1d5919564bc97bb6a807e68ff4a9162562471cb02ddb",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20/segment0_acceptance.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20/reference_phase.json": {
+      "source_sha256": "d205b661f0607ed8141d998505a5a6aeb27834a86354f2d93afd94e0a7899732",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20/reference_phase.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20/segments.csv": {
+      "source_sha256": "eba345f99502d84ad39e6f15191b67228b408892e8e34b16694b7afa22d0b820",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20/segments.csv.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20/segment1_acceptance.json": {
+      "source_sha256": "d2a1eb4fd721942de0ba9a8ca2c5382c9f650b37b58b257172a9d45c75e14387",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20/segment1_acceptance.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20/assessment.json": {
+      "source_sha256": "065bc509be195dbaf11bbed0356653b8b3c5138f5ba4d0810d77c24b762e67d1",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20/assessment.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20/dco_frequency_model.json": {
+      "source_sha256": "7f2d3c554ffa5c95381a152c9bc94124d7cbe2448ea05e2b6efb557cd8ee1d29",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20/dco_frequency_model.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20/dco_table.txt": {
+      "source_sha256": "8932ee81cef9c0c7f501aa7affcf9d26a7be55a38d5df1becc7e2e530aad6efc",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20/dco_table.txt"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20/inputs.json": {
+      "source_sha256": "19c34c59fe80627e2b41eb8d7d37d4a99430dc696ee98c8ec07a02ab4d8e056b",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20/inputs.json"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20/controls.csv": {
+      "source_sha256": "4a6aef00f481f206cc1e8271b5afc69ef7133119b2fc51a46db9e025d419ad56",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20/controls.csv.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20/run.log": {
+      "source_sha256": "4aff91491e1858e4315386740be6c294ecf3cea0dc6b664c851db388e9f7613f",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20/run.log.gz"
+    },
+    "cases/KI1_KP2_reset_during_tracking_phase20/edges.csv": {
+      "source_sha256": "7a12019ade432d81cd40d5c694623fd5ac6e70169264c3a06947a1d3feca6018",
+      "retained_name": "cases/KI1_KP2_reset_during_tracking_phase20/edges.csv.gz"
+    }
+  },
+  "includes_incomplete_lookup_stop_case": true,
+  "completed_candidate_cases": 12,
+  "scope": "TT-only actual-RTL diagnostic; analog models unqualified",
+  "release_ready": false
+}
