@@ -2376,3 +2376,13 @@ finish does it mark the original128–131 final code set as directly measured.
 That observation does not requalify the frozen gain traces, establish a global
 error bound, qualify dynamic code-step response or resolve the full-layout bias.
 No unfinished RAW is read and no native job is restarted or modified.
+
+Fresh gain screen1561 waits for all three final-code native captures, then builds
+a separate six-knot table at8/128/129/130/131/149. It rechecks the full prescribed
+gain order and all scenario/phase cases rather than inheriting the old gain
+candidate after changing its frequency table. Original1553 cases remain frozen.
+The scheduler reuses the tested gain-order/candidate guards, pins exact native
+code identities, and retains the same bounded300-case/30 min diagnostic scope,
+with one CPU24/2 GiB case at a time. Missing model support remains unresolved.
+Any candidate remains TT-only and unqualified for detector/clock uncertainty,
+dynamic code-step response, full-layout bias, other corners and release selection.
