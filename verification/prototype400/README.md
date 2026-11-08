@@ -702,3 +702,7 @@ The offline PLLOUT packet completes with 179,345 selected events in about 62 MB.
 ### Charge-conserving accounting control (1349)
 
 The completed offline control retains all 1,364,255 original C-only capacitor cards literally, including their endpoints, and all native corrected-pilot resistor, device and port records. Exact ideal-R contraction preserves all 62,338 primitive calls and all 341,067 nonzero capacitance pairs with no negative capacitors. Three tests cover literal preservation, detection of native excess capacitance and rejection of nested subcircuits. This isolates export accounting for later comparisons; it does not repair native export or place capacitor terminals along the resistor network. Physical mapping, distributed-R qualification, simulation authorization and release readiness remain false. See `selected_keeper_retained_C_R_control.json`.
+
+### Corrected-backend tuning collector prepared
+
+A separate collector requires explicit corrected active-executable identities in both input and completed receipts, a hash-pinned protocol, unique predeclared fit/holdout roles, matching electrical domains and matching 604-endpoint physical assessments. It accepts only 10 ps points and checks a strictly interior independent holdout. Eight tests pass, including old-active-backend and completed-receipt rejection. No corrected curve has yet been collected; captures remain pending, and tuning-range, interpolation acceptance, model and release qualification remain false.
