@@ -1,0 +1,362 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/status.json": "ba0b55ab8f190b8743a81e04ef87be39c8bc65287e142924e38da49573938c87",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321.launch.log": "87819cd9bd2e4bfc9166fd1ce3e0c290192b5b43b293bac556027250f1191542",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_area_trace_1319/assessment.json": "c71eb1e4ae9191d69a3752fd798b95359f6816ca3aad0d7b123c14e338e48f67",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_magic_resistance_area_v2.py": "45cee590e2d8505a538eb7de2a2f796d06c49a725e2adaa5ebf03d6b1f476ded",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_resistance_area_trace_v2.py": "7d1c7ae9f4084e32ccdce129075fe0d9223fc713d1c8c8a47eff19db7922208c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_off/Area_horizontal.ext": "8b81ad62499c1eb7bfcd3fb3cddab8f13845956c63205c8c32bec48184465938",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_off/native.process.json": "f22793701fe0c7957d2e7faaad9983faf481083f1789012ab7cbd40151986999",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_off/probe.tcl": "7d89621d61832a3ec5a2fcf7c0e49f0f52e9412160aef218c6f9102661547ec6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_off/Area_horizontal.res.ext": "d3892f53a26c533499fab2d71806f9b227bbb1a1af97fec9a733f370f090db04",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_off/native.log": "67ebf1fbedcc96eb4f7fe4233df5e021e3e696274b5150be1575467fb534b0c1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_off/view.spice": "94a69d3a1026e38a59e255d2b39c10b790eb483d8f7e693b38548cb4754ea622",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_on/native.process.json": "099fc5c80aa22edf8b3d886677501ca3287ca6ff54c8a0794619a9f0af9e6717",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_on/area.jsonl": "d75229efe532884aff752e82408291b3a299a1f7935e03a6aef38115cbe632ae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_on/Area_horizontal.ext": "8b81ad62499c1eb7bfcd3fb3cddab8f13845956c63205c8c32bec48184465938",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_on/view.spice": "94a69d3a1026e38a59e255d2b39c10b790eb483d8f7e693b38548cb4754ea622",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_on/native.log": "284b3d4a58feb156b2edfc51016223348c469850ff13c389ba5203fd2f6a5a94",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_on/probe.tcl": "cdb222c657e827693b1595f7ea22055950d9476c94477b717648cc25c08a1314",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/horizontal_on/Area_horizontal.res.ext": "d3892f53a26c533499fab2d71806f9b227bbb1a1af97fec9a733f370f090db04",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_off/native.log": "2ce81e64b92c2e0364b5153a5abde622989032b7df7226b94b301a44bf9edb93",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_off/view.spice": "de1603e33fa80cda1f619ba8d04f192cca861e0abecfcfac13099ad482eb0b12",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_off/probe.tcl": "fb97added2dd4ab4de3002cce2f3902fa19662e182fbdd6cb85e8e54c369d2fd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_off/native.process.json": "e380f28e8e1ef01bebb390462591fd7375f373e73e1f3dedafde2bba8e4b9fda",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_off/Area_vertical.res.ext": "d3892f53a26c533499fab2d71806f9b227bbb1a1af97fec9a733f370f090db04",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_off/Area_vertical.ext": "9c3773c25e443fbbf1d3b9ee94f44d765ee67e7a833a2cfb208d17cf503a9d64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_on/native.process.json": "0b99c2d786029206a8cc3ae23fef2f5572e052757ace5f527d202b7265da9d08",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_on/Area_vertical.ext": "9c3773c25e443fbbf1d3b9ee94f44d765ee67e7a833a2cfb208d17cf503a9d64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_on/native.log": "aea714860118b662acaeb7f7a218a4a8fa76b05e128f9f06828b5662a10525c6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_on/view.spice": "de1603e33fa80cda1f619ba8d04f192cca861e0abecfcfac13099ad482eb0b12",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_on/area.jsonl": "67741737a75cee7271f4fc87cb0db1793a8d6a62da28c7a577f284f9c87f397e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_on/Area_vertical.res.ext": "d3892f53a26c533499fab2d71806f9b227bbb1a1af97fec9a733f370f090db04",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/vertical_on/probe.tcl": "7e5aa2d35922a83bc4272c2657559a93da0bd96d9e49ff332ef2f0254aa8cd03",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_off/native.process.json": "bb1d03d4b0b2b04c51a3c1178b2bcc860420a0d489f89cc0c9c7536119983976",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_off/Area_dangling_tee.res.ext": "c48ef5bcf91f7e8659f9f043a8e9b59d24ceb013d3a541ec80507e3f2cd716cf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_off/view.spice": "b91cf55ddd987851491e951396c2f5e77ca98e51f566f06bd9297cb0451d11af",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_off/native.log": "a102318dd8550b4559690f4d98757a87bd6cb64ba1bce7bdfb132ae321ea316b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_off/probe.tcl": "70728b3912a4e46645e8493f52cbf1214c05ba03ddb610338c07dbfe97ae3e79",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_off/Area_dangling_tee.ext": "b9a96e58bb9b1e3672b1439448cd9d7e4c00edc8f072b4a9a014a8efb8d1cbcd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_on/area.jsonl": "8141358c4e2c0d4e4cc3b5ed3e8bf8c53267241e781643d9c16611b567d1ca80",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_on/Area_dangling_tee.ext": "b9a96e58bb9b1e3672b1439448cd9d7e4c00edc8f072b4a9a014a8efb8d1cbcd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_on/view.spice": "b91cf55ddd987851491e951396c2f5e77ca98e51f566f06bd9297cb0451d11af",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_on/Area_dangling_tee.res.ext": "c48ef5bcf91f7e8659f9f043a8e9b59d24ceb013d3a541ec80507e3f2cd716cf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_on/native.log": "9f5c7cbc91c6cd1fc7436328cbc12f4fa5efe119b450c43a90a6a54fe57770bc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_on/native.process.json": "b5d211c856a470f8f7b99cbb7bc0ea88513cf398b5655aafd8d5230765354eb6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_on/probe.tcl": "cbbf3b404da1af2a594cb87057033e743f757d99d7c421e31a490b7678f1ead7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_dangling_area_controls_1321/dangling_tee_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23"
+  },
+  "completed_artifact_postprocessing_only": true,
+  "no_native_rerun": true,
+  "original_controller_stopped_during_spatial_postprocessing": true,
+  "results": [
+    {
+      "case": "horizontal",
+      "completed_export_artifacts_match_exactly": true,
+      "area": {
+        "raw_area_events": 2,
+        "sites": {
+          "ResCalcEastWest:1": 1,
+          "ResCalcEastWest:4": 1
+        },
+        "native_float_updates_verified": true,
+        "negative_native_contributions": 0,
+        "negative_examples": [],
+        "geometric_area_disagreements": 0,
+        "disagreement_examples": [],
+        "split_events": 0,
+        "invalid_support_bounds": 0,
+        "invalid_support_examples": [],
+        "outside_tile_support_bounds": 0,
+        "outside_support_examples": [],
+        "merge_lineage_verified": false,
+        "final_node_area_continuity_verified": false,
+        "capacitance_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      }
+    },
+    {
+      "case": "vertical",
+      "completed_export_artifacts_match_exactly": true,
+      "area": {
+        "raw_area_events": 2,
+        "sites": {
+          "ResCalcEastWest:1": 1,
+          "ResCalcEastWest:4": 1
+        },
+        "native_float_updates_verified": true,
+        "negative_native_contributions": 0,
+        "negative_examples": [],
+        "geometric_area_disagreements": 0,
+        "disagreement_examples": [],
+        "split_events": 0,
+        "invalid_support_bounds": 0,
+        "invalid_support_examples": [],
+        "outside_tile_support_bounds": 0,
+        "outside_support_examples": [],
+        "merge_lineage_verified": false,
+        "final_node_area_continuity_verified": false,
+        "capacitance_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      }
+    },
+    {
+      "case": "dangling_tee",
+      "completed_export_artifacts_match_exactly": true,
+      "area": {
+        "raw_area_events": 14,
+        "sites": {
+          "ResCalcEastWest:1": 3,
+          "ResCalcEastWest:2": 4,
+          "ResCalcEastWest:3": 4,
+          "ResCalcEastWest:4": 3
+        },
+        "native_float_updates_verified": true,
+        "negative_native_contributions": 2,
+        "negative_examples": [
+          {
+            "kind": "raw_resistance_area",
+            "node_id": "0x5c25c05b99f0",
+            "site": "ResCalcEastWest:1",
+            "node_location": [
+              0,
+              0
+            ],
+            "tile_box": [
+              1900,
+              -500,
+              2100,
+              100
+            ],
+            "support_box": [
+              1900,
+              -500,
+              0,
+              100
+            ],
+            "weight_hex": "0x1p+0",
+            "before_hex": "0x0p+0",
+            "native_added_hex": "-0x1.1652p+20",
+            "after_hex": "-0x1.1652p+20",
+            "split": false,
+            "placement_qualified": false
+          },
+          {
+            "kind": "raw_resistance_area",
+            "node_id": "0x5c25c0491110",
+            "site": "ResCalcEastWest:1",
+            "node_location": [
+              0,
+              0
+            ],
+            "tile_box": [
+              2100,
+              0,
+              4000,
+              100
+            ],
+            "support_box": [
+              2100,
+              0,
+              0,
+              100
+            ],
+            "weight_hex": "0x1p+0",
+            "before_hex": "0x0p+0",
+            "native_added_hex": "-0x1.9a28p+17",
+            "after_hex": "-0x1.9a28p+17",
+            "split": false,
+            "placement_qualified": false
+          }
+        ],
+        "geometric_area_disagreements": 0,
+        "disagreement_examples": [],
+        "split_events": 0,
+        "invalid_support_bounds": 2,
+        "invalid_support_examples": [
+          {
+            "kind": "raw_resistance_area",
+            "node_id": "0x5c25c05b99f0",
+            "site": "ResCalcEastWest:1",
+            "node_location": [
+              0,
+              0
+            ],
+            "tile_box": [
+              1900,
+              -500,
+              2100,
+              100
+            ],
+            "support_box": [
+              1900,
+              -500,
+              0,
+              100
+            ],
+            "weight_hex": "0x1p+0",
+            "before_hex": "0x0p+0",
+            "native_added_hex": "-0x1.1652p+20",
+            "after_hex": "-0x1.1652p+20",
+            "split": false,
+            "placement_qualified": false
+          },
+          {
+            "kind": "raw_resistance_area",
+            "node_id": "0x5c25c0491110",
+            "site": "ResCalcEastWest:1",
+            "node_location": [
+              0,
+              0
+            ],
+            "tile_box": [
+              2100,
+              0,
+              4000,
+              100
+            ],
+            "support_box": [
+              2100,
+              0,
+              0,
+              100
+            ],
+            "weight_hex": "0x1p+0",
+            "before_hex": "0x0p+0",
+            "native_added_hex": "-0x1.9a28p+17",
+            "after_hex": "-0x1.9a28p+17",
+            "split": false,
+            "placement_qualified": false
+          }
+        ],
+        "outside_tile_support_bounds": 4,
+        "outside_support_examples": [
+          {
+            "kind": "raw_resistance_area",
+            "node_id": "0x5c25c070f4b0",
+            "site": "ResCalcEastWest:2",
+            "node_location": [
+              0,
+              0
+            ],
+            "tile_box": [
+              1900,
+              -500,
+              2100,
+              100
+            ],
+            "support_box": [
+              0,
+              -500,
+              1900,
+              100
+            ],
+            "weight_hex": "0x1p-1",
+            "before_hex": "-0x1.1652p+20",
+            "native_added_hex": "0x1.1652p+19",
+            "after_hex": "-0x1.1652p+19",
+            "split": false,
+            "placement_qualified": false
+          },
+          {
+            "kind": "raw_resistance_area",
+            "node_id": "0x5c25c06fe650",
+            "site": "ResCalcEastWest:3",
+            "node_location": [
+              1900,
+              50
+            ],
+            "tile_box": [
+              1900,
+              -500,
+              2100,
+              100
+            ],
+            "support_box": [
+              0,
+              -500,
+              1900,
+              100
+            ],
+            "weight_hex": "0x1p-1",
+            "before_hex": "0x1.7318p+16",
+            "native_added_hex": "0x1.1652p+19",
+            "after_hex": "0x1.44b5p+19",
+            "split": false,
+            "placement_qualified": false
+          },
+          {
+            "kind": "raw_resistance_area",
+            "node_id": "0x5c25c05ab2f0",
+            "site": "ResCalcEastWest:2",
+            "node_location": [
+              0,
+              0
+            ],
+            "tile_box": [
+              2100,
+              0,
+              4000,
+              100
+            ],
+            "support_box": [
+              0,
+              0,
+              2100,
+              100
+            ],
+            "weight_hex": "0x1p-1",
+            "before_hex": "-0x1.9a28p+17",
+            "native_added_hex": "0x1.9a28p+16",
+            "after_hex": "-0x1.9a28p+16",
+            "split": false,
+            "placement_qualified": false
+          },
+          {
+            "kind": "raw_resistance_area",
+            "node_id": "0x5c25c0abcf10",
+            "site": "ResCalcEastWest:3",
+            "node_location": [
+              2100,
+              50
+            ],
+            "tile_box": [
+              2100,
+              0,
+              4000,
+              100
+            ],
+            "support_box": [
+              0,
+              0,
+              2100,
+              100
+            ],
+            "weight_hex": "0x1p-1",
+            "before_hex": "0x1.d4cp+15",
+            "native_added_hex": "0x1.9a28p+16",
+            "after_hex": "0x1.4244p+17",
+            "split": false,
+            "placement_qualified": false
+          }
+        ],
+        "merge_lineage_verified": false,
+        "final_node_area_continuity_verified": false,
+        "capacitance_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      }
+    }
+  ],
+  "merge_lineage_verified": false,
+  "capacitance_placement_qualified": false,
+  "distributed_wire_R_qualified": false,
+  "release_ready": false
+}
