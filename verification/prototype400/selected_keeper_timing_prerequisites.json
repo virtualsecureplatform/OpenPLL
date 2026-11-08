@@ -1,0 +1,125 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136/route.odb": "5f45f0444aa4b38332e4508d90e21a17550a10c670d31c5ab3a4244d389a82d3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136/assessment.json": "423ec02bd4de48457acf1e9fa3ba715704e3387bfcbb2a6650cbf195e1a600c5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_wire_RC_1153/assessment.json": "1733e58fd1ee03e01e560885815470949f00909ade63ef97b04cb7513b7e260f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_tt_019/assessment.json": "897c1502e1638a6e7f8d682e36dd7b70ef057ba3f86f922ef21700b43744b0bf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ff_019/assessment.json": "6b5f38e8abd7eacd4ee900dbd39d3cba2efc49a7071c3ac45189c09e950c6a6c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ss_019/assessment.json": "4c54d56fce760c3f8d8d2a497c3311942e872cd8bc047273c7d9eab146b8856f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_sf_019/assessment.json": "b48b297ad61e6b0efb71a5eb9ce4db00a1585e7f975cf9c948af2f5b8974bc0e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_fs_019/assessment.json": "acb1540fb16d1724401c8c4bc8823a96eda1f4b45f464c2d5b1c74cd4f30491c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_wire_binding_1154/assessment.json": "279fd3ef82a44fae458b516614c5cbea89092f3fc117e870583cfa2ba8aea1d9"
+  },
+  "scope": "Artifact identity and prerequisite audit only; baseline receipt dependency closures are not requalified",
+  "current_parent_wire_views_match_current_route": true,
+  "baseline_timing": [
+    {
+      "corner": "tt",
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_tt_019/assessment.json",
+      "baseline_route": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/route.odb",
+      "baseline_route_sha256": "2d4a8372441b8f0c1ae18cd450e7295b98e1828fa4b0cbdff6ed207aa99060ed",
+      "current_keeper_route_sha256": "5f45f0444aa4b38332e4508d90e21a17550a10c670d31c5ab3a4244d389a82d3",
+      "same_parent_route": false,
+      "reported_slack_ns": {
+        "max": 0.75,
+        "min": -0.44
+      },
+      "baseline_physical_timing_qualified": false,
+      "usable_as_keeper_timing_qualification": false
+    },
+    {
+      "corner": "ff",
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ff_019/assessment.json",
+      "baseline_route": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/route.odb",
+      "baseline_route_sha256": "2d4a8372441b8f0c1ae18cd450e7295b98e1828fa4b0cbdff6ed207aa99060ed",
+      "current_keeper_route_sha256": "5f45f0444aa4b38332e4508d90e21a17550a10c670d31c5ab3a4244d389a82d3",
+      "same_parent_route": false,
+      "reported_slack_ns": {
+        "max": 1.06,
+        "min": -0.48
+      },
+      "baseline_physical_timing_qualified": false,
+      "usable_as_keeper_timing_qualification": false
+    },
+    {
+      "corner": "ss",
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ss_019/assessment.json",
+      "baseline_route": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/route.odb",
+      "baseline_route_sha256": "2d4a8372441b8f0c1ae18cd450e7295b98e1828fa4b0cbdff6ed207aa99060ed",
+      "current_keeper_route_sha256": "5f45f0444aa4b38332e4508d90e21a17550a10c670d31c5ab3a4244d389a82d3",
+      "same_parent_route": false,
+      "reported_slack_ns": {
+        "max": 0.16,
+        "min": -0.35
+      },
+      "baseline_physical_timing_qualified": false,
+      "usable_as_keeper_timing_qualification": false
+    },
+    {
+      "corner": "sf",
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_sf_019/assessment.json",
+      "baseline_route": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/route.odb",
+      "baseline_route_sha256": "2d4a8372441b8f0c1ae18cd450e7295b98e1828fa4b0cbdff6ed207aa99060ed",
+      "current_keeper_route_sha256": "5f45f0444aa4b38332e4508d90e21a17550a10c670d31c5ab3a4244d389a82d3",
+      "same_parent_route": false,
+      "reported_slack_ns": {
+        "max": 0.33,
+        "min": -0.38
+      },
+      "baseline_physical_timing_qualified": false,
+      "usable_as_keeper_timing_qualification": false
+    },
+    {
+      "corner": "fs",
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_fs_019/assessment.json",
+      "baseline_route": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/route.odb",
+      "baseline_route_sha256": "2d4a8372441b8f0c1ae18cd450e7295b98e1828fa4b0cbdff6ed207aa99060ed",
+      "current_keeper_route_sha256": "5f45f0444aa4b38332e4508d90e21a17550a10c670d31c5ab3a4244d389a82d3",
+      "same_parent_route": false,
+      "reported_slack_ns": {
+        "max": 0.87,
+        "min": -0.46
+      },
+      "baseline_physical_timing_qualified": false,
+      "usable_as_keeper_timing_qualification": false
+    }
+  ],
+  "parent_wire_views": [
+    "min",
+    "nom",
+    "max"
+  ],
+  "cell_pin_capacitance_excluded": true,
+  "cell_and_parent_capacitance_combination_qualified": false,
+  "parent_loading_complete": false,
+  "required_work": [
+    "Preserve the completed current parent RC terminal binding (1154) while qualifying its combination with current cell capacitance; endpoint binding itself is complete.",
+    "Qualify current macro input loading and propagated clock/receiver response across TT/FF/SS/SF/FS and operating states.",
+    "Regenerate min/max timing and CDC/reset/enable checks on the keeper route using those characterized views.",
+    "Resolve measured setup/hold violations and verify the same final design in closed-loop scenarios."
+  ],
+  "timing_gate_closed": false,
+  "release_ready": false,
+  "initial_wire_export_binding_pending_flag_superseded_by_1154": true,
+  "parent_RC_terminal_binding_complete": true,
+  "parent_binding_networks": [
+    {
+      "corner": "min",
+      "networks": 973,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    },
+    {
+      "corner": "nom",
+      "networks": 973,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    },
+    {
+      "corner": "max",
+      "networks": 973,
+      "failures": 0,
+      "all_RC_terminals_bound_and_connected": true
+    }
+  ]
+}
