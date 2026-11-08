@@ -1,0 +1,118 @@
+{
+  "source_sha256": {
+    "build/signoff400/selected_magic_antenna_source_review_573/unpacked/magic-8.3.623/extract/ExtBasic.c": "af8677dd211d49841dab8423179c588adc582c53de9d8c00371bedd479e6b0db",
+    "build/signoff400/selected_magic_antenna_source_review_573/unpacked/magic-8.3.623/extract/ExtCouple.c": "e726b14e73dd30fbd8aa3a4d792eb6c0144c51c4e54244eedf746b6c0a0bbe12",
+    "build/signoff400/selected_magic_antenna_source_review_573/unpacked/magic-8.3.623/extract/ExtRegion.c": "d5a6945bf433280c6031fa7fd29f847ebfc324fc221e7f44be92f2d87f16975a"
+  },
+  "direct_nreg_cap_mutation_sites": [
+    {
+      "file": "extract/ExtBasic.c",
+      "line": 336,
+      "statement": "tnode->nreg_cap = (CapValue)0.0;"
+    },
+    {
+      "file": "extract/ExtBasic.c",
+      "line": 5248,
+      "statement": "reg->nreg_cap = (CapValue) 0;"
+    },
+    {
+      "file": "extract/ExtBasic.c",
+      "line": 5332,
+      "statement": "reg->nreg_cap += area * ExtCurStyle->exts_areaCap[residue];"
+    },
+    {
+      "file": "extract/ExtBasic.c",
+      "line": 5351,
+      "statement": "reg->nreg_cap += capval * len;"
+    },
+    {
+      "file": "extract/ExtBasic.c",
+      "line": 5409,
+      "statement": "reg->nreg_cap += capval * len;"
+    },
+    {
+      "file": "extract/ExtBasic.c",
+      "line": 5459,
+      "statement": "reg->nreg_cap += capval * len;"
+    },
+    {
+      "file": "extract/ExtBasic.c",
+      "line": 5510,
+      "statement": "reg->nreg_cap += capval * len;"
+    },
+    {
+      "file": "extract/ExtBasic.c",
+      "line": 5560,
+      "statement": "reg->nreg_cap += capval * len;"
+    },
+    {
+      "file": "extract/ExtBasic.c",
+      "line": 5568,
+      "statement": "reg->nreg_cap = (CapValue) 0;"
+    },
+    {
+      "file": "extract/ExtCouple.c",
+      "line": 234,
+      "statement": "rbp->nreg_cap += cap;"
+    },
+    {
+      "file": "extract/ExtCouple.c",
+      "line": 239,
+      "statement": "rtp->nreg_cap += cap;"
+    },
+    {
+      "file": "extract/ExtCouple.c",
+      "line": 522,
+      "statement": "rabove->nreg_cap -= ExtCurStyle->exts_areaCap[ta] * ov.o_area;"
+    },
+    {
+      "file": "extract/ExtCouple.c",
+      "line": 1254,
+      "statement": "rbp->nreg_cap -= subcap;"
+    },
+    {
+      "file": "extract/ExtCouple.c",
+      "line": 1521,
+      "statement": "rbp->nreg_cap -= subcap;"
+    },
+    {
+      "file": "extract/ExtCouple.c",
+      "line": 1525,
+      "statement": "rbp->nreg_cap = 0;"
+    },
+    {
+      "file": "extract/ExtCouple.c",
+      "line": 1703,
+      "statement": "rbp->nreg_cap -= subcap;"
+    },
+    {
+      "file": "extract/ExtCouple.c",
+      "line": 1707,
+      "statement": "rbp->nreg_cap = 0;"
+    },
+    {
+      "file": "extract/ExtRegion.c",
+      "line": 403,
+      "statement": "newNode->nreg_cap = (CapValue)0;"
+    }
+  ],
+  "review_scope": "Direct nreg_cap writes in the pinned extract source; not an alias-aware whole-program proof.",
+  "missing_from_current_coupling_trace": [
+    "Initial node capacitance and all area/perimeter additions, including split-tile and clipped geometry",
+    "Overlap and fringe shielding subtractions and near-zero clamps",
+    "Substrate relocation, retaining the original spatial provenance of each relocated contribution",
+    "Device-property suppression and capacitance-disabled clearing",
+    "Final node writer: substrate special case, negative clamp, capacitance scaling and six-digit formatting"
+  ],
+  "implementation_requirements": [
+    "Use one shared extraction epoch across basic and coupling phases",
+    "Observe existing node-name calls without introducing early naming side effects",
+    "Record ordered before/after values for every mutation and explain all reset/clamp operations",
+    "Reconstruct both native ground node records and coupling records before any spatial redistribution",
+    "Resolve shielding geometry and preserve original endpoint connectivity through resistance splitting"
+  ],
+  "numeric_ground_ledger_implemented": false,
+  "spatial_ground_placement_qualified": false,
+  "distributed_wire_R_qualified": false,
+  "release_ready": false
+}
