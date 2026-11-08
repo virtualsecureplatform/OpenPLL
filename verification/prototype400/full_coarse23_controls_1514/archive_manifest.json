@@ -1,0 +1,27 @@
+{
+  "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse23_physical_1514",
+  "files": {
+    "checks.json": {
+      "source_sha256": "fbdde597364ff4bf7732ccb596de08d2a0f1919168df4f03ab4a1b54a4c90868",
+      "retained_name": "checks.json"
+    },
+    "owner.json": {
+      "source_sha256": "0aa2e20851c5170c8ebc801b9b5fe6efba5ff0ae2da8700cd4a4141275624a63",
+      "retained_name": "owner.json"
+    },
+    "plan.json": {
+      "source_sha256": "37db4a194c65ab18ae9c6950c5f7afd6b56036df64c60ade8a37f0a55b55a161",
+      "retained_name": "plan.json"
+    },
+    "assessment.json": {
+      "source_sha256": "29bfc228790e6e9fb0b93f68aa6394a8f2a03bae70c01200f57763cd3826f594",
+      "retained_name": "assessment.json"
+    },
+    "status.json": {
+      "source_sha256": "4a9d2b5a6b9480b2ed77c54cf6c506b69b197e2cfc24fdd09d02f428a0638078",
+      "retained_name": "status.json"
+    }
+  },
+  "large_RAW_and_NPY_artifacts_remain_in_build": true,
+  "release_ready": false
+}

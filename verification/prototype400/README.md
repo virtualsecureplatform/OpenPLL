@@ -93,8 +93,17 @@ period interpolation. The original final128–131 code set is now directly
 measured in the fast subsystem. These are local static samples, not a global
 error bound, settling proof or full-layout calibration.
 
-The current numerical work replays measured programming-input ripple and
-continues the existing full-layout references and boundary replay. Their results
+The [full coarse23/fine149 reference](full_coarse23_fine149_1513/assessment.json)
+completes at403.275533 MHz with604 matching physical controls. The
+[same-code scope comparison](coarse23_native_scope_comparison_1562/assessment.json)
+finds the fast point+2,036 ppm higher, while retaining the50/10 ps timestep and
+startup-window differences. The [programming-input replay](programming_replay_DCO_1542/assessment.json)
+measures373.748630 MHz at coarse20, and does not close its full-reference gap.
+Neither result qualifies a correction, a physical target setting or an error bound.
+
+The remaining numerical work measures the full-layout coarse23 endpoints and
+holdout and continues the corrected boundary replay. The final refreshed TT
+case waits for RAM; the physical kernel mismatch remains under investigation. Their results
 must be completed and hash-verified before selecting a calibration or correcting
 a model. The full-reference and reduced-model routes are both retained; the
 faster route is not substituted for release evidence.
@@ -2470,3 +2479,22 @@ are assessed without refitting by1560. Maximum sampled residuals are53.626415 pp
 are unchanged. Other startup windows, code-step dynamics, full-layout bias,
 PVT coverage and uniform uncertainty remain unqualified. Source receipts,
 leaf checks and lossless logs are retained; original RAW files stay in build.
+
+Full center1513 and physical assessment1514 complete at coarse23/fine149,
+TT27 C/1.8 V,260 ns/50 ps:403.275533040 MHz, with all604 physical endpoints
+matching. Prospective comparison1562 verifies both completed scopes and reports
+fast404.096788446 MHz, +2,036.462267 ppm. Different integration steps, startup
+histories and windows remain explicit; no coarse20 timestep correction is
+transferred. This supplies a full-layout point above400 MHz, not a measured
+same-band bracket or qualified native target setting. The coarse23 endpoint and
+independent-holdout campaign continues.
+
+Programming-input diagnostic1542 completes normally in5,708.849 s, with all302
+native tuning leaves matching. Replaying all measured macro inputs while leaving
+the capacitive exterior grounded yields373.748629855 MHz, versus373.665911964 MHz
+for static ideal macro inputs and373.148216755 MHz for the full reference's final
+window. The replay does not resolve the frequency gap. It uses recorded voltage
+histories, has different window/reset details and cannot qualify prediction of
+changed controller behavior. Its large generated PWL deck and native logs are
+retained as verified lossless gzip; RAW traces remain in build. Internal dynamic
+aggressors and physical extraction concerns remain unresolved.

@@ -1,0 +1,23 @@
+{
+  "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse23_central_campaign_1512",
+  "files": {
+    "plan.json": {
+      "source_sha256": "f7a23d4d80dedcb1a4f8ad15b655cb5e65ff7828df97d9b0b3f5040cf2f01eb0",
+      "retained_name": "plan.json"
+    },
+    "status.json": {
+      "source_sha256": "80d25d6f400ae7200b5dc435290f3546afcae0f998f9320705729a189302d92a",
+      "retained_name": "status.json"
+    },
+    "owner.json": {
+      "source_sha256": "0aa2e20851c5170c8ebc801b9b5fe6efba5ff0ae2da8700cd4a4141275624a63",
+      "retained_name": "owner.json"
+    },
+    "assessment.json": {
+      "source_sha256": "8d4b3f02dbfb8bd2b178cf19be556487df226562ad0ae6d72388d4e72797424f",
+      "retained_name": "assessment.json"
+    }
+  },
+  "large_RAW_and_NPY_artifacts_remain_in_build": true,
+  "release_ready": false
+}

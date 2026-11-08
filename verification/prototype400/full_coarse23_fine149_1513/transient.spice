@@ -1,0 +1,45 @@
+* Diagnostic keeper flat conductor-C reset operating point
+.lib "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.include "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_smoke_1210/backend_model.spice"
+Vbias0 STARTUP_COARSE[0] 0 1.8
+Vbias1 STARTUP_COARSE[1] 0 1.8
+Vbias2 STARTUP_COARSE[2] 0 1.8
+Vbias3 STARTUP_COARSE[3] 0 0
+Vbias4 STARTUP_COARSE[4] 0 1.8
+Vbias5 STARTUP_COARSE[5] 0 0
+Vbias6 STARTUP_FINE[0] 0 1.8
+Vbias7 STARTUP_FINE[1] 0 0
+Vbias8 STARTUP_FINE[2] 0 1.8
+Vbias9 STARTUP_FINE[3] 0 0
+Vbias10 STARTUP_FINE[4] 0 1.8
+Vbias11 STARTUP_FINE[5] 0 0
+Vbias12 STARTUP_FINE[6] 0 0
+Vbias13 STARTUP_FINE[7] 0 1.8
+Vbias14 STARTUP_INCREASING 0 1.8
+Vbias15 VNB 0 0
+Vbias16 VPB 0 1.8
+Vbias17 VGND 0 0
+Vbias18 VPWR 0 1.8
+Vbias19 KI[0] 0 1.8
+Vbias20 KI[1] 0 0
+Vbias21 KI[2] 0 0
+Vbias22 KI[3] 0 0
+Vbias23 KI[4] 0 0
+Vbias24 KI[5] 0 0
+Vbias25 KI[6] 0 0
+Vbias26 KI[7] 0 0
+Vbias27 KP[0] 0 0
+Vbias28 KP[1] 0 1.8
+Vbias29 KP[2] 0 0
+Vbias30 KP[3] 0 0
+Vbias31 KP[4] 0 0
+Vbias32 PLL_ENABLE 0 0
+Vbias33 REFCLK 0 PULSE(0 1.8 20n 100p 100p 19.9n 40n)
+VRESET RESET_N 0 PWL(0 0 5n 0 5.1n 1.8 260n 1.8)
+XDUT CLKDIV_RETIMED COARSE_CODE[0] COARSE_CODE[1] COARSE_CODE[2] COARSE_CODE[3] COARSE_CODE[4] COARSE_CODE[5] STARTUP_COARSE[0] STARTUP_COARSE[1] STARTUP_COARSE[2] STARTUP_COARSE[3] STARTUP_COARSE[4] STARTUP_COARSE[5] STARTUP_FINE[0] STARTUP_FINE[1] STARTUP_FINE[2] STARTUP_FINE[3] STARTUP_FINE[4] STARTUP_FINE[5] STARTUP_FINE[6] STARTUP_FINE[7] STARTUP_INCREASING VNB VPB VGND VPWR CONFIG_BUSY CONFIG_READY DCO_CODE[0] DCO_CODE[1] DCO_CODE[2] DCO_CODE[3] DCO_CODE[4] DCO_CODE[5] DCO_CODE[6] DCO_CODE[7] DLF_CODE[0] DLF_CODE[1] DLF_CODE[2] DLF_CODE[3] DLF_CODE[4] DLF_CODE[5] DLF_CODE[6] DLF_CODE[7] DLF_CODE[8] DLF_CODE[9] FAILED KI[0] KI[1] KI[2] KI[3] KI[4] KI[5] KI[6] KI[7] KP[0] KP[1] KP[2] KP[3] KP[4] PLLOUT PLL_ENABLE REFCLK RESET_N TRACKING IntegerPLL_400MHz_KeeperFlatC
+.options parser model_binning=true
+.options device temp=27
+.options nonlin reltol=1e-5 abstol=1e-9
+.tran 10p 260n 0 50p
+.print tran format=raw precision=17 file=/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse23_fine149_step50_1513/transient.raw V(*)
+.end

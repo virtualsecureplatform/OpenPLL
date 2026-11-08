@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_fine149_step50_1412/assessment.json": "48287fd95109813bcf374297dbaec1e0f007e8b2ca3760915616ca99443809fe",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_physical_1413/assessment.json": "46862b5753a13a42f83d524f51035cc22301865097f99b84fa4f5ec425bb645d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse19_fine149_step50_1412/transient.spice": "3db04c198cb9a654e324928b745d509fee586fba5e432849d85a13596acba80e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/assessment.json": "773699eff553d8dfa13eb69d437ac1451611fe4c0013fde372fbd5ca0fbe4d00",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342/assessment.json": "3535df4019c14022ed25e5f3a751e897984de538718c6a41e41986c90ef86254",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/transient.spice": "194142585a5c16a3469ec04177e624c6a3ad80c12bf90a4a8df84b0bb8fcf3e8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse23_center.py": "1257a6c784b0b465f9bc88df522aabcd94697ee03e80f54791f07def88eedd34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_native_BSIM_coarse_band.py": "f3134a6c437fefc77235949203bafde8e824276ddd09101ba73f14bbec6ee64a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning_v2.py": "882b641aae80e2f93f503594a12c54987f5f2aacf7b130ea0b68deccac6de60a"
+  },
+  "measured_centers_MHz": {
+    "19": 362.5294219121545,
+    "20": 372.9218664876245
+  },
+  "next_coarse": 23,
+  "fine": 149,
+  "max_step_ps": 50,
+  "CPU": 18,
+  "memory_GiB": 16,
+  "maximum_additional_native_cases": 1,
+  "native_cap_s": 86400,
+  "automatic_identical_retry": false,
+  "choice_is_experiment_location_only": true,
+  "unmeasured_frequency_inferred": false,
+  "calibration_extrapolation_allowed": false,
+  "band_auto_selected": false,
+  "release_ready": false
+}

@@ -1,0 +1,23 @@
+{
+  "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse23_native_scope_comparison_1562",
+  "files": {
+    "inputs.json": {
+      "source_sha256": "e594c87af1672ba3792be297261f558931d85a5539ef73307abc3a53e8b250a1",
+      "retained_name": "inputs.json"
+    },
+    "owner.json": {
+      "source_sha256": "85609ae228cfe45c22e49c029bdd2721396930746c37420b3f48ceaed58a1cab",
+      "retained_name": "owner.json"
+    },
+    "status.json": {
+      "source_sha256": "902e1282f5c79be365a4c6661653c718984c974c095f94d79a22a41ec61764b4",
+      "retained_name": "status.json"
+    },
+    "assessment.json": {
+      "source_sha256": "3740f50317b86641c559671da2db582eb684a274116b1494db784222536c4e56",
+      "retained_name": "assessment.json"
+    }
+  },
+  "large_RAW_and_NPY_artifacts_remain_in_build": true,
+  "release_ready": false
+}

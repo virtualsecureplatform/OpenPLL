@@ -1,0 +1,35 @@
+{
+  "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse23_fine149_step50_1513",
+  "files": {
+    "owner.json": {
+      "source_sha256": "0aa2e20851c5170c8ebc801b9b5fe6efba5ff0ae2da8700cd4a4141275624a63",
+      "retained_name": "owner.json"
+    },
+    "transient.spice": {
+      "source_sha256": "1509760020bafd898af25d958a8d52693b91067cc6eb0d8be66d6c72ecf5b0d3",
+      "retained_name": "transient.spice"
+    },
+    "status.json": {
+      "source_sha256": "da70117783d74d6e975f01b68a898e6e0ef85d949ff96c9a1f74eb329999fd19",
+      "retained_name": "status.json"
+    },
+    "native.log": {
+      "source_sha256": "479111294ccaf52aff5428bb527740653a81c9248a7f09414fd7afb0ac140353",
+      "retained_name": "native.log.gz"
+    },
+    "assessment.json": {
+      "source_sha256": "6e3b0301590c8793aa55ec26a00db1a969d894ed2f86489f4c5ccfad59c1ba84",
+      "retained_name": "assessment.json"
+    },
+    "native.process.json": {
+      "source_sha256": "a306226f42633d12674984169a12330eb6823a813ab27025cfc7915c9d094006",
+      "retained_name": "native.process.json"
+    },
+    "inputs.json": {
+      "source_sha256": "a99fe4aa4d67353f370b9b191b8b125841e84b421ef3a7494757c6d9caec7e55",
+      "retained_name": "inputs.json"
+    }
+  },
+  "large_RAW_and_NPY_artifacts_remain_in_build": true,
+  "release_ready": false
+}

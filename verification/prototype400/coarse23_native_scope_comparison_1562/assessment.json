@@ -1,0 +1,33 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse23_central_campaign_1512/plan.json": "f7a23d4d80dedcb1a4f8ad15b655cb5e65ff7828df97d9b0b3f5040cf2f01eb0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse23_fine149_step50_1513/inputs.json": "a99fe4aa4d67353f370b9b191b8b125841e84b421ef3a7494757c6d9caec7e55",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_DCO_1541/assessment.json": "26038668d4f071e9ef1f5838aacdacbdcacabe54e8019c79491a7be51b26eafa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_coarse23_native_scopes.py": "f1a4a2a933e077c9ae325549ff9c087afaa6655c0f207a8172a861e2a87e2199",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_static_DCO_point.py": "db88c03544e2d1a4dabe2ac7ab4f0a228c23528a07b78be0bca8b968fef1db2f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse23_center.py": "1257a6c784b0b465f9bc88df522aabcd94697ee03e80f54791f07def88eedd34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse23_central_campaign_1512/assessment.json": "8d4b3f02dbfb8bd2b178cf19be556487df226562ad0ae6d72388d4e72797424f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse23_fine149_step50_1513/assessment.json": "6e3b0301590c8793aa55ec26a00db1a969d894ed2f86489f4c5ccfad59c1ba84",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse23_physical_1514/assessment.json": "29bfc228790e6e9fb0b93f68aa6394a8f2a03bae70c01200f57763cd3826f594"
+  },
+  "artifacts": {},
+  "coarse": 23,
+  "fine": 149,
+  "full_frequency_MHz": 403.2755330399254,
+  "fast_frequency_MHz": 404.096788446,
+  "fast_relative_to_full_ppm": 2036.4622665896004,
+  "full_macro_and_DCO_endpoints_checked": 604,
+  "fast_native_DCO_leaves_checked": 302,
+  "full_max_step_ps": 50,
+  "fast_max_step_ps": 10,
+  "timesteps_matched": false,
+  "startup_histories_matched": false,
+  "observation_windows_matched": false,
+  "full_wire_R_included": false,
+  "fast_wire_R_included": false,
+  "coarse20_timestep_correction_transferred": false,
+  "discrepancy_is_not_error_bound": true,
+  "model_correlation_qualified": false,
+  "target_bracket_qualified": false,
+  "release_ready": false
+}
