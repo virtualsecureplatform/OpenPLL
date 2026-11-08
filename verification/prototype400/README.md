@@ -2133,3 +2133,13 @@ exterior nodes are grounded in the static pilot. Scores ignore phase and
 cancellation, use sampled extrema, and are not bounds on charge error or
 frequency error. They identify omitted dynamic excitation for targeted model
 work; they do not prove that any one source causes the observed frequency bias.
+
+Analytic REFCLK sensitivity case1544 adds the declared external25 MHz clock to
+the static coarse20/fine149/32 fF native subsystem. It checks the full reference's
+PULSE(0 1.8 20n 100p 100p 19.9n 40n) declaration and shifts its phase to align
+with the measured DCO reset release. The resulting first edge starts at
+3.739947693 ns in the accelerated60 ns run. This source is analytic, uses no
+recorded voltage history, and is a capacitive-only boundary; all other capacitive
+exterior nodes remain grounded. REFCLK_DRIVER is saved alongside PLLOUT and
+all302 native control leaves. The single CPU31/8 GiB case tests this known
+omitted excitation; other dynamic aggressors and model qualification remain open.
