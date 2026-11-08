@@ -1925,3 +1925,21 @@ handling and the capacitive exterior environment would still need treatment;
 this graph closure does not qualify an independent model. No native case was
 added. The next causal modeling step is receiver-load characterization rather
 than repeated frontier expansion; replay1470 continues as a correlation control.
+
+Extracted clkbuf_16 input-charge campaign1526 completed45 fixtures: three full
+input ramps (20/400/1600 ps), three output loads (0/100/400 fF), and all five
+process corners at1.8 V/27 C. Each native ngspice run includes a20 fF capacitor
+reference whose20–80% charge/sign/unit checks pass within1e-4 relative error.
+All input levels and noninverting output-state checks pass. Three integration
+and response rejection controls pass, and actual listed inputs/artifacts were
+independently reverified before retention.
+
+Observed20–80% effective input capacitance ranges from7.490867 to10.701807 fF.
+Full-window rising/falling charges and peak input currents are retained for
+every case. The extracted cell has six explicit input capacitors, including
+0.46664 fF to its internal a_114_74# node and0.00201 fF to output X. These must
+be separated from intrinsic gate charge before stitching a load model into the
+existing flat-C circuit; the current observation set does not save the internal
+node voltage needed for complete de-embedding. The next measurement must add
+that observable and a finer-step control. No causal load element, numerical
+convergence or actual routed load envelope is qualified by this characterization.
