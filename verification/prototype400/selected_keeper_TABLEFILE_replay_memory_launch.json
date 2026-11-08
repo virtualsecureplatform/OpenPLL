@@ -1,0 +1,23 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TABLEFILE_replay_memory_1369/inputs.json": "55c2fec9902cbce7566c9929a4b64aebf04379dd5028f8d4031977b40421dd5b"
+  },
+  "owner": {
+    "pid": 2167332,
+    "birth": "133365503"
+  },
+  "CPU": 29,
+  "native_memory_GiB": 8,
+  "native_cap_s": 1800,
+  "maximum_native_cases": 1,
+  "automatic_identical_retry": false,
+  "native_TABLEFILE_controls_complete": true,
+  "original_boundary_samples_reused": true,
+  "lossy_compression_applied": false,
+  "downsampling_requested": false,
+  "PLLOUT_forced": false,
+  "native_replay_complete": false,
+  "memory_reduction_demonstrated": false,
+  "corrected_backend_memory_qualified": false,
+  "release_ready": false
+}
