@@ -1838,3 +1838,13 @@ capture; it is not yet reported as passed. Corrected timestep comparison1343
 and reduced replay1466 remain gated on those physical checks. No distributed-R,
 transient correlation, other-corner model or closed-loop qualification follows
 from this single static-code TT C-only capture.
+
+Physical assessment1296 completed for corrected full reference1295: all 302
+macro tuning bits and their 302 DCO leaf endpoints match coarse20/fine149 at
+all 26,077 samples in the 200–260 ns window, with zero mismatched endpoints.
+Actual input/artifact hashes were independently reverified before retention.
+The completed native and physical receipts now release corrected timestep
+comparison1343 and both boundary-replay preparations1297/1466. The comparison
+is confirmed live in its completed-control comparison stage; both replays are
+extracting from the completed capture. These passing static-code voltage checks
+do not qualify wire-R, the prescribed replay environment or closed-loop behavior.
