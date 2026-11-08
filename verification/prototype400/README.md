@@ -1867,3 +1867,17 @@ waveforms cannot establish changed-controller prediction. A causal model must
 supply or internalize this dependency as well as its gate inputs and capacitive
 exterior environment. The completed source-pinned audit and full boundary table
 are retained to scope that work; no independent environment or model is qualified.
+
+Corrected-backend timestep comparison1343 is complete. The electrical decks
+differ only in maximum step (10 versus50 ps) and output paths; both captures
+have all 604 physical tuning checks passing. Frequency is 373.148216755 MHz at
+10 ps and 372.921866488 MHz at50 ps, a -606.596138 ppm difference. Maximum
+absolute paired final-window differences are 55.317709 ps rising and52.605222 ps
+falling; equal post-reset edge counts alone do not prove absence of cycle slips.
+Controller elapsed ratio is3.486189 (54,584.14 versus15,657.25 s), including
+output validation/postprocessing rather than isolated solver time. Inputs and
+artifacts were independently reverified before retaining the completed receipt.
+This demonstrates a diagnostic speed/accuracy tradeoff at one static TT point;
+finer-step convergence, other-code/corner numerical error bounds and release
+accuracy remain unqualified. The50 ps search captures are not promoted to
+converged calibration by this comparison.

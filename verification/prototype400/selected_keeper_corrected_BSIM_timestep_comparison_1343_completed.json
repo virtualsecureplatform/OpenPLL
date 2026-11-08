@@ -1,0 +1,155 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_native_timestep_BSIM_corrected.py": "c688863ef8fdd4e08693355e6475d477e96cd4e116d6ce606c567e76b0f40b94",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/common_v3.py": "dc86a17d58cdd6d02d9a3279c94097962da89c31ae50903e4717e333b2b235c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/resources.py": "3b4a3fcae0f072cfdc7937c06f46f2bf7166b4a5e31b15feadb8775ce81f1b11",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/plan_keeper_conditional_replay.py": "765a5ccfcf27e5c363755c2ef5112d9dc5ecc96a6e82636e05034070ceeb38f5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_native_timestep.py": "313a623feac4173da70e9eb3afb3ce9f3d5eb27f37f3ebc9bef4237ae1fa2c9b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_conditional_replay_BSIM_corrected.py": "ae57f42c900172e6e3f968453ce4ae77252777524953405aa904905e0fad5700",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295/assessment.json": "ef66cf9e5d0c94034cbb444fd7e4ffefc8de35e2d7c8a4d76e12299553586125",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/assessment.json": "773699eff553d8dfa13eb69d437ac1451611fe4c0013fde372fbd5ca0fbe4d00",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/assessment.json": "8ecc7596e01f4c099ce93b6bdcf27edf12b760f7fde1f61ad346507e5bb2161a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_physical_1342/assessment.json": "3535df4019c14022ed25e5f3a751e897984de538718c6a41e41986c90ef86254",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295/transient.spice": "7f97882c22f179095ee3fca877590bb66e1428bc50408f2b774701ee64ca9bad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/transient.spice": "194142585a5c16a3469ec04177e624c6a3ad80c12bf90a4a8df84b0bb8fcf3e8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295/inputs.json": "47139013f3bb26f12dfad3b24885530276d2c2812e908bb6700560888b5ffe06",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/inputs.json": "38fa26701485098baacc652ff665e61de5808653c8f81b9e73c3d8b7f9473433",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295/transient.raw": "959ac88125c5fb92a6db20048cdfa95bf47d6664000014f049593a07c4787ec8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_step50_1341/transient.raw": "1124410ba3bffb1f23dd512731553c669775205f759a99b6bad62002b88f9343"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_timestep_comparison_1343/reference.npy": "d6e73d77bae10e83294aeaa34dda07b472272973820406398382ef3e7505e1d2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_timestep_comparison_1343/candidate.npy": "a4716196ecec893d272df1540c529808b0b5cedfb83592f10189b8cc4d5f2d84"
+  },
+  "reference_frequency_mhz": 373.1482167548865,
+  "candidate_frequency_mhz": 372.9218664876245,
+  "frequency_difference_ppm": -606.596138206017,
+  "edge_comparison": {
+    "rising_ns": {
+      "reference_edges": 29,
+      "candidate_edges": 29,
+      "equal_post_reset_edge_counts": true,
+      "pairing": "ordinal after reset; equal counts alone do not establish absence of cycle slips",
+      "paired_final_window_edges": 23,
+      "signed_candidate_minus_reference_ps": [
+        19.532424564488338,
+        20.85059726132954,
+        22.984344376510535,
+        24.168849011715565,
+        25.47824057410253,
+        27.084291366662683,
+        29.666843052154945,
+        31.85702865357598,
+        31.468348393786982,
+        33.438273775345806,
+        35.145764142896496,
+        36.87481086654998,
+        38.91582367006663,
+        40.054566237898825,
+        40.560585161443896,
+        41.58778409379238,
+        44.97314667997898,
+        46.6207055954726,
+        48.293925477906896,
+        50.32106418514104,
+        50.60547025931328,
+        52.82329951302245,
+        55.31770893577459
+      ],
+      "maximum_absolute_difference_ps": 55.31770893577459,
+      "difference_span_ps": 35.78528437128625
+    },
+    "falling_ns": {
+      "reference_edges": 29,
+      "candidate_edges": 29,
+      "equal_post_reset_edge_counts": true,
+      "pairing": "ordinal after reset; equal counts alone do not establish absence of cycle slips",
+      "paired_final_window_edges": 22,
+      "signed_candidate_minus_reference_ps": [
+        17.90079408445422,
+        20.31827854716539,
+        21.060856291200025,
+        22.735696242648373,
+        25.9486974604215,
+        27.207574151589142,
+        29.302905487952557,
+        30.51505405142052,
+        30.801278225595752,
+        32.673083277899195,
+        33.92307202943812,
+        36.205447677104985,
+        38.005536999207834,
+        39.17764654494249,
+        40.56200820159006,
+        42.325891945125704,
+        43.83976721516092,
+        45.176359749177664,
+        47.44438561348829,
+        49.239318701438606,
+        51.041128627645094,
+        52.60522238319254
+      ],
+      "maximum_absolute_difference_ps": 52.60522238319254,
+      "difference_span_ps": 34.70442829873832
+    }
+  },
+  "reference_samples": 26077,
+  "candidate_samples": 6463,
+  "numerical_accuracy_qualified": false,
+  "release_ready": false,
+  "finer_step_control_compared": false,
+  "numerical_convergence_qualified": false,
+  "candidate_max_step_ps": 50,
+  "reference_max_step_ps": 10,
+  "captures": [
+    {
+      "samples": 26077,
+      "native_variables": 19697,
+      "stored_columns": 2,
+      "ordered_physical_ports": [
+        "PLLOUT"
+      ],
+      "bindings": {
+        "PLLOUT": {
+          "role": "observation_only",
+          "expected_RAW_variable": "V(PLLOUT)",
+          "RAW_index": 8528
+        }
+      },
+      "all_saved_native_values_finite": true,
+      "storage": "float64 NPY, sample-major, time in column zero",
+      "end_time_s": 2.6e-07
+    },
+    {
+      "samples": 6463,
+      "native_variables": 19697,
+      "stored_columns": 2,
+      "ordered_physical_ports": [
+        "PLLOUT"
+      ],
+      "bindings": {
+        "PLLOUT": {
+          "role": "observation_only",
+          "expected_RAW_variable": "V(PLLOUT)",
+          "RAW_index": 8528
+        }
+      },
+      "all_saved_native_values_finite": true,
+      "storage": "float64 NPY, sample-major, time in column zero",
+      "end_time_s": 2.6e-07
+    }
+  ],
+  "native_executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+  "native_executable_sha256": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+  "BSIM_PBSWGD_default_corrected": true,
+  "electrical_deck_only_max_step_changed": true,
+  "all_physical_tuning_controls_correct": true,
+  "reference_capture_elapsed_s": 54584.14205326396,
+  "candidate_capture_elapsed_s": 15657.251719604945,
+  "capture_elapsed_ratio": 3.4861892132012806,
+  "runtime_scope": "controller elapsed through capture validation; includes output and postprocessing, not isolated solver time",
+  "model_qualified": false
+}
