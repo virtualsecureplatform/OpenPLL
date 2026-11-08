@@ -1,0 +1,401 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif": "3e2815970b03310f1492c474ad7dd915ac16ee13279f40ae18eb9a9c0afd3ffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_flat_native_independent.py": "20da2017669e615c1858906ef290662d0089aa97c3a8c05c540b59d336cc02af",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py": "4b83a4d6c4951cafd271eeeab996644b63350c2b75c2bc3e45dcff1d156b8a09",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_smoke_1210/assessment.json": "b3f44cd707f303cff593c813f74e1b21851a88178127cffd8801c2cf273846ed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_smoke_1210/backend_model.spice": "f41254e19a2df564ffbf1b1e724fa9d8b4ed87596bb2d9dd08f0cdf808117119",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266/inputs.json": "70877a61179d2625aa6bf959d1fbd65ef727d1cd0e3f6b4715944e2643c7a5c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/launch_keeper_TT_characterization.py": "41b1c5cfc1225dcb9a5820d5c457fa5a1bdc0eaa7080755d6356a43f071f0b7b"
+  },
+  "existing_fine149_reference": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fine149_parallel_capture_1266",
+  "existing_fine149_observer": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parallel_physical_tuning_1268",
+  "coarse": 20,
+  "corner": "tt",
+  "temperature_C": 27,
+  "supply_V": 1.8,
+  "fit_fine_codes": [
+    8,
+    110,
+    149,
+    182,
+    247
+  ],
+  "independent_holdout_fine": 133,
+  "maximum_new_native_cases": 5,
+  "per_case_CPU": 1,
+  "per_case_memory_GiB": 16,
+  "per_case_native_cap_s": 86400,
+  "maximum_new_native_reservation": {
+    "CPUs": 5,
+    "memory_GiB": 80
+  },
+  "automatic_identical_retry": false,
+  "all_node_voltages_requested": true,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_protocol": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/protocol.json",
+  "source_protocol_sha256": "15875f2d778e58cf20c239b5676347411598150f9071c60cce37d09d5a42d360",
+  "status_at_retention": {
+    "state": "TT_characterization_family_submitted",
+    "independently_bounded_children": true,
+    "release_ready": false
+  },
+  "cases": [
+    {
+      "fine": 8,
+      "CPU": 17,
+      "role": "fit",
+      "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_008/native",
+      "physical": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_008/physical",
+      "native_controller": {
+        "pid": 1987767,
+        "birth": "131287556",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_flat_native_independent.py",
+          "--smoke",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_smoke_1210",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_008/native",
+          "--fine",
+          "8",
+          "--cpu",
+          "17"
+        ]
+      },
+      "physical_observer": {
+        "pid": 1987816,
+        "birth": "131287763",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py",
+          "--reference",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_008/native",
+          "--chains",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233",
+          "--full",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208",
+          "--route",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_008/physical",
+          "--wait"
+        ]
+      },
+      "capture_inputs_sha256": "2300c1aac7fdd5a75001327ad4d60bf7e1d02c77c1b0144e6f5f918f4f0b1d30",
+      "native_process": {
+        "pid": 1987846,
+        "birth": "131287776",
+        "process_group": 1987846
+      },
+      "native_status": {
+        "state": "flat_native_programming_transient_running",
+        "release_ready": false
+      },
+      "physical_observer_owner": {
+        "pid": 1987829,
+        "birth": "131287771"
+      },
+      "physical_observer_status": {
+        "state": "waiting_for_completed_native_physical_controls",
+        "release_ready": false
+      }
+    },
+    {
+      "fine": 110,
+      "CPU": 18,
+      "role": "fit",
+      "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/native",
+      "physical": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/physical",
+      "native_controller": {
+        "pid": 1987866,
+        "birth": "131288414",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_flat_native_independent.py",
+          "--smoke",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_smoke_1210",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/native",
+          "--fine",
+          "110",
+          "--cpu",
+          "18"
+        ]
+      },
+      "physical_observer": {
+        "pid": 1987911,
+        "birth": "131288660",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py",
+          "--reference",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/native",
+          "--chains",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233",
+          "--full",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208",
+          "--route",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_110/physical",
+          "--wait"
+        ]
+      },
+      "capture_inputs_sha256": "55768230a95239d371d30255c656963638c5914cd2d8e7b02709d62e250d6c00",
+      "native_process": {
+        "pid": 1987952,
+        "birth": "131288689",
+        "process_group": 1987952
+      },
+      "native_status": {
+        "state": "flat_native_programming_transient_running",
+        "release_ready": false
+      },
+      "physical_observer_owner": {
+        "pid": 1987925,
+        "birth": "131288670"
+      },
+      "physical_observer_status": {
+        "state": "waiting_for_completed_native_physical_controls",
+        "release_ready": false
+      }
+    },
+    {
+      "fine": 133,
+      "CPU": 19,
+      "role": "holdout",
+      "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_133/native",
+      "physical": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_133/physical",
+      "native_controller": {
+        "pid": 1987954,
+        "birth": "131289295",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_flat_native_independent.py",
+          "--smoke",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_smoke_1210",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_133/native",
+          "--fine",
+          "133",
+          "--cpu",
+          "19"
+        ]
+      },
+      "physical_observer": {
+        "pid": 1988012,
+        "birth": "131289640",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py",
+          "--reference",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_133/native",
+          "--chains",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233",
+          "--full",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208",
+          "--route",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_133/physical",
+          "--wait"
+        ]
+      },
+      "capture_inputs_sha256": "f483d0d1a2b9b357d6fa718eaada02cf4ddb7374a94592d18d59c8e122ba7f1f",
+      "native_process": {
+        "pid": 1988057,
+        "birth": "131289658",
+        "process_group": 1988057
+      },
+      "native_status": {
+        "state": "flat_native_programming_transient_running",
+        "release_ready": false
+      },
+      "physical_observer_owner": {
+        "pid": 1988025,
+        "birth": "131289645"
+      },
+      "physical_observer_status": {
+        "state": "waiting_for_completed_native_physical_controls",
+        "release_ready": false
+      }
+    },
+    {
+      "fine": 182,
+      "CPU": 22,
+      "role": "fit",
+      "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/native",
+      "physical": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/physical",
+      "native_controller": {
+        "pid": 1988067,
+        "birth": "131290263",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_flat_native_independent.py",
+          "--smoke",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_smoke_1210",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/native",
+          "--fine",
+          "182",
+          "--cpu",
+          "22"
+        ]
+      },
+      "physical_observer": {
+        "pid": 1988113,
+        "birth": "131290512",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py",
+          "--reference",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/native",
+          "--chains",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233",
+          "--full",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208",
+          "--route",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_182/physical",
+          "--wait"
+        ]
+      },
+      "capture_inputs_sha256": "2896aa0f7ecf0e38bb6506693b3464865e4ebdcc43f71fc14f03b5b30207b7f5",
+      "native_process": {
+        "pid": 1988148,
+        "birth": "131290530",
+        "process_group": 1988148
+      },
+      "native_status": {
+        "state": "flat_native_programming_transient_running",
+        "release_ready": false
+      },
+      "physical_observer_owner": {
+        "pid": 1988127,
+        "birth": "131290522"
+      },
+      "physical_observer_status": {
+        "state": "waiting_for_completed_native_physical_controls",
+        "release_ready": false
+      }
+    },
+    {
+      "fine": 247,
+      "CPU": 23,
+      "role": "fit",
+      "native": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/native",
+      "physical": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/physical",
+      "native_controller": {
+        "pid": 1988159,
+        "birth": "131291094",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_flat_native_independent.py",
+          "--smoke",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_smoke_1210",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/native",
+          "--fine",
+          "247",
+          "--cpu",
+          "23"
+        ]
+      },
+      "physical_observer": {
+        "pid": 1988209,
+        "birth": "131291325",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py",
+          "--reference",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/native",
+          "--chains",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_DCO_control_drivers_1233",
+          "--full",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_native_model_1208",
+          "--route",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_parent_reroute_1136",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_TT_characterization_1270/fine_247/physical",
+          "--wait"
+        ]
+      },
+      "capture_inputs_sha256": "35e738d3554a9f5bdc4254aa2f198478e9437fc88bc797951db51d72fc3d4ce9",
+      "native_process": {
+        "pid": 1988250,
+        "birth": "131291357",
+        "process_group": 1988250
+      },
+      "native_status": {
+        "state": "flat_native_programming_transient_running",
+        "release_ready": false
+      },
+      "physical_observer_owner": {
+        "pid": 1988223,
+        "birth": "131291335"
+      },
+      "physical_observer_status": {
+        "state": "waiting_for_completed_native_physical_controls",
+        "release_ready": false
+      }
+    }
+  ],
+  "combined_current_native_reservation": {
+    "CPUs": 7,
+    "memory_GiB": 112
+  },
+  "frequencies_measured_from_partial_RAW": false
+}
