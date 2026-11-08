@@ -1714,3 +1714,16 @@ Collector v3 fixes the duplicate-field merge, preserves 1504, reuses its TT
 capture and continues FF/SS/SF/FS in distinct campaign1506. Three assessment
 controls pass. CPU17/4GiB and the one-hour native limit per corner remain in
 force. This does not rerun the original TT stimulus or change cell models.
+
+Supplemental slow-ramp campaign1507 declares 1600 ps full ramps (960 ps 20–80%)
+and 1600/2000/4000 ps pulse widths for each of the five masters at five corners,
+plus one no-pulse control per master/corner: 100 additional observations.
+The slower ramp exceeds the largest conditional routed slew measured in1505;
+this does not establish continuous or real-waveform coverage. Existing models,
+loads, 2 ps maximum step and the reset-retention assessment are unchanged.
+CPU affinity was moved with verified PID/birth identities for the supervisor
+and its TT native child to free CPU18; later children inherit that affinity.
+The explicit override record is hash-pinned in the launch, since the reusable
+worker defaults to CPU17. Shared CPU/RAM leases, 4 GiB and a one-hour native
+limit per corner remain unchanged. Both campaigns are live; no result from
+an active native waveform is assessed.

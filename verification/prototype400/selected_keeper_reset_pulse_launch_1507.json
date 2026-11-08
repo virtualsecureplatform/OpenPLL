@@ -1,0 +1,196 @@
+{
+  "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_slow_grid_1507",
+  "owner": {
+    "pid": 2308068,
+    "birth": "137003198"
+  },
+  "plan": {
+    "cases": [
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 0,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": true
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 1600,
+        "full_ramp_ps": 1600,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 2000,
+        "full_ramp_ps": 1600,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 4000,
+        "full_ramp_ps": 1600,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 0,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": true
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 1600,
+        "full_ramp_ps": 1600,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 2000,
+        "full_ramp_ps": 1600,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 4000,
+        "full_ramp_ps": 1600,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 0,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": true
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 1600,
+        "full_ramp_ps": 1600,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 2000,
+        "full_ramp_ps": 1600,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 4000,
+        "full_ramp_ps": 1600,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 0,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": true
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 1600,
+        "full_ramp_ps": 1600,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 2000,
+        "full_ramp_ps": 1600,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 4000,
+        "full_ramp_ps": 1600,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 0,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": true
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 1600,
+        "full_ramp_ps": 1600,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 2000,
+        "full_ramp_ps": 1600,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 4000,
+        "full_ramp_ps": 1600,
+        "reset_state": 1,
+        "negative_control": false
+      }
+    ],
+    "corners": [
+      "tt",
+      "ff",
+      "ss",
+      "sf",
+      "fs"
+    ],
+    "maximum_step_ps": 2,
+    "temperature_C": 27,
+    "supply_V": 1.8,
+    "clock_held_low_during_pulse": true,
+    "automatic_identical_retry": false,
+    "physical_reset_timing_qualified": false,
+    "release_ready": false
+  },
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_slow_grid_1507/owner.json": "425d331179f7b48ffea446886b9f82a17d666f4a731196b0c0cee89aceb4d47b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_slow_grid_1507/plan.json": "125cd5357228f314f8be221cb6de1aba0736a6b141d5bd2059417ae51625c1c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_reset_pulse_slow_grid.py": "0eb3360becbf95fa84e4d877c5836cb7a7473b11ff466cf27f0cc7813386eabd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_slow_grid_1507/CPU18_affinity_override.json": "b6e2c513c7d5ad76d3d2b0e049f3c0643dd54175f8d1f5a2777f9d1ed8dfe7bf"
+  },
+  "CPU": 18,
+  "memory_GiB": 4,
+  "native_limit_s_per_corner": 3600,
+  "TT_capture_reused": false,
+  "release_ready": false
+}
