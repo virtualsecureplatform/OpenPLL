@@ -1660,3 +1660,14 @@ other-corner behavior, 400 MHz bracketing and closed-loop behavior remain open.
 Normal completion and physical validation released the predeclared parallel
 fine8/fine247 endpoint workers and independent fine198 holdout; all three native
 processes are confirmed running. Their results are not yet available.
+
+Native asynchronous-reset pulse coverage 1502 separately queries all 481
+reset pins in each of the five retained corner views with OpenSTA's native
+minimum-pulse-width check API. All 2,405 queries complete; zero report a check.
+Zero violations is therefore not a reset pulse-width pass. This is distinct
+from the complete clock-pin high/low coverage in 1496. The native-liberty writer
+emits the measured pulse allowance only on CLK, while RESET_B/SET_B retain
+recovery/removal tables but no pulse-width limit. Retaining this omission makes
+reset pulse characterization an explicit prerequisite to physical lifecycle
+qualification. No constraints, RTL, cell models or release gates were changed.
+The completed source-pinned receipt and diagnostic runner are retained.

@@ -1,0 +1,36 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_endpoint_coverage_1496/assessment.json": "e98b041b9b96c7c2ca0579dcea9d163ebed1842aa2747ddf7908b4178f7f20b5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_keeper_async_reset_pulse_coverage.py": "f06e866d1e0e66007f9108cab34e1594903ee5fcf974dd75e519c93aeda3c99e",
+    "/nix/store/qqz49dx8dpx4q9i5wriif091n7iaa0ld-openroad-2026-02-17/bin/openroad": "b1daf182a2702687868c777a722924afeb45f85fc125029357b28a5f73ba8860",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_keeper_reset_endpoint_coverage.py": "a545f3c76d43854e898cafc06e459a0e469a664fbcc486687e7b4b9c468b4cba",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_tt_019/screen.tcl": "85367fd3d0bf14af3f9e8544d3794f41d4cba4f3bfda480b5cc551d25764b493",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_async_reset_pulse_coverage_1502/tt/checks.tcl": "d9923f3e2207c2f3ca6332833fe4fb4da6eb467018835544779df5e57d627fc9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_ff_019/screen.tcl": "16150a3dda21300c8b643fbe48dccbf09bda7c26ca9ba59e8d8815f5a1708850",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_async_reset_pulse_coverage_1502/ff/checks.tcl": "6fddf42499ccec0c5b0205a7987dbbd41a686b1d5832886f4a3a89a51d10c2d5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_ss_019/screen.tcl": "5616181f8482e07a700f7266508f8533347765adf54653ae1f65be21b4a2fdfd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_async_reset_pulse_coverage_1502/ss/checks.tcl": "b33616e080c40a4aede2e150ca7f2c8df5f08ebb71e5100e5f928d7ae3be7a08",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_sf_019/screen.tcl": "178184c9432e3e03a04ccab4ed8d0cbe2ab0bb6645ad28885501afd8733a9706",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_async_reset_pulse_coverage_1502/sf/checks.tcl": "723788433fc42eae4b3d5ebca8d1abd02b0bcd5fe0cb42039f7933acd4b107c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_phase_fs_019/screen.tcl": "54ca15b9ad6bdeb624354a6c66502b92725344c732d2ce856472b7c4a4d6ed18",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_async_reset_pulse_coverage_1502/fs/checks.tcl": "8413b99a71b9406c64753c34c41d571cca5eae997d869388220416bdcb22a6ee"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_async_reset_pulse_coverage_1502/tt/native.log": "09cc00b85991ba0f1df434a1cb6ae1b2b2f29fb9704f74a40f7a4a2b601cbf7f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_async_reset_pulse_coverage_1502/ff/native.log": "09cc00b85991ba0f1df434a1cb6ae1b2b2f29fb9704f74a40f7a4a2b601cbf7f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_async_reset_pulse_coverage_1502/ss/native.log": "09cc00b85991ba0f1df434a1cb6ae1b2b2f29fb9704f74a40f7a4a2b601cbf7f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_async_reset_pulse_coverage_1502/sf/native.log": "09cc00b85991ba0f1df434a1cb6ae1b2b2f29fb9704f74a40f7a4a2b601cbf7f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_async_reset_pulse_coverage_1502/fs/native.log": "09cc00b85991ba0f1df434a1cb6ae1b2b2f29fb9704f74a40f7a4a2b601cbf7f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_async_reset_pulse_coverage_1502/endpoints.json": "9632375fb1003b34c0049e486fb4506f62ca3bb8b0f2ab235451fd29daec66ac"
+  },
+  "async_pins_per_corner": 481,
+  "queried": 2405,
+  "reported": 0,
+  "unreported": 2405,
+  "violated": 0,
+  "missing_check_is_not_a_pass": true,
+  "no_new_timing_exceptions": true,
+  "external_reset_pulse_width_qualified": false,
+  "physical_reset_timing_qualified": false,
+  "release_ready": false
+}
