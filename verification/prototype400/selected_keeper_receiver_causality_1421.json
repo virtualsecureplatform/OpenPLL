@@ -1,0 +1,196 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_reduction_1420/assessment.json": "e36bc3e666c0db24ba92fa4b6d3e38403057c74af12aacb926d0a1f16f228d68",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_reduction_1420/bindings.json": "12154bb142687fac54c4d120388d273f9824432ca1f729c7581142f3ec2aa5ca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_reduction_1420/model.spice": "84657173ba202e15039c97f02c4072b92c46370dff19385523c141ad0d886992",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_step50_physical_1279/assessment.json": "34f999b141d8e67f169f2b8421e1f6c9d70c1aed0ad599c0c29879a8ea7d591c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_step50_physical_1279/plan.json": "7005165066746b4d8f870a2b8fd10d6b7076084908cbd6f12c29c18059d577bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_step50_physical_1279/checks.json": "8c40084257b372b0cf578e2f15f8a6fc9b5d223abac2a0dd72db5f0a4d415271",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_replay_causality.py": "8bf9ccdba556c77c7a71d7564a7ff1c994fff07e70da0351e92642f06dee8628",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/reduce_keeper_capacitor_boundaries.py": "be9b1fdfce56e4d305e4afeac102e399e9cbb270d34191d31d6c22878ee00ca8"
+  },
+  "role_counts": {
+    "aggregate_capacitor_forcing": 189,
+    "other_prescribed_boundary": 1,
+    "programming_macro_endpoint": 302,
+    "reset": 1,
+    "supply": 2
+  },
+  "observed_gate_to_prescribed_terminal_calls": [],
+  "conditional_environment_required": true,
+  "changed_controller_prediction_qualified": false,
+  "dynamic_error_qualified": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "full_static_audit_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_causality_1421.json": "7613f3a3a88493acba456b9dc8384a32fbd27d873cea91cb8b864e218cdd310a"
+  },
+  "other_prescribed_boundaries": {
+    "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_16_123.A": {
+      "role": "other_prescribed_boundary",
+      "native_port": "openpll_boundary_535",
+      "primitive_terminal_uses": [
+        {
+          "primitive": "Xflat2085",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat2844",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_41"
+        },
+        {
+          "primitive": "Xflat5490",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_45"
+        },
+        {
+          "primitive": "Xflat7604",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat14353",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_41"
+        },
+        {
+          "primitive": "Xflat15852",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_46"
+        },
+        {
+          "primitive": "Xflat17002",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat21510",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_45"
+        },
+        {
+          "primitive": "Xflat24550",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_41"
+        },
+        {
+          "primitive": "Xflat26414",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_46"
+        },
+        {
+          "primitive": "Xflat26472",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat30354",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_46"
+        },
+        {
+          "primitive": "Xflat32062",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_45"
+        },
+        {
+          "primitive": "Xflat35912",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat35996",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_45"
+        },
+        {
+          "primitive": "Xflat42518",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_46"
+        },
+        {
+          "primitive": "Xflat45506",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat48243",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_45"
+        },
+        {
+          "primitive": "Xflat48536",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat48947",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_46"
+        },
+        {
+          "primitive": "Xflat50729",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_55"
+        },
+        {
+          "primitive": "Xflat52792",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat54971",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat57230",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_57"
+        },
+        {
+          "primitive": "Xflat57935",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat59388",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_58"
+        },
+        {
+          "primitive": "Xflat60060",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat60342",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_0"
+        },
+        {
+          "primitive": "Xflat61835",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_59"
+        },
+        {
+          "primitive": "Xflat61887",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_41"
+        },
+        {
+          "primitive": "Xflat62063",
+          "terminal_position": 0,
+          "wrapper": "__openpll_literal_leaf_46"
+        },
+        {
+          "primitive": "Xflat62195",
+          "terminal_position": 2,
+          "wrapper": "__openpll_literal_leaf_60"
+        }
+      ]
+    }
+  }
+}

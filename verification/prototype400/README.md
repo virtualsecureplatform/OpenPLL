@@ -1001,3 +1001,22 @@ the launch receipt. This is an export diagnostic, not a general coupling
 placement or delay/simplification fix: the small fixture does not exercise
 a qualified distributed-R network, and changed lumped-C heuristics need
 separate validation. No PLL model or release qualification follows.
+
+### Native translated expanded receiver, exact reduction (2026-11-08)
+
+Experiment1419 translates receiver expansion1416 with the same checked
+physical source/backend translation provenance as1242. The translation
+checks every nonzero capacitor endpoint and value and reversible physical
+node mapping. Experiment1420 reduces only capacitor-only prescribed ports:
+10179 primitive calls remain unchanged,93813 capacitor cards become60009,
+7373 ports are eliminated, and189 aggregate forcing inputs plus306 direct
+inputs remain. The exact charge-coefficient certificate is retained in
+build output; no native equivalence is claimed for this new circuit.
+
+Causality audit1421 finds zero PLLOUT-gated MOS calls whose source/drain is
+prescribed, versus eight before expansion. Its one other direct prescribed
+boundary remains the downstream clock-buffer node documented for1416.
+Sampled capacitor forcing also remains. The portable audit summary pins
+the full static report and records that downstream boundary; all dynamic,
+changed-controller prediction and release flags stay false. No new
+transient or independent causal model is claimed by these static steps.
