@@ -1,0 +1,22 @@
+{
+  "first_LVS_attempt": {
+    "owner": {
+      "pid": 2297745,
+      "birth": "136481648"
+    },
+    "controller_now_terminal": true,
+    "native_comparisons_started": 0,
+    "reason": "valid retained reference recipe was hashed as an input rather than an output artifact"
+  },
+  "LVS_v2_uses_verified_input_or_artifact_binding": true,
+  "first_mask_audit": {
+    "path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_masks_1485/assessment.json",
+    "sha256": "d8d2643ebecec3af7d3f0e558f57cc863ba911a1e49e6a1b4d748d6a876b7cc4",
+    "channel_flag": false,
+    "conductor_masks_preserved": true
+  },
+  "corrected_channel_test": "empty polygon XOR rather than Region representation equality",
+  "corrected_mask_audit": "selected_keeper_clock_parent_flat_masks_1486",
+  "source_GDS_or_capacitance_changed": false,
+  "release_ready": false
+}

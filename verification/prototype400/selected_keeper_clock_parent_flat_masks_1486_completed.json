@@ -1,0 +1,26 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/assessment.json": "5b08dd149ac81ac231abc581f34cb86953415d0b8f6f834a290b32efb6b015f6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_M5_fill_alias_control_555/assessment.json": "c4f2315b1663e941c77a133be8d13f251a93857cc2f616d3ebf590f7d0be6dcb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_regenerated_fill_1476/assembly.gds": "96fa3766e37132f74e84c6988e99577215bb590bc31ae320378b73932be6d420",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/flat.gds": "0aa5632779f725cec8edd02dd0de0c171b809d165b1b353b4b4ba52a59328ccc",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_clock_parent_flat_masks_v2.py": "6c8e21405dc8b9e179f4937c7ad2b270a236fd55169d83634c72424f1fb05fb7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_prototype_flat_antenna_geometry_v2.py": "02ec6a1405fe74f868cf50aa7cfcd4a122831af72257a17c595349100ac3621a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_flat_geometry.py": "68d99542023ce02813a18b25b9b47f5c7aecded500ada870ba3485d50577ec3a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_keeper_active_selectors.py": "ce3bccea5764e18df09fe61dc76d4e0377773283915150af2916136edea5c7ae"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_masks_1486/masks.json": "412e939e96cc5db51ccd3686c2a92241515aa4f830e60d3ebd08e9af24b4c3ec"
+  },
+  "all_conductor_masks_preserved": true,
+  "all_device_select_masks_preserved": false,
+  "all_checked_active_selectors_preserved": true,
+  "diode_marker_on_active_diff_preserved": true,
+  "poly_diff_channel_region_preserved": true,
+  "M5_alias_control_verified": true,
+  "capacitance_coefficient_equivalence_qualified": false,
+  "flat_GDS_is_not_a_fabrication_replacement": true,
+  "model_qualified": false,
+  "release_ready": false
+}

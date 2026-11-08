@@ -1,0 +1,29 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/assessment.json": "5b08dd149ac81ac231abc581f34cb86953415d0b8f6f834a290b32efb6b015f6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_filled_parent_LVS_1478/assessment.json": "9bcf235ac5020dd31eae2e753183af23dbc6a0f3c4f7b177a143ed4262b2e278",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_filled_parent_LVS_1478/compare.tcl": "b4b2137316fb1198fb7b6090bccbce980311e089dc8df89303508d8bd1ef55b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/capacitance.spice": "58472547c055b73ab2a4bfabe4f0397068103b9b2631017c72ff54090ca57cd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_LVS_1484/devices_only.spice": "9f652e429510b61a0dbbf29a4ad8946f66a015638130a47aac5723eb4296ad6e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_LVS_1484/compare.tcl": "58899a0b1b85fcbc3f5cfe5b6c110c2d1762959391042c0f90d4f88bd132a9f7",
+    "/nix/store/kw3frc6fbv3zi2m9n0wv93y1nfiyjiy6-netgen-1.5.316/bin/netgen": "ee0e49db5f9c1804ae3404f37bef23bb0facb6f7aa99dc05e3c5780f8abe41cf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_keeper_clock_parent_flat_C_LVS_v2.py": "03baf523e0247e2d6a5804533acfe8ec6602e67604c45bb14c059f1fbbd97df1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_hierarchical_capacitance.py": "19b97e8bb8241d14c814e16ae71e988f0c04222bc82bb6b72f9043b520418028"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_LVS_1484/devices_only.spice": "9f652e429510b61a0dbbf29a4ad8946f66a015638130a47aac5723eb4296ad6e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_LVS_1484/compare.tcl": "58899a0b1b85fcbc3f5cfe5b6c110c2d1762959391042c0f90d4f88bd132a9f7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_LVS_1484/native.log": "83e0e642fec8890d6070d1aa5eee47d1cf51e9f0c87ea11439a001158364035b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_LVS_1484/compare.log": "a0aa34b0fdb16944b39656a46795dcef04037d110644308a16e041b96c3b4076",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_LVS_1484/compare.json": "8eb5efe86b3e0a821985278ca741f9a136a5e19521fea74b2dae71db266b9126"
+  },
+  "unique_device_LVS_match": true,
+  "all_records_without_discrepancies": true,
+  "capacitor_cards_removed_for_topology_only": 1363802,
+  "original_capacitance_file_unchanged": true,
+  "source_GDS_mask_geometry_verified": false,
+  "capacitance_equivalence_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}

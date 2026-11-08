@@ -1501,3 +1501,25 @@ retained, with no new exceptions added. They are not a startup/reset or physical
 cell-model qualification. The filled parent is not yet represented in those
 internal-macro wire RC measurements. Summary 1481 links the completed physical
 checks and this measured limit without selecting the ECO or closing a release gate.
+
+
+Fill-aware ECO extraction 1482 completed from regenerated GDS 1476, bound to its
+fresh parent DRC 1477 and expanded LVS 1478. It flattens actual geometry, extracts
+stock constant capacitances with a signed export threshold, and extracts no wire
+resistance. Flat device LVS 1484 matches the independent powered hierarchy
+uniquely with no discrepancy records; only explicit constant-C cards are removed
+for that topology-only comparison, and the original export remains unchanged.
+Mask audit 1486 confirms every checked conductor, all electrically active
+selectors, diode markers on active diffusion, and the poly/diff channel region.
+The same positively/negatively controlled M5 alias normalization is reused. Full
+selector masks outside their electrically active domains are regenerated rather
+than bit-identical; the flat diagnostic GDS is not a fabrication replacement.
+
+Two validation guard corrections are recorded in 1488. First LVS attempt 1483
+stopped before native comparison because the retained reference recipe is pinned
+as an input, not an output artifact. Version 2 verifies the actual completed pin
+binding. Mask audit 1485 used KLayout Region representation equality for channels;
+version 2 uses an empty polygon XOR, which confirms geometric equality. Neither
+correction changes source GDS or extracted capacitance. The earlier observations
+remain preserved. Capacitance coefficient/spatial and dynamic qualification are
+separate from the passing device-connectivity and mask checks.

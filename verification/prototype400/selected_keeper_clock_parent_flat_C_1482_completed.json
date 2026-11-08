@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_regenerated_fill_1476/assessment.json": "ebf74c3233eeb1c25ca8ce1a8b783c7907c08d0354cbae302e92a92ff28fd2f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_filled_parent_DRC_1477/assessment.json": "602bd38e67187c55971a105875df769e1ad9618bcb77d120ef7ac3223dee6792",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_filled_parent_LVS_1478/assessment.json": "9bcf235ac5020dd31eae2e753183af23dbc6a0f3c4f7b177a143ed4262b2e278",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_branch_regenerated_fill_1476/assembly.gds": "96fa3766e37132f74e84c6988e99577215bb590bc31ae320378b73932be6d420",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/extract.tcl": "0e4d78823b57e8bbec36b81ecf73c77f7081737af0339fa1ea3dde651f183a45",
+    "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_clock_parent_flat_C.py": "c320793b5948ecf4d086e135e33e909b0d926ab2ba1129c1d88a1e31a1c5e37c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/replay_keeper_flat_signed_C.py": "64ec7b45868d1e88eba320f64d46dc31333dae872bec8f8168874b6ad3fd0f6d"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/capacitance.spice": "58472547c055b73ab2a4bfabe4f0397068103b9b2631017c72ff54090ca57cd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/flat.gds": "0aa5632779f725cec8edd02dd0de0c171b809d165b1b353b4b4ba52a59328ccc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/IntegerPLL_400MHz_KeeperFlatC.ext": "2b85cb45eb258eeac117b365667110a6c40a848bcff271594ee9abf85691a419",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_clock_parent_flat_C_1482/native.log": "b51ad0636778757b58d737627b00fdd3e9bb6f54de8bf2ff7d06143a70612587"
+  },
+  "flat_geometry_capacitance_extracted": true,
+  "source_GDS_sha256": "96fa3766e37132f74e84c6988e99577215bb590bc31ae320378b73932be6d420",
+  "native_source_masks_verified": false,
+  "primitive_inventory_verified": false,
+  "coefficient_equivalence_qualified": false,
+  "passivity_qualified": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}
