@@ -1,0 +1,17 @@
+--- a/resis/resis.h
++++ b/resis/resis.h
+@@ -647,6 +647,14 @@
+ 	rp->rp_nextPort = pX_->portList; \
+ 	rp->rp_bbox = node->rs_bbox; \
+ 	rp->rp_loc = node->drivepoint; \
++	if (!IsSplit(tile) && \
++	    MAX(LEFT(tile), rp->rp_bbox.r_xbot) <= MIN(RIGHT(tile), rp->rp_bbox.r_xtop) && \
++	    MAX(BOTTOM(tile), rp->rp_bbox.r_ybot) <= MIN(TOP(tile), rp->rp_bbox.r_ytop)) { \
++	    rp->rp_loc.p_x = MAX(MAX(LEFT(tile), rp->rp_bbox.r_xbot), \
++	        MIN(MIN(RIGHT(tile), rp->rp_bbox.r_xtop), rp->rp_loc.p_x)); \
++	    rp->rp_loc.p_y = MAX(MAX(BOTTOM(tile), rp->rp_bbox.r_ybot), \
++	        MIN(MIN(TOP(tile), rp->rp_bbox.r_ytop), rp->rp_loc.p_y)); \
++	} \
+ 	rp->rp_nodename = node->name; \
+ 	pX_->portList = rp; \
+ }

@@ -1,0 +1,218 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/assessment.json": "064e67cc9e53fe77952157164f94def70b0424839ce349884a08939057dac35b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_broad_controls_1332/assessment.json": "68e268964d128cdde745f0a39f308c20b888c03314d186c24830dfe15ad9a11d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/assessment.json": "87f6863d9d7caa81f41e7ccea8c084a7b423deed756d292ec9455b231afd2947",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_broad_controls_1336/assessment.json": "93093f970b30c31d9d234a75486fa0e290c0115baee99681e2e66c499157f9a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_area_signfix_1330/assessment.json": "e1721349d3bdbe9cdbf3f41b9d6e0511d373e4694c974af8eb0aff2c0369ebc2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_port_projection_1334/assessment.json": "bed746e5247fd478d2c064afc5266a49a70cbe03c05fe9423b0e064f3913ef05",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_area_signfix_1330/instrumentation.json": "b58de1b4ba86f7e7b6e1564926e7327381ca54b6cf940964d6a7352ff0e84d96",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_port_projection_1334/instrumentation.json": "daa4a87814d824628488ac3f7d8485343de26f40c67e0456266b852c4201b83c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_magic_port_projection.py": "ec95f56744261e985a65f6257855cf9ab296e48eb52d50a0479a39416b955fed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_magic_area_signfix.py": "c068f47a50d6e2bfa9e1c26d19ad7be29c832f8b7d2cf6ca4ea3be8adaa61afd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_resistance_area_trace.py": "ebfca7fdc002a1ccd5c4a03c2f494a4db09dbf2ad01a373c376286f5dad4d316",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/horizontal_on/probe.tcl": "154c9cab9ccbad82b9817b9ea47b10c9e2baa360beb677f16c70e664083bb1ee",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/horizontal_on/view.spice": "94a69d3a1026e38a59e255d2b39c10b790eb483d8f7e693b38548cb4754ea622",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/horizontal_on/area.jsonl": "50b4dc705e28b03437cc5ee2b7fa0b9fac17a5d30150d33b567aaa86e589f02b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/horizontal_on/Area_horizontal.ext": "0d8c8901ea48c3bfa88d985b9919141d45ad302a7f9b1a88fb7a567e9b4aef15",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/horizontal_on/probe.tcl": "4f6bb12e97bd695e431a5ee1fe32fe78288fd9a97eaac0aa1b35cd17308ea3fd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/horizontal_on/view.spice": "94a69d3a1026e38a59e255d2b39c10b790eb483d8f7e693b38548cb4754ea622",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/horizontal_on/area.jsonl": "c3d9a35aba4af0e51c325451839c51b680e2b13ad4590a3bb2b192f00735ee5e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/horizontal_on/Area_horizontal.ext": "0d8c8901ea48c3bfa88d985b9919141d45ad302a7f9b1a88fb7a567e9b4aef15",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/vertical_on/probe.tcl": "881b4af29ddf0ad016c30893794b7829dd6ab092d92a3855f177b33a70c39a5f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/vertical_on/view.spice": "de1603e33fa80cda1f619ba8d04f192cca861e0abecfcfac13099ad482eb0b12",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/vertical_on/area.jsonl": "e01d7eb137cc9e9ab54f419759b5d3d05c6d8232a4991f7e49c778cce091ea67",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/vertical_on/Area_vertical.ext": "c872b6b3d0d15c215b87984d3c782ba02d5c150b0ef76b9dbf8db06db08a920b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/vertical_on/probe.tcl": "193170f198583c9a9c34f3779e9fa0fa054f635e002d7b9a0591e3f54b8b1760",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/vertical_on/view.spice": "de1603e33fa80cda1f619ba8d04f192cca861e0abecfcfac13099ad482eb0b12",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/vertical_on/area.jsonl": "cc8039ae306e46da7cab536c10cfb88349993aa3f890d2a15afeeb684af58b31",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/vertical_on/Area_vertical.ext": "c872b6b3d0d15c215b87984d3c782ba02d5c150b0ef76b9dbf8db06db08a920b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/dangling_tee_on/probe.tcl": "b845aa0e4ca004f07fab4952196e629a4e8a45e2750939cfeeb6ff7d4b6a54b8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/dangling_tee_on/view.spice": "69e0707ddf0d0da82af30efa8221758bc9b3dc6e8db215d9733b7a58ce27573e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/dangling_tee_on/area.jsonl": "258969ce5f6c3ba33099ac022c7bbdbf4fdcb840e0be2a9750c332c0cec6f2aa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_local_controls_1331/dangling_tee_on/Area_dangling_tee.ext": "fd17e74d198fb4688e0fd864a2ba291f8895b771b7946617fdf3a45f4a0aa134",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/dangling_tee_on/probe.tcl": "a596d1c88e6d242a925c4c746299247fea341d79cd92d8cb1f6e67747b22cd10",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/dangling_tee_on/view.spice": "69e0707ddf0d0da82af30efa8221758bc9b3dc6e8db215d9733b7a58ce27573e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/dangling_tee_on/area.jsonl": "015f256339e4961a9d877aa42d21b8e67844030d77e364d9aa1a41f3a579b0cd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_local_controls_1335/dangling_tee_on/Area_dangling_tee.ext": "fd17e74d198fb4688e0fd864a2ba291f8895b771b7946617fdf3a45f4a0aa134",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_broad_controls_1332/dangling_tee_on/probe.tcl": "0553d63768ea09b64a2247800eb8edb57ae6aec73480cfe21e2d3ab7f3de8641",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_broad_controls_1332/dangling_tee_on/view.spice": "b91cf55ddd987851491e951396c2f5e77ca98e51f566f06bd9297cb0451d11af",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_broad_controls_1332/dangling_tee_on/area.jsonl": "a716c40910fe43a5bdd6d88a5e98328985ce410da92c4d2abc18c4b3871c5068",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_area_signfix_broad_controls_1332/dangling_tee_on/Area_dangling_tee.ext": "b9a96e58bb9b1e3672b1439448cd9d7e4c00edc8f072b4a9a014a8efb8d1cbcd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_broad_controls_1336/dangling_tee_on/probe.tcl": "c93f3dbfa3576c8aa243eb7ae0688f357242d6d7c4870a8b60d67197d7a6415e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_broad_controls_1336/dangling_tee_on/view.spice": "69e0707ddf0d0da82af30efa8221758bc9b3dc6e8db215d9733b7a58ce27573e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_broad_controls_1336/dangling_tee_on/area.jsonl": "16643330e4933058295b378f3d38004756e260972d14d0aaee703c269d2b6815",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_projection_broad_controls_1336/dangling_tee_on/Area_dangling_tee.ext": "b9a96e58bb9b1e3672b1439448cd9d7e4c00edc8f072b4a9a014a8efb8d1cbcd"
+  },
+  "differing_transformed_source_files": [
+    "resis.h"
+  ],
+  "results": [
+    {
+      "case": "horizontal",
+      "port_scope": "localized",
+      "electrical_protocol_matches": true,
+      "C_only_EXT_inventory_unchanged": true,
+      "exact_final_circuit_unchanged": true,
+      "baseline_R_cards": 0,
+      "candidate_R_cards": 0,
+      "candidate_invalid_support_bounds": 0,
+      "candidate_negative_raw_additions": 0,
+      "candidate_negative_C_cards": 0,
+      "C_only_reference_contraction": {
+        "reference_primitives": 0,
+        "candidate_primitives": 0,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 0,
+        "positive_wire_R_cards": 0,
+        "wire_R_components": 0,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 3,
+        "contracted_nonzero_C_pairs": 3,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a",
+              "sub"
+            ],
+            "reference_F_exact": "28413/10000000000000000000",
+            "contracted_F_exact": "675241/100000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 0,
+        "exact_device_and_C_contraction_verified": false
+      },
+      "port_projection_fixture_checks_passed": true
+    },
+    {
+      "case": "vertical",
+      "port_scope": "localized",
+      "electrical_protocol_matches": true,
+      "C_only_EXT_inventory_unchanged": true,
+      "exact_final_circuit_unchanged": true,
+      "baseline_R_cards": 0,
+      "candidate_R_cards": 0,
+      "candidate_invalid_support_bounds": 0,
+      "candidate_negative_raw_additions": 0,
+      "candidate_negative_C_cards": 0,
+      "C_only_reference_contraction": {
+        "reference_primitives": 0,
+        "candidate_primitives": 0,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 0,
+        "positive_wire_R_cards": 0,
+        "wire_R_components": 0,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 3,
+        "contracted_nonzero_C_pairs": 3,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a",
+              "sub"
+            ],
+            "reference_F_exact": "28413/10000000000000000000",
+            "contracted_F_exact": "675241/100000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 0,
+        "exact_device_and_C_contraction_verified": false
+      },
+      "port_projection_fixture_checks_passed": true
+    },
+    {
+      "case": "dangling_tee",
+      "port_scope": "localized",
+      "electrical_protocol_matches": true,
+      "C_only_EXT_inventory_unchanged": true,
+      "exact_final_circuit_unchanged": true,
+      "baseline_R_cards": 0,
+      "candidate_R_cards": 0,
+      "candidate_invalid_support_bounds": 0,
+      "candidate_negative_raw_additions": 0,
+      "candidate_negative_C_cards": 0,
+      "C_only_reference_contraction": {
+        "reference_primitives": 0,
+        "candidate_primitives": 0,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 0,
+        "positive_wire_R_cards": 0,
+        "wire_R_components": 0,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 3,
+        "contracted_nonzero_C_pairs": 3,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a",
+              "sub"
+            ],
+            "reference_F_exact": "4381/1250000000000000000",
+            "contracted_F_exact": "741591/100000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 0,
+        "exact_device_and_C_contraction_verified": false
+      },
+      "port_projection_fixture_checks_passed": true
+    },
+    {
+      "case": "dangling_tee",
+      "port_scope": "broad",
+      "electrical_protocol_matches": true,
+      "C_only_EXT_inventory_unchanged": true,
+      "exact_final_circuit_unchanged": false,
+      "baseline_R_cards": 3,
+      "candidate_R_cards": 0,
+      "candidate_invalid_support_bounds": 0,
+      "candidate_negative_raw_additions": 0,
+      "candidate_negative_C_cards": 0,
+      "C_only_reference_contraction": {
+        "reference_primitives": 0,
+        "candidate_primitives": 0,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 0,
+        "positive_wire_R_cards": 0,
+        "wire_R_components": 0,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 3,
+        "contracted_nonzero_C_pairs": 3,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a",
+              "sub"
+            ],
+            "reference_F_exact": "4381/1250000000000000000",
+            "contracted_F_exact": "741591/100000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 0,
+        "exact_device_and_C_contraction_verified": false
+      },
+      "port_projection_fixture_checks_passed": true
+    }
+  ],
+  "all_port_projection_fixture_checks_passed": true,
+  "split_tile_projection_qualified": false,
+  "coupling_duplication_fixed": false,
+  "distributed_wire_R_qualified": false,
+  "release_ready": false
+}

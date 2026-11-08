@@ -1,2 +1,3 @@
 # Unified patch context adds a leading marker before native tab indentation.
 tools/magic_rcx/ResCalcEastWest_single_break_area.patch whitespace=-space-before-tab
+tools/magic_rcx/NEWPORT_rectilinear_projection.patch whitespace=-space-before-tab
