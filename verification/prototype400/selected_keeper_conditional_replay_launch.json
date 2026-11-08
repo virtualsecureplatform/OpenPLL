@@ -1,0 +1,37 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/assessment.json": "6be9784b418d77a29590a83038c50d9685f1ba2a7e95e50eeeac51d8828b4b5e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_replay_plan_1243/assessment.json": "cc4748c6d2c9a6f73ccbb1773a92bb849c7c45fe1ef10633a18c1d1816b87262",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_fine149_allV_1238/owner.json": "6da6e1d674d751432d4fe8f79c854a0bc59f85b396636b3902c15ffe61341a91",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/model.spice": "db4c9cd5d521781d224a0551c94d2100e0c4bcbe978b01ec42b479a81243daf1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_native_1242/bindings.json": "f048d65334cf68457a35d9f9f55db8b3f01d653982d13a68f403b2db6b7e58c3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_replay_plan_1243/ports.json": "4806fd4fff9196af11bc1b7841c95ff7505ac1fce99b923292fb8e4af597a488",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_conditional_replay.py": "0af8cb800168a04766303e06cac6c052435f04e487241611af0e79f900eb17f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/write_keeper_replay_sources.py": "d64523ae9fd094fe45f28921a96cfedcb347e3479e53c8910cdc5fc18bce86da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/plan_keeper_conditional_replay.py": "765a5ccfcf27e5c363755c2ef5112d9dc5ecc96a6e82636e05034070ceeb38f5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compiled_charge_v2.py": "9c73d39edb078a302e69a3f87f3d616d8948a43698b3b79b2d9549c4bd6749e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_isolated_control.py": "abada00c7349f8209324c743e11ab32a75eac8743e73998697c767fdb53c7117"
+  },
+  "reference": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_fine149_allV_1238",
+  "CPU": 24,
+  "memory_GiB": 64,
+  "queue_cap_s": 172800,
+  "native_cap_s": 86400,
+  "maximum_native_cases": 1,
+  "automatic_identical_retry": false,
+  "PLLOUT_forcing_forbidden": true,
+  "release_ready": false,
+  "source_inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_conditional_replay_1247/inputs.json",
+  "status_at_retention": {
+    "state": "waiting_for_completed_all_voltage_reference",
+    "reference_state": "waiting_for_full_native_slot",
+    "release_ready": false
+  },
+  "owner": {
+    "pid": 1974517,
+    "birth": "130760678"
+  },
+  "native_replay_result_available": false
+}
