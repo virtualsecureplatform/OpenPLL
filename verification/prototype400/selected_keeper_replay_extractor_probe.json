@@ -1,0 +1,18 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_hierarchical_capture_1244/assessment.json": "dda7d536e586c87c48df39938f2824d0300cd1d6a6150bfdbc35b517c18d9965",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_hierarchical_capture_1244/probe.raw": "96a9a796d649faf2cad86eeac3046c3775dcb7c3b94dd995c2c8703b2ac9d144",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_extractor_probe_1245/boundary.npy": "f629be3a0716daa9107d63dd908610fd4ca6555004648117788e51fa0130bd2b"
+  },
+  "normal_completed_native_probe": true,
+  "samples": 686,
+  "disk_backed_extractor_matches_existing_reader_exactly": true,
+  "full_PLL_boundary_waveforms_available": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_extractor_probe_1245/assessment.json"
+}
