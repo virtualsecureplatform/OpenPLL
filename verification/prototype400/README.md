@@ -525,7 +525,7 @@ Collector workflow validation: three additional synthetic-fixture tests exercise
 
 ### Keeper timing prerequisite audit (1272)
 
-All five historical 402.1 MHz timing screens pin the routed internal digital macro database 019; keeper route 1136 is the surrounding parent database. Their different hashes do not alone establish a change to the digital macro. Macro geometry identity is being audited separately (1439). Their reported minimum slacks are TT -0.44 ns, FF -0.48 ns, SS -0.35 ns, SF -0.38 ns and FS -0.46 ns; these are historical results, not measured keeper violations. The new min/nom/max parent wire views pin the current route. Later binding 1154 supersedes the wire export’s initial pending-binding flag: all 973 networks per view are bound and connected. Combining those wires with current macro capacitance and qualifying propagated clock/receiver response remain incomplete. Keeper timing must bind the internal digital macro and current parent wire views through qualified macro loads and clock/receiver response, then resolve actual setup/hold failures and rerun CDC/reset/enable and closed-loop checks. This artifact-identity audit does not requalify the historical dependency closures. See `selected_keeper_timing_prerequisites.json`.
+All five historical 402.1 MHz timing screens pin the routed internal digital macro database 019; keeper route 1136 is the surrounding parent database. Their different hashes do not alone establish a change to the digital macro. Completed audit1439 verifies identical recursive digital-macro geometry and labels; changed parent loading and conditional timing models remain unqualified. Their reported minimum slacks are TT -0.44 ns, FF -0.48 ns, SS -0.35 ns, SF -0.38 ns and FS -0.46 ns; these are historical results, not measured keeper violations. The new min/nom/max parent wire views pin the current route. Later binding 1154 supersedes the wire export’s initial pending-binding flag: all 973 networks per view are bound and connected. Combining those wires with current macro capacitance and qualifying propagated clock/receiver response remain incomplete. Keeper timing must bind the internal digital macro and current parent wire views through qualified macro loads and clock/receiver response, then resolve actual setup/hold failures and rerun CDC/reset/enable and closed-loop checks. This artifact-identity audit does not requalify the historical dependency closures. See `selected_keeper_timing_prerequisites.json`.
 
 ### Explicit resistance extraction after C-only substrate extraction (1273)
 
@@ -1236,3 +1236,20 @@ without changing the tested resistor network modulo native terminal
 numbering. Coupling/ground attachment geometry, simplification heuristics,
 transient accuracy and full PLL model/release qualification remain false.
 No RC simulator run is enabled by these static results.
+
+### Completed digital macro identity audit1439
+
+The current filled1147 `IntegerPLL_ProgrammedCore` has exactly the same
+recursive polygon regions on every layer/datatype and transformed text
+multisets as routed digital019 signoff GDS, on the same1nm grid. All five
+historical STA receipts pin the019 database hash recorded alongside that
+GDS in its signoff record. Thus the digital macro geometry is reused;
+the earlier parent-versus-internal database hash difference was not proof
+of changed digital geometry. The historical conditional STA screens remain
+relevant diagnostics of this macro, including their reported negative
+hold slacks. They are not new measurements and do not establish timing
+closure with current parent loads or qualified native cell/receiver models.
+The timing gate must combine the retained internal macro with current
+parent interconnect and actual load/clock envelopes, rather than require
+a different internal database solely because the parent was rerouted.
+Physical timing, reset/CDC and release qualification remain false.

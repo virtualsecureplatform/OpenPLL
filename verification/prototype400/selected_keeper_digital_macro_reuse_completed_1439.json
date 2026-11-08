@@ -1,0 +1,434 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/route.odb": "2d4a8372441b8f0c1ae18cd450e7295b98e1828fa4b0cbdff6ed207aa99060ed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/signoff/route.gds": "59a8ac3917b0aff2b8e66de6b86fc5f83ddb07eb77348bd322d713b7299dea36",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/signoff/assessment.json": "9d75c6b532a71710ecbe1cdff997ca31307db8545aa5811d4f45cde5cb215277",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assembly.gds": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assessment.json": "cb53636d63bfa258d9d444c2b4e41b9cfe8cd29073262c259a6f00228d027902",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_tt_019/assessment.json": "897c1502e1638a6e7f8d682e36dd7b70ef057ba3f86f922ef21700b43744b0bf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ff_019/assessment.json": "6b5f38e8abd7eacd4ee900dbd39d3cba2efc49a7071c3ac45189c09e950c6a6c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ss_019/assessment.json": "4c54d56fce760c3f8d8d2a497c3311942e872cd8bc047273c7d9eab146b8856f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_sf_019/assessment.json": "b48b297ad61e6b0efb71a5eb9ce4db00a1585e7f975cf9c948af2f5b8974bc0e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_fs_019/assessment.json": "acb1540fb16d1724401c8c4bc8823a96eda1f4b45f464c2d5b1c74cd4f30491c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_digital_macro_reuse.py": "81c89bd7d47830fce4ce4b039c66767dd829e8af51addabe30a5d361f29b1513",
+    "/nix/store/ps0r3qpgjh1lqyqacra33rvxsjgkd874-python3-3.13.9-env/bin/python3.13": "6089315ff298ff5ef084e0ef5bf693cf3e60bc5782c4a0294612fe51b44f278a",
+    "/nix/store/c8mymw0gckkiw7lqwnm2l6mqnd99xmzy-klayout-0.30.7/lib/pymod/pya/__init__.py": "d421fdce8ce77dd5d097215bad2367a02b7bf75664caab1cd3468525b6df9380",
+    "/nix/store/c8mymw0gckkiw7lqwnm2l6mqnd99xmzy-klayout-0.30.7/lib/pymod/klayout/dbcore.cpython-313-x86_64-linux-gnu.so": "30c78decb4a10e1042bcb387c07e2381d001edcab5bb564e3ed7200428ad6758"
+  },
+  "master": "IntegerPLL_ProgrammedCore",
+  "dbu_um": 0.001,
+  "layers": [
+    {
+      "layer": 64,
+      "datatype": 5,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 64,
+      "datatype": 16,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 64,
+      "datatype": 20,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 64,
+      "datatype": 59,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 65,
+      "datatype": 20,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 65,
+      "datatype": 44,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 65,
+      "datatype": 99,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 66,
+      "datatype": 15,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 66,
+      "datatype": 20,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 66,
+      "datatype": 44,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 66,
+      "datatype": 99,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 67,
+      "datatype": 5,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 67,
+      "datatype": 16,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 67,
+      "datatype": 20,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 67,
+      "datatype": 44,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 67,
+      "datatype": 99,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 68,
+      "datatype": 5,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 68,
+      "datatype": 16,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 68,
+      "datatype": 20,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 68,
+      "datatype": 44,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 68,
+      "datatype": 99,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 69,
+      "datatype": 5,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 69,
+      "datatype": 16,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 69,
+      "datatype": 20,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 69,
+      "datatype": 44,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 69,
+      "datatype": 99,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 70,
+      "datatype": 5,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 70,
+      "datatype": 16,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 70,
+      "datatype": 20,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 70,
+      "datatype": 44,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 70,
+      "datatype": 99,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 71,
+      "datatype": 5,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 71,
+      "datatype": 16,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 71,
+      "datatype": 20,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 71,
+      "datatype": 44,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 71,
+      "datatype": 99,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 72,
+      "datatype": 5,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 72,
+      "datatype": 16,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 72,
+      "datatype": 20,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 72,
+      "datatype": 99,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 78,
+      "datatype": 44,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 81,
+      "datatype": 4,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 81,
+      "datatype": 23,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 83,
+      "datatype": 44,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 93,
+      "datatype": 44,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 94,
+      "datatype": 20,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 95,
+      "datatype": 20,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 122,
+      "datatype": 16,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 125,
+      "datatype": 44,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 235,
+      "datatype": 4,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    },
+    {
+      "layer": 236,
+      "datatype": 0,
+      "polygon_XOR_empty": true,
+      "polygon_XOR_area_dbu2": 0,
+      "recursive_texts_match": true
+    }
+  ],
+  "all_recursive_layer_geometry_and_texts_match": true,
+  "historical_internal_digital_timing": [
+    {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_tt_019/assessment.json",
+      "corner": "tt",
+      "reported_slack_ns": {
+        "max": 0.75,
+        "min": -0.44
+      },
+      "physical_timing_qualified": false
+    },
+    {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ff_019/assessment.json",
+      "corner": "ff",
+      "reported_slack_ns": {
+        "max": 1.06,
+        "min": -0.48
+      },
+      "physical_timing_qualified": false
+    },
+    {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_ss_019/assessment.json",
+      "corner": "ss",
+      "reported_slack_ns": {
+        "max": 0.16,
+        "min": -0.35
+      },
+      "physical_timing_qualified": false
+    },
+    {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_sf_019/assessment.json",
+      "corner": "sf",
+      "reported_slack_ns": {
+        "max": 0.33,
+        "min": -0.38
+      },
+      "physical_timing_qualified": false
+    },
+    {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_402p1_timing_fs_019/assessment.json",
+      "corner": "fs",
+      "reported_slack_ns": {
+        "max": 0.87,
+        "min": -0.46
+      },
+      "physical_timing_qualified": false
+    }
+  ],
+  "historical_database_is_internal_digital_not_current_parent": true,
+  "current_parent_loading_and_clocks_qualified": false,
+  "native_cell_timing_models_qualified": false,
+  "historical_slacks_remeasured": false,
+  "parent_timing_qualified": false,
+  "physical_timing_qualified": false,
+  "release_ready": false
+}
