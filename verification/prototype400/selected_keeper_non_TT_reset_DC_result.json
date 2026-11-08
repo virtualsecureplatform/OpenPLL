@@ -1,0 +1,112 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_non_TT_reset_DC_1285/assessment.json": "48016d8e2eac82a538c0329f231683fd1d16f4bc0de4cd9336a68b2e462e6802"
+  },
+  "native_executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+  "native_executable_sha256": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+  "all_four_non_TT_reset_DC_checks_complete": true,
+  "results": [
+    {
+      "corner": "ff",
+      "temperature_C": 27,
+      "supply_V": 1.8,
+      "normal_native_exit": true,
+      "finite_saved_reset_DC_point": {
+        "V(VPWR)": 1.8,
+        "V(VGND)": 0.0,
+        "V(VNB)": 0.0,
+        "V(VPB)": 1.8,
+        "V(RESET_N)": 0.0,
+        "V(PLLOUT)": 1.7999999855747466,
+        "V(CONFIG_BUSY)": 1.7999997068510107,
+        "V(CONFIG_READY)": 1.4074059692617353e-05,
+        "V(TRACKING)": 4.890539169019798e-05,
+        "V(FAILED)": 7.035678861786987e-06
+      },
+      "elapsed_s": 976.3932250461075,
+      "transient_qualified": false,
+      "corner_model_qualified": false,
+      "release_ready": false,
+      "reset_rail_values_consistent": true,
+      "reset_status_logic_levels_consistent": true
+    },
+    {
+      "corner": "ss",
+      "temperature_C": 27,
+      "supply_V": 1.8,
+      "normal_native_exit": true,
+      "finite_saved_reset_DC_point": {
+        "V(VPWR)": 1.8,
+        "V(VGND)": 0.0,
+        "V(VNB)": 0.0,
+        "V(VPB)": 1.8,
+        "V(RESET_N)": 0.0,
+        "V(PLLOUT)": 1.7999999904267967,
+        "V(CONFIG_BUSY)": 1.7999999752770848,
+        "V(CONFIG_READY)": 1.1709472576160555e-08,
+        "V(TRACKING)": 1.3033980964187214e-08,
+        "V(FAILED)": 5.854751819852971e-09
+      },
+      "elapsed_s": 315.1709752518218,
+      "transient_qualified": false,
+      "corner_model_qualified": false,
+      "release_ready": false,
+      "reset_rail_values_consistent": true,
+      "reset_status_logic_levels_consistent": true
+    },
+    {
+      "corner": "sf",
+      "temperature_C": 27,
+      "supply_V": 1.8,
+      "normal_native_exit": true,
+      "finite_saved_reset_DC_point": {
+        "V(VPWR)": 1.8,
+        "V(VGND)": 0.0,
+        "V(VNB)": 0.0,
+        "V(VPB)": 1.8,
+        "V(RESET_N)": 0.0,
+        "V(PLLOUT)": 1.7999999493783143,
+        "V(CONFIG_BUSY)": 1.7999982109953852,
+        "V(CONFIG_READY)": 6.617188024175e-09,
+        "V(TRACKING)": 5.13789969811055e-09,
+        "V(FAILED)": 3.3086038354237243e-09
+      },
+      "elapsed_s": 1166.376002478879,
+      "transient_qualified": false,
+      "corner_model_qualified": false,
+      "release_ready": false,
+      "reset_rail_values_consistent": true,
+      "reset_status_logic_levels_consistent": true
+    },
+    {
+      "corner": "fs",
+      "temperature_C": 27,
+      "supply_V": 1.8,
+      "normal_native_exit": true,
+      "finite_saved_reset_DC_point": {
+        "V(VPWR)": 1.8,
+        "V(VGND)": 0.0,
+        "V(VNB)": 0.0,
+        "V(VPB)": 1.8,
+        "V(RESET_N)": 0.0,
+        "V(PLLOUT)": 1.7999999944908887,
+        "V(CONFIG_BUSY)": 1.7999999876104804,
+        "V(CONFIG_READY)": 7.712902648460699e-05,
+        "V(TRACKING)": 0.0002774741357192683,
+        "V(FAILED)": 3.8542968409409566e-05
+      },
+      "elapsed_s": 265.25867394404486,
+      "transient_qualified": false,
+      "corner_model_qualified": false,
+      "release_ready": false,
+      "reset_rail_values_consistent": true,
+      "reset_status_logic_levels_consistent": true
+    }
+  ],
+  "all_saved_reset_rails_and_status_levels_consistent": true,
+  "full_node_state_capture": false,
+  "updated_BSIM_backend_results": false,
+  "transient_qualified": false,
+  "corner_model_qualified": false,
+  "release_ready": false
+}
