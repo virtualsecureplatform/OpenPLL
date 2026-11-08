@@ -961,3 +961,20 @@ capacitor forcing before controller-change predictions can be accepted.
 The audit reports terminal positions and hashes, without claiming a dynamic
 error bound. Three tests cover receiver detection, supply exclusion and
 missing physical controls. All model/release qualification flags remain false.
+
+### Unclamped first receiver output (2026-11-08)
+
+`expand_keeper_receiver_boundary.py` produces experiment1416 from the same
+flat source and conditional1241: all32 previously omitted MOS devices
+incident to `a_61378_74686#` are retained. That node is now internal and
+unforced, all previous internal unknowns remain internal, and every retained
+primitive/capacitor card is unchanged. The expanded circuit has10179
+primitives,93813 nonzero capacitors,7680 boundary ports and3186 internal
+nodes. New capacitor boundaries are explicitly listed in the receipt.
+Its remaining non-control/non-reset/non-supply transistor boundary is
+`IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_16_123.A` (32 terminal
+uses). This shifts the receiver cut downstream; it does not establish an
+autonomous clock tree or eliminate the prescribed environment. No native
+run or controller prediction is claimed. Three tests verify the downstream
+frontier and literal capacitor preservation, reject a formally exposed
+receiver that cannot become internal, and reject an empty expansion.
