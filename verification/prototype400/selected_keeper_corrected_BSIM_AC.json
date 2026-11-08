@@ -1,0 +1,167 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_AC_1294/assessment.json": "f42c3a59fea391358489c78428e545e3541abc5159d2f8075a6bfff376328090"
+  },
+  "results": [
+    {
+      "corner": "tt",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 3.819320592885336e-08,
+      "maximum_reactive_difference_equivalent_fF": 1.613983722690192e-08
+    },
+    {
+      "corner": "tt",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 1.0365936008861771e-06,
+      "maximum_reactive_difference_equivalent_fF": 1.119558780557595e-09
+    },
+    {
+      "corner": "ff",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 4.7154073294371345e-08,
+      "maximum_reactive_difference_equivalent_fF": 2.046293528407159e-08
+    },
+    {
+      "corner": "ff",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 1.1795768363873274e-06,
+      "maximum_reactive_difference_equivalent_fF": 1.0910967077037705e-09
+    },
+    {
+      "corner": "ss",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 3.173714518270438e-08,
+      "maximum_reactive_difference_equivalent_fF": 1.2473142033460845e-08
+    },
+    {
+      "corner": "ss",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 1.6836498512764527e-06,
+      "maximum_reactive_difference_equivalent_fF": 1.0962524120302263e-09
+    },
+    {
+      "corner": "sf",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 5.354734742532221e-08,
+      "maximum_reactive_difference_equivalent_fF": 2.2859469707074885e-08
+    },
+    {
+      "corner": "sf",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 1.4874949010758473e-06,
+      "maximum_reactive_difference_equivalent_fF": 1.080310853935364e-09
+    },
+    {
+      "corner": "fs",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 5.3733726455588955e-08,
+      "maximum_reactive_difference_equivalent_fF": 1.0602723177692878e-08
+    },
+    {
+      "corner": "fs",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 9.458713421071076e-07,
+      "maximum_reactive_difference_equivalent_fF": 1.0543302865941602e-09
+    }
+  ],
+  "base_results": [
+    {
+      "corner": "tt",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 1.0814008156242377e-06,
+      "maximum_reactive_difference_equivalent_fF": 2.404572539386245e-07
+    },
+    {
+      "corner": "tt",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 0.10942233707768077,
+      "maximum_reactive_difference_equivalent_fF": 0.051501977465742414
+    },
+    {
+      "corner": "ff",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 8.838158425859435e-07,
+      "maximum_reactive_difference_equivalent_fF": 2.2777774555238787e-07
+    },
+    {
+      "corner": "ff",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 0.10572737131437512,
+      "maximum_reactive_difference_equivalent_fF": 0.04650092332840116
+    },
+    {
+      "corner": "ss",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 1.3746220701152771e-06,
+      "maximum_reactive_difference_equivalent_fF": 2.418824065169077e-07
+    },
+    {
+      "corner": "ss",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 0.1101799047247058,
+      "maximum_reactive_difference_equivalent_fF": 0.05538298852813119
+    },
+    {
+      "corner": "sf",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 1.4671441533359592e-06,
+      "maximum_reactive_difference_equivalent_fF": 2.2047184888500982e-07
+    },
+    {
+      "corner": "sf",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 0.10310373160977283,
+      "maximum_reactive_difference_equivalent_fF": 0.04405175429835312
+    },
+    {
+      "corner": "fs",
+      "excited_terminal": "gate",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 8.349066614548773e-07,
+      "maximum_reactive_difference_equivalent_fF": 2.3508752203661523e-07
+    },
+    {
+      "corner": "fs",
+      "excited_terminal": "drain",
+      "observations": 1716,
+      "maximum_complex_current_relative_error": 0.11059318832402955,
+      "maximum_reactive_difference_equivalent_fF": 0.05670767908398728
+    }
+  ],
+  "total_observations": 17160,
+  "unique_MOS_parameter_sets": 429,
+  "temperature_C": 27,
+  "gate_DC_V": 0.9,
+  "drain_DC_V": 0.9,
+  "frequencies_Hz": [
+    25000000.0,
+    400000000.0
+  ],
+  "maximum_corrected_complex_current_relative_error": 1.6836498512764527e-06,
+  "maximum_corrected_reactive_difference_equivalent_fF": 2.2859469707074885e-08,
+  "reference_outputs_unchanged": true,
+  "electrical_decks_unchanged": true,
+  "full_bias_range_covered": false,
+  "small_signal_model_qualified": false,
+  "transient_qualified": false,
+  "full_PLL_model_qualified": false,
+  "release_ready": false
+}
