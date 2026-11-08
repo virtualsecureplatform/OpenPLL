@@ -722,3 +722,7 @@ A live CPU-29 observer waits for the completed 1352 receipt and checks owner bir
 ### Ground area/perimeter observer build started (1354)
 
 An isolated source transformation preserves the original numerical ledger and adds support records immediately before its six ExtBasic area/perimeter additions. Records include tile/neighbor bounds, clipping rectangle, plane/residue, direction, split flags, native measure and coefficient. This supplies missing geometry rather than inferring it from the numerical ground delta. A source check finds all six expected original statements and inserts six observations. The live CPU-29/4-GiB builder verifies the pinned source before compilation; native neutrality and support reconstruction remain unverified. Existing source trees, PDK, GDS and running traces are untouched. See `selected_magic_ground_support_build_launch.json`.
+
+### Ground-support reconstruction prepared
+
+The new auditor independently reconstructs clipped rectangular area and neighboring edge length, checks split-area integer division while withholding rectangular qualification, and requires each support record to be immediately followed by its matching native ground update with exact double arithmetic. Five tests pass, including wrong geometry, bad arithmetic and truncation rejection. A four-fixture/eight-run native off/on runner is prepared; compilation and actual native validation remain pending. Area/perimeter support does not qualify shielding-subtraction geometry or full physical placement.
