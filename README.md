@@ -362,3 +362,26 @@ record return code -11 and pin the executable, technology, fixtures and logs.
 These are crash reproducers for upstream investigation; they establish neither
 a resistance/capacitance comparison nor an extraction correction. The earlier
 coupling-duplication testcase remains a separate completed export control.
+
+### Experimental explicit-coupling import transform
+
+[`preserve_explicit_coupling.transform`](tools/magic_rcx/preserve_explicit_coupling.py)
+removes the signal-mode branch that adds a coupling capacitor to both substrate
+capacitances while that coupling is retained explicitly in the export. It accepts
+the exact expected source block once and rejects absent, repeated or already
+modified blocks. Apply it only to a separate experimental copy of Magic's
+`resis/ResRead.c`; it is not applied by the normal build:
+
+```python
+from pathlib import Path
+from tools.magic_rcx.preserve_explicit_coupling import transform
+source = Path("/path/to/experimental-magic/resis/ResRead.c")
+source.write_text(transform(source.read_text()))
+```
+
+Run its source-transformation controls with
+`python3 -m unittest discover -s tools/magic_rcx -p test_preserve_explicit_coupling.py`.
+These tests check the edit and its rejection behavior. The native export and
+crash reproducers above remain necessary separate controls: this transform alone
+does not establish resistance redistribution, RC simplification, delay accuracy,
+or PLL release readiness.
