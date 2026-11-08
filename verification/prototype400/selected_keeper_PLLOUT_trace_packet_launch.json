@@ -1,0 +1,29 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_trace_packet_1340.extract.process.json": "0a21291bc692290dd8c0b88b21f5fabf421cd00ef3b2ae41af24d6e51b920399",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_trace_packet_1340.owner.json": "14a54c9a35285fcd111495776e6eea9a4947b477711bcf555400faea9e652e87",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_magic_net_trace.py": "83b5a08377c36c5072db1df5b73e4fb7ee1673b70c62eef7c83c6e224b888ca7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_extract_magic_net_trace.py": "4541a3e7aa7d409c6c828cdeb89dca6df60e7902466712d145d88ee76d69a405",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_ground_lifecycle_trace_1308/assessment.json": "db251492cf94a893f522616b6d194d86a1768a99d501d577563acde7725bd19e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_trace_numerical_1313/assessment.json": "eecf0b51de83edcbe8b7444cded4b5a71180ed89356665a1c8a60c76968ed5ff",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_trace_coupling_1314/assessment.json": "0fa0a1db843ada2492bd9b1b8aeb710daabc5adac6729bcc1a98fcc1a49a1383",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_trace_relocation_1315/assessment.json": "b893ee7e91a7bde01dcdc29e82aa0138e06871a51542efd69a3bd6ef3a156eac"
+  },
+  "worker_pid": 2102681,
+  "worker_birth": "132738451",
+  "CPU": 29,
+  "memory_GiB": 8,
+  "cap_s": 7200,
+  "target": "PLLOUT",
+  "source": "completed combined trace 1308",
+  "source_audits_pinned": [
+    1313,
+    1314,
+    1315
+  ],
+  "four_selection_regression_tests_pass": true,
+  "selection_result_pending": true,
+  "pointwise_placement_qualified": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}
