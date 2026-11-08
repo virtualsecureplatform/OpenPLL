@@ -2046,3 +2046,11 @@ and observation matches1531 after normalizing the RAW output path. This is a
 separate one-shot60 ns/10 ps case, not a retry. Both captures must complete
 before a load-sensitivity frequency diagnostic can be reported; neither passive
 termination is qualified as the full downstream environment.
+
+Pair assessor1538 waits for normal completed1531/1536 receipts with live-owner
+checks and a24 h observation cap. It verifies all source/artifact hashes and
+all302 native tuning leaves, requires the electrical decks to differ only in
+the declared load, and measures20–40,40–60 and20–60 ns frequencies. Missing
+oscillation is recorded explicitly. No unfinished native RAW is read. Load
+sensitivity and subwindow agreement remain diagnostics, without automatic model
+or release qualification.
