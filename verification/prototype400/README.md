@@ -2109,3 +2109,17 @@ it also does not qualify the entire downstream environment or other corners.
 The zero-load native log is retained as lossless gzip; its decompressed SHA256
 was checked against the original completed receipt. Raw captures remain in the
 verified build artifacts.
+
+The completed full control checks1296 show DCO_THERM[183].macro at1.57895323
+to1.94688408 V in200–260 ns despite passing the logic threshold. The largest
+DCO-leaf departure from its ideal rail is9.80966 mV, compared with9.71091 mV
+in static pilot1531's20–60 ns window. These different-window extrema do not
+establish causality, but motivate diagnostic1542: replay all302 measured macro
+programming inputs in the unchanged native subsystem, retaining the grounded
+capacitive exterior and32 fF receiver load. Reference samples are shifted by
+176.260052307 ns so the full-reference reset crossing aligns with pilot5.05 ns.
+All source sample times inside the60 ns interval are retained, with interpolated
+endpoints; no lossy downsampling is applied. This explicitly uses recorded voltage
+histories, leaves PLLOUT free, and cannot predict a changed controller. The
+one-shot CPU27/8 GiB case tests programming-input idealization separately from
+capacitive-exterior idealization; no qualification is inferred before completion.
