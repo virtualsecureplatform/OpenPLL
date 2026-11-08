@@ -1,0 +1,23 @@
+	Command being timed: "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce -a -linsolv umfpack_reuse /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_zero_load_DCO_1536/transient.spice"
+	User time (seconds): 1133.07
+	System time (seconds): 6.52
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 19:02.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1398488
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 140
+	Minor (reclaiming a frame) page faults: 1791742
+	Voluntary context switches: 2750
+	Involuntary context switches: 53822
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 61752
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

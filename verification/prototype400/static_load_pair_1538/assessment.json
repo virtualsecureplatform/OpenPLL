@@ -1,0 +1,111 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_static_load_pair.py": "2c6a2cc1bae41b1895ef15c5834e78d98f22795236038d47e9a8085135ec9f25",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_isolated_control.py": "abada00c7349f8209324c743e11ab32a75eac8743e73998697c767fdb53c7117",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_terminated_DCO_1531/assessment.json": "e495b655e752b881972e44b951870c48707df592075d1bf1d3c2f0ae2c27e1c2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_terminated_DCO_1531/transient.spice": "e99e5df6fa2c37fd5078ff1046bafb1479cf518c6e6b2e64a4577033f560b326",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_zero_load_DCO_1536/assessment.json": "2dd2acff23fe5a57fe63cb9cd003e5a167c5faccb99f86c00b13c465a2d4a15e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_zero_load_DCO_1536/transient.spice": "0759af07abc7133585c42303bdb3e9b12e461e6f979682c4c95b4aa1641226a8"
+  },
+  "artifacts": {},
+  "cases": [
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_terminated_DCO_1531",
+      "windows": [
+        {
+          "window_ns": [
+            20,
+            40
+          ],
+          "frequency": {
+            "rising_edges": 8,
+            "frequency_mhz": 373.62416698602124,
+            "minimum_period_ns": 2.676192640396664,
+            "maximum_period_ns": 2.6769056590408553
+          },
+          "unavailable_reason": null
+        },
+        {
+          "window_ns": [
+            40,
+            60
+          ],
+          "frequency": {
+            "rising_edges": 7,
+            "frequency_mhz": 373.71190986184104,
+            "minimum_period_ns": 2.6757290125430586,
+            "maximum_period_ns": 2.6760016435331337
+          },
+          "unavailable_reason": null
+        },
+        {
+          "window_ns": [
+            20,
+            60
+          ],
+          "frequency": {
+            "rising_edges": 15,
+            "frequency_mhz": 373.66591196356455,
+            "minimum_period_ns": 2.6757290125430586,
+            "maximum_period_ns": 2.6769056590408553
+          },
+          "unavailable_reason": null
+        }
+      ],
+      "native_elapsed_s": 1140.5814696629532
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_zero_load_DCO_1536",
+      "windows": [
+        {
+          "window_ns": [
+            20,
+            40
+          ],
+          "frequency": {
+            "rising_edges": 8,
+            "frequency_mhz": 373.6241678784369,
+            "minimum_period_ns": 2.676192650945538,
+            "maximum_period_ns": 2.676905642231649
+          },
+          "unavailable_reason": null
+        },
+        {
+          "window_ns": [
+            40,
+            60
+          ],
+          "frequency": {
+            "rising_edges": 7,
+            "frequency_mhz": 373.71191079816236,
+            "minimum_period_ns": 2.675729017341517,
+            "maximum_period_ns": 2.6760016393073727
+          },
+          "unavailable_reason": null
+        },
+        {
+          "window_ns": [
+            20,
+            60
+          ],
+          "frequency": {
+            "rising_edges": 15,
+            "frequency_mhz": 373.6659131292075,
+            "minimum_period_ns": 2.675729017341517,
+            "maximum_period_ns": 2.676905642231649
+          },
+          "unavailable_reason": null
+        }
+      ],
+      "native_elapsed_s": 1142.8699844779912
+    }
+  ],
+  "load32_relative_to_zero_ppm": -0.003119479008439896,
+  "electrical_decks_match_except_declared_load": true,
+  "full_startup_histories_correlated": false,
+  "receiver_load_qualified": false,
+  "startup_window_qualified": false,
+  "independent_model_qualified": false,
+  "release_ready": false
+}

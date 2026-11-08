@@ -2096,3 +2096,16 @@ not model error or correlation. The relevant same-code full center1513 remains
 running at50 ps; even that later comparison must account for timestep mismatch.
 No corrected calibration, extrapolated400 MHz bracket or qualification is
 inferred from this independent static point.
+
+Zero-load1536 completed normally in1,142.870 s, with all302 DCO tuning leaves
+matching and all saved values finite. Its20–60 ns frequency373.665913129 MHz
+compares with373.665911964 MHz at32 fF. Verified pair1538 measures only
+-0.003119479 ppm for32 fF relative to zero added load. The two electrical decks
+match except for this declared capacitance. The32 fF receiver output switches:
+15 rises and15 falls over20–60 ns, with sampled range-0.021190214 to1.85960491 V.
+Thus the negligible frequency difference is not explained by an inactive output.
+This pair does not explain the roughly1,531 ppm reset-aligned model discrepancy;
+it also does not qualify the entire downstream environment or other corners.
+The zero-load native log is retained as lossless gzip; its decompressed SHA256
+was checked against the original completed receipt. Raw captures remain in the
+verified build artifacts.
