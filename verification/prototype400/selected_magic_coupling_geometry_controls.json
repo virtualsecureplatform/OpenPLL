@@ -1,0 +1,95 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_coupling_geometry_trace_1301/assessment.json": "6bb4b957b64af7b0c9e8e47bc0c0626fdfd082ae11c83648399dcc09d70f4a70",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_coupling_geometry_trace_1301/install/bin/magic": "ffe930688a74a3047e9f69cebf0781b5bb38c6d4fcbb621570a0f6372184821d",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_coupling_geometry_trace.py": "e422e2e255a214cd1c42bae0ca5619cf43cad38e8655f4bc5efc57c55474918e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/parallel_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/parallel_off/probe.tcl": "2a2d85a67af5dade254d9d016daf3c8c8793920839d5fc04ecfc2124c4ff355f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/parallel_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/parallel_on/probe.tcl": "b7565bad57d4274f2353e7e2f50f86d21c5c0c878904477fae13b61e824dbbd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/vertical_overlap_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/vertical_overlap_off/probe.tcl": "a899dea908e53658f3c6f56e4373b3fa19bcc90b56f5ec09d27868f8d45544e0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/vertical_overlap_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/vertical_overlap_on/probe.tcl": "95da8bc2b744adb171e66f73f622cd4c8bd3313dc78788bb462f2b05374f0e73",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/fringe_off/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/fringe_off/probe.tcl": "6cbddfd612ffdd3ba3f870855aed30ed54827ead26c350d1fc33640c8853d107",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/fringe_on/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/fringe_on/probe.tcl": "b67072d19ef0f31cf21e8d57baf89527c1b03fbdd9627d3ac434e63a6e1d14ea"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/parallel_off/view.spice": "e47179c77b5f3c0612139b82b1fe8cd6bc2e48dba606e00b0ea044867565e367",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/parallel_off/Trace_parallel.ext": "8b81ad62499c1eb7bfcd3fb3cddab8f13845956c63205c8c32bec48184465938",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/parallel_off/native.log": "5b2ff98232f9c839d306c727b15d17232c7523f1f1820f254291918a2ebfd185",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/parallel_on/view.spice": "e47179c77b5f3c0612139b82b1fe8cd6bc2e48dba606e00b0ea044867565e367",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/parallel_on/Trace_parallel.ext": "8b81ad62499c1eb7bfcd3fb3cddab8f13845956c63205c8c32bec48184465938",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/parallel_on/native.log": "453ffe1dd662446c164d3b94721920d58faf31b88942e2f5dde31252381d85ed",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/parallel_on/coupling.jsonl": "f35fe50d5592f89481bd41771ef1ca8a87d8e598f6f9d9ff3e475001131c081c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/vertical_overlap_off/view.spice": "c66d44efa8411093a86b2a1b45c1b883ef3c2b0252e8ef81c04347841c19010e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/vertical_overlap_off/Trace_vertical_overlap.ext": "d3c741e661ece183d89ae794546ad6d8755200e8f75fe39f6970e1dc79c55e6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/vertical_overlap_off/native.log": "a118f5e002b8c35bf39ea2a948bf2cb60b97fc7be168a26a45c8164e159bcdbe",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/vertical_overlap_on/view.spice": "c66d44efa8411093a86b2a1b45c1b883ef3c2b0252e8ef81c04347841c19010e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/vertical_overlap_on/Trace_vertical_overlap.ext": "d3c741e661ece183d89ae794546ad6d8755200e8f75fe39f6970e1dc79c55e6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/vertical_overlap_on/native.log": "6d6d30ade71fce864d547867ebd70146dafc94fc18815f4bd341adb85d7d3dd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/vertical_overlap_on/coupling.jsonl": "0b9cdd84509da96ee83604886fa05535b1cdd64875e7bb3f86dec432943f1fc0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/fringe_off/view.spice": "580e253594610f3b662654c25019cc09a968e4fe392c00ef853bf6c008f77046",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/fringe_off/Trace_fringe.ext": "cbc3688c0883f6b9d85c638380d16a9da77a2ae9e94937c10f36b639aaafeaa1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/fringe_off/native.log": "bd9590184cb3faa1f5bd17186103fb10637b3c9d03052bd01bc4f2449cc08cae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/fringe_on/view.spice": "580e253594610f3b662654c25019cc09a968e4fe392c00ef853bf6c008f77046",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/fringe_on/Trace_fringe.ext": "cbc3688c0883f6b9d85c638380d16a9da77a2ae9e94937c10f36b639aaafeaa1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/fringe_on/native.log": "9470978c50c6be35e5bee3c9c4f1ce30e29d37ff198a631819c98b450a88d807",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_coupling_geometry_controls_1302/fringe_on/coupling.jsonl": "8edb3449e6bfbf29857999086168c20f0d45e32a6b849fd05af935d4677d0266"
+  },
+  "results": [
+    {
+      "case": "parallel",
+      "normal_native_completion": true,
+      "trace_off_on_exact_device_and_C_match": true,
+      "events": 2,
+      "event_kinds": {
+        "sidewall": 2
+      },
+      "mapped_exported_C_pairs": 1,
+      "unmapped_events": 0,
+      "sidewall_geometric_spans_verified": 2,
+      "all_exported_C_pairs_reconstructed_at_native_6_digit_precision": true,
+      "pointwise_placement_qualified": false
+    },
+    {
+      "case": "vertical_overlap",
+      "normal_native_completion": true,
+      "trace_off_on_exact_device_and_C_match": true,
+      "events": 1,
+      "event_kinds": {
+        "overlap": 1
+      },
+      "mapped_exported_C_pairs": 1,
+      "unmapped_events": 0,
+      "sidewall_geometric_spans_verified": 0,
+      "all_exported_C_pairs_reconstructed_at_native_6_digit_precision": true,
+      "pointwise_placement_qualified": false
+    },
+    {
+      "case": "fringe",
+      "normal_native_completion": true,
+      "trace_off_on_exact_device_and_C_match": true,
+      "events": 2,
+      "event_kinds": {
+        "sideoverlap_halo": 2
+      },
+      "mapped_exported_C_pairs": 1,
+      "unmapped_events": 0,
+      "sidewall_geometric_spans_verified": 0,
+      "all_exported_C_pairs_reconstructed_at_native_6_digit_precision": true,
+      "pointwise_placement_qualified": false
+    }
+  ],
+  "all_six_native_controls_complete": true,
+  "logging_preserves_tested_circuits": true,
+  "legacy_side_overlap_runtime_path_qualified": false,
+  "ground_capacitance_geometry_traced": false,
+  "full_PLL_geometry_trace_qualified": false,
+  "pointwise_placement_qualified": false,
+  "release_ready": false
+}
