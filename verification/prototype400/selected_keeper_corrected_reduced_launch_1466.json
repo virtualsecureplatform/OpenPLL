@@ -1,0 +1,45 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_corrected_reduced_pipeline_v2.py": "80c4f73de7f1c6bcbd54655acb491d0125469a4fa33baffc90988f1b4cca718c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/benchmark_keeper_corrected_reduced_replay_v2.py": "13e9f343e4f309ff8165a8e5e3daf414c9b56e0a731e4b4fa586ca2e680205eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_replay_waveforms.py": "3af8d629719b1e4d507e882ce3bf95027ca914b979a7ece5ff46f4da7d6d8dd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/generate_keeper_aggregate_waveforms.py": "9bc34715f753e0b518d396d5eef1384054cbe646da85c1bb40c3eeaee6379c08",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/aggregate_keeper_boundary_waveforms.py": "3933864211d4ed30aa13bdb45504cc58ee65e693b2ead1de688c0be32e822114",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/stage_keeper_tablefile_sources.py": "1aae1c6abee89d205a314764438498b1111d782ba5df814dc6877be0b2835759",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/write_keeper_shared_tablefile_sources.py": "744cfc58abba2870c145ee5cf225280355e8840bd96fc5ae508365b26d405d7c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/write_keeper_tablefile_sources.py": "36ab97b0db5617d9a97d70aa6d078bde5e79b04caaf4e675db9b33883477df06",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295/inputs.json": "47139013f3bb26f12dfad3b24885530276d2c2812e908bb6700560888b5ffe06",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/plan.json": "c5882f6937c5b0bed68cc4f555890e58a009c61196a573c30621639c1bf5cad5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_native_1419/assessment.json": "c29506e5809b2d37d6e1807d57be133cdb0af98768e089edb46902170bf4a6b5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_reduction_1420/assessment.json": "e36bc3e666c0db24ba92fa4b6d3e38403057c74af12aacb926d0a1f16f228d68",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_replay_plan_1422/assessment.json": "10bcf3b53ea586406a73c2fa9e0a980d2cda13a1821154578809481249854079",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398/assessment.json": "5b23bf9d1ce05e370d62fdeac7b4cb0f9236c8477e3205d7b648af68a48de92c"
+  },
+  "controller_owner": {
+    "pid": 2285234,
+    "birth": "136323598"
+  },
+  "observed_state": "waiting_for_completed_corrected_reference",
+  "controller_live_at_observation": true,
+  "reference_raw_not_read": true,
+  "maximum_additional_native_cases": 1,
+  "memory_GiB": 8,
+  "CPU": 25,
+  "max_step_ps": 10,
+  "native_cap_s": 86400,
+  "original_jobs_modified": false,
+  "first_preflight_attempt": {
+    "status": {
+      "state": "stopped_without_qualification",
+      "reason": "ValueError('explicit matching corrected BSIM executable identity required')",
+      "release_ready": false
+    },
+    "status_sha256": "56026fc69cffdb7d19068bf742e573252762606a559afe02f59e9c793d5d6197",
+    "native_cases_started": 0
+  },
+  "active_backend_identity_regression_tests_passed": 4,
+  "native_runtime_or_accuracy_result_available": false,
+  "changed_controller_prediction_qualified": false,
+  "release_ready": false
+}

@@ -1413,3 +1413,26 @@ optional ECO; it does not select it or replace the current parent GDS, whose
 analog captures still refer to the original macro. Parent integration, custom
 cell model bounds, startup/reset timing and the operating frequency range remain
 open, as do the full release gates.
+
+
+Corrected-BSIM pipeline 1466 waits for normal full-reference completion (1295)
+and the exact capture's 604 endpoint-voltage checks (1296), then extracts completed
+boundaries for receiver model 1419, exact reduction 1420 and replay plan 1422.
+Fresh outputs 1467/1468/1469/1470 retain all source knots, verify the aggregate
+roundoff certificate and local source archive, then run at the reference's 10 ps
+maximum timestep on corrected backend 84ba37cb. One CPU (25), 8 GiB and a 24-hour
+native ceiling are predeclared; resource queue time is separate from native
+runtime. The original full captures and 64 GiB replay remain unchanged.
+The controller was observed live waiting for the full reference. No runtime,
+memory or accuracy success is claimed before its completed native receipt.
+
+First preflight attempt 1460 stopped before native execution: the new guard
+incorrectly rejected the old executable hash retained as historical provenance
+in the corrected capture's inputs. Version 2 binds the explicitly named active
+corrected executable, its hash and its corrected flag, while allowing historical
+pins. Four container-run identity regressions pass, including old-active-backend
+rejection, missing/mismatched identity, and legitimate historical provenance.
+This validation replay still prescribes downstream waveforms and cannot alone
+qualify a model for changed-controller or closed-loop prediction. It measures the
+remaining correlation error after moving the proven source-reduction technique
+to the corrected simulator and the finer reference timestep.
