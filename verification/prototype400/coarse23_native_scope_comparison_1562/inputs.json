@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse23_central_campaign_1512/plan.json": "f7a23d4d80dedcb1a4f8ad15b655cb5e65ff7828df97d9b0b3f5040cf2f01eb0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_coarse23_fine149_step50_1513/inputs.json": "a99fe4aa4d67353f370b9b191b8b125841e84b421ef3a7494757c6d9caec7e55",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_DCO_1541/assessment.json": "26038668d4f071e9ef1f5838aacdacbdcacabe54e8019c79491a7be51b26eafa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_coarse23_native_scopes.py": "f1a4a2a933e077c9ae325549ff9c087afaa6655c0f207a8172a861e2a87e2199",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_static_DCO_point.py": "db88c03544e2d1a4dabe2ac7ab4f0a228c23528a07b78be0bca8b968fef1db2f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse23_center.py": "1257a6c784b0b465f9bc88df522aabcd94697ee03e80f54791f07def88eedd34"
+  },
+  "coarse": 23,
+  "fine": 149,
+  "corner": "tt",
+  "temperature_C": 27,
+  "supply_V": 1.8,
+  "full_max_step_ps": 50,
+  "fast_max_step_ps": 10,
+  "full_window_ns": [
+    200,
+    260
+  ],
+  "fast_window_ns": [
+    20,
+    60
+  ],
+  "observation_cap_s": 86400,
+  "coarse20_correction_transfer": false,
+  "release_ready": false
+}

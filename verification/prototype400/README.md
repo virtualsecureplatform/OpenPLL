@@ -2386,3 +2386,13 @@ code identities, and retains the same bounded300-case/30 min diagnostic scope,
 with one CPU24/2 GiB case at a time. Missing model support remains unresolved.
 Any candidate remains TT-only and unqualified for detector/clock uncertainty,
 dynamic code-step response, full-layout bias, other corners and release selection.
+
+Same-code native-scope comparison1562 waits for completed full coarse23/fine149
+center1513 and its604 matching physical controls1514 before comparing with the
+completed fast point1541. It rehashes all completed inputs/artifacts and retains
+the actual code and operating-point checks. The full capture uses50 ps steps and
+200–260 ns; the fast subsystem uses10 ps and20–60 ns, with different startup
+histories. These differences remain explicit, no coarse20 timestep correction
+is transferred, and the raw discrepancy is not a qualified model-error bound,
+calibration, target bracket or release pass. The observer neither restarts nor
+changes the running reference campaign.
