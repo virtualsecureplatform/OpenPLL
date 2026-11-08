@@ -1,0 +1,108 @@
+{
+  "jobs": [
+    {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398",
+      "launcher": {
+        "pid": 2209521,
+        "birth": "134557388",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_capacitor_boundary_superposition_v3.py",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_fine_step_controls_1398"
+        ]
+      },
+      "owner": {
+        "pid": 2209552,
+        "birth": "134557398"
+      },
+      "observed_status": {
+        "state": "waiting_for_global_CPU_RAM_budget",
+        "release_ready": false
+      }
+    },
+    {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resolved_fringe_local_trace_1400",
+      "launcher": {
+        "pid": 2209685,
+        "birth": "134560616",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_flat_resolved_fringe_local_trace.py",
+          "--flat",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202",
+          "--engine",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_fringe_support_trace_1316",
+          "--controls",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_recursive_fringe_controls_1318",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resolved_fringe_local_trace_1400"
+        ]
+      },
+      "owner": {
+        "pid": 2209716,
+        "birth": "134560626"
+      },
+      "observed_status": {
+        "state": "waiting_for_global_CPU_RAM_budget",
+        "release_ready": false
+      }
+    },
+    {
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resolved_fringe_local_audit_1401",
+      "launcher": {
+        "pid": 2209881,
+        "birth": "134564606",
+        "command": [
+          "apptainer",
+          "exec",
+          "--bind",
+          "/home:/home,/tmp:/tmp",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+          "/usr/bin/python3",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_resolved_fringe_trace.py",
+          "--flat",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202",
+          "--source",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resolved_fringe_local_trace_1400",
+          "--output",
+          "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resolved_fringe_local_audit_1401",
+          "--wait"
+        ]
+      },
+      "owner": {
+        "pid": 2209913,
+        "birth": "134564615"
+      },
+      "observed_status": {
+        "state": "waiting_for_completed_resolved_trace",
+        "release_ready": false
+      }
+    }
+  ],
+  "prior_terminal_failures": {
+    "selected_keeper_resolved_fringe_trace_1352": {
+      "state": "stopped_without_qualification",
+      "reason": "TimeoutError('compiled check exhausted whole-check budget')",
+      "automatic_identical_retry": false,
+      "release_ready": false
+    },
+    "selected_capacitor_boundary_superposition_Gear_controls_1392": {
+      "state": "stopped_without_qualification",
+      "reason": "RuntimeError('compiled worker failed (1): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_Gear_controls_1392/0_pF_kohm_opposed_ramps_original/native.log')",
+      "release_ready": false
+    }
+  },
+  "prior_partial_trace_not_audited": true,
+  "release_ready": false
+}
