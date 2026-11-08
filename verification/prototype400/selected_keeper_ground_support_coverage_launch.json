@@ -1,0 +1,31 @@
+{
+  "launcher": {
+    "pid": 2195525,
+    "birth": "134006511",
+    "command": [
+      "apptainer",
+      "exec",
+      "--bind",
+      "/home:/home,/tmp:/tmp",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+      "/usr/bin/python3",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_ground_support_coverage.py",
+      "--audit",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_support_audit_1364",
+      "--engine",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_ground_tail_trace_1360",
+      "--output",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_support_coverage_1387"
+    ]
+  },
+  "owner": {
+    "pid": 2195556,
+    "birth": "134006520"
+  },
+  "observed_status": {
+    "state": "waiting_for_completed_full_layout_support_audit",
+    "release_ready": false
+  },
+  "producer_sha256": "a8bad6f26afb401137cd7ffe7d7e3a31703966bce3e12ffa1bf77733b29a7a3f",
+  "release_ready": false
+}
