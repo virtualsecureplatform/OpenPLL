@@ -1210,3 +1210,29 @@ shared-trace coverage1387; neither source trace nor audit is reused from
 that failed run. No native extraction is added. Legacy/split/placement
 qualification remains governed by the actual coverage report, not observer
 launch or producer completion.
+
+### Completed nonzero-R coupling export control: exact C recovery
+
+Audit1435 compares normally completed1339/1433 with the same flat1202 C
+source. Both retain62338 primitive records,74 positive R cards in one
+component, original ordered ports and no false shorts. The previous export
+had only the PLLOUT-VGND excess65.94475fF; the modified export now has exact
+aggregated C equality for all341067 nonzero pairs after ideal-R contraction
+and zero negative capacitor cards. This establishes static charge recovery
+for this actual nonzero-R PLLOUT control, not just the two-wire fixture.
+
+Literal named R comparison is false because16 `.t` labels are permuted.
+Audit1446 derives a bijection from identical primitive IDs, model/parameter
+records and every non-R terminal; all62338 primitive records match. No
+primitive has multiple distinct R-network nodes in this proof. Applying
+that terminal mapping makes the full74-edge weighted R multigraph exactly
+identical, including parallel edges and exact resistance values. This is
+not a comparison based only on total R or an unconstrained graph relabeling.
+Three tests cover valid terminal renaming, changed R values and changed
+non-R primitive attachment.
+
+The import change therefore removes the extra grounded coupling charge
+without changing the tested resistor network modulo native terminal
+numbering. Coupling/ground attachment geometry, simplification heuristics,
+transient accuracy and full PLL model/release qualification remain false.
+No RC simulator run is enabled by these static results.

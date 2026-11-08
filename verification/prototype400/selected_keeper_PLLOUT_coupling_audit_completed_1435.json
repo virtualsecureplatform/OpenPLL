@@ -1,0 +1,68 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/assessment.json": "c2852a021fb6aadb40004c39eb823f09809200657e370f4c5ebff66d6782b7a4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_explicit_coupling_1433/assessment.json": "88ff7ebe427d5c3e232d97ad5c6a0538135861a72e1877613ac0f472367a8a3e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_R_corrected_geometry_1339/pilot.spice": "d4c600120831057f7aefc39ae11bb17098c7d45e3db4ee54898827ff1a50d625",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_explicit_coupling_1433/pilot.spice": "5b633a8961af427d8122d410568b919ef99598527bf3ad59d33b27859245ef3d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_explicit_coupling_PLLOUT.py": "46aec53e5598d0265a8f5a96e825fcf884a7c0022a499b61bede8e316d93cdbd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_coupling_export.py": "90ebc24187089059c7ede808863d2d2223809ecbfefdec55d93b8e30366149da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b"
+  },
+  "previous_contraction": {
+    "reference_primitives": 62338,
+    "candidate_primitives": 62338,
+    "primitive_multisets_match": true,
+    "missing_primitive_count": 0,
+    "extra_primitive_count": 0,
+    "wire_R_cards": 74,
+    "positive_wire_R_cards": 74,
+    "wire_R_components": 1,
+    "components_joining_distinct_reference_nodes": [],
+    "ordered_formal_ports_match": true,
+    "reference_nonzero_C_pairs": 341067,
+    "contracted_nonzero_C_pairs": 341067,
+    "C_pair_differences": [
+      {
+        "nodes": [
+          "pllout",
+          "vgnd"
+        ],
+        "reference_F_exact": "57519/2500000000000000000",
+        "contracted_F_exact": "1779047/20000000000000000000"
+      }
+    ],
+    "exact_aggregated_C_match": false,
+    "negative_candidate_C_cards": 0,
+    "exact_device_and_C_contraction_verified": false
+  },
+  "candidate_contraction": {
+    "reference_primitives": 62338,
+    "candidate_primitives": 62338,
+    "primitive_multisets_match": true,
+    "missing_primitive_count": 0,
+    "extra_primitive_count": 0,
+    "wire_R_cards": 74,
+    "positive_wire_R_cards": 74,
+    "wire_R_components": 1,
+    "components_joining_distinct_reference_nodes": [],
+    "ordered_formal_ports_match": true,
+    "reference_nonzero_C_pairs": 341067,
+    "contracted_nonzero_C_pairs": 341067,
+    "C_pair_differences": [],
+    "exact_aggregated_C_match": true,
+    "negative_candidate_C_cards": 0,
+    "exact_device_and_C_contraction_verified": true
+  },
+  "literal_named_R_network_unchanged": false,
+  "previous_total_absolute_contracted_C_error_F_exact": "263779/4000000000000000000",
+  "candidate_total_absolute_contracted_C_error_F_exact": "0",
+  "ideal_R_contraction_is_static_only": true,
+  "coupling_placement_qualified": false,
+  "RC_simplification_qualified": false,
+  "dynamic_accuracy_qualified": false,
+  "native_simulation_allowed": false,
+  "model_qualified": false,
+  "release_ready": false
+}
