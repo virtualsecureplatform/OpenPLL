@@ -1,0 +1,36 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_EXT_driver_anchors_1250/assessment.json": "37bf4d2ecf7b3fa920e25612027753c42ed5b169e4cb8dbccb1130a98cfe6cf5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/flat.gds": "d972dc2d4cca83011936b6980981ad5188a4f6365b07cf896cd08c00b6b8b378",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_resistance_pilot_1251/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_resistance_pilot_1251/pilot.tcl": "e33ebff7943ae1ae7926f2aa127a981405ac8904598060e50c7772049e3ef790",
+    "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_PLLOUT_resistance_pilot.py": "d4ff33bb6ecd772610ac4e506897bda42afb5d9fa2d2b6b06390e52b8bf6b5b4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compiled_charge_v2.py": "9c73d39edb078a302e69a3f87f3d616d8948a43698b3b79b2d9549c4bd6749e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/replay_keeper_flat_signed_C.py": "64ec7b45868d1e88eba320f64d46dc31333dae872bec8f8168874b6ad3fd0f6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_flat_geometry_C.py": "d1b11a6e7ad3b63724c815914f9c30ace8d084a414a0c43b8ffc66d6e807e13e"
+  },
+  "only_requested_net": "PLLOUT",
+  "CPU": 26,
+  "memory_GiB": 16,
+  "native_cap_s": 1200,
+  "maximum_native_cases": 1,
+  "automatic_identical_retry": false,
+  "signed_C_export_threshold_fF": "-1e100",
+  "resistor_simplification": false,
+  "release_ready": false,
+  "source_inputs": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_resistance_pilot_1251/inputs.json",
+  "status_at_retention": {
+    "state": "PLLOUT_native_resistance_pilot_running",
+    "release_ready": false
+  },
+  "native_process": {
+    "pid": 1976115,
+    "birth": "130831358",
+    "process_group": 1976115
+  },
+  "result_available": false
+}
