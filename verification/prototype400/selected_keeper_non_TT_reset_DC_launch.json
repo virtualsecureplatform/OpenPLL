@@ -1,0 +1,30 @@
+{
+  "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_non_TT_reset_DC_1285",
+  "owner": {
+    "pid": 2008880,
+    "birth": "131587257"
+  },
+  "initial_FF_native": {
+    "pid": 2008911,
+    "birth": "131587549",
+    "process_group": 2008911
+  },
+  "corners": [
+    "ff",
+    "ss",
+    "sf",
+    "fs"
+  ],
+  "CPU": 27,
+  "memory_GiB": 16,
+  "concurrent_cases": 1,
+  "maximum_native_cases": 4,
+  "per_case_cap_s": 1800,
+  "family_cap_s": 7200,
+  "automatic_identical_retry": false,
+  "backend_model_unchanged": true,
+  "actual_FF_deck_only_library_and_output_path_changed": true,
+  "temperature_C": 27,
+  "corner_correlation_qualified": false,
+  "release_ready": false
+}
