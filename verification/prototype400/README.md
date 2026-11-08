@@ -730,3 +730,7 @@ The new auditor independently reconstructs clipped rectangular area and neighbor
 ### Ground area/perimeter observer passes native controls (1354/1355)
 
 The isolated build completes. Eight native off/on runs preserve each fixture circuit exactly and all prior coupling, ground, overlap and fringe ledgers reconstruct. The new support audit verifies 70 events across four fixtures (14 tile-area additions and 56 neighboring-edge additions), including immediate matching native numerical updates. No unsupported split support occurs in these controls. Clipped/split geometry has only unit coverage; native clipped/split controls, shielding-subtraction support and full-layout ground placement remain unqualified. See `selected_magic_ground_support_controls.json`.
+
+### Ground overlap-shielding provenance prepared (1356)
+
+The next isolated observer links the native area shielding subtraction at ExtCouple.c:522 to its completed resolved overlap mask by epoch, overlap ID, node and area. The auditor requires the immediately following native ground update to match the exact subtraction. Three tests pass for matching support/arithmetic and rejection of wrong support, wrong arithmetic and truncation. A fresh 4-GiB/CPU-29 build has launched; native validation is pending. Three separate fringe subtraction sites (halo truncation, resolved halo shielding, legacy side overlap) remain outside this area-specific proof. No spatial placement or RC model is promoted.
