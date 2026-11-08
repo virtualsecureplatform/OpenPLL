@@ -1,0 +1,55 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_EXT_driver_anchors_1250/assessment.json": "37bf4d2ecf7b3fa920e25612027753c42ed5b169e4cb8dbccb1130a98cfe6cf5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_geometry_explicit_coupling_1431/assessment.json": "a264f682c0e224bef2f689cc860175b390375e6e9af0cb4c8ab812e3586cdaaf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_geometry_explicit_coupling_controls_1432/assessment.json": "04bb14df3a00b6fbb9af85451dd624cb1456ab60772b53864d41c5d928e9bacf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_resistance_port_projection_1334/instrumentation.json": "daa4a87814d824628488ac3f7d8485343de26f40c67e0456266b852c4201b83c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_geometry_explicit_coupling_1431/instrumentation.json": "f8ef1f494e1195c871a6776e300cd402f005b1c31f2184e7acf5ee2f95700f42",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/IntegerPLL_400MHz_KeeperFlatC.ext": "4addf58a269a865ed9405e2f076df8f862710f7a0f4db0928dc15fc5e983b15c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/flat.gds": "d972dc2d4cca83011936b6980981ad5188a4f6365b07cf896cd08c00b6b8b378",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_explicit_coupling_1433/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_explicit_coupling_1433/pilot.tcl": "ceab0218b7475ca9b6b025f113c15424dce857de80688119a626849ec2cb8a0d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_geometry_explicit_coupling_1431/install/bin/magic": "23666afd65933ae1162fbb6ed8b3c742ac37ab12bda36dc501fdcbc25da9e329",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_PLLOUT_R_explicit_coupling.py": "29f12d991a91231631121a6d98b7e2f51ee092dab2e6a6682009a6526ba7de64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compiled_charge_v2.py": "9c73d39edb078a302e69a3f87f3d616d8948a43698b3b79b2d9549c4bd6749e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/replay_keeper_flat_signed_C.py": "64ec7b45868d1e88eba320f64d46dc31333dae872bec8f8168874b6ad3fd0f6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/extract_keeper_flat_geometry_C.py": "d1b11a6e7ad3b63724c815914f9c30ace8d084a414a0c43b8ffc66d6e807e13e"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_explicit_coupling_1433/pilot.spice": "5b633a8961af427d8122d410568b919ef99598527bf3ad59d33b27859245ef3d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_explicit_coupling_1433/IntegerPLL_400MHz_KeeperFlatC.res.ext": "fb6de5caed7703d8e9b7e2394686dbd88bcc58484e53f76e604d2f2b72977120",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_explicit_coupling_1433/IntegerPLL_400MHz_KeeperFlatC.ext": "ea3bd6c4a2c0a2e70f3d374ee719c862f0a901be87a9a88a666bf8934021b236",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_explicit_coupling_1433/native.log": "7d9cc50b2729ec01f20b9f0d6f8ef2ce4ef06802ef80bee9b990becbbe281bf6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_explicit_coupling_1433/feedback.txt": "f6726585976d51242f859b0070c82f2f8a5d309b23c5ff9ca09adcec07c44f04",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_explicit_coupling_1433/resistance_area.jsonl": "d4c8181d0a65c9d83323337d98399231a19f6d531d2d54396e286691212affd8"
+  },
+  "native_process_completed": true,
+  "single_breakpoint_area_sign_corrected": true,
+  "port_drivepoint_tile_intersection_corrected": true,
+  "active_magic_executable": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_geometry_explicit_coupling_1431/install/bin/magic",
+  "active_magic_sha256": "23666afd65933ae1162fbb6ed8b3c742ac37ab12bda36dc501fdcbc25da9e329",
+  "explicit_coupling_not_grounded": true,
+  "capacitance_conservation_verified": false,
+  "initial_full_RC_mode": false,
+  "explicit_extresist_after_C_only": true,
+  "requested_net": "PLLOUT",
+  "native_statistics": {
+    "total_nets": [
+      1
+    ],
+    "extracted_nets": [
+      1
+    ],
+    "output_nets": [
+      1
+    ]
+  },
+  "emitted_R_card_count": 74,
+  "exactly_one_requested_network_verified": false,
+  "primitive_and_C_contraction_verified": false,
+  "distributed_wire_R_qualified": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}

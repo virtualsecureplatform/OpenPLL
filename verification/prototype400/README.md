@@ -525,7 +525,7 @@ Collector workflow validation: three additional synthetic-fixture tests exercise
 
 ### Keeper timing prerequisite audit (1272)
 
-All five historical 402.1 MHz timing screens pin the old parent database, whose hash differs from keeper route 1136. Their reported minimum slacks are TT -0.44 ns, FF -0.48 ns, SS -0.35 ns, SF -0.38 ns and FS -0.46 ns; these are historical results, not measured keeper violations. The new min/nom/max parent wire views pin the current route. Later binding 1154 supersedes the wire export’s initial pending-binding flag: all 973 networks per view are bound and connected. Combining those wires with current macro capacitance and qualifying propagated clock/receiver response remain incomplete. New keeper timing must use that qualified combination on the current database, then resolve actual setup/hold failures and rerun CDC/reset/enable and closed-loop checks. This artifact-identity audit does not requalify the historical dependency closures. See `selected_keeper_timing_prerequisites.json`.
+All five historical 402.1 MHz timing screens pin the routed internal digital macro database 019; keeper route 1136 is the surrounding parent database. Their different hashes do not alone establish a change to the digital macro. Macro geometry identity is being audited separately (1439). Their reported minimum slacks are TT -0.44 ns, FF -0.48 ns, SS -0.35 ns, SF -0.38 ns and FS -0.46 ns; these are historical results, not measured keeper violations. The new min/nom/max parent wire views pin the current route. Later binding 1154 supersedes the wire export’s initial pending-binding flag: all 973 networks per view are bound and connected. Combining those wires with current macro capacitance and qualifying propagated clock/receiver response remain incomplete. Keeper timing must bind the internal digital macro and current parent wire views through qualified macro loads and clock/receiver response, then resolve actual setup/hold failures and rerun CDC/reset/enable and closed-loop checks. This artifact-identity audit does not requalify the historical dependency closures. See `selected_keeper_timing_prerequisites.json`.
 
 ### Explicit resistance extraction after C-only substrate extraction (1273)
 
@@ -1152,3 +1152,25 @@ the exact raw bytes; the local raw trace must remain until all audits
 finish. Ground placement, legacy support and all release flags remain
 false. This distinct local-I/O run follows failed shared-storage1363;
 it does not reuse or audit that partial trace.
+
+### Internal digital timing provenance and completed PLLOUT R control
+
+The historical STA route019 is the internal `IntegerPLL_ProgrammedCore`
+database, not the parent1136. Its signoff receipt pins both that database
+and digital GDS; selected keeper parent geometry1135 references the same
+digital GDS. Different parent/internal database hashes therefore do not
+alone establish that internal digital timing geometry changed. Audit1439
+will compare every recursive polygon layer and transformed text in the
+current filled1147 digital cell against the019 GDS, and bind all five
+historical STA database hashes through the signoff record. It uses the
+retained pinned Python3.13/KLayout interpreter and2GiB on CPU29. Three
+fixture tests pass for identical geometry, changed polygons/layers and
+changed pin labels. The default Python lacks these bindings; the pinned
+layout interpreter is required. No completed geometry result is claimed
+at launch. Even identical geometry does not qualify old cell models or
+changed parent loading/clocks, and no STA slacks are remeasured here.
+
+PLLOUT1433 completed normally with exactly one network extracted/output
+and74 emitted R cards, as in1339. Its exact C/R/primitive comparison1435
+is queued for memory. Ground1437 has started on CPU24. None of these
+producer results establishes C conservation or dynamic qualification.
