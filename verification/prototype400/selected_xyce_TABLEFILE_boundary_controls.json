@@ -1,0 +1,186 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_xyce_tablefile_boundary_v2.py": "113d160b1b1b07fb959e1848dcd088ba01f347148b2afa3a641752b88330b88f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_constant_PWL/samples.dat": "a3b6d37715cc0af103b1856c6ac82d1e05235a6aac4046f34a6749e4c22c83da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_constant_PWL/test.spice": "c99f6325adbe6bb7d350c3812b42fdda400786cacdb3442303b4b10593503f4f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_constant_TABLEFILE/samples.dat": "a3b6d37715cc0af103b1856c6ac82d1e05235a6aac4046f34a6749e4c22c83da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_constant_TABLEFILE/test.spice": "6b9e36606656e7dc7295b197dd145bed1a5710d42a5402edfe7605bb145158dc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_irregular_ramps_PWL/samples.dat": "5251bfa9a78d1eb9ae9be3593e7975d6f0c23efe1e90938f7ac43ad2ba7b42e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_irregular_ramps_PWL/test.spice": "e08e9fee4f4aa9d9b78a9f5a82daccc50b2b8d277505f510158fedaa101792d6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_irregular_ramps_TABLEFILE/samples.dat": "5251bfa9a78d1eb9ae9be3593e7975d6f0c23efe1e90938f7ac43ad2ba7b42e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_irregular_ramps_TABLEFILE/test.spice": "e1231e61651f5b97082e87b1bac36ac0a6669a6cb100f14e74be30456e32f92f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_plateau_PWL/samples.dat": "36e8520ed367200b54190360414479a884df6b282414172930aecfbbca155b59",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_plateau_PWL/test.spice": "ff0710db61244d8769111f27eae4524aa5ddc463a2e4677bcc02d2934ffbddb7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_plateau_TABLEFILE/samples.dat": "36e8520ed367200b54190360414479a884df6b282414172930aecfbbca155b59",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_plateau_TABLEFILE/test.spice": "2ba01524345b92be4dd0a7ca8295431f9860d5e36e0abc06826ccae229f4ee73",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_constant_PWL/samples.dat": "a3b6d37715cc0af103b1856c6ac82d1e05235a6aac4046f34a6749e4c22c83da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_constant_PWL/test.spice": "af78cdea0503c08ab0a2e0ff867d8e7c5ac3b839bf8bb295b887e12a55ef1a18",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_constant_TABLEFILE/samples.dat": "a3b6d37715cc0af103b1856c6ac82d1e05235a6aac4046f34a6749e4c22c83da",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_constant_TABLEFILE/test.spice": "014ee81d91e4f721ec6417d36b7c06fbb98b8a59e3beee0d7e5fc57c9b5897d6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_irregular_ramps_PWL/samples.dat": "5251bfa9a78d1eb9ae9be3593e7975d6f0c23efe1e90938f7ac43ad2ba7b42e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_irregular_ramps_PWL/test.spice": "354a4432a342afe8b21255e0ed4472523fe09a3486a65dc71299a9b1ff09ce13",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_irregular_ramps_TABLEFILE/samples.dat": "5251bfa9a78d1eb9ae9be3593e7975d6f0c23efe1e90938f7ac43ad2ba7b42e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_irregular_ramps_TABLEFILE/test.spice": "d88f42c8fd09c8c6531473b68e400f1833cdab5f583c6cbf262a9baaaf1bd740",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_plateau_PWL/samples.dat": "36e8520ed367200b54190360414479a884df6b282414172930aecfbbca155b59",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_plateau_PWL/test.spice": "5007eb3b9343f57015c14379c60ddceff55e8b1e15b0c73f3c75c8629b5878bd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_plateau_TABLEFILE/samples.dat": "36e8520ed367200b54190360414479a884df6b282414172930aecfbbca155b59",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_plateau_TABLEFILE/test.spice": "1c9baeec8b847ee2f8cb8d6e6059bce291e4ad3771ca9c53899c9a21d2bc542b"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_constant_PWL/result.csv": "1a66dd235187830cac738ff2ffdaa4db0088df51c6a702a07c5da787677675cc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_constant_PWL/native.log": "e2ca00b9383fe68fa063cd07d84c7bd0219a854387acba3ba8f5b343248afa12",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_constant_TABLEFILE/result.csv": "c6118b2f15111211a8a1d8159e18f27918e5de4ae0195bec26450a9826e0cb60",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_constant_TABLEFILE/native.log": "87a16b2a6e983c11eef4daea935495cfeeac7710281e151ba8d281137747bc1f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_irregular_ramps_PWL/result.csv": "1c7767ab5595e27e847a9c829a54ce4fda8b6336873397bdfe332cf359a94527",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_irregular_ramps_PWL/native.log": "47947066a35b4503070459a94ca320e187471ee720be32f0fbe2e602cfb0e66c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_irregular_ramps_TABLEFILE/result.csv": "8b75585ed3ac5642722f2491c88e76b54d0d288090332632faab74e1e626f822",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_irregular_ramps_TABLEFILE/native.log": "fb9c8a290d2cf717dfe4ecc297d2c799d0308e11823512369adaf9eaace3694b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_plateau_PWL/result.csv": "b9e15fe74a1006174856d21f72a84737a0bc220b7af0e13b604c6d3bb713370f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_plateau_PWL/native.log": "405172d7841022f2a507ea2be807b0894c0de6420f8d1fd8cb05d6c62a81319f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_plateau_TABLEFILE/result.csv": "b1601c0a29fb3a52afdb200c99097e7f351f20af0d8e6624c1e4458eafd9ff65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/0_plateau_TABLEFILE/native.log": "df6f7aaedaf2a73e19d63c66665fb7b424387d220fe96163f5eea4ae11438408",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_constant_PWL/result.csv": "1a66dd235187830cac738ff2ffdaa4db0088df51c6a702a07c5da787677675cc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_constant_PWL/native.log": "e66ef1b4bf577c8a501e8edfb1c579a5278d4ef3c577735a10bb147bf2a193d6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_constant_TABLEFILE/result.csv": "c6118b2f15111211a8a1d8159e18f27918e5de4ae0195bec26450a9826e0cb60",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_constant_TABLEFILE/native.log": "c7706404c02deeff87ae6c18c6b72820f03fa68bf1e07e880df18e1eea997eec",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_irregular_ramps_PWL/result.csv": "1c7767ab5595e27e847a9c829a54ce4fda8b6336873397bdfe332cf359a94527",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_irregular_ramps_PWL/native.log": "63f16e5f47f7836aa2c8c6d100e12bbc84577247bdb5ecbb95d23c5c1f2b612a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_irregular_ramps_TABLEFILE/result.csv": "8b75585ed3ac5642722f2491c88e76b54d0d288090332632faab74e1e626f822",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_irregular_ramps_TABLEFILE/native.log": "968509cdd14dc84e2cbb3ecada7733a225dc81577da1496b40462cc2aaa97581",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_plateau_PWL/result.csv": "b9e15fe74a1006174856d21f72a84737a0bc220b7af0e13b604c6d3bb713370f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_plateau_PWL/native.log": "4c128b7aac3751c621d19c26d45cc7375df6a09353b35990bfc930c063dc93b6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_plateau_TABLEFILE/result.csv": "b1601c0a29fb3a52afdb200c99097e7f351f20af0d8e6624c1e4458eafd9ff65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_TABLEFILE_boundary_controls_1368/1_plateau_TABLEFILE/native.log": "7ac91f8551a4fec6adc4e4c25efa2c7ec4018684d27724e5a35b11f0d6846199"
+  },
+  "results": [
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "case": "constant",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 16,
+          "maximum_source_error_V": 1.1102230246251565e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "TABLEFILE",
+          "samples": 16,
+          "maximum_source_error_V": 0.0,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    },
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "case": "irregular_ramps",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 43,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "TABLEFILE",
+          "samples": 43,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    },
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce",
+      "case": "plateau",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 50,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "TABLEFILE",
+          "samples": 50,
+          "maximum_source_error_V": 1.6653345369377348e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    },
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "case": "constant",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 16,
+          "maximum_source_error_V": 1.1102230246251565e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "TABLEFILE",
+          "samples": 16,
+          "maximum_source_error_V": 0.0,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    },
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "case": "irregular_ramps",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 43,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "TABLEFILE",
+          "samples": 43,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    },
+    {
+      "binary": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce",
+      "case": "plateau",
+      "encodings": [
+        {
+          "encoding": "PWL",
+          "samples": 50,
+          "maximum_source_error_V": 2.220446049250313e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        },
+        {
+          "encoding": "TABLEFILE",
+          "samples": 50,
+          "maximum_source_error_V": 1.6653345369377348e-16,
+          "all_sample_knots_present": true,
+          "final_value_held": true
+        }
+      ]
+    }
+  ],
+  "all_twelve_native_controls_complete": true,
+  "literal_source_samples_and_knot_breakpoints_verified": true,
+  "fixture_absolute_voltage_tolerance": 1e-12,
+  "fixture_knot_time_tolerance_s": 1e-21,
+  "PLL_replay_accuracy_qualified": false,
+  "PLL_memory_reduction_demonstrated": false,
+  "release_ready": false
+}
