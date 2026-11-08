@@ -1797,3 +1797,12 @@ admission. The coordinator is live and has verified its prior captures; the
 new capture must wait if global memory is unavailable. Three guards reject
 wrong backend/code, incomplete physical checks and electrical deck changes
 beyond the permitted coarse sources and output paths. No release gate closes.
+
+Clock-high campaign1511 completed all 100 fixtures with zero failures: all 75
+2 ns pulses (five masters, five corners, three full ramps) establish and retain
+the async reset/set state after release, and all 25 no-pulse controls retain the
+opposite state. Actual input/artifact hashes were independently rechecked before
+retaining the completed receipt and full observations. Together with1510 this
+covers both static clock levels in the declared isolated-cell fixtures. It does
+not qualify release near active clock edges, continuous slew/load ranges,
+actual routed reset pulse widths, recovery/removal or physical lifecycle timing.
