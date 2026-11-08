@@ -1,0 +1,98 @@
+{
+  "before.json": {
+    "native_pid": 2209460,
+    "native_birth": "134551021",
+    "native_process_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_support_trace_1363/native.process.json",
+    "native_process_receipt_sha256": "d5ad601fcd41d34e628aba7d35b05379f17f00689cd4097b3fed10895ecbad3f",
+    "before_thread_affinity": {
+      "2209460": [
+        24
+      ]
+    },
+    "replay_pid": 2187464,
+    "replay_birth": "133716950",
+    "replay_affinity": [
+      24
+    ],
+    "target_CPU": 28,
+    "monotonic_boottime_before": 1345771.337057261,
+    "core_count_changed": false,
+    "memory_limit_changed": false,
+    "netlist_or_sources_changed": false,
+    "native_deadline_changed": false,
+    "release_ready": false
+  },
+  "assessment.json": {
+    "native_pid": 2209460,
+    "native_birth": "134551021",
+    "native_process_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_support_trace_1363/native.process.json",
+    "native_process_receipt_sha256": "d5ad601fcd41d34e628aba7d35b05379f17f00689cd4097b3fed10895ecbad3f",
+    "before_thread_affinity": {
+      "2209460": [
+        24
+      ]
+    },
+    "replay_pid": 2187464,
+    "replay_birth": "133716950",
+    "replay_affinity": [
+      24
+    ],
+    "target_CPU": 28,
+    "monotonic_boottime_before": 1345771.337057261,
+    "core_count_changed": false,
+    "memory_limit_changed": false,
+    "netlist_or_sources_changed": false,
+    "native_deadline_changed": false,
+    "release_ready": false,
+    "after_thread_affinity": {
+      "2209460": [
+        28
+      ]
+    },
+    "monotonic_boottime_after": 1345771.353576673,
+    "runtime_CPU_override_applied": true,
+    "reason": "Separate simultaneously active native Magic and Xyce jobs initially sharing CPU 24; previous CPU 28 extraction confirmed absent."
+  },
+  "queued_local_before.json": {
+    "controller_pid": 2209716,
+    "controller_birth": "134560626",
+    "controller_owner_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resolved_fringe_local_trace_1400/owner.json",
+    "controller_owner_receipt_sha256": "c797964ccc4b3bb0ffeaba61cf21608eef951be85e9f6ff217bf02956a5b4e63",
+    "initial_CPU": 28,
+    "runtime_override_CPU": 30,
+    "queued_before_native_launch": true,
+    "native_child_inherits_parent_affinity": true,
+    "core_count_changed": false,
+    "memory_limit_changed": false,
+    "netlist_or_sources_changed": false,
+    "native_deadline_changed": false,
+    "reason": "Keep CPU 28 for the active ground trace; use free CPU 30 for the queued local trace.",
+    "boottime": 1345816.590707061,
+    "release_ready": false
+  },
+  "queued_local_assessment.json": {
+    "controller_pid": 2209716,
+    "controller_birth": "134560626",
+    "controller_owner_receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resolved_fringe_local_trace_1400/owner.json",
+    "controller_owner_receipt_sha256": "c797964ccc4b3bb0ffeaba61cf21608eef951be85e9f6ff217bf02956a5b4e63",
+    "initial_CPU": 28,
+    "runtime_override_CPU": 30,
+    "queued_before_native_launch": true,
+    "native_child_inherits_parent_affinity": true,
+    "core_count_changed": false,
+    "memory_limit_changed": false,
+    "netlist_or_sources_changed": false,
+    "native_deadline_changed": false,
+    "reason": "Keep CPU 28 for the active ground trace; use free CPU 30 for the queued local trace.",
+    "boottime": 1345816.590707061,
+    "release_ready": false,
+    "runtime_override_applied": true
+  },
+  "record_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ground_trace_CPU_rebalance_1406/before.json": "a2bfd7cdaba684fbca5845426b87d8783866b9adf973b15f43b8a9ec37b1de18",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ground_trace_CPU_rebalance_1406/assessment.json": "85959995020791d9fffb6e41826c97679696a5116be36a2d4da2a14ba733be0c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ground_trace_CPU_rebalance_1406/queued_local_before.json": "de140a4d4ead15359acd9a44987e76863014dcde6a457085f4f3987618c18a96",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ground_trace_CPU_rebalance_1406/queued_local_assessment.json": "f96ef2fec249d15694b0b97fd04788e86e1236e94b17707be6a55adf038dd506"
+  },
+  "release_ready": false
+}
