@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "storage": "local",
+      "files": 16,
+      "bytes_per_file": 262144,
+      "write_close_wall_s": 0.0056803489569574594,
+      "write_close_cpu_s": 0.005680404,
+      "read_verify_wall_s": 0.0009674848988652229,
+      "contents_verified": true,
+      "fsync_requested": false
+    },
+    {
+      "storage": "shared",
+      "files": 16,
+      "bytes_per_file": 262144,
+      "write_close_wall_s": 1.3170492940116674,
+      "write_close_cpu_s": 0.010376029000000002,
+      "read_verify_wall_s": 0.03513003000989556,
+      "contents_verified": true,
+      "fsync_requested": false
+    },
+    {
+      "storage": "shared",
+      "files": 16,
+      "bytes_per_file": 262144,
+      "write_close_wall_s": 1.1698549699503928,
+      "write_close_cpu_s": 0.018671069999999998,
+      "read_verify_wall_s": 0.0839979040902108,
+      "contents_verified": true,
+      "fsync_requested": false
+    },
+    {
+      "storage": "local",
+      "files": 16,
+      "bytes_per_file": 262144,
+      "write_close_wall_s": 0.009491019882261753,
+      "write_close_cpu_s": 0.009491785000000003,
+      "read_verify_wall_s": 0.0018590288236737251,
+      "contents_verified": true,
+      "fsync_requested": false
+    }
+  ],
+  "payload_sha256": "5efa72e9f6be5adcc2e7c790ad40ec757f8dabe47ebc07cda740adc8ca03f174",
+  "scope": "small sequential write/close/read control under current filesystem load; not full source-generation throughput",
+  "source_preparation_speedup_demonstrated": false,
+  "release_ready": false
+}
