@@ -2498,3 +2498,23 @@ histories, has different window/reset details and cannot qualify prediction of
 changed controller behavior. Its large generated PWL deck and native logs are
 retained as verified lossless gzip; RAW traces remain in build. Internal dynamic
 aggressors and physical extraction concerns remain unresolved.
+
+The physical-support kernel guard remains unresolved. Diagnostic 1567 adds a
+C++17 streaming scanner for the fixed-format native JSONL writer. It preserves
+the first complete fringe group with unequal reference length, boundary,
+direction, coupling multiplier, or substrate multiplier; it rejects interleaved
+identities and incomplete groups, and limits group storage to 64 MiB. Four
+fixture tests pass (uniform kernel, complete mismatch, truncated mismatch, and
+changed identity). Build with `g++ -std=c++17 -O3
+verification/signoff400/capture_fringe_kernel_mismatch.cpp -o SCANNER` in the
+pinned release SIF; the test entry requires `FRINGE_SCANNER` to name that binary.
+
+`queue_fringe_kernel_mismatch_1567.py` checks the completed 1437 archive receipt
+and source fingerprint, then requests one CPU and 0.125 GiB under the existing
+32-CPU/200-GiB resource policy. It permits 24 hours for admission and at most
+30 minutes for scanning. Its initial observed state is waiting for resources;
+there is no counterexample result yet. The source's whole-file digest is the
+previous producer-verified archive digest, explicitly not a new whole-trace
+hash from this diagnostic. Source fingerprints are checked again after scanning.
+This does not rerun Magic, alter native arithmetic, weaken the support audit,
+or establish extractor/model/release qualification.
