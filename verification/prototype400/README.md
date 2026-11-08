@@ -2356,3 +2356,14 @@ absolute drift23.797089 ps. Maximum acquisition confirmation is158,560 ns;
 final tuning codes are128–131. The record retains all qualification flags false
 for physical models, other corners and release gain selection. CSV/log archives
 reproduce their source hashes; the unsupported KI4 case is explicitly incomplete.
+
+Final-code validation plan1556 prospectively measures coarse23/fine129,130 and
+131, the unmeasured codes in the passing TT diagnostic's observed128–131 final
+range. The frozen local fit uses measured128 and149 only; all three new codes
+are independent validation points with both linear-frequency and linear-period
+predictions retained before measurement. Cases1557/1558/1559 use CPUs24/30/31,
+8 GiB each,60 ns/10 ps and32 fF receiver termination, with no identical retry.
+The generic runner uses the existing global resource leases. Prior gain cases
+and their tables remain frozen. Direct final-code frequency measurements do not
+qualify the grounded exterior, detector/timing models, dynamic code-step response
+or full-layout calibration.

@@ -1,0 +1,100 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_fast_RTL_candidate_review_1555/assessment.json": "3901f5d6ef24b019d1ac3b8c7bb6a41ec40b36ba0c486a5ff124602b42c9b307",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_target_DCO_1549/assessment.json": "f949d1db16445154764bafc02c74dd7773cb5a4224441858d1ddd439092d7d82",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_DCO_1541/assessment.json": "26038668d4f071e9ef1f5838aacdacbdcacabe54e8019c79491a7be51b26eafa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/plan_keeper_final_code_validation.py": "eb8a5e520474015028066c275fb9dd7ca10424c9bf427b8df92b7a283106b4e9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_static_DCO_point.py": "e85c1c68fb743510646e4fc83edb4bf4df9c39c32cb5aeb39ba131330408b741",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_static_DCO_point.py": "db88c03544e2d1a4dabe2ac7ab4f0a228c23528a07b78be0bca8b968fef1db2f"
+  },
+  "cases": [
+    {
+      "coarse": 23,
+      "fine": 129,
+      "CPU": 24,
+      "memory_GiB": 8,
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine129_DCO_1557",
+      "command": [
+        "/usr/bin/python3",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_static_DCO_point.py",
+        "--output",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine129_DCO_1557",
+        "--coarse",
+        "23",
+        "--fine",
+        "129",
+        "--cpu",
+        "24"
+      ],
+      "primary_linear_frequency_Hz": 399791235.3926667,
+      "secondary_linear_period_Hz": 399788940.43899834
+    },
+    {
+      "coarse": 23,
+      "fine": 130,
+      "CPU": 30,
+      "memory_GiB": 8,
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine130_DCO_1558",
+      "command": [
+        "/usr/bin/python3",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_static_DCO_point.py",
+        "--output",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine130_DCO_1558",
+        "--coarse",
+        "23",
+        "--fine",
+        "130",
+        "--cpu",
+        "30"
+      ],
+      "primary_linear_frequency_Hz": 400006513.0453333,
+      "secondary_linear_period_Hz": 400002150.30792934
+    },
+    {
+      "coarse": 23,
+      "fine": 131,
+      "CPU": 31,
+      "memory_GiB": 8,
+      "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559",
+      "command": [
+        "/usr/bin/python3",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_static_DCO_point.py",
+        "--output",
+        "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_fine131_DCO_1559",
+        "--coarse",
+        "23",
+        "--fine",
+        "131",
+        "--cpu",
+        "31"
+      ],
+      "primary_linear_frequency_Hz": 400221790.698,
+      "secondary_linear_period_Hz": 400215587.7104403
+    }
+  ],
+  "fit_codes": [
+    128,
+    149
+  ],
+  "validation_codes": [
+    129,
+    130,
+    131
+  ],
+  "validation_codes_excluded_from_fits": true,
+  "observed_final_codes": [
+    128,
+    129,
+    130,
+    131
+  ],
+  "previous_gain_screen_modified": false,
+  "maximum_additional_native_cases": 3,
+  "per_case_native_cap_s": 86400,
+  "simulation_ns": 60,
+  "max_step_ps": 10,
+  "receiver_load_fF": 32,
+  "automatic_identical_retry": false,
+  "model_error_bound_qualified": false,
+  "release_ready": false
+}
