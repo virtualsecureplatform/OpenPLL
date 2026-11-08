@@ -35,6 +35,12 @@ grounds. These diagnostics do not supply a transferable correction or error boun
 
 The [completed analytic REFCLK case](static_REFCLK_DCO_1544/assessment.json)
 changes frequency by only+1.019906 ppm versus the grounded-REFCLK pilot.
+The [current source-binding audit](mixed_signal_RTL_binding_1547/assessment.json)
+verifies all nine portable mixed-signal RTL files against the selected route's
+exact bytes. Five source/geometry/cache rejection tests pass. The digital
+controller is actual selected RTL; analog frequency, detector and clock-timing
+models remain separate unqualified diagnostic inputs.
+
 The current numerical work measures the coarse23 lower fine endpoint,
 replays measured programming-input ripple, and
 continues the existing full-layout references and boundary replay. Their results
@@ -2219,3 +2225,11 @@ log reproduces its receipt hash. The remaining difference from the full referenc
 is still+1,388.392841 ppm in these unaligned windows. Restoring REFCLK alone
 therefore does not resolve model accuracy; other dynamic boundaries, input
 idealization, reset history and numerical uncertainty remain unqualified.
+
+Mixed-signal binding audit1547 rechecks source_pins() provenance, actual portable
+and original source hashes, selected GDS binding and the route019 nine-file RTL
+set. All nine names and digests match. Five tests reject changed RTL, unrelated
+geometry, changed build inputs/tools, incomplete caches and changed image
+fingerprints. This verifies identity guards for the existing actual-RTL harness;
+it does not introduce a new functional proof or qualify analog models, timing,
+closed-loop behavior or release readiness.

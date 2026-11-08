@@ -1,0 +1,35 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_400MHz_PrototypeTop.v": "0df53ecb2d5ff685713d4f9f9ede71939bdac8b1c8288ef5d586ea9f915e162e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_B2TH.v": "7cdf2a2224e2b1fcf848cc1cd42b5417e3d0d1bb8dea82e0c274e5065432f74b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_DLF.v": "4b98becbc5424ed7eabdf38ceedb757d66db35b965ac33bbd0a0c4b6e4ade2db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_DigitalCore.v": "4cba0c4b262d43d5b18e484affdc1c03e0c72f8e21de3a7ce044c66f4f7a9055",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_Divider.v": "2e3dc884988a510b0e749291cfaa6ff4dac05f04b6fb4d07c4c1fea4bf785d64",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_MMD_Retimer.v": "b967f654d1b527296cb89b4c8600b590ec35e412a9b993a275842152260e9b69",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_ProgrammedCore.v": "eba2157966c0d799bb269c4c108ce1e125ca5e90a2e10c019c60deed12cf530d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_ProgrammedStartup.v": "0aceb40b543247af5e893485fef957b2f8cc2c2888fe43462db3f9adcc1b8b41",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/IntegerPLL_TuningHandoff.v": "00f380665af4ca3e11d3f37b6b448311d41f1c3e0f5aca875ade7d2b825ddfc4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/rtl/selected400/sources.json": "0303be1d819be180e43e232d84d8e15a514abd46593bf44d1bd192df2be7c82f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_parent_filled_layout_019/assessment.json": "6172bc631c7be70c0b9bd69b1180c241be75cf96a95bbe4d49065b94f48149fd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_parent_filled_layout_019/assembly.gds": "71dc786409f1c59279f6d29896df666446b1fe7f3a3d4bab32efe5e7f234cb63",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_physical_rtl.py": "63ce1ac6e6cf73cda4ccfb3082b6f10992b670ca6e6a679a68a9a3d5d46eb890",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_physical_rtl.py": "18193878499a7f4b7c2addc5f1ee6c6e99445e8f77c50505eb1837379dbd4e30",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_selected_mixed_signal_build_cache.py": "355b6c3765343cba5c7b36d8ecf1e0363f70be8b5201a61369d91e0e4d6ca1d5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_mixed_signal_build_cache.py": "f259a7299b943a992c5d24e5fb67e0fc156e1a583238ff835de9f22020b3cf81",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_mixed_signal_build_cache_v2.py": "fb59a3d0d7c5ce7c7e4d367af13e8c31b5ac706901bc9c02ee3b83fb0cbecbbf",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_selected_mixed_signal_v8.py": "58e8285fd3450237309ba4e4e2ddc62a873c5d4984e100e9b122a48fb81c1675",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/verify_selected_mixed_signal_RTL_binding.py": "4d7acf180a35752cb0f9f3cd193e62e0c4168a84334c6489a59dca58b2e398dc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/prototype_v3_selected_route_019/assessment.json": "e2bf6e20a557032bb1e7739c18499fec1fa0fd0ccb4cc6cad6cb025ba2b0af02"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_signal_RTL_binding_1547/tests.log": "f9ac9d11ca408a88041b7ef3abfad4d4836dfed259a75dd305e3314381f0199e"
+  },
+  "portable_RTL_files": 9,
+  "exact_selected_route_RTL_bytes_verified": true,
+  "source_geometry_tool_and_image_rejection_controls_passed": true,
+  "compilation_scope": "Actual selected digital RTL; analog models are separate diagnostic inputs",
+  "new_functional_proof": false,
+  "analog_models_qualified": false,
+  "closed_loop_qualified": false,
+  "release_ready": false
+}
