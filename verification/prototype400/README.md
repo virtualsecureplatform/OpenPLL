@@ -2009,3 +2009,15 @@ prediction at149 has -350.832349 ppm error; linear-period prediction has
 -688.253260 ppm error. Neither error is accepted as a global bound. These
 measured points do not bracket400 MHz, and no extrapolated target is supplied.
 Other-corner, wire-R and closed-loop qualification remain open.
+
+Static-code native DCO pilot1531 retains the native first clock buffer and
+control-driver circuitry, drives the 302 macro thermometer inputs with their
+static truth tables, grounds capacitive exterior boundaries, and terminates the
+free receiver output with 32 fF. PLLOUT remains free; no recorded voltage history
+is used. The declared TT coarse20/fine149 run is 60 ns at a maximum10 ps step,
+with a20–60 ns diagnostic window. All302 native DCO control leaves are observed;
+this is analog characterization, not a replacement for actual RTL loop testing.
+Four boundary-mapping tests pass, covering polarity, complete role/programming
+coverage, invalid codes and rejection of additional active terminals. The native
+capture is running; frequency agreement, startup-window convergence, receiver
+load sensitivity, other corners and wire-R uncertainty remain unqualified.
