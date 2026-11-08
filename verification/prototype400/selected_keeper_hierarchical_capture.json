@@ -1,0 +1,33 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/Xyce": "e07a45abe62b01ea1c47a470facf0da02e9de3cfb8a7448ce4cd7e5febf64816",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_hierarchical_capture_1244/probe.spice": "09451f7989b3fc41d67d747fe39b392189a22560469c5c6bf7c23c926b898e43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/plan_keeper_conditional_replay.py": "765a5ccfcf27e5c363755c2ef5112d9dc5ecc96a6e82636e05034070ceeb38f5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_hierarchical_capture_1244/probe.raw": "96a9a796d649faf2cad86eeac3046c3775dcb7c3b94dd995c2c8703b2ac9d144",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_hierarchical_capture_1244/native.log": "86771f6f8606513c57f800deac09ca655317d207f03834ae31f6cbcfc9e405f6"
+  },
+  "normal_native_completion": true,
+  "hierarchical_and_top_level_RAW_names_bound": true,
+  "bindings": {
+    "inside": {
+      "role": "externally_driven",
+      "conditional_formal_port": "P0",
+      "full_native_node": "XDUT:internal",
+      "expected_RAW_variable": "V(XDUT:INTERNAL)",
+      "RAW_index": 1
+    },
+    "PLLOUT": {
+      "role": "observation_only",
+      "conditional_formal_port": "P1",
+      "full_native_node": "PLLOUT",
+      "expected_RAW_variable": "V(PLLOUT)",
+      "RAW_index": 2
+    }
+  },
+  "samples": 686,
+  "release_ready": false,
+  "source_assessment": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_hierarchical_capture_1244/assessment.json"
+}
