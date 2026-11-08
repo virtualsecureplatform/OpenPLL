@@ -1,6 +1,7 @@
 """Generate audited reduced forcing arrays from completed, hash-checked inputs."""
 import argparse,json,os,time
 from pathlib import Path
+os.environ.update(OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',OMP_THREAD_LIMIT='1')
 import numpy as np
 from common_v3 import save,sha,verify
 from resources import identity,lease
@@ -15,10 +16,26 @@ def checked(path, required):
     return value
 
 
-def run(waveforms,reduction,controls,output):
+def wait_completed(directory,expected,deadline):
+    while True:
+        state=json.loads((directory/'status.json').read_text())['state']
+        if state==expected and (directory/'assessment.json').exists():return
+        if state=='stopped_without_qualification':raise RuntimeError('prerequisite stopped: '+str(directory))
+        owner=json.loads((directory/'owner.json').read_text())
+        if identity(owner['pid'])!=owner['birth']:raise RuntimeError('prerequisite owner missing: '+str(directory))
+        if time.clock_gettime(time.CLOCK_BOOTTIME)>=deadline:raise TimeoutError('completed prerequisite observation deadline')
+        time.sleep(10)
+
+
+def run(waveforms,reduction,controls,output,wait=False):
     output.mkdir(parents=True,exist_ok=False);os.sched_setaffinity(0,{29})
     save(output/'owner.json',dict(pid=os.getpid(),birth=identity(os.getpid())) )
     try:
+        if wait:
+            deadline=time.clock_gettime(time.CLOCK_BOOTTIME)+86400
+            save(output/'status.json',dict(state='waiting_for_completed_reduction_and_native_controls',observation_cap_s=86400,release_ready=False))
+            wait_completed(reduction,'symbolic_boundary_reduction_complete_native_unqualified',deadline)
+            wait_completed(controls,'native_capacitor_superposition_controls_complete',deadline)
         # These operations consume completed arrays only, never live RAW data.
         checked(waveforms/'assessment.json',['completed_boundary_waveforms_available','all_saved_native_values_finite','PLLOUT_is_observation_only'])
         r=checked(reduction/'assessment.json',['symbolic_retained_charge_coefficients_preserved'])
@@ -43,4 +60,4 @@ def run(waveforms,reduction,controls,output):
 if __name__=='__main__':
     p=argparse.ArgumentParser()
     for n in ['waveforms','reduction','controls','output']:p.add_argument('--'+n,type=Path,required=True)
-    a=p.parse_args();run(*(getattr(a,n).resolve() for n in ['waveforms','reduction','controls','output']))
+    p.add_argument('--wait',action='store_true');a=p.parse_args();run(*(getattr(a,n).resolve() for n in ['waveforms','reduction','controls','output']),wait=a.wait)

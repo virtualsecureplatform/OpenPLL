@@ -852,3 +852,7 @@ The prepared helper copies direct forcing and observed PLLOUT samples unchanged,
 ### Completed-input weighted waveform generation runner prepared
 
 `generate_keeper_aggregate_waveforms.py` requires completed hash-verified full-reference boundary arrays, the symbolic reduction certificate and all 24 closed-form native RC controls before acquiring a 2 GiB lease. It writes reduced arrays, port roles and exact sample-roundoff receipts, rechecks input hashes and leaves native simulation/dynamic/model qualification disabled. The runner passes syntax compilation but is not launched because its native control prerequisite remains queued. Full generation and reduced replay are still pending.
+
+### Audited waveform follow-up controller live (1385)
+
+The generation runner now has an explicit 24 h completed-prerequisite observer, checking each producer's PID/birth identity and terminal status. A live CPU-29 controller waits for symbolic reduction 1383 and all native RC controls 1384 before requesting its own 2 GiB lease. It consumes no analysis lease while waiting, limits numerical-library threads to one, does not retry failed prerequisites and never launches native PLL simulation. Generation and all replay/dynamic qualification remain pending. See `selected_keeper_aggregate_waveforms_launch.json`.

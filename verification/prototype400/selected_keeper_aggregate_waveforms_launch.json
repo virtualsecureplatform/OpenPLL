@@ -1,0 +1,36 @@
+{
+  "launcher": {
+    "pid": 2194170,
+    "birth": "133948762",
+    "command": [
+      "apptainer",
+      "exec",
+      "--bind",
+      "/home:/home,/tmp:/tmp",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/apptainer/openpll-release-modern.sif",
+      "/usr/bin/python3",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/generate_keeper_aggregate_waveforms.py",
+      "--waveforms",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_replay_memory_benchmark_1365/waveforms",
+      "--reduction",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_capacitor_boundary_reduction_1383",
+      "--controls",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_capacitor_boundary_superposition_controls_1384",
+      "--output",
+      "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_aggregate_waveforms_1385",
+      "--wait"
+    ]
+  },
+  "owner": {
+    "pid": 2194201,
+    "birth": "133948771"
+  },
+  "observed_status": {
+    "state": "waiting_for_completed_reduction_and_native_controls",
+    "observation_cap_s": 86400,
+    "release_ready": false
+  },
+  "producer_sha256": "9bc34715f753e0b518d396d5eef1384054cbe646da85c1bb40c3eeaee6379c08",
+  "native_simulation_requested": false,
+  "release_ready": false
+}
