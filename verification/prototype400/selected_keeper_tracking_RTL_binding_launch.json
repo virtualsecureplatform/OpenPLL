@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_tracking_RTL_binding_1377/inputs.json": "7beb04f865fdc5ee9822f397e4ce1beba0bdd4bc621de3b5c5cdd4968f133ff2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/bind_keeper_tracking_RTL_proof.py": "5c0d1923eb3fc100ee0a7e6b1354986f0766b772739d03a3e1d82b57c8fde3a3"
+  },
+  "owner": {
+    "pid": 2183695,
+    "birth": "133643318"
+  },
+  "CPU": 28,
+  "memory_GiB": 2,
+  "resource_queue_cap_s": 7200,
+  "native_campaign_cap_s": 600,
+  "maximum_model_exports": 2,
+  "new_induction_run_requested": false,
+  "current_route_model_identity_verified": false,
+  "state": "waiting_for_global_CPU_RAM_budget",
+  "release_ready": false
+}
