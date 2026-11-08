@@ -1279,3 +1279,27 @@ particular, blanket delay insertion cannot resolve bit0 under these views.
 Next timing work must qualify/tighten actual cell/load/clock bounds and
 then evaluate clock/data restructuring or a measured ECO with both setup
 and hold preserved, rather than accept an ordinary-path waiver.
+
+### Full clock expansion of critical path diagnostics1449
+
+Thirty full-clock reports reproduce every slack from1447 exactly. Focused
+FF-min/SS-min/SS-max reports for decision bit0 are retained in the portable
+clock-detail packet, with full source log hashes. In the SS hold report,
+the capture path after divider Q contains `clkbuf_regs_0_FINECLK`,
+`clkbuf_0_core.feedback_divider.CLKDIV_RETIMED_regs`,
+`clkbuf_3_7__f_core.feedback_divider.CLKDIV_RETIMED_regs`,
+`clkbuf_leaf_53_core.feedback_divider.CLKDIV_RETIMED_regs` (all clkbuf16),
+then the decision clock inverter. Their SS late increments are roughly
+253/309/357/231/106ps, after the567ps divider clock-to-Q. The decision
+data paths already include many clkbuf2 hold stages.
+
+This identifies a concrete candidate direction: evaluate an earlier,
+logically equivalent FINECLK clock branch for the two decision registers
+while selectively reducing existing data hold stages. A clock advance
+alone trades hold improvement for setup loss, so both paths and all
+corners must be measured after rerouting; no nominal algebra proves a
+physical repair. The current macro/RTL/layout remain unchanged. Current
+model/load/clock qualification and actual-frequency-range checks remain
+open. Broad supplied-load envelopes and finite interpolation margins in
+the retained libraries also require qualification; they cannot simply
+be deleted to obtain positive slack.
