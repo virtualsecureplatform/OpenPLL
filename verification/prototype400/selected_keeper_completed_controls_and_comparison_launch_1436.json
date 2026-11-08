@@ -1,0 +1,21 @@
+{
+  "comparison_owner": {
+    "pid": 2250783,
+    "birth": "135607730"
+  },
+  "comparison_state": "waiting_for_completed_receiver_loading_replay",
+  "native_PLLOUT_process": {
+    "pid": 2250653,
+    "birth": "135602358",
+    "process_group": 2250653
+  },
+  "actual_native_PLLOUT_affinity": [
+    28
+  ],
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_keeper_receiver_loading.py": "423c1120ea41dabd2336cd2bfcf8df5b5be5c778a850ac51800a44fbdba10f61",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_PLLOUT_explicit_coupling_1433/inputs.json": "ba27bcb6f9f0a15c320e5a50dca05f56a739a318f9047837f0ebf97182210650"
+  },
+  "completed": false,
+  "release_ready": false
+}

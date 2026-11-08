@@ -1106,3 +1106,22 @@ simplification, dynamic accuracy and model/release qualification stay
 false regardless of static results. Three tests cover removing duplicate
 grounding, detecting changed R despite identical ideal-R contraction,
 and retaining a small exact residual C mismatch.
+
+### Combined controls complete and receiver comparison queued
+
+Build1431 and all four native controls1432 completed. The combined engine
+preserves before/after capacitance export in both coupling modes; stock-on
+reproduces the extra ground term. The source-composition guard matches all
+five geometry source hashes and header against1334. Full-layout PLLOUT
+pilot1433 has started, with actual Magic PID/birth and CPU28 verified.
+The completed-only static observer1435 remains waiting for its result.
+
+Receiver comparison1436 waits for normal replay1427 completion and checks
+the same full reference1278, physical604-endpoint validation1279, backend,
+maximum timestep and exact declared reductions against1403. It reports
+final-window edge/frequency differences and completed GNU-time/RSS data.
+It does not claim pure receiver-isolation error, because moving the cut
+also changes the prescribed capacitor environment and adaptive grid.
+Downstream loading remains prescribed; no error tolerance or model
+qualification is inferred. Three tests reject incomplete/forced records
+and mismatched backend/timestep, while accepting matching checked settings.
