@@ -15,7 +15,7 @@ historical implementation notes below do not override the active v3 profile.
 
 | Gate | Evidence still required |
 | --- | --- |
-| Physical integrity | Resolve extracted RC/ground-capacitance concerns and bind final checks to the selected candidate. Running ground audits are not passing receipts. |
+| Physical integrity | Resolve extracted RC/ground-capacitance concerns, including the stopped fringe-kernel support audits, and bind final checks to the selected candidate. |
 | Analog models and tuning | Establish a measured full-layout 400 MHz bracket in every corner, then qualify tuning/detector models and numerical uncertainty. |
 | Digital timing and CDC | Complete routed reset pulse/recovery/removal coverage and physical interface constraints. Unreported checks and structural classifications are not passes or waivers. |
 | Closed-loop operation | Pass all 60 active-profile cases with actual RTL and qualified analog models, including acquisition, sustained frequency/phase, no slips and code limits. |
@@ -73,6 +73,12 @@ matching physical controls. Tested frequencies remain337.106–381.101 MHz;
 there is no measured400 MHz bracket. The predeclared frequency interpolation
 has+587 ppm holdout error; period interpolation has-36.7 ppm. These are sampled
 residuals, not global accuracy bounds, and the50 ps timestep is unqualified.
+
+The [physical-support failure records](physical_support_audit_failures_1401_1438_1445/retention.json)
+show audits1401 and1438 stopped on “fringe shielding kernel identity changed”;
+dependent coverage1445 stopped accordingly. Completed native traces remain
+preserved. The exact differing field and a possible contact/residue normalization
+asymmetry are under investigation; no validator guard has been relaxed.
 
 The current numerical work replays measured programming-input ripple and
 continues the existing full-layout references and boundary replay. Their results
@@ -2413,3 +2419,13 @@ sensitivity residual is-36.673364 ppm. No extrapolated400 MHz setting or uniform
 accuracy bound is supplied. All measured points are below target. Native, control
 and collection receipts are retained together with lossless logs; large RAW/NPY
 artifacts remain in the original verified build paths.
+
+Physical audits1401 and1438 stopped without qualification on the same fringe
+shielding kernel identity guard; coverage1445 stopped because its support audit
+failed. Their terminal records and the completed1437 native trace/archive receipts
+are retained together. Source inspection suggests a contact-to-plane-residue
+normalization asymmetry between fringe-rule setup and its shielding helper, but
+the exact trace mismatch has not yet been localized and that hypothesis is not
+validated. Bounded prefix attempts did not produce a counterexample. Preserve
+the traces and strict validator; no extraction correction, geometry placement,
+distributed-R qualification or release pass is inferred from this diagnosis.

@@ -1,0 +1,6 @@
+{
+  "state": "stopped_without_qualification",
+  "reason": "ValueError('fringe shielding kernel identity changed')",
+  "native_children_unchanged": true,
+  "release_ready": false
+}

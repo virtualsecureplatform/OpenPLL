@@ -1,0 +1,41 @@
+{
+  "files": {
+    "fringe1401/status.json": {
+      "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resolved_fringe_local_audit_1401/status.json",
+      "source_sha256": "c4fbab1e98b3b1ee05e1e34bb105bd480662f9ada1f7b605750302ca5b5cc96d"
+    },
+    "fringe1401/owner.json": {
+      "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_resolved_fringe_local_audit_1401/owner.json",
+      "source_sha256": "c643a5f09b6342b75eb25c3634a6071b2ef2dd298136351b5364c41fbbef5ef0"
+    },
+    "ground1438/status.json": {
+      "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_local_compressed_audit_1438/status.json",
+      "source_sha256": "c4fbab1e98b3b1ee05e1e34bb105bd480662f9ada1f7b605750302ca5b5cc96d"
+    },
+    "ground1438/owner.json": {
+      "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_local_compressed_audit_1438/owner.json",
+      "source_sha256": "095fdc53af57359d9a706fed19d94d02fe586ee0e6ada6b1e5d9c8677097100d"
+    },
+    "coverage1445/status.json": {
+      "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_local_coverage_1445/status.json",
+      "source_sha256": "2a33f20a218f00ce7b5ca968bbb5ae474f80a2c0326408f79addcf3c057c0cdd"
+    },
+    "coverage1445/owner.json": {
+      "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_local_coverage_1445/owner.json",
+      "source_sha256": "672a0535a2883dd532a6ccc08304b8b37c2c737833a1fe0d4dba07c29df33bba"
+    },
+    "completed_native_assessment.json": {
+      "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_local_compressed_trace_1437/assessment.json",
+      "source_sha256": "b11e9ce0a3d352bf31a6ddb244cadc3d75c901a00fca1b93af60a552eb07ff15"
+    },
+    "completed_native_trace_archive.json": {
+      "source": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_local_compressed_trace_1437/trace_archive.json",
+      "source_sha256": "9bc8d228f92d9fb4a209c99e4540b9bf27c27e8a880be84fed78f6d1564da8b1"
+    }
+  },
+  "validator_identity_guard_not_relaxed": true,
+  "exact_mismatching_field_not_yet_localized": true,
+  "contact_normalization_hypothesis_not_validated": true,
+  "completed_native_traces_preserved": true,
+  "release_ready": false
+}

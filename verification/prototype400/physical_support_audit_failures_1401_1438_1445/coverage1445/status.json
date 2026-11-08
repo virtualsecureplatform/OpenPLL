@@ -1,0 +1,6 @@
+{
+  "state": "stopped_without_qualification",
+  "reason": "RuntimeError('support audit stopped')",
+  "native_children_unchanged": true,
+  "release_ready": false
+}

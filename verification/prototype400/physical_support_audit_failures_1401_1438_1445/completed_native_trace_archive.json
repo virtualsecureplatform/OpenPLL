@@ -1,0 +1,13 @@
+{
+  "source": "/tmp/openpll-ground-trace-tr4w_x5o/coupling.jsonl",
+  "archive": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_ground_local_compressed_trace_1437/coupling.jsonl.gz",
+  "uncompressed_bytes": 296888756533,
+  "uncompressed_sha256": "e9fc3f409d0db0ad60f5878d2ce53617a324a4803a5881b9ae52b5bbf3935090",
+  "compressed_bytes": 18340950148,
+  "compressed_sha256": "354e94cd4a120362eaaa1123051b1526bf08b30ec9d19ab962fe7e8762732c55",
+  "archive_format": "gzip",
+  "compression_level": 1,
+  "normal_native_completion_required": true,
+  "original_source_preserved": true,
+  "lossless_archive_roundtrip_verified": true
+}
