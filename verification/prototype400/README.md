@@ -2367,3 +2367,12 @@ The generic runner uses the existing global resource leases. Prior gain cases
 and their tables remain frozen. Direct final-code frequency measurements do not
 qualify the grounded exterior, detector/timing models, dynamic code-step response
 or full-layout calibration.
+
+Holdout reviewer1560 waits for normal completed1557/1558/1559 captures with live
+owner checks and a24 h observation cap. It verifies the frozen1556 plan and all
+native point dependencies, checks each actual thermometer code, and reports
+primary/secondary prediction residuals without refitting. Only after all three
+finish does it mark the original128–131 final code set as directly measured.
+That observation does not requalify the frozen gain traces, establish a global
+error bound, qualify dynamic code-step response or resolve the full-layout bias.
+No unfinished RAW is read and no native job is restarted or modified.

@@ -1,0 +1,11 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_final_code_validation_plan_1556/plan.json": "42c1bfed932cba56ef2db4fc18937f41372ce7ccd929890d0e5c1a1412225841",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_final_code_validation.py": "c3ecad85d0043d46abe60c01d7ec3321d9280de0dacc6fb724007817146a49e8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_static_DCO_point.py": "db88c03544e2d1a4dabe2ac7ab4f0a228c23528a07b78be0bca8b968fef1db2f"
+  },
+  "observation_cap_s": 86400,
+  "maximum_captures_observed": 3,
+  "existing_jobs_modified": false,
+  "release_ready": false
+}
