@@ -2123,3 +2123,13 @@ endpoints; no lossy downsampling is applied. This explicitly uses recorded volta
 histories, leaves PLLOUT free, and cannot predict a changed controller. The
 one-shot CPU27/8 GiB case tests programming-input idealization separately from
 capacitive-exterior idealization; no qualification is inferred before completion.
+
+Completed-reference coupling ranking1543 finds467 capacitive-only exterior
+boundaries with retained coupling, totaling exactly31.19899 fF. In200–260 ns,
+the largest coefficient-times-sampled-voltage-span scores are2.757310274 fC
+for clkbuf_16_106.X,2.207556000 fC for REFCLK and1.492612453 fC for
+clkbuf_2_297.A. The total score is16.230972382 fC. These actively switching
+exterior nodes are grounded in the static pilot. Scores ignore phase and
+cancellation, use sampled extrema, and are not bounds on charge error or
+frequency error. They identify omitted dynamic excitation for targeted model
+work; they do not prove that any one source causes the observed frequency bias.

@@ -1,0 +1,3271 @@
+[
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_16_106.X",
+    "retained_C_F_exact": "146873/100000000000000000000",
+    "minimum_V": -0.0246596971,
+    "maximum_V": 1.8526835,
+    "excursion_charge_score_fC": 2.7573102738766826
+  },
+  {
+    "node": "REFCLK",
+    "retained_C_F_exact": "61321/50000000000000000000",
+    "minimum_V": -9.69002656e-13,
+    "maximum_V": 1.8,
+    "excursion_charge_score_fC": 2.2075560000011882
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_297.A",
+    "retained_C_F_exact": "19573/25000000000000000000",
+    "minimum_V": -0.0310237929,
+    "maximum_V": 1.87544488,
+    "excursion_charge_score_fC": 1.4926124533868679
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_4_3.CLK",
+    "retained_C_F_exact": "20633/50000000000000000000",
+    "minimum_V": -0.0276749483,
+    "maximum_V": 1.85474027,
+    "excursion_charge_score_fC": 0.776797463983678
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_4.RESET_B",
+    "retained_C_F_exact": "41339/100000000000000000000",
+    "minimum_V": -0.0367345732,
+    "maximum_V": 1.80120873,
+    "excursion_charge_score_fC": 0.759787382109848
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_4_3.D",
+    "retained_C_F_exact": "17791/50000000000000000000",
+    "minimum_V": -0.0173478979,
+    "maximum_V": 1.82214991,
+    "excursion_charge_score_fC": 0.6545301100069779
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_297.X",
+    "retained_C_F_exact": "2633/12500000000000000000",
+    "minimum_V": -0.0456394093,
+    "maximum_V": 1.89200073,
+    "excursion_charge_score_fC": 0.40814451894215203
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_2_30.A",
+    "retained_C_F_exact": "18579/100000000000000000000",
+    "minimum_V": -0.0268333576,
+    "maximum_V": 1.86758774,
+    "excursion_charge_score_fC": 0.351964495723104
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_2_3.CLK",
+    "retained_C_F_exact": "1893/12500000000000000000",
+    "minimum_V": -0.02840742,
+    "maximum_V": 1.87142934,
+    "excursion_charge_score_fC": 0.2877112789344
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_510.B",
+    "retained_C_F_exact": "637/5000000000000000000",
+    "minimum_V": -0.0349868058,
+    "maximum_V": 1.85967923,
+    "excursion_charge_score_fC": 0.24138045296092003
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_509.B",
+    "retained_C_F_exact": "9/78125000000000000",
+    "minimum_V": -0.0376397467,
+    "maximum_V": 1.89382869,
+    "excursion_charge_score_fC": 0.22250516390784
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_390.Y",
+    "retained_C_F_exact": "11747/100000000000000000000",
+    "minimum_V": -0.030181197,
+    "maximum_V": 1.84838513,
+    "excursion_charge_score_fC": 0.22067518643269
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_292.X",
+    "retained_C_F_exact": "10313/100000000000000000000",
+    "minimum_V": -0.0484057013,
+    "maximum_V": 1.89740723,
+    "excursion_charge_score_fC": 0.200671687604969
+  },
+  {
+    "node": "a_71842_58470#",
+    "retained_C_F_exact": "373/4000000000000000000",
+    "minimum_V": -0.0189642874,
+    "maximum_V": 1.84408055,
+    "excursion_charge_score_fC": 0.17372893108754997
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_32.RESET_B",
+    "retained_C_F_exact": "7591/100000000000000000000",
+    "minimum_V": -0.0271184145,
+    "maximum_V": 1.80190943,
+    "excursion_charge_score_fC": 0.13884150367599501
+  },
+  {
+    "node": "a_71170_38722#",
+    "retained_C_F_exact": "3559/50000000000000000000",
+    "minimum_V": -0.021815071,
+    "maximum_V": 1.84867409,
+    "excursion_charge_score_fC": 0.13314141847998
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_2_71.B",
+    "retained_C_F_exact": "6501/100000000000000000000",
+    "minimum_V": -0.0659358625,
+    "maximum_V": 1.87322727,
+    "excursion_charge_score_fC": 0.12606499524382497
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_2_39.A2",
+    "retained_C_F_exact": "3201/50000000000000000000",
+    "minimum_V": -0.0395327938,
+    "maximum_V": 1.87787475,
+    "excursion_charge_score_fC": 0.12275243095407602
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_199.A1",
+    "retained_C_F_exact": "5937/100000000000000000000",
+    "minimum_V": -0.0341009081,
+    "maximum_V": 1.85072485,
+    "excursion_charge_score_fC": 0.111902105258397
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_291.X",
+    "retained_C_F_exact": "2781/50000000000000000000",
+    "minimum_V": -0.0550137197,
+    "maximum_V": 1.90612956,
+    "excursion_charge_score_fC": 0.109078789216914
+  },
+  {
+    "node": "a_67234_73354#",
+    "retained_C_F_exact": "2749/50000000000000000000",
+    "minimum_V": -0.0233974697,
+    "maximum_V": 1.85223309,
+    "excursion_charge_score_fC": 0.10312216817230599
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_510.Y",
+    "retained_C_F_exact": "2563/50000000000000000000",
+    "minimum_V": -0.0618010393,
+    "maximum_V": 1.89277079,
+    "excursion_charge_score_fC": 0.10019135196991799
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_256.A",
+    "retained_C_F_exact": "301/6250000000000000000",
+    "minimum_V": -0.0395047621,
+    "maximum_V": 1.89911082,
+    "excursion_charge_score_fC": 0.093363726433936
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_275.A",
+    "retained_C_F_exact": "77/1562500000000000000",
+    "minimum_V": -0.0296311925,
+    "maximum_V": 1.85845592,
+    "excursion_charge_score_fC": 0.093044932904
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_296.A",
+    "retained_C_F_exact": "239/5000000000000000000",
+    "minimum_V": -0.0327877091,
+    "maximum_V": 1.85282381,
+    "excursion_charge_score_fC": 0.09013223061298001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_2_70.Y",
+    "retained_C_F_exact": "301/6250000000000000000",
+    "minimum_V": -0.0332329833,
+    "maximum_V": 1.83687624,
+    "excursion_charge_score_fC": 0.090064460194128
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_257.X",
+    "retained_C_F_exact": "4301/100000000000000000000",
+    "minimum_V": -0.0525431902,
+    "maximum_V": 1.90719762,
+    "excursion_charge_score_fC": 0.084288452246702
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_16_140.X",
+    "retained_C_F_exact": "2121/50000000000000000000",
+    "minimum_V": -0.0341038655,
+    "maximum_V": 1.88196378,
+    "excursion_charge_score_fC": 0.08127958952211001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_397.Y",
+    "retained_C_F_exact": "4169/100000000000000000000",
+    "minimum_V": -0.0590546335,
+    "maximum_V": 1.88393347,
+    "excursion_charge_score_fC": 0.08100317403491501
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_397.B",
+    "retained_C_F_exact": "83/2000000000000000000",
+    "minimum_V": -0.0380139796,
+    "maximum_V": 1.85650865,
+    "excursion_charge_score_fC": 0.07862268912840001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_398.B",
+    "retained_C_F_exact": "101/2500000000000000000",
+    "minimum_V": -0.0586038156,
+    "maximum_V": 1.88415358,
+    "excursion_charge_score_fC": 0.07848739878224
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_292.A",
+    "retained_C_F_exact": "1023/25000000000000000000",
+    "minimum_V": -0.0352852813,
+    "maximum_V": 1.86546994,
+    "excursion_charge_score_fC": 0.077778903655596
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_383.A",
+    "retained_C_F_exact": "2047/50000000000000000000",
+    "minimum_V": -0.0301805272,
+    "maximum_V": 1.85008709,
+    "excursion_charge_score_fC": 0.076978156248168
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_2_70.B",
+    "retained_C_F_exact": "391/10000000000000000000",
+    "minimum_V": -0.0486764426,
+    "maximum_V": 1.82718873,
+    "excursion_charge_score_fC": 0.07334632824866001
+  },
+  {
+    "node": "a_72251_73472#",
+    "retained_C_F_exact": "3683/100000000000000000000",
+    "minimum_V": -0.0718678203,
+    "maximum_V": 1.91452441,
+    "excursion_charge_score_fC": 0.07315882584194901
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_4_3.RESET_B",
+    "retained_C_F_exact": "102643/100000000000000000000",
+    "minimum_V": 1.76248736,
+    "maximum_V": 1.83297366,
+    "excursion_charge_score_fC": 0.072349252909
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_307.X",
+    "retained_C_F_exact": "937/25000000000000000000",
+    "minimum_V": -0.0347582776,
+    "maximum_V": 1.86498576,
+    "excursion_charge_score_fC": 0.071202406529248
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_401.A",
+    "retained_C_F_exact": "3691/100000000000000000000",
+    "minimum_V": -0.0200052395,
+    "maximum_V": 1.85842157,
+    "excursion_charge_score_fC": 0.069332733538645
+  },
+  {
+    "node": "a_72314_72694#",
+    "retained_C_F_exact": "17/500000000000000000",
+    "minimum_V": -0.0635833001,
+    "maximum_V": 1.89239576,
+    "excursion_charge_score_fC": 0.0665032880434
+  },
+  {
+    "node": "a_72418_71726#",
+    "retained_C_F_exact": "1651/50000000000000000000",
+    "minimum_V": -0.0808401179,
+    "maximum_V": 1.90427044,
+    "excursion_charge_score_fC": 0.06554835062185799
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_399.A",
+    "retained_C_F_exact": "647/20000000000000000000",
+    "minimum_V": -0.0188577222,
+    "maximum_V": 1.82907746,
+    "excursion_charge_score_fC": 0.059780703144169986
+  },
+  {
+    "node": "a_61787_74286#",
+    "retained_C_F_exact": "569/20000000000000000000",
+    "minimum_V": -0.0568010264,
+    "maximum_V": 1.89790152,
+    "excursion_charge_score_fC": 0.05561128744508
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_151.CLK",
+    "retained_C_F_exact": "571/20000000000000000000",
+    "minimum_V": -0.0308851846,
+    "maximum_V": 1.86425231,
+    "excursion_charge_score_fC": 0.05410617547083
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_115.B1",
+    "retained_C_F_exact": "109153/100000000000000000000",
+    "minimum_V": -0.0308258995,
+    "maximum_V": 0.0174642831,
+    "excursion_charge_score_fC": 0.052710183013377994
+  },
+  {
+    "node": "a_72514_57074#",
+    "retained_C_F_exact": "169/6250000000000000000",
+    "minimum_V": -0.0499776365,
+    "maximum_V": 1.87014435,
+    "excursion_charge_score_fC": 0.051920098514959996
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_351.Y",
+    "retained_C_F_exact": "58051/50000000000000000000",
+    "minimum_V": -0.0267403036,
+    "maximum_V": 0.0164159403,
+    "excursion_charge_score_fC": 0.050105262292778
+  },
+  {
+    "node": "a_71930_39390#",
+    "retained_C_F_exact": "617/25000000000000000000",
+    "minimum_V": -0.0740341321,
+    "maximum_V": 1.89781416,
+    "excursion_charge_score_fC": 0.048665215849028
+  },
+  {
+    "node": "a_60827_74804#",
+    "retained_C_F_exact": "123/5000000000000000000",
+    "minimum_V": -0.0572924286,
+    "maximum_V": 1.89305296,
+    "excursion_charge_score_fC": 0.04797849655955999
+  },
+  {
+    "node": "a_60514_75722#",
+    "retained_C_F_exact": "2501/100000000000000000000",
+    "minimum_V": -0.0282373924,
+    "maximum_V": 1.86277383,
+    "excursion_charge_score_fC": 0.047294190672224
+  },
+  {
+    "node": "a_72610_62402#",
+    "retained_C_F_exact": "1247/50000000000000000000",
+    "minimum_V": -0.0301327768,
+    "maximum_V": 1.8624368,
+    "excursion_charge_score_fC": 0.047200685245392
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_310.A",
+    "retained_C_F_exact": "90217/100000000000000000000",
+    "minimum_V": 1.77239749,
+    "maximum_V": 1.82412308,
+    "excursion_charge_score_fC": 0.04666527553029999
+  },
+  {
+    "node": "a_71642_71358#",
+    "retained_C_F_exact": "2297/100000000000000000000",
+    "minimum_V": -0.062804322,
+    "maximum_V": 1.89058031,
+    "excursion_charge_score_fC": 0.04486924499704001
+  },
+  {
+    "node": "a_71930_38058#",
+    "retained_C_F_exact": "559/25000000000000000000",
+    "minimum_V": -0.0736331959,
+    "maximum_V": 1.89820396,
+    "excursion_charge_score_fC": 0.044090278805924005
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_509.Y",
+    "retained_C_F_exact": "1157/50000000000000000000",
+    "minimum_V": -0.0297187492,
+    "maximum_V": 1.85788029,
+    "excursion_charge_score_fC": 0.043679041767088
+  },
+  {
+    "node": "a_67438_74450#",
+    "retained_C_F_exact": "27/1250000000000000000",
+    "minimum_V": -0.116438307,
+    "maximum_V": 1.90402054,
+    "excursion_charge_score_fC": 0.0436419110952
+  },
+  {
+    "node": "a_71642_60702#",
+    "retained_C_F_exact": "2147/100000000000000000000",
+    "minimum_V": -0.0629017406,
+    "maximum_V": 1.88983233,
+    "excursion_charge_score_fC": 0.041925200495782
+  },
+  {
+    "node": "a_66178_74390#",
+    "retained_C_F_exact": "2103/100000000000000000000",
+    "minimum_V": -0.0804021356,
+    "maximum_V": 1.89122004,
+    "excursion_charge_score_fC": 0.041463214352868004
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_272.A",
+    "retained_C_F_exact": "1059/50000000000000000000",
+    "minimum_V": -0.0465315708,
+    "maximum_V": 1.8946625,
+    "excursion_charge_score_fC": 0.04111449041954399
+  },
+  {
+    "node": "a_71642_34066#",
+    "retained_C_F_exact": "257/12500000000000000000",
+    "minimum_V": -0.0783798068,
+    "maximum_V": 1.89821982,
+    "excursion_charge_score_fC": 0.040638888327008
+  },
+  {
+    "node": "a_64942_74450#",
+    "retained_C_F_exact": "63/3125000000000000000",
+    "minimum_V": -0.0648151084,
+    "maximum_V": 1.88135529,
+    "excursion_charge_score_fC": 0.039234795231744
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_153.D",
+    "retained_C_F_exact": "199/10000000000000000000",
+    "minimum_V": -0.0547030094,
+    "maximum_V": 1.91059426,
+    "excursion_charge_score_fC": 0.03910941566106001
+  },
+  {
+    "node": "a_67618_73122#",
+    "retained_C_F_exact": "251/12500000000000000000",
+    "minimum_V": -0.0299368399,
+    "maximum_V": 1.85620936,
+    "excursion_charge_score_fC": 0.037873815693992
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_31.B1",
+    "retained_C_F_exact": "90319/100000000000000000000",
+    "minimum_V": -0.0266014272,
+    "maximum_V": 0.0149193105,
+    "excursion_charge_score_fC": 0.037501115083262995
+  },
+  {
+    "node": "a_65402_74022#",
+    "retained_C_F_exact": "1883/100000000000000000000",
+    "minimum_V": -0.0622950423,
+    "maximum_V": 1.89312023,
+    "excursion_charge_score_fC": 0.036820469577409
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_259.X",
+    "retained_C_F_exact": "933/50000000000000000000",
+    "minimum_V": -0.051469879,
+    "maximum_V": 1.90754631,
+    "excursion_charge_score_fC": 0.036555242086740006
+  },
+  {
+    "node": "a_71854_73118#",
+    "retained_C_F_exact": "221/12500000000000000000",
+    "minimum_V": -0.112002379,
+    "maximum_V": 1.90310031,
+    "excursion_charge_score_fC": 0.03562701554152
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_403.Y",
+    "retained_C_F_exact": "349/20000000000000000000",
+    "minimum_V": -0.088178557,
+    "maximum_V": 1.9038968,
+    "excursion_charge_score_fC": 0.03476171497965
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_382.Y",
+    "retained_C_F_exact": "1751/100000000000000000000",
+    "minimum_V": -0.0607357229,
+    "maximum_V": 1.90658443,
+    "excursion_charge_score_fC": 0.034447775877279006
+  },
+  {
+    "node": "a_68674_74390#",
+    "retained_C_F_exact": "867/50000000000000000000",
+    "minimum_V": -0.0831146588,
+    "maximum_V": 1.89257274,
+    "excursion_charge_score_fC": 0.034258419495192004
+  },
+  {
+    "node": "a_72520_72739#",
+    "retained_C_F_exact": "857/50000000000000000000",
+    "minimum_V": -0.104002885,
+    "maximum_V": 1.89162042,
+    "excursion_charge_score_fC": 0.034204983447699996
+  },
+  {
+    "node": "a_72314_40722#",
+    "retained_C_F_exact": "347/20000000000000000000",
+    "minimum_V": -0.073474767,
+    "maximum_V": 1.89768696,
+    "excursion_charge_score_fC": 0.034199655963449996
+  },
+  {
+    "node": "a_71387_74286#",
+    "retained_C_F_exact": "1697/100000000000000000000",
+    "minimum_V": -0.0622921008,
+    "maximum_V": 1.90089144,
+    "excursion_charge_score_fC": 0.033315224687376
+  },
+  {
+    "node": "a_68103_74071#",
+    "retained_C_F_exact": "417/25000000000000000000",
+    "minimum_V": -0.0996702217,
+    "maximum_V": 1.89185367,
+    "excursion_charge_score_fC": 0.033218618513556
+  },
+  {
+    "node": "a_64091_74286#",
+    "retained_C_F_exact": "1739/100000000000000000000",
+    "minimum_V": -0.0427288031,
+    "maximum_V": 1.86547656,
+    "excursion_charge_score_fC": 0.033183691264309
+  },
+  {
+    "node": "a_71771_74286#",
+    "retained_C_F_exact": "853/50000000000000000000",
+    "minimum_V": -0.0612350946,
+    "maximum_V": 1.88220683,
+    "excursion_charge_score_fC": 0.033155119233676006
+  },
+  {
+    "node": "a_65218_74390#",
+    "retained_C_F_exact": "1727/100000000000000000000",
+    "minimum_V": -0.0278417894,
+    "maximum_V": 1.86331017,
+    "excursion_charge_score_fC": 0.032660194338838
+  },
+  {
+    "node": "a_67714_74390#",
+    "retained_C_F_exact": "213/12500000000000000000",
+    "minimum_V": -0.0348311771,
+    "maximum_V": 1.86829589,
+    "excursion_charge_score_fC": 0.032429285223383994
+  },
+  {
+    "node": "a_67898_74022#",
+    "retained_C_F_exact": "1623/100000000000000000000",
+    "minimum_V": -0.0705461054,
+    "maximum_V": 1.89679813,
+    "excursion_charge_score_fC": 0.03192999694054201
+  },
+  {
+    "node": "a_65607_74071#",
+    "retained_C_F_exact": "321/20000000000000000000",
+    "minimum_V": -0.0979933089,
+    "maximum_V": 1.89002899,
+    "excursion_charge_score_fC": 0.031907757897345
+  },
+  {
+    "node": "a_72610_65066#",
+    "retained_C_F_exact": "829/50000000000000000000",
+    "minimum_V": -0.0304693527,
+    "maximum_V": 1.86290436,
+    "excursion_charge_score_fC": 0.031392136156566
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_395.A",
+    "retained_C_F_exact": "409/25000000000000000000",
+    "minimum_V": -0.068999882,
+    "maximum_V": 1.83493218,
+    "excursion_charge_score_fC": 0.031148328534319997
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_2_3.Q",
+    "retained_C_F_exact": "162461/100000000000000000000",
+    "minimum_V": -0.0118598978,
+    "maximum_V": 0.0066301902,
+    "excursion_charge_score_fC": 0.030039181865679998
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_400.Y",
+    "retained_C_F_exact": "1533/100000000000000000000",
+    "minimum_V": -0.0390035145,
+    "maximum_V": 1.89739151,
+    "excursion_charge_score_fC": 0.029684935725585004
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_135.Y",
+    "retained_C_F_exact": "78451/100000000000000000000",
+    "minimum_V": -0.0220710081,
+    "maximum_V": 0.0125064663,
+    "excursion_charge_score_fC": 0.027126374441544
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_262.X",
+    "retained_C_F_exact": "173/12500000000000000000",
+    "minimum_V": -0.049632799,
+    "maximum_V": 1.89938198,
+    "excursion_charge_score_fC": 0.026974364541360003
+  },
+  {
+    "node": "a_71483_73472#",
+    "retained_C_F_exact": "681/50000000000000000000",
+    "minimum_V": -0.0657391244,
+    "maximum_V": 1.90289499,
+    "excursion_charge_score_fC": 0.026812796638128
+  },
+  {
+    "node": "a_72610_69062#",
+    "retained_C_F_exact": "1407/100000000000000000000",
+    "minimum_V": -0.0294572822,
+    "maximum_V": 1.86142122,
+    "excursion_charge_score_fC": 0.026604660525954
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_4_27.X",
+    "retained_C_F_exact": "173/12500000000000000000",
+    "minimum_V": -0.0280912815,
+    "maximum_V": 1.87334035,
+    "excursion_charge_score_fC": 0.026315813779960003
+  },
+  {
+    "node": "a_72698_56710#",
+    "retained_C_F_exact": "1271/100000000000000000000",
+    "minimum_V": -0.0735003448,
+    "maximum_V": 1.89815557,
+    "excursion_charge_score_fC": 0.025059746677108
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_510.A",
+    "retained_C_F_exact": "643/50000000000000000000",
+    "minimum_V": -0.0357658964,
+    "maximum_V": 1.85945621,
+    "excursion_charge_score_fC": 0.024372556288304
+  },
+  {
+    "node": "a_72130_73058#",
+    "retained_C_F_exact": "159/12500000000000000000",
+    "minimum_V": -0.0279217331,
+    "maximum_V": 1.8636236,
+    "excursion_charge_score_fC": 0.024060456637031997
+  },
+  {
+    "node": "a_71982_71506#",
+    "retained_C_F_exact": "309/25000000000000000000",
+    "minimum_V": -0.072521078,
+    "maximum_V": 1.8578104,
+    "excursion_charge_score_fC": 0.02385889706808
+  },
+  {
+    "node": "a_72130_41090#",
+    "retained_C_F_exact": "597/50000000000000000000",
+    "minimum_V": -0.0531728155,
+    "maximum_V": 1.87637543,
+    "excursion_charge_score_fC": 0.023038806051269997
+  },
+  {
+    "node": "a_61403_73472#",
+    "retained_C_F_exact": "67/6250000000000000000",
+    "minimum_V": -0.0628677563,
+    "maximum_V": 1.90139354,
+    "excursion_charge_score_fC": 0.021056881096335998
+  },
+  {
+    "node": "a_72026_63366#",
+    "retained_C_F_exact": "43/4000000000000000000",
+    "minimum_V": -0.05828916,
+    "maximum_V": 1.88163807,
+    "excursion_charge_score_fC": 0.020854217722500002
+  },
+  {
+    "node": "a_72142_74450#",
+    "retained_C_F_exact": "1001/100000000000000000000",
+    "minimum_V": -0.118194551,
+    "maximum_V": 1.91098658,
+    "excursion_charge_score_fC": 0.020312103121309998
+  },
+  {
+    "node": "a_71867_73472#",
+    "retained_C_F_exact": "253/25000000000000000000",
+    "minimum_V": -0.0648993477,
+    "maximum_V": 1.90354554,
+    "excursion_charge_score_fC": 0.019920662263524
+  },
+  {
+    "node": "a_69659_74286#",
+    "retained_C_F_exact": "63/6250000000000000000",
+    "minimum_V": -0.0668102467,
+    "maximum_V": 1.90128944,
+    "excursion_charge_score_fC": 0.019838444841936
+  },
+  {
+    "node": "a_72610_67730#",
+    "retained_C_F_exact": "259/25000000000000000000",
+    "minimum_V": -0.0299332044,
+    "maximum_V": 1.86201189,
+    "excursion_charge_score_fC": 0.019600551177984
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_262.A",
+    "retained_C_F_exact": "1007/100000000000000000000",
+    "minimum_V": -0.0421117967,
+    "maximum_V": 1.89215187,
+    "excursion_charge_score_fC": 0.019478035123668996
+  },
+  {
+    "node": "a_72418_74390#",
+    "retained_C_F_exact": "51/5000000000000000000",
+    "minimum_V": -0.0352064025,
+    "maximum_V": 1.87037366,
+    "excursion_charge_score_fC": 0.0194369166375
+  },
+  {
+    "node": "a_66776_74035#",
+    "retained_C_F_exact": "503/50000000000000000000",
+    "minimum_V": -0.0175994789,
+    "maximum_V": 1.86688324,
+    "excursion_charge_score_fC": 0.018957896152133998
+  },
+  {
+    "node": "a_66430_74343#",
+    "retained_C_F_exact": "3/312500000000000000",
+    "minimum_V": -0.0558837738,
+    "maximum_V": 1.90518649,
+    "excursion_charge_score_fC": 0.018826274532479998
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_403.B",
+    "retained_C_F_exact": "239/25000000000000000000",
+    "minimum_V": -0.0496886769,
+    "maximum_V": 1.90829737,
+    "excursion_charge_score_fC": 0.018718346608364002
+  },
+  {
+    "node": "a_68238_74170#",
+    "retained_C_F_exact": "193/20000000000000000000",
+    "minimum_V": -0.0742836672,
+    "maximum_V": 1.85928029,
+    "excursion_charge_score_fC": 0.01865889218698
+  },
+  {
+    "node": "a_72670_71679#",
+    "retained_C_F_exact": "469/50000000000000000000",
+    "minimum_V": -0.0563123425,
+    "maximum_V": 1.90516373,
+    "excursion_charge_score_fC": 0.018398645560049998
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_392.Y",
+    "retained_C_F_exact": "483/50000000000000000000",
+    "minimum_V": -0.0188823499,
+    "maximum_V": 1.86281029,
+    "excursion_charge_score_fC": 0.018177150901434
+  },
+  {
+    "node": "a_72794_62034#",
+    "retained_C_F_exact": "921/100000000000000000000",
+    "minimum_V": -0.0598682064,
+    "maximum_V": 1.8830306,
+    "excursion_charge_score_fC": 0.017894098006943998
+  },
+  {
+    "node": "a_65742_74170#",
+    "retained_C_F_exact": "229/25000000000000000000",
+    "minimum_V": -0.0725450834,
+    "maximum_V": 1.85638631,
+    "excursion_charge_score_fC": 0.017669011563544
+  },
+  {
+    "node": "a_69272_74035#",
+    "retained_C_F_exact": "117/12500000000000000000",
+    "minimum_V": -0.0181542416,
+    "maximum_V": 1.86630167,
+    "excursion_charge_score_fC": 0.017638507332575996
+  },
+  {
+    "node": "a_63098_73646#",
+    "retained_C_F_exact": "889/100000000000000000000",
+    "minimum_V": -0.0614126486,
+    "maximum_V": 1.8868732,
+    "excursion_charge_score_fC": 0.017320261194054
+  },
+  {
+    "node": "a_62914_73354#",
+    "retained_C_F_exact": "179/20000000000000000000",
+    "minimum_V": -0.0281964868,
+    "maximum_V": 1.86285658,
+    "excursion_charge_score_fC": 0.01692492494786
+  },
+  {
+    "node": "a_61787_73472#",
+    "retained_C_F_exact": "851/100000000000000000000",
+    "minimum_V": -0.0578899874,
+    "maximum_V": 1.89250296,
+    "excursion_charge_score_fC": 0.016597843982374003
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xnor2_1_108.Y",
+    "retained_C_F_exact": "17443/50000000000000000000",
+    "minimum_V": 1.77660545,
+    "maximum_V": 1.82229152,
+    "excursion_charge_score_fC": 0.015938042380200048
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_256.X",
+    "retained_C_F_exact": "809/100000000000000000000",
+    "minimum_V": -0.0371342917,
+    "maximum_V": 1.88805804,
+    "excursion_charge_score_fC": 0.015574805963452997
+  },
+  {
+    "node": "a_65690_74978#",
+    "retained_C_F_exact": "789/100000000000000000000",
+    "minimum_V": -0.0679956598,
+    "maximum_V": 1.89291325,
+    "excursion_charge_score_fC": 0.015471571298322
+  },
+  {
+    "node": "a_62171_73472#",
+    "retained_C_F_exact": "739/100000000000000000000",
+    "minimum_V": -0.0613443889,
+    "maximum_V": 1.89694095,
+    "excursion_charge_score_fC": 0.014471728654471001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_390.A",
+    "retained_C_F_exact": "93/12500000000000000000",
+    "minimum_V": -0.0378458266,
+    "maximum_V": 1.86573717,
+    "excursion_charge_score_fC": 0.014162657494704002
+  },
+  {
+    "node": "a_71746_38426#",
+    "retained_C_F_exact": "73/10000000000000000000",
+    "minimum_V": -0.0524412232,
+    "maximum_V": 1.875091,
+    "excursion_charge_score_fC": 0.01407098522936
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_257.A",
+    "retained_C_F_exact": "703/100000000000000000000",
+    "minimum_V": -0.0565832865,
+    "maximum_V": 1.91386523,
+    "excursion_charge_score_fC": 0.013852253070995
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_291.A",
+    "retained_C_F_exact": "689/100000000000000000000",
+    "minimum_V": -0.0539913867,
+    "maximum_V": 1.91136054,
+    "excursion_charge_score_fC": 0.013541274774962999
+  },
+  {
+    "node": "a_72661_72838#",
+    "retained_C_F_exact": "701/100000000000000000000",
+    "minimum_V": -0.0737920869,
+    "maximum_V": 1.85738122,
+    "excursion_charge_score_fC": 0.013537524881369
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_394.A",
+    "retained_C_F_exact": "701/100000000000000000000",
+    "minimum_V": -0.0339111,
+    "maximum_V": 1.87326557,
+    "excursion_charge_score_fC": 0.0133693084567
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_327.Y",
+    "retained_C_F_exact": "29969/50000000000000000000",
+    "minimum_V": 1.78574906,
+    "maximum_V": 1.80795229,
+    "excursion_charge_score_fC": 0.013308171997399944
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_138.Y",
+    "retained_C_F_exact": "5329/10000000000000000000",
+    "minimum_V": -0.0160372115,
+    "maximum_V": 0.00886954857,
+    "excursion_charge_score_fC": 0.013272812441303
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_383.Y",
+    "retained_C_F_exact": "699/100000000000000000000",
+    "minimum_V": -0.0354799419,
+    "maximum_V": 1.83681222,
+    "excursion_charge_score_fC": 0.013087322211681001
+  },
+  {
+    "node": "a_69626_74978#",
+    "retained_C_F_exact": "663/100000000000000000000",
+    "minimum_V": -0.0712825135,
+    "maximum_V": 1.89862497,
+    "excursion_charge_score_fC": 0.013060486615604999
+  },
+  {
+    "node": "a_71746_39758#",
+    "retained_C_F_exact": "319/50000000000000000000",
+    "minimum_V": -0.0520149654,
+    "maximum_V": 1.87225829,
+    "excursion_charge_score_fC": 0.012276863369452
+  },
+  {
+    "node": "a_71847_71407#",
+    "retained_C_F_exact": "149/25000000000000000000",
+    "minimum_V": -0.0978528137,
+    "maximum_V": 1.88330976,
+    "excursion_charge_score_fC": 0.011807728939252
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_395.Y",
+    "retained_C_F_exact": "39/6250000000000000000",
+    "minimum_V": -0.0322843394,
+    "maximum_V": 1.84969479,
+    "excursion_charge_score_fC": 0.011743549767456
+  },
+  {
+    "node": "a_66675_73648#",
+    "retained_C_F_exact": "783/100000000000000000000",
+    "minimum_V": 0.553439817,
+    "maximum_V": 1.98687266,
+    "excursion_charge_score_fC": 0.011223779160690001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_133.B",
+    "retained_C_F_exact": "2153/6250000000000000000",
+    "minimum_V": 1.78104182,
+    "maximum_V": 1.81169783,
+    "excursion_charge_score_fC": 0.010560382324799984
+  },
+  {
+    "node": "a_71458_71726#",
+    "retained_C_F_exact": "273/50000000000000000000",
+    "minimum_V": -0.0300079748,
+    "maximum_V": 1.86710889,
+    "excursion_charge_score_fC": 0.010358258081808
+  },
+  {
+    "node": "a_68926_74343#",
+    "retained_C_F_exact": "517/100000000000000000000",
+    "minimum_V": -0.0530349864,
+    "maximum_V": 1.90680471,
+    "excursion_charge_score_fC": 0.010132371230388
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_294.A",
+    "retained_C_F_exact": "471/100000000000000000000",
+    "minimum_V": -0.0308573812,
+    "maximum_V": 1.87955579,
+    "excursion_charge_score_fC": 0.008998046036352
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_16_16.A",
+    "retained_C_F_exact": "119/25000000000000000000",
+    "minimum_V": -0.0175226678,
+    "maximum_V": 1.83975448,
+    "excursion_charge_score_fC": 0.008840639223528
+  },
+  {
+    "node": "a_72155_74804#",
+    "retained_C_F_exact": "423/100000000000000000000",
+    "minimum_V": -0.0721975952,
+    "maximum_V": 1.90958294,
+    "excursion_charge_score_fC": 0.008382931663896
+  },
+  {
+    "node": "a_59650_73354#",
+    "retained_C_F_exact": "421/100000000000000000000",
+    "minimum_V": -0.0799949688,
+    "maximum_V": 1.905683,
+    "excursion_charge_score_fC": 0.008359704248647999
+  },
+  {
+    "node": "a_65506_74686#",
+    "retained_C_F_exact": "43/10000000000000000000",
+    "minimum_V": -0.0343371635,
+    "maximum_V": 1.86750475,
+    "excursion_charge_score_fC": 0.00817792022805
+  },
+  {
+    "node": "a_68507_74804#",
+    "retained_C_F_exact": "53/12500000000000000000",
+    "minimum_V": -0.0398600159,
+    "maximum_V": 1.88725814,
+    "excursion_charge_score_fC": 0.008170980981016
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_256.B",
+    "retained_C_F_exact": "11123/50000000000000000000",
+    "minimum_V": -0.0190642243,
+    "maximum_V": 0.0168972651,
+    "excursion_charge_score_fC": 0.007999992931924
+  },
+  {
+    "node": "a_70402_74686#",
+    "retained_C_F_exact": "397/100000000000000000000",
+    "minimum_V": -0.0714912827,
+    "maximum_V": 1.90799701,
+    "excursion_charge_score_fC": 0.007858568522018999
+  },
+  {
+    "node": "a_73095_73058#",
+    "retained_C_F_exact": "197/50000000000000000000",
+    "minimum_V": -0.0809840501,
+    "maximum_V": 1.90122945,
+    "excursion_charge_score_fC": 0.007809921190393999
+  },
+  {
+    "node": "a_71458_34430#",
+    "retained_C_F_exact": "199/50000000000000000000",
+    "minimum_V": -0.0492027254,
+    "maximum_V": 1.87505023,
+    "excursion_charge_score_fC": 0.007658526762491999
+  },
+  {
+    "node": "a_60698_75354#",
+    "retained_C_F_exact": "77/20000000000000000000",
+    "minimum_V": -0.0591966206,
+    "maximum_V": 1.88298069,
+    "excursion_charge_score_fC": 0.00747738264581
+  },
+  {
+    "node": "a_60248_73689#",
+    "retained_C_F_exact": "79/20000000000000000000",
+    "minimum_V": -0.0175973628,
+    "maximum_V": 1.86447567,
+    "excursion_charge_score_fC": 0.00743418847956
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_151.D",
+    "retained_C_F_exact": "183/50000000000000000000",
+    "minimum_V": -0.043110263,
+    "maximum_V": 1.87687542,
+    "excursion_charge_score_fC": 0.00702714759978
+  },
+  {
+    "node": "a_71458_61070#",
+    "retained_C_F_exact": "37/10000000000000000000",
+    "minimum_V": -0.0302068146,
+    "maximum_V": 1.86541443,
+    "excursion_charge_score_fC": 0.00701379860502
+  },
+  {
+    "node": "a_71162_36346#",
+    "retained_C_F_exact": "11/3125000000000000000",
+    "minimum_V": -0.0743790507,
+    "maximum_V": 1.89788997,
+    "excursion_charge_score_fC": 0.0069423869528639996
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_2_30.Y",
+    "retained_C_F_exact": "21/6250000000000000000",
+    "minimum_V": -0.103229693,
+    "maximum_V": 1.95101519,
+    "excursion_charge_score_fC": 0.00690226280688
+  },
+  {
+    "node": "a_67971_74882#",
+    "retained_C_F_exact": "183/50000000000000000000",
+    "minimum_V": -0.0241505186,
+    "maximum_V": 1.85700581,
+    "excursion_charge_score_fC": 0.006885032162675999
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_127.Y",
+    "retained_C_F_exact": "1217/4000000000000000000",
+    "minimum_V": 1.78553838,
+    "maximum_V": 1.80805026,
+    "excursion_charge_score_fC": 0.006849239489999978
+  },
+  {
+    "node": "a_71000_75021#",
+    "retained_C_F_exact": "353/100000000000000000000",
+    "minimum_V": -0.0178377917,
+    "maximum_V": 1.86602232,
+    "excursion_charge_score_fC": 0.006650026194301
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_512.B",
+    "retained_C_F_exact": "517/1562500000000000000",
+    "minimum_V": -0.00949119687,
+    "maximum_V": 0.0102394504,
+    "excursion_charge_score_fC": 0.0065284765686976
+  },
+  {
+    "node": "a_66178_73058#",
+    "retained_C_F_exact": "81/25000000000000000000",
+    "minimum_V": -0.0811387806,
+    "maximum_V": 1.9028871,
+    "excursion_charge_score_fC": 0.006428243853144
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_2_39.A1",
+    "retained_C_F_exact": "83/25000000000000000000",
+    "minimum_V": -0.0402883559,
+    "maximum_V": 1.87825131,
+    "excursion_charge_score_fC": 0.006369551690788
+  },
+  {
+    "node": "a_69831_75069#",
+    "retained_C_F_exact": "39/12500000000000000000",
+    "minimum_V": -0.109682323,
+    "maximum_V": 1.87422026,
+    "excursion_charge_score_fC": 0.006189776058959999
+  },
+  {
+    "node": "a_73016_71371#",
+    "retained_C_F_exact": "163/50000000000000000000",
+    "minimum_V": -0.0178281768,
+    "maximum_V": 1.86834099,
+    "excursion_charge_score_fC": 0.006148911483768
+  },
+  {
+    "node": "a_60443_74804#",
+    "retained_C_F_exact": "323/100000000000000000000",
+    "minimum_V": -0.0243541942,
+    "maximum_V": 1.8720437,
+    "excursion_charge_score_fC": 0.006125365198266001
+  },
+  {
+    "node": "a_69966_74971#",
+    "retained_C_F_exact": "79/25000000000000000000",
+    "minimum_V": -0.0745307551,
+    "maximum_V": 1.86100498,
+    "excursion_charge_score_fC": 0.006116292922916
+  },
+  {
+    "node": "a_71258_61658#",
+    "retained_C_F_exact": "293/100000000000000000000",
+    "minimum_V": -0.0590868002,
+    "maximum_V": 1.88728291,
+    "excursion_charge_score_fC": 0.005702863250885999
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_158.D",
+    "retained_C_F_exact": "59/20000000000000000000",
+    "minimum_V": -0.0430687161,
+    "maximum_V": 1.87939699,
+    "excursion_charge_score_fC": 0.005671273832995
+  },
+  {
+    "node": "a_65402_72690#",
+    "retained_C_F_exact": "289/100000000000000000000",
+    "minimum_V": -0.063451246,
+    "maximum_V": 1.89279224,
+    "excursion_charge_score_fC": 0.00565354367454
+  },
+  {
+    "node": "a_71483_72954#",
+    "retained_C_F_exact": "57/20000000000000000000",
+    "minimum_V": -0.0575287439,
+    "maximum_V": 1.87250124,
+    "excursion_charge_score_fC": 0.0055005854541150005
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_92.A",
+    "retained_C_F_exact": "34501/100000000000000000000",
+    "minimum_V": -0.00833617462,
+    "maximum_V": 0.00746507396,
+    "excursion_charge_score_fC": 0.0054515887725858
+  },
+  {
+    "node": "a_69442_74686#",
+    "retained_C_F_exact": "281/100000000000000000000",
+    "minimum_V": -0.0349177393,
+    "maximum_V": 1.86906418,
+    "excursion_charge_score_fC": 0.005350189193233001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_2_69.A",
+    "retained_C_F_exact": "4601/100000000000000000000",
+    "minimum_V": 1.73680249,
+    "maximum_V": 1.85184565,
+    "excursion_charge_score_fC": 0.0052931357915999965
+  },
+  {
+    "node": "a_63995_72954#",
+    "retained_C_F_exact": "267/100000000000000000000",
+    "minimum_V": -0.0602722588,
+    "maximum_V": 1.90122761,
+    "excursion_charge_score_fC": 0.005237204649696001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_398.A",
+    "retained_C_F_exact": "273/100000000000000000000",
+    "minimum_V": -0.0369262243,
+    "maximum_V": 1.85227073,
+    "excursion_charge_score_fC": 0.0051575076852390005
+  },
+  {
+    "node": "a_69166_74690#",
+    "retained_C_F_exact": "257/100000000000000000000",
+    "minimum_V": -0.102092662,
+    "maximum_V": 1.90015519,
+    "excursion_charge_score_fC": 0.0051457769796400005
+  },
+  {
+    "node": "a_70139_72954#",
+    "retained_C_F_exact": "13/5000000000000000000",
+    "minimum_V": -0.0637135998,
+    "maximum_V": 1.91082801,
+    "excursion_charge_score_fC": 0.00513380818548
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_395.B",
+    "retained_C_F_exact": "269/100000000000000000000",
+    "minimum_V": -0.0315279715,
+    "maximum_V": 1.84556048,
+    "excursion_charge_score_fC": 0.005049367934535
+  },
+  {
+    "node": "a_59834_72690#",
+    "retained_C_F_exact": "247/100000000000000000000",
+    "minimum_V": -0.0784716447,
+    "maximum_V": 1.89897694,
+    "excursion_charge_score_fC": 0.004884298004209
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_2_39.B1",
+    "retained_C_F_exact": "12223/100000000000000000000",
+    "minimum_V": -0.0193846341,
+    "maximum_V": 0.0203567814,
+    "excursion_charge_score_fC": 0.004857593216565
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_197.Y",
+    "retained_C_F_exact": "15861/25000000000000000000",
+    "minimum_V": -0.00483710394,
+    "maximum_V": 0.00267936989,
+    "excursion_charge_score_fC": 0.0047687516567052
+  },
+  {
+    "node": "a_65218_73058#",
+    "retained_C_F_exact": "121/50000000000000000000",
+    "minimum_V": -0.0280166067,
+    "maximum_V": 1.86370135,
+    "excursion_charge_score_fC": 0.004577957455214
+  },
+  {
+    "node": "a_64763_74804#",
+    "retained_C_F_exact": "241/100000000000000000000",
+    "minimum_V": -0.0251593015,
+    "maximum_V": 1.87374678,
+    "excursion_charge_score_fC": 0.004576363656415
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_360.A2",
+    "retained_C_F_exact": "69/1000000000000000000",
+    "minimum_V": 1.76803877,
+    "maximum_V": 1.8315108,
+    "excursion_charge_score_fC": 0.004379570070000001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xnor2_1_48.A",
+    "retained_C_F_exact": "7663/25000000000000000000",
+    "minimum_V": 1.79281247,
+    "maximum_V": 1.80699812,
+    "excursion_charge_score_fC": 0.004348185437999981
+  },
+  {
+    "node": "a_66776_72703#",
+    "retained_C_F_exact": "23/10000000000000000000",
+    "minimum_V": -0.0179672955,
+    "maximum_V": 1.86718517,
+    "excursion_charge_score_fC": 0.0043358506706499995
+  },
+  {
+    "node": "a_59902_73483#",
+    "retained_C_F_exact": "209/100000000000000000000",
+    "minimum_V": -0.0532590432,
+    "maximum_V": 1.90481974,
+    "excursion_charge_score_fC": 0.004092384656888
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_394.B",
+    "retained_C_F_exact": "13/6250000000000000000",
+    "minimum_V": -0.0573777334,
+    "maximum_V": 1.88381167,
+    "excursion_charge_score_fC": 0.004037673959072
+  },
+  {
+    "node": "a_72418_61070#",
+    "retained_C_F_exact": "789/25000000000000000000",
+    "minimum_V": -0.0708245888,
+    "maximum_V": 0.0560256587,
+    "excursion_charge_score_fC": 0.004003393811100001
+  },
+  {
+    "node": "a_72423_34430#",
+    "retained_C_F_exact": "3121/100000000000000000000",
+    "minimum_V": -0.0727679973,
+    "maximum_V": 0.0534136319,
+    "excursion_charge_score_fC": 0.0039381286473320004
+  },
+  {
+    "node": "a_72794_68694#",
+    "retained_C_F_exact": "39/20000000000000000000",
+    "minimum_V": -0.0600213034,
+    "maximum_V": 1.88261199,
+    "excursion_charge_score_fC": 0.0037881349221300007
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_512.A",
+    "retained_C_F_exact": "35443/100000000000000000000",
+    "minimum_V": -0.00554649292,
+    "maximum_V": 0.0045691354,
+    "excursion_charge_score_fC": 0.0035852821454576
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_400.B",
+    "retained_C_F_exact": "181/100000000000000000000",
+    "minimum_V": -0.054538635,
+    "maximum_V": 1.90356226,
+    "excursion_charge_score_fC": 0.0035441626199499998
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xor2_1_14.A",
+    "retained_C_F_exact": "4241/50000000000000000000",
+    "minimum_V": -0.021394117,
+    "maximum_V": 0.019958851,
+    "excursion_charge_score_fC": 0.0035075587457600007
+  },
+  {
+    "node": "a_59579_74286#",
+    "retained_C_F_exact": "339/1562500000000000000",
+    "minimum_V": 1.78971502,
+    "maximum_V": 1.80574638,
+    "excursion_charge_score_fC": 0.003478163865599987
+  },
+  {
+    "node": "a_72519_40771#",
+    "retained_C_F_exact": "2263/100000000000000000000",
+    "minimum_V": 1.74253804,
+    "maximum_V": 1.89438083,
+    "excursion_charge_score_fC": 0.0034362023377000027
+  },
+  {
+    "node": "a_72334_65126#",
+    "retained_C_F_exact": "1147/50000000000000000000",
+    "minimum_V": 1.72031773,
+    "maximum_V": 1.86777804,
+    "excursion_charge_score_fC": 0.0033827395113999958
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_124.A",
+    "retained_C_F_exact": "28553/100000000000000000000",
+    "minimum_V": -0.00741226857,
+    "maximum_V": 0.00430117075,
+    "excursion_charge_score_fC": 0.0033445383290395996
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_2_69.B",
+    "retained_C_F_exact": "3077/50000000000000000000",
+    "minimum_V": 1.76718757,
+    "maximum_V": 1.82109287,
+    "excursion_charge_score_fC": 0.003317332162000003
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_261.A",
+    "retained_C_F_exact": "4577/100000000000000000000",
+    "minimum_V": 1.76339598,
+    "maximum_V": 1.83453654,
+    "excursion_charge_score_fC": 0.003256103431199996
+  },
+  {
+    "node": "a_70023_75722#",
+    "retained_C_F_exact": "81/50000000000000000000",
+    "minimum_V": -0.0736672961,
+    "maximum_V": 1.90631745,
+    "excursion_charge_score_fC": 0.003207575288682
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_382.A",
+    "retained_C_F_exact": "81/50000000000000000000",
+    "minimum_V": -0.0502374431,
+    "maximum_V": 1.90778985,
+    "excursion_charge_score_fC": 0.0031720042148219996
+  },
+  {
+    "node": "a_73349_73002#",
+    "retained_C_F_exact": "39/25000000000000000000",
+    "minimum_V": -0.0571645883,
+    "maximum_V": 1.90641779,
+    "excursion_charge_score_fC": 0.003063188510148
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_276.A",
+    "retained_C_F_exact": "4441/100000000000000000000",
+    "minimum_V": -0.034062436,
+    "maximum_V": 0.0348741927,
+    "excursion_charge_score_fC": 0.003061475680567
+  },
+  {
+    "node": "a_71842_63734#",
+    "retained_C_F_exact": "153/100000000000000000000",
+    "minimum_V": -0.0305451008,
+    "maximum_V": 1.86271678,
+    "excursion_charge_score_fC": 0.002896690677624
+  },
+  {
+    "node": "a_72334_67790#",
+    "retained_C_F_exact": "1931/100000000000000000000",
+    "minimum_V": 1.72095368,
+    "maximum_V": 1.8663479,
+    "excursion_charge_score_fC": 0.0028075623882000003
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_14.A",
+    "retained_C_F_exact": "6269/100000000000000000000",
+    "minimum_V": -0.0238404673,
+    "maximum_V": 0.0209137602,
+    "excursion_charge_score_fC": 0.0028056425219750002
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xnor2_1_60.A",
+    "retained_C_F_exact": "24197/100000000000000000000",
+    "minimum_V": 1.79289935,
+    "maximum_V": 1.80406547,
+    "excursion_charge_score_fC": 0.002701866056400041
+  },
+  {
+    "node": "a_64942_73118#",
+    "retained_C_F_exact": "17/12500000000000000000",
+    "minimum_V": -0.0627742188,
+    "maximum_V": 1.86646016,
+    "excursion_charge_score_fC": 0.002623758755168
+  },
+  {
+    "node": "a_72334_69122#",
+    "retained_C_F_exact": "7/390625000000000000",
+    "minimum_V": 1.72103478,
+    "maximum_V": 1.86651785,
+    "excursion_charge_score_fC": 0.002607056614399997
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_254.X",
+    "retained_C_F_exact": "133/100000000000000000000",
+    "minimum_V": -0.0406615276,
+    "maximum_V": 1.88399167,
+    "excursion_charge_score_fC": 0.002559788752808
+  },
+  {
+    "node": "a_70654_74815#",
+    "retained_C_F_exact": "13/10000000000000000000",
+    "minimum_V": -0.0539950523,
+    "maximum_V": 1.90957982,
+    "excursion_charge_score_fC": 0.00255264733399
+  },
+  {
+    "node": "a_67435_74686#",
+    "retained_C_F_exact": "87/50000000000000000000",
+    "minimum_V": -0.011659767,
+    "maximum_V": 1.42762441,
+    "excursion_charge_score_fC": 0.00250435446798
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_255.X",
+    "retained_C_F_exact": "57/50000000000000000000",
+    "minimum_V": -0.0547801799,
+    "maximum_V": 1.91214552,
+    "excursion_charge_score_fC": 0.0022422952978859998
+  },
+  {
+    "node": "a_72238_57134#",
+    "retained_C_F_exact": "1719/100000000000000000000",
+    "minimum_V": 1.71844843,
+    "maximum_V": 1.84808111,
+    "excursion_charge_score_fC": 0.002228385769200001
+  },
+  {
+    "node": "a_73745_72703#",
+    "retained_C_F_exact": "29/25000000000000000000",
+    "minimum_V": -0.0163376693,
+    "maximum_V": 1.85727107,
+    "excursion_charge_score_fC": 0.002173386137588
+  },
+  {
+    "node": "a_72706_38426#",
+    "retained_C_F_exact": "211/12500000000000000000",
+    "minimum_V": -0.0740489107,
+    "maximum_V": 0.0535339824,
+    "excursion_charge_score_fC": 0.0021535992355279994
+  },
+  {
+    "node": "a_72135_39439#",
+    "retained_C_F_exact": "1407/100000000000000000000",
+    "minimum_V": 1.74265102,
+    "maximum_V": 1.89484066,
+    "excursion_charge_score_fC": 0.0021413082348000004
+  },
+  {
+    "node": "a_66430_73011#",
+    "retained_C_F_exact": "109/100000000000000000000",
+    "minimum_V": -0.05590376,
+    "maximum_V": 1.90577202,
+    "excursion_charge_score_fC": 0.0021382266002
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_124.B",
+    "retained_C_F_exact": "29953/100000000000000000000",
+    "minimum_V": -0.00450634458,
+    "maximum_V": 0.00249837406,
+    "excursion_charge_score_fC": 0.0020981233742392003
+  },
+  {
+    "node": "a_72602_74022#",
+    "retained_C_F_exact": "21/20000000000000000000",
+    "minimum_V": -0.0698266617,
+    "maximum_V": 1.89977362,
+    "excursion_charge_score_fC": 0.0020680802957849997
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_314.X",
+    "retained_C_F_exact": "81/2000000000000000000",
+    "minimum_V": -0.023187884,
+    "maximum_V": 0.027543044,
+    "excursion_charge_score_fC": 0.002054602584
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_2_37.A2",
+    "retained_C_F_exact": "2699/100000000000000000000",
+    "minimum_V": 1.76691894,
+    "maximum_V": 1.84300538,
+    "excursion_charge_score_fC": 0.0020535730155999965
+  },
+  {
+    "node": "a_72231_63415#",
+    "retained_C_F_exact": "11/781250000000000000",
+    "minimum_V": 1.7337209,
+    "maximum_V": 1.87806402,
+    "excursion_charge_score_fC": 0.002032351129600001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_261.A",
+    "retained_C_F_exact": "13/12500000000000000000",
+    "minimum_V": -0.0460654849,
+    "maximum_V": 1.89842567,
+    "excursion_charge_score_fC": 0.002022270801096
+  },
+  {
+    "node": "a_72706_39758#",
+    "retained_C_F_exact": "397/25000000000000000000",
+    "minimum_V": -0.0738691571,
+    "maximum_V": 0.0528987227,
+    "excursion_charge_score_fC": 0.0020130739312239996
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_261.X",
+    "retained_C_F_exact": "51/50000000000000000000",
+    "minimum_V": -0.0547326289,
+    "maximum_V": 1.91113216,
+    "excursion_charge_score_fC": 0.002005182084678
+  },
+  {
+    "node": "a_59650_73058#",
+    "retained_C_F_exact": "103/100000000000000000000",
+    "minimum_V": -0.0546001579,
+    "maximum_V": 1.87719466,
+    "excursion_charge_score_fC": 0.0019897486624369997
+  },
+  {
+    "node": "a_70277_75666#",
+    "retained_C_F_exact": "1/1000000000000000000",
+    "minimum_V": -0.0542779558,
+    "maximum_V": 1.90860401,
+    "excursion_charge_score_fC": 0.0019628819658
+  },
+  {
+    "node": "a_72135_38107#",
+    "retained_C_F_exact": "1257/100000000000000000000",
+    "minimum_V": 1.74119457,
+    "maximum_V": 1.89695801,
+    "excursion_charge_score_fC": 0.001957946440800001
+  },
+  {
+    "node": "a_72034_61366#",
+    "retained_C_F_exact": "467/50000000000000000000",
+    "minimum_V": 1.68672098,
+    "maximum_V": 1.89413426,
+    "excursion_charge_score_fC": 0.001937240035199999
+  },
+  {
+    "node": "a_72334_62462#",
+    "retained_C_F_exact": "1239/100000000000000000000",
+    "minimum_V": 1.72005987,
+    "maximum_V": 1.86795269,
+    "excursion_charge_score_fC": 0.0018323920398000003
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_306.A",
+    "retained_C_F_exact": "773/20000000000000000000",
+    "minimum_V": -0.0235403637,
+    "maximum_V": 0.02235973,
+    "excursion_charge_score_fC": 0.0017740386215050002
+  },
+  {
+    "node": "a_71943_36058#",
+    "retained_C_F_exact": "129/10000000000000000000",
+    "minimum_V": -0.0731238631,
+    "maximum_V": 0.05270623,
+    "excursion_charge_score_fC": 0.0016232082009900001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_405.B",
+    "retained_C_F_exact": "861/12500000000000000000",
+    "minimum_V": -0.017329361,
+    "maximum_V": 0.00597422534,
+    "excursion_charge_score_fC": 0.0016051510270992
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_149.A",
+    "retained_C_F_exact": "9223/50000000000000000000",
+    "minimum_V": -0.0055548661,
+    "maximum_V": 0.00307774576,
+    "excursion_charge_score_fC": 0.0015923715836955999
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_2_38.A1",
+    "retained_C_F_exact": "5401/100000000000000000000",
+    "minimum_V": 1.78534361,
+    "maximum_V": 1.81326421,
+    "excursion_charge_score_fC": 0.0015079916060000038
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_180.A1",
+    "retained_C_F_exact": "197/5000000000000000000",
+    "minimum_V": 1.78003119,
+    "maximum_V": 1.81755856,
+    "excursion_charge_score_fC": 0.0014785783779999936
+  },
+  {
+    "node": "a_71854_41150#",
+    "retained_C_F_exact": "1057/100000000000000000000",
+    "minimum_V": 1.71825943,
+    "maximum_V": 1.84813634,
+    "excursion_charge_score_fC": 0.001372798938699999
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_286.A",
+    "retained_C_F_exact": "2119/50000000000000000000",
+    "minimum_V": -0.0160392127,
+    "maximum_V": 0.0154858446,
+    "excursion_charge_score_fC": 0.001336031928374
+  },
+  {
+    "node": "a_72270_39538#",
+    "retained_C_F_exact": "427/20000000000000000000",
+    "minimum_V": -0.0338726627,
+    "maximum_V": 0.028475348,
+    "excursion_charge_score_fC": 0.0013311300284449999
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_276.X",
+    "retained_C_F_exact": "887/25000000000000000000",
+    "minimum_V": -0.0137382235,
+    "maximum_V": 0.023310788,
+    "excursion_charge_score_fC": 0.00131449892802
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_122.Y",
+    "retained_C_F_exact": "16939/100000000000000000000",
+    "minimum_V": -0.00497987804,
+    "maximum_V": 0.00277202555,
+    "excursion_charge_score_fC": 0.0013130949491100999
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_137.Y",
+    "retained_C_F_exact": "13163/100000000000000000000",
+    "minimum_V": 1.7937977,
+    "maximum_V": 1.80347494,
+    "excursion_charge_score_fC": 0.001273815101200004
+  },
+  {
+    "node": "a_61474_75722#",
+    "retained_C_F_exact": "199/20000000000000000000",
+    "minimum_V": -0.0700081963,
+    "maximum_V": 0.0579141955,
+    "excursion_charge_score_fC": 0.00127282779841
+  },
+  {
+    "node": "a_72270_38206#",
+    "retained_C_F_exact": "2011/100000000000000000000",
+    "minimum_V": -0.0339970685,
+    "maximum_V": 0.0285240519,
+    "excursion_charge_score_fC": 0.0012572997312439997
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_256.A",
+    "retained_C_F_exact": "9727/100000000000000000000",
+    "minimum_V": -0.00349349905,
+    "maximum_V": 0.00931543461,
+    "excursion_charge_score_fC": 0.0012459249771081997
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_302.X",
+    "retained_C_F_exact": "301/4000000000000000000",
+    "minimum_V": -0.00828879071,
+    "maximum_V": 0.00759779878,
+    "excursion_charge_score_fC": 0.0011954658591224999
+  },
+  {
+    "node": "a_71847_60751#",
+    "retained_C_F_exact": "687/100000000000000000000",
+    "minimum_V": 1.71929505,
+    "maximum_V": 1.89322596,
+    "excursion_charge_score_fC": 0.0011949053517000012
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_31.A1",
+    "retained_C_F_exact": "31353/100000000000000000000",
+    "minimum_V": -0.00242385841,
+    "maximum_V": 0.0013430677,
+    "excursion_charge_score_fC": 0.0011810443432682999
+  },
+  {
+    "node": "a_63874_73354#",
+    "retained_C_F_exact": "901/100000000000000000000",
+    "minimum_V": -0.0703560161,
+    "maximum_V": 0.0570620377,
+    "excursion_charge_score_fC": 0.001148036664738
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_217.A",
+    "retained_C_F_exact": "5019/100000000000000000000",
+    "minimum_V": -0.0116196848,
+    "maximum_V": 0.0110804798,
+    "excursion_charge_score_fC": 0.001139321261274
+  },
+  {
+    "node": "a_72366_63514#",
+    "retained_C_F_exact": "363/20000000000000000000",
+    "minimum_V": -0.0325029326,
+    "maximum_V": 0.0295719227,
+    "excursion_charge_score_fC": 0.0011266586236949997
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_165.B1",
+    "retained_C_F_exact": "4129/100000000000000000000",
+    "minimum_V": 1.78632726,
+    "maximum_V": 1.81227879,
+    "excursion_charge_score_fC": 0.0010715386736999978
+  },
+  {
+    "node": "a_63303_73737#",
+    "retained_C_F_exact": "123/20000000000000000000",
+    "minimum_V": 1.72359937,
+    "maximum_V": 1.88959349,
+    "excursion_charge_score_fC": 0.0010208638379999994
+  },
+  {
+    "node": "a_72677_34374#",
+    "retained_C_F_exact": "1109/50000000000000000000",
+    "minimum_V": 1.77746189,
+    "maximum_V": 1.82332076,
+    "excursion_charge_score_fC": 0.0010171497366
+  },
+  {
+    "node": "a_62638_73358#",
+    "retained_C_F_exact": "351/50000000000000000000",
+    "minimum_V": 1.72129526,
+    "maximum_V": 1.86572463,
+    "excursion_charge_score_fC": 0.0010138941774000007
+  },
+  {
+    "node": "a_72670_61023#",
+    "retained_C_F_exact": "69/3125000000000000000",
+    "minimum_V": 1.77715335,
+    "maximum_V": 1.82275945,
+    "excursion_charge_score_fC": 0.0010069826879999973
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_316.B",
+    "retained_C_F_exact": "491/10000000000000000000",
+    "minimum_V": -0.0109930878,
+    "maximum_V": 0.0095124944,
+    "excursion_charge_score_fC": 0.00100682408602
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_321.A",
+    "retained_C_F_exact": "3839/50000000000000000000",
+    "minimum_V": -0.00806999881,
+    "maximum_V": 0.00478217923,
+    "excursion_charge_score_fC": 0.0009867902299112
+  },
+  {
+    "node": "a_71746_69358#",
+    "retained_C_F_exact": "157/20000000000000000000",
+    "minimum_V": -0.0685458973,
+    "maximum_V": 0.0568052323,
+    "excursion_charge_score_fC": 0.00098400636736
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_313.A",
+    "retained_C_F_exact": "2009/50000000000000000000",
+    "minimum_V": -0.014193448,
+    "maximum_V": 0.0100673627,
+    "excursion_charge_score_fC": 0.0009747993739260001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_347.Y",
+    "retained_C_F_exact": "3847/50000000000000000000",
+    "minimum_V": -0.00658316459,
+    "maximum_V": 0.00601861541,
+    "excursion_charge_score_fC": 0.0009695809532000001
+  },
+  {
+    "node": "a_71848_34111#",
+    "retained_C_F_exact": "37/6250000000000000000",
+    "minimum_V": 1.74170453,
+    "maximum_V": 1.89606116,
+    "excursion_charge_score_fC": 0.0009137912495999994
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_4_57.B",
+    "retained_C_F_exact": "2821/25000000000000000000",
+    "minimum_V": -0.00419965711,
+    "maximum_V": 0.00313693034,
+    "excursion_charge_score_fC": 0.000827860527858
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_47.D",
+    "retained_C_F_exact": "791/10000000000000000000",
+    "minimum_V": -0.00529429554,
+    "maximum_V": 0.00457288775,
+    "excursion_charge_score_fC": 0.000780494198239
+  },
+  {
+    "node": "TRACKING",
+    "retained_C_F_exact": "4191/100000000000000000000",
+    "minimum_V": -0.0098974243,
+    "maximum_V": 0.00869830216,
+    "excursion_charge_score_fC": 0.0007793468959386001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_78.Q",
+    "retained_C_F_exact": "69/2000000000000000000",
+    "minimum_V": -0.0116928703,
+    "maximum_V": 0.0107895945,
+    "excursion_charge_score_fC": 0.0007756450355999999
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_8_147.A",
+    "retained_C_F_exact": "4427/100000000000000000000",
+    "minimum_V": -0.00889668669,
+    "maximum_V": 0.00845030343,
+    "excursion_charge_score_fC": 0.0007679512526124001
+  },
+  {
+    "node": "a_72427_64030#",
+    "retained_C_F_exact": "1051/100000000000000000000",
+    "minimum_V": 1.31368505,
+    "maximum_V": 1.383662,
+    "excursion_charge_score_fC": 0.0007354577445000004
+  },
+  {
+    "node": "a_61403_74286#",
+    "retained_C_F_exact": "5253/100000000000000000000",
+    "minimum_V": 1.79293739,
+    "maximum_V": 1.80638717,
+    "excursion_charge_score_fC": 0.0007065169433999982
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_2_69.Y",
+    "retained_C_F_exact": "463/12500000000000000000",
+    "minimum_V": -0.00895134612,
+    "maximum_V": 0.0098213104,
+    "excursion_charge_score_fC": 0.0006953391975008
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_309.Y",
+    "retained_C_F_exact": "2541/100000000000000000000",
+    "minimum_V": -0.0139255055,
+    "maximum_V": 0.0128605417,
+    "excursion_charge_score_fC": 0.0006806334593520001
+  },
+  {
+    "node": "a_72654_40870#",
+    "retained_C_F_exact": "539/50000000000000000000",
+    "minimum_V": -0.0339460529,
+    "maximum_V": 0.0286600774,
+    "excursion_charge_score_fC": 0.000674894084634
+  },
+  {
+    "node": "a_72999_62083#",
+    "retained_C_F_exact": "197/50000000000000000000",
+    "minimum_V": 1.72448203,
+    "maximum_V": 1.89100646,
+    "excursion_charge_score_fC": 0.0006561062541999998
+  },
+  {
+    "node": "a_71982_60850#",
+    "retained_C_F_exact": "869/100000000000000000000",
+    "minimum_V": -0.0323137811,
+    "maximum_V": 0.0305192052,
+    "excursion_charge_score_fC": 0.0005460186509470001
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_3.A",
+    "retained_C_F_exact": "39/3125000000000000000",
+    "minimum_V": -0.021866519,
+    "maximum_V": 0.01957538,
+    "excursion_charge_score_fC": 0.00051719489952
+  },
+  {
+    "node": "a_65895_75069#",
+    "retained_C_F_exact": "293/100000000000000000000",
+    "minimum_V": 1.71798731,
+    "maximum_V": 1.89324471,
+    "excursion_charge_score_fC": 0.000513504182
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_318.A2",
+    "retained_C_F_exact": "1647/25000000000000000000",
+    "minimum_V": 1.79634889,
+    "maximum_V": 1.80386942,
+    "excursion_charge_score_fC": 0.0004954525164000053
+  },
+  {
+    "node": "a_66466_74686#",
+    "retained_C_F_exact": "97/25000000000000000000",
+    "minimum_V": -0.0714087283,
+    "maximum_V": 0.0560085004,
+    "excursion_charge_score_fC": 0.000494378847356
+  },
+  {
+    "node": "a_71650_57370#",
+    "retained_C_F_exact": "379/100000000000000000000",
+    "minimum_V": -0.0715257425,
+    "maximum_V": 0.0548808415,
+    "excursion_charge_score_fC": 0.00047908095335999994
+  },
+  {
+    "node": "a_72235_66694#",
+    "retained_C_F_exact": "707/100000000000000000000",
+    "minimum_V": 1.31249039,
+    "maximum_V": 1.37960531,
+    "excursion_charge_score_fC": 0.00047450248440000054
+  },
+  {
+    "node": "a_72197_36196#",
+    "retained_C_F_exact": "247/25000000000000000000",
+    "minimum_V": 1.77737334,
+    "maximum_V": 1.82400606,
+    "excursion_charge_score_fC": 0.00046073127360000076
+  },
+  {
+    "node": "a_71989_34210#",
+    "retained_C_F_exact": "11/1562500000000000000",
+    "minimum_V": -0.0344651856,
+    "maximum_V": 0.0289400314,
+    "excursion_charge_score_fC": 0.00044637272767999997
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_199.Y",
+    "retained_C_F_exact": "89/25000000000000000000",
+    "minimum_V": 1.73108915,
+    "maximum_V": 1.84940842,
+    "excursion_charge_score_fC": 0.00042121660119999997
+  },
+  {
+    "node": "CONFIG_BUSY",
+    "retained_C_F_exact": "7439/100000000000000000000",
+    "minimum_V": 1.79701176,
+    "maximum_V": 1.80258256,
+    "excursion_charge_score_fC": 0.0004144118120000073
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_326.A",
+    "retained_C_F_exact": "1181/12500000000000000000",
+    "minimum_V": 1.79737756,
+    "maximum_V": 1.80156444,
+    "excursion_charge_score_fC": 0.0003955764224000003
+  },
+  {
+    "node": "a_72593_36393#",
+    "retained_C_F_exact": "2931/100000000000000000000",
+    "minimum_V": 1.79485293,
+    "maximum_V": 1.80768399,
+    "excursion_charge_score_fC": 0.00037607836859999695
+  },
+  {
+    "node": "COARSE_CODE[3]",
+    "retained_C_F_exact": "373/10000000000000000000",
+    "minimum_V": -0.00513257034,
+    "maximum_V": 0.00457751519,
+    "excursion_charge_score_fC": 0.00036218619026899996
+  },
+  {
+    "node": "a_70509_72688#",
+    "retained_C_F_exact": "117/100000000000000000000",
+    "minimum_V": 1.62309294,
+    "maximum_V": 1.92308966,
+    "excursion_charge_score_fC": 0.0003509961624
+  },
+  {
+    "node": "a_65230_74690#",
+    "retained_C_F_exact": "47/20000000000000000000",
+    "minimum_V": 1.72025439,
+    "maximum_V": 1.86644754,
+    "excursion_charge_score_fC": 0.00034355390249999994
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_254.A",
+    "retained_C_F_exact": "2127/50000000000000000000",
+    "minimum_V": 1.79478391,
+    "maximum_V": 1.80272732,
+    "excursion_charge_score_fC": 0.0003379126613999993
+  },
+  {
+    "node": "a_63438_73639#",
+    "retained_C_F_exact": "539/100000000000000000000",
+    "minimum_V": -0.0324206518,
+    "maximum_V": 0.0300352467,
+    "excursion_charge_score_fC": 0.00033663729291499996
+  },
+  {
+    "node": "a_60610_73058#",
+    "retained_C_F_exact": "261/100000000000000000000",
+    "minimum_V": -0.0738777548,
+    "maximum_V": 0.0530199131,
+    "excursion_charge_score_fC": 0.00033120291321900005
+  },
+  {
+    "node": "a_71470_39818#",
+    "retained_C_F_exact": "243/100000000000000000000",
+    "minimum_V": 1.71911417,
+    "maximum_V": 1.84789096,
+    "excursion_charge_score_fC": 0.0003129275996999997
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_170.Y",
+    "retained_C_F_exact": "1723/50000000000000000000",
+    "minimum_V": 1.79529529,
+    "maximum_V": 1.80434603,
+    "excursion_charge_score_fC": 0.00031188850039999815
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_350.Y",
+    "retained_C_F_exact": "2381/100000000000000000000",
+    "minimum_V": 1.7931335,
+    "maximum_V": 1.80621503,
+    "excursion_charge_score_fC": 0.00031147122930000017
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_2_72.Y",
+    "retained_C_F_exact": "4629/100000000000000000000",
+    "minimum_V": -0.00319694261,
+    "maximum_V": 0.00351178458,
+    "excursion_charge_score_fC": 0.0003105469816251
+  },
+  {
+    "node": "a_71470_38486#",
+    "retained_C_F_exact": "119/50000000000000000000",
+    "minimum_V": 1.71823035,
+    "maximum_V": 1.84847469,
+    "excursion_charge_score_fC": 0.00030998152919999993
+  },
+  {
+    "node": "a_72344_69693#",
+    "retained_C_F_exact": "2167/100000000000000000000",
+    "minimum_V": 1.79501023,
+    "maximum_V": 1.80927029,
+    "excursion_charge_score_fC": 0.0003090155002000004
+  },
+  {
+    "node": "a_60139_74020#",
+    "retained_C_F_exact": "3029/25000000000000000000",
+    "minimum_V": 1.79838959,
+    "maximum_V": 1.80090009,
+    "excursion_charge_score_fC": 0.0003041721800000099
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_255.B",
+    "retained_C_F_exact": "3911/25000000000000000000",
+    "minimum_V": -0.0011688885,
+    "maximum_V": 0.000681391254,
+    "excursion_charge_score_fC": 0.00028945776471576
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__buf_2_2.A",
+    "retained_C_F_exact": "1323/100000000000000000000",
+    "minimum_V": -0.0113038093,
+    "maximum_V": 0.00999563626,
+    "excursion_charge_score_fC": 0.00028179166475879997
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_281.X",
+    "retained_C_F_exact": "467/10000000000000000000",
+    "minimum_V": -0.00294928833,
+    "maximum_V": 0.00307283691,
+    "excursion_charge_score_fC": 0.000281233248708
+  },
+  {
+    "node": "a_72286_61495#",
+    "retained_C_F_exact": "157/20000000000000000000",
+    "minimum_V": -0.0192929894,
+    "maximum_V": 0.0156968112,
+    "excursion_charge_score_fC": 0.00027466993471
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_135.A",
+    "retained_C_F_exact": "7481/100000000000000000000",
+    "minimum_V": 1.79773652,
+    "maximum_V": 1.80128024,
+    "excursion_charge_score_fC": 0.0002651056932000104
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_2_37.B1",
+    "retained_C_F_exact": "1543/50000000000000000000",
+    "minimum_V": 1.795199,
+    "maximum_V": 1.80349284,
+    "excursion_charge_score_fC": 0.00025594790240000327
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_248.A",
+    "retained_C_F_exact": "3829/100000000000000000000",
+    "minimum_V": -0.00355357124,
+    "maximum_V": 0.00302946384,
+    "excursion_charge_score_fC": 0.0002520644132132
+  },
+  {
+    "node": "a_60039_72739#",
+    "retained_C_F_exact": "11/5000000000000000000",
+    "minimum_V": 1.74275882,
+    "maximum_V": 1.854316,
+    "excursion_charge_score_fC": 0.0002454257960000003
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_90.Y",
+    "retained_C_F_exact": "447/100000000000000000000",
+    "minimum_V": 1.77324911,
+    "maximum_V": 1.82472331,
+    "excursion_charge_score_fC": 0.00023008967399999964
+  },
+  {
+    "node": "a_64571_74286#",
+    "retained_C_F_exact": "223/12500000000000000000",
+    "minimum_V": 1.79348011,
+    "maximum_V": 1.80631565,
+    "excursion_charge_score_fC": 0.0002289860335999996
+  },
+  {
+    "node": "a_71998_69487#",
+    "retained_C_F_exact": "103/20000000000000000000",
+    "minimum_V": 1.77831834,
+    "maximum_V": 1.82200091,
+    "excursion_charge_score_fC": 0.00022496523550000045
+  },
+  {
+    "node": "a_61579_73058#",
+    "retained_C_F_exact": "21/5000000000000000000",
+    "minimum_V": 0.0143542841,
+    "maximum_V": 0.0676096759,
+    "excursion_charge_score_fC": 0.00022367264555999997
+  },
+  {
+    "node": "a_63411_74020#",
+    "retained_C_F_exact": "839/50000000000000000000",
+    "minimum_V": 1.79304193,
+    "maximum_V": 1.80632127,
+    "excursion_charge_score_fC": 0.00022282732519999954
+  },
+  {
+    "node": "a_72344_65697#",
+    "retained_C_F_exact": "787/50000000000000000000",
+    "minimum_V": 1.79509492,
+    "maximum_V": 1.80905305,
+    "excursion_charge_score_fC": 0.00021970096620000022
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_346.Y",
+    "retained_C_F_exact": "2009/100000000000000000000",
+    "minimum_V": 1.79385521,
+    "maximum_V": 1.80381258,
+    "excursion_charge_score_fC": 0.00020004356329999932
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_88.A",
+    "retained_C_F_exact": "319/12500000000000000000",
+    "minimum_V": -0.00281010128,
+    "maximum_V": 0.00494720259,
+    "excursion_charge_score_fC": 0.00019796639476239998
+  },
+  {
+    "node": "a_66030_74971#",
+    "retained_C_F_exact": "153/50000000000000000000",
+    "minimum_V": -0.0329681069,
+    "maximum_V": 0.030242954,
+    "excursion_charge_score_fC": 0.000193425846354
+  },
+  {
+    "node": "a_61726_75675#",
+    "retained_C_F_exact": "111/25000000000000000000",
+    "minimum_V": 1.77880831,
+    "maximum_V": 1.82162933,
+    "excursion_charge_score_fC": 0.00019012532879999946
+  },
+  {
+    "node": "a_71271_60034#",
+    "retained_C_F_exact": "3/2000000000000000000",
+    "minimum_V": -0.070536914,
+    "maximum_V": 0.0546080304,
+    "excursion_charge_score_fC": 0.0001877174166
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_326.B",
+    "retained_C_F_exact": "513/20000000000000000000",
+    "minimum_V": 1.7959218,
+    "maximum_V": 1.80288151,
+    "excursion_charge_score_fC": 0.00017851656150000164
+  },
+  {
+    "node": "a_64126_73483#",
+    "retained_C_F_exact": "77/20000000000000000000",
+    "minimum_V": 1.77821383,
+    "maximum_V": 1.82189953,
+    "excursion_charge_score_fC": 0.00016818994499999976
+  },
+  {
+    "node": "a_71182_61130#",
+    "retained_C_F_exact": "23/20000000000000000000",
+    "minimum_V": 1.71990643,
+    "maximum_V": 1.8648766,
+    "excursion_charge_score_fC": 0.00016671569550000013
+  },
+  {
+    "node": "a_72632_61701#",
+    "retained_C_F_exact": "2551/100000000000000000000",
+    "minimum_V": -0.00353514902,
+    "maximum_V": 0.00268578533,
+    "excursion_charge_score_fC": 0.00015869603526850003
+  },
+  {
+    "node": "a_72196_45382#",
+    "retained_C_F_exact": "347/12500000000000000000",
+    "minimum_V": 1.79634264,
+    "maximum_V": 1.80205344,
+    "excursion_charge_score_fC": 0.00015853180799999737
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_127.B",
+    "retained_C_F_exact": "4319/100000000000000000000",
+    "minimum_V": 1.7982426,
+    "maximum_V": 1.80175487,
+    "excursion_charge_score_fC": 0.0001516949412999945
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_107.A2",
+    "retained_C_F_exact": "627/12500000000000000000",
+    "minimum_V": 1.79807724,
+    "maximum_V": 1.8011006,
+    "excursion_charge_score_fC": 0.00015165173760000152
+  },
+  {
+    "node": "a_72248_57705#",
+    "retained_C_F_exact": "1023/100000000000000000000",
+    "minimum_V": 1.79403832,
+    "maximum_V": 1.80876567,
+    "excursion_charge_score_fC": 0.00015066079050000028
+  },
+  {
+    "node": "a_72597_42422#",
+    "retained_C_F_exact": "17/2500000000000000000",
+    "minimum_V": -0.0133892525,
+    "maximum_V": 0.0074690185,
+    "excursion_charge_score_fC": 0.00014183624280000002
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_8_22.X",
+    "retained_C_F_exact": "31/625000000000000000",
+    "minimum_V": 1.79907982,
+    "maximum_V": 1.8017901,
+    "excursion_charge_score_fC": 0.00013442988800000324
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_133.A",
+    "retained_C_F_exact": "997/20000000000000000000",
+    "minimum_V": 1.79828336,
+    "maximum_V": 1.80096023,
+    "excursion_charge_score_fC": 0.00013344196949999714
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_8_59.B",
+    "retained_C_F_exact": "107/25000000000000000000",
+    "minimum_V": -0.0165132674,
+    "maximum_V": 0.0141093966,
+    "excursion_charge_score_fC": 0.00013106500192000003
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_42.B1",
+    "retained_C_F_exact": "2599/50000000000000000000",
+    "minimum_V": 1.79842519,
+    "maximum_V": 1.80089002,
+    "excursion_charge_score_fC": 0.0001281218634000044
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_352.A",
+    "retained_C_F_exact": "1179/25000000000000000000",
+    "minimum_V": -0.00165357168,
+    "maximum_V": 0.00102261646,
+    "excursion_charge_score_fC": 0.00012620903268239998
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_2_11.Y",
+    "retained_C_F_exact": "93/3125000000000000000",
+    "minimum_V": -0.00265058916,
+    "maximum_V": 0.00158592264,
+    "excursion_charge_score_fC": 0.00012607859116800003
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_99.B",
+    "retained_C_F_exact": "87/20000000000000000000",
+    "minimum_V": 1.78484753,
+    "maximum_V": 1.81378198,
+    "excursion_charge_score_fC": 0.00012586485749999977
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_230.X",
+    "retained_C_F_exact": "1021/20000000000000000000",
+    "minimum_V": -0.00124760444,
+    "maximum_V": 0.00117263025,
+    "excursion_charge_score_fC": 0.00012355298092450002
+  },
+  {
+    "node": "a_71598_61651#",
+    "retained_C_F_exact": "107/100000000000000000000",
+    "minimum_V": 1.7419563,
+    "maximum_V": 1.85237793,
+    "excursion_charge_score_fC": 0.00011815114410000005
+  },
+  {
+    "node": "a_60174_72838#",
+    "retained_C_F_exact": "187/100000000000000000000",
+    "minimum_V": -0.0340179133,
+    "maximum_V": 0.0288583278,
+    "excursion_charge_score_fC": 0.00011757857085700002
+  },
+  {
+    "node": "a_71902_57499#",
+    "retained_C_F_exact": "281/100000000000000000000",
+    "minimum_V": 1.77936722,
+    "maximum_V": 1.81983843,
+    "excursion_charge_score_fC": 0.00011372410009999994
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xnor2_1_52.A",
+    "retained_C_F_exact": "481/12500000000000000000",
+    "minimum_V": -0.00157299366,
+    "maximum_V": 0.00131705287,
+    "excursion_charge_score_fC": 0.00011120899047439999
+  },
+  {
+    "node": "a_72292_50710#",
+    "retained_C_F_exact": "689/50000000000000000000",
+    "minimum_V": 1.79588744,
+    "maximum_V": 1.80389825,
+    "excursion_charge_score_fC": 0.00011038896180000048
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_129.A",
+    "retained_C_F_exact": "5873/100000000000000000000",
+    "minimum_V": -0.000902615177,
+    "maximum_V": 0.000945598426,
+    "excursion_charge_score_fC": 0.00010854558490419
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xor2_1_14.B",
+    "retained_C_F_exact": "1097/100000000000000000000",
+    "minimum_V": -0.00503319346,
+    "maximum_V": 0.00485347559,
+    "excursion_charge_score_fC": 0.0001084567594785
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_309.A",
+    "retained_C_F_exact": "1949/50000000000000000000",
+    "minimum_V": 1.79872986,
+    "maximum_V": 1.80145893,
+    "excursion_charge_score_fC": 0.0001063791486
+  },
+  {
+    "node": "a_66718_74815#",
+    "retained_C_F_exact": "7/3125000000000000000",
+    "minimum_V": 1.77594553,
+    "maximum_V": 1.82266194,
+    "excursion_charge_score_fC": 0.00010464475839999985
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_90.A",
+    "retained_C_F_exact": "1601/50000000000000000000",
+    "minimum_V": -0.00175579244,
+    "maximum_V": 0.00148636393,
+    "excursion_charge_score_fC": 0.00010381384696739999
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_312.X",
+    "retained_C_F_exact": "357/100000000000000000000",
+    "minimum_V": -0.0144153789,
+    "maximum_V": 0.0140316468,
+    "excursion_charge_score_fC": 0.00010155588174900001
+  },
+  {
+    "node": "a_73073_34075#",
+    "retained_C_F_exact": "769/100000000000000000000",
+    "minimum_V": 1.79401718,
+    "maximum_V": 1.8071593,
+    "excursion_charge_score_fC": 0.0001010629027999994
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_2_68.A",
+    "retained_C_F_exact": "43/12500000000000000000",
+    "minimum_V": -0.0150267935,
+    "maximum_V": 0.0137987919,
+    "excursion_charge_score_fC": 9.9160013776e-05
+  },
+  {
+    "node": "a_62072_75367#",
+    "retained_C_F_exact": "359/50000000000000000000",
+    "minimum_V": 1.7950288,
+    "maximum_V": 1.80880341,
+    "excursion_charge_score_fC": 9.890169979999857e-05
+  },
+  {
+    "node": "a_65235_73648#",
+    "retained_C_F_exact": "33/5000000000000000000",
+    "minimum_V": 1.66390644,
+    "maximum_V": 1.67881709,
+    "excursion_charge_score_fC": 9.841028999999871e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xnor2_1_80.Y",
+    "retained_C_F_exact": "761/20000000000000000000",
+    "minimum_V": -0.00131521499,
+    "maximum_V": 0.00125415927,
+    "excursion_charge_score_fC": 9.776469059299999e-05
+  },
+  {
+    "node": "a_71509_36343#",
+    "retained_C_F_exact": "19/12500000000000000000",
+    "minimum_V": -0.0342828068,
+    "maximum_V": 0.0286561406,
+    "excursion_charge_score_fC": 9.5667200048e-05
+  },
+  {
+    "node": "a_73016_60715#",
+    "retained_C_F_exact": "669/100000000000000000000",
+    "minimum_V": 1.7948667,
+    "maximum_V": 1.80902975,
+    "excursion_charge_score_fC": 9.475080450000043e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_152.A",
+    "retained_C_F_exact": "1657/50000000000000000000",
+    "minimum_V": -0.00144601998,
+    "maximum_V": 0.00137843609,
+    "excursion_charge_score_fC": 9.360247415980001e-05
+  },
+  {
+    "node": "a_60731_73472#",
+    "retained_C_F_exact": "351/50000000000000000000",
+    "minimum_V": 1.79333672,
+    "maximum_V": 1.80645961,
+    "excursion_charge_score_fC": 9.212268779999999e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__maj3_1_8.X",
+    "retained_C_F_exact": "853/20000000000000000000",
+    "minimum_V": -0.00105479821,
+    "maximum_V": 0.00105268855,
+    "excursion_charge_score_fC": 8.9884310314e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xnor2_1_51.A",
+    "retained_C_F_exact": "5197/100000000000000000000",
+    "minimum_V": -0.000860506116,
+    "maximum_V": 0.000857969359,
+    "excursion_charge_score_fC": 8.930917043575e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_31.A2",
+    "retained_C_F_exact": "1529/20000000000000000000",
+    "minimum_V": -0.000744445866,
+    "maximum_V": 0.000416817925,
+    "excursion_charge_score_fC": 8.877861682195e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_421.B",
+    "retained_C_F_exact": "269/25000000000000000000",
+    "minimum_V": 1.79598656,
+    "maximum_V": 1.80391196,
+    "excursion_charge_score_fC": 8.527730399999968e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_115.A",
+    "retained_C_F_exact": "69/1000000000000000000",
+    "minimum_V": 1.79924094,
+    "maximum_V": 1.80046763,
+    "excursion_charge_score_fC": 8.464160999999826e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_170.A2",
+    "retained_C_F_exact": "501/25000000000000000000",
+    "minimum_V": -0.00210304926,
+    "maximum_V": 0.00201040071,
+    "excursion_charge_score_fC": 8.243353739880002e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_119.A",
+    "retained_C_F_exact": "2173/50000000000000000000",
+    "minimum_V": 1.79885026,
+    "maximum_V": 1.80069301,
+    "excursion_charge_score_fC": 8.008591500000018e-05
+  },
+  {
+    "node": "a_71921_60369#",
+    "retained_C_F_exact": "57/10000000000000000000",
+    "minimum_V": 1.79326876,
+    "maximum_V": 1.80692984,
+    "excursion_charge_score_fC": 7.786815600000059e-05
+  },
+  {
+    "node": "a_72347_62816#",
+    "retained_C_F_exact": "1937/100000000000000000000",
+    "minimum_V": 1.79804426,
+    "maximum_V": 1.80183272,
+    "excursion_charge_score_fC": 7.338247019999988e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xnor2_1_56.A",
+    "retained_C_F_exact": "989/25000000000000000000",
+    "minimum_V": 1.79885205,
+    "maximum_V": 1.80065491,
+    "excursion_charge_score_fC": 7.132114159999848e-05
+  },
+  {
+    "node": "a_60862_73011#",
+    "retained_C_F_exact": "13/6250000000000000000",
+    "minimum_V": 1.78224537,
+    "maximum_V": 1.81633473,
+    "excursion_charge_score_fC": 7.090586879999969e-05
+  },
+  {
+    "node": "a_72427_48046#",
+    "retained_C_F_exact": "739/100000000000000000000",
+    "minimum_V": 0.0371470064,
+    "maximum_V": 0.0462155459,
+    "excursion_charge_score_fC": 6.7016506905e-05
+  },
+  {
+    "node": "a_73134_62182#",
+    "retained_C_F_exact": "13/12500000000000000000",
+    "minimum_V": -0.0332877168,
+    "maximum_V": 0.0298838003,
+    "excursion_charge_score_fC": 6.5698377784e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xor2_1_3.A",
+    "retained_C_F_exact": "633/12500000000000000000",
+    "minimum_V": -0.000827346758,
+    "maximum_V": 0.00045812604,
+    "excursion_charge_score_fC": 6.509634249072e-05
+  },
+  {
+    "node": "a_61019_74286#",
+    "retained_C_F_exact": "407/20000000000000000000",
+    "minimum_V": 1.79833762,
+    "maximum_V": 1.8014922,
+    "excursion_charge_score_fC": 6.419570299999812e-05
+  },
+  {
+    "node": "a_64379_72954#",
+    "retained_C_F_exact": "51/25000000000000000000",
+    "minimum_V": 1.78413877,
+    "maximum_V": 1.81531013,
+    "excursion_charge_score_fC": 6.35895744000002e-05
+  },
+  {
+    "node": "a_72597_46714#",
+    "retained_C_F_exact": "17/2500000000000000000",
+    "minimum_V": 1.52639501,
+    "maximum_V": 1.53569062,
+    "excursion_charge_score_fC": 6.321014799999931e-05
+  },
+  {
+    "node": "a_72531_51376#",
+    "retained_C_F_exact": "539/50000000000000000000",
+    "minimum_V": 1.68639996,
+    "maximum_V": 1.69161987,
+    "excursion_charge_score_fC": 5.6270629800001133e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xor2_1_14.X",
+    "retained_C_F_exact": "1191/100000000000000000000",
+    "minimum_V": -0.0022873587,
+    "maximum_V": 0.0023267087,
+    "excursion_charge_score_fC": 5.4953542733999995e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_86.A",
+    "retained_C_F_exact": "3599/100000000000000000000",
+    "minimum_V": 1.79902989,
+    "maximum_V": 1.80055197,
+    "excursion_charge_score_fC": 5.477965919999932e-05
+  },
+  {
+    "node": "a_67064_75021#",
+    "retained_C_F_exact": "323/100000000000000000000",
+    "minimum_V": 1.79254784,
+    "maximum_V": 1.80919093,
+    "excursion_charge_score_fC": 5.375718070000027e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_40.B1",
+    "retained_C_F_exact": "241/25000000000000000000",
+    "minimum_V": 1.79675102,
+    "maximum_V": 1.8019611,
+    "excursion_charge_score_fC": 5.022517119999898e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_447.A",
+    "retained_C_F_exact": "1063/50000000000000000000",
+    "minimum_V": -0.00125675167,
+    "maximum_V": 0.001104234,
+    "excursion_charge_score_fC": 5.01945553442e-05
+  },
+  {
+    "node": "a_64472_73689#",
+    "retained_C_F_exact": "7/2000000000000000000",
+    "minimum_V": 1.79487314,
+    "maximum_V": 1.80910278,
+    "excursion_charge_score_fC": 4.980373999999976e-05
+  },
+  {
+    "node": "a_72442_68337#",
+    "retained_C_F_exact": "487/25000000000000000000",
+    "minimum_V": 1.79857166,
+    "maximum_V": 1.8010986,
+    "excursion_charge_score_fC": 4.922479120000173e-05
+  },
+  {
+    "node": "a_71525_60172#",
+    "retained_C_F_exact": "21/20000000000000000000",
+    "minimum_V": 1.77792027,
+    "maximum_V": 1.8230678,
+    "excursion_charge_score_fC": 4.740490649999993e-05
+  },
+  {
+    "node": "a_72292_54706#",
+    "retained_C_F_exact": "1977/100000000000000000000",
+    "minimum_V": 1.79849084,
+    "maximum_V": 1.80087645,
+    "excursion_charge_score_fC": 4.7163509700002943e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_113.A2",
+    "retained_C_F_exact": "3551/100000000000000000000",
+    "minimum_V": -0.000626786603,
+    "maximum_V": 0.000623189898,
+    "excursion_charge_score_fC": 4.4386665550510007e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_41.A1",
+    "retained_C_F_exact": "5033/100000000000000000000",
+    "minimum_V": -0.000544776404,
+    "maximum_V": 0.000330072597,
+    "excursion_charge_score_fC": 4.403115022033e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_2_15.Q",
+    "retained_C_F_exact": "537/100000000000000000000",
+    "minimum_V": -0.00401085257,
+    "maximum_V": 0.00415177449,
+    "excursion_charge_score_fC": 4.38333073122e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xor2_1_11.X",
+    "retained_C_F_exact": "863/25000000000000000000",
+    "minimum_V": -0.000622311267,
+    "maximum_V": 0.000635325218,
+    "excursion_charge_score_fC": 4.34136114622e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_284.A",
+    "retained_C_F_exact": "59/12500000000000000000",
+    "minimum_V": -0.00489380473,
+    "maximum_V": 0.00422313783,
+    "excursion_charge_score_fC": 4.3031968883200004e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_2_10.D",
+    "retained_C_F_exact": "35669/100000000000000000000",
+    "minimum_V": -6.24754574e-05,
+    "maximum_V": 5.34331598e-05,
+    "excursion_charge_score_fC": 4.134344466906799e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_141.B",
+    "retained_C_F_exact": "1271/50000000000000000000",
+    "minimum_V": 1.7990222,
+    "maximum_V": 1.80055605,
+    "excursion_charge_score_fC": 3.8990466999998674e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xnor2_1_43.A",
+    "retained_C_F_exact": "3717/100000000000000000000",
+    "minimum_V": -0.000630535636,
+    "maximum_V": 0.00036654368,
+    "excursion_charge_score_fC": 3.706143817572001e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_2_38.Y",
+    "retained_C_F_exact": "327/100000000000000000000",
+    "minimum_V": 1.7942697,
+    "maximum_V": 1.80539067,
+    "excursion_charge_score_fC": 3.636557189999966e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_134.B",
+    "retained_C_F_exact": "899/20000000000000000000",
+    "minimum_V": -0.000394079085,
+    "maximum_V": 0.000392931188,
+    "excursion_charge_score_fC": 3.537611177135e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_260.A",
+    "retained_C_F_exact": "377/100000000000000000000",
+    "minimum_V": -0.00474213489,
+    "maximum_V": 0.00436167162,
+    "excursion_charge_score_fC": 3.43213505427e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_107.A1",
+    "retained_C_F_exact": "491/20000000000000000000",
+    "minimum_V": 1.79909864,
+    "maximum_V": 1.80049395,
+    "excursion_charge_score_fC": 3.4254860499998216e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__maj3_1_16.C",
+    "retained_C_F_exact": "1473/100000000000000000000",
+    "minimum_V": 1.79852903,
+    "maximum_V": 1.80083819,
+    "excursion_charge_score_fC": 3.401392679999721e-05
+  },
+  {
+    "node": "a_59963_74804#",
+    "retained_C_F_exact": "157/25000000000000000000",
+    "minimum_V": 1.79705727,
+    "maximum_V": 1.80241931,
+    "excursion_charge_score_fC": 3.367361120000043e-05
+  },
+  {
+    "node": "a_72045_55372#",
+    "retained_C_F_exact": "3857/100000000000000000000",
+    "minimum_V": -0.000556192721,
+    "maximum_V": 0.000308715876,
+    "excursion_charge_score_fC": 3.335952458629e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_136.Q",
+    "retained_C_F_exact": "1301/100000000000000000000",
+    "minimum_V": -0.00131656135,
+    "maximum_V": 0.00120589419,
+    "excursion_charge_score_fC": 3.2817146575400005e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkinv_1_353.A",
+    "retained_C_F_exact": "59/4000000000000000000",
+    "minimum_V": -0.00111889169,
+    "maximum_V": 0.00104113753,
+    "excursion_charge_score_fC": 3.1860430994999994e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_122.B",
+    "retained_C_F_exact": "293/25000000000000000000",
+    "minimum_V": 1.79837925,
+    "maximum_V": 1.80091555,
+    "excursion_charge_score_fC": 2.9725436000000546e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_129.B",
+    "retained_C_F_exact": "131/25000000000000000000",
+    "minimum_V": 1.79724975,
+    "maximum_V": 1.80254238,
+    "excursion_charge_score_fC": 2.7733381200000107e-05
+  },
+  {
+    "node": "a_62610_75709#",
+    "retained_C_F_exact": "39/6250000000000000000",
+    "minimum_V": 1.79793208,
+    "maximum_V": 1.80220731,
+    "excursion_charge_score_fC": 2.6677435199999768e-05
+  },
+  {
+    "node": "a_61208_72703#",
+    "retained_C_F_exact": "9/5000000000000000000",
+    "minimum_V": 1.79443771,
+    "maximum_V": 1.80923388,
+    "excursion_charge_score_fC": 2.6633106000000197e-05
+  },
+  {
+    "node": "a_72442_42091#",
+    "retained_C_F_exact": "877/100000000000000000000",
+    "minimum_V": 1.79839952,
+    "maximum_V": 1.80143125,
+    "excursion_charge_score_fC": 2.658827210000009e-05
+  },
+  {
+    "node": "a_62443_74390#",
+    "retained_C_F_exact": "91/50000000000000000000",
+    "minimum_V": 0.0427780648,
+    "maximum_V": 0.0562284506,
+    "excursion_charge_score_fC": 2.4479702155999997e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_150.X",
+    "retained_C_F_exact": "847/100000000000000000000",
+    "minimum_V": -0.00136367368,
+    "maximum_V": 0.00152151564,
+    "excursion_charge_score_fC": 2.4437553540400003e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_8_55.A",
+    "retained_C_F_exact": "471/100000000000000000000",
+    "minimum_V": -0.00268330269,
+    "maximum_V": 0.00241143633,
+    "excursion_charge_score_fC": 2.3996220784200003e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_2_38.B1",
+    "retained_C_F_exact": "117/100000000000000000000",
+    "minimum_V": 1.78925759,
+    "maximum_V": 1.80869438,
+    "excursion_charge_score_fC": 2.2741044299999847e-05
+  },
+  {
+    "node": "a_63560_74348#",
+    "retained_C_F_exact": "927/100000000000000000000",
+    "minimum_V": -0.00144115771,
+    "maximum_V": 0.000939203813,
+    "excursion_charge_score_fC": 2.206595131821e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_230.A",
+    "retained_C_F_exact": "447/100000000000000000000",
+    "minimum_V": -0.00233672368,
+    "maximum_V": 0.00246441017,
+    "excursion_charge_score_fC": 2.14610683095e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_146.X",
+    "retained_C_F_exact": "337/25000000000000000000",
+    "minimum_V": -0.000777225223,
+    "maximum_V": 0.000793716984,
+    "excursion_charge_score_fC": 2.1176300950360002e-05
+  },
+  {
+    "node": "a_72333_50044#",
+    "retained_C_F_exact": "309/50000000000000000000",
+    "minimum_V": 1.79793324,
+    "maximum_V": 1.80127324,
+    "excursion_charge_score_fC": 2.064119999999937e-05
+  },
+  {
+    "node": "a_72442_47025#",
+    "retained_C_F_exact": "1701/100000000000000000000",
+    "minimum_V": 1.79925753,
+    "maximum_V": 1.80041791,
+    "excursion_charge_score_fC": 1.9738063799999338e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_135.A",
+    "retained_C_F_exact": "1763/100000000000000000000",
+    "minimum_V": 1.79929125,
+    "maximum_V": 1.80040832,
+    "excursion_charge_score_fC": 1.969394410000094e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_107.B1",
+    "retained_C_F_exact": "977/50000000000000000000",
+    "minimum_V": -0.000471569732,
+    "maximum_V": 0.000472657713,
+    "excursion_charge_score_fC": 1.8450204275299998e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xnor2_1_32.A",
+    "retained_C_F_exact": "1201/50000000000000000000",
+    "minimum_V": -0.000389854397,
+    "maximum_V": 0.000357885198,
+    "excursion_charge_score_fC": 1.7960705071899998e-05
+  },
+  {
+    "node": "a_72730_44755#",
+    "retained_C_F_exact": "1589/100000000000000000000",
+    "minimum_V": 1.79928431,
+    "maximum_V": 1.80041089,
+    "excursion_charge_score_fC": 1.790135619999981e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xnor2_1_37.B",
+    "retained_C_F_exact": "1239/50000000000000000000",
+    "minimum_V": -0.000440794956,
+    "maximum_V": 0.000248253251,
+    "excursion_charge_score_fC": 1.7074614569460002e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_95.B1",
+    "retained_C_F_exact": "231/100000000000000000000",
+    "minimum_V": 1.79622241,
+    "maximum_V": 1.80355814,
+    "excursion_charge_score_fC": 1.694553630000022e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xor2_1_16.X",
+    "retained_C_F_exact": "183/25000000000000000000",
+    "minimum_V": 1.79862011,
+    "maximum_V": 1.80078789,
+    "excursion_charge_score_fC": 1.5868149599999653e-05
+  },
+  {
+    "node": "a_66107_73472#",
+    "retained_C_F_exact": "313/50000000000000000000",
+    "minimum_V": 1.79867595,
+    "maximum_V": 1.80117798,
+    "excursion_charge_score_fC": 1.5662707800000275e-05
+  },
+  {
+    "node": "a_65723_73472#",
+    "retained_C_F_exact": "79/20000000000000000000",
+    "minimum_V": 1.79781491,
+    "maximum_V": 1.80146944,
+    "excursion_charge_score_fC": 1.4435393499999737e-05
+  },
+  {
+    "node": "a_72710_45692#",
+    "retained_C_F_exact": "233/100000000000000000000",
+    "minimum_V": 1.79623695,
+    "maximum_V": 1.80211998,
+    "excursion_charge_score_fC": 1.3707459900000284e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_99.B1",
+    "retained_C_F_exact": "969/100000000000000000000",
+    "minimum_V": 1.79918933,
+    "maximum_V": 1.80057547,
+    "excursion_charge_score_fC": 1.343169660000142e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__xor2_1_6.X",
+    "retained_C_F_exact": "3/1000000000000000000",
+    "minimum_V": 1.79721547,
+    "maximum_V": 1.80165569,
+    "excursion_charge_score_fC": 1.3320659999999983e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_148.X",
+    "retained_C_F_exact": "9/4000000000000000000",
+    "minimum_V": -0.00299688443,
+    "maximum_V": 0.00291262434,
+    "excursion_charge_score_fC": 1.32963947325e-05
+  },
+  {
+    "node": "a_67643_75618#",
+    "retained_C_F_exact": "123/100000000000000000000",
+    "minimum_V": 1.79555169,
+    "maximum_V": 1.80610752,
+    "excursion_charge_score_fC": 1.2983670900000191e-05
+  },
+  {
+    "node": "a_72338_45692#",
+    "retained_C_F_exact": "1/500000000000000000",
+    "minimum_V": 1.79618957,
+    "maximum_V": 1.80213344,
+    "excursion_charge_score_fC": 1.1887740000000148e-05
+  },
+  {
+    "node": "a_72806_51020#",
+    "retained_C_F_exact": "29/20000000000000000000",
+    "minimum_V": 1.79600796,
+    "maximum_V": 1.80355209,
+    "excursion_charge_score_fC": 1.0938988499999812e-05
+  },
+  {
+    "node": "a_71851_44050#",
+    "retained_C_F_exact": "201/100000000000000000000",
+    "minimum_V": 0.0415144214,
+    "maximum_V": 0.0469563672,
+    "excursion_charge_score_fC": 1.0938311058000002e-05
+  },
+  {
+    "node": "a_71949_43012#",
+    "retained_C_F_exact": "521/25000000000000000000",
+    "minimum_V": -0.00030044896,
+    "maximum_V": 0.000194838985,
+    "excursion_charge_score_fC": 1.03218007738e-05
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_42.A1",
+    "retained_C_F_exact": "1991/100000000000000000000",
+    "minimum_V": -0.000323555361,
+    "maximum_V": 0.000179489162,
+    "excursion_charge_score_fC": 1.001561645293e-05
+  },
+  {
+    "node": "a_72563_53668#",
+    "retained_C_F_exact": "557/100000000000000000000",
+    "minimum_V": 1.79901556,
+    "maximum_V": 1.80056761,
+    "excursion_charge_score_fC": 8.644918500000767e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_99.Y",
+    "retained_C_F_exact": "1609/100000000000000000000",
+    "minimum_V": -0.000277925316,
+    "maximum_V": 0.000247561789,
+    "excursion_charge_score_fC": 8.45508751945e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_239.X",
+    "retained_C_F_exact": "339/100000000000000000000",
+    "minimum_V": -0.00129904437,
+    "maximum_V": 0.00118195203,
+    "excursion_charge_score_fC": 8.410577796e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_295.A",
+    "retained_C_F_exact": "33/20000000000000000000",
+    "minimum_V": -0.0026135917,
+    "maximum_V": 0.00243246434,
+    "excursion_charge_score_fC": 8.325992466e-06
+  },
+  {
+    "node": "a_72680_51704#",
+    "retained_C_F_exact": "43/4000000000000000000",
+    "minimum_V": -0.000468065066,
+    "maximum_V": 0.000261434298,
+    "excursion_charge_score_fC": 7.842118163000001e-06
+  },
+  {
+    "node": "a_72614_51020#",
+    "retained_C_F_exact": "77/50000000000000000000",
+    "minimum_V": 1.79751653,
+    "maximum_V": 1.80230974,
+    "excursion_charge_score_fC": 7.3815434000001595e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_2_38.Y",
+    "retained_C_F_exact": "9/5000000000000000000",
+    "minimum_V": -0.0017148568,
+    "maximum_V": 0.0021213107,
+    "excursion_charge_score_fC": 6.905101500000001e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_453.Y",
+    "retained_C_F_exact": "391/100000000000000000000",
+    "minimum_V": -0.000798556254,
+    "maximum_V": 0.000753006497,
+    "excursion_charge_score_fC": 6.066610356410001e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_197.A",
+    "retained_C_F_exact": "407/100000000000000000000",
+    "minimum_V": 1.79914778,
+    "maximum_V": 1.80048717,
+    "excursion_charge_score_fC": 5.4513173000002095e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_152.X",
+    "retained_C_F_exact": "167/100000000000000000000",
+    "minimum_V": -0.00141924473,
+    "maximum_V": 0.00157667751,
+    "excursion_charge_score_fC": 5.003190140799999e-06
+  },
+  {
+    "node": "a_63307_73058#",
+    "retained_C_F_exact": "213/100000000000000000000",
+    "minimum_V": -0.00112992176,
+    "maximum_V": 0.00108846002,
+    "excursion_charge_score_fC": 4.7251531914e-06
+  },
+  {
+    "node": "a_72597_68026#",
+    "retained_C_F_exact": "209/100000000000000000000",
+    "minimum_V": -0.00111236076,
+    "maximum_V": 0.00105830171,
+    "excursion_charge_score_fC": 4.5366845623e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_254.B",
+    "retained_C_F_exact": "207/100000000000000000000",
+    "minimum_V": 1.79882859,
+    "maximum_V": 1.80095095,
+    "excursion_charge_score_fC": 4.393285199999979e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_132.Y",
+    "retained_C_F_exact": "981/100000000000000000000",
+    "minimum_V": 1.79973048,
+    "maximum_V": 1.80016926,
+    "excursion_charge_score_fC": 4.304431800000814e-06
+  },
+  {
+    "node": "a_72518_45692#",
+    "retained_C_F_exact": "9/6250000000000000000",
+    "minimum_V": 1.79810907,
+    "maximum_V": 1.80105468,
+    "excursion_charge_score_fC": 4.241678400000062e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_234.A",
+    "retained_C_F_exact": "29/25000000000000000000",
+    "minimum_V": -0.00176309242,
+    "maximum_V": 0.00159668577,
+    "excursion_charge_score_fC": 3.8973427004e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_98.A2",
+    "retained_C_F_exact": "7/3125000000000000000",
+    "minimum_V": 1.79930188,
+    "maximum_V": 1.80089295,
+    "excursion_charge_score_fC": 3.5639967999998136e-06
+  },
+  {
+    "node": "a_62771_75352#",
+    "retained_C_F_exact": "189/100000000000000000000",
+    "minimum_V": 1.79918647,
+    "maximum_V": 1.80100608,
+    "excursion_charge_score_fC": 3.439062900000156e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_132.Y",
+    "retained_C_F_exact": "107/50000000000000000000",
+    "minimum_V": -0.00084328017,
+    "maximum_V": 0.000755518508,
+    "excursion_charge_score_fC": 3.4214291709200007e-06
+  },
+  {
+    "node": "a_72680_47008#",
+    "retained_C_F_exact": "53/25000000000000000000",
+    "minimum_V": 1.79908949,
+    "maximum_V": 1.80051502,
+    "excursion_charge_score_fC": 3.022123599999782e-06
+  },
+  {
+    "node": "a_72402_53425#",
+    "retained_C_F_exact": "11/2500000000000000000",
+    "minimum_V": -0.000315577429,
+    "maximum_V": 0.000327239304,
+    "excursion_charge_score_fC": 2.8283936251999997e-06
+  },
+  {
+    "node": "a_72614_55016#",
+    "retained_C_F_exact": "163/100000000000000000000",
+    "minimum_V": 1.79898158,
+    "maximum_V": 1.80071396,
+    "excursion_charge_score_fC": 2.8237793999999638e-06
+  },
+  {
+    "node": "a_72806_55016#",
+    "retained_C_F_exact": "31/20000000000000000000",
+    "minimum_V": 1.79896513,
+    "maximum_V": 1.80073295,
+    "excursion_charge_score_fC": 2.740120999999962e-06
+  },
+  {
+    "node": "a_72680_42052#",
+    "retained_C_F_exact": "221/100000000000000000000",
+    "minimum_V": 1.79944533,
+    "maximum_V": 1.80065234,
+    "excursion_charge_score_fC": 2.6674921000002643e-06
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_446.A",
+    "retained_C_F_exact": "127/100000000000000000000",
+    "minimum_V": -0.000375385555,
+    "maximum_V": 0.000398602049,
+    "excursion_charge_score_fC": 9.829642570800001e-07
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_2_281.A",
+    "retained_C_F_exact": "31/20000000000000000000",
+    "minimum_V": -0.000342837219,
+    "maximum_V": 0.000231190716,
+    "excursion_charge_score_fC": 8.897432992500001e-07
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_1_135.Y",
+    "retained_C_F_exact": "177/50000000000000000000",
+    "minimum_V": -5.99643967e-05,
+    "maximum_V": 8.45751571e-05,
+    "excursion_charge_score_fC": 5.11670020452e-07
+  },
+  {
+    "node": "a_72663_53387#",
+    "retained_C_F_exact": "3/1250000000000000000",
+    "minimum_V": -7.85656768e-05,
+    "maximum_V": 6.60939994e-05,
+    "excursion_charge_score_fC": 3.4718322288000006e-07
+  },
+  {
+    "node": "a_72803_50772#",
+    "retained_C_F_exact": "59/50000000000000000000",
+    "minimum_V": -7.4887501e-05,
+    "maximum_V": 7.61035595e-05,
+    "excursion_charge_score_fC": 1.7816945139e-07
+  },
+  {
+    "node": "a_72707_45444#",
+    "retained_C_F_exact": "59/50000000000000000000",
+    "minimum_V": -5.51228768e-05,
+    "maximum_V": 4.5998842e-05,
+    "excursion_charge_score_fC": 1.19323628184e-07
+  },
+  {
+    "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__conb_1_2.HI",
+    "retained_C_F_exact": "1023/50000000000000000000",
+    "minimum_V": 1.79999801,
+    "maximum_V": 1.80000134,
+    "excursion_charge_score_fC": 6.813179999934693e-08
+  },
+  {
+    "node": "KP[2]",
+    "retained_C_F_exact": "30071/100000000000000000000",
+    "minimum_V": 0.0,
+    "maximum_V": 0.0,
+    "excursion_charge_score_fC": 0.0
+  },
+  {
+    "node": "RESET_N",
+    "retained_C_F_exact": "18709/25000000000000000000",
+    "minimum_V": 1.8,
+    "maximum_V": 1.8,
+    "excursion_charge_score_fC": 0.0
+  },
+  {
+    "node": "KI[5]",
+    "retained_C_F_exact": "1859/100000000000000000000",
+    "minimum_V": 0.0,
+    "maximum_V": 0.0,
+    "excursion_charge_score_fC": 0.0
+  },
+  {
+    "node": "KI[7]",
+    "retained_C_F_exact": "647/5000000000000000000",
+    "minimum_V": 0.0,
+    "maximum_V": 0.0,
+    "excursion_charge_score_fC": 0.0
+  },
+  {
+    "node": "KP[4]",
+    "retained_C_F_exact": "108027/100000000000000000000",
+    "minimum_V": 0.0,
+    "maximum_V": 0.0,
+    "excursion_charge_score_fC": 0.0
+  },
+  {
+    "node": "KP[3]",
+    "retained_C_F_exact": "5309/50000000000000000000",
+    "minimum_V": 0.0,
+    "maximum_V": 0.0,
+    "excursion_charge_score_fC": 0.0
+  },
+  {
+    "node": "KP[1]",
+    "retained_C_F_exact": "5601/25000000000000000000",
+    "minimum_V": 1.8,
+    "maximum_V": 1.8,
+    "excursion_charge_score_fC": 0.0
+  },
+  {
+    "node": "PLL_ENABLE",
+    "retained_C_F_exact": "65133/100000000000000000000",
+    "minimum_V": 0.0,
+    "maximum_V": 0.0,
+    "excursion_charge_score_fC": 0.0
+  }
+]

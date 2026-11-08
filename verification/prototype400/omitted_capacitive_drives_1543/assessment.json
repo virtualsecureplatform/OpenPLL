@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_receiver_waveforms_1467/assessment.json": "3b1c96eec7c4662c7ca3cd42a93d4315dd2b2baaeb98698911ed2ae9663abf27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_reduction_1420/assessment.json": "e36bc3e666c0db24ba92fa4b6d3e38403057c74af12aacb926d0a1f16f228d68",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_prescribed_boundary_roles_1522/assessment.json": "6e7a052b635676f8c2bbbcdb245f526e008c6572226dcb330ec8380b40744fe8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_prescribed_boundary_roles_1522/boundaries.json": "3fc2e76de478cb29067a8d9c99fbdcf6ebdc051a66d936922792ab269ad3aad2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_reduction_1420/charge_certificate.json": "e00bb0f2d298b17a95398bd4cad8a960f8202a6e92b418399e974c31d5c36140",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_receiver_waveforms_1467/columns.json": "b731d4939b76a1c74d64c12003c5753c12e892c06bcbac0a3d8034969584ce82",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/rank_keeper_omitted_capacitive_drives.py": "567cb822686c80af4b41fd2fd92bcabbb845d879636fe18f2ee00a2ee42f583d"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_omitted_capacitive_drives_1543/ranking.json": "c3b8d919b243aa3615279c401c139d59fd03034dd4e950cd4606e2bdeb86936f"
+  },
+  "completed_reference_only": true,
+  "window_ns": [
+    200,
+    260
+  ],
+  "samples": 6023,
+  "capacitive_only_boundaries_with_retained_coupling": 467,
+  "retained_C_F_exact": "3119899/100000000000000000000",
+  "score_definition": "sum retained coupling C times sampled exterior voltage span",
+  "score_is_not_frequency_error_bound": true,
+  "phase_and_cancellation_ignored": true,
+  "changed_controller_prediction_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}
