@@ -1020,3 +1020,24 @@ Sampled capacitor forcing also remains. The portable audit summary pins
 the full static report and records that downstream boundary; all dynamic,
 changed-controller prediction and release flags stay false. No new
 transient or independent causal model is claimed by these static steps.
+
+### Completed isolated coupling import controls; receiver replay queued
+
+Build1417 and all four native controls1418 completed normally. Stock Magic
+reproduces the extra3.91111fF substrate term with coupling on; coupling-off
+is unchanged. Both modified cases have byte-identical before/after SPICE.
+The `.res.ext` rnode term is3911.11 for stock-on and0 for modified-on;
+explicit A-B coupling remains3.91111fF. This fixture has no distributed R
+network, so it confirms this import path without qualifying R segmentation,
+coupling attachment, simplification or the full PLL model. A nonzero-R
+control is required before extending the conclusion.
+
+Pipeline1424 binds expanded receiver1419 to the completed full50ps
+capture1278 (plan1422), extracts its complete boundary histories1423,
+uses reduction1420 and native RC controls1398 to audit weighted forcing1425,
+stages shared-knot sources1426 and permits exactly one4h/8GiB old-backend
+receiver replay1427 on CPU25. It preserves the reference260ns duration,
+50ps maximum step, all knots and physical programming code; no retry is
+automatic. The purpose is a controlled loading-sensitivity comparison
+against the first-clamped replay1403, not changed-controller prediction.
+Its launch receipt does not claim completed native simulation.

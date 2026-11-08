@@ -1,0 +1,76 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_explicit_coupling_control_1417/assessment.json": "05ccaccb1ee4a01fed9cf2492719c9728c8bbd270ba977d699d4ebbac3137596",
+    "/nix/store/i68lxdmnc7422hvlabbmrhss4sqqkjzq-magic-vlsi-8.3.623/bin/magic": "9ffdc249b0464611c2ecdf58d5bd65ff21907f91281a6eb23a8f83cfb622f0a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_explicit_coupling_control_1417/install/bin/magic": "95acba2657188f8354050eee0ca7f9f07f5930d67f6af8832ad1ab2e3ac798d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/coupling_grounding_probe.tcl": "da61a91937b00796d1465a75b1cd490675488c2ec4613e076a8e7198a458d823",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_explicit_coupling_control.py": "cd35fe89ade1f090d17ba66a41e263ace5fe111562b3d387efb7294926c713f8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling1/feedback.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling1/after.spice": "236dcf2949a9d1065f033ded9c5cd2a6b00876d598b7f9f282ecc365597a379e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling1/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling1/native.log": "19557ad243f7291f2a35e9d17d654dc5d9720fa2feddb873b6fb735980ae3f61",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling1/before.spice": "47421b1bebdea293fe8360049a09a31b394a447e31c477e902d6bffada8a972b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling1/native.process.json": "b881ff7c4d5f41c46e3401a89b5d4f139640f92c5c1bad5e5732b3fd0c3733cd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling1/OpenPLL_Coupling_R_Probe.ext": "cd382b53ab75a7b9ae98d3112867fcade94b04d33ab122ff0cffc61cdbf23feb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling1/OpenPLL_Coupling_R_Probe.res.ext": "d3892f53a26c533499fab2d71806f9b227bbb1a1af97fec9a733f370f090db04",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling0/after.spice": "d4f12d01ac627aef3b29500d4c68e842283a5d83908dff692a076148b740f2db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling0/before.spice": "d4f12d01ac627aef3b29500d4c68e842283a5d83908dff692a076148b740f2db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling0/OpenPLL_Coupling_R_Probe.ext": "941315e109cd8b5825cb46aa4922fe34c45bfc3afcb89801c9d0e3ae244c0075",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling0/feedback.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling0/native.process.json": "b0856dde8e4b31e6f8fd5e28ad45398f558fe8d187b19a3f8cd84af6df621eae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling0/native.log": "b1826bf7ce92fc0f3ab59a67e0f5c34d71e3d46217cc3467ed4ecf700e174be8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling0/OpenPLL_Coupling_R_Probe.res.ext": "2735416297d5a24cb8b903175f4cac31c4dff304a85eb74c1d7132e9460332df",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling0/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling0/native.process.json": "af288ad26f92411adbcfe4b7d6d5a11f735c20d758563d2b3c14ec5b3032060b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling0/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling0/feedback.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling0/OpenPLL_Coupling_R_Probe.res.ext": "2735416297d5a24cb8b903175f4cac31c4dff304a85eb74c1d7132e9460332df",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling0/OpenPLL_Coupling_R_Probe.ext": "941315e109cd8b5825cb46aa4922fe34c45bfc3afcb89801c9d0e3ae244c0075",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling0/after.spice": "d4f12d01ac627aef3b29500d4c68e842283a5d83908dff692a076148b740f2db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling0/native.log": "19557ad243f7291f2a35e9d17d654dc5d9720fa2feddb873b6fb735980ae3f61",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/stock_coupling0/before.spice": "d4f12d01ac627aef3b29500d4c68e842283a5d83908dff692a076148b740f2db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling1/before.spice": "8680195df678d34a73356535be2584703ec202aab9ae1f508f9c59d3d963e078",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling1/OpenPLL_Coupling_R_Probe.res.ext": "2735416297d5a24cb8b903175f4cac31c4dff304a85eb74c1d7132e9460332df",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling1/native.log": "b1826bf7ce92fc0f3ab59a67e0f5c34d71e3d46217cc3467ed4ecf700e174be8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling1/OpenPLL_Coupling_R_Probe.ext": "cd382b53ab75a7b9ae98d3112867fcade94b04d33ab122ff0cffc61cdbf23feb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling1/after.spice": "8680195df678d34a73356535be2584703ec202aab9ae1f508f9c59d3d963e078",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling1/feedback.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling1/native.process.json": "9c7a5b2ad0face92e7319adc3f9225eded6de42a277b97077a3296b023ce3a75",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_explicit_coupling_controls_1418/modified_coupling1/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388"
+  },
+  "cases": [
+    {
+      "engine": "stock",
+      "coupling": 0,
+      "before_after_byte_identical": true,
+      "expected_result": true
+    },
+    {
+      "engine": "stock",
+      "coupling": 1,
+      "before_after_byte_identical": false,
+      "expected_result": true
+    },
+    {
+      "engine": "modified",
+      "coupling": 0,
+      "before_after_byte_identical": true,
+      "expected_result": true
+    },
+    {
+      "engine": "modified",
+      "coupling": 1,
+      "before_after_byte_identical": true,
+      "expected_result": true
+    }
+  ],
+  "stock_duplication_reproduced": true,
+  "modified_controls_pass": true,
+  "native_resistor_network_geometry_qualified": false,
+  "RC_simplification_qualified": false,
+  "PLL_model_qualified": false,
+  "release_ready": false
+}
