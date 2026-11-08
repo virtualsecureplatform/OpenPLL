@@ -2153,3 +2153,13 @@ yet establish a qualified fine-code bracket. The matching full-layout coarse23
 center1513 is still running, and no coarse20 discrepancy correction is transferred
 to this point. The inherited frequency_difference_ppm is a cross-code comparison
 to coarse20 reference1295, not a model error measurement.
+
+Configurable runner run_keeper_static_DCO_point.py preserves the static native
+subsystem,32 fF receiver load,60 ns duration and10 ps step while accepting
+explicit coarse/fine code, CPU and exclusive output directory. It reuses the
+four tested boundary-mapping controls and labels its coarse20/fine149 comparison
+as a cross-code reference difference. First case1545 measures coarse23/fine8
+on CPU17, prospectively pairing with completed1541 coarse23/fine149 to seek
+an exploratory fast-model400 MHz bracket. This is not a full-layout bracket,
+model-error correction or release calibration. Existing hashed runners remain
+unchanged.
