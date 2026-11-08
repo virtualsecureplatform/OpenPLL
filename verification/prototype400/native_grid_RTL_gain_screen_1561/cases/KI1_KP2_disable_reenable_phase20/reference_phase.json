@@ -1,0 +1,17 @@
+{
+  "reference_phase_coverage_pass": true,
+  "initializations": [
+    {
+      "epoch": 0,
+      "feedback_ns": 1351.946,
+      "reference_ns": 1371.946,
+      "measured_offset_ns": 20.0
+    },
+    {
+      "epoch": 1,
+      "feedback_ns": 221413.175,
+      "reference_ns": 221433.175,
+      "measured_offset_ns": 20.0
+    }
+  ]
+}

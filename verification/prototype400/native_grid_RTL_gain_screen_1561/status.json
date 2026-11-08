@@ -1,0 +1,5 @@
+{
+  "state": "stopped_without_qualification",
+  "reason": "TimeoutError('whole-check deadline exhausted waiting for resources')",
+  "release_ready": false
+}

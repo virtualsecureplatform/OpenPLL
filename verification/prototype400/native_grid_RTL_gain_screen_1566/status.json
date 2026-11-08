@@ -1,0 +1,10 @@
+{
+  "state": "waiting_for_case_resources",
+  "ki": 1,
+  "kp": 2,
+  "scenario": "reset_during_tracking",
+  "phase_ns": 30,
+  "cases_reused": 15,
+  "cases_run_here": 0,
+  "release_ready": false
+}

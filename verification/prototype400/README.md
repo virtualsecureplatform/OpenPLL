@@ -80,6 +80,12 @@ dependent coverage1445 stopped accordingly. Completed native traces remain
 preserved. The exact differing field and a possible contact/residue normalization
 asymmetry are under investigation; no validator guard has been relaxed.
 
+The six-knot screen1561 stopped at RAM admission after15 closed case receipts;
+it did not finish the final reset/phase30 case. Recovery1566 verifies and reuses
+all15 exact cases and waits for admission for the one missing case. Waiting is
+charged to a24 h wall cap, not the30 min active execution cap. No case is rerun,
+no RAM budget is expanded, and no complete six-knot TT pass is claimed yet.
+
 The current numerical work replays measured programming-input ripple and
 continues the existing full-layout references and boundary replay. Their results
 must be completed and hash-verified before selecting a calibration or correcting
@@ -2429,3 +2435,21 @@ the exact trace mismatch has not yet been localized and that hypothesis is not
 validated. Bounded prefix attempts did not produce a counterexample. Preserve
 the traces and strict validator; no extraction correction, geometry placement,
 distributed-R qualification or release pass is inferred from this diagnosis.
+
+The refreshed six-knot gain coordinator1561 stopped on its five-minute resource
+admission deadline after completing15 case receipts. Initial empty-run triage
+used the wrong checkout; an exclusive recovery guard prevented that mistaken
+assumption from launching anything. Recovery1566 accepts only the stopped prior
+owner and closed matching receipts. It verifies input/artifact hashes, exact
+arguments, interpolation, detector, clock, build and all six native point
+identities before reusing each case. All15 are reused; only KI1/KP2 reset during
+tracking at phase30 remains unexecuted and waits for RAM. The old3-point screen
+and all existing traces remain unchanged.
+
+Admission accounting now excludes lease waiting from the active execution budget
+while retaining a24 h total wall cap,30 min active cap and the original32 CPU /
+200 GiB /32 GiB host-reserve policy. Three admission tests and four case-reuse
+tests pass, covering long queue waits, no execution on admission failure, claim
+release on simulator failure, changed model/parameter rejection and preservation
+of unresolved tuning requests. Incomplete infrastructure failures cannot be
+reused as gain failures. This recovery does not select a release gain.

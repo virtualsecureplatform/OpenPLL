@@ -1,0 +1,71 @@
+{
+  "gains": [
+    {
+      "ki": 4,
+      "kp": 0,
+      "state": "unresolved_model_support",
+      "cases_executed": 1
+    },
+    {
+      "ki": 1,
+      "kp": 0,
+      "state": "diagnostic_failure",
+      "cases_executed": 1
+    },
+    {
+      "ki": 1,
+      "kp": 1,
+      "state": "diagnostic_failure",
+      "cases_executed": 2
+    }
+  ],
+  "cases": [
+    {
+      "ki": 4,
+      "kp": 0,
+      "scenario": "cold_start",
+      "phase_ns": 0,
+      "state": "needs_native_tuning_points",
+      "functional_trace_pass": false,
+      "measurement_requests": [
+        {
+          "coarse": 23,
+          "fine": 150
+        }
+      ],
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_grid_RTL_gain_screen_1561/cases/KI4_KP0_cold_start_phase0/assessment.json"
+    },
+    {
+      "ki": 1,
+      "kp": 0,
+      "scenario": "cold_start",
+      "phase_ns": 0,
+      "state": "diagnostic_failed",
+      "functional_trace_pass": false,
+      "measurement_requests": [],
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_grid_RTL_gain_screen_1561/cases/KI1_KP0_cold_start_phase0/assessment.json"
+    },
+    {
+      "ki": 1,
+      "kp": 1,
+      "scenario": "cold_start",
+      "phase_ns": 0,
+      "state": "diagnostic_simulation_completed",
+      "functional_trace_pass": true,
+      "measurement_requests": [],
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_grid_RTL_gain_screen_1561/cases/KI1_KP1_cold_start_phase0/assessment.json"
+    },
+    {
+      "ki": 1,
+      "kp": 1,
+      "scenario": "cold_start",
+      "phase_ns": 10,
+      "state": "diagnostic_failed",
+      "functional_trace_pass": false,
+      "measurement_requests": [],
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_native_grid_RTL_gain_screen_1561/cases/KI1_KP1_cold_start_phase10/assessment.json"
+    }
+  ],
+  "TT_diagnostic_candidate": null,
+  "release_ready": false
+}
