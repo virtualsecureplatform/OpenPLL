@@ -70,4 +70,3 @@ class CollectorWorkflow(unittest.TestCase):
             self.assertFalse((root/'result/assessment.json').exists())
 
 if __name__=='__main__':unittest.main()
-
