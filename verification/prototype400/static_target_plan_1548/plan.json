@@ -1,0 +1,34 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/plan_keeper_static_target_point.py": "5d5bc092085c5d97f1c29e828e5bc26313c97cef280dbbd4d43901775f5b644d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_fine8_DCO_1545/assessment.json": "a4acbcea384a8f2b6720ccd1c0b85963f560ffe8cb98ec0cb622cd66b1b7cdae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_fine8_DCO_1545/inputs.json": "e6ec4408052c7050dcdf1edbc989f3b0f3e8f098f2c8ee0dd8e24c3772248d81",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_DCO_1541/assessment.json": "26038668d4f071e9ef1f5838aacdacbdcacabe54e8019c79491a7be51b26eafa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_DCO_1541/inputs.json": "d95c87f68c3e439164e6bb7f449b96325a78d5b3b99920f7d722139c92672dd9"
+  },
+  "fit_fine_codes": [
+    8,
+    149
+  ],
+  "coarse": 23,
+  "prediction": {
+    "primary_interpolation": "linear_frequency",
+    "secondary_interpolation": "linear_period",
+    "continuous_frequency_code": 128.438974490259,
+    "continuous_period_code": 129.6725069882019,
+    "selected_fine": 128,
+    "predicted_frequency_Hz": 399912534.24499345,
+    "predicted_target_error_ppm": -218.6643875163874,
+    "target_Hz": 400000000.0
+  },
+  "independent_native_output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_target_DCO_1549",
+  "CPU": 31,
+  "memory_GiB": 8,
+  "maximum_additional_native_cases": 1,
+  "target_measurement_used_for_fit": false,
+  "automatic_identical_retry": false,
+  "extrapolation": false,
+  "full_layout_bracket_qualified": false,
+  "frequency_error_bound_qualified": false,
+  "release_ready": false
+}

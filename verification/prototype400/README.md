@@ -2245,3 +2245,14 @@ remain unmeasured, and there is no fitted accuracy bound or qualified full-layou
 bracket. This permits an interpolated target-code hypothesis followed by a new
 independent native measurement, without extrapolation or transferring the
 coarse20 model discrepancy as a calibration correction.
+
+Prospective target plan1548 fits only completed fast points coarse23/fine8 and
+fine149. Primary linear-frequency interpolation selects fine128, predicting
+399.912534245 MHz (-218.664388 ppm versus400 MHz). Secondary linear-period
+interpolation gives continuous code129.672507, compared with128.438974 for
+frequency interpolation; neither curve has a qualified accuracy bound. Independent
+native point1549 is predeclared at coarse23/fine128, CPU31/8 GiB,60 ns/10 ps,
+with one case and no identical retry. It is not included in the endpoint fit.
+Two planner tests pass, including extrapolation/nonfinite/invalid-knot rejection.
+The plan is retained before the target measurement; model discrepancy corrections
+are not applied and full-layout release qualification remains open.
