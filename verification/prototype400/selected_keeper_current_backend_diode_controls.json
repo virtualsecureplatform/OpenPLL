@@ -1,0 +1,38 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_current_backend_diode_controls_1286/assessment.json": "4c9d1d6092dc6810c8a1f51ad50a2c3eea52323e83d952fa8298beba6b731c13",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_current_backend_diode_controls_1286/completed_review.json": "b1d27ad5684d4b0539b8507419b70e884b2d5bdce4839847c37e4dc9d8add83c"
+  },
+  "native_cases": 50,
+  "geometry_corner_cases": 10,
+  "temperature_C": 27,
+  "current_backend_model_fragment_exactly_matches": true,
+  "all_comparison_screens_passed": true,
+  "relative_limits": {
+    "DC": 0.001,
+    "AC_complex_current": 0.0001,
+    "integrated_current": 0.001
+  },
+  "maximum_relative_errors": {
+    "DC_max_relative_error_floor_1pA": 0.0005399606008879462,
+    "AC_max_complex_current_relative_error": 4.862203350635796e-10,
+    "maximum_integrated_current_relative_error": 0.0001534470107257707
+  },
+  "geometries_um": [
+    {
+      "area": 0.4347,
+      "perimeter": 2.64,
+      "current_keeper_instances": 2
+    },
+    {
+      "area": 0.6417,
+      "perimeter": 3.24,
+      "current_keeper_instances": 812
+    }
+  ],
+  "scope": "five corners, both actual diode geometries, sampled bias/frequency/transient controls",
+  "noise_qualified": false,
+  "statistical_device_qualification": false,
+  "full_PLL_model_qualified": false,
+  "release_ready": false
+}
