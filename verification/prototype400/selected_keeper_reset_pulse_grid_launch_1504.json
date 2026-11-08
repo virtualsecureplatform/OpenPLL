@@ -1,0 +1,363 @@
+{
+  "output": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504",
+  "owner": {
+    "pid": 2307059,
+    "birth": "136964928"
+  },
+  "plan": {
+    "cases": [
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 0,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": true
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 100,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 400,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 1000,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 2000,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 400,
+        "full_ramp_ps": 400,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 1000,
+        "full_ramp_ps": 400,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_1",
+        "load_fF": 250,
+        "width_ps": 2000,
+        "full_ramp_ps": 400,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 0,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": true
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 100,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 400,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 1000,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 2000,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 400,
+        "full_ramp_ps": 400,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 1000,
+        "full_ramp_ps": 400,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_2",
+        "load_fF": 400,
+        "width_ps": 2000,
+        "full_ramp_ps": 400,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 0,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": true
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 100,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 400,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 1000,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 2000,
+        "full_ramp_ps": 20,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 400,
+        "full_ramp_ps": 400,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 1000,
+        "full_ramp_ps": 400,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfrtp_4",
+        "load_fF": 600,
+        "width_ps": 2000,
+        "full_ramp_ps": 400,
+        "reset_state": 0,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 0,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": true
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 100,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 400,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 1000,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 2000,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 400,
+        "full_ramp_ps": 400,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 1000,
+        "full_ramp_ps": 400,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_1",
+        "load_fF": 125,
+        "width_ps": 2000,
+        "full_ramp_ps": 400,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 0,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": true
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 100,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 400,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 1000,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 2000,
+        "full_ramp_ps": 20,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 400,
+        "full_ramp_ps": 400,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 1000,
+        "full_ramp_ps": 400,
+        "reset_state": 1,
+        "negative_control": false
+      },
+      {
+        "master": "sky130_fd_sc_hs__dfstp_2",
+        "load_fF": 400,
+        "width_ps": 2000,
+        "full_ramp_ps": 400,
+        "reset_state": 1,
+        "negative_control": false
+      }
+    ],
+    "corners": [
+      "tt",
+      "ff",
+      "ss",
+      "sf",
+      "fs"
+    ],
+    "maximum_step_ps": 2,
+    "temperature_C": 27,
+    "supply_V": 1.8,
+    "clock_held_low_during_pulse": true,
+    "automatic_identical_retry": false,
+    "physical_reset_timing_qualified": false,
+    "release_ready": false
+  },
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/owner.json": "a0dcdc28b04101cb51210201514517a997ffff144442417f5d7f2673d19d21d9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset_pulse_grid_1504/plan.json": "08218cbb8effe982a44c27310f3f23f1e721b45320aa0b401aba61bcef2b59fb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_reset_pulse_grid_v2.py": "fa70d3255d5c59d49f518b788defb018232afbd154c93c0a97190910ceba1dcd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_keeper_reset_pulse_grid_v2.py": "ff5b38ae1dda2a8d95cc788c4c1a720fd0ab4fbce0c86d8d29fd67b29e4ff111"
+  },
+  "CPU": 17,
+  "memory_GiB": 4,
+  "native_limit_s_per_corner": 3600,
+  "expected_observations": 200,
+  "first_preflight": {
+    "output": "build/signoff400/selected_keeper_reset_pulse_grid_1503",
+    "native_started": false,
+    "reason": "older assembly extraction lacks dfstp_2; replaced by established fixed-divider digital extraction"
+  },
+  "parser_tests_passed": 3,
+  "native_results_available": false,
+  "release_ready": false
+}

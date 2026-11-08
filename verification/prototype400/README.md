@@ -1671,3 +1671,19 @@ recovery/removal tables but no pulse-width limit. Retaining this omission makes
 reset pulse characterization an explicit prerequisite to physical lifecycle
 qualification. No constraints, RTL, cell models or release gates were changed.
 The completed source-pinned receipt and diagnostic runner are retained.
+
+Reset-pulse grid 1504 now measures the five used extracted sequential masters
+from the same fixed-divider digital extraction used by the clock-pulse campaign.
+Forty independent fixtures per corner cover 100/400/1000/2000 ps active-low
+pulse widths with 20 ps full ramps and 400/1000/2000 ps widths with 400 ps ramps,
+plus a no-pulse control per master. Each fixture initializes asynchronously,
+loads the opposite state with a clock, holds the clock low during the test pulse,
+and checks retained Q after reset release. Twenty-five no-pulse controls across
+the five corners must retain the opposite state. Planned total: 200 observations
+at 1.8 V / 27 C using fixed ngspice, 2 ps maximum step and predeclared individual
+cell output loads. Three waveform-assessment rejection/control tests pass.
+The live launch is source-pinned and uses CPU17 / 4 GiB, shared leases and a
+one-hour native limit per corner, with no identical retry. An earlier preflight
+1503 stopped before native execution because the older assembly lacked dfstp_2.
+No minimum pulse bound, actual routed slew/load envelope, recovery/removal or
+physical lifecycle qualification is inferred from this diagnostic grid.
