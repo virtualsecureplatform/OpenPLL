@@ -2076,3 +2076,13 @@ It demonstrates a faster diagnostic path, without proving an equivalent-workload
 speedup or calibrated400 MHz accuracy. Pair1536 and assessor1538 remain live.
 Grounded capacitive exterior, receiver termination, reset-history alignment,
 settling, corners and distributed wire R still require assessment.
+
+Reset-aligned comparison1540 uses measured0.9 V reset crossings5.05 ns for
+pilot1531 and181.310052 ns for the full reference. At ages20–40 ns the
+frequencies are373.649282059/373.077184779 MHz (+1,533.455552 ppm); at ages
+40–54 ns they are373.715922450/373.145581064 MHz (+1,528.468819 ppm).
+The combined20–54 ns comparison is +1,531.465467 ppm. Aligning elapsed time
+does not remove the discrepancy. Reset slews and prior histories still differ,
+so this is diagnostic evidence, not an isolated attribution or a global error
+bound. Passive output-load sensitivity and the prescribed-boundary replay are
+still needed to separate remaining approximation effects.

@@ -1,0 +1,102 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_terminated_DCO_1531/assessment.json": "e495b655e752b881972e44b951870c48707df592075d1bf1d3c2f0ae2c27e1c2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_receiver_waveforms_1467/assessment.json": "3b1c96eec7c4662c7ca3cd42a93d4315dd2b2baaeb98698911ed2ae9663abf27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reference_startup_timing_1539/assessment.json": "bb7a71e1986eb342486a156e7e67576344c018785a7a24a3b06f3af008960f5d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_static_reset_aligned.py": "014980613ed26ab38210e86a86bb78b10d5acd1825d305543f0ead8430ec7746",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_isolated_control.py": "abada00c7349f8209324c743e11ab32a75eac8743e73998697c767fdb53c7117"
+  },
+  "artifacts": {},
+  "pilot_reset_crossing_ns": 5.05,
+  "reference_reset_crossing_ns": 181.31005230713203,
+  "windows": [
+    {
+      "age_since_reset_ns": [
+        20,
+        40
+      ],
+      "pilot_window_ns": [
+        25.05,
+        45.05
+      ],
+      "reference_window_ns": [
+        201.31005230713203,
+        221.31005230713203
+      ],
+      "pilot_frequency": {
+        "rising_edges": 7,
+        "frequency_mhz": 373.6492820594623,
+        "minimum_period_ns": 2.676070687732249,
+        "maximum_period_ns": 2.676550987544328
+      },
+      "reference_frequency": {
+        "rising_edges": 7,
+        "frequency_mhz": 373.07718477917405,
+        "minimum_period_ns": 2.6801763428322545,
+        "maximum_period_ns": 2.680687523247343
+      },
+      "pilot_relative_to_reference_ppm": 1533.4555519037617
+    },
+    {
+      "age_since_reset_ns": [
+        40,
+        54
+      ],
+      "pilot_window_ns": [
+        45.05,
+        59.05
+      ],
+      "reference_window_ns": [
+        221.31005230713203,
+        235.31005230713203
+      ],
+      "pilot_frequency": {
+        "rising_edges": 6,
+        "frequency_mhz": 373.71592244956526,
+        "minimum_period_ns": 2.6757290125430586,
+        "maximum_period_ns": 2.675957319358716
+      },
+      "reference_frequency": {
+        "rising_edges": 6,
+        "frequency_mhz": 373.1455810637811,
+        "minimum_period_ns": 2.6798094062995403,
+        "maximum_period_ns": 2.680036271295137
+      },
+      "pilot_relative_to_reference_ppm": 1528.4688194838748
+    },
+    {
+      "age_since_reset_ns": [
+        20,
+        54
+      ],
+      "pilot_window_ns": [
+        25.05,
+        59.05
+      ],
+      "reference_window_ns": [
+        201.31005230713203,
+        235.31005230713203
+      ],
+      "pilot_frequency": {
+        "rising_edges": 13,
+        "frequency_mhz": 373.6805933365914,
+        "minimum_period_ns": 2.6757290125430586,
+        "maximum_period_ns": 2.676550987544328
+      },
+      "reference_frequency": {
+        "rising_edges": 13,
+        "frequency_mhz": 373.10918949741324,
+        "minimum_period_ns": 2.6798094062995403,
+        "maximum_period_ns": 2.680687523247343
+      },
+      "pilot_relative_to_reference_ppm": 1531.4654671139128
+    }
+  ],
+  "threshold_V": 0.9,
+  "matched_time_since_reset": true,
+  "reset_slew_and_history_matched": false,
+  "receiver_load_qualified": false,
+  "analog_model_qualified": false,
+  "release_ready": false
+}
