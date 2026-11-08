@@ -1891,3 +1891,19 @@ mismatches. Both completed receipts and actual input/artifact identities were
 reverified before retention. Fine182 remains native-running; the prospective
 corrected fit/holdout collector still needs it. This TT C-only point supplies
 neither a400 MHz bracket nor other-corner, wire-R or closed-loop qualification.
+
+Next-frontier preparation1523 internalizes the sole nonrail diffusion boundary
+identified by1522, retaining32 additional physical primitives for10,211 total.
+All previous interior unknowns and unchanged source cards are preserved, and
+PLLOUT remains unforced. The new boundary has7,699 ports and four prescribed
+nonrail diffusions: a_51394_74686#, a_56386_74454#, a_67234_77350#, and
+ a_67618_73122#. This is downstream movement of the active-output dependency,
+not its elimination. Three existing receiver-expansion guards pass. The new
+candidate is isolated, no earlier candidate is modified, and native execution
+is not authorized by its preparation receipt. The completed receipt and runner
+are retained to guide causal receiver modeling rather than claim prediction.
+
+Corrected reduced replay1470 has now started natively onCPU25 under its8 GiB
+lease after completed physical checks, exact-knot aggregation and source
+staging. Its actual native process and local output paths are present. All
+prior large captures and the new coarse23 capture remain unchanged.
