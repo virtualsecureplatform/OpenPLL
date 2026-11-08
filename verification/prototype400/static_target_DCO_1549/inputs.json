@@ -1,0 +1,2765 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_native_1419/assessment.json": "c29506e5809b2d37d6e1807d57be133cdb0af98768e089edb46902170bf4a6b5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_prescribed_boundary_roles_1522/assessment.json": "6e7a052b635676f8c2bbbcdb245f526e008c6572226dcb330ec8380b40744fe8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/assessment.json": "8ecc7596e01f4c099ce93b6bdcf27edf12b760f7fde1f61ad346507e5bb2161a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_fine149_1295/assessment.json": "ef66cf9e5d0c94034cbb444fd7e4ffefc8de35e2d7c8a4d76e12299553586125",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_native_1419/bindings.json": "1196e9c48eb07f249b5a141da2e7704769d6c9bd8d6ff9ab8a8284d42681ebe7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_prescribed_boundary_roles_1522/boundaries.json": "3fc2e76de478cb29067a8d9c99fbdcf6ebdc051a66d936922792ab269ad3aad2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/plan.json": "c5882f6937c5b0bed68cc4f555890e58a009c61196a573c30621639c1bf5cad5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_native_1419/model.spice": "b24896f161ee829c31de6dbc5cefa187ac51dc40b30b600733a5500cc05e6df5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_target_DCO_1549/transient.spice": "5c11caf9ccb342f9d4ae66776af8e085c60c3dc27282053c6f9fcf3f05501009",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_static_DCO_point.py": "e85c1c68fb743510646e4fc83edb4bf4df9c39c32cb5aeb39ba131330408b741",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_physical_tuning.py": "4b83a4d6c4951cafd271eeeab996644b63350c2b75c2bc3e45dcff1d156b8a09",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_detector_phase_probe_v2.py": "5c866e5033e5c082320899bcb9e23628578af305eb976f80dd1a94eec20bddd7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_selected_isolated_control.py": "abada00c7349f8209324c743e11ab32a75eac8743e73998697c767fdb53c7117",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/retain_completed_native_trace.py": "909f6342265c6ca48aa5aaad1d49a7ee23df71c0ccb4e4dc59f551b0040f3d45",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compiled_charge_v2.py": "9c73d39edb078a302e69a3f87f3d616d8948a43698b3b79b2d9549c4bd6749e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/run_keeper_static_terminated_DCO.py": "d75b2f606c1a836b7bb1f4c84b21cbf9fea959d6c1fb900771d90978e21e1d8d"
+  },
+  "coarse": 23,
+  "fine": 128,
+  "receiver_load_fF": 32,
+  "CPU": 31,
+  "memory_GiB": 8,
+  "native_cap_s": 86400,
+  "maximum_native_cases": 1,
+  "automatic_identical_retry": false,
+  "simulation_ns": 60,
+  "window_ns": [
+    20,
+    60
+  ],
+  "max_step_ps": 10,
+  "programming_macro_inputs_ideal_static_truth_table": true,
+  "capacitive_exterior_grounded": true,
+  "receiver_output_prescribed": false,
+  "PLLOUT_prescribed": false,
+  "voltage_histories_used": false,
+  "receiver_node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__clkbuf_16_123.A",
+  "reset_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.RESET_N",
+  "leaf_observations": {
+    "COARSETHERMAL_CODE[26].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 26,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.COARSETHERMAL_CODE[26]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_957)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7776"
+    },
+    "COARSETHERMAL_CODE[29].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 29,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.COARSETHERMAL_CODE[29]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10945)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9172"
+    },
+    "COARSETHERMAL_CODE[31].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 31,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.COARSETHERMAL_CODE[31]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5707)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8394"
+    },
+    "COARSETHERMAL_CODE[33].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 33,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.COARSETHERMAL_CODE[33]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5807)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8410"
+    },
+    "COARSETHERMAL_CODE[34].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 34,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.COARSETHERMAL_CODE[34]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10601)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9107"
+    },
+    "COARSETHERMAL_CODE[35].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 35,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.COARSETHERMAL_CODE[35]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1375)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7822"
+    },
+    "DCO_THERM[128].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 128,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[128]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13158)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9549"
+    },
+    "DCO_THERM[132].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 132,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[132]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7428)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8632"
+    },
+    "DCO_THERM[133].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 133,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[133]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_14330)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9776"
+    },
+    "DCO_THERM[135].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 135,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[135]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3792)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8143"
+    },
+    "DCO_THERM[136].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 136,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[136]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9887)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9003"
+    },
+    "DCO_THERM[137].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 137,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[137]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2316)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7947"
+    },
+    "DCO_THERM[138].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 138,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[138]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10438)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9084"
+    },
+    "DCO_THERM[139].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 139,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[139]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11165)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9214"
+    },
+    "DCO_THERM[140].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 140,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[140]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9686)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8961"
+    },
+    "DCO_THERM[141].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 141,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[141]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4109)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8183"
+    },
+    "DCO_THERM[142].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 142,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[142]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2566)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7982"
+    },
+    "DCO_THERM[144].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 144,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[144]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_540)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7721"
+    },
+    "DCO_THERM[145].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 145,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[145]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_660)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7737"
+    },
+    "DCO_THERM[146].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 146,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[146]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5538)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8365"
+    },
+    "DCO_THERM[147].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 147,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[147]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4030)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8172"
+    },
+    "DCO_THERM[148].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 148,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[148]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5360)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8338"
+    },
+    "DCO_THERM[149].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 149,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[149]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6240)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8449"
+    },
+    "DCO_THERM[150].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 150,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[150]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5761)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8404"
+    },
+    "DCO_THERM[152].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 152,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[152]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9039)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8861"
+    },
+    "DCO_THERM[153].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 153,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[153]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7809)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8686"
+    },
+    "DCO_THERM[154].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 154,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[154]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11602)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9279"
+    },
+    "DCO_THERM[157].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 157,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[157]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6075)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8428"
+    },
+    "DCO_THERM[159].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 159,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[159]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4550)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8238"
+    },
+    "DCO_THERM[160].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 160,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[160]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9526)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8938"
+    },
+    "DCO_THERM[161].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 161,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[161]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4786)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8273"
+    },
+    "DCO_THERM[162].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 162,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[162]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3686)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8127"
+    },
+    "DCO_THERM[163].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 163,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[163]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10494)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9094"
+    },
+    "DCO_THERM[164].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 164,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[164]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11339)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9237"
+    },
+    "DCO_THERM[165].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 165,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[165]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12506)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9421"
+    },
+    "DCO_THERM[166].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 166,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[166]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9224)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8895"
+    },
+    "DCO_THERM[167].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 167,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[167]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8516)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8782"
+    },
+    "DCO_THERM[168].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 168,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[168]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9067)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8869"
+    },
+    "DCO_THERM[169].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 169,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[169]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6785)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8529"
+    },
+    "DCO_THERM[170].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 170,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[170]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1706)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7879"
+    },
+    "DCO_THERM[171].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 171,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[171]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2788)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8012"
+    },
+    "DCO_THERM[172].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 172,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[172]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12352)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9395"
+    },
+    "DCO_THERM[173].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 173,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[173]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10751)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9145"
+    },
+    "DCO_THERM[174].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 174,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[174]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6392)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8481"
+    },
+    "DCO_THERM[175].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 175,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[175]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4814)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8277"
+    },
+    "DCO_THERM[176].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 176,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[176]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3702)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8130"
+    },
+    "DCO_THERM[178].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 178,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[178]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_16195)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_10159"
+    },
+    "DCO_THERM[179].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 179,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[179]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1894)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7906"
+    },
+    "DCO_THERM[180].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 180,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[180]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10638)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9115"
+    },
+    "DCO_THERM[182].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 182,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[182]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1614)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7863"
+    },
+    "DCO_THERM[183].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 183,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[183]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_163)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7683"
+    },
+    "DCO_THERM[184].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 184,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[184]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9804)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8984"
+    },
+    "DCO_THERM[189].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 189,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[189]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4631)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8248"
+    },
+    "DCO_THERM[190].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 190,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[190]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8263)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8741"
+    },
+    "DCO_THERM[229].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 229,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[229]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4015)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8169"
+    },
+    "DCO_THERM[237].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 237,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[237]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8825)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8827"
+    },
+    "DCO_THERM[238].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 238,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[238]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1512)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7850"
+    },
+    "DCO_THERM[246].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 246,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[246]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1743)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7885"
+    },
+    "DCO_THERM[248].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 248,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[248]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6782)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8528"
+    },
+    "DCO_THERM[249].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 249,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[249]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3144)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8056"
+    },
+    "DCO_THERM[253].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 253,
+      "endpoint": "DCO",
+      "physical_node": "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.DCO_THERM[253]",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1855)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7901"
+    },
+    "DCO_THERM[37].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 37,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_0.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11885)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9322"
+    },
+    "DCO_THERM[41].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 41,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_1.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6236)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8447"
+    },
+    "DCO_THERM[35].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 35,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_10.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2013)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7921"
+    },
+    "DCO_THERM[196].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 196,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_100.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8279)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8742"
+    },
+    "DCO_THERM[198].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 198,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_101.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9220)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8893"
+    },
+    "DCO_THERM[208].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 208,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_102.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8775)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8818"
+    },
+    "DCO_THERM[204].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 204,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_103.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6278)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8459"
+    },
+    "DCO_THERM[194].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 194,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_104.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10932)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9171"
+    },
+    "DCO_THERM[200].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 200,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_105.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7488)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8641"
+    },
+    "DCO_THERM[203].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 203,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_106.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9239)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8905"
+    },
+    "DCO_THERM[207].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 207,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_107.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4643)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8249"
+    },
+    "DCO_THERM[222].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 222,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_108.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12405)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9405"
+    },
+    "DCO_THERM[206].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 206,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_109.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3367)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8089"
+    },
+    "DCO_THERM[24].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 24,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_11.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8241)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8737"
+    },
+    "DCO_THERM[210].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 210,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_110.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_14894)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9897"
+    },
+    "DCO_THERM[213].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 213,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_111.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8810)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8825"
+    },
+    "DCO_THERM[195].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 195,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_112.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12872)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9489"
+    },
+    "DCO_THERM[202].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 202,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_113.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3677)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8125"
+    },
+    "DCO_THERM[199].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 199,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_114.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12568)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9431"
+    },
+    "DCO_THERM[205].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 205,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_115.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6419)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8488"
+    },
+    "DCO_THERM[209].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 209,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_116.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13258)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9571"
+    },
+    "DCO_THERM[211].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 211,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_117.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6044)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8426"
+    },
+    "DCO_THERM[214].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 214,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_118.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9966)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9022"
+    },
+    "DCO_THERM[216].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 216,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_119.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2769)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8007"
+    },
+    "DCO_THERM[29].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 29,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_12.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13714)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9666"
+    },
+    "DCO_THERM[219].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 219,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_120.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7586)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8654"
+    },
+    "DCO_THERM[235].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 235,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_121.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13919)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9702"
+    },
+    "DCO_THERM[228].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 228,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_122.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10230)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9059"
+    },
+    "DCO_THERM[223].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 223,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_123.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8899)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8845"
+    },
+    "DCO_THERM[242].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 242,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_124.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2090)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7930"
+    },
+    "DCO_THERM[251].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 251,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_125.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2007)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7919"
+    },
+    "DCO_THERM[221].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 221,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_126.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_15023)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9925"
+    },
+    "DCO_THERM[245].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 245,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_127.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5875)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8417"
+    },
+    "DCO_THERM[241].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 241,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_128.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_331)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7704"
+    },
+    "DCO_THERM[217].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 217,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_129.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7225)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8605"
+    },
+    "DCO_THERM[14].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 14,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_13.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5129)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8315"
+    },
+    "DCO_THERM[220].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 220,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_130.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7768)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8679"
+    },
+    "DCO_THERM[226].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 226,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_131.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3138)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8055"
+    },
+    "DCO_THERM[232].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 232,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_132.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2502)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7972"
+    },
+    "DCO_THERM[225].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 225,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_133.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3747)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8135"
+    },
+    "COARSETHERMAL_CODE[32].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 32,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_134.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_15597)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_10035"
+    },
+    "DCO_THERM[231].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 231,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_135.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10149)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9049"
+    },
+    "DCO_THERM[239].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 239,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_136.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9552)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8941"
+    },
+    "DCO_THERM[240].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 240,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_137.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4134)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8186"
+    },
+    "DCO_THERM[224].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 224,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_138.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6474)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8495"
+    },
+    "DCO_THERM[230].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 230,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_139.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12518)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9423"
+    },
+    "DCO_THERM[11].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 11,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_14.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1329)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7816"
+    },
+    "DCO_THERM[254].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 254,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_140.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6415)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8485"
+    },
+    "DCO_THERM[243].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 243,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_141.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8381)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8761"
+    },
+    "DCO_THERM[233].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 233,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_142.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1276)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7811"
+    },
+    "DCO_THERM[130].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 130,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_143.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8876)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8836"
+    },
+    "DCO_THERM[234].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 234,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_144.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4546)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8235"
+    },
+    "DCO_THERM[227].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 227,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_145.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2524)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7975"
+    },
+    "DCO_THERM[236].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 236,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_146.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1457)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7839"
+    },
+    "DCO_THERM[252].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 252,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_147.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6728)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8521"
+    },
+    "DCO_THERM[247].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 247,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_148.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7677)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8667"
+    },
+    "DCO_THERM[244].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 244,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_149.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9118)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8874"
+    },
+    "DCO_THERM[12].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 12,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_15.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10168)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9052"
+    },
+    "COARSETHERMAL_CODE[25].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 25,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_150.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11004)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9179"
+    },
+    "COARSETHERMAL_CODE[30].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 30,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_151.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8891)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8843"
+    },
+    "COARSETHERMAL_CODE[24].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 24,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_152.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6192)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8439"
+    },
+    "DCO_THERM[129].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 129,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_153.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1994)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7916"
+    },
+    "COARSETHERMAL_CODE[28].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 28,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_154.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13433)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9615"
+    },
+    "COARSETHERMAL_CODE[27].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 27,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_155.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1927)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7907"
+    },
+    "DCO_THERM[250].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 250,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_156.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_14529)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9815"
+    },
+    "DCO_THERM[212].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 212,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_157.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7328)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8622"
+    },
+    "DCO_THERM[215].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 215,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_158.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9870)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8996"
+    },
+    "DCO_THERM[218].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 218,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_159.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12016)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9346"
+    },
+    "DCO_THERM[10].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 10,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_16.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8441)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8772"
+    },
+    "DCO_THERM[66].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 66,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_160.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1952)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7914"
+    },
+    "DCO_THERM[67].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 67,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_161.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1928)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7908"
+    },
+    "DCO_THERM[79].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 79,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_162.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8295)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8744"
+    },
+    "DCO_THERM[82].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 82,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_163.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3721)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8131"
+    },
+    "DCO_THERM[68].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 68,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_164.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11438)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9244"
+    },
+    "COARSETHERMAL_CODE[18].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 18,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_165.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2461)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7966"
+    },
+    "DCO_THERM[70].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 70,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_166.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6360)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8476"
+    },
+    "COARSETHERMAL_CODE[20].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 20,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_167.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1231)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7805"
+    },
+    "COARSETHERMAL_CODE[22].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 22,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_168.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3252)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8065"
+    },
+    "DCO_THERM[75].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 75,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_169.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2995)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8045"
+    },
+    "DCO_THERM[15].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 15,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_17.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8623)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8796"
+    },
+    "DCO_THERM[64].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 64,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_170.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4374)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8206"
+    },
+    "DCO_THERM[72].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 72,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_171.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4081)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8178"
+    },
+    "DCO_THERM[73].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 73,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_172.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13318)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9588"
+    },
+    "DCO_THERM[78].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 78,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_173.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6362)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8478"
+    },
+    "DCO_THERM[76].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 76,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_174.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2875)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8024"
+    },
+    "DCO_THERM[69].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 69,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_175.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12485)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9417"
+    },
+    "DCO_THERM[81].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 81,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_176.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13086)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9533"
+    },
+    "DCO_THERM[80].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 80,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_177.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7470)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8639"
+    },
+    "DCO_THERM[77].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 77,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_178.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2443)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7961"
+    },
+    "DCO_THERM[84].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 84,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_179.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9017)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8858"
+    },
+    "DCO_THERM[27].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 27,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_18.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7861)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8695"
+    },
+    "DCO_THERM[71].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 71,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_180.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6798)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8531"
+    },
+    "DCO_THERM[102].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 102,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_181.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6622)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8508"
+    },
+    "DCO_THERM[107].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 107,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_182.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7293)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8619"
+    },
+    "DCO_THERM[114].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 114,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_183.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5482)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8358"
+    },
+    "DCO_THERM[91].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 91,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_184.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3866)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8149"
+    },
+    "DCO_THERM[86].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 86,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_185.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9908)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9005"
+    },
+    "DCO_THERM[85].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 85,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_186.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4879)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8287"
+    },
+    "DCO_THERM[94].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 94,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_187.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3127)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8053"
+    },
+    "DCO_THERM[87].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 87,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_188.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3621)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8116"
+    },
+    "DCO_THERM[88].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 88,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_189.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10193)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9056"
+    },
+    "DCO_THERM[59].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 59,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_19.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9642)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8955"
+    },
+    "DCO_THERM[90].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 90,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_190.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9192)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8888"
+    },
+    "DCO_THERM[96].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 96,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_191.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8643)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8798"
+    },
+    "DCO_THERM[92].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 92,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_192.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7654)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8664"
+    },
+    "DCO_THERM[98].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 98,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_193.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_16040)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_10124"
+    },
+    "DCO_THERM[95].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 95,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_194.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7826)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8687"
+    },
+    "DCO_THERM[99].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 99,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_195.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1190)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7796"
+    },
+    "DCO_THERM[103].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 103,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_196.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2373)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7953"
+    },
+    "DCO_THERM[74].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 74,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_197.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7763)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8678"
+    },
+    "DCO_THERM[83].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 83,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_198.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12067)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9355"
+    },
+    "DCO_THERM[89].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 89,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_199.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1681)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7872"
+    },
+    "DCO_THERM[33].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 33,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_2.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8949)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8849"
+    },
+    "DCO_THERM[32].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 32,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_20.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3487)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8101"
+    },
+    "COARSETHERMAL_CODE[23].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 23,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_200.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2777)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8009"
+    },
+    "DCO_THERM[134].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 134,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_201.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13589)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9639"
+    },
+    "DCO_THERM[131].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 131,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_202.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_16436)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_10215"
+    },
+    "DCO_THERM[156].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 156,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_203.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_17370)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_10414"
+    },
+    "DCO_THERM[155].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 155,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_204.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_15828)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_10079"
+    },
+    "DCO_THERM[151].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 151,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_205.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12657)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9448"
+    },
+    "DCO_THERM[143].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 143,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_206.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8041)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8718"
+    },
+    "DCO_THERM[158].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 158,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_207.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5925)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8419"
+    },
+    "DCO_THERM[113].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 113,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_208.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5397)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8347"
+    },
+    "DCO_THERM[104].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 104,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_209.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4505)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8227"
+    },
+    "DCO_THERM[56].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 56,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_21.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6837)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8542"
+    },
+    "DCO_THERM[111].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 111,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_210.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_480)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7716"
+    },
+    "DCO_THERM[105].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 105,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_211.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3969)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8162"
+    },
+    "DCO_THERM[100].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 100,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_212.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3401)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8097"
+    },
+    "DCO_THERM[110].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 110,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_213.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7910)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8704"
+    },
+    "DCO_THERM[118].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 118,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_214.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7556)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8650"
+    },
+    "DCO_THERM[116].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 116,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_215.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7519)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8643"
+    },
+    "DCO_THERM[112].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 112,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_216.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_14114)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9732"
+    },
+    "DCO_THERM[117].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 117,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_217.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7036)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8575"
+    },
+    "DCO_THERM[120].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 120,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_218.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12105)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9362"
+    },
+    "DCO_THERM[121].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 121,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_219.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11247)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9227"
+    },
+    "DCO_THERM[47].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 47,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_22.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7891)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8701"
+    },
+    "DCO_THERM[127].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 127,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_220.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7752)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8677"
+    },
+    "DCO_THERM[123].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 123,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_221.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2627)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7997"
+    },
+    "DCO_THERM[115].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 115,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_222.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2381)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7955"
+    },
+    "DCO_THERM[122].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 122,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_223.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12446)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9410"
+    },
+    "DCO_THERM[126].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 126,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_224.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_758)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7748"
+    },
+    "DCO_THERM[181].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 181,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_225.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6349)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8470"
+    },
+    "DCO_THERM[188].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 188,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_226.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11624)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9283"
+    },
+    "DCO_THERM[119].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 119,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_227.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6165)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8435"
+    },
+    "DCO_THERM[187].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 187,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_228.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9601)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8947"
+    },
+    "DCO_THERM[186].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 186,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_229.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1377)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7824"
+    },
+    "DCO_THERM[43].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 43,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_23.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8514)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8780"
+    },
+    "DCO_THERM[108].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 108,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_230.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1156)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7792"
+    },
+    "DCO_THERM[125].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 125,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_231.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6576)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8502"
+    },
+    "DCO_THERM[177].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 177,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_232.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1543)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7853"
+    },
+    "DCO_THERM[191].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 191,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_233.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6831)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8541"
+    },
+    "DCO_THERM[109].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 109,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_234.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10781)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9153"
+    },
+    "DCO_THERM[185].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 185,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_235.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_14204)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9754"
+    },
+    "DCO_THERM[124].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 124,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_236.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4614)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8246"
+    },
+    "DCO_THERM[106].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 106,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_237.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_14546)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9820"
+    },
+    "DCO_THERM[101].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 101,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_238.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9096)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8871"
+    },
+    "DCO_THERM[97].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 97,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_239.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2851)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8020"
+    },
+    "DCO_THERM[39].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 39,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_24.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7543)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8648"
+    },
+    "DCO_THERM[93].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 93,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_240.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8768)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8815"
+    },
+    "DCO_THERM[44].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 44,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_25.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5434)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8353"
+    },
+    "DCO_THERM[51].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 51,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_26.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6720)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8520"
+    },
+    "DCO_THERM[55].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 55,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_27.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4317)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8202"
+    },
+    "DCO_THERM[62].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 62,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_28.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10882)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9159"
+    },
+    "DCO_THERM[52].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 52,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_29.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13198)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9563"
+    },
+    "DCO_THERM[20].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 20,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_3.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4273)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8193"
+    },
+    "DCO_THERM[63].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 63,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_30.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13182)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9557"
+    },
+    "DCO_THERM[48].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 48,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_31.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12165)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9364"
+    },
+    "DCO_THERM[57].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 57,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_32.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11991)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9339"
+    },
+    "DCO_THERM[49].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 49,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_33.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10785)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9154"
+    },
+    "DCO_THERM[42].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 42,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_34.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10810)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9156"
+    },
+    "COARSETHERMAL_CODE[17].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 17,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_35.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6624)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8509"
+    },
+    "COARSETHERMAL_CODE[12].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 12,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_36.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8363)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8756"
+    },
+    "COARSETHERMAL_CODE[15].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 15,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_37.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12935)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9505"
+    },
+    "COARSETHERMAL_CODE[21].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 21,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_38.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5033)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8308"
+    },
+    "DCO_THERM[30].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 30,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_39.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3183)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8059"
+    },
+    "DCO_THERM[34].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 34,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_4.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11800)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9307"
+    },
+    "COARSETHERMAL_CODE[16].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 16,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_40.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9930)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9011"
+    },
+    "COARSETHERMAL_CODE[14].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 14,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_41.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_714)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7743"
+    },
+    "COARSETHERMAL_CODE[19].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 19,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_42.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3827)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8145"
+    },
+    "DCO_THERM[61].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 61,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_43.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4490)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8225"
+    },
+    "DCO_THERM[54].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 54,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_44.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6321)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8467"
+    },
+    "DCO_THERM[46].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 46,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_45.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4292)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8196"
+    },
+    "DCO_THERM[65].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 65,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_46.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_216)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7693"
+    },
+    "DCO_THERM[60].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 60,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_47.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2020)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7923"
+    },
+    "DCO_THERM[45].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 45,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_48.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_15648)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_10044"
+    },
+    "DCO_THERM[40].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 40,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_49.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8551)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8787"
+    },
+    "DCO_THERM[16].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 16,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_5.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5048)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8309"
+    },
+    "DCO_THERM[53].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 53,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_50.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11191)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9216"
+    },
+    "DCO_THERM[31].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 31,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_51.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5496)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8361"
+    },
+    "COARSETHERMAL_CODE[13].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 13,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_52.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11234)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9223"
+    },
+    "DCO_THERM[36].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 36,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_53.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5722)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8397"
+    },
+    "DCO_THERM[38].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 38,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_54.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13835)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9687"
+    },
+    "COARSETHERMAL_CODE[5].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 5,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_55.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_680)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7739"
+    },
+    "COARSETHERMAL_CODE[8].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 8,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_56.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_14583)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9832"
+    },
+    "DCO_THERM[18].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 18,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_57.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_16293)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_10185"
+    },
+    "DCO_THERM[2].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 2,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_58.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3570)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8109"
+    },
+    "COARSETHERMAL_CODE[2].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 2,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_59.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_15407)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_10003"
+    },
+    "DCO_THERM[26].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 26,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_6.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_14214)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9760"
+    },
+    "COARSETHERMAL_CODE[1].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 1,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_60.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6148)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8432"
+    },
+    "COARSETHERMAL_CODE[7].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 7,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_61.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13751)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9675"
+    },
+    "COARSETHERMAL_CODE[9].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 9,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_62.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7383)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8627"
+    },
+    "DCO_THERM[13].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 13,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_63.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6457)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8492"
+    },
+    "COARSETHERMAL_CODE[3].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 3,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_64.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_13658)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9655"
+    },
+    "COARSETHERMAL_CODE[11].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 11,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_65.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11770)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9302"
+    },
+    "DCO_THERM[17].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 17,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_66.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1332)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7819"
+    },
+    "COARSETHERMAL_CODE[10].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 10,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_67.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12616)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9440"
+    },
+    "DCO_THERM[23].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 23,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_68.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10304)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9070"
+    },
+    "DCO_THERM[22].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 22,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_69.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9164)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8883"
+    },
+    "DCO_THERM[28].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 28,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_7.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8250)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8738"
+    },
+    "DCO_THERM[7].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 7,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_70.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_12970)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9508"
+    },
+    "DCO_THERM[21].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 21,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_71.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4910)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8292"
+    },
+    "DCO_THERM[6].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 6,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_72.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_2663)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8000"
+    },
+    "COARSETHERMAL_CODE[6].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 6,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_73.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8224)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8733"
+    },
+    "DCO_THERM[4].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 4,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_74.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7313)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8621"
+    },
+    "COARSETHERMAL_CODE[36].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 36,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_75.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3906)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8155"
+    },
+    "DCO_THERM[1].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 1,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_76.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6257)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8455"
+    },
+    "COARSETHERMAL_CODE[38].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 38,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_77.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_603)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7727"
+    },
+    "DCO_THERM[9].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 9,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_78.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3287)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8070"
+    },
+    "DCO_THERM[5].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 5,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_79.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3871)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8151"
+    },
+    "DCO_THERM[58].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 58,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_8.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8413)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8764"
+    },
+    "COARSETHERMAL_CODE[40].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 40,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_80.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_3328)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8083"
+    },
+    "COARSETHERMAL_CODE[43].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 43,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_81.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8886)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8841"
+    },
+    "COARSETHERMAL_CODE[45].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 45,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_82.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6825)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8537"
+    },
+    "COARSETHERMAL_CODE[39].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 39,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_83.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8710)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8809"
+    },
+    "COARSETHERMAL_CODE[42].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 42,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_84.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4214)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8190"
+    },
+    "COARSETHERMAL_CODE[37].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 37,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_85.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4714)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8256"
+    },
+    "DCO_THERM[25].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 25,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_86.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8653)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8799"
+    },
+    "DCO_THERM[3].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 3,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_87.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11046)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9193"
+    },
+    "COARSETHERMAL_CODE[0].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 0,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_88.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_10017)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9026"
+    },
+    "COARSETHERMAL_CODE[4].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 4,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_89.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_5153)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8317"
+    },
+    "DCO_THERM[50].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 50,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_9.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6357)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8473"
+    },
+    "DCO_THERM[0].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 0,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_90.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4927)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8298"
+    },
+    "DCO_THERM[8].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 8,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_91.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_4385)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8208"
+    },
+    "DCO_THERM[19].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 19,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_92.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_14385)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9786"
+    },
+    "COARSETHERMAL_CODE[41].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 41,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_93.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_6674)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8514"
+    },
+    "DCO_THERM[192].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 192,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_94.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11882)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9321"
+    },
+    "DCO_THERM[197].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 197,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_95.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_8294)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8743"
+    },
+    "COARSETHERMAL_CODE[44].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 44,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_96.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_9322)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8912"
+    },
+    "COARSETHERMAL_CODE[46].DCO": {
+      "bus": "COARSETHERMAL_CODE",
+      "bit": 46,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_97.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_1697)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_7876"
+    },
+    "DCO_THERM[193].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 193,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_98.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_7839)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_8690"
+    },
+    "DCO_THERM[201].DCO": {
+      "bus": "DCO_THERM",
+      "bit": 201,
+      "endpoint": "DCO",
+      "physical_node": "sky130_fd_sc_hs__inv_2_99.Y",
+      "expected_RAW_variable": "V(XDUT:__geometry_node_11658)",
+      "role": "validation_only",
+      "static_node": "XDUT:__geometry_node_9288"
+    }
+  },
+  "native_outputs_local": "/tmp/openpll-static-DCO-99ccrh4h",
+  "approximation_not_qualified": true,
+  "release_ready": false
+}

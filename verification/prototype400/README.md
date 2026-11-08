@@ -51,6 +51,13 @@ flags full-reference-cycle phase excursions in40 of42 windows. A KI4/KP4
 comparison stops at an unsupported code rather than extrapolating. These are
 diagnostic model/controller findings, not physically qualified gain choices.
 
+The [independent fine128 measurement](static_target_DCO_1549/assessment.json)
+is399.576 MHz, about1,060 ppm below target. Its
+[frozen endpoint-prediction assessment](static_target_prediction_1554/assessment.json)
+retains the interpolation residual separately; no correction is fitted away.
+The actual-RTL TT gain screen is now using the measured seed and three native
+knots, with all analog and interface models still diagnostic.
+
 The current numerical work replays measured programming-input ripple and
 continues the existing full-layout references and boundary replay. Their results
 must be completed and hash-verified before selecting a calibration or correcting
@@ -2316,3 +2323,15 @@ release gain selection or an all-corner result. Two scheduling tests pass.
 The one-shot supervisor has a24 h seed-observation cap,30 min screen cap, at
 most300 cases, one CPU30/2 GiB case at a time, and no identical retry. Sources,
 active requirements and all planned model inputs are pinned before waiting.
+
+Independent target point1549 completed normally in1,104.480 s (18.41 min),
+with all302 native tuning checks passing. At coarse23/fine128 it measures
+399.575957740 MHz, -1,060.105650 ppm versus400 MHz. This is not a verified
+400 MHz setting even inside the fast model. Prospective endpoint-only prediction
+review1554 retains the original8/149 fits without refitting: linear-frequency
+prediction is+842.334226 ppm relative to this measurement, and predeclared
+secondary linear-period prediction is+183.764548 ppm. Neither residual is a
+global bound or a transferred full-layout calibration. The measured128 point
+may be used as a new knot for later diagnostic loop tables, while remaining an
+independent holdout for the frozen endpoint-only prediction. Gain screen1553
+has begun using the measured seed and all three knots.

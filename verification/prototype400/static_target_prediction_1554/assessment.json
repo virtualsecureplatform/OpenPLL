@@ -1,0 +1,38 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_target_plan_1548/plan.json": "e3addf9b55cb5d50c15d4c4b4439237c5fda72ef314fc1fa5b2ac3d88d0fecb3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_target_DCO_1549/assessment.json": "f949d1db16445154764bafc02c74dd7773cb5a4224441858d1ddd439092d7d82",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_fine8_DCO_1545/assessment.json": "a4acbcea384a8f2b6720ccd1c0b85963f560ffe8cb98ec0cb622cd66b1b7cdae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_static_coarse23_DCO_1541/assessment.json": "26038668d4f071e9ef1f5838aacdacbdcacabe54e8019c79491a7be51b26eafa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_keeper_static_target_prediction.py": "d72cfc7f42fa94dd76888047731d951532fe81c0007629418365acf9fe83c548",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_static_DCO_point.py": "db88c03544e2d1a4dabe2ac7ab4f0a228c23528a07b78be0bca8b968fef1db2f"
+  },
+  "artifacts": {},
+  "coarse": 23,
+  "fine": 128,
+  "measured_Hz": 399575957.74,
+  "target_Hz": 400000000.0,
+  "measured_relative_to_target_ppm": -1060.1056500000316,
+  "predeclared_fit_codes": [
+    8,
+    149
+  ],
+  "independent_validation_code": 128,
+  "curves": [
+    {
+      "kind": "linear_frequency",
+      "predicted_Hz": 399912534.24499345,
+      "prediction_relative_to_measured_ppm": 842.3342257555255
+    },
+    {
+      "kind": "linear_period",
+      "predicted_Hz": 399649385.6351702,
+      "prediction_relative_to_measured_ppm": 183.76454776092288
+    }
+  ],
+  "endpoint_curves_refitted": false,
+  "holdout_used_as_global_error_bound": false,
+  "model_error_bound_qualified": false,
+  "full_layout_calibration_qualified": false,
+  "release_ready": false
+}
