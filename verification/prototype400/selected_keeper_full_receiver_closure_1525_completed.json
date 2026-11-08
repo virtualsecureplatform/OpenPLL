@@ -1,0 +1,444 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_next_receiver_frontier_1523/assessment.json": "9bd35d265e2779d32420928b8145ef3c2837d0c2e92e7333be621d4e715e71d5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_receiver_closure_cost_1524/assessment.json": "7be49de54f0ba0f12b0c0c37f575da533cab0177373089fb7bf8c6ee253a4239",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_next_receiver_frontier_1523/interface.json": "36e8cc09859b15e5ab36b934f9fd02995027ec748a416bcdf39e4620bd44d70b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/measure_keeper_full_receiver_closure.py": "62863b90d1f532da78323905fab3fc015277d7e8b2a02742bcfc3c3573a2f409",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_receiver_closure_cost.py": "e673d9e92de64ac532e7450a050e9b2a017691c8d59579fd593beb6aef852768",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_full_receiver_closure_1525/selected_primitive_names.json": "8a4b360c7b1d9cc0e4ab98f42fba223e024e5359b54ceec785d283c249b3f29d"
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "selected_primitives": 10211,
+      "prescribed_diffusion_frontiers": 4,
+      "added_primitives": 128,
+      "proposed_primitives": 10339
+    },
+    {
+      "round": 1,
+      "selected_primitives": 10339,
+      "prescribed_diffusion_frontiers": 4,
+      "added_primitives": 124,
+      "proposed_primitives": 10463
+    },
+    {
+      "round": 2,
+      "selected_primitives": 10463,
+      "prescribed_diffusion_frontiers": 49,
+      "added_primitives": 320,
+      "proposed_primitives": 10783
+    },
+    {
+      "round": 3,
+      "selected_primitives": 10783,
+      "prescribed_diffusion_frontiers": 336,
+      "added_primitives": 817,
+      "proposed_primitives": 11600
+    },
+    {
+      "round": 4,
+      "selected_primitives": 11600,
+      "prescribed_diffusion_frontiers": 288,
+      "added_primitives": 354,
+      "proposed_primitives": 11954
+    },
+    {
+      "round": 5,
+      "selected_primitives": 11954,
+      "prescribed_diffusion_frontiers": 48,
+      "added_primitives": 268,
+      "proposed_primitives": 12222
+    },
+    {
+      "round": 6,
+      "selected_primitives": 12222,
+      "prescribed_diffusion_frontiers": 125,
+      "added_primitives": 363,
+      "proposed_primitives": 12585
+    },
+    {
+      "round": 7,
+      "selected_primitives": 12585,
+      "prescribed_diffusion_frontiers": 66,
+      "added_primitives": 203,
+      "proposed_primitives": 12788
+    },
+    {
+      "round": 8,
+      "selected_primitives": 12788,
+      "prescribed_diffusion_frontiers": 65,
+      "added_primitives": 230,
+      "proposed_primitives": 13018
+    },
+    {
+      "round": 9,
+      "selected_primitives": 13018,
+      "prescribed_diffusion_frontiers": 44,
+      "added_primitives": 169,
+      "proposed_primitives": 13187
+    },
+    {
+      "round": 10,
+      "selected_primitives": 13187,
+      "prescribed_diffusion_frontiers": 40,
+      "added_primitives": 350,
+      "proposed_primitives": 13537
+    },
+    {
+      "round": 11,
+      "selected_primitives": 13537,
+      "prescribed_diffusion_frontiers": 30,
+      "added_primitives": 564,
+      "proposed_primitives": 14101
+    },
+    {
+      "round": 12,
+      "selected_primitives": 14101,
+      "prescribed_diffusion_frontiers": 65,
+      "added_primitives": 1686,
+      "proposed_primitives": 15787
+    },
+    {
+      "round": 13,
+      "selected_primitives": 15787,
+      "prescribed_diffusion_frontiers": 75,
+      "added_primitives": 985,
+      "proposed_primitives": 16772
+    },
+    {
+      "round": 14,
+      "selected_primitives": 16772,
+      "prescribed_diffusion_frontiers": 220,
+      "added_primitives": 2565,
+      "proposed_primitives": 19337
+    },
+    {
+      "round": 15,
+      "selected_primitives": 19337,
+      "prescribed_diffusion_frontiers": 1140,
+      "added_primitives": 3253,
+      "proposed_primitives": 22590
+    },
+    {
+      "round": 16,
+      "selected_primitives": 22590,
+      "prescribed_diffusion_frontiers": 1246,
+      "added_primitives": 2489,
+      "proposed_primitives": 25079
+    },
+    {
+      "round": 17,
+      "selected_primitives": 25079,
+      "prescribed_diffusion_frontiers": 1331,
+      "added_primitives": 3705,
+      "proposed_primitives": 28784
+    },
+    {
+      "round": 18,
+      "selected_primitives": 28784,
+      "prescribed_diffusion_frontiers": 1834,
+      "added_primitives": 3135,
+      "proposed_primitives": 31919
+    },
+    {
+      "round": 19,
+      "selected_primitives": 31919,
+      "prescribed_diffusion_frontiers": 766,
+      "added_primitives": 2298,
+      "proposed_primitives": 34217
+    },
+    {
+      "round": 20,
+      "selected_primitives": 34217,
+      "prescribed_diffusion_frontiers": 711,
+      "added_primitives": 2652,
+      "proposed_primitives": 36869
+    },
+    {
+      "round": 21,
+      "selected_primitives": 36869,
+      "prescribed_diffusion_frontiers": 538,
+      "added_primitives": 3040,
+      "proposed_primitives": 39909
+    },
+    {
+      "round": 22,
+      "selected_primitives": 39909,
+      "prescribed_diffusion_frontiers": 426,
+      "added_primitives": 2301,
+      "proposed_primitives": 42210
+    },
+    {
+      "round": 23,
+      "selected_primitives": 42210,
+      "prescribed_diffusion_frontiers": 520,
+      "added_primitives": 1634,
+      "proposed_primitives": 43844
+    },
+    {
+      "round": 24,
+      "selected_primitives": 43844,
+      "prescribed_diffusion_frontiers": 257,
+      "added_primitives": 948,
+      "proposed_primitives": 44792
+    },
+    {
+      "round": 25,
+      "selected_primitives": 44792,
+      "prescribed_diffusion_frontiers": 123,
+      "added_primitives": 379,
+      "proposed_primitives": 45171
+    },
+    {
+      "round": 26,
+      "selected_primitives": 45171,
+      "prescribed_diffusion_frontiers": 85,
+      "added_primitives": 363,
+      "proposed_primitives": 45534
+    },
+    {
+      "round": 27,
+      "selected_primitives": 45534,
+      "prescribed_diffusion_frontiers": 51,
+      "added_primitives": 247,
+      "proposed_primitives": 45781
+    },
+    {
+      "round": 28,
+      "selected_primitives": 45781,
+      "prescribed_diffusion_frontiers": 122,
+      "added_primitives": 267,
+      "proposed_primitives": 46048
+    },
+    {
+      "round": 29,
+      "selected_primitives": 46048,
+      "prescribed_diffusion_frontiers": 65,
+      "added_primitives": 193,
+      "proposed_primitives": 46241
+    },
+    {
+      "round": 30,
+      "selected_primitives": 46241,
+      "prescribed_diffusion_frontiers": 105,
+      "added_primitives": 225,
+      "proposed_primitives": 46466
+    },
+    {
+      "round": 31,
+      "selected_primitives": 46466,
+      "prescribed_diffusion_frontiers": 89,
+      "added_primitives": 214,
+      "proposed_primitives": 46680
+    },
+    {
+      "round": 32,
+      "selected_primitives": 46680,
+      "prescribed_diffusion_frontiers": 99,
+      "added_primitives": 304,
+      "proposed_primitives": 46984
+    },
+    {
+      "round": 33,
+      "selected_primitives": 46984,
+      "prescribed_diffusion_frontiers": 153,
+      "added_primitives": 324,
+      "proposed_primitives": 47308
+    },
+    {
+      "round": 34,
+      "selected_primitives": 47308,
+      "prescribed_diffusion_frontiers": 122,
+      "added_primitives": 353,
+      "proposed_primitives": 47661
+    },
+    {
+      "round": 35,
+      "selected_primitives": 47661,
+      "prescribed_diffusion_frontiers": 126,
+      "added_primitives": 246,
+      "proposed_primitives": 47907
+    },
+    {
+      "round": 36,
+      "selected_primitives": 47907,
+      "prescribed_diffusion_frontiers": 87,
+      "added_primitives": 238,
+      "proposed_primitives": 48145
+    },
+    {
+      "round": 37,
+      "selected_primitives": 48145,
+      "prescribed_diffusion_frontiers": 123,
+      "added_primitives": 282,
+      "proposed_primitives": 48427
+    },
+    {
+      "round": 38,
+      "selected_primitives": 48427,
+      "prescribed_diffusion_frontiers": 77,
+      "added_primitives": 268,
+      "proposed_primitives": 48695
+    },
+    {
+      "round": 39,
+      "selected_primitives": 48695,
+      "prescribed_diffusion_frontiers": 165,
+      "added_primitives": 387,
+      "proposed_primitives": 49082
+    },
+    {
+      "round": 40,
+      "selected_primitives": 49082,
+      "prescribed_diffusion_frontiers": 83,
+      "added_primitives": 289,
+      "proposed_primitives": 49371
+    },
+    {
+      "round": 41,
+      "selected_primitives": 49371,
+      "prescribed_diffusion_frontiers": 125,
+      "added_primitives": 293,
+      "proposed_primitives": 49664
+    },
+    {
+      "round": 42,
+      "selected_primitives": 49664,
+      "prescribed_diffusion_frontiers": 72,
+      "added_primitives": 255,
+      "proposed_primitives": 49919
+    },
+    {
+      "round": 43,
+      "selected_primitives": 49919,
+      "prescribed_diffusion_frontiers": 77,
+      "added_primitives": 249,
+      "proposed_primitives": 50168
+    },
+    {
+      "round": 44,
+      "selected_primitives": 50168,
+      "prescribed_diffusion_frontiers": 146,
+      "added_primitives": 310,
+      "proposed_primitives": 50478
+    },
+    {
+      "round": 45,
+      "selected_primitives": 50478,
+      "prescribed_diffusion_frontiers": 95,
+      "added_primitives": 273,
+      "proposed_primitives": 50751
+    },
+    {
+      "round": 46,
+      "selected_primitives": 50751,
+      "prescribed_diffusion_frontiers": 182,
+      "added_primitives": 349,
+      "proposed_primitives": 51100
+    },
+    {
+      "round": 47,
+      "selected_primitives": 51100,
+      "prescribed_diffusion_frontiers": 104,
+      "added_primitives": 484,
+      "proposed_primitives": 51584
+    },
+    {
+      "round": 48,
+      "selected_primitives": 51584,
+      "prescribed_diffusion_frontiers": 232,
+      "added_primitives": 1019,
+      "proposed_primitives": 52603
+    },
+    {
+      "round": 49,
+      "selected_primitives": 52603,
+      "prescribed_diffusion_frontiers": 317,
+      "added_primitives": 1453,
+      "proposed_primitives": 54056
+    },
+    {
+      "round": 50,
+      "selected_primitives": 54056,
+      "prescribed_diffusion_frontiers": 468,
+      "added_primitives": 1475,
+      "proposed_primitives": 55531
+    },
+    {
+      "round": 51,
+      "selected_primitives": 55531,
+      "prescribed_diffusion_frontiers": 315,
+      "added_primitives": 1416,
+      "proposed_primitives": 56947
+    },
+    {
+      "round": 52,
+      "selected_primitives": 56947,
+      "prescribed_diffusion_frontiers": 411,
+      "added_primitives": 1099,
+      "proposed_primitives": 58046
+    },
+    {
+      "round": 53,
+      "selected_primitives": 58046,
+      "prescribed_diffusion_frontiers": 204,
+      "added_primitives": 596,
+      "proposed_primitives": 58642
+    },
+    {
+      "round": 54,
+      "selected_primitives": 58642,
+      "prescribed_diffusion_frontiers": 82,
+      "added_primitives": 180,
+      "proposed_primitives": 58822
+    },
+    {
+      "round": 55,
+      "selected_primitives": 58822,
+      "prescribed_diffusion_frontiers": 19,
+      "added_primitives": 109,
+      "proposed_primitives": 58931
+    },
+    {
+      "round": 56,
+      "selected_primitives": 58931,
+      "prescribed_diffusion_frontiers": 20,
+      "added_primitives": 58,
+      "proposed_primitives": 58989
+    },
+    {
+      "round": 57,
+      "selected_primitives": 58989,
+      "prescribed_diffusion_frontiers": 5,
+      "added_primitives": 15,
+      "proposed_primitives": 59004
+    },
+    {
+      "round": 58,
+      "selected_primitives": 59004,
+      "prescribed_diffusion_frontiers": 0,
+      "added_primitives": 0,
+      "proposed_primitives": 59004
+    }
+  ],
+  "closure_reached": true,
+  "stopped_at_cost_limit": false,
+  "required_primitive_lower_bound": 59004,
+  "initial_primitives": 10211,
+  "full_flat_primitives": 62338,
+  "retained_fraction": 0.9465173730308961,
+  "maximum_rounds": 256,
+  "circuit_exported": false,
+  "native_cases_added": 0,
+  "closure_scope": "explicit native devices incident to retained nonrail diffusion terminals",
+  "formal_output_port_reclassification_still_required": true,
+  "capacitive_exterior_environment_not_closed": true,
+  "independent_prediction_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}

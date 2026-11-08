@@ -1,0 +1,139 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_next_receiver_frontier_1523/assessment.json": "9bd35d265e2779d32420928b8145ef3c2837d0c2e92e7333be621d4e715e71d5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_next_receiver_frontier_1523/interface.json": "36e8cc09859b15e5ab36b934f9fd02995027ec748a416bcdf39e4620bd44d70b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_receiver_closure_cost.py": "e673d9e92de64ac532e7450a050e9b2a017691c8d59579fd593beb6aef852768",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {},
+  "rounds": [
+    {
+      "round": 0,
+      "selected_primitives": 10211,
+      "prescribed_diffusion_frontiers": 4,
+      "added_primitives": 128,
+      "proposed_primitives": 10339
+    },
+    {
+      "round": 1,
+      "selected_primitives": 10339,
+      "prescribed_diffusion_frontiers": 4,
+      "added_primitives": 124,
+      "proposed_primitives": 10463
+    },
+    {
+      "round": 2,
+      "selected_primitives": 10463,
+      "prescribed_diffusion_frontiers": 49,
+      "added_primitives": 320,
+      "proposed_primitives": 10783
+    },
+    {
+      "round": 3,
+      "selected_primitives": 10783,
+      "prescribed_diffusion_frontiers": 336,
+      "added_primitives": 817,
+      "proposed_primitives": 11600
+    },
+    {
+      "round": 4,
+      "selected_primitives": 11600,
+      "prescribed_diffusion_frontiers": 288,
+      "added_primitives": 354,
+      "proposed_primitives": 11954
+    },
+    {
+      "round": 5,
+      "selected_primitives": 11954,
+      "prescribed_diffusion_frontiers": 48,
+      "added_primitives": 268,
+      "proposed_primitives": 12222
+    },
+    {
+      "round": 6,
+      "selected_primitives": 12222,
+      "prescribed_diffusion_frontiers": 125,
+      "added_primitives": 363,
+      "proposed_primitives": 12585
+    },
+    {
+      "round": 7,
+      "selected_primitives": 12585,
+      "prescribed_diffusion_frontiers": 66,
+      "added_primitives": 203,
+      "proposed_primitives": 12788
+    },
+    {
+      "round": 8,
+      "selected_primitives": 12788,
+      "prescribed_diffusion_frontiers": 65,
+      "added_primitives": 230,
+      "proposed_primitives": 13018
+    },
+    {
+      "round": 9,
+      "selected_primitives": 13018,
+      "prescribed_diffusion_frontiers": 44,
+      "added_primitives": 169,
+      "proposed_primitives": 13187
+    },
+    {
+      "round": 10,
+      "selected_primitives": 13187,
+      "prescribed_diffusion_frontiers": 40,
+      "added_primitives": 350,
+      "proposed_primitives": 13537
+    },
+    {
+      "round": 11,
+      "selected_primitives": 13537,
+      "prescribed_diffusion_frontiers": 30,
+      "added_primitives": 564,
+      "proposed_primitives": 14101
+    },
+    {
+      "round": 12,
+      "selected_primitives": 14101,
+      "prescribed_diffusion_frontiers": 65,
+      "added_primitives": 1686,
+      "proposed_primitives": 15787
+    },
+    {
+      "round": 13,
+      "selected_primitives": 15787,
+      "prescribed_diffusion_frontiers": 75,
+      "added_primitives": 985,
+      "proposed_primitives": 16772
+    },
+    {
+      "round": 14,
+      "selected_primitives": 16772,
+      "prescribed_diffusion_frontiers": 220,
+      "added_primitives": 2565,
+      "proposed_primitives": 19337
+    },
+    {
+      "round": 15,
+      "selected_primitives": 19337,
+      "prescribed_diffusion_frontiers": 1140,
+      "added_primitives": 3253,
+      "proposed_primitives": 22590
+    }
+  ],
+  "closure_reached": false,
+  "stopped_at_cost_limit": true,
+  "required_primitive_lower_bound": 22590,
+  "full_flat_primitives": 62338,
+  "initial_primitives": 10211,
+  "preparation_limit_primitives": 20000,
+  "maximum_rounds": 32,
+  "closure_scope": "explicit native devices incident to retained nonrail diffusion terminals",
+  "formal_output_port_reclassification_still_required": true,
+  "capacitive_exterior_environment_not_closed": true,
+  "circuit_changed": false,
+  "native_cases_added": 0,
+  "independent_prediction_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}

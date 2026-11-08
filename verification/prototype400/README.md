@@ -1907,3 +1907,21 @@ Corrected reduced replay1470 has now started natively onCPU25 under its8 GiB
 lease after completed physical checks, exact-knot aggregation and source
 staging. Its actual native process and local output paths are present. All
 prior large captures and the new coarse23 capture remain unchanged.
+
+Native receiver closure cost1524 follows every retained nonrail diffusion
+terminal into incident omitted primitives. From the10,211-primitive candidate,
+the proposed set exceeds the20,000 preparation limit at22,590 primitives after
+16 rounds; that bounded study does not claim closure. Three guards check
+transitive receiver inclusion, exclusion of unrelated rail-sharing devices and
+correct lower-bound reporting when a cost limit is reached.
+
+Cost study1525 continues the same source-pinned graph to a fixed point without
+exporting or simulating a circuit. It converges after59 rounds at59,004 of62,338
+flat primitives (94.6517%). Thus removing these output prescriptions by explicit
+native-device expansion of this cut approaches the original full-circuit cost.
+The complete selected primitive list, both completed receipts and algorithms are
+retained, with all input/artifact identities reverified. Formal output-port
+handling and the capacitive exterior environment would still need treatment;
+this graph closure does not qualify an independent model. No native case was
+added. The next causal modeling step is receiver-load characterization rather
+than repeated frontier expansion; replay1470 continues as a correlation control.
