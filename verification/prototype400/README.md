@@ -1536,3 +1536,23 @@ not native corrected-backend correlation, fill-aware wire-R timing, or predictiv
 closed-loop qualification. No new full analog capture is launched, no spatial
 endpoint approximation is applied, and the model remains unselected with native
 simulation allowance and release flags false.
+
+
+Endpoint schedule 1490 preserves the two coarse19/fine8 and fine247 captures and
+all 604 endpoint-voltage checks predeclared by 1440, but assigns native workers
+to separate physical CPUs 20 and 21. Each retains the original 16 GiB reservation,
+24-hour per-case ceiling and one-shot/no-identical-retry policy. Global leases
+still enforce 32 CPUs, 200 GiB and the host reserve, so simultaneous execution
+requires budget admission. Neither operating points nor timestep are changed.
+Four existing endpoint validation controls pass. Actual speedup is not measured.
+
+Handoff 1489 verifies that 1440 was still waiting, had no child process, and had
+created none of the four endpoint output directories. It intentionally sends
+SIGINT to that waiting coordinator, then confirms its PID/birth is gone and the
+endpoint paths remain absent. The central native capture 1412 remains live and
+unchanged. The replacement coordinator validates this exclusive handoff and is
+observed live waiting for normal central capture plus physical-control completion.
+It observes both endpoint workers to termination before combining their results;
+failed cases are not retried, and no band or interpolated model is auto-selected.
+The old coordinator's KeyboardInterrupt status is intentional schedule replacement,
+not cancellation or failure of a native simulation.

@@ -1,0 +1,32 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_endpoints_1440/plan.json": "21dba5c940fbaa770bdadda9aea57256486d8049ac381e9dfae7c888e3a3304f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse19_endpoints.py": "d5aaeec300bb5d772b46bce14e850f1962cf9783a4c03022f47b34e5fbe4a77e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_keeper_coarse19_parallel_endpoints.py": "b59efd9df86e92bfa874d9c2c6484836e3e3533bc44952ce3ea832ee26c0f8ea"
+  },
+  "old_owner": {
+    "pid": 2255417,
+    "birth": "135718623"
+  },
+  "old_observed_status": {
+    "state": "waiting_for_completed_central_native_and_physical_point",
+    "release_ready": false
+  },
+  "old_terminal_status": {
+    "state": "stopped_without_qualification",
+    "reason": "KeyboardInterrupt()",
+    "release_ready": false
+  },
+  "old_coordinator_retired_before_any_endpoint": true,
+  "reason": "Use separate available CPUs 20 and 21 for the same two predeclared endpoints after central physical checks",
+  "signal": "SIGINT_to_waiting_coordinator_only",
+  "original_native_capture_unchanged": true,
+  "maximum_additional_native_cases": 2,
+  "endpoint_paths": [
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine8_step50_1441",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine8_physical_1442",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine247_step50_1443",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_coarse19_fine247_physical_1444"
+  ],
+  "release_ready": false
+}
