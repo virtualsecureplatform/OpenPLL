@@ -2557,3 +2557,14 @@ passed; native geometry behavior remains untested while admission is pending.
 The retained `magic_contact_layout_probe_1569` files are initial pending-state
 snapshots, not completed extraction evidence. The full-trace scanner 1567 and
 last gain-screen case 1566 also remain live and waiting for memory.
+
+Candidate Magic build 1570 completes from verified source with only the isolated
+contact-to-boundary-plane-residue correction added to the diagnostic build.
+Native candidate controls 1571 all complete; every kernel-field mismatch is
+absent. Independent review 1572 runs the unchanged fringe-support reconstruction
+on all four completed traces: all native shielding integrals pass. Native SPICE
+is byte-identical to the original 1569 controls in the two non-contact cases and
+the contact/no-added-shield case. Only contact plus added shield changes. These
+are native real-PDK regression controls, not full-layout qualification. The
+original executable and existing PLL references remain unchanged; full-layout
+corrected extraction and correlation are the next required checks.
