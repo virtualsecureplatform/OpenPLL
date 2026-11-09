@@ -2889,3 +2889,12 @@ Three regression groups pass for stationary samples, changing frequency/missing
 edges, and incomplete/duplicate-time rejection. This analysis is prepared before
 capture completion, preventing a favorable window from being chosen afterward;
 no active waveform is read and no native duration is silently extended.
+
+Settling observer 1603 is live behind completed physical-control observer 1584.
+It requires normal native completion, all 604 matching physical endpoints, and
+exact receipt linkage before reading the completed standard waveform. It then
+applies the predeclared six-window diagnostic under a 4-GiB lease. Producer or
+physical-control failure stops assessment without native retries or window
+changes. A stable sample screen never sets timestep, local-LSB, physical settling
+or model qualification flags; further native convergence and independent
+correlation remain required.
