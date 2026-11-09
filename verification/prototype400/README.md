@@ -2853,3 +2853,12 @@ is not proof of coverage: native eligible/skipped nets, exact device/C contracti
 resistance geometry and physical-domain completeness must be audited before
 any native simulation of this network is allowed. Existing C-only transient
 1581 remains unchanged and is not qualified by this preparation.
+
+Conservation observer 1600 waits for normal full-R export 1599 and producer
+identity, without reading partial exports. It verifies completed artifact hashes,
+then compares corrected reference C against the new pre-R export and performs
+exact ideal-R contraction against the after-export. The assessment uses a 16-GiB
+lease/address-space cap and two-hour execution cap after admission. Native net
+summary counts are recorded, but conservation alone never sets complete requested
+network coverage, resistance geometry or simulation-eligibility flags. An export
+failure stops the observer without retrying the extraction.
