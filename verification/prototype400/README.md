@@ -2800,3 +2800,13 @@ unset node-location sentinel, rather than proving arbitrary plane corruption.
 The relevant fixture has electrically aliased ports A/AFAR. Alias/port location
 propagation must be traced before choosing a correction; skipping the net or
 clipping this sentinel box cannot qualify complete resistance extraction.
+
+Port-location candidate 1594 follows the demonstrated unset sentinel: ResReadPort
+sets drivepoint but not location, while an aliased port need not have its own
+node record. The isolated candidate initializes location from the parsed port
+drivepoint only when both location coordinates are INFINITY. Existing finite
+locations remain unchanged; no net is dropped or sentinel search clipped.
+The transform accepts the pinned native source and rejects an altered initializer
+or an already-patched source. A fresh combined build is launched; native alias,
+non-alias, resistance/contraction and C-only controls remain mandatory before
+acceptance. The running PLL simulation and previous tool builds remain unchanged.
