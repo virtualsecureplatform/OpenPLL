@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/assessment.json": "6047a234f31a190fa3ae4cd6623a4486d2d0a8287b6744aca828c1fb6067e939",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_geometry_audit_1604/assessment.json": "476d49ce85f57a2ee981fb39d6b68651fa33cff34534d2ea7bfabb3b120ed24a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_checked_filled_parent_1147/assembly.gds": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/flat.gds": "4dc5bc17e43b4ec1d6d3a7e1f1717df460a1066bdccdca71b48bf3af016b1880",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_keeper_active_selectors.py": "ce3bccea5764e18df09fe61dc76d4e0377773283915150af2916136edea5c7ae"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_active_selectors_1605/selectors.json": "41c9993636983e4abec32b2b493cc9e64bcac078b72b46551e8a809261cd94cf"
+  },
+  "all_checked_active_selectors_preserved": true,
+  "diode_marker_on_active_diff_preserved": true,
+  "all_original_selector_masks_preserved": false,
+  "scope": "electrical flat-reference validation only; original fabrication GDS unchanged",
+  "flat_GDS_is_not_a_fabrication_replacement": true,
+  "model_qualified": false,
+  "release_ready": false
+}

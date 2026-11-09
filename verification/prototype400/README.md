@@ -2907,3 +2907,12 @@ No all-device-mask-preserved pass is claimed. The flat GDS remains an electrical
 extraction view, not a fabrication replacement. Fresh active-selector validation
 1605 is launched against corrected flat geometry; the original fabrication GDS
 and earlier limited-scope active-selector receipt remain unchanged.
+
+Fresh corrected active-selector audit 1605 passes checked active-region selectors
+and diode-marker-on-active-diffusion preservation. Its selector artifact is
+hash-verified and byte-identical to original electrical-view audit 1204. The
+all-original-selector-masks flag remains false; this result validates the flat
+electrical extraction view only. Original fabrication GDS is unchanged and the
+flat GDS is not a fabrication replacement. Geometry/device checks, native model
+correlation, distributed-R coverage and final fabrication/integration checks
+retain their separate scope and qualification status.
