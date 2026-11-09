@@ -2703,3 +2703,12 @@ without a completed receipt. No live waveform is read and no capture is retried.
 Voltage mismatches remain explicit failed checks; neither a mapping pass nor
 logical stationarity alone establishes physical control, reset, settling or
 frequency-model qualification.
+
+Mixed-signal runner v12 stages the v4 profile and a new reset80 testbench. Both
+initial and tracking resets now assert for 80 ns, with a runtime duration
+assertion/marker. Cache v3 binds the new bench, so old 10 ns-reset compiled
+artifacts cannot be silently reused. Assessment v4 reads the new profile while
+preserving acceptance-v5 frequency/phase/cycle-slip checks. CLI/import preflight
+passes. A single reset-during-tracking/phase30 control 1585 is launched with the
+existing unqualified six-knot diagnostic model and KI1/KP2; no corrected-model
+or full release matrix qualification is claimed from this harness control.
