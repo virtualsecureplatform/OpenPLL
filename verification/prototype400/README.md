@@ -2693,3 +2693,13 @@ for full rebinding, missing endpoint rejection, inverted polarity, voltage
 mismatch detection and invalid/truncated captures. No physical voltage pass is
 claimed before completed capture 1581 is available; bindings alone do not qualify
 calibration or reset/settling behavior.
+
+Observer 1584 is live and waiting for completed corrected capture 1581. It
+verifies the binding receipt, requires normal capture completion and stationary
+requested code, pins the corrected native model, validates the 80 ns reset and
+standard-capture domain, then uses a 4-GiB lease to check all 604 macro/DCO endpoint
+voltages over 280-340 ns. It stops if the capture or coordinator terminates
+without a completed receipt. No live waveform is read and no capture is retried.
+Voltage mismatches remain explicit failed checks; neither a mapping pass nor
+logical stationarity alone establishes physical control, reset, settling or
+frequency-model qualification.
