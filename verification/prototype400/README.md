@@ -2640,3 +2640,15 @@ reuses the completed device proof through exact card/port identity. It is not a
 fresh Netgen run and establishes no new spatial or wire-R qualification.
 Corrected native-reference preparation 1579 is launched through the existing
 literal-template normalizer, with no transient simulation requested.
+
+Requirements v4 stages the approved 80 ns RESET_N assertion contract with REFCLK
+running and programming stable until reset. It pins v3 as parent and preserves
+all prior functional limits, five-corner scope, 60 scenarios and false release
+flags. It also records the bounded repair policy (one causal-boundary augmentation,
+one digital ECO, otherwise constrained redesign). The accessor rejects unrelated
+scope/functional changes. Three grouped tests pass for parent/scope retention,
+inclusive assertion duration, nonfinite/short intervals and unsupported reference
+or programming conditions. This validates the declared stimulus contract only;
+physical reset distribution/release remains unqualified. Existing campaigns and
+the active profile pointer are not silently rebound to v4. New campaign integration
+and timing-aware/native reset checks remain pending.
