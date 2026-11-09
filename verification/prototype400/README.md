@@ -2683,3 +2683,13 @@ The runner pins the corrected native-model/DC lineage and existing corrected
 BSIM controls. DC failure, missing owner, or observation timeout stops the queue;
 no prerequisite or native case is automatically retried. Wire R, physical control
 leaf checks, timestep/settling convergence and model qualification remain open.
+
+Corrected physical-control binding 1583 maps all 604 actual macro/DCO endpoints
+into the new native model, using physical node names rather than reusing old
+internal variable identifiers. The prepared checker requires all 47 coarse and
+255 inverted-fine bits at both endpoints, a complete finite strictly ordered
+capture, and the new final observation interval. Three regression groups pass
+for full rebinding, missing endpoint rejection, inverted polarity, voltage
+mismatch detection and invalid/truncated captures. No physical voltage pass is
+claimed before completed capture 1581 is available; bindings alone do not qualify
+calibration or reset/settling behavior.

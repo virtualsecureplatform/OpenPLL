@@ -1,0 +1,15 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_BSIM_physical_1296/plan.json": "c5882f6937c5b0bed68cc4f555890e58a009c61196a573c30621639c1bf5cad5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_native_1579/nodes.json": "7316ef06b9c3b4141066f7c2f6c834963cbcaa7db4dab306ebb556d881aa9ff3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_native_1579/assessment.json": "e9706628a6b4b2ff0394c591d799c959ae7e37aa26b232bfc2a5ecf5d46742c5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_contact_corrected_controls.py": "b0e2c3c9337d185f305ee0633dd21a1f379385bbc7e814c3c269e68337d4e1b0"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_control_bindings_1583/bindings.json": "c92b7d37b0609c0778de333c12537a4929c18937d0271238bbda10a120648cc9"
+  },
+  "physical_endpoints_bound": 604,
+  "all_604_bindings_prepared": true,
+  "native_voltages_checked": false,
+  "release_ready": false
+}
