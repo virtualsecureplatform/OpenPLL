@@ -2862,3 +2862,12 @@ lease/address-space cap and two-hour execution cap after admission. Native net
 summary counts are recorded, but conservation alone never sets complete requested
 network coverage, resistance geometry or simulation-eligibility flags. An export
 failure stops the observer without retrying the extraction.
+
+Corrected-source driver inventory 1601 and native EXT anchor audit 1602 complete
+using closed extraction 1573 under a 4-GiB resource lease. There are 53
+capacitor-bearing conductors without MOS diffusion; 33 have native port locations
+and 20 have poly-resistor terminal anchors, leaving zero structurally unanchored
+exceptions. All 65 native port records are inventoried. This is static anchor
+coverage, not the exact native skip set: ResProcessNode can still return without
+extracting when driver resistance/location is unavailable, even with ExtractAll.
+Native emitted-net and geometry reconciliation remains mandatory after 1599.

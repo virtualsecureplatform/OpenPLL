@@ -1,0 +1,568 @@
+[
+  {
+    "canonical_node": "integerpll_bbpd_0.ref",
+    "native_labels": [
+      "REFCLK"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 14,
+      "diode_terminal": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_bbpd_0.sky130_fd_sc_hd__conb_1_0.lo",
+    "native_labels": [
+      "IntegerPLL_BBPD_0.sky130_fd_sc_hd__conb_1_0.LO"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_bbpd_0.sky130_fd_sc_hd__dfrtp_1_1.d",
+    "native_labels": [
+      "IntegerPLL_BBPD_0.sky130_fd_sc_hd__conb_1_0.HI"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "MOS_gate": 2,
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.sky130_fd_sc_hd__einvp_1_48.a",
+    "native_labels": [
+      "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.sky130_fd_sc_hd__conb_1_0.LO"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "MOS_gate": 56,
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.sky130_fd_sc_hd__einvp_1_7.te",
+    "native_labels": [
+      "IntegerPLL_DCO_EINVP_COARSE_V5_TURN10_BOOST8_OSC8_LOAD36_C1FINE160_0.sky130_fd_sc_hd__einvp_1_6.TE"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "MOS_gate": 906,
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.vnb",
+    "native_labels": [
+      "VNB"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {}
+  },
+  {
+    "canonical_node": "integerpll_dco_einvp_coarse_v5_turn10_boost8_osc8_load36_c1fine160_0.vpb",
+    "native_labels": [
+      "VPB"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {}
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.ki[0]",
+    "native_labels": [
+      "KI[0]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 8,
+      "diode_terminal": 4
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.ki[1]",
+    "native_labels": [
+      "KI[1]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 8,
+      "diode_terminal": 4
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.ki[2]",
+    "native_labels": [
+      "KI[2]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 8,
+      "diode_terminal": 4
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.ki[3]",
+    "native_labels": [
+      "KI[3]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 5,
+      "diode_terminal": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.ki[4]",
+    "native_labels": [
+      "KI[4]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 8,
+      "diode_terminal": 3
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.ki[5]",
+    "native_labels": [
+      "KI[5]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 8,
+      "diode_terminal": 3
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.ki[6]",
+    "native_labels": [
+      "KI[6]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "diode_terminal": 3,
+      "MOS_gate": 8
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.ki[7]",
+    "native_labels": [
+      "KI[7]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "diode_terminal": 3,
+      "MOS_gate": 8
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.kp[0]",
+    "native_labels": [
+      "KP[0]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 6,
+      "diode_terminal": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.kp[1]",
+    "native_labels": [
+      "KP[1]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "diode_terminal": 2,
+      "MOS_gate": 6
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.kp[2]",
+    "native_labels": [
+      "KP[2]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 6,
+      "diode_terminal": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.kp[3]",
+    "native_labels": [
+      "KP[3]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 6,
+      "diode_terminal": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.kp[4]",
+    "native_labels": [
+      "KP[4]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 6,
+      "diode_terminal": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.pll_enable",
+    "native_labels": [
+      "PLL_ENABLE"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 33
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.reset_n",
+    "native_labels": [
+      "RESET_N"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 286
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_0.hi",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_19.D"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1,
+      "MOS_gate": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_0.lo",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__conb_1_0.LO"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_1.hi",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_77.D"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1,
+      "MOS_gate": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_1.lo",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__conb_1_1.LO"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_2.hi",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__conb_1_2.HI"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_2.lo",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_2_10.D"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1,
+      "MOS_gate": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_3.hi",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_135.D"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "MOS_gate": 2,
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_3.lo",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__conb_1_3.LO"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_4.hi",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_140.D"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "MOS_gate": 2,
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_4.lo",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__conb_1_4.LO"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_5.lo",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__conb_1_5.LO"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_6.lo",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__conb_1_6.LO"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_7.hi",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_141.D"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1,
+      "MOS_gate": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__conb_1_7.lo",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__conb_1_7.LO"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__dfrtp_1_144.d",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__conb_1_6.HI"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "MOS_gate": 2,
+      "poly_resistor_terminal": 1
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.sky130_fd_sc_hs__dfrtp_1_176.d",
+    "native_labels": [
+      "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__conb_1_5.HI"
+    ],
+    "top_formal_port": false,
+    "primitive_terminal_counts": {
+      "poly_resistor_terminal": 1,
+      "MOS_gate": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_coarse[0]",
+    "native_labels": [
+      "STARTUP_COARSE[0]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 6,
+      "diode_terminal": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_coarse[2]",
+    "native_labels": [
+      "STARTUP_COARSE[2]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "diode_terminal": 3,
+      "MOS_gate": 6
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_coarse[3]",
+    "native_labels": [
+      "STARTUP_COARSE[3]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 6,
+      "diode_terminal": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_coarse[4]",
+    "native_labels": [
+      "STARTUP_COARSE[4]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 8,
+      "diode_terminal": 3
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_coarse[5]",
+    "native_labels": [
+      "STARTUP_COARSE[5]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 5,
+      "diode_terminal": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_fine[0]",
+    "native_labels": [
+      "STARTUP_FINE[0]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "diode_terminal": 4,
+      "MOS_gate": 6
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_fine[2]",
+    "native_labels": [
+      "STARTUP_FINE[2]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 3,
+      "diode_terminal": 2
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_fine[3]",
+    "native_labels": [
+      "STARTUP_FINE[3]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 10,
+      "diode_terminal": 5
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_fine[4]",
+    "native_labels": [
+      "STARTUP_FINE[4]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "diode_terminal": 4,
+      "MOS_gate": 10
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_fine[5]",
+    "native_labels": [
+      "STARTUP_FINE[5]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "diode_terminal": 7,
+      "MOS_gate": 10
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_fine[6]",
+    "native_labels": [
+      "STARTUP_FINE[6]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 10,
+      "diode_terminal": 4
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_fine[7]",
+    "native_labels": [
+      "STARTUP_FINE[7]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 16,
+      "diode_terminal": 4
+    }
+  },
+  {
+    "canonical_node": "integerpll_programmedcore_0.startup_increasing",
+    "native_labels": [
+      "STARTUP_INCREASING"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 8,
+      "diode_terminal": 2
+    }
+  },
+  {
+    "canonical_node": "sky130_fd_sc_hs__diode_2_573.diode",
+    "native_labels": [
+      "STARTUP_COARSE[1]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "diode_terminal": 6,
+      "MOS_gate": 6
+    }
+  },
+  {
+    "canonical_node": "sky130_fd_sc_hs__diode_2_575.diode",
+    "native_labels": [
+      "STARTUP_FINE[1]"
+    ],
+    "top_formal_port": true,
+    "primitive_terminal_counts": {
+      "MOS_gate": 6,
+      "diode_terminal": 6
+    }
+  }
+]
