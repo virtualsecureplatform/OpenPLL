@@ -2663,3 +2663,12 @@ backend and seed coarse23/fine134 (not a selected calibration). It has a separat
 24-hour admission and 30-minute native execution cap, 16 GiB reservation, and no
 identical retry. It tests solver/DC behavior only; no frequency or lock claim
 follows. Existing captures and models remain unchanged.
+
+The corrected-reference transient deck builder now uses the v4 80 ns reset
+contract, running 25 MHz reference, static coarse/fine programming, and held-low
+PLL_ENABLE for characterization. It requests high-precision standard V(*) output
+and a 340 ns horizon to retain observation time after the longer reset. Two
+regression groups verify exact reset/transient/output statements, programmed bit
+values, and rejection of missing/duplicate/enabled PLL_ENABLE sources. This is
+preparation only: reset distribution and settling must be measured before a
+frequency window is qualified; no transient is launched before the DC check.
