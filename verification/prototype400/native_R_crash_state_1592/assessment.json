@@ -1,0 +1,13 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/bin/magic": "0442b0908f9ee51e6d238e2f2a23187183adb8fc015538faa501570a60c8a2b7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_R_crash_state_1592/crash_trace.so": "a3090ab5e16023d898df78f886131df8d30f799ff659b3f7cc97f87ecd0e8879",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/native_crash_trace_state.c": "f71dca8e96ad4b768e5e62c4aeba6fc8d9d4aafb098e416d2b32b50c0bf51410"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_R_crash_state_1592/native.log": "b057f848629c289affc3e9a8122d46b48e74dc2419b476422502133bd79a1b87"
+  },
+  "reason": "compiled worker failed (139): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_R_crash_state_1592/native.log",
+  "diagnostic_signal_state_injected": true,
+  "release_ready": false
+}

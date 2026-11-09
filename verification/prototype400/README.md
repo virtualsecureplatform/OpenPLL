@@ -2781,3 +2781,12 @@ identify `DBSrPaintArea` at DBtiles.c:547, `dbCellPlaneSrFunc` at DBcellsrch.c:2
 called through ResProcessNode/ResCheckExtNodes/ExtResisForDef. This is connected
 geometry search before resistance calculation, so another area arithmetic patch
 is not justified. The live PLL transient uses no injected signal handler.
+
+Crash-state diagnostic 1592 reproduces the failure with SA_SIGINFO register
+capture. The fault address is 0x2c and RAX is zero. Disassembly at tclmagic.so
+0x8619a reads 0x2c from a null neighbor after following a tile link at offset
+0x20 in the GOTOPOINT walk. The comparison register RDX is 0x3ffffffd, near
+Magic's internal infinity boundary. These observations narrow the failure to
+search geometry/tile traversal; they do not yet distinguish a bad rectangle
+from an invalid tile plane. Diagnostic state capture is never loaded into the
+running native PLL simulation and does not qualify any extraction result.

@@ -1,0 +1,62 @@
+
+Magic 8.3 revision 623 - Compiled on Mon Nov  9 06:17:12 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Loading "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_R_crash_state_1592/run.tcl" from command line.
+Cell OpenPLL_Coupling_R_Probe couldn't be read
+No such file or directory
+Creating new cell
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Extraction style is now "ngspice()"
+Extracting OpenPLL_Coupling_R_Probe into OpenPLL_Coupling_R_Probe.ext:
+Warning:  Ports "AFAR" and "A" are electrically shorted.
+Processing cell OpenPLL_Coupling_R_Probe for resistance extraction.
+FAULT_ADDRESS=0x2c RIP=7c308b8f419a RBP=7ffc1a793340 RSP=7ffc1a7932c0 RAX=0 RBX=8 RCX=7ffc1a7945b0 RDX=3ffffffd RSI=6005408f0a50 RDI=0
+OPENPLL_DIAGNOSTIC_NATIVE_CRASH
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_R_crash_state_1592/crash_trace.so(+0x1334)[0x7c308cb5c334]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7c308c7ab330]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(DBSrPaintArea+0xa3)[0x7c308b8f419a]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x559a8)[0x7c308b8c39a8]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(DBTreeSrTiles+0x80)[0x7c308b8c373c]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x5cd64)[0x7c308b8cad64]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x12a528)[0x7c308b998528]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x1376d1)[0x7c308b9a56d1]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x137bd0)[0x7c308b9a5bd0]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x134ea6)[0x7c308b9a2ea6]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0xd6b09)[0x7c308b944b09]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0xd5896)[0x7c308b943896]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x2e352)[0x7c308b89c352]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x120c8e)[0x7c308b98ec8e]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x93c96)[0x7c308b901c96]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x11d498)[0x7c308b98b498]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x115194)[0x7c308b983194]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x25461d)[0x7c308bac261d]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(TclInvokeStringCommand+0xb2)[0x7c308c9bfbc2]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(TclNRRunCallbacks+0x71)[0x7c308c9c5171]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(+0x492d3)[0x7c308c9c72d3]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(Tcl_FSEvalFileEx+0x187)[0x7c308ca8a3f7]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(Tcl_EvalFile+0x2c)[0x7c308ca8a6cc]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x16b60c)[0x7c308b9d960c]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so(+0x255345)[0x7c308bac3345]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(TclInvokeStringCommand+0xb2)[0x7c308c9bfbc2]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(TclNRRunCallbacks+0x71)[0x7c308c9c5171]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(+0x492d3)[0x7c308c9c72d3]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(Tcl_FSEvalFileEx+0x187)[0x7c308ca8a3f7]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(Tcl_EvalFile+0x2c)[0x7c308ca8a6cc]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(Tcl_SourceRCFile+0x91)[0x7c308ca92661]
+/nix/store/biz055ybc5x1vxar1dqlrjsw7w9axgc2-tcl-8.6.16/lib/libtcl8.6.so(Tcl_MainEx+0x525)[0x7c308ca92c35]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/magicdnull(+0x128f)[0x600524fc828f]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca)[0x7c308c7901ca]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b)[0x7c308c79028b]
+/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/magicdnull(+0x10f5)[0x600524fc80f5]
