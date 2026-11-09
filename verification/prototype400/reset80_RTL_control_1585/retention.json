@@ -1,0 +1,88 @@
+{
+  "files": [
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/reference_phase.json",
+      "retained": "reference_phase.json",
+      "uncompressed_sha256": "f94711ea20f42953f27a81a71532b6902616e699f77c1d31394a71a3202e7447",
+      "retained_sha256": "f94711ea20f42953f27a81a71532b6902616e699f77c1d31394a71a3202e7447"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/segment0_acceptance.json",
+      "retained": "segment0_acceptance.json",
+      "uncompressed_sha256": "ce09af329eb7f10d2c6ed039f25a77352246f2682e8f91fed04c07b1b3925619",
+      "retained_sha256": "ce09af329eb7f10d2c6ed039f25a77352246f2682e8f91fed04c07b1b3925619"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/segment1_acceptance.json",
+      "retained": "segment1_acceptance.json",
+      "uncompressed_sha256": "21f03b1ef5bed02add3cfe38b5fbc63ccc060450d8f88cb3500da4d1cdacc29e",
+      "retained_sha256": "21f03b1ef5bed02add3cfe38b5fbc63ccc060450d8f88cb3500da4d1cdacc29e"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/dco_table.txt",
+      "retained": "dco_table.txt",
+      "uncompressed_sha256": "f34405521fe84773da889efa742e5d73f21515818ab6fb754ca3a46b8e964699",
+      "retained_sha256": "f34405521fe84773da889efa742e5d73f21515818ab6fb754ca3a46b8e964699"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/segments.csv",
+      "retained": "segments.csv.gz",
+      "uncompressed_sha256": "d12e976e69c14ac999728c71cbf7b0b99fedf110745278440619c5e167d9e9a2",
+      "retained_sha256": "0cea21502affb92717fef0b2df63b39154f3f9c451c7379dcadd0dfcb2280329"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/inputs.json",
+      "retained": "inputs.json",
+      "uncompressed_sha256": "285b31103a6891bbf4bdfd1a1fdae6d26a4f4689be39d58476127801a244ff6c",
+      "retained_sha256": "285b31103a6891bbf4bdfd1a1fdae6d26a4f4689be39d58476127801a244ff6c"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/dco_frequency_model.json",
+      "retained": "dco_frequency_model.json",
+      "uncompressed_sha256": "b374954d28234db8ee9bb54962f112df6c7031d7c7719f445076c81b45710cc1",
+      "retained_sha256": "b374954d28234db8ee9bb54962f112df6c7031d7c7719f445076c81b45710cc1"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/run.log",
+      "retained": "run.log.gz",
+      "uncompressed_sha256": "ba635da61535f1a47a8069780f855c6d100cbe9ef7972d5231767915b40c4d0b",
+      "retained_sha256": "a51f3c16b343b8eab9b824be236a5c537cc3ec562d67016c5f3272a9cbe86fea"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/assessment.json",
+      "retained": "assessment.json",
+      "uncompressed_sha256": "ea66e421d745a734c76b83186dbb60edb94678d4b09a6481e70a57426bce3aa9",
+      "retained_sha256": "ea66e421d745a734c76b83186dbb60edb94678d4b09a6481e70a57426bce3aa9"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/controls.csv",
+      "retained": "controls.csv.gz",
+      "uncompressed_sha256": "4d1b33105a223ba819f8ad873200cec4f09f277f954fa9bdce83348df8765ccb",
+      "retained_sha256": "e4333f6923844f16bb19c89f022f9c15241e54413bc56ebc0dcaf087f9055a4e"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/vpi_compile.log",
+      "retained": "vpi_compile.log.gz",
+      "uncompressed_sha256": "8d8a44346d5dcf7e734909618ba5fa6677b92ccab12644b0b54306c79f3e9bc6",
+      "retained_sha256": "ba339d2fecc9df080789efbfa389413145e4d5974279ee2f4606eb18b25db8da"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/edges.csv",
+      "retained": "edges.csv.gz",
+      "uncompressed_sha256": "bde7c3042ddaeaf8c0dac3e0ceef44e9b304a3733c130cefd6ad1a936b350d80",
+      "retained_sha256": "761d61d4070df9d75bccdb4903ebc9af6f2d8f028e6f7e87f403682c577072c2"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/compile.log",
+      "retained": "compile.log.gz",
+      "uncompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_sha256": "f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec"
+    }
+  ],
+  "omitted_compiled_extensions": [
+    ".o",
+    ".vpi",
+    ".vvp"
+  ],
+  "release_ready": false
+}

@@ -2712,3 +2712,14 @@ preserving acceptance-v5 frequency/phase/cycle-slip checks. CLI/import preflight
 passes. A single reset-during-tracking/phase30 control 1585 is launched with the
 existing unqualified six-knot diagnostic model and KI1/KP2; no corrected-model
 or full release matrix qualification is claimed from this harness control.
+
+Reset80 RTL control 1585 completes normally in 9.87 s with a fresh compile,
+KI1/KP2 and reset-during-tracking at phase30. Both assertion markers report
+80.000 ns; both observation segments pass sustained functional acceptance and
+reference-phase coverage. All receipt inputs/artifacts and both segment reports
+are independently rehashed/checked before retention. CSV/log files are retained
+losslessly compressed with original and retained hashes; compiled binaries are
+explicitly omitted. This one-case result uses the earlier unqualified six-knot
+static subsystem and diagnostic detector/clock models, not corrected native
+capture 1581. Physical reset distribution, analog-model accuracy, other scenarios
+and corners remain open; no release flag is promoted.
