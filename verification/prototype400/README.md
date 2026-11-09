@@ -2723,3 +2723,12 @@ explicitly omitted. This one-case result uses the earlier unqualified six-knot
 static subsystem and diagnostic detector/clock models, not corrected native
 capture 1581. Physical reset distribution, analog-model accuracy, other scenarios
 and corners remain open; no release flag is promoted.
+
+Separate Magic candidate 1586 combines the contact-residue correction with the
+retained single-break resistance-area sign and rectilinear port-projection
+patches. Each patch applies to a fresh verified source copy with zero fuzz and
+is separately hash-pinned. No running reference tool, extraction or simulator is
+changed. This is preparation for native resistance controls, not evidence that
+the port projection or complete distributed-R network is qualified. Contact
+controls, resistance controls and unchanged-capacitance checks must be rerun on
+this combined candidate before it can supply qualification artifacts.
