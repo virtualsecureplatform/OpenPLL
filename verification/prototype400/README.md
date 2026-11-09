@@ -2740,3 +2740,11 @@ patch executable. Fresh output 1587 records successful zero-fuzz application to
 both `resis/ResMakeRes.c` and `resis/resis.h`, then reaches configure. The failed
 output remains unchanged; no completed tool or native control is overwritten.
 Native combined-candidate regressions remain pending.
+
+Combined-candidate contact controller 1589 waits for the live 1587 build, then
+runs four fresh native cases in 1588. It independently reconstructs each native
+fringe integral and requires C-only SPICE to remain byte-identical to the
+contact-corrected 1571 controls in all four cases. Build failure or missing owner
+stops the queue; no failed build or native probe is retried. This checks that the
+added resistance patches preserve tested capacitance behavior, not full resistance
+coverage or validity of port projection on the assembled layout.
