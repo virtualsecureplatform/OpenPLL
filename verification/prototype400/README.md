@@ -2619,3 +2619,13 @@ format. This runner still uses the previous diagnostic subsystem extraction and
 explicitly declares `corrected_contact_extraction_used=false`; it cannot qualify
 the corrected full-layout model. Historical runners and receipts remain frozen.
 Corrected full-layout extraction 1573 is now observed in its native-running state.
+
+`compare_contact_corrected_C.py` prepares the completed-only old/new flat-export
+comparison. It requires matching checked-source GDS hashes, verifies both native
+export digests, and rejects port/device/connectivity changes. Parallel capacitor
+pairs are summed exactly with rational arithmetic and each changed pair is
+reported. Four tests pass for exact aggregation/instance renaming, capacitance
+change reporting, connectivity/dimension/port rejection, and negative-branch
+rejection. No partial native export is read. The comparison is coefficient
+measurement only: mask provenance, full spatial support, distributed R, model
+correlation and native-simulation eligibility remain separate requirements.
