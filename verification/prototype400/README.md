@@ -2810,3 +2810,11 @@ The transform accepts the pinned native source and rejects an altered initialize
 or an already-patched source. A fresh combined build is launched; native alias,
 non-alias, resistance/contraction and C-only controls remain mandatory before
 acceptance. The running PLL simulation and previous tool builds remain unchanged.
+
+Port-location candidate regressions 1595/1597 are live, waiting for build 1594.
+Two threshold1 resistance controls retain coupling-off/on behavior and require
+nonzero R emission. Four contact cases 1596 must independently pass fringe
+integrals and preserve the contact-corrected baseline C-only SPICE byte-for-byte.
+These changed-candidate controls use new paths; the original crash and successful
+C controls remain frozen. Native completion is a prerequisite, not proof of net
+coverage or exact C contraction, which remain separate checks.
