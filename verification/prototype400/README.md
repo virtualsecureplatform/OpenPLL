@@ -2757,3 +2757,17 @@ failure as inconclusive rather than bypassing it. Full capacitance contraction,
 resistance geometry and assembled-domain coverage are explicitly not qualified
 by these small controls. The earlier experimental explicit-coupling import
 transform is not silently included in this baseline candidate.
+
+Combined build 1587 completes. All four contact cases 1588 complete; independent
+review 1589 passes every fringe-integral audit and confirms all C-only SPICE
+outputs byte-identical to corrected-contact baseline 1571. This establishes only
+the tested C-only invariance of the added resistance patches.
+
+Resistance control 1590 stops on its first case (coupling disabled) with native
+SIGSEGV (-11). The native log reaches resistance extraction after noting that
+ports A and AFAR are electrically shorted; no completed after-export is present.
+The second case is not run. All failure files and the successful contact controls
+are retained, with native logs compressed losslessly. The combined tool is not
+qualified for resistance export; the area-sign/port-projection patches did not
+resolve this reproducer. Crash localization is required before further changes.
+Corrected conductor-C transient 1581 remains a separate running diagnostic.

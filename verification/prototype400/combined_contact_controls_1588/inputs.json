@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/assessment.json": "8391c0ca629fe1e4313e5bd5bc71ea0c66962e333e1cc585a249b1aefa588424",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/bin/magic": "0442b0908f9ee51e6d238e2f2a23187183adb8fc015538faa501570a60c8a2b7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/lib/magic/tcl/tclmagic.so": "76e183f8129712b9cc350eeefe1703a9f22f7b7e4e51b3fac542b97ec551ede3",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/fringe_contact_probe.tcl": "b96aa30ae75b10c9736a25ab87d44ea459e6dba97f4ed2e2e2868e82a223303c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_magic_combined_contact_1588.py": "561dc210adaafc30b906d8fc1fdc76e02f068f604df7a1b1490174b2815cec05"
+  },
+  "memory_GiB": 0.5,
+  "CPU": 19,
+  "queue_cap_s": 86400,
+  "native_case_cap_s": 60,
+  "maximum_native_cases": 4,
+  "automatic_identical_retry": false,
+  "layout_DRC_qualified": false,
+  "extractor_fix_qualified": false,
+  "release_ready": false
+}

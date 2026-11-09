@@ -1,0 +1,81 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/assessment.json": "05438abbf68f844c813d38e9c104117144f1811a5a3de227d866f63c89970769",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_contact_layout_candidate_1571/assessment.json": "e644931d30ca663877bd1beb9c428b8bf12fc5709f95aeb4ae63165fafd94e56",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_magic_combined_contact_1589.py": "1533aff1edfb2f5a8ad30eb279c5b4ca7d9df64f7ded7169744d78abe07a2247"
+  },
+  "results": [
+    {
+      "case": "contact0_shield0",
+      "integrals": {
+        "fringe_rules": 2,
+        "shielding_leaves": 0,
+        "unsupported_split_rules": 0,
+        "native_fringe_fraction_integrals_verified": true,
+        "all_rectilinear_fringe_support_verified": true,
+        "maximum_absolute_integral_comparison_error": 0.0,
+        "diagnostic_relative_comparison_tolerance": 5e-13,
+        "diagnostic_absolute_comparison_tolerance": 1e-13,
+        "ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "contact_corrected_SPICE_unchanged": true
+    },
+    {
+      "case": "contact0_shield1",
+      "integrals": {
+        "fringe_rules": 8,
+        "shielding_leaves": 1,
+        "unsupported_split_rules": 0,
+        "native_fringe_fraction_integrals_verified": true,
+        "all_rectilinear_fringe_support_verified": true,
+        "maximum_absolute_integral_comparison_error": 2.842170943040401e-14,
+        "diagnostic_relative_comparison_tolerance": 5e-13,
+        "diagnostic_absolute_comparison_tolerance": 1e-13,
+        "ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "contact_corrected_SPICE_unchanged": true
+    },
+    {
+      "case": "contact1_shield0",
+      "integrals": {
+        "fringe_rules": 12,
+        "shielding_leaves": 1,
+        "unsupported_split_rules": 0,
+        "native_fringe_fraction_integrals_verified": true,
+        "all_rectilinear_fringe_support_verified": true,
+        "maximum_absolute_integral_comparison_error": 0.0,
+        "diagnostic_relative_comparison_tolerance": 5e-13,
+        "diagnostic_absolute_comparison_tolerance": 1e-13,
+        "ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "contact_corrected_SPICE_unchanged": true
+    },
+    {
+      "case": "contact1_shield1",
+      "integrals": {
+        "fringe_rules": 21,
+        "shielding_leaves": 6,
+        "unsupported_split_rules": 0,
+        "native_fringe_fraction_integrals_verified": true,
+        "all_rectilinear_fringe_support_verified": true,
+        "maximum_absolute_integral_comparison_error": 2.842170943040401e-14,
+        "diagnostic_relative_comparison_tolerance": 5e-13,
+        "diagnostic_absolute_comparison_tolerance": 1e-13,
+        "ground_placement_qualified": false,
+        "distributed_wire_R_qualified": false,
+        "release_ready": false
+      },
+      "contact_corrected_SPICE_unchanged": true
+    }
+  ],
+  "all_four_native_integrals_pass": true,
+  "all_four_C_only_SPICE_unchanged": true,
+  "wire_R_qualified": false,
+  "release_ready": false
+}

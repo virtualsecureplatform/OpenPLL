@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_queue_1589/owner.json",
+      "retained": "owner.json",
+      "original_sha256": "0aedf329e87f89e606c4af3b6c9aef97d42e4a520ac4d2af2be7e8a8492b4594",
+      "retained_sha256": "0aedf329e87f89e606c4af3b6c9aef97d42e4a520ac4d2af2be7e8a8492b4594"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_queue_1589/status.json",
+      "retained": "status.json",
+      "original_sha256": "ea5df58dafe208c26865760b97e5d9854a101a0b0972097660dd9565cb44afd5",
+      "retained_sha256": "ea5df58dafe208c26865760b97e5d9854a101a0b0972097660dd9565cb44afd5"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_queue_1589/assessment.json",
+      "retained": "assessment.json",
+      "original_sha256": "71551bbec36eb95d2b40210a7c93c410bce1fe1f827ea41531ad63c6913d2d02",
+      "retained_sha256": "71551bbec36eb95d2b40210a7c93c410bce1fe1f827ea41531ad63c6913d2d02"
+    }
+  ],
+  "release_ready": false
+}

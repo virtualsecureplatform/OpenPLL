@@ -1,0 +1,5 @@
+{
+  "state": "stopped_without_qualification",
+  "reason": "RuntimeError('compiled worker failed (-11): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_R_controls_1590/coupling0/native.log')",
+  "release_ready": false
+}

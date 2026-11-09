@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_R_controls_1590/status.json",
+      "retained": "status.json",
+      "original_sha256": "bf002a3511df19f4e15835951b1e2cf87797d3a6d620f36a37127273b21bbae4",
+      "retained_sha256": "bf002a3511df19f4e15835951b1e2cf87797d3a6d620f36a37127273b21bbae4"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_R_controls_1590/owner.json",
+      "retained": "owner.json",
+      "original_sha256": "3791d8a30c888b670c320661b1cf78b05d416f8ae9bc1a70e08587c5490db547",
+      "retained_sha256": "3791d8a30c888b670c320661b1cf78b05d416f8ae9bc1a70e08587c5490db547"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_R_controls_1590/inputs.json",
+      "retained": "inputs.json",
+      "original_sha256": "b16a6aa2f852d510036976d51936fa8771b991ee7e55680b328d4bec54bc2ae3",
+      "retained_sha256": "b16a6aa2f852d510036976d51936fa8771b991ee7e55680b328d4bec54bc2ae3"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_R_controls_1590/coupling0/minimal.magicrc",
+      "retained": "coupling0/minimal.magicrc",
+      "original_sha256": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+      "retained_sha256": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_R_controls_1590/coupling0/OpenPLL_Coupling_R_Probe.res.ext",
+      "retained": "coupling0/OpenPLL_Coupling_R_Probe.res.ext",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_R_controls_1590/coupling0/OpenPLL_Coupling_R_Probe.ext",
+      "retained": "coupling0/OpenPLL_Coupling_R_Probe.ext",
+      "original_sha256": "e13b91e740e08bfe861e2ea83c634204038b6faba754e44a9354847ff7fcf1a5",
+      "retained_sha256": "e13b91e740e08bfe861e2ea83c634204038b6faba754e44a9354847ff7fcf1a5"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_R_controls_1590/coupling0/native.process.json",
+      "retained": "coupling0/native.process.json",
+      "original_sha256": "a70b0d842bb73e4af90270b4279faa826135115e730797f9648da934b47c7bea",
+      "retained_sha256": "a70b0d842bb73e4af90270b4279faa826135115e730797f9648da934b47c7bea"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_R_controls_1590/coupling0/native.log",
+      "retained": "coupling0/native.log.gz",
+      "original_sha256": "0877ec70e8beb86b3f0633f1c90d84516c25aceda295f59c2c8e834f40309cb8",
+      "retained_sha256": "245a50ffac3baf22f8a403ace7c1c3ce9c28bfc992a6e6df0f378d3f1efdcb25"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_R_controls_1590/coupling0/run.tcl",
+      "retained": "coupling0/run.tcl",
+      "original_sha256": "aae78b48e3c843c13c2591302c19e48eb66c443d1c28725dacd865e859fc3845",
+      "retained_sha256": "aae78b48e3c843c13c2591302c19e48eb66c443d1c28725dacd865e859fc3845"
+    }
+  ],
+  "release_ready": false
+}

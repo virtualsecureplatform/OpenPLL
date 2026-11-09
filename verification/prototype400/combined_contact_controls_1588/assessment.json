@@ -1,0 +1,61 @@
+{
+  "results": [
+    {
+      "contact": false,
+      "shield": false,
+      "rules": 2,
+      "leaves": 0,
+      "kernel_differences": []
+    },
+    {
+      "contact": false,
+      "shield": true,
+      "rules": 8,
+      "leaves": 1,
+      "kernel_differences": []
+    },
+    {
+      "contact": true,
+      "shield": false,
+      "rules": 12,
+      "leaves": 1,
+      "kernel_differences": []
+    },
+    {
+      "contact": true,
+      "shield": true,
+      "rules": 21,
+      "leaves": 6,
+      "kernel_differences": []
+    }
+  ],
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact0_shield0/coupling.jsonl": "57c78c0edf8f556ac1ae8931ff774a1d28c7c7f8b450eb3d3df1523b15ab880d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact0_shield0/native.log": "0d180b982a6ea62ac950d9cb0312d75fa2c2b8fc2f441121353f551737e29008",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact0_shield0/probe.spice": "88bf08289c405c6283cae09307e894146d5f76179a505a700729632bf3f90e0f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact0_shield0/FringeContactProbe.ext": "0ae571c83f69d25d52ade9d91ea5a0120948c6771735dbcdc8d9ac774163f9fb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact0_shield0/FringeContactProbe.mag": "533ded84161077871fe9dbbe142b973eb7af10afd8def78d13d4b734558689c2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact0_shield1/coupling.jsonl": "4e28e594e6daeafe7975fe9146596582f25aa0ec62d1c400df7c881056362b92",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact0_shield1/native.log": "0d180b982a6ea62ac950d9cb0312d75fa2c2b8fc2f441121353f551737e29008",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact0_shield1/probe.spice": "de21910b57b626aa3119fa63c7473edfb0061cdd5cbd251b92f8602cc6769df0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact0_shield1/FringeContactProbe.ext": "1afb4774663c00297d1e9a22cbc1b49b924c0d960757839604cda9d30d051e08",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact0_shield1/FringeContactProbe.mag": "78b257dc609076dcac407b212bda38053398918d32a059abe2656d85fd4f723e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact1_shield0/coupling.jsonl": "a8ea038ca818c37e42236a992cc7332a055140bfd45cb629eb112fa392cabc3c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact1_shield0/native.log": "0d180b982a6ea62ac950d9cb0312d75fa2c2b8fc2f441121353f551737e29008",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact1_shield0/probe.spice": "448ee5959050c820d727d6aa62aa64439c138ed651a6cc6cfabe87467a767508",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact1_shield0/FringeContactProbe.ext": "7b86f3ccff4056556c9f8002e46726ddaaf660d407e7d309ae6cf22c14120d4d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact1_shield0/FringeContactProbe.mag": "5db878fe15ec7e3f9f2d384af15d6da8972444f4f05195d0f9e989d13d169afd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact1_shield1/coupling.jsonl": "49ffcfbd725c143aa15213b2428884c22d38a97f0337f9a9972184979ba8a269",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact1_shield1/native.log": "0d180b982a6ea62ac950d9cb0312d75fa2c2b8fc2f441121353f551737e29008",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact1_shield1/probe.spice": "a9ca94d155d16f59923fa8f9306a5c8788da105e5f85ee5d7c3a007a531f4ff0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact1_shield1/FringeContactProbe.ext": "c5360a2398a8878bcd405a91c50d4a471e7fc1fb31535641fdfa3b829ee42ce6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_combined_contact_controls_1588/contact1_shield1/FringeContactProbe.mag": "eeacb9176487f58d61256c80379485defc07202482ba861d10a7870647c6ba65"
+  },
+  "all_native_processes_completed": true,
+  "actual_PDK_tables_used": true,
+  "production_source_unchanged": true,
+  "isolated_contact_residue_candidate": true,
+  "full_layout_failure_explained": false,
+  "extractor_fix_qualified": false,
+  "release_ready": false
+}

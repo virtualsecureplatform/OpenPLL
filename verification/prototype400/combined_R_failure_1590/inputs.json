@@ -1,0 +1,11 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/assessment.json": "8391c0ca629fe1e4313e5bd5bc71ea0c66962e333e1cc585a249b1aefa588424",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_contact_residue_R_candidate_1587/install/bin/magic": "0442b0908f9ee51e6d238e2f2a23187183adb8fc015538faa501570a60c8a2b7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/coupling_grounding_R_threshold1_probe.tcl": "ffb48275938a2c472d1ea020d21c64a2408a4dad50fd3c7f113dabb0cf62f75d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_magic_combined_R_controls_1590.py": "0f6e7ebbbd89c274e48c4df04a6b1d55aec54ab2920f28d8c24a6077e9e5101c"
+  },
+  "maximum_native_cases": 2,
+  "automatic_identical_retry": false,
+  "release_ready": false
+}
