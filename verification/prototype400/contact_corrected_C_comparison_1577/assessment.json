@@ -1,0 +1,22 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/assessment.json": "2d8321c54607391ae8adc826f5a288497eba666ceded42d8c0c1c4e459ecd5b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_geometry_C_1202/capacitance.spice": "ccb0c777d906203c2d089826dc622ae36ee15da62aa25624f0baa5bfd292bb43",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/assessment.json": "6047a234f31a190fa3ae4cd6623a4486d2d0a8287b6744aca828c1fb6067e939",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/capacitance.spice": "27e878554acc74394f96a95978adbc0651c0eae77ec5e70e3899403031a5c0e1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_contact_corrected_C.py": "3b9d889d50f8eace7d9f561b91290cdf5f7e77f253b784fbca17068115cb8f0e"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_comparison_1577/changed_pairs.json": "381c7a03716d12f7595c2e159ffc805064ecaa94f9a90047a2b7dfd22f4cd51e"
+  },
+  "changed_pairs": 80688,
+  "device_cards": 62338,
+  "ports_and_device_cards_identical": true,
+  "old_pairs": 1364255,
+  "new_pairs": 1364187,
+  "coefficient_changes_measured": true,
+  "full_geometry_qualified": false,
+  "wire_R_qualified": false,
+  "native_simulation_allowed": false,
+  "release_ready": false
+}

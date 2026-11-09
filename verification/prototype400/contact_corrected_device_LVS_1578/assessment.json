@@ -1,0 +1,18 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_flat_C_device_LVS_1205/assessment.json": "d0ac8ef11c03a974ac614785715bc6e47a56ca9c8fb5a3fdb6ed4dfa2856706e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_comparison_1577/assessment.json": "ff1baef2fb966db2ea66ec0652aa05e4dd8f9a2bd8ad63870c3e7935d6741673",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/assessment.json": "6047a234f31a190fa3ae4cd6623a4486d2d0a8287b6744aca828c1fb6067e939",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/reuse_contact_corrected_device_LVS_1578.py": "77be7fb0db98895ffdbe0bc64227ce88a39fc6897c1c5352b3bac1cf71c7109e"
+  },
+  "artifacts": {},
+  "unique_device_LVS_match": true,
+  "all_records_without_discrepancies": true,
+  "device_LVS_reused_via_exact_port_and_device_card_identity": true,
+  "fresh_native_LVS_run": false,
+  "source_GDS_sha256": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca",
+  "capacitance_equivalence_qualified": false,
+  "full_physical_domain_qualified": false,
+  "model_qualified": false,
+  "release_ready": false
+}

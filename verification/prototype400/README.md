@@ -2629,3 +2629,14 @@ change reporting, connectivity/dimension/port rejection, and negative-branch
 rejection. No partial native export is read. The comparison is coefficient
 measurement only: mask provenance, full spatial support, distributed R, model
 correlation and native-simulation eligibility remain separate requirements.
+
+Full corrected extraction 1573 and exact comparison 1577 complete. All 62,338
+native device/connectivity cards and ports match; 80,688 capacitor endpoint
+pairs change. The rational changed-pair report remains in build storage with its
+hash pinned by the retained receipt. This is not capacitance equivalence or
+permission to reuse old calibration. Device-LVS binding 1578 verifies the full
+old LVS, new extraction and comparison input/artifact closures, and explicitly
+reuses the completed device proof through exact card/port identity. It is not a
+fresh Netgen run and establishes no new spatial or wire-R qualification.
+Corrected native-reference preparation 1579 is launched through the existing
+literal-template normalizer, with no transient simulation requested.
