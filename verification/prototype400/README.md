@@ -2672,3 +2672,14 @@ regression groups verify exact reset/transient/output statements, programmed bit
 values, and rejection of missing/duplicate/enabled PLL_ENABLE sources. This is
 preparation only: reset distribution and settling must be measured before a
 frequency window is qualified; no transient is launched before the DC check.
+
+Corrected transient controller 1582 observes the live reset-DC prerequisite 1580
+and will run only after its completed receipt exists. The new native capture
+1581 is coarse23/fine134, TT/27C/1.8V, 80 ns reset assertion, 340 ns horizon,
+10 ps maximum step and standard precision-17 V(*) output read with strict
+physical binding. The candidate frequency window is 280-340 ns and requires
+observed stationary programming; it is not a qualified settling window.
+The runner pins the corrected native-model/DC lineage and existing corrected
+BSIM controls. DC failure, missing owner, or observation timeout stops the queue;
+no prerequisite or native case is automatically retried. Wire R, physical control
+leaf checks, timestep/settling convergence and model qualification remain open.
