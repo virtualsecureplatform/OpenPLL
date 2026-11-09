@@ -2790,3 +2790,13 @@ Magic's internal infinity boundary. These observations narrow the failure to
 search geometry/tile traversal; they do not yet distinguish a bad rectangle
 from an invalid tile plane. Diagnostic state capture is never loaded into the
 running native PLL simulation and does not qualify any extraction result.
+
+O0-stack-layout-specific diagnostic 1593 captures the actual rectangle:
+[1073741818,1073741818,1073741822,1073741822]. Its center is 1073741820,
+exactly Magic's INFINITY ((1 << 30) - 4), and its upper edge exceeds that bound.
+ResExtractNet forms this box from node->location +/-2; ResExtInitNode initializes
+both location and drivepoint to INFINITY. The search therefore starts from an
+unset node-location sentinel, rather than proving arbitrary plane corruption.
+The relevant fixture has electrically aliased ports A/AFAR. Alias/port location
+propagation must be traced before choosing a correction; skipping the net or
+clipping this sentinel box cannot qualify complete resistance extraction.
