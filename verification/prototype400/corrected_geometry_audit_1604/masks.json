@@ -1,0 +1,191 @@
+[
+  {
+    "mask": "poly",
+    "exact_match": true,
+    "source_area_um2": "191354793/8000",
+    "flat_area_um2": "191354793/8000",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "diff",
+    "exact_match": true,
+    "source_area_um2": "1297247421/40000",
+    "flat_area_um2": "1297247421/40000",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "tap",
+    "exact_match": true,
+    "source_area_um2": "3856773/5000",
+    "flat_area_um2": "3856773/5000",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "nwell",
+    "exact_match": true,
+    "source_area_um2": "1312616177/20000",
+    "flat_area_um2": "1312616177/20000",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "licon",
+    "exact_match": true,
+    "source_area_um2": "10645893/2000",
+    "flat_area_um2": "10645893/2000",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "li1",
+    "exact_match": true,
+    "source_area_um2": "1963711009/40000",
+    "flat_area_um2": "1963711009/40000",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "mcon",
+    "exact_match": true,
+    "source_area_um2": "7930449/2500",
+    "flat_area_um2": "7930449/2500",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "met1",
+    "exact_match": true,
+    "source_area_um2": "343232359/8000",
+    "flat_area_um2": "343232359/8000",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "via1",
+    "exact_match": true,
+    "source_area_um2": "220851/400",
+    "flat_area_um2": "220851/400",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "met2",
+    "exact_match": true,
+    "source_area_um2": "428288511/20000",
+    "flat_area_um2": "428288511/20000",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "via2",
+    "exact_match": true,
+    "source_area_um2": "10589/25",
+    "flat_area_um2": "10589/25",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "met3",
+    "exact_match": true,
+    "source_area_um2": "16053889/625",
+    "flat_area_um2": "16053889/625",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "via3",
+    "exact_match": true,
+    "source_area_um2": "7626/25",
+    "flat_area_um2": "7626/25",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "met4",
+    "exact_match": true,
+    "source_area_um2": "1604776817/40000",
+    "flat_area_um2": "1604776817/40000",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "via4",
+    "exact_match": true,
+    "source_area_um2": "4208/25",
+    "flat_area_um2": "4208/25",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "met5",
+    "exact_match": true,
+    "source_area_um2": "979593153/5000",
+    "flat_area_um2": "979593153/5000",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "dnwell",
+    "exact_match": true,
+    "source_area_um2": "0",
+    "flat_area_um2": "0",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "nsdm",
+    "exact_match": false,
+    "source_area_um2": "611980797/10000",
+    "flat_area_um2": "887634639/40000",
+    "difference_area_um2": "62412159/1600"
+  },
+  {
+    "mask": "psdm",
+    "exact_match": false,
+    "source_area_um2": "2460826541/40000",
+    "flat_area_um2": "296070617/10000",
+    "difference_area_um2": "1276582031/40000"
+  },
+  {
+    "mask": "lvtn",
+    "exact_match": false,
+    "source_area_um2": "144447879/8000",
+    "flat_area_um2": "62773603/5000",
+    "difference_area_um2": "220050571/40000"
+  },
+  {
+    "mask": "hvtp",
+    "exact_match": false,
+    "source_area_um2": "1430163/125",
+    "flat_area_um2": "57896129/10000",
+    "difference_area_um2": "56516911/10000"
+  },
+  {
+    "mask": "hvi",
+    "exact_match": true,
+    "source_area_um2": "0",
+    "flat_area_um2": "0",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "npc",
+    "exact_match": false,
+    "source_area_um2": "526641687/40000",
+    "flat_area_um2": "51179097/10000",
+    "difference_area_um2": "322509641/40000"
+  },
+  {
+    "mask": "rpm",
+    "exact_match": true,
+    "source_area_um2": "0",
+    "flat_area_um2": "0",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "urpm",
+    "exact_match": true,
+    "source_area_um2": "0",
+    "flat_area_um2": "0",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "polyres",
+    "exact_match": true,
+    "source_area_um2": "0",
+    "flat_area_um2": "0",
+    "difference_area_um2": "0"
+  },
+  {
+    "mask": "diffres",
+    "exact_match": true,
+    "source_area_um2": "0",
+    "flat_area_um2": "0",
+    "difference_area_um2": "0"
+  }
+]

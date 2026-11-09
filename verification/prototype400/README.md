@@ -2898,3 +2898,12 @@ physical-control failure stops assessment without native retries or window
 changes. A stable sample screen never sets timestep, local-LSB, physical settling
 or model qualification flags; further native convergence and independent
 correlation remain required.
+
+Corrected flat geometry audit 1604 completes. Conductor masks, 62,338 primitive
+counts, 61,504 MOS dimensions and channel area match, but raw device-select masks
+do not. Its masks.json and inventory.json hashes exactly match original audit
+1203: the raw nsdm/psdm/lvtn/hvtp/npc differences predate the contact correction.
+No all-device-mask-preserved pass is claimed. The flat GDS remains an electrical
+extraction view, not a fabrication replacement. Fresh active-selector validation
+1605 is launched against corrected flat geometry; the original fabrication GDS
+and earlier limited-scope active-selector receipt remain unchanged.
