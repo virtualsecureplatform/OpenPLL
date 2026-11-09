@@ -2568,3 +2568,20 @@ the contact/no-added-shield case. Only contact plus added shield changes. These
 are native real-PDK regression controls, not full-layout qualification. The
 original executable and existing PLL references remain unchanged; full-layout
 corrected extraction and correlation are the next required checks.
+
+Corrected full-geometry C extraction 1573 is prepared from checked parent 1147
+with isolated Magic candidate 1570, after native control review 1572. It retains
+the original source GDS and uses fresh output paths. Diagnostic tracing is
+explicitly disabled for this coefficient-comparison run; it does not qualify
+full-layout spatial support or distributed R. Initial state is waiting for its
+16-GiB global lease. No identical native retry or replacement of an old model is
+performed.
+
+Capture precision diagnosis: the pinned Xyce sources explicitly set ASCII RAW
+stream precision to 8 in `N_IO_OutputterTimeRawASCII.C:255` and in the override
+writer (`N_IO_OutputterOverrideRawASCII.C:512,603`). Thus a deck declaration of
+`precision=17` is not proof of timestamp precision for these writers. The closed
+1470 replay has two equal printed-time pairs with different voltage values;
+its final printed time is 260 ns. Do not sort, perturb, or silently drop these
+samples to manufacture strict ordering. New native capture output must first
+pass a precision/round-trip fixture; 1281 requires its own ordering diagnosis.
