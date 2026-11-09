@@ -2732,3 +2732,11 @@ changed. This is preparation for native resistance controls, not evidence that
 the port projection or complete distributed-R network is qualified. Contact
 controls, resistance controls and unchanged-capacitance checks must be rerun on
 this combined candidate before it can supply qualification artifacts.
+
+Combined build 1586 stops before configure/compilation because `patch` is absent
+from the container PATH. The preserved status is an infrastructure failure, not
+a native resistance result. Builder v2 pins and uses the image's absolute Nix
+patch executable. Fresh output 1587 records successful zero-fuzz application to
+both `resis/ResMakeRes.c` and `resis/resis.h`, then reaches configure. The failed
+output remains unchanged; no completed tool or native control is overwritten.
+Native combined-candidate regressions remain pending.
