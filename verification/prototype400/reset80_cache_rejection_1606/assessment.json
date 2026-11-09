@@ -1,0 +1,12 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_nominal_RTL_build_cache_778/assessment.json": "109352da2ad3667bdfa739ed4388458ee60f3f50864e38b1a8bd7b75f69a12a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_root_publication_detector_407/detector.v": "551813fd1256418ea66071fea72541ef42cfa03e8ef8b407af633068fa2a5af0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/selected_mixed_signal_build_cache_v3.py": "2a6487bc919c65d3efb9eef66a21b14b0878b7b4db5030fc969680b8d1471cd8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tb/tb_programmed400_closed_loop_reset80.v": "b3f88fdcce193fa837095ed04fdbc4599314341f48399950ceed83640a5c9397"
+  },
+  "actual_old_cache_rejected": true,
+  "reason": "cache source, detector or toolchain identity differs",
+  "old_reset_bench_compilation_reused": false,
+  "release_ready": false
+}

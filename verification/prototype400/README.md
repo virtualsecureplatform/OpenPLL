@@ -2916,3 +2916,10 @@ electrical extraction view only. Original fabrication GDS is unchanged and the
 flat GDS is not a fabrication replacement. Geometry/device checks, native model
 correlation, distributed-R coverage and final fabrication/integration checks
 retain their separate scope and qualification status.
+
+Cache rejection control 1606 invokes the new cache loader against actual completed
+cache 778 and confirms rejection on source/toolchain identity before reuse.
+The old receipt pins the 10 ns-reset phased bench; the new loader requires the
+reset80 bench. This is a real stale-compiled-bench rejection control, complementing
+the fresh-compile passing reset80 control 1585. It does not qualify the old
+frequency/detector/clock models or establish physical reset behavior.
