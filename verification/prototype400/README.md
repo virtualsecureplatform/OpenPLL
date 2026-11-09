@@ -2609,3 +2609,13 @@ missing terminal markers, wrong horizons and trailing content. Distinct precise
 times are preserved without sorting or deduplication. Native completion and
 capture identity remain caller prerequisites. Integration into future PLL
 capture runners is pending; old RAW captures remain unchanged and unqualified.
+
+`run_keeper_static_DCO_point_v2.py` integrates high-precision standard capture
+and the strict physical-binding reader into a fresh version of the diagnostic
+DCO runner. It writes/retains `transient.prn`, pins the reader and binding source,
+and declares the output format in its input receipt. Import/CLI preflight passes
+inside the release SIF. No DCO simulation is launched merely to recheck the new
+format. This runner still uses the previous diagnostic subsystem extraction and
+explicitly declares `corrected_contact_extraction_used=false`; it cannot qualify
+the corrected full-layout model. Historical runners and receipts remain frozen.
+Corrected full-layout extraction 1573 is now observed in its native-running state.
