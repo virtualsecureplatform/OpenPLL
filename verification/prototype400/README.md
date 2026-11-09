@@ -2827,3 +2827,18 @@ capacitance duplication detection, new-short detection, external port changes
 and rejection of nonzero reference resistors. The existing exact primitive/C
 contraction checks remain in use. These regression tests are not actual native
 R-control results; candidate 1594 and controls 1595/1597 remain pending.
+
+Port-location candidate 1594 completes and both resistance cases 1595 run normally,
+each emitting one positive wire R. Contact cases 1596 have no kernel mismatches.
+Byte-review 1597 stops on contact+shield because C cards are reordered; that
+failed receipt is preserved. Separate electrical review 1598 verifies producer
+artifact hashes and proves exact primitive/C equivalence in all four contact
+cases, with every fringe-integral audit passing. The differing contact+shield
+SPICE only renumbers/reorders its three coupling cards.
+
+Both coupling-off and coupling-on R exports recover their respective pre-R
+capacitance networks exactly under ideal contraction, including explicit reference
+zero-R port aliases. These results support the unset-port-location correction
+on these fixtures; they do not prove absolute C correctness against an independent
+extraction, assembled-layout resistance geometry, complete net coverage, or PLL
+model qualification. No release gate is closed from these controls alone.

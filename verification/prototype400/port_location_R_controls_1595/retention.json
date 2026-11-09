@@ -1,0 +1,137 @@
+{
+  "files": [
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/owner.json",
+      "retained": "owner.json",
+      "original_sha256": "df27f29f65fba416602d6b0e981be3f3a18e2903fe1a5e44a38a36942b4fe150",
+      "retained_sha256": "df27f29f65fba416602d6b0e981be3f3a18e2903fe1a5e44a38a36942b4fe150"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/inputs.json",
+      "retained": "inputs.json",
+      "original_sha256": "4b5445f201d11abfa0d7c423e932e57b99f44dc0bb58ff9cb1c0aa33651eeded",
+      "retained_sha256": "4b5445f201d11abfa0d7c423e932e57b99f44dc0bb58ff9cb1c0aa33651eeded"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/status.json",
+      "retained": "status.json",
+      "original_sha256": "5e5412d289ca96573e4dc9654502a9eb6473cb14fad4934037313c3ec93d94b5",
+      "retained_sha256": "5e5412d289ca96573e4dc9654502a9eb6473cb14fad4934037313c3ec93d94b5"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/assessment.json",
+      "retained": "assessment.json",
+      "original_sha256": "29f7d1daf59ae664a014e3ecced812656980713938c1a8bc6dd433dc7bc53e04",
+      "retained_sha256": "29f7d1daf59ae664a014e3ecced812656980713938c1a8bc6dd433dc7bc53e04"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/feedback.txt",
+      "retained": "coupling0/feedback.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/minimal.magicrc",
+      "retained": "coupling0/minimal.magicrc",
+      "original_sha256": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+      "retained_sha256": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/after.spice",
+      "retained": "coupling0/after.spice",
+      "original_sha256": "a9a9d9f69b654d461a32a7523297a3c1cbfba4c14b92538e9f74ad0b74c6a64b",
+      "retained_sha256": "a9a9d9f69b654d461a32a7523297a3c1cbfba4c14b92538e9f74ad0b74c6a64b"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/native.process.json",
+      "retained": "coupling0/native.process.json",
+      "original_sha256": "492393aa1961cf217fefd4f3799b2722e4525d73cb62826f308a8265446cec98",
+      "retained_sha256": "492393aa1961cf217fefd4f3799b2722e4525d73cb62826f308a8265446cec98"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/OpenPLL_Coupling_R_Probe.res.ext",
+      "retained": "coupling0/OpenPLL_Coupling_R_Probe.res.ext",
+      "original_sha256": "17cdfa4335d6d49e1313a326749270765136ab0a67cfa76a63820517be5b874c",
+      "retained_sha256": "17cdfa4335d6d49e1313a326749270765136ab0a67cfa76a63820517be5b874c"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/before.spice",
+      "retained": "coupling0/before.spice",
+      "original_sha256": "a8c8dd0c58486d306397b4cd9f49c76af522b9e551f44f21ddbc69433ea6a79d",
+      "retained_sha256": "a8c8dd0c58486d306397b4cd9f49c76af522b9e551f44f21ddbc69433ea6a79d"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/native.log",
+      "retained": "coupling0/native.log.gz",
+      "original_sha256": "5621b5c876966d533a084d4f878f47f9bebf0311ebb21d5693280449c5139ffd",
+      "retained_sha256": "9cb8cfede4a17b6aa1bdf5b5ec6c19170713c85de19b974433377c0813a4e292"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/run.tcl",
+      "retained": "coupling0/run.tcl",
+      "original_sha256": "84bb8a0e745f01211626160393c7f096a5c8368c8a847109fbcf8c2600ce0579",
+      "retained_sha256": "84bb8a0e745f01211626160393c7f096a5c8368c8a847109fbcf8c2600ce0579"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/OpenPLL_Coupling_R_Probe.ext",
+      "retained": "coupling0/OpenPLL_Coupling_R_Probe.ext",
+      "original_sha256": "e13b91e740e08bfe861e2ea83c634204038b6faba754e44a9354847ff7fcf1a5",
+      "retained_sha256": "e13b91e740e08bfe861e2ea83c634204038b6faba754e44a9354847ff7fcf1a5"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/native.log",
+      "retained": "coupling1/native.log.gz",
+      "original_sha256": "5bc8a646fc0aff0020ea8aa096e387cc869a79ee9c20d9a8da6e5f6d031acce1",
+      "retained_sha256": "d5bce5295632503db97ea96d7251ffcf717f1dccb3c4f3e03e0a7c2c50cd8424"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/after.spice",
+      "retained": "coupling1/after.spice",
+      "original_sha256": "d32c7e38086786cdb790f118706081c984472ce3c4bfdbfde108efc93113925e",
+      "retained_sha256": "d32c7e38086786cdb790f118706081c984472ce3c4bfdbfde108efc93113925e"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/minimal.magicrc",
+      "retained": "coupling1/minimal.magicrc",
+      "original_sha256": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+      "retained_sha256": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/feedback.txt",
+      "retained": "coupling1/feedback.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/OpenPLL_Coupling_R_Probe.ext",
+      "retained": "coupling1/OpenPLL_Coupling_R_Probe.ext",
+      "original_sha256": "e000de4a685e886e5574016d1efaf0657b7dc9a3b0e62d1784e00fd545e7ac0a",
+      "retained_sha256": "e000de4a685e886e5574016d1efaf0657b7dc9a3b0e62d1784e00fd545e7ac0a"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/run.tcl",
+      "retained": "coupling1/run.tcl",
+      "original_sha256": "c94577c1dfc39405237c3cd3cc4e61453a7633dd2dbd380ebda3a9b22d2f600e",
+      "retained_sha256": "c94577c1dfc39405237c3cd3cc4e61453a7633dd2dbd380ebda3a9b22d2f600e"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/before.spice",
+      "retained": "coupling1/before.spice",
+      "original_sha256": "b22b942b12ed37c46515e032297ff7139cde8264aa32264a824c77b724593987",
+      "retained_sha256": "b22b942b12ed37c46515e032297ff7139cde8264aa32264a824c77b724593987"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/OpenPLL_Coupling_R_Probe.res.ext",
+      "retained": "coupling1/OpenPLL_Coupling_R_Probe.res.ext",
+      "original_sha256": "17cdfa4335d6d49e1313a326749270765136ab0a67cfa76a63820517be5b874c",
+      "retained_sha256": "17cdfa4335d6d49e1313a326749270765136ab0a67cfa76a63820517be5b874c"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/native.process.json",
+      "retained": "coupling1/native.process.json",
+      "original_sha256": "986ce20773144261b11b04a8411c6bff04985577a3a187d3c702f0dc3734ba0a",
+      "retained_sha256": "986ce20773144261b11b04a8411c6bff04985577a3a187d3c702f0dc3734ba0a"
+    }
+  ],
+  "release_ready": false
+}

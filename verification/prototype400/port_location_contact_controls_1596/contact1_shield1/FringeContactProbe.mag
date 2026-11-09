@@ -1,0 +1,18 @@
+magic
+tech sky130A
+timestamp 1794205728
+<< metal1 >>
+rect 420 0 1000 400
+<< metal2 >>
+rect 460 80 540 320
+<< metal3 >>
+rect 0 360 400 400
+rect 0 40 320 360
+rect 0 0 400 40
+<< via3 >>
+rect 320 40 400 360
+<< labels >>
+rlabel metal3 0 0 400 400 0 SOURCE
+rlabel metal1 420 0 1000 400 0 TARGET
+rlabel metal2 460 80 540 320 0 SHIELD
+<< end >>

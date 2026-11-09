@@ -1,0 +1,179 @@
+{
+  "files": [
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/assessment.json",
+      "retained": "assessment.json",
+      "original_sha256": "c136810e2747b895ac82b7199f5ec77984abe430495c78b0bbad6034476c696a",
+      "retained_sha256": "c136810e2747b895ac82b7199f5ec77984abe430495c78b0bbad6034476c696a"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/status.json",
+      "retained": "status.json",
+      "original_sha256": "6b727438395477abf5f8d83ffe5190cb3e5330767598374afbdc048e5f28a329",
+      "retained_sha256": "6b727438395477abf5f8d83ffe5190cb3e5330767598374afbdc048e5f28a329"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/owner.json",
+      "retained": "owner.json",
+      "original_sha256": "ec89680981533dad26084d02580a6e8f77633c20e1f584d96f62a0e40c917f4f",
+      "retained_sha256": "ec89680981533dad26084d02580a6e8f77633c20e1f584d96f62a0e40c917f4f"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/inputs.json",
+      "retained": "inputs.json",
+      "original_sha256": "5d494786c021115085cee0b4595a7857338491b90378f7d16ea093a4de1b374c",
+      "retained_sha256": "5d494786c021115085cee0b4595a7857338491b90378f7d16ea093a4de1b374c"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/minimal.magicrc",
+      "retained": "minimal.magicrc",
+      "original_sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+      "retained_sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield1/coupling.jsonl",
+      "retained": "contact0_shield1/coupling.jsonl",
+      "original_sha256": "36830317d339b8dd16fff01e3d24b98108fa93a24e01997b89d8ba16aac61566",
+      "retained_sha256": "36830317d339b8dd16fff01e3d24b98108fa93a24e01997b89d8ba16aac61566"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield1/FringeContactProbe.ext",
+      "retained": "contact0_shield1/FringeContactProbe.ext",
+      "original_sha256": "e3f0a4fb4dd584efb1b3bccf819440d1d36dfdf7436df3f6689af8c5feab941a",
+      "retained_sha256": "e3f0a4fb4dd584efb1b3bccf819440d1d36dfdf7436df3f6689af8c5feab941a"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield1/native.log",
+      "retained": "contact0_shield1/native.log.gz",
+      "original_sha256": "636ae8002f7242181c6d06413be1e13f996f75adc637f4481a36dc1f061a1d8f",
+      "retained_sha256": "23d592313db3c3e0568a31d2964edb9ded40c0bcc992da94dc95610fd5fee893"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield1/FringeContactProbe.mag",
+      "retained": "contact0_shield1/FringeContactProbe.mag",
+      "original_sha256": "bd9895af17dd1bf8b70b1d0236f320314703c796fe9a389da5b972ed2e0d5894",
+      "retained_sha256": "bd9895af17dd1bf8b70b1d0236f320314703c796fe9a389da5b972ed2e0d5894"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield1/probe.spice",
+      "retained": "contact0_shield1/probe.spice",
+      "original_sha256": "de21910b57b626aa3119fa63c7473edfb0061cdd5cbd251b92f8602cc6769df0",
+      "retained_sha256": "de21910b57b626aa3119fa63c7473edfb0061cdd5cbd251b92f8602cc6769df0"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield1/native.process.json",
+      "retained": "contact0_shield1/native.process.json",
+      "original_sha256": "f1a14f3704626601dc858682f29f31515a490c03efac53e574be6feb2e3c6a23",
+      "retained_sha256": "f1a14f3704626601dc858682f29f31515a490c03efac53e574be6feb2e3c6a23"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield1/coupling.jsonl",
+      "retained": "contact1_shield1/coupling.jsonl",
+      "original_sha256": "33f7c0d4de0a581d61d7bbcb597f54216f5e2a3108aae5a5ab25fa53d87101e5",
+      "retained_sha256": "33f7c0d4de0a581d61d7bbcb597f54216f5e2a3108aae5a5ab25fa53d87101e5"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield1/FringeContactProbe.mag",
+      "retained": "contact1_shield1/FringeContactProbe.mag",
+      "original_sha256": "e20b374db6133ea831caed20fb6c8a2fe4c5335aae02c659b4ea4a2ecbfb31a0",
+      "retained_sha256": "e20b374db6133ea831caed20fb6c8a2fe4c5335aae02c659b4ea4a2ecbfb31a0"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield1/FringeContactProbe.ext",
+      "retained": "contact1_shield1/FringeContactProbe.ext",
+      "original_sha256": "e1d75d2aa6275c66dde91cbda06d220ca3b53421f455bc651afd318c8659e1e1",
+      "retained_sha256": "e1d75d2aa6275c66dde91cbda06d220ca3b53421f455bc651afd318c8659e1e1"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield1/native.process.json",
+      "retained": "contact1_shield1/native.process.json",
+      "original_sha256": "307b35598811d784c72a1e8a980dea98f15326546b9b624ef396013be4651cea",
+      "retained_sha256": "307b35598811d784c72a1e8a980dea98f15326546b9b624ef396013be4651cea"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield1/native.log",
+      "retained": "contact1_shield1/native.log.gz",
+      "original_sha256": "636ae8002f7242181c6d06413be1e13f996f75adc637f4481a36dc1f061a1d8f",
+      "retained_sha256": "23d592313db3c3e0568a31d2964edb9ded40c0bcc992da94dc95610fd5fee893"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield1/probe.spice",
+      "retained": "contact1_shield1/probe.spice",
+      "original_sha256": "ff4f0a05af7ba8f949be543ba12dd39656b9dfcc76bd7aed02e61b12fdc14021",
+      "retained_sha256": "ff4f0a05af7ba8f949be543ba12dd39656b9dfcc76bd7aed02e61b12fdc14021"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield0/coupling.jsonl",
+      "retained": "contact0_shield0/coupling.jsonl",
+      "original_sha256": "e7b4d4b3b51a057c095437081231ab95a7400eb0f634c593cc596d9c26d6be05",
+      "retained_sha256": "e7b4d4b3b51a057c095437081231ab95a7400eb0f634c593cc596d9c26d6be05"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield0/FringeContactProbe.mag",
+      "retained": "contact0_shield0/FringeContactProbe.mag",
+      "original_sha256": "46e4fed0a6b81858a352aab5139e031ac9f3c799350db8a646c19742e430c727",
+      "retained_sha256": "46e4fed0a6b81858a352aab5139e031ac9f3c799350db8a646c19742e430c727"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield0/native.log",
+      "retained": "contact0_shield0/native.log.gz",
+      "original_sha256": "636ae8002f7242181c6d06413be1e13f996f75adc637f4481a36dc1f061a1d8f",
+      "retained_sha256": "23d592313db3c3e0568a31d2964edb9ded40c0bcc992da94dc95610fd5fee893"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield0/FringeContactProbe.ext",
+      "retained": "contact0_shield0/FringeContactProbe.ext",
+      "original_sha256": "0ae571c83f69d25d52ade9d91ea5a0120948c6771735dbcdc8d9ac774163f9fb",
+      "retained_sha256": "0ae571c83f69d25d52ade9d91ea5a0120948c6771735dbcdc8d9ac774163f9fb"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield0/probe.spice",
+      "retained": "contact0_shield0/probe.spice",
+      "original_sha256": "88bf08289c405c6283cae09307e894146d5f76179a505a700729632bf3f90e0f",
+      "retained_sha256": "88bf08289c405c6283cae09307e894146d5f76179a505a700729632bf3f90e0f"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact0_shield0/native.process.json",
+      "retained": "contact0_shield0/native.process.json",
+      "original_sha256": "cf52b892f5675e6028f145c7c37274b66b5585c43f387df63ec342ab1cff9579",
+      "retained_sha256": "cf52b892f5675e6028f145c7c37274b66b5585c43f387df63ec342ab1cff9579"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield0/native.process.json",
+      "retained": "contact1_shield0/native.process.json",
+      "original_sha256": "efd4c0a88eb7569d9a3032182c2eb2af2bf27e5889a1e1aacf2435d48b22ec17",
+      "retained_sha256": "efd4c0a88eb7569d9a3032182c2eb2af2bf27e5889a1e1aacf2435d48b22ec17"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield0/FringeContactProbe.mag",
+      "retained": "contact1_shield0/FringeContactProbe.mag",
+      "original_sha256": "c5fef2180e0c9bc61dcd21e2c4a5b4808669bcaf50c55681338cd9c3ed2a20d7",
+      "retained_sha256": "c5fef2180e0c9bc61dcd21e2c4a5b4808669bcaf50c55681338cd9c3ed2a20d7"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield0/probe.spice",
+      "retained": "contact1_shield0/probe.spice",
+      "original_sha256": "448ee5959050c820d727d6aa62aa64439c138ed651a6cc6cfabe87467a767508",
+      "retained_sha256": "448ee5959050c820d727d6aa62aa64439c138ed651a6cc6cfabe87467a767508"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield0/FringeContactProbe.ext",
+      "retained": "contact1_shield0/FringeContactProbe.ext",
+      "original_sha256": "7b86f3ccff4056556c9f8002e46726ddaaf660d407e7d309ae6cf22c14120d4d",
+      "retained_sha256": "7b86f3ccff4056556c9f8002e46726ddaaf660d407e7d309ae6cf22c14120d4d"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield0/coupling.jsonl",
+      "retained": "contact1_shield0/coupling.jsonl",
+      "original_sha256": "ace55dc02ab792928bc67ebf83fa699559eb806374bc0a7037cba9754070466b",
+      "retained_sha256": "ace55dc02ab792928bc67ebf83fa699559eb806374bc0a7037cba9754070466b"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_controls_1596/contact1_shield0/native.log",
+      "retained": "contact1_shield0/native.log.gz",
+      "original_sha256": "636ae8002f7242181c6d06413be1e13f996f75adc637f4481a36dc1f061a1d8f",
+      "retained_sha256": "23d592313db3c3e0568a31d2964edb9ded40c0bcc992da94dc95610fd5fee893"
+    }
+  ],
+  "release_ready": false
+}

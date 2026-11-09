@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "coupling": false,
+      "positive_R_edges": 1,
+      "before_after_byte_identical": false
+    },
+    {
+      "coupling": true,
+      "positive_R_edges": 1,
+      "before_after_byte_identical": false
+    }
+  ],
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/feedback.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/after.spice": "a9a9d9f69b654d461a32a7523297a3c1cbfba4c14b92538e9f74ad0b74c6a64b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/native.process.json": "492393aa1961cf217fefd4f3799b2722e4525d73cb62826f308a8265446cec98",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/OpenPLL_Coupling_R_Probe.res.ext": "17cdfa4335d6d49e1313a326749270765136ab0a67cfa76a63820517be5b874c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/before.spice": "a8c8dd0c58486d306397b4cd9f49c76af522b9e551f44f21ddbc69433ea6a79d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/native.log": "5621b5c876966d533a084d4f878f47f9bebf0311ebb21d5693280449c5139ffd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/run.tcl": "84bb8a0e745f01211626160393c7f096a5c8368c8a847109fbcf8c2600ce0579",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling0/OpenPLL_Coupling_R_Probe.ext": "e13b91e740e08bfe861e2ea83c634204038b6faba754e44a9354847ff7fcf1a5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/native.log": "5bc8a646fc0aff0020ea8aa096e387cc869a79ee9c20d9a8da6e5f6d031acce1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/after.spice": "d32c7e38086786cdb790f118706081c984472ce3c4bfdbfde108efc93113925e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/feedback.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/OpenPLL_Coupling_R_Probe.ext": "e000de4a685e886e5574016d1efaf0657b7dc9a3b0e62d1784e00fd545e7ac0a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/run.tcl": "c94577c1dfc39405237c3cd3cc4e61453a7633dd2dbd380ebda3a9b22d2f600e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/before.spice": "b22b942b12ed37c46515e032297ff7139cde8264aa32264a824c77b724593987",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/OpenPLL_Coupling_R_Probe.res.ext": "17cdfa4335d6d49e1313a326749270765136ab0a67cfa76a63820517be5b874c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/native.process.json": "986ce20773144261b11b04a8411c6bff04985577a3a187d3c702f0dc3734ba0a"
+  },
+  "full_C_contraction_verified": false,
+  "wire_R_geometry_qualified": false,
+  "release_ready": false
+}

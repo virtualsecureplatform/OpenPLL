@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_queue_1597/status.json",
+      "retained": "status.json",
+      "original_sha256": "d9be6021e1af45a031f9e53b3633e3d9ca1eadf81365fbd1b67e3215d406e78b",
+      "retained_sha256": "d9be6021e1af45a031f9e53b3633e3d9ca1eadf81365fbd1b67e3215d406e78b"
+    },
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_contact_queue_1597/owner.json",
+      "retained": "owner.json",
+      "original_sha256": "ec89680981533dad26084d02580a6e8f77633c20e1f584d96f62a0e40c917f4f",
+      "retained_sha256": "ec89680981533dad26084d02580a6e8f77633c20e1f584d96f62a0e40c917f4f"
+    }
+  ],
+  "release_ready": false
+}

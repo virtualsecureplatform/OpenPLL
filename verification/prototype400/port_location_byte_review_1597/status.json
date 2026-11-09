@@ -1,0 +1,5 @@
+{
+  "state": "stopped_without_qualification",
+  "reason": "ValueError('C-only control changed after resistance patches: contact1_shield1')",
+  "release_ready": false
+}

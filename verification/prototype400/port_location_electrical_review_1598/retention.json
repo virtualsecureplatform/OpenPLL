@@ -1,0 +1,11 @@
+{
+  "files": [
+    {
+      "original": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_electrical_review_1598/assessment.json",
+      "retained": "assessment.json",
+      "original_sha256": "fbb4222afdd31e685a629515cc9792738e7690b0d7dec3be9aaa12743e7d064a",
+      "retained_sha256": "fbb4222afdd31e685a629515cc9792738e7690b0d7dec3be9aaa12743e7d064a"
+    }
+  ],
+  "release_ready": false
+}

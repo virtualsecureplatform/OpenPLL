@@ -1,0 +1,6 @@
+* NGSPICE file created from FringeContactProbe.ext - technology: sky130A
+
+C0 SOURCE TARGET 0.32896f
+C1 SOURCE SUB 0.95428f
+C2 TARGET SUB 1.39327f
+C3 SUB SUB 0
