@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "requirements": "verification/signoff400/requirements_v4.json",
+  "requirements_sha256": "25ba79c3b354c6f55dc1a9aea7d9853f59a25a368af0b90db304b6b9a547e8b3",
+  "release_ready": false,
+  "production_qualified": false,
+  "repair_policy": {
+    "maximum_causal_boundary_augmentations": 1,
+    "maximum_digital_ECOs": 1,
+    "fallback": "constrained_redesign_without_weakening_release_gates"
+  },
+  "selected_source_GDS_sha256": "de16c76e1afb47a3faef559f76af231e9e70431d9cffedbf6cd67ff15734d4ca",
+  "completed_evidence": {
+    "corrected_C": {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_comparison_1577/assessment.json",
+      "sha256": "ff1baef2fb966db2ea66ec0652aa05e4dd8f9a2bd8ad63870c3e7935d6741673",
+      "scope": "exact device identity and measured C changes; no model qualification"
+    },
+    "native_model": {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_native_1579/assessment.json",
+      "sha256": "e9706628a6b4b2ff0394c591d799c959ae7e37aa26b232bfc2a5ecf5d46742c5",
+      "scope": "literal conductor-C model preparation; no distributed R"
+    },
+    "reset_DC": {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_DC_1580/assessment.json",
+      "sha256": "d65b1eaffdde9436196ba21c61fc77ccccf1eacc8d2fa4cba45d155d6f54866e",
+      "scope": "normally completed finite reset-held DC only"
+    },
+    "reset_RTL": {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_reset80_RTL_control_1585/assessment.json",
+      "sha256": "ea66e421d745a734c76b83186dbb60edb94678d4b09a6481e70a57426bce3aa9",
+      "scope": "one diagnostic TT reset-during-tracking case; unqualified analog models"
+    },
+    "R_controls": {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_electrical_review_1598/assessment.json",
+      "sha256": "fbb4222afdd31e685a629515cc9792738e7690b0d7dec3be9aaa12743e7d064a",
+      "scope": "native fixture contact equivalence and resistance contraction only"
+    },
+    "driver_anchors": {
+      "receipt": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_corrected_driver_anchors_1602/assessment.json",
+      "sha256": "0bc98a2e2779de3e143f406cdc31d2893da27f454dd057a1f41ea3bcb09fa260",
+      "scope": "static structural anchors; actual native skip set unverified"
+    }
+  },
+  "gates": {
+    "physical_integrity": {
+      "evidence": [
+        "corrected_C",
+        "R_controls",
+        "driver_anchors"
+      ],
+      "remaining": [
+        "same-final-candidate physical checks and applicable density/integration obligations",
+        "full-R conservation, emitted-net coverage and geometry",
+        "final supply/load assumptions and power integrity"
+      ],
+      "status": "open",
+      "qualified": false
+    },
+    "analog_models_and_tuning": {
+      "evidence": [
+        "corrected_C",
+        "native_model",
+        "reset_DC"
+      ],
+      "remaining": [
+        "corrected native frequency and all 604 tuning voltage checks",
+        "matched numerical/startup/load comparisons and settling",
+        "measured 400 MHz brackets and causal uncertainty-qualified models at all five corners"
+      ],
+      "status": "open",
+      "qualified": false
+    },
+    "digital_timing_and_cdc": {
+      "evidence": [
+        "reset_RTL"
+      ],
+      "remaining": [
+        "five-corner routed min/max RC timing over reachable clock range",
+        "complete recovery/removal and pulse/slew endpoint accounting",
+        "physical 80 ns reset distribution/release and CDC assumptions"
+      ],
+      "status": "open",
+      "qualified": false
+    },
+    "closed_loop_operation": {
+      "evidence": [
+        "reset_RTL"
+      ],
+      "remaining": [
+        "60 qualified-model cases under approved reset contract",
+        "one common gain pair with lower pairs resolved",
+        "uncertainty-expanded trajectory coverage and targeted native holdouts"
+      ],
+      "status": "open",
+      "qualified": false
+    },
+    "reproducible_handoff": {
+      "evidence": [],
+      "remaining": [
+        "one frozen candidate with all four technical gates directly passing",
+        "clean-checkout reproduction and matching physical/model/calibration views",
+        "integration and bench instructions"
+      ],
+      "status": "open",
+      "qualified": false
+    }
+  },
+  "pending_jobs": [
+    {
+      "producer": "selected_keeper_contact_corrected_fine134_1581",
+      "assessment": "selected_keeper_contact_corrected_controls_1584",
+      "purpose": "corrected native frequency/reset/tuning observation"
+    },
+    {
+      "producer": "selected_keeper_contact_corrected_full_R_1599",
+      "assessment": "selected_keeper_contact_corrected_full_R_audit_1600",
+      "purpose": "resistance export and exact conservation; separate coverage still required"
+    }
+  ],
+  "invalidation_policy": [
+    "old C-model calibration remains diagnostic until independently correlated to corrected extraction",
+    "recorded histories cannot qualify changed-controller prediction",
+    "staged v4 profile does not requalify historical v3 campaigns",
+    "any selected digital ECO requires affected parent geometry, RC and model evidence to be regenerated"
+  ],
+  "critical_path": [
+    "corrected native capture and physical-control assessment",
+    "full-R conservation/coverage/geometry",
+    "qualified TT causal hierarchy",
+    "five-corner analog and timing closure",
+    "60-case common-gain qualification",
+    "clean reproducible handoff"
+  ]
+}

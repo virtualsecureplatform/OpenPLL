@@ -2871,3 +2871,12 @@ exceptions. All 65 native port records are inventoried. This is static anchor
 coverage, not the exact native skip set: ResProcessNode can still return without
 extracting when driver resistance/location is unavailable, even with ExtractAll.
 Native emitted-net and geometry reconciliation remains mandatory after 1599.
+
+`release_gate_ledger_v4.json` consolidates the implementation checkpoint: all five
+gates remain open, six completed receipts are pinned with their actual limited
+scope, and the corrected-transient/physical-control plus full-R/conservation
+chains are explicitly pending. Old calibration is not carried across the changed
+C extraction. The ledger lists remaining analog, timing/reset, physical coverage,
+60-case and reproducible-handoff requirements and preserves the bounded repair
+policy. It is an evidence index, not a qualification receipt or an active-profile
+migration. New gate closure requires direct same-candidate evidence.
