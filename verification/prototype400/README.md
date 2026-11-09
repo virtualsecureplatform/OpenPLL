@@ -2771,3 +2771,13 @@ are retained, with native logs compressed losslessly. The combined tool is not
 qualified for resistance export; the area-sign/port-projection patches did not
 resolve this reproducer. Crash localization is required before further changes.
 Corrected conductor-C transient 1581 remains a separate running diagnostic.
+
+Diagnostic crash trace 1591 changes execution only by preloading a signal-backtrace
+library in a fresh coupling-off fixture. The expected failure is reproduced;
+this is explicitly not a normal native control or a qualified tool. GDB is not
+available in the pinned image. Native backtrace offsets resolved with addr2line
+identify `DBSrPaintArea` at DBtiles.c:547, `dbCellPlaneSrFunc` at DBcellsrch.c:272,
+`DBTreeCopyConnect` at DBconnect.c:1138, and `ResExtractNet` at ResMain.c:1072,
+called through ResProcessNode/ResCheckExtNodes/ExtResisForDef. This is connected
+geometry search before resistance calculation, so another area arithmetic patch
+is not justified. The live PLL transient uses no injected signal handler.

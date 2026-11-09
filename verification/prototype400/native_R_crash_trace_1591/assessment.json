@@ -1,0 +1,10 @@
+{
+  "expected_failure_observed": true,
+  "reason": "compiled worker failed (139): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_R_crash_trace_1591/native.log",
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_R_crash_trace_1591/native.log": "8bcfd14788e9c7e382d2f453cb554788f26b6426a99089fbfc9557d59e445da8"
+  },
+  "signal_trace_injected": true,
+  "wire_R_qualified": false,
+  "release_ready": false
+}
