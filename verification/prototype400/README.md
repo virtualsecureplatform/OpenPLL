@@ -2842,3 +2842,14 @@ zero-R port aliases. These results support the unset-port-location correction
 on these fixtures; they do not prove absolute C correctness against an independent
 extraction, assembled-layout resistance geometry, complete net coverage, or PLL
 model qualification. No release gate is closed from these controls alone.
+
+Full-layout R export diagnostic 1599 is launched with candidate 1594 after the
+completed contact electrical review and both fixture contraction passes. It uses
+the checked corrected flat GDS, no include whitelist, threshold zero and no
+resistor simplification, retaining before/after SPICE and native EXT/res.EXT.
+Admission is globally budgeted at 16 GiB with a 24-hour queue cap; the one native
+case has a separate 12-hour cap and no identical retry. Requested all-net scope
+is not proof of coverage: native eligible/skipped nets, exact device/C contraction,
+resistance geometry and physical-domain completeness must be audited before
+any native simulation of this network is allowed. Existing C-only transient
+1581 remains unchanged and is not qualified by this preparation.
