@@ -2652,3 +2652,14 @@ or programming conditions. This validates the declared stimulus contract only;
 physical reset distribution/release remains unqualified. Existing campaigns and
 the active profile pointer are not silently rebound to v4. New campaign integration
 and timing-aware/native reset checks remain pending.
+
+Corrected native-reference preparation 1579 completes with 62,338 primitives in
+433 literal templates, two poly adapters, and all 340,512 nonzero native C cards
+preserved with exact endpoints/values. Only 1,023,675 zero-valued C cards are
+omitted; nonnegative branch energy establishes the constant-C PSD property.
+This remains a conductor-C reference with no distributed wire R and no qualified
+native correlation. Fresh reset-held DC check 1580 uses the corrected-BSIM Xyce
+backend and seed coarse23/fine134 (not a selected calibration). It has a separate
+24-hour admission and 30-minute native execution cap, 16 GiB reservation, and no
+identical retry. It tests solver/DC behavior only; no frequency or lock claim
+follows. Existing captures and models remain unchanged.

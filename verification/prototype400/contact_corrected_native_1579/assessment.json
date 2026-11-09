@@ -1,0 +1,37 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/assessment.json": "6047a234f31a190fa3ae4cd6623a4486d2d0a8287b6744aca828c1fb6067e939",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_device_LVS_1578/assessment.json": "ffabadc640f1e4d01a16795902837293ec34a087d99e3f65cd700ee30c68f219",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/capacitance.spice": "27e878554acc74394f96a95978adbc0651c0eae77ec5e70e3899403031a5c0e1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prepare_keeper_flat_native_v2.py": "b631630ecf9814cabbf2567350bcda5df6f442496e670a32cebcbfc3528da93c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prototype_native_literal_templates.py": "c1aaab6be9aa9da26a55c3a20f84e425b0f2aafb5c02ffb80b18457b9e282d75",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prototype_xyce_resistor_translation.py": "6653a3658920bebdd2a866a4fd28b524f5d6056534702658d260c58b529bdd2c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_hierarchical_capacitance.py": "19b97e8bb8241d14c814e16ae71e988f0c04222bc82bb6b72f9043b520418028"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_native_1579/model.spice": "e6df1626c4ed72c2749a42cb1658f62f7df51da5a9ebbf896f6a92586dd8d3f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_native_1579/nodes.json": "7316ef06b9c3b4141066f7c2f6c834963cbcaa7db4dab306ebb556d881aa9ff3"
+  },
+  "source_counts": {
+    "X": 62338,
+    "k_suffix_literals_expanded": 4,
+    "C": 1364187,
+    "zero_C_omitted": 1023675
+  },
+  "nonzero_C_preserved": 340512,
+  "literal_templates": {
+    "primitives": 62338,
+    "literal_templates": 433
+  },
+  "poly_adapter_templates": 2,
+  "all_nonzero_C_endpoints_and_literal_values_preserved": true,
+  "constant_C_nonnegative": true,
+  "constant_C_PSD_by_nonnegative_branch_energy": true,
+  "distributed_wire_R_included": false,
+  "spatial_endpoint_attachment_applied": false,
+  "only_zero_C_cards_omitted": true,
+  "native_backend_correlation_complete": false,
+  "model_qualified": false,
+  "release_ready": false
+}
