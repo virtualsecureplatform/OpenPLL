@@ -2880,3 +2880,12 @@ C extraction. The ledger lists remaining analog, timing/reset, physical coverage
 60-case and reproducible-handoff requirements and preserves the bounded repair
 policy. It is an evidence index, not a qualification receipt or an active-profile
 migration. New gate closure requires direct same-candidate evidence.
+
+The corrected-capture settling screen predeclares six adjacent 20 ns windows
+from 220 through 340 ns and reports availability and the frequency span across
+the final three. A 100 ppm sample-stability screen is diagnostic only: local-LSB
+resolution, timestep convergence and physical settling remain explicitly false.
+Three regression groups pass for stationary samples, changing frequency/missing
+edges, and incomplete/duplicate-time rejection. This analysis is prepared before
+capture completion, preventing a favorable window from being chosen afterward;
+no active waveform is read and no native duration is silently extended.
