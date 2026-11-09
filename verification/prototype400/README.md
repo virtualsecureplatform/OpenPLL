@@ -2818,3 +2818,12 @@ integrals and preserve the contact-corrected baseline C-only SPICE byte-for-byte
 These changed-candidate controls use new paths; the original crash and successful
 C controls remain frozen. Native completion is a prerequisite, not proof of net
 coverage or exact C contraction, which remain separate checks.
+
+The prepared exact resistance-contraction comparator now handles explicit
+zero-ohm aliases already present in the native reference, while preserving the
+original external port names/order. It does not treat newly joined reference
+nodes as authorized aliases. Three grouped tests pass for valid wire splitting,
+capacitance duplication detection, new-short detection, external port changes
+and rejection of nonzero reference resistors. The existing exact primitive/C
+contraction checks remain in use. These regression tests are not actual native
+R-control results; candidate 1594 and controls 1595/1597 remain pending.
