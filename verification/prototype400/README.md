@@ -2748,3 +2748,12 @@ contact-corrected 1571 controls in all four cases. Build failure or missing owne
 stops the queue; no failed build or native probe is retried. This checks that the
 added resistance patches preserve tested capacitance behavior, not full resistance
 coverage or validity of port projection on the assembled layout.
+
+Resistance-export controller 1590 waits for combined build 1587 and runs two
+bounded threshold1 native controls (coupling off/on), each with a fresh directory,
+120-second native cap and no identical retry. It requires nonzero R emission,
+records exported artifacts and before/after byte equality, and preserves native
+failure as inconclusive rather than bypassing it. Full capacitance contraction,
+resistance geometry and assembled-domain coverage are explicitly not qualified
+by these small controls. The earlier experimental explicit-coupling import
+transform is not silently included in this baseline candidate.
