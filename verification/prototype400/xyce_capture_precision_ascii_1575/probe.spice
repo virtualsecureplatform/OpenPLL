@@ -1,0 +1,7 @@
+Capture precision native regression
+Vsource out 0 PWL(0 0 219n 0 220n 0 220.0000001n 1 220.0000002n 0 221n 0)
+Rload out 0 1000
+.tran 1n 221n 0 1n
+.print tran format=raw precision=17 file=/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_capture_precision_ascii_1575/probe.raw V(out)
+.print tran format=std precision=17 file=/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_capture_precision_ascii_1575/probe.prn V(out)
+.end

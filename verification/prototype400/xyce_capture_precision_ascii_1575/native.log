@@ -1,0 +1,390 @@
+
+*****
+***** Welcome to the Xyce(TM) Parallel Electronic Simulator
+*****
+***** This is version Xyce Release 7.10.0-opensource
+***** Date: Mon Nov 09 05:56:46 UTC 2026
+
+
+***** Executing netlist /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_capture_precision_ascii_1575/probe.spice
+
+***** Reading and parsing netlist...
+***** Setting up topology...
+
+***** Device Count Summary ...
+       R level 1 (Resistor)                   1
+       V level 1 (Independent Voltage Source) 1
+       ----------------------------------------
+       Total Devices                          2
+***** Setting up matrix structure...
+***** Number of Unknowns = 2
+***** Initializing...
+
+***** Beginning DC Operating Point Calculation...
+
+***** Beginning Transient Calculation...
+
+***** Percent complete: 1.35747 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  6 sec.
+
+***** Percent complete: 2.71493 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  2 sec.
+
+***** Percent complete: 4.0724 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  1 sec.
+
+***** Percent complete: 5.42986 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  1 sec.
+
+***** Percent complete: 6.78733 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 8.1448 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 9.50226 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 10.8597 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 12.2172 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 13.5747 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 14.9321 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 16.2896 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 17.6471 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 19.0045 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 20.362 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 21.7195 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 23.0769 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 24.4344 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 25.7919 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 27.1493 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 28.5068 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 29.8643 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 31.2217 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 32.5792 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 33.9367 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 35.2941 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 36.6516 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 38.009 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 39.3665 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 40.724 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 42.0814 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 43.4389 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+OpenPLL UMFPACK progress: linear_calls=100 numeric_factors=1 cached_accepts=97 exact_hits=2 refinement_corrections=194 DC_hits=0 transient=1 krylov_steps=0
+OpenPLL adapter timing: calls=100 gather_s=0.000113503 prepare_s=3.0177e-05 solve_s=0.00213371 scatter_s=4.2231e-05
+***** Percent complete: 44.7964 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 46.1538 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 47.5113 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 48.8688 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 50.2262 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 51.5837 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 52.9412 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 54.2986 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 55.6561 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 57.0136 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 58.371 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 59.7285 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 61.086 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 62.4434 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 63.8009 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 65.1584 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 66.5158 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 67.8733 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 69.2308 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 70.5882 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 71.9457 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 73.3032 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 74.6606 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 76.0181 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 77.3756 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 78.733 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 80.0905 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 81.448 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 82.8054 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 84.1629 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 85.5204 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 86.8778 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 88.2353 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 89.5928 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+OpenPLL UMFPACK progress: linear_calls=200 numeric_factors=1 cached_accepts=197 exact_hits=2 refinement_corrections=394 DC_hits=0 transient=1 krylov_steps=0
+OpenPLL adapter timing: calls=200 gather_s=0.000218165 prepare_s=6.193e-05 solve_s=0.00243184 scatter_s=8.2344e-05
+***** Percent complete: 90.9502 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 92.3077 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 93.6652 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 95.0226 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 96.3801 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 97.7376 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Percent complete: 99.095 %
+***** Current system time: Mon Nov  9 05:56:46 2026
+***** Estimated time to completion:  0 sec.
+
+***** Problem read in and set up time: 0.00866222 seconds
+ ***** DCOP time: 0.063174 seconds.  Breakdown follows:
+	Number Successful Steps Taken:		1
+	Number Failed Steps Attempted:		0
+	Number Jacobians Evaluated:		1
+	Number Linear Solves:			1
+	Number Failed Linear Solves:		0
+	Number Residual Evaluations:		3
+	Number Nonlinear Convergence Failures:	0
+	Total Residual Load Time:		2.88486e-05 seconds
+	Total Jacobian Load Time:		5.00679e-06 seconds
+	Total Linear Solution Time:		0.00191239 seconds
+
+ ***** Transient Stepping time: 0.0270779 seconds.  Breakdown follows:
+	Number Successful Steps Taken:		277
+	Number Failed Steps Attempted:		7
+	Number Jacobians Evaluated:		284
+	Number Linear Solves:			284
+	Number Failed Linear Solves:		0
+	Number Residual Evaluations:		568
+	Number Nonlinear Convergence Failures:	0
+	Total Residual Load Time:		0.00321078 seconds
+	Total Jacobian Load Time:		0.000724077 seconds
+	Total Linear Solution Time:		0.00177884 seconds
+
+
+***** Solution Summary *****
+	Number Successful Steps Taken:		278
+	Number Failed Steps Attempted:		7
+	Number Jacobians Evaluated:		285
+	Number Linear Solves:			285
+	Number Failed Linear Solves:		0
+	Number Residual Evaluations:		571
+	Number Nonlinear Convergence Failures:	0
+	Total Residual Load Time:		0.00323963 seconds
+	Total Jacobian Load Time:		0.000729084 seconds
+	Total Linear Solution Time:		0.00369123 seconds
+
+
+***** Total Simulation Solvers Run Time: 0.121469 seconds
+***** Total Elapsed Run Time:            0.130137 seconds
+*****
+***** End of Xyce(TM) Simulation
+*****
+
+Timing summary of 1 processor
+                 Stats                   Count       CPU Time              Wall Time
+---------------------------------------- ----- --------------------- ---------------------
+Xyce                                         1        0.038 (100.0%)        0.580 (100.0%)
+  Analysis                                   1        0.018 (47.75%)        0.121 (20.92%)
+    Transient                                1        0.018 (47.74%)        0.121 (20.92%)
+      Nonlinear Solve                      285        0.009 (23.42%)        0.016 ( 2.80%)
+        Residual                           571        0.003 ( 7.54%)        0.005 ( 0.80%)
+        Jacobian                           285        0.001 ( 2.31%)        0.001 ( 0.24%)
+        Linear Solve                       285        0.002 ( 4.11%)        0.004 ( 0.75%)
+      Successful DCOP Steps                  1        0.001 ( 1.42%)        0.061 (10.48%)
+      Successful Step                      277        0.005 (13.51%)        0.008 ( 1.36%)
+      Failed Steps                           7        0.000 ( 0.00%)        0.000 (<0.01%)
+  Netlist Import                             1        0.000 ( 0.10%)        0.003 ( 0.55%)
+    Parse Context                            1        0.000 ( 0.00%)        0.002 ( 0.30%)
+    Distribute Devices                       1        0.000 ( 0.00%)        0.000 ( 0.05%)
+    Verify Devices                           1        0.000 ( 0.00%)        0.000 (<0.01%)
+    Instantiate                              1        0.000 ( 0.00%)        0.000 ( 0.01%)
+  Late Initialization                        1        0.001 ( 2.04%)        0.004 ( 0.71%)
+    Global Indices                           1        0.000 ( 0.11%)        0.000 (<0.01%)
+  Setup Matrix Structure                     1        0.000 ( 0.39%)        0.000 ( 0.03%)
+
+OpenPLL UMFPACK adapter: calls=285 numeric=1 symbolic=1 failures=0 reuse_attempts=267 reuse_accepted=267 exact_reuse=17 refinement_solves=534 DC_reuse=0 krylov_solves=15

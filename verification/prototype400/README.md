@@ -2585,3 +2585,14 @@ writer (`N_IO_OutputterOverrideRawASCII.C:512,603`). Thus a deck declaration of
 its final printed time is 260 ns. Do not sort, perturb, or silently drop these
 samples to manufacture strict ordering. New native capture output must first
 pass a precision/round-trip fixture; 1281 requires its own ordering diagnosis.
+
+Native capture-format fixture 1575 passes with corrected-BSIM Xyce and explicit
+`-a`: the same simulation writes ASCII RAW and standard output requested at
+precision 17. Across 278 samples, RAW has 29 equal-time adjacent pairs, whereas
+standard output is strictly increasing, reaches the declared 221 ns endpoint,
+and preserves the narrow pulse. The first fixture 1574 omitted `-a`, so RAW was
+binary and its ASCII-only reader failed; it is not a passing fixture and is not
+silently rerun. The changed-format 1575 case has separate source/output identity.
+This demonstrates a viable future capture format, not recovery of old rounded
+samples or qualification of a full-PLL multi-signal reader. New capture runners
+still need validated standard-format parsing and physical signal binding.

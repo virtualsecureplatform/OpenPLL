@@ -1,0 +1,8 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_capture_precision_ascii_1575/probe.spice": "fb14a7b7e0577bb8adcac9432d07560a563ee4991a8d75dc7e7d987d854f06d1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_xyce_capture_precision_ascii_1575.py": "b5b2606752f588bc0ab8b2ba06b3a2a9d87e3d2b8449e58fdbe7d452bc01779b"
+  },
+  "release_ready": false
+}
