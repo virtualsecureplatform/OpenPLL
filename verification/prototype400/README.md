@@ -2596,3 +2596,16 @@ silently rerun. The changed-format 1575 case has separate source/output identity
 This demonstrates a viable future capture format, not recovery of old rounded
 samples or qualification of a full-PLL multi-signal reader. New capture runners
 still need validated standard-format parsing and physical signal binding.
+
+Strict standard-output reader 1576 passes three grouped regression tests and
+reads all 278 samples of completed native precision fixture 1575 after verifying
+its artifact hashes. It preserves role ordering and duplicate role aliases while
+requiring unique physical variable binding. It checks every saved column for
+finiteness, contiguous sample indices, strictly increasing times, zero initial
+time, the declared final horizon, a terminal marker, and no trailing content.
+Regression controls reject missing/ambiguous variables, duplicate headers,
+nonfinite unselected values, duplicate/reversed times, missing rows/columns,
+missing terminal markers, wrong horizons and trailing content. Distinct precise
+times are preserved without sorting or deduplication. Native completion and
+capture identity remain caller prerequisites. Integration into future PLL
+capture runners is pending; old RAW captures remain unchanged and unqualified.

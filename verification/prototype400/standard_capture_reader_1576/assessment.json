@@ -1,0 +1,14 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_capture_precision_ascii_1575/assessment.json": "671740ccbc2b54f10802ab0f5ac8a047e2e4ba0032d907f8bcf24789f486c719",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_xyce_capture_precision_ascii_1575/probe.prn": "dd5ffef302b14d8e80d80b26558e5ad9de0d9331e39cd289749583fc1a3bf165",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/read_selected_standard.py": "56f56f7956df9b8f9439ab87374e84dabd34a635ade5d1d7fe40c0fcad1ee759",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/test_read_selected_standard.py": "fee9ffed2c0b6eea817bf4d025c448d5372f220d73ae536490770ff58109cba8"
+  },
+  "samples": 278,
+  "strict_ordering": true,
+  "all_saved_values_finite": true,
+  "physical_binding_verified": true,
+  "full_PLL_capture_qualified": false,
+  "release_ready": false
+}
