@@ -1,0 +1,36 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_native_RC_model_1768/assessment.json": "c6b3c8410860ebd3cf365d6dc91e2e0e00a723f1d2e0387cdcadfb3b1bc56821",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_population_1808/assessment.json": "a162bbbc8f45357ea7edce6b6c80df75e689a67f829720f279b382cf471b44f8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_native_RC_model_1768/model.spice": "4d2a859d5b1b2050c062639545f19f7a0655aea7e1019d26f58f90dcdd8850aa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_native_RC_model_1768/nodes.json": "fdc6fe83a1931bfc49a897050b9a02131706e535fbc5f2906ce365a3a5cfc622",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prepare_zero_C_backend_1810.py": "35c31d23fc5382b50d46525bae2f4385bd9c3122f583df40164952f27046726d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/zero_C_placeholders_1809.py": "b329ca70db42e989c1316ac671c12ce1e794ef0d0a3ba12fe2b1eed7bd7ff96a"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_model_1810/model.spice": "8a2e88428004ecbb7b041260974f3c26275c24c7f991dda9e6fa9b8f361f0c69"
+  },
+  "source_counts": {
+    "X": 62338,
+    "C": 2087003,
+    "R": 847612
+  },
+  "active_counts": {
+    "X": 62338,
+    "R": 847612,
+    "C": 1092176
+  },
+  "literal_zero_C_records_retained": 994827,
+  "zero_C_records_electrically_omitted": 994827,
+  "all_other_bytes_unchanged": true,
+  "exact_source_reconstruction_verified": true,
+  "nonzero_C_modified": false,
+  "R_modified": false,
+  "distributed_wire_R_included": true,
+  "signed_nonzero_C_unchanged": true,
+  "zero_R_preserved": true,
+  "literal_zero_C_preserved_as_reversible_comments": true,
+  "native_backend_correlation_complete": false,
+  "model_qualified": false,
+  "release_ready": false
+}

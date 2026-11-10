@@ -1,0 +1,33 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_linear_trace_1786/Xyce": "d2241def373079780446007aace48b14deb4efdf59d6f7596f0667f56321613b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_CSC_capture_1794/assessment.json": "660f1fc9e2878896fd3b5c15f71efa3bde18edb2e1bcdb8b68857f4f1aaa6ce6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_CSC_capture_1794/capture_symbolic.so": "044093d249009c98f67b900b0e9d870280709f359b97582adb47ed82ab01b149",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_mixed_floating_C_startup_1806.py": "9c42259e80d46a0dd1a15d42ed5e8642636cdbb73d953b8294ecfcdc5c5b30db"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/transient/transient.csv": "446d337ff77debd6550e2828eb1cd0a74e1da37dda37ee22f8ec5781c1cf86a4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/transient/startup.spice": "266ab44e02164a160756ceabebb0573c513d5823f2c085b1a261fe77a767580e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/transient/native.process.json": "95767a1bd1d0217e00332bf30d0adda23367f306ced3a8944175f8746de1b1e9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/transient/namesMap_startup.spice.txt": "155608e9144dde6f4f12a84fe9c38562fb53ffbd131bf0b6966b4982497e11fb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/transient/native.log": "d0ee61400c823f3428e8eed27879cf8682e4ceec515509e280f4a89d7b482bd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/capture/startup.spice": "645859718bdadbd58d8ec84d1a8b88109ce2385325ef65ff8dccbc2d015cec24",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/capture/native.process.json": "50ae970a5a7550627e53b5f7e3fb85778d3cf58a69ac9961d92153be019fe298",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/capture/namesMap_startup.spice.txt": "155608e9144dde6f4f12a84fe9c38562fb53ffbd131bf0b6966b4982497e11fb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/capture/native.log": "65af549ea68f39fdc3606f9efccec7ca1e4c0406b7eeea5b5febb07b64588402",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/capture/transient.csv": "6b7d7838d532059b29437e8773b78201823612f86fd0ae77ff2fc674e463a3e7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/capture/matrix/completion.json": "6ccc17d974e51f974436f617add9d55299ffb10f086b6594d6eb7d3575ab9158",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/capture/matrix/rows.i32": "e1f6b0a1d028f74f43991c0289dbfac4bea3f166115ca27eb758467580b0923d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/capture/matrix/columns.i32": "d7233691fd04f8ecc47da8ea569ec6971cd3ae6af60d174af03ef235da45c3a4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/capture/matrix/values.f64": "2eb0168732437cc69f00b9a62d9fc4ffd5836b2ce490a27989b020183f761ad9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_mixed_floating_C_startup_1806/capture/matrix/header.u64": "224912a5a4004e03b82715ad80666eb6776ffd50271655e89bda2da6571ab9d3"
+  },
+  "normal_native_transient_completed": true,
+  "analytical_floating_charge_relation_verified": true,
+  "first_transient_matrix_has_no_zero_rows": true,
+  "initial_state": "zero capacitor voltage/charge; source ramp from zero",
+  "no_artificial_resistors": true,
+  "no_physical_connections_added": true,
+  "full_PLL_qualified": false,
+  "release_ready": false
+}

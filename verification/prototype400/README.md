@@ -3837,3 +3837,33 @@ zero-charge startup assumption, reset asserted, PLL_ENABLE low and high
 inputs/supplies ramped from0 to1.8V in100ps. Its full capture remains live
 at retention time. This is a diagnostic initial condition, not yet a
 qualified physical power-on state, transient correlation or PLL release.
+
+
+### Literal zero-C placeholders diagnosed and reversibly adapted (1804–1812)
+
+Full UIC capture1803/assessment1804 retained the same785307 zero rows. Small
+tracing-binary, nonlinear-diode and PDK/attofarad controls1805–1807 all pass,
+so those differences did not explain the full result. Completed assessment
+1808 makes the decisive distinction: all785307 zero-Jacobian nodes have
+only literal zero-valued capacitor connections. None has nonzero C. The
+export has994827 zero C cards and1092176 nonzero C cards. Earlier C-only
+classification included zero placeholders; interpreting the population as
+finite floating charge was too broad. UIC cannot repair empty equations.
+
+Adapter1809 replaces only exact decimal-zero C cards with comments containing
+the exact original line. It reconstructs the audited source byte-for-byte;
+no nonzero C, signed finite C, resistor (including zero R), primitive or port
+line changes. Tests cover tiny nonzero1e-300, signed/zero values, malformed
+expressions, nonfinite literals and double application. Preparer1810 verifies
+full diagnosis/source binding and reconstruction from the actual emitted
+file. Original audited model1768 remains intact;1810 is a separate reversible
+backend view. Native control1811 proves that only the empty placeholder
+unknown disappears, every participating MNA entry is exactly equal, and the
+analytical DC solve completes. No artificial physical connection is added.
+
+Evidence is retained under zero_C_backend_1811. Runner1812 admits this view
+only after full1766/1768 and native1811 checks, using corrected baseline1292,
+not a different ordering candidate or UIC. It retains all finite signed C,
+all wire R and the original reset-DC stimulus, with64 GiB and1800 seconds.
+At retention time the full worker is live; backend/model qualification and
+PLL release readiness remain pending its actual completed result.
