@@ -1,0 +1,61 @@
+{
+  "native_wire_units_preserved_to_float32_precision": true,
+  "absolute_error_floor_used": false,
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_wire_units_1678/assessment.json": "621170e461806ea01ff2e81b837bed339db72eabce5a01275797395ccd210a2a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_wire_units_1678/install/bin/magic": "ffbeb8dca9475e52cb14fdabe3696a067b95f33bdef781a8518a61f8bf15b463",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_wire_units_1678/install/lib/magic/tcl/tclmagic.so": "3517af1cfca23ec5fb8cd4261ffcd6d5d2348577b33e27b9da014e1f98932d34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/OpenPLL_Coupling_R_Probe.ext": "e000de4a685e886e5574016d1efaf0657b7dc9a3b0e62d1784e00fd545e7ac0a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_wire_R_units_1679/WireUnits.ext": "1ae37888a96c9d786aaf42d6e0edf463481e7f003d9684c39789d07ba3764a3c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_wire_R_units_1679/WireUnits.res.ext": "68d978064f5d0dc9adc53c013af82693cae6a4a69c358639b865d0cb642a8689",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_wire_R_units_1679/minimal.magicrc": "41ef6997bf59dcb7503f7dbe7273ee27778dc1c7d15a6968a7c520a19f7e5bd6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_wire_R_units_1679/run.tcl": "76df45e0c872aaafa634719896fb4dd38977bbea79bf8181f7676a441da98e7a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_corrected_wire_R_units_1679.py": "e55228794964b20693efb9efa3c720842a536c5a038dc12f0e35064aeda8e1fc"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_wire_R_units_1679/wire.spice": "7f3eec82be4cee729335be688199f5df33b7d5952f15a56164e9c6913bea9393",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_wire_R_units_1679/native.log": "6f60984d50886743a9606fb66a99b7539df6a71aaa037ea9c877887d399ad563"
+  },
+  "results": [
+    {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "native_EXT_R_ohm_exact": "0",
+      "exported_R_ohm_exact": "0",
+      "error_ohm_exact": "0"
+    },
+    {
+      "nodes": [
+        "c",
+        "d"
+      ],
+      "native_EXT_R_ohm_exact": "1/1000000",
+      "exported_R_ohm_exact": "1/1000000",
+      "error_ohm_exact": "0"
+    },
+    {
+      "nodes": [
+        "e",
+        "f"
+      ],
+      "native_EXT_R_ohm_exact": "199/40",
+      "exported_R_ohm_exact": "199/40",
+      "error_ohm_exact": "0"
+    },
+    {
+      "nodes": [
+        "g",
+        "h"
+      ],
+      "native_EXT_R_ohm_exact": "1000",
+      "exported_R_ohm_exact": "1000",
+      "error_ohm_exact": "0"
+    }
+  ],
+  "native_wire_units_exact": true,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

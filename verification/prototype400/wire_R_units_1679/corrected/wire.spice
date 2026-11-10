@@ -1,0 +1,11 @@
+* NGSPICE file created from WireUnits.ext - technology: sky130A
+
+
+* Top level circuit WireUnits
+
+R0 g h 1000
+R1 e f 4.975
+R2 c d 1e-06
+R3 a b 0
+.end
+

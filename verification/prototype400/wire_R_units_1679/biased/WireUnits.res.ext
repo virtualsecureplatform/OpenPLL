@@ -1,0 +1,5 @@
+scale 1000 1 1e+06
+resist "a" "b" 0
+resist "c" "d" 0.000001
+resist "e" "f" 4.975
+resist "g" "h" 1000

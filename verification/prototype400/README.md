@@ -3122,3 +3122,24 @@ replay1652 of those11 conductors, including VGND and VPWR, is running on the
 checked full GDS. The retained launch snapshot is observational, not a result.
 No active native data file was analyzed. Full-network export, passivity and
 junction-fallback correctness remain unqualified; no release readiness claim.
+
+### Preserve native floating wire resistance units (1676–1679)
+
+The native EF reader still adds 0.5 milliohm before storing a floating wire
+resistance, an obsolete integer-rounding operation. The native control1676
+turns an exact zero into 0.0005 ohm and 1 microohm into 501 microohms.
+Completed-output assessment1677 accepts the legal terminal .end directive;
+it does not repeat or alter the native control.
+
+The opt-in helper preserve_wire_resistance_units.py removes this bias when
+both native-capacitance and explicit-coupling modes are enabled and prints
+wire values with 17 significant digits. Legacy mode is unchanged. Native
+control1679 exports zero, 1 microohm, 4.975 ohms and 1000 ohms exactly.
+The verifier uses a relative float32 representation bound without an absolute
+error floor, so exact zero must remain zero. Original fixtures, outputs,
+compressed native logs and hash receipts are under wire_R_units_1679.
+
+This establishes wire-unit conversion only. The isolated candidate build1678
+also incorporates geometry/junction repairs being retained separately. Full
+layout RC extraction1671 is still running; its raw geometry can be reused for
+a corrected-reader export. Full RC export and PLL release remain unqualified.

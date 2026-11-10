@@ -1,0 +1,56 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_wire_R_units_1676/native.process.json": "50d03cea50b911bbef658bb6bebf9866bcf5dc2d347315711046673445820be8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_wire_R_units_1676/native.log": "592b8c40b911af0f993188da910a85cf086e97bec9dfe6144fc467958afe80ad",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_wire_R_units_1676/run.tcl": "92fe1abcd46edc515b39429b53939523b6ea0453f3c145e81913fcb3e7d8b8a3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_wire_R_units_1676/WireUnits.res.ext": "68d978064f5d0dc9adc53c013af82693cae6a4a69c358639b865d0cb642a8689",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_wire_R_units_1676/wire.spice": "15878054f9556836358a3f20586c97fea6f96abc33eea1d66c78f82d913b523a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_wire_R_units_1676/minimal.magicrc": "41ef6997bf59dcb7503f7dbe7273ee27778dc1c7d15a6968a7c520a19f7e5bd6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_wire_R_units_1676/WireUnits.ext": "1ae37888a96c9d786aaf42d6e0edf463481e7f003d9684c39789d07ba3764a3c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_wire_R_units_1677.py": "c09fdaabb1b42249b76fffe385eaa0ceae9cc2d6a2cdd9f33d42c4300d1083f4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_wire_R_units_1676.py": "a9568d73ecfe6a099954c6e755f7243c95cb7eb35366a4881331a4523986da3c"
+  },
+  "native_terminal_end_directive_accepted": true,
+  "results": [
+    {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "native_EXT_R_ohm_exact": "0",
+      "exported_R_ohm_exact": "1/2000",
+      "error_ohm_exact": "1/2000"
+    },
+    {
+      "nodes": [
+        "c",
+        "d"
+      ],
+      "native_EXT_R_ohm_exact": "1/1000000",
+      "exported_R_ohm_exact": "501/1000000",
+      "error_ohm_exact": "1/2000"
+    },
+    {
+      "nodes": [
+        "e",
+        "f"
+      ],
+      "native_EXT_R_ohm_exact": "199/40",
+      "exported_R_ohm_exact": "9951/2000",
+      "error_ohm_exact": "1/2000"
+    },
+    {
+      "nodes": [
+        "g",
+        "h"
+      ],
+      "native_EXT_R_ohm_exact": "1000",
+      "exported_R_ohm_exact": "1000",
+      "error_ohm_exact": "0"
+    }
+  ],
+  "zero_ohm_changed_to_positive": true,
+  "native_wire_units_exact": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}
