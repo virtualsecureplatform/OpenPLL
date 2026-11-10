@@ -3689,3 +3689,20 @@ using the tracing executable. It retains the64-GiB/1800-second, one-CPU,
 single-case policy. At retention time the diagnostic worker is live; no
 full-model trace result or backend qualification is claimed. The intent is
 to localize1771's initialization timeout before changing numerical behavior.
+
+
+### Finer late-setup boundaries (1777–1779)
+
+Full trace1775 returned all four core initialization calls. Its owned worker
+was intentionally stopped, with a diagnostic stop receipt (not user
+cancellation), to replace it with a more informative case. No partial DC
+point was qualified. Build1777 traces the remaining late-setup calls and
+analysis entry, again changing only the circuit driver object and reproducing
+the baseline binary before replacement. Control1778 uses a3000-section RC
+ladder: exact baseline/tracer voltage equality, analytical divider agreement
+and all31 ordered events pass. Build/control and stopped1775 evidence is
+retained under RC_late_trace_1778. A transform1776 refused before compilation
+because a marker also occurred outside the intended function;1777 limits
+its transformation to the late-setup function. Runner1779 is now a live
+full-model diagnostic with unchanged equations and resource limits; no
+full-model backend result is claimed.

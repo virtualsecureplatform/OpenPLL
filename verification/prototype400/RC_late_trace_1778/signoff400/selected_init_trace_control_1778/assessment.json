@@ -1,0 +1,68 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_late_init_trace_1777/Xyce": "5dc70ad9363fd0fd4dabcdbec3bc65b016af77874ab27ad32b22df382b88d34f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_late_init_trace_1777/assessment.json": "e7e412704afaf127d71e6a1bfca82188597e4c05ac513f531cc3bc10dfe60a97",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_late_init_trace_1778.py": "44f79a967bcbf68a0981468e62ff89266e5f987ceacbe832dd87755c265a134c"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1778/base/dc.csv": "260479e06aba3f7eccc5955283398166b00b4c3f2abee8858287676c908cc15a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1778/base/native.process.json": "b63ae3734ef60d6735637a9613bd2de915a86778f0bdb60e7a1e57361cf6babd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1778/base/control.spice": "5a833304feeb582de12c7b9917e17ddf6b86e49ab0baba614af9b30f543e013a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1778/base/native.log": "f894d88bfb400502bfc46d786ba7203f4b2d058f472d7c6d4a64acae7b24daf7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1778/trace/dc.csv": "260479e06aba3f7eccc5955283398166b00b4c3f2abee8858287676c908cc15a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1778/trace/control.spice": "fe3d87f7701c50c532c669903b04119f3fa1fe3ef5e146338574f9476484e618",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1778/trace/native.log": "74f9956cc660239551a101da0cfd426cab77a8777bc1ce9c2ef3727d0ec70dab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1778/trace/native.process.json": "b81918950683694c6cd22f00b76aa4c157fa38fdcaa7aea7a9be4c80790f3291"
+  },
+  "analytical_RC_ladder_pass": true,
+  "baseline_and_trace_outputs_identical": true,
+  "all_initialization_boundaries_observed": true,
+  "events": [
+    "OPENPLL_INIT_TRACE begin analysis_object",
+    "OPENPLL_INIT_TRACE end analysis_object",
+    "OPENPLL_INIT_TRACE begin solver_system",
+    "OPENPLL_INIT_TRACE end solver_system",
+    "OPENPLL_INIT_TRACE begin devices",
+    "OPENPLL_INIT_TRACE end devices",
+    "OPENPLL_INIT_TRACE begin nonlinear",
+    "OPENPLL_INIT_TRACE end nonlinear",
+    "OPENPLL_INIT_TRACE begin node_symbols",
+    "OPENPLL_INIT_TRACE end node_symbols",
+    "OPENPLL_INIT_TRACE begin print_parameters",
+    "OPENPLL_INIT_TRACE end print_parameters",
+    "OPENPLL_INIT_TRACE begin fourier",
+    "OPENPLL_INIT_TRACE end fourier",
+    "OPENPLL_INIT_TRACE begin fft",
+    "OPENPLL_INIT_TRACE end fft",
+    "OPENPLL_INIT_TRACE begin measure_ops",
+    "OPENPLL_INIT_TRACE end measure_ops",
+    "OPENPLL_INIT_TRACE begin measure_fft",
+    "OPENPLL_INIT_TRACE end measure_fft",
+    "OPENPLL_INIT_TRACE begin measure_suffix",
+    "OPENPLL_INIT_TRACE end measure_suffix",
+    "OPENPLL_INIT_TRACE begin final_expressions",
+    "OPENPLL_INIT_TRACE end final_expressions",
+    "OPENPLL_INIT_TRACE begin delete_functions",
+    "OPENPLL_INIT_TRACE end delete_functions",
+    "OPENPLL_INIT_TRACE begin delete_params",
+    "OPENPLL_INIT_TRACE end delete_params",
+    "OPENPLL_INIT_TRACE begin delete_globals",
+    "OPENPLL_INIT_TRACE end delete_globals",
+    "OPENPLL_INIT_TRACE begin analysis_run"
+  ],
+  "results": [
+    [
+      1.0,
+      0.75,
+      0.5
+    ],
+    [
+      1.0,
+      0.75,
+      0.5
+    ]
+  ],
+  "full_model_backend_qualified": false,
+  "release_ready": false
+}

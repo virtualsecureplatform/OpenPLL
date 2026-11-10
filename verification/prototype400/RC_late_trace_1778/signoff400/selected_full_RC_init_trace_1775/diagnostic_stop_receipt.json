@@ -1,0 +1,11 @@
+{
+  "native_identity": {
+    "pid": 3085501,
+    "birth": "155283958",
+    "process_group": 3085501
+  },
+  "user_cancellation": false,
+  "reason": "All four traced initialization calls returned; replace with validated finer late-setup tracer.",
+  "native_log_sha256_at_stop": "ff6c9f8e68232be51cac81fda74e1170b104d3cd3c948fe3b1af559b759d156c",
+  "partial_DC_qualified": false
+}
