@@ -1,0 +1,46 @@
+{
+  "build/signoff400/selected_named_alias_RC_1749/RotatedCrop.res.ext": {
+    "sha256": "4b522228efdb5714babf2fb921df3eabf612fe62c87d49ce834b93974212f112",
+    "retained": "verification/prototype400/named_alias_reference_1749/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_named_alias_RC_1749/before.spice": {
+    "sha256": "ddff70381ae374dde1c971b09c327c053c183d525bffc81d41ccd257e7ba004a",
+    "retained": "verification/prototype400/named_alias_reference_1749/before.spice.gz"
+  },
+  "build/signoff400/selected_named_alias_RC_1749/after.spice": {
+    "sha256": "9c5493c061ae968a968881ac9e455241ed9be81d630168059eae7ae296a68e84",
+    "retained": "verification/prototype400/named_alias_reference_1749/after.spice.gz"
+  },
+  "build/signoff400/selected_named_alias_RC_1749/status.json": {
+    "sha256": "72738a09d2e3fabdd3af0db41f7cc49c5242f17eee45010358554b5fc3050279",
+    "retained": "verification/prototype400/named_alias_reference_1749/status.json"
+  },
+  "build/signoff400/selected_named_alias_RC_1749/assessment.json": {
+    "sha256": "8b669d023f9b7b832088e22d6e7007d9cd571237dc46247d4adb1af86d5a6c73",
+    "retained": "verification/prototype400/named_alias_reference_1749/assessment.json"
+  },
+  "build/signoff400/selected_named_alias_RC_1749/run.tcl": {
+    "sha256": "325af64765ad33f61520fca59567d6d60279b65d18413e4bd9442ff6cd49f541",
+    "retained": "verification/prototype400/named_alias_reference_1749/run.tcl"
+  },
+  "build/signoff400/selected_named_alias_RC_1749/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/named_alias_reference_1749/minimal.magicrc"
+  },
+  "build/signoff400/selected_named_alias_RC_1749/inputs.json": {
+    "sha256": "2d05ed308605c718ea6442b9f58fae2466a949731ba0a787e35be5bb72a5d071",
+    "retained": "verification/prototype400/named_alias_reference_1749/inputs.json"
+  },
+  "build/signoff400/selected_named_alias_RC_1749/native.log": {
+    "sha256": "f55d895b84486a9ce245727e68ad22184cd0c84c3141617490ba647ce3e6c1f9",
+    "retained": "verification/prototype400/named_alias_reference_1749/native.log.gz"
+  },
+  "build/signoff400/selected_named_alias_RC_1749/RotatedCrop.ext": {
+    "sha256": "d7e69d44ffde268ea39bdd76b4c85fead44937684afeee76cfb2814657ebcb46",
+    "retained": "verification/prototype400/named_alias_reference_1749/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_named_alias_RC_1749/native_completion.json": {
+    "sha256": "4c89d2d755debf6440958c5ed72ee5d0f5ac53467106751c48fdadc47abdcfd9",
+    "retained": "verification/prototype400/named_alias_reference_1749/native_completion.json"
+  }
+}

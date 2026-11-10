@@ -3502,3 +3502,26 @@ does not include the ineffective1741 repair. End-to-end control1749 is
 pending. Completed copy receipts, failed metadata candidate and original
 reader traces are retained under port_import_diagnosis_1747. Full extraction
 remains held; no port or RC qualification is claimed from pending work.
+
+
+### Exact-name lookup recovers the port but exposes substrate reference loss (1748–1749)
+
+Candidate1748 recovers ALIAS_DRIVE in the formal port list. Control1749
+preserves all34 physical device connections, all321 native wire branches,
+passivity and unique names. Its native resistance records are unchanged.
+However charge conservation fails on50 capacitor pairs: exported substrate
+capacitance now targets node0 after the original global substrate reference
+is killed. Thus the overall end-to-end control remains false, and the full
+export remains held. Original completed observations are under
+named_alias_reference_1749.
+
+Native spcsubVisit chooses the live EF_GLOB_SUBS_NODE for intrinsic ground C,
+falling back to the default ground when that node is killed. In this fixture
+the original reference and explicit alias anchor coincide; only the alias
+name survives in native rnode output. ResPrintExtNode nevertheless kills the
+original canonical name when it does not appear literally in that output.
+A correction must preserve the original physical C reference through native
+breakpoint/name merging. Assigning substrate flags to an arbitrary surviving
+port, or adding an unproven zero-ohm bridge, is not established as valid.
+The exact-name lookup is retained as a tested partial repair, not a qualified
+RC-export solution.
