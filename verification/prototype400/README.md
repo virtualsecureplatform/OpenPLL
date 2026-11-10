@@ -3398,3 +3398,13 @@ electrical records match, ignoring serialization element ordinals. Completed
 controls and losslessly compressed native artifacts are under
 explicit_drive_type_1730. Full-layout ground-copy diagnostic1728 remains
 pending; these crop controls alone do not establish the ground-network repair.
+
+
+Explicit-alias control1731 now reproduces the actual type-selection failure
+on the real transistor crop. It adds a single port alias at the original
+substrate record's physical location and layer, without adding paint,
+devices, capacitance or shorts. The previous engine selects `nmos` at an
+`ndiff` anchor and copies no matching tile. Candidate1726 selects `ndiff`
+and finds that material after native conductor copying. Both are deliberately
+copy-only cases; this proves the driver-layer correction, not full-network
+RC qualification. Completed artifacts are under explicit_drive_alias_1731.

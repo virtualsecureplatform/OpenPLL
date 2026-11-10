@@ -1,0 +1,46 @@
+{
+  "build/signoff400/selected_drive_alias_type_1731/assessment.json": {
+    "sha256": "f04a1fac8f08ca7df542003f1b5ddfa126dde9254770e1fd6ba84d49fe288e8b",
+    "retained": "verification/prototype400/explicit_drive_alias_1731/assessment.json"
+  },
+  "build/signoff400/selected_drive_alias_type_1731/magic_copy_trace_1723/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/explicit_drive_alias_1731/magic_copy_trace_1723/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_alias_type_1731/magic_copy_trace_1723/RotatedCrop.ext": {
+    "sha256": "d7e69d44ffde268ea39bdd76b4c85fead44937684afeee76cfb2814657ebcb46",
+    "retained": "verification/prototype400/explicit_drive_alias_1731/magic_copy_trace_1723/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_drive_alias_type_1731/magic_copy_trace_1723/native.log": {
+    "sha256": "abd60989c3ebfde6add0c352421a1560dc14adc024047870244db1fb9d76261b",
+    "retained": "verification/prototype400/explicit_drive_alias_1731/magic_copy_trace_1723/native.log.gz"
+  },
+  "build/signoff400/selected_drive_alias_type_1731/magic_copy_trace_1723/RotatedCrop.res.ext": {
+    "sha256": "a3ace93a3334bee73b864613ec9f70f9c7a5e71614748c04e87fe260c0d582c1",
+    "retained": "verification/prototype400/explicit_drive_alias_1731/magic_copy_trace_1723/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_drive_alias_type_1731/magic_copy_trace_1723/run.tcl": {
+    "sha256": "1ca87ff47c4568e730123e6cb99db7d9ab7b4d55128ae9ac57b05e5d617c690c",
+    "retained": "verification/prototype400/explicit_drive_alias_1731/magic_copy_trace_1723/run.tcl"
+  },
+  "build/signoff400/selected_drive_alias_type_1731/magic_drive_type_1726/run.tcl": {
+    "sha256": "9a34261e24e75e9cd1480183edab6a7d7a1b378f9265a071ef3215b4024befe9",
+    "retained": "verification/prototype400/explicit_drive_alias_1731/magic_drive_type_1726/run.tcl"
+  },
+  "build/signoff400/selected_drive_alias_type_1731/magic_drive_type_1726/RotatedCrop.res.ext": {
+    "sha256": "a3ace93a3334bee73b864613ec9f70f9c7a5e71614748c04e87fe260c0d582c1",
+    "retained": "verification/prototype400/explicit_drive_alias_1731/magic_drive_type_1726/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_drive_alias_type_1731/magic_drive_type_1726/native.log": {
+    "sha256": "f54d3604ffbe12cca77a5e8c6a124822705b0467895f3b840e209d0c3efb0dc3",
+    "retained": "verification/prototype400/explicit_drive_alias_1731/magic_drive_type_1726/native.log.gz"
+  },
+  "build/signoff400/selected_drive_alias_type_1731/magic_drive_type_1726/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/explicit_drive_alias_1731/magic_drive_type_1726/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_alias_type_1731/magic_drive_type_1726/RotatedCrop.ext": {
+    "sha256": "d7e69d44ffde268ea39bdd76b4c85fead44937684afeee76cfb2814657ebcb46",
+    "retained": "verification/prototype400/explicit_drive_alias_1731/magic_drive_type_1726/RotatedCrop.ext.gz"
+  }
+}
