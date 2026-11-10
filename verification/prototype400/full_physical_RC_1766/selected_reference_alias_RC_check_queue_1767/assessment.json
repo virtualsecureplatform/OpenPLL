@@ -1,0 +1,22 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_reference_alias_full_RC_1766.py": "dd7b8a955350408cfe77dd124f24242efc286043a54b774becf1b02e5939b683",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/queue_reference_alias_RC_audit_1767.py": "b6f94f0d3da44d64f4bdbd27046e4383fcfd88aecd02d494714d55f500bfb579",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_1764/owner.json": "508fc31362f6af96fdd6889cc6d72b9c0ba7894031c9a97d42aa53f20c84521c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_roundoff.py": "d2f3d2bfc8a57e98682e46a5cf20d4ed179e0146bccf0c5c77164fc462d9c462",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_passivity_v2.py": "fc359e2c43ba8b74a98579196dcea22586367ba94b5dcff88a15a4589972bb7e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_physical_connections.py": "7986662b462434042b142f1cc68e4018208eebfa7353864e14d6a04201576cd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_wire_values.py": "5c7246ae9e6a5557986e8885017ba89459e4917465bed9e0fe10f70e911a8d1a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_RC_coverage_v2.py": "6a233a81ebcd8cb2c1ff3cc08386c55c4518ee0c5eb8a00f807030087ef1dd02",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_device_identity.py": "58cbc928305caa5e67ac43d2f8a0044397f98c6423a01e380466071c804dcdd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_native_R_with_aliases.py": "010eb0f3a1ae4894e6f0b09fe8ae42b26fee296a7a31fed10ffaa83f396763c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_completed_RC_1681.py": "f199377e893a82049a1734f659fe26ff2e0cfb5a0d3e5ce82b32a7490f16303f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "full_audit_receipt_sha256": "7bb3aa85de7c739a3ddd599b1e9f7bfc029f87a674bf520cdbe5137e79b0b70c",
+  "all_full_RC_checks_pass": true,
+  "qualification_review_pending": true,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

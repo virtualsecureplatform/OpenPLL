@@ -1,0 +1,45 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_1764/assessment.json": "2dc011db970d8df64aa0390b7639300e9e28177be4c11c5be641a0a716487a02",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/assessment.json": "3fd38ce495daf3c6b7a8061cc52b6e2d7b535dd10d5e6ad1269a81354cc1af6b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/capacitance.spice": "a65df9f048ae302a266ff915a898cd08e4bdf07a42f11d2491e9afa2fedc44de",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_1764/before.spice": "5b4bd7876898003be7e02c66a3a1dfd09edff25e8f948ffec79f0a00c3f53ca4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_1764/after.spice": "ad8ddaa1fb24a49c8b6ab08a8c7927ddf55ec881cfebea2a8aa921ef68d2bcdd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_1764/IntegerPLL_400MHz_KeeperFlatC.ext": "8ce8a459945ca181b69ee3a5cf47f94caedf63d7093a0b7fb5970616e0a97a78",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_1764/IntegerPLL_400MHz_KeeperFlatC.res.ext": "ace0dfbec1a14c81794ab25308f57c80686c5bba41883272da8925a40ddefffb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_1764/native.log": "81483114469e79ed8591a63721d9f9a53126487a1cda112c016bcf6cd81c015a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_reference_alias_full_RC_1766.py": "dd7b8a955350408cfe77dd124f24242efc286043a54b774becf1b02e5939b683",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_roundoff.py": "d2f3d2bfc8a57e98682e46a5cf20d4ed179e0146bccf0c5c77164fc462d9c462",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_passivity_v2.py": "fc359e2c43ba8b74a98579196dcea22586367ba94b5dcff88a15a4589972bb7e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_physical_connections.py": "7986662b462434042b142f1cc68e4018208eebfa7353864e14d6a04201576cd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_wire_values.py": "5c7246ae9e6a5557986e8885017ba89459e4917465bed9e0fe10f70e911a8d1a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_RC_coverage_v2.py": "6a233a81ebcd8cb2c1ff3cc08386c55c4518ee0c5eb8a00f807030087ef1dd02",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_device_identity.py": "58cbc928305caa5e67ac43d2f8a0044397f98c6423a01e380466071c804dcdd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_native_R_with_aliases.py": "010eb0f3a1ae4894e6f0b09fe8ae42b26fee296a7a31fed10ffaa83f396763c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_completed_RC_1681.py": "f199377e893a82049a1734f659fe26ff2e0cfb5a0d3e5ce82b32a7490f16303f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_audit_1766/electrical_report.json": "9ec99ed03cd845b325f4dd97460ac0770db6dd2bb115197770167ebccbe3f7c4"
+  },
+  "checks": {
+    "original_substrate_reference_point_preserved": true,
+    "original_substrate_reference_used_in_C": true,
+    "no_default_zero_C_fallback_introduced": true,
+    "precise_C_reference_conserved": true,
+    "device_charge_and_formal_ports_conserved": true,
+    "all_62338_physical_device_connections_preserved": true,
+    "every_native_wire_value_preserved": true,
+    "all_19696_conductors_output_once": true,
+    "actual_linear_C_PSD_certified": true,
+    "distinct_physical_points_have_distinct_names": true,
+    "no_native_geometry_failure": true,
+    "no_native_export_errors_or_orphan_repairs": true,
+    "original_65_port_population_indexed": true
+  },
+  "all_full_RC_checks_pass": true,
+  "qualification_review_pending": true,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

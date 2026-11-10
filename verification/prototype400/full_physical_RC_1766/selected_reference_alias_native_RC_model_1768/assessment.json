@@ -1,0 +1,34 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_audit_1766/assessment.json": "7bb3aa85de7c739a3ddd599b1e9f7bfc029f87a674bf520cdbe5137e79b0b70c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_1764/after.spice": "ad8ddaa1fb24a49c8b6ab08a8c7927ddf55ec881cfebea2a8aa921ef68d2bcdd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prepare_reference_alias_native_RC_1768.py": "de7237358ceb39414e8f399f972871d69eb540ab59744b8916b238155f2932fc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prototype_native_literal_templates.py": "c1aaab6be9aa9da26a55c3a20f84e425b0f2aafb5c02ffb80b18457b9e282d75",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prototype_xyce_resistor_translation.py": "6653a3658920bebdd2a866a4fd28b524f5d6056534702658d260c58b529bdd2c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_hierarchical_capacitance.py": "19b97e8bb8241d14c814e16ae71e988f0c04222bc82bb6b72f9043b520418028"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_native_RC_model_1768/model.spice": "4d2a859d5b1b2050c062639545f19f7a0655aea7e1019d26f58f90dcdd8850aa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_native_RC_model_1768/nodes.json": "fdc6fe83a1931bfc49a897050b9a02131706e535fbc5f2906ce365a3a5cfc622"
+  },
+  "source_counts": {
+    "X": 62338,
+    "C": 2087003,
+    "R": 847612
+  },
+  "literal_RC_branches_preserved": 2934615,
+  "literal_templates": {
+    "primitives": 62338,
+    "literal_templates": 431
+  },
+  "poly_adapter_templates": 2,
+  "all_RC_endpoints_and_literal_values_preserved": true,
+  "distributed_wire_R_included": true,
+  "signed_C_unchanged": true,
+  "zero_RC_branches_preserved": true,
+  "spatial_endpoint_attachment_applied": false,
+  "native_backend_correlation_complete": false,
+  "model_qualified": false,
+  "release_ready": false
+}

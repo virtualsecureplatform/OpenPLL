@@ -3586,3 +3586,39 @@ and their exact CIF summary are counted separately; other native errors fail.
 Preparer1768 requires every full audit gate and preserves literal R/C branch
 values and endpoints. Whole-export and PLL release qualification remain
 pending the actual completed current-binary output.
+
+
+### Completed full physical RC export and literal model (1766–1768)
+
+The current candidate1757 completed the full1764 extraction normally. Audit1766
+passes all13 gates: all62338 physical device terminal/parameter connections,
+all19696 required source/drain/passive/port networks exactly once, all847612
+native wire branches, the65 formal ports, unique physical names, geometry and
+native-error checks, precise source C conservation and signed C passivity.
+The original substrate reference remains at(8383,50680) and is used by C;
+no default-zero C fallback was introduced. All16656 nonexact contracted C
+pair differences are within the participating-card float64 roundoff bound;
+there are zero failing pairs and no absolute error floor. The474 original
+negative C pairs remain, with a positive-path passivity certificate.
+
+Coverage is the native eligible device/port population established by1698,
+not a claim of resistance extraction for the780557 separately classified
+C-only nodes. The general coverage helper deliberately retains its broader
+all-populations boolean as false. Exact known GDS boundary warnings are
+retained separately; there are zero other native error lines.
+
+Preparer1768 completed and preserved all2934615 literal RC branches
+(847612R,2087003C), including signed/zero values and original endpoints via
+a reversible node map. All62338 primitives are represented by431 literal
+templates, including the existing two poly-resistor adapter templates.
+The generated model SHA256 is
+`4d2a859d5b1b2050c062639545f19f7a0655aea7e1019d26f58f90dcdd8850aa`.
+The full model and map remain build artifacts. Completed receipts, lossless
+native/audit logs and the full electrical report are retained under
+`full_physical_RC_1766`, with original and stored hashes in its manifest.
+
+This establishes the current full export and literal preparation checks.
+Native backend correlation and integration into the PLL qualification flow
+remain pending; the model receipt still states model_qualified=false and
+release_ready=false. Earlier failed exports and pending-review receipts are
+preserved with their original status.
