@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_full_RC_1671/assessment.json": "30cdc0e6361916be92fc10335a7a0ade030bb0655828a4ca8930fbb504095941",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_full_RC_1671/before.spice": "d485a5f3a924718cdebac70aa516361ccc525c22cae16dc3937a2f1dc630ebc1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_full_RC_1671/IntegerPLL_400MHz_KeeperFlatC.res.ext": "682b45122eda0a587b8e7a65a0dfe6aa06971e428e0ce13743f55d7afc35ca75",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_completed_RC_coverage_1687.py": "f9230de1c0b5d90fa1e51ab15143744b603b81f14d2ec522cc3de107a5d3895d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_RC_coverage.py": "a6587c79d0fc70d3a901eb128899b6bdfcd551bae7c3e485a23e3c4a07e4ae28",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_completed_RC_1681.py": "f199377e893a82049a1734f659fe26ff2e0cfb5a0d3e5ce82b32a7490f16303f"
+  },
+  "required_device_and_port_networks": 19696,
+  "successful_native_network_markers": 19696,
+  "missing_required_networks": [
+    "vgnd"
+  ],
+  "duplicate_physical_network_markers": [],
+  "device_and_port_output_coverage_verified": false,
+  "gate_only_networks": 0,
+  "gate_only_without_output": [],
+  "bulk_only_networks": 0,
+  "bulk_only_without_output": [],
+  "capacitance_only_networks": 780557,
+  "capacitance_only_without_output_count": 780557,
+  "all_native_eligible_conductor_coverage_verified": false,
+  "scope": "device source/drain/passive terminals and formal ports; other populations classified independently",
+  "RC_export_fixed": false,
+  "release_ready": false
+}

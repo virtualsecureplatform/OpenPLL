@@ -3285,3 +3285,34 @@ conductors; it does not certify any current native output. The completed
 export must still provide unique markers for every required conductor and
 pass every electrical, physical connection and wire-value gate. Evidence
 is under native_eligibility_1698.
+
+### Full-export failures and distinct physical node names (1700–1707)
+
+The full geometry producer1671 completed normally without area/bounds
+failures, but final export1680 fails electrical qualification. Physical
+connections and parameters for all 62,338 devices remain traceable; that
+aggregate topology result does not establish internal wire correctness.
+MagAtof returns float32, so original ground-C import rounded budgets even
+after the destination became double. The new importer uses atof directly.
+Alias splitting also copied formal-port flags onto non-port names; the
+new flag repair checks each actual name's port number and clears stale
+flags from the remaining alias group when no formal port remains.
+
+The native resistance file contains 18,762 self-loop records on 2,247 names,
+and every such name appears at multiple physical coordinates. These are
+actual collapsed physical points, not harmless self-loops to waive. Layout
+labels were reused as electrical breakpoint names; their processing also
+mutated original port/reference geometry. The new opt-in path gives labels
+anonymous, independent geometry breakpoints and reserves names for explicit
+single physical anchors. Affected serialized networks cannot be recovered
+by merely deleting self-loop records or rescaling capacitance.
+
+Native analytical control1705 shows a 4.975-ohm wire becoming 1.5 ohms when
+repeated logical labels are added to the previous engine. The repaired
+engine retains 4.975 ohms, formal ports and unique names at distinct points.
+Fresh controls1706 and independent assessment1707 pass all four rotations:
+geometry, charge conservation, physical device terminal ownership, every
+wire value, full linear-C passivity and absence of reused names at distinct
+coordinates. Source/model controls remain separate from full-layout
+qualification. Evidence, original compressed logs and failure receipts
+are retained under single_RC_points_1707. No release tool or PDK is replaced.

@@ -1,0 +1,11 @@
+* NGSPICE file created from OpenPLL_Coupling_R_Probe.ext - technology: sky130A
+
+.subckt OpenPLL_Coupling_R_Probe A B AFAR
+R0 AFAR A 0.000000
+C0 B AFAR 3.9111100000000006e-15
+C1 AFAR SUB 2.8413000000000006e-15
+C2 A SUB 0
+C3 B SUB 2.8413000000000006e-15
+C4 dummy SUB 0 $ **FLOATING
+C5 SUB SUB 0
+.ends

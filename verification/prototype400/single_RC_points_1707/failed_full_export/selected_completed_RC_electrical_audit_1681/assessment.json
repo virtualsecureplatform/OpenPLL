@@ -1,0 +1,37 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_full_RC_1671/assessment.json": "30cdc0e6361916be92fc10335a7a0ade030bb0655828a4ca8930fbb504095941",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_completed_RC_reexport_1680/assessment.json": "1db8b1988fd6a1dd6dcf5331a05402342fbc214c2798e611727adce7f26fb1f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/assessment.json": "3fd38ce495daf3c6b7a8061cc52b6e2d7b535dd10d5e6ad1269a81354cc1af6b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/capacitance.spice": "a65df9f048ae302a266ff915a898cd08e4bdf07a42f11d2491e9afa2fedc44de",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_full_RC_1671/before.spice": "d485a5f3a924718cdebac70aa516361ccc525c22cae16dc3937a2f1dc630ebc1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_completed_RC_reexport_1680/after.spice": "d2658d781ac3acf6a16f2377b71f6ed4ffea109048ac7954dc18fc6ee40e1296",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_full_RC_1671/native.log": "8ccc56f6f52f462884525a73ec554c536c8d146e2cca3f94f157dc3d932543ff",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_completed_RC_reexport_1680/native.log": "be40e8d23212167bb84dd7e93ec3c79078400e5856da6fa2d9dc4388ff290454",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_completed_RC_1681.py": "f199377e893a82049a1734f659fe26ff2e0cfb5a0d3e5ce82b32a7490f16303f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_roundoff.py": "d2f3d2bfc8a57e98682e46a5cf20d4ed179e0146bccf0c5c77164fc462d9c462",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_passivity_v2.py": "fc359e2c43ba8b74a98579196dcea22586367ba94b5dcff88a15a4589972bb7e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_device_identity.py": "58cbc928305caa5e67ac43d2f8a0044397f98c6423a01e380466071c804dcdd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_native_R_with_aliases.py": "010eb0f3a1ae4894e6f0b09fe8ae42b26fee296a7a31fed10ffaa83f396763c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_completed_RC_electrical_audit_1681/electrical_report.json": "edebfe834c379be46eafcc64c4068d500475b0fac052fcb7666019ea87cbb53c"
+  },
+  "electrical_checks_pass": false,
+  "checks": {
+    "precise_reference_conserved": true,
+    "final_charge_devices_ports_conserved": false,
+    "physical_device_parameters_conserved": true,
+    "all_62338_physical_devices_present": true,
+    "actual_final_C_operator_PSD_certified": false,
+    "geometry_diagnostics_clear": true,
+    "positive_wire_network_present": true,
+    "no_negative_wire_R": true
+  },
+  "native_eligible_conductor_coverage_verified": false,
+  "per_native_wire_resistance_values_verified": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

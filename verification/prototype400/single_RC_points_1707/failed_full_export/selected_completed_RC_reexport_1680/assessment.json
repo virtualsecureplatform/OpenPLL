@@ -1,0 +1,24 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_full_RC_1671/assessment.json": "30cdc0e6361916be92fc10335a7a0ade030bb0655828a4ca8930fbb504095941",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_wire_units_1678/assessment.json": "621170e461806ea01ff2e81b837bed339db72eabce5a01275797395ccd210a2a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_wire_R_units_1679/assessment.json": "d2757a86084cf7e847bf82ce235b601b85bd4726dcbc3eb5389a3005186708a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_wire_units_1678/install/bin/magic": "ffbeb8dca9475e52cb14fdabe3696a067b95f33bdef781a8518a61f8bf15b463",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_wire_units_1678/install/lib/magic/tcl/tclmagic.so": "3517af1cfca23ec5fb8cd4261ffcd6d5d2348577b33e27b9da014e1f98932d34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_full_RC_1671/IntegerPLL_400MHz_KeeperFlatC.ext": "8ce8a459945ca181b69ee3a5cf47f94caedf63d7093a0b7fb5970616e0a97a78",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_full_RC_1671/IntegerPLL_400MHz_KeeperFlatC.res.ext": "682b45122eda0a587b8e7a65a0dfe6aa06971e428e0ce13743f55d7afc35ca75",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_completed_RC_reexport_1680/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_completed_RC_reexport_1680/run.tcl": "ec9eaa9674d914db411f03604277d28a85685549e14417a8e577874dccffb6c1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/reexport_completed_RC_1680.py": "9d16e914bf9e5ea0e8728f36f4e3e946d2db98de822133a40885003fec3f16e1"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_completed_RC_reexport_1680/after.spice": "d2658d781ac3acf6a16f2377b71f6ed4ffea109048ac7954dc18fc6ee40e1296",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_completed_RC_reexport_1680/native.log": "be40e8d23212167bb84dd7e93ec3c79078400e5856da6fa2d9dc4388ff290454"
+  },
+  "native_process_completed": true,
+  "geometry_extraction_invoked": false,
+  "full_export_audited": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}
