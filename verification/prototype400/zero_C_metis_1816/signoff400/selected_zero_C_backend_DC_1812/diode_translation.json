@@ -1,0 +1,21 @@
+{
+  "geometry_template_conversions": [
+    {
+      "instance": "Xdevice",
+      "original": "Xdevice p0 p1 sky130_fd_pr__diode_pw2nd_05v5 perim=3.24e+06 area=6.417e+11",
+      "converted": "Xdevice p0 p1 sky130_fd_pr__diode_pw2nd_05v5 area=0.6417 perim=3.24",
+      "physical_area_um2": "6417/10000",
+      "physical_perimeter_um": "81/25"
+    },
+    {
+      "instance": "Xdevice",
+      "original": "Xdevice p0 p1 sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11",
+      "converted": "Xdevice p0 p1 sky130_fd_pr__diode_pw2nd_05v5 area=0.4347 perim=2.64",
+      "physical_area_um2": "4347/10000",
+      "physical_perimeter_um": "66/25"
+    }
+  ],
+  "diode_templates": 2,
+  "literal_RC_cards_exactly_preserved": 1939789,
+  "temperature_C": 27
+}

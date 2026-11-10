@@ -3883,3 +3883,19 @@ is under zero_C_full_matrix_1814; exact binary arrays remain build artifacts
 with hashes in the capture receipt. The live1812 DC worker is CPU-active
 at retention time; no completed DC solution or backend qualification is
 claimed from a nonsingular-looking sparsity pattern alone.
+
+
+### Repaired-matrix ordering trial (1815–1816)
+
+Baseline DC1812 reached its1800-second cap without a qualified solution;
+the owned worker exited and its untouched log/terminal receipts are retained
+under zero_C_metis_1816. This does not contradict the independently completed
+1814 proof that the empty equations are gone. Control1816 runs the zero-C
+native MNA/analytical-DC checks with METIS1790: participating matrix entries
+are exactly preserved, only the placeholder unknown disappears, and the
+analytical DC result passes. Runner1815 combines the full zero-C admission
+checks with the verified ordering lineage and1816 control, holding model,
+stimulus,64-GiB cap and1800-second limit fixed. This tests METIS on the
+repaired matrix; the earlier1793 ordering trial still contained empty rows.
+At retention time1815 is live. No completed full DC solution or backend/model
+qualification is claimed; no identical automatic retry was performed.
