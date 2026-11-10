@@ -1,0 +1,21 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_corrected_full_RC_1671/assessment.json": "30cdc0e6361916be92fc10335a7a0ade030bb0655828a4ca8930fbb504095941",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_RC_coverage_v2.py": "6a233a81ebcd8cb2c1ff3cc08386c55c4518ee0c5eb8a00f807030087ef1dd02"
+  },
+  "required_device_and_port_networks": 19696,
+  "successful_native_network_markers": 19696,
+  "missing_required_networks": [],
+  "duplicate_physical_network_markers": [],
+  "device_and_port_output_coverage_verified": true,
+  "gate_only_networks": 0,
+  "gate_only_without_output": [],
+  "bulk_only_networks": 0,
+  "bulk_only_without_output": [],
+  "capacitance_only_networks": 780557,
+  "capacitance_only_without_output_count": 780557,
+  "all_native_eligible_conductor_coverage_verified": false,
+  "scope": "device source/drain/passive terminals and formal ports; other populations classified independently",
+  "failed_predecessor_electrical_qualification_unchanged": true,
+  "RC_export_fixed": false
+}

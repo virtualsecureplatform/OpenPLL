@@ -3316,3 +3316,37 @@ wire value, full linear-C passivity and absence of reused names at distinct
 coordinates. Source/model controls remain separate from full-layout
 qualification. Evidence, original compressed logs and failure receipts
 are retained under single_RC_points_1707. No release tool or PDK is replaced.
+
+### Indexed port population and fresh full-layout rerun (1708–1719)
+
+Candidate1708 indexes original PORTNODE records once per EXT read and visits
+that fixed population plus the current physical reference anchor. Anonymous
+label processing does not create new global port records. This replaces a
+full growing-node-table scan per extracted conductor; legacy mode retains
+its original scan. Native reader resets the index for each new input.
+
+Controls1709/1710 compare the indexed engine with the already repaired
+direct-scan engine. Independent assessment1713 passes all four rotations
+and both analytical wire cases. Native resistance records match exactly.
+SPICE comparison preserves ordered formal ports, each physical device's
+parameters/connections and every endpoint/value/multiplicity for C and R;
+serialization element ordinals are not electrical identity. Every indexed
+case also passes charge, physical connection, wire-value, passivity and
+unique-physical-name checks. This establishes controlled equivalence, not
+a measured full-layout speedup. Evidence is under indexed_RC_points_1713.
+
+Fresh producer1714 runs all native eligible conductors from the same checked
+GDS and original EXT, with the corrected importer, naming, port flags and
+index. It does not reuse the predecessor's collapsed wire graph. Monitor1715
+stops only the verified owned worker on geometry failures. Queue1717 runs
+completed-only full audit1716 once. That audit also rejects distinct physical
+points sharing a name, verifies each original device and branch, and counts
+the exact known GDS boundary warnings separately from other native errors.
+Native-model preparer1718 requires every full audit check before preparation.
+
+Coverage v2 resolves original EXT equivalences explicitly. On the completed
+failed predecessor it accounts for all 19,696 markers without duplicates,
+including the VGND/substrate-owner alias. This does not alter that export's
+electrical failure. Four tests reject unproven aliases, duplicate output and
+malformed equivalences, while accepting the recorded original conductor
+alias. The new full run remains unqualified until actual output passes.
