@@ -1,0 +1,90 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_full_R_1599/assessment.json": "9936e58bd38995e185adafc6aa4ea495f73602e637e01c87e1fc6df27e0d6841",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/diagnose_full_R_provenance_1609.py": "c8d3e58ffcb1f76d1fbd607c5f59a8fbb80af7e20fcebde2cc1b2968871642f5"
+  },
+  "ordered_sequence_diagnostic_only": true,
+  "counts": {
+    "model_or_parameter_changes": 2
+  },
+  "provenance_components": 14344,
+  "conflicting_native_owners": [],
+  "examples": [
+    {
+      "parameter_change_index": 20,
+      "reference": "('sky130_fd_pr__pfet_01v8', ('vpwr', 'vgnd', 'vpwr', 'vpwr'), {'ad': Fraction(11, 40), 'pd': Fraction(51, 20), 'as': Fraction(119277, 20), 'ps': Fraction(191761, 4), 'w': Fraction(1, 1), 'l': Fraction(1, 1)})",
+      "candidate": "('sky130_fd_pr__pfet_01v8', ('vpwr.t1031', 'vgnd.t53846', 'vpwr.t1030', 'vpwr.t1025'), {'ad': Fraction(11, 40), 'pd': Fraction(51, 20), 'as': Fraction(0, 1), 'ps': Fraction(0, 1), 'w': Fraction(1, 1), 'l': Fraction(1, 1)})"
+    },
+    {
+      "parameter_change_index": 60,
+      "reference": "('sky130_fd_pr__nfet_01v8', ('vgnd', 'vpwr', 'vgnd', 'vgnd'), {'ad': Fraction(143, 1000), 'pd': Fraction(81, 50), 'as': Fraction(88439, 25), 'ps': Fraction(3208017, 100), 'w': Fraction(11, 20), 'l': Fraction(473, 100)})",
+      "candidate": "('sky130_fd_pr__nfet_01v8', ('vgnd.t294', 'vpwr.t56017', 'vgnd.t293', 'vgnd.t292'), {'ad': Fraction(143, 1000), 'pd': Fraction(81, 50), 'as': Fraction(0, 1), 'ps': Fraction(0, 1), 'w': Fraction(11, 20), 'l': Fraction(473, 100)})"
+    }
+  ],
+  "negative_C_count": 413,
+  "negative_C_examples": [
+    {
+      "a": "a_65284_57370.t0",
+      "b": "vgnd",
+      "value_F": "-33/3125000000000000000"
+    },
+    {
+      "a": "a_71428_54706.t0",
+      "b": "vgnd",
+      "value_F": "-1001/100000000000000000000"
+    },
+    {
+      "a": "a_68932_48968.t0",
+      "b": "vgnd",
+      "value_F": "-1097/100000000000000000000"
+    },
+    {
+      "a": "a_67396_46714.t0",
+      "b": "vgnd",
+      "value_F": "-207/20000000000000000000"
+    },
+    {
+      "a": "a_68356_46714.t0",
+      "b": "vgnd",
+      "value_F": "-1069/100000000000000000000"
+    },
+    {
+      "a": "a_69220_45382.t0",
+      "b": "vgnd",
+      "value_F": "-1017/100000000000000000000"
+    },
+    {
+      "a": "a_67780_44972.t1",
+      "b": "vgnd",
+      "value_F": "-549/50000000000000000000"
+    },
+    {
+      "a": "a_73348_44972.t1",
+      "b": "vgnd",
+      "value_F": "-119/12500000000000000000"
+    },
+    {
+      "a": "a_66052_40976.t0",
+      "b": "vgnd",
+      "value_F": "-1049/100000000000000000000"
+    },
+    {
+      "a": "vpwr.t35855",
+      "b": "vgnd",
+      "value_F": "-389/100000000000000000000"
+    },
+    {
+      "a": "vpwr.t35887",
+      "b": "vgnd",
+      "value_F": "-389/100000000000000000000"
+    },
+    {
+      "a": "vpwr.t35841",
+      "b": "vgnd",
+      "value_F": "-389/100000000000000000000"
+    }
+  ],
+  "export_modified": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

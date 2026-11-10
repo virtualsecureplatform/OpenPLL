@@ -2943,3 +2943,13 @@ ownership, reports conflicting owners and remaining terminal/parameter differenc
 and preserves all original files. It is diagnostic only: ownership used for
 contraction comparison does not itself reconnect a physical export or validate
 negative capacitance placement.
+
+Native provenance diagnosis 1609 completes: 14,344 contracted components obtain
+unambiguous killed-node ownership, with zero conflicting owners and zero remaining
+terminal mismatches under that native ownership mapping. This resolves the large
+terminal-name discrepancy as an audit mapping issue, not evidence that physical
+resistors can be omitted or nodes arbitrarily joined. Two true parameter changes
+remain: X20 PFET and X60 NFET lose their source area/perimeter (AS/PS become zero).
+Charge diagnosis 1610 is running with the provenance mapping and separately
+reports retained killed-name orphans, exact C differences and negative C examples.
+No old export, intrinsic parameters or capacitance values are overwritten.
