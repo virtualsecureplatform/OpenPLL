@@ -1,0 +1,11 @@
+{
+  "native_identity": {
+    "pid": 3088704,
+    "birth": "155409602",
+    "process_group": 3088704
+  },
+  "user_cancellation": false,
+  "reason": "First linear solve isolated; replace with validated adapter/symbolic/numeric tracing.",
+  "native_log_sha256_at_stop": "3f2b3bed89dd0c2c14631656a0bb0ba6e23f2db7628ff65dab7b9cdc27c2c768",
+  "partial_DC_qualified": false
+}

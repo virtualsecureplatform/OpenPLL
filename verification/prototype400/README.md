@@ -3740,3 +3740,20 @@ pass. Build/control and stopped1782 evidence is retained under
 RC_step_trace_1784. Runner1785 verifies the full tracer lineage and launches
 one bounded full-model diagnostic. At retention time it is live; no full
 DC point, model qualification or release readiness is claimed.
+
+
+### First linear solve isolated; adapter phases traced (1786–1788)
+
+Full trace1785 returned prediction, source update, RHS loading and Jacobian
+loading, then entered the first linear solve. The owned diagnostic was
+stopped with a receipt to replace it with finer tracing; partial DC output
+was not qualified. Build1786 changes only the linear-solver factory object
+by adding log boundaries in its included adapter headers. Matrix transform,
+root-matrix construction, value gathering/preparation, symbolic ordering
+and numeric factorization retain their original calls. Its baseline relink
+reproduces1783 exactly. Control1787 compares a6000-section signed-C RC
+ladder with exact output equality, analytical divider agreement and all six
+balanced linear-phase boundary types. Evidence and the actual generated
+headers are retained under RC_linear_trace_1787. Runner1788 verifies the
+complete lineage before one full diagnostic with unchanged resource limits.
+At retention time1788 is live; its linear phase and DC result remain pending.
