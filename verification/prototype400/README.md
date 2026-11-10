@@ -3199,3 +3199,25 @@ checks full-reference charge fidelity, physical device parameters, ports,
 geometry diagnostics and the actual final C operator. Conductor coverage and
 per-wire resistance values remain separate, explicitly unpassed gates.
 No script declares RC export fixed or PLL release ready on these controls.
+
+### Independent resistance values and endpoint coverage (1684–1688)
+
+The corrected-reader crop conversion1684 preserves all 656 native wire
+branches within the declared float32 relative representation bound, with
+no absolute error floor. Four controls reject the obsolete rounding bias,
+changed zero and missing parallel branches, while accepting correct units.
+Full-network completed-only audit1685 applies the same independent check.
+
+Coverage control1686 finds all six required device/port networks and eight
+successful output markers with no duplicates. It separately reports six
+gate-only conductors, two bulk-only conductors (both output), and 1,171
+capacitance-only conductors. Four tests cover missing active networks,
+port aliases, duplicate alias output and classification. Native all mode
+still requires a usable driver; these categories do not establish an
+exhaustive native eligibility proof by themselves. Full completed-network
+coverage audit1687 keeps that broader qualification explicitly false.
+
+Queue1688 follows the verified live conversion/electrical controller1683
+and runs both remaining gates once. It neither retries geometry nor
+qualifies a network automatically. Control evidence is retained under
+RC_remaining_gates_1688. Full-layout extraction remains in progress.

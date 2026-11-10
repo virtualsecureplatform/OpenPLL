@@ -1,0 +1,22 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_crossplane_area_crop_1662/assessment.json": "405c4916f7cbf3c64af365eb9f2012108e989c85e9c4ef8734250361d64282bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_crossplane_area_crop_1662/RC_Area_Crop.ext": "d4a70b98643a6ef059741b6f67b67236735cc507c0d5ea0badae201f47748690",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_crossplane_area_crop_1662/RC_Area_Crop.res.ext": "19a7874fabf81c642231d882589f18403356dea3775a117d86391cebf65c54cc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_wire_units_1678/assessment.json": "621170e461806ea01ff2e81b837bed339db72eabce5a01275797395ccd210a2a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_crop_wire_values_1684/minimal.magicrc": "41ef6997bf59dcb7503f7dbe7273ee27778dc1c7d15a6968a7c520a19f7e5bd6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_crop_wire_values_1684/run.tcl": "b9ae039fc3fe3f5ebdc16177acdf5eb53dddda8f350513a3afb3fd08e8261c15",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_wire_values.py": "5c7246ae9e6a5557986e8885017ba89459e4917465bed9e0fe10f70e911a8d1a"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_crop_wire_values_1684/after.spice": "d5a46dfafb621f2129cf166b43e1df4a67bc3dd3333f5fdbb1ccb7b8969b8b98",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_crop_wire_values_1684/native.log": "550f551e6ca87ea75c0f373b408251128f9c4b2b90dc1db31510cb3b869cee2b"
+  },
+  "per_native_wire_resistance_values_verified": true,
+  "native_wire_branches": 656,
+  "matched_branches": 656,
+  "extra_ideal_alias_cards": 0,
+  "absolute_error_floor_used": false,
+  "failures": [],
+  "RC_export_fixed": false
+}
