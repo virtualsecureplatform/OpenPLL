@@ -1,0 +1,274 @@
+{
+  "build/signoff400/selected_ground_copy_driver_1728/native.log": {
+    "sha256": "b3ddefb32ed3d17ede8a326410f1149708cbdce68ec7be48716022eccff1692b",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_ground_copy_driver_1728/native.log.gz"
+  },
+  "build/signoff400/selected_ground_copy_driver_1728/assessment.json": {
+    "sha256": "f698e597e33f5169086a98b335eb3303735c1da1e6633553c29a20560d483ffd",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_ground_copy_driver_1728/assessment.json"
+  },
+  "build/signoff400/selected_ground_copy_driver_1728/status.json": {
+    "sha256": "f6a4c3822263c9eef006c99dfcc538eb948da86779ad75bb8939d7e73d464297",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_ground_copy_driver_1728/status.json"
+  },
+  "build/signoff400/selected_ground_copy_driver_1728/run.tcl": {
+    "sha256": "da73cb1cd2a6894424b120e3e1b45610e27f8c66e1b77bb94b1053c829fabe41",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_ground_copy_driver_1728/run.tcl"
+  },
+  "build/signoff400/selected_ground_copy_driver_1728/inputs.json": {
+    "sha256": "4cd8848ece5197f7e3e7132e31cc6bea31ede96a3df63a980bb2482e0c373551",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_ground_copy_driver_1728/inputs.json"
+  },
+  "build/signoff400/selected_ground_copy_original_1732/inputs.json": {
+    "sha256": "0f37dd4c805d79f1623e389236a945ef1f396603839ebbfd1861f3ddd3cc2aa3",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_ground_copy_original_1732/inputs.json"
+  },
+  "build/signoff400/selected_ground_copy_original_1732/assessment.json": {
+    "sha256": "755c14337b37c02fec8320e75b7866626d2243c6351c9fd21ad64135928c8b0c",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_ground_copy_original_1732/assessment.json"
+  },
+  "build/signoff400/selected_ground_copy_original_1732/run.tcl": {
+    "sha256": "3b2d03a17ae0faef223bd0d1a165f94f7c8bd740fa8984e5ea995e31e4549bd2",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_ground_copy_original_1732/run.tcl"
+  },
+  "build/signoff400/selected_ground_copy_original_1732/native.log": {
+    "sha256": "7c330d87d81b830213e983335272b3f9b73d53a01c4d190a41c69e3880de58ac",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_ground_copy_original_1732/native.log.gz"
+  },
+  "build/signoff400/selected_ground_copy_original_1732/status.json": {
+    "sha256": "f6a4c3822263c9eef006c99dfcc538eb948da86779ad75bb8939d7e73d464297",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_ground_copy_original_1732/status.json"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_1742/RotatedCrop.res.ext": {
+    "sha256": "4b522228efdb5714babf2fb921df3eabf612fe62c87d49ce834b93974212f112",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_1742/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_1742/inputs.json": {
+    "sha256": "0cffffc749c4c160cd6df6aa47f764bfcf070c51f8e7e9dbdc641efc776c6c41",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_1742/inputs.json"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_1742/RotatedCrop.ext": {
+    "sha256": "d7e69d44ffde268ea39bdd76b4c85fead44937684afeee76cfb2814657ebcb46",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_1742/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_1742/run.tcl": {
+    "sha256": "c0750a7de328154b155b3d2a78e4386297494d3ed5230d1d907853333b5e49c8",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_1742/run.tcl"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_1742/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_1742/minimal.magicrc"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_1742/native_completion.json": {
+    "sha256": "fa7c447d66bbddcc6d9f53c4e5ab73c1a2fd0f856bb653248d913fa7b02a0071",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_1742/native_completion.json"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_1742/assessment.json": {
+    "sha256": "5f283521a2cdfa6192fefe44320101436169b7ce4bf6a51f2edb960dc52082b8",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_1742/assessment.json"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_1742/status.json": {
+    "sha256": "72738a09d2e3fabdd3af0db41f7cc49c5242f17eee45010358554b5fc3050279",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_1742/status.json"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_1742/before.spice": {
+    "sha256": "5408d35201a41338e6eccdedc921dbbbf4db85baf2ba264f708c1fea9d2ecb70",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_1742/before.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_1742/after.spice": {
+    "sha256": "f8624c930695f652b983c96b0282c17dd5ae4d0414284b83109bd9b6af422f87",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_1742/after.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_1742/native.log": {
+    "sha256": "33fcc083d1af0724663c5f011dc9afa998558bf8076f17485d8a79581518c0f6",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_1742/native.log.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_stress_1743/assessment.json": {
+    "sha256": "87eaa62326e4d75e7b98c52ec67731005ffac779f91c721693ae5404a23b05bf",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_stress_1743/assessment.json"
+  },
+  "build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/minimal.magicrc": {
+    "sha256": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/minimal.magicrc"
+  },
+  "build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/PortStress.ext": {
+    "sha256": "922707a3cafb0babfbc3cdb64c4fb464b1be42c5483c4510ddda2f2d8e859273",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/PortStress.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/native.log": {
+    "sha256": "f1194d975964eb19f57554a172df2ec7864c544b1885910445acc08e17db20e7",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/native.log.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/PortStress.res.ext": {
+    "sha256": "5893e5d7e70f71ed3d2b4ba59d134220465e300f5ddc6449f86adc6c24c8c5c4",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/PortStress.res.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/after.spice": {
+    "sha256": "832510c9ac0addc78a143e91db8025aff9a72624fa6cba675b3a13ad44cd9c1c",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/after.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/run.tcl": {
+    "sha256": "4775d3f8230769fce941226d81bc360d796dcbb1cb1aba12a4c3bc1475d634e9",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/run.tcl"
+  },
+  "build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/before.spice": {
+    "sha256": "5062c522b2f0f56e502e9e519bb6dc12827b0cc03bd4dcd5b3a55c3980bd0d5f",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/before.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/assessment.json": {
+    "sha256": "50f3df0345b4eb7907055b995d16a5528c4470a73eb0dae342cb01d529b38eb8",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/assessment.json"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotate.py": {
+    "sha256": "0d9461dd6782065b57bcf4e02cf26f17d38f75b02f9aaca2d03ef859a675ab14",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotate.py"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotate.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotate.log.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/status.json": {
+    "sha256": "2fad4d9f07020612291c3de46af135ff21e10ddd2909a7f9731b340b4792a1ce",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/status.json"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/before.spice": {
+    "sha256": "3d61c46a9b29b46b0f7917f0b7676a5546bddcb4056e975c51b5a784769cd962",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/before.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/RotatedCrop.ext": {
+    "sha256": "5dcfbc86d8b242e7ada46ca1b9f56cba370dbc1b60c26ca67f33301392eb684f",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/RotatedCrop.res.ext": {
+    "sha256": "a2adc50912d1d47682adf0498b802a894544806ac0ceccceaba93cdb4a41dde3",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/run.tcl": {
+    "sha256": "65736982df1d922f0e7140a399676ed94de03976c6059864ab819c17d6ef5c7e",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/run.tcl"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/native.log": {
+    "sha256": "577efe7bb56263a1fe082b7d32f3b9f2706fb4534686ec5d7dfadcbc6d65704b",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/native.log.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/minimal.magicrc"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/after.spice": {
+    "sha256": "521438909204b810f99ff0037e93eff95891196a5c88dacaf630ba0b2b52f10e",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation1_fixed1/after.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/minimal.magicrc"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/RotatedCrop.ext": {
+    "sha256": "236670cf78c4a599fc31a37940b55e6a6d0d8609ff198d7ddb002ec97689a9d0",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/run.tcl": {
+    "sha256": "d1e92766309d5e6db502b66ffa0429ade3acb3435ab51825731c4c5379fb1f75",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/run.tcl"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/native.log": {
+    "sha256": "132508f0dc2c5a53d2bcafba47ee8bdc2a5b94e20a773d6bb5f47c077fc6e7a3",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/native.log.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/before.spice": {
+    "sha256": "7faf6a8b9643015c9b26443b78d48f760f5c6d9f3975e5b745cee421929b3eda",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/before.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/RotatedCrop.res.ext": {
+    "sha256": "3988c3575c12c9a597ddd5bed449250fa9bdff4a48bc57133f873923f1324659",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/after.spice": {
+    "sha256": "fd45cce37da3cd3c0cfef062b597f18356b5537d5da9ea7be00e9e6ca757e14d",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation3_fixed1/after.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/RotatedCrop.ext": {
+    "sha256": "2e3492871772ec512b11a65310de562bdd7cd136598161be34d6884590848ec0",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/before.spice": {
+    "sha256": "329aa428a2d253e69cbe9cfbc0c0920119c847080dca2e45d56b27b2a9efcd3e",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/before.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/after.spice": {
+    "sha256": "11583ec3904c84364b77b16204b26165b9dd36c1b5388547963f4a1a1a1a8bd8",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/after.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/minimal.magicrc"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/native.log": {
+    "sha256": "4c6942943c9450d74e13c013f447c01b62ae9c3a382f2a312cf7387d872c90de",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/native.log.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/RotatedCrop.res.ext": {
+    "sha256": "b152f466d6598f5244fc947d5d4de00d4ed4c3519fe87c1af7fde7d6d321d3cb",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/run.tcl": {
+    "sha256": "bb35d2d89513836faf6f6fd9dd9cdd5198712528f7e07fd36ee65df609bd6d65",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation0_fixed1/run.tcl"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/run.tcl": {
+    "sha256": "42cdf1aa96b1e8645f1af2e5d422c0cda9279bff827bf2071ddb6ec13675b869",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/run.tcl"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/after.spice": {
+    "sha256": "91c6801dab89552e8e07572968c884dae7ca31d5bdc795aa66f029136d01cba8",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/after.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/before.spice": {
+    "sha256": "be7eced91a1facd817f0ce82d4445d6711fc3a7e9d275e5e2a65c37c795b462a",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/before.spice.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/RotatedCrop.res.ext": {
+    "sha256": "082f46ad9d7a783b5b7dcf9dca4a63b77ff6da871c929a3e08dc00b2589f806c",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/minimal.magicrc"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/native.log": {
+    "sha256": "df90720235884c28c8941a694792440276c9f3b8c7b8b4d2a237cd07b8010089",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/native.log.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/RotatedCrop.ext": {
+    "sha256": "a46ae084131e4d4988b93e100cf80ded362a3b22e055a6ef1181d416f391ee86",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_controls_1744/rotation2_fixed1/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_rebuilt_ports_RC_assessment_1745/assessment.json": {
+    "sha256": "ba299af6890f9b359807bef5371200051d2db72bf49de49d10c3938ed66dfc67",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_rebuilt_ports_RC_assessment_1745/assessment.json"
+  },
+  "build/signoff400/selected_port_import_trace_1747/inputs.json": {
+    "sha256": "b8974046006907508e20c1f402ae7fefb2435326ec0cbe95f6bd9a899140a40d",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_port_import_trace_1747/inputs.json"
+  },
+  "build/signoff400/selected_port_import_trace_1747/run.tcl": {
+    "sha256": "50f2621522fdad594693e515372f47778459583ad4dca75641ed076839360fde",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_port_import_trace_1747/run.tcl"
+  },
+  "build/signoff400/selected_port_import_trace_1747/status.json": {
+    "sha256": "9ec4a7e7f49eac3e794a482d9f5a7dc8c60d993f585eab16b45e23739049089c",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_port_import_trace_1747/status.json"
+  },
+  "build/signoff400/selected_port_import_trace_1747/native.log": {
+    "sha256": "2cd751c4244c49658c94200cacd3fdfcd40b7336e22f74acda4ec7a3b833bee6",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_port_import_trace_1747/native.log.gz"
+  },
+  "build/signoff400/selected_port_import_trace_1747/assessment.json": {
+    "sha256": "b21e4028270fa112b923b346dfe1be20a3844db3dfb8e9574661cc4c6c0788a8",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_port_import_trace_1747/assessment.json"
+  },
+  "build/signoff400/selected_port_import_trace_1747/traced.spice": {
+    "sha256": "cc61e24346147b5d6ff7a28ba9a465bd3528521a31dfb1f13419397d418be632",
+    "retained": "verification/prototype400/port_import_diagnosis_1747/selected_port_import_trace_1747/traced.spice.gz"
+  }
+}

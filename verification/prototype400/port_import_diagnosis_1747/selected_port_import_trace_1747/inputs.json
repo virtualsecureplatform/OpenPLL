@@ -1,0 +1,16 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_rebuilt_ports_RC_1742/native_completion.json": "fa7c447d66bbddcc6d9f53c4e5ab73c1a2fd0f856bb653248d913fa7b02a0071",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_port_import_trace_1746/assessment.json": "2f8b7ed337ca55054385e1540d4a5396ee729465c40dbc4834da17b1257365f4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_port_import_trace_1746/install/bin/magic": "c1963a847433f2c415deb284111c0d504a114cc94284ca2d34e24dffe0d7793f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_port_import_trace_1746/install/lib/magic/tcl/tclmagic.so": "3fad17d8ebdcdae32ca49483f963d495e9f49597ea545dbb19bd7730817afe10",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_port_import_trace_1747/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_port_import_trace_1747/run.tcl": "50f2621522fdad594693e515372f47778459583ad4dca75641ed076839360fde",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_port_import_trace_1747.py": "aed1333899ebd00d7f4513a4bd9f77e490e79eee9b6e6ac7030c9634fadd2e6d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_port_import_trace_1747/RotatedCrop.ext": "d7e69d44ffde268ea39bdd76b4c85fead44937684afeee76cfb2814657ebcb46",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_port_import_trace_1747/RotatedCrop.res.ext": "4b522228efdb5714babf2fb921df3eabf612fe62c87d49ce834b93974212f112"
+  },
+  "R_extraction_invoked": false,
+  "completed_failed_port_case_reused_for_diagnosis_only": true
+}

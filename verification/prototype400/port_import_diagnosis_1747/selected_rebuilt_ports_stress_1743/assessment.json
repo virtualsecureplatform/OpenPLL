@@ -1,0 +1,73 @@
+{
+  "input_sha256": {
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_rebuilt_ports_stress_1743.py": "e680bdb81dcdfacfa30ccc6a907deb5c7d18d23706174a576b5b48694eb97774",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_rebuilt_ports_1741/assessment.json": "23aa7b3f49c3655b7524137e7aa0d373388c4f46d7f6717c196871f42ae8b0d4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_rebuilt_ports_1741/install/bin/magic": "e1a86ee7245fd93db604a14664b2a88dc72025097f0426e472ecf8857225e72c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_rebuilt_ports_1741/install/lib/magic/tcl/tclmagic.so": "0106aee4cfc912a532db581ae69e23ff1ede7a613a5110a5fd26d3ea920e75f3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/run.tcl": "4775d3f8230769fce941226d81bc360d796dcbb1cb1aba12a4c3bc1475d634e9"
+  },
+  "results": [
+    {
+      "engine": "magic_rebuilt_ports_1741",
+      "elapsed_s": 1.143772121053189,
+      "physical_ports": 65,
+      "ordered_ports_preserved": true,
+      "end_to_end_R_ohms_exact": "49750000000000001/10000000000000000",
+      "end_to_end_R_ohms": 4.9750000000000005,
+      "analytical_wire_R_preserved": true,
+      "duplicate_names_at_distinct_points": {},
+      "charge": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 3,
+        "exact_cap_contraction": false,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 1,
+        "C_failure_pairs": 0,
+        "differences": [
+          {
+            "nodes": [
+              "p0",
+              "sub"
+            ],
+            "reference_F_exact": "10887449999999999/2500000000000000000000000000000",
+            "candidate_F_exact": "13609312499999999/3125000000000000000000000000000",
+            "absolute_error_F_exact": "1/12500000000000000000000000000000",
+            "float64_bound_F_exact": "399206499999999967/586406201480487500000000000000000000000000000",
+            "within_bound": true
+          }
+        ],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      },
+      "wires": {
+        "per_native_wire_resistance_values_verified": true,
+        "native_wire_branches": 3,
+        "matched_branches": 3,
+        "extra_ideal_alias_cards": 1,
+        "absolute_error_floor_used": false,
+        "failures": []
+      }
+    }
+  ],
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/PortStress.ext": "922707a3cafb0babfbc3cdb64c4fb464b1be42c5483c4510ddda2f2d8e859273",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/native.log": "f1194d975964eb19f57554a172df2ec7864c544b1885910445acc08e17db20e7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/native.process.json": "93fae69adb57d693b16e9684d0211becc6436b7cb01c4d6f35d0cab728716f3b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/PortStress.res.ext": "5893e5d7e70f71ed3d2b4ba59d134220465e300f5ddc6449f86adc6c24c8c5c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/after.spice": "832510c9ac0addc78a143e91db8025aff9a72624fa6cba675b3a13ad44cd9c1c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/run.tcl": "4775d3f8230769fce941226d81bc360d796dcbb1cb1aba12a4c3bc1475d634e9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_rebuilt_ports_stress_1743/magic_rebuilt_ports_1741/before.spice": "5062c522b2f0f56e502e9e519bb6dc12827b0cc03bd4dcd5b3a55c3980bd0d5f"
+  },
+  "all_65_port_controls_pass": true,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

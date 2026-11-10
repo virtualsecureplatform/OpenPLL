@@ -3470,3 +3470,35 @@ that record's explicit port number/flags only in the opt-in rnode path.
 End-to-end control1742, the full 65-port/1,000-label analytical wire control
 and four rotations are pending. Full extraction remains held until the
 port-preservation repair and original-seed M5 copy checks succeed.
+
+
+### Completed M5 copies and actual port-import loss (1741–1749)
+
+Both corrected full-layout copy diagnostics complete with metal5 at the
+explicit driver: original-seed1732 takes1496.84 CPU seconds in copying;
+driver-seed1728 takes1631.01. The original substrate seed therefore reaches
+the M5 driver. There is no evidence requiring a changed copy seed or bridge.
+
+The first metadata repair1741 does not repair the failing alias1742. Its
+65-port/1,000-label analytical wire control1743 passes. Four rotations1744
+pass their own charge, physical-terminal, native-wire-value, passivity and
+unique-name checks, but strict native-record/baseline comparison1745 is
+false. Anonymous .t numbering and native graph records differ; electrical
+boundary equivalence has not been established, so that comparison is not
+reported as a pass. These observations remain distinct from port repair.
+
+Trace1747 reimports completed native output, without repeating extraction.
+It shows ALIAS_DRIVE initially assigned port0, then rnode lookup resolving
+to a record with port-1, despite two name records still existing. Native
+efBuildEquiv redirects hash keys to the canonical EFNodeName; the original
+explicit alias record retains its own port number in the owner's name list.
+The rnode splitter was using the redirected canonical record rather than
+matching the requested physical name. The killed-alias free path targeted
+by1741 is not the triggering path in this fixture.
+
+Candidate1748 instead resolves the exact requested original name record
+and restores that record's owner/hash entry before physical splitting. It
+does not include the ineffective1741 repair. End-to-end control1749 is
+pending. Completed copy receipts, failed metadata candidate and original
+reader traces are retained under port_import_diagnosis_1747. Full extraction
+remains held; no port or RC qualification is claimed from pending work.
