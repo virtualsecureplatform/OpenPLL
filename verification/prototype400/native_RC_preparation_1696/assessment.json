@@ -1,0 +1,23 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_crop_wire_values_1684/assessment.json": "7866b176e053e1301326a6f45bd0665a00ee43f8dc56c39e00bdcc8a412eb4d0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prepare_keeper_native_RC_1695.py": "d8bbfc9fe2759d7979775ba7512e0525e4f7a8a7bd69327946ed65c712900852"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_native_RC_preparation_control_1696/model.spice": "433caf41a07feab14af7e76d72df8d38000dc033f89e376e12d1c044f04ec693",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_native_RC_preparation_control_1696/nodes.json": "3cb83bd36307f5231ebf1b05e016c78996a568f996aa87eeca80d27fdb4339b9"
+  },
+  "source_counts": {
+    "X": 34,
+    "C": 1833,
+    "R": 656
+  },
+  "literal_RC_branches_preserved": 2489,
+  "literal_templates": {
+    "primitives": 34,
+    "literal_templates": 17
+  },
+  "poly_adapter_templates": 0,
+  "all_RC_endpoints_and_literal_values_preserved": true,
+  "full_RC_model_qualified": false
+}

@@ -3254,3 +3254,20 @@ user_cancellation=false receipt are now retained with the untouched compressed
 native log under native_RC_geometry_1682/stopped_predecessor_1652. Its partial
 native outputs were not accepted for qualification and it was not identically
 retried. Current full producer1671 uses the repaired geometry engine.
+
+### Literal native RC model preparation (1695–1696)
+
+The existing conductor-C-only native preparer rejects distributed resistors
+and negative capacitance. A separate RC preparer1695 requires all completed
+full-network review checks before use. It preserves every literal R/C value,
+including zeros and signed residuals, and verifies inverse-mapped endpoints
+after conductor renaming. It retains existing literal primitive factoring
+and the exact poly-resistor backend adapter. It does not certify a native
+transient or replace earlier C-only calibrations.
+
+Four tests cover signed/zero branch preservation, negative wire resistance,
+duplicate cards and case-colliding conductors. Native crop1696 preserves
+34 primitives, 656 wire resistors and 1,833 capacitors: all 2,489 RC branches
+retain values and endpoints. The full-layout entry refuses a missing final
+review before creating output. Evidence is under native_RC_preparation_1696.
+Full extraction and qualification remain pending.
