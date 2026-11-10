@@ -1,0 +1,16 @@
+{
+  "errors": [
+    "Error while reading cell \"RotatedCrop\" (byte position 124174): Warning:  Cell RotatedCrop boundary was redefined.",
+    "Error while reading cell \"RotatedCrop\" (byte position 124174): Warning:  Cell RotatedCrop boundary was redefined.",
+    "Error while reading cell \"RotatedCrop\" (byte position 124174): Warning:  Cell RotatedCrop boundary was redefined.",
+    "Error while reading cell \"RotatedCrop\" (byte position 124174): Warning:  Cell RotatedCrop boundary was redefined.",
+    "Error while reading cell \"RotatedCrop\" (byte position 124174): Warning:  Cell RotatedCrop boundary was redefined.",
+    "Error while reading cell \"RotatedCrop\" (byte position 124174): Warning:  Cell RotatedCrop boundary was redefined.",
+    "Error while reading cell \"RotatedCrop\" (byte position 124174): Warning:  Cell RotatedCrop boundary was redefined.",
+    "Error while reading cell \"RotatedCrop\" (byte position 124174): Warning:  Cell RotatedCrop boundary was redefined.",
+    "Error while reading cell \"RotatedCrop\" (byte position 124174): Warning:  Cell RotatedCrop boundary was redefined.",
+    "Error while reading cell \"RotatedCrop\" (byte position 124174): Warning:  Cell RotatedCrop boundary was redefined.",
+    "CIF file read error: Warning:  Cell RotatedCrop boundary was redefined."
+  ],
+  "partial_native_data_accepted": false
+}

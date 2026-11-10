@@ -3441,3 +3441,32 @@ bounds the cost of that completed native copy and confirms that the earlier
 CPU-active wait was finite work. Original completed receipt and losslessly
 compressed log are under ground_original_copy_1724. Corrected M5 observations
 1728/1732 are separate; full-export admission still requires1732 to succeed.
+
+
+### End-to-end alias RC exposes port loss (1739–1742)
+
+Control1739 extends the original-anchor alias fixture through resistance
+extraction and SPICE export. The old engine reproduces the missing-wire
+failure; the driver-type repair outputs one native network. Its first
+analysis stops because the new classifier incorrectly treats the exact
+known RotatedCrop GDS boundary warnings (including the CIF summary) as
+native extraction failures. Assessment1740 does not rerun extraction: it
+records recovery of normal native completion from the observed unique
+post-execute classifier exception, verifies both native workers are absent,
+and classifies only those exact boundary messages separately.
+
+The completed candidate preserves charge, all physical terminal ownership,
+every native wire value, C passivity and unique names, but fails formal-port
+preservation: ALIAS_DRIVE is present in native rnode output and absent from
+the final subcircuit header. This is an actual export failure. Producer1734
+was held before starting any native worker, and its monitor/audit queue
+stopped on that terminal receipt. No partial failed-baseline RC is accepted.
+Original observations, the recovery receipt and stop evidence are under
+alias_port_loss_1740.
+
+The native killed-alias rebuild path frees the original name record and
+initializes its replacement with port number -1. Candidate1741 preserves
+that record's explicit port number/flags only in the opt-in rnode path.
+End-to-end control1742, the full 65-port/1,000-label analytical wire control
+and four rotations are pending. Full extraction remains held until the
+port-preservation repair and original-seed M5 copy checks succeed.

@@ -1,0 +1,13 @@
+{
+  "stopped_UTC": "2026-11-10T15:46:47.569712+00:00",
+  "controller": {
+    "pid": 2989576,
+    "birth": "153417168"
+  },
+  "command": "/usr/bin/python3 verification/signoff400/export_drive_type_full_RC_1734.py ",
+  "reason": "completed end-to-end alias control1740 fails formal port preservation",
+  "user_cancellation": false,
+  "native_worker_started": false,
+  "partial_native_data_accepted": false,
+  "automatic_retry": false
+}

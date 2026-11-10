@@ -1,0 +1,70 @@
+{
+  "build/signoff400/selected_drive_alias_RC_assessment_1740/native_completion_recovery.json": {
+    "sha256": "2c9779c9271fe3a55d40c5d225def470689b4bcc731a743dbd822c1b90c1b828",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_assessment_1740/native_completion_recovery.json"
+  },
+  "build/signoff400/selected_drive_alias_RC_assessment_1740/assessment.json": {
+    "sha256": "5ffd661866861707681cb6c4350b33937dacc53a1ebce21b3b4b655be7cb3618",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_assessment_1740/assessment.json"
+  },
+  "build/signoff400/selected_drive_type_full_RC_1734/status.json": {
+    "sha256": "694871a277f659861c75d56159fa756ab2263930afcb2bc9beb8b9880700229e",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_type_full_RC_1734/status.json"
+  },
+  "build/signoff400/selected_drive_type_full_RC_1734/diagnostic_stop_receipt.json": {
+    "sha256": "cf17bbb1e09260451a51079932f9f265e836ec4f238e954b7c8d02ddb7a6d0cd",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_type_full_RC_1734/diagnostic_stop_receipt.json"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/native_failure.json": {
+    "sha256": "6bd286ff45752e40eab7a63daf6729aa65a5d656c9211e70ffd36c83f19e6d08",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/native_failure.json"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/status.json": {
+    "sha256": "070a23d2a2d31aed0de39111115b3d77108c975cbb0c48aaf347aef1eedf7456",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/status.json"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/magic_indexed_RC_points_1708/native.log": {
+    "sha256": "362214408d1edb40108dab8cd7c35cac2cb208ef434c9b0ad105d8a5496e12f0",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/magic_indexed_RC_points_1708/native.log.gz"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/magic_indexed_RC_points_1708/run.tcl": {
+    "sha256": "1d46d53f163c1404471873531acc384f12ee815e7f94e124097548c332fb6819",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/magic_indexed_RC_points_1708/run.tcl"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/magic_indexed_RC_points_1708/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/magic_indexed_RC_points_1708/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/magic_indexed_RC_points_1708/RotatedCrop.ext": {
+    "sha256": "d7e69d44ffde268ea39bdd76b4c85fead44937684afeee76cfb2814657ebcb46",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/magic_indexed_RC_points_1708/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/magic_drive_type_1726/native.log": {
+    "sha256": "e4b3a6ae611fed52101dc0f0b8a74eea45f6062a148179e5c44953cf59ca007f",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/magic_drive_type_1726/native.log.gz"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/magic_drive_type_1726/run.tcl": {
+    "sha256": "e17be29c617b6d5bb8cca0dd8c9f71ede9746edd6320a8276c8763790d689037",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/magic_drive_type_1726/run.tcl"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/magic_drive_type_1726/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/magic_drive_type_1726/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/magic_drive_type_1726/RotatedCrop.ext": {
+    "sha256": "d7e69d44ffde268ea39bdd76b4c85fead44937684afeee76cfb2814657ebcb46",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/magic_drive_type_1726/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/magic_drive_type_1726/before.spice": {
+    "sha256": "8fb2c590de42fc04ae88c31f623dc017114715ca2d29d819e474be1a567a406c",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/magic_drive_type_1726/before.spice.gz"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/magic_drive_type_1726/after.spice": {
+    "sha256": "6efc91cc7392e0358c670fb0c6bf3395edb0e8223276c07d5dfa94365375ddb8",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/magic_drive_type_1726/after.spice.gz"
+  },
+  "build/signoff400/selected_drive_alias_RC_1739/magic_drive_type_1726/RotatedCrop.res.ext": {
+    "sha256": "4b522228efdb5714babf2fb921df3eabf612fe62c87d49ce834b93974212f112",
+    "retained": "verification/prototype400/alias_port_loss_1740/selected_drive_alias_RC_1739/magic_drive_type_1726/RotatedCrop.res.ext.gz"
+  }
+}

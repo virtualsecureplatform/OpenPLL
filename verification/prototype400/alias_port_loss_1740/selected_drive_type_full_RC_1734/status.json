@@ -1,0 +1,6 @@
+{
+  "state": "stopped_without_qualification",
+  "reason": "completed end-to-end alias control1740 fails formal port preservation",
+  "native_worker_started": false,
+  "user_cancellation": false
+}

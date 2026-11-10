@@ -1,0 +1,4 @@
+{
+  "state": "stopped_without_qualification",
+  "reason": "ValueError('candidate native alias RC failure')"
+}
