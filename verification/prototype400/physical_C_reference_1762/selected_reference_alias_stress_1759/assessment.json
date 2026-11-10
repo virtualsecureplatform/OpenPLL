@@ -1,0 +1,73 @@
+{
+  "input_sha256": {
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_reference_alias_stress_1759.py": "ccaadf0306c1933b031c8bde9e15828e4ecd145fabc2e0a959d86f982fed5140",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_reference_alias_1757/assessment.json": "181e7d4f2aeb4627ef821a927c9b4ca95a88ea274cee6d911e3d5de8d8398e5b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_reference_alias_1757/install/bin/magic": "84c1ed21936bc46789275c377c59d508fd512187731971aeba86109ad84959d5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_reference_alias_1757/install/lib/magic/tcl/tclmagic.so": "0a4959ca9b665ba994efecd72919ac454f282d64f967abb06410af5f126bb286",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_stress_1759/magic_reference_alias_1757/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_stress_1759/magic_reference_alias_1757/run.tcl": "e906eb83bd408e1267a3d07121fbe18b8c9e605477717e8395d42f06e2138393"
+  },
+  "results": [
+    {
+      "engine": "magic_reference_alias_1757",
+      "elapsed_s": 1.4244773520622402,
+      "physical_ports": 65,
+      "ordered_ports_preserved": true,
+      "end_to_end_R_ohms_exact": "49750000000000001/10000000000000000",
+      "end_to_end_R_ohms": 4.9750000000000005,
+      "analytical_wire_R_preserved": true,
+      "duplicate_names_at_distinct_points": {},
+      "charge": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 3,
+        "exact_cap_contraction": false,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 1,
+        "C_failure_pairs": 0,
+        "differences": [
+          {
+            "nodes": [
+              "p0",
+              "sub"
+            ],
+            "reference_F_exact": "10887449999999999/2500000000000000000000000000000",
+            "candidate_F_exact": "13609312499999999/3125000000000000000000000000000",
+            "absolute_error_F_exact": "1/12500000000000000000000000000000",
+            "float64_bound_F_exact": "399206499999999967/586406201480487500000000000000000000000000000",
+            "within_bound": true
+          }
+        ],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      },
+      "wires": {
+        "per_native_wire_resistance_values_verified": true,
+        "native_wire_branches": 3,
+        "matched_branches": 3,
+        "extra_ideal_alias_cards": 1,
+        "absolute_error_floor_used": false,
+        "failures": []
+      }
+    }
+  ],
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_stress_1759/magic_reference_alias_1757/PortStress.ext": "16c9db40a912b5cb8962d86b5a85d46c81afea86bb8d5bdb5334bed25078ff45",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_stress_1759/magic_reference_alias_1757/run.tcl": "e906eb83bd408e1267a3d07121fbe18b8c9e605477717e8395d42f06e2138393",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_stress_1759/magic_reference_alias_1757/after.spice": "b5286802923eabbf6b64d2bd4be5533d1ea742a6678227eed6f7c3bb71bebf63",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_stress_1759/magic_reference_alias_1757/PortStress.res.ext": "5893e5d7e70f71ed3d2b4ba59d134220465e300f5ddc6449f86adc6c24c8c5c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_stress_1759/magic_reference_alias_1757/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_stress_1759/magic_reference_alias_1757/native.log": "2849c40d788fcfe1d0b577142aec2e09edf9f61b0319118bdd42f495a13307ac",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_stress_1759/magic_reference_alias_1757/native.process.json": "24decdabac8bc73867be71b00f135b9d188798f3cb2184649d58c1567a0d04e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_stress_1759/magic_reference_alias_1757/before.spice": "303b562ede9d29f9b94b62b60aee841459b9400c4605ee923e03421b1170a375"
+  },
+  "all_65_port_controls_pass": true,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

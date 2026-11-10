@@ -1,0 +1,583 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_RC_controls_1760/assessment.json": "91459742c7e963ac11b8735b9f4622c53bce3b382e0e1379ec545aecccc229ec",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_RC_1758/assessment.json": "882f05cec1353a391fd026ce786d201a6b221448ed9d6e82e1227eecc918d4ae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_separated_1761/assessment.json": "7e1fe318bc2661b2fb6fec9bdea19d6a3b6dbcd2e90cc4843a1828bc2c55df67",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_stress_1759/assessment.json": "6c98617f8c614f1a2a3b6722b8efa41cf8a27f51da5213b7b15b3fd93d2fc99e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_reference_alias_controls_1762.py": "266cc92dbd90388544b55c921c59132bcc0648796b0faff332da4d64583c354d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_roundoff.py": "d2f3d2bfc8a57e98682e46a5cf20d4ed179e0146bccf0c5c77164fc462d9c462",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_passivity_v2.py": "fc359e2c43ba8b74a98579196dcea22586367ba94b5dcff88a15a4589972bb7e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_physical_connections.py": "7986662b462434042b142f1cc68e4018208eebfa7353864e14d6a04201576cd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_wire_values.py": "5c7246ae9e6a5557986e8885017ba89459e4917465bed9e0fe10f70e911a8d1a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_device_identity.py": "58cbc928305caa5e67ac43d2f8a0044397f98c6423a01e380466071c804dcdd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_native_R_with_aliases.py": "010eb0f3a1ae4894e6f0b09fe8ae42b26fee296a7a31fed10ffaa83f396763c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "results": [
+    {
+      "rotation": 0,
+      "geometry": {
+        "out_of_bounds_breakpoints": 0,
+        "negative_raw_area_nodes": 0,
+        "empty_crossplane_overlaps": 0,
+        "empty_driver_overlaps": 0,
+        "invalid_area_budgets": 0,
+        "invalid_capacitance_budgets": 0
+      },
+      "charge": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 657,
+        "exact_cap_contraction": false,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 7,
+        "C_failure_pairs": 0,
+        "differences": [
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "a_21043_20776#"
+            ],
+            "reference_F_exact": "5383250000000001/5000000000000000000000000000000",
+            "candidate_F_exact": "5383250000000001119/5000000000000000000000000000000000",
+            "absolute_error_F_exact": "119/5000000000000000000000000000000000",
+            "float64_bound_F_exact": "183030500000000036023/703687441776555000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "a_21043_22108#"
+            ],
+            "reference_F_exact": "13333499999999999/10000000000000000000000000000000",
+            "candidate_F_exact": "6666749999999999803/5000000000000000000000000000000000",
+            "absolute_error_F_exact": "303/5000000000000000000000000000000000",
+            "float64_bound_F_exact": "40000499999999997909/140737488355313000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "a_21058_20215#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "candidate_F_exact": "18217200000000003719/5000000000000000000000000000000000",
+            "absolute_error_F_exact": "219/5000000000000000000000000000000000",
+            "float64_bound_F_exact": "36434400000000007219/10995116277755000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_106364_64364#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "candidate_F_exact": "138469999999999964123/10000000000000000000000000000000000",
+            "absolute_error_F_exact": "45877/10000000000000000000000000000000000",
+            "float64_bound_F_exact": "14123939999999998680273/703687441776130000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_106364_65359#"
+            ],
+            "reference_F_exact": "21808900000000003/1000000000000000000000000000000",
+            "candidate_F_exact": "21808900000000001159/1000000000000000000000000000000000",
+            "absolute_error_F_exact": "1841/1000000000000000000000000000000000",
+            "float64_bound_F_exact": "625188466666666726279/23456248059207000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_20978_20716#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "candidate_F_exact": "305009000000000033/100000000000000000000000000000000",
+            "absolute_error_F_exact": "13/100000000000000000000000000000000",
+            "float64_bound_F_exact": "203339333333333351/586406201480500000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_20978_22048#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "candidate_F_exact": "26165125000000003/12500000000000000000000000000000",
+            "absolute_error_F_exact": "3/50000000000000000000000000000000",
+            "float64_bound_F_exact": "209321000000000027/879609302220750000000000000000000000000000000",
+            "within_bound": true
+          }
+        ],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      },
+      "physical_connections": {
+        "physical_devices_checked": 34,
+        "per_physical_device_connections_verified": true,
+        "conductor_collisions": [],
+        "failures": []
+      },
+      "wire_values": {
+        "per_native_wire_resistance_values_verified": true,
+        "native_wire_branches": 657,
+        "matched_branches": 657,
+        "extra_ideal_alias_cards": 0,
+        "absolute_error_floor_used": false,
+        "failures": []
+      },
+      "passivity": {
+        "linear_C_PSD_certified": true,
+        "positive_pairs": 436,
+        "negative_pairs": 0,
+        "negative_path_load_upper_exact": "0",
+        "method": "nonnegative branch energy",
+        "capacitors_modified": false,
+        "positive_R_contracted": false
+      },
+      "duplicate_names_at_distinct_points": {},
+      "native_extraction_errors": []
+    },
+    {
+      "rotation": 90,
+      "geometry": {
+        "out_of_bounds_breakpoints": 0,
+        "negative_raw_area_nodes": 0,
+        "empty_crossplane_overlaps": 0,
+        "empty_driver_overlaps": 0,
+        "invalid_area_budgets": 0,
+        "invalid_capacitance_budgets": 0
+      },
+      "charge": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 689,
+        "exact_cap_contraction": false,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 7,
+        "C_failure_pairs": 0,
+        "differences": [
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "a_65100_21043#"
+            ],
+            "reference_F_exact": "13333199999999999/10000000000000000000000000000000",
+            "candidate_F_exact": "1333319999999999927/1000000000000000000000000000000000",
+            "absolute_error_F_exact": "27/1000000000000000000000000000000000",
+            "float64_bound_F_exact": "7999919999999999481/28147497671062600000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "a_65266_21098#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "candidate_F_exact": "36434400000000007791/10000000000000000000000000000000000",
+            "absolute_error_F_exact": "791/10000000000000000000000000000000000",
+            "float64_bound_F_exact": "4590734400000000931833/1407374883552650000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "a_65931_21111#"
+            ],
+            "reference_F_exact": "10774900000000001/10000000000000000000000000000000",
+            "candidate_F_exact": "2693725000000000219/2500000000000000000000000000000000",
+            "absolute_error_F_exact": "31/2500000000000000000000000000000000",
+            "float64_bound_F_exact": "5387450000000000469/21990232555517500000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_21701_106400#"
+            ],
+            "reference_F_exact": "21809099999999999/1000000000000000000000000000000",
+            "candidate_F_exact": "109045500000000057557/5000000000000000000000000000000000",
+            "absolute_error_F_exact": "62557/5000000000000000000000000000000000",
+            "float64_bound_F_exact": "1041990333333333584439/39093746765345000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_22789_106400#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "candidate_F_exact": "6923499999999997109/500000000000000000000000000000000",
+            "absolute_error_F_exact": "3391/500000000000000000000000000000000",
+            "float64_bound_F_exact": "1758568999999999696343/70368744177600500000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_65064_21062#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "candidate_F_exact": "2093210000000000143/1000000000000000000000000000000000",
+            "absolute_error_F_exact": "157/1000000000000000000000000000000000",
+            "float64_bound_F_exact": "1395473333333333481/5864062014805000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_66216_20978#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "candidate_F_exact": "305009000000000033/100000000000000000000000000000000",
+            "absolute_error_F_exact": "13/100000000000000000000000000000000",
+            "float64_bound_F_exact": "203339333333333351/586406201480500000000000000000000000000000000",
+            "within_bound": true
+          }
+        ],
+        "failures": [],
+        "negative_reference_C_cards": 1,
+        "negative_candidate_C_cards": 1,
+        "native_devices_and_C_conserved": true
+      },
+      "physical_connections": {
+        "physical_devices_checked": 34,
+        "per_physical_device_connections_verified": true,
+        "conductor_collisions": [],
+        "failures": []
+      },
+      "wire_values": {
+        "per_native_wire_resistance_values_verified": true,
+        "native_wire_branches": 689,
+        "matched_branches": 689,
+        "extra_ideal_alias_cards": 0,
+        "absolute_error_floor_used": false,
+        "failures": []
+      },
+      "passivity": {
+        "linear_C_PSD_certified": true,
+        "positive_pairs": 458,
+        "negative_pairs": 1,
+        "positive_components": 1,
+        "negative_edges_without_positive_path": [],
+        "negative_path_load_upper_exact": "900247536110942895/664613997892457936451903530140172288",
+        "method": "positive resistance-shortest spanning-forest support paths; weighted Cauchy inequality; upward dyadic bounds",
+        "examples": [
+          {
+            "nodes": [
+              "a_65100_21098#",
+              "m5_66336_20000#"
+            ],
+            "positive_path_edges": 3,
+            "load_upper_exact": "900247536110942895/664613997892457936451903530140172288"
+          }
+        ],
+        "capacitors_modified": false,
+        "positive_R_contracted": false
+      },
+      "duplicate_names_at_distinct_points": {},
+      "native_extraction_errors": []
+    },
+    {
+      "rotation": 180,
+      "geometry": {
+        "out_of_bounds_breakpoints": 0,
+        "negative_raw_area_nodes": 0,
+        "empty_crossplane_overlaps": 0,
+        "empty_driver_overlaps": 0,
+        "invalid_area_budgets": 0,
+        "invalid_capacitance_budgets": 0
+      },
+      "charge": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 647,
+        "exact_cap_contraction": false,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 7,
+        "C_failure_pairs": 0,
+        "differences": [
+          {
+            "nodes": [
+              "a_108332_65715#",
+              "a_20000_21737#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "candidate_F_exact": "7286880000000002177/2000000000000000000000000000000000",
+            "absolute_error_F_exact": "777/2000000000000000000000000000000000",
+            "float64_bound_F_exact": "14573760000000003577/4398046511102000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_108345_65100#",
+              "a_20000_21737#"
+            ],
+            "reference_F_exact": "13333499999999999/10000000000000000000000000000000",
+            "candidate_F_exact": "13333500000000000859/10000000000000000000000000000000000",
+            "absolute_error_F_exact": "1859/10000000000000000000000000000000000",
+            "float64_bound_F_exact": "80000999999999999577/281474976710626000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_108345_66276#",
+              "a_20000_21737#"
+            ],
+            "reference_F_exact": "5383250000000001/5000000000000000000000000000000",
+            "candidate_F_exact": "10766500000000001261/10000000000000000000000000000000000",
+            "absolute_error_F_exact": "739/10000000000000000000000000000000000",
+            "float64_bound_F_exact": "366061000000000055437/1407374883553110000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_107200_65100#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "candidate_F_exact": "2093210000000000239/1000000000000000000000000000000000",
+            "absolute_error_F_exact": "61/1000000000000000000000000000000000",
+            "float64_bound_F_exact": "1395473333333333513/5864062014805000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_107200_66216#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "candidate_F_exact": "305009000000000033/100000000000000000000000000000000",
+            "absolute_error_F_exact": "13/100000000000000000000000000000000",
+            "float64_bound_F_exact": "203339333333333351/586406201480500000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_19964_21727#"
+            ],
+            "reference_F_exact": "21808900000000003/1000000000000000000000000000000",
+            "candidate_F_exact": "2726112499999999909/125000000000000000000000000000000",
+            "absolute_error_F_exact": "233/62500000000000000000000000000000",
+            "float64_bound_F_exact": "19537139583333334351/733007751850218750000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_19964_23083#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "candidate_F_exact": "27694000000000007327/2000000000000000000000000000000000",
+            "absolute_error_F_exact": "5327/2000000000000000000000000000000000",
+            "float64_bound_F_exact": "2714012000000000457023/140737488355230000000000000000000000000000000000",
+            "within_bound": true
+          }
+        ],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      },
+      "physical_connections": {
+        "physical_devices_checked": 34,
+        "per_physical_device_connections_verified": true,
+        "conductor_collisions": [],
+        "failures": []
+      },
+      "wire_values": {
+        "per_native_wire_resistance_values_verified": true,
+        "native_wire_branches": 647,
+        "matched_branches": 647,
+        "extra_ideal_alias_cards": 0,
+        "absolute_error_floor_used": false,
+        "failures": []
+      },
+      "passivity": {
+        "linear_C_PSD_certified": true,
+        "positive_pairs": 432,
+        "negative_pairs": 0,
+        "negative_path_load_upper_exact": "0",
+        "method": "nonnegative branch energy",
+        "capacitors_modified": false,
+        "positive_R_contracted": false
+      },
+      "duplicate_names_at_distinct_points": {},
+      "native_extraction_errors": []
+    },
+    {
+      "rotation": 270,
+      "geometry": {
+        "out_of_bounds_breakpoints": 0,
+        "negative_raw_area_nodes": 0,
+        "empty_crossplane_overlaps": 0,
+        "empty_driver_overlaps": 0,
+        "invalid_area_budgets": 0,
+        "invalid_capacitance_budgets": 0
+      },
+      "charge": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 684,
+        "exact_cap_contraction": false,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 7,
+        "C_failure_pairs": 0,
+        "differences": [
+          {
+            "nodes": [
+              "a_20000_108402#",
+              "a_64549_20015#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "candidate_F_exact": "36434400000000006049/10000000000000000000000000000000000",
+            "absolute_error_F_exact": "951/10000000000000000000000000000000000",
+            "float64_bound_F_exact": "72868800000000013049/21990232555510000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_20431_108389#",
+              "a_64549_20015#"
+            ],
+            "reference_F_exact": "10774900000000001/10000000000000000000000000000000",
+            "candidate_F_exact": "5387450000000000441/5000000000000000000000000000000000",
+            "absolute_error_F_exact": "59/5000000000000000000000000000000000",
+            "float64_bound_F_exact": "10774900000000000941/43980465111035000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_21763_108389#",
+              "a_64549_20015#"
+            ],
+            "reference_F_exact": "13333199999999999/10000000000000000000000000000000",
+            "candidate_F_exact": "13333200000000000023/10000000000000000000000000000000000",
+            "absolute_error_F_exact": "1023/10000000000000000000000000000000000",
+            "float64_bound_F_exact": "186664799999999993161/703687441776570000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_20716_107200#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "candidate_F_exact": "305009000000000033/100000000000000000000000000000000",
+            "absolute_error_F_exact": "13/100000000000000000000000000000000",
+            "float64_bound_F_exact": "203339333333333351/586406201480500000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_22048_107200#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "candidate_F_exact": "26165125000000003/12500000000000000000000000000000",
+            "absolute_error_F_exact": "3/50000000000000000000000000000000",
+            "float64_bound_F_exact": "209321000000000027/879609302220750000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_64364_19964#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "candidate_F_exact": "138470000000000018487/10000000000000000000000000000000000",
+            "absolute_error_F_exact": "8487/10000000000000000000000000000000000",
+            "float64_bound_F_exact": "26863180000000002763239/1407374883552310000000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_65333_20000#"
+            ],
+            "reference_F_exact": "21809099999999999/1000000000000000000000000000000",
+            "candidate_F_exact": "54522749999999994507/2500000000000000000000000000000000",
+            "absolute_error_F_exact": "2993/2500000000000000000000000000000000",
+            "float64_bound_F_exact": "1853773499999999864119/70368744177621500000000000000000000000000000000",
+            "within_bound": true
+          }
+        ],
+        "failures": [],
+        "negative_reference_C_cards": 1,
+        "negative_candidate_C_cards": 1,
+        "native_devices_and_C_conserved": true
+      },
+      "physical_connections": {
+        "physical_devices_checked": 34,
+        "per_physical_device_connections_verified": true,
+        "conductor_collisions": [],
+        "failures": []
+      },
+      "wire_values": {
+        "per_native_wire_resistance_values_verified": true,
+        "native_wire_branches": 684,
+        "matched_branches": 684,
+        "extra_ideal_alias_cards": 0,
+        "absolute_error_floor_used": false,
+        "failures": []
+      },
+      "passivity": {
+        "linear_C_PSD_certified": true,
+        "positive_pairs": 427,
+        "negative_pairs": 1,
+        "positive_components": 1,
+        "negative_edges_without_positive_path": [],
+        "negative_path_load_upper_exact": "2700749175599890877/1329227995784915872903807060280344576",
+        "method": "positive resistance-shortest spanning-forest support paths; weighted Cauchy inequality; upward dyadic bounds",
+        "examples": [
+          {
+            "nodes": [
+              "a_22430_108402#",
+              "m5_20864_107200#"
+            ],
+            "positive_path_edges": 3,
+            "load_upper_exact": "2700749175599890877/1329227995784915872903807060280344576"
+          }
+        ],
+        "capacitors_modified": false,
+        "positive_R_contracted": false
+      },
+      "duplicate_names_at_distinct_points": {},
+      "native_extraction_errors": []
+    }
+  ],
+  "checks": {
+    "coincident_reference_alias_RC_verified": true,
+    "separated_reference_alias_RC_verified": true,
+    "original_C_attachment_before_wire_contraction_verified": true,
+    "full_65_port_1000_label_analytical_wire_verified": true,
+    "all_four_rotations_geometry_clean": true,
+    "all_four_rotations_charge_and_ports_preserved": true,
+    "all_four_rotations_physical_terminals_verified": true,
+    "every_native_wire_branch_preserved": true,
+    "all_four_rotations_C_PSD": true,
+    "all_named_physical_points_unique": true,
+    "no_native_conductor_or_reference_errors": true
+  },
+  "all_control_checks_pass": true,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

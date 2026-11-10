@@ -3525,3 +3525,41 @@ breakpoint/name merging. Assigning substrate flags to an arbitrary surviving
 port, or adding an unproven zero-ohm bridge, is not established as valid.
 The exact-name lookup is retained as a tested partial repair, not a qualified
 RC-export solution.
+
+
+### Physical C-reference preservation passes focused native controls (1757–1763)
+
+Candidate1757 carries the original named C breakpoint through native resistor
+node merges. When a port name wins on that same native node, the writer keeps
+the original reference alive and emits its proven equivalence to the surviving
+name. No coordinate guess or arbitrary missing-terminal bridge is used. The
+reader also records which original name was explicitly declared as substrate;
+when that exact name becomes a distinct rnode, its global-substrate role moves
+to that point. The surviving M5 port does not acquire that role by name alone.
+All new node/name fields are initialized in their native allocation paths.
+
+End-to-end control1758 now preserves the explicit port, all34 physical device
+connections, all321 native wire branches, charge and passivity. Its wire
+records and exported R/C endpoint/value graph match the completed predecessor;
+its formal-port list is repaired. Control1761 moves the explicit drive point
+2 native units in both axes. It verifies distinct native coordinates, finite
+resistance between drive and original reference, no default-zero C fallback,
+and C conservation directly before any wire contraction. The comparison view
+renames only the expected original reference; it changes no capacitor value.
+The changed driver fixture intentionally has a different resistance graph
+from the earlier coincident fixture; every emitted branch is checked against
+its own native source.
+
+The full65-port/1000-label control1759 retains ordered ports and4.975 ohms.
+Independent assessment1762 passes all four rotations: geometry, conserved
+charge/formal ports, all physical terminals, every native wire value, actual
+C passivity and unique named physical points. These are physical/electrical
+invariants; previous anonymous-record identity diagnostics remain recorded
+separately. Completed artifacts and unchanged compressed native logs are under
+physical_C_reference_1762.
+
+Source check1763 binds the successful original-seed M5 observation to the
+current engine:152 source/header files in the copy stage, including ResMain,
+ResRex, ResReadExt, database, tile, GDS/CIF, utility and extraction code, match
+exactly; the ResExtNode input structure also matches. No new copy-only run is
+claimed for1757. Its full current-binary export still requires qualification.

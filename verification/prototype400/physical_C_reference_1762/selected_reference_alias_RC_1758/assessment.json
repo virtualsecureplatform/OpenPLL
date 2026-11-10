@@ -1,0 +1,85 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_drive_alias_RC_assessment_1740/assessment.json": "5ffd661866861707681cb6c4350b33937dacc53a1ebce21b3b4b655be7cb3618",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_drive_alias_type_1731/assessment.json": "f04a1fac8f08ca7df542003f1b5ddfa126dde9254770e1fd6ba84d49fe288e8b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_drive_alias_type_1731/magic_copy_trace_1723/RotatedCrop.ext": "d7e69d44ffde268ea39bdd76b4c85fead44937684afeee76cfb2814657ebcb46",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_drive_type_RC_controls_1729/rotation0.gds": "0f8b1bf60ac30c0dd03d1d9657d4f6a16f6827c6f4d6d082956b856d49a8c003",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_reference_alias_1757/install/bin/magic": "84c1ed21936bc46789275c377c59d508fd512187731971aeba86109ad84959d5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_reference_alias_1757/install/lib/magic/tcl/tclmagic.so": "0a4959ca9b665ba994efecd72919ac454f282d64f967abb06410af5f126bb286",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_reference_alias_1757/assessment.json": "181e7d4f2aeb4627ef821a927c9b4ca95a88ea274cee6d911e3d5de8d8398e5b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_RC_1758/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_RC_1758/run.tcl": "ee1764ed6faa3b805b102ded0d9e6abbe2d42fe52ca4564bc7318976ef22aeb4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_RC_1758/RotatedCrop.ext": "d7e69d44ffde268ea39bdd76b4c85fead44937684afeee76cfb2814657ebcb46",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_reference_alias_RC_1758.py": "d9163d267ad3cb6cae6c8f0210d343355bd2eb475a177db91f5f9d2a8e422e34",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compiled_charge_v2.py": "9c73d39edb078a302e69a3f87f3d616d8948a43698b3b79b2d9549c4bd6749e5",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_roundoff.py": "d2f3d2bfc8a57e98682e46a5cf20d4ed179e0146bccf0c5c77164fc462d9c462",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_physical_connections.py": "7986662b462434042b142f1cc68e4018208eebfa7353864e14d6a04201576cd2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_wire_values.py": "5c7246ae9e6a5557986e8885017ba89459e4917465bed9e0fe10f70e911a8d1a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_passivity_v2.py": "fc359e2c43ba8b74a98579196dcea22586367ba94b5dcff88a15a4589972bb7e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_device_identity.py": "58cbc928305caa5e67ac43d2f8a0044397f98c6423a01e380466071c804dcdd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_native_R_with_aliases.py": "010eb0f3a1ae4894e6f0b09fe8ae42b26fee296a7a31fed10ffaa83f396763c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_spice_comments.py": "e74cb48389c34d13e9762f7980ed3e500fd57679bb02f8bf99fd270e886f49a8"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_RC_1758/before.spice": "5767e7a3d8069cb08698887195cb2fc588d4255cb8a00983a9db755509b4d85a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_RC_1758/after.spice": "f14378268b49d031f195566bb0fd4e86bf5738701fe80e4d03db4f86acac2969",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_RC_1758/RotatedCrop.res.ext": "104fe5208101cce214a801542b8d32c72dce39c9c27170d4dfbf4d120ec2096c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_RC_1758/native.log": "9c6dd7db3f3d8933e127f67d68dab9242db6978b9257dcf98566fa6aeeca257d"
+  },
+  "results": {
+    "charge": {
+      "primitive_models_and_parameters_match": true,
+      "formal_ports_match": true,
+      "unintended_component_shorts": [],
+      "positive_wire_R_cards": 321,
+      "exact_cap_contraction": true,
+      "float64_C_conservation": true,
+      "absolute_error_floor_used": false,
+      "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+      "C_difference_pairs": 0,
+      "C_failure_pairs": 0,
+      "differences": [],
+      "failures": [],
+      "negative_reference_C_cards": 0,
+      "negative_candidate_C_cards": 0,
+      "native_devices_and_C_conserved": true
+    },
+    "physical_connections": {
+      "physical_devices_checked": 34,
+      "per_physical_device_connections_verified": true,
+      "conductor_collisions": [],
+      "failures": []
+    },
+    "wire_values": {
+      "per_native_wire_resistance_values_verified": true,
+      "native_wire_branches": 321,
+      "matched_branches": 321,
+      "extra_ideal_alias_cards": 0,
+      "absolute_error_floor_used": false,
+      "failures": []
+    },
+    "passivity": {
+      "linear_C_PSD_certified": true,
+      "positive_pairs": 179,
+      "negative_pairs": 0,
+      "negative_path_load_upper_exact": "0",
+      "method": "nonnegative branch energy",
+      "capacitors_modified": false,
+      "positive_R_contracted": false
+    },
+    "duplicate_names_at_distinct_points": {},
+    "RC_branch_endpoints_values_unchanged": true,
+    "native_R_records_unchanged": true,
+    "proven_reference_alias_records": [
+      "equiv \"a_106400_64915#\" \"ALIAS_DRIVE\""
+    ],
+    "successful_native_network_markers": 1,
+    "port_rebuild_traces": []
+  },
+  "known_GDS_boundary_warnings": 11,
+  "explicit_alias_end_to_end_RC_control_pass": true,
+  "RC_export_fixed": false,
+  "release_ready": false
+}
