@@ -1,0 +1,58 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_precise_RC_caps_1638/install/bin/magic": "95ed7ee5efc9677bc0fcc090fd5b5e7043a0a47bca81c6a1dd0422c3e1606801",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_precise_RC_caps_1638/install/lib/magic/tcl/tclmagic.so": "5b6d3958d8c2f6d41cd1426c0241f825a2e94f47db43fbc6f433581581f16899",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/OpenPLL_Coupling_R_Probe.ext": "e000de4a685e886e5574016d1efaf0657b7dc9a3b0e62d1784e00fd545e7ac0a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_subatto_cap_export_1641/KilledCoupling.ext": "fb93585a8082fbb67bfca8e7a6b5756dbe64069a1c6342d0f0eeee0774b6cd4e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_subatto_cap_export_1641/KilledCoupling.res.ext": "b1872ffe0437fcc9c710a76738d1d5840cab4f535948555160da1fe1a1ba339e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_subatto_cap_export_1641/minimal.magicrc": "41ef6997bf59dcb7503f7dbe7273ee27778dc1c7d15a6968a7c520a19f7e5bd6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_subatto_cap_export_1641/run.tcl": "b03704771eb61ca3a8dda4b5f984a283868fa37e6cc870c8d99f215ed426beea",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_precise_subatto_cap_export_1641.py": "4478a7a8321473d8ca29be62b82ccd7604fdf91e991053ca10d3649fa632e3b2"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_subatto_cap_export_1641/before.spice": "e8fd5b70157e0d1e1b44ebd7d671987c43227520d4153e42b08a9211a8098fab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_subatto_cap_export_1641/after.spice": "7cf27302db904a618a5291e4abe27e69ca0f8f2412786b00cc6a033451553296",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_subatto_cap_export_1641/native.log": "4fb710b3f3ad76b85a4b1a24d391a7620e5dbf8fcd422946b2f27f9dfcd52a0f"
+  },
+  "synthetic_EXT_fixture": true,
+  "expected_coupling_F_exact": "1/4000000000000000000",
+  "normal_native_completion": true,
+  "before_capacitors": [
+    [
+      "b",
+      "a#",
+      "12500000000000001/50000000000000000000000000000000000"
+    ],
+    [
+      "a#",
+      "0",
+      "10000000000000001/10000000000000000000000000000000"
+    ],
+    [
+      "b",
+      "0",
+      "10000000000000001/5000000000000000000000000000000"
+    ]
+  ],
+  "after_capacitors": [
+    [
+      "b",
+      "0",
+      "10000000000000001/5000000000000000000000000000000"
+    ],
+    [
+      "a.n0",
+      "0",
+      "10000000000000001/10000000000000000000000000000000"
+    ],
+    [
+      "a.n1",
+      "0",
+      "0"
+    ]
+  ],
+  "wire_R_cards": 1,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

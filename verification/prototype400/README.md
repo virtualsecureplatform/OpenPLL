@@ -3072,3 +3072,27 @@ precision loss must be corrected in addition to rnode/float accumulation
 rounding before full-network qualification. Evidence is retained under
 `native_RC_caps_1635`. Whole-node junction fallback parameters and full coverage
 remain open; the release executable and existing calibrated models are unchanged.
+
+### Capacitance serialization and conserved native allocation (1638–1642)
+
+The isolated precision candidate uses double capacitance storage through the
+EXT reader and retains17 significant digits for explicit and substrate capacitor
+output in the opt-in native-C mode. Native rnode allocations are normalized to
+the original double ground-C budget; the largest positive weight receives the
+floating-point remainder. Negative/invalid area or capacitance budgets produce
+explicit native diagnostic errors instead of silently clamping them.
+
+The0.25aF native fixture now emits a nonzero2.5e-19F value. The cropped-layout
+reference restores243 nonzero capacitor pairs versus173 with the old formatter.
+Its28 primitives and14 positive R edges remain intact, with zero invalid
+breakpoints or negative raw areas. Numeric charge differences are at float64
+roundoff rather than the old five-decimal-fF truncation. Completed-only audit1642
+passes the crop and four alias/coupling controls against an explicit gamma_n
+operation bound with no absolute error floor. Four guard tests reject a lost
+sub-attofarad capacitor, duplicate ground C and a new charge pair, while admitting
+a float64 serialization residual. Exact comparisons remain reported separately.
+
+These receipts do not relabel older calibrated models or qualify a full network.
+The release binary remains unchanged. Negative-source coefficient/passivity,
+whole-node junction fallback and full layout coverage still require validation.
+Evidence and original compressed logs are under precise_RC_caps_1642.

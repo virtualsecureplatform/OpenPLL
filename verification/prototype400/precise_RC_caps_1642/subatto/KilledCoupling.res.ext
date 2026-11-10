@@ -1,0 +1,5 @@
+scale 1000 1 1e+06
+killnode "a#"
+rnode "a.n0" 0 1000 0 0 0
+rnode "a.n1" 0 0 100 0 0
+resist "a.n0" "a.n1" 1000

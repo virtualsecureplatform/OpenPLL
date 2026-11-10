@@ -1,0 +1,18 @@
+{
+  "native0_coupling0/native.log.gz": {
+    "original_sha256": "0fc17159c86612a5224d5ca92edd033d1562070b87dd0073ec5e161ff1ffa972",
+    "gzip_sha256": "0bf883f3401176ddaa555732066799599188a4621d8899319a67f75e887abef4"
+  },
+  "native1_coupling0/native.log.gz": {
+    "original_sha256": "0d6f4ae8c72200587e6ffb61482c8ac03777dfaf15a570d2a10ca53611ebe1c7",
+    "gzip_sha256": "9ef54b61ed3db800e955b4b6d2c9c3a1e07d89f8e2029e368c6e3a8b8b6b1583"
+  },
+  "native0_coupling1/native.log.gz": {
+    "original_sha256": "427db7bf1c352e29002a83cfa6172a7209d4ee937c539dc44199ae0373a4e8d9",
+    "gzip_sha256": "b03689361bea870287b5aec940b9d0130c8b2d8d99fcb63a0c1ea3c91a0517ad"
+  },
+  "native1_coupling1/native.log.gz": {
+    "original_sha256": "5ca64faf3c7c885e083264b35df94abc94e37c1e650517bd7c951a2e6c50553d",
+    "gzip_sha256": "e77d8c26eddee034bb2339e6d6ebbaac1a6b099f23e0a8ff4ee771ec2be82f24"
+  }
+}

@@ -1,0 +1,5 @@
+* NGSPICE file created from KilledCoupling.ext - technology: sky130A
+
+C0 b a# 2.5000000000000002e-19
+C1 a# 0 1.0000000000000001e-15
+C2 b 0 2.0000000000000002e-15

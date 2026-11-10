@@ -1,0 +1,26 @@
+cd {/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_precise_RC_caps_1639}
+if {[catch {
+gds read {/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_precise_RC_caps_1639/crop.gds}
+load RC_Area_Crop
+select top cell
+extract style ngspice()
+extract do local
+extract do capacitance
+extract do coupling
+extract no resistance
+extract all
+extresist include {a_65284_57370#}
+extresist simplify off
+extresist threshold 0
+extresist all
+ext2spice lvs
+ext2spice hierarchy off
+ext2spice subcircuit top on
+ext2spice short resistor
+ext2spice cthresh -1e100
+ext2spice extresist off
+ext2spice -o before.spice RC_Area_Crop.ext
+ext2spice extresist on
+ext2spice -o after.spice RC_Area_Crop.ext
+} error]} {puts stderr $error;exit 1}
+quit -noprompt
