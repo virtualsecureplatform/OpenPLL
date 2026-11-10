@@ -1,0 +1,42 @@
+{
+  "selected_zero_C_backend_CSC_capture_1813/assessment.json": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_CSC_capture_1813/assessment.json",
+    "original_sha256": "10f7f630c5b6b08cad92c5d195d397bd7d057d2f2c6cc4a94fd2194097370501",
+    "stored_sha256": "10f7f630c5b6b08cad92c5d195d397bd7d057d2f2c6cc4a94fd2194097370501"
+  },
+  "selected_zero_C_backend_CSC_capture_1813/inputs.json.gz": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_CSC_capture_1813/inputs.json",
+    "original_sha256": "369d30e45af656ff0252a6d679c8d0143c17e371399f029de031c66417b8f6f6",
+    "stored_sha256": "41de73aa762033f52392826c84e9fd8bfcd40a39d0962bcfd8ca98eb11cdebba"
+  },
+  "selected_zero_C_backend_CSC_capture_1813/status.json": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_CSC_capture_1813/status.json",
+    "original_sha256": "5ae16cd28ae694f78a2446cb5cabd0012043273bd0658d15802bb32b33e41fb6",
+    "stored_sha256": "5ae16cd28ae694f78a2446cb5cabd0012043273bd0658d15802bb32b33e41fb6"
+  },
+  "selected_zero_C_backend_CSC_capture_1813/native.process.json": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_CSC_capture_1813/native.process.json",
+    "original_sha256": "6bf298b30f6c8a83d92d85629d4e3883412e9ba357fcc8ba62f2775b1f9fa0e4",
+    "stored_sha256": "6bf298b30f6c8a83d92d85629d4e3883412e9ba357fcc8ba62f2775b1f9fa0e4"
+  },
+  "selected_zero_C_backend_CSC_capture_1813/native.log.gz": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_CSC_capture_1813/native.log",
+    "original_sha256": "d4ffe55c3bf6f3e5bec2047b9ef5c46ace908a12a8c859e9e861d27ff31f06b8",
+    "stored_sha256": "a6a00862ef0cd41cc626e512232d9694e02e283537cf7b01aabb39c91d46aa6e"
+  },
+  "selected_zero_C_backend_CSC_capture_1813/capture.spice.gz": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_CSC_capture_1813/capture.spice",
+    "original_sha256": "cacbcdab3b32a9dfc2f4a1f88baa5426e4729ddba8cbe8a776b4206b452d2bc2",
+    "stored_sha256": "1deba3619473f589c4418e8846ddf7b76cb31d67f7eb732738842f0ea0e0be34"
+  },
+  "selected_zero_C_backend_CSC_assessment_1814/assessment.json": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_CSC_assessment_1814/assessment.json",
+    "original_sha256": "480ee7586f797e258c822fdca0da2ce338c1421254ee257e67e57d26a8c4ef61",
+    "stored_sha256": "480ee7586f797e258c822fdca0da2ce338c1421254ee257e67e57d26a8c4ef61"
+  },
+  "selected_zero_C_backend_CSC_assessment_1814/report.json": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_CSC_assessment_1814/report.json",
+    "original_sha256": "c1279f98c53622983aab5bedc6aecb99f4a840b6a896967b4523f9faf0df62eb",
+    "stored_sha256": "c1279f98c53622983aab5bedc6aecb99f4a840b6a896967b4523f9faf0df62eb"
+  }
+}

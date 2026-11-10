@@ -3867,3 +3867,19 @@ not a different ordering candidate or UIC. It retains all finite signed C,
 all wire R and the original reset-DC stimulus, with64 GiB and1800 seconds.
 At retention time the full worker is live; backend/model qualification and
 PLL release readiness remain pending its actual completed result.
+
+
+### Full-model empty-equation removal verified (1813–1814)
+
+Completed capture1813 uses the actual1812 backend model/deck and corrected
+baseline1292 executable, in a separate diagnostic process. Completed-only
+assessment1814 finds923123 unknowns and6395914 stored entries, all nonzero.
+There are zero empty rows and zero empty columns. The35 zero diagonals are
+not empty rows; voltage-source MNA branch equations need not have a diagonal.
+This directly verifies removal of the785307 empty equations from the full
+model, not merely a reduction in reported unknown count. All finite element
+lines remain exactly preserved by1810's reversible construction. Evidence
+is under zero_C_full_matrix_1814; exact binary arrays remain build artifacts
+with hashes in the capture receipt. The live1812 DC worker is CPU-active
+at retention time; no completed DC solution or backend qualification is
+claimed from a nonsingular-looking sparsity pattern alone.
