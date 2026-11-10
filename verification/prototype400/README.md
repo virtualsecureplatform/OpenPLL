@@ -3563,3 +3563,26 @@ current engine:152 source/header files in the copy stage, including ResMain,
 ResRex, ResReadExt, database, tile, GDS/CIF, utility and extraction code, match
 exactly; the ResExtNode input structure also matches. No new copy-only run is
 claimed for1757. Its full current-binary export still requires qualification.
+
+
+### Fresh full reference-preserving export (1764–1768)
+
+Producer1764 is a single fresh full export with candidate1757 from the same
+checked GDS and original EXT. Admission requires1762's independent controls
+and1763's copy-stage identity check. Diagnostic copy switches are unset;
+all native eligible conductors are selected, threshold is0 and simplification
+is off. The owned worker has a12-hour cap, one CPU and16 GiB; there is no
+identical automatic retry. Native progress logs may be watched, while active
+EXT/SPICE output is not used for qualification.
+
+Monitor1765 rejects geometry, reference, wire/device-start, node-extraction
+and orphan-repair failures. Queue1767 runs completed-only audit1766 once.
+The full audit retains device/charge/65-port, all62338 physical primitives,
+every native wire, all19696 canonical conductors, passivity and physical-name
+checks. It additionally requires the original explicit substrate-reference
+rnode at its source coordinate, its use in exported capacitance, and absence
+of an introduced default-zero C fallback. Exact known GDS boundary warnings
+and their exact CIF summary are counted separately; other native errors fail.
+Preparer1768 requires every full audit gate and preserves literal R/C branch
+values and endpoints. Whole-export and PLL release qualification remain
+pending the actual completed current-binary output.
