@@ -1,0 +1,32 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_area_trace_1621/assessment.json": "6caf5ea97c00083de3d1fc34a367b48848f78cb962ac6e65f7f97e580157360c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_area_trace_1621/install/bin/magic": "c717bfa467f4aed56f7506999ada51c86cd4b40cfa907fb23b8243d1334c87c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_area_trace_1621/install/lib/magic/tcl/tclmagic.so": "24c99e4c6c7ba4d46b262a9f42e7f1a8683a4e5915ae552712f2bddd50362111",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/flat.gds": "4dc5bc17e43b4ec1d6d3a7e1f1717df460a1066bdccdca71b48bf3af016b1880",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/nix/store/c8mymw0gckkiw7lqwnm2l6mqnd99xmzy-klayout-0.30.7/bin/klayout": "9871282c43f561b7e3094f15f71fbd825bb0bf4f376f4651999cad15e115d67a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/crop.py": "de32dd359226b9256bfd0ba55409ec95b21a4d3c486ad7afe9d6c41af134cfbc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/run.tcl": "0a7a023c10ffb8043943771920929de06ee288a6ebed64024adee3247da439a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_cropped_RC_area_1624.py": "7dfe58a965e3852d9a688042e5843ddc00810aa613651125cf2148afb009ad92"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/crop.gds": "ecb7ce2c68f9aabedb1a96b00be61325c6e0d386a22183501fdc80f42ebd85eb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/native.process.json": "87aff68273e746deb775d7fce377c6ce7fbedc372a3fd1637c8a4cbb022df93e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/native.log": "81ee57e1b37229ee7d56b770c6e692912e42d35cfda38ca8e10bd36c63bcd8bd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/RC_Area_Crop.ext": "2764db2abfdbd1e08b74d8ff6eb0955661243a1fbbdec75735314f5ad9a388df",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/RC_Area_Crop.res.ext": "6f3fb9733bc19b352dc73b0a8a3b3eaab5872873b3cf2ac3f271f74f6011ebec",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/run.tcl": "0a7a023c10ffb8043943771920929de06ee288a6ebed64024adee3247da439a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/crop.process.json": "68d641449908411d190628b54911d40df3bcd61be40af257cc5e968e31b4cb1e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/crop.py": "de32dd359226b9256bfd0ba55409ec95b21a4d3c486ad7afe9d6c41af134cfbc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/crop_metadata.json": "608ba180ed46d3083f7b48ae3b9b279f81c97763451cb92df74c8e0a1fc1851e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/crop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/before.spice": "8618e81eb89178c4c696c8b915a4031348a61dfd75249b06c00a9277928e2edb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1624/after.spice": "2367d1e6350f53131c322ee5035eccbb82683a3977419f8b8e30e53e88cab966"
+  },
+  "native_process_completed": true,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

@@ -1,0 +1,18 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_SD_overlap_1625/assessment.json": "fb9d97eb79e59125cf7b437959fc91040f3b305936742c209a8863942fc87e7d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_SD_overlap_1625/install/bin/magic": "3fe29fe0aafc553848665146f7309b8fe234c9e9ffff7ca92658eb3f74d17eea",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_SD_overlap_1625/install/lib/magic/tcl/tclmagic.so": "da5631f65eaefbfa84cb1fac78ac0d6f1e0573e44dd039f1d26335d875e7def9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/flat.gds": "4dc5bc17e43b4ec1d6d3a7e1f1717df460a1066bdccdca71b48bf3af016b1880",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/nix/store/c8mymw0gckkiw7lqwnm2l6mqnd99xmzy-klayout-0.30.7/bin/klayout": "9871282c43f561b7e3094f15f71fbd825bb0bf4f376f4651999cad15e115d67a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1626/crop.py": "5e2b01848598cb08a08db84642f97e149410fe3bbe67dd98e407e3d0c56ac7e8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1626/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_RC_area_1626/run.tcl": "c276079b12e7a548e283615a428b81eab6a662c43b0ffa9b7f0b0c650160473f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_cropped_RC_SD_overlap_1626.py": "97e4461c146a4ceb83b92b0b105ef89091a24c8b59253b37b885864f7cb62e1e"
+  },
+  "clipped_real_layout": true,
+  "DRC_qualified": false,
+  "maximum_native_cases": 1,
+  "release_ready": false
+}

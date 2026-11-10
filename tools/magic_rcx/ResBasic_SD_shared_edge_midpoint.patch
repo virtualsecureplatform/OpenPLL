@@ -1,0 +1,18 @@
+--- a/resis/ResBasic.c
++++ b/resis/ResBasic.c
+@@ -343 +343,2 @@
+-			yj = (TOP(tp) + BOTTOM(tp)) >> 1;
++			/* OPENPLL shared source/drain edge midpoint. */
++			yj = (MIN(TOP(tile), TOP(tp)) + MAX(BOTTOM(tile), BOTTOM(tp))) >> 1;
+@@ -376 +377,2 @@
+-			yj = (TOP(tp) + BOTTOM(tp)) >> 1;
++			/* OPENPLL shared source/drain edge midpoint. */
++			yj = (MIN(TOP(tile), TOP(tp)) + MAX(BOTTOM(tile), BOTTOM(tp))) >> 1;
+@@ -409 +411,2 @@
+-			xj = (LEFT(tp) + RIGHT(tp)) >> 1;
++			/* OPENPLL shared source/drain edge midpoint. */
++			xj = (MAX(LEFT(tile), LEFT(tp)) + MIN(RIGHT(tile), RIGHT(tp))) >> 1;
+@@ -442 +445,2 @@
+-			xj = (LEFT(tp) + RIGHT(tp)) >> 1;
++			/* OPENPLL shared source/drain edge midpoint. */
++			xj = (MAX(LEFT(tile), LEFT(tp)) + MIN(RIGHT(tile), RIGHT(tp))) >> 1;

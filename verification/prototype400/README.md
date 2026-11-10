@@ -3009,3 +3009,32 @@ previously negative node now prints -0, so absence of negative exported C does
 not establish corrected geometric area. A native raw-area/breakpoint diagnostic
 is being built separately. Full distributed capacitance placement and the two
 legacy source-junction fallback changes remain open. RC export is not qualified.
+
+### Native source/drain breakpoint geometry correction (1621–1628)
+
+Native raw-area diagnostics1622 identify four source/drain breakpoints outside
+their assigned conductor tiles on a_65284_57370#, producing raw area -950 before
+capacitance scaling. A6um by5.5um clip of the checked layout reproduces the same
+four violations and negative area in seconds (1624); this is a regression
+fixture with clipped surrounding geometry, not a DRC-qualified layout.
+
+ResBasic used the midpoint of the whole adjacent device tile as the S/D edge
+point. The correction uses the midpoint of the actual shared edge interval,
+matching the neighboring ordinary-junction code. It neither clamps capacitance
+nor changes source masks. Candidate1625 compiles; control1626 has zero invalid
+breakpoints and zero negative raw areas, with28 primitives,173 exact C pairs
+and14 positive resistors preserved under contraction. Four rotated all-net
+crop controls1627 each reproduce eight old breakpoint violations; the corrected
+engine has zero violations and zero negative raw areas in every orientation.
+All eight before/after contraction audits pass; corrected rotations retain
+179–183 positive resistors. Native evidence and the small GDS fixture are
+retained under RC_SD_overlap_1627. The native four-edge patch is
+`tools/magic_rcx/ResBasic_SD_shared_edge_midpoint.patch`.
+
+A corrected-engine two-net check on the full unchanged layout is running1628.
+Full-network extraction remains unqualified. A newly checked named-port control
+also reveals that its original zero-ohm alias resistor bypasses the exported
+4.9755-ohm wire resistor. Consequently a positive-R count or contraction pass
+alone does not prove an electrically effective distributed resistance network.
+Alias separation, ground-C redistribution without double-counting, remaining
+whole-node junction fallback changes and full-layout validation remain open.
