@@ -1,0 +1,22 @@
+{
+  "stopped_UTC": "2026-11-10T04:51:51.830712+00:00",
+  "worker": {
+    "pid": 2731246,
+    "birth": "149350480",
+    "process_group": 2731246
+  },
+  "command": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_canonical_RC_1646/install/lib/magic/tcl/magicdnull -nowrapper -nowrapper -dnull -noconsole -rcfile /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_negative_R_cohort_replay_1652/minimal.magicrc /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_negative_R_cohort_replay_1652/run.tcl ",
+  "reason": "Confirmed invalid native supply-network breakpoint geometry; superseded source correction validated on native crop; no identical retry.",
+  "native_failure_examples": [
+    "OPENPLL_RC_BREAK_BOUNDS net=IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB axis=x tile=31062,50322,45350,50968 break=45356,50476 node=45356,50476",
+    "OPENPLL_RC_BREAK_BOUNDS net=IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB axis=x tile=29964,50304,30854,50950 break=30860,50796 node=30860,50796",
+    "OPENPLL_RC_BREAK_BOUNDS net=IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB axis=x tile=28194,50321,29964,50968 break=28192,50752 node=28192,50752",
+    "OPENPLL_RC_BREAK_BOUNDS net=IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB axis=x tile=22682,50304,22982,50950 break=22988,50796 node=22988,50796",
+    "OPENPLL_RC_BREAK_BOUNDS net=IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB axis=x tile=67632,71637,70374,72280 break=70381,71832 node=70381,71832",
+    "OPENPLL_RC_BREAK_BOUNDS net=IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB axis=x tile=63672,71618,63888,72259 break=63658,71800 node=63658,71800",
+    "OPENPLL_RC_BREAK_BOUNDS net=IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB axis=x tile=58714,71637,62886,72280 break=62896,71800 node=62896,71800",
+    "OPENPLL_RC_BREAK_BOUNDS net=IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB axis=x tile=56568,71637,56784,72280 break=56563,72064 node=56563,72064"
+  ],
+  "partial_native_data_accepted": false,
+  "user_cancellation": false
+}

@@ -3245,3 +3245,12 @@ controller without changing frozen scripts or rerunning extraction. It keeps
 final qualification pending even if every review check passes. Evidence is
 under physical_RC_review_1694. Full RC export remains unqualified while the
 native geometry producer is live.
+
+Predecessor1652 termination evidence: the earlier launch snapshot under
+canonical_RC_1653 is historical. On 2026-11-10 at 04:51 UTC the agent stopped
+that diagnostic worker after confirmed out-of-bounds supply-network
+breakpoints. The verified identity, command, failure examples and explicit
+user_cancellation=false receipt are now retained with the untouched compressed
+native log under native_RC_geometry_1682/stopped_predecessor_1652. Its partial
+native outputs were not accepted for qualification and it was not identically
+retried. Current full producer1671 uses the repaired geometry engine.
