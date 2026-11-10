@@ -1,0 +1,47 @@
+scale 1000 1 500000
+rnode "a_65284_57370.n0" 0 0 65879 57552 0
+rnode "a_65284_57370.t0" 0 -0 65879 57496 0
+rnode "a_65284_57370.n1" 0 0 65904 57544 0
+rnode "a_65284_57370.t7" 0 0 65310 57776 0
+rnode "a_65284_57370.t6" 0 0 65299 57470 0
+rnode "a_65284_57370#" 0 0 65284 57370 0
+rnode "a_65284_57370.n2" 0 0 65318 57599 0
+rnode "a_65284_57370.n3" 0 0 65562 57531 0
+rnode "a_65284_57370.n4" 0 0 65529 57515 0
+rnode "a_65284_57370.t3" 0 0 65501 57480 0
+rnode "a_65284_57370.t2" 0 0 65573 57496 0
+rnode "a_65284_57370.n5" 0 0 65546 57783 0
+rnode "a_65284_57370.t5" 0 0 65510 57780 0
+rnode "a_65284_57370.t4" 0 0 65576 57780 0
+rnode "a_65284_57370.t1" 0 0 65882 57780 0
+rnode "a_65284_57370.n6" 0 0 65596 57686 0
+rnode "a_65284_57370.n7" 0 0 65596 57548 0
+resist "a_65284_57370.n2" "a_65284_57370.t7" 250.548
+resist "a_65284_57370#" "a_65284_57370.t6" 160.667
+resist "a_65284_57370.t6" "a_65284_57370.n2" 177.98
+resist "a_65284_57370.n2" "a_65284_57370.n3" 223.373
+resist "a_65284_57370.n4" "a_65284_57370.t2" 42.0897
+resist "a_65284_57370.n4" "a_65284_57370.t3" 23.1325
+resist "a_65284_57370.n3" "a_65284_57370.n4" 98.8779
+resist "a_65284_57370.n5" "a_65284_57370.t4" 29.55
+resist "a_65284_57370.n5" "a_65284_57370.t5" 35.46
+resist "a_65284_57370.n6" "a_65284_57370.n5" 210.904
+resist "a_65284_57370.n6" "a_65284_57370.t1" 340.595
+resist "a_65284_57370.n7" "a_65284_57370.n6" 51.9529
+resist "a_65284_57370.n3" "a_65284_57370.n7" 12.8
+resist "a_65284_57370.n7" "a_65284_57370.n1" 299.424
+resist "a_65284_57370.n1" "a_65284_57370.n0" 19.2
+resist "a_65284_57370.n1" "a_65284_57370.t0" 20.4521
+rnode "a_60718_35762#" 0 0 60718 35804 0
+rnode "a_60718_35762.t0" 0 0 60766 35804 0
+resist "a_60718_35762#" "a_60718_35762.t0" 68.5714
+device msubckt sky130_fd_pr__pfet_01v8 65295 57664 65296 57665  "VPWR" "a_65284_57370.t7" 60 0 "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_281.B" 224 13216,566 "VPWR" 224 7736,295
+device msubckt sky130_fd_pr__pfet_01v8 65480 57680 65481 57681  "VPWR" "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__maj3_1_6.B" 60 0 "a_65426_57680#" 200 5400,254 "a_65284_57370.t5" 200 6600,266
+device msubckt sky130_fd_pr__pfet_01v8 65576 57680 65577 57681  "VPWR" "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__maj3_1_6.B" 60 0 "a_65284_57370.t4" 200 6600,266 "a_65606_57680#" 200 5400,254
+device msubckt sky130_fd_pr__pfet_01v8 65852 57680 65853 57681  "VPWR" "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__maj3_1_18.X" 60 0 "a_65798_57680#" 200 5400,254 "a_65284_57370.t1" 200 11800,518
+device msubckt sky130_fd_pr__nfet_01v8_lvt 65284 57396 65285 57397  "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB" "a_65284_57370.t6" 60 0 "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_281.B" 148 8324,410 "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB" 148 5556,227
+device msubckt sky130_fd_pr__nfet_01v8_lvt 65471 57416 65472 57417  "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB" "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__maj3_1_6.B" 60 0 "a_65423_57416#" 128 3072,176 "a_65284_57370.t3" 128 4888,216
+device msubckt sky130_fd_pr__nfet_01v8_lvt 65573 57432 65574 57433  "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB" "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__maj3_1_6.B" 60 0 "a_65284_57370.t2" 128 4888,216 "a_65603_57432#" 128 3072,176
+device msubckt sky130_fd_pr__nfet_01v8_lvt 65849 57432 65850 57433  "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB" "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__maj3_1_18.X" 60 0 "a_65795_57432#" 128 3456,182 "a_65284_57370.t0" 128 6932,370
+device msubckt sky130_fd_pr__nfet_01v8_lvt 60688 35762 60689 35763  "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB" "a_60654_35542#" 60 0 "a_60640_35762#" 84 2016,132 "a_60718_35762#" 84 2016,132
+device msubckt sky130_fd_pr__nfet_01v8_lvt 60766 35762 60767 35763  "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB" "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__dfrtp_1_13.RESET_B" 60 0 "a_60718_35762.t0" 84 2016,132 "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB" 84 8449,290

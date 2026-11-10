@@ -1,0 +1,42 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_reference_point_candidate_1612/assessment.json": "36e9ac4528e3ea92fd4ab64b15d997387cc03ee32646507e8c29ce86478fba08",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/assessment.json": "6047a234f31a190fa3ae4cd6623a4486d2d0a8287b6744aca828c1fb6067e939",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_reference_point_candidate_1612/install/bin/magic": "d00db5cc2a605cc6d5f81880b0a5029da3400fe158c5cf11c63259b5c6fab6c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_reference_point_candidate_1612/install/lib/magic/tcl/tclmagic.so": "be38b1e7b3a4e202e5c059ed4e4788aded2608d348da65cbe2fa1fe9e6fc3dc7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/flat.gds": "4dc5bc17e43b4ec1d6d3a7e1f1717df460a1066bdccdca71b48bf3af016b1880",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/IntegerPLL_400MHz_KeeperFlatC.ext": "8ce8a459945ca181b69ee3a5cf47f94caedf63d7093a0b7fb5970616e0a97a78",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_reference_1618/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_reference_1618/run.tcl": "c2dd4172a06818582a95772dc12bdaf25811666f7e17369eaf466aafb7ef2410",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_layout_RC_reference_1618.py": "4a38fdbb453fa8a32fc43768255872aec4b42f753697f80d665ca84b21b6f935",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_reference_1618/before.spice": "9a23a21805a5dc2a10d86230dbf9ec6904845438b9bee7ff628e5d49eaddd862",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_reference_1618/after.spice": "8321a06fd5daf64492ef994fef37fab557a0adbc18b3392edfa96787f2988d79",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_reference_1618/IntegerPLL_400MHz_KeeperFlatC.res.ext": "756bfdf2ed9c7a0780cb43866cc0427defaebca0e0edaf1a4d0b4fcdf2d9cd3e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_reference_1618/native.log": "e462e05165600df8cdbdb8b1cd47ebc4df54f0d2da67fecb8e82e5c14d865fc3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_reference_1618/assessment.json": "83c251fe013bd525b7c394dd2bd8b083248d1fdbbc32ed02c0d0d889d0502615",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_layout_RC_reference_1620.py": "35e44eaa4cdebe5c59dc6397334ec7e5d05eebe556e8dd01c2b61d5ab80574b4"
+  },
+  "contraction": {
+    "reference_primitives": 62338,
+    "candidate_primitives": 62338,
+    "primitive_multisets_match": true,
+    "missing_primitive_count": 0,
+    "extra_primitive_count": 0,
+    "wire_R_cards": 17,
+    "positive_wire_R_cards": 17,
+    "wire_R_components": 2,
+    "components_joining_distinct_reference_nodes": [],
+    "ordered_formal_ports_match": true,
+    "reference_nonzero_C_pairs": 340512,
+    "contracted_nonzero_C_pairs": 340512,
+    "C_pair_differences": [],
+    "exact_aggregated_C_match": true,
+    "negative_candidate_C_cards": 0,
+    "exact_device_and_C_contraction_verified": true
+  },
+  "full_layout_R_coverage": false,
+  "distributed_C_placement_qualified": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

@@ -2988,3 +2988,24 @@ qualification evidence. In particular, equality with zero wire R is insufficient
 RC export remains unfixed overall: full-layout validation, the413 native negative
 capacitances, and two lost source-junction area/perimeter parameter sets remain
 open. No corrected full-R export or release qualification is claimed.
+
+### Checked-layout two-net reference-point pilot (1618, 1620)
+
+Candidate1612 completed native resistance extraction of a_60718_35762# and
+a_65284_57370# on the unchanged checked flat GDS, reusing the pinned corrected
+C-only EXT. Independent completed-only audit1620 verifies62338 unchanged
+primitive models/parameters,340512 exactly conserved nonzero C pairs, unchanged
+formal ports and17 positive wire resistors in two components, with no shorts or
+negative exported C branches. Only these two nets have distributed resistance;
+this is not full-layout resistance coverage. Native receipts,17-edge res.ext
+and compressed unmodified progress log are retained under layout_RC_reference_1618.
+
+The opt-in candidate retains original ground capacitance at the original
+extraction reference point, not along the full resistor network. ResReadNode
+does not import node ground C into node->capacitance; the original signal-mode
+ResReadCapacitor instead populated that field from coupling values. With explicit
+coupling enabled, native rnode capacitances become zero. In particular the
+previously negative node now prints -0, so absence of negative exported C does
+not establish corrected geometric area. A native raw-area/breakpoint diagnostic
+is being built separately. Full distributed capacitance placement and the two
+legacy source-junction fallback changes remain open. RC export is not qualified.
