@@ -1,0 +1,21 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/assessment.json": "3fd38ce495daf3c6b7a8061cc52b6e2d7b535dd10d5e6ad1269a81354cc1af6b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/capacitance.spice": "a65df9f048ae302a266ff915a898cd08e4bdf07a42f11d2491e9afa2fedc44de",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/certify_precise_C_reference_1666.py": "593c2902dec175f7f817852aec40e2577c9b1e9837dbeef40e91d0cf56419b78",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_passivity_v2.py": "fc359e2c43ba8b74a98579196dcea22586367ba94b5dcff88a15a4589972bb7e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_passivity_1666/passivity_report.json": "c1bcc0d12a7ab061818724afed8b8d4b809fcc2b7e18a5c5dc88e4ba645e32b2"
+  },
+  "all_explicit_native_C_cards_examined": 1364187,
+  "nonzero_C_cards": 583076,
+  "negative_C_cards": 474,
+  "linear_C_PSD_certified": true,
+  "capacitors_modified": false,
+  "nonlinear_device_passivity_claimed": false,
+  "full_R_coverage": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

@@ -1,0 +1,77 @@
+{
+  "linear_C_PSD_certified": true,
+  "positive_pairs": 582602,
+  "negative_pairs": 474,
+  "positive_components": 1,
+  "negative_edges_without_positive_path": [],
+  "negative_path_load_upper_exact": "4026805017995466609169/1329227995784915872903807060280344576",
+  "method": "positive resistance-shortest spanning-forest support paths; weighted Cauchy inequality; upward dyadic bounds",
+  "examples": [
+    {
+      "nodes": [
+        "DLF_CODE[1]",
+        "a_65223_30115#"
+      ],
+      "positive_path_edges": 2,
+      "load_upper_exact": "29011053993446581/1329227995784915872903807060280344576"
+    },
+    {
+      "nodes": [
+        "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nor2_2_0.Y",
+        "a_60256_31766#"
+      ],
+      "positive_path_edges": 3,
+      "load_upper_exact": "27683036990136678409/664613997892457936451903530140172288"
+    },
+    {
+      "nodes": [
+        "VPWR",
+        "a_68032_43754#"
+      ],
+      "positive_path_edges": 2,
+      "load_upper_exact": "6471511017448943235/664613997892457936451903530140172288"
+    },
+    {
+      "nodes": [
+        "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_52.A1",
+        "a_17121_63132#"
+      ],
+      "positive_path_edges": 3,
+      "load_upper_exact": "5283287393928239781/1329227995784915872903807060280344576"
+    },
+    {
+      "nodes": [
+        "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_4_32.A2",
+        "a_28798_34726#"
+      ],
+      "positive_path_edges": 3,
+      "load_upper_exact": "6308421620938849/664613997892457936451903530140172288"
+    },
+    {
+      "nodes": [
+        "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__o21ai_1_52.A1",
+        "a_43820_65362#"
+      ],
+      "positive_path_edges": 3,
+      "load_upper_exact": "23785089835264909/1329227995784915872903807060280344576"
+    },
+    {
+      "nodes": [
+        "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__nand2_1_212.Y",
+        "a_32945_54279#"
+      ],
+      "positive_path_edges": 3,
+      "load_upper_exact": "681991821587953/332306998946228968225951765070086144"
+    },
+    {
+      "nodes": [
+        "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__a21oi_1_76.Y",
+        "a_46930_50044#"
+      ],
+      "positive_path_edges": 4,
+      "load_upper_exact": "2419147189618359565/332306998946228968225951765070086144"
+    }
+  ],
+  "capacitors_modified": false,
+  "positive_R_contracted": false
+}

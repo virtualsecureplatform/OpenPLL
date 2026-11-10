@@ -1,0 +1,138 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_crossplane_area_1661/assessment.json": "60cf8926760d818c8fe4afe59ec9a5dc2a64fb4dffc594b9fd622ad245068bd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_crossplane_area_1661/install/bin/magic": "e888f9ad1e554117bb0c7aceb25724fbcf2526bbdd651e151554f268f4e37e45",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_crossplane_area_1661/install/lib/magic/tcl/tclmagic.so": "6062d00c0170ba7ced7211051fee3f8ab7d1083996f22d18978a19bf637da6ba",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/IntegerPLL_400MHz_KeeperFlatC.ext": "8ce8a459945ca181b69ee3a5cf47f94caedf63d7093a0b7fb5970616e0a97a78",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_full_R_1599/before.spice": "709d44f1f106095091491468f8a37b707e53cd317f6d6cae943a3bc43f7a738c",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/run.tcl": "4b47b281b585a27a0d8fd0550f19035d7576c400788922dbb01e96cb3a61b1be",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/export_precise_C_reference_1664.py": "2c276583d54ba8db462280c40ecb96a934fd5221ef2607f69e1f608cf35e56d9"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/capacitance.spice": "a65df9f048ae302a266ff915a898cd08e4bdf07a42f11d2491e9afa2fedc44de",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/device_origins.json": "b89b569eaba753161cccbe50df073182598378e64f4cf23f0cd1c9748e900aa4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/implicit_junction_terminals.json": "ed9b6d0ac30f7c319843cf74240efbecf2f099b281e221c41ee313f30da6ebc0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_C_reference_1664/native.log": "5093cb0ff93318ad5c8a75c3d4e3abfedcb22a923290ff1167a10d44705899c5"
+  },
+  "native_process_completed": true,
+  "per_instance_original_parameters_unchanged": false,
+  "physical_zero_source_parameter_changes": [
+    {
+      "instance": "X20",
+      "parameters": {
+        "ps": {
+          "before": "191761/4",
+          "after": "0"
+        },
+        "as": {
+          "before": "119277/20",
+          "after": "0"
+        }
+      },
+      "physical_origin": {
+        "model": "sky130_fd_pr__pfet_01v8",
+        "rect": [
+          12098,
+          36724,
+          12099,
+          36725
+        ]
+      }
+    },
+    {
+      "instance": "X60",
+      "parameters": {
+        "ps": {
+          "before": "3208017/100",
+          "after": "0"
+        },
+        "as": {
+          "before": "88439/25",
+          "after": "0"
+        }
+      },
+      "physical_origin": {
+        "model": "sky130_fd_pr__nfet_01v8",
+        "rect": [
+          99003,
+          81603,
+          99004,
+          81604
+        ]
+      }
+    }
+  ],
+  "zero_source_junctions_identified": true,
+  "all_device_origins_bound": true,
+  "device_count": 62338,
+  "implicit_terminal_count": 1992,
+  "all_implicit_terminals_zero_width": true,
+  "all_implicit_terminals_on_bulk": true,
+  "examples": [
+    {
+      "instance": "X20",
+      "origin": {
+        "model": "sky130_fd_pr__pfet_01v8",
+        "rect": [
+          12098,
+          36724,
+          12099,
+          36725
+        ]
+      },
+      "implicit": [
+        {
+          "instance": "X20",
+          "model": "sky130_fd_pr__pfet_01v8",
+          "rect": [
+            12098,
+            36724,
+            12099,
+            36725
+          ],
+          "terminal": "source",
+          "node": "VPWR",
+          "bulk": "VPWR",
+          "terminal_edge_length": 0,
+          "attributes": "0",
+          "terminal_and_bulk_same_original_conductor": true
+        }
+      ]
+    },
+    {
+      "instance": "X60",
+      "origin": {
+        "model": "sky130_fd_pr__nfet_01v8",
+        "rect": [
+          99003,
+          81603,
+          99004,
+          81604
+        ]
+      },
+      "implicit": [
+        {
+          "instance": "X60",
+          "model": "sky130_fd_pr__nfet_01v8",
+          "rect": [
+            99003,
+            81603,
+            99004,
+            81604
+          ],
+          "terminal": "source",
+          "node": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB",
+          "bulk": "IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB",
+          "terminal_edge_length": 0,
+          "attributes": "0",
+          "terminal_and_bulk_same_original_conductor": true
+        }
+      ]
+    }
+  ],
+  "physical_junction_repair_qualified": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

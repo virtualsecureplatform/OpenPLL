@@ -1,0 +1,12 @@
+{
+  "build/signoff400/selected_precise_C_reference_1664/assessment.json": "3fd38ce495daf3c6b7a8061cc52b6e2d7b535dd10d5e6ad1269a81354cc1af6b",
+  "build/signoff400/selected_precise_C_reference_1664/inputs.json": "8126494e72da815bfbc6d134a31e40c35b78ec8675a906ce2a11172c93340a40",
+  "build/signoff400/selected_precise_C_reference_1664/run.tcl": "4b47b281b585a27a0d8fd0550f19035d7576c400788922dbb01e96cb3a61b1be",
+  "build/signoff400/selected_precise_C_reference_1664/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+  "build/signoff400/selected_precise_C_reference_1664/native.log": "5093cb0ff93318ad5c8a75c3d4e3abfedcb22a923290ff1167a10d44705899c5",
+  "build/signoff400/selected_precise_C_reference_1664/status.json": "17c4486a3152be54e9bdc0da4f1e859d0e2e3c3cb2b5751806cfe5e41559a714",
+  "build/signoff400/selected_precise_C_passivity_1666/assessment.json": "0f99db96f961f9bf86a92b68d90a47c19adedf101afa47fffa6fd11d7f3f4fff",
+  "build/signoff400/selected_precise_C_passivity_1666/passivity_report.json": "c1bcc0d12a7ab061818724afed8b8d4b809fcc2b7e18a5c5dc88e4ba645e32b2",
+  "build/signoff400/selected_precise_C_passivity_1666/status.json": "52654f477db236b51a04cf0be7fb7985465f0db7b22ed121a4fd3911f9c3460c",
+  "build/signoff400/selected_RC_repair_assessment_1670/assessment.json": "12efd1c9336f72e7b28efe51a8fe14e27b83a76c28df4f6d5e18ca35627566c0"
+}

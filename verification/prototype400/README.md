@@ -3173,3 +3173,29 @@ Native control data is preserved byte-for-byte, including native whitespace.
 These controls establish the repairs on the stated evidence. Full-layout
 export1671 remains in progress, and final charge/passivity, wire-value and
 coverage validation remain required. The release executable is unchanged.
+
+### Full precise-reference linear capacitance certificate (1664–1683)
+
+The completed native reference1664 retains all printed capacitance precision.
+Certificate1666 examines 1,364,187 C cards: 583,076 are nonzero, including
+474 signed residuals. It certifies nonnegative linear storage energy using
+positive support paths and weighted Cauchy bounds. Resistance-shortest paths
+avoid weak edges; reciprocal and accumulated loads round upward with exact
+integer/rational arithmetic. The aggregate upper bound is approximately
+3.03e-15, below one. No capacitor is changed and no positive resistor is
+contracted for this certificate. Nonlinear device passivity is not claimed.
+
+Four tests cover a passive signed triangle, an unsupported negative bridge
+as small as 1e-40, an overwhelming negative coupling and zero/positive cards.
+The original receipts and proof report are under precise_C_passivity_1666;
+the large native reference netlist is identified by hash and not duplicated
+in Git. Combined repair assessment1670 additionally passes five completed
+geometry/charge controls and checks 26 virtual source/bulk ties in the crop.
+
+Controller1671 performs the full native geometry export. Queue1683 waits for
+normal completion of that exact live producer, then runs corrected-reader
+conversion1680 and electrical audit1681 without rerunning geometry. The audit
+checks full-reference charge fidelity, physical device parameters, ports,
+geometry diagnostics and the actual final C operator. Conductor coverage and
+per-wire resistance values remain separate, explicitly unpassed gates.
+No script declares RC export fixed or PLL release ready on these controls.
