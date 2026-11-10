@@ -3723,3 +3723,20 @@ the complete corrected-backend and tracer lineage, the full export/model
 receipts and both control receipts before a single bounded full diagnostic.
 Its markers distinguish error-mask setup, DC init, sweep loop, first step
 and finish. At retention time1782 is live; no full DC result is claimed.
+
+
+### First DC step isolated; internal call tracing (1783–1785)
+
+Full trace1782 returned device-mask setup and DC initialization and entered
+the first DC step. The owned worker was diagnostically stopped with a
+receipt, without adopting partial numerical output. Separate build1783 adds
+logging around predictor, source update, nonlinear solve, RHS load, Jacobian
+load and linear solve. Only the DC driver and nonlinear-solver wrapper
+objects change; numerical calls, device objects and linear-solver objects
+remain intact. Its baseline relink reproduces1780 exactly. Control1784
+compares a5000-section signed-C RC ladder: analytical divider agreement,
+exact baseline/tracer outputs and all six balanced step-boundary types
+pass. Build/control and stopped1782 evidence is retained under
+RC_step_trace_1784. Runner1785 verifies the full tracer lineage and launches
+one bounded full-model diagnostic. At retention time it is live; no full
+DC point, model qualification or release readiness is claimed.

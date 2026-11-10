@@ -1,0 +1,11 @@
+{
+  "native_identity": {
+    "pid": 3087713,
+    "birth": "155370208",
+    "process_group": 3087713
+  },
+  "user_cancellation": false,
+  "reason": "First DC step reached; replace with validated predictor/device-load/linear-solve tracing.",
+  "native_log_sha256_at_stop": "69a7cf2e6d9b08d750fab1aca58e812a20eb65e1d59490d774ed7c2a59e04a90",
+  "partial_DC_qualified": false
+}

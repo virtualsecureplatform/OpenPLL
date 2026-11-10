@@ -1,0 +1,5 @@
+{
+  "state": "stopped_without_qualification",
+  "reason": "RuntimeError('compiled worker failed (-15): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_analysis_trace_1782/native.log')",
+  "release_ready": false
+}
