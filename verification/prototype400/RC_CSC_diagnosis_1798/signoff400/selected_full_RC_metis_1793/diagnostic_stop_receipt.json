@@ -1,0 +1,11 @@
+{
+  "native_identity": {
+    "pid": 3091198,
+    "birth": "155500950",
+    "process_group": 3091198
+  },
+  "user_cancellation": false,
+  "reason": "Completed exact first-DC matrix capture proves 785307 zero rows and columns; ordering alone cannot yield nonsingular DC system.",
+  "evidence": "selected_full_RC_CSC_assessment_1798/report.json",
+  "partial_DC_qualified": false
+}

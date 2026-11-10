@@ -3781,3 +3781,34 @@ Evidence is retained under RC_metis_control_1792. Runner1793 admits one
 full METIS case with the same64-GiB/1800-second resource cap and unchanged
 stimulus. At retention time it is live; no speedup or backend qualification
 is claimed from the analytical control alone.
+
+
+### Completed exact first-DC matrix capture (1794–1798)
+
+A separate diagnostic interposer1794 captures exact binary CSC arrays at
+UMFPACK symbolic entry and deliberately exits normally before solving.
+Control1795 verifies an analytical resistor/source MNA matrix up to row/column
+permutation and unchanged native DC output when capture mode is unset.
+Full capture1797 completed normally, with its worker absent and all frozen
+input hashes verified. It uses a copied deck with a local output filename;
+predecessor1796 was diagnostically stopped to correct its inherited output
+path. No capture is represented as a solved simulation.
+
+Completed-only assessment1798 finds1708430 unknowns,9170871 stored entries,
+2774957 exact zeros and6395914 nonzero entries. Exactly785307 rows and
+columns are numerically all zero. The largest structural row/column has
+1523069 entries, with528244 nonzeros. This proves the first DC Jacobian is
+singular and explains why an ordering-only change cannot establish a valid
+DC solution. It does not prove that symbolic ordering itself is the only
+runtime cost. METIS1793 was diagnostically stopped with a verified receipt
+after this evidence; no partial solution was adopted.
+
+The780557 previously classified C-only circuit nodes are a plausible
+contributor, but an exact mapping to all785307 zero rows remains pending.
+No parasitic capacitor, wire or physical terminal was removed or bridged.
+The next requirement is to identify the unconstrained population and obtain
+consistent native initialization while preserving the full RC equations.
+Capture/control/checker evidence is under RC_CSC_diagnosis_1798; the full
+binary arrays remain build artifacts bound by hashes in the capture receipt.
+Export1766 and literal preparation1768 remain passed. Native backend/model
+qualification and PLL release readiness remain false.

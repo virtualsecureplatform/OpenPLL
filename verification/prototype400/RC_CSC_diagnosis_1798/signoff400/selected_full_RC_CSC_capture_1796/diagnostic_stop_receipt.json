@@ -1,0 +1,10 @@
+{
+  "native_identity": {
+    "pid": 3092198,
+    "birth": "155544623",
+    "process_group": 3092198
+  },
+  "user_cancellation": false,
+  "reason": "Isolate deck output filename from frozen predecessor directory before matrix capture.",
+  "matrix_qualified": false
+}

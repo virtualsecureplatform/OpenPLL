@@ -1,0 +1,12 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_CSC_capture_1797/assessment.json": "0474e642ee4cfa10b415673008de9e2198be89211ef3253fd393a7e2fbc2798b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_full_RC_CSC_1798.py": "cfd88aa45a3ea409c083fd1482ea49922ff62eaf0241b48f24853e71d5fdc515"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_CSC_assessment_1798/report.json": "efa21e284c00dbb3b92aed0227203df7b765ed30a806a5b356d781a95841481d"
+  },
+  "completed_exact_native_CSC_inspected": true,
+  "RC_backend_qualified": false,
+  "release_ready": false
+}

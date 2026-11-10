@@ -1,0 +1,11 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_umfpack/matrix_capture/capture_symbolic.c": "c538dbc7ba0e78bde85f58e7bf987debda8d6350cc8dcf225059104a1b638439",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_CSC_capture_1794.py": "91c54f113fa00a5248262bfb8438955dc3d73c11a5f27b9f7672f3d8c203399d"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_CSC_capture_1794/capture_symbolic.so": "044093d249009c98f67b900b0e9d870280709f359b97582adb47ed82ab01b149"
+  },
+  "diagnostic_capture_only": true,
+  "simulation_qualification": false
+}
