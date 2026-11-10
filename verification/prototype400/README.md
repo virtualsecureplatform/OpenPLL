@@ -3408,3 +3408,26 @@ devices, capacitance or shorts. The previous engine selects `nmos` at an
 and finds that material after native conductor copying. Both are deliberately
 copy-only cases; this proves the driver-layer correction, not full-network
 RC qualification. Completed artifacts are under explicit_drive_alias_1731.
+
+
+### Driver-layer full-export pipeline (1732–1738)
+
+Corrected full-layout copy diagnostics now report `metal5` as the explicit
+VGND driver type. Original-seed1732 retains the source substrate copy anchor;
+it must complete with that M5 driver present before producer1734 can start.
+Producer1734 also requires the native alias failure/repair control1731 and
+all four electrical regression controls1730. It copies the immutable original
+EXT and uses the corrected engine with diagnostic copy switches unset.
+No partial network from the failed run is reused, and no identical retry is
+scheduled. Original-seed copy failure stops admission instead of changing the
+seed or bridging missing geometry automatically.
+
+Monitor1735 checks owned worker identity and process group before stopping
+on native geometry failures, missing wire/device starts, failed node extraction
+or orphan/terminal repair messages. The exact known GDS boundary warnings
+remain distinct. Queue1737 invokes audit1736 only on normally completed output;
+that audit requires all 62,338 physical devices, every native branch value,
+all 19,696 canonical conductors, charge/formal-port conservation, passivity
+and unique physical names. Preparer1738 refuses any failed audit and preserves
+literal RC values and endpoints. These pending jobs do not qualify RC export
+or the broader PLL release.
