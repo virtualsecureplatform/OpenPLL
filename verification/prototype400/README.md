@@ -3757,3 +3757,27 @@ balanced linear-phase boundary types. Evidence and the actual generated
 headers are retained under RC_linear_trace_1787. Runner1788 verifies the
 complete lineage before one full diagnostic with unchanged resource limits.
 At retention time1788 is live; its linear phase and DC result remain pending.
+
+
+### Symbolic ordering isolated; METIS candidate (1790–1793)
+
+Full trace1788 returned transform, root-matrix construction, value gathering
+and CSC preparation, then remained in UMFPACK symbolic analysis. The owned
+diagnostic was stopped with a receipt at about7.5 minutes to test a changed
+ordering policy. Build1790 sets only UMFPACK_ORDERING to METIS, retaining
+the original matrix/RHS, device equations and all other solver controls.
+Only the factory object changes; baseline archive relink reproduces1786.
+A predecessor build script1789 had a duplicate metadata keyword and failed
+before execution;1790 corrects that script error.
+
+Both1791 native7000-section RC controls completed. The strict exact-equality
+checker failed because the baseline final voltage was the representable
+double immediately below0.5V while METIS returned exactly0.5V. Assessor1792
+reuses these completed outputs without native retry, verifies final native
+summaries and absent workers, and checks all divider observations against
+1/0.75/0.5V within one ULP. The log confirms actual ordering=METIS(3),
+strategy=symmetric(3). The failed exact-equality check remains distinct.
+Evidence is retained under RC_metis_control_1792. Runner1793 admits one
+full METIS case with the same64-GiB/1800-second resource cap and unchanged
+stimulus. At retention time it is live; no speedup or backend qualification
+is claimed from the analytical control alone.

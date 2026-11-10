@@ -1,0 +1,37 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_linear_trace_1786/assessment.json": "5653a3857b1adca4167106db96a3e84cd791c9d1751f0c141c7dceb3e2cc427b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_linear_trace_1786/libxyce.a": "feee35b94e7693579d417e02104f1fb85b206e4794c1ed0d76f85265b04d1e8f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_linear_trace_1786/Xyce": "d2241def373079780446007aace48b14deb4efdf59d6f7596f0667f56321613b",
+    "/opt/xyce-build/src/CMakeFiles/XyceLib.dir/flags.make": "5e36caa91f198ef7b7e6c5cadaf0a188e70c7ec32ab4e05aa649ff1264c48116",
+    "/opt/xyce-build/src/CMakeFiles/Xyce.dir/link.txt": "232811447dda16824f53ec6315d30d4999b054e66637bcc085ee3fb5ce447f29",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_umfpack/build_metis_ordering_1790.py": "c0dd36ce6fe2981f7a91b24f85caaf0400f816c00c355104c7ce963c04ccea5f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_umfpack/build.py": "9b8ffd1143b0ea1c25744f071172e2430656ffd59641f33cdf219a81d983e52c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/N_LAS_TranSolverFactory.C": "ea5817913c7c05eb66a313e05fa1291b65306937aebc37b00673c8be103d78bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_metis_ordering_1790/N_LAS_OpenPLLUMFPACKSolver.h": "f2a60beaed62f2fe3eaa0bfb7c4bb0478d38f751ab3de42ec3d4453f39037141",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_metis_ordering_1790/CheckedUMFPACK.h": "509bdec18a82f7bf380094ca4be0bcb28adafa110b10f83f50b962a0bff5ea57",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/N_LAS_OpenPLLUMFPACKSolver.h": "52136c3de6c40fbb5db70fce037e3561281095476351d7e2b14b939e6e216e79",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_value_gather_001/CheckedUMFPACK.h": "e3aaf020f726803d2a2b415816c5f8f6dea2a805394c8bd9e5227094a78ebb4c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_metis_ordering_1790/N_LAS_TranSolverFactory.C": "ea5817913c7c05eb66a313e05fa1291b65306937aebc37b00673c8be103d78bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_metis_ordering_1790/initialization_trace.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_metis_ordering_1790/Xyce": "600962e16df97b2258c55bb6f7201e335b73e692a139367b153f4952c93184a1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_metis_ordering_1790/initialization_trace.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_metis_ordering_1790/capabilities.log": "ede6c274b4ab3a0e6992649e360b364ee4d058634a172ed5b62e7f6bf3234f0d"
+  },
+  "base_binary_sha256": "d2241def373079780446007aace48b14deb4efdf59d6f7596f0667f56321613b",
+  "binary_sha256": "600962e16df97b2258c55bb6f7201e335b73e692a139367b153f4952c93184a1",
+  "changed_archive_members": [
+    "N_LAS_TranSolverFactory.C.o"
+  ],
+  "all_other_archive_members_identical": true,
+  "baseline_archive_relink_exactly_reproduces_checked_binary": true,
+  "stock_inputs_modified": false,
+  "device_objects_unchanged": true,
+  "linear_adapter_trace_only": false,
+  "ordering_only": true,
+  "trace_only": false,
+  "native_validation_required": true,
+  "release_ready": false
+}

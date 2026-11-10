@@ -1,0 +1,11 @@
+{
+  "native_identity": {
+    "pid": 3089991,
+    "birth": "155450794",
+    "process_group": 3089991
+  },
+  "user_cancellation": false,
+  "reason": "Symbolic analysis isolated; replace default ordering with independently checked METIS candidate.",
+  "native_log_sha256_at_stop": "fc1a5375624705b891d1bac587a52d28cfad0c29c689f9e99a6ea97c74d1cc29",
+  "partial_DC_qualified": false
+}

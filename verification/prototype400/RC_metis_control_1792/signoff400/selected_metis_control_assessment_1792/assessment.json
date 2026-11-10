@@ -1,0 +1,48 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_metis_ordering_1790/assessment.json": "fae6dbcb551ad91c4a2f9b7da8d7edf056f3b0d9f7f66cc8e3168bb0f2f86745",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_metis_control_1792.py": "1df7ee98eb7720785a4eda1fdc6ebae228077585835c03d5e082d3d3f901d4a6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_metis_ordering_1791.py": "bf9c7bedf55cbfc160199e8831489961dd4291eb4b6a37443d93678f85ef5e7e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1791/base/native.process.json": "feb32a0ef2dbd0bbfaa5d0491d4c4340264284efdb70d0d42a685f08d95563b7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1791/base/native.log": "f3d9f1baa50894617cfb9d8143e8ff3c5ee2fa96166bd135a06ac6466b9c29ba",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1791/base/control.spice": "660138844d7547c8a514e3f559514240d6e63c46c64507928d50b5d49651eb66",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1791/base/dc.csv": "30977640836bda158299966898249a7dd8b3215d2d7240687e5e5d5ffb20a4be",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1791/trace/native.process.json": "481f1af4070491cf5ea35e1dfcd10ba93882be9ae47b183cd15f3f0cab124bf0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1791/trace/native.log": "84b6974ef43558eb37e6bbb496468dc42e9db10ec7ced478a65fdf9d08e608c1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1791/trace/control.spice": "b068445bb59f2f1f887dbd4f772278f44a38163192a11798dbfe9eef5365eca0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1791/trace/dc.csv": "730fdd1a19006a37123eea933fac5389f52d19e55b4d6bca0bf444513a2c5569"
+  },
+  "analytical_divider_within_one_ULP": true,
+  "METIS_ordering_observed": true,
+  "results": {
+    "base": {
+      "values": [
+        1.0,
+        0.75,
+        0.49999999999999994
+      ],
+      "error_ULP": [
+        0.0,
+        0.0,
+        0.5
+      ]
+    },
+    "trace": {
+      "values": [
+        1.0,
+        0.75,
+        0.5
+      ],
+      "error_ULP": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "native_cases_rerun": false,
+  "exact_output_equality": false,
+  "prior_checker_failure": "Both native workers completed; strict output equality rejected a one-ULP baseline error at 0.5V.",
+  "full_backend_qualified": false,
+  "release_ready": false
+}
