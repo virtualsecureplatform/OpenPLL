@@ -1,0 +1,11 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_crossplane_area_crop_1662/assessment.json": "405c4916f7cbf3c64af365eb9f2012108e989c85e9c4ef8734250361d64282bb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_physical_connections.py": "7986662b462434042b142f1cc68e4018208eebfa7353864e14d6a04201576cd2"
+  },
+  "physical_devices_checked": 34,
+  "per_physical_device_connections_verified": true,
+  "conductor_collisions": [],
+  "failures": [],
+  "RC_export_fixed": false
+}

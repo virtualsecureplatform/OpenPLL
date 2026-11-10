@@ -3221,3 +3221,27 @@ Queue1688 follows the verified live conversion/electrical controller1683
 and runs both remaining gates once. It neither retries geometry nor
 qualifies a network automatically. Control evidence is retained under
 RC_remaining_gates_1688. Full-layout extraction remains in progress.
+
+### Verify terminal ownership per physical device (1689–1694)
+
+The physical parameter verifier passes on both completed full-layout native
+references: 62,338 unique model/origin bindings, with no parameter changes.
+Independent source inventory1690 identifies 19,696 required device/port
+networks and 780,557 capacitance-only conductors, with no gate-only or
+bulk-only remainder. This is a source inventory, not an RC output result.
+
+A further verifier checks each physical device's terminal connections after
+wire contraction. It rejects swapped connections between otherwise identical
+physical instances, which aggregate primitive inventories could miss. Four
+unit controls pass. Native crop1692 verifies all 34 physical devices without
+conductor collisions. Older rotation controls lack origin comments and are
+explicitly ineligible for this stronger physical binding check.
+
+Final review1693 requires the completed electrical and wire-value gates,
+exactly one output marker for each of the 19,696 required networks, matching
+source category counts, all 62,338 physical device connections and clear
+native error diagnostics. Queue1694 follows the already live remaining-gate
+controller without changing frozen scripts or rerunning extraction. It keeps
+final qualification pending even if every review check passes. Evidence is
+under physical_RC_review_1694. Full RC export remains unqualified while the
+native geometry producer is live.
