@@ -2953,3 +2953,15 @@ remain: X20 PFET and X60 NFET lose their source area/perimeter (AS/PS become zer
 Charge diagnosis 1610 is running with the provenance mapping and separately
 reports retained killed-name orphans, exact C differences and negative C examples.
 No old export, intrinsic parameters or capacitance values are overwritten.
+
+Charge diagnosis 1610 completes with native ownership mapping: 141,870 original
+C pairs are lost, 16,900 change value, and 2,794 new pairs appear (161,564 total
+differences). No retained killed-name orphans are found, and 413 negative C cards
+remain. Native EFflat.c explicitly omits coupling capacitors whose endpoints have
+EF_KILLED set; ResPrintExtNode emits killnode for replaced anonymous nets. This
+provides a concrete coupling-loss mechanism, separate from terminal renaming.
+ResReadCapacitor's signal path also adds coupling values to node capacitance.
+An export correction must preserve original coupling charge and valid attachment,
+not merely rename nodes or clamp negative cards. The exact changed-pair report
+is retained losslessly compressed; failed export and native references remain
+unchanged while the correction is developed.
