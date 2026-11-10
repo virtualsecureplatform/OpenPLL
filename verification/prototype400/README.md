@@ -3640,3 +3640,17 @@ At retention time the native case is live; no result is claimed.
 Prelaunch review stopped predecessor1769 before native invocation because
 its card checker still selected only C cards. The fresh1770 runner checks
 both R and C. This is a controller correction, not an extraction rerun.
+
+
+### Full RC reset-DC resource admission update (1771)
+
+Case1770 terminated with native exit2 and explicit OUT OF MEMORY diagnostics
+under its16 GiB RLIMIT_AS before producing a qualified DC point. Its terminal
+receipts and unchanged compressed native log are retained under
+full_RC_DC_resource_1770. This is an allocation failure, not electrical
+qualification. Fresh runner1771 raises the declared lease and address-space
+cap to64 GiB, preserving the same model, corrected backend, solver and DC
+stimulus. The host had approximately234 GiB available at admission, and the
+existing16-CPU/64-GiB job is preserved; combined leases remain below200 GiB
+with the32-GiB host reserve. The30-minute cap and single-case/no-identical-
+automatic-retry policy remain. At retention time1771 is live and unqualified.

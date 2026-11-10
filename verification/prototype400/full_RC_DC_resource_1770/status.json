@@ -1,0 +1,5 @@
+{
+  "state": "stopped_without_qualification",
+  "reason": "RuntimeError('compiled worker failed (2): /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_physical_RC_reset_DC_1770/native.log')",
+  "release_ready": false
+}
