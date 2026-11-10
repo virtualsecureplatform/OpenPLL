@@ -3389,3 +3389,12 @@ The original-seed1724 observation remains separate. Neither a completed copy
 nor the focused controls establish full RC export or PLL release readiness.
 Original completed observations and the1714 stop receipt are retained under
 ground_driver_diagnosis_1725, with unchanged compressed native log bytes.
+
+
+Candidate1726 passes independent assessment1730 in all four rotations of the
+real transistor crop: conserved charge, physical terminal ownership, every
+native wire value, C passivity and unique physical names. Baseline and candidate
+electrical records match, ignoring serialization element ordinals. Completed
+controls and losslessly compressed native artifacts are under
+explicit_drive_type_1730. Full-layout ground-copy diagnostic1728 remains
+pending; these crop controls alone do not establish the ground-network repair.

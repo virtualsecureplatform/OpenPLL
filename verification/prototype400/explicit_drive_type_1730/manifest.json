@@ -1,0 +1,246 @@
+{
+  "build/signoff400/selected_drive_type_RC_controls_1729/status.json": {
+    "sha256": "2fad4d9f07020612291c3de46af135ff21e10ddd2909a7f9731b340b4792a1ce",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/status.json"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotate.py": {
+    "sha256": "26ede590d3e382103677459f41182dff8a8673bf758f5f9962517772242e5b03",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotate.py"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotate.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotate.log.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/assessment.json": {
+    "sha256": "f306f726e80ad8c05768b3dc29996acba85fa01c11c3d5b82c25c2baa27f9c0e",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/assessment.json"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed0/before.spice": {
+    "sha256": "85b37d632ebd0551958d588f8bb6e65823b491ef287fc06dfbe27e191224337b",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed0/before.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed0/RotatedCrop.ext": {
+    "sha256": "eaadea81740c83fa871c6e3047a5224ce855753c47c7aa57d1d2adb9e41082e3",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed0/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed0/after.spice": {
+    "sha256": "4b3955ce14cbbe199303cf285fca80865ee8a7fb1eaf0cfd21867204fefe5b63",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed0/after.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed0/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed0/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed0/run.tcl": {
+    "sha256": "3a6959125acbf8dd78503b5ec53a00da023fe156c6107a5dee12d332560d34d0",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed0/run.tcl"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed0/native.log": {
+    "sha256": "663a4b81fcc2d6e0d0927be818f2305d65b6718316887597ac7058d84598cede",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed0/native.log.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed0/RotatedCrop.res.ext": {
+    "sha256": "a73d439bec2ab7c24bef0ad24c0929f5c554c1fa941022fab6ff2ff364b19c3d",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed0/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed0/RotatedCrop.res.ext": {
+    "sha256": "82158e898cd81c532438b1cf448dff67e39d7942f79ff33855a19ee13f319dab",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed0/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed0/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed0/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed0/after.spice": {
+    "sha256": "f91c41d37b4bcfb99ffe761458110629f09f45c5fb83a45ddedc5370fa276955",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed0/after.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed0/run.tcl": {
+    "sha256": "e1c8b2025a8b601b282dcec35cf6c7c8ada9c67e257acf856014c018551d853b",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed0/run.tcl"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed0/native.log": {
+    "sha256": "09c23319245d00596b434be00437be1d7c35963aca264bbb13b9e22f241afabd",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed0/native.log.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed0/before.spice": {
+    "sha256": "6feeb373b6f93092a7c550f29fc6df65e596dc44f3ddfaed07803b26deaddb35",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed0/before.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed0/RotatedCrop.ext": {
+    "sha256": "512b8af607c7fc3227bdb856c7975b1d28c18736bcb215b185a622541e12c3b6",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed0/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed1/native.log": {
+    "sha256": "b7303efc62d273157932c8ba859e705809d2e3f135b688c644832f9f64490420",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed1/native.log.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed1/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed1/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed1/run.tcl": {
+    "sha256": "c0ffd422f2f8b35242f4bc7836710aa7be811c8bca4e219e89fade0bbb0dd9d1",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed1/run.tcl"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed1/before.spice": {
+    "sha256": "dc27d91177c0276c84ecce6fb746a4afe7466e44df4fb2f959c800a1c8116bd1",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed1/before.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed1/RotatedCrop.ext": {
+    "sha256": "faaffb3a1344e3577819ff7a686c6dbe6e62864ebe8a56b1510099320b66bb04",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed1/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed1/after.spice": {
+    "sha256": "7dbd1ce813745ecdec4627542aaa62c4f2bf117037c2204183faa309b2b12c71",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed1/after.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed1/RotatedCrop.res.ext": {
+    "sha256": "2674cee22ec8060190049e343c9e09c3820d347da1b49bc4ab380060f1f2e304",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed1/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed1/run.tcl": {
+    "sha256": "d04d6c4aed5f912e6a995b1430671d7d3ab62a6af152853f6a19fcac426ee432",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed1/run.tcl"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed1/RotatedCrop.res.ext": {
+    "sha256": "418ae7a318e3f2999529c3fea886960f402f38dbb8dc7b3ab4ed7b9997f7e794",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed1/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed1/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed1/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed1/before.spice": {
+    "sha256": "99e8c6e36e7e4003d30a441d68bb6806cc8bc8a130b07717c31335c186116599",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed1/before.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed1/native.log": {
+    "sha256": "c508cea7559cd21ef7d8d2882d212cb46dcd833f787b4995d75432c754d6595e",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed1/native.log.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed1/RotatedCrop.ext": {
+    "sha256": "07d9bfe5e9262a93d485680a66dff288d9a22953519f21674fc20d0262276082",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed1/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed1/after.spice": {
+    "sha256": "53faca197a2e62f75fae1a587598b847bbf6d29b9b0e8494bd9bc96b70c5163a",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed1/after.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed1/run.tcl": {
+    "sha256": "e62406cad60e71a7a4008c376e30148fc394c045cb75f3f1a95df5f2daab6e0d",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed1/run.tcl"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed1/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed1/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed1/native.log": {
+    "sha256": "3d0b4eb228048dd10e4a7a4144ad69f2aa4b68e3e882dbce617401d8dfc75bc7",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed1/native.log.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed1/RotatedCrop.ext": {
+    "sha256": "ffe79a5421090f8a1ebc41425e54d4c5950f311286c022131d5b93284d94b317",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed1/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed1/after.spice": {
+    "sha256": "55a5ad6ff61e1954de22b82c0d358729fd46f35d1b7a5751f993b5a91d75d0f1",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed1/after.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed1/before.spice": {
+    "sha256": "3efe6d5b4d7894cd17f7fe08ea4f23287c350a25e5cb15bfc7bace54de31bed7",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed1/before.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation0_fixed1/RotatedCrop.res.ext": {
+    "sha256": "82158e898cd81c532438b1cf448dff67e39d7942f79ff33855a19ee13f319dab",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation0_fixed1/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed1/RotatedCrop.ext": {
+    "sha256": "7c05b12ec8cb61749e4695a2d3c54d1b65c4ec6e739cbb2cb019deb309db4ee1",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed1/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed1/run.tcl": {
+    "sha256": "5fcdd102db4ed5b1b2a7bb1a433a70bde9b4fd5cec75868a12252481b5d7f338",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed1/run.tcl"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed1/after.spice": {
+    "sha256": "722d2be4c9459bccc1a09c6292fec718c5404368c7f64636eed3be81699bcced",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed1/after.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed1/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed1/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed1/before.spice": {
+    "sha256": "f404b6296e675aa2d58598d063a0c05d173cbfe5bf1bde928215b1d674eab1fe",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed1/before.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed1/native.log": {
+    "sha256": "e47b67309732d16873203e9adeed7776d13e45a26fb86f36f9ed22e4675c7612",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed1/native.log.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation2_fixed1/RotatedCrop.res.ext": {
+    "sha256": "a73d439bec2ab7c24bef0ad24c0929f5c554c1fa941022fab6ff2ff364b19c3d",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation2_fixed1/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed0/run.tcl": {
+    "sha256": "b7e3f646c54d448854c1a80be17f6ba386e087193eb73ff261e844dad90156b1",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed0/run.tcl"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed0/after.spice": {
+    "sha256": "4b180cb6577dac989f67ecfc7a0acf0b10b1c7366dcb576c449787da34f9a768",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed0/after.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed0/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed0/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed0/RotatedCrop.res.ext": {
+    "sha256": "418ae7a318e3f2999529c3fea886960f402f38dbb8dc7b3ab4ed7b9997f7e794",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed0/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed0/native.log": {
+    "sha256": "35c508bca67625a7ad517bf7050e4b2d9fc63b921232317f2a92d3b8a6be3972",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed0/native.log.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed0/before.spice": {
+    "sha256": "a7641b2f0d2473d414bed870c8354470998aeda041c043f8d614504a10a3d5e1",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed0/before.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation3_fixed0/RotatedCrop.ext": {
+    "sha256": "4bbb8daff317828e3deb1aac077b503bd867e95d9f20767dd18576f6112490f3",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation3_fixed0/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed0/native.log": {
+    "sha256": "c45557bd931a00f5c41faa6ea04e982594e74f3044b2ddd0952a355d87e4424d",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed0/native.log.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed0/minimal.magicrc": {
+    "sha256": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed0/minimal.magicrc"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed0/RotatedCrop.res.ext": {
+    "sha256": "2674cee22ec8060190049e343c9e09c3820d347da1b49bc4ab380060f1f2e304",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed0/RotatedCrop.res.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed0/RotatedCrop.ext": {
+    "sha256": "f63db3cafa115f6312377490d4e4fc26a6d7a4409007de53c271a8506d72aff7",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed0/RotatedCrop.ext.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed0/run.tcl": {
+    "sha256": "8128edfa4d1f6dbbb3a63b06fb4b112526cb276151ac2634651cb5e96bc241b2",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed0/run.tcl"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed0/after.spice": {
+    "sha256": "523b5f25a6dd3e316b654ec9f5a1dbf77dc905864af49f8c2235ecbf3e5cf758",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed0/after.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_controls_1729/rotation1_fixed0/before.spice": {
+    "sha256": "befbf001cd6759cc1432cb3789d321fc9548549ebac32185ffa5e23a16b605b9",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_controls_1729/rotation1_fixed0/before.spice.gz"
+  },
+  "build/signoff400/selected_drive_type_RC_assessment_1730/assessment.json": {
+    "sha256": "4052e306a66ea1a5db82c5c5ec879a687006c407128d6d91563b9dc18e2346cd",
+    "retained": "verification/prototype400/explicit_drive_type_1730/selected_drive_type_RC_assessment_1730/assessment.json"
+  }
+}
