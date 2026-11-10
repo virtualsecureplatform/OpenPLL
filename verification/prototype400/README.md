@@ -3899,3 +3899,26 @@ stimulus,64-GiB cap and1800-second limit fixed. This tests METIS on the
 repaired matrix; the earlier1793 ordering trial still contained empty rows.
 At retention time1815 is live. No completed full DC solution or backend/model
 qualification is claimed; no identical automatic retry was performed.
+
+
+### Completed repaired-matrix symbolic replay (1817–1820)
+
+Standalone replay1818 consumes the normally completed1813 binary CSC arrays,
+not live simulation data. It completes symbolic analysis successfully in
+145.017265579 seconds with actual METIS ordering3 and UMFPACK symmetric
+ordering strategy3. No numerical factorization or DC simulation is claimed
+by this diagnostic. An interposer records entry/exit of CHOLMOD analysis;
+that call returns successfully. Initial runner1817 built the tools and
+completed the three-unknown control but rejected natural ordering5 after
+singleton elimination;1818 accepts that valid trivial control result and
+reuses it without a native retry. The full replay ran on CPU22 with16 GiB.
+
+Completed exact matrix check1820 uses NumPy sorting (SciPy is unavailable
+in the pinned image). The923123-row pattern is exactly symmetric, but738048
+entries differ numerically from their transpose, with maximum absolute
+difference4.368397358247455e-5. Ordering strategy3 does not turn UMFPACK's
+unsymmetric numerical factorization into a symmetric equation solve. No
+matrix coefficient is changed. Evidence is under RC_symbolic_replay_1820.
+At retention time full METIS case1815 has passed symbolic analysis and
+completed multiple numeric factorizations while iterating; no completed
+DC result or backend/model qualification is yet claimed.
