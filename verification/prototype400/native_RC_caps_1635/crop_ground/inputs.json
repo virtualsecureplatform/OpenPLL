@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_native_RC_alias_paths_1634/assessment.json": "1bfe60b63199577543d646170cf0108702c8c34f3631902cc9b2f2cbb5d7da62",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_native_RC_alias_paths_1634/install/bin/magic": "670f43f46817affce9bdb51186c9f89462d269e3cbe3738717dd7306b408467e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_native_RC_alias_paths_1634/install/lib/magic/tcl/tclmagic.so": "7e15c2e2e452b9480381dbaad8a9386ba2a84d95e7b63dfd618c23c1d3099609",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/flat.gds": "4dc5bc17e43b4ec1d6d3a7e1f1717df460a1066bdccdca71b48bf3af016b1880",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/nix/store/c8mymw0gckkiw7lqwnm2l6mqnd99xmzy-klayout-0.30.7/bin/klayout": "9871282c43f561b7e3094f15f71fbd825bb0bf4f376f4651999cad15e115d67a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/crop.py": "fe8021d6b2523597d7f3e63b0c902677c2903cc679e866fa69552cdfc7b8da11",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/run.tcl": "bd9946289922ebec85d944156b13d199b3baf0a3d00e1445cfb666e58a03c711",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_cropped_native_RC_caps_1636.py": "871a92ad5798e3a6d0246505b1777588a5d6db41eb0085b656a0bb884f66b2c5"
+  },
+  "clipped_real_layout": true,
+  "native_ground_C_enabled": true,
+  "DRC_qualified": false,
+  "maximum_native_cases": 1,
+  "release_ready": false
+}

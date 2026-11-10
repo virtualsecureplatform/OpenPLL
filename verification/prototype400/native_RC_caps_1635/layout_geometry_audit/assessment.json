@@ -1,0 +1,46 @@
+{
+  "area_diagnostics": {
+    "out_of_bounds_breakpoints": 0,
+    "negative_raw_area_nodes": 0
+  },
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_SD_overlap_1625/assessment.json": "fb9d97eb79e59125cf7b437959fc91040f3b305936742c209a8863942fc87e7d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/assessment.json": "6047a234f31a190fa3ae4cd6623a4486d2d0a8287b6744aca828c1fb6067e939",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_SD_overlap_1625/install/bin/magic": "3fe29fe0aafc553848665146f7309b8fe234c9e9ffff7ca92658eb3f74d17eea",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_SD_overlap_1625/install/lib/magic/tcl/tclmagic.so": "da5631f65eaefbfa84cb1fac78ac0d6f1e0573e44dd039f1d26335d875e7def9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/flat.gds": "4dc5bc17e43b4ec1d6d3a7e1f1717df460a1066bdccdca71b48bf3af016b1880",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/IntegerPLL_400MHz_KeeperFlatC.ext": "8ce8a459945ca181b69ee3a5cf47f94caedf63d7093a0b7fb5970616e0a97a78",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_SD_overlap_1628/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_SD_overlap_1628/run.tcl": "e8201f981fc02529d6b337534860d0ee5f7f8957bcb3bc7f1fb999c39db879db",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_layout_RC_SD_overlap_1628.py": "3e792e800fd77b1dd092f9a4a33f812fc8a75cee67e43bf61b69af1afaef9e73",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_SD_overlap_1628/before.spice": "a8dd202ea11f0a73e96970a4d50437b1477b415c1ec092cd88f409156b16fdf8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_SD_overlap_1628/after.spice": "e0a95a3ec7bcd719a5a96d9c444046951c314d69e3ec52399c71ec3bcea163a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_SD_overlap_1628/IntegerPLL_400MHz_KeeperFlatC.res.ext": "16a81e9a1b5b31b5d87275ed179909517d9a625a18de4b600b06366b596fc9d6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_SD_overlap_1628/native.log": "bae453ed3b1d4668dc96124bfc7c375e6e36fd3e1cc3d1eaca2abaf8e04bce2d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_layout_RC_SD_overlap_1628/assessment.json": "2ccf6e6937c32093e85b45f879cf317b219f1dd58c8ba33fc5cea0ca72cbff36",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_layout_RC_SD_overlap_1631.py": "004287dc89d1dde8b809f775966b72d0aa7d826ab85bd3a93609ea7f90750eee"
+  },
+  "contraction": {
+    "reference_primitives": 62338,
+    "candidate_primitives": 62338,
+    "primitive_multisets_match": true,
+    "missing_primitive_count": 0,
+    "extra_primitive_count": 0,
+    "wire_R_cards": 15,
+    "positive_wire_R_cards": 15,
+    "wire_R_components": 2,
+    "components_joining_distinct_reference_nodes": [],
+    "ordered_formal_ports_match": true,
+    "reference_nonzero_C_pairs": 340512,
+    "contracted_nonzero_C_pairs": 340512,
+    "C_pair_differences": [],
+    "exact_aggregated_C_match": true,
+    "negative_candidate_C_cards": 0,
+    "exact_device_and_C_contraction_verified": true
+  },
+  "full_layout_R_coverage": false,
+  "distributed_C_placement_qualified": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

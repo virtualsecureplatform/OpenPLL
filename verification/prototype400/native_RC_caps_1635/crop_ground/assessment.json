@@ -1,0 +1,63 @@
+{
+  "contraction": {
+    "reference_primitives": 28,
+    "candidate_primitives": 28,
+    "primitive_multisets_match": true,
+    "missing_primitive_count": 0,
+    "extra_primitive_count": 0,
+    "wire_R_cards": 14,
+    "positive_wire_R_cards": 14,
+    "wire_R_components": 1,
+    "components_joining_distinct_reference_nodes": [],
+    "ordered_formal_ports_match": true,
+    "reference_nonzero_C_pairs": 173,
+    "contracted_nonzero_C_pairs": 173,
+    "C_pair_differences": [
+      {
+        "nodes": [
+          "a_65135_57360#",
+          "a_65284_57370#"
+        ],
+        "reference_F_exact": "30041/100000000000000000000",
+        "contracted_F_exact": "30039/100000000000000000000"
+      }
+    ],
+    "exact_aggregated_C_match": false,
+    "negative_candidate_C_cards": 0,
+    "exact_device_and_C_contraction_verified": false
+  },
+  "area_diagnostics": {
+    "out_of_bounds_breakpoints": 0,
+    "negative_raw_area_nodes": 0
+  },
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_native_RC_alias_paths_1634/assessment.json": "1bfe60b63199577543d646170cf0108702c8c34f3631902cc9b2f2cbb5d7da62",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_native_RC_alias_paths_1634/install/bin/magic": "670f43f46817affce9bdb51186c9f89462d269e3cbe3738717dd7306b408467e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_native_RC_alias_paths_1634/install/lib/magic/tcl/tclmagic.so": "7e15c2e2e452b9480381dbaad8a9386ba2a84d95e7b63dfd618c23c1d3099609",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/flat.gds": "4dc5bc17e43b4ec1d6d3a7e1f1717df460a1066bdccdca71b48bf3af016b1880",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/nix/store/c8mymw0gckkiw7lqwnm2l6mqnd99xmzy-klayout-0.30.7/bin/klayout": "9871282c43f561b7e3094f15f71fbd825bb0bf4f376f4651999cad15e115d67a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/crop.py": "fe8021d6b2523597d7f3e63b0c902677c2903cc679e866fa69552cdfc7b8da11",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/run.tcl": "bd9946289922ebec85d944156b13d199b3baf0a3d00e1445cfb666e58a03c711",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_cropped_native_RC_caps_1636.py": "871a92ad5798e3a6d0246505b1777588a5d6db41eb0085b656a0bb884f66b2c5"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/crop.py": "fe8021d6b2523597d7f3e63b0c902677c2903cc679e866fa69552cdfc7b8da11",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/crop.process.json": "3d1f998ac1fe5a0e77a4f2802cb3925ceb7e52f78fef8ba0bf6bc8a6d4d8c230",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/before.spice": "08f08018460a1c9501b16a1589774681db0f14343f0dc40327e49234c9a48a62",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/native.process.json": "574550858fbb31ce5add3f2461557c4b3864d8c8e43e07746db22f40d27e3fc8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/crop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/after.spice": "738b76c4f0459084332a9fffbfae8c74c92fd618385fc286ac346bd4dd0c165f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/RC_Area_Crop.ext": "73125f15fb1584bcbc9aa155f7f8b6265a6ded4d633b91806b99a5a0056fcd9a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/native.log": "c0946702977f14cf0394699cbc226202098b1e41342f491846846e7e2b0346ab",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/RC_Area_Crop.res.ext": "cb891febe86d755f58aaa0f67a6d963c27524debd011fac96220fadbaf841793",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/crop.gds": "6555b2febe1521528a14d20c6c3e6b5630890fd49855e2328ba0bcdbbf642347",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/crop_metadata.json": "608ba180ed46d3083f7b48ae3b9b279f81c97763451cb92df74c8e0a1fc1851e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_native_RC_caps_1636/run.tcl": "bd9946289922ebec85d944156b13d199b3baf0a3d00e1445cfb666e58a03c711"
+  },
+  "native_process_completed": true,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

@@ -1,0 +1,14 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_native_RC_alias_paths_1634/assessment.json": "1bfe60b63199577543d646170cf0108702c8c34f3631902cc9b2f2cbb5d7da62",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_native_RC_alias_paths_1634/install/bin/magic": "670f43f46817affce9bdb51186c9f89462d269e3cbe3738717dd7306b408467e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_native_RC_alias_paths_1634/install/lib/magic/tcl/tclmagic.so": "7e15c2e2e452b9480381dbaad8a9386ba2a84d95e7b63dfd618c23c1d3099609",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/coupling_grounding_R_threshold1_probe.tcl": "ffb48275938a2c472d1ea020d21c64a2408a4dad50fd3c7f113dabb0cf62f75d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_native_RC_alias_paths_1635/probe.tcl": "16c83cff4dcb7b96ba5f905681990c6a9b80e7b3042a96792926196795966e81",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_native_RC_alias_paths_1635.py": "6f628d4649a6408f9df52453fc46fde0d26467d1b1436855b7ca5ae3e26f3865"
+  },
+  "native_cases": 4,
+  "automatic_identical_retry": false,
+  "release_ready": false
+}

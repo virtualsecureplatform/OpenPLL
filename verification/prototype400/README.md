@@ -3038,3 +3038,37 @@ also reveals that its original zero-ohm alias resistor bypasses the exported
 alone does not prove an electrically effective distributed resistance network.
 Alias separation, ground-C redistribution without double-counting, remaining
 whole-node junction fallback changes and full-layout validation remain open.
+
+### Native ground-C and effective port resistance controls (1628–1637)
+
+The corrected S/D-midpoint engine completed the two-net full-layout pilot1628.
+Audit1631 verifies zero invalid breakpoints and zero negative raw areas,62338
+unchanged primitives,340512 exactly conserved nonzero C pairs and15 positive
+wire resistors in two components. This pilot retains lumped ground C and is
+not full-network validation.
+
+Candidate1634 adds opt-in `OPENPLL_RC_NATIVE_CAPS=1` alongside explicit coupling.
+It imports original node ground capacitance, emits native subcap adjustments to
+remove the original lump before adding distributed rnodes, and separates named
+resistor aliases while retaining port numbers. Generated ideal port-short
+devices are tagged internally. Only tagged shorts whose endpoints are connected
+by actual native resistor records are omitted; physical zero-ohm devices and
+unextracted port aliases are retained. An iterative union-find graph avoids
+recursive traversal depth on large wire networks.
+
+Four native controls1635 include an extracted A–AFAR wire and an independent,
+unextracted C–CFAR alias. Default mode retains the bypass; enabled mode has a
+4.9755-ohm A–AFAR resistor without the ideal bypass while C–CFAR stays shorted.
+With coupling on and off, port ordering and exact aggregate capacitance pass.
+The cropped transistor control1636 retains28 primitives and14 positive R edges
+with no invalid breakpoint or negative raw area, but strict capacitance
+contraction fails: one pair totals0.30039fF instead of0.30041fF. No tolerance
+waiver or completed-export claim is made.
+
+The native capacitor formatter esSIvalue uses five fractional digits and leaves
+SI values below1e-18 unscaled. Synthetic native control1637 supplies an explicit
+0.25aF coupling and observes a zero-valued C card in the C-only output. This
+precision loss must be corrected in addition to rnode/float accumulation
+rounding before full-network qualification. Evidence is retained under
+`native_RC_caps_1635`. Whole-node junction fallback parameters and full coverage
+remain open; the release executable and existing calibrated models are unchanged.
