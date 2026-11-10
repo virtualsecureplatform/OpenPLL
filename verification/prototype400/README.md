@@ -3096,3 +3096,29 @@ These receipts do not relabel older calibrated models or qualify a full network.
 The release binary remains unchanged. Negative-source coefficient/passivity,
 whole-node junction fallback and full layout coverage still require validation.
 Evidence and original compressed logs are under precise_RC_caps_1642.
+
+### Extract each aliased physical conductor once (1643–1653)
+
+The all-network named-port control1643 exposes duplicate native extraction:
+each physical wire receives two identical4.9755-ohm resistor networks in
+parallel. Candidate1646 resolves original EXT equiv records to canonical
+conductors before extraction, retains each port's own breakpoint geometry, and
+rebuilds device adjacency after resolving every terminal owner. Include/ignore
+selection follows aliases to the canonical conductor. The candidate build uses
+two leased CPU slots and make-j2 within the unchanged global resource budget.
+
+All-network controls1647 now produce one resistor per physical wire, without
+ideal bypasses. Partial controls1648 extract the selected wire once and retain
+the independent unextracted ideal alias. The cropped transistor control1649
+also completes. Independent audit1653 passes nine device/charge checks within
+the explicit float64 operation bound; exact comparisons remain separately
+reported. The unchanged precise serializer's sub-attofarad control is reused.
+Evidence is under canonical_RC_1653.
+
+Native provenance1651 binds all413 strictly negative old rnode values plus
+three negative-zero values to11 original conductors, without ambiguous owners,
+using the actual resistor graph and original EXT aliases. A single12-hour-cap
+replay1652 of those11 conductors, including VGND and VPWR, is running on the
+checked full GDS. The retained launch snapshot is observational, not a result.
+No active native data file was analyzed. Full-network export, passivity and
+junction-fallback correctness remain unqualified; no release readiness claim.

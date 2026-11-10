@@ -1,0 +1,19 @@
+scale 1000 1 1e+06
+subcap "C" -0
+rnode "C" 0 0 0 400 0
+rnode "CFAR" 0 0 3980 400 0
+resist "C" "CFAR" 4.975
+subcap "CFAR" -4357.93994140625
+rnode "CFAR" 0 2189.86474609375 3980 400 0
+rnode "C" 0 2168.0751953125 0 400 0
+resist "C" "CFAR" 4.975
+subcap "B" -4357.93994140625
+rnode "B" 0 4357.93994140625 0 120 0
+subcap "A" -0
+rnode "A" 0 0 0 0 0
+rnode "AFAR" 0 0 3980 0 0
+resist "A" "AFAR" 4.975
+subcap "AFAR" -4357.93994140625
+rnode "AFAR" 0 2189.86474609375 3980 0 0
+rnode "A" 0 2168.0751953125 0 0 0
+resist "A" "AFAR" 4.975

@@ -1,0 +1,273 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_canonical_RC_1653.py": "f6f1c551491b9f6f2aa5eca99e20d65694301b59ad60b37ba2568169fad5a41f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/native_C_roundoff.py": "d2f3d2bfc8a57e98682e46a5cf20d4ed179e0146bccf0c5c77164fc462d9c462",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_keeper_native_R_contraction.py": "6e6627962ba7b6078d0b21adb83995eb34c09f9cdb7964c355e0cf9141fc684b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_native_R_with_aliases.py": "010eb0f3a1ae4894e6f0b09fe8ae42b26fee296a7a31fed10ffaa83f396763c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_canonical_RC_1649/assessment.json": "607c3e7fa8cae6c955d6981472cffc3c55120dfa81bfb1b88d366222321ac19d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_canonical_all_alias_RC_1647/assessment.json": "c5d74c96b4f89742092c5b6595a01ee568a9278463c7e0171f69e6e67e92285a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_canonical_partial_RC_1648/assessment.json": "195485f99cd9f13fb876bcdd780913a345ba7a06b693797748304bf535f0f851",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_precise_subatto_cap_export_1641/assessment.json": "dc0418f0ba43bbee9d1aeaf91914390428bbd678543e9af6b87527428d70fbcd"
+  },
+  "results": [
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_cropped_canonical_RC_1649",
+      "metrics": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 14,
+        "exact_cap_contraction": false,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 1,
+        "C_failure_pairs": 0,
+        "differences": [
+          {
+            "nodes": [
+              "a_65135_57360#",
+              "a_65284_57370#"
+            ],
+            "reference_F_exact": "15020349999999999/50000000000000000000000000000000",
+            "candidate_F_exact": "93877187499999999/312500000000000000000000000000000",
+            "absolute_error_F_exact": "21/1250000000000000000000000000000000",
+            "float64_bound_F_exact": "250339166666666657/2932031007402250000000000000000000000000000000",
+            "within_bound": true
+          }
+        ],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      }
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_canonical_all_alias_RC_1647/native0_coupling0",
+      "metrics": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 4,
+        "exact_cap_contraction": true,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 0,
+        "C_failure_pairs": 0,
+        "differences": [],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      }
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_canonical_all_alias_RC_1647/native0_coupling1",
+      "metrics": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 4,
+        "exact_cap_contraction": true,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 0,
+        "C_failure_pairs": 0,
+        "differences": [],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      }
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_canonical_all_alias_RC_1647/native1_coupling0",
+      "metrics": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 2,
+        "exact_cap_contraction": false,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 2,
+        "C_failure_pairs": 0,
+        "differences": [
+          {
+            "nodes": [
+              "a",
+              "sub"
+            ],
+            "reference_F_exact": "217897/50000000000000000000",
+            "candidate_F_exact": "43579399999999999/10000000000000000000000000000000",
+            "absolute_error_F_exact": "1/10000000000000000000000000000000",
+            "float64_bound_F_exact": "29052933333333333/58640620148050000000000000000000000000000000",
+            "within_bound": true
+          },
+          {
+            "nodes": [
+              "c",
+              "sub"
+            ],
+            "reference_F_exact": "217897/50000000000000000000",
+            "candidate_F_exact": "43579399999999999/10000000000000000000000000000000",
+            "absolute_error_F_exact": "1/10000000000000000000000000000000",
+            "float64_bound_F_exact": "29052933333333333/58640620148050000000000000000000000000000000",
+            "within_bound": true
+          }
+        ],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      }
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_canonical_all_alias_RC_1647/native1_coupling1",
+      "metrics": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 2,
+        "exact_cap_contraction": false,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 1,
+        "C_failure_pairs": 0,
+        "differences": [
+          {
+            "nodes": [
+              "a",
+              "sub"
+            ],
+            "reference_F_exact": "14206500000000003/5000000000000000000000000000000",
+            "candidate_F_exact": "5682600000000001/2000000000000000000000000000000",
+            "absolute_error_F_exact": "1/10000000000000000000000000000000",
+            "float64_bound_F_exact": "56826000000000011/175921860444150000000000000000000000000000000",
+            "within_bound": true
+          }
+        ],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      }
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_canonical_partial_RC_1648/native0_coupling0",
+      "metrics": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 1,
+        "exact_cap_contraction": true,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 0,
+        "C_failure_pairs": 0,
+        "differences": [],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      }
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_canonical_partial_RC_1648/native0_coupling1",
+      "metrics": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 1,
+        "exact_cap_contraction": true,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 0,
+        "C_failure_pairs": 0,
+        "differences": [],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      }
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_canonical_partial_RC_1648/native1_coupling0",
+      "metrics": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 1,
+        "exact_cap_contraction": false,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 1,
+        "C_failure_pairs": 0,
+        "differences": [
+          {
+            "nodes": [
+              "a",
+              "sub"
+            ],
+            "reference_F_exact": "217897/50000000000000000000",
+            "candidate_F_exact": "43579399999999999/10000000000000000000000000000000",
+            "absolute_error_F_exact": "1/10000000000000000000000000000000",
+            "float64_bound_F_exact": "29052933333333333/58640620148050000000000000000000000000000000",
+            "within_bound": true
+          }
+        ],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      }
+    },
+    {
+      "case": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_canonical_partial_RC_1648/native1_coupling1",
+      "metrics": {
+        "primitive_models_and_parameters_match": true,
+        "formal_ports_match": true,
+        "unintended_component_shorts": [],
+        "positive_wire_R_cards": 1,
+        "exact_cap_contraction": false,
+        "float64_C_conservation": true,
+        "absolute_error_floor_used": false,
+        "roundoff_model": "gamma_n, eps=2^-52, n=32*(participating cards+4)",
+        "C_difference_pairs": 1,
+        "C_failure_pairs": 0,
+        "differences": [
+          {
+            "nodes": [
+              "a",
+              "sub"
+            ],
+            "reference_F_exact": "14206500000000003/5000000000000000000000000000000",
+            "candidate_F_exact": "5682600000000001/2000000000000000000000000000000",
+            "absolute_error_F_exact": "1/10000000000000000000000000000000",
+            "float64_bound_F_exact": "56826000000000011/175921860444150000000000000000000000000000000",
+            "within_bound": true
+          }
+        ],
+        "failures": [],
+        "negative_reference_C_cards": 0,
+        "negative_candidate_C_cards": 0,
+        "native_devices_and_C_conserved": true
+      }
+    }
+  ],
+  "subatto_cap_preserved": true,
+  "subatto_expected_F_exact": "1/4000000000000000000",
+  "subatto_observed_F_exact": "12500000000000001/50000000000000000000000000000000000",
+  "all_control_device_and_C_checks_pass": true,
+  "no_absolute_roundoff_floor": true,
+  "full_network_coverage_verified": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

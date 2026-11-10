@@ -1,0 +1,8 @@
+{
+  "observed_UTC": "2026-11-10T04:16:01.574655+00:00",
+  "state": {
+    "state": "native_negative_R_cohort_running",
+    "release_ready": false
+  },
+  "qualification": false
+}

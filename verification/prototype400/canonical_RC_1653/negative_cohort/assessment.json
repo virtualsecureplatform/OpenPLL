@@ -1,0 +1,2106 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_full_R_1599/IntegerPLL_400MHz_KeeperFlatC.ext": "d4cfe1d696da8bba3cc0a6380855172d7c46f07b96be067eb0d6878b05dc466e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_full_R_1599/IntegerPLL_400MHz_KeeperFlatC.res.ext": "93d36cd047e476f39fdca825f0b4720dceca93fe16d97abe2e7d25abe56673b1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_full_R_1599/assessment.json": "9936e58bd38995e185adafc6aa4ea495f73602e637e01c87e1fc6df27e0d6841",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/collect_negative_R_cohort_1651.py": "a434103dd33c2efcff39358c129e21c43e58800c05ed54ae0aafaea3dfa4e703"
+  },
+  "negative_records": [
+    {
+      "node": "a_65284_57370.t0",
+      "raw_C": "-10.5599",
+      "owner": "a_65284_57370#"
+    },
+    {
+      "node": "a_71428_54706.t0",
+      "raw_C": "-10.0055",
+      "owner": "a_71428_54706#"
+    },
+    {
+      "node": "a_68932_48968.t0",
+      "raw_C": "-10.9664",
+      "owner": "a_68932_48968#"
+    },
+    {
+      "node": "a_67396_46714.t0",
+      "raw_C": "-10.349",
+      "owner": "a_67396_46714#"
+    },
+    {
+      "node": "a_68356_46714.t0",
+      "raw_C": "-10.6865",
+      "owner": "a_68356_46714#"
+    },
+    {
+      "node": "a_69220_45382.t0",
+      "raw_C": "-10.1686",
+      "owner": "a_69220_45382#"
+    },
+    {
+      "node": "a_67780_44972.t1",
+      "raw_C": "-10.9845",
+      "owner": "a_67780_44972#"
+    },
+    {
+      "node": "a_73348_44972.t1",
+      "raw_C": "-9.51722",
+      "owner": "a_73348_44972#"
+    },
+    {
+      "node": "a_66052_40976.t0",
+      "raw_C": "-10.4923",
+      "owner": "a_66052_40976#"
+    },
+    {
+      "node": "VGND.t40706",
+      "raw_C": "-0",
+      "owner": "VGND"
+    },
+    {
+      "node": "VGND.t44443",
+      "raw_C": "-0",
+      "owner": "VGND"
+    },
+    {
+      "node": "VGND.t44445",
+      "raw_C": "-0",
+      "owner": "VGND"
+    },
+    {
+      "node": "VPWR.t35855",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35887",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35841",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35964",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t36049",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35756",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35793",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35825",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t38558",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t38744",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t39626",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t41996",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t42157",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t41179",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t43852",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t43546",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t43973",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t43993",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t44133",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t44260",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t42709",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t44376",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t45567",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t45569",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t45612",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t45191",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t45442",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t45657",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t45794",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t45798",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t621",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t45291",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t46141",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t46351",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t46143",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t46946",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t47054",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t46468",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t37335",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t45983",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t46114",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t46534",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t46774",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t46855",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t47956",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t47934",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t47224",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t47728",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t47820",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t47846",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t47239",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t48070",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t48088",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t48975",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t49011",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t48483",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t48539",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t49130",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t49178",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t49270",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t48731",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t48369",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t48345",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t47916",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t232",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t49711",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t50200",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t50652",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t42177",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t50559",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t50447",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t50593",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t50088",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t49746",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t49984",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t212",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t51158",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t51586",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t51639",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t50880",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t51190",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t51455",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t50868",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t51880",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t38576",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t39933",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t51231",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t51227",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t48860",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t51693",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t52156",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t51978",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t51708",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t52081",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t52729",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t37647",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t54568",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t53201",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t54727",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t54763",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t53364",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t625",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t53093",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t54615",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t54653",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t53222",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t54219",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t54424",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t53799",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t3823",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t54996",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t54482",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t53849",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t548",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t53966",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t38240",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t53962",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t53502",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t54097",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t4848",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t5210",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t4658",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t4664",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t852",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t598",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t123",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t5617",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t4318",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t4396",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t5402",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t4580",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t4098",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t6901",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t6530",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t7311",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t6737",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t5803",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t6514",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t6426",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t7059",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t3929",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t5302",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t214",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t4059",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t4083",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t4107",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t9000",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t9224",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t8295",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t9208",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t8076",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t6756",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t5691",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t54055",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t7768",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t8033",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t9056",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t8249",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t7499",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t9360",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t10122",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t10424",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t9295",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t838",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t640",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t9656",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t9652",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t7481",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t6662",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t9939",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t11716",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t11549",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t11637",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t10749",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t11158",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t818",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t11202",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t11113",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t5924",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t9648",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t12135",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t13453",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t12739",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t12769",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t107",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t12356",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t13204",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t12275",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t13309",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t13070",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t11389",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t13911",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t14768",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t12119",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t12184",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t14154",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t11373",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t11377",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t14408",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t14089",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t14161",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t677",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t14314",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t11016",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t15528",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t15286",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t15607",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t15361",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t15287",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16016",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t14470",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16024",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16186",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t17065",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16755",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t15992",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t17091",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16008",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t15482",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16266",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t17117",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16696",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t156",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t10976",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t15809",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t15460",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t17526",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t17805",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t18389",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t17111",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t17446",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t18443",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t18306",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16531",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16282",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16521",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16462",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t18739",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t19492",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t18840",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t19008",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t19256",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t20409",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t19354",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t20446",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t21663",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t21221",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t21801",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t20481",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t21255",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t20708",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t19739",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t21738",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t21909",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t19264",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t19343",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t22273",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23327",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t22464",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23628",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23908",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23380",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23418",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t21777",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23174",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t22394",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23332",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23569",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23750",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23726",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t24741",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t25050",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t24445",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t24240",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t24739",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23916",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t24911",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t24920",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t25045",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t218",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t242",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t18411",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t24397",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23409",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23930",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t23933",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t25285",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t26043",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t26066",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t25384",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t26088",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t25174",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t26230",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t25460",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t26137",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t25452",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t26189",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t26255",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t26424",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t26476",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t27399",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t27506",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t27664",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t26464",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t27258",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t27317",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t26667",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t636",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t28422",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t28592",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t27767",
+      "raw_C": "-3.37851",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t28506",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t28537",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t27894",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t28006",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t27020",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t28919",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t28851",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t29474",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t29450",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t28982",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t29671",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t29111",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t29699",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t29133",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t16874",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t29710",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t30447",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t30380",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t30515",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t29819",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t30108",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t30486",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t30178",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t30538",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t30610",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t30673",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t30384",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t31451",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t31538",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t31563",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t31152",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t5",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t30969",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t31499",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t31127",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t31743",
+      "raw_C": "-1.46868",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t32010",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t55033",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t32318",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t32349",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t32383",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t32429",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t31950",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t31978",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t32464",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t173",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33260",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33289",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33324",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33345",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t32919",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33478",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33307",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33414",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t32960",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t55020",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t55014",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t913",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33726",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33871",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33696",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33785",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33829",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34095",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33961",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34265",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t33989",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34263",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t55040",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t55025",
+      "raw_C": "-3.90022",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34717",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34919",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34564",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34951",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34372",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34796",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34570",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34851",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t34601",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35015",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35084",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35271",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35281",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35427",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35523",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35055",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35168",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35364",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35262",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35450",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35322",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35473",
+      "raw_C": "-3.88561",
+      "owner": "VPWR"
+    },
+    {
+      "node": "VPWR.t35101",
+      "raw_C": "-3.88507",
+      "owner": "VPWR"
+    }
+  ],
+  "owner_conflicts": [],
+  "requested_nets": [
+    "VGND",
+    "VPWR",
+    "a_65284_57370#",
+    "a_66052_40976#",
+    "a_67396_46714#",
+    "a_67780_44972#",
+    "a_68356_46714#",
+    "a_68932_48968#",
+    "a_69220_45382#",
+    "a_71428_54706#",
+    "a_73348_44972#"
+  ],
+  "all_negative_native_rnodes_bound": true,
+  "release_ready": false
+}
