@@ -1,0 +1,5 @@
+{
+  "state": "stopped_without_qualification",
+  "reason": "TimeoutError('compiled check exhausted whole-check budget')",
+  "release_ready": false
+}

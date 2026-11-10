@@ -1,0 +1,44 @@
+{
+  "status.json": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_physical_RC_reset_DC_1771/status.json",
+    "original_sha256": "7e0131fed99b728e9906b94f95356962350675bf0af64dd19b8a71eeba7505f3",
+    "original_bytes": 148,
+    "stored_sha256": "7e0131fed99b728e9906b94f95356962350675bf0af64dd19b8a71eeba7505f3"
+  },
+  "inputs.json.gz": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_physical_RC_reset_DC_1771/inputs.json",
+    "original_sha256": "e23e8544254e3f64c3cfa5eab21e7df2b0eb06175828b4663a916f92318f5d83",
+    "original_bytes": 235736,
+    "stored_sha256": "bd151c5b5725e3556863c2573d5b37e0b7dcf7599504b6fe08f322a1699f295c"
+  },
+  "owner.json": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_physical_RC_reset_DC_1771/owner.json",
+    "original_sha256": "4772e0fdbafd3d4f6e6cc6e4e209e6943c53883d558df17db4b32b4a47830d1a",
+    "original_bytes": 85,
+    "stored_sha256": "4772e0fdbafd3d4f6e6cc6e4e209e6943c53883d558df17db4b32b4a47830d1a"
+  },
+  "native.process.json": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_physical_RC_reset_DC_1771/native.process.json",
+    "original_sha256": "631490eb3e485350fd4ee93d268a11b383c38cf2c587cf91ed3a99b21ac4fb05",
+    "original_bytes": 73,
+    "stored_sha256": "631490eb3e485350fd4ee93d268a11b383c38cf2c587cf91ed3a99b21ac4fb05"
+  },
+  "native.log.gz": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_physical_RC_reset_DC_1771/native.log",
+    "original_sha256": "9bfdf253b87347090e40cff81b68787b8905b5c14e327609e5270e7ac2a1d5d1",
+    "original_bytes": 40815,
+    "stored_sha256": "a90e2775fc5dd871a36d8585b82282f7d7f371b44ce3509d167b7527f0358cf0"
+  },
+  "smoke.spice": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_physical_RC_reset_DC_1771/smoke.spice",
+    "original_sha256": "e7a651528bce9ef556089691d61331466adb91efbd9df83a963ebb72c5f51b58",
+    "original_bytes": 2276,
+    "stored_sha256": "e7a651528bce9ef556089691d61331466adb91efbd9df83a963ebb72c5f51b58"
+  },
+  "diode_translation.json": {
+    "original_path": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_physical_RC_reset_DC_1771/diode_translation.json",
+    "original_sha256": "ac82f3946a3d1ef495d234f57656f4cde9440a05e4a82ccdc9216b2cf63c375a",
+    "original_bytes": 756,
+    "stored_sha256": "ac82f3946a3d1ef495d234f57656f4cde9440a05e4a82ccdc9216b2cf63c375a"
+  }
+}

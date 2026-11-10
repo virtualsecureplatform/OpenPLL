@@ -3654,3 +3654,18 @@ stimulus. The host had approximately234 GiB available at admission, and the
 existing16-CPU/64-GiB job is preserved; combined leases remain below200 GiB
 with the32-GiB host reserve. The30-minute cap and single-case/no-identical-
 automatic-retry policy remain. At retention time1771 is live and unqualified.
+
+
+### Full RC backend initialization timeout (1771 terminal)
+
+Case1771 reached its1800-second whole-check deadline and the owned native
+worker was terminated by the runner. No qualified DC point was produced.
+The native log reached all2996988 devices,1708430 unknowns and Initializing,
+with no subsequent iteration output. Last observed RSS was about18.6 GiB,
+below the64-GiB cap, and the worker was CPU-active. This does not identify
+the hot initialization function or establish an electrical failure.
+Terminal receipts and losslessly compressed native log are retained under
+full_RC_DC_timeout_1771. No partial DC output is accepted. Full export1766
+and literal preparation1768 remain passed; backend admission remains
+unqualified. The next step is to localize initialization cost before another
+full case, rather than repeat the same bounded run.
