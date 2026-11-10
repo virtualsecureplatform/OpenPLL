@@ -1,0 +1,53 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/assessment.json": "6047a234f31a190fa3ae4cd6623a4486d2d0a8287b6744aca828c1fb6067e939",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/IntegerPLL_400MHz_KeeperFlatC.ext": "8ce8a459945ca181b69ee3a5cf47f94caedf63d7093a0b7fb5970616e0a97a78",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_network_inventory_1690/assessment.json": "dabd43ff077b5b7079793604023853abc7225b1762e0f36ea323fe9989f078a7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_junction_origins_1659/assessment.json": "d8a7f710d9b114d16c7b3047d6084f22d0b9173d0b53acac373494a8cdb46294",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_antenna_source_review_573/unpacked/magic-8.3.623/resis/ResReadExt.c": "30d2e85324d33b7f20074697518e37eeaf1398f921ad5854ea683323bc5497ae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_antenna_source_review_573/unpacked/magic-8.3.623/resis/ResRex.c": "d0bb591eddc40a3df7e4cb4f7990b0819f9f68d2388523d9fdca4f6e62f3832c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/canonical_rc_conductors_v3.py": "d42fa468641b2f7776b914b15edbf600eee1417a835b70f5e4f4cf37dbd3893c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/audit_native_eligibility_source_1698.py": "748bceb9844416b76aae9a9f369a7c95c98f1ef9a7b6b068817a44a4dca8a24d"
+  },
+  "checks": {
+    "no_additional_attribute_selected_networks": true,
+    "no_legacy_or_hierarchical_device_records": true,
+    "all_primitives_physically_bound": true,
+    "no_gate_or_bulk_only_remainder": true,
+    "expected_active_population": true,
+    "expected_external_interface": true
+  },
+  "source_selection_population_supported": true,
+  "record_counts": {
+    "timestamp": 1,
+    "version": 1,
+    "tech": 1,
+    "style": 1,
+    "scale": 1,
+    "resistclasses": 1,
+    "parameters": 8,
+    "port": 65,
+    "node": 800252,
+    "equiv": 74535,
+    "substrate": 1,
+    "cap": 563934,
+    "device": 62338
+  },
+  "model_counts": {
+    "sky130_fd_pr__nfet_01v8_lvt": 27094,
+    "sky130_fd_pr__pfet_01v8": 28552,
+    "sky130_fd_pr__diode_pw2nd_05v5": 814,
+    "sky130_fd_pr__nfet_01v8": 2921,
+    "sky130_fd_pr__pfet_01v8_hvt": 2929,
+    "sky130_fd_pr__res_generic_po": 20,
+    "sky130_fd_pr__special_nfet_01v8": 8
+  },
+  "resistance_selection_attributes": [],
+  "unsupported_records": [],
+  "required_device_and_port_networks": 19696,
+  "capacitance_only_networks": 780557,
+  "rule": "native ResProcessNode requires device adjacency or a port/attribute drive point; all eligible output still must be verified",
+  "actual_native_output_coverage_verified": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

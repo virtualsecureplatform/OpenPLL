@@ -3271,3 +3271,17 @@ duplicate cards and case-colliding conductors. Native crop1696 preserves
 retain values and endpoints. The full-layout entry refuses a missing final
 review before creating output. Evidence is under native_RC_preparation_1696.
 Full extraction and qualification remain pending.
+
+### Source selection population audit (1698)
+
+Reproducible audit1698 pins the complete checked EXT, source inventory,
+physical-origin receipt and native selection source. It finds 62,338
+physically bound primitives, 65 port records, no resistance-selection
+attributes, and no legacy FET, hierarchy or drive-point merge records.
+There is no gate-only or bulk-only remainder in the reference inventory.
+All six source-population checks pass. This supports the 19,696 required
+network population and separately identifies 780,557 capacitance-only
+conductors; it does not certify any current native output. The completed
+export must still provide unique markers for every required conductor and
+pass every electrical, physical connection and wire-value gate. Evidence
+is under native_eligibility_1698.
