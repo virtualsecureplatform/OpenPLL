@@ -1,0 +1,700 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+port "P1" 2 3980 0 4000 100 m1
+port "P0" 1 0 0 20 100 m1
+port "ISOLATED_0" 3 0 400 20 500 m1
+port "ISOLATED_1" 4 0 600 20 700 m1
+port "ISOLATED_2" 5 0 800 20 900 m1
+port "ISOLATED_3" 6 0 1000 20 1100 m1
+port "ISOLATED_4" 7 0 1200 20 1300 m1
+port "ISOLATED_5" 8 0 1400 20 1500 m1
+port "ISOLATED_6" 9 0 1600 20 1700 m1
+port "ISOLATED_7" 10 0 1800 20 1900 m1
+port "ISOLATED_8" 11 0 2000 20 2100 m1
+port "ISOLATED_9" 12 0 2200 20 2300 m1
+port "ISOLATED_10" 13 0 2400 20 2500 m1
+port "ISOLATED_11" 14 0 2600 20 2700 m1
+port "ISOLATED_12" 15 0 2800 20 2900 m1
+port "ISOLATED_13" 16 0 3000 20 3100 m1
+port "ISOLATED_14" 17 0 3200 20 3300 m1
+port "ISOLATED_15" 18 0 3400 20 3500 m1
+port "ISOLATED_16" 19 0 3600 20 3700 m1
+port "ISOLATED_17" 20 0 3800 20 3900 m1
+port "ISOLATED_18" 21 0 4000 20 4100 m1
+port "ISOLATED_19" 22 0 4200 20 4300 m1
+port "ISOLATED_20" 23 0 4400 20 4500 m1
+port "ISOLATED_21" 24 0 4600 20 4700 m1
+port "ISOLATED_22" 25 0 4800 20 4900 m1
+port "ISOLATED_23" 26 0 5000 20 5100 m1
+port "ISOLATED_24" 27 0 5200 20 5300 m1
+port "ISOLATED_25" 28 0 5400 20 5500 m1
+port "ISOLATED_26" 29 0 5600 20 5700 m1
+port "ISOLATED_27" 30 0 5800 20 5900 m1
+port "ISOLATED_28" 31 0 6000 20 6100 m1
+port "ISOLATED_29" 32 0 6200 20 6300 m1
+port "ISOLATED_30" 33 0 6400 20 6500 m1
+port "ISOLATED_31" 34 0 6600 20 6700 m1
+port "ISOLATED_32" 35 0 6800 20 6900 m1
+port "ISOLATED_33" 36 0 7000 20 7100 m1
+port "ISOLATED_34" 37 0 7200 20 7300 m1
+port "ISOLATED_35" 38 0 7400 20 7500 m1
+port "ISOLATED_36" 39 0 7600 20 7700 m1
+port "ISOLATED_37" 40 0 7800 20 7900 m1
+port "ISOLATED_38" 41 0 8000 20 8100 m1
+port "ISOLATED_39" 42 0 8200 20 8300 m1
+port "ISOLATED_40" 43 0 8400 20 8500 m1
+port "ISOLATED_41" 44 0 8600 20 8700 m1
+port "ISOLATED_42" 45 0 8800 20 8900 m1
+port "ISOLATED_43" 46 0 9000 20 9100 m1
+port "ISOLATED_44" 47 0 9200 20 9300 m1
+port "ISOLATED_45" 48 0 9400 20 9500 m1
+port "ISOLATED_46" 49 0 9600 20 9700 m1
+port "ISOLATED_47" 50 0 9800 20 9900 m1
+port "ISOLATED_48" 51 0 10000 20 10100 m1
+port "ISOLATED_49" 52 0 10200 20 10300 m1
+port "ISOLATED_50" 53 0 10400 20 10500 m1
+port "ISOLATED_51" 54 0 10600 20 10700 m1
+port "ISOLATED_52" 55 0 10800 20 10900 m1
+port "ISOLATED_53" 56 0 11000 20 11100 m1
+port "ISOLATED_54" 57 0 11200 20 11300 m1
+port "ISOLATED_55" 58 0 11400 20 11500 m1
+port "ISOLATED_56" 59 0 11600 20 11700 m1
+port "ISOLATED_57" 60 0 11800 20 11900 m1
+port "ISOLATED_58" 61 0 12000 20 12100 m1
+port "ISOLATED_59" 62 0 12200 20 12300 m1
+port "ISOLATED_60" 63 0 12400 20 12500 m1
+port "ISOLATED_61" 64 0 12600 20 12700 m1
+port "ISOLATED_62" 65 0 12800 20 12900 m1
+node "P1" 5 4354.98 3980 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 400000 8200 0 0 0 0 0 0 0 0 0 0
+equiv "P1" "P0"
+equiv "P1" "LOAD_499"
+equiv "P1" "LOAD_498"
+equiv "P1" "LOAD_497"
+equiv "P1" "LOAD_496"
+equiv "P1" "LOAD_495"
+equiv "P1" "LOAD_494"
+equiv "P1" "LOAD_493"
+equiv "P1" "LOAD_492"
+equiv "P1" "LOAD_491"
+equiv "P1" "LOAD_490"
+equiv "P1" "LOAD_489"
+equiv "P1" "LOAD_488"
+equiv "P1" "LOAD_487"
+equiv "P1" "LOAD_486"
+equiv "P1" "LOAD_485"
+equiv "P1" "LOAD_484"
+equiv "P1" "LOAD_483"
+equiv "P1" "LOAD_482"
+equiv "P1" "LOAD_481"
+equiv "P1" "LOAD_480"
+equiv "P1" "LOAD_479"
+equiv "P1" "LOAD_478"
+equiv "P1" "LOAD_477"
+equiv "P1" "LOAD_476"
+equiv "P1" "LOAD_475"
+equiv "P1" "LOAD_474"
+equiv "P1" "LOAD_473"
+equiv "P1" "LOAD_472"
+equiv "P1" "LOAD_471"
+equiv "P1" "LOAD_470"
+equiv "P1" "LOAD_469"
+equiv "P1" "LOAD_468"
+equiv "P1" "LOAD_467"
+equiv "P1" "LOAD_466"
+equiv "P1" "LOAD_465"
+equiv "P1" "LOAD_464"
+equiv "P1" "LOAD_463"
+equiv "P1" "LOAD_462"
+equiv "P1" "LOAD_461"
+equiv "P1" "LOAD_460"
+equiv "P1" "LOAD_459"
+equiv "P1" "LOAD_458"
+equiv "P1" "LOAD_457"
+equiv "P1" "LOAD_456"
+equiv "P1" "LOAD_455"
+equiv "P1" "LOAD_454"
+equiv "P1" "LOAD_453"
+equiv "P1" "LOAD_452"
+equiv "P1" "LOAD_451"
+equiv "P1" "LOAD_450"
+equiv "P1" "LOAD_449"
+equiv "P1" "LOAD_448"
+equiv "P1" "LOAD_447"
+equiv "P1" "LOAD_446"
+equiv "P1" "LOAD_445"
+equiv "P1" "LOAD_444"
+equiv "P1" "LOAD_443"
+equiv "P1" "LOAD_442"
+equiv "P1" "LOAD_441"
+equiv "P1" "LOAD_440"
+equiv "P1" "LOAD_439"
+equiv "P1" "LOAD_438"
+equiv "P1" "LOAD_437"
+equiv "P1" "LOAD_436"
+equiv "P1" "LOAD_435"
+equiv "P1" "LOAD_434"
+equiv "P1" "LOAD_433"
+equiv "P1" "LOAD_432"
+equiv "P1" "LOAD_431"
+equiv "P1" "LOAD_430"
+equiv "P1" "LOAD_429"
+equiv "P1" "LOAD_428"
+equiv "P1" "LOAD_427"
+equiv "P1" "LOAD_426"
+equiv "P1" "LOAD_425"
+equiv "P1" "LOAD_424"
+equiv "P1" "LOAD_423"
+equiv "P1" "LOAD_422"
+equiv "P1" "LOAD_421"
+equiv "P1" "LOAD_420"
+equiv "P1" "LOAD_419"
+equiv "P1" "LOAD_418"
+equiv "P1" "LOAD_417"
+equiv "P1" "LOAD_416"
+equiv "P1" "LOAD_415"
+equiv "P1" "LOAD_414"
+equiv "P1" "LOAD_413"
+equiv "P1" "LOAD_412"
+equiv "P1" "LOAD_411"
+equiv "P1" "LOAD_410"
+equiv "P1" "LOAD_409"
+equiv "P1" "LOAD_408"
+equiv "P1" "LOAD_407"
+equiv "P1" "LOAD_406"
+equiv "P1" "LOAD_405"
+equiv "P1" "LOAD_404"
+equiv "P1" "LOAD_403"
+equiv "P1" "LOAD_402"
+equiv "P1" "LOAD_401"
+equiv "P1" "LOAD_400"
+equiv "P1" "LOAD_399"
+equiv "P1" "LOAD_398"
+equiv "P1" "LOAD_397"
+equiv "P1" "LOAD_396"
+equiv "P1" "LOAD_395"
+equiv "P1" "LOAD_394"
+equiv "P1" "LOAD_393"
+equiv "P1" "LOAD_392"
+equiv "P1" "LOAD_391"
+equiv "P1" "LOAD_390"
+equiv "P1" "LOAD_389"
+equiv "P1" "LOAD_388"
+equiv "P1" "LOAD_387"
+equiv "P1" "LOAD_386"
+equiv "P1" "LOAD_385"
+equiv "P1" "LOAD_384"
+equiv "P1" "LOAD_383"
+equiv "P1" "LOAD_382"
+equiv "P1" "LOAD_381"
+equiv "P1" "LOAD_380"
+equiv "P1" "LOAD_379"
+equiv "P1" "LOAD_378"
+equiv "P1" "LOAD_377"
+equiv "P1" "LOAD_376"
+equiv "P1" "LOAD_375"
+equiv "P1" "LOAD_374"
+equiv "P1" "LOAD_373"
+equiv "P1" "LOAD_372"
+equiv "P1" "LOAD_371"
+equiv "P1" "LOAD_370"
+equiv "P1" "LOAD_369"
+equiv "P1" "LOAD_368"
+equiv "P1" "LOAD_367"
+equiv "P1" "LOAD_366"
+equiv "P1" "LOAD_365"
+equiv "P1" "LOAD_364"
+equiv "P1" "LOAD_363"
+equiv "P1" "LOAD_362"
+equiv "P1" "LOAD_361"
+equiv "P1" "LOAD_360"
+equiv "P1" "LOAD_359"
+equiv "P1" "LOAD_358"
+equiv "P1" "LOAD_357"
+equiv "P1" "LOAD_356"
+equiv "P1" "LOAD_355"
+equiv "P1" "LOAD_354"
+equiv "P1" "LOAD_353"
+equiv "P1" "LOAD_352"
+equiv "P1" "LOAD_351"
+equiv "P1" "LOAD_350"
+equiv "P1" "LOAD_349"
+equiv "P1" "LOAD_348"
+equiv "P1" "LOAD_347"
+equiv "P1" "LOAD_346"
+equiv "P1" "LOAD_345"
+equiv "P1" "LOAD_344"
+equiv "P1" "LOAD_343"
+equiv "P1" "LOAD_342"
+equiv "P1" "LOAD_341"
+equiv "P1" "LOAD_340"
+equiv "P1" "LOAD_339"
+equiv "P1" "LOAD_338"
+equiv "P1" "LOAD_337"
+equiv "P1" "LOAD_336"
+equiv "P1" "LOAD_335"
+equiv "P1" "LOAD_334"
+equiv "P1" "LOAD_333"
+equiv "P1" "LOAD_332"
+equiv "P1" "LOAD_331"
+equiv "P1" "LOAD_330"
+equiv "P1" "LOAD_329"
+equiv "P1" "LOAD_328"
+equiv "P1" "LOAD_327"
+equiv "P1" "LOAD_326"
+equiv "P1" "LOAD_325"
+equiv "P1" "LOAD_324"
+equiv "P1" "LOAD_323"
+equiv "P1" "LOAD_322"
+equiv "P1" "LOAD_321"
+equiv "P1" "LOAD_320"
+equiv "P1" "LOAD_319"
+equiv "P1" "LOAD_318"
+equiv "P1" "LOAD_317"
+equiv "P1" "LOAD_316"
+equiv "P1" "LOAD_315"
+equiv "P1" "LOAD_314"
+equiv "P1" "LOAD_313"
+equiv "P1" "LOAD_312"
+equiv "P1" "LOAD_311"
+equiv "P1" "LOAD_310"
+equiv "P1" "LOAD_309"
+equiv "P1" "LOAD_308"
+equiv "P1" "LOAD_307"
+equiv "P1" "LOAD_306"
+equiv "P1" "LOAD_305"
+equiv "P1" "LOAD_304"
+equiv "P1" "LOAD_303"
+equiv "P1" "LOAD_302"
+equiv "P1" "LOAD_301"
+equiv "P1" "LOAD_300"
+equiv "P1" "LOAD_299"
+equiv "P1" "LOAD_298"
+equiv "P1" "LOAD_297"
+equiv "P1" "LOAD_296"
+equiv "P1" "LOAD_295"
+equiv "P1" "LOAD_294"
+equiv "P1" "LOAD_293"
+equiv "P1" "LOAD_292"
+equiv "P1" "LOAD_291"
+equiv "P1" "LOAD_290"
+equiv "P1" "LOAD_289"
+equiv "P1" "LOAD_288"
+equiv "P1" "LOAD_287"
+equiv "P1" "LOAD_286"
+equiv "P1" "LOAD_285"
+equiv "P1" "LOAD_284"
+equiv "P1" "LOAD_283"
+equiv "P1" "LOAD_282"
+equiv "P1" "LOAD_281"
+equiv "P1" "LOAD_280"
+equiv "P1" "LOAD_279"
+equiv "P1" "LOAD_278"
+equiv "P1" "LOAD_277"
+equiv "P1" "LOAD_276"
+equiv "P1" "LOAD_275"
+equiv "P1" "LOAD_274"
+equiv "P1" "LOAD_273"
+equiv "P1" "LOAD_272"
+equiv "P1" "LOAD_271"
+equiv "P1" "LOAD_270"
+equiv "P1" "LOAD_269"
+equiv "P1" "LOAD_268"
+equiv "P1" "LOAD_267"
+equiv "P1" "LOAD_266"
+equiv "P1" "LOAD_265"
+equiv "P1" "LOAD_264"
+equiv "P1" "LOAD_263"
+equiv "P1" "LOAD_262"
+equiv "P1" "LOAD_261"
+equiv "P1" "LOAD_260"
+equiv "P1" "LOAD_259"
+equiv "P1" "LOAD_258"
+equiv "P1" "LOAD_257"
+equiv "P1" "LOAD_256"
+equiv "P1" "LOAD_255"
+equiv "P1" "LOAD_254"
+equiv "P1" "LOAD_253"
+equiv "P1" "LOAD_252"
+equiv "P1" "LOAD_251"
+equiv "P1" "LOAD_250"
+equiv "P1" "LOAD_249"
+equiv "P1" "LOAD_248"
+equiv "P1" "LOAD_247"
+equiv "P1" "LOAD_246"
+equiv "P1" "LOAD_245"
+equiv "P1" "LOAD_244"
+equiv "P1" "LOAD_243"
+equiv "P1" "LOAD_242"
+equiv "P1" "LOAD_241"
+equiv "P1" "LOAD_240"
+equiv "P1" "LOAD_239"
+equiv "P1" "LOAD_238"
+equiv "P1" "LOAD_237"
+equiv "P1" "LOAD_236"
+equiv "P1" "LOAD_235"
+equiv "P1" "LOAD_234"
+equiv "P1" "LOAD_233"
+equiv "P1" "LOAD_232"
+equiv "P1" "LOAD_231"
+equiv "P1" "LOAD_230"
+equiv "P1" "LOAD_229"
+equiv "P1" "LOAD_228"
+equiv "P1" "LOAD_227"
+equiv "P1" "LOAD_226"
+equiv "P1" "LOAD_225"
+equiv "P1" "LOAD_224"
+equiv "P1" "LOAD_223"
+equiv "P1" "LOAD_222"
+equiv "P1" "LOAD_221"
+equiv "P1" "LOAD_220"
+equiv "P1" "LOAD_219"
+equiv "P1" "LOAD_218"
+equiv "P1" "LOAD_217"
+equiv "P1" "LOAD_216"
+equiv "P1" "LOAD_215"
+equiv "P1" "LOAD_214"
+equiv "P1" "LOAD_213"
+equiv "P1" "LOAD_212"
+equiv "P1" "LOAD_211"
+equiv "P1" "LOAD_210"
+equiv "P1" "LOAD_209"
+equiv "P1" "LOAD_208"
+equiv "P1" "LOAD_207"
+equiv "P1" "LOAD_206"
+equiv "P1" "LOAD_205"
+equiv "P1" "LOAD_204"
+equiv "P1" "LOAD_203"
+equiv "P1" "LOAD_202"
+equiv "P1" "LOAD_201"
+equiv "P1" "LOAD_200"
+equiv "P1" "LOAD_199"
+equiv "P1" "LOAD_198"
+equiv "P1" "LOAD_197"
+equiv "P1" "LOAD_196"
+equiv "P1" "LOAD_195"
+equiv "P1" "LOAD_194"
+equiv "P1" "LOAD_193"
+equiv "P1" "LOAD_192"
+equiv "P1" "LOAD_191"
+equiv "P1" "LOAD_190"
+equiv "P1" "LOAD_189"
+equiv "P1" "LOAD_188"
+equiv "P1" "LOAD_187"
+equiv "P1" "LOAD_186"
+equiv "P1" "LOAD_185"
+equiv "P1" "LOAD_184"
+equiv "P1" "LOAD_183"
+equiv "P1" "LOAD_182"
+equiv "P1" "LOAD_181"
+equiv "P1" "LOAD_180"
+equiv "P1" "LOAD_179"
+equiv "P1" "LOAD_178"
+equiv "P1" "LOAD_177"
+equiv "P1" "LOAD_176"
+equiv "P1" "LOAD_175"
+equiv "P1" "LOAD_174"
+equiv "P1" "LOAD_173"
+equiv "P1" "LOAD_172"
+equiv "P1" "LOAD_171"
+equiv "P1" "LOAD_170"
+equiv "P1" "LOAD_169"
+equiv "P1" "LOAD_168"
+equiv "P1" "LOAD_167"
+equiv "P1" "LOAD_166"
+equiv "P1" "LOAD_165"
+equiv "P1" "LOAD_164"
+equiv "P1" "LOAD_163"
+equiv "P1" "LOAD_162"
+equiv "P1" "LOAD_161"
+equiv "P1" "LOAD_160"
+equiv "P1" "LOAD_159"
+equiv "P1" "LOAD_158"
+equiv "P1" "LOAD_157"
+equiv "P1" "LOAD_156"
+equiv "P1" "LOAD_155"
+equiv "P1" "LOAD_154"
+equiv "P1" "LOAD_153"
+equiv "P1" "LOAD_152"
+equiv "P1" "LOAD_151"
+equiv "P1" "LOAD_150"
+equiv "P1" "LOAD_149"
+equiv "P1" "LOAD_148"
+equiv "P1" "LOAD_147"
+equiv "P1" "LOAD_146"
+equiv "P1" "LOAD_145"
+equiv "P1" "LOAD_144"
+equiv "P1" "LOAD_143"
+equiv "P1" "LOAD_142"
+equiv "P1" "LOAD_141"
+equiv "P1" "LOAD_140"
+equiv "P1" "LOAD_139"
+equiv "P1" "LOAD_138"
+equiv "P1" "LOAD_137"
+equiv "P1" "LOAD_136"
+equiv "P1" "LOAD_135"
+equiv "P1" "LOAD_134"
+equiv "P1" "LOAD_133"
+equiv "P1" "LOAD_132"
+equiv "P1" "LOAD_131"
+equiv "P1" "LOAD_130"
+equiv "P1" "LOAD_129"
+equiv "P1" "LOAD_128"
+equiv "P1" "LOAD_127"
+equiv "P1" "LOAD_126"
+equiv "P1" "LOAD_125"
+equiv "P1" "LOAD_124"
+equiv "P1" "LOAD_123"
+equiv "P1" "LOAD_122"
+equiv "P1" "LOAD_121"
+equiv "P1" "LOAD_120"
+equiv "P1" "LOAD_119"
+equiv "P1" "LOAD_118"
+equiv "P1" "LOAD_117"
+equiv "P1" "LOAD_116"
+equiv "P1" "LOAD_115"
+equiv "P1" "LOAD_114"
+equiv "P1" "LOAD_113"
+equiv "P1" "LOAD_112"
+equiv "P1" "LOAD_111"
+equiv "P1" "LOAD_110"
+equiv "P1" "LOAD_109"
+equiv "P1" "LOAD_108"
+equiv "P1" "LOAD_107"
+equiv "P1" "LOAD_106"
+equiv "P1" "LOAD_105"
+equiv "P1" "LOAD_104"
+equiv "P1" "LOAD_103"
+equiv "P1" "LOAD_102"
+equiv "P1" "LOAD_101"
+equiv "P1" "LOAD_100"
+equiv "P1" "LOAD_99"
+equiv "P1" "LOAD_98"
+equiv "P1" "LOAD_97"
+equiv "P1" "LOAD_96"
+equiv "P1" "LOAD_95"
+equiv "P1" "LOAD_94"
+equiv "P1" "LOAD_93"
+equiv "P1" "LOAD_92"
+equiv "P1" "LOAD_91"
+equiv "P1" "LOAD_90"
+equiv "P1" "LOAD_89"
+equiv "P1" "LOAD_88"
+equiv "P1" "LOAD_87"
+equiv "P1" "LOAD_86"
+equiv "P1" "LOAD_85"
+equiv "P1" "LOAD_84"
+equiv "P1" "LOAD_83"
+equiv "P1" "LOAD_82"
+equiv "P1" "LOAD_81"
+equiv "P1" "LOAD_80"
+equiv "P1" "LOAD_79"
+equiv "P1" "LOAD_78"
+equiv "P1" "LOAD_77"
+equiv "P1" "LOAD_76"
+equiv "P1" "LOAD_75"
+equiv "P1" "LOAD_74"
+equiv "P1" "LOAD_73"
+equiv "P1" "LOAD_72"
+equiv "P1" "LOAD_71"
+equiv "P1" "LOAD_70"
+equiv "P1" "LOAD_69"
+equiv "P1" "LOAD_68"
+equiv "P1" "LOAD_67"
+equiv "P1" "LOAD_66"
+equiv "P1" "LOAD_65"
+equiv "P1" "LOAD_64"
+equiv "P1" "LOAD_63"
+equiv "P1" "LOAD_62"
+equiv "P1" "LOAD_61"
+equiv "P1" "LOAD_60"
+equiv "P1" "LOAD_59"
+equiv "P1" "LOAD_58"
+equiv "P1" "LOAD_57"
+equiv "P1" "LOAD_56"
+equiv "P1" "LOAD_55"
+equiv "P1" "LOAD_54"
+equiv "P1" "LOAD_53"
+equiv "P1" "LOAD_52"
+equiv "P1" "LOAD_51"
+equiv "P1" "LOAD_50"
+equiv "P1" "LOAD_49"
+equiv "P1" "LOAD_48"
+equiv "P1" "LOAD_47"
+equiv "P1" "LOAD_46"
+equiv "P1" "LOAD_45"
+equiv "P1" "LOAD_44"
+equiv "P1" "LOAD_43"
+equiv "P1" "LOAD_42"
+equiv "P1" "LOAD_41"
+equiv "P1" "LOAD_40"
+equiv "P1" "LOAD_39"
+equiv "P1" "LOAD_38"
+equiv "P1" "LOAD_37"
+equiv "P1" "LOAD_36"
+equiv "P1" "LOAD_35"
+equiv "P1" "LOAD_34"
+equiv "P1" "LOAD_33"
+equiv "P1" "LOAD_32"
+equiv "P1" "LOAD_31"
+equiv "P1" "LOAD_30"
+equiv "P1" "LOAD_29"
+equiv "P1" "LOAD_28"
+equiv "P1" "LOAD_27"
+equiv "P1" "LOAD_26"
+equiv "P1" "LOAD_25"
+equiv "P1" "LOAD_24"
+equiv "P1" "LOAD_23"
+equiv "P1" "LOAD_22"
+equiv "P1" "LOAD_21"
+equiv "P1" "LOAD_20"
+equiv "P1" "LOAD_19"
+equiv "P1" "LOAD_18"
+equiv "P1" "LOAD_17"
+equiv "P1" "LOAD_16"
+equiv "P1" "LOAD_15"
+equiv "P1" "LOAD_14"
+equiv "P1" "LOAD_13"
+equiv "P1" "LOAD_12"
+equiv "P1" "LOAD_11"
+equiv "P1" "LOAD_10"
+equiv "P1" "LOAD_9"
+equiv "P1" "LOAD_8"
+equiv "P1" "LOAD_7"
+equiv "P1" "LOAD_6"
+equiv "P1" "LOAD_5"
+equiv "P1" "LOAD_4"
+equiv "P1" "LOAD_3"
+equiv "P1" "LOAD_2"
+equiv "P1" "LOAD_1"
+equiv "P1" "LOAD_0"
+node "ISOLATED_0" 1 93.9043 0 400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_1" 1 91.2139 0 600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_2" 1 91.2139 0 800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_3" 1 91.2139 0 1000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_4" 1 91.2139 0 1200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_5" 1 91.2139 0 1400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_6" 1 91.2139 0 1600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_7" 1 91.2139 0 1800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_8" 1 91.2139 0 2000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_9" 1 91.2139 0 2200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_10" 1 91.2139 0 2400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_11" 1 91.2139 0 2600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_12" 1 91.2139 0 2800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_13" 1 91.2139 0 3000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_14" 1 91.2139 0 3200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_15" 1 91.2139 0 3400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_16" 1 91.2139 0 3600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_17" 1 91.2139 0 3800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_18" 1 91.2139 0 4000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_19" 1 91.2139 0 4200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_20" 1 91.2139 0 4400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_21" 1 91.2139 0 4600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_22" 1 91.2139 0 4800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_23" 1 91.2139 0 5000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_24" 1 91.2139 0 5200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_25" 1 91.2139 0 5400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_26" 1 91.2139 0 5600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_27" 1 91.2139 0 5800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_28" 1 91.2139 0 6000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_29" 1 91.2139 0 6200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_30" 1 91.2139 0 6400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_31" 1 91.2139 0 6600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_32" 1 91.2139 0 6800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_33" 1 91.2139 0 7000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_34" 1 91.2139 0 7200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_35" 1 91.2139 0 7400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_36" 1 91.2139 0 7600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_37" 1 91.2139 0 7800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_38" 1 91.2139 0 8000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_39" 1 91.2139 0 8200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_40" 1 91.2139 0 8400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_41" 1 91.2139 0 8600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_42" 1 91.2139 0 8800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_43" 1 91.2139 0 9000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_44" 1 91.2139 0 9200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_45" 1 91.2139 0 9400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_46" 1 91.2139 0 9600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_47" 1 91.2139 0 9800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_48" 1 91.2139 0 10000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_49" 1 91.2139 0 10200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_50" 1 91.2139 0 10400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_51" 1 91.2139 0 10600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_52" 1 91.2139 0 10800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_53" 1 91.2139 0 11000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_54" 1 91.2139 0 11200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_55" 1 91.2139 0 11400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_56" 1 91.2139 0 11600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_57" 1 91.2139 0 11800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_58" 1 91.2139 0 12000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_59" 1 91.2139 0 12200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_60" 1 91.2139 0 12400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_61" 1 91.2139 0 12600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+node "ISOLATED_62" 1 96.869 0 12800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 240 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "ISOLATED_24" "ISOLATED_23" 7.04
+cap "ISOLATED_10" "ISOLATED_11" 7.04
+cap "ISOLATED_41" "ISOLATED_42" 7.04
+cap "ISOLATED_3" "ISOLATED_2" 7.04
+cap "ISOLATED_34" "ISOLATED_35" 7.04
+cap "ISOLATED_54" "ISOLATED_55" 7.04
+cap "ISOLATED_41" "ISOLATED_40" 7.04
+cap "ISOLATED_47" "ISOLATED_48" 7.04
+cap "ISOLATED_26" "ISOLATED_25" 7.04
+cap "ISOLATED_8" "ISOLATED_9" 7.04
+cap "ISOLATED_18" "ISOLATED_19" 7.04
+cap "ISOLATED_18" "ISOLATED_17" 7.04
+cap "ISOLATED_51" "ISOLATED_50" 7.04
+cap "ISOLATED_52" "ISOLATED_51" 7.04
+cap "ISOLATED_61" "ISOLATED_60" 7.04
+cap "ISOLATED_20" "ISOLATED_21" 7.04
+cap "ISOLATED_49" "ISOLATED_48" 7.04
+cap "ISOLATED_15" "ISOLATED_16" 7.04
+cap "ISOLATED_29" "ISOLATED_30" 7.04
+cap "ISOLATED_6" "ISOLATED_7" 7.04
+cap "ISOLATED_32" "ISOLATED_31" 7.04
+cap "ISOLATED_60" "ISOLATED_59" 7.04
+cap "ISOLATED_55" "ISOLATED_56" 7.04
+cap "ISOLATED_49" "ISOLATED_50" 7.04
+cap "ISOLATED_12" "ISOLATED_13" 7.04
+cap "ISOLATED_61" "ISOLATED_62" 7.04
+cap "ISOLATED_30" "ISOLATED_31" 7.04
+cap "ISOLATED_0" "ISOLATED_1" 7.04
+cap "ISOLATED_39" "ISOLATED_38" 7.04
+cap "ISOLATED_22" "ISOLATED_23" 7.04
+cap "ISOLATED_1" "ISOLATED_2" 7.04
+cap "ISOLATED_44" "ISOLATED_43" 7.04
+cap "ISOLATED_20" "ISOLATED_19" 7.04
+cap "ISOLATED_37" "ISOLATED_38" 7.04
+cap "ISOLATED_10" "ISOLATED_9" 7.04
+cap "ISOLATED_44" "ISOLATED_45" 7.04
+cap "ISOLATED_5" "ISOLATED_4" 7.04
+cap "ISOLATED_12" "ISOLATED_11" 7.04
+cap "ISOLATED_36" "ISOLATED_37" 7.04
+cap "ISOLATED_52" "ISOLATED_53" 7.04
+cap "ISOLATED_28" "ISOLATED_29" 7.04
+cap "ISOLATED_3" "ISOLATED_4" 7.04
+cap "ISOLATED_28" "ISOLATED_27" 7.04
+cap "ISOLATED_43" "ISOLATED_42" 7.04
+cap "ISOLATED_59" "ISOLATED_58" 7.04
+cap "ISOLATED_33" "ISOLATED_32" 7.04
+cap "ISOLATED_35" "ISOLATED_36" 7.04
+cap "ISOLATED_27" "ISOLATED_26" 7.04
+cap "ISOLATED_39" "ISOLATED_40" 7.04
+cap "ISOLATED_15" "ISOLATED_14" 7.04
+cap "ISOLATED_46" "ISOLATED_45" 7.04
+cap "ISOLATED_25" "ISOLATED_24" 7.04
+cap "P1" "ISOLATED_0" 2.70769
+cap "ISOLATED_22" "ISOLATED_21" 7.04
+cap "ISOLATED_57" "ISOLATED_56" 7.04
+cap "ISOLATED_46" "ISOLATED_47" 7.04
+cap "ISOLATED_8" "ISOLATED_7" 7.04
+cap "ISOLATED_58" "ISOLATED_57" 7.04
+cap "ISOLATED_13" "ISOLATED_14" 7.04
+cap "ISOLATED_33" "ISOLATED_34" 7.04
+cap "ISOLATED_17" "ISOLATED_16" 7.04
+cap "ISOLATED_53" "ISOLATED_54" 7.04
+cap "ISOLATED_6" "ISOLATED_5" 7.04

@@ -3350,3 +3350,17 @@ including the VGND/substrate-owner alias. This does not alter that export's
 electrical failure. Four tests reject unproven aliases, duplicate output and
 malformed equivalences, while accepting the recorded original conductor
 alias. The new full run remains unqualified until actual output passes.
+
+### Full port-population stress control (1721)
+
+The direct and indexed repaired engines both pass a native control with
+65 external ports, one analytical wire, 63 isolated port pads and 1,000
+layout labels (500 names repeated at two positions). Both preserve the
+ordered 65-port interface, literal native wire values, conserved charge
+and unique names at distinct physical points. The analytical wire remains
+4.975 ohms within the declared float32 relative representation bound.
+Both native cases complete in approximately 1.2 seconds; this is a focused
+port-population control, not a full-layout speedup measurement. Original
+outputs and compressed logs are under port_population_control_1721.
+The full-layout worker1714 is still live and has not yet emitted its first
+network; whole-export qualification remains pending.
