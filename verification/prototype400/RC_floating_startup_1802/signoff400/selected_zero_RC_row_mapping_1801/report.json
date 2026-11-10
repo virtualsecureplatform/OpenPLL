@@ -1,0 +1,65 @@
+{
+  "unknowns": 1708430,
+  "zero_rows": 785307,
+  "categories": {
+    "C_only": 785307
+  },
+  "examples": {
+    "C_only": [
+      {
+        "index": 908173,
+        "native_name": "xdut:__geometry_node_1523068",
+        "original_name": "sky130_fd_sc_hs__tapvpwrvgnd_1_0.VGND"
+      },
+      {
+        "index": 908174,
+        "native_name": "xdut:__geometry_node_1523067",
+        "original_name": "a_344_99500#"
+      },
+      {
+        "index": 908175,
+        "native_name": "xdut:__geometry_node_1523066",
+        "original_name": "a_560_99500#"
+      },
+      {
+        "index": 908176,
+        "native_name": "xdut:__geometry_node_1523065",
+        "original_name": "a_776_99500#"
+      },
+      {
+        "index": 908177,
+        "native_name": "xdut:__geometry_node_1523064",
+        "original_name": "a_992_99500#"
+      },
+      {
+        "index": 908178,
+        "native_name": "xdut:__geometry_node_1523063",
+        "original_name": "a_1208_99500#"
+      },
+      {
+        "index": 908179,
+        "native_name": "xdut:__geometry_node_1523062",
+        "original_name": "a_1424_99500#"
+      },
+      {
+        "index": 908180,
+        "native_name": "xdut:__geometry_node_1523061",
+        "original_name": "a_1640_99500#"
+      },
+      {
+        "index": 908181,
+        "native_name": "xdut:__geometry_node_1523060",
+        "original_name": "a_1856_99500#"
+      },
+      {
+        "index": 908182,
+        "native_name": "xdut:__geometry_node_1523059",
+        "original_name": "a_2072_99500#"
+      }
+    ]
+  },
+  "matrix_bytes_unchanged_by_names_export": true,
+  "analytical_named_MNA_binding_pass": true,
+  "matrix_modified": false,
+  "simulation_solved": false
+}

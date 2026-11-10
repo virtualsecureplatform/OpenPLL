@@ -3812,3 +3812,28 @@ Capture/control/checker evidence is under RC_CSC_diagnosis_1798; the full
 binary arrays remain build artifacts bound by hashes in the capture receipt.
 Export1766 and literal preparation1768 remain passed. Native backend/model
 qualification and PLL release readiness remain false.
+
+
+### Zero rows mapped; charge-consistent startup control (1799–1803)
+
+Named capture1800 completes normally using Xyce's built-in TOPOLOGY
+OUTPUTNAMESFILE option. Assessment1801 checks the analytical MNA index/name
+binding on1799, complete unique full solution indices and byte-identical
+CSC arrays versus1797. All785307 zero rows/columns map to exported nodes
+with capacitor connections and no resistor/device terminals. No row remains
+unmapped; no zero row maps to a physical device or resistor terminal. This
+is a DC-indeterminate capacitive-only population, not evidence authorizing
+an artificial resistor or terminal attachment. The full name map and binary
+arrays remain build artifacts bound by the completed capture receipt.
+
+Control1802 uses a floating signed-C divider with an analytical conserved
+charge relation4*Vfloating=Vsource. Native UIC startup with zero initial
+capacitor voltage and a100-ps source ramp completes through200ps, preserves
+that relation within1e-12V and has no zero rows in its first transient
+Jacobian. No resistor or physical connection is added. Completed mapping
+and control evidence is under RC_floating_startup_1802. Runner1803 now
+captures the full model's first transient Jacobian using the same explicit
+zero-charge startup assumption, reset asserted, PLL_ENABLE low and high
+inputs/supplies ramped from0 to1.8V in100ps. Its full capture remains live
+at retention time. This is a diagnostic initial condition, not yet a
+qualified physical power-on state, transient correlation or PLL release.

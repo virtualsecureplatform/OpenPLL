@@ -1,0 +1,33 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_CSC_capture_1794/assessment.json": "660f1fc9e2878896fd3b5c15f71efa3bde18edb2e1bcdb8b68857f4f1aaa6ce6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_CSC_capture_1794/capture_symbolic.so": "044093d249009c98f67b900b0e9d870280709f359b97582adb47ed82ab01b149",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_floating_C_startup_1802.py": "4939c3a8c4e8528e25ddc4ae00fcb4a17a6b2abbd5b5e218b8bba9ed395fda10"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/capture/startup.spice": "1ba5a5473f4b7d2518187bee2ae37f0c20c0a1c765de3fb3143887028a261fcc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/capture/native.log": "cb7c66972fdd863f8be49af1ecb1b00a6770b83eac1ec1c2bfc733f65a48c0fb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/capture/transient.csv": "6b7d7838d532059b29437e8773b78201823612f86fd0ae77ff2fc674e463a3e7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/capture/namesMap_startup.spice.txt": "1d89421ce142c51f7e6978ebb6811cc6fc951dba2671b0802a2457fcf7dc67e2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/capture/native.process.json": "5f0fa017f4d0a660263a67bc3c80cbe77ffe01202c9d528c796ef5a578ececb3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/transient/namesMap_startup.spice.txt": "1d89421ce142c51f7e6978ebb6811cc6fc951dba2671b0802a2457fcf7dc67e2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/transient/native.log": "4af591370f19642c7d24222c8ba9b785888d4f993727c720db9f6426c7e67cd7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/transient/transient.csv": "773363964675c49fe3aa47c732a45a5e038823660b8aa08bb7e1793fbe2ff359",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/transient/native.process.json": "bb394690f04a8cd2aa3c1ba46f701a3f6fade9997b40bd153e510dcfc4cb2a9e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/transient/startup.spice": "2392812ffe36af1c7890bc376db7e7aa249180150858ad28e82d2f400891ab7c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/capture/matrix/completion.json": "6ccc17d974e51f974436f617add9d55299ffb10f086b6594d6eb7d3575ab9158",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/capture/matrix/columns.i32": "a68536ff4397411ea313a75c0df933eca97d1a8fa6051cdd6d2a249cf3a11b2c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/capture/matrix/header.u64": "224912a5a4004e03b82715ad80666eb6776ffd50271655e89bda2da6571ab9d3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/capture/matrix/rows.i32": "1349a3835a1aa3057dd2b2a7637bee05bf52d89cce9191010243697acdc8ff48",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_floating_C_startup_1802/capture/matrix/values.f64": "72a7027bc953eb132e55934fff342503e72f6b0ab41edbe6200ef734be9f8ab2"
+  },
+  "normal_native_transient_completed": true,
+  "analytical_floating_charge_relation_verified": true,
+  "first_transient_matrix_has_no_zero_rows": true,
+  "initial_state": "zero capacitor voltage/charge; source ramp from zero",
+  "no_artificial_resistors": true,
+  "no_physical_connections_added": true,
+  "full_PLL_qualified": false,
+  "release_ready": false
+}

@@ -1,0 +1,15 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_CSC_capture_1800/assessment.json": "619ad0078a755a9d6dd6027a2624d30600b8532e757b5f9755f1bb00d26f39e4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_CSC_capture_1797/assessment.json": "0474e642ee4cfa10b415673008de9e2198be89211ef3253fd393a7e2fbc2798b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_CSC_capture_control_1799/assessment.json": "4e39e30e42876dd6f1d2a57e62cb743637226a9b0b187042692778b00aa3bb42",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_native_RC_model_1768/assessment.json": "c6b3c8410860ebd3cf365d6dc91e2e0e00a723f1d2e0387cdcadfb3b1bc56821",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/map_zero_RC_rows_1801.py": "9a4e2d79590908fed11883ecaf0e68975409fbab4e8d0a15c9c07c9af8c3e9ad"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_RC_row_mapping_1801/report.json": "eb5f27d3637d5e58a2d72843523c265f59f38410ead4f7ec503e2c1507cdf889"
+  },
+  "completed_named_zero_rows_classified": true,
+  "RC_backend_qualified": false,
+  "release_ready": false
+}
