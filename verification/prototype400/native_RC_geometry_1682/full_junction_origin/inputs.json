@@ -1,0 +1,17 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_zero_junctions_1658/assessment.json": "998db739fa6eac3002a1893c3d1f5ed4728b47d0998f2496e608c47ace415cee",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_zero_junctions_1658/install/bin/magic": "0a53c2f7299230c5301ed118090c4ac09bdf58e016125f58f51e6e5d41d03567",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_zero_junctions_1658/install/lib/magic/tcl/tclmagic.so": "b447ff728ac3b6e9b86f69b20372f28a57012c9913a5381e65a4ceca9a3b5cdb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/IntegerPLL_400MHz_KeeperFlatC.ext": "8ce8a459945ca181b69ee3a5cf47f94caedf63d7093a0b7fb5970616e0a97a78",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_full_R_1599/before.spice": "709d44f1f106095091491468f8a37b707e53cd317f6d6cae943a3bc43f7a738c",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_junction_origins_1659/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_junction_origins_1659/run.tcl": "dacdedcc4c7ddc8f580d3221ec0dc8fd1e218c34ca94ca52b23b6354de47da80",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/trace_zero_junction_origins_1659.py": "87048cf64345707a7b392320a1a3d93639a1bb5a6017a01def47b1cd5e47e1d8"
+  },
+  "device_comments_only": true,
+  "source_EXT_reused": true,
+  "layout_not_reextracted": true,
+  "release_ready": false
+}

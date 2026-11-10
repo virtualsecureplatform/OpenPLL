@@ -1,0 +1,790 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_junction_crop_1660/crop.gds": "19c9e9831427c83d2d6ab95bc15cd630edf26fa57e6993594f0e8bc51018616e",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/nix/store/c8mymw0gckkiw7lqwnm2l6mqnd99xmzy-klayout-0.30.7/bin/klayout": "9871282c43f561b7e3094f15f71fbd825bb0bf4f376f4651999cad15e115d67a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_driver_origin_rotations_1669.py": "3e41c77f8a0d7f61526e5f89a296e40274248edaf6f68c9410704eb18d984a46",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_crossplane_area_1661/assessment.json": "60cf8926760d818c8fe4afe59ec9a5dc2a64fb4dffc594b9fd622ad245068bd0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_crossplane_area_1661/install/bin/magic": "e888f9ad1e554117bb0c7aceb25724fbcf2526bbdd651e151554f268f4e37e45",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_crossplane_area_1661/install/lib/magic/tcl/tclmagic.so": "6062d00c0170ba7ced7211051fee3f8ab7d1083996f22d18978a19bf637da6ba",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_driver_origin_1668/assessment.json": "7e54ee625f3311cb9ecd361c816e05bce2fb2ea616d5330986a82bc375779de7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_driver_origin_1668/install/bin/magic": "118172ca9232682063bbb6325b576775cfbe624546111928e9859559bdfe27f2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_driver_origin_1668/install/lib/magic/tcl/tclmagic.so": "ef7f112618cdf9eb812ff63b16cdc41ced73c12c2a362ff22347ce19a7d68189",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotate.py": "39fa848446a21eb4028d3652863788676a2367114eabfe969247faf9a1fff707"
+  },
+  "results": [
+    {
+      "rotation_degrees": 0,
+      "fixed": false,
+      "out_of_bounds_breakpoints": 0,
+      "negative_raw_area_nodes": 0,
+      "widened_area_products": 1,
+      "empty_crossplane_overlaps": 0,
+      "empty_driver_overlaps": 0,
+      "corrected_driver_origins": 0,
+      "invalid_area_budgets": 0,
+      "invalid_capacitance_budgets": 0,
+      "contraction": {
+        "reference_primitives": 34,
+        "candidate_primitives": 34,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 656,
+        "positive_wire_R_cards": 656,
+        "wire_R_components": 8,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 179,
+        "contracted_nonzero_C_pairs": 179,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "a_21043_20776#"
+            ],
+            "reference_F_exact": "5383250000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "5383250000000000989/5000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "a_21043_22108#"
+            ],
+            "reference_F_exact": "13333499999999999/10000000000000000000000000000000",
+            "contracted_F_exact": "6666750000000000959/5000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "a_21058_20215#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "contracted_F_exact": "1457375999999999823/400000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_106364_64364#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "contracted_F_exact": "138469999999999999459/10000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_106364_65359#"
+            ],
+            "reference_F_exact": "21808900000000003/1000000000000000000000000000000",
+            "contracted_F_exact": "4361780000000000701/200000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_20978_20716#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "305009000000000027/100000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_20978_22048#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "contracted_F_exact": "41864200000000003/20000000000000000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 0,
+        "exact_device_and_C_contraction_verified": false
+      }
+    },
+    {
+      "rotation_degrees": 0,
+      "fixed": true,
+      "out_of_bounds_breakpoints": 0,
+      "negative_raw_area_nodes": 0,
+      "widened_area_products": 1,
+      "empty_crossplane_overlaps": 0,
+      "empty_driver_overlaps": 0,
+      "corrected_driver_origins": 0,
+      "invalid_area_budgets": 0,
+      "invalid_capacitance_budgets": 0,
+      "contraction": {
+        "reference_primitives": 34,
+        "candidate_primitives": 34,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 656,
+        "positive_wire_R_cards": 656,
+        "wire_R_components": 8,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 179,
+        "contracted_nonzero_C_pairs": 179,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "a_21043_20776#"
+            ],
+            "reference_F_exact": "5383250000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "5383250000000000989/5000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "a_21043_22108#"
+            ],
+            "reference_F_exact": "13333499999999999/10000000000000000000000000000000",
+            "contracted_F_exact": "6666750000000000959/5000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "a_21058_20215#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "contracted_F_exact": "1457375999999999823/400000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_106364_64364#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "contracted_F_exact": "138469999999999999459/10000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_106364_65359#"
+            ],
+            "reference_F_exact": "21808900000000003/1000000000000000000000000000000",
+            "contracted_F_exact": "4361780000000000701/200000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_20978_20716#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "305009000000000027/100000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_106400_64915#",
+              "w_20978_22048#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "contracted_F_exact": "41864200000000003/20000000000000000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 0,
+        "exact_device_and_C_contraction_verified": false
+      }
+    },
+    {
+      "rotation_degrees": 90,
+      "fixed": false,
+      "out_of_bounds_breakpoints": 1,
+      "negative_raw_area_nodes": 1,
+      "widened_area_products": 1,
+      "empty_crossplane_overlaps": 0,
+      "empty_driver_overlaps": 0,
+      "corrected_driver_origins": 0,
+      "invalid_area_budgets": 1,
+      "invalid_capacitance_budgets": 0,
+      "contraction": {
+        "reference_primitives": 34,
+        "candidate_primitives": 34,
+        "primitive_multisets_match": false,
+        "missing_primitive_count": 2,
+        "extra_primitive_count": 2,
+        "wire_R_cards": 690,
+        "positive_wire_R_cards": 690,
+        "wire_R_components": 8,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 180,
+        "contracted_nonzero_C_pairs": 180,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "a_65100_21043#"
+            ],
+            "reference_F_exact": "13333199999999999/10000000000000000000000000000000",
+            "contracted_F_exact": "2666640000000000273/2000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "a_65266_21098#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "contracted_F_exact": "9108600000000003047/2500000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "a_65931_21111#"
+            ],
+            "reference_F_exact": "10774900000000001/10000000000000000000000000000000",
+            "contracted_F_exact": "10774900000000002537/10000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_21701_106400#"
+            ],
+            "reference_F_exact": "21809099999999999/1000000000000000000000000000000",
+            "contracted_F_exact": "54522750000000002829/2500000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_22789_106400#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "contracted_F_exact": "6923499999999997109/500000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_65064_21062#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "contracted_F_exact": "39062500036379791/1000000000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_66216_20978#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "305009000000000027/100000000000000000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 1,
+        "exact_device_and_C_contraction_verified": false
+      }
+    },
+    {
+      "rotation_degrees": 90,
+      "fixed": true,
+      "out_of_bounds_breakpoints": 0,
+      "negative_raw_area_nodes": 0,
+      "widened_area_products": 1,
+      "empty_crossplane_overlaps": 0,
+      "empty_driver_overlaps": 0,
+      "corrected_driver_origins": 1,
+      "invalid_area_budgets": 0,
+      "invalid_capacitance_budgets": 0,
+      "contraction": {
+        "reference_primitives": 34,
+        "candidate_primitives": 34,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 691,
+        "positive_wire_R_cards": 691,
+        "wire_R_components": 8,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 180,
+        "contracted_nonzero_C_pairs": 180,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "a_65100_21043#"
+            ],
+            "reference_F_exact": "13333199999999999/10000000000000000000000000000000",
+            "contracted_F_exact": "2666640000000000273/2000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "a_65266_21098#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "contracted_F_exact": "9108600000000003047/2500000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "a_65931_21111#"
+            ],
+            "reference_F_exact": "10774900000000001/10000000000000000000000000000000",
+            "contracted_F_exact": "10774900000000002537/10000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_21701_106400#"
+            ],
+            "reference_F_exact": "21809099999999999/1000000000000000000000000000000",
+            "contracted_F_exact": "54522750000000002829/2500000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_22789_106400#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "contracted_F_exact": "6923499999999997109/500000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_65064_21062#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "contracted_F_exact": "2616512500000000449/1250000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21487_106400#",
+              "w_66216_20978#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "305009000000000027/100000000000000000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 1,
+        "exact_device_and_C_contraction_verified": false
+      }
+    },
+    {
+      "rotation_degrees": 180,
+      "fixed": false,
+      "out_of_bounds_breakpoints": 0,
+      "negative_raw_area_nodes": 0,
+      "widened_area_products": 1,
+      "empty_crossplane_overlaps": 0,
+      "empty_driver_overlaps": 0,
+      "corrected_driver_origins": 0,
+      "invalid_area_budgets": 0,
+      "invalid_capacitance_budgets": 0,
+      "contraction": {
+        "reference_primitives": 34,
+        "candidate_primitives": 34,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 646,
+        "positive_wire_R_cards": 646,
+        "wire_R_components": 8,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 179,
+        "contracted_nonzero_C_pairs": 179,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a_108332_65715#",
+              "a_20000_21737#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "contracted_F_exact": "36434400000000005333/10000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_108345_65100#",
+              "a_20000_21737#"
+            ],
+            "reference_F_exact": "13333499999999999/10000000000000000000000000000000",
+            "contracted_F_exact": "6666750000000000359/5000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_108345_66276#",
+              "a_20000_21737#"
+            ],
+            "reference_F_exact": "5383250000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "430660000000000089/400000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_107200_65100#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "contracted_F_exact": "2093209999999999969/1000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_107200_66216#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "305009000000000027/100000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_19964_21727#"
+            ],
+            "reference_F_exact": "21808900000000003/1000000000000000000000000000000",
+            "contracted_F_exact": "21808900000000009769/1000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_19964_23083#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "contracted_F_exact": "3461749999999999887/250000000000000000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 0,
+        "exact_device_and_C_contraction_verified": false
+      }
+    },
+    {
+      "rotation_degrees": 180,
+      "fixed": true,
+      "out_of_bounds_breakpoints": 0,
+      "negative_raw_area_nodes": 0,
+      "widened_area_products": 1,
+      "empty_crossplane_overlaps": 0,
+      "empty_driver_overlaps": 0,
+      "corrected_driver_origins": 0,
+      "invalid_area_budgets": 0,
+      "invalid_capacitance_budgets": 0,
+      "contraction": {
+        "reference_primitives": 34,
+        "candidate_primitives": 34,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 646,
+        "positive_wire_R_cards": 646,
+        "wire_R_components": 8,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 179,
+        "contracted_nonzero_C_pairs": 179,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a_108332_65715#",
+              "a_20000_21737#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "contracted_F_exact": "36434400000000005333/10000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_108345_65100#",
+              "a_20000_21737#"
+            ],
+            "reference_F_exact": "13333499999999999/10000000000000000000000000000000",
+            "contracted_F_exact": "6666750000000000359/5000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_108345_66276#",
+              "a_20000_21737#"
+            ],
+            "reference_F_exact": "5383250000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "430660000000000089/400000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_107200_65100#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "contracted_F_exact": "2093209999999999969/1000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_107200_66216#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "305009000000000027/100000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_19964_21727#"
+            ],
+            "reference_F_exact": "21808900000000003/1000000000000000000000000000000",
+            "contracted_F_exact": "21808900000000009769/1000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_20000_21737#",
+              "w_19964_23083#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "contracted_F_exact": "3461749999999999887/250000000000000000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 0,
+        "exact_device_and_C_contraction_verified": false
+      }
+    },
+    {
+      "rotation_degrees": 270,
+      "fixed": false,
+      "out_of_bounds_breakpoints": 0,
+      "negative_raw_area_nodes": 0,
+      "widened_area_products": 1,
+      "empty_crossplane_overlaps": 0,
+      "empty_driver_overlaps": 0,
+      "corrected_driver_origins": 0,
+      "invalid_area_budgets": 0,
+      "invalid_capacitance_budgets": 0,
+      "contraction": {
+        "reference_primitives": 34,
+        "candidate_primitives": 34,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 684,
+        "positive_wire_R_cards": 684,
+        "wire_R_components": 8,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 180,
+        "contracted_nonzero_C_pairs": 180,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a_20000_108402#",
+              "a_64549_20015#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "contracted_F_exact": "36434400000000008939/10000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_20431_108389#",
+              "a_64549_20015#"
+            ],
+            "reference_F_exact": "10774900000000001/10000000000000000000000000000000",
+            "contracted_F_exact": "5387449999999999983/5000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21763_108389#",
+              "a_64549_20015#"
+            ],
+            "reference_F_exact": "13333199999999999/10000000000000000000000000000000",
+            "contracted_F_exact": "3333300000000000399/2500000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_20716_107200#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "305009000000000027/100000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_22048_107200#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "contracted_F_exact": "41864200000000003/20000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_64364_19964#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "contracted_F_exact": "138470000000000018487/10000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_65333_20000#"
+            ],
+            "reference_F_exact": "21809099999999999/1000000000000000000000000000000",
+            "contracted_F_exact": "10904549999999997201/500000000000000000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 1,
+        "exact_device_and_C_contraction_verified": false
+      }
+    },
+    {
+      "rotation_degrees": 270,
+      "fixed": true,
+      "out_of_bounds_breakpoints": 0,
+      "negative_raw_area_nodes": 0,
+      "widened_area_products": 1,
+      "empty_crossplane_overlaps": 0,
+      "empty_driver_overlaps": 0,
+      "corrected_driver_origins": 0,
+      "invalid_area_budgets": 0,
+      "invalid_capacitance_budgets": 0,
+      "contraction": {
+        "reference_primitives": 34,
+        "candidate_primitives": 34,
+        "primitive_multisets_match": true,
+        "missing_primitive_count": 0,
+        "extra_primitive_count": 0,
+        "wire_R_cards": 684,
+        "positive_wire_R_cards": 684,
+        "wire_R_components": 8,
+        "components_joining_distinct_reference_nodes": [],
+        "ordered_formal_ports_match": true,
+        "reference_nonzero_C_pairs": 180,
+        "contracted_nonzero_C_pairs": 180,
+        "C_pair_differences": [
+          {
+            "nodes": [
+              "a_20000_108402#",
+              "a_64549_20015#"
+            ],
+            "reference_F_exact": "36434400000000007/10000000000000000000000000000000",
+            "contracted_F_exact": "36434400000000008939/10000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_20431_108389#",
+              "a_64549_20015#"
+            ],
+            "reference_F_exact": "10774900000000001/10000000000000000000000000000000",
+            "contracted_F_exact": "5387449999999999983/5000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_21763_108389#",
+              "a_64549_20015#"
+            ],
+            "reference_F_exact": "13333199999999999/10000000000000000000000000000000",
+            "contracted_F_exact": "3333300000000000399/2500000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_20716_107200#"
+            ],
+            "reference_F_exact": "15250450000000001/5000000000000000000000000000000",
+            "contracted_F_exact": "305009000000000027/100000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_22048_107200#"
+            ],
+            "reference_F_exact": "20932100000000003/10000000000000000000000000000000",
+            "contracted_F_exact": "41864200000000003/20000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_64364_19964#"
+            ],
+            "reference_F_exact": "13847000000000001/1000000000000000000000000000000",
+            "contracted_F_exact": "138470000000000018487/10000000000000000000000000000000000"
+          },
+          {
+            "nodes": [
+              "a_64549_20015#",
+              "w_65333_20000#"
+            ],
+            "reference_F_exact": "21809099999999999/1000000000000000000000000000000",
+            "contracted_F_exact": "10904549999999997201/500000000000000000000000000000000"
+          }
+        ],
+        "exact_aggregated_C_match": false,
+        "negative_candidate_C_cards": 1,
+        "exact_device_and_C_contraction_verified": false
+      }
+    }
+  ],
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0.gds": "9f8ad4e879cacc881612af8ef52cd59bdacd8438f7e3b17317a4c38a4c4f30e4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotate.py": "39fa848446a21eb4028d3652863788676a2367114eabfe969247faf9a1fff707",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotate.process.json": "fb8994d9221cbab31cb9b55b5e1258c87d2d99d028da3e7d2f5bbfddafcaeaff",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1.gds": "276ab338c2a0a9f160ab95bcbf65995ff33d1fc818cae5c91dfff3dece4fa83d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2.gds": "4ece225beb9b5e76bf606f383fd6c05f09ead499dfc0a4c02bb27427f7e68449",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3.gds": "6fe46a8bf8176a62fe2117dd07ca4f46bb0a1d4d2fa366238857f05f135eb59d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotate.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed1/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed1/run.tcl": "8a30e5ce01ea81d993086040ae6074c52c6ea60b4690533d17c7e7502647cb49",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed1/RotatedCrop.res.ext": "cfb8f7cfa930e172366c6cec2831d3a28273db95d6f28ee9975734478a10ef7a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed1/native.log": "f8c8342db85cfd996660cd2bb62790c67fe61594a9c637c5223f40dc544f6fcb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed1/native.process.json": "adae2a2fc1733030560c0e8d35fd2eae0af71717fd3ca735e139b111ff6590ec",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed1/RotatedCrop.ext": "9bed3cd4ab69b5e554183ddd3db637b6c617111cd0bd1fca721eafde7f2d490b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed1/before.spice": "c3c93fbb3c760ac8b26a05115a5013933b3c73ceb724f2613bbe33f86f155fce",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed1/after.spice": "3b75f7aa6bb1904cf656cbbe4e11213fb4688320015299fcb6ff9bb02f349b46",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed1/native.log": "1cfd739130c0df09f11f746752175a5c0f7ee4228c9cb98de62c0438e36c72ae",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed1/before.spice": "2ea702f7439aa82e83e7adc834b5a2c855d867653fc83b6419af3ceeb819b594",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed1/RotatedCrop.ext": "2ba644442bb00c4b9b0ca6e4210d0f9868fe06466d24951c47f050d4dd07587c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed1/RotatedCrop.res.ext": "2c42cc4b5eb2fee0b1395bc468c662edf321a051065f3c03786c6a8ebbb3d9d0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed1/native.process.json": "99165ddcb725368eb74a9187f4d671e90920dfb9ac3c84a728c877ce3fb41a33",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed1/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed1/run.tcl": "22295e5fd12fbecbf1626ce2fe0d8fd79bd04c1cf97ea8fbf9408f186b45ce63",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed1/after.spice": "1d5f52294087015dc6fcf2a0c4c3de6e3b55ec1896d605ee27a8143cc0c0d07a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed0/run.tcl": "62ce3f6d82efca8e335efd31c00e6aa7d0f2f0bb3aca4fa48f590f5f7f407439",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed0/native.log": "6435a82c30de60fc5ad3710193a056fa43f083bec51a136f71784c99e4b26e5b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed0/after.spice": "8d2a8b128bcf0b0cae63cdafc703c32b5e7c7f5dc3ccb3c40e430f8f2912061e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed0/native.process.json": "4361f14d7fdf492bd68ed51cce69afa41353a1f76ad51d7ba15675a7aaa72a83",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed0/before.spice": "bf44b1c82a9b516bf92949746c27934f6d19e7584c61b94769980b48a8f63c7e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed0/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed0/RotatedCrop.ext": "27bc5119b3d792d2aa07c26b1e1d2f1b49e3c839a0ed93d88913c64a14d6fcb8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed0/RotatedCrop.res.ext": "070e20084ba560fe6050b5ed2432a5a4bc1168c7dd342ecff43e5caf4491dbf3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed0/RotatedCrop.ext": "16d927c7a3b3d0ebe0d1cf6d43ef6faa87a6b03ac3a3a6625ad4b9af54c696d7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed0/native.log": "76ebc93b4f08b11339042cd59f1e69954e4f9a3c0463e5b4db07bd27e07a954e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed0/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed0/after.spice": "42649a7abba55144f9c106c2fd6ab1b90ed9f39f45945a86c6a336d5ec830fd3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed0/before.spice": "55e6e7f2bf8887d08455ec7117fd65fc4cd40be881c8cbd6c5f68ffc949e7cff",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed0/RotatedCrop.res.ext": "42440881078a03bf5dbb5e4ce1f0a5636a2700b3a7525877a5a8bd4ef437f8b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed0/run.tcl": "e6a7b34a0a49be7d8f6ec9399d66126887b5da0d4be7e29c4d579935ccf23f9e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed0/native.process.json": "20d3eb01aeb5aa2d424683ae6b0d77ea3e3027889234809f4157eeed3c8a0799",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed0/RotatedCrop.res.ext": "f4d05434826fd9aee37bc42df3bf4dcc2ace3966b7be01a93c23a7daae342dc2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed0/before.spice": "941851bb1ba4a051632e8b6d26481cfe235d26f2e1a8c74f320c7b1d16a34e89",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed0/run.tcl": "80f9b218588bcc615125ed93836680468f1223c148a14a73b52b4c9e764874e2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed0/native.process.json": "d77ed064f85fdc6eaa91a190e2684f137dee64d6436b4b8644e44365823f63cd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed0/after.spice": "a21557173fdc358af9f85e336ebae0c9917a181c58316432195a57816291c5fb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed0/RotatedCrop.ext": "f690701ebbf3d15e794fda4d3d5453c012f5001a1319be758cf7417cf68850f8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed0/native.log": "18b190658fcbf1ecad25fe1fd6c3a9778e78e342d64574fead21ef171624a3d9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation3_fixed0/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed0/native.process.json": "ef22cef3c54dd75684b7b3a29ac242add207cbb042514b0ba55e2ad40ab7db65",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed0/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed0/native.log": "e943e2fcf07b2765d475589a2c28791061b52a6c98a6c596d0a403ed2f971d53",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed0/RotatedCrop.ext": "b94f15ee72b38e6066baf79b3b49fa077763623f5bf61cda15790043100e442f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed0/before.spice": "79a4c661f15ef18c5ca8234fc21080ac90f6c2918864c544e540c53afd16a51e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed0/RotatedCrop.res.ext": "bd6a44bd4e156d2ddc635f2afd47177fc5a61abafdccbd5f5c12ae2370177d0a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed0/run.tcl": "c793392ad1fed1084f90990e0ef25a3fdfe6c734d11fb16c2ba03057705d6e27",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation1_fixed0/after.spice": "9032ac8677441bf972f5d22868e8dc03d1583c2408acb516f493e918bd1a5d6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed1/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed1/native.log": "0e277f4c316098545c053ea771843424e8255043f8384c22f81b3acbaffc8b8c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed1/run.tcl": "37cd5f01b5f012b1f534cd4ccff6464dec718a83bad0674a56053902688e23ce",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed1/RotatedCrop.ext": "1afdb385de682dbc22144707970f207e828e43071475f4b4d6f416eb21dc1a8a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed1/RotatedCrop.res.ext": "8c28f87952e0e3756cd3ab595972ff64472d3564281c54d680df13df7d901734",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed1/after.spice": "243c2ddd3991e3d503939f5189f25a74cc947abec65288ae0b92ed8fd4d9f47c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed1/before.spice": "a08ebeee85fb013c753d739b82b0a3f6de38f3129da0b6fe4724a138e6b797f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation0_fixed1/native.process.json": "89b7a5dcedf1775a0882bd66e2b9949ebb29d4de1465a69f5462a0ed87e16b8b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed1/native.process.json": "cfc6d036207ddbad78c63eedaba0bdf0425fe669c5248d1d60fba89813ccab2b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed1/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed1/before.spice": "88d2650459cacffd365dd3df9ee415c7d5e22fc341887e49119f888131f76706",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed1/RotatedCrop.ext": "690018ce59697f7e3369f75723f309eda38fe5c4d2e3b6efc1ad2c5f33420b91",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed1/RotatedCrop.res.ext": "b391bd294413d2c8e47494da335ef337ea9ebb28755c7eb6f3ab0f9adf4bdba8",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed1/after.spice": "e5c9c3b6dee7d736fe51ed68d83a5d424632436c68a667a6dfce71bec1e70e7b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed1/native.log": "677203eca6d58ebe8b6b31beb739c7b9fd21c8e64f3f8b33e2d9e11d63142547",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_driver_origin_rotations_1669/rotation2_fixed1/run.tcl": "a68fe11a26b77293fb469c958614f606d08007681c1048db3bffd20f055a4003"
+  },
+  "geometry_DRC_qualified": false,
+  "full_layout_qualified": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}

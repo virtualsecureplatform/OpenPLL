@@ -1,0 +1,23 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/build_magic_driver_origin_1668.py": "7d7e6e66510c21c80c89ea9d2e04409fe3760574fe768307f7d6ce054ad1efce",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/verify_selected_magic_source_identity.py": "c5b981d7788fd550af0aa9e3b33f0f4bc7fc1666120343fc19fc768481b27d6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/coupling_geometry_trace.h": "aee185a2560c65015a0289363d14992f1c8eac830837d5aa788bf71379c75366",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/instrument_coupling_geometry.py": "918c965cc11a706a1e20f707cbfd625436364b5bbc33b0fa4e767c025d44178b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/instrument_ground_lifecycle.py": "42bd85cdefd0927d575a453ce736b1a8b82ddff45fcea73e1b00a926cdb705e4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/instrument_overlap_shielding.py": "67e01cbf0471df0daf42329c11d7a55e090f45e36cbdcd72f7c98efe774bf216",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/overlap_shielding_trace.h": "0f71a8bd207d8d090f3975653cea6d180eee8b83b24816049d8138dc4f7db49f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/instrument_ground_tail.py": "c68e7e9f4073d40d87e753b6ebcd73a86a0100623bf71e3df0996683772a0024",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/instrument_ground_halo.py": "13b326d94345a11f5fdc70d67296c8d84af4398688d2a57acc811c3ceca67060",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/instrument_ground_overlap.py": "da54ef3140e5502b91c96dd236644a77075d1100913416f75372d06722206280",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/instrument_ground_support.py": "aa10c356439472bb20aeab8ca800d898d915e7e1f456ba80d01731dc6f0c3d77",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/instrument_fringe_support.py": "fa5147733eb37c0c12b9dd55919d27e3746913a8dcc2ba2fb624cfa4e3a43e86",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/magic_rcx/fringe_support_trace.h": "d1ca7518701a35e4fcb7ca1b4f0260caaf1b035d404edd4c044af69d0b217e81",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_source_reproducibility_600.json": "601df9b353945c7b488caf76969cc07c3c4125a2b6a7f9c0fa6375c50248fae6",
+    "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/patch": "63400bab62f4078db6a406810e545ae3e9138f7997916011cd488f731bad3526"
+  },
+  "source_NAR": "sha256-BgiNUS4U9xfmoIQC6Tn3ueR+zwU3hhOXYrKEhosQStw=",
+  "release_tool_replaced": false,
+  "PDK_mutated": false,
+  "release_ready": false
+}

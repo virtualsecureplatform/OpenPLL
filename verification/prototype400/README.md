@@ -3143,3 +3143,33 @@ This establishes wire-unit conversion only. The isolated candidate build1678
 also incorporates geometry/junction repairs being retained separately. Full
 layout RC extraction1671 is still running; its raw geometry can be reused for
 a corrected-reader export. Full RC export and PLL release remain unqualified.
+
+### Native junction and cross-plane geometry repairs (1654–1682)
+
+Physical-origin instrumentation binds all 62,338 native primitives to source
+EXT geometry. There are 1,992 implicit zero-edge sources on their bulk
+conductor. Native producer comments already specify that these virtual
+terminals have zero junction area/perimeter, but omitted attributes triggered
+a whole-net fallback. Candidate1658 materializes known zeros and keeps each
+virtual source at the physical bulk point. Only two full-reference device
+parameter sets change: X20 PFET and X60 NFET source area/perimeter become
+zero. Older calibrated models retain their original identity.
+
+Cross-plane breakpoints now use the actual conductor/device overlap. Eight
+area products are widened before multiplication, including a witnessed
+47,600 * 83,864 product exceeding signed int32. Driver search fallback now
+updates its origin to the chosen overlap. The 90-degree baseline fails;
+all four corrected rotations pass geometry/device controls. An initialized
+reader result makes the optimized O2 build deterministic. Paired O0/O2
+controls preserve the same positive wire counts in every orientation.
+
+The physical identity verifier additionally rejects swapped parameters
+between different physical devices, duplicate origins and missing origins.
+Its four unit controls pass; completed native crop1682 verifies all 34
+physical devices independently of aggregate primitive counts. Original
+control outputs and compressed logs are under native_RC_geometry_1682.
+Native control data is preserved byte-for-byte, including native whitespace.
+
+These controls establish the repairs on the stated evidence. Full-layout
+export1671 remains in progress, and final charge/passivity, wire-value and
+coverage validation remain required. The release executable is unchanged.

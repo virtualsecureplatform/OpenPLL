@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_zero_junctions_1658/assessment.json": "998db739fa6eac3002a1893c3d1f5ed4728b47d0998f2496e608c47ace415cee",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_zero_junctions_1658/install/bin/magic": "0a53c2f7299230c5301ed118090c4ac09bdf58e016125f58f51e6e5d41d03567",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_zero_junctions_1658/install/lib/magic/tcl/tclmagic.so": "b447ff728ac3b6e9b86f69b20372f28a57012c9913a5381e65a4ceca9a3b5cdb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/flat.gds": "4dc5bc17e43b4ec1d6d3a7e1f1717df460a1066bdccdca71b48bf3af016b1880",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/nix/store/c8mymw0gckkiw7lqwnm2l6mqnd99xmzy-klayout-0.30.7/bin/klayout": "9871282c43f561b7e3094f15f71fbd825bb0bf4f376f4651999cad15e115d67a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_junction_crop_1660/crop.py": "f4f084a5d05cf688e43c921b30018ca927bdf8f3bbb31f5e59538f6697e1d201",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_junction_crop_1660/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_junction_crop_1660/run.tcl": "36048f8aef782fb76eb6d782d1c22fadf973006b461763e6b0e42d390857ec48",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_zero_junction_crop_1660.py": "7efdf7917d58e4f8be292dd0e0de828909d6d1835903cba62e4b2aba18b4893f"
+  },
+  "clipped_real_layout": true,
+  "native_ground_C_enabled": true,
+  "zero_junction_mode": true,
+  "DRC_qualified": false,
+  "maximum_native_cases": 1,
+  "release_ready": false
+}

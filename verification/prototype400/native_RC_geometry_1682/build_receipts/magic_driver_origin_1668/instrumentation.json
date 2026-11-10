@@ -1,0 +1,134 @@
+{
+  "original_source_sha256": {
+    "ExtBasic.c": "af8677dd211d49841dab8423179c588adc582c53de9d8c00371bedd479e6b0db",
+    "ExtCouple.c": "e726b14e73dd30fbd8aa3a4d792eb6c0144c51c4e54244eedf746b6c0a0bbe12",
+    "ExtRegion.c": "d5a6945bf433280c6031fa7fd29f847ebfc324fc221e7f44be92f2d87f16975a"
+  },
+  "instrumented_source_sha256": {
+    "ExtBasic.c": "ee0896d5612ee43f807151a1237fa6566647e4c26a42a1d681058feea79482c3",
+    "ExtCouple.c": "7dc563124c56b4537143188d4034cd283cf144453e1d7b60a72ba5c63846fcff",
+    "ExtRegion.c": "dfd85e6745044a50cf4c0fc622c9ab74646389e9d4814c95766432d9f24f0b22"
+  },
+  "direct_ground_mutation_inventory": [
+    {
+      "file": "ExtBasic.c",
+      "line": 336,
+      "statement": "tnode->nreg_cap = (CapValue)0.0;",
+      "reset": true
+    },
+    {
+      "file": "ExtBasic.c",
+      "line": 5248,
+      "statement": "reg->nreg_cap = (CapValue) 0;",
+      "reset": true
+    },
+    {
+      "file": "ExtBasic.c",
+      "line": 5332,
+      "statement": "reg->nreg_cap += area * ExtCurStyle->exts_areaCap[residue];",
+      "reset": false
+    },
+    {
+      "file": "ExtBasic.c",
+      "line": 5351,
+      "statement": "reg->nreg_cap += capval * len;",
+      "reset": false
+    },
+    {
+      "file": "ExtBasic.c",
+      "line": 5409,
+      "statement": "reg->nreg_cap += capval * len;",
+      "reset": false
+    },
+    {
+      "file": "ExtBasic.c",
+      "line": 5459,
+      "statement": "reg->nreg_cap += capval * len;",
+      "reset": false
+    },
+    {
+      "file": "ExtBasic.c",
+      "line": 5510,
+      "statement": "reg->nreg_cap += capval * len;",
+      "reset": false
+    },
+    {
+      "file": "ExtBasic.c",
+      "line": 5560,
+      "statement": "reg->nreg_cap += capval * len;",
+      "reset": false
+    },
+    {
+      "file": "ExtBasic.c",
+      "line": 5568,
+      "statement": "reg->nreg_cap = (CapValue) 0;",
+      "reset": true
+    },
+    {
+      "file": "ExtCouple.c",
+      "line": 234,
+      "statement": "rbp->nreg_cap += cap;",
+      "reset": false
+    },
+    {
+      "file": "ExtCouple.c",
+      "line": 239,
+      "statement": "rtp->nreg_cap += cap;",
+      "reset": false
+    },
+    {
+      "file": "ExtCouple.c",
+      "line": 522,
+      "statement": "rabove->nreg_cap -= ExtCurStyle->exts_areaCap[ta] * ov.o_area;",
+      "reset": false
+    },
+    {
+      "file": "ExtCouple.c",
+      "line": 1254,
+      "statement": "rbp->nreg_cap -= subcap;",
+      "reset": false
+    },
+    {
+      "file": "ExtCouple.c",
+      "line": 1521,
+      "statement": "rbp->nreg_cap -= subcap;",
+      "reset": false
+    },
+    {
+      "file": "ExtCouple.c",
+      "line": 1525,
+      "statement": "rbp->nreg_cap = 0;",
+      "reset": true
+    },
+    {
+      "file": "ExtCouple.c",
+      "line": 1703,
+      "statement": "rbp->nreg_cap -= subcap;",
+      "reset": false
+    },
+    {
+      "file": "ExtCouple.c",
+      "line": 1707,
+      "statement": "rbp->nreg_cap = 0;",
+      "reset": true
+    },
+    {
+      "file": "ExtRegion.c",
+      "line": 403,
+      "statement": "newNode->nreg_cap = (CapValue)0;",
+      "reset": true
+    }
+  ],
+  "header_sha256": "aee185a2560c65015a0289363d14992f1c8eac830837d5aa788bf71379c75366",
+  "capacitance_equations_modified": true,
+  "contact_residue_candidate": true,
+  "resistance_area_and_port_candidates": true,
+  "unset_port_location_initialized": true,
+  "opt_in_explicit_coupling_reference_point": true,
+  "terminal_overlap_midpoints_corrected": true,
+  "opt_in_native_ground_C_and_alias_separation": true,
+  "early_node_name_calls_added": false,
+  "numeric_ground_lifecycle_instrumented": true,
+  "spatial_ground_placement_qualified": false,
+  "qualification": false
+}
