@@ -1,0 +1,11 @@
+{
+  "native_identity": {
+    "pid": 3086581,
+    "birth": "155328397",
+    "process_group": 3086581
+  },
+  "user_cancellation": false,
+  "reason": "All late setup returned and analysis entry reached; replace with validated analysis/DC boundary tracer.",
+  "native_log_sha256_at_stop": "7c2c5e25c3618f8b32b1bef2982ddc0d18cff1b8ee94737487579afc102317ee",
+  "partial_DC_qualified": false
+}

@@ -1,0 +1,82 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_late_init_trace_1777/Xyce": "5dc70ad9363fd0fd4dabcdbec3bc65b016af77874ab27ad32b22df382b88d34f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_analysis_trace_1780/Xyce": "6e7e325a2666a994454b36ceaa52d56aad41294a5ccc8d665ade08ed9c2a7d55",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_analysis_trace_1780/assessment.json": "583355afbc03aa4a5881b3e3aeb84445b63b59d398b5e07b033703c20090ee94",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_analysis_trace_1781.py": "721fe94fedb0b758ec5c6400f0a32d99ed77a71bec474921d05ca823a4870e0b"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1781/base/native.process.json": "e46c2ffe87b583f99bcdf3a5e0dc80ce8764a60c29c4d05c77be56c879d9fdb7",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1781/base/dc.csv": "4f1b91f16a57c58ff541ba15883254974c149d0e20e987d764204f1411bca9e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1781/base/control.spice": "3d1515218fe725372e4d15e208bf75dde46579ac68e4dbe1abac129ee61f67f0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1781/base/native.log": "6e973f8351e5798f24973a2c43acd5eb7a22031a8ac7a864c0391f157675635f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1781/trace/native.log": "f9edca4d2caa670c9ebf120bc4bbb403984c2031bcd3b0bf09c8a55113773129",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1781/trace/control.spice": "f1b9e21c4e397abe280ddaf4a97c66ba51cc1b3382f3ccb0bd492e3d2f65d477",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1781/trace/native.process.json": "bf9dd3923b2943eff69ea8617e34622fc7162535c162f07cb97b052ccab908d2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1781/trace/dc.csv": "4f1b91f16a57c58ff541ba15883254974c149d0e20e987d764204f1411bca9e3"
+  },
+  "analytical_RC_ladder_pass": true,
+  "baseline_and_trace_outputs_identical": true,
+  "all_initialization_boundaries_observed": true,
+  "events": [
+    "OPENPLL_INIT_TRACE begin analysis_object",
+    "OPENPLL_INIT_TRACE end analysis_object",
+    "OPENPLL_INIT_TRACE begin solver_system",
+    "OPENPLL_INIT_TRACE end solver_system",
+    "OPENPLL_INIT_TRACE begin devices",
+    "OPENPLL_INIT_TRACE end devices",
+    "OPENPLL_INIT_TRACE begin nonlinear",
+    "OPENPLL_INIT_TRACE end nonlinear",
+    "OPENPLL_INIT_TRACE begin node_symbols",
+    "OPENPLL_INIT_TRACE end node_symbols",
+    "OPENPLL_INIT_TRACE begin print_parameters",
+    "OPENPLL_INIT_TRACE end print_parameters",
+    "OPENPLL_INIT_TRACE begin fourier",
+    "OPENPLL_INIT_TRACE end fourier",
+    "OPENPLL_INIT_TRACE begin fft",
+    "OPENPLL_INIT_TRACE end fft",
+    "OPENPLL_INIT_TRACE begin measure_ops",
+    "OPENPLL_INIT_TRACE end measure_ops",
+    "OPENPLL_INIT_TRACE begin measure_fft",
+    "OPENPLL_INIT_TRACE end measure_fft",
+    "OPENPLL_INIT_TRACE begin measure_suffix",
+    "OPENPLL_INIT_TRACE end measure_suffix",
+    "OPENPLL_INIT_TRACE begin final_expressions",
+    "OPENPLL_INIT_TRACE end final_expressions",
+    "OPENPLL_INIT_TRACE begin delete_functions",
+    "OPENPLL_INIT_TRACE end delete_functions",
+    "OPENPLL_INIT_TRACE begin delete_params",
+    "OPENPLL_INIT_TRACE end delete_params",
+    "OPENPLL_INIT_TRACE begin delete_globals",
+    "OPENPLL_INIT_TRACE end delete_globals",
+    "OPENPLL_INIT_TRACE begin analysis_run"
+  ],
+  "analysis_events": [
+    "OPENPLL_ANALYSIS_TRACE begin device_mask",
+    "OPENPLL_ANALYSIS_TRACE end device_mask",
+    "OPENPLL_ANALYSIS_TRACE begin analysis_object_run",
+    "OPENPLL_ANALYSIS_TRACE begin dc_init",
+    "OPENPLL_ANALYSIS_TRACE end dc_init",
+    "OPENPLL_ANALYSIS_TRACE begin dc_loop",
+    "OPENPLL_ANALYSIS_TRACE begin dc_take_step",
+    "OPENPLL_ANALYSIS_TRACE end dc_take_step",
+    "OPENPLL_ANALYSIS_TRACE end dc_loop",
+    "OPENPLL_ANALYSIS_TRACE begin dc_finish",
+    "OPENPLL_ANALYSIS_TRACE end dc_finish",
+    "OPENPLL_ANALYSIS_TRACE end analysis_object_run"
+  ],
+  "results": [
+    [
+      1.0,
+      0.75,
+      0.5
+    ],
+    [
+      1.0,
+      0.75,
+      0.5
+    ]
+  ],
+  "full_model_backend_qualified": false,
+  "release_ready": false
+}

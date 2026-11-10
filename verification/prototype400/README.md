@@ -3706,3 +3706,20 @@ because a marker also occurred outside the intended function;1777 limits
 its transformation to the late-setup function. Runner1779 is now a live
 full-model diagnostic with unchanged equations and resource limits; no
 full-model backend result is claimed.
+
+
+### Analysis entry established; DC boundaries traced (1780–1782)
+
+Full trace1779 returned every initialization and late-setup call and reached
+analysis entry. Thus1771's last visible Initializing message was not evidence
+that initialization itself was the slow phase. The owned1779 diagnostic was
+stopped with a receipt to replace it with finer analysis tracing; no partial
+DC point was qualified. Build1780 starts from1777 and changes only the two
+analysis-driver objects, preserving all numerical solver/device objects.
+Control1781 compares both binaries on a4000-section signed-C RC ladder:
+exact output equality, analytical divider and all12 analysis-boundary events
+pass. Evidence is retained under RC_analysis_trace_1781. Runner1782 verifies
+the complete corrected-backend and tracer lineage, the full export/model
+receipts and both control receipts before a single bounded full diagnostic.
+Its markers distinguish error-mask setup, DC init, sweep loop, first step
+and finish. At retention time1782 is live; no full DC result is claimed.
