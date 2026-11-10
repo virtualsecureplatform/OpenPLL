@@ -1,0 +1,27 @@
+--- a/src/CircuitPKG/N_CIR_Xyce.C
++++ b/src/CircuitPKG/N_CIR_Xyce.C
+@@ -683,15 +683,23 @@
+   bool bsuccess = true;
+   bool bs1 = true;
+ 
++  Xyce::lout() << "OPENPLL_INIT_TRACE begin analysis_object" << std::endl;
+   analysisManager_->allocateAnalysisObject(*analysisRegistry_);
++  Xyce::lout() << "OPENPLL_INIT_TRACE end analysis_object" << std::endl;
+   bsuccess = bsuccess && bs1;
+ 
++  Xyce::lout() << "OPENPLL_INIT_TRACE begin solver_system" << std::endl;
+   analysisManager_->initializeSolverSystem(analysisManager_->getTIAParams(), *circuitLoader_, *linearSystem_, *nonlinearManager_, *deviceManager_);
+-
++  Xyce::lout() << "OPENPLL_INIT_TRACE end solver_system" << std::endl;
++
++  Xyce::lout() << "OPENPLL_INIT_TRACE begin devices" << std::endl;
+   bs1 = deviceManager_->initializeAll(*linearSystem_);
++  Xyce::lout() << "OPENPLL_INIT_TRACE end devices" << std::endl;
+   bsuccess = bsuccess && bs1;
+ 
++  Xyce::lout() << "OPENPLL_INIT_TRACE begin nonlinear" << std::endl;
+   bs1 = nonlinearManager_->initializeAll(*analysisManager_, analysisManager_->getNonlinearEquationLoader(), *linearSystem_, *analysisManager_->getDataStore(), *parallelManager_, *initialConditionsManager_, *outputManager_, *topology_);
++  Xyce::lout() << "OPENPLL_INIT_TRACE end nonlinear" << std::endl;
+   bsuccess = bsuccess && bs1;
+ 
+   if (restartManager_->isRestarting())

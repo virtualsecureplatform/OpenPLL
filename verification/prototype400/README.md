@@ -3669,3 +3669,23 @@ full_RC_DC_timeout_1771. No partial DC output is accepted. Full export1766
 and literal preparation1768 remain passed; backend admission remains
 unqualified. The next step is to localize initialization cost before another
 full case, rather than repeat the same bounded run.
+
+
+### Native initialization call-boundary diagnostic (1772–1775)
+
+Separate build1772 adds only entry/exit log messages around the four top-level
+initialization calls. Its baseline archive relink exactly reproduces corrected
+backend1292; only N_CIR_Xyce.C.o differs, leaving every device and solver
+object identical. Control1774 compares baseline and trace on a2000-section
+RC ladder with positive and signed C cards: both give exactly identical
+1.0/0.75/0.5V observations, matching the analytical divider, and all eight
+ordered call-boundary markers are present. Build/control evidence is retained
+under RC_init_trace_1774. Predecessor control1773 stopped on a checker that
+incorrectly expected a sweep column in CSV; its baseline native voltages were
+correct, but it is not relabeled as a passing control.
+
+Runner1775 verifies the full1766/1768 model and both1772/1774 receipts before
+using the tracing executable. It retains the64-GiB/1800-second, one-CPU,
+single-case policy. At retention time the diagnostic worker is live; no
+full-model trace result or backend qualification is claimed. The intent is
+to localize1771's initialization timeout before changing numerical behavior.

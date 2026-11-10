@@ -1,0 +1,45 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_umfpack_BSIM_junction_1292/Xyce": "84ba37cb0e3c405e084b1e210a35f0f492f03b7c94d2c1f9ef284b56121db12a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_init_trace_1772/Xyce": "e41124ca916fc4624bb372e6be7da77778d64851b45d10194e82389fb2819ffd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_init_trace_1772/assessment.json": "209bac95b47244e7ee5b0aa1546ff0188e238d116e848d4eb8987e3de549525e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_init_trace_1774.py": "f0801afdab2dbbfc461f278efd2370fba2c364736b984e6f71532a709bc11b3b"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1774/base/control.spice": "99733a436e51b46175d35e29b5bd57434d56999fe1da2e8eb23e0cbd708102b2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1774/base/dc.csv": "696f5316ed1fe71f20c9144cba251e24cec27f72b4913c8a9736ed047da9f46c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1774/base/native.process.json": "08a5d9a6873ffa9ef208270202550648084e9d3148063ac55cfce3d70b1519f6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1774/base/native.log": "4296643bc1825a89475eef93352d873253744b8d360cfa2c0bd3456d695a0126",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1774/trace/native.log": "059d30d266465aff892c149e0aa1c19fc825c7ef45d486e8c45531f058fa31a9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1774/trace/control.spice": "f2f103a1953abf3298e204648100094b27cc01ae6633905d011f480573a58aa2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1774/trace/native.process.json": "e2b2bc7243c557d3f47c0310c43f8b36b914637fabcf718a70da16412149507f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_init_trace_control_1774/trace/dc.csv": "696f5316ed1fe71f20c9144cba251e24cec27f72b4913c8a9736ed047da9f46c"
+  },
+  "analytical_RC_ladder_pass": true,
+  "baseline_and_trace_outputs_identical": true,
+  "all_initialization_boundaries_observed": true,
+  "events": [
+    "OPENPLL_INIT_TRACE begin analysis_object",
+    "OPENPLL_INIT_TRACE end analysis_object",
+    "OPENPLL_INIT_TRACE begin solver_system",
+    "OPENPLL_INIT_TRACE end solver_system",
+    "OPENPLL_INIT_TRACE begin devices",
+    "OPENPLL_INIT_TRACE end devices",
+    "OPENPLL_INIT_TRACE begin nonlinear",
+    "OPENPLL_INIT_TRACE end nonlinear"
+  ],
+  "results": [
+    [
+      1.0,
+      0.75,
+      0.5
+    ],
+    [
+      1.0,
+      0.75,
+      0.5
+    ]
+  ],
+  "full_model_backend_qualified": false,
+  "release_ready": false
+}
