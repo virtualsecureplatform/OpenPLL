@@ -2923,3 +2923,15 @@ The old receipt pins the 10 ns-reset phased bench; the new loader requires the
 reset80 bench. This is a real stale-compiled-bench rejection control, complementing
 the fresh-compile passing reset80 control 1585. It does not qualify the old
 frequency/detector/clock models or establish physical reset behavior.
+
+User-approved ppm update: settling screen v2 uses 300 ppm; release requirements
+v5 use +/-3000 ppm frequency error. Other acquisition, sustained-window, phase,
+cycle-slip, corner and physical-correctness requirements remain unchanged. The
+versioned profile accessor pins v4 and rejects unrelated changes. Historical
+profiles/results remain unchanged. Reassessment 1607 reuses the completed
+287.1625806 ppm settling metric and passes the new 300 ppm sample screen;
+physical settling, timestep/local-LSB convergence and model flags remain false.
+The v2 settling tests pass. Lock-harness migration to v5 remains pending; no
+historical lock pass is relabeled. Full-R terminal diagnosis 1608 is running on
+closed verified exports to separate terminal mapping from parameter/C errors;
+the failed RC export is neither modified nor accepted.

@@ -1,0 +1,75 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_capture_settling_1603/assessment.json": "787b6af6c8749e610661528ea6d948b24a24971dfd8a2b6adda91e3d9102f36b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/contact_capture_settling_v2.py": "27be811e414e4131e2d2adba710c887f24db6f69d2ebc8cea57f364fd8c48d66"
+  },
+  "windows": [
+    {
+      "start_ns": 220,
+      "stop_ns": 240,
+      "measurement": null,
+      "unavailable_reason": "at least three rises in the common measured window required"
+    },
+    {
+      "start_ns": 240,
+      "stop_ns": 260,
+      "measurement": null,
+      "unavailable_reason": "at least three rises in the common measured window required"
+    },
+    {
+      "start_ns": 260,
+      "stop_ns": 280,
+      "measurement": {
+        "rising_edges": 7,
+        "frequency_mhz": 402.28191491431073,
+        "minimum_period_ns": 2.4851106043112168,
+        "maximum_period_ns": 2.486908812077047
+      },
+      "unavailable_reason": null
+    },
+    {
+      "start_ns": 280,
+      "stop_ns": 300,
+      "measurement": {
+        "rising_edges": 8,
+        "frequency_mhz": 402.4790202830985,
+        "minimum_period_ns": 2.484366365318749,
+        "maximum_period_ns": 2.4848507265344892
+      },
+      "unavailable_reason": null
+    },
+    {
+      "start_ns": 300,
+      "stop_ns": 320,
+      "measurement": {
+        "rising_edges": 8,
+        "frequency_mhz": 402.55236970787877,
+        "minimum_period_ns": 2.4840367279086877,
+        "maximum_period_ns": 2.4842787780880826
+      },
+      "unavailable_reason": null
+    },
+    {
+      "start_ns": 320,
+      "stop_ns": 340,
+      "measurement": {
+        "rising_edges": 8,
+        "frequency_mhz": 402.5945971972111,
+        "minimum_period_ns": 2.4838024786358233,
+        "maximum_period_ns": 2.4839787008794474
+      },
+      "unavailable_reason": null
+    }
+  ],
+  "final_three_windows_available": true,
+  "final_window_frequency_span_ppm": 287.1625806266653,
+  "sample_stability_screen_limit_ppm": 300,
+  "sample_stability_screen_pass": true,
+  "local_LSB_resolution_checked": false,
+  "timestep_convergence_verified": false,
+  "physical_settling_qualified": false,
+  "model_qualified": false,
+  "release_ready": false,
+  "policy_change": "User approved 300 ppm sample-settling gate; release lock limit unchanged pending clarification",
+  "native_waveform_reprocessed": false
+}
