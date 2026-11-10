@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_RC_coarse_guess_DC_1822/assessment.json": "5d730f039cd84904b5ff6f6fda3e87f1faaad2c5b660ccbf2e3adb9089a3ebdb",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_model_1810/assessment.json": "664e21f75752a8094a55b93394121fc0128a0dfa4426521535e586c9db71127c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_RC_coarse_guess_model_1821/nodes.json": "7316ef06b9c3b4141066f7c2f6c834963cbcaa7db4dab306ebb556d881aa9ff3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_native_RC_model_1768/nodes.json": "fdc6fe83a1931bfc49a897050b9a02131706e535fbc5f2906ce365a3a5cfc622",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/project_RC_voltage_guess_1823.py": "538a5784acbf654974aa30c03bc58301a6712ceb943e2f79e4c7134e5c2cc86c"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_RC_voltage_guess_1823/nodeset.spice": "63960922f166b573e6f2463720998103439030c59bc68214ebb2dc7aeed0aa9d"
+  },
+  "active_nodes_seeded": 737762,
+  "wire_edges_used": 847612,
+  "anchors": 19696,
+  "projection": "exact native wire components; ideal-wire voltages used only as initial guesses",
+  "physical_connections_added": false,
+  "full_RC_qualified": false,
+  "release_ready": false
+}

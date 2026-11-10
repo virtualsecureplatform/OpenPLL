@@ -1,0 +1,39 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_1764/assessment.json": "2dc011db970d8df64aa0390b7639300e9e28177be4c11c5be641a0a716487a02",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_audit_1766/assessment.json": "7bb3aa85de7c739a3ddd599b1e9f7bfc029f87a674bf520cdbe5137e79b0b70c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_1764/before.spice": "5b4bd7876898003be7e02c66a3a1dfd09edff25e8f948ffec79f0a00c3f53ca4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prepare_RC_coarse_guess_1821.py": "ba7d55360f50ac26186481f1f583e49e4d061c45dae288e707d5919231986d91",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/prepare_reference_alias_native_RC_1768.py": "de7237358ceb39414e8f399f972871d69eb540ab59744b8916b238155f2932fc",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/zero_C_placeholders_1809.py": "b329ca70db42e989c1316ac671c12ce1e794ef0d0a3ba12fe2b1eed7bd7ff96a"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_RC_coarse_guess_model_1821/model.spice": "6cf9e1557384a5dc7a6c725fd049c13a3ee2788a9374be00fb138eaa3a8c1e8e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_RC_coarse_guess_model_1821/nodes.json": "7316ef06b9c3b4141066f7c2f6c834963cbcaa7db4dab306ebb556d881aa9ff3"
+  },
+  "normalization": {
+    "source_counts": {
+      "X": 62338,
+      "C": 1364187
+    },
+    "literal_RC_branches_preserved": 1364187,
+    "literal_templates": {
+      "primitives": 62338,
+      "literal_templates": 431
+    },
+    "poly_adapter_templates": 2,
+    "all_RC_endpoints_and_literal_values_preserved": true
+  },
+  "zero_C_adapter": {
+    "literal_zero_C_records_retained": 781111,
+    "zero_C_records_electrically_omitted": 781111,
+    "all_other_bytes_unchanged": true,
+    "exact_source_reconstruction_verified": true,
+    "nonzero_C_modified": false,
+    "R_modified": false
+  },
+  "purpose": "initial guess only for the unchanged full RC circuit",
+  "distributed_wire_R_included": false,
+  "full_RC_qualified": false,
+  "release_ready": false
+}

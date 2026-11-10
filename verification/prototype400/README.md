@@ -3922,3 +3922,32 @@ matrix coefficient is changed. Evidence is under RC_symbolic_replay_1820.
 At retention time full METIS case1815 has passed symbolic analysis and
 completed multiple numeric factorizations while iterating; no completed
 DC result or backend/model qualification is yet claimed.
+
+
+### Completed ideal-wire voltage guess and full-RC projection (1821–1825)
+
+Full METIS1815 reached its1800-second cap after76 completed numeric
+factorizations and zero reported linear-solver failures, without a qualified
+DC point. Its terminal evidence is retained under RC_voltage_guess_1824.
+The separate1821 model comes from the exact audited before.spice ideal-wire
+reference, preserving62338 primitives and finite signed C with reversible
+zero-C comments. Native1822 completes normally in329.146882310044 seconds,
+producing19696 finite node voltages with147 factors and zero linear failures.
+This is an initial-guess source only, not a full-RC qualification result.
+
+Projection1823 follows847612 native wire edges and19696 exact-name voltage
+anchors, covering all737762 active exported nodes. Conflicting anchors,
+unanchored components and nonfinite voltages are rejected; no coordinate
+or device-ordinal assignment is used. Four projection tests pass. Native
+control1824 sets a hierarchical node initially to0.9V and verifies a final
+unclamped analytical0.5V, with no ignored-node warnings. Thus NODESET is
+validated as a released initial guess, not an added physical connection.
+Completed source/projection/control records and the exact nodeset are retained
+losslessly under RC_voltage_guess_1824 with original hashes.
+
+Runner1825 verifies all full RC, zero-C, METIS, completed voltage-source,
+projection and NODESET-control bindings, and includes only this starting
+guess in the unchanged full circuit. Its cap is7200 seconds, one CPU and
+64 GiB, with one case and no automatic identical retry. At retention time
+it is live; full DC/backend/model qualification remains pending. A completed
+result must be reviewed after the temporary NODESET constraints are released.
