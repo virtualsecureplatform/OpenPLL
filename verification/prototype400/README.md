@@ -2935,3 +2935,11 @@ The v2 settling tests pass. Lock-harness migration to v5 remains pending; no
 historical lock pass is relabeled. Full-R terminal diagnosis 1608 is running on
 closed verified exports to separate terminal mapping from parameter/C errors;
 the failed RC export is neither modified nor accepted.
+
+RC-export repair now investigates native `killnode`/following `rnode` provenance
+in the completed res.EXT, rather than treating matching anonymous-name prefixes
+as proof. Diagnostic 1609 classifies contracted components against that native
+ownership, reports conflicting owners and remaining terminal/parameter differences,
+and preserves all original files. It is diagnostic only: ownership used for
+contraction comparison does not itself reconnect a physical export or validate
+negative capacitance placement.
