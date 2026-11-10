@@ -2965,3 +2965,26 @@ An export correction must preserve original coupling charge and valid attachment
 not merely rename nodes or clamp negative cards. The exact changed-pair report
 is retained losslessly compressed; failed export and native references remain
 unchanged while the correction is developed.
+
+### Native RC coupling reference-point candidate (1611, 1612, 1617)
+
+The minimal supplied-EXT control1611 confirms that a native `killnode` causes
+original coupling endpoints to disappear from ext2spice output. Candidate1612
+compiled successfully in the pinned release SIF. With the explicit environment
+option `OPENPLL_RC_EXPLICIT_COUPLING=1`, it adds a named native resistor
+breakpoint at the original extraction location and leaves explicit coupling out
+of grounded node capacitance. Default behavior remains selected when unset.
+
+Native layout control1617 uses an anonymous bent metal1 wire and a neighboring
+ported wire, with an explicit native res:drive annotation on the anonymous net.
+It is a synthetic extraction fixture, not full-layout qualification. The default
+path emits killnode and drops the coupling. The opt-in candidate preserves the
+original name, emits one positive wire resistor, and passes exact rational
+capacitance contraction with no negative branch. Retained native outputs and
+input hashes are in RC_coupling_control_1611 and RC_coupling_control_1617.
+Earlier controls1613–1616 were inadequate or failed fixture setup; none provides
+qualification evidence. In particular, equality with zero wire R is insufficient.
+
+RC export remains unfixed overall: full-layout validation, the413 native negative
+capacitances, and two lost source-junction area/perimeter parameter sets remain
+open. No corrected full-R export or release qualification is claimed.

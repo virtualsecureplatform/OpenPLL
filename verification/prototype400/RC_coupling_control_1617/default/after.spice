@@ -1,0 +1,7 @@
+* NGSPICE file created from AnonymousWire.ext - technology: sky130A
+
+.subckt AnonymousWire B
+C0 B SUB 2.8413f
+C1 SUB SUB 0
+C2 m1_0_0.n0 SUB 3.91111f $ **FLOATING
+.ends

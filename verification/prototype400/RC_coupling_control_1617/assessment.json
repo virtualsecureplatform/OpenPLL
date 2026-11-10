@@ -1,0 +1,94 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_reference_point_candidate_1612/assessment.json": "36e9ac4528e3ea92fd4ab64b15d997387cc03ee32646507e8c29ce86478fba08",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_reference_point_candidate_1612/install/bin/magic": "d00db5cc2a605cc6d5f81880b0a5029da3400fe158c5cf11c63259b5c6fab6c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_reference_point_candidate_1612/install/lib/magic/tcl/tclmagic.so": "be38b1e7b3a4e202e5c059ed4e4788aded2608d348da65cbe2fa1fe9e6fc3dc7",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_reference_point_1617.py": "d7e6ef9b8fbdbace7e5e2003a9f7cc1bf1d69ce7e3b87906e682d978092342ca"
+  },
+  "results": [
+    {
+      "explicit": false,
+      "reference_primitives": 0,
+      "candidate_primitives": 0,
+      "primitive_multisets_match": true,
+      "missing_primitive_count": 0,
+      "extra_primitive_count": 0,
+      "wire_R_cards": 0,
+      "positive_wire_R_cards": 0,
+      "wire_R_components": 0,
+      "components_joining_distinct_reference_nodes": [],
+      "ordered_formal_ports_match": true,
+      "reference_nonzero_C_pairs": 3,
+      "contracted_nonzero_C_pairs": 2,
+      "C_pair_differences": [
+        {
+          "nodes": [
+            "b",
+            "m1_0_0#"
+          ],
+          "reference_F_exact": "391111/100000000000000000000",
+          "contracted_F_exact": "0"
+        },
+        {
+          "nodes": [
+            "m1_0_0#",
+            "sub"
+          ],
+          "reference_F_exact": "7821/2000000000000000000",
+          "contracted_F_exact": "0"
+        },
+        {
+          "nodes": [
+            "m1_0_0.n0",
+            "sub"
+          ],
+          "reference_F_exact": "0",
+          "contracted_F_exact": "391111/100000000000000000000"
+        }
+      ],
+      "exact_aggregated_C_match": false,
+      "negative_candidate_C_cards": 0,
+      "exact_device_and_C_contraction_verified": false
+    },
+    {
+      "explicit": true,
+      "reference_primitives": 0,
+      "candidate_primitives": 0,
+      "primitive_multisets_match": true,
+      "missing_primitive_count": 0,
+      "extra_primitive_count": 0,
+      "wire_R_cards": 1,
+      "positive_wire_R_cards": 1,
+      "wire_R_components": 1,
+      "components_joining_distinct_reference_nodes": [],
+      "ordered_formal_ports_match": true,
+      "reference_nonzero_C_pairs": 3,
+      "contracted_nonzero_C_pairs": 3,
+      "C_pair_differences": [],
+      "exact_aggregated_C_match": true,
+      "negative_candidate_C_cards": 0,
+      "exact_device_and_C_contraction_verified": true
+    }
+  ],
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/explicit/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/explicit/native.log": "a4c4965eab51850057d30f240a4553ded88f8022dbe27210645a0feab306b873",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/explicit/run.tcl": "ece8503a0bc2aeaee067edefbd2b76935840847ac17b247dc8df040730a44216",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/explicit/after.spice": "8f9c2d64de01aef860f02d92e7591956cf78dd3b49a20f47f5b250c8fc602873",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/explicit/before.spice": "3e99202c4c390f32a7a40c297233d040830c07fdfb7f247f23add3e5c1724f44",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/explicit/AnonymousWire.ext": "a3fc4b1a125ec39f3ccc6f6823903794a071f3edaffa7d5c55b417f7ce5b71b3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/explicit/AnonymousWire.res.ext": "4529b7c9405b1d1bffe330895bb928c6c0098c0883b97957ceee4f2d4097c1f4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/explicit/native.process.json": "ce54c254e390f5ac47a0ca39d388da6270057ff4df4186e5c1c17ec5d0a72542",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/default/before.spice": "3e99202c4c390f32a7a40c297233d040830c07fdfb7f247f23add3e5c1724f44",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/default/native.process.json": "f21f72c4f5a976bb9310c337eae4e36399f4543e6ac6dff11eaabce6b9b5ee25",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/default/minimal.magicrc": "ba9fe8b580dd037caca761d2fd901f66e68383b0cc7686bf2cd82a5745bf8388",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/default/AnonymousWire.res.ext": "97f01a7dc7596e72a7a91b0f67260cb436ae13b1cad1332434529488ff6cdd9f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/default/after.spice": "bc99580c97157a130471bd0ed2de3ba4c167afc4023cf30cf1b5f6a9507a7d06",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/default/AnonymousWire.ext": "a3fc4b1a125ec39f3ccc6f6823903794a071f3edaffa7d5c55b417f7ce5b71b3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/default/run.tcl": "b4725b14cd01b08090f5ea5fab31a67489a248e0941cd95a5c2ecf40d158d403",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/default/native.log": "c69fe354ab829defb07eb8b8b77b3054727b4f6abf9993db2a332f6d47d98a4d"
+  },
+  "RC_export_fixed": false,
+  "release_ready": false
+}

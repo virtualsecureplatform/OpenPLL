@@ -1,0 +1,12 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_reference_point_candidate_1612/assessment.json": "36e9ac4528e3ea92fd4ab64b15d997387cc03ee32646507e8c29ce86478fba08",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_reference_point_candidate_1612/install/bin/magic": "d00db5cc2a605cc6d5f81880b0a5029da3400fe158c5cf11c63259b5c6fab6c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_RC_reference_point_candidate_1612/install/lib/magic/tcl/tclmagic.so": "be38b1e7b3a4e202e5c059ed4e4788aded2608d348da65cbe2fa1fe9e6fc3dc7",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_reference_point_1617.py": "d7e6ef9b8fbdbace7e5e2003a9f7cc1bf1d69ce7e3b87906e682d978092342ca"
+  },
+  "synthetic_layout": true,
+  "explicit_native_drive_annotation": true,
+  "release_ready": false
+}

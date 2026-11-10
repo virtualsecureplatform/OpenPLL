@@ -1,0 +1,9 @@
+* NGSPICE file created from AnonymousWire.ext - technology: sky130A
+
+.subckt AnonymousWire B
+C0 m1_0_0# B 3.91111f
+C1 B SUB 2.8413f
+C2 m1_0_0# SUB 3.9105f
+ $ **nodeattr m1_0_0# : res:drive
+C3 SUB SUB 0
+.ends

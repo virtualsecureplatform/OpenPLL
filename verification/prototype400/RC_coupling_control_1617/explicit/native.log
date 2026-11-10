@@ -1,0 +1,27 @@
+
+Magic 8.3 revision 623 - Compiled on Tue Nov 10 03:13:01 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Loading "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_point_controls_1617/explicit/run.tcl" from command line.
+Cell AnonymousWire couldn't be read
+No such file or directory
+Creating new cell
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Extraction style is now "ngspice()"
+Extracting AnonymousWire into AnonymousWire.ext:
+Total Nets: 1
+Nets extracted: 1 (1.000000)
+Nets output: 1 (1.000000)
+exttospice finished.
+exttospice finished.

@@ -1,0 +1,55 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_port_location_candidate_1594/install/bin/magic": "53b088cb06469a846cf1ab8fcd54fc8636fd89cfdd811ca6f0751595444e829d",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_magic_port_location_R_controls_1595/coupling1/OpenPLL_Coupling_R_Probe.ext": "e000de4a685e886e5574016d1efaf0657b7dc9a3b0e62d1784e00fd545e7ac0a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_killed_coupling_export_1611/KilledCoupling.ext": "1d779afbbce12420389d8f9c0faa57f47c3b38cc531ac5c6d544243e5a749933",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_killed_coupling_export_1611/KilledCoupling.res.ext": "b1872ffe0437fcc9c710a76738d1d5840cab4f535948555160da1fe1a1ba339e",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_killed_coupling_export_1611/minimal.magicrc": "41ef6997bf59dcb7503f7dbe7273ee27778dc1c7d15a6968a7c520a19f7e5bd6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_killed_coupling_export_1611/run.tcl": "9c2631810597ebf13bcaf003ab6ea9c9b53c8b60bd7c772859870823d57760c4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_killed_coupling_export_1611.py": "4b1876b0502b1c230c670889143ec330e4d72cc1b0bd806c32a4b66624a465ed"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_killed_coupling_export_1611/before.spice": "c6360d76f33612a909496717752e3e35a84386b2f451bd8069769c1d1776db3b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_killed_coupling_export_1611/after.spice": "19786b256c98183562c08da3ce3390d2967f20637370f79e4890ff3aa2b8d1c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_killed_coupling_export_1611/native.log": "e65ecb908d39f1ceefca66a0e8d3d1bfc11a45481a5d648385e83390de3bae44"
+  },
+  "synthetic_EXT_fixture": true,
+  "normal_native_completion": true,
+  "before_capacitors": [
+    [
+      "b",
+      "a#",
+      "3/1000000000000000"
+    ],
+    [
+      "a#",
+      "0",
+      "1/1000000000000000"
+    ],
+    [
+      "b",
+      "0",
+      "1/500000000000000"
+    ]
+  ],
+  "after_capacitors": [
+    [
+      "b",
+      "0",
+      "1/500000000000000"
+    ],
+    [
+      "a.n0",
+      "0",
+      "1/1000000000000000"
+    ],
+    [
+      "a.n1",
+      "0",
+      "0"
+    ]
+  ],
+  "wire_R_cards": 1,
+  "RC_export_fixed": false,
+  "release_ready": false
+}
