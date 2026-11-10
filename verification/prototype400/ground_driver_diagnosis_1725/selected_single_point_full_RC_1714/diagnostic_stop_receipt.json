@@ -1,0 +1,18 @@
+{
+  "stopped_UTC": "2026-11-10T14:49:02.073046+00:00",
+  "worker": {
+    "pid": 2960636,
+    "birth": "152975592",
+    "process_group": 2960636
+  },
+  "command": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_indexed_RC_points_1708/install/lib/magic/tcl/magicdnull -nowrapper -nowrapper -dnull -noconsole -rcfile /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_single_point_full_RC_1714/minimal.magicrc /home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_single_point_full_RC_1714/run.tcl ",
+  "reason": "Confirmed mandatory conductor extraction failure; global ground/substrate driver wire was not found.",
+  "native_failure_examples": [
+    "Couldn't find wire at 39000 11840",
+    "Error in extracting node IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB"
+  ],
+  "log_sha256_at_stop": "d029efd585bcb59f80a96ef62993e0aed7c9c3e72c477924fb4458b7bbef315f",
+  "user_cancellation": false,
+  "partial_native_data_accepted": false,
+  "automatic_retry": false
+}

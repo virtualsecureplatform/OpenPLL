@@ -1,0 +1,46 @@
+{
+  "build/signoff400/selected_single_point_full_RC_1714/diagnostic_stop_receipt.json": {
+    "sha256": "3b9021fb650be274527db96a9abcb39b617de706032532eb799535eccc2cc6cc",
+    "retained": "verification/prototype400/ground_driver_diagnosis_1725/selected_single_point_full_RC_1714/diagnostic_stop_receipt.json"
+  },
+  "build/signoff400/selected_single_point_full_RC_1714/status.json": {
+    "sha256": "8132ac006495d8e149d870eb31e4fbae19be3ad8b540fcc72da799f913039e58",
+    "retained": "verification/prototype400/ground_driver_diagnosis_1725/selected_single_point_full_RC_1714/status.json"
+  },
+  "build/signoff400/selected_ground_driver_geometry_1722/inspect.py": {
+    "sha256": "f97a842d9066ae5b24319ed53344f5df8b02fd56537af750430db87c5d1b1b28",
+    "retained": "verification/prototype400/ground_driver_diagnosis_1725/selected_ground_driver_geometry_1722/inspect.py"
+  },
+  "build/signoff400/selected_ground_driver_geometry_1722/assessment.json": {
+    "sha256": "283e66a6eaa81c52df918dcc5a739482b515fd324efcdacb1ccd4eb80ce1d4c9",
+    "retained": "verification/prototype400/ground_driver_diagnosis_1725/selected_ground_driver_geometry_1722/assessment.json"
+  },
+  "build/signoff400/selected_ground_driver_geometry_1722/geometry.json": {
+    "sha256": "3bd87fbe1489ad7d9e106126fbc6bf3119f37469a4cfc32f561a1712a59bba73",
+    "retained": "verification/prototype400/ground_driver_diagnosis_1725/selected_ground_driver_geometry_1722/geometry.json"
+  },
+  "build/signoff400/selected_ground_driver_geometry_1722/native.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained": "verification/prototype400/ground_driver_diagnosis_1725/selected_ground_driver_geometry_1722/native.log.gz"
+  },
+  "build/signoff400/selected_ground_copy_driver_1725/native.log": {
+    "sha256": "0fe50b5116626327852714ac0786c514dda00d8cb106364bb0b7f85fb0ee0d6f",
+    "retained": "verification/prototype400/ground_driver_diagnosis_1725/selected_ground_copy_driver_1725/native.log.gz"
+  },
+  "build/signoff400/selected_ground_copy_driver_1725/run.tcl": {
+    "sha256": "f932bda1e727b1792b1c27c2dd5d13e87bb5e5ce18a5a8aff3e40b5c92c259f2",
+    "retained": "verification/prototype400/ground_driver_diagnosis_1725/selected_ground_copy_driver_1725/run.tcl"
+  },
+  "build/signoff400/selected_ground_copy_driver_1725/assessment.json": {
+    "sha256": "3dbb75280940002bfec90bd58845bd8cb8c83e8a7f697ebb06ac551b1e4becf2",
+    "retained": "verification/prototype400/ground_driver_diagnosis_1725/selected_ground_copy_driver_1725/assessment.json"
+  },
+  "build/signoff400/selected_ground_copy_driver_1725/status.json": {
+    "sha256": "f6a4c3822263c9eef006c99dfcc538eb948da86779ad75bb8939d7e73d464297",
+    "retained": "verification/prototype400/ground_driver_diagnosis_1725/selected_ground_copy_driver_1725/status.json"
+  },
+  "build/signoff400/selected_ground_copy_driver_1725/inputs.json": {
+    "sha256": "c40c4d286a8ba31c9bbc47101342ad49b4aa8d20b6ecd052491da1e10e0ffaf2",
+    "retained": "verification/prototype400/ground_driver_diagnosis_1725/selected_ground_copy_driver_1725/inputs.json"
+  }
+}

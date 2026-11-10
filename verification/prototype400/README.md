@@ -3364,3 +3364,28 @@ port-population control, not a full-layout speedup measurement. Original
 outputs and compressed logs are under port_population_control_1721.
 The full-layout worker1714 is still live and has not yet emitted its first
 network; whole-export qualification remains pending.
+
+
+### Ground-driver failure and type-selection diagnosis (1722–1728)
+
+The earlier live status is superseded: full producer1714 failed with
+`Couldn't find wire at 39000 11840` on the canonical VGND/substrate conductor.
+The owned worker was stopped after recording that failure. Its partial RC
+output is not qualified; downstream audit/preparation did not run.
+
+Independent source-geometry check1722 finds actual M5 drawing at that drive
+point. Copy-only diagnostic1725 instead reports the expected driver type as
+`ndiode` and finds space on that plane. Native source inspection explains
+the mismatch: original-equivalence handling transfers the alias drivepoint
+and M5 type to the canonical node, but device selection overwrites the work
+context type. The native restoration condition tests PORTNODE, which belongs
+to the alias rather than the canonical substrate node. The diagnosis does
+not establish that changing copy seed alone repairs the ground network.
+
+Candidate1726 preserves the recorded type whenever the opt-in native path
+uses an explicit DRIVELOC, retaining legacy behavior otherwise. Diagnostic1728
+is a fresh driver-seeded copy-only case; it generates no resistance model.
+The original-seed1724 observation remains separate. Neither a completed copy
+nor the focused controls establish full RC export or PLL release readiness.
+Original completed observations and the1714 stop receipt are retained under
+ground_driver_diagnosis_1725, with unchanged compressed native log bytes.

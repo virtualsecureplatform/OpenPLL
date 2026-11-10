@@ -1,0 +1,15 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/assessment.json": "6047a234f31a190fa3ae4cd6623a4486d2d0a8287b6744aca828c1fb6067e939",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/flat.gds": "4dc5bc17e43b4ec1d6d3a7e1f1717df460a1066bdccdca71b48bf3af016b1880",
+    "/nix/store/c8mymw0gckkiw7lqwnm2l6mqnd99xmzy-klayout-0.30.7/bin/klayout": "9871282c43f561b7e3094f15f71fbd825bb0bf4f376f4651999cad15e115d67a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ground_driver_geometry_1722/inspect.py": "f97a842d9066ae5b24319ed53344f5df8b02fd56537af750430db87c5d1b1b28"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ground_driver_geometry_1722/geometry.json": "3bd87fbe1489ad7d9e106126fbc6bf3119f37469a4cfc32f561a1712a59bba73",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ground_driver_geometry_1722/regions.gds": "6af621c3862a7f5043cbfff615f09f8c7c16451f4b4a4c4b6f3b6cf7cbd59c8c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ground_driver_geometry_1722/native.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "diagnostic_geometry_only": true,
+  "RC_export_fixed": false
+}

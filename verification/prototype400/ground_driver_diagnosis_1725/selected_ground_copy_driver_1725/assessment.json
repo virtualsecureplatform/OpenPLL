@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_copy_trace_1723/assessment.json": "7837b39bf44b1ca93a5adbaadc71616bb0ca1c09e69fbc00d8a5edbfa58c6cce",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/assessment.json": "6047a234f31a190fa3ae4cd6623a4486d2d0a8287b6744aca828c1fb6067e939",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_copy_trace_1723/install/bin/magic": "9b89c33e09ca32b02299792ede84a48a3a7ddc5217a202fe982dc87c0ac46b99",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/magic_copy_trace_1723/install/lib/magic/tcl/tclmagic.so": "3b357fa530e2a993fd0d6ab341b6194f9f2d39813cf6a6eaacde533efdef50aa",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/flat.gds": "4dc5bc17e43b4ec1d6d3a7e1f1717df460a1066bdccdca71b48bf3af016b1880",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_keeper_contact_corrected_C_1573/IntegerPLL_400MHz_KeeperFlatC.ext": "8ce8a459945ca181b69ee3a5cf47f94caedf63d7093a0b7fb5970616e0a97a78",
+    "/opt/pdk/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.tech/magic/sky130A.tech": "55fdebfa329544c1cb1e22a3817461603f1dea9a41638b26af8c7751b3e0cc6a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ground_copy_driver_1725/minimal.magicrc": "e2e8644ec4b519876ecdfebc6f475692d99e8876e1eb6199ef99413de8c11b23",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ground_copy_driver_1725/run.tcl": "f932bda1e727b1792b1c27c2dd5d13e87bb5e5ce18a5a8aff3e40b5c92c259f2",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/probe_ground_copy_1724.py": "ae7863bd99a521735b074ef44ae6b1310626286a1ee8e4230c09cb0bb2927c11"
+  },
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_ground_copy_driver_1725/native.log": "0fe50b5116626327852714ac0786c514dda00d8cb106364bb0b7f85fb0ee0d6f"
+  },
+  "copy_seed_from_driver": true,
+  "completed_copy_stage_observations": [
+    "OPENPLL_RC_COPY_TRACE stage=start net=IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB seed=39000,11840 seed_type=ndiode drive=39000,11840 drive_type=ndiode",
+    "OPENPLL_RC_COPY_TRACE stage=end net=IntegerPLL_ProgrammedCore_0.sky130_fd_sc_hs__inv_8_18.VNB cpu_s=0.000127 drive=39000,11840 expected=ndiode found_left=space found_right=space"
+  ],
+  "driver_type_present_after_copy": false,
+  "early_return_was_intentional": true,
+  "R_network_generation_skipped": true,
+  "native_RC_model_qualified": false,
+  "RC_export_fixed": false,
+  "release_ready": false
+}
