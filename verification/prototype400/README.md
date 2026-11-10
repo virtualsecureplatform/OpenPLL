@@ -3622,3 +3622,21 @@ Native backend correlation and integration into the PLL qualification flow
 remain pending; the model receipt still states model_qualified=false and
 release_ready=false. Earlier failed exports and pending-review receipts are
 preserved with their original status.
+
+
+### Full physical RC native reset-DC admission (1770)
+
+Runner1770 accepts only the completed1766 full audit and literal1768 model,
+verifies their input/artifact hashes, and uses the corrected BSIM executable
+bound by its build receipt and all17160 geometry observations in1294.
+Existing diode geometry/model adaptation must preserve every R/C card in
+order, including the poly-adapter branch. The case uses TT/27C/1.8V with
+reset asserted and PLL_ENABLE low, one CPU20,16 GiB and a1800-second cap.
+One case is allowed; there is no automatic identical retry. A normal finite
+DC point would establish backend reset-state admission only, leaving native
+transient correlation, model qualification and PLL release gates pending.
+At retention time the native case is live; no result is claimed.
+
+Prelaunch review stopped predecessor1769 before native invocation because
+its card checker still selected only C cards. The fresh1770 runner checks
+both R and C. This is a controller correction, not an extraction rerun.
