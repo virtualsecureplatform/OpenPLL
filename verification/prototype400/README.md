@@ -3431,3 +3431,13 @@ all 19,696 canonical conductors, charge/formal-port conservation, passivity
 and unique physical names. Preparer1738 refuses any failed audit and preserves
 literal RC values and endpoints. These pending jobs do not qualify RC export
 or the broader PLL release.
+
+
+Original-seed copy-only diagnostic1724 completed normally with 1668.03 CPU
+seconds in conductor copying. Its work context still has the known incorrect
+`ndiode` driver type, and the private geometry probe finds space on that
+plane. This observation does not establish absence of M5 in the copy. It
+bounds the cost of that completed native copy and confirms that the earlier
+CPU-active wait was finite work. Original completed receipt and losslessly
+compressed log are under ground_original_copy_1724. Corrected M5 observations
+1728/1732 are separate; full-export admission still requires1732 to succeed.

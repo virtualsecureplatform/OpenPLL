@@ -1,0 +1,22 @@
+{
+  "build/signoff400/selected_ground_copy_original_1724/assessment.json": {
+    "sha256": "2428ce80a23504b979b1af823dff13eb1ecafd6a79065fc3a5f2ea785c41c4db",
+    "retained": "verification/prototype400/ground_original_copy_1724/assessment.json"
+  },
+  "build/signoff400/selected_ground_copy_original_1724/inputs.json": {
+    "sha256": "6de02a827010d85238dee71a5ece7a5ee46d350b444d74e2d6a8188a4f38005a",
+    "retained": "verification/prototype400/ground_original_copy_1724/inputs.json"
+  },
+  "build/signoff400/selected_ground_copy_original_1724/status.json": {
+    "sha256": "f6a4c3822263c9eef006c99dfcc538eb948da86779ad75bb8939d7e73d464297",
+    "retained": "verification/prototype400/ground_original_copy_1724/status.json"
+  },
+  "build/signoff400/selected_ground_copy_original_1724/run.tcl": {
+    "sha256": "c4642638173f637328ddb96c704e4dba235f589af79ec7adbf206adddf225f41",
+    "retained": "verification/prototype400/ground_original_copy_1724/run.tcl"
+  },
+  "build/signoff400/selected_ground_copy_original_1724/native.log": {
+    "sha256": "c96d7119fffbc801becfb31a6cd0019611884b85a3ce7b7208f7ad60a608b756",
+    "retained": "verification/prototype400/ground_original_copy_1724/native.log.gz"
+  }
+}
