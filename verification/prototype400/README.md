@@ -3951,3 +3951,19 @@ guess in the unchanged full circuit. Its cap is7200 seconds, one CPU and
 64 GiB, with one case and no automatic identical retry. At retention time
 it is live; full DC/backend/model qualification remains pending. A completed
 result must be reviewed after the temporary NODESET constraints are released.
+
+### Completed full RC reset DC (1825)
+
+The exact distributed-wire RC backend completed normally in 7131.57 seconds
+with one successful DC step, zero failed steps, and zero nonlinear convergence
+failures. All ten requested port voltages were finite. The native summary and
+adapter both report 12 failed linear solves among 619 attempts; the warning
+limit had already suppressed further warnings. Earlier polling of a specific
+warning string therefore undercounted failures. Do not interpret those polls
+as proof of zero failures.
+
+The completed receipts, exact DC CSV, deck, and byte-preserving compressed
+native log are retained in `full_RC_completed_DC_1825`, with original and stored
+SHA-256 digests. This establishes a completed full RC reset DC point; it does
+not establish transient correlation, PLL frequency qualification, or release
+readiness. Final RC qualification review remains pending.
