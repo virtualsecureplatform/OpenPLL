@@ -1,0 +1,47 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_full_RC_audit_1766/assessment.json": "7bb3aa85de7c739a3ddd599b1e9f7bfc029f87a674bf520cdbe5137e79b0b70c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_reference_alias_native_RC_model_1768/assessment.json": "c6b3c8410860ebd3cf365d6dc91e2e0e00a723f1d2e0387cdcadfb3b1bc56821",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_model_1810/assessment.json": "664e21f75752a8094a55b93394121fc0128a0dfa4426521535e586c9db71127c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_CSC_assessment_1814/assessment.json": "480ee7586f797e258c822fdca0da2ce338c1421254ee257e67e57d26a8c4ef61",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_nodeset_release_control_1824/assessment.json": "635858338688d180309a48821423705ca80c8f7318466e03924feec6a68d2523",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_seeded_full_RC_DC_1825/assessment.json": "99f8ee22c367bd17c8f0e2d02e54c8bb491b958f67c665fbe088cbf653373157",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/review_completed_RC_1826.py": "50cbbb2cf1e9bdb1e9083dbb53481d82dfdb42113ed14cf94f2f4feaf6cbfb45"
+  },
+  "artifacts": {},
+  "physical_export_checks": {
+    "original_substrate_reference_point_preserved": true,
+    "original_substrate_reference_used_in_C": true,
+    "no_default_zero_C_fallback_introduced": true,
+    "precise_C_reference_conserved": true,
+    "device_charge_and_formal_ports_conserved": true,
+    "all_62338_physical_device_connections_preserved": true,
+    "every_native_wire_value_preserved": true,
+    "all_19696_conductors_output_once": true,
+    "actual_linear_C_PSD_certified": true,
+    "distinct_physical_points_have_distinct_names": true,
+    "no_native_geometry_failure": true,
+    "no_native_export_errors_or_orphan_repairs": true,
+    "original_65_port_population_indexed": true
+  },
+  "full_physical_RC_export_verified": true,
+  "reversible_zero_C_backend_adapter_verified": true,
+  "full_native_matrix_empty_equations": 0,
+  "completed_full_RC_reset_DC_verified": true,
+  "native_summary": {
+    "Number Successful Steps Taken": 1,
+    "Number Failed Steps Attempted": 0,
+    "Number Linear Solves": 619,
+    "Number Failed Linear Solves": 12,
+    "Number Nonlinear Convergence Failures": 0
+  },
+  "recovered_linear_failures": 12,
+  "native_initial_guess_release_control_verified": true,
+  "monitored_ports": 10,
+  "all_internal_solution_values_independently_checked": false,
+  "transient_correlation_qualified": false,
+  "frequency_qualified": false,
+  "release_ready": false,
+  "qualification_scope": "physical RC export fidelity and completed reset DC only",
+  "remaining_review": "Determine required transient backend correlation before final goal completion"
+}
