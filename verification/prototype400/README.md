@@ -3977,3 +3977,20 @@ agree on619 solves and12 recovered linear failures. This review qualifies
 physical export fidelity and the monitored reset DC point only. Independent
 internal solution checking and transient backend correlation are not supplied
 by ten printed port values. Final goal completion remains under review.
+
+### Full physical RC startup transient admission (1827)
+
+The completed1826 physical/DC review admits one fresh native340 ns startup
+transient of the complete repaired distributed RC circuit. It preserves the
+validated METIS backend, exact RC and zero-C adapter, and released NODESET
+guess. Existing checked stimulus holds reset for80 ns with25 MHz reference
+clock running, programs coarse20/fine112, and keeps PLL_ENABLE low. Maximum
+step10 ps, CPU20,64 GiB and86400-second cap apply; no identical automatic
+retry is allowed. All65 formal ports are requested at17-digit precision;
+internal voltages are not all saved. Only completed output will be assessed.
+
+The runner and exact launch inputs are retained under
+`full_RC_transient_launch_1827`. At retention the birth-verified native worker
+is live and parsing its model. This is a native startup-operation diagnostic,
+not hierarchy transient correlation or PLL release qualification. Historical
+receipts and completed DC files remain unchanged.
