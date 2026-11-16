@@ -1,0 +1,71 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_zero_C_backend_CSC_capture_1813/assessment.json": "10f7f630c5b6b08cad92c5d195d397bd7d057d2f2c6cc4a94fd2194097370501",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/tools/xyce_umfpack/symbolic_replay/replay.c": "4146f983037085ff05c800a54a930af1b995f6a97739ae3a72eda10879bdfd6c",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_RC_numeric_threads_1828/numeric.c": "ac4b731ec883db35c72cda1cc329d760b9fdc3f8d92dbe1e6b1f9019e724a4e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/benchmark_RC_numeric_threads_1828.py": "a9e7ca5a11b1d9cbe8493e6e89340461649b7f0c24577ac92ff07e333aa9a980"
+  },
+  "results": [
+    {
+      "threads": 1,
+      "status": 0,
+      "rows": 923123,
+      "entries": 6395914,
+      "ordering_used": 3,
+      "strategy_used": 3,
+      "symbolic_seconds": 142.780753156,
+      "numeric_factorization_performed": false,
+      "numeric_status": 0,
+      "numeric_seconds": 8.180789185,
+      "simulation_qualified": false
+    },
+    {
+      "threads": 2,
+      "status": 0,
+      "rows": 923123,
+      "entries": 6395914,
+      "ordering_used": 3,
+      "strategy_used": 3,
+      "symbolic_seconds": 142.244518402,
+      "numeric_factorization_performed": false,
+      "numeric_status": 0,
+      "numeric_seconds": 7.383067041,
+      "simulation_qualified": false
+    },
+    {
+      "threads": 4,
+      "status": 0,
+      "rows": 923123,
+      "entries": 6395914,
+      "ordering_used": 3,
+      "strategy_used": 3,
+      "symbolic_seconds": 142.570090868,
+      "numeric_factorization_performed": false,
+      "numeric_status": 0,
+      "numeric_seconds": 6.841456916,
+      "simulation_qualified": false
+    },
+    {
+      "threads": 8,
+      "status": 0,
+      "rows": 923123,
+      "entries": 6395914,
+      "ordering_used": 3,
+      "strategy_used": 3,
+      "symbolic_seconds": 144.709305105,
+      "numeric_factorization_performed": false,
+      "numeric_status": 0,
+      "numeric_seconds": 7.326225711,
+      "simulation_qualified": false
+    }
+  ],
+  "artifacts": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_RC_numeric_threads_1828/numeric": "3e193265262be5730d4ff6b48e6af3175d548d678ad0f74c494d3b597531a727",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_RC_numeric_threads_1828/threads_4.log": "1437cbfd29dc926c6eaf339a22beeb8ee2f2fc6bddf946e1a962dfc58e0fe65b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_RC_numeric_threads_1828/threads_2.log": "fa1d8cb4995bf392354919c3e671c42bda624c5dcf325d198bd0435456362c81",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_RC_numeric_threads_1828/threads_1.log": "f825b6af5d93a13364e3b13cab95f306fb93c8ffbaefaa4f6077f1e1ddca2e25",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_RC_numeric_threads_1828/threads_8.log": "9d15ad672660f91731ba4fab0f60a136d53904e1fec73971dd13018e59e13ae8"
+  },
+  "simulation_qualified": false,
+  "release_ready": false
+}

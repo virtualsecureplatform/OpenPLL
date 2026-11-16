@@ -1,0 +1,42 @@
+--- a/src/NonlinearSolverPKG/N_NLS_NonLinearSolver.C
++++ b/src/NonlinearSolverPKG/N_NLS_NonLinearSolver.C
+@@ -56,6 +56,7 @@
+ #include <N_LAS_PrecondFactory.h>
+ #include <N_LAS_Problem.h>
+ #include <N_LAS_Solver.h>
++#include <N_LAS_OpenPLLUMFPACKSolver.h>
+ #include <N_LAS_TranSolverFactory.h>
+ #include <N_LAS_System.h>
+ #include <N_LAS_SystemHelpers.h>
+@@ -878,7 +879,9 @@
+   Stats::StatTop _residualStat("Residual");
+   Stats::TimeBlock _residualTimer(_residualStat);
+ 
++  Xyce::lout() << "OPENPLL_STEP_TRACE begin load_rhs" << std::endl;
+   nonlinearEquationLoader_->loadRHS();
++  Xyce::lout() << "OPENPLL_STEP_TRACE end load_rhs" << std::endl;
+   ++numResidualLoads_;
+   totalResidualLoadTime_ += nonlinearEquationLoader_->getResidualTime();
+ 
+@@ -904,7 +907,9 @@
+   Stats::StatTop _jacobianStat("Jacobian");
+   Stats::TimeBlock _jacobianTimer(_jacobianStat);
+ 
++  Xyce::lout() << "OPENPLL_STEP_TRACE begin load_jacobian" << std::endl;
+   nonlinearEquationLoader_->loadJacobian();
++  Xyce::lout() << "OPENPLL_STEP_TRACE end load_jacobian" << std::endl;
+   ++numJacobianLoads_;
+   totalJacobianLoadTime_ += nonlinearEquationLoader_->getJacobianTime();
+   return true;
+@@ -948,7 +953,11 @@
+ bool NonLinearSolver::newton_()
+ {
+   lasSolverRCPtr_->setNewtonIter( getNumIterations() );
++  if (auto *umf = dynamic_cast<Linear::OpenPLLUMFPACKSolver*>(lasSolverRCPtr_.get()))
++    umf->setTransientContext(getAnalysisManager().getTransientFlag() && !getAnalysisManager().getDCOPFlag());
++  Xyce::lout() << "OPENPLL_STEP_TRACE begin linear_solve" << std::endl;
+   int solutionStatus = lasSolverRCPtr_->solve( false );
++  Xyce::lout() << "OPENPLL_STEP_TRACE end linear_solve" << std::endl;
+ 
+   totalLinearSolveTime_ += lasSolverRCPtr_->solutionTime();
+   ++numLinearSolves_;

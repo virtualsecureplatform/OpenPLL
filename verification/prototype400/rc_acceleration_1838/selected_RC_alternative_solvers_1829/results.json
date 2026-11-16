@@ -1,0 +1,14 @@
+[
+  {
+    "solver": "basker",
+    "control_pass": true,
+    "elapsed_s": 603.0984416350257,
+    "status": "TimeoutError('compiled check exhausted whole-check budget')"
+  },
+  {
+    "solver": "klu2",
+    "control_pass": true,
+    "elapsed_s": 603.1122492079157,
+    "status": "TimeoutError('compiled check exhausted whole-check budget')"
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_metis_ordering_1790/Xyce": "600962e16df97b2258c55bb6f7201e335b73e692a139367b153f4952c93184a1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_reuse_context_1830/Xyce": "8c98f5839762bcc1a36ecd91b1c1246cd9d4044f4c20c0fb88df010211a3f221",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_reuse_context_1830/assessment.json": "6991f115bef2c35d4efe3c98badf0dbe36f277408aba32e6345d709b42b63f37",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_reuse_context_1831.py": "b09a3bca33f9dc7ed186d3127fef1d2088df8952169e1cf272aabb7eb6a8eec3"
+  },
+  "results": {
+    "dc_base": {
+      "calls": 2,
+      "numeric": 2,
+      "symbolic": 1,
+      "failures": 0,
+      "reuse_attempts": 0,
+      "reuse_accepted": 0,
+      "exact_reuse": 0,
+      "refinement_solves": 0,
+      "DC_reuse": 0,
+      "krylov_solves": 0
+    },
+    "dc_fixed": {
+      "calls": 2,
+      "numeric": 2,
+      "symbolic": 1,
+      "failures": 0,
+      "reuse_attempts": 0,
+      "reuse_accepted": 0,
+      "exact_reuse": 0,
+      "refinement_solves": 0,
+      "DC_reuse": 0,
+      "krylov_solves": 0
+    },
+    "tran_base": {
+      "calls": 2024,
+      "numeric": 2024,
+      "symbolic": 1,
+      "failures": 0,
+      "reuse_attempts": 0,
+      "reuse_accepted": 0,
+      "exact_reuse": 0,
+      "refinement_solves": 0,
+      "DC_reuse": 0,
+      "krylov_solves": 0
+    },
+    "tran_fixed": {
+      "calls": 2025,
+      "numeric": 5,
+      "symbolic": 1,
+      "failures": 0,
+      "reuse_attempts": 132,
+      "reuse_accepted": 128,
+      "exact_reuse": 1892,
+      "refinement_solves": 281,
+      "DC_reuse": 0,
+      "krylov_solves": 31
+    }
+  },
+  "analytical_RC_pass": true,
+  "reference_waveforms_match": true,
+  "DC_reuse_excluded": true,
+  "transient_exact_reuse_activated": true,
+  "nonlinear_reuse_qualified": false,
+  "release_ready": false
+}

@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "scenario": 0,
+      "functional_trace_pass": true,
+      "elapsed_s": 7.550231105880812,
+      "first_oscillator_release_ns": 260.0,
+      "first_output_rising_ns": 262.503,
+      "first_configuration_ready_ns": 1100.0,
+      "first_tracking_ns": 1391.2,
+      "failed_asserted": false,
+      "lock_qualified": false,
+      "full_RC_correlation_qualified": false
+    },
+    {
+      "scenario": 1,
+      "functional_trace_pass": true,
+      "elapsed_s": 7.124243108090013,
+      "first_oscillator_release_ns": 260.0,
+      "first_output_rising_ns": 262.503,
+      "first_configuration_ready_ns": 1100.0,
+      "first_tracking_ns": 1391.2,
+      "failed_asserted": false,
+      "lock_qualified": false,
+      "full_RC_correlation_qualified": false
+    },
+    {
+      "scenario": 2,
+      "functional_trace_pass": true,
+      "elapsed_s": 7.0627368511632085,
+      "first_oscillator_release_ns": 260.0,
+      "first_output_rising_ns": 262.503,
+      "first_configuration_ready_ns": 1100.0,
+      "first_tracking_ns": 1391.2,
+      "failed_asserted": false,
+      "lock_qualified": false,
+      "full_RC_correlation_qualified": false
+    }
+  ],
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_startup_mixed_signal_1838/scenario_0/assessment.json": "6a16810dd928c433c28a857d4d7fbd3dca7e46801b7eceeb0219d0ea972a4d4a",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_startup_mixed_signal_1838/scenario_1/assessment.json": "76455b3dcd190ab2d8cacbb8b8d21fdbeedaf332d2c92b3662025b05a61862f1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_startup_mixed_signal_1838/scenario_2/assessment.json": "0f097bfb279d7d5dff7faddff6f68ab72d58be8c2f977545f9d47f29379bddd8"
+  },
+  "release_ready": false
+}

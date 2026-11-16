@@ -1,0 +1,374 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_transient_1827/native.process.json": "f80dc8b31d3cc67cd69ec002e6c1b7c9589d1f88a7e89de0a2a0114737b749e0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_transient_1827/status.json": "7e0131fed99b728e9906b94f95356962350675bf0af64dd19b8a71eeba7505f3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_transient_1827/inputs.json": "0d90ce498634478a82538b7d389d62627a2c5d2752d32212a862864bd7c9156f",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_transient_1827/transient.prn": "3f638cf9ffa6ffe8c750718c544df8b4c8b1f34a012d3875257085b4a36a7111",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_transient_1827/native.log": "9c93dcb8ee9d9a585098d118615da5dc6acaeda86df2aee090d7e1dd8d183e91",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_transient_1827/transient.spice": "818e105acbb9390c98f645c799d75fd05d81c6e925378e75b5d54922befea2c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_reuse_transient_1833/native.process.json": "1b98b8c7df27c1c37305a11b0795b10686194c8018be11744599cb928e9c923b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_reuse_transient_1833/status.json": "7e0131fed99b728e9906b94f95356962350675bf0af64dd19b8a71eeba7505f3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_reuse_transient_1833/inputs.json": "d3c4d891a3d4594bb81d12e93b6ba08e5320914f6163d03d3a7dfd048beb22c9",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_reuse_transient_1833/transient.prn": "cacc11820dac3af56d169a81074036fc67abdc02da2367eefc711055da7bdcb0",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_reuse_transient_1833/native.log": "4d8e5835b672a0457d747360c5f356607af498b705136eb16d83571e31c1bf57",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_reuse_transient_1833/transient.spice": "75fcd8e4cbeff78125160ebeb4a87504779e39828d535a7b0ebed3737bac4dcd"
+  },
+  "physical_decks_identical_except_output": true,
+  "runs": [
+    {
+      "folder": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_transient_1827",
+      "samples": 4362,
+      "last_simulated_ns": 43.494999999999365,
+      "discarded_incomplete_final_rows": 0,
+      "completed_numeric_factorizations": 9413,
+      "points": [
+        {
+          "simulated_ns": 3.4,
+          "UTC": "2026-11-11T03:48:30"
+        },
+        {
+          "simulated_ns": 6.809996,
+          "UTC": "2026-11-11T04:40:54"
+        },
+        {
+          "simulated_ns": 10.219992,
+          "UTC": "2026-11-11T05:33:10"
+        },
+        {
+          "simulated_ns": 13.629987999999999,
+          "UTC": "2026-11-11T06:25:46"
+        },
+        {
+          "simulated_ns": 17.029988,
+          "UTC": "2026-11-11T07:17:43"
+        },
+        {
+          "simulated_ns": 20.434986000000002,
+          "UTC": "2026-11-11T08:24:45"
+        },
+        {
+          "simulated_ns": 23.834986,
+          "UTC": "2026-11-11T10:41:46"
+        },
+        {
+          "simulated_ns": 27.234985999999996,
+          "UTC": "2026-11-11T13:14:10"
+        },
+        {
+          "simulated_ns": 30.634985999999998,
+          "UTC": "2026-11-11T15:46:57"
+        },
+        {
+          "simulated_ns": 34.04488,
+          "UTC": "2026-11-11T18:19:16"
+        },
+        {
+          "simulated_ns": 37.455079999999995,
+          "UTC": "2026-11-11T20:51:33"
+        },
+        {
+          "simulated_ns": 40.86494,
+          "UTC": "2026-11-11T23:25:24"
+        }
+      ],
+      "transient_progress_ns_per_hour": 1.9100147846036197,
+      "last_progress": [
+        "OpenPLL UMFPACK progress: linear_calls=9400 numeric_factors=9400 cached_accepts=0 exact_hits=0 refinement_corrections=0 DC_hits=0 transient=0 krylov_steps=0"
+      ]
+    },
+    {
+      "folder": "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_reuse_transient_1833",
+      "samples": 1330,
+      "last_simulated_ns": 13.289999999999797,
+      "discarded_incomplete_final_rows": 0,
+      "completed_numeric_factorizations": 673,
+      "points": [
+        {
+          "simulated_ns": 3.4,
+          "UTC": "2026-11-12T13:34:55"
+        },
+        {
+          "simulated_ns": 6.809996,
+          "UTC": "2026-11-12T13:51:56"
+        },
+        {
+          "simulated_ns": 10.219992,
+          "UTC": "2026-11-12T14:09:36"
+        }
+      ],
+      "transient_progress_ns_per_hour": 11.798160115329168,
+      "last_progress": [
+        "OpenPLL UMFPACK progress: linear_calls=2000 numeric_factors=673 cached_accepts=1327 exact_hits=0 refinement_corrections=2980 DC_hits=0 transient=1 krylov_steps=7480"
+      ]
+    }
+  ],
+  "shared_interval_end_ns": 13.289999999999797,
+  "port_errors": {
+    "V(CLKDIV_RETIMED)": {
+      "max_abs_V": 3.4753314372219226e-12,
+      "rms_V": 9.877446660373386e-13
+    },
+    "V(COARSE_CODE[0])": {
+      "max_abs_V": 3.459773422343892e-12,
+      "rms_V": 1.0105580089719113e-12
+    },
+    "V(COARSE_CODE[1])": {
+      "max_abs_V": 3.344749651535252e-12,
+      "rms_V": 9.981626528345032e-13
+    },
+    "V(COARSE_CODE[2])": {
+      "max_abs_V": 3.0555469822900454e-12,
+      "rms_V": 9.012705848946974e-13
+    },
+    "V(COARSE_CODE[3])": {
+      "max_abs_V": 3.4374443175650684e-12,
+      "rms_V": 1.0108870746494132e-12
+    },
+    "V(COARSE_CODE[4])": {
+      "max_abs_V": 3.183732935285407e-12,
+      "rms_V": 9.486840205414067e-13
+    },
+    "V(COARSE_CODE[5])": {
+      "max_abs_V": 3.0521838040916544e-12,
+      "rms_V": 9.008487071999131e-13
+    },
+    "V(STARTUP_COARSE[0])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_COARSE[1])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_COARSE[2])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_COARSE[3])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_COARSE[4])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_COARSE[5])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_FINE[0])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_FINE[1])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_FINE[2])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_FINE[3])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_FINE[4])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_FINE[5])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_FINE[6])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_FINE[7])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(STARTUP_INCREASING)": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(VNB)": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(VPB)": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(VGND)": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(VPWR)": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(CONFIG_BUSY)": {
+      "max_abs_V": 4.049205415412871e-12,
+      "rms_V": 1.2647678781049392e-12
+    },
+    "V(CONFIG_READY)": {
+      "max_abs_V": 3.611174478274971e-12,
+      "rms_V": 1.0792773683997895e-12
+    },
+    "V(DCO_CODE[0])": {
+      "max_abs_V": 3.564854522211951e-12,
+      "rms_V": 1.0587826485869634e-12
+    },
+    "V(DCO_CODE[1])": {
+      "max_abs_V": 3.484268497094996e-12,
+      "rms_V": 1.025860090821771e-12
+    },
+    "V(DCO_CODE[2])": {
+      "max_abs_V": 3.585540491493318e-12,
+      "rms_V": 1.0676226926233531e-12
+    },
+    "V(DCO_CODE[3])": {
+      "max_abs_V": 3.6988636878062826e-12,
+      "rms_V": 1.068143592905633e-12
+    },
+    "V(DCO_CODE[4])": {
+      "max_abs_V": 3.5863253556103758e-12,
+      "rms_V": 1.0713820561098892e-12
+    },
+    "V(DCO_CODE[5])": {
+      "max_abs_V": 3.723544569398762e-12,
+      "rms_V": 1.0977469926545323e-12
+    },
+    "V(DCO_CODE[6])": {
+      "max_abs_V": 3.795870747648369e-12,
+      "rms_V": 1.1088902023412556e-12
+    },
+    "V(DCO_CODE[7])": {
+      "max_abs_V": 3.962830064097034e-12,
+      "rms_V": 1.2107315281043217e-12
+    },
+    "V(DLF_CODE[0])": {
+      "max_abs_V": 3.3467903351702384e-12,
+      "rms_V": 9.963315927194125e-13
+    },
+    "V(DLF_CODE[1])": {
+      "max_abs_V": 3.2829309966174317e-12,
+      "rms_V": 9.834192940284352e-13
+    },
+    "V(DLF_CODE[2])": {
+      "max_abs_V": 3.4303232472029975e-12,
+      "rms_V": 1.0179239255141449e-12
+    },
+    "V(DLF_CODE[3])": {
+      "max_abs_V": 3.452015777922839e-12,
+      "rms_V": 1.0474839981189115e-12
+    },
+    "V(DLF_CODE[4])": {
+      "max_abs_V": 3.231678943885403e-12,
+      "rms_V": 9.61152771839653e-13
+    },
+    "V(DLF_CODE[5])": {
+      "max_abs_V": 3.450035870595884e-12,
+      "rms_V": 1.0476100212068117e-12
+    },
+    "V(DLF_CODE[6])": {
+      "max_abs_V": 3.505184945735377e-12,
+      "rms_V": 1.0509103847495342e-12
+    },
+    "V(DLF_CODE[7])": {
+      "max_abs_V": 3.5230227836722606e-12,
+      "rms_V": 1.0746214502784959e-12
+    },
+    "V(DLF_CODE[8])": {
+      "max_abs_V": 3.384863022805177e-12,
+      "rms_V": 1.0123286036951192e-12
+    },
+    "V(DLF_CODE[9])": {
+      "max_abs_V": 3.3829937904971763e-12,
+      "rms_V": 1.0230038205137134e-12
+    },
+    "V(FAILED)": {
+      "max_abs_V": 3.6222079429984325e-12,
+      "rms_V": 1.0779929440125628e-12
+    },
+    "V(KI[0])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KI[1])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KI[2])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KI[3])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KI[4])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KI[5])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KI[6])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KI[7])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KP[0])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KP[1])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KP[2])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KP[3])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(KP[4])": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(PLLOUT)": {
+      "max_abs_V": 1.9584112109782836e-11,
+      "rms_V": 6.208191025112976e-12
+    },
+    "V(PLL_ENABLE)": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(REFCLK)": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(RESET_N)": {
+      "max_abs_V": 0.0,
+      "rms_V": 0.0
+    },
+    "V(TRACKING)": {
+      "max_abs_V": 3.673861596073611e-12,
+      "rms_V": 1.04698789262942e-12
+    }
+  },
+  "comparison_method": "linear interpolation on union of complete sample timestamps",
+  "residual_acceptance_independently_verified": false,
+  "convergence_failure_totals_available": false,
+  "partial_waveform_diagnostic_only": true,
+  "transient_correlation_qualified": false,
+  "release_ready": false
+}

@@ -1,0 +1,39 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_metis_ordering_1790/Xyce": "600962e16df97b2258c55bb6f7201e335b73e692a139367b153f4952c93184a1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_reuse_context_1830/Xyce": "8c98f5839762bcc1a36ecd91b1c1246cd9d4044f4c20c0fb88df010211a3f221",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_reuse_context_1830/assessment.json": "6991f115bef2c35d4efe3c98badf0dbe36f277408aba32e6345d709b42b63f37",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/check_reuse_nonlinear_1832.py": "cea39361b32f5ca12fca0cdda3ded959bf810c36d172d5f5e4e7bbefb404346c"
+  },
+  "results": {
+    "tran_base": {
+      "calls": 2032,
+      "numeric": 2032,
+      "symbolic": 1,
+      "failures": 0,
+      "reuse_attempts": 0,
+      "reuse_accepted": 0,
+      "exact_reuse": 0,
+      "refinement_solves": 0,
+      "DC_reuse": 0,
+      "krylov_solves": 0
+    },
+    "tran_fixed": {
+      "calls": 2032,
+      "numeric": 15,
+      "symbolic": 1,
+      "failures": 0,
+      "reuse_attempts": 1926,
+      "reuse_accepted": 1920,
+      "exact_reuse": 97,
+      "refinement_solves": 3880,
+      "DC_reuse": 0,
+      "krylov_solves": 200
+    }
+  },
+  "maximum_interpolated_voltage_error": 2.220446049250313e-16,
+  "reference_waveforms_match": true,
+  "nonlinear_control_reuse_activated": true,
+  "full_RC_reuse_qualified": false,
+  "release_ready": false
+}

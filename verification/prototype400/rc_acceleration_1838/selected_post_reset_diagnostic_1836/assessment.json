@@ -1,0 +1,739 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_extended_reuse_1835/native.process.json": "b1877f9f5e52f0f48cc7e1107fbca6a8bf499b7d7503a5d89ab2f168097548e3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_extended_reuse_1835/status.json": "7e0131fed99b728e9906b94f95356962350675bf0af64dd19b8a71eeba7505f3",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_extended_reuse_1835/inputs.json": "d1894e4649413f2922c6e8c019beb8fc6ebad668b67c37c4d9bde49005baafd6",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_extended_reuse_1835/transient.spice": "9929be7b51c60ec8952b1699a076e88c6b771be17644d1ad18c6745d613a6cef",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_extended_reuse_1835/transient.prn": "a001c24cf4bb9f87817b64caa4b238cf0ba8b432daae2b9b8e5cabb84d09293b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_full_RC_extended_reuse_1835/native.log": "0430d76c3bf5d8912628e1d3d1a43175f9f7f29f461aa63fcc2f8868e19f7b9b",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/assess_stopped_post_reset_1836.py": "f0447b523d679cb75b7e5f46a18e5e1976596c6a10c359bea154e7bb064271bd",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/compare_stopped_RC_reuse_1834.py": "92546d4a966c3d9da14ae5066122cd165ceedd7d6cf7635969aea0b585de286a"
+  },
+  "samples": 10420,
+  "all_printed_values_finite": true,
+  "discarded_incomplete_final_rows": 0,
+  "last_simulated_ns": 103.8849999999993,
+  "post_release_samples": 2389,
+  "ports": {
+    "V(CLKDIV_RETIMED)": {
+      "post_min_V": -0.008336343924956066,
+      "post_max_V": 0.019429721897561925,
+      "final_V": 0.00022265020236777544,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(COARSE_CODE[0])": {
+      "post_min_V": 4.179326721091297e-06,
+      "post_max_V": 0.022236749546621117,
+      "final_V": 0.00019814615388026797,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(COARSE_CODE[1])": {
+      "post_min_V": -0.0007991893735171398,
+      "post_max_V": 0.021841534283293974,
+      "final_V": 0.00020546797916900898,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(COARSE_CODE[2])": {
+      "post_min_V": -0.006954462506289219,
+      "post_max_V": 0.024921302110592233,
+      "final_V": 0.00020271432306425923,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(COARSE_CODE[3])": {
+      "post_min_V": 4.172804989457697e-06,
+      "post_max_V": 0.02226576493133987,
+      "final_V": 0.00020256376328505157,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(COARSE_CODE[4])": {
+      "post_min_V": 3.57008099914238e-06,
+      "post_max_V": 0.022678368109005156,
+      "final_V": 0.0002080078912472503,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(COARSE_CODE[5])": {
+      "post_min_V": -0.0028364204828130167,
+      "post_max_V": 0.02422675764216926,
+      "final_V": 0.0002020159730875649,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_COARSE[0])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_COARSE[1])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_COARSE[2])": {
+      "post_min_V": 1.8,
+      "post_max_V": 1.8,
+      "final_V": 1.8,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_COARSE[3])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_COARSE[4])": {
+      "post_min_V": 1.8,
+      "post_max_V": 1.8,
+      "final_V": 1.8,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_COARSE[5])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_FINE[0])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_FINE[1])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_FINE[2])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_FINE[3])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_FINE[4])": {
+      "post_min_V": 1.8,
+      "post_max_V": 1.8,
+      "final_V": 1.8,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_FINE[5])": {
+      "post_min_V": 1.8,
+      "post_max_V": 1.8,
+      "final_V": 1.8,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_FINE[6])": {
+      "post_min_V": 1.8,
+      "post_max_V": 1.8,
+      "final_V": 1.8,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_FINE[7])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(STARTUP_INCREASING)": {
+      "post_min_V": 1.8,
+      "post_max_V": 1.8,
+      "final_V": 1.8,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(VNB)": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(VPB)": {
+      "post_min_V": 1.8,
+      "post_max_V": 1.8,
+      "final_V": 1.8,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(VGND)": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(VPWR)": {
+      "post_min_V": 1.8,
+      "post_max_V": 1.8,
+      "final_V": 1.8,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(CONFIG_BUSY)": {
+      "post_min_V": 1.7778536850575457,
+      "post_max_V": 1.8086797234438103,
+      "final_V": 1.7997455983823711,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(CONFIG_READY)": {
+      "post_min_V": -0.002656373807970485,
+      "post_max_V": 0.021916567589272233,
+      "final_V": 0.00021785857480081532,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DCO_CODE[0])": {
+      "post_min_V": 3.4334847646453307e-06,
+      "post_max_V": 0.022765758901975047,
+      "final_V": 0.0001932744383002621,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DCO_CODE[1])": {
+      "post_min_V": 3.4427995344170736e-06,
+      "post_max_V": 0.023128745820599886,
+      "final_V": 0.0001931706093267028,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DCO_CODE[2])": {
+      "post_min_V": 3.2398862332538414e-06,
+      "post_max_V": 0.023306865485644614,
+      "final_V": 0.0001942249153243292,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DCO_CODE[3])": {
+      "post_min_V": 3.3248084295654634e-06,
+      "post_max_V": 0.023328180387858135,
+      "final_V": 0.00019229669225904512,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DCO_CODE[4])": {
+      "post_min_V": 3.2534025130124405e-06,
+      "post_max_V": 0.02373459188277345,
+      "final_V": 0.00019245220033289426,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DCO_CODE[5])": {
+      "post_min_V": 3.7517931183718026e-06,
+      "post_max_V": 0.022290745461786717,
+      "final_V": 0.0001911689354418158,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DCO_CODE[6])": {
+      "post_min_V": 4.212224987808964e-06,
+      "post_max_V": 0.02201766477490135,
+      "final_V": 0.0001914792074396321,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DCO_CODE[7])": {
+      "post_min_V": 1.7774337569008258,
+      "post_max_V": 1.8100445839638208,
+      "final_V": 1.7997497479664992,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DLF_CODE[0])": {
+      "post_min_V": 2.5854082580595777e-06,
+      "post_max_V": 0.025024582302385752,
+      "final_V": 0.00018770288472584512,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DLF_CODE[1])": {
+      "post_min_V": 2.524201791022131e-06,
+      "post_max_V": 0.024858210783554997,
+      "final_V": 0.0001882717732153122,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DLF_CODE[2])": {
+      "post_min_V": 3.1313392424108993e-06,
+      "post_max_V": 0.020261889743771078,
+      "final_V": 0.00020150336520245556,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DLF_CODE[3])": {
+      "post_min_V": 3.1341717443222172e-06,
+      "post_max_V": 0.023686465067243975,
+      "final_V": 0.0001900946553496039,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DLF_CODE[4])": {
+      "post_min_V": 3.177127711228706e-06,
+      "post_max_V": 0.020714886821299457,
+      "final_V": 0.00020051770176371237,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DLF_CODE[5])": {
+      "post_min_V": 2.9858396994771294e-06,
+      "post_max_V": 0.020980936152015645,
+      "final_V": 0.00019787262538691102,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DLF_CODE[6])": {
+      "post_min_V": 3.7500024403390356e-06,
+      "post_max_V": 0.021575239790317315,
+      "final_V": 0.00019338144024887152,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DLF_CODE[7])": {
+      "post_min_V": -0.0028619152660351935,
+      "post_max_V": 0.021293668302615462,
+      "final_V": 0.00019823663553044898,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DLF_CODE[8])": {
+      "post_min_V": 3.146850826180081e-06,
+      "post_max_V": 0.02111539942883353,
+      "final_V": 0.00019730399574314974,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(DLF_CODE[9])": {
+      "post_min_V": 3.0256832428456282e-06,
+      "post_max_V": 0.01998481218381941,
+      "final_V": 0.00020184007984165489,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(FAILED)": {
+      "post_min_V": 3.5692528677456673e-06,
+      "post_max_V": 0.02292792184816714,
+      "final_V": 0.00019156535094020847,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KI[0])": {
+      "post_min_V": 1.8,
+      "post_max_V": 1.8,
+      "final_V": 1.8,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KI[1])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KI[2])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KI[3])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KI[4])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KI[5])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KI[6])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KI[7])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KP[0])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KP[1])": {
+      "post_min_V": 1.8,
+      "post_max_V": 1.8,
+      "final_V": 1.8,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KP[2])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KP[3])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(KP[4])": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(PLLOUT)": {
+      "post_min_V": 1.7869210769036963,
+      "post_max_V": 1.8135424835581138,
+      "final_V": 1.7999386167785998,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(PLL_ENABLE)": {
+      "post_min_V": 0.0,
+      "post_max_V": 0.0,
+      "final_V": 0.0,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    },
+    "V(REFCLK)": {
+      "post_min_V": 0.0,
+      "post_max_V": 1.800000000000135,
+      "final_V": 1.8,
+      "post_threshold_crossings_ns": [
+        80.05499999999999,
+        100.055
+      ],
+      "post_intermediate_samples": 6
+    },
+    "V(RESET_N)": {
+      "post_min_V": 1.7999999999999996,
+      "post_max_V": 1.8000000000000003,
+      "final_V": 1.7999999999999998,
+      "post_threshold_crossings_ns": [
+        80.05499999999999
+      ],
+      "post_intermediate_samples": 0
+    },
+    "V(TRACKING)": {
+      "post_min_V": -0.00831422295592861,
+      "post_max_V": 0.01589265549204364,
+      "final_V": 0.00024180462328648897,
+      "post_threshold_crossings_ns": [],
+      "post_intermediate_samples": 0
+    }
+  },
+  "snapshots": {
+    "79.90499999999625": {
+      "COARSE_CODE": 0,
+      "COARSE_CODE_ambiguous_bits": [],
+      "DCO_CODE": 128,
+      "DCO_CODE_ambiguous_bits": [],
+      "DLF_CODE": 0,
+      "DLF_CODE_ambiguous_bits": [],
+      "RESET_N": 0.0,
+      "PLL_ENABLE": 0.0,
+      "REFCLK": 1.8,
+      "PLLOUT": 1.7999934949400995,
+      "CONFIG_BUSY": 1.7999754479390797,
+      "CONFIG_READY": 1.8331668174554593e-05,
+      "TRACKING": 1.2753895197901328e-05,
+      "FAILED": 1.7763571681512634e-05,
+      "CLKDIV_RETIMED": 1.567949227483577e-05
+    },
+    "80.1": {
+      "COARSE_CODE": 0,
+      "COARSE_CODE_ambiguous_bits": [],
+      "DCO_CODE": 128,
+      "DCO_CODE_ambiguous_bits": [],
+      "DLF_CODE": 0,
+      "DLF_CODE_ambiguous_bits": [],
+      "RESET_N": 1.8,
+      "PLL_ENABLE": 0.0,
+      "REFCLK": 2.2226664952995634e-13,
+      "PLLOUT": 1.8100680982581001,
+      "CONFIG_BUSY": 1.8086797234438103,
+      "CONFIG_READY": 0.009339197399977052,
+      "TRACKING": 0.008053403068929684,
+      "FAILED": 0.009594970723975074,
+      "CLKDIV_RETIMED": -0.008336343924956066
+    },
+    "80.99599999999984": {
+      "COARSE_CODE": 0,
+      "COARSE_CODE_ambiguous_bits": [],
+      "DCO_CODE": 128,
+      "DCO_CODE_ambiguous_bits": [],
+      "DLF_CODE": 0,
+      "DLF_CODE_ambiguous_bits": [],
+      "RESET_N": 1.7999999999999998,
+      "PLL_ENABLE": 0.0,
+      "REFCLK": 0.0,
+      "PLLOUT": 1.7994967773857717,
+      "CONFIG_BUSY": 1.787895757158828,
+      "CONFIG_READY": 0.011108212736574443,
+      "TRACKING": 0.011873705563572189,
+      "FAILED": 0.00952121922091819,
+      "CLKDIV_RETIMED": 0.01104052313369121
+    },
+    "84.99599999999907": {
+      "COARSE_CODE": 0,
+      "COARSE_CODE_ambiguous_bits": [],
+      "DCO_CODE": 128,
+      "DCO_CODE_ambiguous_bits": [],
+      "DLF_CODE": 0,
+      "DLF_CODE_ambiguous_bits": [],
+      "RESET_N": 1.8,
+      "PLL_ENABLE": 0.0,
+      "REFCLK": 0.0,
+      "PLLOUT": 1.7999927701091916,
+      "CONFIG_BUSY": 1.7999678119624465,
+      "CONFIG_READY": 3.421530809294944e-05,
+      "TRACKING": 5.2475621370583454e-05,
+      "FAILED": 2.9060506722779018e-05,
+      "CLKDIV_RETIMED": 3.7469187114032313e-05
+    },
+    "89.99599999999813": {
+      "COARSE_CODE": 0,
+      "COARSE_CODE_ambiguous_bits": [],
+      "DCO_CODE": 128,
+      "DCO_CODE_ambiguous_bits": [],
+      "DLF_CODE": 0,
+      "DLF_CODE_ambiguous_bits": [],
+      "RESET_N": 1.7999999999999998,
+      "PLL_ENABLE": 0.0,
+      "REFCLK": 0.0,
+      "PLLOUT": 1.8000017172771419,
+      "CONFIG_BUSY": 1.7999984607015678,
+      "CONFIG_READY": 4.571833385498338e-06,
+      "TRACKING": 1.0701747850953334e-05,
+      "FAILED": 3.988125338795314e-06,
+      "CLKDIV_RETIMED": 4.668996533822213e-06
+    },
+    "100.00000000000001": {
+      "COARSE_CODE": 0,
+      "COARSE_CODE_ambiguous_bits": [],
+      "DCO_CODE": 128,
+      "DCO_CODE_ambiguous_bits": [],
+      "DLF_CODE": 0,
+      "DLF_CODE_ambiguous_bits": [],
+      "RESET_N": 1.8,
+      "PLL_ENABLE": 0.0,
+      "REFCLK": 0.0,
+      "PLLOUT": 1.8000002404752482,
+      "CONFIG_BUSY": 1.7999943292610199,
+      "CONFIG_READY": 7.0214053728409375e-06,
+      "TRACKING": 1.0723785279871439e-05,
+      "FAILED": 6.444549889156781e-06,
+      "CLKDIV_RETIMED": 6.615793871963415e-06
+    },
+    "103.8849999999993": {
+      "COARSE_CODE": 0,
+      "COARSE_CODE_ambiguous_bits": [],
+      "DCO_CODE": 128,
+      "DCO_CODE_ambiguous_bits": [],
+      "DLF_CODE": 0,
+      "DLF_CODE_ambiguous_bits": [],
+      "RESET_N": 1.7999999999999998,
+      "PLL_ENABLE": 0.0,
+      "REFCLK": 1.8,
+      "PLLOUT": 1.7999386167785998,
+      "CONFIG_BUSY": 1.7997455983823711,
+      "CONFIG_READY": 0.00021785857480081532,
+      "TRACKING": 0.00024180462328648897,
+      "FAILED": 0.00019156535094020847,
+      "CLKDIV_RETIMED": 0.00022265020236777544
+    }
+  },
+  "post_reset_progress_ns_per_hour": 4.1204462097902095,
+  "post_reset_progress_points": [
+    {
+      "ns": 81.76592,
+      "UTC": "2026-11-13T11:29:59"
+    },
+    {
+      "ns": 85.17612,
+      "UTC": "2026-11-13T12:20:01"
+    },
+    {
+      "ns": 88.58597999999999,
+      "UTC": "2026-11-13T13:13:43"
+    },
+    {
+      "ns": 91.99584,
+      "UTC": "2026-11-13T14:06:30"
+    },
+    {
+      "ns": 95.40604,
+      "UTC": "2026-11-13T14:53:53"
+    },
+    {
+      "ns": 98.8159,
+      "UTC": "2026-11-13T15:33:54"
+    },
+    {
+      "ns": 102.22507999999999,
+      "UTC": "2026-11-13T16:27:54"
+    }
+  ],
+  "warning_failure_lines": [
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Netlist warning in file",
+    "Maximum warning count has been exceeded and will no longer be displayed"
+  ],
+  "terminal_solver_summary_present": false,
+  "failure_totals_verified": false,
+  "partial_waveform_diagnostic_only": true,
+  "frequency_qualified": false,
+  "release_ready": false
+}

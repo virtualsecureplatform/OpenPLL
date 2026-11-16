@@ -1,0 +1,24 @@
+{
+  "input_sha256": {
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/tools/xyce_metis_ordering_1790/Xyce": "600962e16df97b2258c55bb6f7201e335b73e692a139367b153f4952c93184a1",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_seeded_full_RC_DC_1825/assessment.json": "99f8ee22c367bd17c8f0e2d02e54c8bb491b958f67c665fbe088cbf653373157",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/build/signoff400/selected_seeded_full_RC_DC_1825/smoke.spice": "9619f9ad4ff0b3c1e19e2d612eb2ef02b9d5c8af6e03dd903a123c65ecdfa6e4",
+    "/home/work-bleaker/kmatsuoka/sources/OpenPLL/verification/signoff400/benchmark_RC_alternative_solvers_1829.py": "70644fb2d165b1f62963df0130ec16a1b3990c6b140f31f4ac45aeb892109aab"
+  },
+  "results": [
+    {
+      "solver": "basker",
+      "control_pass": true,
+      "elapsed_s": 603.0984416350257,
+      "status": "TimeoutError('compiled check exhausted whole-check budget')"
+    },
+    {
+      "solver": "klu2",
+      "control_pass": true,
+      "elapsed_s": 603.1122492079157,
+      "status": "TimeoutError('compiled check exhausted whole-check budget')"
+    }
+  ],
+  "release_ready": false,
+  "simulation_qualified": false
+}

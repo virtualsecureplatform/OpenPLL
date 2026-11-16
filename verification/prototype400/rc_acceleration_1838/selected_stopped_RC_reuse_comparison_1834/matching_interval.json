@@ -1,0 +1,13 @@
+{
+  "source_assessment_sha256": "46136691ac99ba796adbb1219c7a0c0a1265f87cd50d43aca410204acd86b0d9",
+  "matching_interval_ns": [
+    3.4,
+    10.219992
+  ],
+  "baseline_ns_per_hour": 3.909549554140127,
+  "reuse_four_threads_ns_per_hour": 11.798160115329168,
+  "combined_speedup": 3.017779913503124,
+  "isolated_reuse_speedup_measured": false,
+  "post_reset_validated": false,
+  "release_ready": false
+}
